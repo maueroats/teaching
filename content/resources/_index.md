@@ -1,0 +1,17 @@
+---
+title: "Resources"
+date: 2017-09-09T15:49:20-05:00
+---
+
+These resources may be useful throughout the year.
+
+* [Syllabus for all classes]({{< relref "Generic-CS-Syllabus.md" >}})
+* Git program information (work in progress)
+
+## Course-specific information
+* AP Computer Science
+    * [Syllabus extra info]({{< relref "APCS-Syllabus--2017-2018.md" >}})
+* Intermediate Computer Science
+    * [Syllabus extra info]({{< relref "IntermediateCS-Syllabus--2017-2018.md" >}})
+    * [WeScheme]({{< relref "ICS-WeScheme-Note.md" >}}) - when you cannot install software
+

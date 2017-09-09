@@ -1,0 +1,8 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "WY Computer Science"
+theme = "docdock"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
