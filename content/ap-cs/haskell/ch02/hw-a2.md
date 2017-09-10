@@ -2,7 +2,11 @@
 title: "Haskell HW 2"
 date: 2017-09-09T15:57:47-05:00
 weight: 20
-draft: true
+tags: 
+  - homework
+  - hw
+  - haskell
+  - ap-cs
 ---
 
 # Problem set `hw:a2`
@@ -21,6 +25,8 @@ draft: true
     Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
 
     Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+<!--more-->
 
 2. (Multiples of 3 and 5)[https://projecteuler.net/problem=1] If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
 

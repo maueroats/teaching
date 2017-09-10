@@ -6,3 +6,16 @@ theme = "docdock"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
+[[menu.shortcuts]]
+pre = "<h3>More</h3>"
+name = "<i class='fa fa-calendar' aria-hidden='true'></i>AP Exam Calendar 2018"
+identifier = "apcal"
+url = "https://apcentral.collegeboard.org/courses/exam-dates-and-fees"
+weight = 5
+
+[[menu.shortcuts]]
+name = "Whitney Young"
+identifier = "wy"
+url = "http://wyoung.org"
+weight = 10
+

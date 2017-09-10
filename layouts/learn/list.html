@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+<!-- put this in _default to make it active -->
+
+{{ .Content }}
+
+<br>
+<hr>
+<ul>
+  <li> Default list view
+  <li> {{ .Page }}
+  <li> {{ .Page.Kind }}
+  <li> {{ .Page.Pages }}
+    <ol>
+	{{ range first 4 .Page.Pages }}
+	   <li> <a href="{{ .URL }}">{{ .LinkTitle }}</a>
+	   {{ end }}
+    </ol>
+    
+</pre>
+
+
+{{ partial "footer.html" . }}

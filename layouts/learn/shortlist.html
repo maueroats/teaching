@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<!-- To get to this file you need to be working with a file that is not _index.md and set
+type: learn
+layout: shortlist
+  -->
+
+<H2>Layout Learn ShortList Rendering</H2>
+
+Tags: {{ .Params.tags }} <br>
+Categories: {{ .Params.categories }} <br>
+
+{{ .Content }}
+
+	{{ range first 4 .Site.Pages }}
+	   <a href="{{ .URL }}">{{ .LinkTitle }}</a>
+	{{ end }}
+
+	<div style="margin-bottom:2rem"></div>
+
+{{ partial "footer.html" . }}

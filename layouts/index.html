@@ -1,0 +1,42 @@
+{{ partial "header.html" . }}
+
+<H2>Recent Blog Activity</H2>
+
+<ul>
+{{ range first 4 .Site.Pages }}
+<li> <a href="{{.RelPermalink}}">{{.LinkTitle}}</a>
+{{ end }}
+</ul>
+
+<hr>
+
+{{ .Content }}
+
+<footer class=" footline" >
+	{{with .Params.LastModifierDisplayName}}
+	    <i class='fa fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{with $.Date}} <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}{{end}}
+	    </div>
+	{{end}}
+</footer>
+
+
+{{if not .Content }}
+	{{ $paginator := .Paginator }}
+
+	<div class="extra-pagination inner">
+	{{ partial "pagination.html" $paginator }}
+	</div>
+
+	{{ range $index, $page := $paginator.Pages }}
+	   {{ .Render "li" }}
+	{{ end }}
+
+	<div style="margin-bottom:2rem"></div>
+
+	{{ partial "pagination.html" $paginator }}
+{{end}}
+
+	<br><hr><br>
+	(Home page!)
+	
+{{ partial "footer.html" . }}

@@ -1,6 +1,11 @@
 ---
 title: "Resources"
+weight: 90
 date: 2017-09-09T15:49:20-05:00
+aliases: 
+    - "/ap-cs/resources"
+    - "/intermediate-cs/resources"
+
 ---
 
 These resources may be useful throughout the year.
