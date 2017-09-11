@@ -1,6 +1,6 @@
 ---
 title: "Grade Weights"
-date: 2017-09-09
+date: 2017-09-09T11:00:30-05:00
 weight: 60
 ---
 

@@ -2,6 +2,8 @@
 title: "Ch01 Reading Guide"
 date: 2017-09-09T15:36:40-05:00
 tags: [ "reading-guide", "haskell"]
+categories:
+  - ap-cs
 ---
 
 # Haskell introduction reading questions

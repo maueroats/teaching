@@ -1,13 +1,14 @@
-baseURL = "http://example.org/"
+baseURL = "http://maueroats.github.io/teaching"
 languageCode = "en-us"
 title = "WY Computer Science"
 theme = "docdock"
+publishDir = "docs"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
-pre = "<h3>More</h3>"
+pre = "<h3>External</h3>"
 name = "<i class='fa fa-calendar' aria-hidden='true'></i>AP Exam Calendar 2018"
 identifier = "apcal"
 url = "https://apcentral.collegeboard.org/courses/exam-dates-and-fees"

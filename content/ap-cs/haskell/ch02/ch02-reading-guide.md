@@ -2,6 +2,12 @@
 title: "Ch02 Reading Guide"
 date: 2017-09-09T15:57:47-05:00
 weight: 10
+categories: 
+  - ap-cs
+tags: 
+  - haskell
+  - reading-guide
+  
 ---
 # Haskell Starting Out Questions
 
