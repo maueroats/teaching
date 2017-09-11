@@ -7,5 +7,5 @@ that the correct organization is really /daily/apcs/... and
 
     * Is there a way to reverse this behavior?
 
-* All files are contained in folders that correspond to the markdown document.
+* All files are contained in folders that correspond to the markdown document name
 

@@ -1,7 +1,7 @@
 
 {{ $wanted := .Get 0 }}
 
-{{ $match := where $.Page.Site.RegularPages "Params.categories" "intersect" (slice $wanted ) }}
+{{ $match := where $.Page.Site.RegularPages "Type" $wanted }}
 <ul>
   {{ range first 3 $match }}
   <li> <a href="{{.RelPermalink}}">{{ .LinkTitle }}</a> modified {{ .Lastmod.Format "Mon 01-02 15:04" }}

@@ -1,6 +1,6 @@
 ---
 title: "Resources"
-weight: 90
+weight: 80
 date: 2017-09-09T15:49:20-05:00
 aliases: 
     - "/ap-cs/resources"

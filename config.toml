@@ -8,6 +8,11 @@ publishDir = "docs"
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
+pre = "<h3>Other</h3>"
+name = "Biography"
+url = "/biography"
+
+[[menu.shortcuts]]
 pre = "<h3>External</h3>"
 name = "<i class='fa fa-calendar' aria-hidden='true'></i>AP Exam Calendar 2018"
 identifier = "apcal"
