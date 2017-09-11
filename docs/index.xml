@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mauer-Oats Classes on WY Computer Science</title>
-    <link>https://maueroats.github.io/teaching/</link>
+    <link>http://wy-cs.info/teaching/</link>
     <description>Recent content in Mauer-Oats Classes on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Sep 2017 17:00:30 -0500</lastBuildDate>
     
-	<atom:link href="https://maueroats.github.io/teaching/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://wy-cs.info/teaching/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ch02 Reading Guide</title>
-      <link>https://maueroats.github.io/teaching/ap-cs/haskell/ch02/ch02-reading-guide/</link>
+      <link>http://wy-cs.info/teaching/ap-cs/haskell/ch02/ch02-reading-guide/</link>
       <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/ap-cs/haskell/ch02/ch02-reading-guide/</guid>
+      <guid>http://wy-cs.info/teaching/ap-cs/haskell/ch02/ch02-reading-guide/</guid>
       <description>Haskell Starting Out Questions A. Sections 2.1&amp;ndash;2.3  There is an annoyance with negative numbers that is mentioned.
  What is the correct way to write five times negative three in Haskell? What is a wrong way to do the same thing?  Logical operations are basic building blocks of programs. How do you write:
  and or not equals not equals  Haskell follows mostly the normal order of operations from mathematics.</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Haskell HW 2</title>
-      <link>https://maueroats.github.io/teaching/ap-cs/haskell/ch02/hw-a2/</link>
+      <link>http://wy-cs.info/teaching/ap-cs/haskell/ch02/hw-a2/</link>
       <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/ap-cs/haskell/ch02/hw-a2/</guid>
+      <guid>http://wy-cs.info/teaching/ap-cs/haskell/ch02/hw-a2/</guid>
       <description>&lt;h1 id=&#34;problem-set-hw-a2&#34;&gt;Problem set &lt;code&gt;hw:a2&lt;/code&gt;&lt;/h1&gt;
 
 &lt;h2 id=&#34;class-one-day&#34;&gt;Class (One Day)&lt;/h2&gt;
@@ -54,20 +54,20 @@ The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
     
     <item>
       <title>Syllabus: All Courses</title>
-      <link>https://maueroats.github.io/teaching/resources/generic-cs-syllabus/</link>
+      <link>http://wy-cs.info/teaching/resources/generic-cs-syllabus/</link>
       <pubDate>Sat, 09 Sep 2017 15:50:00 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/resources/generic-cs-syllabus/</guid>
+      <guid>http://wy-cs.info/teaching/resources/generic-cs-syllabus/</guid>
       <description>Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:
  Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form &amp;hellip; or email me.</description>
     </item>
     
     <item>
       <title>Syllabus: AP CS</title>
-      <link>https://maueroats.github.io/teaching/resources/apcs-syllabus--2017-2018/</link>
+      <link>http://wy-cs.info/teaching/resources/apcs-syllabus--2017-2018/</link>
       <pubDate>Sat, 09 Sep 2017 15:49:20 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/resources/apcs-syllabus--2017-2018/</guid>
+      <guid>http://wy-cs.info/teaching/resources/apcs-syllabus--2017-2018/</guid>
       <description>This document gives information specific to the AP Computer Science course. See the all course syllabus information as well.
 AP Review We will do approximately three weeks of AP review before the AP exam. Second semester grades will be significantly impacted by AP test preparation.
 Many people benefit from outside preparation. Start in February. As a rough guide, the Barron&amp;rsquo;s AP Computer Science A text is too easy and the Be Prepared for the AP Computer Science Exam in Java book by Litvin and Litvin is too difficult.</description>
@@ -75,20 +75,20 @@ Many people benefit from outside preparation. Start in February. As a rough guid
     
     <item>
       <title>Syllabus: Intermediate</title>
-      <link>https://maueroats.github.io/teaching/resources/intermediatecs-syllabus--2017-2018/</link>
+      <link>http://wy-cs.info/teaching/resources/intermediatecs-syllabus--2017-2018/</link>
       <pubDate>Sat, 09 Sep 2017 15:49:20 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/resources/intermediatecs-syllabus--2017-2018/</guid>
+      <guid>http://wy-cs.info/teaching/resources/intermediatecs-syllabus--2017-2018/</guid>
       <description>This document details the information specific to Intermediate Computer Science. See the all course syllabus information as well.
 Materials  Notebook - a lightweight paper notebook dedicated to computer science. USB Drive of any size. Picturing Programs book electronic version - downloaded onto flash drive. DrRacket programming environment - installed at home. WeScheme - Online only replacement for DrRacket. Use if you cannot install software. You have to read special instructions to make it work.</description>
     </item>
     
     <item>
       <title>Grade Weights</title>
-      <link>https://maueroats.github.io/teaching/resources/grading-scale/</link>
+      <link>http://wy-cs.info/teaching/resources/grading-scale/</link>
       <pubDate>Sat, 09 Sep 2017 11:00:30 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/resources/grading-scale/</guid>
+      <guid>http://wy-cs.info/teaching/resources/grading-scale/</guid>
       <description>The most common question people have is how grades are computed.
 Grading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    We use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).
 Class participation will be four points per day.</description>
@@ -96,10 +96,10 @@ Class participation will be four points per day.</description>
     
     <item>
       <title>Biography</title>
-      <link>https://maueroats.github.io/teaching/biography/</link>
+      <link>http://wy-cs.info/teaching/biography/</link>
       <pubDate>Sun, 10 Sep 2017 16:59:58 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/biography/</guid>
+      <guid>http://wy-cs.info/teaching/biography/</guid>
       <description>Biography Dr. Mauer-Oats has been at Whitney Young for more than five years. He holds a Ph.D. in Mathematics from the University of Illinois at Urbana-Champaign.
 Courses Courses taught in 2017-2018:
  AP Computer Science Intermediate Computer Science  Courses taught in prior years at Whitney Young:
@@ -109,10 +109,10 @@ Courses Courses taught in 2017-2018:
     
     <item>
       <title>Academic Integrity</title>
-      <link>https://maueroats.github.io/teaching/resources/academic-integrity/</link>
+      <link>http://wy-cs.info/teaching/resources/academic-integrity/</link>
       <pubDate>Sat, 09 Sep 2017 16:51:48 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/resources/academic-integrity/</guid>
+      <guid>http://wy-cs.info/teaching/resources/academic-integrity/</guid>
       <description>Being honest and honorable regarding one’s academic integrity is essential in all of your classes.
 Students are expected to adhere to the following honor code regarding all of their work in this class.
  “I have neither given nor received improper aid on this test/project.”   “Improper aid” includes, but is not limited to:
@@ -121,10 +121,10 @@ Students are expected to adhere to the following honor code regarding all of the
     
     <item>
       <title>Ch01 Reading Guide</title>
-      <link>https://maueroats.github.io/teaching/ap-cs/haskell/ch01/ch01-reading-guide/</link>
+      <link>http://wy-cs.info/teaching/ap-cs/haskell/ch01/ch01-reading-guide/</link>
       <pubDate>Sat, 09 Sep 2017 15:36:40 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/ap-cs/haskell/ch01/ch01-reading-guide/</guid>
+      <guid>http://wy-cs.info/teaching/ap-cs/haskell/ch01/ch01-reading-guide/</guid>
       <description>Haskell introduction reading questions  Haskell is supposed to be a purely functional language. Unpack that:
  What does pure mean? What is the difference between functional and imperative? (The book is not so clear on this point. What do you think it says, in your own words?)  Haskell is lazy. What does this mean?
  Haskell is statically typed. This could be unpacked, too.
@@ -133,20 +133,20 @@ Students are expected to adhere to the following honor code regarding all of the
     
     <item>
       <title>WeScheme</title>
-      <link>https://maueroats.github.io/teaching/resources/ics-wescheme-note/</link>
+      <link>http://wy-cs.info/teaching/resources/ics-wescheme-note/</link>
       <pubDate>Sat, 09 Sep 2017 07:00:30 -0500</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/resources/ics-wescheme-note/</guid>
+      <guid>http://wy-cs.info/teaching/resources/ics-wescheme-note/</guid>
       <description> Special notes for WeScheme users You can use WeScheme if you cannot install DrRacket. For example, if you have a Chromebook for your home computer. There are a few differences:
  Omit the (require picturing-programs) line. Instead of copy and pasting in a picture, you need to copy the link for the image and use bitmap/url like this: (bitmap/url &amp;quot;https://www.what-dog.net/Images/faces2/main004.jpg&amp;quot;)  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://maueroats.github.io/teaching/_header/</link>
+      <link>http://wy-cs.info/teaching/_header/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://maueroats.github.io/teaching/_header/</guid>
+      <guid>http://wy-cs.info/teaching/_header/</guid>
       <description>WY Computer Science</description>
     </item>
     
