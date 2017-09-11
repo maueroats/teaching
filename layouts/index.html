@@ -1,15 +1,5 @@
 {{ partial "header.html" . }}
 
-<H2>Recent Blog Activity</H2>
-
-<ul>
-{{ range first 4 .Site.Pages }}
-<li> <a href="{{.RelPermalink}}">{{.LinkTitle}}</a>
-{{ end }}
-</ul>
-
-<hr>
-
 {{ .Content }}
 
 <footer class=" footline" >
@@ -36,7 +26,4 @@
 	{{ partial "pagination.html" $paginator }}
 {{end}}
 
-	<br><hr><br>
-	(Home page!)
-	
 {{ partial "footer.html" . }}
