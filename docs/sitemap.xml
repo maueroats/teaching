@@ -53,8 +53,28 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/ghci-details/</loc>
+    <lastmod>2017-09-11T10:12:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/daily/</loc>
+    <lastmod>2017-09-11T10:03:46-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/resources/</loc>
     <lastmod>2017-09-09T15:49:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch01/ch01-review/</loc>
+    <lastmod>2017-09-11T14:13:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/daily/2017-09-11/</loc>
+    <lastmod>2017-09-11T10:47:02-05:00</lastmod>
   </url>
   
   <url>
@@ -111,6 +131,12 @@
   <url>
     <loc>http://wy-cs.info/categories/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/tags/daily-notes/</loc>
+    <lastmod>2017-09-11T10:03:46-05:00</lastmod>
     <priority>0</priority>
   </url>
   

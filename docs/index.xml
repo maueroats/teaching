@@ -95,6 +95,38 @@ Class participation will be four points per day.</description>
     </item>
     
     <item>
+      <title>Ghci Details</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ghci-details/</link>
+      <pubDate>Mon, 11 Sep 2017 10:12:55 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ghci-details/</guid>
+      <description>&lt;p&gt;Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no &lt;code&gt;let&lt;/code&gt; statements at
+the top level and no automatic printing of results.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 01 Review</title>
+      <link>http://wy-cs.info/intermediate-cs/ch01/ch01-review/</link>
+      <pubDate>Mon, 11 Sep 2017 14:13:38 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch01/ch01-review/</guid>
+      <description>&lt;p&gt;Two images of designs to practice making in Racket.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2017-09-11</title>
+      <link>http://wy-cs.info/ap-cs/haskell/daily/2017-09-11/</link>
+      <pubDate>Mon, 11 Sep 2017 10:47:02 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/daily/2017-09-11/</guid>
+      <description>removeVowels word = [ letter | letter &amp;lt;- word, not (letter elem &amp;ldquo;aeiouAEIOU&amp;rdquo; )]
+wordLenPairs wordlist = [ (word, length word) | word &amp;lt;- wordlist ]</description>
+    </item>
+    
+    <item>
       <title>Biography</title>
       <link>http://wy-cs.info/biography/</link>
       <pubDate>Sun, 10 Sep 2017 16:59:58 -0500</pubDate>

@@ -10,5 +10,6 @@ Learn the essentials of image manipulation: rotating, flipping, and combining im
 <!--more-->
 
 <!--This should be first in the list!! Need to solve that problem.-->
+{{% children %}}
 
 

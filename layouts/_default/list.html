@@ -1,5 +1,10 @@
 {{ partial "header.html" . }}
 
+<!--
+<h3> Default List Template </h3>
+Type is {{ .Type }} <br>
+-->
+
 {{ .Content }}
 
 <footer class=" footline" >
@@ -18,7 +23,7 @@
 	</div>
 
 	{{ range $index, $page := $paginator.Pages }}
-	   {{ .Render "li" }}
+	{{ .Render "lishort" }}
 	{{ end }}
 
 	<div style="margin-bottom:2rem"></div>
