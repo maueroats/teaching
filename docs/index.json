@@ -77,18 +77,18 @@
 	"content": "Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no let statements at the top level and no automatic printing of results. Interpreter vs file An interpreter is what the \u0026ldquo;interactions pane\u0026rdquo; is called. In DrRacket, the interactions pane is the one on the bottom. In repl.it, the interactions pane is on the right side. Interactions with an interpreter can not be saved. There is a command line interpeter in the Haskell Platform called ghci.\nA file is equivalent to the \u0026ldquo;definitions pane\u0026rdquo; in DrRacket. In repl.it, the left hand side of the window is a file. Files can be saved. You need to load (or \u0026ldquo;play\u0026rdquo;) a file to see the results.\nNo let statements needed to make variables or functions Writing a file is different than typing in an interpreter. The whole file is loaded and (usually) the main function is run. When defining functions and variables a file, the word let is not used and the results are not immediately printed. A file equivalent might be written:\nw = \u0026quot;Cat\u0026quot; wlen = length w main = do putStrLn (show wlen)  Typing in an interpreter, every statement gives an immediate result, so the following is similar code for comparison:\nPrelude\u0026gt; let w = \u0026quot;Cat\u0026quot; Prelude\u0026gt; length w 3  Output to screen when running a file Loading or running a file will not automatically cause results to print.\nUse the putStrLn function to output a string.\n w = \u0026quot;Cat\u0026quot; main = do putStrLn w  Printing items that are not strings requires the use of show to make the string that is printed.\nPrelude\u0026gt; let w = [\u0026quot;list\u0026quot;,\u0026quot;of\u0026quot;,\u0026quot;big words\u0026quot;] Prelude\u0026gt; putStrLn (show w) [\u0026quot;list\u0026quot;,\u0026quot;of\u0026quot;,\u0026quot;big words\u0026quot;]  Omitting the show will produce an error message:\nPrelude\u0026gt; putStrLn w \u0026lt;interactive\u0026gt;:7:10: error: • Couldn't match type ‘[Char]’ with ‘Char’ Expected type: String Actual type: [[Char]] • In the first argument of ‘putStrLn’, namely ‘w’ In the expression: putStrLn w In an equation for ‘it’: it = putStrLn w  Repl.it requires a main method The particular interpreter repl.it requires that you have a main method. Write a simple one and then type your tests in the interactions pane.\nmain = do putStrLn \u0026quot;Loaded\u0026quot; "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
-	"title": "Haskell Daily Notes",
-	"tags": ["haskell", "daily-notes"],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "http://wy-cs.info/resources/",
 	"title": "Resources",
 	"tags": [],
 	"description": "",
 	"content": " These resources may be useful throughout the year.\n Syllabus for all classes Git program information (work in progress)  Course-specific information  AP Computer Science  Syllabus extra info  Intermediate Computer Science  Syllabus extra info WeScheme - when you cannot install software   "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
+	"title": "Haskell Daily Notes",
+	"tags": ["haskell", "daily-notes"],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch01/ch01-review/",
@@ -109,7 +109,7 @@
 	"title": "Biography",
 	"tags": [],
 	"description": "",
-	"content": " Biography Dr. Mauer-Oats has been at Whitney Young for more than five years. He holds a Ph.D. in Mathematics from the University of Illinois at Urbana-Champaign.\nCourses Courses taught in 2017-2018:\n AP Computer Science Intermediate Computer Science  Courses taught in prior years at Whitney Young:\n Exploring Computer Science Precalculus Honors Algebra 2 with Trigonometry  Clubs Clubs sponsored in 2017-2018:\n Aerospace club - qualified for the TARC National Fly-off in 2017. Robotics club (FTC) - Rockwell Innovation Award in 2017. Math team (assistant coach).  "
+	"content": " Dr. Mauer-Oats has been at Whitney Young for more than five years. He holds a Ph.D. in Mathematics from the University of Illinois at Urbana-Champaign.\nCourses Courses taught in 2017-2018:\n AP Computer Science Intermediate Computer Science  Courses taught in prior years at Whitney Young:\n Exploring Computer Science Precalculus Honors Algebra 2 with Trigonometry  Clubs Clubs sponsored in 2017-2018:\n Aerospace club - qualified for the TARC National Fly-off in 2017. Robotics club (FTC) - Rockwell Innovation Award in 2017. Coding Club - Competition computer programming. Math team (assistant coach). Girls Who Code (assistant mentor).  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch01/",
@@ -123,7 +123,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Ch02 Reading Guide modified Sat 09-09 15:57  Ghci Details modified Mon 09-11 10:12  Ch01 Reading Guide modified Sat 09-09 15:36  Intermediate Computer Science Recent Changes    "
+	"content": " AP Computer Science Recent Changes   Ch02 Reading Guide modified Sat 09-09 15:57  Haskell HW 2 modified Sat 09-09 15:57  Ghci Details modified Mon 09-11 10:12  Intermediate Computer Science Recent Changes    Chapter 01 Review modified Mon 09-11 14:13  "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
@@ -161,14 +161,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
