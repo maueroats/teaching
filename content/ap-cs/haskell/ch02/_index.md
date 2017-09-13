@@ -5,7 +5,7 @@ categories: [ "ap-cs"]
 tags: 
   - haskell
   
-weight: 20
+weight: 2
 summary: "Essentials of creating lists and functions to manipulate them."
 ---
 

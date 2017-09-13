@@ -3,7 +3,7 @@ title: "1. Intro"
 date: 2017-09-09T15:34:07-05:00
 tags: ["haskell"]
 categories: [ "ap-cs"]
-weight: 10
+weight: 1
 ---
 
 A high-level overview of the Haskell language and why its features are good.

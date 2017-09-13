@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/ch01/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/ch02/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/ch03/</loc>
+    <lastmod>2017-09-12T13:18:35-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch02/ch02-reading-guide/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
   </url>
@@ -13,23 +28,18 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/ap-cs/haskell/ch01/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/intermediate-cs/</loc>
-    <lastmod>2017-09-09T19:49:27-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/haskell/ch02/</loc>
+    <loc>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <lastmod>2017-09-12T15:57:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/</loc>
+    <lastmod>2017-09-09T19:49:27-05:00</lastmod>
   </url>
   
   <url>
@@ -53,11 +63,6 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/ap-cs/haskell/ghci-details/</loc>
-    <lastmod>2017-09-11T10:12:55-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://wy-cs.info/resources/</loc>
     <lastmod>2017-09-09T15:49:20-05:00</lastmod>
   </url>
@@ -68,6 +73,21 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/replit/</loc>
+    <lastmod>2017-09-13T09:08:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/daily/2017-09-12/</loc>
+    <lastmod>2017-09-12T14:38:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</loc>
+    <lastmod>2017-09-12T13:18:35-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch01/ch01-review/</loc>
     <lastmod>2017-09-11T14:13:38-05:00</lastmod>
   </url>
@@ -75,6 +95,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/daily/2017-09-11/</loc>
     <lastmod>2017-09-11T10:47:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/ghci-details/</loc>
+    <lastmod>2017-09-11T10:12:55-05:00</lastmod>
   </url>
   
   <url>
@@ -117,20 +142,20 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/tags/ap-cs/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://wy-cs.info/categories/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -142,19 +167,19 @@
   
   <url>
     <loc>http://wy-cs.info/tags/haskell/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://wy-cs.info/tags/homework/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <lastmod>2017-09-12T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://wy-cs.info/tags/hw/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <lastmod>2017-09-12T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

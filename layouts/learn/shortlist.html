@@ -12,7 +12,7 @@ Categories: {{ .Params.categories }} <br>
 
 {{ .Content }}
 
-	{{ range first 4 .Site.Pages }}
+	{{ range first 4 .Site.RegularPages }}
 	   <a href="{{ .URL }}">{{ .LinkTitle }}</a>
 	{{ end }}
 

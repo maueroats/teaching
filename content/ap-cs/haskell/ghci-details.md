@@ -1,7 +1,6 @@
 ---
-title: "Ghci Details"
+title: "Source Code Files (ghci)"
 date: 2017-09-11T10:12:55-05:00
-weight: 80
 tags:
   - haskell
 categories:
@@ -66,11 +65,4 @@ Omitting the `show` will produce an error message:
     • In the first argument of ‘putStrLn’, namely ‘w’
       In the expression: putStrLn w
       In an equation for ‘it’: it = putStrLn w
-
-##  Repl.it requires a main method
-
-The particular interpreter repl.it requires that you have a main method. 
-Write a simple one and then type your tests in the interactions pane.
-
-    main = do putStrLn "Loaded"
 

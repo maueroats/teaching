@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "WY Computer Science"
 theme = "docdock"
 publishDir = "docs"
+theme_variant = "docmo"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]

@@ -1,5 +1,26 @@
 [
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/",
+	"title": "1. Intro",
+	"tags": ["haskell"],
+	"description": "",
+	"content": "A high-level overview of the Haskell language and why its features are good. You should read it carefully and note what items you are unfamiliar with. Writing down your questions will help you remember what parts were difficult so that we can discuss them in class.\n Haskell Chapter 1 Reading Guide "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/",
+	"title": "2. Starting Out",
+	"tags": ["haskell"],
+	"description": "",
+	"content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | n\u0026lt;-[1..100], even n] Create a tuple: (5,12) Key to remember: head, tail, init, last, :, ++ Other list functions: maximum, minimum, sum, product, reverse  Resources  Reading guide Problem Set hw:a2 for chapter 2. (Also PDF.) "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/",
+	"title": "3. Types and Typeclasses",
+	"tags": ["haskell"],
+	"description": "",
+	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/ch02-reading-guide/",
 	"title": "Ch02 Reading Guide",
 	"tags": ["haskell", "reading-guide"],
@@ -14,11 +35,18 @@
 	"content": "AP Computer Science studies:\n Haskell - an introduction to pure functional programming Java - the language required for the AP test  Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/",
-	"title": "1. Intro",
-	"tags": ["haskell"],
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/",
+	"title": "Haskell CW 2",
+	"tags": ["haskell", "ap-cs"],
 	"description": "",
-	"content": "A high-level overview of the Haskell language and why its features are good. You should read it carefully and note what items you are unfamiliar with. Writing down your questions will help you remember what parts were difficult so that we can discuss them in class.\n Haskell Chapter 1 Reading Guide "
+	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/",
+	"title": "Haskell HW 2",
+	"tags": ["homework", "hw", "haskell", "ap-cs"],
+	"description": "",
+	"content": "Graph a function, is a pointon a line, get the numbers more than 100, break up a list, find the nearest point. Homework  Write the \u0026ldquo;grapher\u0026rdquo; function whose inputs are (i) a function f that takes in a number and puts out a number, (ii) a lower bound, and (iii) an upper bound. The grapher function should return a list of coordinates (x,y) where y=f(x) and x goes from the lower bound to the upper bound increasing by 1 each time.\n Write a function onLine that takes in a slope m, a y-intercept b, and a point (x0,y0) and gives back True if the point is on the line y=m*x+b and false otherwise.\n Write a function moreThan100 that takes in a list of numbers and puts out a list of numbers. The output is the same as the input with all of the numbers less than or equal to 100 removed.\n Break It Up. Given a list of numbers, create a list containing every sequence of four numbers in a row. Example:\nbreakItUp [5,10,20,3,8,9] = [ [5,10,20,3], [10,20,3,8], [20,3,8,9] ]  Target Practice. (Challenge) Given a point (x0,y0) and a list of ordered pairs, return the point in the list that is closest to the given point. (Hint: skip the square root when you compare distances, it will save you some Haskell difficulties.)\n  OMIT  Write a function addp that adds two ordered pairs.\n (Bonus) The function nextInDirection takes in start point (x0,y0), a direction (dx,dy), and a list of ordered pairs. The function returns the point in the list that is closest to the start point and can be reached by beginning at the start and going in the given direction.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/",
@@ -26,20 +54,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nFoundations (Chapters 1\u0026ndash;5)  Chapter 1  Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/",
-	"title": "2. Starting Out",
-	"tags": ["haskell"],
-	"description": "",
-	"content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | n\u0026lt;-[1..100], even n] Create a tuple: (5,12) Key to remember: head, tail, init, last, :, ++ Other list functions: maximum, minimum, sum, product, reverse  Resources  Reading guide Problem Set hw:a2 for chapter 2. (Also PDF.) "
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/",
-	"title": "Haskell HW 2",
-	"tags": ["homework", "hw", "haskell", "ap-cs"],
-	"description": "",
-	"content": "Problem set hw:a2 Class (One Day)  (Sum Square Difference)[https://projecteuler.net/problem=6] The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n (Multiples of 3 and 5)[https://projecteuler.net/problem=1] If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n (Smallest Multiple)[https://projecteuler.net/problem=5] 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n  Homework  Write the \u0026ldquo;grapher\u0026rdquo; function whose inputs are (i) a function f that takes in a number and puts out a number, (ii) a lower bound, and (iii) an upper bound. The grapher function should return a list of coordinates (x,y) where y=f(x) and x goes from the lower bound to the upper bound increasing by 1 each time.\n Write a function onLine that takes in a slope m, a y-intercept b, and a point (x0,y0) and gives back True if the point is on the line y=m*x+b and false otherwise.\n Write a function moreThan100 that takes in a list of numbers and puts out a list of numbers. The output is the same as the input with all of the numbers less than or equal to 100 removed.\n Break It Up. Given a list of numbers, create a list containing every sequence of four numbers in a row. Example:\nbreakItUp [5,10,20,3,8,9] = [ [5,10,20,3], [10,20,3,8], [20,3,8,9] ]  Target Practice. (Challenge) Given a point (x0,y0) and a list of ordered pairs, return the point in the list that is closest to the given point. (Hint: skip the square root when you compare distances, it will save you some Haskell difficulties.)\n  OMIT  Write a function addp that adds two ordered pairs.\n (Bonus) The function nextInDirection takes in start point (x0,y0), a direction (dx,dy), and a list of ordered pairs. The function returns the point in the list that is closest to the start point and can be reached by beginning at the start and going in the given direction.\n "
 },
 {
 	"uri": "http://wy-cs.info/resources/generic-cs-syllabus/",
@@ -70,13 +84,6 @@
 	"content": " The most common question people have is how grades are computed.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    We use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nExceptional circumstances Please contact your teacher if you have a very unusual circumstance (extended illness, international competition, etc.). Ordinary events causing you to miss a day or two of school are not in that category.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ghci-details/",
-	"title": "Ghci Details",
-	"tags": ["haskell"],
-	"description": "",
-	"content": "Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no let statements at the top level and no automatic printing of results. Interpreter vs file An interpreter is what the \u0026ldquo;interactions pane\u0026rdquo; is called. In DrRacket, the interactions pane is the one on the bottom. In repl.it, the interactions pane is on the right side. Interactions with an interpreter can not be saved. There is a command line interpeter in the Haskell Platform called ghci.\nA file is equivalent to the \u0026ldquo;definitions pane\u0026rdquo; in DrRacket. In repl.it, the left hand side of the window is a file. Files can be saved. You need to load (or \u0026ldquo;play\u0026rdquo;) a file to see the results.\nNo let statements needed to make variables or functions Writing a file is different than typing in an interpreter. The whole file is loaded and (usually) the main function is run. When defining functions and variables a file, the word let is not used and the results are not immediately printed. A file equivalent might be written:\nw = \u0026quot;Cat\u0026quot; wlen = length w main = do putStrLn (show wlen)  Typing in an interpreter, every statement gives an immediate result, so the following is similar code for comparison:\nPrelude\u0026gt; let w = \u0026quot;Cat\u0026quot; Prelude\u0026gt; length w 3  Output to screen when running a file Loading or running a file will not automatically cause results to print.\nUse the putStrLn function to output a string.\n w = \u0026quot;Cat\u0026quot; main = do putStrLn w  Printing items that are not strings requires the use of show to make the string that is printed.\nPrelude\u0026gt; let w = [\u0026quot;list\u0026quot;,\u0026quot;of\u0026quot;,\u0026quot;big words\u0026quot;] Prelude\u0026gt; putStrLn (show w) [\u0026quot;list\u0026quot;,\u0026quot;of\u0026quot;,\u0026quot;big words\u0026quot;]  Omitting the show will produce an error message:\nPrelude\u0026gt; putStrLn w \u0026lt;interactive\u0026gt;:7:10: error: • Couldn't match type ‘[Char]’ with ‘Char’ Expected type: String Actual type: [[Char]] • In the first argument of ‘putStrLn’, namely ‘w’ In the expression: putStrLn w In an equation for ‘it’: it = putStrLn w  Repl.it requires a main method The particular interpreter repl.it requires that you have a main method. Write a simple one and then type your tests in the interactions pane.\nmain = do putStrLn \u0026quot;Loaded\u0026quot; "
-},
-{
 	"uri": "http://wy-cs.info/resources/",
 	"title": "Resources",
 	"tags": [],
@@ -91,6 +98,27 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/replit/",
+	"title": "Repl.it",
+	"tags": ["haskell"],
+	"description": "",
+	"content": " Repl.it requires a main method The particular interpreter repl.it requires that you have a main method. Write a simple one and then type your tests in the interactions pane.\nmain = do putStrLn \u0026quot;Loaded\u0026quot;  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-12/",
+	"title": "2017-09-12",
+	"tags": ["haskell"],
+	"description": "",
+	"content": " Memorize how to write a basic main method:   main = do putStrLn \u0026quot;Loaded\u0026quot;   Use \u0026ldquo;\u0026ndash;\u0026rdquo; (two dashes) to comment to the end of the line. This is equivalent to Racket \u0026ldquo;;\u0026rdquo; (semicolon).\n Function name rules:\n Must begin with lowercase letter. Hyphens (-) are not allowed in names. Underscore (_) may be used instead.\n Traditionally camelCase is used for functions. (First letter lowercase, then uppercase each new word.)\n  We will learn about the $ sign soon, but it is a substitute for putting parentheses from somewhere to the end of the line. That means\n putStrLn ( show ( grapher f 0 10 ) )  could be written as\n putStrLn $ show $ grapher f 0 10   "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/",
+	"title": "Chapter 3 Reading Guide",
+	"tags": ["haskell", "reading-guide"],
+	"description": "",
+	"content": "We learn about types and typeclasses. You should use valid Haskell types in all of your answers. Unless needed, I stick with Int for the type for integers.\nBasics  How do you find the type of an expression (when using the interpreter)? What is the type of a string, written in correct Haskell type syntax? What is the type of the expression (5 == 5)? What is the type signature for a function that takes in an integer and puts out a string? What is the type signature for a function that takes in two integers and multiplies them? What is the type of (factorial 50) from the book? How is that different from an Int? Write the signature of a function prob3 that takes in a number and puts out a string. What is the correct way to write the type signature of a function prob4 that take single number and a list of numbers and puts out a list of numbers?\n Find out the difference between Float and Double. Summarize it here.\n How can you tell whether the text \u0026ldquo;string\u0026rdquo; in a program refers to a variable or a type?\n Write the type signature for:\n snd repeat init    Class Constraints  Where can you find a class constraint? What special symbol separate a class constraint from a function\u0026rsquo;s type? What is the best type to give the function:\n mystery a b = if ( a \u0026lt; b ) then \u0026quot;A small\u0026quot; else \u0026quot;A large\u0026quot;  What familiar typeclass indicates that something can be written in string form?\n  The Read Typeclass  What does being in the Read typeclass indicate? How can you convert the string \u0026ldquo;10230\u0026rdquo; to an integer?  Miscellaneous Typeclasses  What is the main use of the Enum typeclass? Aside from integers, give two other examples of things in the Enum typeclass. What typeclass tells you that something has a largest and smallest value? How would you find the smallest possible Int in Haskell?  Math  What is the difference between 5 and (5 :: Int)? Can you do this math?  3.2 * (5 :: Int) 5.63 * 20  What will happen when you use the following function? listBigSize aList = 3 * (length aList)  Integral vs Floating  The last function discussed in the chapter is the most important by far.\n Write its name and signature here. What is it used for?  Programming exercise: the quadratic formula. Write and test a function that takes in a,b, and c, and produces the larger root of ax^2+bx+c. (Assume there is at least one real root.)\n "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch01/ch01-review/",
 	"title": "Chapter 01 Review",
 	"tags": [],
@@ -103,6 +131,13 @@
 	"tags": ["haskell", "daily-notes"],
 	"description": "",
 	"content": "removeVowels word = [ letter | letter \u0026lt;- word, not (letter elem \u0026ldquo;aeiouAEIOU\u0026rdquo; )]\nwordLenPairs wordlist = [ (word, length word) | word \u0026lt;- wordlist ]\n"
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell/ghci-details/",
+	"title": "Source Code Files (ghci)",
+	"tags": ["haskell"],
+	"description": "",
+	"content": "Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no let statements at the top level and no automatic printing of results. Interpreter vs file An interpreter is what the \u0026ldquo;interactions pane\u0026rdquo; is called. In DrRacket, the interactions pane is the one on the bottom. In repl.it, the interactions pane is on the right side. Interactions with an interpreter can not be saved. There is a command line interpeter in the Haskell Platform called ghci.\nA file is equivalent to the \u0026ldquo;definitions pane\u0026rdquo; in DrRacket. In repl.it, the left hand side of the window is a file. Files can be saved. You need to load (or \u0026ldquo;play\u0026rdquo;) a file to see the results.\nNo let statements needed to make variables or functions Writing a file is different than typing in an interpreter. The whole file is loaded and (usually) the main function is run. When defining functions and variables a file, the word let is not used and the results are not immediately printed. A file equivalent might be written:\nw = \u0026quot;Cat\u0026quot; wlen = length w main = do putStrLn (show wlen)  Typing in an interpreter, every statement gives an immediate result, so the following is similar code for comparison:\nPrelude\u0026gt; let w = \u0026quot;Cat\u0026quot; Prelude\u0026gt; length w 3  Output to screen when running a file Loading or running a file will not automatically cause results to print.\nUse the putStrLn function to output a string.\n w = \u0026quot;Cat\u0026quot; main = do putStrLn w  Printing items that are not strings requires the use of show to make the string that is printed.\nPrelude\u0026gt; let w = [\u0026quot;list\u0026quot;,\u0026quot;of\u0026quot;,\u0026quot;big words\u0026quot;] Prelude\u0026gt; putStrLn (show w) [\u0026quot;list\u0026quot;,\u0026quot;of\u0026quot;,\u0026quot;big words\u0026quot;]  Omitting the show will produce an error message:\nPrelude\u0026gt; putStrLn w \u0026lt;interactive\u0026gt;:7:10: error: • Couldn't match type ‘[Char]’ with ‘Char’ Expected type: String Actual type: [[Char]] • In the first argument of ‘putStrLn’, namely ‘w’ In the expression: putStrLn w In an equation for ‘it’: it = putStrLn w "
 },
 {
 	"uri": "http://wy-cs.info/biography/",
@@ -123,7 +158,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Ch02 Reading Guide modified Sat 09-09 15:57  Haskell HW 2 modified Sat 09-09 15:57  Ghci Details modified Mon 09-11 10:12  Intermediate Computer Science Recent Changes    Chapter 01 Review modified Mon 09-11 14:13  "
+	"content": " AP Computer Science Recent Changes   Repl.it modified Wed 09-13 09:08  Haskell HW 2 modified Tue 09-12 15:57  2017-09-12 modified Tue 09-12 14:38  Chapter 3 Reading Guide modified Tue 09-12 13:18  3. Types and Typeclasses modified Tue 09-12 13:18  Source Code Files (ghci) modified Mon 09-11 10:12  Haskell Daily Notes modified Mon 09-11 10:03  2. Starting Out modified Sat 09-09 15:57  Intermediate Computer Science Recent Changes    Chapter 01 Review modified Mon 09-11 14:13  Chapter 1 modified Sun 09-10 01:23  Intermediate CS modified Sat 09-09 19:49  "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
@@ -137,7 +172,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Ghci Details  Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no let statements at the top level and no automatic printing of results.  Haskell Daily Notes  \n "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass). Chapter 3 Reading Guide  Haskell Daily Notes  \n Repl.it  \n Source Code Files (ghci)  Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no let statements at the top level and no automatic printing of results.  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -161,14 +196,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

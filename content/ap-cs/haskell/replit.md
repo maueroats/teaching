@@ -1,0 +1,15 @@
+---
+title: "Repl.it"
+date: 2017-09-13T09:08:09-05:00
+draft: false
+tags: 
+ - haskell
+---
+
+##  Repl.it requires a main method
+
+The particular interpreter repl.it requires that you have a main method. 
+Write a simple one and then type your tests in the interactions pane.
+
+    main = do putStrLn "Loaded"
+

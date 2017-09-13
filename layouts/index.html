@@ -18,7 +18,7 @@
 	</div>
 
 	{{ range $index, $page := $paginator.Pages }}
-	   {{ .Render "li" }}
+	{{ .Render "li" }}
 	{{ end }}
 
 	<div style="margin-bottom:2rem"></div>
