@@ -11,5 +11,15 @@
 	<atom:link href="http://wy-cs.info/ap-cs/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Haskell Calendar</title>
+      <link>http://wy-cs.info/ap-cs/haskell-calendar/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell-calendar/</guid>
+      <description>Daily calendar for Haskell unit.
+ </description>
+    </item>
+    
   </channel>
 </rss>

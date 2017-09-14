@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>2017-09-14 Indentation</title>
+      <link>http://wy-cs.info/ap-cs/haskell/daily/2017-09-13/</link>
+      <pubDate>Wed, 13 Sep 2017 20:38:45 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/daily/2017-09-13/</guid>
+      <description>Indentation is significant in Haskell. Haskell uses indentation to group pieces of code together. This is similar to Python, but there are &amp;ldquo;false cognates&amp;rdquo; - similar code that is indented differently in the two languages. In Racket, grouping is done only by parentheses.
+Indenting to the same level &amp;ldquo;All grouped expressions must be exactly aligned.&amp;rdquo;
+ Example 1a: good indentation
+if x `mod` 3 == 0 &amp;amp;&amp;amp; x `mod` 5 == 0 -- good.</description>
+    </item>
+    
+    <item>
       <title>2017-09-12</title>
       <link>http://wy-cs.info/ap-cs/haskell/daily/2017-09-12/</link>
       <pubDate>Tue, 12 Sep 2017 14:38:08 -0500</pubDate>

@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Source Code Files (ghci) :: WY Computer Science</title>
+    <title>Calendar :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/ghci-details/">
+  <body class="" data-url="/tags/calendar/">
     <nav id="sidebar" class="">
 
 
@@ -83,7 +83,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -94,7 +94,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -139,7 +139,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -150,7 +150,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -527,7 +527,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/ghci-details/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell/ghci-details/">
         <span>Source Code Files (ghci)</span> 
@@ -880,126 +880,124 @@
                 <span class="links">
                 
 
-
-
-
-
-
-
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > Source Code Files (ghci)
-
- 
-
- 
-
- 
+ Calendar
 
    
                 </span>
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#interpreter-vs-file">Interpreter vs file</a></li>
-<li><a href="#no-let-statements-needed-to-make-variables-or-functions">No let statements needed to make variables or functions</a></li>
-<li><a href="#output-to-screen-when-running-a-file">Output to screen when running a file</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
           </div>
         
         
-          <div id="tags">
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
-            
-          </div>
-        
         <div id="body-inner">
           
-            <h1>Source Code Files (ghci)</h1>
+            <h1>Calendar</h1>
           
 
 
 
 
-<p>Writing a file is different from typing in an interpreter like repl.it or ghci.
-</p>
-
-<p>The differences include no <code>let</code> statements at
-the top level and no automatic printing of results.</p>
-
-<h2 id="interpreter-vs-file">Interpreter vs file</h2>
-
-<p>An interpreter is what the &ldquo;interactions pane&rdquo; is called. In DrRacket, the interactions pane is the one on the bottom. In repl.it, the interactions pane is on the right side. Interactions with an interpreter can not be saved. There is a command line interpeter in the Haskell Platform called <code>ghci</code>.</p>
-
-<p>A file is equivalent to the &ldquo;definitions pane&rdquo; in DrRacket. In repl.it, the left hand side of the window is a file. Files can be saved. You need to load (or &ldquo;play&rdquo;) a file to see the results.</p>
-
-<h2 id="no-let-statements-needed-to-make-variables-or-functions">No let statements needed to make variables or functions</h2>
-
-<p>Writing a file is different than typing in an interpreter.
-The whole file is loaded and (usually)
-the <code>main</code> function is run. When defining functions and variables a
-file, the word <code>let</code> is not used and the results are not immediately printed.
-A file equivalent might be written:</p>
-
-<pre><code>w = &quot;Cat&quot;
-wlen = length w
-main = do putStrLn (show wlen)
-</code></pre>
-
-<p>Typing in an interpreter, every statement gives an immediate result, so the following is similar code for comparison:</p>
-
-<pre><code>Prelude&gt; let w = &quot;Cat&quot;
-Prelude&gt; length w
-3
-</code></pre>
-
-<h2 id="output-to-screen-when-running-a-file">Output to screen when running a file</h2>
-
-<p>Loading or running a file will not automatically cause results to print.</p>
-
-<div class="notices info" ><p>Use the <code>putStrLn</code> function to output a string.</p>
-</div>
 
 
-<pre><code>w = &quot;Cat&quot;
-main = do
-    putStrLn w
-</code></pre>
 
-<p>Printing items that are not strings requires the use of <code>show</code> to make
-the string that is printed.</p>
-
-<pre><code>Prelude&gt; let w = [&quot;list&quot;,&quot;of&quot;,&quot;big words&quot;]
-Prelude&gt; putStrLn (show w)
-[&quot;list&quot;,&quot;of&quot;,&quot;big words&quot;]
-</code></pre>
-
-<p>Omitting the <code>show</code> will produce an error message:</p>
-
-<pre><code>Prelude&gt; putStrLn w
-&lt;interactive&gt;:7:10: error:
-• Couldn't match type ‘[Char]’ with ‘Char’
-  Expected type: String
-    Actual type: [[Char]]
-• In the first argument of ‘putStrLn’, namely ‘w’
-  In the expression: putStrLn w
-  In an equation for ‘it’: it = putStrLn w
-</code></pre>
 
 <footer class=" footline" >
 	
 </footer>
+
+
+
+	<ul>
+	
+	    <li><a href="/_header/"></a>
+	
+	    <li><a href="/ap-cs/haskell/ch01/">1. Intro</a>
+	
+	    <li><a href="/ap-cs/haskell/ch02/">2. Starting Out</a>
+	
+	    <li><a href="/ap-cs/haskell/daily/2017-09-11/">2017-09-11</a>
+	
+	    <li><a href="/ap-cs/haskell/daily/2017-09-12/">2017-09-12</a>
+	
+	    <li><a href="/ap-cs/haskell/daily/2017-09-13/">2017-09-14 Indentation</a>
+	
+	    <li><a href="/ap-cs/haskell/ch03/">3. Types and Typeclasses</a>
+	
+	    <li><a href="/ap-cs/">AP CS</a>
+	
+	    <li><a href="/resources/academic-integrity/">Academic Integrity</a>
+	
+	    <li><a href="/categories/ap-cs/">Ap Cs</a>
+	
+	    <li><a href="/tags/ap-cs/">Ap Cs</a>
+	
+	    <li><a href="/biography/">Biography</a>
+	
+	    <li><a href="/tags/calendar/">Calendar</a>
+	
+	    <li><a href="/categories/">Categories</a>
+	
+	    <li><a href="/ap-cs/haskell/ch01/ch01-reading-guide/">Ch01 Reading Guide</a>
+	
+	    <li><a href="/ap-cs/haskell/ch02/ch02-reading-guide/">Ch02 Reading Guide</a>
+	
+	    <li><a href="/intermediate-cs/ch01/ch01-review/">Chapter 01 Review</a>
+	
+	    <li><a href="/intermediate-cs/ch01/">Chapter 1</a>
+	
+	    <li><a href="/ap-cs/haskell/ch03/ch03-reading-guide-haskell/">Chapter 3 Reading Guide</a>
+	
+	    <li><a href="/tags/daily-notes/">Daily Notes</a>
+	
+	    <li><a href="/resources/grading-scale/">Grade Weights</a>
+	
+	    <li><a href="/ap-cs/haskell/">Haskell</a>
+	
+	    <li><a href="/tags/haskell/">Haskell</a>
+	
+	    <li><a href="/ap-cs/haskell/ch02/cw-a2/">Haskell CW 2</a>
+	
+	    <li><a href="/ap-cs/haskell-calendar/">Haskell Calendar</a>
+	
+	    <li><a href="/ap-cs/haskell/daily/">Haskell Daily Notes</a>
+	
+	    <li><a href="/ap-cs/haskell/ch02/hw-a2/">Haskell HW 2</a>
+	
+	    <li><a href="/tags/homework/">Homework</a>
+	
+	    <li><a href="/tags/hw/">Hw</a>
+	
+	    <li><a href="/intermediate-cs/">Intermediate CS</a>
+	
+	    <li><a href="/categories/intermediate-cs/">Intermediate Cs</a>
+	
+	    <li><a href="/">Mauer-Oats Classes</a>
+	
+	    <li><a href="/tags/reading-guide/">Reading Guide</a>
+	
+	    <li><a href="/ap-cs/haskell/replit/">Repl.it</a>
+	
+	    <li><a href="/resources/">Resources</a>
+	
+	    <li><a href="/ap-cs/haskell/ghci-details/">Source Code Files (ghci)</a>
+	
+	    <li><a href="/resources/apcs-syllabus--2017-2018/">Syllabus: AP CS</a>
+	
+	    <li><a href="/resources/generic-cs-syllabus/">Syllabus: All Courses</a>
+	
+	    <li><a href="/resources/intermediatecs-syllabus--2017-2018/">Syllabus: Intermediate</a>
+	
+	    <li><a href="/tags/">Tags</a>
+	
+	    <li><a href="/resources/ics-wescheme-note/">WeScheme</a>
+	
+	</ul>
+	<div style="margin-bottom:2rem"></div>
 
 
 
@@ -1038,6 +1036,8 @@ Prelude&gt; putStrLn (show w)
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -1053,9 +1053,6 @@ Prelude&gt; putStrLn (show w)
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1073,7 +1070,6 @@ Prelude&gt; putStrLn (show w)
             
                 
                     
-                    
                 
                 
 
@@ -1088,9 +1084,6 @@ Prelude&gt; putStrLn (show w)
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1300,7 +1293,6 @@ Prelude&gt; putStrLn (show w)
             
                 
                     
-                    
                 
                 
 
@@ -1322,9 +1314,6 @@ Prelude&gt; putStrLn (show w)
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1490,10 +1479,8 @@ Prelude&gt; putStrLn (show w)
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/replit/" title="Repl.it"> <i class="fa fa-chevron-left"></i></a>
         
-        
-            <a class="nav nav-next" href="/intermediate-cs/" title="Intermediate CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/" title="AP CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
