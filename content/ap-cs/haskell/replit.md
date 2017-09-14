@@ -5,6 +5,8 @@ draft: false
 tags: 
  - haskell
 ---
+A summary of any special problems that have arisen with `repl.it`.
+<!--more-->
 
 ##  Repl.it requires a main method
 

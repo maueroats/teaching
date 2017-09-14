@@ -8,9 +8,11 @@ categories:
 draft: false
 ---
 
-Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no `let` statements at
-the top level and no automatic printing of results.
+Writing a file is different from typing in an interpreter like repl.it or ghci. 
 <!--more-->
+
+The differences include no `let` statements at
+the top level and no automatic printing of results.
 
 ## Interpreter vs file
 
