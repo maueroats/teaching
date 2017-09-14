@@ -51,6 +51,16 @@ The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
     </item>
     
     <item>
+      <title>Chapter 3 Reading Guide</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</link>
+      <pubDate>Wed, 13 Sep 2017 13:18:35 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</guid>
+      <description>&lt;p&gt;We learn about types and typeclasses.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Haskell HW 2</title>
       <link>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/</link>
       <pubDate>Tue, 12 Sep 2017 15:57:47 -0500</pubDate>
@@ -59,6 +69,16 @@ The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
       <description>&lt;p&gt;Graph a function, is a pointon a line, get the numbers more than 100, break up a list,
 find the nearest point.
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Haskell HW 2 Solutions</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/</link>
+      <pubDate>Thu, 14 Sep 2017 10:18:00 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/</guid>
+      <description>breakItUp plan:
+ replicate input list (length - 3) times zip with count helper function knows count and list, drop &amp;amp; take  breaklicator xs = replicate (length xs - 3) xs numberIt ys = zip ys [0..] breakItUp&#39; :: ([a],Int) -&amp;gt; [a] breakItUp&#39; (xs,y) = take 4 $ drop y xs breakItUp_v2 :: [a] -&amp;gt; [[a]] breakItUp_v2 xs = [ breakItUp&#39; w | w &amp;lt;- numberIt $ breaklicator xs ]  Fancy solution for breakItUp, shows power of Haskell pattern matching (Chapter 4):</description>
     </item>
     
     <item>
@@ -104,34 +124,14 @@ Class participation will be four points per day.</description>
     </item>
     
     <item>
-      <title>2017-09-14 Indentation</title>
-      <link>http://wy-cs.info/ap-cs/haskell/daily/2017-09-13/</link>
-      <pubDate>Wed, 13 Sep 2017 20:38:45 -0500</pubDate>
+      <title>Chapter 3 Problem Set</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch03/ch03-hw1/</link>
+      <pubDate>Thu, 14 Sep 2017 10:00:00 -0500</pubDate>
       
-      <guid>http://wy-cs.info/ap-cs/haskell/daily/2017-09-13/</guid>
-      <description>Indentation is significant in Haskell. Haskell uses indentation to group pieces of code together. This is similar to Python, but there are &amp;ldquo;false cognates&amp;rdquo; - similar code that is indented differently in the two languages. In Racket, grouping is done only by parentheses.
-Indenting to the same level &amp;ldquo;All grouped expressions must be exactly aligned.&amp;rdquo;
- Example 1a: good indentation
-if x `mod` 3 == 0 &amp;amp;&amp;amp; x `mod` 5 == 0 -- good.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 3 Reading Guide</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</link>
-      <pubDate>Wed, 13 Sep 2017 13:18:35 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</guid>
-      <description>&lt;p&gt;We learn about types and typeclasses.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Repl.it</title>
-      <link>http://wy-cs.info/ap-cs/haskell/replit/</link>
-      <pubDate>Wed, 13 Sep 2017 09:08:09 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/replit/</guid>
-      <description>&lt;p&gt;A summary of any special problems that have arisen with &lt;code&gt;repl.it&lt;/code&gt;.
+      <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-hw1/</guid>
+      <description>&lt;p&gt;The essentials of the Types and Typeclasses chapter are: writing type
+signatures for functions, reading string inputs with the &lt;code&gt;Read&lt;/code&gt; class,
+and dealing with Integral to Fractional conversions when they are needed.
 &lt;/p&gt;</description>
     </item>
     

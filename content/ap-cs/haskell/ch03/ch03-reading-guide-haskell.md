@@ -5,6 +5,7 @@ tags:
  - haskell
  - reading-guide
 draft: false
+weight: 20
 ---
 
 We learn about types and typeclasses. 

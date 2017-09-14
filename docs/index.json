@@ -18,7 +18,7 @@
 	"title": "3. Types and Typeclasses",
 	"tags": ["haskell"],
 	"description": "",
-	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide  "
+	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/ch02-reading-guide/",
@@ -42,6 +42,13 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/",
+	"title": "Chapter 3 Reading Guide",
+	"tags": ["haskell", "reading-guide"],
+	"description": "",
+	"content": "We learn about types and typeclasses. You should use valid Haskell types in all of your answers. Unless needed, I stick with Int for the type for integers.\nBasics  How do you find the type of an expression (when using the interpreter)? What is the type of a string, written in correct Haskell type syntax? What is the type of the expression (5 == 5)? What is the type signature for a function that takes in an integer and puts out a string? What is the type signature for a function that takes in two integers and multiplies them? What is the type of (factorial 50) from the book? How is that different from an Int? Write the signature of a function prob3 that takes in a number and puts out a string. What is the correct way to write the type signature of a function prob4 that take single number and a list of numbers and puts out a list of numbers?\n Find out the difference between Float and Double. Summarize it here.\n How can you tell whether the text \u0026ldquo;string\u0026rdquo; in a program refers to a variable or a type?\n Write the type signature for:\n snd repeat init    Class Constraints  Where can you find a class constraint? What special symbol separate a class constraint from a function\u0026rsquo;s type? What is the best type to give the function:\n mystery a b = if ( a \u0026lt; b ) then \u0026quot;A small\u0026quot; else \u0026quot;A large\u0026quot;  What familiar typeclass indicates that something can be written in string form?\n  The Read Typeclass  What does being in the Read typeclass indicate? How can you convert the string \u0026ldquo;10230\u0026rdquo; to an integer?  Miscellaneous Typeclasses  What is the main use of the Enum typeclass? Aside from integers, give two other examples of things in the Enum typeclass. What typeclass tells you that something has a largest and smallest value? How would you find the smallest possible Int in Haskell?  Math  What is the difference between 5 and (5 :: Int)? Can you do this math?  3.2 * (5 :: Int) 5.63 * 20  What will happen when you use the following function? listBigSize aList = 3 * (length aList)  Integral vs Floating  The last function discussed in the chapter is the most important by far.\n Write its name and signature here. What is it used for?  Programming exercise: the quadratic formula. Write and test a function that takes in a,b, and c, and produces the larger root of ax^2+bx+c. (Assume there is at least one real root.)\n "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/",
 	"title": "Haskell HW 2",
 	"tags": ["homework", "hw", "haskell", "ap-cs"],
@@ -54,6 +61,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nFoundations (Chapters 1\u0026ndash;5)  Chapter 1  Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
+	"title": "Haskell HW 2 Solutions",
+	"tags": ["homework", "solutions", "haskell", "ap-cs"],
+	"description": "",
+	"content": "breakItUp plan:\n replicate input list (length - 3) times zip with count helper function knows count and list, drop \u0026amp; take  breaklicator xs = replicate (length xs - 3) xs numberIt ys = zip ys [0..] breakItUp' :: ([a],Int) -\u0026gt; [a] breakItUp' (xs,y) = take 4 $ drop y xs breakItUp_v2 :: [a] -\u0026gt; [[a]] breakItUp_v2 xs = [ breakItUp' w | w \u0026lt;- numberIt $ breaklicator xs ]  Fancy solution for breakItUp, shows power of Haskell pattern matching (Chapter 4):\nbreakItUp :: [a] -\u0026gt; [[a]] breakItUp [a,b,c,d] = [[a,b,c,d]] breakItUp (x:xs) = (x:take 3 xs) : breakItUp xs  targetPractice plan:\n distance formula helper function that remembers the closest point so far recursively go through list of all points  -- you should just write (Int,Int) everywhere I write Pt type Pt = (Int,Int) dist :: Pt -\u0026gt; Pt -\u0026gt; Int dist (x0,y0) (x1,y1) = (x1-x0)^2 + (y1-y0)^2 targetPractice :: Pt -\u0026gt; [Pt] -\u0026gt; Pt targetPractice pt ptList = targetPractice' pt ptList (head ptList) targetPractice' :: Pt -\u0026gt; [Pt] -\u0026gt; Pt -\u0026gt; Pt targetPractice' pt [] closestSoFar = closestSoFar targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest where newClosest = if (dist x pt) \u0026lt; (dist closestSoFar pt) then x else closestSoFar  "
 },
 {
 	"uri": "http://wy-cs.info/resources/generic-cs-syllabus/",
@@ -98,18 +112,18 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-hw1/",
+	"title": "Chapter 3 Problem Set",
+	"tags": ["haskell", "homework"],
+	"description": "",
+	"content": "The essentials of the Types and Typeclasses chapter are: writing type signatures for functions, reading string inputs with the Read class, and dealing with Integral to Fractional conversions when they are needed.  FYI: You can explicitly say what type a number is by using two colons and the type you want - for example, (5::Int) or (5::Float). Find the types of each of the operations below, or say why it does not work:\n (/) (5::Int) / (10::Int) (5::Int) / (10::Float) (5::Float) / (10::Float)   Write a function to find the average of numbers in a list. This should bring up the difficulty that you cannot divide an integer by an integer(!).\n Write a signature and function body for add10Word which reads an integer from a string and adds 10 to it.\n Write a signature and function body for numberInSentence, which takes a number and returns the sentence \u0026ldquo;I have ___ eggs.\u0026rdquo;\n Write a signature and function body for doubleDebt which takes a String and puts out a Float. The String contains a floating point number that represents how much money someone owes, and the Float output is twice that much.\n Write a signature and function body for sampleStdDev that finds the sample standard deviation of a list of (the right kind of) numbers. Check the type signature for square root (sqrt)!\n Possibly Challenging: Write the function median to find the median of a list of items that can be ordered. (Use the type Int, if you prefer.)\n "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-13/",
 	"title": "2017-09-14 Indentation",
 	"tags": ["haskell"],
 	"description": "",
 	"content": " Indentation is significant in Haskell. Haskell uses indentation to group pieces of code together. This is similar to Python, but there are \u0026ldquo;false cognates\u0026rdquo; - similar code that is indented differently in the two languages. In Racket, grouping is done only by parentheses.\nIndenting to the same level \u0026ldquo;All grouped expressions must be exactly aligned.\u0026rdquo;\n Example 1a: good indentation\nif x `mod` 3 == 0 \u0026amp;\u0026amp; x `mod` 5 == 0 -- good. aligned with top x. ...  Example 1a: bad indentation\nif x `mod` 3 == 0 \u0026amp;\u0026amp; x `mod` 5 == 0 -- wrong. not aligned with top x ...  Indenting further \u0026ldquo;Code which is part of some expression [must] be indented further than the beginning of that expression.\n Not enough indentation On one hand, this means that if you do not indent, you are not continuing a preceding expression. Example 2:\nif x `mod` 3 == 0 \u0026amp;\u0026amp; x `mod` 5 == 0 then -- wrong; needs to be indented further than the if x else -- wrong again 0  Too much indentation On the other hand, if you do indent, you may be continuing something you wrote previously.\nHow could this be an issue? If you write one function and then indent a later function, Haskell thinks you want the second function to be inside the first function (as in, a \u0026ldquo;sub-function\u0026rdquo;).\nExample:\nmain = do putStrLn $ helper 5 -- all this space does not change anything... -- answer x = 200 * x helper x = answer x + 1  Notice how answer is indented more than main? That makes the answer function live inside of main\u0026hellip; this will cause all sorts of problems, but the first one is that helper cannot see answer because helper cannot see anything inside of another function like main.\nThe source for all quotes in this article is the Haskell article on indentation. Other example issues came from observations in class.\n"
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/",
-	"title": "Chapter 3 Reading Guide",
-	"tags": ["haskell", "reading-guide"],
-	"description": "",
-	"content": "We learn about types and typeclasses. You should use valid Haskell types in all of your answers. Unless needed, I stick with Int for the type for integers.\nBasics  How do you find the type of an expression (when using the interpreter)? What is the type of a string, written in correct Haskell type syntax? What is the type of the expression (5 == 5)? What is the type signature for a function that takes in an integer and puts out a string? What is the type signature for a function that takes in two integers and multiplies them? What is the type of (factorial 50) from the book? How is that different from an Int? Write the signature of a function prob3 that takes in a number and puts out a string. What is the correct way to write the type signature of a function prob4 that take single number and a list of numbers and puts out a list of numbers?\n Find out the difference between Float and Double. Summarize it here.\n How can you tell whether the text \u0026ldquo;string\u0026rdquo; in a program refers to a variable or a type?\n Write the type signature for:\n snd repeat init    Class Constraints  Where can you find a class constraint? What special symbol separate a class constraint from a function\u0026rsquo;s type? What is the best type to give the function:\n mystery a b = if ( a \u0026lt; b ) then \u0026quot;A small\u0026quot; else \u0026quot;A large\u0026quot;  What familiar typeclass indicates that something can be written in string form?\n  The Read Typeclass  What does being in the Read typeclass indicate? How can you convert the string \u0026ldquo;10230\u0026rdquo; to an integer?  Miscellaneous Typeclasses  What is the main use of the Enum typeclass? Aside from integers, give two other examples of things in the Enum typeclass. What typeclass tells you that something has a largest and smallest value? How would you find the smallest possible Int in Haskell?  Math  What is the difference between 5 and (5 :: Int)? Can you do this math?  3.2 * (5 :: Int) 5.63 * 20  What will happen when you use the following function? listBigSize aList = 3 * (length aList)  Integral vs Floating  The last function discussed in the chapter is the most important by far.\n Write its name and signature here. What is it used for?  Programming exercise: the quadratic formula. Write and test a function that takes in a,b, and c, and produces the larger root of ax^2+bx+c. (Assume there is at least one real root.)\n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/replit/",
@@ -172,7 +186,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   2017-09-14 Indentation modified Wed 09-13 20:38  Chapter 3 Reading Guide modified Wed 09-13 13:18  Repl.it modified Wed 09-13 09:08  Haskell Calendar modified Wed 09-13 00:00  Haskell HW 2 modified Tue 09-12 15:57  2017-09-12 modified Tue 09-12 14:38  3. Types and Typeclasses modified Tue 09-12 13:18  Source Code Files (ghci) modified Mon 09-11 10:12  Intermediate Computer Science Recent Changes    Chapter 01 Review modified Mon 09-11 14:13  Chapter 1 modified Sun 09-10 01:23  Intermediate CS modified Sat 09-09 19:49  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Haskell HW 2 Solutions modified Thu 09-14 10:18  Chapter 3 Problem Set modified Thu 09-14 10:00  2017-09-14 Indentation modified Wed 09-13 20:38  Chapter 3 Reading Guide modified Wed 09-13 13:18  Repl.it modified Wed 09-13 09:08  Haskell Calendar modified Wed 09-13 00:00  Haskell HW 2 modified Tue 09-12 15:57  2017-09-12 modified Tue 09-12 14:38  Intermediate Computer Science Recent Changes    Chapter 01 Review modified Mon 09-11 14:13  Chapter 1 modified Sun 09-10 01:23  Intermediate CS modified Sat 09-09 19:49  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
@@ -210,14 +224,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
@@ -275,6 +289,13 @@
 {
 	"uri": "http://wy-cs.info/tags/reading-guide/",
 	"title": "Reading Guide",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wy-cs.info/tags/solutions/",
+	"title": "Solutions",
 	"tags": [],
 	"description": "",
 	"content": ""

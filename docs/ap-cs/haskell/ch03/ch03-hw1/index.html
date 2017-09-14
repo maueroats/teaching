@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Biography :: WY Computer Science</title>
+    <title>Chapter 3 Problem Set :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/biography/">
+  <body class="" data-url="/ap-cs/haskell/ch03/ch03-hw1/">
     <nav id="sidebar" class="">
 
 
@@ -83,7 +83,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -94,7 +94,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -139,7 +139,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -150,7 +150,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -361,7 +361,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch03/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -372,7 +372,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -415,7 +415,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/ch03/ch03-hw1/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/haskell/ch03/ch03-hw1/">
         <span>Chapter 3 Problem Set</span> 
@@ -920,71 +920,98 @@
                 <span class="links">
                 
 
- Biography
+
+
+
+
+
+
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch03/'>3. Types and Typeclasses</a> > Chapter 3 Problem Set
+
+ 
+
+ 
+
+ 
+
+ 
 
    
                 </span>
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#courses">Courses</a></li>
-<li><a href="#clubs">Clubs</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
           </div>
         
         
+          <div id="tags">
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/homework">homework</a>
+            
+          </div>
+        
         <div id="body-inner">
           
-            <h1>Biography</h1>
+            <h1>Chapter 3 Problem Set</h1>
           
 
 
 
 
+<p>The essentials of the Types and Typeclasses chapter are: writing type
+signatures for functions, reading string inputs with the <code>Read</code> class,
+and dealing with Integral to Fractional conversions when they are needed.
+</p>
 
-
-<p>Dr. Mauer-Oats has been at Whitney Young for more than five years. He
-holds a Ph.D. in Mathematics from the <a href="http://www.math.uiuc.edu">University of Illinois at
-Urbana-Champaign</a>.</p>
-
-<h2 id="courses">Courses</h2>
-
-<p>Courses taught in 2017-2018:</p>
-
-<ul>
-<li><a href="/ap-cs/">AP Computer Science</a></li>
-<li><a href="/intermediate-cs/">Intermediate Computer Science</a></li>
-</ul>
-
-<p>Courses taught in prior years at Whitney Young:</p>
+<ol>
+<li><p>FYI: You can explicitly say what type a number is by using two
+colons and the type you want - for example, (5::Int) or
+(5::Float). Find the types of each of the operations below, or say
+why it does not work:</p>
 
 <ul>
-<li>Exploring Computer Science</li>
-<li>Precalculus Honors</li>
-<li>Algebra 2 with Trigonometry</li>
-</ul>
+<li>(/)</li>
+<li>(5::Int) / (10::Int)</li>
+<li>(5::Int) / (10::Float)</li>
+<li>(5::Float) / (10::Float)
+<br /></li>
+</ul></li>
 
-<h2 id="clubs">Clubs</h2>
+<li><p>Write a function to find the average of numbers in a list. This
+should bring up the difficulty that you cannot divide an integer by an integer(!).</p></li>
 
-<p>Clubs sponsored in 2017-2018:</p>
+<li><p>Write a signature and function body for <code>add10Word</code> which reads an
+integer from a string and adds 10 to it.</p></li>
 
-<ul>
-<li>Aerospace club - qualified for the TARC National Fly-off in 2017.</li>
-<li>Robotics club (FTC) - Rockwell Innovation Award in 2017.</li>
-<li>Coding Club - Competition computer programming.</li>
-<li>Math team (assistant coach).</li>
-<li>Girls Who Code (assistant mentor).</li>
-</ul>
+<li><p>Write a signature and function body for <code>numberInSentence</code>, which
+takes a number and returns the sentence &ldquo;I have ___ eggs.&rdquo;</p></li>
 
+<li><p>Write a signature and function body for <code>doubleDebt</code> which takes a
+String and puts out a Float. The String contains a floating point
+number that represents how much money someone owes, and the Float output
+is twice that much.</p></li>
+
+<li><p>Write a signature and function body for <code>sampleStdDev</code> that finds
+the <a href="https://en.wikipedia.org/wiki/Standard_deviation">sample standard deviation</a> of a list of
+(the right kind of) numbers. Check the type signature for square
+root (<a href="http://hoogle.haskell.org/?hoogle=sqrt&amp;scope=set%3Ahaskell-platform"><code>sqrt</code></a>)!</p></li>
+
+<li><p><em>Possibly Challenging</em>: Write the function <code>median</code> to find the
+median of a list of items that can be ordered. (Use the type <code>Int</code>, if
+you prefer.)</p></li>
+</ol>
 
 <footer class=" footline" >
 	
@@ -1027,8 +1054,6 @@ Urbana-Champaign</a>.</p>
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1044,6 +1069,9 @@ Urbana-Champaign</a>.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1061,6 +1089,7 @@ Urbana-Champaign</a>.</p>
             
                 
                     
+                    
                 
                 
 
@@ -1076,37 +1105,8 @@ Urbana-Champaign</a>.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1128,254 +1128,6 @@ Urbana-Champaign</a>.</p>
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1460,6 +1212,294 @@ Urbana-Champaign</a>.</p>
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1502,8 +1542,10 @@ Urbana-Champaign</a>.</p>
 
 
         
+            <a class="nav nav-prev" href="/ap-cs/haskell/ch03/ch03-reading-guide-haskell/" title="Chapter 3 Reading Guide"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/ap-cs/" title="AP CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/ap-cs/haskell/daily/" title="Haskell Daily Notes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

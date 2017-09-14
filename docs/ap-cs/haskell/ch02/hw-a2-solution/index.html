@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Biography :: WY Computer Science</title>
+    <title>Haskell HW 2 Solutions :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/biography/">
+  <body class="" data-url="/ap-cs/haskell/ch02/hw-a2-solution/">
     <nav id="sidebar" class="">
 
 
@@ -83,7 +83,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -94,7 +94,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -139,7 +139,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -150,7 +150,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -238,7 +238,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch02/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -249,7 +249,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -332,7 +332,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/ch02/hw-a2-solution/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/haskell/ch02/hw-a2-solution/">
         <span>Haskell HW 2 Solutions</span> 
@@ -920,70 +920,108 @@
                 <span class="links">
                 
 
- Biography
+
+
+
+
+
+
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch02/'>2. Starting Out</a> > Haskell HW 2 Solutions
+
+ 
+
+ 
+
+ 
+
+ 
 
    
                 </span>
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#courses">Courses</a></li>
-<li><a href="#clubs">Clubs</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
           </div>
         
         
+          <div id="tags">
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/homework">homework</a>
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/solutions">solutions</a>
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/ap-cs">ap-cs</a>
+            
+          </div>
+        
         <div id="body-inner">
           
-            <h1>Biography</h1>
+            <h1>Haskell HW 2 Solutions</h1>
           
 
 
 
 
-
-
-<p>Dr. Mauer-Oats has been at Whitney Young for more than five years. He
-holds a Ph.D. in Mathematics from the <a href="http://www.math.uiuc.edu">University of Illinois at
-Urbana-Champaign</a>.</p>
-
-<h2 id="courses">Courses</h2>
-
-<p>Courses taught in 2017-2018:</p>
+<p><code>breakItUp</code> plan:</p>
 
 <ul>
-<li><a href="/ap-cs/">AP Computer Science</a></li>
-<li><a href="/intermediate-cs/">Intermediate Computer Science</a></li>
+<li>replicate input list (length - 3) times</li>
+<li>zip with count</li>
+<li>helper function knows count and list, drop &amp; take</li>
 </ul>
 
-<p>Courses taught in prior years at Whitney Young:</p>
+<pre><code class="language-haskell">breaklicator xs = replicate (length xs - 3) xs
+numberIt ys = zip ys [0..]
+              
+breakItUp' :: ([a],Int) -&gt; [a]
+breakItUp' (xs,y) = take 4 $ drop y xs
+
+breakItUp_v2 :: [a] -&gt; [[a]]
+breakItUp_v2 xs = [ breakItUp' w | w &lt;- numberIt $ breaklicator xs ]
+</code></pre>
+
+<p>Fancy solution for <code>breakItUp</code>, shows power of Haskell pattern matching (Chapter 4):</p>
+
+<pre><code class="language-haskell">breakItUp :: [a] -&gt; [[a]]
+breakItUp [a,b,c,d] = [[a,b,c,d]]
+breakItUp (x:xs) = (x:take 3 xs) : breakItUp xs
+</code></pre>
+
+<p>targetPractice plan:</p>
 
 <ul>
-<li>Exploring Computer Science</li>
-<li>Precalculus Honors</li>
-<li>Algebra 2 with Trigonometry</li>
+<li>distance formula</li>
+<li>helper function that remembers the closest point so far</li>
+<li>recursively go through list of all points</li>
 </ul>
 
-<h2 id="clubs">Clubs</h2>
+<pre><code class="language-haskell">-- you should just write (Int,Int) everywhere I write Pt
+type Pt = (Int,Int)
 
-<p>Clubs sponsored in 2017-2018:</p>
+dist :: Pt -&gt; Pt -&gt; Int
+dist (x0,y0) (x1,y1) = (x1-x0)^2 + (y1-y0)^2
 
-<ul>
-<li>Aerospace club - qualified for the TARC National Fly-off in 2017.</li>
-<li>Robotics club (FTC) - Rockwell Innovation Award in 2017.</li>
-<li>Coding Club - Competition computer programming.</li>
-<li>Math team (assistant coach).</li>
-<li>Girls Who Code (assistant mentor).</li>
-</ul>
+targetPractice ::  Pt -&gt; [Pt] -&gt; Pt
+targetPractice pt ptList = targetPractice' pt ptList (head ptList)
+
+targetPractice' :: Pt -&gt; [Pt] -&gt; Pt -&gt; Pt 
+targetPractice' pt [] closestSoFar = closestSoFar
+targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest 
+    where newClosest = if (dist x pt) &lt; (dist closestSoFar pt) 
+	                    then x else closestSoFar
+</code></pre>
 
 
 <footer class=" footline" >
@@ -1027,8 +1065,6 @@ Urbana-Champaign</a>.</p>
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1044,6 +1080,9 @@ Urbana-Champaign</a>.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1061,6 +1100,7 @@ Urbana-Champaign</a>.</p>
             
                 
                     
+                    
                 
                 
 
@@ -1076,37 +1116,8 @@ Urbana-Champaign</a>.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1132,10 +1143,30 @@ Urbana-Champaign</a>.</p>
             
         
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1147,54 +1178,6 @@ Urbana-Champaign</a>.</p>
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -1228,26 +1211,11 @@ Urbana-Champaign</a>.</p>
             
         
                     
-            
-        
-                    
                         
             
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1259,6 +1227,25 @@ Urbana-Champaign</a>.</p>
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
                         
             
@@ -1308,6 +1295,70 @@ Urbana-Champaign</a>.</p>
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1395,22 +1446,6 @@ Urbana-Champaign</a>.</p>
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1492,6 +1527,22 @@ Urbana-Champaign</a>.</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1502,8 +1553,10 @@ Urbana-Champaign</a>.</p>
 
 
         
+            <a class="nav nav-prev" href="/ap-cs/haskell/ch02/hw-a2/" title="Haskell HW 2"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/ap-cs/" title="AP CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/ap-cs/haskell/ch03/" title="3. Types and Typeclasses" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
