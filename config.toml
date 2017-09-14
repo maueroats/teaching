@@ -3,10 +3,12 @@ languageCode = "en-us"
 title = "WY Computer Science"
 theme = "docdock"
 publishDir = "docs"
-theme_variant = "docmo"
+themeVariant = "docmo"
+rssLimit = 10
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+section = [ "HTML", "RSS" ]
 
 [[menu.shortcuts]]
 pre = "<h3>Other</h3>"

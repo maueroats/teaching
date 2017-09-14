@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2. Starting Out on WY Computer Science</title>
+    <link>http://wy-cs.info/ap-cs/haskell/ch02/</link>
+    <description>Recent content in 2. Starting Out on WY Computer Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Sep 2017 15:57:47 -0500</lastBuildDate>
+    
+	<atom:link href="http://wy-cs.info/ap-cs/haskell/ch02/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ch02 Reading Guide</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch02/ch02-reading-guide/</link>
+      <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch02/ch02-reading-guide/</guid>
+      <description>Haskell Starting Out Questions A. Sections 2.1&amp;ndash;2.3  There is an annoyance with negative numbers that is mentioned.
+ What is the correct way to write five times negative three in Haskell? What is a wrong way to do the same thing?  Logical operations are basic building blocks of programs. How do you write:
+ and or not equals not equals  Haskell follows mostly the normal order of operations from mathematics.</description>
+    </item>
+    
+    <item>
+      <title>Haskell CW 2</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</link>
+      <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</guid>
+      <description>&lt;h2 id=&#34;class-work-for-2-1-2-3&#34;&gt;Class work for 2.1&amp;ndash;2.3&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://projecteuler.net/problem=6&#34;&gt;Sum Square Difference&lt;/a&gt;
+The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1^2 + 2^2 + ... + 10^2 = 385
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The square of the sum of the first ten natural numbers is,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(1 + 2 + ... + 10)^2 = 55^2 = 3025
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.&lt;/p&gt;
+
+&lt;p&gt;Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Haskell HW 2</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/</link>
+      <pubDate>Tue, 12 Sep 2017 15:57:47 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/</guid>
+      <description>&lt;p&gt;Graph a function, is a pointon a line, get the numbers more than 100, break up a list,
+find the nearest point.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,6 +1,6 @@
 ---
 title: "Chapter 3 Reading Guide"
-date: 2017-09-12T13:18:35-05:00
+date: 2017-09-13T13:18:35-05:00
 tags:
  - haskell
  - reading-guide

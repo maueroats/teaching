@@ -104,6 +104,16 @@ Class participation will be four points per day.</description>
     </item>
     
     <item>
+      <title>Chapter 3 Reading Guide</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</link>
+      <pubDate>Wed, 13 Sep 2017 13:18:35 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</guid>
+      <description>&lt;p&gt;We learn about types and typeclasses.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Repl.it</title>
       <link>http://wy-cs.info/ap-cs/haskell/replit/</link>
       <pubDate>Wed, 13 Sep 2017 09:08:09 -0500</pubDate>
@@ -123,104 +133,6 @@ main = do putStrLn &amp;quot;Loaded&amp;quot;  </description>
  Function name rules:
  Must begin with lowercase letter. Hyphens (-) are not allowed in names. Underscore (_) may be used instead.
  Traditionally camelCase is used for functions. (First letter lowercase, then uppercase each new word.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 3 Reading Guide</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</link>
-      <pubDate>Tue, 12 Sep 2017 13:18:35 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</guid>
-      <description>&lt;p&gt;We learn about types and typeclasses.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 01 Review</title>
-      <link>http://wy-cs.info/intermediate-cs/ch01/ch01-review/</link>
-      <pubDate>Mon, 11 Sep 2017 14:13:38 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/intermediate-cs/ch01/ch01-review/</guid>
-      <description>&lt;p&gt;Two images of designs to practice making in Racket.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2017-09-11</title>
-      <link>http://wy-cs.info/ap-cs/haskell/daily/2017-09-11/</link>
-      <pubDate>Mon, 11 Sep 2017 10:47:02 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/daily/2017-09-11/</guid>
-      <description>removeVowels word = [ letter | letter &amp;lt;- word, not (letter elem &amp;ldquo;aeiouAEIOU&amp;rdquo; )]
-wordLenPairs wordlist = [ (word, length word) | word &amp;lt;- wordlist ]</description>
-    </item>
-    
-    <item>
-      <title>Source Code Files (ghci)</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ghci-details/</link>
-      <pubDate>Mon, 11 Sep 2017 10:12:55 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ghci-details/</guid>
-      <description>&lt;p&gt;Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no &lt;code&gt;let&lt;/code&gt; statements at
-the top level and no automatic printing of results.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Biography</title>
-      <link>http://wy-cs.info/biography/</link>
-      <pubDate>Sun, 10 Sep 2017 16:59:58 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/biography/</guid>
-      <description>Dr. Mauer-Oats has been at Whitney Young for more than five years. He holds a Ph.D. in Mathematics from the University of Illinois at Urbana-Champaign.
-Courses Courses taught in 2017-2018:
- AP Computer Science Intermediate Computer Science  Courses taught in prior years at Whitney Young:
- Exploring Computer Science Precalculus Honors Algebra 2 with Trigonometry  Clubs Clubs sponsored in 2017-2018:
- Aerospace club - qualified for the TARC National Fly-off in 2017.</description>
-    </item>
-    
-    <item>
-      <title>Academic Integrity</title>
-      <link>http://wy-cs.info/resources/academic-integrity/</link>
-      <pubDate>Sat, 09 Sep 2017 16:51:48 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/resources/academic-integrity/</guid>
-      <description>Being honest and honorable regarding one’s academic integrity is essential in all of your classes.
-Students are expected to adhere to the following honor code regarding all of their work in this class.
- “I have neither given nor received improper aid on this test/project.”   “Improper aid” includes, but is not limited to:
- copying another student’s work allowing another student to copy your work sharing the problems given on a test to a student who has not taken the test copying work from any online or electronic resource without citation chatting or texting with another student during a test in which computer use is allowed  On a project (not test), it is acceptable to give suggestions to a student who knows less than you do.</description>
-    </item>
-    
-    <item>
-      <title>Ch01 Reading Guide</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/</link>
-      <pubDate>Sat, 09 Sep 2017 15:36:40 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/</guid>
-      <description>Haskell introduction reading questions  Haskell is supposed to be a purely functional language. Unpack that:
- What does pure mean? What is the difference between functional and imperative? (The book is not so clear on this point. What do you think it says, in your own words?)  Haskell is lazy. What does this mean?
- Haskell is statically typed. This could be unpacked, too.
- What does typed mean?</description>
-    </item>
-    
-    <item>
-      <title>WeScheme</title>
-      <link>http://wy-cs.info/resources/ics-wescheme-note/</link>
-      <pubDate>Sat, 09 Sep 2017 07:00:30 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/resources/ics-wescheme-note/</guid>
-      <description> Special notes for WeScheme users You can use WeScheme if you cannot install DrRacket. For example, if you have a Chromebook for your home computer. There are a few differences:
- Omit the (require picturing-programs) line. Instead of copy and pasting in a picture, you need to copy the link for the image and use bitmap/url like this: (bitmap/url &amp;quot;https://www.what-dog.net/Images/faces2/main004.jpg&amp;quot;)  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://wy-cs.info/_header/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://wy-cs.info/_header/</guid>
-      <description>WY Computer Science</description>
     </item>
     
   </channel>

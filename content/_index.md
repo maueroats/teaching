@@ -11,3 +11,8 @@ date: 2017-09-09T17:00:30-05:00
 
 {{% recent-changes "intermediate-cs" %}}
 
+## Site RSS Feed
+
+The site feed only includes both Intermediate and AP CS combined (for now).
+
+{{% rss %}}

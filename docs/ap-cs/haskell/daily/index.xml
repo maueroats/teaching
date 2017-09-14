@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haskell Daily Notes on WY Computer Science</title>
+    <link>http://wy-cs.info/ap-cs/haskell/daily/</link>
+    <description>Recent content in Haskell Daily Notes on WY Computer Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Sep 2017 10:03:46 -0500</lastBuildDate>
+    
+	<atom:link href="http://wy-cs.info/ap-cs/haskell/daily/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2017-09-12</title>
+      <link>http://wy-cs.info/ap-cs/haskell/daily/2017-09-12/</link>
+      <pubDate>Tue, 12 Sep 2017 14:38:08 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/daily/2017-09-12/</guid>
+      <description>Memorize how to write a basic main method:   main = do putStrLn &amp;quot;Loaded&amp;quot;   Use &amp;ldquo;&amp;ndash;&amp;rdquo; (two dashes) to comment to the end of the line. This is equivalent to Racket &amp;ldquo;;&amp;rdquo; (semicolon).
+ Function name rules:
+ Must begin with lowercase letter. Hyphens (-) are not allowed in names. Underscore (_) may be used instead.
+ Traditionally camelCase is used for functions. (First letter lowercase, then uppercase each new word.</description>
+    </item>
+    
+    <item>
+      <title>2017-09-11</title>
+      <link>http://wy-cs.info/ap-cs/haskell/daily/2017-09-11/</link>
+      <pubDate>Mon, 11 Sep 2017 10:47:02 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/daily/2017-09-11/</guid>
+      <description>removeVowels word = [ letter | letter &amp;lt;- word, not (letter elem &amp;ldquo;aeiouAEIOU&amp;rdquo; )]
+wordLenPairs wordlist = [ (word, length word) | word &amp;lt;- wordlist ]</description>
+    </item>
+    
+  </channel>
+</rss>
