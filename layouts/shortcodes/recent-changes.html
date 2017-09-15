@@ -3,7 +3,7 @@
 
 {{ $match := where $.Site.Pages "Type" $wanted }}
 <ul>
-  {{ $ordered := sort $match "Date" "desc" }}
+  {{ $ordered := sort $match "Lastmod" "desc" }}
   {{ range first 8 $ordered }}
   <li> <a href="{{.RelPermalink}}">{{ .LinkTitle }}</a> modified {{ .Lastmod.Format "Mon 01-02 15:04" }}
   {{ end }}

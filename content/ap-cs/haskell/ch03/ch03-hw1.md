@@ -1,6 +1,7 @@
 ---
 title: Chapter 3 Problem Set
 date: 2017-09-14T10:00:00-05:00
+lastmod: 2017-09-15T14:53:00-05:00
 tags:
  - haskell
  - homework
@@ -19,9 +20,9 @@ and dealing with Integral to Fractional conversions when they are needed.
 
     * (/)
     * (5::Int) / (10::Int)
-	* (5::Int) / (10::Float)
-	* (5::Float) / (10::Float)
-	
+    * (5::Int) / (10::Float)
+    * (5::Float) / (10::Float)
+    
 
 2. Write a function to find the average of numbers in a list. This
    should bring up the difficulty that you cannot divide an integer by an integer(!).
@@ -30,7 +31,7 @@ and dealing with Integral to Fractional conversions when they are needed.
    integer from a string and adds 10 to it.
 
 4. Write a signature and function body for `numberInSentence`, which
-   takes a number and returns the sentence "I have ___ eggs."
+   takes a number and returns the sentence "I have ___ pounds of flour."
 
 5. Write a signature and function body for `doubleDebt` which takes a
    String and puts out a Float. The String contains a floating point
@@ -45,5 +46,11 @@ and dealing with Integral to Fractional conversions when they are needed.
 
 10. _Possibly Challenging_: Write the function `median` to find the
 median of a list of items that can be ordered. (Use the type `Int`, if
-you prefer.)
+you prefer.) Assume the list is sorted.
 
+We will learn how to sort a list later, but it goes like this:
+
+```haskell
+    import Data.List
+    result = sort xs
+```
