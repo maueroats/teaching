@@ -990,18 +990,26 @@ why it does not work:</p>
 </ul></li>
 
 <li><p>Write a function to find the average of numbers in a list. This
-should bring up the difficulty that you cannot divide an integer by an integer(!).</p></li>
+should bring up the difficulty that you cannot divide an integer by an integer(!).</p>
+
+<p>Examples: <code>avg [10,20]</code> should give <code>15</code> or <code>15.0</code>, and <code>avg [3.5, 4.5]</code> should give <code>4.0</code>.</p></li>
 
 <li><p>Write a signature and function body for <code>add10Word</code> which reads an
-integer from a string and adds 10 to it.</p></li>
+integer from a string and adds 10 to it.</p>
+
+<p>Example: <code>add10Word &quot;15&quot;</code> should produce <code>25</code>.</p></li>
 
 <li><p>Write a signature and function body for <code>numberInSentence</code>, which
-takes a number and returns the sentence &ldquo;I have ___ eggs.&rdquo;</p></li>
+takes a number and returns the sentence &ldquo;I have ___ pounds of flour.&rdquo;</p>
+
+<p>Example: <code>numberInSentence 5.5</code> reports &ldquo;I have 5.5 pounds of flour.&rdquo;</p></li>
 
 <li><p>Write a signature and function body for <code>doubleDebt</code> which takes a
 String and puts out a Float. The String contains a floating point
 number that represents how much money someone owes, and the Float output
-is twice that much.</p></li>
+is twice that much.</p>
+
+<p>Example: <code>doubleDebt &quot;50.10&quot;</code> produces <code>100.20</code>.</p></li>
 
 <li><p>Write a signature and function body for <code>sampleStdDev</code> that finds
 the <a href="https://en.wikipedia.org/wiki/Standard_deviation">sample standard deviation</a> of a list of
@@ -1010,8 +1018,14 @@ root (<a href="http://hoogle.haskell.org/?hoogle=sqrt&amp;scope=set%3Ahaskell-pl
 
 <li><p><em>Possibly Challenging</em>: Write the function <code>median</code> to find the
 median of a list of items that can be ordered. (Use the type <code>Int</code>, if
-you prefer.)</p></li>
+you prefer.) Assume the list is sorted.</p></li>
 </ol>
+
+<p>We will learn how to sort a list later, but it goes like this:</p>
+
+<pre><code class="language-haskell">    import Data.List
+    result = sort xs
+</code></pre>
 
 <footer class=" footline" >
 	
