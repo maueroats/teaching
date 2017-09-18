@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Haskell Daily Notes :: WY Computer Science</title>
+    <title>2017-09-18 :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,15 +29,12 @@
     
 
     
-<link href="http://wy-cs.info/ap-cs/haskell/daily/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
-<link href="http://wy-cs.info/ap-cs/haskell/daily/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
-
 
 <link href="/css/prism.css" rel="stylesheet">
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/daily/">
+  <body class="" data-url="/ap-cs/haskell/daily/2017-09-18/">
     <nav id="sidebar" class="">
 
 
@@ -511,7 +508,7 @@
     
     <li data-nav-id="/ap-cs/haskell/daily/" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/ap-cs/haskell/daily/">
@@ -544,7 +541,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/haskell/daily/2017-09-18/">
         <span>2017-09-18</span> 
@@ -1015,7 +1012,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > Haskell Daily Notes
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/daily/'>Haskell Daily Notes</a> > 2017-09-18
+
+ 
 
  
 
@@ -1039,167 +1041,41 @@
             
               <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
             
-              <a class="label label-default" href="http://wy-cs.info/tags/daily-notes">daily-notes</a>
-            
           </div>
         
         <div id="body-inner">
           
-            <h1>Haskell Daily Notes</h1>
+            <h1>2017-09-18</h1>
           
 
 
 
 
+<p>We discussed problem 7 from the homework. You should finish it based on the discussion.</p>
 
+<p>Mentioned from Chapter 5: <code>type</code> to make short ways to say types. Examples:</p>
 
+<pre><code class="language-haskell">    type Pt = (Int,Int)
+    type Ship = [Pt]
+    type Shots = [Pt]
+</code></pre>
+
+<p>We wrote the function <code>is_sunk</code> for battleship.</p>
+
+<p>Functions we discussed:</p>
+
+<ul>
+<li>[<code>&amp;&amp;</code>]: Join two Boolean values with logical and.</li>
+<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:and"><code>and</code></a>: Join a list of Boolean values with logical and.</li>
+<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:any"><code>all</code></a>: Apply a tester function and then join all of the values together with &ldquo;and&rdquo;.</li>
+</ul>
+
+<p>All of these functions have counterparts for logical or; they are: <code>||</code>, <code>or</code>, <code>any</code>.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
-
-	
-
-	<div class="extra-pagination inner">
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
-	</div>
-
-	
-	<article class="post ap-cs">
-    <header class="post-header">
-        <h3 class="post-title"><a href="/ap-cs/haskell/daily/2017-09-18/">2017-09-18</a></h3>
-    </header>
-    <section class="post-excerpt">
-      <p> 
-Battleship and homework review.
-
-
-	  <a class="read-more" href="/ap-cs/haskell/daily/2017-09-18/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	<article class="post ap-cs">
-    <header class="post-header">
-        <h3 class="post-title"><a href="/ap-cs/haskell/daily/2017-09-13/">2017-09-14 Indentation</a></h3>
-    </header>
-    <section class="post-excerpt">
-      <p> 
-Indentation matters. A lot.
-
-
-	  <a class="read-more" href="/ap-cs/haskell/daily/2017-09-13/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	<article class="post ap-cs">
-    <header class="post-header">
-        <h3 class="post-title"><a href="/ap-cs/haskell/daily/2017-09-12/">2017-09-12</a></h3>
-    </header>
-    <section class="post-excerpt">
-      <p> 
-Technical details that came up while doing Chapter 2 Homework.
-
-
-	  <a class="read-more" href="/ap-cs/haskell/daily/2017-09-12/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	<article class="post ap-cs">
-    <header class="post-header">
-        <h3 class="post-title"><a href="/ap-cs/haskell/daily/2017-09-11/">2017-09-11</a></h3>
-    </header>
-    <section class="post-excerpt">
-      <p> 
-worked examples - removeVowels and wordLenPairs
-
-
-	  <a class="read-more" href="/ap-cs/haskell/daily/2017-09-11/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-                <a class="label label-default" href="http://wy-cs.infotags/daily-notes/">daily-notes</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-
-	<div style="margin-bottom:2rem"></div>
-
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
 
 
 
@@ -1498,6 +1374,23 @@ worked examples - removeVowels and wordLenPairs
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -1544,22 +1437,6 @@ worked examples - removeVowels and wordLenPairs
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1663,22 +1540,6 @@ worked examples - removeVowels and wordLenPairs
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1760,6 +1621,22 @@ worked examples - removeVowels and wordLenPairs
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1770,10 +1647,10 @@ worked examples - removeVowels and wordLenPairs
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/ch04/ch04-reading-guide/" title="Chapter 4 Reading Guide"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/daily/" title="Haskell Daily Notes"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/daily/2017-09-18/" title="2017-09-18" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/daily/2017-09-13/" title="2017-09-14 Indentation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

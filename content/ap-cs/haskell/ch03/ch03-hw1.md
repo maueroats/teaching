@@ -27,30 +27,32 @@ and dealing with Integral to Fractional conversions when they are needed.
 2. Write a function to find the average of numbers in a list. This
    should bring up the difficulty that you cannot divide an integer by an integer(!).
 
-	Examples: `avg [10,20]` should give `15` or `15.0`, and `avg [3.5, 4.5]` should give `4.0`. 
+    Examples: `avg [10,20]` should give `15` or `15.0`, and `avg [3.5, 4.5]` should give `4.0`. 
 
 3. Write a signature and function body for `add10Word` which reads an
    integer from a string and adds 10 to it.
 
-	Example: `add10Word "15"` should produce `25`.
+    Example: `add10Word "15"` should produce `25`.
 
 4. Write a signature and function body for `numberInSentence`, which
    takes a number and returns the sentence "I have ___ pounds of flour."
 
-	Example: `numberInSentence 5.5` reports "I have 5.5 pounds of flour."
+    Example: `numberInSentence 5.5` reports "I have 5.5 pounds of flour."
 
 5. Write a signature and function body for `doubleDebt` which takes a
    String and puts out a Float. The String contains a floating point
    number that represents how much money someone owes, and the Float output
    is twice that much.
 
-	Example: `doubleDebt "50.10"` produces `100.20`.
+    Example: `doubleDebt "50.10"` produces `100.20`.
 
 6. Write a signature and function body for `sampleStdDev` that finds
    the [sample standard deviation]
    (https://en.wikipedia.org/wiki/Standard_deviation) of a list of
    (the right kind of) numbers. Check the type signature for square
-   root ([`sqrt`](http://hoogle.haskell.org/?hoogle=sqrt&scope=set%3Ahaskell-platform))!
+   root ([`sqrt`](http://hoogle.haskell.org/?hoogle=sqrt&scope=set%3Ahaskell-platform))! 
+
+    Please do not skip this problem with the excuse that you do not know how to find standard deviation. Look it up or ask someone who knows! 
 
 10. _Possibly Challenging_: Write the function `median` to find the
 median of a list of items that can be ordered. (Use the type `Int`, if

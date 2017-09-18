@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/ch04/</loc>
+    <lastmod>2017-09-18T13:22:05-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch02/ch02-reading-guide/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
   </url>
@@ -80,6 +85,16 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/daily/</loc>
     <lastmod>2017-09-11T10:03:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/daily/2017-09-18/</loc>
+    <lastmod>2017-09-18T13:02:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/ch04/ch04-reading-guide/</loc>
+    <lastmod>2017-09-17T20:47:05-05:00</lastmod>
   </url>
   
   <url>
@@ -162,14 +177,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

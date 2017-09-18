@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Haskell Daily Notes :: WY Computer Science</title>
+    <title>Chapter 4 Reading Guide :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,15 +29,12 @@
     
 
     
-<link href="http://wy-cs.info/ap-cs/haskell/daily/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
-<link href="http://wy-cs.info/ap-cs/haskell/daily/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
-
 
 <link href="/css/prism.css" rel="stylesheet">
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/daily/">
+  <body class="" data-url="/ap-cs/haskell/ch04/ch04-reading-guide/">
     <nav id="sidebar" class="">
 
 
@@ -447,7 +444,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -458,7 +455,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -481,7 +478,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/ch04/ch04-reading-guide/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/haskell/ch04/ch04-reading-guide/">
         <span>Chapter 4 Reading Guide</span> 
@@ -510,8 +507,8 @@
   
     
     <li data-nav-id="/ap-cs/haskell/daily/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/ap-cs/haskell/daily/">
@@ -521,7 +518,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1015,7 +1012,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > Haskell Daily Notes
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch04/'>4. Syntax in Functions</a> > Chapter 4 Reading Guide
+
+ 
 
  
 
@@ -1028,7 +1030,15 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#sections-4-1-4-3">Sections 4.1&ndash;4.3</a></li>
+<li><a href="#sections-4-4-4-5">Sections 4.4&ndash;4.5</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -1039,13 +1049,11 @@
             
               <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
             
-              <a class="label label-default" href="http://wy-cs.info/tags/daily-notes">daily-notes</a>
-            
           </div>
         
         <div id="body-inner">
           
-            <h1>Haskell Daily Notes</h1>
+            <h1>Chapter 4 Reading Guide</h1>
           
 
 
@@ -1053,153 +1061,76 @@
 
 
 
+<h2 id="sections-4-1-4-3">Sections 4.1&ndash;4.3</h2>
+
+<ol>
+<li><p>A pattern starts out with &ldquo;dog&rdquo;,&ldquo;cat&rdquo;, &ldquo;cat dog&rdquo;, &ldquo;cat dog cat&rdquo;, &ldquo;cat dog cat cat dog&rdquo;, and so on - each new string is created by appending the previous two with a space in between them. Write a function that takes in the number of the word in the sequence and returns the word, starting with 1 is &ldquo;dog&rdquo;.</p></li>
+
+<li><p>Write the function <code>scalar_mult :: (Num a) =&gt; a -&gt; (a,a) -&gt; (a,a)</code> that multiplies each number in a coordinate pair by the same number, so <code>scalar_mult 5 (1,3) == (5,15)</code>.</p></li>
+
+<li><p>Write a signature and function body for <code>pair_prod</code> that takes in a list of ordered pairs of numbers and returns a list of the products of the pairs, so <code>pair_prod [(3,5), (10,0), (7,3)]===[15,0,21]</code>.</p></li>
+
+<li><p>What pattern do you use to recursively process the first item in a list and the rest of the list?</p></li>
+
+<li><p>What Haskell function is used to indicate that the user is asking the program to do something impossible?</p></li>
+
+<li><p>Are parentheses necessary when writing a function using the pattern from the previous question? Explain why or why not.</p></li>
+
+<li><p>A function <code>two_of</code> takes in a list of showable numbers and puts out a String that says &ldquo;__ is item 2 of __&ldquo;. For example <code>two_of [10,25,50] == &quot;25 is item 2 of [10,25,50]&quot;. Wri
+te the signature and function definition for</code>two_of`.</p></li>
+
+<li><p>Write the type signature and function definition for <code>double_double</code> which takes in any list and produces the same kind of list. The <code>double_double</code> function makes a list where the first term of the input appears twice, follwed by the whole input twice, so</p></li>
+</ol>
+
+<pre><code class="language-haskell">    double_double [5,10,15] == [5,5,5,10,15,5,10,15]
+</code></pre>
+
+<ol>
+<li><p>Write a function that takes in a number and returns &ldquo;small&rdquo; if the number is below 10, &ldquo;medium&rdquo; if the number is between 10 and 20 (inclusive), and &ldquo;large&rdquo; if the number is larger than 20. Do not use the <code>if...then...else</code> construct.</p></li>
+
+<li><p>Define the function <code>burgers_of</code> using an infix definition so that</p></li>
+</ol>
+
+<pre><code class="language-haskell">    3 `burgers_of` &quot;beef&quot; == &quot;Three hamburgers&quot;
+	5 `burgers_of` &quot;soy&quot;  == &quot;Five tofu burgers&quot;
+    any other set of inputs gives &quot;No thanks, not hungry&quot;
+</code></pre>
+
+<ol>
+<li>Repating yourself.
+
+<ol>
+<li>What code segment do you see repeated in the version of the <code>bmi</code> function that includes the bmi calculating code?</li>
+<li>What experience does the author compare writing to writing this code?</li>
+<li>What does the book suggest that you should do instead of this coding style?</li>
+</ol></li>
+</ol>
+
+<h2 id="sections-4-4-4-5">Sections 4.4&ndash;4.5</h2>
+
+<ol>
+<li><p><em>Visibility</em>. What is the difference between where you can see terms from <code>let</code> bindings and <code>where</code> bindings?</p></li>
+
+<li><p>The book says <code>let</code> bindings are expressions. What does this mean? Even if you don&rsquo;t know, at least give one consequence of that fact.</p></li>
+
+<li><p>List five different ways to use <code>let</code> bindings:</p></li>
+
+<li><p>You want to define two different variables in one let binding. Give two ways you can separate those definitions.</p></li>
+</ol>
+
+<!-- 15. Write a function that takes in a string and puts out a string
+"localhost" should produce "127.0.0.1"
+"(anything).cps.k12.il.us" should produce "wyoung.org"
+-->
+
+<ol>
+<li>Are patterns in function definitions and the &ldquo;case&rdquo; statement interchangeable? Give one way they are and one way they are not.</li>
+</ol>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
-
-	
-
-	<div class="extra-pagination inner">
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
-	</div>
-
-	
-	<article class="post ap-cs">
-    <header class="post-header">
-        <h3 class="post-title"><a href="/ap-cs/haskell/daily/2017-09-18/">2017-09-18</a></h3>
-    </header>
-    <section class="post-excerpt">
-      <p> 
-Battleship and homework review.
-
-
-	  <a class="read-more" href="/ap-cs/haskell/daily/2017-09-18/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	<article class="post ap-cs">
-    <header class="post-header">
-        <h3 class="post-title"><a href="/ap-cs/haskell/daily/2017-09-13/">2017-09-14 Indentation</a></h3>
-    </header>
-    <section class="post-excerpt">
-      <p> 
-Indentation matters. A lot.
-
-
-	  <a class="read-more" href="/ap-cs/haskell/daily/2017-09-13/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	<article class="post ap-cs">
-    <header class="post-header">
-        <h3 class="post-title"><a href="/ap-cs/haskell/daily/2017-09-12/">2017-09-12</a></h3>
-    </header>
-    <section class="post-excerpt">
-      <p> 
-Technical details that came up while doing Chapter 2 Homework.
-
-
-	  <a class="read-more" href="/ap-cs/haskell/daily/2017-09-12/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	<article class="post ap-cs">
-    <header class="post-header">
-        <h3 class="post-title"><a href="/ap-cs/haskell/daily/2017-09-11/">2017-09-11</a></h3>
-    </header>
-    <section class="post-excerpt">
-      <p> 
-worked examples - removeVowels and wordLenPairs
-
-
-	  <a class="read-more" href="/ap-cs/haskell/daily/2017-09-11/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-                <a class="label label-default" href="http://wy-cs.infotags/daily-notes/">daily-notes</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-
-	<div style="margin-bottom:2rem"></div>
-
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
 
 
 
@@ -1452,6 +1383,7 @@ worked examples - removeVowels and wordLenPairs
             
                 
                     
+                    
                 
                 
 
@@ -1464,6 +1396,7 @@ worked examples - removeVowels and wordLenPairs
             
             
                 
+                    
                     
                 
                 
@@ -1484,177 +1417,8 @@ worked examples - removeVowels and wordLenPairs
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1728,6 +1492,174 @@ worked examples - removeVowels and wordLenPairs
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1770,10 +1702,10 @@ worked examples - removeVowels and wordLenPairs
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/ch04/ch04-reading-guide/" title="Chapter 4 Reading Guide"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/ch04/" title="4. Syntax in Functions"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/daily/2017-09-18/" title="2017-09-18" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/daily/" title="Haskell Daily Notes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
