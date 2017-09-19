@@ -36,5 +36,5 @@ draft: false
    often. Write a function to find the mode of a list of integers.
 ```haskell
      prob4 [1,1,1,2,2,2,2,2,3,3] == 2
-     prob4 [1,1,1,2,2,2] == 1 -- you any one of the modes is ok
+     prob4 [1,1,1,2,2,2] == 1 -- any one of the modes is ok
 ```
