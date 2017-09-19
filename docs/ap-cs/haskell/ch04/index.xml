@@ -21,5 +21,14 @@
  Write the function scalar_mult :: (Num a) =&amp;gt; a -&amp;gt; (a,a) -&amp;gt; (a,a) that multiplies each number in a coordinate pair by the same number, so scalar_mult 5 (1,3) == (5,15).</description>
     </item>
     
+    <item>
+      <title>Chapter 4 Summary</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch04/ch04-summary/</link>
+      <pubDate>Tue, 19 Sep 2017 14:06:42 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch04/ch04-summary/</guid>
+      <description> patterns  f [] = 0 f (x:xs) = x + f xs   guards  numword x | x &amp;lt; 0 = &amp;quot;Negative&amp;quot; | x == 0 = &amp;quot;Zero&amp;quot; | otherwise = &amp;quot;Positive&amp;quot;   where  h x = constant * x where constant = 100   let  yis65 x = let (parabola = 10 * x * x + 25) in parabola == 65   case  numit value = case (value) of 5 -&amp;gt; &amp;quot;Five&amp;quot; 4 -&amp;gt; &amp;quot;Four&amp;quot; _ -&amp;gt; &amp;quot;Something else&amp;quot;  </description>
+    </item>
+    
   </channel>
 </rss>

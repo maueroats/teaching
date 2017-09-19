@@ -5,7 +5,7 @@ tags:
  - haskell
 draft: false
 weight: 3
-shortsummary: Typeclasses abstract characteristics of types like String or Int.
+description: Typeclasses abstract characteristics of types like String or Int.
 ---
 Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. 
 <!--more-->

@@ -1,5 +1,5 @@
 ---
-title: "Ch03 Quiz"
+title: "Chapter 3 Quiz"
 date: 2017-09-19T08:59:37-05:00
 tags: 
  - quiz

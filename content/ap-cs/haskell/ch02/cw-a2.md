@@ -5,7 +5,7 @@ weight: 15
 tags: 
   - haskell
   - ap-cs
-shortsummary: Project Euler problems.
+description: Project Euler problems.
 ---
 
 ## Class work for 2.1--2.3

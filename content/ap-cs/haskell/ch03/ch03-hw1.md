@@ -6,6 +6,7 @@ tags:
  - haskell
  - homework
 draft: false
+weight: 30
 ---
 
 The essentials of the Types and Typeclasses chapter are: writing type

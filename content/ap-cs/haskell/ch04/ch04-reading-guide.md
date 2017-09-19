@@ -3,7 +3,10 @@ title: "Chapter 4 Reading Guide"
 date: 2017-09-17T20:47:05-05:00
 tags: 
  - haskell
+ - reading-guide
 draft: false
+weight: 10
+description: Questions to help you understand Chapter 4.
 ---
 
 ## Sections 4.1--4.3
@@ -24,21 +27,17 @@ draft: false
 te the signature and function definition for `two_of`.
 
 7. Write the type signature and function definition for `double_double` which takes in any list and produces the same kind of list. The `double_double` function makes a list where the first term of the input appears twice, follwed by the whole input twice, so 
-
 ```haskell
     double_double [5,10,15] == [5,5,5,10,15,5,10,15]
 ```
-
 8. Write a function that takes in a number and returns "small" if the number is below 10, "medium" if the number is between 10 and 20 (inclusive), and "large" if the number is larger than 20. Do not use the `if...then...else` construct.
 
 9. Define the function `burgers_of` using an infix definition so that
-
 ```haskell
     3 `burgers_of` "beef" == "Three hamburgers"
 	5 `burgers_of` "soy"  == "Five tofu burgers"
     any other set of inputs gives "No thanks, not hungry"
 ```
-
 10. Repating yourself.
     1. What code segment do you see repeated in the version of the `bmi` function that includes the bmi calculating code? 
 	2. What experience does the author compare writing to writing this code?

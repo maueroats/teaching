@@ -7,7 +7,7 @@ tags:
  - daily-notes
 type: daily
 layout: single
-description: "worked examples - removeVowels and wordLenPairs"
+shortsummary: "worked examples - removeVowels and wordLenPairs"
 ---
 
 removeVowels word = [ letter | letter <- word, not (letter `elem` "aeiouAEIOU" )]

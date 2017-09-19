@@ -5,7 +5,7 @@ categories:
  - intermediate-cs
 draft: false
 weight: 80
-shortsummary: The course calendar and assignment sheet links.
+description: The course calendar and assignment sheet links.
 ---
 The [assigment sheet](https://docs.google.com/spreadsheets/d/1p1JGIOWxwFkcFBZ01UxC-lOIkXn0ORUHfIt3aQVNTEU/edit?usp=sharing) goes with the calendar.
 <!--more-->
