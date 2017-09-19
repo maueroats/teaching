@@ -32,7 +32,7 @@
 	"title": "3. Types and Typeclasses",
 	"tags": ["haskell"],
 	"description": "",
-	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set  "
+	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Ch03 Quiz   Chapter 3 Problem Set  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/",
@@ -140,6 +140,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-quiz/",
+	"title": "Ch03 Quiz",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 3 Quiz\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-18/",
 	"title": "2017-09-18",
 	"tags": ["haskell"],
@@ -221,7 +228,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   4. Syntax in Functions modified Mon 09-18 13:22  2017-09-18 modified Mon 09-18 13:02  Chapter 4 Reading Guide modified Sun 09-17 20:47  Chapter 3 Problem Set modified Fri 09-15 14:53  Haskell HW 2 Solutions modified Thu 09-14 10:18  2017-09-14 Indentation modified Wed 09-13 20:38  Chapter 3 Reading Guide modified Wed 09-13 13:18  Repl.it modified Wed 09-13 09:08  Intermediate Computer Science Recent Changes    Calendar modified Mon 09-18 22:38  3. More Interesting Pictures modified Mon 09-18 22:07  Chapter 01 Review modified Mon 09-11 14:13  1. Introduction modified Sun 09-10 01:23  Intermediate CS modified Sat 09-09 19:49  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Ch03 Quiz modified Tue 09-19 08:59  4. Syntax in Functions modified Mon 09-18 13:22  2017-09-18 modified Mon 09-18 13:02  Chapter 4 Reading Guide modified Sun 09-17 20:47  Chapter 3 Problem Set modified Fri 09-15 14:53  Haskell HW 2 Solutions modified Thu 09-14 10:18  2017-09-14 Indentation modified Wed 09-13 20:38  Chapter 3 Reading Guide modified Wed 09-13 13:18  Intermediate Computer Science Recent Changes    Calendar modified Mon 09-18 22:38  3. More Interesting Pictures modified Mon 09-18 22:07  Chapter 01 Review modified Mon 09-11 14:13  1. Introduction modified Sun 09-10 01:23  Intermediate CS modified Sat 09-09 19:49  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
