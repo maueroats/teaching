@@ -553,86 +553,6 @@
           
         
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-09-18/">
-        <span>2017-09-18</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-09-13/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-09-13/">
-        <span>2017-09-14 Indentation</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-09-12/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-09-12/">
-        <span>2017-09-12</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-09-11/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-09-11/">
-        <span>2017-09-11</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -1104,6 +1024,14 @@
           </div>
         
         
+          <div id="tags">
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/quiz">quiz</a>
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
+            
+          </div>
+        
         <div id="body-inner">
           
             <h1>Ch03 Quiz</h1>
@@ -1123,13 +1051,24 @@
 </ol></li>
 
 <li><p>Write a function to extract an integer from one string and output
-a 4. The root mean square of a list of numbers is the square root of the
+a list containing the second string repeated that many times.</p>
+
+<pre><code class="language-haskell">prob2 &quot;5&quot; &quot;dog&quot; == [&quot;dog&quot;,&quot;dog&quot;,&quot;dog&quot;,&quot;dog&quot;,&quot;dog&quot;]
+</code></pre></li>
+
+<li><p>Given two strings containing floating point numbers, return the sum
+of those numbers.</p>
+
+<pre><code class="language-haskell">prob3 &quot;3.14&quot; &quot;2.81&quot; == 5.95
+</code></pre></li>
+
+<li><p>The root mean square of a list of numbers is the square root of the
 average of the squares of the numbers. Write a function to find the
 RMS of a list of floating point numbers.</p>
 
-<pre><code class="language-haskell">	 -- results are approximate
-	 prob5 [1, 10, 100] == 58.0259 
-	 prob5 [3.14, 2.81] == 2.979
+<pre><code class="language-haskell"> -- results are approximate
+ prob5 [1, 10, 100] == 58.0259 
+ prob5 [3.14, 2.81] == 2.979
 </code></pre></li>
 
 <li><p>The mode of a list of integers is the number that appears the most
