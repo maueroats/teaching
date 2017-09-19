@@ -28,9 +28,8 @@
       
       <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-quiz/</guid>
       <description>Write a good (technically correct) type signature for
- f(x) = x*(x+1) g(xs) = [ x/7 | x ← xs ] h(x) = &amp;ldquo;You told me &amp;ldquo;++(show x) k(x,y) = y*x – 5  Write a function to extract an integer from one string and output the second string repeated that many times.
- Given two strings containing floating point numbers, return the sum of those numbers.
- The mode of a list of integers is the number that appears the most often.</description>
+ f(x) = x*(x+1) g(xs) = [ x/7 | x ← xs ] h(x) = &amp;quot;You told me &amp;quot;++(show x) k(x,y) = y*x – 5  Write a function to extract an integer from one string and output a list containing the second string repeated that many times.
+prob2 &amp;quot;5&amp;quot; &amp;quot;dog&amp;quot; == [&amp;quot;dog&amp;quot;,&amp;quot;dog&amp;quot;,&amp;quot;dog&amp;quot;,&amp;quot;dog&amp;quot;,&amp;quot;dog&amp;quot;]  Given two strings containing floating point numbers, return the sum of those numbers.</description>
     </item>
     
     <item>

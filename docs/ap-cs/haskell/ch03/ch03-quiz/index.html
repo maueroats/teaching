@@ -1116,24 +1116,39 @@
 <li><p>Write a good (technically correct) type signature for</p>
 
 <ol>
-<li>f(x) = x*(x+1)</li>
-<li>g(xs) = [ x/7 | x ← xs ]</li>
-<li>h(x) = &ldquo;You told me &ldquo;++(show x)</li>
-<li>k(x,y) = y*x – 5</li>
+<li><code>f(x) = x*(x+1)</code></li>
+<li><code>g(xs) = [ x/7 | x ← xs ]</code></li>
+<li><code>h(x) = &quot;You told me &quot;++(show x)</code></li>
+<li><code>k(x,y) = y*x – 5</code></li>
 </ol></li>
 
 <li><p>Write a function to extract an integer from one string and output
-the second string repeated that many times.</p></li>
+a list containing the second string repeated that many times.</p>
+
+<pre><code class="language-haskell"> prob2 &quot;5&quot; &quot;dog&quot; == [&quot;dog&quot;,&quot;dog&quot;,&quot;dog&quot;,&quot;dog&quot;,&quot;dog&quot;]
+</code></pre></li>
 
 <li><p>Given two strings containing floating point numbers, return the sum
-of those numbers.</p></li>
+of those numbers.</p>
+
+<pre><code class="language-haskell">prob3 &quot;3.14&quot; &quot;2.81&quot; == 5.95
+</code></pre></li>
 
 <li><p>The mode of a list of integers is the number that appears the most
-often. Write a function to find the mode of a list of integers.</p></li>
+often. Write a function to find the mode of a list of integers.</p>
+
+<pre><code class="language-haskell">prob4 [1,1,1,2,2,2,2,2,3,3] == 2
+	prob4 [1,1,1,2,2,2] == 1 -- you any one of the modes is ok
+</code></pre></li>
 
 <li><p>The root mean square of a list of numbers is the square root of the
 average of the squares of the numbers. Write a function to find the
-RMS of a list of floating point numbers.</p></li>
+RMS of a list of floating point numbers.</p>
+
+<pre><code class="language-haskell">	 -- results are approximate
+	 prob5 [1, 10, 100] == 58.0259 
+	 prob5 [3.14, 2.81] == 2.979
+</code></pre></li>
 </ol>
 
 
