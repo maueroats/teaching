@@ -1,5 +1,12 @@
 [
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch01/",
+	"title": "1. Introduction",
+	"tags": [],
+	"description": "",
+	"content": "Learn the essentials of image manipulation: rotating, flipping, and combining images.  Chapter 01 Review  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/",
 	"title": "1. Intro",
 	"tags": ["haskell"],
@@ -12,6 +19,13 @@
 	"tags": ["haskell"],
 	"description": "",
 	"content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | n\u0026lt;-[1..100], even n] Create a tuple: (5,12) Key to remember: head, tail, init, last, :, ++ Other list functions: maximum, minimum, sum, product, reverse  Resources  Reading guide Problem Set hw:a2 for chapter 2. (Also PDF.) "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch03/",
+	"title": "3. More Interesting Pictures",
+	"tags": [],
+	"description": "",
+	"content": "Homework list:\n 3.a, pages 1-4. 3.b  See assignment sheet for more information.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/",
@@ -105,6 +119,13 @@
 	"content": " The most common question people have is how grades are computed.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    We use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nExceptional circumstances Please contact your teacher if you have a very unusual circumstance (extended illness, international competition, etc.). Ordinary events causing you to miss a day or two of school are not in that category.\n"
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/calendar/",
+	"title": "Calendar",
+	"tags": [],
+	"description": "",
+	"content": "The assigment sheet goes with the calendar. "
+},
+{
 	"uri": "http://wy-cs.info/resources/",
 	"title": "Resources",
 	"tags": [],
@@ -196,18 +217,11 @@
 	"content": " Dr. Mauer-Oats has been at Whitney Young for more than five years. He holds a Ph.D. in Mathematics from the University of Illinois at Urbana-Champaign.\nCourses Courses taught in 2017-2018:\n AP Computer Science Intermediate Computer Science  Courses taught in prior years at Whitney Young:\n Exploring Computer Science Precalculus Honors Algebra 2 with Trigonometry  Clubs Clubs sponsored in 2017-2018:\n Aerospace club - qualified for the TARC National Fly-off in 2017. Robotics club (FTC) - Rockwell Innovation Award in 2017. Coding Club - Competition computer programming. Math team (assistant coach). Girls Who Code (assistant mentor).  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch01/",
-	"title": "Chapter 1",
-	"tags": [],
-	"description": "",
-	"content": "Learn the essentials of image manipulation: rotating, flipping, and combining images.  Chapter 01 Review  "
-},
-{
 	"uri": "http://wy-cs.info/",
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   4. Syntax in Functions modified Mon 09-18 13:22  2017-09-18 modified Mon 09-18 13:02  Chapter 4 Reading Guide modified Sun 09-17 20:47  Chapter 3 Problem Set modified Fri 09-15 14:53  Haskell HW 2 Solutions modified Thu 09-14 10:18  2017-09-14 Indentation modified Wed 09-13 20:38  Chapter 3 Reading Guide modified Wed 09-13 13:18  Repl.it modified Wed 09-13 09:08  Intermediate Computer Science Recent Changes    Chapter 01 Review modified Mon 09-11 14:13  Chapter 1 modified Sun 09-10 01:23  Intermediate CS modified Sat 09-09 19:49  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   4. Syntax in Functions modified Mon 09-18 13:22  2017-09-18 modified Mon 09-18 13:02  Chapter 4 Reading Guide modified Sun 09-17 20:47  Chapter 3 Problem Set modified Fri 09-15 14:53  Haskell HW 2 Solutions modified Thu 09-14 10:18  2017-09-14 Indentation modified Wed 09-13 20:38  Chapter 3 Reading Guide modified Wed 09-13 13:18  Repl.it modified Wed 09-13 09:08  Intermediate Computer Science Recent Changes    Calendar modified Mon 09-18 22:38  3. More Interesting Pictures modified Mon 09-18 22:07  Chapter 01 Review modified Mon 09-11 14:13  1. Introduction modified Sun 09-10 01:23  Intermediate CS modified Sat 09-09 19:49  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
@@ -245,14 +259,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>4. Syntax in Functions :: WY Computer Science</title>
+    <title>Calendar :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,15 +29,12 @@
     
 
     
-<link href="http://wy-cs.info/ap-cs/haskell/ch04/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
-<link href="http://wy-cs.info/ap-cs/haskell/ch04/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
-
 
 <link href="/css/prism.css" rel="stylesheet">
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/ch04/">
+  <body class="" data-url="/intermediate-cs/calendar/">
     <nav id="sidebar" class="">
 
 
@@ -86,7 +83,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -97,7 +94,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -142,7 +139,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -153,7 +150,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -447,8 +444,8 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/ap-cs/haskell/ch04/">
@@ -458,7 +455,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -689,7 +686,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -700,7 +697,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -815,7 +812,7 @@
   
     
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/calendar/">
         <span>Calendar</span> 
@@ -1059,12 +1056,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > 4. Syntax in Functions
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > Calendar
 
  
 
@@ -1082,73 +1074,22 @@
           </div>
         
         
-          <div id="tags">
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
-            
-          </div>
-        
         <div id="body-inner">
           
-            <h1>4. Syntax in Functions</h1>
+            <h1>Calendar</h1>
           
 
 
 
 
-
-
-<p>Patterns, guards, where, let, and case.
+<p>The <a href="https://docs.google.com/spreadsheets/d/1p1JGIOWxwFkcFBZ01UxC-lOIkXn0ORUHfIt3aQVNTEU/edit?usp=sharing">assigment sheet</a> goes with the calendar.
 </p>
 
-<ul>
-<li>patterns</li>
-</ul>
-
-<pre><code class="language-haskell">    f [] = 0
-    f (x:xs) = x + f xs
-</code></pre>
-
-<ul>
-<li>guards</li>
-</ul>
-
-<pre><code class="language-haskell">    numword x 
-    | x &lt; 0     = &quot;Negative&quot;
-    | x == 0    = &quot;Zero&quot;
-    | otherwise = &quot;Positive&quot;
-</code></pre>
-
-<ul>
-<li>where</li>
-</ul>
-
-<pre><code class="language-haskell">    h x = constant * x
-       where constant = 100
-</code></pre>
-
-<ul>
-<li>let</li>
-</ul>
-
-<pre><code class="language-haskell">    yis65 x = let (parabola = 10 * x * x + 25) in parabola == 65
-</code></pre>
-
-<ul>
-<li>case</li>
-</ul>
-
-<pre><code class="language-haskell">    numit value = case (value) of 
-        5 -&gt; &quot;Five&quot;
-        4 -&gt; &quot;Four&quot;
-        _ -&gt; &quot;Something else&quot;
-</code></pre>
+<iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=fls2ggdhvego6cqkfaorjkaun0%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -1187,6 +1128,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -1202,9 +1145,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1222,7 +1162,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1237,9 +1176,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1401,7 +1337,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1414,9 +1349,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1555,6 +1487,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1570,37 +1503,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1609,9 +1513,6 @@
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -1645,10 +1546,14 @@
                     
 
                     
+            
+        
+                    
                         
             
             
                 
+                    
                     
                 
                 
@@ -1660,6 +1565,25 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
                         
             
@@ -1741,6 +1665,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1751,10 +1691,10 @@
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/ch03/ch03-hw1/" title="Chapter 3 Problem Set"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch03/" title="3. More Interesting Pictures"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/ch04/ch04-reading-guide/" title="Chapter 4 Reading Guide" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/resources/" title="Resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

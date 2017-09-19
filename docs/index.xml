@@ -124,16 +124,13 @@ Class participation will be four points per day.</description>
     </item>
     
     <item>
-      <title>2017-09-18</title>
-      <link>http://wy-cs.info/ap-cs/haskell/daily/2017-09-18/</link>
-      <pubDate>Mon, 18 Sep 2017 13:02:44 -0500</pubDate>
+      <title>Calendar</title>
+      <link>http://wy-cs.info/intermediate-cs/calendar/</link>
+      <pubDate>Mon, 18 Sep 2017 22:38:42 -0500</pubDate>
       
-      <guid>http://wy-cs.info/ap-cs/haskell/daily/2017-09-18/</guid>
-      <description>We discussed problem 7 from the homework. You should finish it based on the discussion.
-Mentioned from Chapter 5: type to make short ways to say types. Examples:
-type Pt = (Int,Int) type Ship = [Pt] type Shots = [Pt]  We wrote the function is_sunk for battleship.
-Functions we discussed:
- [&amp;amp;&amp;amp;]: Join two Boolean values with logical and. and: Join a list of Boolean values with logical and. all: Apply a tester function and then join all of the values together with &amp;ldquo;and&amp;rdquo;.</description>
+      <guid>http://wy-cs.info/intermediate-cs/calendar/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1p1JGIOWxwFkcFBZ01UxC-lOIkXn0ORUHfIt3aQVNTEU/edit?usp=sharing&#34;&gt;assigment sheet&lt;/a&gt; goes with the calendar.
+&lt;/p&gt;</description>
     </item>
     
   </channel>
