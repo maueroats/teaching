@@ -2,17 +2,17 @@
 title: "Chapter 3 Quiz"
 date: 2017-09-19T08:59:37-05:00
 tags: 
- - quiz
  - haskell
+ - quiz
 draft: false
 ---
 
 1. Write a good (technically correct) type signature for
 
     1. `f(x) = x*(x+1)`
-    2. `g(xs) = [ x/7 | x ← xs ]`
+    2. `g(xs) = [ x/7 | x <- xs ]`
     3. `h(x) = "You told me "++(show x)`
-    4. `k(x,y) = y*x – 5`
+    4. `k(x,y) = y*x - 5`
 
 2. Write a function to extract an integer from one string and output
    a list containing the second string repeated that many times.

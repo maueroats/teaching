@@ -6,10 +6,15 @@ draft: true
 
 ## Tags used
 
+The order you type tags is the order they appear in the page. Put more
+general tags before more specific ones. 
+
 * haskell
 * reading-guide
 * homework
 * quiz
+* daily-notes: Does this need to be a tag? Is it helpful? If so, should apply to everythin in the daily directory.
+
 
 ## Header fields
 

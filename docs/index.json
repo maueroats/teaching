@@ -163,9 +163,9 @@
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-quiz/",
 	"title": "Chapter 3 Quiz",
-	"tags": ["quiz", "haskell"],
+	"tags": ["haskell", "quiz"],
 	"description": "",
-	"content": " Write a good (technically correct) type signature for\n f(x) = x*(x+1) g(xs) = [ x/7 | x ← xs ] h(x) = \u0026quot;You told me \u0026quot;++(show x) k(x,y) = y*x – 5  Write a function to extract an integer from one string and output a list containing the second string repeated that many times.\nprob2 \u0026quot;5\u0026quot; \u0026quot;dog\u0026quot; == [\u0026quot;dog\u0026quot;,\u0026quot;dog\u0026quot;,\u0026quot;dog\u0026quot;,\u0026quot;dog\u0026quot;,\u0026quot;dog\u0026quot;]  Given two strings containing floating point numbers, return the sum of those numbers.\nprob3 \u0026quot;3.14\u0026quot; \u0026quot;2.81\u0026quot; == 5.95  The root mean square of a list of numbers is the square root of the average of the squares of the numbers. Write a function to find the RMS of a list of floating point numbers.\n-- results are approximate prob5 [1, 10, 100] == 58.0259 prob5 [3.14, 2.81] == 2.979  The mode of a list of integers is the number that appears the most often. Write a function to find the mode of a list of integers.\nprob4 [1,1,1,2,2,2,2,2,3,3] == 2 prob4 [1,1,1,2,2,2] == 1 -- you any one of the modes is ok   "
+	"content": " Write a good (technically correct) type signature for\n f(x) = x*(x+1) g(xs) = [ x/7 | x \u0026lt;- xs ] h(x) = \u0026quot;You told me \u0026quot;++(show x) k(x,y) = y*x - 5  Write a function to extract an integer from one string and output a list containing the second string repeated that many times.\nprob2 \u0026quot;5\u0026quot; \u0026quot;dog\u0026quot; == [\u0026quot;dog\u0026quot;,\u0026quot;dog\u0026quot;,\u0026quot;dog\u0026quot;,\u0026quot;dog\u0026quot;,\u0026quot;dog\u0026quot;]  Given two strings containing floating point numbers, return the sum of those numbers.\nprob3 \u0026quot;3.14\u0026quot; \u0026quot;2.81\u0026quot; == 5.95  The root mean square of a list of numbers is the square root of the average of the squares of the numbers. Write a function to find the RMS of a list of floating point numbers.\n-- results are approximate prob5 [1, 10, 100] == 58.0259 prob5 [3.14, 2.81] == 2.979  The mode of a list of integers is the number that appears the most often. Write a function to find the mode of a list of integers.\nprob4 [1,1,1,2,2,2,2,2,3,3] == 2 prob4 [1,1,1,2,2,2] == 1 -- you any one of the modes is ok   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-18/",
@@ -273,14 +273,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
