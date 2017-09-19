@@ -144,7 +144,7 @@
 	"title": "Ch03 Quiz",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 3 Quiz\n"
+	"content": " Write a good (technically correct) type signature for\n f(x) = x*(x+1) g(xs) = [ x/7 | x ← xs ] h(x) = \u0026ldquo;You told me \u0026ldquo;++(show x) k(x,y) = y*x – 5  Write a function to extract an integer from one string and output the second string repeated that many times.\n Given two strings containing floating point numbers, return the sum of those numbers.\n The mode of a list of integers is the number that appears the most often. Write a function to find the mode of a list of integers.\n The root mean square of a list of numbers is the square root of the average of the squares of the numbers. Write a function to find the RMS of a list of floating point numbers.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-18/",

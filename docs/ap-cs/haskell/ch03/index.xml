@@ -27,7 +27,10 @@
       <pubDate>Tue, 19 Sep 2017 08:59:37 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-quiz/</guid>
-      <description>Chapter 3 Quiz</description>
+      <description>Write a good (technically correct) type signature for
+ f(x) = x*(x+1) g(xs) = [ x/7 | x ← xs ] h(x) = &amp;ldquo;You told me &amp;ldquo;++(show x) k(x,y) = y*x – 5  Write a function to extract an integer from one string and output the second string repeated that many times.
+ Given two strings containing floating point numbers, return the sum of those numbers.
+ The mode of a list of integers is the number that appears the most often.</description>
     </item>
     
     <item>
