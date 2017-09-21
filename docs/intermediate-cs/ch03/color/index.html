@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Haskell HW 2 Solutions :: WY Computer Science</title>
+    <title>Color Commands :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/ch02/hw-a2-solution/">
+  <body class="" data-url="/intermediate-cs/ch03/color/">
     <nav id="sidebar" class="">
 
 
@@ -83,7 +83,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -94,7 +94,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -139,7 +139,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -150,7 +150,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -238,7 +238,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch02/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -249,7 +249,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -332,7 +332,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/ch02/hw-a2-solution/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell/ch02/hw-a2-solution/">
         <span>Haskell HW 2 Solutions</span> 
@@ -746,7 +746,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -757,7 +757,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -845,7 +845,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch03/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -856,7 +856,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -879,7 +879,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch03/color/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/ch03/color/">
         <span>Color Commands</span> 
@@ -1155,12 +1155,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch02/'>2. Starting Out</a> > Haskell HW 2 Solutions
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch03/'>3. More Interesting Pictures</a> > Color Commands
 
  
 
@@ -1180,73 +1175,40 @@
           </div>
         
         
-          <div id="tags">
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/homework">homework</a>
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/solutions">solutions</a>
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/ap-cs">ap-cs</a>
-            
-          </div>
-        
         <div id="body-inner">
           
-            <h1>Haskell HW 2 Solutions</h1>
+            <h1>Color Commands</h1>
           
 
 
 
 
-<p><code>breakItUp</code> plan:</p>
-
 <ul>
-<li>replicate input list (length - 3) times</li>
-<li>zip with count</li>
-<li>helper function knows count and list, drop &amp; take</li>
+<li><code>name-&gt;color</code> changes a string name to a color, like this:
+<code>
+	&gt; (name-&gt;color &quot;lavender&quot;) 
+	(make-color 230 230 250)
+</code></li>
 </ul>
 
-<pre><code class="language-haskell">breaklicator xs = replicate (length xs - 3) xs
-numberIt ys = zip ys [0..]
-              
-breakItUp' :: ([a],Int) -&gt; [a]
-breakItUp' (xs,y) = take 4 $ drop y xs
+<p>If you give it a color already, the computer complains:</p>
 
-breakItUp_v2 :: [a] -&gt; [[a]]
-breakItUp_v2 xs = [ breakItUp' w | w &lt;- numberIt $ breaklicator xs ]
+<pre><code>	&gt; (name-&gt;color (make-color 230 230 250))
+    name-&gt;color: Expected a string or symbol, but received (make-color 230 230 250 255) 
 </code></pre>
-
-<p>Fancy solution for <code>breakItUp</code>, shows power of Haskell pattern matching (Chapter 4):</p>
-
-<pre><code class="language-haskell">breakItUp :: [a] -&gt; [[a]]
-breakItUp [a,b,c,d] = [[a,b,c,d]]
-breakItUp (x:xs) = (x:take 3 xs) : breakItUp xs
-</code></pre>
-
-<p>targetPractice plan:</p>
 
 <ul>
-<li>distance formula</li>
-<li>helper function that remembers the closest point so far</li>
-<li>recursively go through list of all points</li>
+<li><code>colorize</code> changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than <code>name-&gt;color</code>.
+<code>
+	&gt; (colorize &quot;lavender&quot;) 
+	(make-color 230 230 250)
+</code></li>
 </ul>
 
-<pre><code class="language-haskell">-- you should just write (Int,Int) everywhere I write Pt
-type Pt = (Int,Int)
+<p>If you give it a color already, the computer complains:</p>
 
-dist :: Pt -&gt; Pt -&gt; Int
-dist (x0,y0) (x1,y1) = (x1-x0)^2 + (y1-y0)^2
-
-targetPractice ::  Pt -&gt; [Pt] -&gt; Pt
-targetPractice pt ptList = targetPractice' pt ptList (head ptList)
-
-targetPractice' :: Pt -&gt; [Pt] -&gt; Pt -&gt; Pt 
-targetPractice' pt [] closestSoFar = closestSoFar
-targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest 
-    where newClosest = if (dist x pt) &lt; (dist closestSoFar pt) 
-	                    then x else closestSoFar
+<pre><code>	&gt; (colorize (make-color 230 230 250))
+	(make-color 230 230 250))
 </code></pre>
 
 
@@ -1291,6 +1253,8 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -1306,9 +1270,6 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1326,7 +1287,6 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
                 
                     
-                    
                 
                 
 
@@ -1341,9 +1301,6 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1377,7 +1334,6 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
                 
                     
-                    
                 
                 
 
@@ -1390,9 +1346,6 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1442,7 +1395,6 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
                 
                     
-                    
                 
                 
 
@@ -1461,9 +1413,6 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1711,6 +1660,7 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
                 
                     
+                    
                 
                 
 
@@ -1726,37 +1676,8 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1790,6 +1711,43 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1816,22 +1774,6 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1913,6 +1855,22 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1923,10 +1881,10 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/ch02/hw-a2/" title="Haskell HW 2"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch03/" title="3. More Interesting Pictures"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/ch03/" title="3. Types and Typeclasses" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

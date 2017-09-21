@@ -40,13 +40,11 @@ sum67 [1, 1, 6, 7, 2] == 4
 ```haskell
       newFibonacci 1 1 10 == 55
 ```
-5. [Block Game](http://usaco.org/index.php?page=viewproblem2&cpid=664).
+5. [Block Game](http://usaco.org/index.php?page=viewproblem2&cpid=664). Do this bronze level USA Computing Olympiad problem.
 
 ## Games
 
 At a minimum, sketch an outline for one of the following.
-
-5. Bug, ignore.
 
 5. _Laser Tag I_. You are playing laser tag on the integer coordinate plane. You stand at `(x0,y0)` and fire your laser parallel to one of the axes. We will write the direction using unit coordinates, so `(1,0)` will be the positive x-direction. The coordinates of the other players are in a list. Assuming that you hit a player, report the coordinates of the player who is hit.
 ```haskell
@@ -54,6 +52,7 @@ At a minimum, sketch an outline for one of the following.
                [(5,2), (1,-4), (1,50), (1,25), (1,30)]
                == (1,25)
 ```
+
 6. _Laser Tag II_. (Save for later if needed.) We continue to play the
 laser tag game, except now there are both people and double-sided
 mirrors oriented at 45 degrees to the coordinate axes. Represent the
@@ -66,6 +65,7 @@ coordinates of the person who gets hit.
                      [(1,2,'*'), (5,2,'*'), (1,5,'/'), (4,5,'*'), (-3,5,'*')]
                      == (4,5)
 ```
-Flipping the mirror at (1,5) should make the answer (-3,5). 
-You should draw some test cases and make a tester function to verify your code is correct when there are more mirrors.
+
+     Flipping the mirror at (1,5) should make the answer (-3,5). 
+     You should draw some test cases and make a tester function to verify your code is correct when there are more mirrors.
 

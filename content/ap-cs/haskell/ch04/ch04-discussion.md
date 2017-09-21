@@ -4,6 +4,7 @@ date: 2017-09-20T09:59:51-05:00
 type: slide
 draft: true
 theme: white
+description: Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.
 ---
 
 # Chapter 4 Discussion

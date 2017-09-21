@@ -23,9 +23,9 @@
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03/",
 	"title": "3. More Interesting Pictures",
-	"tags": [],
+	"tags": ["homework"],
 	"description": "",
-	"content": " Resources  Quick guide to image variables in Picturing Programs. All of the images from the book online.  Homework  3.a, done in two days: pages 1-2 and pages 3-4. 3.b  See assignment sheet for more information.\n"
+	"content": " Pictures and Color  Quick guide to image variables in Picturing Programs. All of the images from the book online.\n Commands to change words to colors.\n  Homework  3.a, done in two days: pages 1-2 and pages 3-4. 3.b: problems 1-8. (Come in ready to discuss 8 if you cannot do it.)  See assignment sheet for more information.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/",
@@ -74,7 +74,7 @@
 	"title": "Chapter 4 Problem Set",
 	"tags": ["haskell", "homework"],
 	"description": "Exercises to improve your Haskell programming.",
-	"content": " Key new concepts: patterns, guards, where, let, case.\nPlease write function signatures for every solution.\n Some of these problems are classical exercises with solutions online. Please do not search for them or read them before turning in your work. (See Academic Integrity.)\nExercises  First Third. Return the sum of the first and third elements in the list. Example: firstThird [10,30,50,90] == 60.\n Take a list of items that can be compared for equality (Eq a) and reduce repeats to a single element. Only reduce repeats that are next to each other in the list.\nnoTwins [1,1,5,1,2,2,2] == [1,5,1,2]  (CodingBat sum67.) Return the sum of the integers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.\nsum67 [1, 2, 2] == 5 sum67 [1, 2, 2, 6, 99, 99, 7] == 5 sum67 [1, 1, 6, 7, 2] == 4  (Discuss!) Make a newFibonacci function that takes in the two starting values for the Fibonacci sequence (usually 1 and 1) and then the term in the sequence that you want, and computes that term in the sequence.\nnewFibonacci 1 1 10 == 55  Block Game.\n  Games At a minimum, sketch an outline for one of the following.\n Bug, ignore.\n Laser Tag I. You are playing laser tag on the integer coordinate plane. You stand at (x0,y0) and fire your laser parallel to one of the axes. We will write the direction using unit coordinates, so (1,0) will be the positive x-direction. The coordinates of the other players are in a list. Assuming that you hit a player, report the coordinates of the player who is hit.\nlaserTag (1,2) (0,1) [(5,2), (1,-4), (1,50), (1,25), (1,30)] == (1,25)  Laser Tag II. (Save for later if needed.) We continue to play the laser tag game, except now there are both people and double-sided mirrors oriented at 45 degrees to the coordinate axes. Represent the objects by triples (x,y,c) where c is a character * for a person, / or \\ for a mirror (depending on the orientation). Assume that eventually the laser will hit someone (maybe you?!). Find the coordinates of the person who gets hit.\nlaserTagMirrors (1,2) (0,1) [(1,2,'*'), (5,2,'*'), (1,5,'/'), (4,5,'*'), (-3,5,'*')] == (4,5)  Flipping the mirror at (1,5) should make the answer (-3,5). You should draw some test cases and make a tester function to verify your code is correct when there are more mirrors.\n  "
+	"content": " Key new concepts: patterns, guards, where, let, case.\nPlease write function signatures for every solution.\n Some of these problems are classical exercises with solutions online. Please do not search for them or read them before turning in your work. (See Academic Integrity.)\nExercises  First Third. Return the sum of the first and third elements in the list. Example: firstThird [10,30,50,90] == 60.\n Take a list of items that can be compared for equality (Eq a) and reduce repeats to a single element. Only reduce repeats that are next to each other in the list.\nnoTwins [1,1,5,1,2,2,2] == [1,5,1,2]  (CodingBat sum67.) Return the sum of the integers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.\nsum67 [1, 2, 2] == 5 sum67 [1, 2, 2, 6, 99, 99, 7] == 5 sum67 [1, 1, 6, 7, 2] == 4  (Discuss!) Make a newFibonacci function that takes in the two starting values for the Fibonacci sequence (usually 1 and 1) and then the term in the sequence that you want, and computes that term in the sequence.\nnewFibonacci 1 1 10 == 55  Block Game. Do this bronze level USA Computing Olympiad problem.\n  Games At a minimum, sketch an outline for one of the following.\n Laser Tag I. You are playing laser tag on the integer coordinate plane. You stand at (x0,y0) and fire your laser parallel to one of the axes. We will write the direction using unit coordinates, so (1,0) will be the positive x-direction. The coordinates of the other players are in a list. Assuming that you hit a player, report the coordinates of the player who is hit.\nlaserTag (1,2) (0,1) [(5,2), (1,-4), (1,50), (1,25), (1,30)] == (1,25)  Laser Tag II. (Save for later if needed.) We continue to play the laser tag game, except now there are both people and double-sided mirrors oriented at 45 degrees to the coordinate axes. Represent the objects by triples (x,y,c) where c is a character * for a person, / or \\ for a mirror (depending on the orientation). Assume that eventually the laser will hit someone (maybe you?!). Find the coordinates of the person who gets hit.\nlaserTagMirrors (1,2) (0,1) [(1,2,'*'), (5,2,'*'), (1,5,'/'), (4,5,'*'), (-3,5,'*')] == (4,5)  Flipping the mirror at (1,5) should make the answer (-3,5). You should draw some test cases and make a tester function to verify your code is correct when there are more mirrors.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/",
@@ -168,6 +168,13 @@
 	"content": "  2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch03/color/",
+	"title": "Color Commands",
+	"tags": [],
+	"description": "",
+	"content": " name-\u0026gt;color changes a string name to a color, like this:  \u0026gt; (name-\u0026gt;color \u0026quot;lavender\u0026quot;) (make-color 230 230 250)   If you give it a color already, the computer complains:\n\t\u0026gt; (name-\u0026gt;color (make-color 230 230 250)) name-\u0026gt;color: Expected a string or symbol, but received (make-color 230 230 250 255)   colorize changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than name-\u0026gt;color.  \u0026gt; (colorize \u0026quot;lavender\u0026quot;) (make-color 230 230 250)   If you give it a color already, the computer complains:\n\t\u0026gt; (colorize (make-color 230 230 250)) (make-color 230 230 250))  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-quiz/",
 	"title": "Chapter 3 Quiz",
 	"tags": ["haskell", "quiz"],
@@ -242,7 +249,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Chapter 4 Reading Guide modified Sun 09-17  Chapter 3 Problem Set modified Fri 09-15  Haskell HW 2 Solutions modified Thu 09-14  Intermediate Computer Science Recent Changes    3. More Interesting Pictures modified Wed 09-20  Calendar modified Mon 09-18  Chapter 01 Review modified Mon 09-11  1. Introduction modified Sun 09-10  Intermediate CS modified Sat 09-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Chapter 4 Reading Guide modified Sun 09-17  Chapter 3 Problem Set modified Fri 09-15  Haskell HW 2 Solutions modified Thu 09-14  Intermediate Computer Science Recent Changes    Color Commands modified Thu 09-21  3. More Interesting Pictures modified Wed 09-20  Calendar modified Mon 09-18  Chapter 01 Review modified Mon 09-11  1. Introduction modified Sun 09-10  Intermediate CS modified Sat 09-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
@@ -280,14 +287,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
@@ -323,13 +330,6 @@
 },
 {
 	"uri": "http://wy-cs.info/tags/homework/",
-	"title": "Homework",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "http://wy-cs.info/categories/homework/",
 	"title": "Homework",
 	"tags": [],
 	"description": "",
