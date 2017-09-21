@@ -25,7 +25,7 @@ your work.
 1. _First Third_. Return the sum of the first and third elements in the list. Example: `firstThird [10,30,50,90] == 60`.
 
 2. Take a list of items that can be compared for equality `(Eq a)` and 
-   reduce repeats to a single element.
+   reduce repeats to a single element. Only reduce repeats that are next to each other in the list.
 ```haskell
      noTwins [1,1,5,1,2,2,2] == [1,5,1,2]
 ```
