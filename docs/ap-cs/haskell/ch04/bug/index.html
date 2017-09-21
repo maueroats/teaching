@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>3. More Interesting Pictures :: WY Computer Science</title>
+    <title>Hugo 0.27.1 / BlackFriday bug report :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,15 +29,12 @@
     
 
     
-<link href="http://wy-cs.info/intermediate-cs/ch03/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
-<link href="http://wy-cs.info/intermediate-cs/ch03/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
-
 
 <link href="/css/prism.css" rel="stylesheet">
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch03/">
+  <body class="" data-url="/ap-cs/haskell/ch04/bug/">
     <nav id="sidebar" class="">
 
 
@@ -86,7 +83,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -97,7 +94,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -142,7 +139,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -153,7 +150,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -467,7 +464,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -478,7 +475,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -520,11 +517,71 @@
  
   
     
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-problemset/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/haskell/ch04/ch04-problemset/">
+        <span>Chapter 4 Problem Set</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/ap-cs/haskell/ch04/ch04-summary/" class="dd-item
      
       ">
         <a href="/ap-cs/haskell/ch04/ch04-summary/">
         <span>Chapter 4 Summary</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-discussion/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/haskell/ch04/ch04-discussion/">
+        <span>Chapter 4 Discussion</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/haskell/ch04/bug/" class="dd-item
+     active
+      ">
+        <a href="/ap-cs/haskell/ch04/bug/">
+        <span>Hugo 0.27.1 / BlackFriday bug report</span> 
         
         </a></li>
      
@@ -729,7 +786,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -740,7 +797,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -828,8 +885,8 @@
   
     
     <li data-nav-id="/intermediate-cs/ch03/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/intermediate-cs/ch03/">
@@ -1099,7 +1156,17 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > 3. More Interesting Pictures
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch04/'>4. Syntax in Functions</a> > Hugo 0.27.1 / BlackFriday bug report
+
+ 
+
+ 
 
  
 
@@ -1114,8 +1181,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#resources">Resources</a></li>
-<li><a href="#homework">Homework</a></li>
+<li><a href="#demo-of-error">Demo of error</a></li>
+<li><a href="#demo-of-correct-behavior">Demo of correct behavior</a></li>
+<li><a href="#thanks">Thanks</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1127,7 +1195,7 @@
         
         <div id="body-inner">
           
-            <h1>3. More Interesting Pictures</h1>
+            <h1>Hugo 0.27.1 / BlackFriday bug report</h1>
           
 
 
@@ -1135,30 +1203,40 @@
 
 
 
+<p>Code blocks are not rendered properly if they are members of the first item in a list.</p>
 
+<p>This is almost certainly an upstream issue:
+* <code>https://github.com/russross/blackfriday/issues/239</code>.
+* <code>https://github.com/russross/blackfriday/issues/326</code></p>
 
-<h2 id="resources">Resources</h2>
+<h2 id="demo-of-error">Demo of error</h2>
 
-<ul>
-<li>Quick guide to <a href="https://docs.racket-lang.org/picturing-programs/index.html?q=picturing-programs#%28part._.Variables%29">image variables in Picturing Programs</a>.</li>
-<li><a href="http://picturingprograms.com/pictures/">All of the images from the book online</a>.</li>
-</ul>
+<ol>
+<li>This will be wrong. Look at generated HTML.
+<code>haskell
+  bug
+</code></li>
+</ol>
 
-<h2 id="homework">Homework</h2>
+<h2 id="demo-of-correct-behavior">Demo of correct behavior</h2>
 
-<ul>
-<li><a href="https://docs.google.com/document/d/1LpEhhP8PbjzrJ3VJJsX2lpgzBqu64YBELHLWuZx69qs/edit?usp=sharing">3.a</a>, done in two days: pages 1-2 and pages 3-4.</li>
-<li><a href="https://docs.google.com/document/d/1NBaniy4YxL_wXuM194b_bXYaXvKUZYUK5nfpzjx_aEc/edit?usp=sharing">3.b</a></li>
-</ul>
+<ol>
+<li><p>With one item before it in the list, everything works.</p></li>
 
-<p>See <a href="https://docs.google.com/spreadsheets/d/1p1JGIOWxwFkcFBZ01UxC-lOIkXn0ORUHfIt3aQVNTEU/edit?usp=sharing">assignment sheet</a> for more information.</p>
+<li><p>This will generate fine HTML.</p>
+
+<pre><code class="language-haskell">  all_ok
+</code></pre></li>
+</ol>
+
+<h2 id="thanks">Thanks</h2>
+
+<p>I am not familiar with the code.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -1197,8 +1275,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1214,6 +1290,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1231,6 +1310,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1246,37 +1326,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1285,166 +1336,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1558,6 +1449,35 @@
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1580,60 +1500,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
             
             
@@ -1648,9 +1514,6 @@
                     
 
                     
-            
-        
-                    
                         
             
             
@@ -1658,38 +1521,6 @@
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1755,6 +1586,306 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -1792,10 +1923,10 @@
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch01/ch01-review/" title="Chapter 01 Review"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/ch04/ch04-discussion/" title="Chapter 4 Discussion"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/daily/" title="Haskell Daily Notes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

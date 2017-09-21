@@ -23,8 +23,7 @@ description: Questions to help you understand Chapter 4.
 
 6. Are parentheses necessary when writing a function using the pattern from the previous question? Explain why or why not.
 
-7. A function `two_of` takes in a list of showable numbers and puts out a String that says "__ is item 2 of __". For example `two_of [10,25,50] == "25 is item 2 of [10,25,50]". Wri
-te the signature and function definition for `two_of`.
+7. A function `two_of` takes in a list of showable numbers and puts out a String that says "__ is item 2 of __". For example `two_of [10,25,50] == "25 is item 2 of [10,25,50]". Write the signature and function definition for `two_of`.
 
 7. Write the type signature and function definition for `double_double` which takes in any list and produces the same kind of list. The `double_double` function makes a list where the first term of the input appears twice, follwed by the whole input twice, so 
 ```haskell
@@ -35,13 +34,13 @@ te the signature and function definition for `two_of`.
 9. Define the function `burgers_of` using an infix definition so that
 ```haskell
     3 `burgers_of` "beef" == "Three hamburgers"
-	5 `burgers_of` "soy"  == "Five tofu burgers"
+    5 `burgers_of` "soy"  == "Five tofu burgers"
     any other set of inputs gives "No thanks, not hungry"
 ```
-10. Repating yourself.
+10. Repeating yourself.
     1. What code segment do you see repeated in the version of the `bmi` function that includes the bmi calculating code? 
-	2. What experience does the author compare writing to writing this code?
-	3. What does the book suggest that you should do instead of this coding style?
+    2. What experience does the author compare writing to writing this code?
+    3. What does the book suggest that you should do instead of this coding style?
 
 ## Sections 4.4--4.5
 
@@ -53,10 +52,10 @@ te the signature and function definition for `two_of`.
 
 14. You want to define two different variables in one let binding. Give two ways you can separate those definitions.
 
+16. Are patterns in function definitions and the "case" statement interchangeable? Give one way they are and one way they are not.
+
 <!-- 15. Write a function that takes in a string and puts out a string
 "localhost" should produce "127.0.0.1"
 "(anything).cps.k12.il.us" should produce "wyoung.org"
 -->
-
-16. Are patterns in function definitions and the "case" statement interchangeable? Give one way they are and one way they are not.
 

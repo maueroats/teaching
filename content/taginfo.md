@@ -19,7 +19,7 @@ general tags before more specific ones.
 ## Header fields
 
 * shortsummary: Only used when no index is present. (Should override
-automatically generated summary, ideally.)
+automatically generated summary, ideally.) (Use `description` instead!)
 
 ## Chapters
 

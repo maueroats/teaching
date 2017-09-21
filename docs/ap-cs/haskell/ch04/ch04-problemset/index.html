@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.27.1" />
-    <meta name="description" content="">
+    <meta name="description" content="Exercises to improve your Haskell programming.">
 
 
-    <title>3. More Interesting Pictures :: WY Computer Science</title>
+    <title>Chapter 4 Problem Set :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,15 +29,12 @@
     
 
     
-<link href="http://wy-cs.info/intermediate-cs/ch03/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
-<link href="http://wy-cs.info/intermediate-cs/ch03/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
-
 
 <link href="/css/prism.css" rel="stylesheet">
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch03/">
+  <body class="" data-url="/ap-cs/haskell/ch04/ch04-problemset/">
     <nav id="sidebar" class="">
 
 
@@ -86,7 +83,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -97,7 +94,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -142,7 +139,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -153,7 +150,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -467,7 +464,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -478,7 +475,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -520,11 +517,71 @@
  
   
     
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-problemset/" class="dd-item
+     active
+      ">
+        <a href="/ap-cs/haskell/ch04/ch04-problemset/">
+        <span>Chapter 4 Problem Set</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/ap-cs/haskell/ch04/ch04-summary/" class="dd-item
      
       ">
         <a href="/ap-cs/haskell/ch04/ch04-summary/">
         <span>Chapter 4 Summary</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-discussion/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/haskell/ch04/ch04-discussion/">
+        <span>Chapter 4 Discussion</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/haskell/ch04/bug/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/haskell/ch04/bug/">
+        <span>Hugo 0.27.1 / BlackFriday bug report</span> 
         
         </a></li>
      
@@ -729,7 +786,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -740,7 +797,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -828,8 +885,8 @@
   
     
     <li data-nav-id="/intermediate-cs/ch03/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/intermediate-cs/ch03/">
@@ -1099,7 +1156,17 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > 3. More Interesting Pictures
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch04/'>4. Syntax in Functions</a> > Chapter 4 Problem Set
+
+ 
+
+ 
 
  
 
@@ -1114,8 +1181,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#resources">Resources</a></li>
-<li><a href="#homework">Homework</a></li>
+<li><a href="#exercises">Exercises</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1125,9 +1191,17 @@
           </div>
         
         
+          <div id="tags">
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/homework">homework</a>
+            
+          </div>
+        
         <div id="body-inner">
           
-            <h1>3. More Interesting Pictures</h1>
+            <h1>Chapter 4 Problem Set</h1>
           
 
 
@@ -1135,30 +1209,46 @@
 
 
 
+<p>Key new concepts: patterns, guards, where, let, case.</p>
+
+<div class="notices note" ><p>Please write function signatures for every solution.</p>
+</div>
 
 
-<h2 id="resources">Resources</h2>
+<p>Some of these problems are classical exercises with solutions
+online. Please do not search for them or read them before turning in
+your work.
+(See <a href="/resources/academic-integrity/"><em>Academic Integrity</em></a>.)</p>
 
-<ul>
-<li>Quick guide to <a href="https://docs.racket-lang.org/picturing-programs/index.html?q=picturing-programs#%28part._.Variables%29">image variables in Picturing Programs</a>.</li>
-<li><a href="http://picturingprograms.com/pictures/">All of the images from the book online</a>.</li>
-</ul>
+<h2 id="exercises">Exercises</h2>
 
-<h2 id="homework">Homework</h2>
+<ol>
+<li><p><em>First Third</em>. Return the sum of the first and third elements in the list. Example: <code>firstThird [10,30,50,90] == 60</code>.</p></li>
 
-<ul>
-<li><a href="https://docs.google.com/document/d/1LpEhhP8PbjzrJ3VJJsX2lpgzBqu64YBELHLWuZx69qs/edit?usp=sharing">3.a</a>, done in two days: pages 1-2 and pages 3-4.</li>
-<li><a href="https://docs.google.com/document/d/1NBaniy4YxL_wXuM194b_bXYaXvKUZYUK5nfpzjx_aEc/edit?usp=sharing">3.b</a></li>
-</ul>
+<li><p>(<a href="http://codingbat.com/prob/p111327">CodingBat sum67.</a>)
+Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.</p>
 
-<p>See <a href="https://docs.google.com/spreadsheets/d/1p1JGIOWxwFkcFBZ01UxC-lOIkXn0ORUHfIt3aQVNTEU/edit?usp=sharing">assignment sheet</a> for more information.</p>
+<pre><code class="language-haskell">sum67 [1, 2, 2] == 5
+sum67 [1, 2, 2, 6, 99, 99, 7] == 5
+sum67 [1, 1, 6, 7, 2] == 4
+</code></pre></li>
+
+<li><p>Take a list of items that can be compared for equality <code>(Eq a)</code> and
+reduce repeats to a single element.</p>
+
+<pre><code class="language-haskell"> noTwins [1,1,5,1,2,2,2] == [1,5,1,2]
+</code></pre></li>
+
+<li><p>(Discuss!) Make a <code>newFibonacci</code> function that takes in the two starting values for the Fibonacci sequence (usually 1 and 1) and then the term in the sequence that you want, and computes that term in the sequence.</p>
+
+<pre><code class="language-haskell">  newFibonacci 1 1 10 == 55
+</code></pre></li>
+</ol>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -1197,8 +1287,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1214,6 +1302,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1231,6 +1322,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1246,37 +1338,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1285,166 +1348,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1558,182 +1461,6 @@
                     
 
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -1785,6 +1512,422 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
         
@@ -1792,10 +1935,10 @@
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch01/ch01-review/" title="Chapter 01 Review"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/ch04/ch04-reading-guide/" title="Chapter 4 Reading Guide"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/ch04/ch04-summary/" title="Chapter 4 Summary" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

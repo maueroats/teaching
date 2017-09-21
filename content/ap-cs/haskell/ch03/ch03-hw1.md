@@ -14,10 +14,10 @@ signatures for functions, reading string inputs with the `Read` class,
 and dealing with Integral to Fractional conversions when they are needed.
 <!--more-->
 
-1. FYI: You can explicitly say what type a number is by using two
+1. You can explicitly say what type a number is by using two
    colons and the type you want - for example, (5::Int) or
-   (5::Float). Find the types of each of the operations below, or say
-   why it does not work:
+   (5::Float). Find the types of each of the operations below, or say _in English_
+   why it does not work. Do not just copy error messages.
 
     * (/)
     * (5::Int) / (10::Int)

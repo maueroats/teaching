@@ -29,12 +29,12 @@ draft: false
    RMS of a list of floating point numbers.
 ```haskell
      -- results are approximate
-     prob5 [1, 10, 100] == 58.0259 
-     prob5 [3.14, 2.81] == 2.979
+     prob4 [1, 10, 100] == 58.0259 
+     prob4 [3.14, 2.81] == 2.979
 ```
 5. The mode of a list of integers is the number that appears the most
    often. Write a function to find the mode of a list of integers.
 ```haskell
-     prob4 [1,1,1,2,2,2,2,2,3,3] == 2
-     prob4 [1,1,1,2,2,2] == 1 -- any one of the modes is ok
+     prob5 [1,1,1,2,2,2,2,2,3,3] == 2
+     prob5 [1,1,1,2,2,2] == 1 -- any one of the modes is ok
 ```
