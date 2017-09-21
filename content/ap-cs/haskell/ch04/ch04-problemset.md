@@ -4,7 +4,7 @@ date: 2017-09-20T20:32:15-05:00
 tags:
  - haskell
  - homework
-draft: true
+draft: false
 weight: 20
 description: Exercises to improve your Haskell programming.
 ---

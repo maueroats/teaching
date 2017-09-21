@@ -39,7 +39,7 @@
 	"title": "4. Syntax in Functions",
 	"tags": ["haskell"],
 	"description": "",
-	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide  Questions to help you understand Chapter 4.\n Chapter 4 Summary  patterns, guards, where, let, case\n"
+	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide  Questions to help you understand Chapter 4.\n Chapter 4 Problem Set  Exercises to improve your Haskell programming.\n Chapter 4 Summary  patterns, guards, where, let, case\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-reading-guide/",
@@ -68,6 +68,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-problemset/",
+	"title": "Chapter 4 Problem Set",
+	"tags": ["haskell", "homework"],
+	"description": "Exercises to improve your Haskell programming.",
+	"content": " Key new concepts: patterns, guards, where, let, case.\nPlease write function signatures for every solution.\n Some of these problems are classical exercises with solutions online. Please do not search for them or read them before turning in your work. (See Academic Integrity.)\nExercises  First Third. Return the sum of the first and third elements in the list. Example: firstThird [10,30,50,90] == 60.\n Take a list of items that can be compared for equality (Eq a) and reduce repeats to a single element.\nnoTwins [1,1,5,1,2,2,2] == [1,5,1,2]  (CodingBat sum67.) Return the sum of the integers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.\nsum67 [1, 2, 2] == 5 sum67 [1, 2, 2, 6, 99, 99, 7] == 5 sum67 [1, 1, 6, 7, 2] == 4  (Discuss!) Make a newFibonacci function that takes in the two starting values for the Fibonacci sequence (usually 1 and 1) and then the term in the sequence that you want, and computes that term in the sequence.\nnewFibonacci 1 1 10 == 55  Block Game.\n  Games At a minimum, sketch an outline for one of the following.\n Bug, ignore.\n Laser Tag I. You are playing laser tag on the integer coordinate plane. You stand at (x0,y0) and fire your laser parallel to one of the axes. We will write the direction using unit coordinates, so (1,0) will be the positive x-direction. The coordinates of the other players are in a list. Assuming that you hit a player, report the coordinates of the player who is hit.\nlaserTag (1,2) (0,1) [(5,2), (1,-4), (1,50), (1,25), (1,30)] == (1,25)  Laser Tag II. (Save for later if needed.) We continue to play the laser tag game, except now there are both people and double-sided mirrors oriented at 45 degrees to the coordinate axes. Represent the objects by triples (x,y,c) where c is a character * for a person, / or \\ for a mirror (depending on the orientation). Assume that eventually the laser will hit someone (maybe you?!). Find the coordinates of the person who gets hit.\nlaserTagMirrors (1,2) (0,1) [(1,2,'*'), (5,2,'*'), (1,5,'/'), (4,5,'*'), (-3,5,'*')] == (4,5)  Flipping the mirror at (1,5) should make the answer (-3,5). You should draw some test cases and make a tester function to verify your code is correct when there are more mirrors.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/",
@@ -235,7 +242,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Chapter 4 Reading Guide modified Sun 09-17  Chapter 3 Problem Set modified Fri 09-15  Haskell HW 2 Solutions modified Thu 09-14  2017-09-14 Indentation modified Wed 09-13  Intermediate Computer Science Recent Changes    3. More Interesting Pictures modified Wed 09-20  Calendar modified Mon 09-18  Chapter 01 Review modified Mon 09-11  1. Introduction modified Sun 09-10  Intermediate CS modified Sat 09-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Chapter 4 Reading Guide modified Sun 09-17  Chapter 3 Problem Set modified Fri 09-15  Haskell HW 2 Solutions modified Thu 09-14  Intermediate Computer Science Recent Changes    3. More Interesting Pictures modified Wed 09-20  Calendar modified Mon 09-18  Chapter 01 Review modified Mon 09-11  1. Introduction modified Sun 09-10  Intermediate CS modified Sat 09-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
@@ -273,14 +280,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
@@ -315,14 +322,14 @@
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/homework/",
+	"uri": "http://wy-cs.info/tags/homework/",
 	"title": "Homework",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/homework/",
+	"uri": "http://wy-cs.info/categories/homework/",
 	"title": "Homework",
 	"tags": [],
 	"description": "",

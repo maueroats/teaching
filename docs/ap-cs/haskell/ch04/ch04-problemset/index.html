@@ -550,46 +550,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/ch04/ch04-discussion/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/ch04/ch04-discussion/">
-        <span>Chapter 4 Discussion</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/ch04/bug/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/ch04/bug/">
-        <span>Hugo 0.27.1 / BlackFriday bug report</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -1182,6 +1142,7 @@
 <li>
 <ul>
 <li><a href="#exercises">Exercises</a></li>
+<li><a href="#games">Games</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1225,24 +1186,57 @@ your work.
 <ol>
 <li><p><em>First Third</em>. Return the sum of the first and third elements in the list. Example: <code>firstThird [10,30,50,90] == 60</code>.</p></li>
 
-<li><p>(<a href="http://codingbat.com/prob/p111327">CodingBat sum67.</a>)
-Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.</p>
-
-<pre><code class="language-haskell">sum67 [1, 2, 2] == 5
-sum67 [1, 2, 2, 6, 99, 99, 7] == 5
-sum67 [1, 1, 6, 7, 2] == 4
-</code></pre></li>
-
 <li><p>Take a list of items that can be compared for equality <code>(Eq a)</code> and
 reduce repeats to a single element.</p>
 
 <pre><code class="language-haskell"> noTwins [1,1,5,1,2,2,2] == [1,5,1,2]
 </code></pre></li>
 
+<li><p>(<a href="http://codingbat.com/prob/p111327">CodingBat sum67.</a>)
+Return the sum of the integers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.</p>
+
+<pre><code class="language-haskell">sum67 [1, 2, 2] == 5
+sum67 [1, 2, 2, 6, 99, 99, 7] == 5
+sum67 [1, 1, 6, 7, 2] == 4
+</code></pre></li>
+
 <li><p>(Discuss!) Make a <code>newFibonacci</code> function that takes in the two starting values for the Fibonacci sequence (usually 1 and 1) and then the term in the sequence that you want, and computes that term in the sequence.</p>
 
 <pre><code class="language-haskell">  newFibonacci 1 1 10 == 55
 </code></pre></li>
+
+<li><p><a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=664">Block Game</a>.</p></li>
+</ol>
+
+<h2 id="games">Games</h2>
+
+<p>At a minimum, sketch an outline for one of the following.</p>
+
+<ol>
+<li><p>Bug, ignore.</p></li>
+
+<li><p><em>Laser Tag I</em>. You are playing laser tag on the integer coordinate plane. You stand at <code>(x0,y0)</code> and fire your laser parallel to one of the axes. We will write the direction using unit coordinates, so <code>(1,0)</code> will be the positive x-direction. The coordinates of the other players are in a list. Assuming that you hit a player, report the coordinates of the player who is hit.</p>
+
+<pre><code class="language-haskell">  laserTag (1,2) (0,1) 
+           [(5,2), (1,-4), (1,50), (1,25), (1,30)]
+           == (1,25)
+</code></pre></li>
+
+<li><p><em>Laser Tag II</em>. (Save for later if needed.) We continue to play the
+laser tag game, except now there are both people and double-sided
+mirrors oriented at 45 degrees to the coordinate axes. Represent the
+objects by triples <code>(x,y,c)</code> where c is a character <code>*</code> for a person,
+<code>/</code> or <code>\</code> for a mirror (depending on the orientation). Assume that
+eventually the laser will hit someone (maybe you?!). Find the
+coordinates of the person who gets hit.</p>
+
+<pre><code class="language-haskell"> laserTagMirrors (1,2) (0,1) 
+                 [(1,2,'*'), (5,2,'*'), (1,5,'/'), (4,5,'*'), (-3,5,'*')]
+                 == (4,5)
+</code></pre>
+
+<p>Flipping the mirror at (1,5) should make the answer (-3,5).
+You should draw some test cases and make a tester function to verify your code is correct when there are more mirrors.</p></li>
 </ol>
 
 
@@ -1569,38 +1563,6 @@ reduce repeats to a single element.</p>
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
