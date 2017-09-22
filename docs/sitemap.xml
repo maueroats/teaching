@@ -123,6 +123,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/</loc>
+    <lastmod>2017-09-21T21:38:19-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03/color/</loc>
     <lastmod>2017-09-21T13:31:31-05:00</lastmod>
   </url>
@@ -207,14 +212,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -257,6 +262,12 @@
   <url>
     <loc>http://wy-cs.info/categories/intermediate-cs/</loc>
     <lastmod>2017-09-10T01:23:58-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/tags/project/</loc>
+    <lastmod>2017-09-21T21:38:19-05:00</lastmod>
     <priority>0</priority>
   </url>
   

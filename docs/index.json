@@ -168,6 +168,13 @@
 	"content": "  2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/",
+	"title": "Art Project",
+	"tags": ["project"],
+	"description": "",
+	"content": " Deadline: Finish before Tuesday, September 26 (chapter 3 test day). Turn in Wednesday, September 27.\nGoal: Art projects should demonstrate a range of functions from the chapter, try to use 3-4 from each category in your whole project.\n Methods of placement: beside, above, overlay, place-image, as well as the \u0026ldquo;/align\u0026rdquo; variations. (Use the variations!)\n Changing pictures: crop, scale, rotate.\n Shapes: triangles (many!), lots more listed at the end of Chapter 3 (PDF pages 60\u0026ndash;61).\n Colors: color-database, make-color from the internet, colorize or name-\u0026gt;color.\n  Remember: This is a short project. It is OK to simplify and focus on using the goal functions (see above).\nSteps  Find one inspiration piece of art. Have idea approved before the first class ends. Complete by working in class Friday and Monday, and possibly some time at home over the weekend.  Choice 1: DrRacket\u0026rsquo;s take on MoMA Choose a piece of art for inspiration.\n School appropriate. No duplicates with anyone you know in any class. MoMA archive:  Textiles from Japan - which could have floral patterns or numbers from the cataloging process Islamic art \u0026mdash; like this   Choice #2: Picture Puzzles Goal: create three pictures that are challenging or interesting to recreate once they are finished. If you can get someone to say, \u0026ldquo;How did you do that?\u0026ldquo;, your puzzle is a success.\nPossible sources:\n Geometry puzzles Triangle puzzles Mondrian  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch03/color/",
 	"title": "Color Commands",
 	"tags": [],
@@ -249,7 +256,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Chapter 4 Reading Guide modified Sun 09-17  Chapter 3 Problem Set modified Fri 09-15  Haskell HW 2 Solutions modified Thu 09-14  Intermediate Computer Science Recent Changes    Color Commands modified Thu 09-21  3. More Interesting Pictures modified Wed 09-20  Calendar modified Mon 09-18  Chapter 01 Review modified Mon 09-11  1. Introduction modified Sun 09-10  Intermediate CS modified Sat 09-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Chapter 4 Reading Guide modified Sun 09-17  Chapter 3 Problem Set modified Fri 09-15  Haskell HW 2 Solutions modified Thu 09-14  Intermediate Computer Science Recent Changes    Art Project modified Thu 09-21  Color Commands modified Thu 09-21  3. More Interesting Pictures modified Wed 09-20  Calendar modified Mon 09-18  Chapter 01 Review modified Mon 09-11  1. Introduction modified Sun 09-10  Intermediate CS modified Sat 09-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
@@ -287,14 +294,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
@@ -345,6 +352,13 @@
 {
 	"uri": "http://wy-cs.info/categories/intermediate-cs/",
 	"title": "Intermediate Cs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wy-cs.info/tags/project/",
+	"title": "Project",
 	"tags": [],
 	"description": "",
 	"content": ""
