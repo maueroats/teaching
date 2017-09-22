@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Color Commands</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03/color/</link>
+      <pubDate>Thu, 21 Sep 2017 13:31:31 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch03/color/</guid>
+      <description>name-&amp;gt;color changes a string name to a color, like this:  &amp;gt; (name-&amp;gt;color &amp;quot;lavender&amp;quot;) (make-color 230 230 250)   If you give it a color already, the computer complains:
+ &amp;gt; (name-&amp;gt;color (make-color 230 230 250)) name-&amp;gt;color: Expected a string or symbol, but received (make-color 230 230 250 255)   colorize changes a name to a color, but does not complain if it gets something that is already a color.</description>
+    </item>
+    
+    <item>
       <title>Art Project</title>
       <link>http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/</link>
       <pubDate>Thu, 21 Sep 2017 21:38:19 -0500</pubDate>
@@ -25,13 +35,12 @@ Goal: Art projects should demonstrate a range of functions from the chapter, try
     </item>
     
     <item>
-      <title>Color Commands</title>
-      <link>http://wy-cs.info/intermediate-cs/ch03/color/</link>
-      <pubDate>Thu, 21 Sep 2017 13:31:31 -0500</pubDate>
+      <title>Puzzle Opener</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03/puzzle-opener/</link>
+      <pubDate>Fri, 22 Sep 2017 09:55:25 -0500</pubDate>
       
-      <guid>http://wy-cs.info/intermediate-cs/ch03/color/</guid>
-      <description>name-&amp;gt;color changes a string name to a color, like this:  &amp;gt; (name-&amp;gt;color &amp;quot;lavender&amp;quot;) (make-color 230 230 250)   If you give it a color already, the computer complains:
-	&amp;gt; (name-&amp;gt;color (make-color 230 230 250)) name-&amp;gt;color: Expected a string or symbol, but received (make-color 230 230 250 255)   colorize changes a name to a color, but does not complain if it gets something that is already a color.</description>
+      <guid>http://wy-cs.info/intermediate-cs/ch03/puzzle-opener/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -4,6 +4,7 @@ date: 2017-09-21T21:38:19-05:00
 tags:
  - project
 draft: false
+weight: 20
 ---
 
 **Deadline**: Finish before Tuesday, September 26 (chapter 3 test

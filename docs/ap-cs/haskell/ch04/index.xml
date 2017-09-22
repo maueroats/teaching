@@ -43,5 +43,14 @@ Exercises  First Third. Return the sum of the first and third elements in the li
       <description> patterns  f [] = 0 f (x:xs) = x + f xs   guards  numword x | x &amp;lt; 0 = &amp;quot;Negative&amp;quot; | x == 0 = &amp;quot;Zero&amp;quot; | otherwise = &amp;quot;Positive&amp;quot;   where  h x = constant * x where constant = 100   let  yis65 x = let (parabola = 10 * x * x + 25) in parabola == 65   case  numit value = case (value) of 5 -&amp;gt; &amp;quot;Five&amp;quot; 4 -&amp;gt; &amp;quot;Four&amp;quot; _ -&amp;gt; &amp;quot;Something else&amp;quot;  </description>
     </item>
     
+    <item>
+      <title>Chapter 4 Discussion</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch04/ch04-discussion/</link>
+      <pubDate>Wed, 20 Sep 2017 09:59:51 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch04/ch04-discussion/</guid>
+      <description>Chapter 4 Discussion Absence Interpretation    Periods Absent Probability of all day absence     a &amp;gt;= 6 1.0   a &amp;gt;= 3 0.5   a &amp;lt; 3 0.0    Speaker    Input Pattern output     1 &amp;ldquo;welcome&amp;rdquo;   2 &amp;ldquo;students&amp;rdquo;   3 &amp;ldquo;students welcome welcome students&amp;ldquo;   4 &amp;ldquo;students welcome welcome students students students students welcome welcome students&amp;ldquo;   n (previous output) (output before that) (output before that) (previous output)    Trimult Given a list of numbers, produce a list of all products of three terms in a row.</description>
+    </item>
+    
   </channel>
 </rss>

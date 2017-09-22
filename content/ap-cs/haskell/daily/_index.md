@@ -6,6 +6,7 @@ tags:
   - daily-notes
 draft: false
 weight: 90
+description: Notes for each day.
 ---
 
 {{% children description="true" %}}

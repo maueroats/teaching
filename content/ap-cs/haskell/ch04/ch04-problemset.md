@@ -44,7 +44,7 @@ sum67 [1, 1, 6, 7, 2] == 4
 
 ## Games
 
-At a minimum, sketch an outline for one of the following.
+We discussed these in class. You should be able to do them. If you missed class, talk to someone who was there.
 
 5. _Laser Tag I_. You are playing laser tag on the integer coordinate plane. You stand at `(x0,y0)` and fire your laser parallel to one of the axes. We will write the direction using unit coordinates, so `(1,0)` will be the positive x-direction. The coordinates of the other players are in a list. Assuming that you hit a player, report the coordinates of the player who is hit.
 ```haskell

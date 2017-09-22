@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Color Commands</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03/color/</link>
+      <pubDate>Thu, 21 Sep 2017 13:31:31 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch03/color/</guid>
+      <description>name-&amp;gt;color changes a string name to a color, like this:  &amp;gt; (name-&amp;gt;color &amp;quot;lavender&amp;quot;) (make-color 230 230 250)   If you give it a color already, the computer complains:
+ &amp;gt; (name-&amp;gt;color (make-color 230 230 250)) name-&amp;gt;color: Expected a string or symbol, but received (make-color 230 230 250 255)   colorize changes a name to a color, but does not complain if it gets something that is already a color.</description>
+    </item>
+    
+    <item>
       <title>Chapter 4 Reading Guide</title>
       <link>http://wy-cs.info/ap-cs/haskell/ch04/ch04-reading-guide/</link>
       <pubDate>Sun, 17 Sep 2017 20:47:05 -0500</pubDate>
@@ -58,6 +68,19 @@ The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Art Project</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/</link>
+      <pubDate>Thu, 21 Sep 2017 21:38:19 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/</guid>
+      <description>Deadline: Finish before Tuesday, September 26 (chapter 3 test day). Turn in Wednesday, September 27.
+Goal: Art projects should demonstrate a range of functions from the chapter, try to use 3-4 from each category in your whole project.
+ Methods of placement: beside, above, overlay, place-image, as well as the &amp;ldquo;/align&amp;rdquo; variations. (Use the variations!)
+ Changing pictures: crop, scale, rotate.
+ Shapes: triangles (many!), lots more listed at the end of Chapter 3 (PDF pages 60&amp;ndash;61).</description>
     </item>
     
     <item>
@@ -112,29 +135,6 @@ find the nearest point.
       <guid>http://wy-cs.info/resources/generic-cs-syllabus/</guid>
       <description>Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:
  Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form &amp;hellip; or email me.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 3 Problem Set</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch03/ch03-hw1/</link>
-      <pubDate>Thu, 14 Sep 2017 10:00:00 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-hw1/</guid>
-      <description>&lt;p&gt;The essentials of the Types and Typeclasses chapter are: writing type
-signatures for functions, reading string inputs with the &lt;code&gt;Read&lt;/code&gt; class,
-and dealing with Integral to Fractional conversions when they are needed.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Syllabus: AP CS</title>
-      <link>http://wy-cs.info/resources/apcs-syllabus--2017-2018/</link>
-      <pubDate>Sat, 09 Sep 2017 15:49:20 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/resources/apcs-syllabus--2017-2018/</guid>
-      <description>This document gives information specific to the AP Computer Science course. See the all course syllabus information as well.
-AP Review We will do approximately three weeks of AP review before the AP exam. Second semester grades will be significantly impacted by AP test preparation.
-Many people benefit from outside preparation. Start in February. As a rough guide, the Barron&amp;rsquo;s AP Computer Science A text is too easy and the Be Prepared for the AP Computer Science Exam in Java book by Litvin and Litvin is too difficult.</description>
     </item>
     
   </channel>
