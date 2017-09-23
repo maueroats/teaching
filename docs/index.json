@@ -81,7 +81,7 @@
 	"title": "Art Project",
 	"tags": ["project"],
 	"description": "",
-	"content": " Deadline: Finish before Tuesday, September 26 (chapter 3 test day). Turn in Wednesday, September 27.\nGoal: Art projects should demonstrate a range of functions from the chapter, try to use 3-4 from each category in your whole project.\n Methods of placement: beside, above, overlay, place-image, as well as the \u0026ldquo;/align\u0026rdquo; variations. (Use the variations!)\n Changing pictures: crop, scale, rotate.\n Shapes: triangles (many!), lots more listed at the end of Chapter 3 (PDF pages 60\u0026ndash;61).\n Colors: color-database, make-color from the internet, colorize or name-\u0026gt;color.\n  Remember: This is a short project. It is OK to simplify and focus on using the goal functions (see above).\nSteps  Find one inspiration piece of art. Have idea approved before the first class ends. Complete by working in class Friday and Monday, and possibly some time at home over the weekend.  Choice 1: DrRacket\u0026rsquo;s take on MoMA Choose a piece of art for inspiration.\n School appropriate. No duplicates with anyone you know in any class. MoMA archive:  Textiles from Japan - which could have floral patterns or numbers from the cataloging process Islamic art \u0026mdash; like this   Choice #2: Picture Puzzles Goal: create three pictures that are challenging or interesting to recreate once they are finished. If you can get someone to say, \u0026ldquo;How did you do that?\u0026ldquo;, your puzzle is a success.\nPossible sources:\n Geometry puzzles Triangle puzzles Mondrian  "
+	"content": " Deadline: Finish before Tuesday, September 26 (chapter 3 test day). Turn in Wednesday, September 27.\nProduce: One complex piece of art per person in the group. (Two simpler pieces.) (Groups of at most two.)\nGoal: Art projects should demonstrate a range of functions from the chapter, try to use 3-4 from each category in your whole project.\n Methods of placement: beside, above, overlay, place-image, as well as the \u0026ldquo;/align\u0026rdquo; variations. (Use the variations!)\n Changing pictures: crop, scale, rotate.\n Shapes: triangles (many!), lots more listed at the end of Chapter 3 (PDF pages 60\u0026ndash;61).\n Colors: color-database, make-color from the internet, colorize or name-\u0026gt;color.\n  Remember: This is a short project. I expect you will spend no more than two hours on it, including time working in class Friday and Monday.\nIt is OK to simplify and focus on using the goal functions (see above).\nSteps  Find one inspiration piece of art. Have idea approved before the first class ends. Complete by working in class Friday and Monday, and possibly some time at home over the weekend.  Choice 1: DrRacket\u0026rsquo;s take on MoMA Choose a piece of art for inspiration.\n School appropriate. No duplicates with anyone you know in any class. MoMA archive:  Textiles from Japan - which could have floral patterns or numbers from the cataloging process Islamic art \u0026mdash; like this   Choice #2: Picture Puzzles Goal: create two pictures that are challenging or interesting to recreate once they are finished. If you can get someone to say, \u0026ldquo;How did you do that?\u0026ldquo;, your puzzle is a success.\nPossible sources:\n Geometry puzzles Triangle puzzles Mondrian  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-problemset/",
@@ -308,14 +308,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

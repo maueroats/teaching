@@ -10,6 +10,9 @@ weight: 20
 **Deadline**: Finish before Tuesday, September 26 (chapter 3 test
 day). Turn in Wednesday, September 27.
 
+**Produce**: One complex piece of art per person in the group. (Two simpler pieces.) 
+(Groups of at most two.)
+
 **Goal**: Art projects should demonstrate a range of functions from the
 chapter, try to use 3-4 from each category in your whole project.
 
@@ -24,8 +27,11 @@ the "`/align`" variations. (Use the variations!)
 * Colors: `color-database`, `make-color` from the internet, `colorize`
 or `name->color`.
 
-**Remember**: This is a short project. It is OK to simplify and focus
-on using the goal functions (see above).
+**Remember**: This is a short project. _I expect you will spend no more than
+two hours on it_, including time working in class Friday and Monday. 
+
+It is OK to simplify and focus on using the goal functions (see
+above).
 
 ## Steps
 
@@ -47,7 +53,7 @@ Choose a piece of art for inspiration.
 
 ## Choice #2: Picture Puzzles
 
-Goal: create three pictures that are challenging or interesting to
+Goal: create two pictures that are challenging or interesting to
 recreate once they are finished. If you can get someone to say, "How
 did you do that?", your puzzle is a success.
 
