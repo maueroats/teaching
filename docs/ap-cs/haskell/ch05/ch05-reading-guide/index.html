@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.27.1" />
-    <meta name="description" content="Battleship and homework review.">
+    <meta name="description" content="">
 
 
-    <title>2017-09-18 :: WY Computer Science</title>
+    <title>Chapter 5 Reading Guide :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/daily/2017-09-18/">
+  <body class="" data-url="/ap-cs/haskell/ch05/ch05-reading-guide/">
     <nav id="sidebar" class="">
 
 
@@ -587,7 +587,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch05/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -598,7 +598,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -621,7 +621,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/ch05/ch05-reading-guide/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/haskell/ch05/ch05-reading-guide/">
         <span>Chapter 5 Reading Guide</span> 
@@ -650,7 +650,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/daily/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -661,7 +661,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -684,7 +684,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell/daily/2017-09-18/">
         <span>2017-09-18</span> 
@@ -1281,7 +1281,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/daily/'>Haskell Daily Notes</a> > 2017-09-18
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch05/'>5. Recursion</a> > Chapter 5 Reading Guide
 
  
 
@@ -1305,39 +1305,66 @@
         
           <div id="tags">
             
-              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
+              <a class="label label-default" href="http://wy-cs.info/tags/reading-guide">reading-guide</a>
             
           </div>
         
         <div id="body-inner">
           
-            <h1>2017-09-18</h1>
+            <h1>Chapter 5 Reading Guide</h1>
           
 
 
 
 
-<p>We discussed problem 7 from the homework. You should finish it based on the discussion.</p>
+<p>The purpose of reading this section is to see how an experienced
+author writes functions that work on lists.
+</p>
 
-<p>Mentioned from Chapter 5: <code>type</code> to make short ways to say types. Examples:</p>
-
-<pre><code class="language-haskell">    type Pt = (Int,Int)
-    type Ship = [Pt]
-    type Shots = [Pt]
-</code></pre>
-
-<p>We wrote the function <code>is_sunk</code> for battleship.</p>
-
-<p>Functions we discussed:</p>
+<p>Functions:</p>
 
 <ul>
-<li>[<code>&amp;&amp;</code>]: Join two Boolean values with logical and.</li>
-<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:and"><code>and</code></a>: Join a list of Boolean values with logical and.</li>
-<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:any"><code>all</code></a>: Apply a tester function and then join all of the values together with &ldquo;and&rdquo;.</li>
+<li><code>maximum</code>: Two different versions.</li>
+<li><code>replicate</code></li>
+<li><code>take</code></li>
+<li><code>reverse</code></li>
+<li><code>repeat</code></li>
+<li><code>zip</code></li>
+<li><code>elem</code></li>
+<li><code>quicksort</code>: This one takes some thinking to understand.</li>
 </ul>
 
-<p>All of these functions have counterparts for logical or; they are: <code>||</code>, <code>or</code>, <code>any</code>.</p>
+<p>After you have read the chapter, write answers to these questions:</p>
 
+<ol>
+<li><p>What is the main idea behind the <code>quicksort</code> function?</p></li>
+
+<li><p>Write the <code>insertBefore</code> function that places an element before the current item with the given index in a list. Use as few built-in functions as you can. This is a thinking exercise not a practical exercise.</p>
+
+<pre><code class="language-haskell">insertBefore :: Int -&gt; a -&gt; [a] -&gt; [a]
+insertBefore n item xs = undefined
+-- Examples:
+insertBefore 0 3 [5,7] == [3,5,7]
+insertBefore 1 6 [5,7] == [5,6,7]
+insertBefore 2 9 [5,7] == [5,7,9]
+</code></pre></li>
+
+<li><p>The <code>allPermutations</code> function takes in a list and returns a list
+of lists. The output contains every permutation of the input list
+exactly once. (Treat all of the input list elements as
+distinguishable; see last test case.) The permutations do not have
+to appear in the order given below.</p>
+
+<pre><code class="language-haskell">allPermutations [1,2] = [[1,2],[2,1]]
+allPermutations [1,2,3] == [ [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+allPermutations [1,1] = [[1,1],[1,1]] -- do not try to see the items are the same
+</code></pre></li>
+
+<li><p>Write the <code>grouper</code> function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order. (Should alter/edit?)</p>
+
+<pre><code class="language-haskell">grouper [1,1,1,2,3,3,2] = [[1,1,1],[2],[3,3],[2]]
+</code></pre></li>
+</ol>
 
 <footer class=" footline" >
 	
@@ -1690,38 +1717,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1748,22 +1743,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
             
         
                     
@@ -1772,125 +1751,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1948,8 +1810,90 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
                         
             
@@ -2031,6 +1975,89 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -2089,10 +2116,10 @@
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/daily/" title="Haskell Daily Notes"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/ch05/" title="5. Recursion"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/daily/2017-09-13/" title="2017-09-14 Indentation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/daily/" title="Haskell Daily Notes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

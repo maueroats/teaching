@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.27.1" />
-    <meta name="description" content="Battleship and homework review.">
+    <meta name="description" content="">
 
 
-    <title>2017-09-18 :: WY Computer Science</title>
+    <title>5. Recursion :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,12 +29,15 @@
     
 
     
+<link href="http://wy-cs.info/ap-cs/haskell/ch05/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
+<link href="http://wy-cs.info/ap-cs/haskell/ch05/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
+
 
 <link href="/css/prism.css" rel="stylesheet">
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/daily/2017-09-18/">
+  <body class="" data-url="/ap-cs/haskell/ch05/">
     <nav id="sidebar" class="">
 
 
@@ -587,8 +590,8 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch05/" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/ap-cs/haskell/ch05/">
@@ -598,7 +601,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -650,7 +653,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/daily/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -661,7 +664,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -684,7 +687,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell/daily/2017-09-18/">
         <span>2017-09-18</span> 
@@ -1278,12 +1281,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/daily/'>Haskell Daily Notes</a> > 2017-09-18
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > 5. Recursion
 
  
 
@@ -1303,45 +1301,76 @@
           </div>
         
         
-          <div id="tags">
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
-            
-          </div>
-        
         <div id="body-inner">
           
-            <h1>2017-09-18</h1>
+            <h1>5. Recursion</h1>
           
 
 
 
 
-<p>We discussed problem 7 from the homework. You should finish it based on the discussion.</p>
 
-<p>Mentioned from Chapter 5: <code>type</code> to make short ways to say types. Examples:</p>
 
-<pre><code class="language-haskell">    type Pt = (Int,Int)
-    type Ship = [Pt]
-    type Shots = [Pt]
-</code></pre>
-
-<p>We wrote the function <code>is_sunk</code> for battleship.</p>
-
-<p>Functions we discussed:</p>
-
-<ul>
-<li>[<code>&amp;&amp;</code>]: Join two Boolean values with logical and.</li>
-<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:and"><code>and</code></a>: Join a list of Boolean values with logical and.</li>
-<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:any"><code>all</code></a>: Apply a tester function and then join all of the values together with &ldquo;and&rdquo;.</li>
-</ul>
-
-<p>All of these functions have counterparts for logical or; they are: <code>||</code>, <code>or</code>, <code>any</code>.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
+
+
+
+	
+
+	<div class="extra-pagination inner">
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+	</div>
+
+	
+	<article class="post ap-cs">
+    <header class="post-header">
+        <h3 class="post-title"><a href="/ap-cs/haskell/ch05/ch05-reading-guide/">Chapter 5 Reading Guide</a></h3>
+    </header>
+    <section class="post-excerpt">
+      <p> 
+<p>The purpose of reading this section is to see how an experienced
+author writes functions that work on lists.
+</p>
+
+
+	  <a class="read-more" href="/ap-cs/haskell/ch05/ch05-reading-guide/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="http://wy-cs.infotags/reading-guide/">reading-guide</a>
+            
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+
+	<div style="margin-bottom:2rem"></div>
+
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
 
 
 
@@ -1690,38 +1719,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1736,225 +1733,8 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -2047,6 +1827,254 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -2089,10 +2117,10 @@
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/daily/" title="Haskell Daily Notes"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/ch04/ch04-discussion/" title="Chapter 4 Discussion"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/daily/2017-09-13/" title="2017-09-14 Indentation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/ch05/ch05-reading-guide/" title="Chapter 5 Reading Guide" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
