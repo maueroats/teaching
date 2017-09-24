@@ -41,12 +41,18 @@ After you have read the chapter, write answers to these questions:
    distinguishable; see last test case.) The permutations do not have
    to appear in the order given below.
 ```haskell 
-    allPermutations [1,2] = [[1,2],[2,1]]
+    allPermutations [1,2] == [[1,2],[2,1]]
     allPermutations [1,2,3] == [ [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
-    allPermutations [1,1] = [[1,1],[1,1]] -- do not try to see the items are the same
+    allPermutations [1,1] == [[1,1],[1,1]] -- do not try to see the items are the same
 ```
 
-4. Write the `grouper` function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order. (Should alter/edit?)
+4. Write the `combinations` function that takes in a number k and a list, and returns a list of lists. The output contains every distinct k item subset of the list (keep the items in the order they appear in the original list).
+```haskell
+    combinations 2 [1,2,3] == [[1,2],[1,3],[2,3]]
+    length $ combinations 3 [1..5] == 10
+```
+
+5. (alter/edit?) Write the `grouper` function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order.
 ```haskell
     grouper [1,1,1,2,3,3,2] = [[1,1,1],[2],[3,3],[2]]
 ```
