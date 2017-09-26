@@ -49,7 +49,8 @@ After you have read the chapter, write answers to these questions:
 4. Write the `combinations` function that takes in a number k and a list, and returns a list of lists. The output contains every distinct k item subset of the list (keep the items in the order they appear in the original list).
 ```haskell
     combinations 2 [1,2,3] == [[1,2],[1,3],[2,3]]
-    length $ combinations 3 [1..5] == 10
+    combinations 3 [1..5] == [[1,2,3],[1,2,4],[1,2,5],[1,3,4],[1,3,5],
+                              [1,4,5],[2,3,4],[2,3,5],[2,4,5],[3,4,5]]
 ```
 
 5. (alter/edit?) Write the `grouper` function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order.

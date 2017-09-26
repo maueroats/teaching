@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Haskell Calendar :: WY Computer Science</title>
+    <title>Chapter 4 Quiz :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/ap-cs/haskell-calendar/">
+  <body class="" data-url="/ap-cs/haskell/ch04/ch04-quiz/">
     <nav id="sidebar" class="">
 
 
@@ -119,7 +119,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell-calendar/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell-calendar/">
         <span>Haskell Calendar</span> 
@@ -139,7 +139,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -150,7 +150,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -464,7 +464,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -475,7 +475,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -558,7 +558,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/ch04/ch04-quiz/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/haskell/ch04/ch04-quiz/">
         <span>Chapter 4 Quiz</span> 
@@ -1295,7 +1295,17 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > Haskell Calendar
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch04/'>4. Syntax in Functions</a> > Chapter 4 Quiz
+
+ 
+
+ 
 
  
 
@@ -1306,7 +1316,14 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#mountain-questions">Mountain Questions</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -1317,21 +1334,57 @@
             
               <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
             
-              <a class="label label-default" href="http://wy-cs.info/tags/calendar">calendar</a>
+              <a class="label label-default" href="http://wy-cs.info/tags/quiz">quiz</a>
             
           </div>
         
         <div id="body-inner">
           
-            <h1>Haskell Calendar</h1>
+            <h1>Chapter 4 Quiz</h1>
           
 
 
 
 
-<p>Daily calendar for Haskell unit.</p>
 
-<iframe width="100%" height="300px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBhDB3unfPXfH9GnO29RkTIbR3P1gdKUw1Q9EJe-NGrZ_-2t3xQlhMx86TK4S-Si6Pe5LOz9LR-Gav/pubhtml?gid=1852239117&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+<p>All functions should include appropriate type signatures.</p>
+
+<ol>
+<li>Define a function f that takes one number as input. If the number
+is 1 or 100, the answer is 99. If the number is 1000 or 10000, the
+answer is 6. In any other case, the answer is five times the input.</li>
+</ol>
+
+<h2 id="mountain-questions">Mountain Questions</h2>
+
+<p>The questions below all refer to a &ldquo;mountain range&rdquo;, which is a list
+of integers specifying the height in feet above sea level.</p>
+
+<ul>
+<li>Base camp is half of the height of the highest mountain.</li>
+<li>New mountains start/end when altitude goes above/below base camp.</li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code class="language-haskell">     mountains = [0, 50, 100, 99, 98, 50, 75, 60, 20, 10, 90, -5]
+     highestPeak mountains == 100
+     baseCamp mountains == 50
+     countPeaks mountains == 3
+     tallestWidth mountains == 4
+</code></pre>
+
+<ol>
+<li><p>Find the height of the highest mountain..</p></li>
+
+<li><p>Base camp is half the height of the highest mountain. Write a
+function to find the height of base camp.</p></li>
+
+<li><p>Write a function to count the number of peaks.</p></li>
+
+<li><p>Write a function to estimate the width of the tallest mountain.</p></li>
+</ol>
 
 
 <footer class=" footline" >
@@ -1391,6 +1444,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -1408,8 +1463,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1426,277 +1479,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1818,6 +1602,286 @@
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2092,10 +2156,10 @@
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/" title="AP CS"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/ch04/ch04-summary/" title="Chapter 4 Summary"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/" title="Haskell" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/ch04/ch04-discussion/" title="Chapter 4 Discussion" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

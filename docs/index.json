@@ -39,7 +39,7 @@
 	"title": "4. Syntax in Functions",
 	"tags": ["haskell"],
 	"description": "",
-	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide  Questions to help you understand Chapter 4.\n Chapter 4 Problem Set  Exercises to improve your Haskell programming.\n Chapter 4 Summary  patterns, guards, where, let, case\n Chapter 4 Discussion  Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n"
+	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide  Questions to help you understand Chapter 4.\n Chapter 4 Problem Set  Exercises to improve your Haskell programming.\n Chapter 4 Summary  patterns, guards, where, let, case\n Chapter 4 Quiz  \n Chapter 4 Discussion  Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch05/",
@@ -196,11 +196,18 @@
 	"content": "  2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-quiz/",
+	"title": "Chapter 4 Quiz",
+	"tags": ["haskell", "quiz"],
+	"description": "",
+	"content": " All functions should include appropriate type signatures.\n Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input.  Mountain Questions The questions below all refer to a \u0026ldquo;mountain range\u0026rdquo;, which is a list of integers specifying the height in feet above sea level.\n Base camp is half of the height of the highest mountain. New mountains start/end when altitude goes above/below base camp.  Example:\nmountains = [0, 50, 100, 99, 98, 50, 75, 60, 20, 10, 90, -5] highestPeak mountains == 100 baseCamp mountains == 50 countPeaks mountains == 3 tallestWidth mountains == 4   Find the height of the highest mountain..\n Base camp is half the height of the highest mountain. Write a function to find the height of base camp.\n Write a function to count the number of peaks.\n Write a function to estimate the width of the tallest mountain.\n  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch05/ch05-reading-guide/",
 	"title": "Chapter 5 Reading Guide",
 	"tags": ["reading-guide"],
 	"description": "",
-	"content": "The purpose of reading this section is to see how an experienced author writes functions that work on lists. Functions:\n maximum: Two different versions. replicate take reverse repeat zip elem quicksort: This one takes some thinking to understand.  After you have read the chapter, write answers to these questions:\n What is the main idea behind the quicksort function?\n Write the insertBefore function that places an element before the current item with the given index in a list. Use as few built-in functions as you can. This is a thinking exercise not a practical exercise.\ninsertBefore :: Int -\u0026gt; a -\u0026gt; [a] -\u0026gt; [a] insertBefore n item xs = undefined -- Examples: insertBefore 0 3 [5,7] == [3,5,7] insertBefore 1 6 [5,7] == [5,6,7] insertBefore 2 9 [5,7] == [5,7,9]  The allPermutations function takes in a list and returns a list of lists. The output contains every permutation of the input list exactly once. (Treat all of the input list elements as distinguishable; see last test case.) The permutations do not have to appear in the order given below.\nallPermutations [1,2] == [[1,2],[2,1]] allPermutations [1,2,3] == [ [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]] allPermutations [1,1] == [[1,1],[1,1]] -- do not try to see the items are the same  Write the combinations function that takes in a number k and a list, and returns a list of lists. The output contains every distinct k item subset of the list (keep the items in the order they appear in the original list).\ncombinations 2 [1,2,3] == [[1,2],[1,3],[2,3]] length $ combinations 3 [1..5] == 10  (alter/edit?) Write the grouper function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order.\ngrouper [1,1,1,2,3,3,2] = [[1,1,1],[2],[3,3],[2]]  "
+	"content": "The purpose of reading this section is to see how an experienced author writes functions that work on lists. Functions:\n maximum: Two different versions. replicate take reverse repeat zip elem quicksort: This one takes some thinking to understand.  After you have read the chapter, write answers to these questions:\n What is the main idea behind the quicksort function?\n Write the insertBefore function that places an element before the current item with the given index in a list. Use as few built-in functions as you can. This is a thinking exercise not a practical exercise.\ninsertBefore :: Int -\u0026gt; a -\u0026gt; [a] -\u0026gt; [a] insertBefore n item xs = undefined -- Examples: insertBefore 0 3 [5,7] == [3,5,7] insertBefore 1 6 [5,7] == [5,6,7] insertBefore 2 9 [5,7] == [5,7,9]  The allPermutations function takes in a list and returns a list of lists. The output contains every permutation of the input list exactly once. (Treat all of the input list elements as distinguishable; see last test case.) The permutations do not have to appear in the order given below.\nallPermutations [1,2] == [[1,2],[2,1]] allPermutations [1,2,3] == [ [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]] allPermutations [1,1] == [[1,1],[1,1]] -- do not try to see the items are the same  Write the combinations function that takes in a number k and a list, and returns a list of lists. The output contains every distinct k item subset of the list (keep the items in the order they appear in the original list).\ncombinations 2 [1,2,3] == [[1,2],[1,3],[2,3]] combinations 3 [1..5] == [[1,2,3],[1,2,4],[1,2,5],[1,3,4],[1,3,5], [1,4,5],[2,3,4],[2,3,5],[2,4,5],[3,4,5]]  (alter/edit?) Write the grouper function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order.\ngrouper [1,1,1,2,3,3,2] = [[1,1,1],[2],[3,3],[2]]  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-discussion/",
@@ -284,7 +291,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Chapter 5 Reading Guide modified Sun 09-24  5. Recursion modified Sun 09-24  Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Chapter 4 Reading Guide modified Sun 09-17  Intermediate Computer Science Recent Changes    Puzzle Opener modified Fri 09-22  Art Project modified Thu 09-21  Color Commands modified Thu 09-21  3. More Interesting Pictures modified Wed 09-20  Calendar modified Mon 09-18  Chapter 01 Review modified Mon 09-11  1. Introduction modified Sun 09-10  Intermediate CS modified Sat 09-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  5. Recursion modified Sun 09-24  Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Intermediate Computer Science Recent Changes    Puzzle Opener modified Fri 09-22  Art Project modified Thu 09-21  Color Commands modified Thu 09-21  3. More Interesting Pictures modified Wed 09-20  Calendar modified Mon 09-18  Chapter 01 Review modified Mon 09-11  1. Introduction modified Sun 09-10  Intermediate CS modified Sat 09-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
@@ -322,14 +329,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
