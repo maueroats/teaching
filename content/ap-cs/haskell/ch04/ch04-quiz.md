@@ -20,6 +20,8 @@ of integers specifying the height in feet above sea level.
 
 * Base camp is half of the height of the highest mountain.
 * New mountains start/end when altitude goes above/below base camp.
+* The mountain range data is guaranteed to begin and end with a number
+  below the height of base camp.
 
 Example:
 ```haskell
