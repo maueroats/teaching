@@ -31,10 +31,15 @@ Example:
      countPeaks mountains == 3
      tallestWidth mountains == 4
 ```
+In the example above, the three mountains are:
+
+* `[50,100,99,98,50]` with width = 4
+* `[50,75,60,20]` with width = 3
+* `[10,90,-5]` with width = 2
+
 2. Find the height of the highest mountain..
 
-3. Base camp is half the height of the highest mountain. Write a
-   function to find the height of base camp.
+3. Write a function to find the height of base camp.
 
 4. Write a function to count the number of peaks. 
 
