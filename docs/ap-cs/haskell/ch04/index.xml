@@ -44,16 +44,6 @@ Exercises  First Third. Return the sum of the first and third elements in the li
     </item>
     
     <item>
-      <title>Chapter 4 Quiz</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch04/ch04-quiz/</link>
-      <pubDate>Tue, 26 Sep 2017 08:08:42 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch04/ch04-quiz/</guid>
-      <description>All functions should include appropriate type signatures.
- Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input.  Mountain Questions The questions below all refer to a &amp;ldquo;mountain range&amp;rdquo;, which is a list of integers specifying the height in feet above sea level.</description>
-    </item>
-    
-    <item>
       <title>Chapter 4 Discussion</title>
       <link>http://wy-cs.info/ap-cs/haskell/ch04/ch04-discussion/</link>
       <pubDate>Wed, 20 Sep 2017 09:59:51 -0500</pubDate>
