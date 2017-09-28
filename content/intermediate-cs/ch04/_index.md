@@ -12,5 +12,5 @@ an argument, how the stepper evaluates functions, and where names like
 
 ## Homework
 
-* Thurs, 9/28: Do four exercises: 4.2.{2,4}, 4.3.2, and 4.2.1.
+* Thurs, 2017-09-28: Do four exercises: 4.2.{2,4}, 4.3.1, and 4.4.1.
 
