@@ -224,6 +224,13 @@
 	"content": "  2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch04/",
+	"title": "4. Writing Functions",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 4 teaches you how to write and test your own functions. When you are done, you should know the difference between a parameter and an argument, how the stepper evaluates functions, and where names like pic are visible (\u0026ldquo;scope\u0026rdquo;). Homework  Thurs, 9\u0026frasl;28: Do four exercises: 4.2.{2,4}, 4.3.2, and 4.2.1. "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-quiz/",
 	"title": "Chapter 4 Quiz",
 	"tags": ["haskell", "quiz"],
@@ -319,7 +326,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  5. Recursion modified Sun 09-24  Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Intermediate Computer Science Recent Changes    Period 7 modified Wed 09-27  Period 5 modified Wed 09-27  Period 1 modified Wed 09-27  Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Art Project modified Thu 09-21  Color Commands modified Thu 09-21  3. More Interesting Pictures modified Wed 09-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  5. Recursion modified Sun 09-24  Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Intermediate Computer Science Recent Changes    4. Writing Functions modified Thu 09-28  Period 7 modified Wed 09-27  Period 5 modified Wed 09-27  Period 1 modified Wed 09-27  Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Art Project modified Thu 09-21  Color Commands modified Thu 09-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/resources/academic-integrity/",
@@ -357,14 +364,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

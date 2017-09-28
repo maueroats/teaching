@@ -8,6 +8,6 @@ weight: 7
 ![Ava Escher](7-AvaPenn.png)
 ![Matthew Floyd H](7-MatthewHernandez.png)
 ![Ruben Overwatch](7-RubenRojas.png)
+![Strokes](7-RobW.png)
 ![Trang ZenPool](7-TrangNguyen.png)
-
 

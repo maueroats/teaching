@@ -9,6 +9,7 @@ draft: false
 ![Krishna Chess](1-Krishna.png "Krishna Chess")
 ![Sophie](1-Sophie.png)
 ![Zophie](1-Zophie.png)
+![Mario](1-Taylor.png)
 ![Moving windmill](1-WeiwenOu.png "This windmill actually spins.")
 
 
