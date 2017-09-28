@@ -26,7 +26,7 @@ After you have read the chapter, write answers to these questions:
 
 1. What is the main idea behind the `quicksort` function?
 
-2. Write the `insertBefore` function that places an element before the current item with the given index in a list. Use as few built-in functions as you can. This is a thinking exercise not a practical exercise.
+2. Write the `insertBefore` function that places an element before the current item with the given index in a list. Use as few built-in functions as you can. This is a thinking exercise not a practical exercise -- figure out how to do it without `take`, `drop` or `splitAt`.
 {{< highlight haskell >}}
     insertBefore :: Int -> a -> [a] -> [a]
     insertBefore n item xs = undefined
