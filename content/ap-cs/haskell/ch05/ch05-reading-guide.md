@@ -4,6 +4,7 @@ date: 2017-09-24T13:52:19-05:00
 tags:
  - reading-guide
 draft: false
+pygmentsStyle: monokailight
 ---
 
 The purpose of reading this section is to see how an experienced
@@ -26,14 +27,14 @@ After you have read the chapter, write answers to these questions:
 1. What is the main idea behind the `quicksort` function?
 
 2. Write the `insertBefore` function that places an element before the current item with the given index in a list. Use as few built-in functions as you can. This is a thinking exercise not a practical exercise.
-```haskell
+{{< highlight haskell >}}
     insertBefore :: Int -> a -> [a] -> [a]
     insertBefore n item xs = undefined
     -- Examples:
     insertBefore 0 3 [5,7] == [3,5,7]
     insertBefore 1 6 [5,7] == [5,6,7]
     insertBefore 2 9 [5,7] == [5,7,9]
-```
+{{< /highlight >}}
 
 3. The `allPermutations` function takes in a list and returns a list
    of lists. The output contains every permutation of the input list

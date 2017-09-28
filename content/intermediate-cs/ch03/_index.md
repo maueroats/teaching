@@ -2,7 +2,7 @@
 title: "3. More Interesting Pictures"
 date: 2017-09-18T22:07:54-05:00
 lastmod: 2017-09-20
-weight: 3
+weight: 30
 tags:
  - homework
 draft: false

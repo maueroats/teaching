@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.27.1" />
+    <meta name="generator" content="Hugo 0.29" />
     <meta name="description" content="">
 
 
@@ -1050,6 +1050,109 @@
  
   
     
+    <li data-nav-id="/intermediate-cs/ch03art/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intermediate-cs/ch03art/">
+        <span>Art with Racket</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-1/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-1/">
+        <span>Period 1</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-5/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-5/">
+        <span>Period 5</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-7/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-7/">
+        <span>Period 7</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item
      
       ">
@@ -1239,6 +1342,12 @@
             
                 <li class="" role="">
                     <h3>Other</h3>
+                    <a href="/art-gallery">Art Gallery</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
                     <a href="/biography">Biography</a>
                     
                 </li>
@@ -1350,24 +1459,20 @@
 <li>zip with count</li>
 <li>helper function knows count and list, drop &amp; take</li>
 </ul>
-
-<pre><code class="language-haskell">breaklicator xs = replicate (length xs - 3) xs
-numberIt ys = zip ys [0..]
-              
-breakItUp' :: ([a],Int) -&gt; [a]
-breakItUp' (xs,y) = take 4 $ drop y xs
-
-breakItUp_v2 :: [a] -&gt; [[a]]
-breakItUp_v2 xs = [ breakItUp' w | w &lt;- numberIt $ breaklicator xs ]
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">breaklicator</span><span style=""> </span><span style="color:#75af00">xs</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">replicate</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">length</span><span style=""> </span><span style="color:#75af00">xs</span><span style=""> </span><span style="color:#f92672">-</span><span style=""> </span><span style="color:#ae81ff">3</span><span style="color:#111">)</span><span style=""> </span><span style="color:#75af00">xs</span><span style="">
+</span><span style=""></span><span style="color:#75af00">numberIt</span><span style=""> </span><span style="color:#75af00">ys</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">zip</span><span style=""> </span><span style="color:#75af00">ys</span><span style=""> </span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">..</span><span style="color:#111">]</span><span style="">
+</span><span style="">              
+</span><span style=""></span><span style="color:#75af00">breakItUp&#39;</span><span style=""> </span><span style="color:#f92672">::</span><span style=""> </span><span style="color:#111">([</span><span style="color:#75af00">a</span><span style="color:#111">],</span><span style="color:#00a8c8">Int</span><span style="color:#111">)</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#111">[</span><span style="color:#75af00">a</span><span style="color:#111">]</span><span style="">
+</span><span style=""></span><span style="color:#75af00">breakItUp&#39;</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">xs</span><span style="color:#111">,</span><span style="color:#75af00">y</span><span style="color:#111">)</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">take</span><span style=""> </span><span style="color:#ae81ff">4</span><span style=""> </span><span style="color:#f92672">$</span><span style=""> </span><span style="color:#75af00">drop</span><span style=""> </span><span style="color:#75af00">y</span><span style=""> </span><span style="color:#75af00">xs</span><span style="">
+</span><span style="">
+</span><span style=""></span><span style="color:#75af00">breakItUp_v2</span><span style=""> </span><span style="color:#f92672">::</span><span style=""> </span><span style="color:#111">[</span><span style="color:#75af00">a</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#111">[[</span><span style="color:#75af00">a</span><span style="color:#111">]]</span><span style="">
+</span><span style=""></span><span style="color:#75af00">breakItUp_v2</span><span style=""> </span><span style="color:#75af00">xs</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">[</span><span style=""> </span><span style="color:#75af00">breakItUp&#39;</span><span style=""> </span><span style="color:#75af00">w</span><span style=""> </span><span style="color:#f92672">|</span><span style=""> </span><span style="color:#75af00">w</span><span style=""> </span><span style="color:#f92672">&lt;-</span><span style=""> </span><span style="color:#75af00">numberIt</span><span style=""> </span><span style="color:#f92672">$</span><span style=""> </span><span style="color:#75af00">breaklicator</span><span style=""> </span><span style="color:#75af00">xs</span><span style=""> </span><span style="color:#111">]</span></code></pre>
+</div>
 <p>Fancy solution for <code>breakItUp</code>, shows power of Haskell pattern matching (Chapter 4):</p>
-
-<pre><code class="language-haskell">breakItUp :: [a] -&gt; [[a]]
-breakItUp [a,b,c,d] = [[a,b,c,d]]
-breakItUp (x:xs) = (x:take 3 xs) : breakItUp xs
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">breakItUp</span><span style=""> </span><span style="color:#f92672">::</span><span style=""> </span><span style="color:#111">[</span><span style="color:#75af00">a</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#111">[[</span><span style="color:#75af00">a</span><span style="color:#111">]]</span><span style="">
+</span><span style=""></span><span style="color:#75af00">breakItUp</span><span style=""> </span><span style="color:#111">[</span><span style="color:#75af00">a</span><span style="color:#111">,</span><span style="color:#75af00">b</span><span style="color:#111">,</span><span style="color:#75af00">c</span><span style="color:#111">,</span><span style="color:#75af00">d</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">[[</span><span style="color:#75af00">a</span><span style="color:#111">,</span><span style="color:#75af00">b</span><span style="color:#111">,</span><span style="color:#75af00">c</span><span style="color:#111">,</span><span style="color:#75af00">d</span><span style="color:#111">]]</span><span style="">
+</span><span style=""></span><span style="color:#75af00">breakItUp</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">x</span><span style="color:#00a8c8">:</span><span style="color:#75af00">xs</span><span style="color:#111">)</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">x</span><span style="color:#00a8c8">:</span><span style="color:#75af00">take</span><span style=""> </span><span style="color:#ae81ff">3</span><span style=""> </span><span style="color:#75af00">xs</span><span style="color:#111">)</span><span style=""> </span><span style="color:#00a8c8">:</span><span style=""> </span><span style="color:#75af00">breakItUp</span><span style=""> </span><span style="color:#75af00">xs</span></code></pre>
+</div>
 <p>targetPractice plan:</p>
 
 <ul>
@@ -1375,23 +1480,21 @@ breakItUp (x:xs) = (x:take 3 xs) : breakItUp xs
 <li>helper function that remembers the closest point so far</li>
 <li>recursively go through list of all points</li>
 </ul>
-
-<pre><code class="language-haskell">-- you should just write (Int,Int) everywhere I write Pt
-type Pt = (Int,Int)
-
-dist :: Pt -&gt; Pt -&gt; Int
-dist (x0,y0) (x1,y1) = (x1-x0)^2 + (y1-y0)^2
-
-targetPractice ::  Pt -&gt; [Pt] -&gt; Pt
-targetPractice pt ptList = targetPractice' pt ptList (head ptList)
-
-targetPractice' :: Pt -&gt; [Pt] -&gt; Pt -&gt; Pt 
-targetPractice' pt [] closestSoFar = closestSoFar
-targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest 
-    where newClosest = if (dist x pt) &lt; (dist closestSoFar pt) 
-	                    then x else closestSoFar
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75715e">-- you should just write (Int,Int) everywhere I write Pt</span><span style="">
+</span><span style=""></span><span style="color:#00a8c8">type</span><span style=""> </span><span style="color:#00a8c8">Pt</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">(</span><span style="color:#00a8c8">Int</span><span style="color:#111">,</span><span style="color:#00a8c8">Int</span><span style="color:#111">)</span><span style="">
+</span><span style="">
+</span><span style=""></span><span style="color:#75af00">dist</span><span style=""> </span><span style="color:#f92672">::</span><span style=""> </span><span style="color:#00a8c8">Pt</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#00a8c8">Pt</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#00a8c8">Int</span><span style="">
+</span><span style=""></span><span style="color:#75af00">dist</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">x0</span><span style="color:#111">,</span><span style="color:#75af00">y0</span><span style="color:#111">)</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">x1</span><span style="color:#111">,</span><span style="color:#75af00">y1</span><span style="color:#111">)</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">x1</span><span style="color:#f92672">-</span><span style="color:#75af00">x0</span><span style="color:#111">)</span><span style="color:#f92672">^</span><span style="color:#ae81ff">2</span><span style=""> </span><span style="color:#f92672">+</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">y1</span><span style="color:#f92672">-</span><span style="color:#75af00">y0</span><span style="color:#111">)</span><span style="color:#f92672">^</span><span style="color:#ae81ff">2</span><span style="">
+</span><span style="">
+</span><span style=""></span><span style="color:#75af00">targetPractice</span><span style=""> </span><span style="color:#f92672">::</span><span style="">  </span><span style="color:#00a8c8">Pt</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#111">[</span><span style="color:#00a8c8">Pt</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#00a8c8">Pt</span><span style="">
+</span><span style=""></span><span style="color:#75af00">targetPractice</span><span style=""> </span><span style="color:#75af00">pt</span><span style=""> </span><span style="color:#75af00">ptList</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">targetPractice&#39;</span><span style=""> </span><span style="color:#75af00">pt</span><span style=""> </span><span style="color:#75af00">ptList</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">head</span><span style=""> </span><span style="color:#75af00">ptList</span><span style="color:#111">)</span><span style="">
+</span><span style="">
+</span><span style=""></span><span style="color:#75af00">targetPractice&#39;</span><span style=""> </span><span style="color:#f92672">::</span><span style=""> </span><span style="color:#00a8c8">Pt</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#111">[</span><span style="color:#00a8c8">Pt</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#00a8c8">Pt</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#00a8c8">Pt</span><span style=""> 
+</span><span style=""></span><span style="color:#75af00">targetPractice&#39;</span><span style=""> </span><span style="color:#75af00">pt</span><span style=""> </span><span style="color:#00a8c8">[]</span><span style=""> </span><span style="color:#75af00">closestSoFar</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">closestSoFar</span><span style="">
+</span><span style=""></span><span style="color:#75af00">targetPractice&#39;</span><span style=""> </span><span style="color:#75af00">pt</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">x</span><span style="color:#00a8c8">:</span><span style="color:#75af00">xs</span><span style="color:#111">)</span><span style=""> </span><span style="color:#75af00">closestSoFar</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">targetPractice&#39;</span><span style=""> </span><span style="color:#75af00">pt</span><span style=""> </span><span style="color:#75af00">xs</span><span style=""> </span><span style="color:#75af00">newClosest</span><span style=""> 
+</span><span style="">    </span><span style="color:#00a8c8">where</span><span style=""> </span><span style="color:#75af00">newClosest</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#00a8c8">if</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">dist</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#75af00">pt</span><span style="color:#111">)</span><span style=""> </span><span style="color:#f92672">&lt;</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">dist</span><span style=""> </span><span style="color:#75af00">closestSoFar</span><span style=""> </span><span style="color:#75af00">pt</span><span style="color:#111">)</span><span style=""> 
+</span><span style="">	                    </span><span style="color:#00a8c8">then</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#00a8c8">else</span><span style=""> </span><span style="color:#75af00">closestSoFar</span></code></pre>
+</div>
 
 <footer class=" footline" >
 	
@@ -1940,6 +2043,70 @@ targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             

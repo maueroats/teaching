@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>Period 1</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03art/period-1/</link>
+      <pubDate>Wed, 27 Sep 2017 20:14:20 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch03art/period-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Period 5</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03art/period-5/</link>
+      <pubDate>Wed, 27 Sep 2017 20:14:40 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch03art/period-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Period 7</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03art/period-7/</link>
+      <pubDate>Wed, 27 Sep 2017 20:14:43 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch03art/period-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Color Commands</title>
       <link>http://wy-cs.info/intermediate-cs/ch03/color/</link>
       <pubDate>Thu, 21 Sep 2017 13:31:31 -0500</pubDate>
@@ -103,37 +130,6 @@ Exercises  First Third. Return the sum of the first and third elements in the li
       <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</guid>
       <description>&lt;p&gt;We learn about types and typeclasses.
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Haskell HW 2</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/</link>
-      <pubDate>Tue, 12 Sep 2017 15:57:47 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/</guid>
-      <description>&lt;p&gt;Graph a function, is a pointon a line, get the numbers more than 100, break up a list,
-find the nearest point.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Haskell HW 2 Solutions</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/</link>
-      <pubDate>Thu, 14 Sep 2017 10:18:00 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/</guid>
-      <description>breakItUp plan:
- replicate input list (length - 3) times zip with count helper function knows count and list, drop &amp;amp; take  breaklicator xs = replicate (length xs - 3) xs numberIt ys = zip ys [0..] breakItUp&#39; :: ([a],Int) -&amp;gt; [a] breakItUp&#39; (xs,y) = take 4 $ drop y xs breakItUp_v2 :: [a] -&amp;gt; [[a]] breakItUp_v2 xs = [ breakItUp&#39; w | w &amp;lt;- numberIt $ breaklicator xs ]  Fancy solution for breakItUp, shows power of Haskell pattern matching (Chapter 4):</description>
-    </item>
-    
-    <item>
-      <title>Syllabus: All Courses</title>
-      <link>http://wy-cs.info/resources/generic-cs-syllabus/</link>
-      <pubDate>Sat, 09 Sep 2017 15:50:00 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/resources/generic-cs-syllabus/</guid>
-      <description>Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:
- Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form &amp;hellip; or email me.</description>
     </item>
     
   </channel>

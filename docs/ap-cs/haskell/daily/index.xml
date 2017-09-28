@@ -19,7 +19,7 @@
       <guid>http://wy-cs.info/ap-cs/haskell/daily/2017-09-18/</guid>
       <description>We discussed problem 7 from the homework. You should finish it based on the discussion.
 Mentioned from Chapter 5: type to make short ways to say types. Examples:
-type Pt = (Int,Int) type Ship = [Pt] type Shots = [Pt]  We wrote the function is_sunk for battleship.
+typePt=(Int,Int)typeShip=[Pt]typeShots=[Pt]  We wrote the function is_sunk for battleship.
 Functions we discussed:
  [&amp;amp;&amp;amp;]: Join two Boolean values with logical and. and: Join a list of Boolean values with logical and. all: Apply a tester function and then join all of the values together with &amp;ldquo;and&amp;rdquo;.</description>
     </item>
@@ -33,7 +33,7 @@ Functions we discussed:
       <description>Indentation is significant in Haskell. Haskell uses indentation to group pieces of code together. This is similar to Python, but there are &amp;ldquo;false cognates&amp;rdquo; - similar code that is indented differently in the two languages. In Racket, grouping is done only by parentheses.
 Indenting to the same level &amp;ldquo;All grouped expressions must be exactly aligned.&amp;rdquo;
  Example 1a: good indentation
-if x `mod` 3 == 0 &amp;amp;&amp;amp; x `mod` 5 == 0 -- good.</description>
+ifx`mod`3==0&amp;amp;&amp;amp;x`mod`5==0-- good. aligned with top x....  Example 1a: bad indentation</description>
     </item>
     
     <item>

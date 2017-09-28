@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.27.1" />
+    <meta name="generator" content="Hugo 0.29" />
     <meta name="description" content="">
 
 
@@ -1050,6 +1050,109 @@
  
   
     
+    <li data-nav-id="/intermediate-cs/ch03art/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intermediate-cs/ch03art/">
+        <span>Art with Racket</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-1/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-1/">
+        <span>Period 1</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-5/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-5/">
+        <span>Period 5</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-7/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-7/">
+        <span>Period 7</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item
      
       ">
@@ -1239,6 +1342,12 @@
             
                 <li class="" role="">
                     <h3>Other</h3>
+                    <a href="/art-gallery">Art Gallery</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
                     <a href="/biography">Biography</a>
                     
                 </li>
@@ -1351,31 +1460,27 @@
 
 <li><p>Write a function to extract an integer from one string and output
 a list containing the second string repeated that many times.</p>
-
-<pre><code class="language-haskell">prob2 &quot;5&quot; &quot;dog&quot; == [&quot;dog&quot;,&quot;dog&quot;,&quot;dog&quot;,&quot;dog&quot;,&quot;dog&quot;]
-</code></pre></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">prob2</span><span style=""> </span><span style="color:#d88200">&#34;5&#34;</span><span style=""> </span><span style="color:#d88200">&#34;dog&#34;</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#111">[</span><span style="color:#d88200">&#34;dog&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;dog&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;dog&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;dog&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;dog&#34;</span><span style="color:#111">]</span></code></pre>
+</div></li>
 
 <li><p>Given two strings containing floating point numbers, return the sum
 of those numbers.</p>
-
-<pre><code class="language-haskell">prob3 &quot;3.14&quot; &quot;2.81&quot; == 5.95
-</code></pre></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">prob3</span><span style=""> </span><span style="color:#d88200">&#34;3.14&#34;</span><span style=""> </span><span style="color:#d88200">&#34;2.81&#34;</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">5.95</span></code></pre>
+</div></li>
 
 <li><p>The root mean square of a list of numbers is the square root of the
 average of the squares of the numbers. Write a function to find the
 RMS of a list of floating point numbers.</p>
-
-<pre><code class="language-haskell"> -- results are approximate
- prob4 [1, 10, 100] == 58.0259 
- prob4 [3.14, 2.81] == 2.979
-</code></pre></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style=""> </span><span style="color:#75715e">-- results are approximate</span><span style="">
+</span><span style=""> </span><span style="color:#75af00">prob4</span><span style=""> </span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style=""> </span><span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style=""> </span><span style="color:#ae81ff">100</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">58.0259</span><span style=""> 
+</span><span style=""> </span><span style="color:#75af00">prob4</span><span style=""> </span><span style="color:#111">[</span><span style="color:#ae81ff">3.14</span><span style="color:#111">,</span><span style=""> </span><span style="color:#ae81ff">2.81</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">2.979</span></code></pre>
+</div></li>
 
 <li><p>The mode of a list of integers is the number that appears the most
 often. Write a function to find the mode of a list of integers.</p>
-
-<pre><code class="language-haskell"> prob5 [1,1,1,2,2,2,2,2,3,3] == 2
- prob5 [1,1,1,2,2,2] == 1 -- any one of the modes is ok
-</code></pre></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style=""> </span><span style="color:#75af00">prob5</span><span style=""> </span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">2</span><span style="">
+</span><span style=""> </span><span style="color:#75af00">prob5</span><span style=""> </span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">1</span><span style=""> </span><span style="color:#75715e">-- any one of the modes is ok</span></code></pre>
+</div></li>
 </ol>
 
 
@@ -1926,6 +2031,70 @@ often. Write a function to find the mode of a list of integers.</p>
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.27.1" />
+    <meta name="generator" content="Hugo 0.29" />
     <meta name="description" content="Indentation matters. A lot.">
 
 
@@ -1050,6 +1050,109 @@
  
   
     
+    <li data-nav-id="/intermediate-cs/ch03art/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intermediate-cs/ch03art/">
+        <span>Art with Racket</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-1/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-1/">
+        <span>Period 1</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-5/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-5/">
+        <span>Period 5</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-7/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-7/">
+        <span>Period 7</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item
      
       ">
@@ -1239,6 +1342,12 @@
             
                 <li class="" role="">
                     <h3>Other</h3>
+                    <a href="/art-gallery">Art Gallery</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
                     <a href="/biography">Biography</a>
                     
                 </li>
@@ -1363,19 +1472,15 @@ the two languages.  In Racket, grouping is done only by parentheses.</p>
 
 
 <p>Example 1a: good indentation</p>
-
-<pre><code class="language-haskell">    if x `mod` 3 == 0 &amp;&amp;
-	   x `mod` 5 == 0          -- good. aligned with top x.
-    ...
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#00a8c8">if</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#111">`</span><span style="color:#75af00">mod</span><span style="color:#111">`</span><span style=""> </span><span style="color:#ae81ff">3</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">0</span><span style=""> </span><span style="color:#f92672">&amp;&amp;</span><span style="">
+</span><span style="">	   </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#111">`</span><span style="color:#75af00">mod</span><span style="color:#111">`</span><span style=""> </span><span style="color:#ae81ff">5</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">0</span><span style="">          </span><span style="color:#75715e">-- good. aligned with top x.</span><span style="">
+</span><span style="">    </span><span style="color:#f92672">...</span></code></pre>
+</div>
 <p>Example 1a: bad indentation</p>
-
-<pre><code class="language-haskell">    if x `mod` 3 == 0 &amp;&amp;
-	 x `mod` 5 == 0          -- wrong. not aligned with top x
-    ...
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#00a8c8">if</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#111">`</span><span style="color:#75af00">mod</span><span style="color:#111">`</span><span style=""> </span><span style="color:#ae81ff">3</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">0</span><span style=""> </span><span style="color:#f92672">&amp;&amp;</span><span style="">
+</span><span style="">	 </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#111">`</span><span style="color:#75af00">mod</span><span style="color:#111">`</span><span style=""> </span><span style="color:#ae81ff">5</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">0</span><span style="">          </span><span style="color:#75715e">-- wrong. not aligned with top x</span><span style="">
+</span><span style="">    </span><span style="color:#f92672">...</span></code></pre>
+</div>
 <h2 id="indenting-further">Indenting further</h2>
 
 <div class="notices warning" ><p>&ldquo;Code which is part of some expression [must]
@@ -1387,15 +1492,13 @@ be indented further than the beginning of that expression.</p>
 
 <p>On one hand, this means that if you do not indent, you are not continuing
 a preceding expression. Example 2:</p>
-
-<pre><code class="language-haskell">    if x `mod` 3 == 0 &amp;&amp;
-	   x `mod` 5 == 0
-    then -- wrong; needs to be indented further than the if
-	   x
-    else -- wrong again
-	   0
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#00a8c8">if</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#111">`</span><span style="color:#75af00">mod</span><span style="color:#111">`</span><span style=""> </span><span style="color:#ae81ff">3</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">0</span><span style=""> </span><span style="color:#f92672">&amp;&amp;</span><span style="">
+</span><span style="">	   </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#111">`</span><span style="color:#75af00">mod</span><span style="color:#111">`</span><span style=""> </span><span style="color:#ae81ff">5</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">0</span><span style="">
+</span><span style="">    </span><span style="color:#00a8c8">then</span><span style=""> </span><span style="color:#75715e">-- wrong; needs to be indented further than the if</span><span style="">
+</span><span style="">	   </span><span style="color:#75af00">x</span><span style="">
+</span><span style="">    </span><span style="color:#00a8c8">else</span><span style=""> </span><span style="color:#75715e">-- wrong again</span><span style="">
+</span><span style="">	   </span><span style="color:#ae81ff">0</span></code></pre>
+</div>
 <h3 id="too-much-indentation">Too much indentation</h3>
 
 <p>On the other hand, if you do indent, you may be
@@ -1406,16 +1509,14 @@ later function, Haskell thinks you want the second function to be inside
 the first function (as in, a &ldquo;sub-function&rdquo;).</p>
 
 <p>Example:</p>
-
-<pre><code class="language-haskell">    main = do 
-	    putStrLn $ helper 5
- 
-    -- all this space does not change anything... --
-
-        answer x = 200 * x
-    helper x = answer x + 1
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#75af00">main</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#00a8c8">do</span><span style=""> 
+</span><span style="">	    </span><span style="color:#75af00">putStrLn</span><span style=""> </span><span style="color:#f92672">$</span><span style=""> </span><span style="color:#75af00">helper</span><span style=""> </span><span style="color:#ae81ff">5</span><span style="">
+</span><span style=""> 
+</span><span style="">    </span><span style="color:#75715e">-- all this space does not change anything... --</span><span style="">
+</span><span style="">
+</span><span style="">        </span><span style="color:#75af00">answer</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#ae81ff">200</span><span style=""> </span><span style="color:#f92672">*</span><span style=""> </span><span style="color:#75af00">x</span><span style="">
+</span><span style="">    </span><span style="color:#75af00">helper</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">answer</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">+</span><span style=""> </span><span style="color:#ae81ff">1</span></code></pre>
+</div>
 <p>Notice how <code>answer</code> is indented more than <code>main</code>? That makes the <code>answer</code>
 function live inside of <code>main</code>&hellip; this will cause all sorts of
 problems, but the first one is that <code>helper</code> cannot see <code>answer</code>
@@ -1973,6 +2074,70 @@ Other example issues came from observations in class.</p>
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             

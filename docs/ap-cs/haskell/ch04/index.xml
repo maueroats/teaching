@@ -40,7 +40,7 @@ Exercises  First Third. Return the sum of the first and third elements in the li
       <pubDate>Tue, 19 Sep 2017 14:06:42 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/haskell/ch04/ch04-summary/</guid>
-      <description> patterns  f [] = 0 f (x:xs) = x + f xs   guards  numword x | x &amp;lt; 0 = &amp;quot;Negative&amp;quot; | x == 0 = &amp;quot;Zero&amp;quot; | otherwise = &amp;quot;Positive&amp;quot;   where  h x = constant * x where constant = 100   let  yis65 x = let (parabola = 10 * x * x + 25) in parabola == 65   case  numit value = case (value) of 5 -&amp;gt; &amp;quot;Five&amp;quot; 4 -&amp;gt; &amp;quot;Four&amp;quot; _ -&amp;gt; &amp;quot;Something else&amp;quot;  </description>
+      <description> patterns  f[]=0f(x:xs)=x+fxs   guards  numwordx|x&amp;lt;0=&amp;#34;Negative&amp;#34;|x==0=&amp;#34;Zero&amp;#34;|otherwise=&amp;#34;Positive&amp;#34;   where  hx=constant*xwhereconstant=100   let  yis65x=let(parabola=10*x*x+25)inparabola==65   case  numitvalue=case(value)of5-&amp;gt;&amp;#34;Five&amp;#34;4-&amp;gt;&amp;#34;Four&amp;#34;_-&amp;gt;&amp;#34;Something else&amp;#34; </description>
     </item>
     
     <item>

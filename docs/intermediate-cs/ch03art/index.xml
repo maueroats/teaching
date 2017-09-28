@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Art with Racket on WY Computer Science</title>
+    <link>http://wy-cs.info/intermediate-cs/ch03art/</link>
+    <description>Recent content in Art with Racket on WY Computer Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Sep 2017 19:52:23 -0500</lastBuildDate>
+    
+	<atom:link href="http://wy-cs.info/intermediate-cs/ch03art/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Period 1</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03art/period-1/</link>
+      <pubDate>Wed, 27 Sep 2017 20:14:20 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch03art/period-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Period 5</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03art/period-5/</link>
+      <pubDate>Wed, 27 Sep 2017 20:14:40 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch03art/period-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Period 7</title>
+      <link>http://wy-cs.info/intermediate-cs/ch03art/period-7/</link>
+      <pubDate>Wed, 27 Sep 2017 20:14:43 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch03art/period-7/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

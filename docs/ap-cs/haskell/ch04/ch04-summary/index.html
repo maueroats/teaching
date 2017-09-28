@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.27.1" />
+    <meta name="generator" content="Hugo 0.29" />
     <meta name="description" content="patterns, guards, where, let, case">
 
 
@@ -1050,6 +1050,109 @@
  
   
     
+    <li data-nav-id="/intermediate-cs/ch03art/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intermediate-cs/ch03art/">
+        <span>Art with Racket</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-1/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-1/">
+        <span>Period 1</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-5/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-5/">
+        <span>Period 5</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-7/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-7/">
+        <span>Period 7</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item
      
       ">
@@ -1239,6 +1342,12 @@
             
                 <li class="" role="">
                     <h3>Other</h3>
+                    <a href="/art-gallery">Art Gallery</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
                     <a href="/biography">Biography</a>
                     
                 </li>
@@ -1334,46 +1443,36 @@
 <ul>
 <li>patterns</li>
 </ul>
-
-<pre><code class="language-haskell">    f [] = 0
-    f (x:xs) = x + f xs
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#75af00">f</span><span style=""> </span><span style="color:#00a8c8">[]</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#ae81ff">0</span><span style="">
+</span><span style="">    </span><span style="color:#75af00">f</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">x</span><span style="color:#00a8c8">:</span><span style="color:#75af00">xs</span><span style="color:#111">)</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">+</span><span style=""> </span><span style="color:#75af00">f</span><span style=""> </span><span style="color:#75af00">xs</span></code></pre>
+</div>
 <ul>
 <li>guards</li>
 </ul>
-
-<pre><code class="language-haskell">    numword x 
-    | x &lt; 0     = &quot;Negative&quot;
-    | x == 0    = &quot;Zero&quot;
-    | otherwise = &quot;Positive&quot;
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#75af00">numword</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> 
+</span><span style="">    </span><span style="color:#f92672">|</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">&lt;</span><span style=""> </span><span style="color:#ae81ff">0</span><span style="">     </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#d88200">&#34;Negative&#34;</span><span style="">
+</span><span style="">    </span><span style="color:#f92672">|</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">0</span><span style="">    </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#d88200">&#34;Zero&#34;</span><span style="">
+</span><span style="">    </span><span style="color:#f92672">|</span><span style=""> </span><span style="color:#75af00">otherwise</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#d88200">&#34;Positive&#34;</span></code></pre>
+</div>
 <ul>
 <li>where</li>
 </ul>
-
-<pre><code class="language-haskell">    h x = constant * x
-       where constant = 100
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#75af00">h</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">constant</span><span style=""> </span><span style="color:#f92672">*</span><span style=""> </span><span style="color:#75af00">x</span><span style="">
+</span><span style="">       </span><span style="color:#00a8c8">where</span><span style=""> </span><span style="color:#75af00">constant</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#ae81ff">100</span></code></pre>
+</div>
 <ul>
 <li>let</li>
 </ul>
-
-<pre><code class="language-haskell">    yis65 x = let (parabola = 10 * x * x + 25) in parabola == 65
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#75af00">yis65</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#00a8c8">let</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">parabola</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#ae81ff">10</span><span style=""> </span><span style="color:#f92672">*</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">*</span><span style=""> </span><span style="color:#75af00">x</span><span style=""> </span><span style="color:#f92672">+</span><span style=""> </span><span style="color:#ae81ff">25</span><span style="color:#111">)</span><span style=""> </span><span style="color:#00a8c8">in</span><span style=""> </span><span style="color:#75af00">parabola</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">65</span></code></pre>
+</div>
 <ul>
 <li>case</li>
 </ul>
-
-<pre><code class="language-haskell">    numit value = case (value) of 
-        5 -&gt; &quot;Five&quot;
-        4 -&gt; &quot;Four&quot;
-        _ -&gt; &quot;Something else&quot;
-</code></pre>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#75af00">numit</span><span style=""> </span><span style="color:#75af00">value</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#00a8c8">case</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">value</span><span style="color:#111">)</span><span style=""> </span><span style="color:#00a8c8">of</span><span style=""> 
+</span><span style="">        </span><span style="color:#ae81ff">5</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#d88200">&#34;Five&#34;</span><span style="">
+</span><span style="">        </span><span style="color:#ae81ff">4</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#d88200">&#34;Four&#34;</span><span style="">
+</span><span style="">        </span><span style="color:#00a8c8">_</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#d88200">&#34;Something else&#34;</span></code></pre>
+</div>
 
 <footer class=" footline" >
 	
@@ -1922,6 +2021,70 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             

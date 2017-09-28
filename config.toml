@@ -5,6 +5,8 @@ theme = "docdock"
 publishDir = "docs"
 themeVariant = "docmo"
 rssLimit = 10
+pygmentsStyle = "monokailight"
+pygmentsCodeFences = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
@@ -12,6 +14,10 @@ section = [ "HTML", "RSS" ]
 
 [[menu.shortcuts]]
 pre = "<h3>Other</h3>"
+name = "Art Gallery"
+url = "/art-gallery"
+
+[[menu.shortcuts]]
 name = "Biography"
 url = "/biography"
 
