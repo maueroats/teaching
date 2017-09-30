@@ -1,5 +1,5 @@
 ---
-title: "Period 7"
+title: "Art Period 7"
 date: 2017-09-27T20:14:43-05:00
 draft: false
 weight: 7
@@ -10,4 +10,5 @@ weight: 7
 ![Ruben Overwatch](7-RubenRojas.png)
 ![Strokes](7-RobW.png)
 ![Trang ZenPool](7-TrangNguyen.png)
+![Luke](7-LukeS.png)
 

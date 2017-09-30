@@ -1,5 +1,5 @@
 ---
-title: "Period 5"
+title: "Art Period 5"
 date: 2017-09-27T20:14:40-05:00
 draft: false
 weight: 5

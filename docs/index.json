@@ -1,7 +1,7 @@
 [
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03art/period-1/",
-	"title": "Period 1",
+	"title": "Art Period 1",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -36,7 +36,7 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03art/period-5/",
-	"title": "Period 5",
+	"title": "Art Period 5",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -50,7 +50,7 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03art/period-7/",
-	"title": "Period 7",
+	"title": "Art Period 7",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -176,10 +176,17 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03art/",
-	"title": "Art with Racket",
+	"title": "3. Art with Racket",
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch04/",
+	"title": "4. Writing Functions",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 4 teaches you how to write and test your own functions. When you are done, you should know the difference between a parameter and an argument, how the stepper evaluates functions, and where names like pic are visible (\u0026ldquo;scope\u0026rdquo;). Homework  Thurs, 2017-09-28: Do four exercises: 4.2.{2,4}, 4.3.1, and 4.4.1. Fri, 2017-09-29: Read section 4.5 so you can use check-expect. "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-summary/",
@@ -203,6 +210,13 @@
 	"content": " The most common question people have is how grades are computed.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    We use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nExceptional circumstances Please contact your teacher if you have a very unusual circumstance (extended illness, international competition, etc.). Ordinary events causing you to miss a day or two of school are not in that category.\n"
 },
 {
+	"uri": "http://wy-cs.info/resources/academic-integrity/",
+	"title": "Academic Integrity",
+	"tags": [],
+	"description": "",
+	"content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following honor code regarding all of their work in this class.\n “I have neither given nor received improper aid on this test/project.”   “Improper aid” includes, but is not limited to:\n copying another student’s work allowing another student to copy your work sharing the problems given on a test to a student who has not taken the test copying work from any online or electronic resource without citation chatting or texting with another student during a test in which computer use is allowed  On a project (not test), it is acceptable to give suggestions to a student who knows less than you do.\n The student who is giving help may read the code of the student seeking help. The student who is giving help may not type (or write) any code.  Penalties when a student is caught cheating in this class may include:\n A zero on the assessment Final grade being lowered a letter Expulsion from National Honor Society (NHS or NJHS) Denial of a future application to National Honor Society (NHS or NJHS) Negatively affecting scholarships and post-high school programs for which you have applied  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/calendar/",
 	"title": "Calendar",
 	"tags": [],
@@ -224,11 +238,11 @@
 	"content": "  2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch04/",
-	"title": "4. Writing Functions",
+	"uri": "http://wy-cs.info/resources/why-racket/",
+	"title": "Why Racket?",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 4 teaches you how to write and test your own functions. When you are done, you should know the difference between a parameter and an argument, how the stepper evaluates functions, and where names like pic are visible (\u0026ldquo;scope\u0026rdquo;). Homework  Thurs, 2017-09-28: Do four exercises: 4.2.{2,4}, 4.3.1, and 4.4.1. "
+	"content": " Many people we encounter tell us they wish they knew how to code and then ask which programming language they should learn. Given the press that some programming languages get, this question is not surprising. But it is also wholly inappropriate. Learning to program in a currently fashionable programming language often sets up students for eventual failure. Fashion in this world is extremely short lived. A typical “quick programming in X” book or course fails to teach principles that transfer to the next fashion language. Worse, the language itself often distracts from the acquisition of transferable skills, at the level of both expressing solutions and dealing with programming mistakes.\n\u0026ndash; Felleison et al, How to Design Programs, Second Edition.\n To understand why Racket is a good language to learn, one need read no further than Section 0.1 of Stephen Bloch\u0026rsquo;s Picturing Programs. Please read it now if you have not.\nTo summarize, here are major arguments for choosing Racket over a more \u0026ldquo;popular\u0026rdquo; programming language:\n Racket\u0026rsquo;s uniform syntax (everything is in parentheses, no order of operations, means that everything you do learn is a real intellectual concept.\n Racket works without any incantations that cannot be understood by a beginner. Example: Java\u0026rsquo;s public static void main (String[] args) incantation.\n Racket\u0026rsquo;s language levels protects you from advanced features that could be misunderstood at the start, but lets you continue to program in the same familiar language with more advanced features when you are ready.\n Any language you choose will be obsolete by the time you enter the workforce in 4-8 years, so effort spent learning language-specific syntax is not productive. Instead, you need to learn how to learn a new language. Most programmers find themselves working in a variety of languages depending on the requirements of their current task.\n Paul Graham\u0026rsquo;s article Beating the Averages explains how they used Lisp to make a very successful business (it was worth almost $50 million when it was purchased by Yahoo!). Lisp is a language very similar to Racket.\n Racket includes a way to build web applications as well as a graphical user interface builder that works on any kind of computer.\n Nobody should pass judgement on Racket until they understand the macro system that it has! Consider that a challenge if you are an advanced student.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-quiz/",
@@ -326,14 +340,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  5. Recursion modified Sun 09-24  Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Intermediate Computer Science Recent Changes    4. Writing Functions modified Thu 09-28  Period 7 modified Wed 09-27  Period 5 modified Wed 09-27  Period 1 modified Wed 09-27  Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Art Project modified Thu 09-21  Color Commands modified Thu 09-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
-},
-{
-	"uri": "http://wy-cs.info/resources/academic-integrity/",
-	"title": "Academic Integrity",
-	"tags": [],
-	"description": "",
-	"content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following honor code regarding all of their work in this class.\n “I have neither given nor received improper aid on this test/project.”   “Improper aid” includes, but is not limited to:\n copying another student’s work allowing another student to copy your work sharing the problems given on a test to a student who has not taken the test copying work from any online or electronic resource without citation chatting or texting with another student during a test in which computer use is allowed  On a project (not test), it is acceptable to give suggestions to a student who knows less than you do.\n The student who is giving help may read the code of the student seeking help. The student who is giving help may not type (or write) any code.  Penalties when a student is caught cheating in this class may include:\n A zero on the assessment Final grade being lowered a letter Expulsion from National Honor Society (NHS or NJHS) Denial of a future application to National Honor Society (NHS or NJHS) Negatively affecting scholarships and post-high school programs for which you have applied  "
+	"content": " AP Computer Science Recent Changes   Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  5. Recursion modified Sun 09-24  Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Intermediate Computer Science Recent Changes    4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Art Project modified Thu 09-21  Color Commands modified Thu 09-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/",

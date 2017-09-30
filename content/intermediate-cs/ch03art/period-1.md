@@ -1,5 +1,5 @@
 ---
-title: "Period 1"
+title: "Art Period 1"
 date: 2017-09-27T20:14:20-05:00
 weight: 1
 draft: false

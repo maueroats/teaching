@@ -133,6 +133,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch04/</loc>
+    <lastmod>2017-09-28T11:03:35-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch04/ch04-summary/</loc>
     <lastmod>2017-09-19T14:06:42-05:00</lastmod>
   </url>
@@ -145,6 +150,11 @@
   <url>
     <loc>http://wy-cs.info/resources/grading-scale/</loc>
     <lastmod>2017-09-09T11:00:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/resources/academic-integrity/</loc>
+    <lastmod>2017-09-09T16:51:48-05:00</lastmod>
   </url>
   
   <url>
@@ -163,8 +173,8 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch04/</loc>
-    <lastmod>2017-09-28T11:03:35-05:00</lastmod>
+    <loc>http://wy-cs.info/resources/why-racket/</loc>
+    <lastmod>2017-09-29T20:12:44-05:00</lastmod>
   </url>
   
   <url>
@@ -235,11 +245,6 @@
   <url>
     <loc>http://wy-cs.info/</loc>
     <lastmod>2017-09-09T17:00:30-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/resources/academic-integrity/</loc>
-    <lastmod>2017-09-09T16:51:48-05:00</lastmod>
   </url>
   
   <url>

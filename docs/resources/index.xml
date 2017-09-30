@@ -66,6 +66,15 @@ Students are expected to adhere to the following honor code regarding all of the
     </item>
     
     <item>
+      <title>Why Racket?</title>
+      <link>http://wy-cs.info/resources/why-racket/</link>
+      <pubDate>Fri, 29 Sep 2017 20:12:44 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/resources/why-racket/</guid>
+      <description>Many people we encounter tell us they wish they knew how to code and then ask which programming language they should learn. Given the press that some programming languages get, this question is not surprising. But it is also wholly inappropriate. Learning to program in a currently fashionable programming language often sets up students for eventual failure. Fashion in this world is extremely short lived. A typical “quick programming in X” book or course fails to teach principles that transfer to the next fashion language.</description>
+    </item>
+    
+    <item>
       <title>WeScheme</title>
       <link>http://wy-cs.info/resources/ics-wescheme-note/</link>
       <pubDate>Sat, 09 Sep 2017 07:00:30 -0500</pubDate>

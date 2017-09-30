@@ -1,6 +1,7 @@
 ---
 title: "4. Writing Functions"
 date: 2017-09-28T11:03:35-05:00
+weight: 40
 draft: false
 ---
 
@@ -13,4 +14,4 @@ an argument, how the stepper evaluates functions, and where names like
 ## Homework
 
 * Thurs, 2017-09-28: Do four exercises: 4.2.{2,4}, 4.3.1, and 4.4.1.
-
+* Fri, 2017-09-29: Read section 4.5 so you can use `check-expect`.

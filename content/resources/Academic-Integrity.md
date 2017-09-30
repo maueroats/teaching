@@ -1,6 +1,7 @@
 ---
 title: "Academic Integrity"
 date: 2017-09-09T16:51:48-05:00
+weight: 65
 ---
 
 Being honest and honorable regarding one’s academic integrity is

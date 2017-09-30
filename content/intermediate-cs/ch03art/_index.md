@@ -1,5 +1,5 @@
 ---
-title: "Art with Racket"
+title: "3. Art with Racket"
 date: 2017-09-27T19:52:23-05:00
 weight: 35
 draft: false
