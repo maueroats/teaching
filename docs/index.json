@@ -186,7 +186,7 @@
 	"title": "4. Writing Functions",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 4 teaches you how to write and test your own functions. When you are done, you should know the difference between a parameter and an argument, how the stepper evaluates functions, and where names like pic are visible (\u0026ldquo;scope\u0026rdquo;). Homework  Thurs, 2017-09-28: Do four exercises: 4.2.{2,4}, 4.3.1, and 4.4.1. Fri, 2017-09-29: Read section 4.5 so you can use check-expect. "
+	"content": "Chapter 4 teaches you how to write and test your own functions. When you are done, you should know the difference between a parameter and an argument, how the stepper evaluates functions, and where names like pic are visible (\u0026ldquo;scope\u0026rdquo;). Homework  Thurs, 2017-09-28: Do four exercises: 4.2.{2,4}, 4.3.1, and 4.4.1. Fri, 2017-09-29: Read section 4.5 so you can use check-expect. Mon, 2017-10-02: Chapter 4 Additional Exercises. "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-summary/",
@@ -249,7 +249,7 @@
 	"title": "Chapter 4 Quiz",
 	"tags": ["haskell", "quiz"],
 	"description": "",
-	"content": " All functions should include appropriate type signatures.\n Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input.  Mountain Questions The questions below all refer to a \u0026ldquo;mountain range\u0026rdquo;, which is a list of integers specifying the height in feet above sea level.\n Base camp is half of the height of the highest mountain. New mountains start/end when altitude goes above/below base camp. The mountain range data is guaranteed to begin and end with a number below the height of base camp.  Example:\nmountains=[0,50,100,99,98,50,75,60,20,10,90,-5]highestPeakmountains==100baseCampmountains==50countPeaksmountains==3tallestWidthmountains==4  In the example above, the three mountains are:\n [50,100,99,98,50] with width = 4 [50,75,60,20] with width = 3 [10,90,-5] with width = 2   Find the height of the highest mountain..\n Write a function to find the height of base camp.\n Write a function to count the number of peaks.\n Write a function to estimate the width of the tallest mountain.\n  "
+	"content": " All functions should include appropriate type signatures.\n Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input.  Mountain Questions The questions below all refer to a \u0026ldquo;mountain range\u0026rdquo;, which is a list of integers specifying the height in feet above sea level.\n Base camp is half of the height of the highest mountain. New mountains start/end when altitude goes above/below base camp. The mountain range data is guaranteed to begin and end with a number below the height of base camp.  Example:\nmountains=[0,50,100,99,98,50,75,60,20,10,15,10,90,-5]highestPeakmountains==100baseCampmountains==50countPeaksmountains==3tallestWidthmountains==4  In the example above, the three mountains are:\n [50,100,99,98,50] with width = 4 [50,75,60,20] with width = 3 [10,90,-5] with width = 2   Find the height of the highest mountain..\n Write a function to find the height of base camp.\n Write a function to count the number of peaks.\n Write a function to estimate the width of the tallest mountain.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch05/ch05-reading-guide/",

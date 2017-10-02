@@ -25,7 +25,7 @@ of integers specifying the height in feet above sea level.
 
 Example:
 ```haskell
-     mountains = [0, 50, 100, 99, 98, 50, 75, 60, 20, 10, 90, -5]
+     mountains = [0, 50, 100, 99, 98, 50, 75, 60, 20, 10, 15, 10, 90, -5]
      highestPeak mountains == 100
      baseCamp mountains == 50
      countPeaks mountains == 3
