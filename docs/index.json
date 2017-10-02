@@ -238,6 +238,13 @@
 	"content": "  2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/ch06/ch06-reading-guide/",
+	"title": "Chapter 6 Reading Guide",
+	"tags": ["haskell", "reading-guide"],
+	"description": "",
+	"content": " Take in a list of numbers and output a list containing all of the numbers greater than 8.\n Take in a list of numbers and output a list containing all of the numbers between 10 and 20 (inclusive).\n Take in a list of numbers. Multiply all of the numbers in a list by 10 to make the output list.\n Take in a list of lists. Sort the list of lists according to how many elements each list has (so longer sublists go first).\n  "
+},
+{
 	"uri": "http://wy-cs.info/resources/why-racket/",
 	"title": "Why Racket?",
 	"tags": [],
@@ -340,14 +347,14 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  5. Recursion modified Sun 09-24  Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  2017-09-18 modified Mon 09-18  Intermediate Computer Science Recent Changes    4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Art Project modified Thu 09-21  Color Commands modified Thu 09-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Chapter 6 Reading Guide modified Mon 10-02  Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  5. Recursion modified Sun 09-24  Chapter 4 Problem Set modified Wed 09-20  Chapter 4 Summary modified Tue 09-19  Chapter 3 Quiz modified Tue 09-19  4. Syntax in Functions modified Mon 09-18  Intermediate Computer Science Recent Changes    4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Art Project modified Thu 09-21  Color Commands modified Thu 09-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/",
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n Haskell Daily Notes  Notes for each day.\n Repl.it  A summary of any special problems that have arisen with repl.it.  Source Code Files (ghci)  Writing a file is different from typing in an interpreter like repl.it or ghci.  "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n Haskell Daily Notes  Notes for each day.\n Chapter 6 Reading Guide  Take in a list of numbers and output a list containing all of the numbers greater than 8. Take in a list of numbers and output a list containing all of the numbers between 10 and 20 (inclusive). Take in a list of numbers. Multiply all of the numbers in a list by 10 to make the output list. Take in a list of lists. Sort the list of lists according to how many elements each list has (so longer sublists go first).\n Repl.it  A summary of any special problems that have arisen with repl.it.  Source Code Files (ghci)  Writing a file is different from typing in an interpreter like repl.it or ghci.  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
