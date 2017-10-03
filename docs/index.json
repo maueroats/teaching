@@ -186,7 +186,7 @@
 	"title": "4. Writing Functions",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 4 teaches you how to write and test your own functions. When you are done, you should know the difference between a parameter and an argument, how the stepper evaluates functions, and where names like pic are visible (\u0026ldquo;scope\u0026rdquo;). Homework  Thurs, 2017-09-28: Do four exercises: 4.2.{2,4}, 4.3.1, and 4.4.1. Fri, 2017-09-29: Read section 4.5 so you can use check-expect. Mon, 2017-10-02: Chapter 4 Additional Exercises. "
+	"content": "Chapter 4 teaches you how to write and test your own functions. When you are done, you should know the difference between a parameter and an argument, how the stepper evaluates functions, and where names like pic are visible (\u0026ldquo;scope\u0026rdquo;). "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-summary/",
@@ -385,14 +385,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
