@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.29" />
-    <meta name="description" content="Battleship and homework review.">
+    <meta name="description" content="">
 
 
-    <title>2017-09-18 :: WY Computer Science</title>
+    <title>2017-10-03 :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/daily/2017-09-18/">
+  <body class="" data-url="/ap-cs/haskell/daily/2017-10-03/">
     <nav id="sidebar" class="">
 
 
@@ -704,7 +704,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/daily/2017-10-03/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/haskell/daily/2017-10-03/">
         <span>2017-10-03</span> 
@@ -724,7 +724,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell/daily/2017-09-18/">
         <span>2017-09-18</span> 
@@ -1497,7 +1497,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/daily/'>Haskell Daily Notes</a> > 2017-09-18
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/daily/'>Haskell Daily Notes</a> > 2017-10-03
 
  
 
@@ -1527,30 +1527,28 @@
         
         <div id="body-inner">
           
-            <h1>2017-09-18</h1>
+            <h1>2017-10-03</h1>
           
 
 
 
 
-<p>We discussed problem 7 from the homework. You should finish it based on the discussion.</p>
+<ol>
+<li><p>(Previous class leftover.)
+Write <code>only14</code> (<a href="http://codingbat.com/prob/p186672">source</a>) that takes in a list of numbers and gives a boolean result.
+The result is true if every number in the list is either a 1 or a 4.</p></li>
 
-<p>Mentioned from Chapter 5: <code>type</code> to make short ways to say types. Examples:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#00a8c8">type</span><span style=""> </span><span style="color:#00a8c8">Pt</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">(</span><span style="color:#00a8c8">Int</span><span style="color:#111">,</span><span style="color:#00a8c8">Int</span><span style="color:#111">)</span><span style="">
-</span><span style="">    </span><span style="color:#00a8c8">type</span><span style=""> </span><span style="color:#00a8c8">Ship</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">[</span><span style="color:#00a8c8">Pt</span><span style="color:#111">]</span><span style="">
-</span><span style="">    </span><span style="color:#00a8c8">type</span><span style=""> </span><span style="color:#00a8c8">Shots</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">[</span><span style="color:#00a8c8">Pt</span><span style="color:#111">]</span></code></pre>
-</div>
-<p>We wrote the function <code>is_sunk</code> for battleship.</p>
+<li><p>Write <code>isEverywhere</code>(<a href="http://codingbat.com/prob/p110222">source</a>). &ldquo;We&rsquo;ll say that a value is &ldquo;everywhere&rdquo; in an array if for every pair of adjacent elements in the array, at least one of the pair is that value. Return true if the given value is everywhere in the array.&rdquo;</p>
 
-<p>Functions we discussed:</p>
+<p>We discussed how to program this one, including the tricky edge cases like stopping when there are two elements left in the list instead of one or zero.</p></li>
 
-<ul>
-<li>[<code>&amp;&amp;</code>]: Join two Boolean values with logical and.</li>
-<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:and"><code>and</code></a>: Join a list of Boolean values with logical and.</li>
-<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:any"><code>all</code></a>: Apply a tester function and then join all of the values together with &ldquo;and&rdquo;.</li>
-</ul>
+<li><p>Write <code>haveThree</code> (<a href="http://codingbat.com/prob/p109783">source</a>), which returns true if the number 3 appears three
+times in the list, and no threes are next to each other in the list.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">  </span><span style="color:#75af00">haveThree</span><span style="color:#f92672">::</span><span style=""> </span><span style="color:#111">[</span><span style="color:#00a8c8">Int</span><span style="color:#111">]</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#00a8c8">Bool</span></code></pre>
+</div></li>
 
-<p>All of these functions have counterparts for logical or; they are: <code>||</code>, <code>or</code>, <code>any</code>.</p>
+<li><p>(Homework) <a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=665">The cow signal</a>. Briefly: take in a [[Int]] with every entry 0 or 1. Produce a [[Int]] with four entries in a square corresponding to every one entry in the original. If you made a picture with the rows of 0&rsquo;s and 1&rsquo;s, the new picture would be twice as wide and twice as high.</p></li>
+</ol>
 
 
 <footer class=" footline" >
@@ -1966,25 +1964,6 @@
             
                 
                     
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -2004,6 +1983,22 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2450,10 +2445,10 @@
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/daily/2017-10-03/" title="2017-10-03"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/daily/" title="Haskell Daily Notes"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/daily/2017-09-13/" title="2017-09-14 Indentation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/daily/2017-09-18/" title="2017-09-18" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

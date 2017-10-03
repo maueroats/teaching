@@ -4,7 +4,6 @@ date: 2017-09-24T13:52:19-05:00
 tags:
  - reading-guide
 draft: false
-pygmentsStyle: monokailight
 ---
 
 The purpose of reading this section is to see how an experienced
@@ -54,7 +53,7 @@ After you have read the chapter, write answers to these questions:
                               [1,4,5],[2,3,4],[2,3,5],[2,4,5],[3,4,5]]
 ```
 
-5. (alter/edit?) Write the `grouper` function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order.
+5. Write the `grouper` function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order.
 ```haskell
     grouper [1,1,1,2,3,3,2] = [[1,1,1],[2],[3,3],[2]]
 ```

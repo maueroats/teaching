@@ -13,6 +13,6 @@ draft: false
 
 3. Take in a list of numbers. Multiply all of the numbers in a list by 10 to make the output list.
 
-4. Take in a list of lists. Sort the list of lists according to how
-   many elements each list has (so longer sublists go first).
-
+4. Take in a list of lists. Arrange the list of lists according to how
+   many elements each list has, so longer sublists go first and shorter sublists 
+   go later. 
