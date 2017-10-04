@@ -1,7 +1,9 @@
 ---
 title: "Chapter 4 Homework"
 date: 2017-10-03T16:07:25-05:00
-draft: true
+tags:
+ - homework
+draft: false
 ---
 
 * Thurs, 2017-09-28: Do four exercises: 4.2.{2,4}, 4.3.1, and 4.4.1.
