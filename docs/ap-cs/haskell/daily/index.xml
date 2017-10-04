@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>2017-10-04</title>
+      <link>http://wy-cs.info/ap-cs/haskell/daily/2017-10-04/</link>
+      <pubDate>Wed, 04 Oct 2017 10:55:32 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/daily/2017-10-04/</guid>
+      <description>Without10 (source). Take a list of numbers and remove all of the tens. The remaining numbers shift toward the start of the list and zeros fill in at the end.
+ NotAlone (source). We will say that an element in an array is &amp;ldquo;alone&amp;rdquo; if there are values before and after it, and those values are different from it. Return a version of the list where every instance of the given value which is alone is replaced by whichever value to its left or right is larger.</description>
+    </item>
+    
+    <item>
       <title>2017-10-03</title>
       <link>http://wy-cs.info/ap-cs/haskell/daily/2017-10-03/</link>
       <pubDate>Tue, 03 Oct 2017 15:48:19 -0500</pubDate>
