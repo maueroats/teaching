@@ -12,15 +12,12 @@
     
     
     <item>
-      <title>Chapter 6 Reading Guide</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch06/ch06-reading-guide/</link>
-      <pubDate>Mon, 02 Oct 2017 09:19:07 -0500</pubDate>
+      <title>Typeclass Notes</title>
+      <link>http://wy-cs.info/ap-cs/haskell/typeclass-notes/</link>
+      <pubDate>Sun, 24 Sep 2017 13:16:03 -0500</pubDate>
       
-      <guid>http://wy-cs.info/ap-cs/haskell/ch06/ch06-reading-guide/</guid>
-      <description>Take in a list of numbers and output a list containing all of the numbers greater than 8.
- Take in a list of numbers and output a list containing all of the numbers between 10 and 20 (inclusive).
- Take in a list of numbers. Multiply all of the numbers in a list by 10 to make the output list.
- Take in a list of lists. Arrange the list of lists according to how many elements each list has, so longer sublists go first and shorter sublists go later.</description>
+      <guid>http://wy-cs.info/ap-cs/haskell/typeclass-notes/</guid>
+      <description> Num: Addition, multiplication, a way to convert from an integer. Also absolute value and negation. Real: Part of the real number line. Ordered numbers. toRational. Does not imply decimals! Enum: Next and previous (succ-essor and pred-ecessor). Integral: Integer division. Fractional: &amp;ldquo;Decimal&amp;rdquo; division. Floating: transcendental functions (exponentials, trig, pi, e). RealFrac: truncate and round. RealFloat: efficient floating point.  </description>
     </item>
     
     <item>

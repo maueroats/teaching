@@ -1,7 +1,7 @@
 ---
 title: "Typeclass Notes"
 date: 2017-09-24T13:16:03-05:00
-draft: true
+draft: false
 ---
 
 * Num: Addition, multiplication, a way to convert from an integer. Also absolute value and negation. 

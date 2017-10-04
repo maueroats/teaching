@@ -5,7 +5,7 @@ tags:
   - haskell
   - daily-notes
 draft: false
-weight: 90
+weight: 900
 description: Notes for each day.
 ---
 
