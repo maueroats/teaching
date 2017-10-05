@@ -25,22 +25,75 @@ image in the center of a yellow circle of radius 200.
 
 ---
 
-# Animation
+# Animation Code
 
-{{&lt; highlight racket &#34;hl_lines=2-4&#34; &gt;}}
-(define starter (rectangle 50 200 &#34;solid&#34; &#34;purple&#34;)
+```racket
+(define starter (rectangle 50 200 &#34;solid&#34; &#34;purple&#34;))
+(define delay-time 3)
 (big-bang starter
-          (on-tick rotator 3)
+          (on-tick rotator delay-time)
           (on-draw middle-placer))
-{{&lt; /highlight &gt;}}
-
-* on-tick: a change that happens every 3 seconds
-
-* on-draw: how to show the image
+```
 
 ---
 
+# Animation Vocabulary
 
+* model: the part that changes
+
+* on-tick: model -&gt; model
+
+  Moves to next time.
+
+* on-draw: model -&gt; image
+
+  Shows the result. Draw things that do not move here.
+
+--- 
+
+# Paper Exercise I
+
+* A shape is shown on a yellow circle of radius 200. 
+
+* The shape grows 25% larger every tick, but the circle does not.
+
+1. Write a tick handler.
+
+2. Write the big-bang.
+
+---
+
+# Paper Exercise II
+
+* A shape starts in the center of a circle.
+
+* The shape moves to the right 10 pixels every tick.
+
+## Write the tick handler
+
+---
+
+# Class work
+
+Exercises 6.4.2 and 6.4.3 (pdf page 106)
+
+Bonus: 6.4.4
+
+# Homework
+
+Read Section 6.3 (beginner mistakes)
+
+---
+
+# Animation more vocab
+
+* on-key: model key -&gt; model
+
+* on-mouse: model number(x) number(y) event -&gt; model
+
+---
+
+You found [the code!](animation-day1.rkt)
 
 	</section>
 	</div>

@@ -252,6 +252,13 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch06/animation/",
+	"title": "Intro to Animations",
+	"tags": [],
+	"description": "The basics of big-bang: on-tick, on-draw.",
+	"content": " Intro to Animation Opener Write two functions:\n rotator: image -\u0026gt; image that turns the image 10 degrees.\n middle-placer: image -\u0026gt; image that places the given image in the center of a yellow circle of radius 200.\n  Animation Code (definestarter(rectangle50200\u0026#34;solid\u0026#34;\u0026#34;purple\u0026#34;))(definedelay-time3)(big-bangstarter(on-tickrotatordelay-time)(on-drawmiddle-placer))  Animation Vocabulary  model: the part that changes\n on-tick: model -\u0026gt; model\n  Moves to next time.\n on-draw: model -\u0026gt; image  Shows the result. Draw things that do not move here.\nPaper Exercise I  A shape is shown on a yellow circle of radius 200.\n The shape grows 25% larger every tick, but the circle does not.\n   Write a tick handler.\n Write the big-bang.\n  Paper Exercise II  A shape starts in the center of a circle.\n The shape moves to the right 10 pixels every tick.\n  Write the tick handler Class work Exercises 6.4.2 and 6.4.3 (pdf page 106)\nBonus: 6.4.4\nHomework Read Section 6.3 (beginner mistakes)\nAnimation more vocab  on-key: model key -\u0026gt; model\n on-mouse: model number(x) number(y) event -\u0026gt; model\n  You found the code!\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-10-04/",
 	"title": "2017-10-04",
 	"tags": ["haskell"],

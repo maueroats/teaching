@@ -4,7 +4,7 @@ date: 2017-10-04T13:03:36-05:00
 draft: false
 type: slide
 theme: white
-description: The basics of big-bang: on-tick, on-draw. 
+description: "The basics of big-bang: on-tick, on-draw."
 ---
 
 # Intro to Animation
