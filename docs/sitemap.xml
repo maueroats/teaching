@@ -163,11 +163,6 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/calendar/</loc>
-    <lastmod>2017-09-18T22:38:42-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://wy-cs.info/resources/</loc>
     <lastmod>2017-09-09T15:49:20-05:00</lastmod>
   </url>
@@ -175,6 +170,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/usaco/</loc>
     <lastmod>2017-10-03T20:40:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/calendar/</loc>
+    <lastmod>2017-09-18T22:38:42-05:00</lastmod>
   </url>
   
   <url>

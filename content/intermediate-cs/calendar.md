@@ -4,7 +4,7 @@ date: 2017-09-18T22:38:42-05:00
 categories: 
  - intermediate-cs
 draft: false
-weight: 80
+weight: 200
 description: The course calendar and assignment sheet links.
 ---
 The [assigment sheet](https://docs.google.com/spreadsheets/d/1p1JGIOWxwFkcFBZ01UxC-lOIkXn0ORUHfIt3aQVNTEU/edit?usp=sharing) goes with the calendar.

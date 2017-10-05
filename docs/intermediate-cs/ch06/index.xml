@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6. Animations I on WY Computer Science</title>
+    <link>http://wy-cs.info/intermediate-cs/ch06/</link>
+    <description>Recent content in 6. Animations I on WY Computer Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Oct 2017 13:03:22 -0500</lastBuildDate>
+    
+	<atom:link href="http://wy-cs.info/intermediate-cs/ch06/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intro to Animations</title>
+      <link>http://wy-cs.info/intermediate-cs/ch06/animation/</link>
+      <pubDate>Wed, 04 Oct 2017 13:03:36 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch06/animation/</guid>
+      <description> Intro to Animation Opener Write two functions:
+ rotator: image -&amp;gt; image that turns the image 10 degrees.
+ middle-placer: image -&amp;gt; image that places the given image in the center of a yellow circle of radius 200.
+  Animation (definestarter(rectangle50200&amp;#34;solid&amp;#34;&amp;#34;purple&amp;#34;)(big-bangstarter(on-tickrotator3)(on-drawmiddle-placer))   on-tick: a change that happens every 3 seconds
+ on-draw: how to show the image
+  </description>
+    </item>
+    
+  </channel>
+</rss>

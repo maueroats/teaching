@@ -1,0 +1,66 @@
+
+	<link rel="stylesheet" href="/revealjs/css/reveal.css">
+	<link rel="stylesheet" href="/revealjs/css/theme/white.css" id="theme">
+	<link rel="stylesheet" href="/revealjs/lib/css/zenburn.css">
+
+	<div class="reveal">
+	<div class="slides">
+	<section data-markdown
+	         data-separator="^---"
+		 data-separator-vertical="^___"
+		 data-separator-notes="^Note:"
+		data-charset="utf8">
+	# Intro to Animation
+
+---
+
+# Opener
+
+Write two functions:
+
+* `rotator: image -&gt; image` that turns the image 10 degrees.
+
+* `middle-placer: image -&gt; image` that places the given
+image in the center of a yellow circle of radius 200.
+
+---
+
+# Animation
+
+{{&lt; highlight racket &#34;hl_lines=2-4&#34; &gt;}}
+(define starter (rectangle 50 200 &#34;solid&#34; &#34;purple&#34;)
+(big-bang starter
+          (on-tick rotator 3)
+          (on-draw middle-placer))
+{{&lt; /highlight &gt;}}
+
+* on-tick: a change that happens every 3 seconds
+
+* on-draw: how to show the image
+
+---
+
+
+
+	</section>
+	</div>
+	</div>
+	<script src="/revealjs/lib/js/head.min.js"></script>
+	<script src="/revealjs/js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+		      	embedded : true,
+
+		        
+		        
+		        
+		        dependencies: [
+		          { src: '\/revealjs\/lib\/js\/classList.js"', condition: function() { return !document.body.classList; } },
+		          { src: '\/revealjs\/plugin\/markdown\/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		          { src: '\/revealjs\/plugin\/markdown\/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		          { src: '\/revealjs\/plugin\/highlight\/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		          { src: '\/revealjs\/plugin\/zoom-js\/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+		          { src: '\/revealjs\/plugin\/notes\/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		        ]
+		      });
+	</script>
