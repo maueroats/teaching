@@ -203,6 +203,13 @@
 	"content": " This document details the information specific to Intermediate Computer Science. See the all course syllabus information as well.\nMaterials  Notebook - a lightweight paper notebook dedicated to computer science. USB Drive of any size. Picturing Programs book electronic version - downloaded onto flash drive. DrRacket programming environment - installed at home. WeScheme - Online only replacement for DrRacket. Use if you cannot install software. You have to read special instructions to make it work.  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
+	"title": "6. Animations I",
+	"tags": [],
+	"description": "",
+	"content": "  Intro to Animations   "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch06/",
 	"title": "6. Higher Order Functions",
 	"tags": [],
@@ -403,7 +410,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Haybales modified Tue 10-03  USACO Practice modified Tue 10-03  2017-10-03 modified Tue 10-03  Chapter 6 Reading Guide modified Mon 10-02  Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  Intermediate Computer Science Recent Changes    Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Art Project modified Thu 09-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Haybales modified Tue 10-03  USACO Practice modified Tue 10-03  2017-10-03 modified Tue 10-03  Chapter 6 Reading Guide modified Mon 10-02  Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  Intermediate Computer Science Recent Changes    6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/",

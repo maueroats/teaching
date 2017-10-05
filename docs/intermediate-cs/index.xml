@@ -21,20 +21,5 @@
 &lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>Intro to Animations</title>
-      <link>http://wy-cs.info/intermediate-cs/ch06/animation/</link>
-      <pubDate>Wed, 04 Oct 2017 13:03:36 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/intermediate-cs/ch06/animation/</guid>
-      <description>Intro to Animation Opener Write two functions:
- rotator: image -&amp;gt; image that turns the image 10 degrees.
- middle-placer: image -&amp;gt; image that places the given image in the center of a yellow circle of radius 200.
-  Animation Code (definestarter(rectangle50200&amp;#34;solid&amp;#34;&amp;#34;purple&amp;#34;))(definedelay-time3)(big-bangstarter(on-tickrotatordelay-time)(on-drawmiddle-placer))  Animation Vocabulary  model: the part that changes
- on-tick: model -&amp;gt; model
-  Moves to next time.
- on-draw: model -&amp;gt; image  Shows the result.</description>
-    </item>
-    
   </channel>
 </rss>
