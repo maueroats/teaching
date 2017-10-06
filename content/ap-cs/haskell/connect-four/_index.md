@@ -60,15 +60,23 @@ function. It will speed your work and made it easier to understand!
 
 ## Technical details
 
-Question: How do you print on more than one line?
+1. Question: How do you print on more than one line?
 
-Answer: Put "\n" in your string. For example: "One line\nSecond line".
+    Answer: Put "\n" in your string. For example: "One line\nSecond line".
 
-Example: 
+    Example: 
 ```haskell
     drawBoard xs = "__XX\n_OOO"
     main = do putStrLn $ drawBoard [[0,0,1,1],[0,2,2,2]]
 ```
+
+2. Question: What is the difference between 'X' and "X"?
+
+Answer: 'x' is a character (Char), and "X" is a String, which is a list of characters.
+
+3. Question: How do you define a type shortcut.
+
+Answer: `type Board = [[Int]]`
 
 
 [1]: https://www.mathsisfun.com/games/connect4.html
