@@ -5,6 +5,7 @@ draft: false
 type: slide
 theme: white
 description: "The basics of big-bang: on-tick, on-draw."
+weight: 1
 ---
 
 # Intro to Animation

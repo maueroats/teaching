@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.29" />
-    <meta name="description" content="">
+    <meta name="description" content="Connect Four project description, including function signatures.">
 
 
-    <title>Art Period 1 :: WY Computer Science</title>
+    <title>Connect Four :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,12 +29,15 @@
     
 
     
+<link href="http://wy-cs.info/ap-cs/haskell/connect-four/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
+<link href="http://wy-cs.info/ap-cs/haskell/connect-four/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
+
 
 <link href="/css/prism.css" rel="stylesheet">
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch03art/period-1/">
+  <body class="" data-url="/ap-cs/haskell/connect-four/">
     <nav id="sidebar" class="">
 
 
@@ -83,7 +86,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -94,7 +97,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -139,7 +142,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -150,7 +153,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -959,8 +962,8 @@
   
     
     <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/ap-cs/haskell/connect-four/">
@@ -1062,7 +1065,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1073,7 +1076,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1264,7 +1267,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch03art/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1275,7 +1278,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1298,7 +1301,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch03art/period-1/" class="dd-item
-     active
+     
       ">
         <a href="/intermediate-cs/ch03art/period-1/">
         <span>Art Period 1</span> 
@@ -1786,7 +1789,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch03art/'>3. Art with Racket</a> > Art Period 1
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > Connect Four
 
  
 
@@ -1799,32 +1802,115 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#functions-to-write">Functions to write</a></li>
+<li><a href="#advanced-functions">Advanced functions</a></li>
+<li><a href="#design-process">Design process</a></li>
+<li><a href="#technical-details">Technical details</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
           </div>
         
         
+          <div id="tags">
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
+            
+              <a class="label label-default" href="http://wy-cs.info/tags/project">project</a>
+            
+          </div>
+        
         <div id="body-inner">
           
-            <h1>Art Period 1</h1>
+            <h1>Connect Four</h1>
           
 
 
 
 
-<p><img src="1-JordanQ.png" alt="Jordan, Period 1" title="Jordan" />
-<img src="1-Krishna.png" alt="Krishna Chess" title="Krishna Chess" />
-<img src="1-Sophie.png" alt="Sophie" />
-<img src="1-Zophie.png" alt="Zophie" />
-<img src="1-Taylor.png" alt="Mario" />
-<img src="1-WeiwenOu.png" alt="Moving windmill" title="This windmill actually spins." /></p>
 
+
+
+
+<p><strong>Due Thursday, October 12</strong></p>
+
+<p>Familiarize yourself with the game of
+<a href="https://en.wikipedia.org/wiki/Connect_Four">Connect Four</a>, possibly <a href="https://www.mathsisfun.com/games/connect4.html">playing a few games</a>.</p>
+
+<h2 id="functions-to-write">Functions to write</h2>
+
+<p>This is a minimum set of functions to write:</p>
+
+<ul>
+<li><code>draw_board :: Board -&gt; String</code></li>
+<li><code>make_move :: Board -&gt; Player -&gt; Position -&gt; Board</code></li>
+<li><code>is_legal_move :: Board -&gt; Player -&gt; Position -&gt; Bool</code></li>
+<li><code>is_won :: Board -&gt; Bool</code></li>
+<li><code>winner :: Board -&gt; Player</code></li>
+</ul>
+
+<h2 id="advanced-functions">Advanced functions</h2>
+
+<p>When you are done with the minimum set of functions, consider writing
+functions that make better and better moves.</p>
+
+<ul>
+<li><p><code>any_legal</code> gives the first legal move it finds.</p></li>
+
+<li><p><code>win_or_any_move</code> makes a winning move if there is one, otherwise random.</p></li>
+
+<li><p><code>win_or_get_three</code> is an improvement over <code>win_or_random_move</code> that
+plays to get three in a row if it cannot get four in a row.</p></li>
+
+<li><p><code>best_move</code> picks a move that will lead to a win if one exists and
+avoids moves that lead to losing.</p></li>
+</ul>
+
+<p>The last function is the most interesting, but will require doing some outside
+reading on the <a href="http://www.cs.cornell.edu/courses/cs2110/2014sp/assignments/a4/A4ConnectFour.pdf">minimax algorithm for Connect Four</a>.</p>
+
+<h2 id="design-process">Design process</h2>
+
+<p>Make a plan before you start writing code! I recommend the top-down
+design that we discussed last year.</p>
+
+<p>Please have each step of the design process visible for each
+function. It will speed your work and made it easier to understand!</p>
+
+<ol>
+<li>Purpose for the function</li>
+<li>Signature for the function</li>
+
+<li><p>Example(s) showing how the function will work.</p>
+
+<p>Put the examples for the function called <code>work</code> into a function called <code>test_work</code>.</p></li>
+
+<li><p>Write the function.</p></li>
+</ol>
+
+<h2 id="technical-details">Technical details</h2>
+
+<p>Question: How do you print on more than one line?</p>
+
+<p>Answer: Put &ldquo;\n&rdquo; in your string. For example: &ldquo;One line\nSecond line&rdquo;.</p>
+
+<p>Example:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="">    </span><span style="color:#75af00">drawBoard</span><span style=""> </span><span style="color:#75af00">xs</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#d88200">&#34;__XX</span><span style="color:#8045ff">\n</span><span style="color:#d88200">_OOO&#34;</span><span style="">
+</span><span style="">    </span><span style="color:#75af00">main</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#00a8c8">do</span><span style=""> </span><span style="color:#75af00">putStrLn</span><span style=""> </span><span style="color:#f92672">$</span><span style=""> </span><span style="color:#75af00">drawBoard</span><span style=""> </span><span style="color:#111">[[</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">],[</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">]]</span></code></pre>
+</div>
 
 <footer class=" footline" >
 	
 </footer>
+
+
 
 
 
@@ -1863,8 +1949,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1880,6 +1964,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1897,6 +1984,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1911,6 +1999,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2392,6 +2483,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2407,6 +2499,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2462,7 +2557,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2477,9 +2571,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2577,7 +2668,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2590,7 +2680,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -2607,9 +2696,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2875,10 +2961,10 @@
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch03art/" title="3. Art with Racket"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/daily/2017-09-11/" title="2017-09-11"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch03art/period-5/" title="Art Period 5" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/typeclass-notes/" title="Typeclass Notes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

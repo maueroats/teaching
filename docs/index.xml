@@ -12,12 +12,41 @@
     
     
     <item>
+      <title>Intro to Animations</title>
+      <link>http://wy-cs.info/intermediate-cs/ch06/animation/</link>
+      <pubDate>Wed, 04 Oct 2017 13:03:36 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch06/animation/</guid>
+      <description>Intro to Animation Opener Write two functions:
+ rotator: image -&amp;gt; image that turns the image 10 degrees.
+ middle-placer: image -&amp;gt; image that places the given image in the center of a yellow circle of radius 200.
+  Animation Code (definestarter(rectangle50200&amp;#34;solid&amp;#34;&amp;#34;purple&amp;#34;))(definedelay-time3)(big-bangstarter(on-tickrotatordelay-time)(on-drawmiddle-placer))  Animation Vocabulary  model: the part that changes
+ on-tick: model -&amp;gt; model
+  Moves to next time.
+ on-draw: model -&amp;gt; image  Shows the result.</description>
+    </item>
+    
+    <item>
       <title>Art Period 1</title>
       <link>http://wy-cs.info/intermediate-cs/ch03art/period-1/</link>
       <pubDate>Wed, 27 Sep 2017 20:14:20 -0500</pubDate>
       
       <guid>http://wy-cs.info/intermediate-cs/ch03art/period-1/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Animations Outline</title>
+      <link>http://wy-cs.info/intermediate-cs/ch06/animation2/</link>
+      <pubDate>Thu, 05 Oct 2017 20:55:16 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch06/animation2/</guid>
+      <description>All Steps  Model Draw handler Tick handler Key handler? Mouse handler?  1. Decide model  What will the computer remember in order to draw a scene?
+ the moving parts
+ image or number (usually)
+  Write down type of model: image, number, string.
+ Make an example (used in later testing).
+  2. Draw handler  How will you draw the model on the screen?</description>
     </item>
     
     <item>
@@ -107,29 +136,6 @@ The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
 Produce: One complex piece of art per person in the group. (Two simpler pieces.) (Groups of at most two.)
 Goal: Art projects should demonstrate a range of functions from the chapter, try to use 3-4 from each category in your whole project.
  Methods of placement: beside, above, overlay, place-image, as well as the &amp;ldquo;/align&amp;rdquo; variations.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 4 Problem Set</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch04/ch04-problemset/</link>
-      <pubDate>Wed, 20 Sep 2017 20:32:15 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch04/ch04-problemset/</guid>
-      <description>Key new concepts: patterns, guards, where, let, case.
-Please write function signatures for every solution.
- Some of these problems are classical exercises with solutions online. Please do not search for them or read them before turning in your work. (See Academic Integrity.)
-Exercises  First Third. Return the sum of the first and third elements in the list. Example: firstThird [10,30,50,90] == 60.
- Take a list of items that can be compared for equality (Eq a) and reduce repeats to a single element.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 3 Reading Guide</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</link>
-      <pubDate>Wed, 13 Sep 2017 13:18:35 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</guid>
-      <description>&lt;p&gt;We learn about types and typeclasses.
-&lt;/p&gt;</description>
     </item>
     
   </channel>

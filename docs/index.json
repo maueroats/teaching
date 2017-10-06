@@ -1,5 +1,12 @@
 [
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch06/animation/",
+	"title": "Intro to Animations",
+	"tags": [],
+	"description": "The basics of big-bang: on-tick, on-draw.",
+	"content": " Intro to Animation Opener Write two functions:\n rotator: image -\u0026gt; image that turns the image 10 degrees.\n middle-placer: image -\u0026gt; image that places the given image in the center of a yellow circle of radius 200.\n  Animation Code (definestarter(rectangle50200\u0026#34;solid\u0026#34;\u0026#34;purple\u0026#34;))(definedelay-time3)(big-bangstarter(on-tickrotatordelay-time)(on-drawmiddle-placer))  Animation Vocabulary  model: the part that changes\n on-tick: model -\u0026gt; model\n  Moves to next time.\n on-draw: model -\u0026gt; image  Shows the result. Draw things that do not move here.\nPaper Exercise I  A shape is shown on a yellow circle of radius 200.\n The shape grows 25% larger every tick, but the circle does not.\n   Write a tick handler.\n Write the big-bang.\n  Paper Exercise II  A shape starts in the center of a circle.\n The shape moves to the right 10 pixels every tick.\n  Write the tick handler Class work Exercises 6.4.2 and 6.4.3 (pdf page 106)\nBonus: 6.4.4\nHomework Read Section 6.3 (beginner mistakes)\nAnimation more vocab  on-key: model key -\u0026gt; model\n on-mouse: model number(x) number(y) event -\u0026gt; model\n  You found the code!\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch03art/period-1/",
 	"title": "Art Period 1",
 	"tags": [],
@@ -12,6 +19,13 @@
 	"tags": ["haskell"],
 	"description": "",
 	"content": "A high-level overview of the Haskell language and why its features are good. You should read it carefully and note what items you are unfamiliar with. Writing down your questions will help you remember what parts were difficult so that we can discuss them in class.\n Haskell Chapter 1 Reading Guide "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch06/animation2/",
+	"title": "Animations Outline",
+	"tags": [],
+	"description": "Step by step, how to make a basic animation.",
+	"content": " All Steps  Model Draw handler Tick handler Key handler? Mouse handler?  1. Decide model  What will the computer remember in order to draw a scene?\n the moving parts\n image or number (usually)\n  Write down type of model: image, number, string.\n Make an example (used in later testing).\n  2. Draw handler  How will you draw the model on the screen?\n non-moving parts go here\n place image in appropriate spots\n  Write and test this function!\n  3. Tick handler  How will the model change from second to second?\n in comes old model out goes new model   Write function and test a single step first!\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/",
@@ -206,8 +220,8 @@
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
 	"title": "6. Animations I",
 	"tags": [],
-	"description": "",
-	"content": "  Intro to Animations   "
+	"description": "Big-bang for animations. Essential information and walkthroughs.",
+	"content": " Essentials These essentials are on page 100 (PDF page 111) or page 138 (PDF page 149). There is a detailed checklist on page 105 (PDF page 116). Use it! You should memorize them.\n model: What the computer remembers.\n draw-handler: model -\u0026gt; image: Draw the model on the screen; adds non-moving parts to the image. (on-draw)\n tick-handler: model -\u0026gt; model: Update the model as time passes. (on-tick)\n key-handler: model key -\u0026gt; model: Update the model when a key is hit. (on-key)\n mouse-handler: model x y event -\u0026gt; model: Update the model when the mouse is moved or clicked. The inputs x and y are numbers, the event is a string. (on-mouse)\n  Topics  Intro to Animations   Animations Outline   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch06/",
@@ -241,7 +255,7 @@
 	"uri": "http://wy-cs.info/ap-cs/haskell/usaco/",
 	"title": "USACO Practice",
 	"tags": [],
-	"description": "",
+	"description": "Challenging problems for people who want to stretch their understanding.",
 	"content": "One of the key ideas to keep in mind when learning from USA Computing Olympiad problems is that time matters. A slow algorithm is not good enough; keep thinking about the problem, trying to find a more efficient way to solve it. Always time your solutions. Always try your solutions on the official test cases \u0026mdash; many times they will contain a situation that you have not considered. Enjoy it when that happens.\n Haybales   "
 },
 {
@@ -259,11 +273,11 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/animation/",
-	"title": "Intro to Animations",
-	"tags": [],
-	"description": "The basics of big-bang: on-tick, on-draw.",
-	"content": " Intro to Animation Opener Write two functions:\n rotator: image -\u0026gt; image that turns the image 10 degrees.\n middle-placer: image -\u0026gt; image that places the given image in the center of a yellow circle of radius 200.\n  Animation Code (definestarter(rectangle50200\u0026#34;solid\u0026#34;\u0026#34;purple\u0026#34;))(definedelay-time3)(big-bangstarter(on-tickrotatordelay-time)(on-drawmiddle-placer))  Animation Vocabulary  model: the part that changes\n on-tick: model -\u0026gt; model\n  Moves to next time.\n on-draw: model -\u0026gt; image  Shows the result. Draw things that do not move here.\nPaper Exercise I  A shape is shown on a yellow circle of radius 200.\n The shape grows 25% larger every tick, but the circle does not.\n   Write a tick handler.\n Write the big-bang.\n  Paper Exercise II  A shape starts in the center of a circle.\n The shape moves to the right 10 pixels every tick.\n  Write the tick handler Class work Exercises 6.4.2 and 6.4.3 (pdf page 106)\nBonus: 6.4.4\nHomework Read Section 6.3 (beginner mistakes)\nAnimation more vocab  on-key: model key -\u0026gt; model\n on-mouse: model number(x) number(y) event -\u0026gt; model\n  You found the code!\n"
+	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/",
+	"title": "Connect Four",
+	"tags": ["haskell", "project"],
+	"description": "Connect Four project description, including function signatures.",
+	"content": " Due Thursday, October 12\nFamiliarize yourself with the game of Connect Four, possibly playing a few games.\nFunctions to write This is a minimum set of functions to write:\n draw_board :: Board -\u0026gt; String make_move :: Board -\u0026gt; Player -\u0026gt; Position -\u0026gt; Board is_legal_move :: Board -\u0026gt; Player -\u0026gt; Position -\u0026gt; Bool is_won :: Board -\u0026gt; Bool winner :: Board -\u0026gt; Player  Advanced functions When you are done with the minimum set of functions, consider writing functions that make better and better moves.\n any_legal gives the first legal move it finds.\n win_or_any_move makes a winning move if there is one, otherwise random.\n win_or_get_three is an improvement over win_or_random_move that plays to get three in a row if it cannot get four in a row.\n best_move picks a move that will lead to a win if one exists and avoids moves that lead to losing.\n  The last function is the most interesting, but will require doing some outside reading on the minimax algorithm for Connect Four.\nDesign process Make a plan before you start writing code! I recommend the top-down design that we discussed last year.\nPlease have each step of the design process visible for each function. It will speed your work and made it easier to understand!\n Purpose for the function Signature for the function Example(s) showing how the function will work.\nPut the examples for the function called work into a function called test_work.\n Write the function.\n  Technical details Question: How do you print on more than one line?\nAnswer: Put \u0026ldquo;\\n\u0026rdquo; in your string. For example: \u0026ldquo;One line\\nSecond line\u0026rdquo;.\nExample:\ndrawBoardxs=\u0026#34;__XX\\n_OOO\u0026#34;main=doputStrLn$drawBoard[[0,0,1,1],[0,2,2,2]] "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-10-04/",
@@ -325,7 +339,7 @@
 	"uri": "http://wy-cs.info/ap-cs/haskell/typeclass-notes/",
 	"title": "Typeclass Notes",
 	"tags": [],
-	"description": "",
+	"description": "Typeclasses you may encounter in everyday programming.",
 	"content": " Num: Addition, multiplication, a way to convert from an integer. Also absolute value and negation. Real: Part of the real number line. Ordered numbers. toRational. Does not imply decimals! Enum: Next and previous (succ-essor and pred-ecessor). Integral: Integer division. Fractional: \u0026ldquo;Decimal\u0026rdquo; division. Floating: transcendental functions (exponentials, trig, pi, e). RealFrac: truncate and round. RealFloat: efficient floating point.  "
 },
 {
@@ -410,14 +424,14 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Haybales modified Tue 10-03  USACO Practice modified Tue 10-03  2017-10-03 modified Tue 10-03  Chapter 6 Reading Guide modified Mon 10-02  Chapter 4 Quiz modified Tue 09-26  Chapter 5 Reading Guide modified Sun 09-24  Intermediate Computer Science Recent Changes    6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Haybales modified Tue 10-03  USACO Practice modified Tue 10-03  2017-10-03 modified Tue 10-03  Chapter 6 Reading Guide modified Mon 10-02  Chapter 4 Quiz modified Tue 09-26  Intermediate Computer Science Recent Changes    6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Puzzle Opener modified Fri 09-22  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/",
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  This is a fun chapter to read, but as a class we are done after Chapter 5 (for now). Chapter 6 Reading Guide  USACO Practice  One of the key ideas to keep in mind when learning from USA Computing Olympiad problems is that time matters. A slow algorithm is not good enough; keep thinking about the problem, trying to find a more efficient way to solve it. Always time your solutions. Always try your solutions on the official test cases \u0026mdash; many times they will contain a situation that you have not considered. Enjoy it when that happens.\n Haskell Daily Notes  Notes for each day.\n Typeclass Notes   Num: Addition, multiplication, a way to convert from an integer. Also absolute value and negation. Real: Part of the real number line. Ordered numbers. toRational. Does not imply decimals! Enum: Next and previous (succ-essor and pred-ecessor). Integral: Integer division. Fractional: \u0026ldquo;Decimal\u0026rdquo; division. Floating: transcendental functions (exponentials, trig, pi, e). RealFrac: truncate and round. RealFloat: efficient floating point.  Repl.it  A summary of any special problems that have arisen with repl.it.  Source Code Files (ghci)  Writing a file is different from typing in an interpreter like repl.it or ghci.  "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  This is a fun chapter to read, but as a class we are done after Chapter 5 (for now). Chapter 6 Reading Guide  USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  A summary of any special problems that have arisen with repl.it.  Source Code Files (ghci)  Writing a file is different from typing in an interpreter like repl.it or ghci.  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
