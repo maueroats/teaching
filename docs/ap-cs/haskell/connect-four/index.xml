@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Connect Four Timeline</title>
+      <link>http://wy-cs.info/ap-cs/haskell/connect-four/timeline/</link>
+      <pubDate>Sat, 07 Oct 2017 08:59:38 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/connect-four/timeline/</guid>
+      <description>Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move and is_won.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Write winner. Share difficulties and troubleshoot any.   7 Thurs, Oct 11 (early release) Write tests demonstrating code works.</description>
+    </item>
+    
+    <item>
       <title>Connect Four Spoilers</title>
       <link>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</link>
       <pubDate>Fri, 06 Oct 2017 22:31:43 -0500</pubDate>

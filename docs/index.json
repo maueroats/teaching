@@ -273,6 +273,13 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/timeline/",
+	"title": "Connect Four Timeline",
+	"tags": [],
+	"description": "",
+	"content": "   Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move and is_won.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Write winner. Share difficulties and troubleshoot any.   7 Thurs, Oct 11 (early release) Write tests demonstrating code works.   8 Fri, Oct 12 First day to turn in project.   - Mon, Oct 16 Last day to turn in project.    I expect this project to take 4-6 hours to complete over the course of a week. If you spend less than 3 hours on the project you should read the advanced notes about the minimax algorithm and (partially?) implement it.\nExpected times and other notes:\n draw_board: 1.0 hour, including class time is_legal_move: 0.5 hour is_won: 1.5-2 hours, including 0.5-1.0 hours planning time. Expect to use several helper functions. winner: less than 0.5 hour make_move: 1.0 hour, including class time. See spoilers if needed.  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/",
 	"title": "Connect Four Spoilers",
 	"tags": [],
@@ -438,7 +445,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Haybales modified Tue 10-03  USACO Practice modified Tue 10-03  2017-10-03 modified Tue 10-03  Chapter 6 Reading Guide modified Mon 10-02  Intermediate Computer Science Recent Changes    Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Haybales modified Tue 10-03  USACO Practice modified Tue 10-03  2017-10-03 modified Tue 10-03  Intermediate Computer Science Recent Changes    Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/",
