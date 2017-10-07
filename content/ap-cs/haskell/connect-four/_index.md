@@ -8,7 +8,7 @@ draft: false
 description: "Connect Four project description, including function signatures."
 ---
 
-**Due Thursday, October 12**
+**Due Monday, October 16**. See [timeline]({{% relref "timeline.md" %}}).
 
 Familiarize yourself with the game of 
 [Connect Four][2], possibly [playing a few games][1]. 
