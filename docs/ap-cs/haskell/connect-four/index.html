@@ -972,8 +972,44 @@
         
         
 
+          
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+          
+
+        
+
         
       </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/haskell/connect-four/spoilers/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/haskell/connect-four/spoilers/">
+        <span>Connect Four Spoilers</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -1499,6 +1535,26 @@
 
             
           
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch06/animation-practice/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch06/animation-practice/">
+        <span>Animation Practice</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -1864,7 +1920,8 @@ functions that make better and better moves.</p>
 <ul>
 <li><p><code>any_legal</code> gives the first legal move it finds.</p></li>
 
-<li><p><code>win_or_any_move</code> makes a winning move if there is one, otherwise random.</p></li>
+<li><p><code>win_or_any_move</code> is an improvement over <code>any_legal</code> that makes a
+winning move if there is one.</p></li>
 
 <li><p><code>win_or_get_three</code> is an improvement over <code>win_or_random_move</code> that
 plays to get three in a row if it cannot get four in a row.</p></li>
@@ -1874,7 +1931,7 @@ avoids moves that lead to losing.</p></li>
 </ul>
 
 <p>The last function is the most interesting, but will require doing some outside
-reading on the <a href="http://www.cs.cornell.edu/courses/cs2110/2014sp/assignments/a4/A4ConnectFour.pdf">minimax algorithm for Connect Four</a>.</p>
+reading on the <a href="http://www.cs.cornell.edu/courses/cs2110/2014sp/assignments/a4/A4ConnectFour.pdf">minimax algorithm</a>, perhaps looking at an <a href="https://github.com/erikackermann/Connect-Four">implementation for Connect Four</a>.</p>
 
 <h2 id="design-process">Design process</h2>
 
@@ -1907,16 +1964,18 @@ function. It will speed your work and made it easier to understand!</p>
 </span><span style=""></span><span style="color:#75af00">main</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#00a8c8">do</span><span style=""> </span><span style="color:#75af00">putStrLn</span><span style=""> </span><span style="color:#f92672">$</span><span style=""> </span><span style="color:#75af00">drawBoard</span><span style=""> </span><span style="color:#111">[[</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">],[</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">]]</span></code></pre>
 </div></li>
 
-<li><p>Question: What is the difference between &lsquo;X&rsquo; and &ldquo;X&rdquo;?</p></li>
+<li><p>Question: What is the difference between &lsquo;X&rsquo; and &ldquo;X&rdquo;?</p>
+
+<p>Answer: &lsquo;x&rsquo; is a character (Char), and &ldquo;X&rdquo; is a String, which is a list of characters.</p></li>
+
+<li><p>Question: How do you define a type shortcut?</p>
+
+<p>Answer: <code>type Board = [[Int]]</code></p></li>
+
+<li><p>Question: How do you define a struct?</p></li>
 </ol>
 
-<p>Answer: &lsquo;x&rsquo; is a character (Char), and &ldquo;X&rdquo; is a String, which is a list of characters.</p>
-
-<ol>
-<li>Question: How do you define a type shortcut.</li>
-</ol>
-
-<p>Answer: <code>type Board = [[Int]]</code></p>
+<p>Answer: it will be easier if you do not do this, but <a href="http://learnyouahaskell.com/making-our-own-types-and-typeclasses#record-syntax">Chapter 8 in LYaH</a> has all of the information you need.</p>
 
 
 <footer class=" footline" >
@@ -2505,9 +2564,6 @@ function. It will speed your work and made it easier to understand!</p>
                     
 
                     
-            
-        
-                    
                         
             
             
@@ -2515,88 +2571,6 @@ function. It will speed your work and made it easier to understand!</p>
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -2624,6 +2598,9 @@ function. It will speed your work and made it easier to understand!</p>
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -2656,6 +2633,40 @@ function. It will speed your work and made it easier to understand!</p>
                     
             
         
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
                         
             
@@ -2769,6 +2780,19 @@ function. It will speed your work and made it easier to understand!</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2784,6 +2808,73 @@ function. It will speed your work and made it easier to understand!</p>
                     
                     
 
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2977,7 +3068,7 @@ function. It will speed your work and made it easier to understand!</p>
             <a class="nav nav-prev" href="/ap-cs/haskell/daily/2017-09-11/" title="2017-09-11"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/typeclass-notes/" title="Typeclass Notes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/connect-four/spoilers/" title="Connect Four Spoilers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

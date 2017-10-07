@@ -11,5 +11,17 @@
 	<atom:link href="http://wy-cs.info/ap-cs/haskell/connect-four/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Connect Four Spoilers</title>
+      <link>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</link>
+      <pubDate>Fri, 06 Oct 2017 22:31:43 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</guid>
+      <description>Two problems with connect four: changing an entry in a matrix ([[Int]]) and seeing if there is a win.
+Changing entries in the board The biggest problem with the representation of the board as [[Int]] is that it is really hard to change the entries. If you use [((Int,Int),Player)] then it&amp;rsquo;s lots easier to make moves.
+Outline of plan:
+ (changeCol: [Int] -&amp;gt; Int -&amp;gt; Int -&amp;gt; [Int]) Change value at index col in a single row to newVal; every other value in the list just output unchanged.</description>
+    </item>
+    
   </channel>
 </rss>

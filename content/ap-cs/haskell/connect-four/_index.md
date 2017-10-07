@@ -30,7 +30,8 @@ functions that make better and better moves.
 
 * `any_legal` gives the first legal move it finds.
 
-* `win_or_any_move` makes a winning move if there is one, otherwise random.
+* `win_or_any_move` is an improvement over `any_legal` that makes a
+  winning move if there is one.
 
 * `win_or_get_three` is an improvement over `win_or_random_move` that
   plays to get three in a row if it cannot get four in a row.
@@ -39,7 +40,7 @@ functions that make better and better moves.
   avoids moves that lead to losing. 
   
 The last function is the most interesting, but will require doing some outside
-reading on the [minimax algorithm for Connect Four][3].
+reading on the [minimax algorithm][3], perhaps looking at an [implementation for Connect Four][5].
 
 ## Design process
 
@@ -72,13 +73,18 @@ function. It will speed your work and made it easier to understand!
 
 2. Question: What is the difference between 'X' and "X"?
 
-Answer: 'x' is a character (Char), and "X" is a String, which is a list of characters.
+    Answer: 'x' is a character (Char), and "X" is a String, which is a list of characters.
 
-3. Question: How do you define a type shortcut.
+3. Question: How do you define a type shortcut?
 
-Answer: `type Board = [[Int]]`
+    Answer: `type Board = [[Int]]`
 
+4. Question: How do you define a struct?
+
+   Answer: it will be easier if you do not do this, but [Chapter 8 in LYaH][4] has all of the information you need. 
 
 [1]: https://www.mathsisfun.com/games/connect4.html
 [2]: https://en.wikipedia.org/wiki/Connect_Four
 [3]: http://www.cs.cornell.edu/courses/cs2110/2014sp/assignments/a4/A4ConnectFour.pdf
+[4]: http://learnyouahaskell.com/making-our-own-types-and-typeclasses#record-syntax
+[5]: https://github.com/erikackermann/Connect-Four
