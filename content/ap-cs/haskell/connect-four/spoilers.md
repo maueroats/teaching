@@ -1,6 +1,7 @@
 ---
 title: "Connect Four Spoilers"
 date: 2017-10-06T22:31:43-05:00
+weight: 10
 draft: false
 ---
 

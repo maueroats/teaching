@@ -21,6 +21,18 @@
     </item>
     
     <item>
+      <title>Connect Four UI</title>
+      <link>http://wy-cs.info/ap-cs/haskell/connect-four/ui/</link>
+      <pubDate>Mon, 09 Oct 2017 11:01:32 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/connect-four/ui/</guid>
+      <description>The user interface code for Connect Four is a little clunky. You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).
+Code Outline main: just make board and call event loop
+event loop:
+ draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Example run *Main&amp;gt; main (Enter -99 to quit.</description>
+    </item>
+    
+    <item>
       <title>Connect Four Spoilers</title>
       <link>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</link>
       <pubDate>Fri, 06 Oct 2017 22:31:43 -0500</pubDate>

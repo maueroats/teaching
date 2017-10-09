@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Art Project :: WY Computer Science</title>
+    <title>Connect Four UI :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <script src="/js/prism.js"></script>
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch03/ch03-art-project/">
+  <body class="" data-url="/ap-cs/haskell/connect-four/ui/">
     <nav id="sidebar" class="">
 
 
@@ -83,7 +83,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -94,7 +94,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -139,7 +139,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -150,7 +150,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -959,7 +959,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -970,7 +970,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1013,7 +1013,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/connect-four/ui/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/haskell/connect-four/ui/">
         <span>Connect Four UI</span> 
@@ -1138,7 +1138,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1149,7 +1149,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1237,7 +1237,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch03/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1248,7 +1248,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1291,7 +1291,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch03/ch03-art-project/" class="dd-item
-     active
+     
       ">
         <a href="/intermediate-cs/ch03/ch03-art-project/">
         <span>Art Project</span> 
@@ -1882,7 +1882,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch03/'>3. More Interesting Pictures</a> > Art Project
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/connect-four/'>Connect Four</a> > Connect Four UI
+
+ 
 
  
 
@@ -1899,9 +1904,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#steps">Steps</a></li>
-<li><a href="#choice-1-drracket-s-take-on-moma">Choice 1: DrRacket&rsquo;s take on MoMA</a></li>
-<li><a href="#choice-2-picture-puzzles">Choice #2: Picture Puzzles</a></li>
+<li><a href="#code-outline">Code Outline</a></li>
+<li><a href="#example-run">Example run</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1911,15 +1915,9 @@
           </div>
         
         
-          <div id="tags">
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/project">project</a>
-            
-          </div>
-        
         <div id="body-inner">
           
-            <h1>Art Project</h1>
+            <h1>Connect Four UI</h1>
           
 
 
@@ -1927,72 +1925,105 @@
 
 
 
-<p><strong>Deadline</strong>: Finish before Tuesday, September 26 (chapter 3 test
-day). Turn in Wednesday, September 27.</p>
+<p>The <a href="ui-connect-four.hs">user interface code</a> for Connect Four is a little clunky.
+You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).</p>
 
-<p><strong>Produce</strong>: One complex piece of art per person in the group. (Two simpler pieces.)
-(Groups of at most two.)</p>
+<h2 id="code-outline">Code Outline</h2>
 
-<p><strong>Goal</strong>: Art projects should demonstrate a range of functions from the
-chapter, try to use 3-4 from each category in your whole project.</p>
+<p>main: just make board and call event loop</p>
 
-<ul>
-<li><p>Methods of placement: beside, above, overlay, place-image, as well as
-the &ldquo;<code>/align</code>&rdquo; variations. (Use the variations!)</p></li>
-
-<li><p>Changing pictures: crop, scale, rotate.</p></li>
-
-<li><p>Shapes: triangles (many!), lots more listed at the end of Chapter 3 (PDF
-pages 60&ndash;61).</p></li>
-
-<li><p>Colors: <code>color-database</code>, <code>make-color</code> from the internet, <code>colorize</code>
-or <code>name-&gt;color</code>.</p></li>
-</ul>
-
-<p><strong>Remember</strong>: This is a short project. <em>I expect you will spend no more than
-two hours on it</em>, including time working in class Friday and Monday.</p>
-
-<p>It is OK to simplify and focus on using the goal functions (see
-above).</p>
-
-<h2 id="steps">Steps</h2>
-
-<ol>
-<li>Find one inspiration piece of art.</li>
-<li>Have idea approved before the first class ends.</li>
-<li>Complete by working in class Friday and Monday, and possibly some
-time at home over the weekend.</li>
-</ol>
-
-<h2 id="choice-1-drracket-s-take-on-moma">Choice 1: DrRacket&rsquo;s take on MoMA</h2>
-
-<p>Choose a piece of art for inspiration.</p>
+<p>event loop:</p>
 
 <ul>
-<li>School appropriate.</li>
-<li>No duplicates with anyone you know in any class.</li>
-<li>MoMA archive:
+<li>draw board</li>
+<li>is it won?
 
 <ul>
-<li><a href="https://archive.org/details/metropolitanmuseumofart-gallery?subject=Metropolitan&amp;sort=&amp;&amp;and[]=subject%3A%22Japan%22&amp;and[]=textile">Textiles from Japan</a> - which could have <a href="https://archive.org/details/mma_textile_68020">floral
-patterns</a> or <a href="https://archive.org/details/mma_textile_68078">numbers from the cataloging process</a></li>
-<li><a href="https://archive.org/details/metropolitanmuseumofart-gallery?subject=Metropolitan&amp;sort=&amp;&amp;and[]=subject%3A&quot;Islamic&quot;">Islamic art</a> &mdash; <a href="https://archive.org/details/mma_panel_445109">like this</a></li>
+<li>print the win message</li>
+</ul></li>
+<li>not won?
+
+<ul>
+<li>get a move</li>
+<li>recursive call to event loop with updated board, next player</li>
 </ul></li>
 </ul>
 
-<h2 id="choice-2-picture-puzzles">Choice #2: Picture Puzzles</h2>
+<h2 id="example-run">Example run</h2>
 
-<p>Goal: create two pictures that are challenging or interesting to
-recreate once they are finished. If you can get someone to say, &ldquo;How
-did you do that?&ldquo;, your puzzle is a success.</p>
-
-<p>Possible sources:</p>
-
-<ul>
-<li><a href="https://duckduckgo.com/?q=geometry+puzzles&amp;t=h_&amp;iax=1&amp;ia=images">Geometry puzzles</a></li>
-<li><a href="https://duckduckgo.com/?q=triangle+puzzles&amp;t=h_&amp;iar=images&amp;iax=1&amp;ia=images">Triangle puzzles</a></li>
-<li><a href="https://duckduckgo.com/?q=mondrian+art&amp;t=h_&amp;iar=images&amp;iax=1&amp;ia=images">Mondrian</a></li>
-</ul>
+<pre><code>*Main&gt; main
+        
+        
+        
+        
+        
+        
+(Enter -99 to quit.)
+Player 1 moves.
+Column [0-7]? 5
+        
+        
+        
+        
+        
+     X  
+(Enter -99 to quit.)
+Player 2 moves.
+Column [0-7]? 2
+        
+        
+        
+        
+        
+  O  X  
+(Enter -99 to quit.)
+Player 1 moves.
+Column [0-7]? 5
+        
+        
+        
+        
+     X  
+  O  X  
+(Enter -99 to quit.)
+Player 2 moves.
+Column [0-7]? 3
+        
+        
+        
+        
+     X  
+  OO X  
+(Enter -99 to quit.)
+Player 1 moves.
+Column [0-7]? 5
+        
+        
+        
+     X  
+     X  
+  OO X  
+(Enter -99 to quit.)
+Player 2 moves.
+Column [0-7]? 4
+        
+        
+        
+     X  
+     X  
+  OOOX  
+(Enter -99 to quit.)
+Player 1 moves.
+Column [0-7]?   5
+        
+        
+     X  
+     X  
+     X  
+  OOOX  
+The game is over
+Player 1 won!
+</code></pre>
 
 
 <footer class=" footline" >
@@ -2036,8 +2067,6 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -2053,6 +2082,9 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2070,6 +2102,7 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
                 
                     
+                    
                 
                 
 
@@ -2084,6 +2117,9 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2564,6 +2600,7 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
             
                 
+                    
                     
                 
                 
@@ -2578,6 +2615,9 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -2593,6 +2633,7 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
             
                 
+                    
                     
                 
                 
@@ -2610,6 +2651,9 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -2683,7 +2727,6 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
                 
                     
-                    
                 
                 
 
@@ -2698,9 +2741,6 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2734,7 +2774,6 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
                 
                     
-                    
                 
                 
 
@@ -2747,9 +2786,6 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2767,7 +2803,6 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
                 
                     
-                    
                 
                 
 
@@ -2783,9 +2818,6 @@ did you do that?&ldquo;, your puzzle is a success.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3115,10 +3147,10 @@ did you do that?&ldquo;, your puzzle is a success.</p>
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch03/color/" title="Color Commands"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/connect-four/timeline/" title="Connect Four Timeline"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch03/puzzle-opener/" title="Puzzle Opener" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/connect-four/spoilers/" title="Connect Four Spoilers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

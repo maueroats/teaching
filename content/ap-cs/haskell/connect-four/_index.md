@@ -53,10 +53,8 @@ function. It will speed your work and made it easier to understand!
 1. Purpose for the function
 2. Signature for the function
 3. Example(s) showing how the function will work. 
-
-     Put the examples for the function called `work` into a function called `test_work`.
-
 4. Write the function. 
+5. Testing: put the examples for the function called `work` into a function called `test_work`.
 
 
 ## Technical details
@@ -81,7 +79,7 @@ function. It will speed your work and made it easier to understand!
 
 4. Question: How do you define a struct?
 
-   Answer: it will be easier if you do not do this, but [Chapter 8 in LYaH][4] has all of the information you need. 
+    Answer: it will be easier if you do not do this, but [Chapter 8 in LYaH][4] has all of the information you need. 
 
 [1]: https://www.mathsisfun.com/games/connect4.html
 [2]: https://en.wikipedia.org/wiki/Connect_Four

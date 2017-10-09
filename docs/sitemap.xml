@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/connect-four/timeline/</loc>
+    <lastmod>2017-10-07T08:59:38-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch06/animation/</loc>
     <lastmod>2017-10-04T13:03:36-05:00</lastmod>
   </url>
@@ -38,6 +43,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/connect-four/ui/</loc>
+    <lastmod>2017-10-09T11:01:32-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03art/period-5/</loc>
     <lastmod>2017-09-27T20:14:40-05:00</lastmod>
   </url>
@@ -50,6 +60,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03art/period-7/</loc>
     <lastmod>2017-09-27T20:14:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</loc>
+    <lastmod>2017-10-06T22:31:43-05:00</lastmod>
   </url>
   
   <url>
@@ -195,16 +210,6 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/daily/</loc>
     <lastmod>2017-09-11T10:03:46-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/haskell/connect-four/timeline/</loc>
-    <lastmod>2017-10-07T08:59:38-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</loc>
-    <lastmod>2017-10-06T22:31:43-05:00</lastmod>
   </url>
   
   <url>

@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Connect Four Timeline</title>
+      <link>http://wy-cs.info/ap-cs/haskell/connect-four/timeline/</link>
+      <pubDate>Sat, 07 Oct 2017 08:59:38 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/connect-four/timeline/</guid>
+      <description>Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move and is_won.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Write winner. Share difficulties and troubleshoot any.   7 Thurs, Oct 11 (early release) Write tests demonstrating code works.</description>
+    </item>
+    
+    <item>
       <title>Intro to Animations</title>
       <link>http://wy-cs.info/intermediate-cs/ch06/animation/</link>
       <pubDate>Wed, 04 Oct 2017 13:03:36 -0500</pubDate>
@@ -50,6 +59,18 @@
     </item>
     
     <item>
+      <title>Connect Four UI</title>
+      <link>http://wy-cs.info/ap-cs/haskell/connect-four/ui/</link>
+      <pubDate>Mon, 09 Oct 2017 11:01:32 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/connect-four/ui/</guid>
+      <description>The user interface code for Connect Four is a little clunky. You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).
+Code Outline main: just make board and call event loop
+event loop:
+ draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Example run *Main&amp;gt; main (Enter -99 to quit.</description>
+    </item>
+    
+    <item>
       <title>Art Period 5</title>
       <link>http://wy-cs.info/intermediate-cs/ch03art/period-5/</link>
       <pubDate>Wed, 27 Sep 2017 20:14:40 -0500</pubDate>
@@ -65,6 +86,18 @@
       
       <guid>http://wy-cs.info/intermediate-cs/ch03art/period-7/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Connect Four Spoilers</title>
+      <link>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</link>
+      <pubDate>Fri, 06 Oct 2017 22:31:43 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</guid>
+      <description>Two problems with connect four: changing an entry in a matrix ([[Int]]) and seeing if there is a win.
+Changing entries in the board The biggest problem with the representation of the board as [[Int]] is that it is really hard to change the entries. If you use [((Int,Int),Player)] then it&amp;rsquo;s lots easier to make moves.
+Outline of plan:
+ (changeCol: [Int] -&amp;gt; Int -&amp;gt; Int -&amp;gt; [Int]) Change value at index col in a single row to newVal; every other value in the list just output unchanged.</description>
     </item>
     
     <item>
@@ -85,57 +118,6 @@
       <guid>http://wy-cs.info/ap-cs/haskell/ch04/ch04-reading-guide/</guid>
       <description>Sections 4.1&amp;ndash;4.3  A pattern starts out with &amp;ldquo;dog&amp;rdquo;,&amp;ldquo;cat&amp;rdquo;, &amp;ldquo;cat dog&amp;rdquo;, &amp;ldquo;cat dog cat&amp;rdquo;, &amp;ldquo;cat dog cat cat dog&amp;rdquo;, and so on - each new string is created by appending the previous two with a space in between them. Write a function that takes in the number of the word in the sequence and returns the word, starting with 1 is &amp;ldquo;dog&amp;rdquo;.
  Write the function scalar_mult :: (Num a) =&amp;gt; a -&amp;gt; (a,a) -&amp;gt; (a,a) that multiplies each number in a coordinate pair by the same number, so scalar_mult 5 (1,3) == (5,15).</description>
-    </item>
-    
-    <item>
-      <title>Ch02 Reading Guide</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch02/ch02-reading-guide/</link>
-      <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch02/ch02-reading-guide/</guid>
-      <description>Haskell Starting Out Questions A. Sections 2.1&amp;ndash;2.3  There is an annoyance with negative numbers that is mentioned.
- What is the correct way to write five times negative three in Haskell? What is a wrong way to do the same thing?  Logical operations are basic building blocks of programs. How do you write:
- and or not equals not equals  Haskell follows mostly the normal order of operations from mathematics.</description>
-    </item>
-    
-    <item>
-      <title>Haskell CW 2</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</link>
-      <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</guid>
-      <description>&lt;h2 id=&#34;class-work-for-2-1-2-3&#34;&gt;Class work for 2.1&amp;ndash;2.3&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://projecteuler.net/problem=6&#34;&gt;Sum Square Difference&lt;/a&gt;
-The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1^2 + 2^2 + ... + 10^2 = 385
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The square of the sum of the first ten natural numbers is,&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(1 + 2 + ... + 10)^2 = 55^2 = 3025
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.&lt;/p&gt;
-
-&lt;p&gt;Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Art Project</title>
-      <link>http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/</link>
-      <pubDate>Thu, 21 Sep 2017 21:38:19 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/</guid>
-      <description>Deadline: Finish before Tuesday, September 26 (chapter 3 test day). Turn in Wednesday, September 27.
-Produce: One complex piece of art per person in the group. (Two simpler pieces.) (Groups of at most two.)
-Goal: Art projects should demonstrate a range of functions from the chapter, try to use 3-4 from each category in your whole project.
- Methods of placement: beside, above, overlay, place-image, as well as the &amp;ldquo;/align&amp;rdquo; variations.</description>
     </item>
     
   </channel>
