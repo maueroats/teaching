@@ -4,7 +4,7 @@
 	"title": "Connect Four Timeline",
 	"tags": [],
 	"description": "",
-	"content": "   Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move and is_won.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Write winner. Share difficulties and troubleshoot any.   7 Thurs, Oct 11 (early release) Write tests demonstrating code works.   8 Fri, Oct 12 First day to turn in project.   - Mon, Oct 16 Last day to turn in project.    I expect this project to take 4-6 hours to complete over the course of a week. If you spend less than 3 hours on the project you should read the advanced notes about the minimax algorithm and (partially?) implement it.\nExpected times and other notes:\n draw_board: 1.0 hour, including class time is_legal_move: 0.5 hour is_won: 1.5-2 hours, including 0.5-1.0 hours planning time. Expect to use several helper functions. winner: less than 0.5 hour make_move: 1.0 hour, including class time. See spoilers if needed.  "
+	"content": "   Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Share difficulties and troubleshoot.   7 Thurs, Oct 11 (early release) Plan, write, and test: is_won.   8 Fri, Oct 12 Write tests demonstrating code works.   - Mon, Oct 16 Last day to turn in project.    I expect this project to take 4-6 hours to complete over the course of a week. If you spend less than 3 hours on the project you should read the advanced notes about the minimax algorithm and (partially?) implement it.\nExpected times and other notes:\n draw_board: 1.0 hour, including class time is_legal_move: 0.5 hour is_won: 1.5-2 hours, including 0.5-1.0 hours planning time. Expect to use several helper functions. make_move: 1.0 hour, including class time. See spoilers if needed.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/animation/",
@@ -30,7 +30,7 @@
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/animation2/",
 	"title": "Animations Outline",
-	"tags": [],
+	"tags": ["design-process"],
 	"description": "Step by step, how to make a basic animation.",
 	"content": " All Steps  Model Draw handler Tick handler Key handler? Mouse handler?  1. Decide model  What will the computer remember in order to draw a scene?\n the moving parts\n image or number (usually)\n  Write down type of model: image, number, string.\n Make an example (used in later testing).\n  2. Draw handler  How will you draw the model on the screen?\n non-moving parts go here\n place image in appropriate spots\n  Write and test this function!\n  3. Tick handler  How will the model change from second to second?\n in comes old model out goes new model   Write function and test a single step first!\n  "
 },
@@ -60,7 +60,7 @@
 	"title": "Connect Four UI",
 	"tags": [],
 	"description": "",
-	"content": " The user interface code for Connect Four is a little clunky. You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).\nCode Outline main: just make board and call event loop\nevent loop:\n draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Example run *Main\u0026gt; main (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 2 O X (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X O X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 3 X OO X (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X X OO X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 4 X X OOOX (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X X X OOOX The game is over Player 1 won!  "
+	"content": " The user interface code for Connect Four is a little clunky. You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).\nCode Outline main: just make board and call event loop\nevent loop:\n draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Code All of the user interface code is linked separately (open in WordPad if necessary).\nThe setup of the code, which you should change to match your own functions is below. You need: drawBoard, is_won, is_move_legal, and make_move.\ntypeBoard=[[Int]]drawBoard::Board-\u0026gt;StringdrawBoardboard=show$simplifyboardis_won::Board-\u0026gt;Boolis_wonboard=(b/=0)where[[b]]=simplifyboardis_move_legal::Board-\u0026gt;Int-\u0026gt;Boolis_move_legalboardcol=(col==0)make_move::Board-\u0026gt;Int-\u0026gt;Int-\u0026gt;Boardmake_moveboardcolplayer=[[player]]-- Just for the demo: force the board to be 1x1.simplifyboard=[[board!!0!!0]]  The essentials of the code are an event loop function, which draws the board, checks to see if it is won, gets the next move, and then calls a sepeate function to handle the move.\nevent_loop::Board-\u0026gt;Int-\u0026gt;IO()event_loopboardplayer=doputStrLn$drawBoardboardifis_wonboardthendowin_messageboardplayerreturn()elsedocol\u0026lt;-get_moveplayerhandle_moveboardplayercol  The handle move function recursively calls the event loop with an improved board and sets the next player. If the attempted move is illegal, then the recursive call to event loop does not update the board or player, so the same player moves again.\nhandle_move::Board-\u0026gt;Int-\u0026gt;Int-\u0026gt;IO()handle_moveboardplayercol|col==-99=goodbye|is_move_legalboardcol=event_loopnew_board(next_player)|otherwise=complain_and_restartwherecomplain_and_restart=doputStrLn\u0026#34;ERROR: That is not a legal move.\u0026#34;event_loopboardplayernew_board=make_moveboardcolplayergoodbye=doputStrLn\u0026#34;You quit\u0026#34;  Example run *Main\u0026gt; main (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 2 O X (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X O X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 3 X OO X (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X X OO X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 4 X X OOOX (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X X X OOOX The game is over Player 1 won!  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03art/period-5/",
@@ -88,7 +88,7 @@
 	"title": "Connect Four Spoilers",
 	"tags": [],
 	"description": "",
-	"content": " Two problems with connect four: changing an entry in a matrix ([[Int]]) and seeing if there is a win.\nChanging entries in the board The biggest problem with the representation of the board as [[Int]] is that it is really hard to change the entries. If you use [((Int,Int),Player)] then it\u0026rsquo;s lots easier to make moves.\nOutline of plan:\n (changeCol: [Int] -\u0026gt; Int -\u0026gt; Int -\u0026gt; [Int]) Change value at index col in a single row to newVal; every other value in the list just output unchanged.\nchangeCol[10,11,12]299==[10,11,99]  We have basically written this function as a Coding Bat problem.\n (changeRowCol: [[Int]] -\u0026gt; Int -\u0026gt; Int -\u0026gt; Int -\u0026gt; [[Int]]) Run changeCol only on the index row entry, everything else stays the same.\nchangeRowCol[[1,2,3,4],[5,6,7,8]]1399==[[1,2,3,4],[5,6,7,99]]   There is actually spoiler code and fancy spoiler code that uses Chapter 6.\nDetecting a win Please email me questions. I know this is tricky. My own breakdown was:\n Generate a list containing four ordered pairs in a row. Input: (x,y) coordinates of the first entry, and (dx,dy) to be added to (x,y) to get the other three pairs needed.\n Given a board and one list of four ordered pairs, return True if all of the ordered pairs are legal coordinates for that board.\n Given a board, return a list of all possible lists of four ordered pairs in straight lines.\n Given a board and a single ordered pair, get the corresponding value from the board.\n Given a board and four ordered pairs, return True if all of the corrsponding values are the same.\n Do the preceding to a whole list of 4 pairs of coordinates.\n Given a board, return True if it is won.\n There are a few more steps but you are almost there!\n  "
+	"content": " Two problems with connect four: changing an entry in a matrix ([[Int]]) and seeing if there is a win.\nChanging entries in the board The biggest problem with the representation of the board as [[Int]] is that it is really hard to change the entries. If you use [((Int,Int),Player)] then it\u0026rsquo;s lots easier to make moves.\nOutline of plan:\n (changeCol: [Int] -\u0026gt; Int -\u0026gt; Int -\u0026gt; [Int]) Change value at index col in a single row to newVal; every other value in the list just output unchanged.\nchangeCol[10,11,12]299==[10,11,99]  We have basically written this function as a Coding Bat problem.\n (changeRowCol: [[Int]] -\u0026gt; Int -\u0026gt; Int -\u0026gt; Int -\u0026gt; [[Int]]) Run changeCol only on the index row entry, everything else stays the same.\nchangeRowCol[[1,2,3,4],[5,6,7,8]]1399==[[1,2,3,4],[5,6,7,99]]   There is actually spoiler code and fancy spoiler code that uses Chapter 6.\nDetecting a win Please email me questions. I know this is tricky. My own breakdown was:\n Generate a list containing four ordered pairs in a row. Input: (x,y) coordinates of the first entry, and (dx,dy) to be added to (x,y) to get the other three pairs needed.\n Given a board and one list of four ordered pairs, return True if all of the ordered pairs are legal coordinates for that board.\n Given a board, return a list of all possible lists of four ordered pairs in straight lines. For example, if the board is just [[0,0,0,0,0]], then this function should give a list of the two possible 4-in-a-rows: [[(0,0),(1,0),(2,0),(3,0)], [(1,0),(2,0),(3,0),(4,0)]].\n Given a board and a single ordered pair, get the corresponding value from the board.\n Given a board and four ordered pairs, return True if all of the corrsponding values are the same.\n Do the preceding to a whole list of 4 pairs of coordinates.\n Given a board, return True if it is won.\n There are a few more steps but you are almost there!\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03/color/",
@@ -126,11 +126,32 @@
 	"content": "AP Computer Science studies:\n Haskell - an introduction to pure functional programming Java - the language required for the AP test  Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/",
+	"title": "Haskell",
+	"tags": ["haskell"],
+	"description": "",
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
+	"title": "Haskell Calendar",
+	"tags": ["haskell", "calendar"],
+	"description": "",
+	"content": "Daily calendar for Haskell unit.\n "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/",
 	"title": "Haskell CW 2",
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/git/",
+	"title": "Git",
+	"tags": [],
+	"description": "",
+	"content": "Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do.\nYou will use it for several purposes:\n Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/",
@@ -294,6 +315,13 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/design-process/",
+	"title": "Design Process",
+	"tags": ["design-process"],
+	"description": "",
+	"content": " Function The function design process that we use is:\n Signature Purpose Examples (two) Function - write it.\n4A. Skeleton - not visible when finished. Check-expect - examples provide correct answers.  Animations  See Chapter 6 Animations for the design process as it applies to writing animations (big-bang).\n The Animations Slides detail the issues when writing handlers.\n  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/",
 	"title": "Connect Four",
 	"tags": ["haskell", "project"],
@@ -406,13 +434,6 @@
 	"content": "A summary of any special problems that have arisen with repl.it. Repl.it requires a main method The particular interpreter repl.it requires that you have a main method. Write a simple one and then type your tests in the interactions pane.\nmain = do putStrLn \u0026quot;Loaded\u0026quot; "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
-	"title": "Haskell Calendar",
-	"tags": ["haskell", "calendar"],
-	"description": "",
-	"content": "Daily calendar for Haskell unit.\n "
-},
-{
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-12/",
 	"title": "2017-09-12",
 	"tags": ["haskell"],
@@ -452,14 +473,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Connect Four UI modified Mon 10-09  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Haybales modified Tue 10-03  USACO Practice modified Tue 10-03  Intermediate Computer Science Recent Changes    Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  3. Art with Racket modified Wed 09-27  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/haskell/",
-	"title": "Haskell",
-	"tags": ["haskell"],
-	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  This is a fun chapter to read, but as a class we are done after Chapter 5 (for now). Chapter 6 Reading Guide  USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  Writing a file is different from typing in an interpreter like repl.it or ghci.  "
+	"content": " AP Computer Science Recent Changes   Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Haybales modified Tue 10-03  Intermediate Computer Science Recent Changes    Design Process modified Tue 10-10  Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Art Period 7 modified Wed 09-27  Art Period 5 modified Wed 09-27  Art Period 1 modified Wed 09-27  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -513,6 +527,13 @@
 {
 	"uri": "http://wy-cs.info/tags/daily-notes/",
 	"title": "Daily Notes",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wy-cs.info/tags/design-process/",
+	"title": "Design Process",
 	"tags": [],
 	"description": "",
 	"content": ""

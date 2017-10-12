@@ -4,6 +4,7 @@ date: 2017-09-09T15:48:14-05:00
 tags: ["haskell"]
 categories:
     - ap-cs
+weight: 10
 ---
 
 Haskell is a pure, lazy, statically typed language. 

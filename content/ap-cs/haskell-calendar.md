@@ -4,6 +4,7 @@ date: 2017-09-13
 tags: 
  - haskell
  - calendar
+weight: 15
 ---
 Daily calendar for Haskell unit.
 

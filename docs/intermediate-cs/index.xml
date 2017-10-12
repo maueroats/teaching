@@ -21,5 +21,18 @@
 &lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Design Process</title>
+      <link>http://wy-cs.info/intermediate-cs/design-process/</link>
+      <pubDate>Tue, 10 Oct 2017 20:49:55 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/design-process/</guid>
+      <description> Function The function design process that we use is:
+ Signature Purpose Examples (two) Function - write it.
+4A. Skeleton - not visible when finished. Check-expect - examples provide correct answers.  Animations  See Chapter 6 Animations for the design process as it applies to writing animations (big-bang).
+ The Animations Slides detail the issues when writing handlers.
+  </description>
+    </item>
+    
   </channel>
 </rss>

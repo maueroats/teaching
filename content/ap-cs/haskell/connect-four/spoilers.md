@@ -41,7 +41,8 @@ Please email me questions. I know this is tricky. My own breakdown was:
 
 2. Given a board and one list of four ordered pairs, return True if all of the ordered pairs are legal coordinates for that board.
 
-3. Given a board, return a list of all possible lists of four ordered pairs in straight lines. 
+3. Given a board, return a list of all possible lists of four ordered
+   pairs in straight lines. For example, if the board is just `[[0,0,0,0,0]]`, then this function should give a list of the two possible 4-in-a-rows: `[[(0,0),(1,0),(2,0),(3,0)], [(1,0),(2,0),(3,0),(4,0)]]`.
 
 4. Given a board and a single ordered pair, get the corresponding value from the board.
 

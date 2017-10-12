@@ -8,11 +8,11 @@ draft: false
 | Day | Date(s) | Project Assignment  |
 |:---:|---------|---------------------|
 | 1   | Fri, Oct 6| Project assigned. Write `draw_board`. |
-| 2-4 | Sat-Mon, Oct 7-9 | Plan, write, and test: `is_legal_move` and `is_won`. |
+| 2-4 | Sat-Mon, Oct 7-9 | Plan, write, and test: `is_legal_move`. |
 | 5   | Tues, Oct 10  | Plan `make_move` in class. Write and test at home. |
-| 6   | (15 min class)| Write `winner`. Share difficulties and troubleshoot any. |
-| 7   | Thurs, Oct 11 (early release)| Write tests demonstrating code works. |
-| 8   | Fri, Oct 12   | First day to turn in project. |
+| 6   | (15 min class)| Share difficulties and troubleshoot. |
+| 7   | Thurs, Oct 11 (early release)| Plan, write, and test: `is_won`. |
+| 8   | Fri, Oct 12   | Write tests demonstrating code works. |
 | -   | Mon, Oct 16   | Last day to turn in project. |
 
 I expect this project to take 4-6 hours to complete over the course of
@@ -26,7 +26,6 @@ Expected times and other notes:
 * `is_legal_move`: 0.5 hour
 * `is_won`: 1.5-2 hours, including 0.5-1.0 hours planning time.
 Expect to use several helper functions.
-* `winner`: less than 0.5 hour
 * `make_move`: 1.0 hour, including class time. See [spoilers]({{% relref "spoilers.md" %}}) if needed.
 
 

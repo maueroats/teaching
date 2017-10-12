@@ -17,7 +17,7 @@
       <pubDate>Sat, 07 Oct 2017 08:59:38 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/haskell/connect-four/timeline/</guid>
-      <description>Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move and is_won.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Write winner. Share difficulties and troubleshoot any.   7 Thurs, Oct 11 (early release) Write tests demonstrating code works.</description>
+      <description>Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Share difficulties and troubleshoot.   7 Thurs, Oct 11 (early release) Plan, write, and test: is_won.   8 Fri, Oct 12 Write tests demonstrating code works.</description>
     </item>
     
     <item>
@@ -61,13 +61,13 @@
     <item>
       <title>Connect Four UI</title>
       <link>http://wy-cs.info/ap-cs/haskell/connect-four/ui/</link>
-      <pubDate>Mon, 09 Oct 2017 11:01:32 -0500</pubDate>
+      <pubDate>Thu, 12 Oct 2017 09:54:31 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/haskell/connect-four/ui/</guid>
       <description>The user interface code for Connect Four is a little clunky. You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).
 Code Outline main: just make board and call event loop
 event loop:
- draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Example run *Main&amp;gt; main (Enter -99 to quit.</description>
+ draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Code All of the user interface code is linked separately (open in WordPad if necessary).</description>
     </item>
     
     <item>
