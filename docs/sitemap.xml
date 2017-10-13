@@ -228,8 +228,23 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch06/portfolio/</loc>
+    <lastmod>2017-10-13T08:24:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch06/daily/2017-10-12/</loc>
+    <lastmod>2017-10-12T12:05:16-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/design-process/</loc>
     <lastmod>2017-10-10T20:49:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch06/daily/</loc>
+    <lastmod>2017-10-10T13:13:01-05:00</lastmod>
   </url>
   
   <url>
@@ -238,7 +253,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch06/animation-practice/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/ch06/daily/animation-practice/</loc>
     <lastmod>2017-10-05T21:58:10-05:00</lastmod>
   </url>
   

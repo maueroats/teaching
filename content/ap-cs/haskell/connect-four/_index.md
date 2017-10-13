@@ -21,7 +21,6 @@ This is a minimum set of functions to write:
 * `make_move :: Board -> Player -> Position -> Board`
 * `is_legal_move :: Board -> Player -> Position -> Bool`
 * `is_won :: Board -> Bool`
-* `winner :: Board -> Player`
 
 ## Advanced functions
 

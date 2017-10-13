@@ -23,6 +23,25 @@ You should memorize them.
 * `mouse-handler: model x y event -> model`: Update the model when the
   mouse is moved or clicked. The inputs x and y are numbers, the event is a string. (`on-mouse`)
 
+## Design Process
+
+When designing every function, these are the steps you should follow:
+
+1. Signature
+2. Purpose
+3. Example
+4. Function --- write it
+5. Test --- check-expect
+
+Reference: page 70 (PDF page 81) has a longer version of the same list.
+
+## F.A.Q.
+
+* Q: Why do you write "model" when the model is just an image?
+
+     A: Next chapter our models will be numbers, and soon after that our models
+     will be sentences. If you memorize "model" as the type, you don't need to memorize a new signature every chapter.
+
 ## Topics
 
 {{% children %}}

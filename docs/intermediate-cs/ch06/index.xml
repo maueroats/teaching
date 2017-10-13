@@ -41,20 +41,16 @@
     </item>
     
     <item>
-      <title>Animation Practice</title>
-      <link>http://wy-cs.info/intermediate-cs/ch06/animation-practice/</link>
-      <pubDate>Thu, 05 Oct 2017 21:58:10 -0500</pubDate>
+      <title>Animation Portfolio</title>
+      <link>http://wy-cs.info/intermediate-cs/ch06/portfolio/</link>
+      <pubDate>Fri, 13 Oct 2017 08:24:58 -0500</pubDate>
       
-      <guid>http://wy-cs.info/intermediate-cs/ch06/animation-practice/</guid>
-      <description>Progress bar 1 Make a solid purple bar that starts in the middle of the left side of the screen and grows to the right at a constant rate.
- Model
- Draw handler
- Tick handler
-  Add in a feature so that the bar shrinks when you wiggle the mouse.
-(Solution code)
-Errors #1 What is wrong?
-The variable indoors is an indoor picture.
-(defineindoors...)(definemodel(overlaypic:stick-figure(empty-scene300200)))(define(tick-himg)(overlayimgindoors))  Errors #2 What is wrong?</description>
+      <guid>http://wy-cs.info/intermediate-cs/ch06/portfolio/</guid>
+      <description> Purple square that moves up when you hit any key.
+ Throwing star that spins (and maybe moves across the screen) as time passes.
+ Sunset with a horizon.
+ Car with two wheels that spin when you move the mouse.
+  </description>
     </item>
     
   </channel>
