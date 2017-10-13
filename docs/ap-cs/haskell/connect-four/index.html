@@ -1675,46 +1675,6 @@
           
         
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intermediate-cs/ch06/daily/2017-10-12/" class="dd-item
-     
-      ">
-        <a href="/intermediate-cs/ch06/daily/2017-10-12/">
-        <span>2017-10-12</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intermediate-cs/ch06/daily/animation-practice/" class="dd-item
-     
-      ">
-        <a href="/intermediate-cs/ch06/daily/animation-practice/">
-        <span>Animation Practice</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -2094,10 +2054,22 @@
 <p>This is a minimum set of functions to write:</p>
 
 <ul>
-<li><code>draw_board :: Board -&gt; String</code></li>
-<li><code>make_move :: Board -&gt; Player -&gt; Position -&gt; Board</code></li>
-<li><code>is_legal_move :: Board -&gt; Player -&gt; Position -&gt; Bool</code></li>
-<li><code>is_won :: Board -&gt; Bool</code></li>
+<li><p><code>draw_board :: Board -&gt; String</code></p>
+
+<p>Create a String representation of the board.</p></li>
+
+<li><p><code>make_move :: Board -&gt; Player -&gt; Position -&gt; Board</code></p>
+
+<p>Gives a new Board with a piece added. Assumes that the move is legal.</p></li>
+
+<li><p><code>is_legal_move :: Board -&gt; Player -&gt; Position -&gt; Bool</code></p>
+
+<p>True if the attempted move is legal. Used to prevent people from playing in full columns or off the board (e.g., column -5).
+The computer uses this information to decide whether the next move should be by the same player (attempted move was illegal) or the opponent.</p></li>
+
+<li><p><code>is_won :: Board -&gt; Bool</code></p>
+
+<p>True when either player has four in a row on the board.</p></li>
 </ul>
 
 <h2 id="advanced-functions">Advanced functions</h2>
@@ -2325,6 +2297,70 @@ function. It will speed your work and made it easier to understand!</p>
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         

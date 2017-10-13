@@ -18,9 +18,21 @@ Familiarize yourself with the game of
 This is a minimum set of functions to write:
 
 * `draw_board :: Board -> String`
+
+     Create a String representation of the board.
+
 * `make_move :: Board -> Player -> Position -> Board`
+
+     Gives a new Board with a piece added. Assumes that the move is legal.
+
 * `is_legal_move :: Board -> Player -> Position -> Bool`
+
+     True if the attempted move is legal. Used to prevent people from playing in full columns or off the board (e.g., column -5).
+The computer uses this information to decide whether the next move should be by the same player (attempted move was illegal) or the opponent.
+
 * `is_won :: Board -> Bool`
+
+     True when either player has four in a row on the board.
 
 ## Advanced functions
 
