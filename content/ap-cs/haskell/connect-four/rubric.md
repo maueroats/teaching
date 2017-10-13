@@ -1,0 +1,35 @@
+---
+title: "Connect Four Rubric"
+date: 2017-10-13T10:40:15-05:00
+draft: true
+---
+
+There are four functions that you are expected to design and test:
+
+* `draw_board`
+* `is_legal_move`
+* `is_won`
+* `make_move`
+
+To keep scoring straightforward, each function is worth 10 points.
+
+## Draw Board
+
+This should draw with no issues, showing the board each row on its own line.
+I do not anticipate problems with this function.
+
+## Make Move
+
+* 5 points: piece falls to the bottom of the row when empty (basic move)
+* 5 points: piece falls to the appropriate place (follows all rules)
+
+## Is Legal Move
+
+* 5 points: moves outside of board are not allowed (column negative or too large)
+* 5 points: moves not permitted in full column
+
+## Is Won
+
+* 5 points: horizontal and vertical wins detected
+* 5 points: diagonal wins detected 
+

@@ -64,7 +64,7 @@
       <pubDate>Thu, 12 Oct 2017 09:54:31 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/haskell/connect-four/ui/</guid>
-      <description>The user interface code for Connect Four is a little clunky. You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).
+      <description>The user interface code for Connect Four is a little clunky. (Repl.it shared code.) You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).
 Code Outline main: just make board and call event loop
 event loop:
  draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Code All of the user interface code is linked separately (open in WordPad if necessary).</description>

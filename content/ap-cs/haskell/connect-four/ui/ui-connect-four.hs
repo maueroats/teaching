@@ -12,8 +12,7 @@ drawBoard :: Board -> String
 drawBoard board = show $ simplify board
 
 is_won :: Board -> Bool
-is_won board = (b /= 0)
-    where [[b]] = simplify board
+is_won board = False
 
 is_move_legal :: Board -> Int -> Bool
 is_move_legal board col = (col == 0)

@@ -5,7 +5,7 @@ weight: 5
 draft: false
 ---
 
-The [user interface code](ui-connect-four.hs) for Connect Four is a little clunky.
+The [user interface code](ui-connect-four.hs) for Connect Four is a little clunky. (Repl.it [shared code](https://repl.it/Marn/0).)
 You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).
 
 ## Code Outline
@@ -34,8 +34,7 @@ drawBoard :: Board -> String
 drawBoard board = show $ simplify board
 
 is_won :: Board -> Bool
-is_won board = (b /= 0)
-    where [[b]] = simplify board
+is_won board = False
 
 is_move_legal :: Board -> Int -> Bool
 is_move_legal board col = (col == 0)

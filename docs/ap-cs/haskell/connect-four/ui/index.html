@@ -2055,7 +2055,7 @@
 
 
 
-<p>The <a href="ui-connect-four.hs">user interface code</a> for Connect Four is a little clunky.
+<p>The <a href="ui-connect-four.hs">user interface code</a> for Connect Four is a little clunky. (Repl.it <a href="https://repl.it/Marn/0">shared code</a>.)
 You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).</p>
 
 <h2 id="code-outline">Code Outline</h2>
@@ -2090,8 +2090,7 @@ You may use the linked code. You do not have to learn this part of writing Haske
 </span><span style=""></span><span style="color:#75af00">drawBoard</span><span style=""> </span><span style="color:#75af00">board</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">show</span><span style=""> </span><span style="color:#f92672">$</span><span style=""> </span><span style="color:#75af00">simplify</span><span style=""> </span><span style="color:#75af00">board</span><span style="">
 </span><span style="">
 </span><span style=""></span><span style="color:#75af00">is_won</span><span style=""> </span><span style="color:#f92672">::</span><span style=""> </span><span style="color:#00a8c8">Board</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#00a8c8">Bool</span><span style="">
-</span><span style=""></span><span style="color:#75af00">is_won</span><span style=""> </span><span style="color:#75af00">board</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">b</span><span style=""> </span><span style="color:#f92672">/=</span><span style=""> </span><span style="color:#ae81ff">0</span><span style="color:#111">)</span><span style="">
-</span><span style="">    </span><span style="color:#00a8c8">where</span><span style=""> </span><span style="color:#111">[[</span><span style="color:#75af00">b</span><span style="color:#111">]]</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#75af00">simplify</span><span style=""> </span><span style="color:#75af00">board</span><span style="">
+</span><span style=""></span><span style="color:#75af00">is_won</span><span style=""> </span><span style="color:#75af00">board</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#00a8c8">False</span><span style="">
 </span><span style="">
 </span><span style=""></span><span style="color:#75af00">is_move_legal</span><span style=""> </span><span style="color:#f92672">::</span><span style=""> </span><span style="color:#00a8c8">Board</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#00a8c8">Int</span><span style=""> </span><span style="color:#f92672">-&gt;</span><span style=""> </span><span style="color:#00a8c8">Bool</span><span style="">
 </span><span style=""></span><span style="color:#75af00">is_move_legal</span><span style=""> </span><span style="color:#75af00">board</span><span style=""> </span><span style="color:#75af00">col</span><span style=""> </span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#111">(</span><span style="color:#75af00">col</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">0</span><span style="color:#111">)</span><span style="">

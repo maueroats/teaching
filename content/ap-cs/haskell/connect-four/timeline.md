@@ -24,8 +24,8 @@ Expected times and other notes:
 
 * `draw_board`: 1.0 hour, including class time
 * `is_legal_move`: 0.5 hour
-* `is_won`: 1.5-2 hours, including 0.5-1.0 hours planning time.
-Expect to use several helper functions.
-* `make_move`: 1.0 hour, including class time. See [spoilers]({{% relref "spoilers.md" %}}) if needed.
+* `is_won`: 1.5-2 hours, including 0.5-1.0 hours planning time
+Expect to use several helper functions. See [spoilers]({{% relref "spoilers.md#detecting-a-win" %}}) if needed.
+* `make_move`: 1.0 hour, including class time. See [spoilers]({{% relref "spoilers.md#changing-entries-in-the-board" %}}) if needed.
 
 
