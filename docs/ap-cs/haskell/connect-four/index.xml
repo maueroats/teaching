@@ -44,5 +44,17 @@ Outline of plan:
  (changeCol: [Int] -&amp;gt; Int -&amp;gt; Int -&amp;gt; [Int]) Change value at index col in a single row to newVal; every other value in the list just output unchanged.</description>
     </item>
     
+    <item>
+      <title>Connect Four Rubric</title>
+      <link>http://wy-cs.info/ap-cs/haskell/connect-four/rubric/</link>
+      <pubDate>Fri, 13 Oct 2017 10:40:15 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/connect-four/rubric/</guid>
+      <description> There are four functions that you are expected to design and test:
+ draw_board is_legal_move is_won make_move  To keep scoring straightforward, each function is worth 10 points.
+Draw Board This should draw with no issues, showing the board each row on its own line. I do not anticipate problems with this function.
+Make Move  5 points: piece falls to the bottom of the row when empty (basic move) 5 points: piece falls to the appropriate place (follows all rules)  Is Legal Move  5 points: moves outside of board are not allowed (column negative or too large) 5 points: moves not permitted in full column  Is Won  5 points: horizontal and vertical wins detected 5 points: diagonal wins detected  </description>
+    </item>
+    
   </channel>
 </rss>

@@ -315,6 +315,13 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/rubric/",
+	"title": "Connect Four Rubric",
+	"tags": [],
+	"description": "",
+	"content": " There are four functions that you are expected to design and test:\n draw_board is_legal_move is_won make_move  To keep scoring straightforward, each function is worth 10 points.\nDraw Board This should draw with no issues, showing the board each row on its own line. I do not anticipate problems with this function.\nMake Move  5 points: piece falls to the bottom of the row when empty (basic move) 5 points: piece falls to the appropriate place (follows all rules)  Is Legal Move  5 points: moves outside of board are not allowed (column negative or too large) 5 points: moves not permitted in full column  Is Won  5 points: horizontal and vertical wins detected 5 points: diagonal wins detected  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/portfolio/",
 	"title": "Animation Portfolio",
 	"tags": [],
@@ -494,7 +501,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Haybales modified Tue 10-03  Intermediate Computer Science Recent Changes    Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Intermediate Computer Science Recent Changes    Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  4. Writing Functions modified Thu 09-28  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

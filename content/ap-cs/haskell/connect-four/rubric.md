@@ -1,7 +1,7 @@
 ---
 title: "Connect Four Rubric"
 date: 2017-10-13T10:40:15-05:00
-draft: true
+draft: false
 ---
 
 There are four functions that you are expected to design and test:

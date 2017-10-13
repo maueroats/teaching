@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>4. Syntax in Functions :: WY Computer Science</title>
+    <title>Connect Four Rubric :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,12 +29,9 @@
     
 
     
-<link href="http://wy-cs.info/ap-cs/haskell/ch04/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
-<link href="http://wy-cs.info/ap-cs/haskell/ch04/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
-
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/ch04/">
+  <body class="" data-url="/ap-cs/haskell/connect-four/rubric/">
     <nav id="sidebar" class="">
 
 
@@ -444,8 +441,8 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/ap-cs/haskell/ch04/">
@@ -455,7 +452,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -802,126 +799,6 @@
           
         
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-10-04/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-10-04/">
-        <span>2017-10-04</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-10-03/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-10-03/">
-        <span>2017-10-03</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-09-18/">
-        <span>2017-09-18</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-09-13/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-09-13/">
-        <span>2017-09-14 Indentation</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-09-12/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-09-12/">
-        <span>2017-09-12</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/ap-cs/haskell/daily/2017-09-11/" class="dd-item
-     
-      ">
-        <a href="/ap-cs/haskell/daily/2017-09-11/">
-        <span>2017-09-11</span> 
-        
-        </a></li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -939,7 +816,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -950,7 +827,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1033,7 +910,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/connect-four/rubric/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/haskell/connect-four/rubric/">
         <span>Connect Four Rubric</span> 
@@ -2034,7 +1911,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > 4. Syntax in Functions
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/connect-four/'>Connect Four</a> > Connect Four Rubric
+
+ 
 
  
 
@@ -2051,7 +1933,10 @@
 <ul>
 <li>
 <ul>
-<li><a href="#sections">Sections</a></li>
+<li><a href="#draw-board">Draw Board</a></li>
+<li><a href="#make-move">Make Move</a></li>
+<li><a href="#is-legal-move">Is Legal Move</a></li>
+<li><a href="#is-won">Is Won</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2061,15 +1946,9 @@
           </div>
         
         
-          <div id="tags">
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
-            
-          </div>
-        
         <div id="body-inner">
           
-            <h1>4. Syntax in Functions</h1>
+            <h1>Connect Four Rubric</h1>
           
 
 
@@ -2077,165 +1956,47 @@
 
 
 
-<p>Patterns, guards, where, let, and case.
-</p>
-
-<h2 id="sections">Sections</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<ul class="children children-li">
-	
-    
-    
-
-	
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/haskell/ch04/ch04-reading-guide/" >Chapter 4 Reading Guide</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p>Questions to help you understand Chapter 4.</p>
-				
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/haskell/ch04/ch04-problemset/" >Chapter 4 Problem Set</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p>Exercises to improve your Haskell programming.</p>
-				
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/haskell/ch04/ch04-summary/" >Chapter 4 Summary</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p>patterns, guards, where, let, case</p>
-				
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/haskell/ch04/ch04-quiz/" >Chapter 4 Quiz</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p></p>
-				
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/haskell/ch04/ch04-discussion/" >Chapter 4 Discussion</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p>Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.</p>
-				
-			
-		
-
-		
-			
-
-		
-	
-
-	
+<p>There are four functions that you are expected to design and test:</p>
+
+<ul>
+<li><code>draw_board</code></li>
+<li><code>is_legal_move</code></li>
+<li><code>is_won</code></li>
+<li><code>make_move</code></li>
 </ul>
+
+<p>To keep scoring straightforward, each function is worth 10 points.</p>
+
+<h2 id="draw-board">Draw Board</h2>
+
+<p>This should draw with no issues, showing the board each row on its own line.
+I do not anticipate problems with this function.</p>
+
+<h2 id="make-move">Make Move</h2>
+
+<ul>
+<li>5 points: piece falls to the bottom of the row when empty (basic move)</li>
+<li>5 points: piece falls to the appropriate place (follows all rules)</li>
+</ul>
+
+<h2 id="is-legal-move">Is Legal Move</h2>
+
+<ul>
+<li>5 points: moves outside of board are not allowed (column negative or too large)</li>
+<li>5 points: moves not permitted in full column</li>
+</ul>
+
+<h2 id="is-won">Is Won</h2>
+
+<ul>
+<li>5 points: horizontal and vertical wins detected</li>
+<li>5 points: diagonal wins detected</li>
+</ul>
+
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -2485,7 +2246,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2493,217 +2253,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -2817,315 +2366,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -3171,125 +2411,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -3419,6 +2542,648 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -3445,10 +3210,10 @@
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/ch03/ch03-quiz/" title="Chapter 3 Quiz"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/haskell/connect-four/spoilers/" title="Connect Four Spoilers"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/ch04/ch04-reading-guide/" title="Chapter 4 Reading Guide" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/haskell/typeclass-notes/" title="Typeclass Notes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
