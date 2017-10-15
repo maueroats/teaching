@@ -41,6 +41,16 @@
     </item>
     
     <item>
+      <title>Animation Examples</title>
+      <link>http://wy-cs.info/intermediate-cs/ch06/examples/</link>
+      <pubDate>Sun, 15 Oct 2017 14:15:53 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch06/examples/</guid>
+      <description>Here is a complete example that shows how to:
+ move an image down every tick draw three copies of the image in a row make the image get larger when you hit a key make the image get smaller when you move the mouse  Big bang The big bang goes last in the Racket file, but it is first here so you can see how everything comes together.</description>
+    </item>
+    
+    <item>
       <title>Animation Portfolio</title>
       <link>http://wy-cs.info/intermediate-cs/ch06/portfolio/</link>
       <pubDate>Fri, 13 Oct 2017 08:24:58 -0500</pubDate>
