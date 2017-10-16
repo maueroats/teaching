@@ -80,8 +80,11 @@ Students are expected to adhere to the following honor code regarding all of the
       <pubDate>Sat, 09 Sep 2017 07:00:30 -0500</pubDate>
       
       <guid>http://wy-cs.info/resources/ics-wescheme-note/</guid>
-      <description> Special notes for WeScheme users You can use WeScheme if you cannot install DrRacket. For example, if you have a Chromebook for your home computer. There are a few differences:
- Omit the (require picturing-programs) line. Instead of copy and pasting in a picture, you need to copy the link for the image and use bitmap/url like this: (bitmap/url &amp;quot;https://www.what-dog.net/Images/faces2/main004.jpg&amp;quot;)  </description>
+      <description>Special notes for WeScheme users You can use WeScheme if you cannot install DrRacket. For example, if you have a Chromebook for your home computer.
+There are a few differences:
+ Omit the (require picturing-programs) line.
+ (Chapter 3) Instead of copy and pasting in a picture, you need to copy the link for the image and use bitmap/url like this:
+(bitmap/url&amp;#34;https://www.what-dog.net/Images/faces2/main004.jpg&amp;#34;)  (Chapter 6) Inside big-bang you need to use the phrase to-draw instead of on-draw that we use in DrRacket.</description>
     </item>
     
   </channel>

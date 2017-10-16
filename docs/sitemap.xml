@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/karel/essentials/</loc>
+    <lastmod>2017-10-16T11:19:58-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/haskell/connect-four/ui/</loc>
     <lastmod>2017-10-12T09:54:31-05:00</lastmod>
   </url>
@@ -225,11 +230,6 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/daily/</loc>
     <lastmod>2017-09-11T10:03:46-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/karel/essentials/</loc>
-    <lastmod>2017-10-16T11:19:58-05:00</lastmod>
   </url>
   
   <url>

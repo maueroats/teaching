@@ -3,6 +3,7 @@ title: "Essentials"
 date: 2017-10-16T11:19:58-05:00
 draft: false
 description: "Links to the repository and documentation for the Karel the Robot unit."
+weight: 5
 ---
 ## Book
 

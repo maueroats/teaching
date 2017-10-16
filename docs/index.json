@@ -56,6 +56,13 @@
 	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide  Questions to help you understand Chapter 4.\n Chapter 4 Problem Set  Exercises to improve your Haskell programming.\n Chapter 4 Summary  patterns, guards, where, let, case\n Chapter 4 Quiz  \n Chapter 4 Discussion  Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n"
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/karel/essentials/",
+	"title": "Essentials",
+	"tags": [],
+	"description": "Links to the repository and documentation for the Karel the Robot unit.",
+	"content": " Book The book is Karel J Robot: A Gentle Introduction to the Art of Object-Oriented Programming in Java, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used.\nDocumentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  Downloading the files You should get them all by git clone the central repository.\ngit clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git  Getting started  Make your own repository to hold your version of this code. (note link for use below) Clone this repository Change the name to \u0026ldquo;upstream\u0026rdquo;: git remote rename origin upstream Add your own repository as a remote: git remote add origin [link from starting step]  Saving your work You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push -u origin master "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/ui/",
 	"title": "Connect Four UI",
 	"tags": [],
@@ -315,13 +322,6 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/karel/essentials/",
-	"title": "Essentials",
-	"tags": [],
-	"description": "Links to the repository and documentation for the Karel the Robot unit.",
-	"content": " Book The book is Karel J Robot: A Gentle Introduction to the Art of Object-Oriented Programming in Java, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used.\nDocumentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  Downloading the files You should get them all by git clone the central repository.\ngit clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git  Getting started  Make your own repository to hold your version of this code. (note link for use below) Clone this repository Change the name to \u0026ldquo;upstream\u0026rdquo;: git remote rename origin upstream Add your own repository as a remote: git remote add origin [link from starting step]  Saving your work You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push -u origin master "
-},
-{
 	"uri": "http://wy-cs.info/ap-cs/karel/",
 	"title": "Karel the Robot",
 	"tags": [],
@@ -535,8 +535,8 @@
 	"uri": "http://wy-cs.info/resources/ics-wescheme-note/",
 	"title": "WeScheme",
 	"tags": [],
-	"description": "",
-	"content": " Special notes for WeScheme users You can use WeScheme if you cannot install DrRacket. For example, if you have a Chromebook for your home computer. There are a few differences:\n Omit the (require picturing-programs) line. Instead of copy and pasting in a picture, you need to copy the link for the image and use bitmap/url like this: (bitmap/url \u0026quot;https://www.what-dog.net/Images/faces2/main004.jpg\u0026quot;)  "
+	"description": "Notes on how WeScheme is different from DrRacket.",
+	"content": " Special notes for WeScheme users You can use WeScheme if you cannot install DrRacket. For example, if you have a Chromebook for your home computer.\nThere are a few differences:\n Omit the (require picturing-programs) line.\n (Chapter 3) Instead of copy and pasting in a picture, you need to copy the link for the image and use bitmap/url like this:\n(bitmap/url\u0026#34;https://www.what-dog.net/Images/faces2/main004.jpg\u0026#34;)  (Chapter 6) Inside big-bang you need to use the phrase to-draw instead of on-draw that we use in DrRacket. (define(draw-handlermodel)(overlaymodel(empty-scene300200)))(define(tick-handlermodel)(scale1.01model))(big-bang(circle10\u0026#34;solid\u0026#34;\u0026#34;green\u0026#34;)(on-ticktick-handler)(to-drawdraw-handler)) \n  "
 },
 {
 	"uri": "http://wy-cs.info/_header/",
