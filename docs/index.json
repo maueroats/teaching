@@ -322,6 +322,13 @@
 	"content": " Book The book is Karel J Robot: A Gentle Introduction to the Art of Object-Oriented Programming in Java, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used.\nDocumentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  Downloading the files You should get them all by git clone the central repository.\ngit clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git  Getting started  Make your own repository to hold your version of this code. (note link for use below) Clone this repository Change the name to \u0026ldquo;upstream\u0026rdquo;: git remote rename origin upstream Add your own repository as a remote: git remote add origin [link from starting step]  Saving your work You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push -u origin master "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/karel/",
+	"title": "Karel the Robot",
+	"tags": [],
+	"description": "",
+	"content": "  Essentials  Links to the repository and documentation for the Karel the Robot unit.\n "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/examples/",
 	"title": "Animation Examples",
 	"tags": [],
@@ -515,7 +522,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Essentials modified Mon 10-16  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  Intermediate Computer Science Recent Changes    Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Essentials modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  Intermediate Computer Science Recent Changes    Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
