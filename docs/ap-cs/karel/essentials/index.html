@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.29" />
-    <meta name="description" content="Challenging problems for people who want to stretch their understanding.">
+    <meta name="description" content="Links to the repository and documentation for the Karel the Robot unit.">
 
 
-    <title>USACO Practice :: WY Computer Science</title>
+    <title>Essentials :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,12 +29,9 @@
     
 
     
-<link href="http://wy-cs.info/ap-cs/haskell/usaco/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
-<link href="http://wy-cs.info/ap-cs/haskell/usaco/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
-
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/usaco/">
+  <body class="" data-url="/ap-cs/karel/essentials/">
     <nav id="sidebar" class="">
 
 
@@ -119,7 +116,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -130,7 +127,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -713,8 +710,8 @@
   
     
     <li data-nav-id="/ap-cs/haskell/usaco/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/ap-cs/haskell/usaco/">
@@ -724,7 +721,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1178,7 +1175,7 @@
   
     
       <li data-nav-id="/ap-cs/karel/essentials/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/karel/essentials/">
         <span>Essentials</span> 
@@ -2071,12 +2068,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > USACO Practice
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > Essentials
 
  
 
@@ -2087,7 +2079,18 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#book">Book</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#downloading-the-files">Downloading the files</a></li>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#saving-your-work">Saving your work</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -2096,7 +2099,7 @@
         
         <div id="body-inner">
           
-            <h1>USACO Practice</h1>
+            <h1>Essentials</h1>
           
 
 
@@ -2104,68 +2107,50 @@
 
 
 
-<p>One of the key ideas to keep in mind when learning from USA Computing
-Olympiad problems is that time matters. A slow algorithm is not good
-enough; keep thinking about the problem, trying to find a more
-efficient way to solve it. Always time your solutions. Always try your
-solutions on the official test cases &mdash; many times they will contain
-a situation that you have not considered. Enjoy it when that happens.</p>
+<h2 id="book">Book</h2>
 
+<p>The book is <a href="https://www.amazon.com/Karel-Robot-Introduction-Object-Oriented-Programming/dp/0970579519"><em>Karel J Robot: A Gentle Introduction to the Art of
+Object-Oriented Programming in Java</em></a>, by Joseph Bergin, Mark Stehlik,
+Jim Roberts, and Rich Pattis. We have the January 2008 printing, but
+all versions are very similar. Happily, the book is available for under $10 used.</p>
 
+<h2 id="documentation">Documentation</h2>
 
+<ul>
+<li><p><a href="https://csis.pace.edu/~bergin/KarelJava2ed/KJRdocs/index.html">Karel the Robot</a> documentation online.</p></li>
 
+<li><p><a href="http://junit.org/junit4/javadoc/latest/">JUnit</a> documentation online.</p></li>
 
-
-
-
-
-
-
-
-
-<ul class="children children-li">
-	
-    
-    
-
-	
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/haskell/usaco/haybales/" >Haybales</a>
-</li>
-
-
-
-
-
-
-			
-		
-
-		
-			
-
-		
-	
-
-	
+<li><p><a href="http://hamcrest.org/JavaHamcrest/javadoc/1.3/">Hamcrest matcher libary</a> documentation online.</p></li>
 </ul>
 
+<h2 id="downloading-the-files">Downloading the files</h2>
 
+<p>You should get them all by <code>git clone</code> <a href="https://github.com/2017-2018-wy-ap-cs/apcs-karel">the central repository</a>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">git clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git</span></code></pre>
+</div>
+<h2 id="getting-started">Getting started</h2>
 
+<ul>
+<li>Make your own repository to hold your version of this code. (note link for use below)</li>
+<li>Clone this repository</li>
+<li>Change the name to &ldquo;upstream&rdquo;:
+ git remote rename origin upstream</li>
+<li>Add your own repository as a remote:
+ git remote add origin [link from starting step]</li>
+</ul>
 
+<h2 id="saving-your-work">Saving your work</h2>
 
+<p>You can use the <code>save-it</code> script or type the following commands:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">git add -A
+</span><span style="">git commit -a -m &#39;Save&#39;
+</span><span style="">git push -u origin master</span></code></pre>
+</div>
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -2220,6 +2205,8 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -2235,9 +2222,6 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2438,20 +2422,7 @@ a situation that you have not considered. Enjoy it when that happens.</p>
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                     
-
-                    
                         
             
             
@@ -2464,9 +2435,6 @@ a situation that you have not considered. Enjoy it when that happens.</p>
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -2590,7 +2558,6 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
             
                 
-                    
                     
                 
                 
@@ -2605,9 +2572,6 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -2902,6 +2866,7 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
                 
                     
+                    
                 
                 
 
@@ -2920,6 +2885,9 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3396,20 +3364,7 @@ a situation that you have not considered. Enjoy it when that happens.</p>
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
                     
-                    
-
-                    
                         
             
             
@@ -3422,9 +3377,6 @@ a situation that you have not considered. Enjoy it when that happens.</p>
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -3439,10 +3391,10 @@ a situation that you have not considered. Enjoy it when that happens.</p>
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/ch06/ch06-reading-guide/" title="Chapter 6 Reading Guide"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/git/" title="Git"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/usaco/haybales/" title="Haybales" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/" title="Intermediate CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

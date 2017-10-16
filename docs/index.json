@@ -151,7 +151,7 @@
 	"title": "Git",
 	"tags": [],
 	"description": "",
-	"content": "Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do.\nYou will use it for several purposes:\n Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group  "
+	"content": " Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do.\nYou will use it for several purposes:\n Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group  Incomplete This page is incomplete. We will add more information later.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/",
@@ -315,11 +315,18 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/karel/essentials/",
+	"title": "Essentials",
+	"tags": [],
+	"description": "Links to the repository and documentation for the Karel the Robot unit.",
+	"content": " Book The book is Karel J Robot: A Gentle Introduction to the Art of Object-Oriented Programming in Java, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used.\nDocumentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  Downloading the files You should get them all by git clone the central repository.\ngit clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git  Getting started  Make your own repository to hold your version of this code. (note link for use below) Clone this repository Change the name to \u0026ldquo;upstream\u0026rdquo;: git remote rename origin upstream Add your own repository as a remote: git remote add origin [link from starting step]  Saving your work You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push -u origin master "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/examples/",
 	"title": "Animation Examples",
 	"tags": [],
 	"description": "",
-	"content": " Here is a complete example that shows how to:\n move an image down every tick draw three copies of the image in a row make the image get larger when you hit a key make the image get smaller when you move the mouse  Big bang The big bang goes last in the Racket file, but it is first here so you can see how everything comes together.\n(big-bangoriginal-model(on-tickmove-down)(on-drawthree-copies)(on-keyreset)(on-mouseshrink))  Tick handler Move the image down by inserting an invisible rectangle above it.\n(define(move-downmodel)(above(rectangle05\u0026#34;solid\u0026#34;\u0026#34;white\u0026#34;)model))  Draw handler Draw three copies of the same thing in a row. (Use this trick for the tires of your car!)\n(define(three-copiesmodel)(overlay/align\u0026#34;middle\u0026#34;\u0026#34;top\u0026#34;(besidemodel(rectangle750\u0026#34;solid\u0026#34;\u0026#34;white\u0026#34;)model(rectangle750\u0026#34;solid\u0026#34;\u0026#34;white\u0026#34;)model)(empty-scene500400)))  Key handler Always return the original model, no matter what. This resets the animation.\n(defineoriginal-model(square50\u0026#34;solid\u0026#34;\u0026#34;purple\u0026#34;))(define(resetmodelkey)original-model)  Mouse handler Shrink the model by 1% any time the mouse is moved.\n(define(shrinkmodelxyevent)(scale0.99model)) "
+	"content": " Here is a complete example (raw Racket code available) that shows how to:\n move an image down every tick draw three copies of the image in a row make the image get larger when you hit a key make the image get smaller when you move the mouse  Big bang The big bang goes last in the Racket file, but it is first here so you can see how everything comes together.\n(big-bangoriginal-model(on-tickmove-down)(on-drawthree-copies)(on-keyreset)(on-mouseshrink))  Tick handler Move the image down by inserting an invisible rectangle above it.\n(define(move-downmodel)(above(rectangle05\u0026#34;solid\u0026#34;\u0026#34;white\u0026#34;)model))  Draw handler Draw three copies of the same thing in a row. (Use this trick for the tires of your car!)\n(define(three-copiesmodel)(overlay/align\u0026#34;middle\u0026#34;\u0026#34;top\u0026#34;(besidemodel(rectangle750\u0026#34;solid\u0026#34;\u0026#34;white\u0026#34;)model(rectangle750\u0026#34;solid\u0026#34;\u0026#34;white\u0026#34;)model)(empty-scene500400)))  Key handler Always return the original model, no matter what. This resets the animation.\n(defineoriginal-model(square50\u0026#34;solid\u0026#34;\u0026#34;purple\u0026#34;))(define(resetmodelkey)original-model)  Mouse handler Shrink the model by 1% any time the mouse is moved.\n(define(shrinkmodelxyevent)(scale0.99model)) "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/rubric/",
@@ -508,7 +515,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  6. Higher Order Functions modified Tue 10-03  Intermediate Computer Science Recent Changes    Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Essentials modified Mon 10-16  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  2017-10-04 modified Wed 10-04  Intermediate Computer Science Recent Changes    Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

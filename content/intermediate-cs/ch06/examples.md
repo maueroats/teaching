@@ -4,7 +4,8 @@ date: 2017-10-15T14:15:53-05:00
 draft: false
 ---
 
-Here is a complete example that shows how to:
+Here is a complete example ([raw Racket code available](full-animation-example.rkt)) that 
+shows how to:
 
 * move an image down every tick
 * draw three copies of the image in a row

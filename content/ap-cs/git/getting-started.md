@@ -9,4 +9,6 @@ draft: true
 2. Apply for an education account.
 
 3. Join our class in the GitHub Classroom.
+(Tell the teacher your username and get added manually.)
+
 
