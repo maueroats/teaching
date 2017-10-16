@@ -64,11 +64,8 @@
       <pubDate>Mon, 16 Oct 2017 11:19:58 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/karel/essentials/</guid>
-      <description>Book The book is Karel J Robot: A Gentle Introduction to the Art of Object-Oriented Programming in Java, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used.
-Documentation  Karel the Robot documentation online.
- JUnit documentation online.
- Hamcrest matcher libary documentation online.
-  Downloading the files You should get them all by git clone the central repository.</description>
+      <description>Book The book is Karel J Robot: &amp;ldquo;A Gentle Introduction to the Art of Object-Oriented Programming in Java&amp;rdquo;, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used if you want one or want to donate one.
+Downloading the files You should get them all by git clone the central repository.</description>
     </item>
     
     <item>
@@ -102,6 +99,17 @@ event loop:
     </item>
     
     <item>
+      <title>Karel 1 and 2</title>
+      <link>http://wy-cs.info/ap-cs/karel/ch1&#43;2/</link>
+      <pubDate>Mon, 16 Oct 2017 14:53:49 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/karel/ch1&#43;2/</guid>
+      <description> 2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20).
+ 2017-10-17 Tuesday: Clone repository, set up your own to save. Exercises (please use the same names): Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make:
+ Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff   </description>
+    </item>
+    
+    <item>
       <title>Connect Four Spoilers</title>
       <link>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</link>
       <pubDate>Fri, 06 Oct 2017 22:31:43 -0500</pubDate>
@@ -111,16 +119,6 @@ event loop:
 Changing entries in the board The biggest problem with the representation of the board as [[Int]] is that it is really hard to change the entries. If you use [((Int,Int),Player)] then it&amp;rsquo;s lots easier to make moves.
 Outline of plan:
  (changeCol: [Int] -&amp;gt; Int -&amp;gt; Int -&amp;gt; [Int]) Change value at index col in a single row to newVal; every other value in the list just output unchanged.</description>
-    </item>
-    
-    <item>
-      <title>Color Commands</title>
-      <link>http://wy-cs.info/intermediate-cs/ch03/color/</link>
-      <pubDate>Thu, 21 Sep 2017 13:31:31 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/intermediate-cs/ch03/color/</guid>
-      <description>name-&amp;gt;color changes a string name to a color, like this:  &amp;gt; (name-&amp;gt;color &amp;quot;lavender&amp;quot;) (make-color 230 230 250)   If you give it a color already, the computer complains:
- &amp;gt; (name-&amp;gt;color (make-color 230 230 250)) name-&amp;gt;color: Expected a string or symbol, but received (make-color 230 230 250 255)   colorize changes a name to a color, but does not complain if it gets something that is already a color.</description>
     </item>
     
   </channel>

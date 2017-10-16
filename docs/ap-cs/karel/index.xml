@@ -17,11 +17,19 @@
       <pubDate>Mon, 16 Oct 2017 11:19:58 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/karel/essentials/</guid>
-      <description>Book The book is Karel J Robot: A Gentle Introduction to the Art of Object-Oriented Programming in Java, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used.
-Documentation  Karel the Robot documentation online.
- JUnit documentation online.
- Hamcrest matcher libary documentation online.
-  Downloading the files You should get them all by git clone the central repository.</description>
+      <description>Book The book is Karel J Robot: &amp;ldquo;A Gentle Introduction to the Art of Object-Oriented Programming in Java&amp;rdquo;, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used if you want one or want to donate one.
+Downloading the files You should get them all by git clone the central repository.</description>
+    </item>
+    
+    <item>
+      <title>Karel 1 and 2</title>
+      <link>http://wy-cs.info/ap-cs/karel/ch1&#43;2/</link>
+      <pubDate>Mon, 16 Oct 2017 14:53:49 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/karel/ch1&#43;2/</guid>
+      <description> 2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20).
+ 2017-10-17 Tuesday: Clone repository, set up your own to save. Exercises (please use the same names): Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make:
+ Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff   </description>
     </item>
     
   </channel>

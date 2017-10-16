@@ -7,18 +7,11 @@ weight: 5
 ---
 ## Book
 
-The book is [_Karel J Robot: A Gentle Introduction to the Art of
-Object-Oriented Programming in Java_](https://www.amazon.com/Karel-Robot-Introduction-Object-Oriented-Programming/dp/0970579519), by Joseph Bergin, Mark Stehlik,
+The book is [Karel J Robot](https://www.amazon.com/Karel-Robot-Introduction-Object-Oriented-Programming/dp/0970579519): "A Gentle Introduction to the Art of
+Object-Oriented Programming in Java", by Joseph Bergin, Mark Stehlik,
 Jim Roberts, and Rich Pattis. We have the January 2008 printing, but
-all versions are very similar. Happily, the book is available for under $10 used.
-
-## Documentation
-
-* [Karel the Robot](https://csis.pace.edu/~bergin/KarelJava2ed/KJRdocs/index.html) documentation online.
-
-* [JUnit](http://junit.org/junit4/javadoc/latest/) documentation online.
-
-* [Hamcrest matcher libary](http://hamcrest.org/JavaHamcrest/javadoc/1.3/) documentation online.
+all versions are very similar. Happily, the book is available for under $10 used if you 
+want one or want to donate one.
 
 ## Downloading the files
 
@@ -45,4 +38,13 @@ git add -A
 git commit -a -m 'Save'
 git push -u origin master
 ```
+
+## Documentation
+
+* [Karel the Robot](https://csis.pace.edu/~bergin/KarelJava2ed/KJRdocs/index.html) documentation online.
+
+* [JUnit](http://junit.org/junit4/javadoc/latest/) documentation online.
+
+* [Hamcrest matcher libary](http://hamcrest.org/JavaHamcrest/javadoc/1.3/) documentation online.
+
 

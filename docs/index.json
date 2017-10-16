@@ -60,7 +60,7 @@
 	"title": "Essentials",
 	"tags": [],
 	"description": "Links to the repository and documentation for the Karel the Robot unit.",
-	"content": " Book The book is Karel J Robot: A Gentle Introduction to the Art of Object-Oriented Programming in Java, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used.\nDocumentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  Downloading the files You should get them all by git clone the central repository.\ngit clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git  Getting started  Make your own repository to hold your version of this code. (note link for use below) Clone this repository Change the name to \u0026ldquo;upstream\u0026rdquo;: git remote rename origin upstream Add your own repository as a remote: git remote add origin [link from starting step]  Saving your work You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push -u origin master "
+	"content": " Book The book is Karel J Robot: \u0026ldquo;A Gentle Introduction to the Art of Object-Oriented Programming in Java\u0026rdquo;, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used if you want one or want to donate one.\nDownloading the files You should get them all by git clone the central repository.\ngit clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git  Getting started  Make your own repository to hold your version of this code. (note link for use below) Clone this repository Change the name to \u0026ldquo;upstream\u0026rdquo;: git remote rename origin upstream Add your own repository as a remote: git remote add origin [link from starting step]  Saving your work You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push -u origin master  Documentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/ui/",
@@ -89,6 +89,13 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/karel/ch1+2/",
+	"title": "Karel 1 and 2",
+	"tags": [],
+	"description": "",
+	"content": " 2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20).\n 2017-10-17 Tuesday: Clone repository, set up your own to save. Exercises (please use the same names): Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make:\n Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/",
@@ -294,6 +301,13 @@
 	"content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following honor code regarding all of their work in this class.\n “I have neither given nor received improper aid on this test/project.”   “Improper aid” includes, but is not limited to:\n copying another student’s work allowing another student to copy your work sharing the problems given on a test to a student who has not taken the test copying work from any online or electronic resource without citation chatting or texting with another student during a test in which computer use is allowed  On a project (not test), it is acceptable to give suggestions to a student who knows less than you do.\n The student who is giving help may read the code of the student seeking help. The student who is giving help may not type (or write) any code.  Penalties when a student is caught cheating in this class may include:\n A zero on the assessment Final grade being lowered a letter Expulsion from National Honor Society (NHS or NJHS) Denial of a future application to National Honor Society (NHS or NJHS) Negatively affecting scholarships and post-high school programs for which you have applied  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch07/",
+	"title": "7. Numbers",
+	"tags": [],
+	"description": "",
+	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+53)(/137); thirteen divided by seven(*112)(-91); nine minus one(-8)(quotient219127)(remainder219127)  Exponents, square root, squaring:\n(expt1.0195); 1.01 to the 95 power is about 2.57(sqrt9); square root of 9 is three(sqr1241); when you square 1241 you get 1540081  Inexact answers, checking with tolerance\n\u0026gt;(sqrt5); about 2.236#2.23606797749979  The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n  (check-within(sqrt5)2.2360.001)   Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.  \u0026gt;pi#i3.141592653589793  Further Information  Number Intro  Quick exercises to practice the design process while writing functions that produce numbers.\n"
+},
+{
 	"uri": "http://wy-cs.info/resources/",
 	"title": "Resources",
 	"tags": [],
@@ -322,11 +336,18 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch07/number-intro/",
+	"title": "Number Intro",
+	"tags": [],
+	"description": "Quick exercises to practice the design process while writing functions that produce numbers.",
+	"content": "Practice the design process making each of these functions:\n Write a function that takes in the radius of a circle and outputs the circumference.\n Write a function to find the cost of a cart full of g pounds of grapefruit and b pounds of bananas. The grapefruit costs $1.49/lb and the bananas cost $0.59/lb.\n  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/karel/",
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Essentials  Links to the repository and documentation for the Karel the Robot unit.\n "
+	"content": "  Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2   2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20). 2017-10-17 Tuesday: Clone repository, set up your own to save. Exercises (please use the same names): Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make: Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/examples/",
@@ -522,7 +543,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Essentials modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Connect Four modified Fri 10-06  Intermediate Computer Science Recent Changes    Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  6. Animations I modified Wed 10-04  Chapter 4 Homework modified Tue 10-03  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel 1 and 2 modified Mon 10-16  Essentials modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Intermediate Computer Science Recent Changes    Number Intro modified Mon 10-16  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

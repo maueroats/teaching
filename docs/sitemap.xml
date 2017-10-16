@@ -68,6 +68,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/karel/ch1&#43;2/</loc>
+    <lastmod>2017-10-16T14:53:49-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/</loc>
     <lastmod>2017-10-06T22:31:43-05:00</lastmod>
   </url>
@@ -213,6 +218,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch07/</loc>
+    <lastmod>2017-10-16T14:54:40-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/resources/</loc>
     <lastmod>2017-09-09T15:49:20-05:00</lastmod>
   </url>
@@ -230,6 +240,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/daily/</loc>
     <lastmod>2017-09-11T10:03:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch07/number-intro/</loc>
+    <lastmod>2017-10-16T15:05:19-05:00</lastmod>
   </url>
   
   <url>
