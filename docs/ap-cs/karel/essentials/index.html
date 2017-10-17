@@ -1208,6 +1208,26 @@
  
   
     
+      <li data-nav-id="/ap-cs/karel/book/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/karel/book/">
+        <span>Book</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/ap-cs/karel/essentials/" class="dd-item
      active
       ">
@@ -2214,9 +2234,12 @@
 <ul>
 <li>
 <ul>
-<li><a href="#book">Book</a></li>
-<li><a href="#downloading-the-files">Downloading the files</a></li>
 <li><a href="#getting-started">Getting started</a></li>
+<li><a href="#drjava">DrJava</a>
+<ul>
+<li><a href="#getting-drjava">Getting DrJava</a></li>
+<li><a href="#running-drjava">Running DrJava</a></li>
+</ul></li>
 <li><a href="#saving-your-work">Saving your work</a></li>
 <li><a href="#documentation">Documentation</a></li>
 </ul></li>
@@ -2238,31 +2261,45 @@
 
 
 
-<h2 id="book">Book</h2>
-
-<p>The book is <a href="https://www.amazon.com/Karel-Robot-Introduction-Object-Oriented-Programming/dp/0970579519">Karel J Robot</a>: &ldquo;A Gentle Introduction to the Art of
-Object-Oriented Programming in Java&rdquo;, by Joseph Bergin, Mark Stehlik,
-Jim Roberts, and Rich Pattis. We have the January 2008 printing, but
-all versions are very similar. Happily, the book is available for under $10 used if you
-want one or want to donate one.</p>
-
-<h2 id="downloading-the-files">Downloading the files</h2>
-
-<p>You should get them all by <code>git clone</code> <a href="https://github.com/2017-2018-wy-ap-cs/apcs-karel">the central repository</a>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">git clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git</span></code></pre>
-</div>
 <h2 id="getting-started">Getting started</h2>
 
-<ul>
-<li>GitHub Classroom
-<code>
-https://classroom.github.com/a/bOX4Z5jT
-</code></li>
-<li>Add the original repository as a remote:
-<code>
- git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git
-</code></li>
-</ul>
+<ol>
+<li><p>GitHub Classroom</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-url" data-lang="url"><span style="">https://classroom.github.com/a/bOX4Z5jT</span></code></pre>
+</div>
+<p>You should end up with a new repository which has all of the Karel starter files and also lets you save your files.</p>
+
+<p>Note the link in the green box!</p></li>
+
+<li><p>Git clone</p>
+
+<p>In this step you download your new repository to the computer you are working on.
+Start &ldquo;Git Bash&rdquo; or type the following in &ldquo;Terminal&rdquo; on your computer.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">git clone [paste link to your repository here]</span></code></pre>
+</div></li>
+
+<li><p>Git remote add</p>
+
+<p>In this step you make a link to our original repository so you can get any changes. You need to actually be inside the directory/folder that you just cloned for this command to work.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">cd karel-[put-your-repo-name-here]
+</span><span style="">git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git</span></code></pre>
+</div></li>
+</ol>
+
+<h2 id="drjava">DrJava</h2>
+
+<h3 id="getting-drjava">Getting DrJava</h3>
+
+<p>On the lab computers, DrJava is on the Desktop in the Computer Science
+folder. Unfortunately it is not in the windows menu at this time.</p>
+
+<p>At home you will need to download <a href="http://drjava.org/">DrJava</a>. Mac OS X users read the instructions carefully; do not download the disk image (&ldquo;.dmg&rdquo;) file.</p>
+
+<h3 id="running-drjava">Running DrJava</h3>
+
+<p>Open <code>karelBasic.drjava</code>.</p>
+
+<p>In the Projects menu, there is an option to open a project. Use that instead of the more obvious &ldquo;open a file&rdquo; command so that you don&rsquo;t have to re-teach DrJava about the Karel the Robot files.</p>
 
 <h2 id="saving-your-work">Saving your work</h2>
 
@@ -2271,6 +2308,23 @@ https://classroom.github.com/a/bOX4Z5jT
 </span><span style="">git commit -a -m &#39;Save&#39;
 </span><span style="">git push -u origin master</span></code></pre>
 </div>
+<p>The meaning of these commands is:</p>
+
+<ul>
+<li>git add
+
+<ul>
+<li>-A: I intend to save every new file.</li>
+</ul></li>
+<li>git commit: Save every change to a special place on the current computer.
+
+<ul>
+<li>-a: Save all files that are known (changed, deleted, or new and already added).</li>
+<li>-m &lsquo;Save&rsquo;: The required message for the save is just the word &ldquo;Save&rdquo;. Pros are more descriptive.</li>
+</ul></li>
+<li>git push: Send the changes to GitHub so they are stored online and I can get them from other computers.</li>
+</ul>
+
 <h2 id="documentation">Documentation</h2>
 
 <ul>
@@ -3014,6 +3068,25 @@ https://classroom.github.com/a/bOX4Z5jT
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -3590,7 +3663,7 @@ https://classroom.github.com/a/bOX4Z5jT
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/karel/" title="Karel the Robot"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/karel/book/" title="Book"> <i class="fa fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="/ap-cs/karel/ch1&#43;2/" title="Karel 1 and 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>

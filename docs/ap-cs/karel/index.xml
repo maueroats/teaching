@@ -12,13 +12,26 @@
     
     
     <item>
+      <title>Book</title>
+      <link>http://wy-cs.info/ap-cs/karel/book/</link>
+      <pubDate>Tue, 17 Oct 2017 10:17:40 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/karel/book/</guid>
+      <description>The book is Karel J Robot: &amp;ldquo;A Gentle Introduction to the Art of Object-Oriented Programming in Java&amp;rdquo;, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used if you want one or want to donate one.</description>
+    </item>
+    
+    <item>
       <title>Essentials</title>
       <link>http://wy-cs.info/ap-cs/karel/essentials/</link>
-      <pubDate>Mon, 16 Oct 2017 11:19:58 -0500</pubDate>
+      <pubDate>Tue, 17 Oct 2017 10:17:44 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/karel/essentials/</guid>
-      <description>Book The book is Karel J Robot: &amp;ldquo;A Gentle Introduction to the Art of Object-Oriented Programming in Java&amp;rdquo;, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used if you want one or want to donate one.
-Downloading the files You should get them all by git clone the central repository.</description>
+      <description>Getting started  GitHub Classroom
+https://classroom.github.com/a/bOX4Z5jT  You should end up with a new repository which has all of the Karel starter files and also lets you save your files.
+Note the link in the green box!
+ Git clone
+In this step you download your new repository to the computer you are working on. Start &amp;ldquo;Git Bash&amp;rdquo; or type the following in &amp;ldquo;Terminal&amp;rdquo; on your computer.
+git clone [paste link to your repository here]  Git remote add</description>
     </item>
     
     <item>

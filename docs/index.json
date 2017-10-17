@@ -49,6 +49,13 @@
 	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set   Chapter 3 Quiz  "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/karel/book/",
+	"title": "Book",
+	"tags": [],
+	"description": "Links to the repository and documentation for the Karel the Robot unit.",
+	"content": "The book is Karel J Robot: \u0026ldquo;A Gentle Introduction to the Art of Object-Oriented Programming in Java\u0026rdquo;, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used if you want one or want to donate one.\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/",
 	"title": "4. Syntax in Functions",
 	"tags": ["haskell"],
@@ -60,7 +67,7 @@
 	"title": "Essentials",
 	"tags": [],
 	"description": "Links to the repository and documentation for the Karel the Robot unit.",
-	"content": " Book The book is Karel J Robot: \u0026ldquo;A Gentle Introduction to the Art of Object-Oriented Programming in Java\u0026rdquo;, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used if you want one or want to donate one.\nDownloading the files You should get them all by git clone the central repository.\ngit clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git  Getting started  GitHub Classroom  https://classroom.github.com/a/bOX4Z5jT  Add the original repository as a remote:  git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git   Saving your work You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push -u origin master  Documentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  "
+	"content": " Getting started  GitHub Classroom\nhttps://classroom.github.com/a/bOX4Z5jT  You should end up with a new repository which has all of the Karel starter files and also lets you save your files.\nNote the link in the green box!\n Git clone\nIn this step you download your new repository to the computer you are working on. Start \u0026ldquo;Git Bash\u0026rdquo; or type the following in \u0026ldquo;Terminal\u0026rdquo; on your computer.\ngit clone [paste link to your repository here]  Git remote add\nIn this step you make a link to our original repository so you can get any changes. You need to actually be inside the directory/folder that you just cloned for this command to work.\ncd karel-[put-your-repo-name-here] git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git   DrJava Getting DrJava On the lab computers, DrJava is on the Desktop in the Computer Science folder. Unfortunately it is not in the windows menu at this time.\nAt home you will need to download DrJava. Mac OS X users read the instructions carefully; do not download the disk image (\u0026ldquo;.dmg\u0026rdquo;) file.\nRunning DrJava Open karelBasic.drjava.\nIn the Projects menu, there is an option to open a project. Use that instead of the more obvious \u0026ldquo;open a file\u0026rdquo; command so that you don\u0026rsquo;t have to re-teach DrJava about the Karel the Robot files.\nSaving your work You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push -u origin master  The meaning of these commands is:\n git add  -A: I intend to save every new file.  git commit: Save every change to a special place on the current computer.  -a: Save all files that are known (changed, deleted, or new and already added). -m \u0026lsquo;Save\u0026rsquo;: The required message for the save is just the word \u0026ldquo;Save\u0026rdquo;. Pros are more descriptive.  git push: Send the changes to GitHub so they are stored online and I can get them from other computers.  Documentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/ui/",
@@ -347,7 +354,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2   2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20). 2017-10-17 Tuesday: Clone repository, set up your own to save. Exercises (please use the same names): Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make: Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff  "
+	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2   2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20). 2017-10-17 Tuesday: Clone repository, set up your own to save. Exercises (please use the same names): Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make: Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/examples/",
@@ -543,7 +550,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 1 and 2 modified Mon 10-16  Essentials modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Connect Four Spoilers modified Fri 10-06  Intermediate Computer Science Recent Changes    Number Intro modified Mon 10-16  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Intermediate Computer Science Recent Changes    Number Intro modified Mon 10-16  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Animation Practice modified Thu 10-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
