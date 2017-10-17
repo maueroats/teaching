@@ -22,12 +22,14 @@ git clone https://github.com/2017-2018-wy-ap-cs/apcs-karel.git
 
 ## Getting started 
 
-* Make your own repository to hold your version of this code. (note link for use below)
-* Clone this repository
-* Change the name to "upstream":
-     git remote rename origin upstream
-* Add your own repository as a remote:
-     git remote add origin [link from starting step]
+* GitHub Classroom 
+```
+https://classroom.github.com/a/bOX4Z5jT
+```
+* Add the original repository as a remote:
+```
+     git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git
+```
 
 ## Saving your work
 
