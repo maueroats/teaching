@@ -312,7 +312,7 @@
 	"title": "7. Numbers",
 	"tags": [],
 	"description": "",
-	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+53)(/137); thirteen divided by seven(*112)(-91); nine minus one(-8)(quotient219127)(remainder219127)  Exponents, square root, squaring:\n(expt1.0195); 1.01 to the 95 power is about 2.57(sqrt9); square root of 9 is three(sqr1241); when you square 1241 you get 1540081  Inexact answers, checking with tolerance\n\u0026gt;(sqrt5); about 2.236#2.23606797749979  The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n  (check-within(sqrt5)2.2360.001)   Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.  \u0026gt;pi#i3.141592653589793  Further Information  Exercises 1  Exercises working with number functions.\n Number Intro  Quick exercises to practice the design process while writing functions that produce numbers.\n"
+	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+53)(/137); thirteen divided by seven(*112)(-91); nine minus one(-8)(quotient219127)(remainder219127)  Exponents, square root, squaring:\n(expt1.0195); 1.01 to the 95 power is about 2.57(sqrt9); square root of 9 is three(sqr1241); when you square 1241 you get 1540081  Inexact answers, checking with tolerance\n\u0026gt;(sqrt5); about 2.236#2.23606797749979  The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n  (check-within(sqrt5)2.2360.001)   Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.  \u0026gt;pi#i3.141592653589793  Further Information  Exercises 2  Exercises working with number functions.\n Exercises 1  Exercises.\n"
 },
 {
 	"uri": "http://wy-cs.info/resources/",
@@ -343,17 +343,17 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-2/",
+	"title": "Exercises 2",
+	"tags": [],
+	"description": "Exercises working with number functions.",
+	"content": "Exercises:\n hypotenuse: Given the lengths of two legs of a right triangle, return the length of the third side.\n slope: Given the x and y coordinates of two points (x1,y1) and (x2,y2) - in that order - return the slope of the line between those points. (OK if it does not work for vertical lines.)\n distance: Given the x and y coordinates of two points (x1,y1) and (x2,y2), find the distance between them.\n quadratic-1: Given a, b, and c, find one solution to the equation a x^2+b x + c = 0.\n quadratic-2: Given a, b, and c, find the other solution to a x^2+b x + c = 0.\n Make an animation with a number model. Use the number to control how fast an object spins. Make moving the mouse cause the animation to spin faster. Make hitting a key reset the speed.\n  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-1/",
 	"title": "Exercises 1",
 	"tags": [],
-	"description": "Exercises working with number functions.",
-	"content": "Exercises:\n hypotenuse: Given two legs of a right triangle, return the length of the third side.\n slope: Given the x and y coordinates of two points (x1,y1) and (x2,y2) - in that order - return the slope of the line between those points. (OK if it does not work for vertical lines.)\n distance: Given the x and y coordinates of two points (x1,y1) and (x2,y2), find the distance between them.\n quadratic-1: Given a, b, and c, find one solution to a x^2+b x + c = 0.\n quadratic-2: Given a, b, and c, find the other solution to a x^2+b x + c = 0.\n Make an animation with a number model.\n  "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/ch07/number-intro/",
-	"title": "Number Intro",
-	"tags": [],
-	"description": "Quick exercises to practice the design process while writing functions that produce numbers.",
+	"description": "Exercises.",
 	"content": "Practice the design process making each of these functions:\n Write a function that takes in the radius of a circle and outputs the circumference.\n Write a function to find the cost of a cart full of g pounds of grapefruit and b pounds of bananas. The grapefruit costs $1.49/lb and the bananas cost $0.59/lb.\n  "
 },
 {
@@ -557,7 +557,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Intermediate Computer Science Recent Changes    Exercises 1 modified Tue 10-17  Number Intro modified Mon 10-16  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Intermediate Computer Science Recent Changes    Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -581,14 +581,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
