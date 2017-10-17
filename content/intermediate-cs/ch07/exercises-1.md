@@ -7,7 +7,7 @@ description: "Exercises working with number functions."
 
 Exercises:
 
-1. `hypotenuse`: Given two sides of a right triangle, return the length of the third side. 
+1. `hypotenuse`: Given two legs of a right triangle, return the length of the third side. 
 
 2. `slope`: Given the x and y coordinates of two points (x1,y1) and (x2,y2) - in that order - return the slope of the line between those points. (OK if it does not work for vertical lines.)
 

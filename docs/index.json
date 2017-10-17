@@ -347,7 +347,7 @@
 	"title": "Exercises 1",
 	"tags": [],
 	"description": "Exercises working with number functions.",
-	"content": "Exercises:\n hypotenuse: Given two sides of a right triangle, return the length of the third side.\n slope: Given the x and y coordinates of two points (x1,y1) and (x2,y2) - in that order - return the slope of the line between those points. (OK if it does not work for vertical lines.)\n distance: Given the x and y coordinates of two points (x1,y1) and (x2,y2), find the distance between them.\n quadratic-1: Given a, b, and c, find one solution to a x^2+b x + c = 0.\n quadratic-2: Given a, b, and c, find the other solution to a x^2+b x + c = 0.\n Make an animation with a number model.\n  "
+	"content": "Exercises:\n hypotenuse: Given two legs of a right triangle, return the length of the third side.\n slope: Given the x and y coordinates of two points (x1,y1) and (x2,y2) - in that order - return the slope of the line between those points. (OK if it does not work for vertical lines.)\n distance: Given the x and y coordinates of two points (x1,y1) and (x2,y2), find the distance between them.\n quadratic-1: Given a, b, and c, find one solution to a x^2+b x + c = 0.\n quadratic-2: Given a, b, and c, find the other solution to a x^2+b x + c = 0.\n Make an animation with a number model.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/number-intro/",
@@ -581,14 +581,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
