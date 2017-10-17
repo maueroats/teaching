@@ -1,8 +1,19 @@
 ---
 title: "Getting Started"
-date: 2017-10-10T10:21:09-05:00
-draft: true
+date: 2017-10-17T15:03:37-05:00
+draft: false
 ---
+
+## Tutorials
+
+* A command line [intro to git in 15 minutes](https://try.github.io/).
+
+* [Git for Beginners](https://www.sitepoint.com/git-for-beginners/).
+
+* Beautiful and simple [Git Guide](http://rogerdudler.github.io/git-guide/).
+
+
+## Local instructions
 
 1. Make an account on GitHub. Use your CPS email.
 

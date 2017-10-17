@@ -11,5 +11,20 @@
 	<atom:link href="http://wy-cs.info/ap-cs/git/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Getting Started</title>
+      <link>http://wy-cs.info/ap-cs/git/getting-started/</link>
+      <pubDate>Tue, 17 Oct 2017 15:03:37 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/git/getting-started/</guid>
+      <description> Tutorials  A command line intro to git in 15 minutes.
+ Git for Beginners.
+ Beautiful and simple Git Guide.
+  Local instructions  Make an account on GitHub. Use your CPS email.
+ Apply for an education account.
+ Join our class in the GitHub Classroom. (Tell the teacher your username and get added manually.)
+  </description>
+    </item>
+    
   </channel>
 </rss>
