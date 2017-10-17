@@ -1,7 +1,7 @@
 ---
 title: "Exercises 1"
-date: 2017-10-17T08:46:05-05:00
-draft: true
+date: 2017-10-17T11:57:54-05:00
+draft: false
 description: "Exercises working with number functions."
 ---
 

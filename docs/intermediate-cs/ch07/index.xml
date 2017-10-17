@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Exercises 1</title>
+      <link>http://wy-cs.info/intermediate-cs/ch07/exercises-1/</link>
+      <pubDate>Tue, 17 Oct 2017 11:57:54 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch07/exercises-1/</guid>
+      <description>Exercises:
+ hypotenuse: Given two sides of a right triangle, return the length of the third side.
+ slope: Given the x and y coordinates of two points (x1,y1) and (x2,y2) - in that order - return the slope of the line between those points. (OK if it does not work for vertical lines.)
+ distance: Given the x and y coordinates of two points (x1,y1) and (x2,y2), find the distance between them.</description>
+    </item>
+    
+    <item>
       <title>Number Intro</title>
       <link>http://wy-cs.info/intermediate-cs/ch07/number-intro/</link>
       <pubDate>Mon, 16 Oct 2017 15:05:19 -0500</pubDate>
