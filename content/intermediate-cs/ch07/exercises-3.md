@@ -8,6 +8,8 @@ draft: false
 
 2. Write a function `small-0` that takes in two numbers and gives out the distance to zero of the number that is closest to zero on the number line. It should work with negative numbers as well.
 
+3. Write a function `stuck-50-150` that takes in a number x and gives out x. Except if x is below 50, give an answer of 50. Also if x is more than 150, give an answer of 150.
+
 3. `random-3`: Write a function that gives a random number between -50 and 50.
 
 4. `random-4`: Write a function that gives a random even number 0-200.
@@ -15,8 +17,12 @@ draft: false
 5. `dice`: Write a function that gives the total from randomly rolling two six sided dice.
 
 5. `rstar`:
-Write a function that makes a star with a random number of sides (5 to 10). 
+Write a function that makes a star with a random side length.
 
 6. `dstar`:
-Write a function that makes two stars next to each other, one should have 4-8 sides and the other should have twice as many sides.
+Write a function that makes two stars next to each other, one should have a random side length and the other should have sides that are twice as long.
+
+7. Challenge: make a star with a random number of sides. For the third number, try `(remainder 31 sides)`.
+
+
 
