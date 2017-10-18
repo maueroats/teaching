@@ -1861,6 +1861,26 @@
  
   
     
+      <li data-nav-id="/intermediate-cs/ch06/daily/2017-10-10/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch06/daily/2017-10-10/">
+        <span>2017-10-10</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/intermediate-cs/ch06/daily/animation-practice/" class="dd-item
      
       ">
@@ -1925,6 +1945,46 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch07/exercises-3/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch07/exercises-3/">
+        <span>Exercises 3</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch07/random/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch07/random/">
+        <span>Randomness</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
           
             
             
@@ -2288,7 +2348,10 @@
 <ul>
 <li>
 <ul>
-<li><a href="#essential-summary">Essential summary</a></li>
+<li><a href="#essential-summary">Essential summary</a>
+<ul>
+<li><a href="#randomness">Randomness</a></li>
+</ul></li>
 <li><a href="#further-information">Further Information</a></li>
 </ul></li>
 </ul>
@@ -2333,19 +2396,45 @@
 
 <li><p>Inexact answers, checking with tolerance</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style=""></span><span style="color:#111">&gt;</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">sqrt</span><span style=""> </span><span style="color:#ae81ff">5</span><span style="color:#111">)</span><span style=""> </span><span style="color:#75715e">; about 2.236</span><span style="">
-</span><span style=""></span><span style="color:#111">#2.23606797749979</span></code></pre>
+</span><span style=""></span><span style="color:#ae81ff">#i2.23606797749979</span></code></pre>
 </div>
 <p>The <code>#i</code> at the start of <code>#i2.236...</code> means that the number is an &ldquo;inexact&rdquo; decimal.
-You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use <code>check-within</code>.</p></li>
-</ul>
+You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use <code>check-within</code>.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">check-within</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">sqrt</span><span style=""> </span><span style="color:#ae81ff">5</span><span style="color:#111">)</span><span style=""> </span><span style="color:#ae81ff">2.236</span><span style=""> </span><span style="color:#ae81ff">0.001</span><span style="color:#111">)</span></code></pre>
-</div>
-<ul>
-<li>Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of <code>pi</code> or <code>3.1415</code>.</li>
-</ul>
+</div></li>
+
+<li><p>Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of <code>pi</code> or <code>3.1415</code>.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style=""></span><span style="color:#111">&gt;</span><span style=""> </span><span style="color:#111">pi</span><span style="">
 </span><span style=""></span><span style="color:#ae81ff">#i3.141592653589793</span></code></pre>
-</div>
+</div></li>
+
+<li><p>Maximum, minimum, absolute value</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">max</span><span style=""> </span><span style="color:#ae81ff">0</span><span style=""> </span><span style="color:#ae81ff">-4</span><span style="color:#111">)</span><span style=""> </span><span style="color:#75715e">; ==&gt; 0</span><span style="">
+</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">min</span><span style=""> </span><span style="color:#ae81ff">255</span><span style=""> </span><span style="color:#ae81ff">300</span><span style="color:#111">)</span><span style=""> </span><span style="color:#75715e">; ==&gt; 255</span><span style="">
+</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">abs</span><span style=""> </span><span style="color:#ae81ff">-10</span><span style="color:#111">)</span><span style=""> </span><span style="color:#75715e">; ==&gt; 10</span></code></pre>
+</div></li>
+
+<li><p>Getting rid of fractions. The best generic method to use is <code>real-&gt;int</code>. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">real-&gt;int</span><span style=""> </span><span style="color:#ae81ff">0.5</span><span style="color:#111">)</span><span style="">
+</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">real-&gt;int</span><span style=""> </span><span style="color:#ae81ff">1.5</span><span style="color:#111">)</span><span style="">
+</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">real-&gt;int</span><span style=""> </span><span style="color:#ae81ff">2.5</span><span style="color:#111">)</span><span style="">
+</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">ceiling</span><span style=""> </span><span style="color:#ae81ff">1.2</span><span style="color:#111">)</span><span style="">
+</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">floor</span><span style=""> </span><span style="color:#ae81ff">1.7</span><span style="color:#111">)</span><span style="">
+</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">round</span><span style=""> </span><span style="color:#ae81ff">1.6</span><span style="color:#111">)</span></code></pre>
+</div></li>
+</ul>
+
+<h3 id="randomness">Randomness</h3>
+
+<ul>
+<li>Random numbers: <code>(random 3)</code> gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the code below and you should get different answers each time.
+<code>racket 
+(random 10) 
+(random 10) 
+(random 10) 
+</code></li>
+</ul>
+
 <h2 id="further-information">Further Information</h2>
 
 
@@ -2366,6 +2455,56 @@ You should never use check-expect with inexact numbers, because the inexact resu
     
 
 	
+		
+	
+		
+  
+
+
+<li>
+<a href="/intermediate-cs/ch07/exercises-3/" >Exercises 3</a>
+</li>
+
+
+
+
+
+
+			
+				
+<p></p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+  
+
+
+<li>
+<a href="/intermediate-cs/ch07/random/" >Randomness</a>
+</li>
+
+
+
+
+
+
+			
+				
+<p></p>
+				
+			
+		
+
+		
+			
+
 		
 	
 		
@@ -3554,6 +3693,22 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -3581,6 +3736,38 @@ You should never use check-expect with inexact numbers, because the inexact resu
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -3785,7 +3972,7 @@ You should never use check-expect with inexact numbers, because the inexact resu
             <a class="nav nav-prev" href="/intermediate-cs/ch06/daily/animation-practice/" title="Animation Practice"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch07/exercises-2/" title="Exercises 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/ch07/exercises-3/" title="Exercises 3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

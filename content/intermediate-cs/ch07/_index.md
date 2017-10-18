@@ -31,20 +31,44 @@ We learn to do math with numbers.
 * Inexact answers, checking with tolerance
 ```racket
 > (sqrt 5) ; about 2.236
-#2.23606797749979
+#i2.23606797749979
 ```
 The `#i` at the start of `#i2.236...` means that the number is an "inexact" decimal. 
 You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use `check-within`.
-
 ```racket
 (check-within (sqrt 5) 2.236 0.001)
 ```
 
 * Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of `pi` or `3.1415`.
-
 ```racket
 > pi
 #i3.141592653589793
+```
+
+* Maximum, minimum, absolute value
+```racket
+(max 0 -4) ; ==> 0
+(min 255 300) ; ==> 255
+(abs -10) ; ==> 10
+```
+
+* Getting rid of fractions. The best generic method to use is `real->int`. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor). 
+```racket
+(real->int 0.5)
+(real->int 1.5)
+(real->int 2.5)
+(ceiling 1.2)
+(floor 1.7)
+(round 1.6)
+```
+
+### Randomness
+
+* Random numbers: `(random 3)` gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the code below and you should get different answers each time.
+```racket 
+(random 10) 
+(random 10) 
+(random 10) 
 ```
 
 ## Further Information

@@ -102,7 +102,7 @@
 	"title": "Karel 1 and 2",
 	"tags": [],
 	"description": "",
-	"content": " 2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20).\n 2017-10-17 Tuesday: Clone repository, set up your own to save. Exercises (please use the same names): Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make:\n Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff   "
+	"content": " 2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20).\n 2017-10-17 Tuesday: Follow GitHub Classroom procedures in the Essentials Learn enough git to save to the cloud. Homework: spend 20 minutes learning a little more about git.\n 2017-10-18 Wednesday: Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make:\n Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/",
@@ -170,7 +170,7 @@
 {
 	"uri": "http://wy-cs.info/ap-cs/git/",
 	"title": "Git",
-	"tags": [],
+	"tags": ["git"],
 	"description": "",
 	"content": " Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do.\nYou will use it for several purposes:\n Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group  Incomplete This page is incomplete. We will add more information later.\n"
 },
@@ -312,7 +312,7 @@
 	"title": "7. Numbers",
 	"tags": [],
 	"description": "",
-	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+53)(/137); thirteen divided by seven(*112)(-91); nine minus one(-8)(quotient219127)(remainder219127)  Exponents, square root, squaring:\n(expt1.0195); 1.01 to the 95 power is about 2.57(sqrt9); square root of 9 is three(sqr1241); when you square 1241 you get 1540081  Inexact answers, checking with tolerance\n\u0026gt;(sqrt5); about 2.236#2.23606797749979  The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n  (check-within(sqrt5)2.2360.001)   Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.  \u0026gt;pi#i3.141592653589793  Further Information  Exercises 2  Exercises working with number functions.\n Exercises 1  Exercises.\n"
+	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+53)(/137); thirteen divided by seven(*112)(-91); nine minus one(-8)(quotient219127)(remainder219127)  Exponents, square root, squaring:\n(expt1.0195); 1.01 to the 95 power is about 2.57(sqrt9); square root of 9 is three(sqr1241); when you square 1241 you get 1540081  Inexact answers, checking with tolerance\n\u0026gt;(sqrt5); about 2.236#i2.23606797749979  The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n(check-within(sqrt5)2.2360.001)  Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.\n\u0026gt;pi#i3.141592653589793  Maximum, minimum, absolute value\n(max0-4); ==\u0026gt; 0(min255300); ==\u0026gt; 255(abs-10); ==\u0026gt; 10  Getting rid of fractions. The best generic method to use is real-\u0026gt;int. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).\n(real-\u0026gt;int0.5)(real-\u0026gt;int1.5)(real-\u0026gt;int2.5)(ceiling1.2)(floor1.7)(round1.6)   Randomness  Random numbers: (random 3) gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the code below and you should get different answers each time. racket (random 10) (random 10) (random 10)   Further Information  Exercises 3  \n Randomness  \n Exercises 2  Exercises working with number functions.\n Exercises 1  Exercises.\n"
 },
 {
 	"uri": "http://wy-cs.info/resources/",
@@ -343,9 +343,23 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-3/",
+	"title": "Exercises 3",
+	"tags": [],
+	"description": "",
+	"content": " Write a function at-most-250 that takes in a number and puts out the same number, or 250 if the number is larger than 250.\n Write a function small-0 that takes in two numbers and gives out the one that is closest to zero on the number line. It should work with negative numbers as well.\n random-3: Write a function that gives a random number between -50 and 50.\n random-4: Write a function that gives a random even number 0-200.\n dice: Write a function that gives the total from randomly rolling two six sided dice.\n rstar: Write a function that makes a star with a random number of sides (5 to 10).\n dstar: Write a function that makes two stars next to each other, one should have 4-8 sides and the other should have twice as many sides.\n  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch07/random/",
+	"title": "Randomness",
+	"tags": [],
+	"description": "",
+	"content": "  Random numbers: (random 3) gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the code below and you should get different answers each time. racket (random 10) (random 10) (random 10)   Random ranges We use the phrase \u0026ldquo;from 10 to 200\u0026rdquo; or \u0026ldquo;between 10 and 200\u0026rdquo; to both mean all of the integers n so that 10\u0026lt;=n\u0026lt;=200.\n How many numbers are there from 10 to 200, inclusive? It\u0026rsquo;s easy to make a mistake. My favorite method is to subtract a number to make the bottom of the range start counting at one.\nBe sure you understand the previous paragraph before reading on!\nWhen you already have a random number from 0 to 50, how can you get a random number between 30 and 80?\nUsing randomness It is hard to test random functions, so write non-random versions first, and use the randomness as an input. Test the non-random functions!\nExample: Make an ellipse of a random height 150-250 pixels tall, and twice as wide.\n; make-ellipse-nr: string(color) number(height) -\u0026gt; image; purpose: make an ellipse height units tall and 2*height units wide in the given color(define(make-ellipse-nrcolorheight)(ellipse(*2height)height\u0026#34;solid\u0026#34;color)); see below for check-expect(define(make-ellipsecolor)(make-ellipse-nrcolor(+150(random101))))   Test your nonrandom function well!   "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/git/getting-started/",
 	"title": "Getting Started",
-	"tags": [],
+	"tags": ["git"],
 	"description": "",
 	"content": " Tutorials  A command line intro to git in 15 minutes.\n Git for Beginners.\n Beautiful and simple Git Guide.\n  Local instructions  Make an account on GitHub. Use your CPS email.\n Apply for an education account.\n Join our class in the GitHub Classroom. (Tell the teacher your username and get added manually.)\n  "
 },
@@ -368,7 +382,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2   2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20). 2017-10-17 Tuesday: Clone repository, set up your own to save. Exercises (please use the same names): Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make: Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff  "
+	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2   2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20). 2017-10-17 Tuesday: Follow GitHub Classroom procedures in the Essentials Learn enough git to save to the cloud. Homework: spend 20 minutes learning a little more about git. 2017-10-18 Wednesday: Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make: Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/examples/",
@@ -404,6 +418,13 @@
 	"tags": ["design-process"],
 	"description": "",
 	"content": " Function The function design process that we use is:\n Signature Purpose Examples (two) Function - write it.\n4A. Skeleton - not visible when finished. Check-expect - examples provide correct answers.  Animations  See Chapter 6 Animations for the design process as it applies to writing animations (big-bang).\n The Animations Slides detail the issues when writing handlers.\n  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch06/daily/2017-10-10/",
+	"title": "2017-10-10",
+	"tags": [],
+	"description": "",
+	"content": " Flying purple rectangle  Make a small rectangle centered in the middle of the bottom of a big white rectangular canvas. As time goes on the rectangle should move up.\n  Growing diamond. Make a diamond that sits on the right side of the page and gets larger.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/daily/",
@@ -564,7 +585,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Intermediate Computer Science Recent Changes    Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Design Process modified Tue 10-10  Daily Animations modified Tue 10-10  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Intermediate Computer Science Recent Changes    Exercises 3 modified Tue 10-17  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -588,14 +609,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
@@ -625,6 +646,13 @@
 {
 	"uri": "http://wy-cs.info/tags/design-process/",
 	"title": "Design Process",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wy-cs.info/tags/git/",
+	"title": "Git",
 	"tags": [],
 	"description": "",
 	"content": ""

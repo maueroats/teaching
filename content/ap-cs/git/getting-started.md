@@ -2,6 +2,8 @@
 title: "Getting Started"
 date: 2017-10-17T15:03:37-05:00
 draft: false
+tags:
+ - git
 ---
 
 ## Tutorials

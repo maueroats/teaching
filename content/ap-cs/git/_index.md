@@ -3,6 +3,8 @@ title: "Git"
 date: 2017-10-10T10:20:47-05:00
 weight: 20
 draft: false
+tags:
+ - git
 ---
 
 Git is a system for keeping track of all of the versions of things you write, both old and new. 
