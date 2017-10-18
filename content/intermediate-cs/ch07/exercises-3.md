@@ -6,7 +6,7 @@ draft: false
 
 1. Write a function `at-most-250` that takes in a number and puts out the same number, or 250 if the number is larger than 250.
 
-2. Write a function `small-0` that takes in two numbers and gives out the one that is closest to zero on the number line. It should work with negative numbers as well.
+2. Write a function `small-0` that takes in two numbers and gives out the distance to zero of the number that is closest to zero on the number line. It should work with negative numbers as well.
 
 3. `random-3`: Write a function that gives a random number between -50 and 50.
 
