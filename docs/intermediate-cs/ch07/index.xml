@@ -14,12 +14,23 @@
     <item>
       <title>Exercises 3</title>
       <link>http://wy-cs.info/intermediate-cs/ch07/exercises-3/</link>
-      <pubDate>Tue, 17 Oct 2017 22:34:39 -0500</pubDate>
+      <pubDate>Wed, 18 Oct 2017 15:03:26 -0500</pubDate>
       
       <guid>http://wy-cs.info/intermediate-cs/ch07/exercises-3/</guid>
       <description>Write a function at-most-250 that takes in a number and puts out the same number, or 250 if the number is larger than 250.
  Write a function small-0 that takes in two numbers and gives out the distance to zero of the number that is closest to zero on the number line. It should work with negative numbers as well.
  Write a function stuck-50-150 that takes in a number x and gives out x.</description>
+    </item>
+    
+    <item>
+      <title>Max and min slides</title>
+      <link>http://wy-cs.info/intermediate-cs/ch07/maxmin/</link>
+      <pubDate>Wed, 18 Oct 2017 14:28:44 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch07/maxmin/</guid>
+      <description>Maximum, Minimum, Random Make a Table Max = greatest. Min = least. Abs = absolute value.
+   x (min x 10) (max x 10) (abs x)     -15      -5      &amp;hellip;       Include x = 8, 13, 18 as well.
+Which keeps numbers small?    x (min x 10) (max x 10) (abs x)     -15 -15 10 15   -5 -5 10 5   8 8 10 8   13 10 13 13   18 10 18 18    Use Check-expect Always write check-expects when keeping numbers small or large.</description>
     </item>
     
     <item>

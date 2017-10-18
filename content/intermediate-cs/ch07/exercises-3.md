@@ -1,6 +1,6 @@
 ---
 title: "Exercises 3"
-date: 2017-10-17T22:34:39-05:00
+date: 2017-10-18T15:03:26-05:00
 draft: false
 ---
 
@@ -22,7 +22,7 @@ Write a function that makes a star with a random side length.
 6. `dstar`:
 Write a function that makes two stars next to each other, one should have a random side length and the other should have sides that are twice as long.
 
-7. Challenge: make a star with a random number of sides. For the third number, try `(remainder 31 sides)`.
+7. Challenge: make a star with a random number of sides. For the third number, the "step", try `(remainder 31 sides)`. You will want a helper function that knows the number of sides.
 
 
 
