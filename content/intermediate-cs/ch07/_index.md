@@ -62,15 +62,6 @@ You should never use check-expect with inexact numbers, because the inexact resu
 (round 1.6)
 ```
 
-### Randomness
-
-* Random numbers: `(random 3)` gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the code below and you should get different answers each time.
-```racket 
-(random 10) 
-(random 10) 
-(random 10) 
-```
-
 ## Further Information
 
 {{% children description="true" %}}
