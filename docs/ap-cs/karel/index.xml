@@ -46,5 +46,14 @@ git clone [paste link to your repository here]  Git remote add</description>
  Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff   </description>
     </item>
     
+    <item>
+      <title>Karel 3</title>
+      <link>http://wy-cs.info/ap-cs/karel/ch3/</link>
+      <pubDate>Thu, 19 Oct 2017 10:54:10 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/karel/ch3/</guid>
+      <description> Adding new abilities to robots Practice  2017-10-19: In class exercise 2 (PinSetter). Homework: exercise 4 (HarvestDiamond).  </description>
+    </item>
+    
   </channel>
 </rss>
