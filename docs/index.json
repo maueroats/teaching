@@ -284,7 +284,7 @@
 	"title": "6. Animations I",
 	"tags": [],
 	"description": "Big-bang for animations. Essential information and walkthroughs.",
-	"content": " Essentials These essentials are on page 100 (PDF page 111) or page 138 (PDF page 149). There is a detailed checklist on page 105 (PDF page 116). Use it! You should memorize them.\n model: What the computer remembers.\n draw-handler: model -\u0026gt; image: Draw the model on the screen; adds non-moving parts to the image. (on-draw)\n tick-handler: model -\u0026gt; model: Update the model as time passes. (on-tick)\n key-handler: model key -\u0026gt; model: Update the model when a key is hit. (on-key)\n mouse-handler: model x y event -\u0026gt; model: Update the model when the mouse is moved or clicked. The inputs x and y are numbers, the event is a string. (on-mouse)\n  Design Process When designing every function, these are the steps you should follow:\n Signature Purpose Example Function \u0026mdash; write it Test \u0026mdash; check-expect  Reference: page 70 (PDF page 81) has a longer version of the same list.\nF.A.Q.  Q: Why do you write \u0026ldquo;model\u0026rdquo; when the model is just an image?\nA: Next chapter our models will be numbers, and soon after that our models will be sentences. If you memorize \u0026ldquo;model\u0026rdquo; as the type, you don\u0026rsquo;t need to memorize a new signature every chapter.\n  Topics  Intro to Animations   Animations Outline   Animation Examples   Animation Portfolio   Daily Animations   "
+	"content": " Essentials These essentials are on page 100 (PDF page 111) or page 138 (PDF page 149). There is a detailed checklist on page 105 (PDF page 116). Use it! You should memorize them.\n model: What the computer remembers.\n draw-handler: model -\u0026gt; image: Draw the model on the screen; adds non-moving parts to the image. (on-draw)\n tick-handler: model -\u0026gt; model: Update the model as time passes. (on-tick)\n key-handler: model key -\u0026gt; model: Update the model when a key is hit. (on-key)\n mouse-handler: model x y event -\u0026gt; model: Update the model when the mouse is moved or clicked. The inputs x and y are numbers, the event is a string. (on-mouse)\n  Design Process When designing every function, these are the steps you should follow:\n Signature Purpose Example Function \u0026mdash; write it Test \u0026mdash; check-expect  Reference: page 70 (PDF page 81) has a longer version of the same list.\nF.A.Q.  Q: Why do you write \u0026ldquo;model\u0026rdquo; when the model is just an image?\nA: Next chapter our models will be numbers, and soon after that our models will be sentences. If you memorize \u0026ldquo;model\u0026rdquo; as the type, you don\u0026rsquo;t need to memorize a new signature every chapter.\n  Topics  Intro to Animations   Animations Outline   Animation Project   Animation Examples   Animation Portfolio   Daily Animations   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch06/",
@@ -341,6 +341,13 @@
 	"tags": ["haskell", "daily-notes"],
 	"description": "Notes for each day.",
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch06/project/",
+	"title": "Animation Project",
+	"tags": [],
+	"description": "",
+	"content": " Deadline: Finish before Monday, October 23. Turn in Tuesday, October 24.\nProduce: One sequence of big-bang animations per group. (Groups of at most two.)\nGoal: Animation projects should demonstrate the use of draw, tick, mouse, and key handlers.\nTime: Spend approximately two hours on this project.\nMaking an animation is a way to study for Monday\u0026rsquo;s animation test. Think of your work as a way to study and become more familiar with animations.\nIdeas  House of Mirrors Illusions Jump Scare (one big-bang ends and another starts)  Requirements  Every type of handler is used A draw handler shows multiple views of a model (more than one image of model on the screen).  Details You should consider these inspirations:\n Drawing: placing a moving object behind another object.\n Motion: rotate, move by adding (above), move by subtracting (crop)\n Placing more than one moving image on a screen.\n place-image overlay/align    "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-3/",
@@ -592,7 +599,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Intermediate Computer Science Recent Changes    Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  2017-10-12 modified Thu 10-12  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Intermediate Computer Science Recent Changes    Animation Project modified Thu 10-19  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

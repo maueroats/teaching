@@ -41,6 +41,19 @@
     </item>
     
     <item>
+      <title>Animation Project</title>
+      <link>http://wy-cs.info/intermediate-cs/ch06/project/</link>
+      <pubDate>Thu, 19 Oct 2017 10:11:21 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch06/project/</guid>
+      <description>Deadline: Finish before Monday, October 23. Turn in Tuesday, October 24.
+Produce: One sequence of big-bang animations per group. (Groups of at most two.)
+Goal: Animation projects should demonstrate the use of draw, tick, mouse, and key handlers.
+Time: Spend approximately two hours on this project.
+Making an animation is a way to study for Monday&amp;rsquo;s animation test. Think of your work as a way to study and become more familiar with animations.</description>
+    </item>
+    
+    <item>
       <title>Animation Examples</title>
       <link>http://wy-cs.info/intermediate-cs/ch06/examples/</link>
       <pubDate>Sun, 15 Oct 2017 14:15:53 -0500</pubDate>
