@@ -18,19 +18,24 @@ Making an animation is a way to study for Monday's animation
 test. Think of your work as a way to study and become more familiar
 with animations.
 
-# Ideas
+## Suggestion
+
+We don't have the technical skills to make animations that work exactly like you imagine. A compromise is to break your idea into several "scenes", put each scene into a big-bang, and then manually close the window each time to advance to the next big-bang.
+
+
+## Ideas
 
 * House of Mirrors
 * Illusions
 * Jump Scare (one big-bang ends and another starts)
 
-# Requirements
+## Requirements
 
 * Every type of handler is used
 * A draw handler shows multiple views of a model (more than one image of model on the screen). 
+* Design process visible for at least one big-bang.
 
-
-# Details
+## Details
 
 You should consider these inspirations:
 
