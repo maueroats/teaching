@@ -1,6 +1,6 @@
 ---
 title: "Animation Project"
-date: 2017-10-19T10:11:21-05:00
+date: 2017-10-20T14:46:03-05:00
 draft: false
 #type: slide
 #theme: white
@@ -48,4 +48,14 @@ You should consider these inspirations:
     - place-image
     - overlay/align
     
+
+## Important Note
+
+Save all big images separately. Put the "bigImage.png" file in the
+same folder you have saved your Racket program. Load the picture like this:
+```racket
+(define background (bitmap "bigImage.png"))
+```
+
+Use the same method to keep transparency in images that you have found online.
 

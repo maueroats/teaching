@@ -343,18 +343,18 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch06/project/",
+	"title": "Animation Project",
+	"tags": [],
+	"description": "",
+	"content": " Deadline: Finish before Monday, October 23. Turn in Tuesday, October 24.\nProduce: One sequence of big-bang animations per group. (Groups of at most two.)\nGoal: Animation projects should demonstrate the use of draw, tick, mouse, and key handlers.\nTime: Spend approximately two hours on this project.\nMaking an animation is a way to study for Monday\u0026rsquo;s animation test. Think of your work as a way to study and become more familiar with animations.\nSuggestion We don\u0026rsquo;t have the technical skills to make animations that work exactly like you imagine. A compromise is to break your idea into several \u0026ldquo;scenes\u0026rdquo;, put each scene into a big-bang, and then manually close the window each time to advance to the next big-bang.\nIdeas  House of Mirrors Illusions Jump Scare (one big-bang ends and another starts)  Requirements  Every type of handler is used A draw handler shows multiple views of a model (more than one image of model on the screen). Design process visible for at least one big-bang.  Details You should consider these inspirations:\n Drawing: placing a moving object behind another object.\n Motion: rotate, move by adding (above), move by subtracting (crop)\n Placing more than one moving image on a screen.\n place-image overlay/align    Important Note Save all big images separately. Put the \u0026ldquo;bigImage.png\u0026rdquo; file in the same folder you have saved your Racket program. Load the picture like this:\n(definebackground(bitmap\u0026#34;bigImage.png\u0026#34;))  Use the same method to keep transparency in images that you have found online.\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/karel/ch3/",
 	"title": "Karel 3",
 	"tags": [],
 	"description": "",
 	"content": " Adding new abilities to robots Practice  2017-10-19: In class exercise 2 (PinSetter). Homework: exercise 4 (HarvestDiamond).\n 2017-10-20: Chapter 3 exercise 6: DigitalClock.\n To set the size of a world:\nWorld.setSize(10,21); World.setVisible(true);  Grab the lower right corner of the display window and drag it UP and LEFT to fit everything on the screen.\n I have updated the AP CS master repository with several extra commands:\n ./one-time to set a few defaults ./update to get my new changes ./save to do the three saving commands all in one     "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/project/",
-	"title": "Animation Project",
-	"tags": [],
-	"description": "",
-	"content": " Deadline: Finish before Monday, October 23. Turn in Tuesday, October 24.\nProduce: One sequence of big-bang animations per group. (Groups of at most two.)\nGoal: Animation projects should demonstrate the use of draw, tick, mouse, and key handlers.\nTime: Spend approximately two hours on this project.\nMaking an animation is a way to study for Monday\u0026rsquo;s animation test. Think of your work as a way to study and become more familiar with animations.\nSuggestion We don\u0026rsquo;t have the technical skills to make animations that work exactly like you imagine. A compromise is to break your idea into several \u0026ldquo;scenes\u0026rdquo;, put each scene into a big-bang, and then manually close the window each time to advance to the next big-bang.\nIdeas  House of Mirrors Illusions Jump Scare (one big-bang ends and another starts)  Requirements  Every type of handler is used A draw handler shows multiple views of a model (more than one image of model on the screen). Design process visible for at least one big-bang.  Details You should consider these inspirations:\n Drawing: placing a moving object behind another object.\n Motion: rotate, move by adding (above), move by subtracting (crop)\n Placing more than one moving image on a screen.\n place-image overlay/align    "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-3/",
@@ -606,7 +606,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 3 modified Thu 10-19  Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Intermediate Computer Science Recent Changes    Animation Project modified Thu 10-19  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel 3 modified Thu 10-19  Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Intermediate Computer Science Recent Changes    Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
