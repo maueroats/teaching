@@ -2,6 +2,7 @@
 title: "Animation Project"
 date: 2017-10-20T14:46:03-05:00
 draft: false
+weight: 5
 #type: slide
 #theme: white
 ---
@@ -32,8 +33,8 @@ We don't have the technical skills to make animations that work exactly like you
 ## Requirements
 
 * Every type of handler is used
-* A draw handler shows multiple views of a model (more than one image of model on the screen). 
 * Design process visible for at least one big-bang.
+* Please save all large images separately and load using `bitmap` (see note).
 
 ## Details
 

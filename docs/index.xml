@@ -59,12 +59,48 @@
     </item>
     
     <item>
+      <title>Animation Examples</title>
+      <link>http://wy-cs.info/intermediate-cs/ch06/examples/</link>
+      <pubDate>Sun, 15 Oct 2017 14:15:53 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch06/examples/</guid>
+      <description>Here is a complete example (raw Racket code available) that shows how to:
+ move an image down every tick draw three copies of the image in a row make the image get larger when you hit a key make the image get smaller when you move the mouse  Big bang The big bang goes last in the Racket file, but it is first here so you can see how everything comes together.</description>
+    </item>
+    
+    <item>
       <title>Book</title>
       <link>http://wy-cs.info/ap-cs/karel/book/</link>
       <pubDate>Tue, 17 Oct 2017 10:17:40 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/karel/book/</guid>
       <description>The book is Karel J Robot: &amp;ldquo;A Gentle Introduction to the Art of Object-Oriented Programming in Java&amp;rdquo;, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used if you want one or want to donate one.</description>
+    </item>
+    
+    <item>
+      <title>Animation Portfolio</title>
+      <link>http://wy-cs.info/intermediate-cs/ch06/portfolio/</link>
+      <pubDate>Fri, 13 Oct 2017 08:24:58 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch06/portfolio/</guid>
+      <description> Purple square that moves up when you hit any key.
+ Throwing star that spins (and maybe moves across the screen) as time passes.
+ Sunset with a horizon.
+ Car with two wheels that spin when you move the mouse.
+  </description>
+    </item>
+    
+    <item>
+      <title>Animation Project</title>
+      <link>http://wy-cs.info/intermediate-cs/ch06/project/</link>
+      <pubDate>Fri, 20 Oct 2017 14:46:03 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch06/project/</guid>
+      <description>Deadline: Finish before Monday, October 23. Turn in Tuesday, October 24.
+Produce: One sequence of big-bang animations per group. (Groups of at most two.)
+Goal: Animation projects should demonstrate the use of draw, tick, mouse, and key handlers.
+Time: Spend approximately two hours on this project.
+Making an animation is a way to study for Monday&amp;rsquo;s animation test. Think of your work as a way to study and become more familiar with animations.</description>
     </item>
     
     <item>
@@ -91,36 +127,6 @@ git clone [paste link to your repository here]  One time settings</description>
 Code Outline main: just make board and call event loop
 event loop:
  draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Code All of the user interface code is linked separately (open in WordPad if necessary).</description>
-    </item>
-    
-    <item>
-      <title>Art Period 5</title>
-      <link>http://wy-cs.info/intermediate-cs/ch03art/period-5/</link>
-      <pubDate>Wed, 27 Sep 2017 20:14:40 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/intermediate-cs/ch03art/period-5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Art Period 7</title>
-      <link>http://wy-cs.info/intermediate-cs/ch03art/period-7/</link>
-      <pubDate>Wed, 27 Sep 2017 20:14:43 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/intermediate-cs/ch03art/period-7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Karel 1 and 2</title>
-      <link>http://wy-cs.info/ap-cs/karel/ch1&#43;2/</link>
-      <pubDate>Mon, 16 Oct 2017 14:53:49 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/karel/ch1&#43;2/</guid>
-      <description> 2017-10-16 Monday: Homework - read Chapters 1 and 2 (pages 1-20).
- 2017-10-17 Tuesday: Follow GitHub Classroom procedures in the Essentials Learn enough git to save to the cloud. Homework: spend 20 minutes learning a little more about git.
- 2017-10-18 Wednesday: Do exercises 2.7 and 2.11, incuding making the worlds. Please use the names below for the classes you make:
- Ex 2.7: GroceryPickup Ex 2.11: BeeperHandoff   </description>
     </item>
     
   </channel>
