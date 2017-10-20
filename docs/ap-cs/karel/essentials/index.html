@@ -2457,7 +2457,7 @@ Start &ldquo;Git Bash&rdquo; or type the following in &ldquo;Terminal&rdquo; on 
 <li><p>One time settings</p>
 
 <p>In this step you run my one-time setup code that links you to the original repository. You need to actually be inside the directory/folder that you just cloned for this command to work.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#111">cd</span><span style=""> karel-whateverComesNext
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ssh" data-lang="ssh"><span style="">cd karel-*
 </span><span style=""> ./one-time</span></code></pre>
 </div>
 <p>This command currently:</p>
@@ -2465,18 +2465,19 @@ Start &ldquo;Git Bash&rdquo; or type the following in &ldquo;Terminal&rdquo; on 
 <ul>
 <li>Sets the editor to &ldquo;nano&rdquo;, a reasonable beginner&rsquo;s editor.</li>
 <li>Adds a remote repository containing the AP CS &ldquo;master&rdquo; code so you can get updates.</li>
-</ul></li>
-</ol>
+</ul>
 
 <p>Alternative:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">    cd karel-whateverComesNext
-</span><span style="">    git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git</span></code></pre>
-</div>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">cd karel-*
+</span><span style="">git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git</span></code></pre>
+</div></li>
+</ol>
+
 <h2 id="saving-your-work">Saving your work</h2>
 
 <p>I have a <code>save-it</code> script that makes it easy for you to save and push your changes in one step:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="">     </span><span style="color:#111">cd</span><span style=""> karel-*
-</span><span style="">     ./save-it </span><span style="color:#d88200">&#39;Optional message&#39;</span></code></pre>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ssh" data-lang="ssh"><span style="">     cd karel-*
+</span><span style="">     ./save-it &#39;Optional message&#39;</span></code></pre>
 </div>
 <p>You can use the <code>save-it</code> script or type the following commands:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">git add -A

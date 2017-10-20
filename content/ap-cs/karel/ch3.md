@@ -15,7 +15,7 @@ draft: false
 * 2017-10-20: Chapter 3 exercise 6: DigitalClock.
 
   - To set the size of a world:
-```
+```any
     World.setSize(10,21);
     World.setVisible(true);
 ```

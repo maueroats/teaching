@@ -27,8 +27,8 @@ git clone [paste link to your repository here]
 3. One time settings
 
     In this step you run my one-time setup code that links you to the original repository. You need to actually be inside the directory/folder that you just cloned for this command to work. 
-```bash
-    cd karel-whateverComesNext
+```ssh
+    cd karel-*
      ./one-time
 ```
     This command currently:
@@ -36,16 +36,16 @@ git clone [paste link to your repository here]
     * Sets the editor to "nano", a reasonable beginner's editor.
     * Adds a remote repository containing the AP CS "master" code so you can get updates.
 
-Alternative:
+    Alternative:
 ```git
-    cd karel-whateverComesNext
+    cd karel-*
     git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git
 ```
 
 ## Saving your work
 
 I have a `save-it` script that makes it easy for you to save and push your changes in one step:
-```sh
+```ssh
      cd karel-*
      ./save-it 'Optional message'
 ```
