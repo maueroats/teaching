@@ -24,13 +24,47 @@ You should end up with a new repository which has all of the Karel starter files
 git clone [paste link to your repository here]
 ```
 
-3. Git remote add
+3. One time settings
 
-     In this step you make a link to our original repository so you can get any changes. You need to actually be inside the directory/folder that you just cloned for this command to work. 
+    In this step you run my one-time setup code that links you to the original repository. You need to actually be inside the directory/folder that you just cloned for this command to work. 
+```bash
+    cd karel-whateverComesNext
+     ./one-time
+```
+    This command currently:
+
+    * Sets the editor to "nano", a reasonable beginner's editor.
+    * Adds a remote repository containing the AP CS "master" code so you can get updates.
+
+Alternative:
 ```git
-    cd karel-[put-your-repo-name-here]
+    cd karel-whateverComesNext
     git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git
 ```
+
+## Saving your work
+
+I have a `save-it` script that makes it easy for you to save and push your changes in one step:
+```sh
+     cd karel-*
+     ./save-it 'Optional message'
+```
+You can use the `save-it` script or type the following commands:
+
+```git
+git add -A
+git commit -a -m 'Save'
+git push origin master
+```
+
+The meaning of these commands is:
+
+* git add
+     * -A: I intend to save every new file.
+* git commit: Save every change to a special place on the current computer.
+     * -a: Save all files that are known (changed, deleted, or new and already added).
+     * -m 'Save': The required message for the save is just the word "Save". Pros are more descriptive.
+* git push: Send the changes to GitHub so they are stored online and I can get them from other computers.
 
 ## DrJava
 
@@ -47,24 +81,6 @@ Open `karelBasic.drjava`.
 
 In the Projects menu, there is an option to open a project. Use that instead of the more obvious "open a file" command so that you don't have to re-teach DrJava about the Karel the Robot files.
 
-## Saving your work
-
-You can use the `save-it` script or type the following commands:
-
-```git
-git add -A
-git commit -a -m 'Save'
-git push -u origin master
-```
-
-The meaning of these commands is:
-
-* git add
-     * -A: I intend to save every new file.
-* git commit: Save every change to a special place on the current computer.
-     * -a: Save all files that are known (changed, deleted, or new and already added).
-     * -m 'Save': The required message for the save is just the word "Save". Pros are more descriptive.
-* git push: Send the changes to GitHub so they are stored online and I can get them from other computers.
 
 ## Documentation
 

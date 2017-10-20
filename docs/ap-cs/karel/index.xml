@@ -31,7 +31,7 @@ https://classroom.github.com/a/bOX4Z5jT  You should end up with a new repository
 Note the link in the green box!
  Git clone
 In this step you download your new repository to the computer you are working on. Start &amp;ldquo;Git Bash&amp;rdquo; or type the following in &amp;ldquo;Terminal&amp;rdquo; on your computer.
-git clone [paste link to your repository here]  Git remote add</description>
+git clone [paste link to your repository here]  One time settings</description>
     </item>
     
     <item>
@@ -52,7 +52,11 @@ git clone [paste link to your repository here]  Git remote add</description>
       <pubDate>Thu, 19 Oct 2017 10:54:10 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/karel/ch3/</guid>
-      <description> Adding new abilities to robots Practice  2017-10-19: In class exercise 2 (PinSetter). Homework: exercise 4 (HarvestDiamond).  </description>
+      <description>Adding new abilities to robots Practice  2017-10-19: In class exercise 2 (PinSetter). Homework: exercise 4 (HarvestDiamond).
+ 2017-10-20: Chapter 3 exercise 6: DigitalClock.
+ To set the size of a world:
+World.setSize(10,21); World.setVisible(true);  Grab the lower right corner of the display window and drag it UP and LEFT to fit everything on the screen.
+ I have updated the AP CS master repository with several extra commands:</description>
     </item>
     
   </channel>

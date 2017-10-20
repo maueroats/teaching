@@ -2411,12 +2411,12 @@
 <li>
 <ul>
 <li><a href="#getting-started">Getting started</a></li>
+<li><a href="#saving-your-work">Saving your work</a></li>
 <li><a href="#drjava">DrJava</a>
 <ul>
 <li><a href="#getting-drjava">Getting DrJava</a></li>
 <li><a href="#running-drjava">Running DrJava</a></li>
 </ul></li>
-<li><a href="#saving-your-work">Saving your work</a></li>
 <li><a href="#documentation">Documentation</a></li>
 </ul></li>
 </ul>
@@ -2454,35 +2454,34 @@ Start &ldquo;Git Bash&rdquo; or type the following in &ldquo;Terminal&rdquo; on 
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">git clone [paste link to your repository here]</span></code></pre>
 </div></li>
 
-<li><p>Git remote add</p>
+<li><p>One time settings</p>
 
-<p>In this step you make a link to our original repository so you can get any changes. You need to actually be inside the directory/folder that you just cloned for this command to work.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">cd karel-[put-your-repo-name-here]
-</span><span style="">git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git</span></code></pre>
-</div></li>
+<p>In this step you run my one-time setup code that links you to the original repository. You need to actually be inside the directory/folder that you just cloned for this command to work.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#111">cd</span><span style=""> karel-whateverComesNext
+</span><span style=""> ./one-time</span></code></pre>
+</div>
+<p>This command currently:</p>
+
+<ul>
+<li>Sets the editor to &ldquo;nano&rdquo;, a reasonable beginner&rsquo;s editor.</li>
+<li>Adds a remote repository containing the AP CS &ldquo;master&rdquo; code so you can get updates.</li>
+</ul></li>
 </ol>
 
-<h2 id="drjava">DrJava</h2>
-
-<h3 id="getting-drjava">Getting DrJava</h3>
-
-<p>On the lab computers, DrJava is on the Desktop in the Computer Science
-folder. Unfortunately it is not in the windows menu at this time.</p>
-
-<p>At home you will need to download <a href="http://drjava.org/">DrJava</a>. Mac OS X users read the instructions carefully; do not download the disk image (&ldquo;.dmg&rdquo;) file.</p>
-
-<h3 id="running-drjava">Running DrJava</h3>
-
-<p>Open <code>karelBasic.drjava</code>.</p>
-
-<p>In the Projects menu, there is an option to open a project. Use that instead of the more obvious &ldquo;open a file&rdquo; command so that you don&rsquo;t have to re-teach DrJava about the Karel the Robot files.</p>
-
+<p>Alternative:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">    cd karel-whateverComesNext
+</span><span style="">    git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git</span></code></pre>
+</div>
 <h2 id="saving-your-work">Saving your work</h2>
 
+<p>I have a <code>save-it</code> script that makes it easy for you to save and push your changes in one step:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="">     </span><span style="color:#111">cd</span><span style=""> karel-*
+</span><span style="">     ./save-it </span><span style="color:#d88200">&#39;Optional message&#39;</span></code></pre>
+</div>
 <p>You can use the <code>save-it</code> script or type the following commands:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-git" data-lang="git"><span style="">git add -A
 </span><span style="">git commit -a -m &#39;Save&#39;
-</span><span style="">git push -u origin master</span></code></pre>
+</span><span style="">git push origin master</span></code></pre>
 </div>
 <p>The meaning of these commands is:</p>
 
@@ -2500,6 +2499,21 @@ folder. Unfortunately it is not in the windows menu at this time.</p>
 </ul></li>
 <li>git push: Send the changes to GitHub so they are stored online and I can get them from other computers.</li>
 </ul>
+
+<h2 id="drjava">DrJava</h2>
+
+<h3 id="getting-drjava">Getting DrJava</h3>
+
+<p>On the lab computers, DrJava is on the Desktop in the Computer Science
+folder. Unfortunately it is not in the windows menu at this time.</p>
+
+<p>At home you will need to download <a href="http://drjava.org/">DrJava</a>. Mac OS X users read the instructions carefully; do not download the disk image (&ldquo;.dmg&rdquo;) file.</p>
+
+<h3 id="running-drjava">Running DrJava</h3>
+
+<p>Open <code>karelBasic.drjava</code>.</p>
+
+<p>In the Projects menu, there is an option to open a project. Use that instead of the more obvious &ldquo;open a file&rdquo; command so that you don&rsquo;t have to re-teach DrJava about the Karel the Robot files.</p>
 
 <h2 id="documentation">Documentation</h2>
 
