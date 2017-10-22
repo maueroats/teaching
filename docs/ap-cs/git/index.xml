@@ -26,5 +26,15 @@
   </description>
     </item>
     
+    <item>
+      <title>Everyday Git</title>
+      <link>http://wy-cs.info/ap-cs/git/everyday/</link>
+      <pubDate>Fri, 20 Oct 2017 15:08:47 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/git/everyday/</guid>
+      <description> Everyday Commands All of these need to be run in the karel-* directory:
+ ./save-it ./update: git pull from the upstream repository. git pull  </description>
+    </item>
+    
   </channel>
 </rss>

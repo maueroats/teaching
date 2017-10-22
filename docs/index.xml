@@ -114,7 +114,7 @@ https://classroom.github.com/a/bOX4Z5jT  You should end up with a new repository
 Note the link in the green box!
  Git clone
 In this step you download your new repository to the computer you are working on. Start &amp;ldquo;Git Bash&amp;rdquo; or type the following in &amp;ldquo;Terminal&amp;rdquo; on your computer.
-git clone [paste link to your repository here]  One time settings</description>
+git clone paste-link-to-your-repository-here  One time settings</description>
     </item>
     
     <item>

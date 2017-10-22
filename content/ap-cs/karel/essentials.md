@@ -21,7 +21,7 @@ You should end up with a new repository which has all of the Karel starter files
     In this step you download your new repository to the computer you are working on. 
     Start "Git Bash" or type the following in "Terminal" on your computer.
 ```git
-git clone [paste link to your repository here]
+git clone paste-link-to-your-repository-here
 ```
 
 3. One time settings
@@ -40,6 +40,7 @@ git clone [paste link to your repository here]
 ```git
     cd karel-*
     git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git
+    git config core.editor nano
 ```
 
 ## Saving your work
@@ -54,7 +55,7 @@ You can use the `save-it` script or type the following commands:
 ```git
 git add -A
 git commit -a -m 'Save'
-git push origin master
+git push -u origin master
 ```
 
 The meaning of these commands is:
@@ -79,7 +80,7 @@ At home you will need to download [DrJava](http://drjava.org/). Mac OS X users r
 
 Open `karelBasic.drjava`.
 
-In the Projects menu, there is an option to open a project. Use that instead of the more obvious "open a file" command so that you don't have to re-teach DrJava about the Karel the Robot files.
+**In the Projects menu**, there is an option to open a project. **This is not the same as ther other "Open" options you see!** Use that instead of the more obvious "open a file" command so that you don't have to re-teach DrJava about the Karel the Robot files.
 
 
 ## Documentation

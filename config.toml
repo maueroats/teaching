@@ -13,24 +13,37 @@ home = [ "HTML", "RSS", "JSON"]
 section = [ "HTML", "RSS" ]
 
 [[menu.shortcuts]]
+pre = "<h3>Clubs and Groups</h3>"
+name = "FTC Robotics"
+url = "/ftc"
+weight = 14
+
+[[menu.shortcuts]]
+name = "ECS Teachers"
+url = "/ecs"
+weight = 15
+
+[[menu.shortcuts]]
 pre = "<h3>Other</h3>"
 name = "Art Gallery"
 url = "/art-gallery"
+weight = 20
 
 [[menu.shortcuts]]
 name = "Biography"
 url = "/biography"
+weight = 25
 
 [[menu.shortcuts]]
 pre = "<h3>External</h3>"
 name = "<i class='fa fa-calendar' aria-hidden='true'></i>AP Exam Calendar 2018"
 identifier = "apcal"
 url = "https://apcentral.collegeboard.org/courses/exam-dates-and-fees"
-weight = 5
+weight = 50
 
 [[menu.shortcuts]]
 name = "Whitney Young"
 identifier = "wy"
 url = "http://wyoung.org"
-weight = 10
+weight = 100
 

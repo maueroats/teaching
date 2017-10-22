@@ -88,7 +88,7 @@
 	"title": "Essentials",
 	"tags": [],
 	"description": "Links to the repository and documentation for the Karel the Robot unit.",
-	"content": " Getting started  GitHub Classroom\nhttps://classroom.github.com/a/bOX4Z5jT  You should end up with a new repository which has all of the Karel starter files and also lets you save your files.\nNote the link in the green box!\n Git clone\nIn this step you download your new repository to the computer you are working on. Start \u0026ldquo;Git Bash\u0026rdquo; or type the following in \u0026ldquo;Terminal\u0026rdquo; on your computer.\ngit clone [paste link to your repository here]  One time settings\nIn this step you run my one-time setup code that links you to the original repository. You need to actually be inside the directory/folder that you just cloned for this command to work.\ncd karel-* ./one-time  This command currently:\n Sets the editor to \u0026ldquo;nano\u0026rdquo;, a reasonable beginner\u0026rsquo;s editor. Adds a remote repository containing the AP CS \u0026ldquo;master\u0026rdquo; code so you can get updates.  Alternative:\ncd karel-* git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git   Saving your work I have a save-it script that makes it easy for you to save and push your changes in one step:\ncd karel-* ./save-it \u0026#39;Optional message\u0026#39;  You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push origin master  The meaning of these commands is:\n git add  -A: I intend to save every new file.  git commit: Save every change to a special place on the current computer.  -a: Save all files that are known (changed, deleted, or new and already added). -m \u0026lsquo;Save\u0026rsquo;: The required message for the save is just the word \u0026ldquo;Save\u0026rdquo;. Pros are more descriptive.  git push: Send the changes to GitHub so they are stored online and I can get them from other computers.  DrJava Getting DrJava On the lab computers, DrJava is on the Desktop in the Computer Science folder. Unfortunately it is not in the windows menu at this time.\nAt home you will need to download DrJava. Mac OS X users read the instructions carefully; do not download the disk image (\u0026ldquo;.dmg\u0026rdquo;) file.\nRunning DrJava Open karelBasic.drjava.\nIn the Projects menu, there is an option to open a project. Use that instead of the more obvious \u0026ldquo;open a file\u0026rdquo; command so that you don\u0026rsquo;t have to re-teach DrJava about the Karel the Robot files.\nDocumentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  "
+	"content": " Getting started  GitHub Classroom\nhttps://classroom.github.com/a/bOX4Z5jT  You should end up with a new repository which has all of the Karel starter files and also lets you save your files.\nNote the link in the green box!\n Git clone\nIn this step you download your new repository to the computer you are working on. Start \u0026ldquo;Git Bash\u0026rdquo; or type the following in \u0026ldquo;Terminal\u0026rdquo; on your computer.\ngit clone paste-link-to-your-repository-here  One time settings\nIn this step you run my one-time setup code that links you to the original repository. You need to actually be inside the directory/folder that you just cloned for this command to work.\ncd karel-* ./one-time  This command currently:\n Sets the editor to \u0026ldquo;nano\u0026rdquo;, a reasonable beginner\u0026rsquo;s editor. Adds a remote repository containing the AP CS \u0026ldquo;master\u0026rdquo; code so you can get updates.  Alternative:\ncd karel-* git remote add upstream https://github.com/2017-2018-wy-ap-cs/apcs-karel.git git config core.editor nano   Saving your work I have a save-it script that makes it easy for you to save and push your changes in one step:\ncd karel-* ./save-it \u0026#39;Optional message\u0026#39;  You can use the save-it script or type the following commands:\ngit add -A git commit -a -m \u0026#39;Save\u0026#39; git push -u origin master  The meaning of these commands is:\n git add  -A: I intend to save every new file.  git commit: Save every change to a special place on the current computer.  -a: Save all files that are known (changed, deleted, or new and already added). -m \u0026lsquo;Save\u0026rsquo;: The required message for the save is just the word \u0026ldquo;Save\u0026rdquo;. Pros are more descriptive.  git push: Send the changes to GitHub so they are stored online and I can get them from other computers.  DrJava Getting DrJava On the lab computers, DrJava is on the Desktop in the Computer Science folder. Unfortunately it is not in the windows menu at this time.\nAt home you will need to download DrJava. Mac OS X users read the instructions carefully; do not download the disk image (\u0026ldquo;.dmg\u0026rdquo;) file.\nRunning DrJava Open karelBasic.drjava.\nIn the Projects menu, there is an option to open a project. This is not the same as ther other \u0026ldquo;Open\u0026rdquo; options you see! Use that instead of the more obvious \u0026ldquo;open a file\u0026rdquo; command so that you don\u0026rsquo;t have to re-teach DrJava about the Karel the Robot files.\nDocumentation  Karel the Robot documentation online.\n JUnit documentation online.\n Hamcrest matcher libary documentation online.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/ui/",
@@ -117,6 +117,13 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/git/getting-started/",
+	"title": "Getting Started",
+	"tags": ["git"],
+	"description": "",
+	"content": " Tutorials  A command line intro to git in 15 minutes.\n Git for Beginners.\n Beautiful and simple Git Guide.\n  Local instructions  Make an account on GitHub. Use your CPS email.\n Apply for an education account.\n Join our class in the GitHub Classroom. (Tell the teacher your username and get added manually.)\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/karel/ch1+2/",
@@ -172,7 +179,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  \n 2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
@@ -187,6 +194,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/git/everyday/",
+	"title": "Everyday Git",
+	"tags": ["git"],
+	"description": "",
+	"content": " Everyday Commands All of these need to be run in the karel-* directory:\n ./save-it ./update: git pull from the upstream repository. git pull  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/git/",
@@ -364,6 +378,13 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ftc/",
+	"title": "Robophins 3216",
+	"tags": [],
+	"description": "",
+	"content": "This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\n 2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.   2018 Official Q\u0026amp;A. Limited responses to official queries.\n Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git  Make sure to get added to the Robophins organization on github so you can push your changes!\n  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/karel/ch3/",
 	"title": "Karel 3",
 	"tags": [],
@@ -390,13 +411,6 @@
 	"tags": [],
 	"description": "Making random numbers.  Testing functions that use random numbers.",
 	"content": "  Random numbers: (random 3) gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the code below and you should get different answers each time. racket (random 10) (random 10) (random 10)   Random ranges We use the phrase \u0026ldquo;from 10 to 200\u0026rdquo; or \u0026ldquo;between 10 and 200\u0026rdquo; to both mean all of the integers n so that 10\u0026lt;=n\u0026lt;=200.\n How many numbers are there from 10 to 200, inclusive? It\u0026rsquo;s easy to make a mistake. My favorite method is to subtract a number to make the bottom of the range start counting at one.\nBe sure you understand the previous paragraph before reading on!\nWhen you already have a random number from 0 to 50, how can you get a random number between 30 and 80?\nUsing randomness It is hard to test random functions, so write non-random versions first, and use the randomness as an input. Test the non-random functions!\nExample: Make an ellipse of a random height 150-250 pixels tall, and twice as wide.\n; make-ellipse-nr: string(color) number(height) -\u0026gt; image; purpose: make an ellipse height units tall and 2*height units wide in the given color(define(make-ellipse-nrcolorheight)(ellipse(*2height)height\u0026#34;solid\u0026#34;color)); see below for check-expect(define(make-ellipsecolor)(make-ellipse-nrcolor(+150(random101))))   Test your nonrandom function well!   "
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/git/getting-started/",
-	"title": "Getting Started",
-	"tags": ["git"],
-	"description": "",
-	"content": " Tutorials  A command line intro to git in 15 minutes.\n Git for Beginners.\n Beautiful and simple Git Guide.\n  Local instructions  Make an account on GitHub. Use your CPS email.\n Apply for an education account.\n Join our class in the GitHub Classroom. (Tell the teacher your username and get added manually.)\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-2/",
@@ -606,7 +620,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 3 modified Thu 10-19  Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Intermediate Computer Science Recent Changes    Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Connect Four Rubric modified Fri 10-13  Intermediate Computer Science Recent Changes    Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
