@@ -179,7 +179,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  \n 2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
@@ -383,6 +383,13 @@
 	"tags": [],
 	"description": "",
 	"content": "This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\n 2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.   2018 Official Q\u0026amp;A. Limited responses to official queries.\n Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git  Make sure to get added to the Robophins organization on github so you can push your changes!\n  "
+},
+{
+	"uri": "http://wy-cs.info/ecs/",
+	"title": "Exploring CS (Teachers)",
+	"tags": [],
+	"description": "",
+	"content": " This page is dedicated to teacher links for Exploring Computer Science.\nWeb Hosting Platforms  Cloud9  Cost: $1/teacher/month = basically free. Live display of website results. Easy to upload images. (\u0026ldquo;Upload local files\u0026hellip;\u0026rdquo;) Interface is busy (lots of features, maybe too many for a beginner).   Editors: Mac  TextMate 2.0beta. Tested and works fine on modern Mac OS (10.12) as well as older.  Light weight (13MB) Can run off a flash drive; no Administrator required. HTML mode highlights and saves as \u0026ldquo;.html\u0026rdquo; automatically.   Editors: Windows  NotePad++.  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/karel/ch3/",

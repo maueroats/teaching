@@ -1,7 +1,7 @@
 ---
 title: "Exploring CS (Teachers)"
 date: 2017-10-21T17:53:33-05:00
-draft: true
+draft: false
 #type: slide
 #theme: white
 ---
