@@ -392,11 +392,25 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ftc/registration/",
+	"title": "Registration",
+	"tags": [],
+	"description": "",
+	"content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - This is a walkthrough of the registration process. Follow it! Online registration instructions. Pretty dense reading. Printable form. If all else fails, print this form and turn it in.  "
+},
+{
+	"uri": "http://wy-cs.info/ftc/t-shirt/",
+	"title": "Robophins T-Shirts",
+	"tags": [],
+	"description": "",
+	"content": " Cost Order going in Friday October 27. Sign up and give $15 to Doc Mo before Friday.\nFront  Back  "
+},
+{
 	"uri": "http://wy-cs.info/ftc/",
 	"title": "Robophins 3216",
 	"tags": [],
 	"description": "",
-	"content": "This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\n 2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.   2018 Official Q\u0026amp;A. Limited responses to official queries.\n Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git  Make sure to get added to the Robophins organization on github so you can push your changes!\n  "
+	"content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nGame Resources  2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.   2018 Official Q\u0026amp;A. Limited responses to official queries.\n Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git  Make sure to get added to the Robophins organization on github so you can push your changes!\n  "
 },
 {
 	"uri": "http://wy-cs.info/ecs-teach/",
@@ -658,14 +672,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

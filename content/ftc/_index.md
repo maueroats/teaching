@@ -8,6 +8,9 @@ draft: false
 
 This is the web page for the [First Tech Challenge](https://www.firstinspires.org/robotics/ftc) team 3216, Robophins from [Whitney Young](http://wyoung.org/).
 
+
+## Game Resources
+
 * [2018 Relic Recovery Resources](https://www.firstinspires.org/resource-library/ftc/game-and-season-info)
 
     - Rules manual: [part 1](https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/2017-2018/game-manual-part-1.pdf) and [part 2](https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/2017-2018/game-manual-part-2.pdf).
