@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.29" />
-    <meta name="description" content="">
+    <meta name="description" content="Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.">
 
 
-    <title>Exploring CS (Teachers) :: WY Computer Science</title>
+    <title>Karel 4 :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,12 +29,9 @@
     
 
     
-<link href="http://wy-cs.info/ecs/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
-<link href="http://wy-cs.info/ecs/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
-
 
   </head>
-  <body class="" data-url="/ecs/">
+  <body class="" data-url="/ap-cs/karel/ch4/">
     <nav id="sidebar" class="">
 
 
@@ -83,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -94,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1234,7 +1231,7 @@
   
     
     <li data-nav-id="/ap-cs/karel/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1245,7 +1242,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1332,6 +1329,26 @@
       ">
         <a href="/ap-cs/karel/ch3/">
         <span>Karel 3</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/karel/ch4/" class="dd-item
+     active
+      ">
+        <a href="/ap-cs/karel/ch4/">
+        <span>Karel 4</span> 
         
         </a></li>
      
@@ -2375,12 +2392,12 @@
  
   
     
-    <li data-nav-id="/ecs/" class="dd-item 
-        parent
-        active
+    <li data-nav-id="/ecs-teach/" class="dd-item 
+        
+        
         
         ">
-      <a href="/ecs/">
+      <a href="/ecs-teach/">
         <span>Exploring CS (Teachers)</span>
 
         
@@ -2407,7 +2424,7 @@
             
                 <li class="" role="">
                     
-                    <a href="/ecs">ECS Teachers</a>
+                    <a href="/ecs-teach">ECS Teachers</a>
                     
                 </li>
             
@@ -2472,7 +2489,17 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > Exploring CS (Teachers)
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/karel/'>Karel the Robot</a> > Karel 4
+
+ 
+
+ 
 
  
 
@@ -2481,16 +2508,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#web-hosting-platforms">Web Hosting Platforms</a></li>
-<li><a href="#editors-mac">Editors: Mac</a></li>
-<li><a href="#editors-windows">Editors: Windows</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -2499,55 +2517,35 @@
         
         <div id="body-inner">
           
-            <h1>Exploring CS (Teachers)</h1>
+            <h1>Karel 4</h1>
           
 
 
 
 
+<ul>
+<li><p>Monday, October 23, 2017: Read Section 4.1-4.3 and do Exercise 3.5 (DiamondBot) with a Choreographer robot.</p></li>
 
-
-
-
-<p>This page is dedicated to <em>teacher links</em> for Exploring Computer Science.</p>
-
-<h2 id="web-hosting-platforms">Web Hosting Platforms</h2>
+<li><p>Tuesday October 24, 2017:</p>
 
 <ul>
-<li><a href="https://c9.io/">Cloud9</a>
+<li>Class: make a robot (team) to create <a href="4-2b-Abstract-II-End.png">my figure 4.2b ending</a> from the <a href="https://wy-ap-cs.blogspot.com/2014/09/chapter-4.html">old blog</a>. Then make a robot (team) to pick up <a href="4-2b-Abstract-II-Start.png">my figure 4.2b start</a>.</li>
+<li>Homework: Read Section 4.4.
 
 <ul>
-<li>Cost: $1/teacher/month = basically free.</li>
-<li>Live display of website results.</li>
-<li>Easy to upload images. (&ldquo;Upload local files&hellip;&rdquo;)</li>
-<li>Interface is busy (lots of features, maybe too many for a beginner).</li>
+<li>What is the function of an interface?</li>
+<li>What does delegation mean in cs?
+<br /></li>
 </ul></li>
-</ul>
-
-<h2 id="editors-mac">Editors: Mac</h2>
-
-<ul>
-<li><a href="https://macromates.com/">TextMate 2.0beta</a>. Tested and works fine on modern Mac OS (10.12) as well as older.
-
-<ul>
-<li>Light weight (13MB)</li>
-<li>Can run off a flash drive; no Administrator required.</li>
-<li>HTML mode highlights and saves as &ldquo;.html&rdquo; automatically.</li>
 </ul></li>
-</ul>
 
-<h2 id="editors-windows">Editors: Windows</h2>
-
-<ul>
-<li><a href="https://notepad-plus-plus.org/">NotePad++</a>.</li>
+<li><p>Read: <a href="https://wy-ap-cs.blogspot.com/2014/09/chapter-4.html">old notes, still good</a>.</p></li>
 </ul>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -2586,8 +2584,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -2603,6 +2599,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3288,11 +3287,28 @@
                     
             
         
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
                     
+                    
+                    
+
+                    
                         
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3302,6 +3318,9 @@
                     
 
                     
+            
+        
+                    
                         
             
             
@@ -3354,6 +3373,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -3377,6 +3397,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -4020,7 +4043,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -4040,10 +4062,10 @@
 
 
         
-            <a class="nav nav-prev" href="/ftc/" title="Robophins 3216"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/karel/ch3/" title="Karel 3"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/" title="AP CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/" title="Intermediate CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

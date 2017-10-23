@@ -2,8 +2,10 @@
 title: "Karel 3"
 date: 2017-10-19T10:54:10-05:00
 draft: false
+weight: 30
 #type: slide
 #theme: white
+description: "Short list of updates and exercises for Chapter 3."
 ---
 
 ## Adding new abilities to robots

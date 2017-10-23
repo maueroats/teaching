@@ -188,6 +188,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/karel/ch3/</loc>
+    <lastmod>2017-10-19T10:54:10-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03/puzzle-opener/</loc>
     <lastmod>2017-09-22T09:55:25-05:00</lastmod>
   </url>
@@ -210,6 +215,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03art/</loc>
     <lastmod>2017-09-27T19:52:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/karel/ch4/</loc>
+    <lastmod>2017-10-23T10:17:59-05:00</lastmod>
   </url>
   
   <url>
@@ -278,13 +288,8 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/ecs/</loc>
+    <loc>http://wy-cs.info/ecs-teach/</loc>
     <lastmod>2017-10-21T17:53:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/karel/ch3/</loc>
-    <lastmod>2017-10-19T10:54:10-05:00</lastmod>
   </url>
   
   <url>

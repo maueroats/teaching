@@ -59,5 +59,16 @@ World.setSize(10,21); World.setVisible(true);  Grab the lower right corner of th
  I have updated the AP CS master repository with several extra commands:</description>
     </item>
     
+    <item>
+      <title>Karel 4</title>
+      <link>http://wy-cs.info/ap-cs/karel/ch4/</link>
+      <pubDate>Mon, 23 Oct 2017 10:17:59 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/karel/ch4/</guid>
+      <description>Monday, October 23, 2017: Read Section 4.1-4.3 and do Exercise 3.5 (DiamondBot) with a Choreographer robot.
+ Tuesday October 24, 2017:
+ Class: make a robot (team) to create my figure 4.2b ending from the old blog. Then make a robot (team) to pick up my figure 4.2b start. Homework: Read Section 4.4.  What is the function of an interface? What does delegation mean in cs?    Read: old notes, still good.</description>
+    </item>
+    
   </channel>
 </rss>

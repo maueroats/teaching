@@ -20,7 +20,7 @@ weight = 14
 
 [[menu.shortcuts]]
 name = "ECS Teachers"
-url = "/ecs"
+url = "/ecs-teach"
 weight = 15
 
 [[menu.shortcuts]]

@@ -74,7 +74,11 @@ The meaning of these commands is:
 On the lab computers, DrJava is on the Desktop in the Computer Science
 folder. Unfortunately it is not in the windows menu at this time.
 
-At home you will need to download [DrJava](http://drjava.org/). Mac OS X users read the instructions carefully; do not download the disk image (".dmg") file.
+At home you will need to download [DrJava](http://drjava.org/). 
+
+* Mac OS X: read the instructions carefully; do not download the disk image (".dmg") file.
+* Windows 10: install [Oracle Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and DrJava should work fine. You may need to uninstall other versions of Java.
+
 
 ### Running DrJava
 

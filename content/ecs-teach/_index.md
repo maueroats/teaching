@@ -15,7 +15,14 @@ This page is dedicated to _teacher links_ for Exploring Computer Science.
     - Live display of website results.
     - Easy to upload images. ("Upload local files...")
     - Interface is busy (lots of features, maybe too many for a beginner).
+    - Many languages.
 
+* [Repl.it](https://repl.it)
+    - Cost: 
+    - No upload of images.
+    - Nice simple interface for beginners.
+    - Many languages including Python with turtle graphics.
+    
 ## Editors: Mac
 
 * [TextMate 2.0beta](https://macromates.com/). Tested and works fine on modern Mac OS (10.12) as well as older. 
