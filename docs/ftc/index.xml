@@ -31,5 +31,14 @@
 Front  Back  </description>
     </item>
     
+    <item>
+      <title>Learning Resources</title>
+      <link>http://wy-cs.info/ftc/learning/</link>
+      <pubDate>Mon, 23 Oct 2017 15:03:17 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ftc/learning/</guid>
+      <description> Servos and Pivots  </description>
+    </item>
+    
   </channel>
 </rss>

@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ftc/registration/",
+	"title": "Registration",
+	"tags": [],
+	"description": "",
+	"content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - This is a walkthrough of the registration process. Follow it! Online registration instructions. Pretty dense reading. Printable form. If all else fails, print this form and turn it in.  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/git/getting-started/",
 	"title": "Getting Started",
 	"tags": ["git"],
@@ -194,6 +201,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ftc/t-shirt/",
+	"title": "Robophins T-Shirts",
+	"tags": [],
+	"description": "",
+	"content": " Cost Order going in Friday October 27. Sign up and give $15 to Doc Mo before Friday.\nFront  Back  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/git/everyday/",
@@ -361,7 +375,7 @@
 	"title": "7. Numbers",
 	"tags": [],
 	"description": "",
-	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+53)(/137); thirteen divided by seven(*112)(-91); nine minus one(-8)(quotient219127)(remainder219127)  Exponents, square root, squaring:\n(expt1.0195); 1.01 to the 95 power is about 2.57(sqrt9); square root of 9 is three(sqr1241); when you square 1241 you get 1540081  Inexact answers, checking with tolerance\n\u0026gt;(sqrt5); about 2.236#i2.23606797749979  The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n(check-within(sqrt5)2.2360.001)  Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.\n\u0026gt;pi#i3.141592653589793  Maximum, minimum, absolute value\n(max0-4); ==\u0026gt; 0(min255300); ==\u0026gt; 255(abs-10); ==\u0026gt; 10  Getting rid of fractions. The best generic method to use is real-\u0026gt;int. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).\n(real-\u0026gt;int0.5)(real-\u0026gt;int1.5)(real-\u0026gt;int2.5)(ceiling1.2)(floor1.7)(round1.6)   Further Information  Exercises 3  \n Max and min slides  Slideshow of exercises to learn max, min, abs, and random.\n Randomness  Making random numbers. Testing functions that use random numbers.\n Exercises 2  Exercises working with number functions.\n Exercises 1  Exercises.\n"
+	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+53)(/137); thirteen divided by seven(*112)(-91); nine minus one(-8)(quotient219127)(remainder219127)  Exponents, square root, squaring:\n(expt1.0195); 1.01 to the 95 power is about 2.57(sqrt9); square root of 9 is three(sqr1241); when you square 1241 you get 1540081  Inexact answers, checking with tolerance\n\u0026gt;(sqrt5); about 2.236#i2.23606797749979  The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n(check-within(sqrt5)2.2360.001)  Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.\n\u0026gt;pi#i3.141592653589793  Maximum, minimum, absolute value\n(max0-4); ==\u0026gt; 0(min255300); ==\u0026gt; 255(abs-10); ==\u0026gt; 10  Getting rid of fractions. The best generic method to use is real-\u0026gt;int. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).\n(real-\u0026gt;int0.5)(real-\u0026gt;int1.5)(real-\u0026gt;int2.5)(ceiling1.2)(floor1.7)(round1.6)   Further Information  More Practice  \n Exercises 3  \n Max and min slides  Slideshow of exercises to learn max, min, abs, and random.\n Randomness  Making random numbers. Testing functions that use random numbers.\n Exercises 2  Exercises working with number functions.\n Exercises 1  Exercises.\n"
 },
 {
 	"uri": "http://wy-cs.info/resources/",
@@ -369,6 +383,13 @@
 	"tags": [],
 	"description": "",
 	"content": " These resources may be useful throughout the year.\n Syllabus for all classes Git program information (work in progress)  Course-specific information  AP Computer Science  Syllabus extra info  Intermediate Computer Science  Syllabus extra info WeScheme - when you cannot install software   "
+},
+{
+	"uri": "http://wy-cs.info/ftc/learning/",
+	"title": "Learning Resources",
+	"tags": [],
+	"description": "",
+	"content": " Servos and Pivots  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/usaco/",
@@ -392,18 +413,11 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
-	"uri": "http://wy-cs.info/ftc/registration/",
-	"title": "Registration",
+	"uri": "http://wy-cs.info/intermediate-cs/ch07/more-practice/",
+	"title": "More Practice",
 	"tags": [],
 	"description": "",
-	"content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - This is a walkthrough of the registration process. Follow it! Online registration instructions. Pretty dense reading. Printable form. If all else fails, print this form and turn it in.  "
-},
-{
-	"uri": "http://wy-cs.info/ftc/t-shirt/",
-	"title": "Robophins T-Shirts",
-	"tags": [],
-	"description": "",
-	"content": " Cost Order going in Friday October 27. Sign up and give $15 to Doc Mo before Friday.\nFront  Back  "
+	"content": " Tuesday Oct 24 Exercises 7.7.{18,20,22} on page 123 (PDF page 134). These are:\n convert-3-digits top-half progress-bar  "
 },
 {
 	"uri": "http://wy-cs.info/ftc/",
@@ -648,7 +662,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 4 modified Mon 10-23  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Intermediate Computer Science Recent Changes    Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Animation Portfolio modified Fri 10-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel 4 modified Mon 10-23  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Intermediate Computer Science Recent Changes    More Practice modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -672,14 +686,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

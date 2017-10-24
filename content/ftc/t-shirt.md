@@ -4,6 +4,7 @@ date: 2017-10-23T13:49:41-05:00
 draft: false
 #type: slide
 #theme: white
+weight: 20
 ---
 
 ## Cost
