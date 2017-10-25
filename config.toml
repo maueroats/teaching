@@ -9,8 +9,9 @@ pygmentsStyle = "monokailight"
 pygmentsCodeFences = true
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
-section = [ "HTML", "RSS" ]
+# removed RSS from both of the following
+home = [ "HTML", "JSON"]
+section = [ "HTML" ]
 
 [[menu.shortcuts]]
 pre = "<h3>Clubs and Groups</h3>"

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.29" />
+    <meta name="generator" content="Hugo 0.30.2" />
     <meta name="description" content="Practice writing big-bang code and identifying common errors.">
 
 
@@ -1911,6 +1911,66 @@
           
         
           
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch06/daily/2017-10-12/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch06/daily/2017-10-12/">
+        <span>2017-10-12</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch06/daily/2017-10-10/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch06/daily/2017-10-10/">
+        <span>2017-10-10</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch06/daily/animation-practice/" class="dd-item
+     active
+      ">
+        <a href="/intermediate-cs/ch06/daily/animation-practice/">
+        <span>Animation Practice</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -2595,21 +2655,19 @@
 <p>What is wrong?</p>
 
 <p>The variable <a href="http://img10.deviantart.net/cb20/i/2009/014/2/4/indoor_scene_by_thekeyofe.png">indoors</a> is an indoor picture.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#00a8c8">define</span><span style=""> </span><span style="color:#111">indoors</span><span style=""> </span><span style="color:#00a8c8">...</span><span style="color:#111">)</span><span style="">
-</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#00a8c8">define</span><span style=""> </span><span style="color:#111">model</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">overlay</span><span style=""> </span><span style="color:#111">pic:stick-figure</span><span style=""> 
-</span><span style="">                       </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">empty-scene</span><span style=""> </span><span style="color:#ae81ff">300</span><span style=""> </span><span style="color:#ae81ff">200</span><span style="color:#111">)))</span><span style="">
-</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#00a8c8">define</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">tick-h</span><span style=""> </span><span style="color:#111">img</span><span style="color:#111">)</span><span style="">
-</span><span style="">   </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">overlay</span><span style=""> </span><span style="color:#111">img</span><span style=""> </span><span style="color:#111">indoors</span><span style="color:#111">))</span></code></pre>
-</div>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">indoors</span> <span style="color:#00a8c8">...</span><span style="color:#111">)</span>
+<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">model</span> <span style="color:#111">(</span><span style="color:#111">overlay</span> <span style="color:#111">pic:stick-figure</span> 
+                       <span style="color:#111">(</span><span style="color:#111">empty-scene</span> <span style="color:#ae81ff">300</span> <span style="color:#ae81ff">200</span><span style="color:#111">)))</span>
+<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">tick-h</span> <span style="color:#111">img</span><span style="color:#111">)</span>
+   <span style="color:#111">(</span><span style="color:#111">overlay</span> <span style="color:#111">img</span> <span style="color:#111">indoors</span><span style="color:#111">))</span></code></pre></div>
 <h2 id="errors-2">Errors #2</h2>
 
 <p>What is wrong?</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#00a8c8">define</span><span style=""> </span><span style="color:#111">start</span><span style=""> </span><span style="color:#111">pic:stick-figure</span><span style="color:#111">)</span><span style="">
-</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#00a8c8">define</span><span style=""> </span><span style="color:#111">tick-h</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">beside</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">square</span><span style=""> </span><span style="color:#ae81ff">10</span><span style=""> </span><span style="color:#d88200">&#34;solid&#34;</span><span style=""> </span><span style="color:#d88200">&#34;white&#34;</span><span style="color:#111">)</span><span style=""> </span><span style="color:#111">start</span><span style="color:#111">))</span><span style="">
-</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">big-bang</span><span style=""> </span><span style="color:#111">start</span><span style="">
-</span><span style="">          </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">on-draw</span><span style=""> </span><span style="color:#111">show-it</span><span style="color:#111">)</span><span style="">
-</span><span style="">          </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">on-tick</span><span style=""> </span><span style="color:#111">tick-h</span><span style="color:#111">)</span></code></pre>
-</div>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">start</span> <span style="color:#111">pic:stick-figure</span><span style="color:#111">)</span>
+<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">tick-h</span> <span style="color:#111">(</span><span style="color:#111">beside</span> <span style="color:#111">(</span><span style="color:#111">square</span> <span style="color:#ae81ff">10</span> <span style="color:#d88200">&#34;solid&#34;</span> <span style="color:#d88200">&#34;white&#34;</span><span style="color:#111">)</span> <span style="color:#111">start</span><span style="color:#111">))</span>
+<span style="color:#111">(</span><span style="color:#111">big-bang</span> <span style="color:#111">start</span>
+          <span style="color:#111">(</span><span style="color:#111">on-draw</span> <span style="color:#111">show-it</span><span style="color:#111">)</span>
+          <span style="color:#111">(</span><span style="color:#111">on-tick</span> <span style="color:#111">tick-h</span><span style="color:#111">)</span></code></pre></div>
 
 <footer class=" footline" >
 	
@@ -4216,16 +4274,14 @@
     <script src="/js/clipboard.min.js"></script>
 <script src="/js/featherlight.min.js"></script>
 <script src="/js/html5shiv-printshiv.min.js"></script>
-<script src="/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+
 <script src="/js/modernizr.custom.71422.js"></script>
-<script src="/js/learn.js"></script>
-<script src="/js/hugo-learn.js"></script>
 
 
 <link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
 <script src="/mermaid/mermaid.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
+
     
 
   </body>

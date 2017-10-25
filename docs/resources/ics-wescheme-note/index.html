@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.29" />
+    <meta name="generator" content="Hugo 0.30.2" />
     <meta name="description" content="Notes on how WeScheme is different from DrRacket.">
 
 
@@ -2632,19 +2632,17 @@
 
 <li><p>(<strong>Chapter 3</strong>)
 Instead of copy and pasting in a picture, you need to copy the link for the image and use <code>bitmap/url</code> like this:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">bitmap/url</span><span style=""> </span><span style="color:#d88200">&#34;https://www.what-dog.net/Images/faces2/main004.jpg&#34;</span><span style="color:#111">)</span></code></pre>
-</div></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">bitmap/url</span> <span style="color:#d88200">&#34;https://www.what-dog.net/Images/faces2/main004.jpg&#34;</span><span style="color:#111">)</span></code></pre></div></li>
 
 <li><p>(<strong>Chapter 6</strong>) Inside <code>big-bang</code> you need to use the phrase <code>to-draw</code> instead of <code>on-draw</code> that we use in DrRacket.
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#00a8c8">define</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">draw-handler</span><span style=""> </span><span style="color:#111">model</span><span style="color:#111">)</span><span style=""> 
-</span><span style="">    </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">overlay</span><span style=""> </span><span style="color:#111">model</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">empty-scene</span><span style=""> </span><span style="color:#ae81ff">300</span><span style=""> </span><span style="color:#ae81ff">200</span><span style="color:#111">)))</span><span style="">
-</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#00a8c8">define</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">tick-handler</span><span style=""> </span><span style="color:#111">model</span><span style="color:#111">)</span><span style=""> 
-</span><span style="">    </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">scale</span><span style=""> </span><span style="color:#ae81ff">1.01</span><span style=""> </span><span style="color:#111">model</span><span style="color:#111">))</span><span style="">
-</span><span style="">
-</span><span style=""></span><span style="color:#111">(</span><span style=""></span><span style="color:#111">big-bang</span><span style=""> </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">circle</span><span style=""> </span><span style="color:#ae81ff">10</span><span style=""> </span><span style="color:#d88200">&#34;solid&#34;</span><span style=""> </span><span style="color:#d88200">&#34;green&#34;</span><span style="color:#111">)</span><span style="">
-</span><span style="">          </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">on-tick</span><span style=""> </span><span style="color:#111">tick-handler</span><span style="color:#111">)</span><span style="">
-</span><span style="background-color:#e1e1e1;display:block;width:100%"><span style="">          </span><span style="color:#111">(</span><span style=""></span><span style="color:#111">to-draw</span><span style=""> </span><span style="color:#111">draw-handler</span><span style="color:#111">))</span></span></code></pre>
-</div></p></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">draw-handler</span> <span style="color:#111">model</span><span style="color:#111">)</span> 
+    <span style="color:#111">(</span><span style="color:#111">overlay</span> <span style="color:#111">model</span> <span style="color:#111">(</span><span style="color:#111">empty-scene</span> <span style="color:#ae81ff">300</span> <span style="color:#ae81ff">200</span><span style="color:#111">)))</span>
+<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">tick-handler</span> <span style="color:#111">model</span><span style="color:#111">)</span> 
+    <span style="color:#111">(</span><span style="color:#111">scale</span> <span style="color:#ae81ff">1.01</span> <span style="color:#111">model</span><span style="color:#111">))</span>
+
+<span style="color:#111">(</span><span style="color:#111">big-bang</span> <span style="color:#111">(</span><span style="color:#111">circle</span> <span style="color:#ae81ff">10</span> <span style="color:#d88200">&#34;solid&#34;</span> <span style="color:#d88200">&#34;green&#34;</span><span style="color:#111">)</span>
+          <span style="color:#111">(</span><span style="color:#111">on-tick</span> <span style="color:#111">tick-handler</span><span style="color:#111">)</span>
+<span style="background-color:#e1e1e1;display:block;width:100%">          <span style="color:#111">(</span><span style="color:#111">to-draw</span> <span style="color:#111">draw-handler</span><span style="color:#111">))</span></span></code></pre></div></p></li>
 </ul>
 
 
@@ -4245,16 +4243,14 @@ Instead of copy and pasting in a picture, you need to copy the link for the imag
     <script src="/js/clipboard.min.js"></script>
 <script src="/js/featherlight.min.js"></script>
 <script src="/js/html5shiv-printshiv.min.js"></script>
-<script src="/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+
 <script src="/js/modernizr.custom.71422.js"></script>
-<script src="/js/learn.js"></script>
-<script src="/js/hugo-learn.js"></script>
 
 
 <link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
 <script src="/mermaid/mermaid.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
+
     
 
   </body>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.29" />
+    <meta name="generator" content="Hugo 0.30.2" />
     <meta name="description" content="Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.">
 
 
@@ -1609,6 +1609,66 @@
           
         
           
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-1/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-1/">
+        <span>Art Period 1</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-5/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-5/">
+        <span>Art Period 5</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/ch03art/period-7/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch03art/period-7/">
+        <span>Art Period 7</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -2544,7 +2604,15 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#quiz-4-1-4-4-on-friday">Quiz 4.1-4.4 on Friday</a></li>
+<li><a href="#additional-notes">Additional Notes</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -2559,10 +2627,12 @@
 
 
 
+
+
 <ul>
 <li><p>Monday, October 23, 2017: Read Section 4.1-4.3 and do Exercise 3.5 (DiamondBot) with a Choreographer robot.</p></li>
 
-<li><p>Tuesday October 24, 2017:</p>
+<li><p>Tuesday October 24, 2017: Section 4.2 review (abstract class, override methods).</p>
 
 <ul>
 <li>Class: make a robot (team) to create <a href="4-2b-Abstract-II-End.png">my figure 4.2b ending</a> from the <a href="https://wy-ap-cs.blogspot.com/2014/09/chapter-4.html">old blog</a>. Then make a robot (team) to pick up <a href="4-2b-Abstract-II-Start.png">my figure 4.2b start</a>.</li>
@@ -2570,12 +2640,46 @@
 
 <ul>
 <li>What is the function of an interface?</li>
-<li>What does delegation mean in cs?
-<br /></li>
+<li>What does delegation mean in cs?</li>
 </ul></li>
 </ul></li>
 
+<li><p>Wednesday, October 25, 2017: Section 4.4 (interfaces)</p>
+
+<ul>
+<li>Class: review box on page 76 (purpose of interface, no methods in an interface)</li>
+<li>Class: review box on page 79 (references can point anywhere)</li>
+<li>Class: &ldquo;<a href="https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming)">delegation</a>&rdquo;.</li>
+<li>Assignment: <code>Forester</code>. The Forester plants trees and bushes. In the robot world, you see a top view of the forest - tall plants are represented by lots of beepers, short plants are represented by few beepers in a pile. Oak trees are tall (7 beepers in a location). Maple trees are medium height (3 beepers), and bushes are only 1 beeper tall but they take up four locations instead of one.
+
+<ol>
+<li>Make a Forester interface that has the <code>doPlanting()</code> method.</li>
+<li>Implement the Forester interface in <code>OakPlanter</code>, <code>MaplePlanter</code> and <code>BushPlanter</code>.</li>
+<li>Demonstrate with a short program that plants two oak trees 5 squares apart, and a maple next to a bush.</li>
+</ol></li>
+</ul></li>
+</ul>
+
+<h2 id="quiz-4-1-4-4-on-friday">Quiz 4.1-4.4 on Friday</h2>
+
+<p>You should be able to demonstrate the following skills from Sections 4.1-4.4.</p>
+
+<ul>
+<li>Create a new class (including constructor from memory).</li>
+<li>Instance variables to remember helper robots.</li>
+<li>Abstract class, then concrete implementation to fill in missing parts.</li>
+<li>Interface: create and implement.</li>
+<li>Comparison of abstract class and interface.
+<br /></li>
+</ul>
+
+<h2 id="additional-notes">Additional Notes</h2>
+
+<ul>
 <li><p>Read: <a href="https://wy-ap-cs.blogspot.com/2014/09/chapter-4.html">old notes, still good</a>.</p></li>
+
+<li><p>Android programming has an <a href="http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.1.1_r1/android/database/AbstractCursor.java#AbstractCursor">AbstractCursor</a> class that handles many commom behaviors. Notice that some of the methods are not there, like:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"> <span style="color:#00a8c8">abstract</span> <span style="color:#00a8c8">public</span> <span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#75af00">getColumnNames</span><span style="color:#f92672">();</span></code></pre></div></li>
 </ul>
 
 
@@ -4177,16 +4281,14 @@
     <script src="/js/clipboard.min.js"></script>
 <script src="/js/featherlight.min.js"></script>
 <script src="/js/html5shiv-printshiv.min.js"></script>
-<script src="/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+
 <script src="/js/modernizr.custom.71422.js"></script>
-<script src="/js/learn.js"></script>
-<script src="/js/hugo-learn.js"></script>
 
 
 <link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
 <script src="/mermaid/mermaid.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
+
     
 
   </body>

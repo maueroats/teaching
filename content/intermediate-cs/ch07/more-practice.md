@@ -14,3 +14,5 @@ Exercises 7.7.{18,20,22} on page 123 (PDF page 134). These are:
 * top-half
 * progress-bar
 
+## Wednesday Oct 25
+
