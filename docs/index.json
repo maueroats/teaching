@@ -375,7 +375,7 @@
 	"title": "7. Numbers",
 	"tags": [],
 	"description": "",
-	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+ 5 3) (/ 13 7) ; thirteen divided by seven (* 11 2) (- 9 1) ; nine minus one (- 8) (quotient 21912 7) (remainder 21912 7) Exponents, square root, squaring:\n(expt 1.01 95) ; 1.01 to the 95 power is about 2.57 (sqrt 9) ; square root of 9 is three (sqr 1241) ; when you square 1241 you get 1540081 Inexact answers, checking with tolerance\n\u0026gt; (sqrt 5) ; about 2.236 #i2.23606797749979 The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n(check-within (sqrt 5) 2.236 0.001) Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.\n\u0026gt; pi #i3.141592653589793 Maximum, minimum, absolute value\n(max 0 -4) ; ==\u0026gt; 0 (min 255 300) ; ==\u0026gt; 255 (abs -10) ; ==\u0026gt; 10 Getting rid of fractions. The best generic method to use is real-\u0026gt;int. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).\n(real-\u0026gt;int 0.5) (real-\u0026gt;int 1.5) (real-\u0026gt;int 2.5) (ceiling 1.2) (floor 1.7) (round 1.6)  Further Information  More Practice  \n Exercises 3  \n Max and min slides  Slideshow of exercises to learn max, min, abs, and random.\n Randomness  Making random numbers. Testing functions that use random numbers.\n Exercises 2  Exercises working with number functions.\n Exercises 1  Exercises.\n"
+	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+ 5 3) (/ 13 7) ; thirteen divided by seven (* 11 2) (- 9 1) ; nine minus one (- 8) (quotient 21912 7) (remainder 21912 7) Exponents, square root, squaring:\n(expt 1.01 95) ; 1.01 to the 95 power is about 2.57 (sqrt 9) ; square root of 9 is three (sqr 1241) ; when you square 1241 you get 1540081 Inexact answers, checking with tolerance\n\u0026gt; (sqrt 5) ; about 2.236 #i2.23606797749979 The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n(check-within (sqrt 5) 2.236 0.001) Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.\n\u0026gt; pi #i3.141592653589793 Maximum, minimum, absolute value\n(max 0 -4) ; ==\u0026gt; 0 (min 255 300) ; ==\u0026gt; 255 (abs -10) ; ==\u0026gt; 10 Getting rid of fractions. The best generic method to use is real-\u0026gt;int. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).\n(real-\u0026gt;int 0.5) (real-\u0026gt;int 1.5) (real-\u0026gt;int 2.5) (ceiling 1.2) (floor 1.7) (round 1.6)  Further Information  More Exercises 4  \n Exercises 3  \n Max and min slides  Slideshow of exercises to learn max, min, abs, and random.\n Randomness  Making random numbers. Testing functions that use random numbers.\n Exercises 2  Exercises working with number functions.\n Exercises 1  Exercises.\n"
 },
 {
 	"uri": "http://wy-cs.info/resources/",
@@ -414,10 +414,10 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/more-practice/",
-	"title": "More Practice",
+	"title": "More Exercises 4",
 	"tags": [],
 	"description": "",
-	"content": " Tuesday Oct 24 Exercises 7.7.{18,20,22} on page 123 (PDF page 134). These are:\n convert-3-digits top-half progress-bar  Wednesday Oct 25 "
+	"content": " Tuesday Oct 24 Exercises 7.7.{18,20,22} on page 123 (PDF page 134). These are:\n convert-3-digits top-half progress-bar  Wednesday Oct 25 Write every part of the design process except the function:\n count-factors: take a number N and find out how many numbers 1,2,\u0026hellip;,N divide N. angle-pts: take in six numbers (x1,y1) (x2,y2) (x3,y3) and give the angle in degrees made by line segments going to those three points in that order.\n 8.3.6 page 142 (PDF page 153). Parabola graph.\n 8.4.3 page 146 (PDF 157). Dot doubles in size every 5 seconds and shrinks by 4 pixels every keypress.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ftc/",
@@ -662,7 +662,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 4 modified Mon 10-23  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Intermediate Computer Science Recent Changes    More Practice modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel 4 modified Mon 10-23  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Intermediate Computer Science Recent Changes    More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
