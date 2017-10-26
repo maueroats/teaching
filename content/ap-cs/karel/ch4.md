@@ -23,6 +23,14 @@ description: "Very important chapter: Choreographer, Contractor, Strategy, Spy, 
           2. Implement the Forester interface in `OakPlanter`, `MaplePlanter` and `BushPlanter`. 
           3. Demonstrate with a short program that plants two oak trees 5 squares apart, and a maple next to a bush.
 
+* Thursday, October 26, 2017
+
+    - Create two robot classes: `SpeedyMover` and `DropMover`. 
+        + SpeedyMover moves two steps when told to move one.
+        + DropMover drops a beeper and moves when told to move.
+    - Create an interface `ArmyCaricature` that defines the `march()` and `crawl()` methods.
+    - Create a `DrillSargent` class that bosses two `ArmyCaricature` robots. The drill sargent should have a `bootCamp(ArmyCaricature a, ArmyCaricature b)` method that tells `a` to do three marches and `b` to do three crawls. 
+
 ## Quiz 4.1-4.4 on Friday
 
 You should be able to demonstrate the following skills from Sections 4.1-4.4.
