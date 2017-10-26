@@ -119,18 +119,18 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/git/getting-started/",
+	"title": "Git-ting Started",
+	"tags": ["git"],
+	"description": "",
+	"content": " Downloads for Home  Git package for all operating systems. Tortoise Git for Windows only.  Tutorials  A command line intro to git in 15 minutes.\n Git for Beginners.\n Beautiful and simple Git Guide.\n  Local instructions  Make an account on GitHub. Use your CPS email.\n Apply for an education account.\n Join our class in the GitHub Classroom. (Tell the teacher your username and get added manually.)\n  "
+},
+{
 	"uri": "http://wy-cs.info/ftc/registration/",
 	"title": "Registration",
 	"tags": [],
 	"description": "",
 	"content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - This is a walkthrough of the registration process. Follow it! Online registration instructions. Pretty dense reading. Printable form. If all else fails, print this form and turn it in.  "
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/git/getting-started/",
-	"title": "Getting Started",
-	"tags": ["git"],
-	"description": "",
-	"content": " Tutorials  A command line intro to git in 15 minutes.\n Git for Beginners.\n Beautiful and simple Git Guide.\n  Local instructions  Make an account on GitHub. Use your CPS email.\n Apply for an education account.\n Join our class in the GitHub Classroom. (Tell the teacher your username and get added manually.)\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/karel/ch1+2/",
@@ -424,7 +424,7 @@
 	"title": "Robophins 3216",
 	"tags": [],
 	"description": "",
-	"content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nGame Resources  2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.  2018 Official Q\u0026amp;A. Limited responses to official queries.\n  Read Forums  Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n  Watch Videos There are tons of Ri3D (robot in 3 days) or Ri1W (robot in 1 week) videos available.\n Robot in 3 days Acto Defacto  Robophins Code  Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git Make sure to get added to the Robophins organization on github so you can push your changes!\n  "
+	"content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nMeet Schedule  November 11 at Horizon Science Academy, 2245 W Pershing Road, 1-6pm. December 9 at Back of the Yards, 2111 W 47th Street, 7:30am-12:30pm. January 27 at UIC Student Center, 750 S Halstead, 11am-4pm. February 10 at Arturo Velasquez Institute, 2800 S Western, 7:30am-6pm.  Game Resources  2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.  2018 Official Q\u0026amp;A. Limited responses to official queries.\n  Read Forums  Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n  Watch Videos There are tons of Ri3D (robot in 3 days) or Ri1W (robot in 1 week) videos available.\n Robot in 3 days Acto Defacto  Robophins Code  Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git Make sure to get added to the Robophins organization on github so you can push your changes! You can read how to Get Started with Git elsewhere on this site.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ecs-teach/",
@@ -662,7 +662,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 4 modified Mon 10-23  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Getting Started modified Tue 10-17  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Intermediate Computer Science Recent Changes    More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Git-ting Started modified Wed 10-25  Karel 4 modified Mon 10-23  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Intermediate Computer Science Recent Changes    More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
