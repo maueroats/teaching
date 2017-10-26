@@ -413,6 +413,13 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/testcases/",
+	"title": "Connect Four Testcases",
+	"tags": [],
+	"description": "",
+	"content": "The testcases zip file contains all of the template files.\nYou can also download them one by one:\n Connect Four TestConnectFour User Interface for Connect Four Main method in its own file  It may help you to start from my repl.it workspace with all of the testing code already in it. Your code should go in ConnectFour.hs. You may need to edit some of the function names. The list of what they are supposed to be is at the start.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-4/",
 	"title": "More Exercises 4",
 	"tags": [],
@@ -662,7 +669,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Git-ting Started modified Wed 10-25  Karel 4 modified Mon 10-23  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Karel the Robot modified Sun 10-15  Intermediate Computer Science Recent Changes    More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Karel 4 modified Mon 10-23  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Intermediate Computer Science Recent Changes    More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Animation Examples modified Sun 10-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
