@@ -2708,8 +2708,14 @@
 <li>SpeedyMover moves two steps when told to move one.</li>
 <li>DropMover drops a beeper and moves when told to move.</li>
 </ul></li>
-<li>Create an interface <code>ArmyCaricature</code> that defines the <code>march()</code> and <code>crawl()</code> methods.</li>
-<li>Create a <code>DrillSargent</code> class that bosses two <code>ArmyCaricature</code> robots. The drill sargent should have a <code>bootCamp(ArmyCaricature a, ArmyCaricature b)</code> method that tells <code>a</code> to do three marches and <code>b</code> to do three crawls.</li>
+<li>Create an interface <code>ArmyCaricature</code> that defines the <code>march()</code> and <code>crawl()</code> methods.
+
+<ul>
+<li><code>march()</code>: go three steps</li>
+<li><code>crawl()</code>: go one step and drop a beeper</li>
+</ul></li>
+<li>Create a <code>DrillSargent</code> class that bosses two <code>ArmyCaricature</code> robots. The drill sargent should have a <code>void bootCamp(ArmyCaricature a, ArmyCaricature b)</code> method that tells <code>a</code> to do three marches and <code>b</code> to do three crawls.</li>
+<li>Verify that your <code>DrillSargent</code> works by giving it a <code>SpeedyMover</code> and a <code>DropMover</code>.</li>
 </ul></li>
 </ul>
 

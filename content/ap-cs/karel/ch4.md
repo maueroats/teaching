@@ -1,6 +1,6 @@
 ---
 title: "Karel 4"
-date: 2017-10-23T10:17:59-05:00
+date: 2017-10-26T22:30:52-05:00
 draft: false
 weight: 40
 description: "Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java."
@@ -29,7 +29,10 @@ description: "Very important chapter: Choreographer, Contractor, Strategy, Spy, 
         + SpeedyMover moves two steps when told to move one.
         + DropMover drops a beeper and moves when told to move.
     - Create an interface `ArmyCaricature` that defines the `march()` and `crawl()` methods.
-    - Create a `DrillSargent` class that bosses two `ArmyCaricature` robots. The drill sargent should have a `bootCamp(ArmyCaricature a, ArmyCaricature b)` method that tells `a` to do three marches and `b` to do three crawls. 
+        + `march()`: go three steps
+        + `crawl()`: go one step and drop a beeper
+    - Create a `DrillSargent` class that bosses two `ArmyCaricature` robots. The drill sargent should have a `void bootCamp(ArmyCaricature a, ArmyCaricature b)` method that tells `a` to do three marches and `b` to do three crawls. 
+    - Verify that your `DrillSargent` works by giving it a `SpeedyMover` and a `DropMover`. 
 
 ## Quiz 4.1-4.4 on Friday
 
