@@ -6,6 +6,10 @@ draft: false
 #theme: white
 ---
 
+{{% notice note %}}
+Please read Sections 8.1-8.4 in the book!
+{{% /notice %}}
+
 1. Make a progress bar that shrinks in half every time a key is hit.
     {{% figure src="2017-10-27-bar-1.png" %}}
     {{% figure src="2017-10-27-bar-2.png" %}}

@@ -431,7 +431,7 @@
 	"title": "Number Models 2",
 	"tags": [],
 	"description": "",
-	"content": " Make a progress bar that shrinks in half every time a key is hit.     Make a dot that moves along a line from (50,0) to (250,300).\n Exercise 8.4.4 from the text. Be sure to follow the design process!\n  "
+	"content": "Please read Sections 8.1-8.4 in the book!\n  Make a progress bar that shrinks in half every time a key is hit.     Make a dot that moves along a line from (50,0) to (250,300).\n Exercise 8.4.4 from the text. Be sure to follow the design process!\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/testcases/",
