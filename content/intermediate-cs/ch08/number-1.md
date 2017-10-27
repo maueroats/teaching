@@ -5,6 +5,7 @@ weight: 80
 draft: false
 type: slide
 theme: white
+description: "Three animations to practice identifying number models."
 ---
 
 # Identify the model
