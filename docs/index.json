@@ -385,6 +385,13 @@
 	"content": " Identify the model A white rectangle background that slowly fades to blue.\nIdentify the model A shape of your choice moves across the screen, rotating as it moves.\nAnimate A shape of your choice moves across the screen, rotating as it moves.\n Model Get on computer and do it  Create the animation A star moves diagonally across the screen from (0,0) to (200,100) on a big 200x200 background.\nChallenge A red star follows the equation of the ellipse (x/100)^2 + (y/50)^2 = 1.\n"
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch08/",
+	"title": "8. Number Animations",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://wy-cs.info/resources/",
 	"title": "Resources",
 	"tags": [],
@@ -683,7 +690,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Intermediate Computer Science Recent Changes    Number Models 2 modified Fri 10-27  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  7. Numbers modified Mon 10-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel 4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Intermediate Computer Science Recent Changes    Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -707,14 +714,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
