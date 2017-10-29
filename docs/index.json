@@ -256,7 +256,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nFoundations (Chapters 1\u0026ndash;5)  Chapter 1  Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nResources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -425,6 +425,13 @@
 	"tags": ["haskell", "daily-notes"],
 	"description": "Notes for each day.",
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/e-courses/",
+	"title": "Online Help",
+	"tags": [],
+	"description": "",
+	"content": " The best resource I am aware of is Gregor Kiczales\u0026rsquo; course How to Code: Simple Data. The course is available for free through edX.\nKiczales Course Structure The two most important parts of the course (from my point of view) are:\n Module 1b: How to Design Functions. The design process.\n Module 3a: How to Design Worlds. Big-bang.\n  Other Resources Signing up for a free online course is too much commitment? You could browse the YouTube playlists of Professor Kiczales. The first video of Summer 110 Weeks 3-4 is an introduction to big-bang.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-2/",
@@ -690,7 +697,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Intermediate Computer Science Recent Changes    Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Exercises 1 modified Tue 10-17  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel 4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Intermediate Computer Science Recent Changes    Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
