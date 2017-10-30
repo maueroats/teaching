@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.">
+    <meta name="description" content="Very important chapter: Strategy, Spy, Observer. Design patterns in Java.">
 
 
-    <title>Karel 4 :: WY Computer Science</title>
+    <title>Karel 4.5-4.9 :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ap-cs/karel/ch4/">
+  <body class="" data-url="/ap-cs/karel/ch4b/">
     <nav id="sidebar" class="">
 
 
@@ -1364,11 +1364,31 @@
  
   
     
-      <li data-nav-id="/ap-cs/karel/ch4/" class="dd-item
+      <li data-nav-id="/ap-cs/karel/ch4a/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/karel/ch4a/">
+        <span>Karel 4.1-4.4</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/karel/ch4b/" class="dd-item
      active
       ">
-        <a href="/ap-cs/karel/ch4/">
-        <span>Karel 4</span> 
+        <a href="/ap-cs/karel/ch4b/">
+        <span>Karel 4.5-4.9</span> 
         
         </a></li>
      
@@ -2233,6 +2253,26 @@
  
   
     
+      <li data-nav-id="/intermediate-cs/ch08/number-3/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/ch08/number-3/">
+        <span>Number Models 3</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
       <li data-nav-id="/intermediate-cs/ch08/number-2/" class="dd-item
      
       ">
@@ -2720,7 +2760,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/karel/'>Karel the Robot</a> > Karel 4
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/karel/'>Karel the Robot</a> > Karel 4.5-4.9
 
  
 
@@ -2737,8 +2777,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#quiz-4-1-4-4-on-friday">Quiz 4.1-4.4 on Friday</a></li>
-<li><a href="#additional-notes">Additional Notes</a></li>
+<li><a href="#neighbortalker">NeighborTalker</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2750,7 +2789,7 @@
         
         <div id="body-inner">
           
-            <h1>Karel 4</h1>
+            <h1>Karel 4.5-4.9</h1>
           
 
 
@@ -2758,76 +2797,15 @@
 
 
 
-<ul>
-<li><p>Monday, October 23, 2017: Read Section 4.1-4.3 and do Exercise 3.5 (DiamondBot) with a Choreographer robot.</p></li>
+<h2 id="neighbortalker">NeighborTalker</h2>
 
-<li><p>Tuesday October 24, 2017: Section 4.2 review (abstract class, override methods).</p>
-
-<ul>
-<li>Class: make a robot (team) to create <a href="4-2b-Abstract-II-End.png">my figure 4.2b ending</a> from the <a href="https://wy-ap-cs.blogspot.com/2014/09/chapter-4.html">old blog</a>. Then make a robot (team) to pick up <a href="4-2b-Abstract-II-Start.png">my figure 4.2b start</a>.</li>
-<li>Homework: Read Section 4.4.
+<p>Read Section 4.5.</p>
 
 <ul>
-<li>What is the function of an interface?</li>
-<li>What does delegation mean in cs?</li>
-</ul></li>
-</ul></li>
-
-<li><p>Wednesday, October 25, 2017: Section 4.4 (interfaces)</p>
-
-<ul>
-<li>Class: review box on page 76 (purpose of interface, no methods in an interface)</li>
-<li>Class: review box on page 79 (references can point anywhere)</li>
-<li>Class: &ldquo;<a href="https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming)">delegation</a>&rdquo;.</li>
-<li>Assignment: <code>Forester</code>. The Forester plants trees and bushes. In the robot world, you see a top view of the forest - tall plants are represented by lots of beepers, short plants are represented by few beepers in a pile. Oak trees are tall (7 beepers in a location). Maple trees are medium height (3 beepers), and bushes are only 1 beeper tall but they take up four locations instead of one.
-
-<ol>
-<li>Make a Forester interface that has the <code>doPlanting()</code> method.</li>
-<li>Implement the Forester interface in <code>OakPlanter</code>, <code>MaplePlanter</code> and <code>BushPlanter</code>.</li>
-<li>Demonstrate with a short program that plants two oak trees 5 squares apart, and a maple next to a bush.</li>
-</ol></li>
-</ul></li>
-
-<li><p>Thursday, October 26, 2017: Practice for quiz Friday.</p>
-
-<ul>
-<li>Create two robot classes: <code>SpeedyMover</code> and <code>DropMover</code>.
-
-<ul>
-<li>SpeedyMover moves two steps when told to move one.</li>
-<li>DropMover drops a beeper and moves when told to move.</li>
-</ul></li>
-<li>Create an interface <code>ArmyCaricature</code> that defines the <code>march()</code> and <code>crawl()</code> methods.
-
-<ul>
-<li><code>march()</code>: go three steps</li>
-<li><code>crawl()</code>: go one step and drop a beeper</li>
-</ul></li>
-<li>Create a <code>DrillSargent</code> class that bosses two <code>ArmyCaricature</code> robots. The drill sargent should have a <code>void bootCamp(ArmyCaricature a, ArmyCaricature b)</code> method that tells <code>a</code> to do three marches and <code>b</code> to do three crawls.</li>
-<li>Verify that your <code>DrillSargent</code> works by giving it a <code>SpeedyMover</code> and a <code>DropMover</code>.</li>
-</ul></li>
-</ul>
-
-<h2 id="quiz-4-1-4-4-on-friday">Quiz 4.1-4.4 on Friday</h2>
-
-<p>You should be able to demonstrate the following skills from Sections 4.1-4.4.</p>
-
-<ul>
-<li>Create a new class (including constructor from memory).</li>
-<li>Instance variables to remember helper robots.</li>
-<li>Abstract class, then concrete implementation to fill in missing parts.</li>
-<li>Interface: create and implement.</li>
-<li>Comparison of abstract class and interface.
-<br /></li>
-</ul>
-
-<h2 id="additional-notes">Additional Notes</h2>
-
-<ul>
-<li><p>Read: <a href="https://wy-ap-cs.blogspot.com/2014/09/chapter-4.html">old notes, still good</a>.</p></li>
-
-<li><p>Android programming has an <a href="http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.1.1_r1/android/database/AbstractCursor.java#AbstractCursor">AbstractCursor</a> class that handles many commom behaviors. Notice that some of the methods are not there, like:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"> <span style="color:#00a8c8">abstract</span> <span style="color:#00a8c8">public</span> <span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#75af00">getColumnNames</span><span style="color:#f92672">();</span></code></pre></div></li>
+<li>What is the purpose of the <code>private BeeperPutter neighbor</code> field of a <code>NeighborTalker</code>?</li>
+<li>Could the <code>neighbor</code> field be <code>null</code> when you run the <code>distributeBeepers()</code> method?</li>
+<li>Draw a box and arrow diagram showing the different robots that <code>aRobot</code> points to as the main method on the top of page 82 runs.</li>
+<li>How could you modify the <code>distributeBeepers()</code> method so that the last robot in the line puts their beeper down and moves before the second to last robot in line, etc., so the first robot in line is the last one to put their beeper down and move.</li>
 </ul>
 
 
@@ -3678,6 +3656,22 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -4225,9 +4219,6 @@
             
         
                     
-            
-        
-                    
                         
             
             
@@ -4243,115 +4234,6 @@
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -4468,6 +4350,134 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -4494,7 +4504,7 @@
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/karel/ch3/" title="Karel 3"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/karel/ch4a/" title="Karel 4.1-4.4"> <i class="fa fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="/intermediate-cs/" title="Intermediate CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>

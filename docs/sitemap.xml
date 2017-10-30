@@ -228,7 +228,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/ap-cs/karel/ch4/</loc>
+    <loc>http://wy-cs.info/ap-cs/karel/ch4a/</loc>
     <lastmod>2017-10-26T22:30:52-05:00</lastmod>
   </url>
   
@@ -245,6 +245,11 @@
   <url>
     <loc>http://wy-cs.info/resources/intermediatecs-syllabus--2017-2018/</loc>
     <lastmod>2017-09-09T15:49:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/karel/ch4b/</loc>
+    <lastmod>2017-10-30T09:52:53-05:00</lastmod>
   </url>
   
   <url>
@@ -305,6 +310,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/daily/</loc>
     <lastmod>2017-09-11T10:03:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch08/number-3/</loc>
+    <lastmod>2017-10-30T09:59:11-05:00</lastmod>
   </url>
   
   <url>

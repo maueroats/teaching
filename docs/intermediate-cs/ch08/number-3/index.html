@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Chapter 4 Quiz :: WY Computer Science</title>
+    <title>Number Models 3 :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/ch04/ch04-quiz/">
+  <body class="" data-url="/intermediate-cs/ch08/number-3/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -116,7 +116,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -127,7 +127,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -441,7 +441,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -452,7 +452,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -535,7 +535,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/ch04/ch04-quiz/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell/ch04/ch04-quiz/">
         <span>Chapter 4 Quiz</span> 
@@ -1421,7 +1421,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1432,7 +1432,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -2200,7 +2200,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch08/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -2211,7 +2211,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -2254,7 +2254,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch08/number-3/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/ch08/number-3/">
         <span>Number Models 3</span> 
@@ -2760,12 +2760,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch04/'>4. Syntax in Functions</a> > Chapter 4 Quiz
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch08/'>8. Number Animations</a> > Number Models 3
 
  
 
@@ -2782,7 +2777,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#mountain-questions">Mountain Questions</a></li>
+<li><a href="#repetition-without-conditionals">Repetition (without conditionals)</a></li>
+<li><a href="#class-practice">Class practice</a></li>
+<li><a href="#homework">Homework</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2792,17 +2789,9 @@
           </div>
         
         
-          <div id="tags">
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/quiz">quiz</a>
-            
-          </div>
-        
         <div id="body-inner">
           
-            <h1>Chapter 4 Quiz</h1>
+            <h1>Number Models 3</h1>
           
 
 
@@ -2810,49 +2799,20 @@
 
 
 
-<p>All functions should include appropriate type signatures.</p>
+<h2 id="repetition-without-conditionals">Repetition (without conditionals)</h2>
 
-<ol>
-<li>Define a function f that takes one number as input. If the number
-is 1 or 100, the answer is 99. If the number is 1000 or 10000, the
-answer is 6. In any other case, the answer is five times the input.</li>
-</ol>
+<p>What does this tick-hander do? Write checks for the results when num=0, num=1, and num=4.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">repeat-it</span> <span style="color:#111">num</span><span style="color:#111">)</span>
+    <span style="color:#111">(</span><span style="color:#111">remainder</span> <span style="color:#111">(</span><span style="color:#111">+</span> <span style="color:#111">num</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span> <span style="color:#ae81ff">5</span><span style="color:#111">))</span></code></pre></div>
+<h2 id="class-practice">Class practice</h2>
 
-<h2 id="mountain-questions">Mountain Questions</h2>
+<p>1a. Make a shape of your choice start at x=100, y=40, then move to x=100,y=110, then to x=100,y=180, then back to x=100, y=40. The motion should happen every second.</p>
 
-<p>The questions below all refer to a &ldquo;mountain range&rdquo;, which is a list
-of integers specifying the height in feet above sea level.</p>
+<p>1b. Hit a key to make the shape go to a random one of those three locations.</p>
 
-<ul>
-<li>Base camp is half of the height of the highest mountain.</li>
-<li>New mountains start/end when altitude goes above/below base camp.</li>
-<li>The mountain range data is guaranteed to begin and end with a number
-below the height of base camp.</li>
-</ul>
+<h2 id="homework">Homework</h2>
 
-<p>Example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">     <span style="color:#75af00">mountains</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">50</span><span style="color:#111">,</span> <span style="color:#ae81ff">100</span><span style="color:#111">,</span> <span style="color:#ae81ff">99</span><span style="color:#111">,</span> <span style="color:#ae81ff">98</span><span style="color:#111">,</span> <span style="color:#ae81ff">50</span><span style="color:#111">,</span> <span style="color:#ae81ff">75</span><span style="color:#111">,</span> <span style="color:#ae81ff">60</span><span style="color:#111">,</span> <span style="color:#ae81ff">20</span><span style="color:#111">,</span> <span style="color:#ae81ff">10</span><span style="color:#111">,</span> <span style="color:#ae81ff">15</span><span style="color:#111">,</span> <span style="color:#ae81ff">10</span><span style="color:#111">,</span> <span style="color:#ae81ff">90</span><span style="color:#111">,</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span><span style="color:#111">]</span>
-     <span style="color:#75af00">highestPeak</span> <span style="color:#75af00">mountains</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">100</span>
-     <span style="color:#75af00">baseCamp</span> <span style="color:#75af00">mountains</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">50</span>
-     <span style="color:#75af00">countPeaks</span> <span style="color:#75af00">mountains</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>
-     <span style="color:#75af00">tallestWidth</span> <span style="color:#75af00">mountains</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span></code></pre></div>
-<p>In the example above, the three mountains are:</p>
-
-<ul>
-<li><code>[50,100,99,98,50]</code> with width = 4</li>
-<li><code>[50,75,60,20]</code> with width = 3</li>
-<li><code>[10,90,-5]</code> with width = 2</li>
-</ul>
-
-<ol>
-<li><p>Find the height of the highest mountain..</p></li>
-
-<li><p>Write a function to find the height of base camp.</p></li>
-
-<li><p>Write a function to count the number of peaks.</p></li>
-
-<li><p>Write a function to estimate the width of the tallest mountain.</p></li>
-</ol>
+<p>Add one colored circle at a random location on the screen every half second.</p>
 
 
 <footer class=" footline" >
@@ -2896,6 +2856,8 @@ below the height of base camp.</li>
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -2911,7 +2873,6 @@ below the height of base camp.</li>
             
             
                 
-                    
                     
                 
                 
@@ -2927,9 +2888,6 @@ below the height of base camp.</li>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3107,7 +3065,6 @@ below the height of base camp.</li>
             
                 
                     
-                    
                 
                 
 
@@ -3120,9 +3077,6 @@ below the height of base camp.</li>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3171,7 +3125,6 @@ below the height of base camp.</li>
             
             
                 
-                    
                     
                 
                 
@@ -3188,9 +3141,6 @@ below the height of base camp.</li>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3745,6 +3695,7 @@ below the height of base camp.</li>
             
                 
                     
+                    
                 
                 
 
@@ -3759,6 +3710,9 @@ below the height of base camp.</li>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4225,6 +4179,7 @@ below the height of base camp.</li>
             
             
                 
+                    
                     
                 
                 
@@ -4239,6 +4194,9 @@ below the height of base camp.</li>
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -4255,6 +4213,7 @@ below the height of base camp.</li>
             
                 
                     
+                    
                 
                 
 
@@ -4270,6 +4229,9 @@ below the height of base camp.</li>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4551,10 +4513,10 @@ below the height of base camp.</li>
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/ch04/ch04-summary/" title="Chapter 4 Summary"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch08/number-1/" title="Number Models 1"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/ch04/ch04-discussion/" title="Chapter 4 Discussion" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/ch08/number-2/" title="Number Models 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

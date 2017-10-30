@@ -315,8 +315,8 @@
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/karel/ch4/",
-	"title": "Karel 4",
+	"uri": "http://wy-cs.info/ap-cs/karel/ch4a/",
+	"title": "Karel 4.1-4.4",
 	"tags": [],
 	"description": "Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.",
 	"content": "  Monday, October 23, 2017: Read Section 4.1-4.3 and do Exercise 3.5 (DiamondBot) with a Choreographer robot.\n Tuesday October 24, 2017: Section 4.2 review (abstract class, override methods).\n Class: make a robot (team) to create my figure 4.2b ending from the old blog. Then make a robot (team) to pick up my figure 4.2b start. Homework: Read Section 4.4.  What is the function of an interface? What does delegation mean in cs?   Wednesday, October 25, 2017: Section 4.4 (interfaces)\n Class: review box on page 76 (purpose of interface, no methods in an interface) Class: review box on page 79 (references can point anywhere) Class: \u0026ldquo;delegation\u0026rdquo;. Assignment: Forester. The Forester plants trees and bushes. In the robot world, you see a top view of the forest - tall plants are represented by lots of beepers, short plants are represented by few beepers in a pile. Oak trees are tall (7 beepers in a location). Maple trees are medium height (3 beepers), and bushes are only 1 beeper tall but they take up four locations instead of one.  Make a Forester interface that has the doPlanting() method. Implement the Forester interface in OakPlanter, MaplePlanter and BushPlanter. Demonstrate with a short program that plants two oak trees 5 squares apart, and a maple next to a bush.   Thursday, October 26, 2017: Practice for quiz Friday.\n Create two robot classes: SpeedyMover and DropMover.  SpeedyMover moves two steps when told to move one. DropMover drops a beeper and moves when told to move.  Create an interface ArmyCaricature that defines the march() and crawl() methods.  march(): go three steps crawl(): go one step and drop a beeper  Create a DrillSargent class that bosses two ArmyCaricature robots. The drill sargent should have a void bootCamp(ArmyCaricature a, ArmyCaricature b) method that tells a to do three marches and b to do three crawls. Verify that your DrillSargent works by giving it a SpeedyMover and a DropMover.   Quiz 4.1-4.4 on Friday You should be able to demonstrate the following skills from Sections 4.1-4.4.\n Create a new class (including constructor from memory). Instance variables to remember helper robots. Abstract class, then concrete implementation to fill in missing parts. Interface: create and implement. Comparison of abstract class and interface.   Additional Notes  Read: old notes, still good.\n Android programming has an AbstractCursor class that handles many commom behaviors. Notice that some of the methods are not there, like:\nabstract public String[] getColumnNames();  "
@@ -341,6 +341,13 @@
 	"tags": [],
 	"description": "",
 	"content": " This document details the information specific to Intermediate Computer Science. See the all course syllabus information as well.\nMaterials  Notebook - a lightweight paper notebook dedicated to computer science. USB Drive of any size. Picturing Programs book electronic version - downloaded onto flash drive. DrRacket programming environment - installed at home. WeScheme - Online only replacement for DrRacket. Use if you cannot install software. You have to read special instructions to make it work.  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/karel/ch4b/",
+	"title": "Karel 4.5-4.9",
+	"tags": [],
+	"description": "Very important chapter: Strategy, Spy, Observer. Design patterns in Java.",
+	"content": " NeighborTalker Read Section 4.5.\n What is the purpose of the private BeeperPutter neighbor field of a NeighborTalker? Could the neighbor field be null when you run the distributeBeepers() method? Draw a box and arrow diagram showing the different robots that aRobot points to as the main method on the top of page 82 runs. How could you modify the distributeBeepers() method so that the last robot in the line puts their beeper down and moves before the second to last robot in line, etc., so the first robot in line is the last one to put their beeper down and move.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
@@ -427,6 +434,13 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-3/",
+	"title": "Number Models 3",
+	"tags": [],
+	"description": "",
+	"content": " Repetition (without conditionals) What does this tick-hander do? Write checks for the results when num=0, num=1, and num=4.\n(define (repeat-it num) (remainder (+ num 1) 5)) Class practice 1a. Make a shape of your choice start at x=100, y=40, then move to x=100,y=110, then to x=100,y=180, then back to x=100, y=40. The motion should happen every second.\n1b. Hit a key to make the shape go to a random one of those three locations.\nHomework Add one colored circle at a random location on the screen every half second.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/e-courses/",
 	"title": "Online Help",
 	"tags": [],
@@ -494,7 +508,7 @@
 	"title": "Exercises 2",
 	"tags": [],
 	"description": "Exercises working with number functions.",
-	"content": "Exercises:\n hypotenuse: Given the lengths of two legs of a right triangle, return the length of the third side.\n slope: Given the x and y coordinates of two points (x1,y1) and (x2,y2) - in that order - return the slope of the line between those points. (OK if it does not work for vertical lines.)\n distance: Given the x and y coordinates of two points (x1,y1) and (x2,y2), find the distance between them.\n quadratic-1: Given a, b, and c, find one solution to the equation a x^2+b x + c = 0.\n quadratic-2: Given a, b, and c, find the other solution to a x^2+b x + c = 0.\n Make an animation with a number model. Use the number to control how fast an object spins. Make moving the mouse cause the animation to spin faster. Make hitting a key reset the speed.\n  "
+	"content": "Exercises:\n hypotenuse: Given the lengths of two legs of a right triangle, return the length of the third side.\n slope: Given the x and y coordinates of two points (x1,y1) and (x2,y2) - in that order - return the slope of the line between those points. (OK if it does not work for vertical lines.)\n distance: Given the x and y coordinates of two points (x1,y1) and (x2,y2), find the distance between them.\n quadratic-1: Given a, b, and c, find one solution to the equation a x^2+b x + c = 0.\n quadratic-2: Given a, b, and c, find the other solution to a x^2+b x + c = 0.\n Make an animation with a number model. Use the number to control the current amount of rotation of the object. The tick handler makes the object spin. Moving the mouse causes the animation to spin faster. Make hitting a key reset the position to zero.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-1/",
@@ -508,7 +522,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n "
+	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.9  Very important chapter: Strategy, Spy, Observer. Design patterns in Java.\n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/rubric/",
@@ -697,7 +711,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Karel 1 and 2 modified Mon 10-16  Intermediate Computer Science Recent Changes    Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Exercises 2 modified Tue 10-17  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Intermediate Computer Science Recent Changes    Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

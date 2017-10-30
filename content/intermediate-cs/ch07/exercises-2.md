@@ -17,6 +17,10 @@ Exercises:
 
 5. `quadratic-2`: Given a, b, and c, find the other solution to `a x^2+b x + c = 0`.
 
-6. Make an animation with a number model. Use the number to control how fast an object spins. Make moving the mouse cause the animation to spin faster. Make hitting a key reset the speed.
+6. Make an animation with a number model. Use the number to control the current amount of rotation of the object. The tick handler makes the object spin. Moving the mouse causes the animation to spin faster. Make hitting a key reset the position to zero.
+
+
+
+
 
 
