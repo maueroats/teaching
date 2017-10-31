@@ -1,7 +1,7 @@
 ---
 title: "Number Models 1"
 date: 2017-10-26T12:56:12-05:00
-weight: 80
+weight: 10
 draft: false
 type: slide
 theme: white

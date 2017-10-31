@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch08/number-1/</loc>
+    <lastmod>2017-10-26T12:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/git/getting-started/</loc>
     <lastmod>2017-10-25T19:55:58-05:00</lastmod>
   </url>
@@ -148,6 +153,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch08/number-2/</loc>
+    <lastmod>2017-10-27T09:08:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ftc/t-shirt/</loc>
     <lastmod>2017-10-23T13:49:41-05:00</lastmod>
   </url>
@@ -198,6 +208,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch08/number-3/</loc>
+    <lastmod>2017-10-30T09:59:11-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/karel/ch3/</loc>
     <lastmod>2017-10-19T10:54:10-05:00</lastmod>
   </url>
@@ -225,6 +240,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03art/</loc>
     <lastmod>2017-09-27T19:52:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch08/number-4/</loc>
+    <lastmod>2017-10-31T10:15:38-05:00</lastmod>
   </url>
   
   <url>
@@ -278,11 +298,6 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch08/number-1/</loc>
-    <lastmod>2017-10-26T12:56:12-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch08/</loc>
     <lastmod>2017-10-25T12:37:18-05:00</lastmod>
   </url>
@@ -313,18 +328,8 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch08/number-3/</loc>
-    <lastmod>2017-10-30T09:59:11-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://wy-cs.info/intermediate-cs/e-courses/</loc>
     <lastmod>2017-10-29T12:33:32-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch08/number-2/</loc>
-    <lastmod>2017-10-27T09:08:14-05:00</lastmod>
   </url>
   
   <url>
@@ -527,14 +532,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

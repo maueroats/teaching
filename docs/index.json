@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-1/",
+	"title": "Number Models 1",
+	"tags": [],
+	"description": "Three animations to practice identifying number models.",
+	"content": " Identify the model A white rectangle background that slowly fades to blue.\nIdentify the model A shape of your choice moves across the screen, rotating as it moves.\nAnimate A shape of your choice moves across the screen, rotating as it moves.\n Model Get on computer and do it  Create the animation A star moves diagonally across the screen from (0,0) to (200,100) on a big 200x200 background.\nChallenge A red star follows the equation of the ellipse (x/100)^2 + (y/50)^2 = 1.\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/git/getting-started/",
 	"title": "Git-ting Started",
 	"tags": ["git"],
@@ -203,6 +210,13 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-2/",
+	"title": "Number Models 2",
+	"tags": [],
+	"description": "Progress bar, dot that follows a line.",
+	"content": "Please read Sections 8.1-8.4 in the book!\n  Make a progress bar that shrinks in half every time a key is hit.     Make a dot that moves along a line from (50,0) to (250,300).\n Exercise 8.4.4 from the text. Be sure to follow the design process!\n  "
+},
+{
 	"uri": "http://wy-cs.info/ftc/t-shirt/",
 	"title": "Robophins T-Shirts",
 	"tags": [],
@@ -273,6 +287,13 @@
 	"content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:\n Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form \u0026hellip; or email me.\nPhilosophy I aim to create an equitable challenge for everyone in my class. I want to provide everyone in the class meaningful work experiences at a manageable but challenging intellectual level. I may give the same credit for different actual assignments to accomplish this goal.\nThe student side of this equitable challenge is that I expect everyone to work on computer science 100% of the time in class. This applies even if someone is finished with the current assignment or has been absent for a week. I have a shelf full of books available for advanced or catch-up work.\nI expect everyone to take my suggestions for improving their work seriously. Computer science is an art as well as a science. Polish good habits, eradicate bad ones. Please admit if you cling to unproductive habits and work honestly to change them.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    Some grade should be updated every week. Every grade category except final exam should be updated every three weeks. Edline will have all raw score information. Only scaled (\u0026ldquo;curved\u0026rdquo;) scores will be posted on the CPS Gradebook.\nWe use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nGrading and attendance You must be present in order to learn from the class.\n   Absences Consequence     5 Call and email parent.   10 One letter grade (-10 point) deduction to final grade.   15 Additional -5 point deduction to final percentage.   20 Additional -5 point deduction to final percentage.   25 Failure in class    Three tardies more than 5 min late count as one absence.\nAny absence with a note from a medical doctor does not count toward the total absences. (Please make sure I see a copy of the note!) All other absences count. Please discuss necessary accomodations for IEP/504 in the first two weeks of class if I am not aware of them.\nDifferentiation All assigned work is expected to be completed.\nThere is no extra credit without regular credit. The way to improve a grade is through consistent effort, seeking help when needed, and allocating enough effective work time outside of class. Please track your work in your interactive notebook so we can discuss how to make your time more effective.\nAdvanced students may be allowed to replace standard work with projects, but all exceptions will be accompanied by a written contract detailing what other work will be completed to replace the main line coursework. In at most two weeks, the project is due and will receive a grade. Students are still responsible for standard material.\nEssentials of involvement As much as we can, we let students manage their own learning. Occasionally parents should be involved more at home. Sometimes adults need to talk directly. Please contact me directly if you see (or are being told) that grades are not up to date or your student is exempt from the work for any reason and does not have written documentation.\nDaily Materials  Notebook: A thin spiral or composition notebook dedicated to computer science is required for planning, reflection, and documenting progress.\n USB Flash Drive: A small USB drive to store files. (Any size is fine. Code is small.)\n  IEP and 504 plans will be followed Any student with a 504 or IEP will receive all accomodations listed. Please make sure the teacher has received a copy of the plan at the start of the year (especially if your schedule has changed, sometimes the paperwork follows too slowly).\nState standards Computer Science Teachers Association standards applicable in this class:\n 4.2.1 Computational Thinking (CT) 4.2.2 Collaboration (CL) 4.2.3 Computing Practice and Programming (CPP) See individual unit plans for more details.  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-3/",
+	"title": "Number Models 3",
+	"tags": [],
+	"description": "Remainder to repeat. Random dots.",
+	"content": " Remainder warmups Opener Divide 324 by 7. What is the quotient? The remainder?\nFollow-up When you change 324 to other numbers, what possible remainders can you get? (For example, can you get a remainder of 2 by dividing something by 7? What?)\nAnimation An animation will just count from 0 to 6, then start over again at zero.\nWrite the model you choose, then checks and a function for the tick handler.\nMore animation Show the numbers (in order): 10, 30, 50, 70, 90, then go back to 10 and repeat.\n Model? Tick handler.  Repetition (without conditionals) What does this tick-hander do? Write checks for the results when num=0, num=1, and num=4.\n(define (repeat-it num) (remainder (+ num 1) 5)) Class practice 1a. Make a shape of your choice start at x=100, y=40, then move to x=100,y=110, then to x=100,y=180, then back to x=100, y=40. The motion should happen every second.\n1b. Hit a key to make the shape go to a random one of those three locations.\nHomework Add one colored circle at a random location on the screen every half second.\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/karel/ch3/",
 	"title": "Karel 3",
 	"tags": [],
@@ -315,6 +336,13 @@
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
+	"title": "Number Models 4",
+	"tags": [],
+	"description": "",
+	"content": " How to show a number in an image:\n (number-\u0026gt;string 50) makes \u0026ldquo;50\u0026rdquo; (text \u0026hellip;) wrapped around that makes an image  Example: (text (number-\u0026gt;string 50) FONT-SIZE \u0026quot;purple\u0026quot;) produces an image with the number 50 in FONT-SIZE point purple font.\n Make a dot follow the line y=2x-30 from x=0 to x=100. Repeat over from x=0 once the dot gets to 100.\n Draw a random radius circle (10\u0026lt;=r\u0026lt;=100) on the screen. Show the radius inside the circle.\nWriting check-expects is key to making this work!\n   "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/karel/ch4a/",
 	"title": "Karel 4.1-4.4",
 	"tags": [],
@@ -347,7 +375,7 @@
 	"title": "Karel 4.5-4.9",
 	"tags": [],
 	"description": "Very important chapter: Strategy, Spy, Observer. Design patterns in Java.",
-	"content": " NeighborTalker Read Section 4.5.\n What is the purpose of the private BeeperPutter neighbor field of a NeighborTalker? Could the neighbor field be null when you run the distributeBeepers() method? Draw a box and arrow diagram showing the different robots that aRobot points to as the main method on the top of page 82 runs. How could you modify the distributeBeepers() method so that the last robot in the line puts their beeper down and moves before the second to last robot in line, etc., so the first robot in line is the last one to put their beeper down and move.  "
+	"content": " NeighborTalker Read Section 4.5.\n What is the purpose of the private BeeperPutter neighbor field of a NeighborTalker? Could the neighbor field be null when you run the distributeBeepers() method? Draw a box and arrow diagram showing the different robots that aRobot points to as the main method on the top of page 82 runs. How could you modify the distributeBeepers() method so that the last robot in the line puts their beeper down and moves before the second to last robot in line, etc., so the first robot in line is the last one to put their beeper down and move.  Robot Horde Project Make a \u0026ldquo;Robot Horde\u0026rdquo; where each robot sends a swarm() message to the 0, 1, or 2 robots that it controls.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
@@ -383,13 +411,6 @@
 	"tags": [],
 	"description": "",
 	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+ 5 3) (/ 13 7) ; thirteen divided by seven (* 11 2) (- 9 1) ; nine minus one (- 8) (quotient 21912 7) (remainder 21912 7) Exponents, square root, squaring:\n(expt 1.01 95) ; 1.01 to the 95 power is about 2.57 (sqrt 9) ; square root of 9 is three (sqr 1241) ; when you square 1241 you get 1540081 Inexact answers, checking with tolerance\n\u0026gt; (sqrt 5) ; about 2.236 #i2.23606797749979 The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n(check-within (sqrt 5) 2.236 0.001) Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.\n\u0026gt; pi #i3.141592653589793 Maximum, minimum, absolute value\n(max 0 -4) ; ==\u0026gt; 0 (min 255 300) ; ==\u0026gt; 255 (abs -10) ; ==\u0026gt; 10 Getting rid of fractions. The best generic method to use is real-\u0026gt;int. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).\n(real-\u0026gt;int 0.5) (real-\u0026gt;int 1.5) (real-\u0026gt;int 2.5) (ceiling 1.2) (floor 1.7) (round 1.6)  Further Information  More Exercises 4  \n Exercises 3  \n Max and min slides  Slideshow of exercises to learn max, min, abs, and random.\n Randomness  Making random numbers. Testing functions that use random numbers.\n Exercises 2  Exercises working with number functions.\n Exercises 1  Exercises.\n"
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-1/",
-	"title": "Number Models 1",
-	"tags": [],
-	"description": "Three animations to practice identifying number models.",
-	"content": " Identify the model A white rectangle background that slowly fades to blue.\nIdentify the model A shape of your choice moves across the screen, rotating as it moves.\nAnimate A shape of your choice moves across the screen, rotating as it moves.\n Model Get on computer and do it  Create the animation A star moves diagonally across the screen from (0,0) to (200,100) on a big 200x200 background.\nChallenge A red star follows the equation of the ellipse (x/100)^2 + (y/50)^2 = 1.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/",
@@ -434,25 +455,11 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-3/",
-	"title": "Number Models 3",
-	"tags": [],
-	"description": "",
-	"content": " Repetition (without conditionals) What does this tick-hander do? Write checks for the results when num=0, num=1, and num=4.\n(define (repeat-it num) (remainder (+ num 1) 5)) Class practice 1a. Make a shape of your choice start at x=100, y=40, then move to x=100,y=110, then to x=100,y=180, then back to x=100, y=40. The motion should happen every second.\n1b. Hit a key to make the shape go to a random one of those three locations.\nHomework Add one colored circle at a random location on the screen every half second.\n"
-},
-{
 	"uri": "http://wy-cs.info/intermediate-cs/e-courses/",
 	"title": "Online Help",
 	"tags": [],
 	"description": "",
 	"content": " The best resource I am aware of is Gregor Kiczales\u0026rsquo; course How to Code: Simple Data. The course is available for free through edX.\nKiczales Course Structure The two most important parts of the course (from my point of view) are:\n Module 1b: How to Design Functions. The design process.\n Module 3a: How to Design Worlds. Big-bang.\n  Other Resources Signing up for a free online course is too much commitment? You could browse the YouTube playlists of Professor Kiczales. The first video of Summer 110 Weeks 3-4 is an introduction to big-bang.\n"
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-2/",
-	"title": "Number Models 2",
-	"tags": [],
-	"description": "",
-	"content": "Please read Sections 8.1-8.4 in the book!\n  Make a progress bar that shrinks in half every time a key is hit.     Make a dot that moves along a line from (50,0) to (250,300).\n Exercise 8.4.4 from the text. Be sure to follow the design process!\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/testcases/",
@@ -711,7 +718,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Intermediate Computer Science Recent Changes    Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Randomness modified Tue 10-17  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Intermediate Computer Science Recent Changes    Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -735,14 +742,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

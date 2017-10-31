@@ -2,8 +2,10 @@
 title: "Number Models 2"
 date: 2017-10-27T09:08:14-05:00
 draft: false
+weight: 20
 #type: slide
 #theme: white
+description: "Progress bar, dot that follows a line."
 ---
 
 {{% notice note %}}
