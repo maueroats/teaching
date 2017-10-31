@@ -20,3 +20,7 @@ weight: 40
     Writing check-expects is key to making this work!
 
 {{< figure src="circle-50.png" >}}
+
+* Make an animation of a point moving along the right-opening parabola x=y^2. The point should hit (0,0), (25,5), (100,10), (225,15), and (400,20) before repeating. The draw handler can be a little tricky too - make sure you test it so you know it works.
+
+* Challenge: can you make the point hit (100,-10), (25,-5), (0,0), (25,5), and (100,10) instead? 
