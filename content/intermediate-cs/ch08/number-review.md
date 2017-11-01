@@ -46,7 +46,7 @@ Sample code:
     - Move from x=0 to x=150
     - Repeats the path from x=0 to x=150 over and over.
     - Hit a key make the point go to x=0 (and start moving)
-    - Move the mouse to make the point go faster (easier than it sounds). 
+    - Move the mouse to make the point move. (The point should seem to move faster when you move the mouse.)
 
 3. Make a line that you can move up and down with the mouse. 
     - Straight line through x=0, y=70
