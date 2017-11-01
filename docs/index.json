@@ -378,6 +378,13 @@
 	"content": " NeighborTalker Read Section 4.5.\n What is the purpose of the private BeeperPutter neighbor field of a NeighborTalker? Could the neighbor field be null when you run the distributeBeepers() method? Draw a box and arrow diagram showing the different robots that aRobot points to as the main method on the top of page 82 runs. How could you modify the distributeBeepers() method so that the last robot in the line puts their beeper down and moves before the second to last robot in line, etc., so the first robot in line is the last one to put their beeper down and move.  Robot Horde Project Make a \u0026ldquo;Robot Horde\u0026rdquo; where each robot sends a swarm() message to the 0, 1, or 2 robots that it controls.\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-review/",
+	"title": "Number Model Review",
+	"tags": [],
+	"description": "A summary of the key points of Chapters 7-8. Preparation for a test.",
+	"content": "  Animation following the graph of an equation:\n Computer coordinates People coordinates  Repetition using remainder.\n Max/min to keep values large/small.\n Randomness\n Range of random numbers (e.g., 10\u0026lt;=x\u0026lt;=50). Write and test a non-random function first.  Write checks for a function that you do not yet know how to write.\n  Terms:\n Computer coordinates: (0,0) in the upper left, positive y going down. People coordinates: (0,0) in the center, positive y going up.  Review Problems  Make a sunset: a half circle that shrinks in radius and changes color from red(ish) to black as the sun sets. (Advanced: yellow to black.)  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
 	"title": "6. Animations I",
 	"tags": [],
@@ -718,7 +725,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Intermediate Computer Science Recent Changes    Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Exercises 3 modified Wed 10-18  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Intermediate Computer Science Recent Changes    Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

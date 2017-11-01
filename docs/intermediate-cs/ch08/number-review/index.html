@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="">
+    <meta name="description" content="A summary of the key points of Chapters 7-8. Preparation for a test.">
 
 
-    <title>Connect Four UI :: WY Computer Science</title>
+    <title>Number Model Review :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/connect-four/ui/">
+  <body class="" data-url="/intermediate-cs/ch08/number-review/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -116,7 +116,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -127,7 +127,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -936,7 +936,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -947,7 +947,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -990,7 +990,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/connect-four/ui/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell/connect-four/ui/">
         <span>Connect Four UI</span> 
@@ -1421,7 +1421,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1432,7 +1432,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -2200,7 +2200,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch08/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -2211,7 +2211,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -2314,7 +2314,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch08/number-review/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/ch08/number-review/">
         <span>Number Model Review</span> 
@@ -2800,12 +2800,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/connect-four/'>Connect Four</a> > Connect Four UI
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch08/'>8. Number Animations</a> > Number Model Review
 
  
 
@@ -2822,9 +2817,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#code-outline">Code Outline</a></li>
-<li><a href="#code">Code</a></li>
-<li><a href="#example-run">Example run</a></li>
+<li><a href="#review-problems">Review Problems</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2836,7 +2829,7 @@
         
         <div id="body-inner">
           
-            <h1>Connect Four UI</h1>
+            <h1>Number Model Review</h1>
           
 
 
@@ -2844,153 +2837,40 @@
 
 
 
-<p>The <a href="ui-connect-four.hs">user interface code</a> for Connect Four is a little clunky. (Repl.it <a href="https://repl.it/Marn/0">shared code</a>.)
-You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).</p>
-
-<h2 id="code-outline">Code Outline</h2>
-
-<p>main: just make board and call event loop</p>
-
-<p>event loop:</p>
+<ol>
+<li><p>Animation following the graph of an equation:</p>
 
 <ul>
-<li>draw board</li>
-<li>is it won?
-
-<ul>
-<li>print the win message</li>
+<li>Computer coordinates</li>
+<li>People coordinates</li>
 </ul></li>
-<li>not won?
+
+<li><p>Repetition using <code>remainder</code>.</p></li>
+
+<li><p>Max/min to keep values large/small.</p></li>
+
+<li><p>Randomness</p>
 
 <ul>
-<li>get a move</li>
-<li>recursive call to event loop with updated board, next player</li>
+<li>Range of random numbers (e.g., 10&lt;=x&lt;=50).</li>
+<li>Write and test a non-random function first.</li>
 </ul></li>
+
+<li><p>Write checks for a function that you do not yet know how to write.</p></li>
+</ol>
+
+<p>Terms:</p>
+
+<ul>
+<li>Computer coordinates: (0,0) in the upper left, positive y going down.</li>
+<li>People coordinates: (0,0) in the center, positive y going up.</li>
 </ul>
 
-<h2 id="code">Code</h2>
+<h2 id="review-problems">Review Problems</h2>
 
-<p>All of the <a href="ui-connect-four.hs">user interface code</a> is linked separately (open in WordPad if necessary).</p>
-
-<p>The setup of the code, which you should change to match your own functions is below. You need: <code>drawBoard</code>, <code>is_won</code>, <code>is_move_legal</code>, and <code>make_move</code>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#00a8c8">type</span> <span style="color:#00a8c8">Board</span> <span style="color:#f92672">=</span> <span style="color:#111">[[</span><span style="color:#00a8c8">Int</span><span style="color:#111">]]</span>
-
-<span style="color:#75af00">drawBoard</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Board</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">String</span>
-<span style="color:#75af00">drawBoard</span> <span style="color:#75af00">board</span> <span style="color:#f92672">=</span> <span style="color:#75af00">show</span> <span style="color:#f92672">$</span> <span style="color:#75af00">simplify</span> <span style="color:#75af00">board</span>
-
-<span style="color:#75af00">is_won</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Board</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Bool</span>
-<span style="color:#75af00">is_won</span> <span style="color:#75af00">board</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">False</span>
-
-<span style="color:#75af00">is_move_legal</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Board</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Bool</span>
-<span style="color:#75af00">is_move_legal</span> <span style="color:#75af00">board</span> <span style="color:#75af00">col</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#75af00">col</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span>
-
-<span style="color:#75af00">make_move</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Board</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Board</span>
-<span style="color:#75af00">make_move</span> <span style="color:#75af00">board</span> <span style="color:#75af00">col</span> <span style="color:#75af00">player</span> <span style="color:#f92672">=</span> <span style="color:#111">[[</span><span style="color:#75af00">player</span><span style="color:#111">]]</span>
-
-<span style="color:#75715e">-- Just for the demo: force the board to be 1x1.</span>
-<span style="color:#75af00">simplify</span> <span style="color:#75af00">board</span> <span style="color:#f92672">=</span> <span style="color:#111">[[</span><span style="color:#75af00">board</span><span style="color:#f92672">!!</span><span style="color:#ae81ff">0</span><span style="color:#f92672">!!</span><span style="color:#ae81ff">0</span><span style="color:#111">]]</span></code></pre></div>
-<p>The essentials of the code are an event loop function, which draws the
-board, checks to see if it is won, gets the next move, and then calls
-a sepeate function to handle the move.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">event_loop</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Board</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">IO</span><span style="color:#111">()</span>
-<span style="color:#75af00">event_loop</span> <span style="color:#75af00">board</span> <span style="color:#75af00">player</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">do</span>
-  <span style="color:#75af00">putStrLn</span> <span style="color:#f92672">$</span> <span style="color:#75af00">drawBoard</span> <span style="color:#75af00">board</span>
-
-  <span style="color:#00a8c8">if</span> <span style="color:#75af00">is_won</span> <span style="color:#75af00">board</span> <span style="color:#00a8c8">then</span> <span style="color:#00a8c8">do</span>
-    <span style="color:#75af00">win_message</span> <span style="color:#75af00">board</span> <span style="color:#75af00">player</span>
-    <span style="color:#75af00">return</span> <span style="color:#111">()</span>
-  <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">do</span>
-    <span style="color:#75af00">col</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">get_move</span> <span style="color:#75af00">player</span>
-    <span style="color:#75af00">handle_move</span> <span style="color:#75af00">board</span> <span style="color:#75af00">player</span> <span style="color:#75af00">col</span></code></pre></div>
-<p>The handle move function recursively calls the event loop with an
-improved board and sets the next player. If the attempted move is
-illegal, then the recursive call to event loop does not update the
-board or player, so the same player moves again.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">handle_move</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Board</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">IO</span> <span style="color:#111">()</span>
-<span style="color:#75af00">handle_move</span> <span style="color:#75af00">board</span> <span style="color:#75af00">player</span> <span style="color:#75af00">col</span>
-    <span style="color:#f92672">|</span> <span style="color:#75af00">col</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">99</span>              <span style="color:#f92672">=</span> <span style="color:#75af00">goodbye</span>
-    <span style="color:#f92672">|</span> <span style="color:#75af00">is_move_legal</span> <span style="color:#75af00">board</span> <span style="color:#75af00">col</span> <span style="color:#f92672">=</span> <span style="color:#75af00">event_loop</span> <span style="color:#75af00">new_board</span> <span style="color:#111">(</span><span style="color:#75af00">next_</span> <span style="color:#75af00">player</span><span style="color:#111">)</span>
-    <span style="color:#f92672">|</span> <span style="color:#75af00">otherwise</span> <span style="color:#f92672">=</span> <span style="color:#75af00">complain_and_restart</span>
-    <span style="color:#00a8c8">where</span> <span style="color:#75af00">complain_and_restart</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">do</span>
-              <span style="color:#75af00">putStrLn</span> <span style="color:#d88200">&#34;ERROR: That is not a legal move.&#34;</span>
-              <span style="color:#75af00">event_loop</span> <span style="color:#75af00">board</span> <span style="color:#75af00">player</span>
-          <span style="color:#75af00">new_board</span> <span style="color:#f92672">=</span> <span style="color:#75af00">make_move</span> <span style="color:#75af00">board</span> <span style="color:#75af00">col</span> <span style="color:#75af00">player</span>
-          <span style="color:#75af00">goodbye</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">do</span> <span style="color:#75af00">putStrLn</span> <span style="color:#d88200">&#34;You quit&#34;</span></code></pre></div>
-<h2 id="example-run">Example run</h2>
-
-<pre><code>*Main&gt; main
-        
-        
-        
-        
-        
-        
-(Enter -99 to quit.)
-Player 1 moves.
-Column [0-7]? 5
-        
-        
-        
-        
-        
-     X  
-(Enter -99 to quit.)
-Player 2 moves.
-Column [0-7]? 2
-        
-        
-        
-        
-        
-  O  X  
-(Enter -99 to quit.)
-Player 1 moves.
-Column [0-7]? 5
-        
-        
-        
-        
-     X  
-  O  X  
-(Enter -99 to quit.)
-Player 2 moves.
-Column [0-7]? 3
-        
-        
-        
-        
-     X  
-  OO X  
-(Enter -99 to quit.)
-Player 1 moves.
-Column [0-7]? 5
-        
-        
-        
-     X  
-     X  
-  OO X  
-(Enter -99 to quit.)
-Player 2 moves.
-Column [0-7]? 4
-        
-        
-        
-     X  
-     X  
-  OOOX  
-(Enter -99 to quit.)
-Player 1 moves.
-Column [0-7]?   5
-        
-        
-     X  
-     X  
-     X  
-  OOOX  
-The game is over
-Player 1 won!
-</code></pre>
+<ol>
+<li>Make a sunset: a half circle that shrinks in radius and changes color from red(ish) to black as the sun sets. (Advanced: yellow to black.)</li>
+</ol>
 
 
 <footer class=" footline" >
@@ -3034,6 +2914,8 @@ Player 1 won!
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -3049,7 +2931,6 @@ Player 1 won!
             
             
                 
-                    
                     
                 
                 
@@ -3065,9 +2946,6 @@ Player 1 won!
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3549,7 +3427,6 @@ Player 1 won!
             
                 
                     
-                    
                 
                 
 
@@ -3562,9 +3439,6 @@ Player 1 won!
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3581,7 +3455,6 @@ Player 1 won!
             
             
                 
-                    
                     
                 
                 
@@ -3598,9 +3471,6 @@ Player 1 won!
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3883,6 +3753,7 @@ Player 1 won!
             
                 
                     
+                    
                 
                 
 
@@ -3897,6 +3768,9 @@ Player 1 won!
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4363,6 +4237,7 @@ Player 1 won!
             
             
                 
+                    
                     
                 
                 
@@ -4377,6 +4252,9 @@ Player 1 won!
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -4441,6 +4319,7 @@ Player 1 won!
             
                 
                     
+                    
                 
                 
 
@@ -4459,6 +4338,9 @@ Player 1 won!
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4721,10 +4603,10 @@ Player 1 won!
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/connect-four/timeline/" title="Connect Four Timeline"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch08/number-4/" title="Number Models 4"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/connect-four/spoilers/" title="Connect Four Spoilers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
