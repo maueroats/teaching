@@ -32,9 +32,16 @@ Terms:
 
 ## Review Problems
 
-1. Make a sunset: a half circle that shrinks in radius and changes color from red(ish) to black as the sun sets. (Advanced: yellow to black.)
+1. Make a sunset: a half circle. 
+    - shrinks in radius
+    - changes color from red(ish) to black as the sun sets. 
+(Advanced: yellow to black.)
 
-2. Make a point that follows the graph of y=((x-50)/10)^2 from x=0 to x=150. When you hit a key make the point go to x=0 and start moving. Move the mouse to make the point go faster (easier than it sounds).
+2. Make a point that follows the graph of the equation y=((x-50)/10)^2
+    - Use "people coordinates".
+    - Move from x=0 to x=150
+    - Hit a key make the point go to x=0 (and start moving)
+    - Move the mouse to make the point go faster (easier than it sounds). 
 
 3. 
 
