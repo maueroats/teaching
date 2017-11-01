@@ -43,12 +43,13 @@ Sample code:
 
 2. Make a point that follows the graph of the equation y=((x-50)/10)^2
     - Use "people coordinates".
-    - Move from x=0 to x=150
+    - Move from x=0 to x=150.
     - Repeats the path from x=0 to x=150 over and over.
-    - Hit a key make the point go to x=0 (and start moving)
+    - Hit a key make the point go to x=0 (and start moving).
     - Move the mouse to make the point move. (The point should seem to move faster when you move the mouse.)
 
-3. Make a line that you can move up and down with the mouse. 
+3. (Some people didn't like this one... feel free to skip.) 
+Make a line that you can move up and down with the mouse. 
     - Straight line through x=0, y=70
     - Passes through the point where the mouse is sitting.
 
