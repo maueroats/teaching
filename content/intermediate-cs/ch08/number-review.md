@@ -50,6 +50,5 @@ Sample code:
 
 3. Make a line that you can move up and down with the mouse. 
     - Straight line through x=0, y=70
-    - Slope is 2 (advanced: slope=1/3)
     - Passes through the point where the mouse is sitting.
 
