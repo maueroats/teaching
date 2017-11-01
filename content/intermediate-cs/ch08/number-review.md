@@ -39,7 +39,7 @@ Sample code:
 1. Make a sunset: a half circle. 
     - shrinks in radius
     - changes color from red(ish) to black as the sun sets. 
-(Advanced: yellow to black.)
+(Advanced: yellow to magenta.)
 
 2. Make a point that follows the graph of the equation y=((x-50)/10)^2
     - Use "people coordinates".
@@ -50,6 +50,6 @@ Sample code:
 
 3. Make a line that you can move up and down with the mouse. 
     - Straight line through x=0, y=70
-    - 
-
+    - Slope is 2 (advanced: slope=1/3)
+    - Passes through the point where the mouse is sitting.
 
