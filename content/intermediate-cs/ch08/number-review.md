@@ -8,6 +8,8 @@ weight: 50
 description: "A summary of the key points of Chapters 7-8. Preparation for a test."
 ---
 
+Things to know:
+
 1. Animation following the graph of an equation:
      - Computer coordinates
      - People coordinates
