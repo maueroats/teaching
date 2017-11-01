@@ -52,3 +52,10 @@ Sample code:
     - Straight line through x=0, y=70
     - Passes through the point where the mouse is sitting.
 
+4. Make a rectangle that is three times as wide as it is tall.
+    - Height is determined by y-coordinate of the mouse.
+    - Height decreases 5 units every time you hit a key.
+    - Height cannot go below 20 units using key.
+    - Height cannot go above 150 units using mouse.
+    - You choose the color.
+     (Advanced: color of grey depends on y-coordinate.)
