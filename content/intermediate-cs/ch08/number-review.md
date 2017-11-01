@@ -30,6 +30,10 @@ Terms:
 - Computer coordinates: (0,0) in the upper left, positive y going down.
 - People coordinates: (0,0) in the center, positive y going up.
 
+Sample code:
+
+- [People coordinates demo](people-coordinates-demo.rkt)
+
 ## Review Problems
 
 1. Make a sunset: a half circle. 
