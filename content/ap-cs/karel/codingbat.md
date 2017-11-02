@@ -49,6 +49,7 @@ public boolean someFunction (int n)
 ```java
 public boolean countNines (int[] nums)
 {
+  int count = 0;
   for (int k = 0; k < nums.length; k++)
   {
     if (nums[k] == 9) 

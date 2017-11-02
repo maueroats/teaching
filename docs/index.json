@@ -466,7 +466,7 @@
 	"title": "CodingBat Interlude",
 	"tags": [],
 	"description": "",
-	"content": "  Make an account on CodingBat.com. Do not use a valuable password.\n Wednesday, November 1:\n Read about logical operations in Java. See below for a quick summary. Do eight problems from Logic-1 or higher.  Thursday, November 2:\n Read about for and while loops . Read about arrays which provide a context for using for. See below for a quick summary. Do eight problems from Arrays-2.   Summary of Logical Operations  if - else if - else and(\u0026amp;\u0026amp;), or (||), not (!)  public boolean someFunction (int n) { boolean answer = false; if ( n \u0026gt; 20 ) { answer = true; } else { answer = ( n \u0026lt; -10); } return answer; } Summary of Looping  arrayname.length finds the length of the array arrayname[index] gets the the value at the given index for (set starting value; test to continue; what to do between steps) { \u0026hellip; }  public boolean countNines (int[] nums) { for (int k = 0; k \u0026lt; nums.length; k++) { if (nums[k] == 9) { count = count + 1; } } }"
+	"content": "  Make an account on CodingBat.com. Do not use a valuable password.\n Wednesday, November 1:\n Read about logical operations in Java. See below for a quick summary. Do eight problems from Logic-1 or higher.  Thursday, November 2:\n Read about for and while loops . Read about arrays which provide a context for using for. See below for a quick summary. Do eight problems from Arrays-2.   Summary of Logical Operations  if - else if - else and(\u0026amp;\u0026amp;), or (||), not (!)  public boolean someFunction (int n) { boolean answer = false; if ( n \u0026gt; 20 ) { answer = true; } else { answer = ( n \u0026lt; -10); } return answer; } Summary of Looping  arrayname.length finds the length of the array arrayname[index] gets the the value at the given index for (set starting value; test to continue; what to do between steps) { \u0026hellip; }  public boolean countNines (int[] nums) { int count = 0; for (int k = 0; k \u0026lt; nums.length; k++) { if (nums[k] == 9) { count = count + 1; } } }"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/e-courses/",
@@ -756,14 +756,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
