@@ -462,6 +462,13 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/karel/codingbat/",
+	"title": "CodingBat Interlude",
+	"tags": [],
+	"description": "",
+	"content": "  Make an account on CodingBat.com. Do not use a valuable password.\n Wednesday, November 1:\n Read about logical operations in Java. See below for a quick summary. Do eight problems from Logic-1 or higher.  Thursday, November 2:\n Read about for and while loops . Read about arrays which provide a context for using for. See below for a quick summary. Do eight problems from Arrays-2.   Summary of Logical Operations  if - else if - else and(\u0026amp;\u0026amp;), or (||), not (!)  public boolean someFunction (int n) { boolean answer = false; if ( n \u0026gt; 20 ) { answer = true; } else { answer = ( n \u0026lt; -10); } return answer; } Summary of Looping  arrayname.length finds the length of the array arrayname[index] gets the the value at the given index for (set starting value; test to continue; what to do between steps) { \u0026hellip; }  public boolean countNines (int[] nums) { for (int k = 0; k \u0026lt; nums.length; k++) { if (nums[k] == 9) { count = count + 1; } } }"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/e-courses/",
 	"title": "Online Help",
 	"tags": [],
@@ -536,7 +543,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.9  Very important chapter: Strategy, Spy, Observer. Design patterns in Java.\n "
+	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.9  Very important chapter: Strategy, Spy, Observer. Design patterns in Java.\n CodingBat Interlude  Make an account on CodingBat.com. Do not use a valuable password. Wednesday, November 1: Read about logical operations in Java. See below for a quick summary. Do eight problems from Logic-1 or higher. Thursday, November 2: Read about for and while loops . Read about arrays which provide a context for using for. See below for a quick summary. Do eight problems from Arrays-2. Summary of Logical Operations if - else if - else and(\u0026amp;\u0026amp;), or (||), not (!\n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/rubric/",
@@ -725,7 +732,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Book modified Tue 10-17  Intermediate Computer Science Recent Changes    Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Essentials modified Tue 10-17  Intermediate Computer Science Recent Changes    Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Animation Project modified Fri 10-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -749,14 +756,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

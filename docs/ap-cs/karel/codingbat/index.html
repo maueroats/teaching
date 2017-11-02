@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="Making random numbers.  Testing functions that use random numbers.">
+    <meta name="description" content="">
 
 
-    <title>Randomness :: WY Computer Science</title>
+    <title>CodingBat Interlude :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch07/random/">
+  <body class="" data-url="/ap-cs/karel/codingbat/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1251,7 +1251,7 @@
   
     
     <li data-nav-id="/ap-cs/karel/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1262,7 +1262,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1405,7 +1405,7 @@
   
     
       <li data-nav-id="/ap-cs/karel/codingbat/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/karel/codingbat/">
         <span>CodingBat Interlude</span> 
@@ -1441,7 +1441,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1452,7 +1452,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2057,7 +2057,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch07/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -2068,7 +2068,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2151,7 +2151,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch07/random/" class="dd-item
-     active
+     
       ">
         <a href="/intermediate-cs/ch07/random/">
         <span>Randomness</span> 
@@ -2820,7 +2820,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch07/'>7. Numbers</a> > Randomness
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/karel/'>Karel the Robot</a> > CodingBat Interlude
 
  
 
@@ -2837,8 +2837,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#random-ranges">Random ranges</a></li>
-<li><a href="#using-randomness">Using randomness</a></li>
+<li><a href="#summary-of-logical-operations">Summary of Logical Operations</a></li>
+<li><a href="#summary-of-looping">Summary of Looping</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2850,7 +2850,7 @@
         
         <div id="body-inner">
           
-            <h1>Randomness</h1>
+            <h1>CodingBat Interlude</h1>
           
 
 
@@ -2859,52 +2859,61 @@
 
 
 <ul>
-<li>Random numbers: <code>(random 3)</code> gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the code below and you should get different answers each time.
-<code>racket 
-(random 10) 
-(random 10) 
-(random 10) 
-</code></li>
+<li><p>Make an account on <a href="http://codingbat.com/java">CodingBat.com</a>. Do not use a valuable password.</p></li>
+
+<li><p>Wednesday, November 1:</p>
+
+<ul>
+<li>Read about <a href="http://codingbat.com/doc/java-if-boolean-logic.html">logical operations in Java</a>.</li>
+<li>See below for a quick summary.</li>
+<li>Do eight problems from <a href="http://codingbat.com/java/Logic-1">Logic-1</a> or higher.</li>
+</ul></li>
+
+<li><p>Thursday, November 2:</p>
+
+<ul>
+<li>Read about <a href="http://codingbat.com/doc/java-if-boolean-logic.html">for and while loops</a> .</li>
+<li>Read about <a href="http://codingbat.com/doc/java-array-loops.html">arrays</a> which provide a context for using <code>for</code>.</li>
+<li>See below for a quick summary.</li>
+<li>Do eight problems from <a href="http://codingbat.com/java/Array-2">Arrays-2</a>.</li>
+</ul></li>
 </ul>
 
-<h2 id="random-ranges">Random ranges</h2>
+<h2 id="summary-of-logical-operations">Summary of Logical Operations</h2>
 
-<div class="notices note" ><p>We use the phrase &ldquo;from 10 to 200&rdquo; or &ldquo;between 10 and 200&rdquo; to both mean all of the integers n so that 10&lt;=n&lt;=200.</p>
-</div>
+<ul>
+<li>if - else if - else</li>
+<li>and(<code>&amp;&amp;</code>), or (<code>||</code>), not (<code>!</code>)</li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">boolean</span> <span style="color:#75af00">someFunction</span> <span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">{</span>
+  <span style="color:#00a8c8">boolean</span> <span style="color:#111">answer</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">false</span><span style="color:#f92672">;</span>
+  
+  <span style="color:#00a8c8">if</span> <span style="color:#f92672">(</span> <span style="color:#111">n</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">20</span> <span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#111">answer</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">true</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">}</span> <span style="color:#00a8c8">else</span> <span style="color:#f92672">{</span>
+    <span style="color:#111">answer</span> <span style="color:#f92672">=</span> <span style="color:#f92672">(</span> <span style="color:#111">n</span> <span style="color:#f92672">&lt;</span> <span style="color:#f92672">-</span><span style="color:#111">10</span><span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span>
+  
+  <span style="color:#00a8c8">return</span> <span style="color:#111">answer</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<h2 id="summary-of-looping">Summary of Looping</h2>
 
-
-<p>How many numbers are there from 10 to 200, inclusive? It&rsquo;s easy to make a mistake. My favorite method is to subtract a number to make the bottom of the range start counting at one.</p>
-
-<p>Be sure you understand the previous paragraph before reading on!</p>
-
-<p>When you already have a random number from 0 to 50, how can you get a random number between 30 and 80?</p>
-
-<h2 id="using-randomness">Using randomness</h2>
-
-<p>It is hard to test random functions, so write non-random versions first, and use the randomness as an input. Test the non-random functions!</p>
-
-<p>Example: Make an ellipse of a random height 150-250 pixels tall, and twice as wide.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#75715e">; make-ellipse-nr: string(color) number(height) -&gt; image</span>
-<span style="color:#75715e">; purpose: make an ellipse height units tall and 2*height units wide in the given color</span>
-<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">make-ellipse-nr</span> <span style="color:#111">color</span> <span style="color:#111">height</span><span style="color:#111">)</span>
-    <span style="color:#111">(</span><span style="color:#111">ellipse</span> <span style="color:#111">(</span><span style="color:#111">*</span> <span style="color:#ae81ff">2</span> <span style="color:#111">height</span><span style="color:#111">)</span> <span style="color:#111">height</span> <span style="color:#d88200">&#34;solid&#34;</span> <span style="color:#111">color</span><span style="color:#111">))</span>
-<span style="color:#75715e">; see below for check-expect</span>
-<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">make-ellipse</span> <span style="color:#111">color</span><span style="color:#111">)</span>
-    <span style="color:#111">(</span><span style="color:#111">make-ellipse-nr</span> <span style="color:#111">color</span> <span style="color:#111">(</span><span style="color:#111">+</span> <span style="color:#ae81ff">150</span> <span style="color:#111">(</span><span style="color:#111">random</span> <span style="color:#ae81ff">101</span><span style="color:#111">))))</span></code></pre></div>
-
-<figure >
-    
-        <img src="nonrandom-check.png" />
-    
-    
-    <figcaption>
-        <h4>Test your nonrandom function well!</h4>
-        
-    </figcaption>
-    
-</figure>
-
-
+<ul>
+<li><code>arrayname.length</code> finds the length of the array</li>
+<li><code>arrayname[index]</code> gets the the value at the given index</li>
+<li>for (set starting value; test to continue; what to do between steps) { &hellip; }</li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">boolean</span> <span style="color:#75af00">countNines</span> <span style="color:#f92672">(</span><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">nums</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">{</span>
+  <span style="color:#00a8c8">for</span> <span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">k</span> <span style="color:#f92672">=</span> <span style="color:#111">0</span><span style="color:#f92672">;</span> <span style="color:#111">k</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">nums</span><span style="color:#f92672">.</span><span style="color:#75af00">length</span><span style="color:#f92672">;</span> <span style="color:#111">k</span><span style="color:#f92672">++)</span>
+  <span style="color:#f92672">{</span>
+    <span style="color:#00a8c8">if</span> <span style="color:#f92672">(</span><span style="color:#111">nums</span><span style="color:#f92672">[</span><span style="color:#111">k</span><span style="color:#f92672">]</span> <span style="color:#f92672">==</span> <span style="color:#111">9</span><span style="color:#f92672">)</span> 
+    <span style="color:#f92672">{</span>
+      <span style="color:#111">count</span> <span style="color:#f92672">=</span> <span style="color:#111">count</span> <span style="color:#f92672">+</span> <span style="color:#111">1</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
 
 <footer class=" footline" >
 	
@@ -2947,8 +2956,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -2964,6 +2971,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3671,6 +3681,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -3683,6 +3694,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3780,6 +3794,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -3802,6 +3817,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -3817,9 +3834,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4175,7 +4189,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -4188,9 +4201,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4239,7 +4249,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -4256,9 +4265,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4652,10 +4658,10 @@
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch07/maxmin/" title="Max and min slides"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/karel/ch4b/" title="Karel 4.5-4.9"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch07/exercises-2/" title="Exercises 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/" title="Intermediate CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
