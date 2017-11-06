@@ -6,6 +6,8 @@ draft: false
 #theme: white
 ---
 
+We are studying something easy for the two days at the end of the quarter.
+
 * Make an account on [CodingBat.com](http://codingbat.com/java). Do not use a valuable password.
 
 * Wednesday, November 1: 
