@@ -13,7 +13,7 @@ More review problems:
     + The x-coordinate of the mouse controls the width.
     + Hit any key to reset the ellipse to 60 by 80.
     
-2. A point moves on the graph of y = abs(-90).
+2. A point moves on the graph of y = abs(x-90).
     + The point starts at (0,90).
     + The point goes back to (0,90) after it gets to (200,110).
     + The origin is in the lower left (people coordinates, quadrant I).
