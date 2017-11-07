@@ -20,3 +20,20 @@ Read Section 4.5.
 Make a "Robot Horde" where each robot sends a `swarm()` message to the 0, 1, or 2 robots that it controls. 
 
 {{< figure src="small-horde.jpg" >}}
+
+## StrategyLayer (4.6)
+
+(Two days.)
+
+* Does the `StrategyLayer` robot implement the `Strategy` interface? Explain in what way your answer is logical.
+
+* Casts
+     - Clark Kent / Superman analogy
+     - Can a cast change an UrRobot into a HarvesterBot?
+     - Is a cast useful to change a HarversterBot into an UrRobot?
+     - What happens when you cast an UrRobot into something that it is not?
+
+* How can you use "advanced" robot methods in a Strategy?
+
+* Misc: The three-hands method of exchanging two items.
+
