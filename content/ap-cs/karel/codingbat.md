@@ -2,6 +2,7 @@
 title: "CodingBat Interlude"
 date: 2017-11-02T07:40:52-05:00
 draft: false
+weight: 44
 #type: slide
 #theme: white
 description: "Practice for the fundamentals of coding in Java: logic and loops."

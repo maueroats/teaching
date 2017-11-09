@@ -1,7 +1,8 @@
 ---
-title: "4.6: PrettyBoxBot"
+title: "4.6 PrettyBoxBot"
 date: 2017-11-07T10:27:49-06:00
 draft: false
+weight: 46
 #type: slide
 #theme: white
 description: "PrettyBoxBot to practice interfaces"

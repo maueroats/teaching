@@ -22,7 +22,7 @@ Challenge: 10.2.6.
 * `number->string`
 * `substring`: string number(start) number(end) -> string. 
 
-   If you omit the end number, substring takes the whole string.
+   If you omit the end number, the result you get starts at the "start" position and goes until the end of the original string.
    
    Illustration of positions in the string "Cattle":
 

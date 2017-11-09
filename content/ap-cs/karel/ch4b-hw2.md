@@ -1,7 +1,8 @@
 ---
-title: "4.6: FishBot"
+title: "4.6 FishBot"
 date: 2017-11-08T13:13:15-06:00
 draft: false
+weight: 47
 #type: slide
 #theme: white
 description: "A fish robot that alternates between two strategies so it is harder for predators to predict its motion."
