@@ -4,6 +4,7 @@ date: 2017-11-07T10:27:49-06:00
 draft: false
 #type: slide
 #theme: white
+description: "PrettyBoxBot to practice interfaces"
 ---
 
 A `PrettyBoxBot` makes a square box on the screen. In order to let a person easily configure it without learning how to design new robots, the PrettyBoxBot accepts two strategies in its constructor.

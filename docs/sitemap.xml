@@ -313,6 +313,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch09/</loc>
+    <lastmod>2017-11-08T15:07:52-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ftc/learning/</loc>
     <lastmod>2017-10-23T15:03:17-05:00</lastmod>
   </url>
@@ -330,6 +335,16 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/daily/</loc>
     <lastmod>2017-09-11T10:03:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/karel/ch4b-hw2/</loc>
+    <lastmod>2017-11-08T13:13:15-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/karel/ch4b-adv/</loc>
+    <lastmod>2017-11-08T10:44:22-06:00</lastmod>
   </url>
   
   <url>

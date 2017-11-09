@@ -434,6 +434,13 @@
 	"content": " These resources may be useful throughout the year.\n Syllabus for all classes Git program information (work in progress)  Course-specific information  AP Computer Science  Syllabus extra info  Intermediate Computer Science  Syllabus extra info WeScheme - when you cannot install software   "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch09/",
+	"title": "9. Strings",
+	"tags": [],
+	"description": "",
+	"content": " This chapter takes one day to do. Read pages 149-150 in the book.\nHomework Page 151 (PDF page 162), exercises 9.2.2 through 9.2.7.\nChallenge: 10.2.6.\nKey Functions  string-append string-length number-\u0026gt;string substring: string number(start) number(end) -\u0026gt; string.  If you omit the end number, substring takes the whole string.\nIllustration of positions in the string \u0026ldquo;Cattle\u0026rdquo;: 0 1 2 3 4 5 6 C a t t l e So (substring \u0026quot;Cattle\u0026quot; 1 3) produces \u0026quot;att\u0026quot;.\nThe function string-\u0026gt;number is sometimes useful but not nearly as important. Usually it is misused.\n"
+},
+{
 	"uri": "http://wy-cs.info/ftc/learning/",
 	"title": "Learning Resources",
 	"tags": [],
@@ -462,10 +469,24 @@
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/karel/ch4b-hw2/",
+	"title": "4.6: FishBot",
+	"tags": [],
+	"description": "A fish robot that alternates between two strategies so it is harder for predators to predict its motion.",
+	"content": " Purpose The purpose of this assignment is to motivate the use of Strategies instead of \u0026ldquo;hard-coding\u0026rdquo; individual behavior into an object.\nIntroduction A fish that is startled moves to get away from a predator. If a fish always does the same behavior to escape, it is easy for a predator to predict what will happen and the fish will get eaten. In order to avoid getting eaten, a fish alternates between darting forward and darting to the left.\n DartForward: a Strategy of moving forward three times DartLeft :a Strategy of turning left and moving forward once\n FishBot is a kind of (our) StrategyLayer that remembers two different strategies and alternates betweewn them.\n public void startle() activates the startle reflex, running the current strategy for escape public void swapStrategy() switches between the two strategies that the fish knows    Difficulties  Confusion between StrategyLayer and Strategy.  How are they actually related? Can both be created? (new Strategy() vs new StrategyLayer(...))  What is the relationship between FishBot and StrategyLayer? Too-specific names for things:  iFishBotStrategy for the interface variables of type DartStrategy and DodgeLeftStrategy instead of just Strategy   Some of these difficulties should have come up with the ArmyCaricature, so we need to revisit that!\n"
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/karel/ch4b-adv/",
+	"title": "4.* Advanced",
+	"tags": [],
+	"description": "",
+	"content": "Page 100, exercise 12 - the robot that has the undo command.\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/karel/ch4b-hw1/",
 	"title": "4.6: PrettyBoxBot",
 	"tags": [],
-	"description": "",
+	"description": "PrettyBoxBot to practice interfaces",
 	"content": "A PrettyBoxBot makes a square box on the screen. In order to let a person easily configure it without learning how to design new robots, the PrettyBoxBot accepts two strategies in its constructor.\n Side laying strategy: controls how long the side is Corner beautifying strategy: controls how many beepers get put on a corner.  Putting lots of beepers on the corners of a box makes it more beautiful in robot-land.\nThe PrettyBoxBot itself should have some abilities that help make the box:\n putAndGo(): Build a single unit of the box wall. makeBox(): Build the entire box.  In the PrettyBoxBot constructor you will want to accept the side laying and corner beautifying strategies and remember them.\nAs usual, there is sample code from our discussion on the class GitHub in the karelCh4.drjava project.\n"
 },
 {
@@ -486,7 +507,7 @@
 	"uri": "http://wy-cs.info/ap-cs/karel/codingbat/",
 	"title": "CodingBat Interlude",
 	"tags": [],
-	"description": "",
+	"description": "Practice for the fundamentals of coding in Java: logic and loops.",
 	"content": " We are studying something easy for the two days at the end of the quarter.\n Make an account on CodingBat.com. Do not use a valuable password.\n Wednesday, November 1:\n Read about logical operations in Java. See below for a quick summary. Do eight problems from Logic-1 or higher.  Thursday, November 2:\n Read about for and while loops . Read about arrays which provide a context for using for. See below for a quick summary. Do eight problems from Arrays-2.   Summary of Logical Operations  if - else if - else and(\u0026amp;\u0026amp;), or (||), not (!)  public boolean someFunction (int n) { boolean answer = false; if ( n \u0026gt; 20 ) { answer = true; } else { answer = ( n \u0026lt; -10); } return answer; } Summary of Looping  arrayname.length finds the length of the array arrayname[index] gets the the value at the given index for (set starting value; test to continue; what to do between steps) { \u0026hellip; }  public boolean countNines (int[] nums) { int count = 0; for (int k = 0; k \u0026lt; nums.length; k++) { if (nums[k] == 9) { count = count + 1; } } }"
 },
 {
@@ -564,7 +585,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.9  Very important chapter: Strategy, Spy, Observer. Design patterns in Java.\n 4.6: PrettyBoxBot  A PrettyBoxBot makes a square box on the screen. In order to let a person easily configure it without learning how to design new robots, the PrettyBoxBot accepts two strategies in its constructor. Side laying strategy: controls how long the side is Corner beautifying strategy: controls how many beepers get put on a corner. Putting lots of beepers on the corners of a box makes it more beautiful in robot-land.\n CodingBat Interlude  We are studying something easy for the two days at the end of the quarter. Make an account on CodingBat.com. Do not use a valuable password. Wednesday, November 1: Read about logical operations in Java. See below for a quick summary. Do eight problems from Logic-1 or higher. Thursday, November 2: Read about for and while loops . Read about arrays which provide a context for using for.\n "
+	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.9  Very important chapter: Strategy, Spy, Observer. Design patterns in Java.\n 4.6: FishBot  A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n 4.* Advanced  Page 100, exercise 12 - the robot that has the undo command.\n 4.6: PrettyBoxBot  PrettyBoxBot to practice interfaces\n CodingBat Interlude  Practice for the fundamentals of coding in Java: logic and loops.\n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/rubric/",
@@ -753,7 +774,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   4.6: PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Everyday Git modified Fri 10-20  Karel 3 modified Thu 10-19  Intermediate Computer Science Recent Changes    Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  More Exercises 4 modified Tue 10-24  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   4.6: FishBot modified Wed 11-08  4.* Advanced modified Wed 11-08  4.6: PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Intermediate Computer Science Recent Changes    9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
