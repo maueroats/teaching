@@ -25,9 +25,12 @@ Challenge: 10.2.6.
    If you omit the end number, substring takes the whole string.
    
    Illustration of positions in the string "Cattle":
-     0 1 2 3 4 5 6 
+
+```text
       C a t t l e
-   So `(substring "Cattle" 1 3)` produces `"att"`. 
+     0 1 2 3 4 5 6 
+```
+   So `(substring "Cattle" 1 3)` produces `"at"`. 
    
    
 The function `string->number` is sometimes useful but not nearly as important. 
