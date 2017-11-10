@@ -193,7 +193,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  \n 5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
@@ -518,6 +518,13 @@
 	"content": " homework  11.3.1  gas-needed: number(miles) -\u0026gt; number(gallons) cost-of-gallons: number(gallons) -\u0026gt; number(dollars) gas-cost: number(miles) -\u0026gt; number(dollars) using the above  11.3.2 cylinder-volume 11.3.3 cylinder-area: find the surface area of a cylinder  Ask a search engine for the surface area and volume of a cylinder if you need them.\n"
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch08/test-corrections/",
+	"title": "8. Test Corrections",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 8 Test\nDo corrections for +8 or more points of credit.\nCorrections mean complete, correct following of the design process for each function.\nScores will still be \u0026ldquo;curved\u0026rdquo;.\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/karel/ch4b-adv/",
 	"title": "4.* Advanced",
 	"tags": [],
@@ -802,7 +809,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.* Advanced modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Intermediate Computer Science Recent Changes    11.3 Homework 1 modified Fri 11-10  11. Planning modified Fri 11-10  9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.* Advanced modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Intermediate Computer Science Recent Changes    8. Test Corrections modified Fri 11-10  11.3 Homework 1 modified Fri 11-10  11. Planning modified Fri 11-10  9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
