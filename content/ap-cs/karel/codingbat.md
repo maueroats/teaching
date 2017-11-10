@@ -51,7 +51,7 @@ public boolean someFunction (int n)
 * for (set starting value; test to continue; what to do between steps) { ... }
 
 ```java
-public boolean countNines (int[] nums)
+public int countNines (int[] nums)
 {
   int count = 0;
   for (int k = 0; k < nums.length; k++)
@@ -61,5 +61,6 @@ public boolean countNines (int[] nums)
       count = count + 1;
     }
   }
+  return count;
 }
 ```
