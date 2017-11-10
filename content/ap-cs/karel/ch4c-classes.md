@@ -56,7 +56,7 @@ We are going to make a strategy that is called `ZigStrat`. This strategy layers 
 The following sample code should cause the robot to turn left, move three, and turn right:
 ```java
 public static void main (String[] args) {
-  Strategy th = new MoveThreeStrat());
+  Strategy th = new MoveThreeStrat();
   ZigStrat z = new ZigStrat(th);
   BetterBot bb = new BetterBot(4,1,East,20);
   z.doIt(bb);

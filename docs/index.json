@@ -193,7 +193,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  \n 5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
@@ -403,7 +403,7 @@
 	"title": "4.6 More Classes",
 	"tags": [],
 	"description": "Three exercises to improve your understanding of classes and interfaces.",
-	"content": " Go South Write a GoFarStrat which makes a BirdBot fly three times.\nWe are not going to write a BirdBot class, but assume it is already written:\npublic class BirdBot extends StrategyLayer { ... public void fly() { ... } } The following code should work:\npublic static void main (String[] args) { GoFarStrat flyFar = new GoFarStrat(); BirdBot robin = new BirdBot(4,1,East,20, flyFar); flyFar.doIt(robin); // could be robin.doStrat() } AndThenStrat The AndThenStrat is a Strategy that combines two strategies by doing one and then the other. See lines 5-6 in the code sample below for its construction and use.\nThe following sample code should cause the robot to step and then turn. The MoveOneStrat is supposed to make the robot move one step. The TurnOneStrat is supposed to mkae the robot turn to the left. You do not need to write either of those strategies; they are just here to illustrate how the AndThenStrat works. 1public static void demoAndThen() { 2 UrRobot r = new UrRobot(4,1,East,20); 3 Strategy step = new MoveOneStrat(); 4 Strategy turn = new TurnOneStrat(); 5 AndThenStrat combine = new AndThenStrat(step, turn); 6 combine.doIt( r ); 7}\nZigStrat We are going to make a strategy that is called ZigStrat. This strategy layers on top of another strategy that we are given and does three things:\n turnLeft() (the behavior from the given strategy) turnRight()  The following sample code should cause the robot to turn left, move three, and turn right:\npublic static void main (String[] args) { Strategy th = new MoveThreeStrat()); ZigStrat z = new ZigStrat(th); BetterBot bb = new BetterBot(4,1,East,20); z.doIt(bb); } Background and Additional Information The MoveThreeStrat extends the basic Strategy interface from the book:\npublic interface Strategy { public void doIt(UrRobot r); } We will use a robot called BetterBot that has a turnRight() method. Do not write your own turnRight.\nExtensions Check to make sure your solution is still good when you add a public void skip() method to BetterBot that causes it to move two spaces forward. Make ZigStrat turn left, skip, do the other work, turn right, and skip again.\n"
+	"content": " Go South Write a GoFarStrat which makes a BirdBot fly three times.\nWe are not going to write a BirdBot class, but assume it is already written:\npublic class BirdBot extends StrategyLayer { ... public void fly() { ... } } The following code should work:\npublic static void main (String[] args) { GoFarStrat flyFar = new GoFarStrat(); BirdBot robin = new BirdBot(4,1,East,20, flyFar); flyFar.doIt(robin); // could be robin.doStrat() } AndThenStrat The AndThenStrat is a Strategy that combines two strategies by doing one and then the other. See lines 5-6 in the code sample below for its construction and use.\nThe following sample code should cause the robot to step and then turn. The MoveOneStrat is supposed to make the robot move one step. The TurnOneStrat is supposed to mkae the robot turn to the left. You do not need to write either of those strategies; they are just here to illustrate how the AndThenStrat works. 1public static void demoAndThen() { 2 UrRobot r = new UrRobot(4,1,East,20); 3 Strategy step = new MoveOneStrat(); 4 Strategy turn = new TurnOneStrat(); 5 AndThenStrat combine = new AndThenStrat(step, turn); 6 combine.doIt( r ); 7}\nZigStrat We are going to make a strategy that is called ZigStrat. This strategy layers on top of another strategy that we are given and does three things:\n turnLeft() (the behavior from the given strategy) turnRight()  The following sample code should cause the robot to turn left, move three, and turn right:\npublic static void main (String[] args) { Strategy th = new MoveThreeStrat(); ZigStrat z = new ZigStrat(th); BetterBot bb = new BetterBot(4,1,East,20); z.doIt(bb); } Background and Additional Information The MoveThreeStrat extends the basic Strategy interface from the book:\npublic interface Strategy { public void doIt(UrRobot r); } We will use a robot called BetterBot that has a turnRight() method. Do not write your own turnRight.\nExtensions Check to make sure your solution is still good when you add a public void skip() method to BetterBot that causes it to move two spaces forward. Make ZigStrat turn left, skip, do the other work, turn right, and skip again.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-review/",
@@ -495,6 +495,20 @@
 	"tags": ["haskell", "daily-notes"],
 	"description": "Notes for each day.",
 	"content": "  2017-10-04  More CodingBat problems.\n 2017-10-03  CodingBat problems to improve your problem-solving skills.\n 2017-09-18  Battleship and homework review.\n 2017-09-14 Indentation  Indentation matters. A lot.\n 2017-09-12  Technical details that came up while doing Chapter 2 Homework.\n 2017-09-11  worked examples - removeVowels and wordLenPairs\n "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch11/11_3/",
+	"title": "11.3",
+	"tags": [],
+	"description": "",
+	"content": " gas cost  number(miles) -\u0026gt; number(dollars) $3.09 per gallon 26 miles per gallon  bad idea (define (gas-cost miles) (* miles #i0.118846153)) good idea (define MILES-PER-GALLON 26) (define DOLLARS-PER-GALLON 3.09) (define (gas-cost miles) ; to do 0) even better: break it down  gas-needed cost-of-gallons gas-cost (improved)  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch11/",
+	"title": "11. Planning",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/karel/ch4b-adv/",
@@ -781,7 +795,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.* Advanced modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Intermediate Computer Science Recent Changes    9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  8. Number Animations modified Wed 10-25  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.* Advanced modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Connect Four Testcases modified Wed 10-25  Intermediate Computer Science Recent Changes    11. Planning modified Fri 11-10  9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Online Help modified Sun 10-29  Number Models 2 modified Fri 10-27  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
