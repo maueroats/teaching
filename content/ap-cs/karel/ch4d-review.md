@@ -1,5 +1,5 @@
 ---
-title: "4.6 Review"
+title: "4.6 MurderBot"
 date: 2017-11-13T09:52:14-06:00
 draft: false
 weight: 49
@@ -25,4 +25,8 @@ description: "Review exercises for class design."
 * Advanced: use the techniques the Spy in Section 4.8 to cause the
 `stab` action to find another robot on the same corner as the
 MurderBot and turn it off.
+
+## ViciousMurderBot
+
+Create a kind of MurderBot that places six beepers when it is told to stab, instead of just two. 
 

@@ -407,10 +407,10 @@
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/karel/ch4d-review/",
-	"title": "4.6 Review",
+	"title": "4.6 MurderBot",
 	"tags": [],
 	"description": "Review exercises for class design.",
-	"content": " MurderBot  A MurderBot is a kind of StrategyLayer with two additional abilities:\n public void stab(): place two beepers public void flee(): move one step  The KillerStrategy is a kind of Strategy that makes the robot it controls stab the first time the strategy is invoked (via doStrat, which will call doIt). Every subsequent time the robot is told to doStrat(), it should flee.\n Make sure the same doStrat() call causes one stab or one flee each time.\n Test your MurderBot with 8 calls to doStrat().\n Challenge yourself: this can be done without variables (except what is built into the StrategyLayer).\n Advanced: use the techniques the Spy in Section 4.8 to cause the stab action to find another robot on the same corner as the MurderBot and turn it off.\n  "
+	"content": " MurderBot  A MurderBot is a kind of StrategyLayer with two additional abilities:\n public void stab(): place two beepers public void flee(): move one step  The KillerStrategy is a kind of Strategy that makes the robot it controls stab the first time the strategy is invoked (via doStrat, which will call doIt). Every subsequent time the robot is told to doStrat(), it should flee.\n Make sure the same doStrat() call causes one stab or one flee each time.\n Test your MurderBot with 8 calls to doStrat().\n Challenge yourself: this can be done without variables (except what is built into the StrategyLayer).\n Advanced: use the techniques the Spy in Section 4.8 to cause the stab action to find another robot on the same corner as the MurderBot and turn it off.\n  ViciousMurderBot Create a kind of MurderBot that places six beepers when it is told to stab, instead of just two.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-review/",
@@ -525,6 +525,13 @@
 	"content": " homework  11.3.1  gas-needed: number(miles) -\u0026gt; number(gallons) cost-of-gallons: number(gallons) -\u0026gt; number(dollars) gas-cost: number(miles) -\u0026gt; number(dollars) using the above  11.3.2 cylinder-volume 11.3.3 cylinder-area: find the surface area of a cylinder  Ask a search engine for the surface area and volume of a cylinder if you need them.\n"
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch09/ch9-ex1/",
+	"title": "9. Exercises 1",
+	"tags": [],
+	"description": "",
+	"content": " dot-fill: Take in a string(word) and put out a string. The output string is the same as the input string, except that it has periods added (\u0026ldquo;.\u0026rdquo;) to bring it to 10 characters long.\nExamples:\n(check-expect (dot-fill \u0026#34;abc\u0026#34;) \u0026#34;abc.......\u0026#34;) (check-expect (dot-fill \u0026#34;0123456789\u0026#34;) \u0026#34;0123456789\u0026#34;) You may assume that the word has no more than ten letters.\n cash: num(dollars) num(cents) -\u0026gt; string(price)\nWrite the price including the dollar sign.\n(check-expect (cash 5 99) \u0026#34;$5.99\u0026#34;) (check-expect (cash 10 0) \u0026#34;$10.00\u0026#34;) (check-expect (cash 98 15) \u0026#34;$98.15\u0026#34;) (check-expect (cash 6 4) \u0026#34;$6.04\u0026#34;)  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/test-corrections/",
 	"title": "8. Test Corrections",
 	"tags": [],
@@ -627,7 +634,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.9  Very important chapter: Strategy, Spy, Observer. Design patterns in Java.\n CodingBat Interlude  Practice for the fundamentals of coding in Java: logic and loops.\n 4.6 PrettyBoxBot  PrettyBoxBot to practice interfaces\n 4.6 FishBot  A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n 4.6 More Classes  Three exercises to improve your understanding of classes and interfaces.\n 4.6 Review  Review exercises for class design.\n 4.* Advanced  Page 100, exercise 12 - the robot that has the undo command.\n "
+	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.9  Very important chapter: Strategy, Spy, Observer. Design patterns in Java.\n CodingBat Interlude  Practice for the fundamentals of coding in Java: logic and loops.\n 4.6 PrettyBoxBot  PrettyBoxBot to practice interfaces\n 4.6 FishBot  A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n 4.6 More Classes  Three exercises to improve your understanding of classes and interfaces.\n 4.6 MurderBot  Review exercises for class design.\n 4.* Advanced  Page 100, exercise 12 - the robot that has the undo command.\n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/rubric/",
@@ -816,7 +823,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   4.6 Review modified Mon 11-13  4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.* Advanced modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Intermediate Computer Science Recent Changes    8. Test Corrections modified Fri 11-10  11.3 Homework 1 modified Fri 11-10  11. Planning modified Fri 11-10  9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Number Models 3 modified Mon 10-30  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   4.6 MurderBot modified Mon 11-13  4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.* Advanced modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Intermediate Computer Science Recent Changes    9. Exercises 1 modified Mon 11-13  8. Test Corrections modified Fri 11-10  11.3 Homework 1 modified Fri 11-10  11. Planning modified Fri 11-10  9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

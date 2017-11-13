@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Connect Four Spoilers :: WY Computer Science</title>
+    <title>9. Exercises 1 :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/connect-four/spoilers/">
+  <body class="" data-url="/intermediate-cs/ch09/ch9-ex1/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -116,7 +116,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -127,7 +127,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -936,7 +936,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -947,7 +947,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1010,7 +1010,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/connect-four/spoilers/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell/connect-four/spoilers/">
         <span>Connect Four Spoilers</span> 
@@ -1541,7 +1541,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1552,7 +1552,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -2503,7 +2503,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch09/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -2514,7 +2514,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -2537,7 +2537,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch09/ch9-ex1/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/ch09/ch9-ex1/">
         <span>9. Exercises 1</span> 
@@ -3126,12 +3126,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/connect-four/'>Connect Four</a> > Connect Four Spoilers
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch09/'>9. Strings</a> > 9. Exercises 1
 
  
 
@@ -3144,15 +3139,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#changing-entries-in-the-board">Changing entries in the board</a></li>
-<li><a href="#detecting-a-win">Detecting a win</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -3161,62 +3148,28 @@
         
         <div id="body-inner">
           
-            <h1>Connect Four Spoilers</h1>
+            <h1>9. Exercises 1</h1>
           
 
 
 
 
+<ul>
+<li><p><code>dot-fill</code>: Take in a string(word) and put out a string. The output string is the same as the input string, except that it has periods added (&ldquo;.&rdquo;) to bring it to 10 characters long.</p>
 
+<p>Examples:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">check-expect</span> <span style="color:#111">(</span><span style="color:#111">dot-fill</span> <span style="color:#d88200">&#34;abc&#34;</span><span style="color:#111">)</span> <span style="color:#d88200">&#34;abc.......&#34;</span><span style="color:#111">)</span>
+<span style="color:#111">(</span><span style="color:#111">check-expect</span> <span style="color:#111">(</span><span style="color:#111">dot-fill</span> <span style="color:#d88200">&#34;0123456789&#34;</span><span style="color:#111">)</span> <span style="color:#d88200">&#34;0123456789&#34;</span><span style="color:#111">)</span></code></pre></div>
+<p>You may assume that the word has no more than ten letters.</p></li>
 
-<p>Two problems with connect four: changing an entry in a matrix ([[Int]]) and
-seeing if there is a win.</p>
+<li><p><code>cash</code>: num(dollars) num(cents) -&gt; string(price)</p>
 
-<h2 id="changing-entries-in-the-board">Changing entries in the board</h2>
-
-<p>The biggest problem with the representation of the board as <code>[[Int]]</code>
-is that it is really hard to change the entries. If you use
-[((Int,Int),Player)] then it&rsquo;s lots easier to make moves.</p>
-
-<p>Outline of plan:</p>
-
-<ol>
-<li><p>(<code>changeCol: [Int] -&gt; Int -&gt; Int -&gt; [Int]</code>)
-Change value at index <code>col</code> in a single row to
-<code>newVal</code>; every other value in the list just output unchanged.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">changeCol</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">11</span><span style="color:#111">,</span><span style="color:#ae81ff">12</span><span style="color:#111">]</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">99</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">11</span><span style="color:#111">,</span><span style="color:#ae81ff">99</span><span style="color:#111">]</span></code></pre></div>
-<p>We have basically written this function as a Coding Bat problem.</p></li>
-
-<li><p>(<code>changeRowCol: [[Int]] -&gt; Int -&gt; Int -&gt; Int -&gt; [[Int]]</code>)
-Run changeCol only on the index <code>row</code> entry, everything else stays the same.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">changeRowCol</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span><span style="color:#ae81ff">8</span><span style="color:#111">]]</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">99</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span><span style="color:#ae81ff">99</span><span style="color:#111">]]</span></code></pre></div></li>
-</ol>
-
-<p>There is actually <a href="change-entry.hs">spoiler code</a> and <a href="change-entry-enhanced.hs">fancy spoiler
-code that uses Chapter 6</a>.</p>
-
-<h2 id="detecting-a-win">Detecting a win</h2>
-
-<p>Please email me questions. I know this is tricky. My own breakdown was:</p>
-
-<ol>
-<li><p>Generate a list containing four ordered pairs in a row. Input: (x,y) coordinates of the first entry, and (dx,dy) to be added to (x,y) to get the other three pairs needed.</p></li>
-
-<li><p>Given a board and one list of four ordered pairs, return True if all of the ordered pairs are legal coordinates for that board.</p></li>
-
-<li><p>Given a board, return a list of all possible lists of four ordered
-pairs in straight lines. For example, if the board is just the flat 5x1 board <code>[[0,0,0,0,0]]</code>, then this function should give a list of the two possible 4-in-a-rows: <code>[[(0,0),(1,0),(2,0),(3,0)], [(1,0),(2,0),(3,0),(4,0)]]</code>.</p></li>
-
-<li><p>Given a board and a single ordered pair, get the corresponding value from the board.</p></li>
-
-<li><p>Given a board and four ordered pairs, return True if all of the corrsponding values are the same.</p></li>
-
-<li><p>Do the preceding to a whole list of 4 pairs of coordinates.</p></li>
-
-<li><p>Given a board, return True if it is won.</p></li>
-
-<li><p>There are a few more steps but you are almost there!</p></li>
-</ol>
+<p>Write the price including the dollar sign.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">check-expect</span> <span style="color:#111">(</span><span style="color:#111">cash</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">99</span><span style="color:#111">)</span> <span style="color:#d88200">&#34;$5.99&#34;</span><span style="color:#111">)</span>
+<span style="color:#111">(</span><span style="color:#111">check-expect</span> <span style="color:#111">(</span><span style="color:#111">cash</span> <span style="color:#ae81ff">10</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#d88200">&#34;$10.00&#34;</span><span style="color:#111">)</span>
+<span style="color:#111">(</span><span style="color:#111">check-expect</span> <span style="color:#111">(</span><span style="color:#111">cash</span> <span style="color:#ae81ff">98</span> <span style="color:#ae81ff">15</span><span style="color:#111">)</span> <span style="color:#d88200">&#34;$98.15&#34;</span><span style="color:#111">)</span>
+<span style="color:#111">(</span><span style="color:#111">check-expect</span> <span style="color:#111">(</span><span style="color:#111">cash</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">4</span><span style="color:#111">)</span> <span style="color:#d88200">&#34;$6.04&#34;</span><span style="color:#111">)</span></code></pre></div></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -3260,6 +3213,8 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -3276,7 +3231,6 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
                 
                     
-                    
                 
                 
 
@@ -3291,9 +3245,6 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3775,7 +3726,6 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
                 
                     
-                    
                 
                 
 
@@ -3788,9 +3738,6 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3823,7 +3770,6 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
             
                 
-                    
                     
                 
                 
@@ -3841,9 +3787,6 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -4205,6 +4148,7 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
                 
                     
+                    
                 
                 
 
@@ -4219,6 +4163,9 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4814,6 +4761,7 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
                 
                     
+                    
                 
                 
 
@@ -4826,6 +4774,7 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
             
                 
+                    
                     
                 
                 
@@ -4845,6 +4794,9 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5171,10 +5123,10 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/connect-four/ui/" title="Connect Four UI"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch09/" title="9. Strings"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/connect-four/testcases/" title="Connect Four Testcases" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/ch11/" title="11. Planning" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
