@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="">
+    <meta name="description" content="Review exercises for class design.">
 
 
-    <title>7. Numbers :: WY Computer Science</title>
+    <title>4.6 Review :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch07/">
+  <body class="" data-url="/ap-cs/karel/ch4d-review/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -673,6 +673,26 @@
           
         
           
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/haskell/ch06/ch06-reading-guide/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/haskell/ch06/ch06-reading-guide/">
+        <span>Chapter 6 Reading Guide</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -1231,7 +1251,7 @@
   
     
     <li data-nav-id="/ap-cs/karel/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1242,7 +1262,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1465,7 +1485,7 @@
   
     
       <li data-nav-id="/ap-cs/karel/ch4d-review/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/karel/ch4d-review/">
         <span>4.6 Review</span> 
@@ -1521,7 +1541,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1532,7 +1552,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2137,8 +2157,8 @@
   
     
     <li data-nav-id="/intermediate-cs/ch07/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/intermediate-cs/ch07/">
@@ -2148,7 +2168,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -3067,7 +3087,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > 7. Numbers
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/karel/'>Karel the Robot</a> > 4.6 Review
+
+ 
 
  
 
@@ -3082,8 +3107,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#essential-summary">Essential summary</a></li>
-<li><a href="#further-information">Further Information</a></li>
+<li><a href="#murderbot">MurderBot</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -3095,7 +3119,7 @@
         
         <div id="body-inner">
           
-            <h1>7. Numbers</h1>
+            <h1>4.6 Review</h1>
           
 
 
@@ -3103,232 +3127,33 @@
 
 
 
-<p>We learn to do math with numbers.
-</p>
-
-<h2 id="essential-summary">Essential summary</h2>
+<h2 id="murderbot">MurderBot</h2>
 
 <ul>
-<li><p>Basic arithmetic</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">+</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">3</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">/</span> <span style="color:#ae81ff">13</span> <span style="color:#ae81ff">7</span><span style="color:#111">)</span> <span style="color:#75715e">; thirteen divided by seven</span>
-<span style="color:#111">(</span><span style="color:#111">*</span> <span style="color:#ae81ff">11</span> <span style="color:#ae81ff">2</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">-</span> <span style="color:#ae81ff">9</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span> <span style="color:#75715e">; nine minus one</span>
-<span style="color:#111">(</span><span style="color:#111">-</span> <span style="color:#ae81ff">8</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">quotient</span> <span style="color:#ae81ff">21912</span> <span style="color:#ae81ff">7</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">remainder</span> <span style="color:#ae81ff">21912</span> <span style="color:#ae81ff">7</span><span style="color:#111">)</span></code></pre></div></li>
+<li><p>A <code>MurderBot</code> is a kind of <code>StrategyLayer</code> with two additional abilities:</p>
 
-<li><p>Exponents, square root, squaring:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">expt</span> <span style="color:#ae81ff">1.01</span> <span style="color:#ae81ff">95</span><span style="color:#111">)</span> <span style="color:#75715e">; 1.01 to the 95 power is about 2.57</span>
-<span style="color:#111">(</span><span style="color:#111">sqrt</span> <span style="color:#ae81ff">9</span><span style="color:#111">)</span> <span style="color:#75715e">; square root of 9 is three</span>
-<span style="color:#111">(</span><span style="color:#111">sqr</span> <span style="color:#ae81ff">1241</span><span style="color:#111">)</span> <span style="color:#75715e">; when you square 1241 you get 1540081</span></code></pre></div></li>
+<ul>
+<li><code>public void stab()</code>: place two beepers</li>
+<li><code>public void flee()</code>: move one step</li>
+</ul></li>
 
-<li><p>Inexact answers, checking with tolerance</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">&gt;</span> <span style="color:#111">(</span><span style="color:#111">sqrt</span> <span style="color:#ae81ff">5</span><span style="color:#111">)</span> <span style="color:#75715e">; about 2.236</span>
-<span style="color:#ae81ff">#i2.23606797749979</span></code></pre></div>
-<p>The <code>#i</code> at the start of <code>#i2.236...</code> means that the number is an &ldquo;inexact&rdquo; decimal.
-You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use <code>check-within</code>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">check-within</span> <span style="color:#111">(</span><span style="color:#111">sqrt</span> <span style="color:#ae81ff">5</span><span style="color:#111">)</span> <span style="color:#ae81ff">2.236</span> <span style="color:#ae81ff">0.001</span><span style="color:#111">)</span></code></pre></div></li>
+<li><p>The <code>KillerStrategy</code> is a kind of <code>Strategy</code> that makes the robot it controls <code>stab</code> the first time the strategy is invoked (via <code>doStrat</code>, which will call <code>doIt</code>). Every subsequent time the robot is told to <code>doStrat()</code>, it should <code>flee</code>.</p></li>
 
-<li><p>Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of <code>pi</code> or <code>3.1415</code>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">&gt;</span> <span style="color:#111">pi</span>
-<span style="color:#ae81ff">#i3.141592653589793</span></code></pre></div></li>
+<li><p>Make sure the same <code>doStrat()</code> call causes one stab or one flee each time.</p></li>
 
-<li><p>Maximum, minimum, absolute value</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">max</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-4</span><span style="color:#111">)</span> <span style="color:#75715e">; ==&gt; 0</span>
-<span style="color:#111">(</span><span style="color:#111">min</span> <span style="color:#ae81ff">255</span> <span style="color:#ae81ff">300</span><span style="color:#111">)</span> <span style="color:#75715e">; ==&gt; 255</span>
-<span style="color:#111">(</span><span style="color:#111">abs</span> <span style="color:#ae81ff">-10</span><span style="color:#111">)</span> <span style="color:#75715e">; ==&gt; 10</span></code></pre></div></li>
+<li><p>Test your <code>MurderBot</code> with 8 calls to <code>doStrat()</code>.</p></li>
 
-<li><p>Getting rid of fractions. The best generic method to use is <code>real-&gt;int</code>. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">real-&gt;int</span> <span style="color:#ae81ff">0.5</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">real-&gt;int</span> <span style="color:#ae81ff">1.5</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">real-&gt;int</span> <span style="color:#ae81ff">2.5</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">ceiling</span> <span style="color:#ae81ff">1.2</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">floor</span> <span style="color:#ae81ff">1.7</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">round</span> <span style="color:#ae81ff">1.6</span><span style="color:#111">)</span></code></pre></div></li>
+<li><p>Challenge yourself: this can be done without variables (except what is built into the StrategyLayer).</p></li>
+
+<li><p>Advanced: use the techniques the Spy in Section 4.8 to cause the
+<code>stab</code> action to find another robot on the same corner as the
+MurderBot and turn it off.</p></li>
 </ul>
 
-<h2 id="further-information">Further Information</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<ul class="children children-li">
-	
-    
-    
-
-	
-		
-	
-		
-  
-
-
-<li>
-<a href="/intermediate-cs/ch07/exercises-4/" >More Exercises 4</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p></p>
-				
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/intermediate-cs/ch07/exercises-3/" >Exercises 3</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p></p>
-				
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/intermediate-cs/ch07/maxmin/" >Max and min slides</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p>Slideshow of exercises to learn max, min, abs, and random.</p>
-				
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/intermediate-cs/ch07/random/" >Randomness</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p>Making random numbers.  Testing functions that use random numbers.</p>
-				
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/intermediate-cs/ch07/exercises-2/" >Exercises 2</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p>Exercises working with number functions.</p>
-				
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/intermediate-cs/ch07/exercises-1/" >Exercises 1</a>
-</li>
-
-
-
-
-
-
-			
-				
-<p>Exercises.</p>
-				
-			
-		
-
-		
-			
-
-		
-	
-
-	
-</ul>
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -3367,8 +3192,6 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -3384,6 +3207,9 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4091,6 +3917,7 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
                 
                     
+                    
                 
                 
 
@@ -4103,6 +3930,9 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4263,6 +4093,7 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
             
                 
+                    
                     
                 
                 
@@ -4280,6 +4111,9 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -4302,7 +4136,6 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
                 
                     
-                    
                 
                 
 
@@ -4317,9 +4150,6 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4674,7 +4504,6 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
             
                 
-                    
                     
                 
                 
@@ -4688,9 +4517,6 @@ You should never use check-expect with inexact numbers, because the inexact resu
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -5260,10 +5086,10 @@ You should never use check-expect with inexact numbers, because the inexact resu
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch06/daily/animation-practice/" title="Animation Practice"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/karel/ch4c-classes/" title="4.6 More Classes"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch07/exercises-4/" title="More Exercises 4" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/karel/ch4b-adv/" title="4.* Advanced" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
