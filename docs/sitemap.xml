@@ -298,8 +298,18 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/karel/ch4b-adv/</loc>
+    <lastmod>2017-11-08T10:44:22-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch08/number-review/</loc>
     <lastmod>2017-10-31T14:31:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/karel/ch4e-test/</loc>
+    <lastmod>2017-11-14T08:21:12-06:00</lastmod>
   </url>
   
   <url>
@@ -385,11 +395,6 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch08/test-corrections/</loc>
     <lastmod>2017-11-10T16:44:02-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/karel/ch4b-adv/</loc>
-    <lastmod>2017-11-08T10:44:22-06:00</lastmod>
   </url>
   
   <url>
@@ -607,14 +612,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

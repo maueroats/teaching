@@ -413,11 +413,25 @@
 	"content": " MurderBot  A MurderBot is a kind of StrategyLayer with two additional abilities:\n public void stab(): place two beepers public void flee(): move one step  The KillerStrategy is a kind of Strategy that makes the robot it controls stab the first time the strategy is invoked (via doStrat, which will call doIt). Every subsequent time the robot is told to doStrat(), it should flee.\n Make sure the same doStrat() call causes one stab or one flee each time.\n Test your MurderBot with 8 calls to doStrat().\n Challenge yourself: this can be done without variables (except what is built into the StrategyLayer).\n Advanced: use the techniques the Spy in Section 4.8 to cause the stab action to find another robot on the same corner as the MurderBot and turn it off.\n  ViciousMurderBot Create a kind of MurderBot that places six beepers when it is told to stab, instead of just two.\n"
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/karel/ch4b-adv/",
+	"title": "4.* Advanced",
+	"tags": [],
+	"description": "",
+	"content": "Page 100, exercise 12 - the robot that has the undo command.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-review/",
 	"title": "Number Model Review",
 	"tags": [],
 	"description": "A summary of the key points of Chapters 7-8. Preparation for a test.",
 	"content": " Things to know:\n Animation following the graph of an equation:\n Computer coordinates People coordinates  Repetition using remainder.\n Max/min to keep values large/small.\n Randomness\n Range of random numbers (e.g., 10\u0026lt;=x\u0026lt;=50). Write and test a non-random function first.  Write checks for a function that you do not yet know how to write.\n  Terms:\n Computer coordinates: (0,0) in the upper left, positive y going down. People coordinates: (0,0) in the center, positive y going up.  Sample code:\n People coordinates demo  Review Problems  Make a sunset: a half circle.\n shrinks in radius changes color from red(ish) to black as the sun sets. (Advanced: yellow to magenta.)  Make a point that follows the graph of the equation y=((x-50)/10)^2\n Use \u0026ldquo;people coordinates\u0026rdquo;. Move from x=0 to x=150. Repeats the path from x=0 to x=150 over and over. Hit a key make the point go to x=0 (and start moving). Move the mouse to make the point move. (The point should seem to move faster when you move the mouse.)  (Some people didn\u0026rsquo;t like this one\u0026hellip; feel free to skip.) Make a line that you can move up and down with the mouse.\n Straight line through x=0, y=70 Passes through the point where the mouse is sitting.  Make a rectangle that is three times as wide as it is tall.\n Height is determined by y-coordinate of the mouse. Height decreases 5 units every time you hit a key. Height cannot go below 20 units using key. Height cannot go above 150 units using mouse. You choose the color. (Advanced: color of grey depends on y-coordinate.)   "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/karel/ch4e-test/",
+	"title": "4. Test",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
@@ -539,13 +553,6 @@
 	"content": "Chapter 8 Test\nDo corrections for +8 or more points of credit.\nCorrections mean complete, correct following of the design process for each function.\nScores will still be \u0026ldquo;curved\u0026rdquo;.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/karel/ch4b-adv/",
-	"title": "4.* Advanced",
-	"tags": [],
-	"description": "",
-	"content": "Page 100, exercise 12 - the robot that has the undo command.\n"
-},
-{
 	"uri": "http://wy-cs.info/ftc/meet-1/",
 	"title": "FTC Meet 1",
 	"tags": [],
@@ -634,7 +641,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.9  Very important chapter: Strategy, Spy, Observer. Design patterns in Java.\n CodingBat Interlude  Practice for the fundamentals of coding in Java: logic and loops.\n 4.6 PrettyBoxBot  PrettyBoxBot to practice interfaces\n 4.6 FishBot  A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n 4.6 More Classes  Three exercises to improve your understanding of classes and interfaces.\n 4.6 MurderBot  Review exercises for class design.\n 4.* Advanced  Page 100, exercise 12 - the robot that has the undo command.\n "
+	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.9  Very important chapter: Strategy, Spy, Observer. Design patterns in Java.\n CodingBat Interlude  Practice for the fundamentals of coding in Java: logic and loops.\n 4.6 PrettyBoxBot  PrettyBoxBot to practice interfaces\n 4.6 FishBot  A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n 4.6 More Classes  Three exercises to improve your understanding of classes and interfaces.\n 4.6 MurderBot  Review exercises for class design.\n 4.* Advanced  Page 100, exercise 12 - the robot that has the undo command.\n 4. Test  \n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/rubric/",
@@ -823,7 +830,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   4.6 MurderBot modified Mon 11-13  4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.* Advanced modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Karel 4.1-4.4 modified Thu 10-26  Intermediate Computer Science Recent Changes    9. Exercises 1 modified Mon 11-13  8. Test Corrections modified Fri 11-10  11.3 Homework 1 modified Fri 11-10  11. Planning modified Fri 11-10  9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   4. Test modified Tue 11-14  4.6 MurderBot modified Mon 11-13  4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.* Advanced modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Karel 4.5-4.9 modified Mon 10-30  Intermediate Computer Science Recent Changes    9. Exercises 1 modified Mon 11-13  8. Test Corrections modified Fri 11-10  11.3 Homework 1 modified Fri 11-10  11. Planning modified Fri 11-10  9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Number Model Review modified Tue 10-31  Number Models 4 modified Tue 10-31  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -847,14 +854,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
