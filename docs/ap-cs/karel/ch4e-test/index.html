@@ -3233,7 +3233,22 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
 <li>Return true if the partners get married, false if the marriage fails.</li>
 </ul></li>
 </ol>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span><span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">{</span>
+   <span style="color:#111">LBot</span> <span style="color:#111">sally</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">4</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">10</span><span style="color:#f92672">);</span>
+   <span style="color:#111">LBot</span> <span style="color:#111">harry</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">4</span><span style="color:#f92672">);</span>
+   <span style="color:#111">JusticeOfThePeaceBot</span> <span style="color:#111">judge</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">JusticeOfThePeaceBot</span><span style="color:#f92672">(</span><span style="color:#111">1</span><span style="color:#f92672">,</span><span style="color:#111">1</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">0</span><span style="color:#f92672">);</span>
+   
+   <span style="color:#00a8c8">boolean</span> <span style="color:#111">gotMarried</span> <span style="color:#f92672">=</span> <span style="color:#111">judge</span><span style="color:#f92672">.</span><span style="color:#75af00">marry</span><span style="color:#f92672">(</span><span style="color:#111">sally</span><span style="color:#f92672">,</span><span style="color:#111">harry</span><span style="color:#f92672">);</span>
+   
+   <span style="color:#00a8c8">if</span> <span style="color:#f92672">(</span> <span style="color:#f92672">!</span> <span style="color:#111">gotMarried</span> 
+       <span style="color:#f92672">||</span> <span style="color:#111">sally</span><span style="color:#f92672">.</span><span style="color:#75af00">getSpouse</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#111">harry</span> 
+       <span style="color:#f92672">||</span> <span style="color:#111">harry</span><span style="color:#f92672">.</span><span style="color:#75af00">getSpouse</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#111">sally</span> <span style="color:#f92672">)</span> 
+   <span style="color:#f92672">{</span>
+       <span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">err</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;they did not get married!?&#34;</span><span style="color:#f92672">);</span>
+   <span style="color:#f92672">}</span>
+   
+<span style="color:#f92672">}</span></code></pre></div>
 <h2 id="relationships">Relationships</h2>
 
 <p>Do one of the following:</p>

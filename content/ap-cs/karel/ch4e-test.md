@@ -51,6 +51,25 @@ The function is `public boolean marry(Partner a, Partner b)`.
     - If either robot is unavailable, do not marry them!
     - Return true if the partners get married, false if the marriage fails.
 
+```java
+public static void main(String[] args)
+{
+   LBot sally = new LBot(4,2,East,10);
+   LBot harry = new LBot(5,2,East,4);
+   JusticeOfThePeaceBot judge = new JusticeOfThePeaceBot(1,1,East,0);
+   
+   boolean gotMarried = judge.marry(sally,harry);
+   
+   if ( ! gotMarried 
+       || sally.getSpouse() != harry 
+       || harry.getSpouse() != sally ) 
+   {
+       System.err.println("they did not get married!?");
+   }
+   
+}
+```
+
 ## Relationships
 
 Do one of the following:

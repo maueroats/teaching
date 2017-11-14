@@ -431,7 +431,7 @@
 	"title": "4. Test",
 	"tags": [],
 	"description": "",
-	"content": " Karel Chapter 4 Test You may not use any resource materials for this test.\nPartners New laws have been passed and now robots can get married. A robot who wants to get married must implement the Partner interface. The Partner interface consists of a public Partner getSpouse() method as well as a public void setSpouse(Partner x) and a public boolean isAvailable() method. When robots are delivered from the factory they do not have a partner.\n Write the Partner interface.\n getSpouse: return the current spouse setSpouse: make the current spouse be the given robot isAvailable: true if the Partner has a spouse  Create a LBot that implements the Partner interface. Example test code:\n  public static void main (String[] args) { LBot sally = new LBot(4,2,East,10); LBot harry = new LBot(5,2,East,4); sally.setSpouse(harry); if (sally.getSpouse() != harry) { System.err.println(\u0026#34;Sally just married Harry. What\u0026#39;s going on?\u0026#34;); } if (sally.isAvailable()) { System.err.println(\u0026#34;Sally should not still be available!\u0026#34;) } } Marriage  The JusticeOfThePeaceBot can marry robots. The function is public boolean marry(Partner a, Partner b).  Write this function. Only marry if both robots are available. If either robot is unavailable, do not marry them! Return true if the partners get married, false if the marriage fails.   Relationships Do one of the following:\n (Know 4.8) The FindRelationship strategy is: move forward one step, if there is a robot there and it is available, change to NoStrategy, otherwise continue looking.\n (No 4.8) The Courting strategy is created by Strategy s = new Courting(Partner x). The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the Courting strategy.\n  "
+	"content": " Karel Chapter 4 Test You may not use any resource materials for this test.\nPartners New laws have been passed and now robots can get married. A robot who wants to get married must implement the Partner interface. The Partner interface consists of a public Partner getSpouse() method as well as a public void setSpouse(Partner x) and a public boolean isAvailable() method. When robots are delivered from the factory they do not have a partner.\n Write the Partner interface.\n getSpouse: return the current spouse setSpouse: make the current spouse be the given robot isAvailable: true if the Partner has a spouse  Create a LBot that implements the Partner interface. Example test code:\n  public static void main (String[] args) { LBot sally = new LBot(4,2,East,10); LBot harry = new LBot(5,2,East,4); sally.setSpouse(harry); if (sally.getSpouse() != harry) { System.err.println(\u0026#34;Sally just married Harry. What\u0026#39;s going on?\u0026#34;); } if (sally.isAvailable()) { System.err.println(\u0026#34;Sally should not still be available!\u0026#34;) } } Marriage  The JusticeOfThePeaceBot can marry robots. The function is public boolean marry(Partner a, Partner b).  Write this function. Only marry if both robots are available. If either robot is unavailable, do not marry them! Return true if the partners get married, false if the marriage fails.   public static void main(String[] args) { LBot sally = new LBot(4,2,East,10); LBot harry = new LBot(5,2,East,4); JusticeOfThePeaceBot judge = new JusticeOfThePeaceBot(1,1,East,0); boolean gotMarried = judge.marry(sally,harry); if ( ! gotMarried || sally.getSpouse() != harry || harry.getSpouse() != sally ) { System.err.println(\u0026#34;they did not get married!?\u0026#34;); } } Relationships Do one of the following:\n (Know 4.8) The FindRelationship strategy is: move forward one step, if there is a robot there and it is available, change to NoStrategy, otherwise continue looking.\n (No 4.8) The Courting strategy is created by Strategy s = new Courting(Partner x). The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the Courting strategy.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
@@ -854,14 +854,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
