@@ -16,21 +16,40 @@ You may not use any resource materials for this test.
 New laws have been passed and now robots can get married. A robot who
 wants to get married must implement the `Partner` interface. The
 Partner interface consists of a `public UrRobot getSpouse()` method as
-well as a `public void setSpouse(Partner x)` and a `public boolean
+well as a `public void setSpouse(UrRobot x)` and a `public boolean
 isAvailable()` method. When robots are delivered from the factory they
 do not have a partner.
 
 1. Write the `Partner` interface.
 
-2. Create a `LBot` that implements the `Partner` interface.
+    - getSpouse: return the current spouse
+    - setSpouse: make the current spouse be the given robot
+    - isAvailable: true if the Partner has a spouse
+
+2. Create a `LBot` that implements the `Partner` interface. Example test code:
+
+```java
+public static void main (String[] args) {
+   LBot sally = new LBot(4,2,East,10);
+   LBot harry = new LBot(5,2,East,4);
+   sally.setSpouse(harry);
+   if (sally.isAvailable()) {
+       System.err.println("Sally should not still be available!")
+   }
+   if (sally.getSpouse() != harry) {
+       System.err.println("Sally just married Harry. What's going on?");
+   }
+}
+```
 
 ## Marriage
 
 3. The `JusticeOfThePeaceBot` can marry robots. 
 The function is `public boolean marry(Partner a, Partner b)`. 
     - Write this function. 
+    - Only marry if both robots are available.
     - If either robot is unavailable, do not marry them!
-    - Return true if the partners are married, false if the marriage fails.
+    - Return true if the partners get married, false if the marriage fails.
 
 ## Relationships
 

@@ -3194,16 +3194,32 @@
 <p>New laws have been passed and now robots can get married. A robot who
 wants to get married must implement the <code>Partner</code> interface. The
 Partner interface consists of a <code>public UrRobot getSpouse()</code> method as
-well as a <code>public void setSpouse(Partner x)</code> and a <code>public boolean
+well as a <code>public void setSpouse(UrRobot x)</code> and a <code>public boolean
 isAvailable()</code> method. When robots are delivered from the factory they
 do not have a partner.</p>
 
 <ol>
-<li><p>Write the <code>Partner</code> interface.</p></li>
+<li><p>Write the <code>Partner</code> interface.</p>
 
-<li><p>Create a <code>LBot</code> that implements the <code>Partner</code> interface.</p></li>
+<ul>
+<li>getSpouse: return the current spouse</li>
+<li>setSpouse: make the current spouse be the given robot</li>
+<li>isAvailable: true if the Partner has a spouse</li>
+</ul></li>
+
+<li><p>Create a <code>LBot</code> that implements the <code>Partner</code> interface. Example test code:</p></li>
 </ol>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span> <span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+   <span style="color:#111">LBot</span> <span style="color:#111">sally</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">4</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">10</span><span style="color:#f92672">);</span>
+   <span style="color:#111">LBot</span> <span style="color:#111">harry</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">4</span><span style="color:#f92672">);</span>
+   <span style="color:#111">sally</span><span style="color:#f92672">.</span><span style="color:#75af00">setSpouse</span><span style="color:#f92672">(</span><span style="color:#111">harry</span><span style="color:#f92672">);</span>
+   <span style="color:#00a8c8">if</span> <span style="color:#f92672">(</span><span style="color:#111">sally</span><span style="color:#f92672">.</span><span style="color:#75af00">isAvailable</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+       <span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">err</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sally should not still be available!&#34;</span><span style="color:#f92672">)</span>
+   <span style="color:#f92672">}</span>
+   <span style="color:#00a8c8">if</span> <span style="color:#f92672">(</span><span style="color:#111">sally</span><span style="color:#f92672">.</span><span style="color:#75af00">getSpouse</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#111">harry</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+       <span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">err</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sally just married Harry. What&#39;s going on?&#34;</span><span style="color:#f92672">);</span>
+   <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
 <h2 id="marriage">Marriage</h2>
 
 <ol>
@@ -3212,8 +3228,9 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
 
 <ul>
 <li>Write this function.</li>
+<li>Only marry if both robots are available.</li>
 <li>If either robot is unavailable, do not marry them!</li>
-<li>Return true if the partners are married, false if the marriage fails.</li>
+<li>Return true if the partners get married, false if the marriage fails.</li>
 </ul></li>
 </ol>
 
