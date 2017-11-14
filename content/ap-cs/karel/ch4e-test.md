@@ -24,7 +24,7 @@ do not have a partner.
 
     - getSpouse: return the current spouse
     - setSpouse: make the current spouse be the given robot
-    - isAvailable: true if the Partner has a spouse
+    - isAvailable: false if the Partner has a spouse
 
 2. Create a `LBot` that implements the `Partner` interface. Example test code:
 
