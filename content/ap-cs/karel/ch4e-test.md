@@ -16,7 +16,7 @@ You may not use any resource materials for this test.
 New laws have been passed and now robots can get married. A robot who
 wants to get married must implement the `Partner` interface. The
 Partner interface consists of a `public UrRobot spouse()` method as
-well as a `public void setSpouse()` and a `public boolean
+well as a `public void setSpouse(Partner x)` and a `public boolean
 isAvailable()` method. When robots are delivered from the factory they
 do not have a partner.
 
