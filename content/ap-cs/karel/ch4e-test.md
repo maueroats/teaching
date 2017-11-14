@@ -33,11 +33,11 @@ public static void main (String[] args) {
    LBot sally = new LBot(4,2,East,10);
    LBot harry = new LBot(5,2,East,4);
    sally.setSpouse(harry);
-   if (sally.isAvailable()) {
-       System.err.println("Sally should not still be available!")
-   }
    if (sally.getSpouse() != harry) {
        System.err.println("Sally just married Harry. What's going on?");
+   }
+   if (sally.isAvailable()) {
+       System.err.println("Sally should not still be available!")
    }
 }
 ```
