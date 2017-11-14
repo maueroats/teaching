@@ -3219,13 +3219,12 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
 
 <h2 id="relationships">Relationships</h2>
 
-<ol>
-<li>The <code>FindRelationship</code> strategy depends on whether you know Section 4.8 or not:
+<p>Do one of the following:</p>
 
-<ul>
-<li>Know 4.8: move forward one step, if there is a robot there and it is available, marry it.
-<br /></li>
-</ul></li>
+<ol>
+<li><p>(Know 4.8) The <code>FindRelationship</code> strategy is: move forward one step, if there is a robot there and it is available, change to NoStrategy, otherwise continue looking.</p></li>
+
+<li><p>(No 4.8) The <code>Court</code> strategy is created by <code>Strategy s = new Court(Partner x)</code>. The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the <code>Court</code> strategy.</p></li>
 </ol>
 
 

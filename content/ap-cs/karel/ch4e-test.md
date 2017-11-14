@@ -34,6 +34,10 @@ The function is `public boolean marry(Partner a, Partner b)`.
 
 ## Relationships
 
-4. The `FindRelationship` strategy depends on whether you know Section 4.8 or not:
-     - Know 4.8: move forward one step, if there is a robot there and it is available, marry it. 
-     
+Do one of the following:
+
+4. (Know 4.8) The `FindRelationship` strategy is: move forward one step, if there is a robot there and it is available, change to NoStrategy, otherwise continue looking.
+
+5. (No 4.8) The `Court` strategy is created by `Strategy s = new Court(Partner x)`. The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the `Court` strategy.
+
+
