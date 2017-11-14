@@ -15,8 +15,8 @@ You may not use any resource materials for this test.
 
 New laws have been passed and now robots can get married. A robot who
 wants to get married must implement the `Partner` interface. The
-Partner interface consists of a `public UrRobot getSpouse()` method as
-well as a `public void setSpouse(UrRobot x)` and a `public boolean
+Partner interface consists of a `public Partner getSpouse()` method as
+well as a `public void setSpouse(Partner x)` and a `public boolean
 isAvailable()` method. When robots are delivered from the factory they
 do not have a partner.
 
@@ -57,6 +57,6 @@ Do one of the following:
 
 4. (Know 4.8) The `FindRelationship` strategy is: move forward one step, if there is a robot there and it is available, change to NoStrategy, otherwise continue looking.
 
-5. (No 4.8) The `Court` strategy is created by `Strategy s = new Court(Partner x)`. The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the `Court` strategy.
+5. (No 4.8) The `Courting` strategy is created by `Strategy s = new Courting(Partner x)`. The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the `Courting` strategy.
 
 

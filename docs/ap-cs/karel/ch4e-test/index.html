@@ -3193,8 +3193,8 @@
 
 <p>New laws have been passed and now robots can get married. A robot who
 wants to get married must implement the <code>Partner</code> interface. The
-Partner interface consists of a <code>public UrRobot getSpouse()</code> method as
-well as a <code>public void setSpouse(UrRobot x)</code> and a <code>public boolean
+Partner interface consists of a <code>public Partner getSpouse()</code> method as
+well as a <code>public void setSpouse(Partner x)</code> and a <code>public boolean
 isAvailable()</code> method. When robots are delivered from the factory they
 do not have a partner.</p>
 
@@ -3241,7 +3241,7 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
 <ol>
 <li><p>(Know 4.8) The <code>FindRelationship</code> strategy is: move forward one step, if there is a robot there and it is available, change to NoStrategy, otherwise continue looking.</p></li>
 
-<li><p>(No 4.8) The <code>Court</code> strategy is created by <code>Strategy s = new Court(Partner x)</code>. The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the <code>Court</code> strategy.</p></li>
+<li><p>(No 4.8) The <code>Courting</code> strategy is created by <code>Strategy s = new Courting(Partner x)</code>. The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the <code>Courting</code> strategy.</p></li>
 </ol>
 
 
