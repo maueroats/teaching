@@ -37,7 +37,7 @@ public static void main (String[] args) {
        System.err.println("Sally just married Harry. What's going on?");
    }
    if (sally.isAvailable()) {
-       System.err.println("Sally should not still be available!")
+       System.err.println("Sally should not still be available!");
    }
 }
 ```
@@ -52,7 +52,7 @@ The function is `public boolean marry(Partner a, Partner b)`.
     - Return true if the partners get married, false if the marriage fails.
 
 ```java
-public static void main(String[] args)
+public static void testMarry() 
 {
    LBot sally = new LBot(4,2,East,10);
    LBot harry = new LBot(5,2,East,4);
@@ -78,4 +78,15 @@ Do one of the following:
 
 5. (No 4.8) The `Courting` strategy is created by `Strategy s = new Courting(Partner x)`. The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the `Courting` strategy.
 
-
+```java
+public static void testCourt()
+{
+   LBot sally = new LBot(4,2,East,10);
+   LBot harry = new LBot(5,2,East,4);
+   
+   Courting c = new Courting(sally);
+   c.doIt(harry); // harry should place a beeper
+   sally.setSpouse(sally); // married herself to make harry go away
+   c.doIt(harry); // harry should do nothing
+}
+```
