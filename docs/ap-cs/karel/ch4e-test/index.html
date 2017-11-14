@@ -3159,7 +3159,16 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li><a href="#karel-chapter-4-test">Karel Chapter 4 Test</a>
+<ul>
+<li><a href="#partners">Partners</a></li>
+<li><a href="#marriage">Marriage</a></li>
+<li><a href="#relationships">Relationships</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -3174,6 +3183,50 @@
 
 
 
+
+
+<h1 id="karel-chapter-4-test">Karel Chapter 4 Test</h1>
+
+<p>You may not use any resource materials for this test.</p>
+
+<h2 id="partners">Partners</h2>
+
+<p>New laws have been passed and now robots can get married. A robot who
+wants to get married must implement the <code>Partner</code> interface. The
+Partner interface consists of a <code>public UrRobot spouse()</code> method as
+well as a <code>public void setSpouse()</code> and a <code>public boolean
+isAvailable()</code> method. When robots are delivered from the factory they
+do not have a partner.</p>
+
+<ol>
+<li><p>Write the <code>Partner</code> interface.</p></li>
+
+<li><p>Create a <code>LBot</code> that implements the <code>Partner</code> interface.</p></li>
+</ol>
+
+<h2 id="marriage">Marriage</h2>
+
+<ol>
+<li>The <code>JusticeOfThePeaceBot</code> can marry robots.
+The function is <code>public boolean marry(Partner a, Partner b)</code>.
+
+<ul>
+<li>Write this function.</li>
+<li>If either robot is unavailable, do not marry them!</li>
+<li>Return true if the partners are married, false if the marriage fails.</li>
+</ul></li>
+</ol>
+
+<h2 id="relationships">Relationships</h2>
+
+<ol>
+<li>The <code>FindRelationship</code> strategy depends on whether you know Section 4.8 or not:
+
+<ul>
+<li>Know 4.8: move forward one step, if there is a robot there and it is available, marry it.
+<br /></li>
+</ul></li>
+</ol>
 
 
 <footer class=" footline" >
