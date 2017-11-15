@@ -4,6 +4,7 @@ date: 2017-11-13T15:16:21-06:00
 draft: false
 #type: slide
 #theme: white
+weight: 91
 ---
 
 * `dot-fill`: Take in a string(word) and put out a string. The output string is the same as the input string, except that it has periods added (".") to bring it to 10 characters long.
