@@ -4,6 +4,7 @@ date: 2017-11-17T09:57:05-06:00
 draft: false
 #type: slide
 #theme: white
+description: "Design your own house (art) and cost calculator (math). Practice managing complexity and good function-writing style."
 ---
 
 In this project you will design a house of your own. You will write functions to create the house and functions to determine how much it will cost. Your costs do not have to be realistic. 
@@ -23,11 +24,15 @@ Check in points:
 5. Cost functions completed.
 
 Work days:
-1. Sketch house. Outline functions needed. Write two of them house
-   functions. Check off 1 and 2. Complete house at home.
+
+1. Sketch house and check-in plan.
+    - List three traits you can change.
+    - List functions needed. 
+    - Write two of the house functions. 
+    - (Work on house at home. Do at least two functions.)
 2. Decide costs, outline functions needed. Start writing cost functions.
    Complete cost functions at home.
-3. Do we need a third work day?? We will find out.
+3. We will need a third work day to finish up.
 
 Due: Thursday after Thanksgiving (note: we will work on new material this week).
 
@@ -75,3 +80,7 @@ Feel free to be creative. Houses can have decoration (images and
 colors). Shapes do not have to be limited to triangles and
 rectangles - Racket has many shapes available!
 
+## Inspiration
+
+* Cathedrals: [Truro](https://upload.wikimedia.org/wikipedia/commons/6/61/TruroCathedralWest.jpg), [Bristol](https://upload.wikimedia.org/wikipedia/commons/7/74/Bristol.cathedral.west.front.arp.jpg), [Notre Dame](https://upload.wikimedia.org/wikipedia/commons/b/be/Notre_Dame_dalla_Senna_crop.jpg)
+* Exotic homes: [prefab on a lake](http://cdn.trendhunterstatic.com/thumbs/coodo-my-home.jpeg), [Giza Pyramids visitor center](https://www.egypttoursplus.com/wp-content/uploads/2014/03/Outside-view-of-the-Solar-Boat-Museum-Photo-by-Kormoran.jpg)
