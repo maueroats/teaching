@@ -7,6 +7,29 @@ draft: false
 ---
 
 In this project you will design a house of your own. You will write functions to create the house and functions to determine how much it will cost. Your costs do not have to be realistic. 
+  
+## Timeline
+
+We will spend two whole days working on this in class. I expect it
+will take 2-4 additional hours outside of class, although this will
+depends on your understanding and how ambitious of a house you create.
+
+Check in points:
+
+1. Paper sketch and function outline approved for house image. 
+2. Style check of two completed functions. 
+3. House functions completed. 
+4. Paper outline of functions approved for costs.
+5. Cost functions completed.
+
+Work days:
+1. Sketch house. Outline functions needed. Write two of them house
+   functions. Check off 1 and 2. Complete house at home.
+2. Decide costs, outline functions needed. Start writing cost functions.
+   Complete cost functions at home.
+3. Do we need a third work day?? We will find out.
+
+Due: Thursday after Thanksgiving (note: we will work on new material this week).
 
 ## House
 
@@ -39,17 +62,16 @@ Roof cost depends on the area of the roof. You are almost certainly drawing a fr
 Your project must be written in the style of a high quality Racket program:
 
 * Functions are small and do _only one job_.
-
 * VARIABLES are used to give meaning to the raw numbers you use.
-
+* Meaningful names for function parameters. (Use "ticket-price" not just "x".)
 * Check-expects for all functions.
-
 * Line breaks and indentation: close as many parentheses as you want,
   then move to the next line. Your code must not change when
   auto-indented.
   
-  
-## Timeline
+## Creativity 
 
-1. Paper sketch approved
-2. 
+Feel free to be creative. Houses can have decoration (images and
+colors). Shapes do not have to be limited to triangles and
+rectangles - Racket has many shapes available!
+
