@@ -567,6 +567,20 @@
 	"content": " We discussed the following function using tools from Chapter 9:\n(centr \u0026#34;panda\u0026#34;) =\u0026gt; \u0026#34;*****panda*****\u0026#34; (centr \u0026#34;sinful\u0026#34;) =\u0026gt; \u0026#34;*****sinful****\u0026#34; (centr \u0026#34;conspicuous\u0026#34;) =\u0026gt; \u0026#34;**conspicuous**\u0026#34; Write a signature, purpose, and function for centr.\n We discussed 11.6.1, the house:\n identifying pieces of house separate functions for each piece how to create the roof   You should finish the house 11.6.1 for homework if you did not finish it in class.\n  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch11/11_6b/",
+	"title": "11.6.2 Airline",
+	"tags": [],
+	"description": "",
+	"content": "Make a plan before you start programming.\nThere are two essentials:\n Multiple functions! Variables to give your numbers meaning.  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch11/11_project/",
+	"title": "Home Project",
+	"tags": [],
+	"description": "",
+	"content": " In this project you will design a house of your own. You will write functions to create the house and functions to determine how much it will cost. Your costs do not have to be realistic.\nHouse Make decisions on each of these areas. I have listed possibilities but you can choose other ideas as well. Be creative and have fun.\n Shape of the roof: triangle, isosceles trapezoid, rectangle. Height of roof: fixed height, fixed slope. Base: probably a rectangle but could be an octagon, several triangles, or make your own shape. Option: Stilts? In hurricaine-prone areas, houses are built on stilts twelve feet off the ground so that a typical storm surge does not touch the ground floor. Door: maybe one rectangle or two rectangles; could be a sliding patio-door type. Windows could vary in height and style.  fixed height or make them grow taller as the house gets taller. windows of various sizes or styles (like add a smaller attic window) rectangular, octagonal, curved on top  Color: the whole house could vary in color, or certain parts could be colored similarly, some parts could always be the same color (like white windows or a grey roof).  Cost  Window cost depends on the dimensions and possibly shape. Door cost is probably always the same, but you could have multiple doors so they cost more. Base of the house cost should depend on the dimensions. (Attention: subtle instructions! ) Roof cost depends on the area of the roof. You are almost certainly drawing a front view, so you should make the cost of the roof depend on the length of the top side that represents the part where the shingles would go.\nExample: let\u0026rsquo;s say your roof costs $16/\u0026ldquo;foot\u0026rdquo;. Suppose you have made a roof by putting two 3-4-5 right triangles together. The part that you are going to count as the actual roof (for cost purposes) is the top two sides (hypotenuses). Each hypotenuse is 5ft, giving you 10ft of roof, which is a cost of $160.\n  Style and Checks Your project must be written in the style of a high quality Racket program:\n Functions are small and do only one job.\n VARIABLES are used to give meaning to the raw numbers you use.\n Check-expects for all functions.\n Line breaks and indentation: close as many parentheses as you want, then move to the next line. Your code must not change when auto-indented.\n  Timeline  Paper sketch approved   "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/test-corrections/",
 	"title": "8. Test Corrections",
 	"tags": [],
@@ -851,7 +865,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  4. Test modified Tue 11-14  4.6 MurderBot modified Mon 11-13  4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Intermediate Computer Science Recent Changes    9. Exercises 2 modified Tue 11-14  11.6.1 House modified Tue 11-14  9. Exercises 1 modified Mon 11-13  8. Test Corrections modified Fri 11-10  11.3 Homework 1 modified Fri 11-10  11. Planning modified Fri 11-10  9. Strings modified Wed 11-08  Number Review More modified Mon 11-06  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  4. Test modified Tue 11-14  4.6 MurderBot modified Mon 11-13  4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  CodingBat Interlude modified Thu 11-02  Intermediate Computer Science Recent Changes    Home Project modified Fri 11-17  11.6.2 Airline modified Fri 11-17  11.6.1 House modified Tue 11-14  9. Exercises 2 modified Tue 11-14  9. Exercises 1 modified Mon 11-13  8. Test Corrections modified Fri 11-10  11.3 Homework 1 modified Fri 11-10  11. Planning modified Fri 11-10  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

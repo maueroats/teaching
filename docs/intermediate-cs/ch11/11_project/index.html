@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="Challenging problems for people who want to stretch their understanding.">
+    <meta name="description" content="">
 
 
-    <title>USACO Practice :: WY Computer Science</title>
+    <title>Home Project :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/usaco/">
+  <body class="" data-url="/intermediate-cs/ch11/11_project/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -116,7 +116,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -127,7 +127,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -710,8 +710,8 @@
   
     
     <li data-nav-id="/ap-cs/haskell/usaco/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/ap-cs/haskell/usaco/">
@@ -721,7 +721,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1581,7 +1581,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1592,7 +1592,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -2626,7 +2626,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch11/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -2637,7 +2637,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -2740,7 +2740,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch11/11_project/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/ch11/11_project/">
         <span>Home Project</span> 
@@ -3246,7 +3246,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > USACO Practice
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch11/'>11. Planning</a> > Home Project
 
  
 
@@ -3259,7 +3259,17 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#house">House</a></li>
+<li><a href="#cost">Cost</a></li>
+<li><a href="#style-and-checks">Style and Checks</a></li>
+<li><a href="#timeline">Timeline</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -3268,7 +3278,7 @@
         
         <div id="body-inner">
           
-            <h1>USACO Practice</h1>
+            <h1>Home Project</h1>
           
 
 
@@ -3276,68 +3286,69 @@
 
 
 
-<p>One of the key ideas to keep in mind when learning from USA Computing
-Olympiad problems is that time matters. A slow algorithm is not good
-enough; keep thinking about the problem, trying to find a more
-efficient way to solve it. Always time your solutions. Always try your
-solutions on the official test cases &mdash; many times they will contain
-a situation that you have not considered. Enjoy it when that happens.</p>
+<p>In this project you will design a house of your own. You will write functions to create the house and functions to determine how much it will cost. Your costs do not have to be realistic.</p>
 
+<h2 id="house">House</h2>
 
+<p>Make decisions on each of these areas. I have listed possibilities but
+you can choose other ideas as well. Be creative and have fun.</p>
 
+<ol>
+<li>Shape of the roof: triangle, isosceles trapezoid, rectangle.</li>
+<li>Height of roof: fixed height, fixed slope.</li>
+<li>Base: probably a rectangle but could be an octagon, several triangles, or make your own shape.</li>
+<li>Option: Stilts? In hurricaine-prone areas, houses are built on stilts twelve feet off the ground so that a typical storm surge does not touch the ground floor.</li>
+<li>Door: maybe one rectangle or two rectangles; could be a sliding patio-door type.</li>
+<li>Windows could vary in height and style.
 
+<ul>
+<li>fixed height or make them grow taller as the house gets taller.</li>
+<li>windows of various sizes or styles (like add a smaller attic window)</li>
+<li>rectangular, octagonal, curved on top</li>
+</ul></li>
+<li>Color: the whole house could vary in color, or certain parts could be colored similarly, some parts could always be the same color (like white windows or a grey roof).</li>
+</ol>
 
+<h2 id="cost">Cost</h2>
 
+<ol>
+<li>Window cost depends on the dimensions and possibly shape.</li>
+<li>Door cost is probably always the same, but you could have multiple doors so they cost more.</li>
+<li>Base of the house cost should depend on the dimensions.</li>
 
+<li><p>(<strong>Attention: subtle instructions!</strong> )
+Roof cost depends on the area of the roof. You are almost certainly drawing a front view, so you should make the cost of the roof depend on the length of the top side that represents the part where the shingles would go.</p>
 
+<p>Example: let&rsquo;s say your roof costs $16/&ldquo;foot&rdquo;. Suppose you have made a roof by putting two 3-4-5 right triangles together. The part that you are going to count as the actual roof (for cost purposes) is the top two sides (hypotenuses). Each hypotenuse is 5ft, giving you 10ft of roof, which is a cost of $160.</p></li>
+</ol>
 
+<h2 id="style-and-checks">Style and Checks</h2>
 
+<p>Your project must be written in the style of a high quality Racket program:</p>
 
+<ul>
+<li><p>Functions are small and do <em>only one job</em>.</p></li>
 
+<li><p>VARIABLES are used to give meaning to the raw numbers you use.</p></li>
 
-<ul class="children children-li">
-	
-    
-    
+<li><p>Check-expects for all functions.</p></li>
 
-	
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/haskell/usaco/haybales/" >Haybales</a>
-</li>
-
-
-
-
-
-
-			
-		
-
-		
-			
-
-		
-	
-
-	
+<li><p>Line breaks and indentation: close as many parentheses as you want,
+then move to the next line. Your code must not change when
+auto-indented.</p></li>
 </ul>
 
+<h2 id="timeline">Timeline</h2>
 
-
-
+<ol>
+<li>Paper sketch approved</li>
+<li></li>
+</ol>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -3376,6 +3387,8 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -3392,7 +3405,6 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
                 
                     
-                    
                 
                 
 
@@ -3407,9 +3419,6 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3747,7 +3756,6 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
                 
                     
-                    
                 
                 
 
@@ -3760,9 +3768,6 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4348,6 +4353,7 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
             
                 
+                    
                     
                 
                 
@@ -4364,6 +4370,9 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -5006,6 +5015,7 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
                 
                     
+                    
                 
                 
 
@@ -5018,6 +5028,9 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5082,6 +5095,7 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
             
                 
+                    
                     
                 
                 
@@ -5101,6 +5115,9 @@ a situation that you have not considered. Enjoy it when that happens.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5379,10 +5396,10 @@ a situation that you have not considered. Enjoy it when that happens.</p>
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/ch06/ch06-reading-guide/" title="Chapter 6 Reading Guide"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch11/11_6b/" title="11.6.2 Airline"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/usaco/haybales/" title="Haybales" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
