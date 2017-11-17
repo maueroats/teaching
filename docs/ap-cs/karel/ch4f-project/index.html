@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="">
+    <meta name="description" content="A skit involving robots making decisions.">
 
 
     <title>4. Robot Drama :: WY Computer Science</title>
@@ -1388,7 +1388,7 @@
      
       ">
         <a href="/ap-cs/karel/ch4b/">
-        <span>Karel 4.5-4.9</span> 
+        <span>Karel 4.5-4.6</span> 
         
         </a></li>
      
@@ -3223,14 +3223,17 @@
 <ul>
 <li>
 <ul>
+<li><a href="#assignment-in-brief">Assignment in Brief</a>
+<ul>
+<li><a href="#assignment-elements">Assignment Elements</a></li>
+<li><a href="#assignment-timeline">Assignment Timeline</a></li>
+</ul></li>
 <li><a href="#schoolbot-abstract-class">SchoolBot abstract class</a></li>
 <li><a href="#studentbot-looks-for-teacherbot">StudentBot looks for TeacherBot</a>
 <ul>
 <li><a href="#robot-vs-urrobot">Robot vs UrRobot</a></li>
 <li><a href="#neighbors">neighbors</a></li>
 </ul></li>
-<li><a href="#assignment-elements">Assignment Elements</a></li>
-<li><a href="#assignment-timeline">Assignment Timeline</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -3260,6 +3263,25 @@
 <li><a href="http://csis.pace.edu/~bergin/KarelJava2ed/KJRdocs/kareltherobot/UrRobot.html">UrRobot</a></li>
 </ul>
 
+<h2 id="assignment-in-brief">Assignment in Brief</h2>
+
+<h3 id="assignment-elements">Assignment Elements</h3>
+
+<ul>
+<li>One robot interacts with another robot.</li>
+<li>You create a new interface or abstract class for use.</li>
+<li>Robots interact in a non-formulaic way.</li>
+<li>Interesting plot line (please!). It&rsquo;s supposed to be fun.</li>
+</ul>
+
+<h3 id="assignment-timeline">Assignment Timeline</h3>
+
+<ul>
+<li>Friday: Outline of the action which will happen. (Check in.)</li>
+<li>Tuesday: You should have at least 3 classes/interfaces written. (Check in.)</li>
+<li>Tuesday after Thanksgiving: project due.</li>
+</ul>
+
 <h2 id="schoolbot-abstract-class">SchoolBot abstract class</h2>
 
 <p>We decided that every robot in school will have four basic functions.</p>
@@ -3285,26 +3307,9 @@ get a Strategy from it. (The idea is that the Strategy will get you help when yo
 
 <h3 id="neighbors">neighbors</h3>
 
-<p>The <code>myRobot.neighbors()</code> function returns an <code>Enumeration</code>. An Enumeration is an object that is basically a list of items. There is a <code>nextElement()</code> function which gives you the next item in the list. (You start before the first item.) There is a <code>hasNextElement()</code> which returns true if there is another element you can get.</p>
+<p>The <code>myRobot.neighbors()</code> function returns an <code>Enumeration</code>. An Enumeration is an object that is basically a list of items. There is a <code>nextElement()</code> function which gives you the next item in the list. (You start before the first item.) There is a <code>hasMoreElements()</code> which returns true if there is another element you can get.</p>
 
 <p>Note: Karel the Robot is an old program and <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Enumeration.html">Enumeration</a> is an old interface. New programs use an <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html">Iterator</a> instead.</p>
-
-<h2 id="assignment-elements">Assignment Elements</h2>
-
-<ul>
-<li>One robot interacts with another robot.</li>
-<li>You create a new interface or abstract class for use.</li>
-<li>Robots interact in a non-formulaic way.</li>
-<li>Interesting plot line (please!). It&rsquo;s supposed to be fun.</li>
-</ul>
-
-<h2 id="assignment-timeline">Assignment Timeline</h2>
-
-<ul>
-<li>Friday: Outline of the action which will happen</li>
-<li>Tuesday: Demonstrate interfaces.</li>
-<li>Monday after Thanksgiving: project due.</li>
-</ul>
 
 
 <footer class=" footline" >

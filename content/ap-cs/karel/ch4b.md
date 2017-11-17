@@ -1,9 +1,9 @@
 ---
-title: "Karel 4.5-4.9"
+title: "Karel 4.5-4.6"
 date: 2017-10-30T09:52:53-05:00
 draft: false
 weight: 41
-description: "Very important chapter: Strategy, Spy, Observer. Design patterns in Java."
+description: "Great chapter: Strategy, Spy, Observer. Design patterns in Java."
 ---
 
 ## NeighborTalker

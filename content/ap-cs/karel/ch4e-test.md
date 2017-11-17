@@ -5,6 +5,7 @@ draft: false
 weight: 51
 #type: slide
 #theme: white
+description: "Karel test, based on the review done earlier. Be sure to understand the material from 4.6."
 ---
 
 # Karel Chapter 4 Test

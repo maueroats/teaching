@@ -1388,7 +1388,7 @@
      
       ">
         <a href="/ap-cs/karel/ch4b/">
-        <span>Karel 4.5-4.9</span> 
+        <span>Karel 4.5-4.6</span> 
         
         </a></li>
      
@@ -3219,7 +3219,15 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#undoing">Undoing</a></li>
+<li><a href="#simultaneous-action">Simultaneous Action</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -3234,7 +3242,23 @@
 
 
 
-<p>Page 100, exercise 12 - the robot that has the undo command.</p>
+
+
+<h2 id="undoing">Undoing</h2>
+
+<p>Page 100, exercise 12 - the robot that has the undo command. I used the idea of a Decorator strategy.</p>
+
+<h2 id="simultaneous-action">Simultaneous Action</h2>
+
+<p>Chapter 8 in the text shows how to make more than one robot act at the same time.  See the <a href="https://github.com/2017-2018-wy-ap-cs/apcs-karel/blob/master/MultiThreadBot.java">MultiThreadBot</a> on the class GitHub.</p>
+
+<p>A brief summary is:</p>
+
+<ul>
+<li><p><code>World.setupThread(robot)</code> prepares the robot to act in its own thread.</p></li>
+
+<li><p><code>World.startThreads()</code> calls the <code>run()</code> method for every robot that is set up as threading using the command above.</p></li>
+</ul>
 
 
 <footer class=" footline" >

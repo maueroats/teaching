@@ -1388,7 +1388,7 @@
      
       ">
         <a href="/ap-cs/karel/ch4b/">
-        <span>Karel 4.5-4.9</span> 
+        <span>Karel 4.5-4.6</span> 
         
         </a></li>
      
@@ -3381,7 +3381,7 @@
 
 
 <li>
-<a href="/ap-cs/karel/ch4b/" >Karel 4.5-4.9</a>
+<a href="/ap-cs/karel/ch4b/" >Karel 4.5-4.6</a>
 </li>
 
 
@@ -3391,7 +3391,7 @@
 
 			
 				
-<p>Very important chapter: Strategy, Spy, Observer. Design patterns in Java.</p>
+<p>Great chapter: Strategy, Spy, Observer. Design patterns in Java.</p>
 				
 			
 		
@@ -3541,7 +3541,11 @@
 
 			
 				
-<p>Page 100, exercise 12 - the robot that has the undo command.</p>
+<p>Undoing Page 100, exercise 12 - the robot that has the undo command. I used the idea of a Decorator strategy.
+Simultaneous Action Chapter 8 in the text shows how to make more than one robot act at the same time. See the MultiThreadBot on the class GitHub.
+A brief summary is:
+ World.setupThread(robot) prepares the robot to act in its own thread.
+ World.startThreads() calls the run() method for every robot that is set up as threading using the command above.</p>
 				
 			
 		
@@ -3566,8 +3570,7 @@
 
 			
 				
-<p>Karel Chapter 4 Test You may not use any resource materials for this test.
-Partners New laws have been passed and now robots can get married. A robot who wants to get married must implement the Partner interface. The Partner interface consists of a public Partner getSpouse() method as well as a public void setSpouse(Partner x) and a public boolean isAvailable() method. When robots are delivered from the factory they do not have a partner.</p>
+<p>Karel test, based on the review done earlier. Be sure to understand the material from 4.6.</p>
 				
 			
 		
@@ -3592,10 +3595,7 @@ Partners New laws have been passed and now robots can get married. A robot who w
 
 			
 				
-<p>You are going to make a play in which robots interact.
-Documentation:
- Karel the Robot (all) Robot UrRobot  SchoolBot abstract class We decided that every robot in school will have four basic functions.
-boolean isStudent(); boolean isTeacher(); boolean isHelpful(); Strategy getHelp(); Robots can be students or teachers. If a robot is helpful, then you can get a Strategy from it. (The idea is that the Strategy will get you help when you &ldquo;doIt&rdquo;.</p>
+<p>A skit involving robots making decisions.</p>
 				
 			
 		
