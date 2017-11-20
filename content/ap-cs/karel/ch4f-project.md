@@ -62,5 +62,9 @@ Use the `Robot` class instead of `UrRobot`. This lets your robot detect some thi
 
 The `myRobot.neighbors()` function returns an `Enumeration`. An Enumeration is an object that is basically a list of items. There is a `nextElement()` function which gives you the next item in the list. (You start before the first item.) There is a `hasMoreElements()` which returns true if there is another element you can get.
 
+{{% notice note %}}
+In order to use Enumeration you must include `import java.util.*` at the start of your document.
+{{% /notice %}}
+
 Note: Karel the Robot is an old program and [Enumeration](https://docs.oracle.com/javase/7/docs/api/java/util/Enumeration.html) is an old interface. New programs use an [Iterator](https://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html) instead.
 

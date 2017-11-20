@@ -82,5 +82,6 @@ rectangles - Racket has many shapes available!
 
 ## Inspiration
 
-* Cathedrals: [Truro](https://upload.wikimedia.org/wikipedia/commons/6/61/TruroCathedralWest.jpg), [Bristol](https://upload.wikimedia.org/wikipedia/commons/7/74/Bristol.cathedral.west.front.arp.jpg), [Notre Dame](https://upload.wikimedia.org/wikipedia/commons/b/be/Notre_Dame_dalla_Senna_crop.jpg)
+* Cathedrals and Temples: [Truro](https://upload.wikimedia.org/wikipedia/commons/6/61/TruroCathedralWest.jpg), [Bristol](https://upload.wikimedia.org/wikipedia/commons/7/74/Bristol.cathedral.west.front.arp.jpg), [Notre Dame](https://upload.wikimedia.org/wikipedia/commons/b/be/Notre_Dame_dalla_Senna_crop.jpg), [Kinkaku-ji Golden Temple](https://en.wikipedia.org/wiki/File:Kinkaku-ji_the_Golden_Temple_in_Kyoto_overlooking_the_lake_-_high_rez.JPG), [Florence Cathedral](https://en.wikipedia.org/wiki/File:Florence_Duomo_from_Michelangelo_hill.jpg)
 * Exotic homes: [prefab on a lake](http://cdn.trendhunterstatic.com/thumbs/coodo-my-home.jpeg), [Giza Pyramids visitor center](https://www.egypttoursplus.com/wp-content/uploads/2014/03/Outside-view-of-the-Solar-Boat-Museum-Photo-by-Kormoran.jpg)
+* Other: [Taj Mahal](https://en.wikipedia.org/wiki/File:Taj_Mahal_(Edited).jpeg)
