@@ -6,7 +6,12 @@ draft: false
 #theme: white
 ---
 
-
+* Write signature, purpose, function: 
+```racket
+(check-expect (quiz "bucket") "ket----")
+(check-expect (quiz "ketchup") "chup---")
+(check-expect (quiz "chappatis") "patis--")
+```
 
 * Write signature, purpose, function:
 
