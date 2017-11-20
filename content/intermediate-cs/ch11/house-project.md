@@ -80,8 +80,18 @@ Feel free to be creative. Houses can have decoration (images and
 colors). Shapes do not have to be limited to triangles and
 rectangles - Racket has many shapes available!
 
+## Student Work
+
+Linked are three examples of initial sketches:
+
+* [Sketch 1](2017-11-17-architecture-1.jpg)
+* [Sketch 2](2017-11-17-architecture-2.jpg)
+* [Sketch 3](2017-11-17-architecture-3.jpg)
+
+
 ## Inspiration
 
 * Cathedrals and Temples: [Truro](https://upload.wikimedia.org/wikipedia/commons/6/61/TruroCathedralWest.jpg), [Bristol](https://upload.wikimedia.org/wikipedia/commons/7/74/Bristol.cathedral.west.front.arp.jpg), [Notre Dame](https://upload.wikimedia.org/wikipedia/commons/b/be/Notre_Dame_dalla_Senna_crop.jpg), [Kinkaku-ji Golden Temple](https://en.wikipedia.org/wiki/File:Kinkaku-ji_the_Golden_Temple_in_Kyoto_overlooking_the_lake_-_high_rez.JPG), [Florence Cathedral](https://en.wikipedia.org/wiki/File:Florence_Duomo_from_Michelangelo_hill.jpg)
 * Exotic homes: [prefab on a lake](http://cdn.trendhunterstatic.com/thumbs/coodo-my-home.jpeg), [Giza Pyramids visitor center](https://www.egypttoursplus.com/wp-content/uploads/2014/03/Outside-view-of-the-Solar-Boat-Museum-Photo-by-Kormoran.jpg)
 * Other: [Taj Mahal](https://en.wikipedia.org/wiki/File:Taj_Mahal_(Edited).jpeg)
+
