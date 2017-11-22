@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Repl.it :: WY Computer Science</title>
+    <title>Karel Hacked :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ap-cs/haskell/replit/">
+  <body class="" data-url="/ap-cs/karel/karel-hack/">
     <nav id="sidebar" class="">
 
 
@@ -116,7 +116,7 @@
   
     
     <li data-nav-id="/ap-cs/haskell/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -127,7 +127,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1099,7 +1099,7 @@
   
     
       <li data-nav-id="/ap-cs/haskell/replit/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/haskell/replit/">
         <span>Repl.it</span> 
@@ -1251,7 +1251,7 @@
   
     
     <li data-nav-id="/ap-cs/karel/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1262,7 +1262,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1565,7 +1565,7 @@
   
     
       <li data-nav-id="/ap-cs/karel/karel-hack/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/karel/karel-hack/">
         <span>Karel Hacked</span> 
@@ -3313,7 +3313,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > Repl.it
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/karel/'>Karel the Robot</a> > Karel Hacked
 
  
 
@@ -3326,44 +3326,40 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#repl-it-requires-a-main-method">Repl.it requires a main method</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
           </div>
         
         
-          <div id="tags">
-            
-              <a class="label label-default" href="http://wy-cs.info/tags/haskell">haskell</a>
-            
-          </div>
-        
         <div id="body-inner">
           
-            <h1>Repl.it</h1>
+            <h1>Karel Hacked</h1>
           
 
 
 
 
-<p>A summary of any special problems that have arisen with <code>repl.it</code>.
-</p>
+<p>On GitHub, I have placed a <a href="https://github.com/2017-2018-wy-ap-cs/apcs-karel/blob/master/lib/KarelHRobot.jar">KarelHRobot.jar</a> that has a hacked <code>UrRobot</code> that has the following capabilities:</p>
 
-<h2 id="repl-it-requires-a-main-method">Repl.it requires a main method</h2>
+<ul>
+<li><code>street()</code>: The current street the robot is on (row = y)</li>
+<li><code>avenue()</code>: The current avenue the robot is on (column = x)</li>
+<li><code>direction()</code>: The direction the robot is facing.</li>
+<li><code>beepers()</code>: The number of beepers the robot has in its beeper bag.</li>
+</ul>
 
-<p>The particular interpreter repl.it requires that you have a main method.
-Write a simple one and then type your tests in the interactions pane.</p>
+<p>I know some people have already enhanced <code>UrRobot</code> with similar capabilities.
+These hacks are to let the rest of you finish your project without learning every
+trick of Karel programming.</p>
 
-<pre><code>main = do putStrLn &quot;Loaded&quot;
-</code></pre>
+<div class="notices note" ><p>There is a sample project <code>karelPlayProject.drjava</code> that includes the hacked library.
+It also contains a demo <code>HackBot.java</code> that shows some of the functions in action.
+Update to get the most recent code from GitHub.</p>
+</div>
+
+
 
 <footer class=" footline" >
 	
@@ -3422,6 +3418,8 @@ Write a simple one and then type your tests in the interactions pane.</p>
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -3437,9 +3435,6 @@ Write a simple one and then type your tests in the interactions pane.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4032,7 +4027,6 @@ Write a simple one and then type your tests in the interactions pane.</p>
             
             
                 
-                    
                     
                 
                 
@@ -4049,9 +4043,6 @@ Write a simple one and then type your tests in the interactions pane.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4135,6 +4126,7 @@ Write a simple one and then type your tests in the interactions pane.</p>
             
             
                 
+                    
                     
                 
                 
@@ -4148,6 +4140,9 @@ Write a simple one and then type your tests in the interactions pane.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4372,6 +4367,7 @@ Write a simple one and then type your tests in the interactions pane.</p>
             
             
                 
+                    
                     
                 
                 
@@ -4394,6 +4390,9 @@ Write a simple one and then type your tests in the interactions pane.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5457,10 +5456,10 @@ Write a simple one and then type your tests in the interactions pane.</p>
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/haskell/typeclass-notes/" title="Typeclass Notes"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/karel/ch4f-project/" title="4. Robot Drama"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/ghci-details/" title="Source Code Files (ghci)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/" title="Intermediate CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

@@ -15,6 +15,7 @@ Documentation:
 * [Karel the Robot (all)](http://csis.pace.edu/~bergin/KarelJava2ed/KJRdocs/index.html)
 * [Robot](http://csis.pace.edu/~bergin/KarelJava2ed/KJRdocs/kareltherobot/Robot.html)
 * [UrRobot](http://csis.pace.edu/~bergin/KarelJava2ed/KJRdocs/kareltherobot/UrRobot.html)
+* [Hacked Karel the Robot]({{% relref "karel-hack.md" %}})
 
 ## Assignment in Brief
 
