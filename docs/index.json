@@ -193,7 +193,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  This is a fun chapter to read, but as a class we are done after Chapter 5 (for now). Chapter 6 Reading Guide  USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  A summary of any special problems that have arisen with repl.it.  Source Code Files (ghci)  Writing a file is different from typing in an interpreter like repl.it or ghci.  "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
@@ -270,7 +270,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   Pro Features   Calendar   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Pro Features   Calendar   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -532,6 +532,13 @@
 	"content": "  11.3 Intro Slides  Intro to Chapter 11.\n 11.3 Homework 1  Homework for 11.3\n 11.6.1 House  Exercise 11.6.1 with help, from the book.\n 11.6.2 Airline  \n Home Project  Design your own house (art) and cost calculator (math). Practice managing complexity and good function-writing style.\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch13/",
+	"title": "13. Booleans",
+	"tags": [],
+	"description": "",
+	"content": " The quick reference guide is on page 208 of the PDF.\nSummary  Functions end in ? if (and only if) they return a boolean value for their answer.\n true, false\n Determine the type of something: string?, number?, integer?, image?, boolean?\n Decide equality: string=?, image=?, etc.\n Comparisons for numbers: \u0026lt;, \u0026lt;=, =, \u0026gt;=, \u0026gt;\n Comparisons for other things: string\u0026lt;?, string\u0026lt;=?, string=?, etc.\n Case insensitive comparison: string-ci\u0026lt;?, etc.\n  Sections  Ch13 Exa   "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/pro/",
 	"title": "Pro Features",
 	"tags": [],
@@ -581,6 +588,13 @@
 	"content": "Make a plan before you start programming.\nThere are two essentials:\n Multiple functions! Variables to give your numbers meaning.  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch13/ch13-exa/",
+	"title": "Ch13 Exa",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/karel/karel-hack/",
 	"title": "Karel Hacked",
 	"tags": [],
@@ -596,7 +610,7 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch09/ch9-ex3/",
-	"title": "9.Exercises 3",
+	"title": "9. Exercises 3",
 	"tags": [],
 	"description": "",
 	"content": " Write signature, purpose, function:\n(check-expect (quiz \u0026#34;bucket\u0026#34;) \u0026#34;ket----\u0026#34;) (check-expect (quiz \u0026#34;ketchup\u0026#34;) \u0026#34;chup---\u0026#34;) (check-expect (quiz \u0026#34;chappatis\u0026#34;) \u0026#34;patis--\u0026#34;) Write signature, purpose, function:\n  (check-expect (qq \u0026#34;walrus\u0026#34;) \u0026#34;rus-wal\u0026#34;) (check-expect (qq \u0026#34;banak\u0026#34;) \u0026#34;ak-ba\u0026#34;) (check-expect (qq \u0026#34;longaword) \u0026#34;word-long\u0026#34;)"
@@ -886,7 +900,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  4. Test modified Tue 11-14  4.6 MurderBot modified Mon 11-13  4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  Intermediate Computer Science Recent Changes    Home Project modified Mon 11-20  9.Exercises 3 modified Mon 11-20  Pro Features modified Sun 11-19  11.6.2 Airline modified Fri 11-17  11.6.1 House modified Tue 11-14  9. Exercises 2 modified Tue 11-14  9. Exercises 1 modified Mon 11-13  8. Test Corrections modified Fri 11-10  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  4. Test modified Tue 11-14  4.6 MurderBot modified Mon 11-13  4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  4.6 PrettyBoxBot modified Tue 11-07  Intermediate Computer Science Recent Changes    Ch13 Exa modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  9. Exercises 3 modified Mon 11-20  Pro Features modified Sun 11-19  11.6.2 Airline modified Fri 11-17  9. Exercises 2 modified Tue 11-14  11.6.1 House modified Tue 11-14  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

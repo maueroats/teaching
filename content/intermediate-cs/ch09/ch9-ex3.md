@@ -1,5 +1,5 @@
 ---
-title: "9.Exercises 3"
+title: "9. Exercises 3"
 date: 2017-11-20T08:08:25-06:00
 draft: false
 #type: slide
