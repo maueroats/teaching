@@ -7,12 +7,14 @@ draft: false
 weight: 40
 ---
 
-While a PDF of the book is not available, the author has made available many resources:
+We use [Java Methods, Second Edition](https://www.amazon.com/Java-Methods-Object-Oriented-Programming-Structures/dp/0982477570) by Litvin and Litvin. 
+While a PDF of the whole book is not available, the author has made available many resources:
 
+* [Home page for all textbook resources](http://www.skylit.com/javamethods2/index.html)
 * [PowerPoint slides](http://www.skylit.com/javamethods/ppt/index.html) for each chapter. These are quite thorough.
 * [Starter code](http://www.skylit.com/disks.html) for students.
 
-Note that **we have the second edition**, which is from 2011 (now out of date). There are probably few changes. The book is very cheap, used, if you want an extra copy.
+Note that **we have the second edition**, which is from 2011 (now out of date). There are probably few changes. 
 
 ## Chapters
 
