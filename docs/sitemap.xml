@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch01/</loc>
+    <lastmod>2017-11-28T22:12:53-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch08/number-1/</loc>
     <lastmod>2017-10-26T12:56:12-05:00</lastmod>
   </url>
@@ -218,6 +223,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/karel/</loc>
+    <lastmod>2017-10-15T23:28:20-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03/puzzle-opener/</loc>
     <lastmod>2017-09-22T09:55:25-05:00</lastmod>
   </url>
@@ -240,6 +250,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03art/</loc>
     <lastmod>2017-09-27T19:52:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/</loc>
+    <lastmod>2017-11-28T22:11:18-06:00</lastmod>
   </url>
   
   <url>
@@ -510,11 +525,6 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch07/exercises-1/</loc>
     <lastmod>2017-10-17T12:46:06-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/karel/</loc>
-    <lastmod>2017-10-15T23:28:20-05:00</lastmod>
   </url>
   
   <url>

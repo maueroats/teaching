@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch01/",
+	"title": "1. CS Basics",
+	"tags": [],
+	"description": "",
+	"content": " Read Chapter 1, including the Chapter 1 online component.\n (2017-11-28) Tuesday: Questions 1-6 at the end of Chapter 1. Wednesday: Binary numbers, hexadecimal, and representing data. Thursday: Wrap up, review. Friday: Quiz on Chapter 1.   "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-1/",
 	"title": "Number Models 1",
 	"tags": [],
@@ -186,7 +193,7 @@
 	"title": "AP CS",
 	"tags": [],
 	"description": "",
-	"content": "AP Computer Science studies:\n Haskell - an introduction to pure functional programming Java - the language required for the AP test  Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
+	"content": "AP Computer Science studies:\n Haskell - an introduction to pure functional programming Karel the Robot - an introduction to object oriented programming Java - the language required for the AP test  Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/",
@@ -301,6 +308,13 @@
 	"content": " Adding new abilities to robots Practice  2017-10-19: In class exercise 2 (PinSetter). Homework: exercise 4 (HarvestDiamond).\n 2017-10-20: Chapter 3 exercise 6: DigitalClock.\n To set the size of a world:\nWorld.setSize(10,21); World.setVisible(true); Grab the lower right corner of the display window and drag it UP and LEFT to fit everything on the screen.\n I have updated the AP CS master repository with several extra commands:\n ./one-time to set a few defaults ./update to get my new changes ./save to do the three saving commands all in one     "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/karel/",
+	"title": "Karel the Robot",
+	"tags": [],
+	"description": "",
+	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.6  Great chapter: Strategy, Spy, Observer. Design patterns in Java.\n CodingBat Interlude  Practice for the fundamentals of coding in Java: logic and loops.\n 4.6 PrettyBoxBot  PrettyBoxBot to practice interfaces\n 4.6 FishBot  A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n 4.6 More Classes  Three exercises to improve your understanding of classes and interfaces.\n 4.6 MurderBot  Review exercises for class design.\n 4.* Advanced  \n 4. Test  Karel test, based on the review done earlier. Be sure to understand the material from 4.6.\n 4. Robot Drama  A skit involving robots making decisions.\n Karel Intellij  How to use IntelliJ IDEA to work with our Karel the Robot configuration.\n Karel Hacked  \n "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch03/puzzle-opener/",
 	"title": "Puzzle Opener",
 	"tags": ["opener"],
@@ -334,6 +348,13 @@
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/",
+	"title": "Java Methods",
+	"tags": [],
+	"description": "",
+	"content": " While a PDF of the book is not available, the author has made available many resources:\n PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes. The book is very cheap, used, if you want an extra copy.\nChapters  1. CS Basics   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -714,13 +735,6 @@
 	"content": "Practice the design process making each of these functions:\n Write a function that takes in the radius of a circle and outputs the circumference.\n Write a function to find the cost of a cart full of g pounds of grapefruit and b pounds of bananas. The grapefruit costs $1.49/lb and the bananas cost $0.59/lb.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/karel/",
-	"title": "Karel the Robot",
-	"tags": [],
-	"description": "",
-	"content": "  Book  Links to the repository and documentation for the Karel the Robot unit.\n Essentials  Links to the repository and documentation for the Karel the Robot unit.\n Karel 1 and 2  Reading and homework for the first two chapters of the Karel book.\n Karel 3  Short list of updates and exercises for Chapter 3.\n Karel 4.1-4.4  Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n Karel 4.5-4.6  Great chapter: Strategy, Spy, Observer. Design patterns in Java.\n CodingBat Interlude  Practice for the fundamentals of coding in Java: logic and loops.\n 4.6 PrettyBoxBot  PrettyBoxBot to practice interfaces\n 4.6 FishBot  A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n 4.6 More Classes  Three exercises to improve your understanding of classes and interfaces.\n 4.6 MurderBot  Review exercises for class design.\n 4.* Advanced  Undoing Page 100, exercise 12 - the robot that has the undo command. I used the idea of a Decorator strategy. Simultaneous Action Chapter 8 in the text shows how to make more than one robot act at the same time. See the MultiThreadBot on the class GitHub. A brief summary is: World.setupThread(robot) prepares the robot to act in its own thread. World.startThreads() calls the run() method for every robot that is set up as threading using the command above.\n 4. Test  Karel test, based on the review done earlier. Be sure to understand the material from 4.6.\n 4. Robot Drama  A skit involving robots making decisions.\n Karel Intellij  How to use IntelliJ IDEA to work with our Karel the Robot configuration.\n Karel Hacked  On GitHub, I have placed a KarelHRobot.jar that has a hacked UrRobot that has the following capabilities: street(): The current street the robot is on (row = y) avenue(): The current avenue the robot is on (column = x) direction(): The direction the robot is facing. beepers(): The number of beepers the robot has in its beeper bag. I know some people have already enhanced UrRobot with similar capabilities.\n "
-},
-{
 	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/rubric/",
 	"title": "Connect Four Rubric",
 	"tags": [],
@@ -907,7 +921,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  4. Test modified Tue 11-14  4.6 MurderBot modified Mon 11-13  4.6 More Classes modified Thu 11-09  4.6 FishBot modified Wed 11-08  Intermediate Computer Science Recent Changes    Ch13 Exercises modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  9. Exercises 3 modified Mon 11-20  Pro Features modified Sun 11-19  11.6.2 Airline modified Fri 11-17  9. Exercises 2 modified Tue 11-14  11.6.1 House modified Tue 11-14  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  4. Test modified Tue 11-14  4.6 MurderBot modified Mon 11-13  Intermediate Computer Science Recent Changes    Ch13 Exercises modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  9. Exercises 3 modified Mon 11-20  Pro Features modified Sun 11-19  11.6.2 Airline modified Fri 11-17  9. Exercises 2 modified Tue 11-14  11.6.1 House modified Tue 11-14  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
