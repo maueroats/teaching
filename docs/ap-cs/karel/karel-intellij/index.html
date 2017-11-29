@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="Making random numbers.  Testing functions that use random numbers.">
+    <meta name="description" content="How to use IntelliJ IDEA to work with our Karel the Robot configuration.">
 
 
-    <title>Randomness :: WY Computer Science</title>
+    <title>Karel Intellij :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch07/random/">
+  <body class="" data-url="/ap-cs/karel/karel-intellij/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1251,7 +1251,7 @@
   
     
     <li data-nav-id="/ap-cs/karel/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1262,7 +1262,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1565,7 +1565,7 @@
   
     
       <li data-nav-id="/ap-cs/karel/karel-intellij/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/karel/karel-intellij/">
         <span>Karel Intellij</span> 
@@ -1621,7 +1621,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1632,7 +1632,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2237,7 +2237,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch07/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -2248,7 +2248,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2331,7 +2331,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch07/random/" class="dd-item
-     active
+     
       ">
         <a href="/intermediate-cs/ch07/random/">
         <span>Randomness</span> 
@@ -3396,7 +3396,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch07/'>7. Numbers</a> > Randomness
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/karel/'>Karel the Robot</a> > Karel Intellij
 
  
 
@@ -3413,8 +3413,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#random-ranges">Random ranges</a></li>
-<li><a href="#using-randomness">Using randomness</a></li>
+<li><a href="#easy-method">Easy method</a></li>
+<li><a href="#step-by-step">Step by step</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -3426,7 +3426,7 @@
         
         <div id="body-inner">
           
-            <h1>Randomness</h1>
+            <h1>Karel Intellij</h1>
           
 
 
@@ -3434,52 +3434,40 @@
 
 
 
+<p>This documents using <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> development environment. Way overkill unless <a href="http://drjava.org">DrJava</a> is giving you trouble.</p>
+
+<h2 id="easy-method">Easy method</h2>
+
 <ul>
-<li>Random numbers: <code>(random 3)</code> gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the code below and you should get different answers each time.
-<code>racket 
-(random 10) 
-(random 10) 
-(random 10) 
-</code></li>
+<li><p>Clone the <a href="https://github.com/2017-2018-wy-ap-cs/apcs-karel-intellij">apcs-karel-intellij</a> repository.</p>
+
+<p>This is just a snapshot to get you started at home. I just copied all of the java files from the karel repository to a new directory in the correct place.</p></li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone https://github.com/2017-2018-wy-ap-cs/apcs-karel-intellij</code></pre></div>
+<ul>
+<li>IDEA has: File -&gt; New -&gt; Project from existing sources&hellip; that will let you import my files. If you are lucky you can even just use my whole folder.
+<br />
+<br /></li>
 </ul>
 
-<h2 id="random-ranges">Random ranges</h2>
+<h2 id="step-by-step">Step by step</h2>
 
-<div class="notices note" ><p>We use the phrase &ldquo;from 10 to 200&rdquo; or &ldquo;between 10 and 200&rdquo; to both mean all of the integers n so that 10&lt;=n&lt;=200.</p>
-</div>
+<ol>
+<li>New project in IDEA: File -&gt; New -&gt; Project&hellip;</li>
+<li>Make lib and src subfolders.</li>
+<li><code>KarelJRobot.jar</code> goes into lib.</li>
+<li>All java files go into src.</li>
+<li>IDEA:
 
-
-<p>How many numbers are there from 10 to 200, inclusive? It&rsquo;s easy to make a mistake. My favorite method is to subtract a number to make the bottom of the range start counting at one.</p>
-
-<p>Be sure you understand the previous paragraph before reading on!</p>
-
-<p>When you already have a random number from 0 to 50, how can you get a random number between 30 and 80?</p>
-
-<h2 id="using-randomness">Using randomness</h2>
-
-<p>It is hard to test random functions, so write non-random versions first, and use the randomness as an input. Test the non-random functions!</p>
-
-<p>Example: Make an ellipse of a random height 150-250 pixels tall, and twice as wide.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#75715e">; make-ellipse-nr: string(color) number(height) -&gt; image</span>
-<span style="color:#75715e">; purpose: make an ellipse height units tall and 2*height units wide in the given color</span>
-<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">make-ellipse-nr</span> <span style="color:#111">color</span> <span style="color:#111">height</span><span style="color:#111">)</span>
-    <span style="color:#111">(</span><span style="color:#111">ellipse</span> <span style="color:#111">(</span><span style="color:#111">*</span> <span style="color:#ae81ff">2</span> <span style="color:#111">height</span><span style="color:#111">)</span> <span style="color:#111">height</span> <span style="color:#d88200">&#34;solid&#34;</span> <span style="color:#111">color</span><span style="color:#111">))</span>
-<span style="color:#75715e">; see below for check-expect</span>
-<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">make-ellipse</span> <span style="color:#111">color</span><span style="color:#111">)</span>
-    <span style="color:#111">(</span><span style="color:#111">make-ellipse-nr</span> <span style="color:#111">color</span> <span style="color:#111">(</span><span style="color:#111">+</span> <span style="color:#ae81ff">150</span> <span style="color:#111">(</span><span style="color:#111">random</span> <span style="color:#ae81ff">101</span><span style="color:#111">))))</span></code></pre></div>
-
-<figure >
-    
-        <img src="nonrandom-check.png" />
-    
-    
-    <figcaption>
-        <h4>Test your nonrandom function well!</h4>
-        
-    </figcaption>
-    
-</figure>
-
+<ul>
+<li>File -&gt; Project Structure&hellip; -&gt; Modules (under Project Settings on left)</li>
+<li>Select &ldquo;Dependencies&rdquo; tab.</li>
+<li>Use &ldquo;+&rdquo; and choose the KarelJRobot.jar file in the lib folder.</li>
+<li>I checked the box &ldquo;Export&rdquo;; not sure if that matters.</li>
+</ul></li>
+<li>Build -&gt; Build Project. I had to delete the &ldquo;HackBot.java&rdquo; since I did not include the hacked KarelHRobot library.</li>
+<li>Run -&gt; Run&hellip;</li>
+</ol>
 
 
 <footer class=" footline" >
@@ -3523,8 +3511,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -3540,6 +3526,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4246,6 +4235,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -4260,6 +4250,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -4484,6 +4477,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -4499,6 +4493,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4522,7 +4519,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -4537,9 +4533,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4894,7 +4887,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -4909,9 +4901,6 @@
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -4960,7 +4949,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -4976,9 +4964,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -5628,10 +5613,10 @@
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch07/maxmin/" title="Max and min slides"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/karel/ch4f-project/" title="4. Robot Drama"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch07/exercises-2/" title="Exercises 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/karel/karel-hack/" title="Karel Hacked" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
