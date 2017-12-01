@@ -11,13 +11,15 @@ It is hard to keep our room organized and clean. A few supplies would help a lot
 * Ziploc bags: gallon, quart (a few)
 * Larger containers (lots, clean)
     - Lao Szechuan takeout containers: great
-	- Large yogurt: good
-	- Cottage cheese 
+    - Large yogurt: good
+    - Cottage cheese 
 
 I use the takeout containers to organize materials for robotics classes and club.
 
 ## Specific donations
 
-* Very old computer: to take apart for AP CS
-* Old PC with parallel port 
+* Very old computer: to take apart for AP CS (yearly request)
 
+## Potential Gifts
+
+* Raspberry Pi 3

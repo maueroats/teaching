@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/si-plan/",
+	"title": "SI Plan",
+	"tags": [],
+	"description": "Planning for the space invaders game.",
+	"content": "  Game State There are many quantities in the game that can change. Label them on your diagram. For example, in my diagram I used direction to be +1 for moving right and -1 when the enemy is moving left.\nIf you later discover that you want more information, add it to your diagram.\nConstants Make variables to represent the quantities that are not going to change, but could. You may find a use for these, or add your own:\n WIDTH HEIGHT ENEMY-WIDTH ENEMY-HEIGHT TURRET-WIDTH TURRET-HEIGHT BULLET-HEIGHT  Functions You will need to decide what information each function takes in.\n enemy-turn-right-edge? enemy-turn-left-edge? bullet-hit-enemy? enemy-hit-turret? bullet-on-screen? game-over?  Examples are required Write examples with actual coordinate numbers before you write the functions!\nOne in-class example was:\nWIDTH = 300 ENEMY-WIDTH = 50 x = 270 dir = +1 (check-expect (enemy-right-edge? x dir) true)"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch01/",
 	"title": "1. CS Basics",
 	"tags": [],
@@ -277,7 +284,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Pro Features   Calendar   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   Pro Features   Calendar   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -354,7 +361,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -560,6 +567,13 @@
 	"content": " The quick reference guide is on page 208 of the PDF.\nSummary  Functions end in ? if (and only if) they return a boolean value for their answer.\n true, false\n Determine the type of something: string?, number?, integer?, image?, boolean?\n Decide equality: string=?, image=?, etc.\n Comparisons for numbers: \u0026lt;, \u0026lt;=, =, \u0026gt;=, \u0026gt;\n Comparisons for other things: string\u0026lt;?, string\u0026lt;=?, string=?, etc.\n Case insensitive comparison: string-ci\u0026lt;?, etc.\n  Sections  Ch13 Exercises   "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/",
+	"title": "Space Invaders",
+	"tags": [],
+	"description": "Managing the space invaders game creation.",
+	"content": "See the plan for initial information! We are currently going to make the functions that decide when action happens.\n SI Plan   "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/pro/",
 	"title": "Pro Features",
 	"tags": [],
@@ -607,6 +621,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Make a plan before you start programming.\nThere are two essentials:\n Multiple functions! Variables to give your numbers meaning.  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch02/",
+	"title": "2. Software Engineering",
+	"tags": [],
+	"description": "Reading guide for chapter 2.",
+	"content": " Reading Guide  Where does the word \u0026ldquo;coding\u0026rdquo; come from?\n How is assembly laguage different from machine code?\n What decade was FORTRAN created? Pascal? C++?\n What type of program produces executables from the object code?\n What is the difference between code compiled to machine instructions and interpreted code?\n What are two advantages of byte code over machine code?\n What does JIT mean? What does a JIT compiler do?\n Who originated the term \u0026ldquo;bug\u0026rdquo; and why?\n Compare syntax errors and logic errors.\n What is the usual result of a runtime exception?\n What are two traits your code needs in order to be reusable? (There are four and the last one in the list is the most important.)\n Say you have a class named Dinosaur and everything in your program works. Change Dinosaur to dinosaur in every Java file\u0026hellip; Does it still work? Explain.\n What makes inheritance useful? (Not the goals of inheritance.)\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/karel/karel-intellij/",
@@ -921,7 +942,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  4. Test modified Tue 11-14  4.6 MurderBot modified Mon 11-13  Intermediate Computer Science Recent Changes    Ch13 Exercises modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  9. Exercises 3 modified Mon 11-20  Pro Features modified Sun 11-19  11.6.2 Airline modified Fri 11-17  9. Exercises 2 modified Tue 11-14  11.6.1 House modified Tue 11-14  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  4. Test modified Tue 11-14  Intermediate Computer Science Recent Changes    SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Ch13 Exercises modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  9. Exercises 3 modified Mon 11-20  Pro Features modified Sun 11-19  11.6.2 Airline modified Fri 11-17  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
