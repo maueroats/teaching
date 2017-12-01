@@ -33,4 +33,7 @@ description: "Reading guide for chapter 2."
     works. Change `Dinosaur` to `dinosaur` in every Java file... Does
     it still work? Explain.
 
+13. What was the first popular object oriented language? Where was it made? What hope did the author have for it?
+
 13. What makes inheritance useful? (Not the goals of inheritance.)
+
