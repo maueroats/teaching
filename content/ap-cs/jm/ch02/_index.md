@@ -5,6 +5,8 @@ draft: false
 description: "Reading guide for chapter 2."
 ---
 
+Resource: read the book and/or [Chapter 2 Powerpoint](http://www.skylit.com/javamethods/ppt/Ch02.ppt).
+
 ## Reading Guide
 
 1. Where does the word "coding" come from?
