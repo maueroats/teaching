@@ -623,6 +623,13 @@
 	"content": "Make a plan before you start programming.\nThere are two essentials:\n Multiple functions! Variables to give your numbers meaning.  "
 },
 {
+	"uri": "http://wy-cs.info/ecs-teach/scratch/",
+	"title": "Scratch",
+	"tags": [],
+	"description": "",
+	"content": "Resources (all are Google Drive shared folders):\n Introductory materials Variables Lists  There are quizzes as well; email me for access if you are an instructor.\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch02/",
 	"title": "2. Software Engineering",
 	"tags": [],
@@ -718,7 +725,7 @@
 	"title": "Exploring CS (Teachers)",
 	"tags": [],
 	"description": "",
-	"content": " This page is dedicated to teacher links for Exploring Computer Science.\nWeb Hosting Platforms  Cloud9\n Cost: $1/teacher/month = basically free. Live display of website results. Easy to upload images. (\u0026ldquo;Upload local files\u0026hellip;\u0026rdquo;) Interface is busy (lots of features, maybe too many for a beginner). Many languages.  Repl.it\n Cost: No upload of images. Nice simple interface for beginners. Many languages including Python with turtle graphics.    Editors: Mac  TextMate 2.0beta. Tested and works fine on modern Mac OS (10.12) as well as older.  Light weight (13MB) Can run off a flash drive; no Administrator required. HTML mode highlights and saves as \u0026ldquo;.html\u0026rdquo; automatically.   Editors: Windows  NotePad++.  "
+	"content": " This page is dedicated to teacher links for Exploring Computer Science.\n Scratch Resources are on a separate page.  Web Hosting Platforms  Cloud9\n Cost: $1/teacher/month = basically free. Live display of website results. Easy to upload images. (\u0026ldquo;Upload local files\u0026hellip;\u0026rdquo;) Interface is busy (lots of features, maybe too many for a beginner). Many languages.  Repl.it\n Cost: No upload of images. Nice simple interface for beginners. Many languages including Python with turtle graphics.    Editors: Mac  TextMate 2.0beta. Tested and works fine on modern Mac OS (10.12) as well as older.  Light weight (13MB) Can run off a flash drive; no Administrator required. HTML mode highlights and saves as \u0026ldquo;.html\u0026rdquo; automatically.   Editors: Windows  NotePad++.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-3/",

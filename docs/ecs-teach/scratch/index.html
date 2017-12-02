@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="Karel test, based on the review done earlier. Be sure to understand the material from 4.6.">
+    <meta name="description" content="">
 
 
-    <title>4. Test :: WY Computer Science</title>
+    <title>Scratch :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ap-cs/karel/ch4e-test/">
+  <body class="" data-url="/ecs-teach/scratch/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1251,7 +1251,7 @@
   
     
     <li data-nav-id="/ap-cs/karel/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1262,7 +1262,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1525,7 +1525,7 @@
   
     
       <li data-nav-id="/ap-cs/karel/ch4e-test/" class="dd-item
-     active
+     
       ">
         <a href="/ap-cs/karel/ch4e-test/">
         <span>4. Test</span> 
@@ -3450,7 +3450,7 @@
   
     
     <li data-nav-id="/ecs-teach/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -3461,7 +3461,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -3484,7 +3484,7 @@
   
     
       <li data-nav-id="/ecs-teach/scratch/" class="dd-item
-     
+     active
       ">
         <a href="/ecs-teach/scratch/">
         <span>Scratch</span> 
@@ -3591,12 +3591,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/karel/'>Karel the Robot</a> > 4. Test
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ecs-teach/'>Exploring CS (Teachers)</a> > Scratch
 
  
 
@@ -3607,16 +3602,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#karel-chapter-4-test">Karel Chapter 4 Test</a>
-<ul>
-<li><a href="#partners">Partners</a></li>
-<li><a href="#marriage">Marriage</a></li>
-<li><a href="#relationships">Relationships</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -3625,97 +3611,22 @@
         
         <div id="body-inner">
           
-            <h1>4. Test</h1>
+            <h1>Scratch</h1>
           
 
 
 
 
-
-
-<h1 id="karel-chapter-4-test">Karel Chapter 4 Test</h1>
-
-<p>You may not use any resource materials for this test.</p>
-
-<h2 id="partners">Partners</h2>
-
-<p>New laws have been passed and now robots can get married. A robot who
-wants to get married must implement the <code>Partner</code> interface. The
-Partner interface consists of a <code>public Partner getSpouse()</code> method as
-well as a <code>public void setSpouse(Partner x)</code> and a <code>public boolean
-isAvailable()</code> method. When robots are delivered from the factory they
-do not have a partner.</p>
-
-<ol>
-<li><p>Write the <code>Partner</code> interface.</p>
+<p>Resources (all are Google Drive shared folders):</p>
 
 <ul>
-<li>getSpouse: return the current spouse</li>
-<li>setSpouse: make the current spouse be the given robot</li>
-<li>isAvailable: false if the Partner has a spouse</li>
-</ul></li>
+<li><a href="https://drive.google.com/drive/folders/1-g11Yuord_sv7-yIgrbaNRBUipKovFdo?usp=sharing">Introductory materials</a></li>
+<li><a href="https://drive.google.com/drive/folders/1TxHCm9RrvCj7loU3kj3dMLDLxX3M2YTa?usp=sharing">Variables</a></li>
+<li><a href="https://drive.google.com/drive/folders/1LZWUusz3v3hVnPAF6Yjxrcx0iuiJtTLA?usp=sharing">Lists</a></li>
+</ul>
 
-<li><p>Create a <code>LBot</code> that implements the <code>Partner</code> interface. Example test code:</p></li>
-</ol>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span> <span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-   <span style="color:#111">LBot</span> <span style="color:#111">sally</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">4</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">10</span><span style="color:#f92672">);</span>
-   <span style="color:#111">LBot</span> <span style="color:#111">harry</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">4</span><span style="color:#f92672">);</span>
-   <span style="color:#111">sally</span><span style="color:#f92672">.</span><span style="color:#75af00">setSpouse</span><span style="color:#f92672">(</span><span style="color:#111">harry</span><span style="color:#f92672">);</span>
-   <span style="color:#00a8c8">if</span> <span style="color:#f92672">(</span><span style="color:#111">sally</span><span style="color:#f92672">.</span><span style="color:#75af00">getSpouse</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#111">harry</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-       <span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">err</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sally just married Harry. What&#39;s going on?&#34;</span><span style="color:#f92672">);</span>
-   <span style="color:#f92672">}</span>
-   <span style="color:#00a8c8">if</span> <span style="color:#f92672">(</span><span style="color:#111">sally</span><span style="color:#f92672">.</span><span style="color:#75af00">isAvailable</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
-       <span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">err</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sally should not still be available!&#34;</span><span style="color:#f92672">);</span>
-   <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
-<h2 id="marriage">Marriage</h2>
+<p>There are quizzes as well; email me for access if you are an instructor.</p>
 
-<ol>
-<li>The <code>JusticeOfThePeaceBot</code> can marry robots.
-The function is <code>public boolean marry(Partner a, Partner b)</code>.
-
-<ul>
-<li>Write this function.</li>
-<li>Only marry if both robots are available.</li>
-<li>If either robot is unavailable, do not marry them!</li>
-<li>Return true if the partners get married, false if the marriage fails.</li>
-</ul></li>
-</ol>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">testMarry</span><span style="color:#f92672">()</span> 
-<span style="color:#f92672">{</span>
-   <span style="color:#111">LBot</span> <span style="color:#111">sally</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">4</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">10</span><span style="color:#f92672">);</span>
-   <span style="color:#111">LBot</span> <span style="color:#111">harry</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">4</span><span style="color:#f92672">);</span>
-   <span style="color:#111">JusticeOfThePeaceBot</span> <span style="color:#111">judge</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">JusticeOfThePeaceBot</span><span style="color:#f92672">(</span><span style="color:#111">1</span><span style="color:#f92672">,</span><span style="color:#111">1</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">0</span><span style="color:#f92672">);</span>
-   
-   <span style="color:#00a8c8">boolean</span> <span style="color:#111">gotMarried</span> <span style="color:#f92672">=</span> <span style="color:#111">judge</span><span style="color:#f92672">.</span><span style="color:#75af00">marry</span><span style="color:#f92672">(</span><span style="color:#111">sally</span><span style="color:#f92672">,</span><span style="color:#111">harry</span><span style="color:#f92672">);</span>
-   
-   <span style="color:#00a8c8">if</span> <span style="color:#f92672">(</span> <span style="color:#f92672">!</span> <span style="color:#111">gotMarried</span> 
-       <span style="color:#f92672">||</span> <span style="color:#111">sally</span><span style="color:#f92672">.</span><span style="color:#75af00">getSpouse</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#111">harry</span> 
-       <span style="color:#f92672">||</span> <span style="color:#111">harry</span><span style="color:#f92672">.</span><span style="color:#75af00">getSpouse</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#111">sally</span> <span style="color:#f92672">)</span> 
-   <span style="color:#f92672">{</span>
-       <span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">err</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;they did not get married!?&#34;</span><span style="color:#f92672">);</span>
-   <span style="color:#f92672">}</span>
-   
-<span style="color:#f92672">}</span></code></pre></div>
-<h2 id="relationships">Relationships</h2>
-
-<p>Do one of the following:</p>
-
-<ol>
-<li><p>(Know 4.8) The <code>FindRelationship</code> strategy is: move forward one step, if there is a robot there and it is available, change to NoStrategy, otherwise continue looking.</p></li>
-
-<li><p>(No 4.8) The <code>Courting</code> strategy is created by <code>Strategy s = new Courting(Partner x)</code>. The strategy checks to see if the partner is available, and if so it puts a beeper down. Write the <code>Courting</code> strategy.</p></li>
-</ol>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">testCourt</span><span style="color:#f92672">()</span>
-<span style="color:#f92672">{</span>
-   <span style="color:#111">LBot</span> <span style="color:#111">sally</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">4</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">10</span><span style="color:#f92672">);</span>
-   <span style="color:#111">LBot</span> <span style="color:#111">harry</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LBot</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">4</span><span style="color:#f92672">);</span>
-   
-   <span style="color:#111">Courting</span> <span style="color:#111">c</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Courting</span><span style="color:#f92672">(</span><span style="color:#111">sally</span><span style="color:#f92672">);</span>
-   <span style="color:#111">c</span><span style="color:#f92672">.</span><span style="color:#75af00">doIt</span><span style="color:#f92672">(</span><span style="color:#111">harry</span><span style="color:#f92672">);</span> <span style="color:#75715e">// harry should place a beeper
-</span><span style="color:#75715e"></span>   <span style="color:#111">sally</span><span style="color:#f92672">.</span><span style="color:#75af00">setSpouse</span><span style="color:#f92672">(</span><span style="color:#111">sally</span><span style="color:#f92672">);</span> <span style="color:#75715e">// married herself to make harry go away
-</span><span style="color:#75715e"></span>   <span style="color:#111">c</span><span style="color:#f92672">.</span><span style="color:#75af00">doIt</span><span style="color:#f92672">(</span><span style="color:#111">harry</span><span style="color:#f92672">);</span> <span style="color:#75715e">// harry should do nothing
-</span><span style="color:#75715e"></span><span style="color:#f92672">}</span></code></pre></div>
 
 <footer class=" footline" >
 	
@@ -3758,6 +3669,8 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -3773,9 +3686,6 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4483,7 +4393,6 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
             
                 
                     
-                    
                 
                 
 
@@ -4496,9 +4405,6 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -4692,7 +4598,6 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
             
                 
                     
-                    
                 
                 
 
@@ -4708,9 +4613,6 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -5924,6 +5826,7 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
             
                 
                     
+                    
                 
                 
 
@@ -5936,6 +5839,7 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
             
             
                 
+                    
                     
                 
                 
@@ -5958,10 +5862,10 @@ The function is <code>public boolean marry(Partner a, Partner b)</code>.
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/karel/ch4b-adv/" title="4.* Advanced"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ecs-teach/" title="Exploring CS (Teachers)"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/karel/ch4f-project/" title="4. Robot Drama" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/" title="AP CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

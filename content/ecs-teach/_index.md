@@ -8,6 +8,8 @@ draft: false
 
 This page is dedicated to _teacher links_ for Exploring Computer Science.
 
+* [Scratch Resources](scratch) are on a separate page.
+
 ## Web Hosting Platforms
 
 * [Cloud9](https://c9.io/)
