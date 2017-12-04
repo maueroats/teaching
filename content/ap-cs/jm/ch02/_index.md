@@ -3,6 +3,7 @@ title: "2. Software Engineering"
 date: 2017-12-01T15:30:51-06:00
 draft: false
 description: "Reading guide for chapter 2."
+weight: 20
 ---
 
 Resource: read the book and/or [Chapter 2 Powerpoint](http://www.skylit.com/javamethods/ppt/Ch02.ppt).
