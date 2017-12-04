@@ -71,4 +71,4 @@ they put in a class?
 
 22. What is inherited from a superclass? What is not?
 
-
+23. Is it possible to make a class that does not inherit from any other class? Explain. 
