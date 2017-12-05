@@ -291,7 +291,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   Pro Features   Calendar   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   Pro Features   Calendar   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -312,7 +312,7 @@
 	"title": "3. Objects and Classes",
 	"tags": [],
 	"description": "",
-	"content": " Day 1: read 3.1, skim 3.2 - read boldface, 3.3. Day 2: read 3.5-end.\nReading Questions  What does CRC stand for in the phrase \u0026ldquo;I wrote a CRC card for SuperBot\u0026rdquo;?  Classes (3.3)  What is a class, according to Java Methods?\n What is the difference between a class and an object? Give two examples not from the text.\n Are there any rules in Java governing the name of a file containing DinosaurBot? If so, what?\n Does Java force you to name your classes beginning with capital letters? Explain the context of this question.\n What is an instance variable? How does it compare to a field?\n What vocabulary word is used for behaviors of a class?\n Give an example of an \u0026ldquo;implicit\u0026rdquo; field, constructor, or method. (Appears later in the chapter.)\n If you refuse to use import statements, does that mean you cannot access information from other files, like the Color class? Explain.\n Does Java care what order methods and fields appear in a class?\n What conventions do Java programmers use when ordering the things that they put in a class?\n Is it considered good design to put the main method inside your WorkerBot class? What do the Java Methods authors say? Why do you think they say that?\n  Gridworld (3.4) Fields, Constructors, Methods (3.5)  Is it an error to have two constructors: public Bug() and public Bug(Color c)? If not, how do you determine which one is used?\n What is a \u0026ldquo;reference\u0026rdquo; (intuitively)?\n What is garbage collection?\n Is it possible for a class to have no constructors? How? Or why not?\n What does it mean to \u0026ldquo;send a message\u0026rdquo; to an object in Java (metaphorically speaking)?\n Does a method belong to an object or a class? Explain briefly.\n How do you indicate that a method gives no result?\n There is a technique mentioned called either encapsulation or information hiding. What is one way to implement encapsulation?\n What is one advantage of encapsulation? (One of the three mentioned in the book is more important than the other two - try to pick that one.)\n  Inheritance (3.6)  Why might adding methods to an existing class not be \u0026ldquo;feasible or desirable\u0026rdquo;? (Three reasons.)\n Reason 1: Reason 2: Reason 3:  What is inherited from a superclass? What is not?\n Is it possible to make a class that does not inherit from any other class? Explain.\n  "
+	"content": " Day 1: read 3.1, skim 3.2 - read boldface, 3.3. Day 2: read 3.5-end.\nReading Questions  What does CRC stand for in the phrase \u0026ldquo;I wrote a CRC card for SuperBot\u0026rdquo;?  Classes (3.3)  What is a class, according to Java Methods?\n What is the difference between a class and an object? Give two examples not from the text.\n Are there any rules in Java governing the name of a file containing DinosaurBot? If so, what?\n Does Java force you to name your classes beginning with capital letters? Explain the context of this question.\n What is an instance variable? How does it compare to a field?\n What vocabulary word is used for behaviors of a class?\n Give an example of an \u0026ldquo;implicit\u0026rdquo; field, constructor, or method. (Appears later in the chapter.)\n If you refuse to use import statements, does that mean you cannot access information from other files, like the Color class? Explain.\n Does Java care what order methods and fields appear in a class?\n What conventions do Java programmers use when ordering the things that they put in a class?\n Is it considered good design to put the main method inside your WorkerBot class? What do the Java Methods authors say? Why do you think they say that?\n  Gridworld (3.4) Fields, Constructors, Methods (3.5)  Is it an error to have two constructors: public Bug() and public Bug(Color c)? If not, how do you determine which one is used?\n What is a \u0026ldquo;reference\u0026rdquo; (intuitively)?\n What is garbage collection?\n Is it possible for a class to have no constructors? How? Or why not?\n What does it mean to \u0026ldquo;send a message\u0026rdquo; to an object in Java (metaphorically speaking)?\n Does a method belong to an object or a class? Explain briefly.\n How do you indicate that a method gives no result?\n There is a technique mentioned called either encapsulation or information hiding. What is one way to implement encapsulation?\n What is one advantage of encapsulation? (One of the three mentioned in the book is more important than the other two - try to pick that one.)\n  Inheritance (3.6)  Why might adding methods to an existing class not be \u0026ldquo;feasible or desirable\u0026rdquo;? (Three reasons.)\n Reason 1: Reason 2: Reason 3:  What is inherited from a superclass? What is not?\n Is it possible to make a class that does not inherit from any other class? Explain.\n Bug is on page 52, UTurnBug is on page 65. Why can\u0026rsquo;t UTurnBug just have turnAround() function that is directon += 180?\n What are accessor methods?\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-3/",
@@ -588,6 +588,13 @@
 	"content": "See the plan for initial information! We are currently going to make the functions that decide when action happens.\n SI Plan   "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch15/",
+	"title": "15. Conditionals",
+	"tags": [],
+	"description": "Making choices in what racket does using &#39;cond&#39;.",
+	"content": " Opener 1 (define (scrunch x) (cond [(\u0026lt; x 10) 0] [else (/ x 2)])) Assignment 1 Read the first three sections of Chapter 15. Do Exercises 15.3.{1,2,4,5,6}.\nAdvanced: build-image The build-image uses a function that specifies the pixel color to create a rectangular image.\nThe first example is a function that always returns orange, so it makes an orange square:\n(define (pixel-color x y) \u0026#34;orange\u0026#34;) (build-image 300 200 pixel-color) Notice that pixel-color does not appear in parentheses. The build-image command needs to activate (run) the pixel-color function over and over again, so needs to know the name of the function.\nThe second example is to give different colors in different circumstances. This example uses a mathematical formula to make a nice picture. Try it.\n(define (pixel-color-ii x y) (cond [(\u0026lt;= (abs (- y x)) 30) \u0026#34;orange\u0026#34;] [else \u0026#34;blue\u0026#34;])) (build-image 300 200 pixel-color-ii)"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/pro/",
 	"title": "Pro Features",
 	"tags": [],
@@ -635,6 +642,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Make a plan before you start programming.\nThere are two essentials:\n Multiple functions! Variables to give your numbers meaning.  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch15/day1/",
+	"title": "15. Day 1",
+	"tags": [],
+	"description": "Day 1 Exercises",
+	"content": " Mystery Function (define (scrunch x) (cond [(\u0026lt; x 10) 0] [else (/ x 2)])) Give 3 examples what it does.\n"
 },
 {
 	"uri": "http://wy-cs.info/ftc/meet-2/",
@@ -963,7 +977,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  Intermediate Computer Science Recent Changes    SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Ch13 Exercises modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  9. Exercises 3 modified Mon 11-20  Pro Features modified Sun 11-19  11.6.2 Airline modified Fri 11-17  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  Intermediate Computer Science Recent Changes    15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Ch13 Exercises modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  9. Exercises 3 modified Mon 11-20  Pro Features modified Sun 11-19  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
