@@ -34,6 +34,6 @@ Do Exercises 15.8.{2,3,5}. Exercise 15.5.6.
 
 ## Advanced
 
-See the [build-image](build-image) tutorial. Use that to do 15.3.3 and 
+See the [build-image]({{% relref "build-image.md" %}}) tutorial. Use that to do 15.3.3 and 
 15.3.{7-11}. Do not use `build3-image` even though the book says to use it. The `build-image` function is better.
 
