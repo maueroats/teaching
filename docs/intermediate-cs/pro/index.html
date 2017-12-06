@@ -3094,10 +3094,10 @@
  
   
     
-      <li data-nav-id="/intermediate-cs/ch15/day1/" class="dd-item
+      <li data-nav-id="/intermediate-cs/ch15/15-slides/" class="dd-item
      
       ">
-        <a href="/intermediate-cs/ch15/day1/">
+        <a href="/intermediate-cs/ch15/15-slides/">
         <span>15. Slides</span> 
         
         </a></li>
@@ -3134,8 +3134,64 @@
         
         
 
+          
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+          
+
+        
+
         
       </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/pro/build-image/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/pro/build-image/">
+        <span>Build Image</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/pro/pro-string/">
+        <span>Strings for Experts</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -3496,7 +3552,7 @@
      
       ">
         <a href="/ftc/meet-2/">
-        <span>Meet 2</span> 
+        <span>FTC Meet 2</span> 
         
         </a></li>
      
@@ -3692,15 +3748,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#randomizing-letters-of-a-string">Randomizing Letters of a String</a></li>
-<li><a href="#advanced-string-making">Advanced String Making</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -3717,32 +3765,85 @@
 
 
 
-
-
 <p>This page contains information about advanced topics that I have been asked.</p>
 
-<h2 id="randomizing-letters-of-a-string">Randomizing Letters of a String</h2>
 
-<p>The <code>implode</code> and <code>explode</code> functions change strings to and from lists of single letters.
-To randomize a list, import <code>racket/list</code> and then use the <code>shuffle</code> function.
-If you are actually looking at lists, you should change to Beginning Student with List Abbreviations.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">require</span> <span style="color:#111">picturing-programs</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#00a8c8">require</span> <span style="color:#111">racket/list</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">mix</span> <span style="color:#111">letters</span><span style="color:#111">)</span>
-  <span style="color:#111">(</span><span style="color:#111">implode</span>
-   <span style="color:#111">(</span><span style="color:#111">shuffle</span>
-    <span style="color:#111">(</span><span style="color:#111">explode</span> <span style="color:#111">letters</span><span style="color:#111">))))</span>
-<span style="color:#111">(</span><span style="color:#111">mix</span> <span style="color:#d88200">&#34;alphabet soup&#34;</span><span style="color:#111">)</span></code></pre></div>
-<h2 id="advanced-string-making">Advanced String Making</h2>
 
-<ul>
-<li><p>There is an optional second argument to <code>number-&gt;string</code> that is the base to work in.
-<code>(check-expect (number-&gt;string 31 2) &quot;11111&quot;)</code></p></li>
 
-<li><p>Single characters are different from single letter words. Racket uses <code>#\a</code> to denote the character &ldquo;<code>a</code>&rdquo; and <code>&quot;a&quot;</code> to denote the word containing a single letter a. Usually you do not work with characters, but&hellip;</p></li>
 
-<li><p>The <code>make-string</code> command takes in a number and a character to repeat (meaning <code>#\a</code> not <code>&quot;a&quot;</code>). Example: <code>(check-expect (make-string 7 #\a) &quot;aaaaaaa&quot;)</code>.</p></li>
+
+
+
+
+
+
+
+
+<ul class="children children-li">
+	
+    
+    
+
+	
+		
+	
+		
+  
+
+
+<li>
+<a href="/intermediate-cs/pro/build-image/" >Build Image</a>
+</li>
+
+
+
+
+
+
+			
+				
+<p>Build-image to create images from a formula for the pixel color.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+  
+
+
+<li>
+<a href="/intermediate-cs/pro/pro-string/" >Strings for Experts</a>
+</li>
+
+
+
+
+
+
+			
+				
+<p>Strings: randomizing and creating by formula.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+
+	
 </ul>
+
+
+
+
 
 
 <footer class=" footline" >
@@ -5731,9 +5832,6 @@ If you are actually looking at lists, you should change to Beginning Student wit
                     
 
                     
-            
-        
-                    
                         
             
             
@@ -5768,99 +5866,6 @@ If you are actually looking at lists, you should change to Beginning Student wit
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -6009,6 +6014,134 @@ If you are actually looking at lists, you should change to Beginning Student wit
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -6051,10 +6184,10 @@ If you are actually looking at lists, you should change to Beginning Student wit
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch15/day1/" title="15. Slides"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch15/15-slides/" title="15. Slides"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/pro/build-image/" title="Build Image" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

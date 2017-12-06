@@ -32,24 +32,8 @@ Read 15.6 ("Unnecessary conditionals").
 
 Do Exercises 15.8.{2,3,5}. Exercise 15.5.6.
 
-## Advanced: build-image
+## Advanced
 
-The [build-image](http://docs.racket-lang.org/picturing-programs/index.html?q=build-image#%28def._%28%28lib._picturing-programs%2Fprivate%2Fmap-image..rkt%29._build-image%29%29) uses a function that specifies the pixel color to create a rectangular image.
+See the [build-image](build-image) tutorial. Use that to do 15.3.3 and 
+15.3.{7-11}. Do not use `build3-image` even though the book says to use it. The `build-image` function is better.
 
-The first example is a function that always returns orange, so it makes an orange square:
-```racket
-(define (pixel-color x y)
-  "orange")
-(build-image 300 200 pixel-color)
-```
-Notice that `pixel-color` does not appear in parentheses. The build-image command needs to activate (run) the `pixel-color` function over and over again, so needs to know the name of the function.
-
-The second example is to give different colors in different circumstances. This example uses a mathematical formula to make a nice picture. Try it.
-```racket
-(define (pixel-color-ii x y)
-  (cond [(<= (abs (- y x)) 30)
-         "orange"]
-        [else 
-         "blue"]))
-(build-image 300 200 pixel-color-ii)
-```

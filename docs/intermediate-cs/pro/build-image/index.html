@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="Remainder to repeat. Random dots.">
+    <meta name="description" content="Build-image to create images from a formula for the pixel color.">
 
 
-    <title>Number Models 3 :: WY Computer Science</title>
+    <title>Build Image :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch08/number-3/">
+  <body class="" data-url="/intermediate-cs/pro/build-image/">
     <nav id="sidebar" class="">
 
 
@@ -2526,7 +2526,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch08/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -2537,7 +2537,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2600,7 +2600,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch08/number-3/" class="dd-item
-     active
+     
       ">
         <a href="/intermediate-cs/ch08/number-3/">
         <span>Number Models 3</span> 
@@ -3144,7 +3144,7 @@
   
     
     <li data-nav-id="/intermediate-cs/pro/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -3155,7 +3155,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -3178,7 +3178,7 @@
   
     
       <li data-nav-id="/intermediate-cs/pro/build-image/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/pro/build-image/">
         <span>Build Image</span> 
@@ -3760,7 +3760,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch08/'>8. Number Animations</a> > Number Models 3
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/pro/'>Pro Features</a> > Build Image
 
  
 
@@ -3777,16 +3777,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#remainder-warmups">Remainder warmups</a>
-<ul>
-<li><a href="#opener">Opener</a></li>
-<li><a href="#follow-up">Follow-up</a></li>
-<li><a href="#animation">Animation</a></li>
-</ul></li>
-<li><a href="#more-animation">More animation</a></li>
-<li><a href="#repetition-without-conditionals">Repetition (without conditionals)</a></li>
-<li><a href="#class-practice">Class practice</a></li>
-<li><a href="#homework">Homework</a></li>
+<li><a href="#advanced-build-image">Advanced: build-image</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -3798,7 +3789,7 @@
         
         <div id="body-inner">
           
-            <h1>Number Models 3</h1>
+            <h1>Build Image</h1>
           
 
 
@@ -3806,46 +3797,25 @@
 
 
 
-<h2 id="remainder-warmups">Remainder warmups</h2>
+<p>You should learn how to use <code>build-image</code> to make the pictures in Chapter 15.</p>
 
-<h3 id="opener">Opener</h3>
+<h2 id="advanced-build-image">Advanced: build-image</h2>
 
-<p>Divide 324 by 7. What is the quotient? The remainder?</p>
+<p>The <a href="http://docs.racket-lang.org/picturing-programs/index.html?q=build-image#%28def._%28%28lib._picturing-programs%2Fprivate%2Fmap-image..rkt%29._build-image%29%29">build-image</a> uses a function that specifies the pixel color to create a rectangular image.</p>
 
-<h3 id="follow-up">Follow-up</h3>
+<p>The first example is a function that always returns orange, so it makes an orange square:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">pixel-color</span> <span style="color:#111">x</span> <span style="color:#111">y</span><span style="color:#111">)</span>
+  <span style="color:#d88200">&#34;orange&#34;</span><span style="color:#111">)</span>
+<span style="color:#111">(</span><span style="color:#111">build-image</span> <span style="color:#ae81ff">300</span> <span style="color:#ae81ff">200</span> <span style="color:#111">pixel-color</span><span style="color:#111">)</span></code></pre></div>
+<p>Notice that <code>pixel-color</code> does not appear in parentheses. The build-image command needs to activate (run) the <code>pixel-color</code> function over and over again, so needs to know the name of the function.</p>
 
-<p>When you change 324 to other numbers, what possible remainders can you get? (For example, can you get a remainder of 2 by dividing something by 7? What?)</p>
-
-<h3 id="animation">Animation</h3>
-
-<p>An animation will just count from 0 to 6, then start over again at zero.</p>
-
-<p>Write the model you choose, then checks and a function for the tick handler.</p>
-
-<h2 id="more-animation">More animation</h2>
-
-<p>Show the numbers (in order): 10, 30, 50, 70, 90, then go back to 10 and repeat.</p>
-
-<ul>
-<li>Model?</li>
-<li>Tick handler.</li>
-</ul>
-
-<h2 id="repetition-without-conditionals">Repetition (without conditionals)</h2>
-
-<p>What does this tick-hander do? Write checks for the results when num=0, num=1, and num=4.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">repeat-it</span> <span style="color:#111">num</span><span style="color:#111">)</span>
-    <span style="color:#111">(</span><span style="color:#111">remainder</span> <span style="color:#111">(</span><span style="color:#111">+</span> <span style="color:#111">num</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span> <span style="color:#ae81ff">5</span><span style="color:#111">))</span></code></pre></div>
-<h2 id="class-practice">Class practice</h2>
-
-<p>1a. Make a shape of your choice start at x=100, y=40, then move to x=100,y=110, then to x=100,y=180, then back to x=100, y=40. The motion should happen every second.</p>
-
-<p>1b. Hit a key to make the shape go to a random one of those three locations.</p>
-
-<h2 id="homework">Homework</h2>
-
-<p>Add one colored circle at a random location on the screen every half second.</p>
-
+<p>The second example is to give different colors in different circumstances. This example uses a mathematical formula to make a nice picture. Try it.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">pixel-color-ii</span> <span style="color:#111">x</span> <span style="color:#111">y</span><span style="color:#111">)</span>
+  <span style="color:#111">(</span><span style="color:#00a8c8">cond</span> <span style="color:#111">[</span><span style="color:#111">(</span><span style="color:#111">&lt;=</span> <span style="color:#111">(</span><span style="color:#111">abs</span> <span style="color:#111">(</span><span style="color:#111">-</span> <span style="color:#111">y</span> <span style="color:#111">x</span><span style="color:#111">))</span> <span style="color:#ae81ff">30</span><span style="color:#111">)</span>
+         <span style="color:#d88200">&#34;orange&#34;</span><span style="color:#111">]</span>
+        <span style="color:#111">[</span><span style="color:#00a8c8">else</span> 
+         <span style="color:#d88200">&#34;blue&#34;</span><span style="color:#111">]))</span>
+<span style="color:#111">(</span><span style="color:#111">build-image</span> <span style="color:#ae81ff">300</span> <span style="color:#ae81ff">200</span> <span style="color:#111">pixel-color-ii</span><span style="color:#111">)</span></code></pre></div>
 
 <footer class=" footline" >
 	
@@ -5438,7 +5408,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -5452,8 +5421,21 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -5486,26 +5468,6 @@
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -5830,6 +5792,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -5842,6 +5805,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -5859,24 +5823,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -5888,115 +5836,6 @@
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -6145,6 +5984,134 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -6187,10 +6154,10 @@
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch08/number-2/" title="Number Models 2"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/pro/" title="Pro Features"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch08/number-4/" title="Number Models 4" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/pro/pro-string/" title="Strings for Experts" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

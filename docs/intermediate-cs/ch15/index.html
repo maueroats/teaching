@@ -3044,6 +3044,26 @@
           
         
           
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/spaceinv/si-plan/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/spaceinv/si-plan/">
+        <span>SI Plan</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -3094,10 +3114,10 @@
  
   
     
-      <li data-nav-id="/intermediate-cs/ch15/day1/" class="dd-item
+      <li data-nav-id="/intermediate-cs/ch15/15-slides/" class="dd-item
      
       ">
-        <a href="/intermediate-cs/ch15/day1/">
+        <a href="/intermediate-cs/ch15/15-slides/">
         <span>15. Slides</span> 
         
         </a></li>
@@ -3134,8 +3154,64 @@
         
         
 
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
         
       </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/pro/build-image/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/pro/build-image/">
+        <span>Build Image</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/pro/pro-string/">
+        <span>Strings for Experts</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -3496,7 +3572,7 @@
      
       ">
         <a href="/ftc/meet-2/">
-        <span>Meet 2</span> 
+        <span>FTC Meet 2</span> 
         
         </a></li>
      
@@ -3699,7 +3775,7 @@
 <li><a href="#assignment-15-a">Assignment 15.A</a></li>
 <li><a href="#assignment-15-b">Assignment 15.B</a></li>
 <li><a href="#assignment-15-c">Assignment 15.C</a></li>
-<li><a href="#advanced-build-image">Advanced: build-image</a></li>
+<li><a href="#advanced">Advanced</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -3747,23 +3823,11 @@
 
 <p>Do Exercises 15.8.{2,3,5}. Exercise 15.5.6.</p>
 
-<h2 id="advanced-build-image">Advanced: build-image</h2>
+<h2 id="advanced">Advanced</h2>
 
-<p>The <a href="http://docs.racket-lang.org/picturing-programs/index.html?q=build-image#%28def._%28%28lib._picturing-programs%2Fprivate%2Fmap-image..rkt%29._build-image%29%29">build-image</a> uses a function that specifies the pixel color to create a rectangular image.</p>
+<p>See the <a href="build-image">build-image</a> tutorial. Use that to do 15.3.3 and
+15.3.{7-11}. Do not use <code>build3-image</code> even though the book says to use it. The <code>build-image</code> function is better.</p>
 
-<p>The first example is a function that always returns orange, so it makes an orange square:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">pixel-color</span> <span style="color:#111">x</span> <span style="color:#111">y</span><span style="color:#111">)</span>
-  <span style="color:#d88200">&#34;orange&#34;</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">build-image</span> <span style="color:#ae81ff">300</span> <span style="color:#ae81ff">200</span> <span style="color:#111">pixel-color</span><span style="color:#111">)</span></code></pre></div>
-<p>Notice that <code>pixel-color</code> does not appear in parentheses. The build-image command needs to activate (run) the <code>pixel-color</code> function over and over again, so needs to know the name of the function.</p>
-
-<p>The second example is to give different colors in different circumstances. This example uses a mathematical formula to make a nice picture. Try it.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">pixel-color-ii</span> <span style="color:#111">x</span> <span style="color:#111">y</span><span style="color:#111">)</span>
-  <span style="color:#111">(</span><span style="color:#00a8c8">cond</span> <span style="color:#111">[</span><span style="color:#111">(</span><span style="color:#111">&lt;=</span> <span style="color:#111">(</span><span style="color:#111">abs</span> <span style="color:#111">(</span><span style="color:#111">-</span> <span style="color:#111">y</span> <span style="color:#111">x</span><span style="color:#111">))</span> <span style="color:#ae81ff">30</span><span style="color:#111">)</span>
-         <span style="color:#d88200">&#34;orange&#34;</span><span style="color:#111">]</span>
-        <span style="color:#111">[</span><span style="color:#00a8c8">else</span> 
-         <span style="color:#d88200">&#34;blue&#34;</span><span style="color:#111">]))</span>
-<span style="color:#111">(</span><span style="color:#111">build-image</span> <span style="color:#ae81ff">300</span> <span style="color:#ae81ff">200</span> <span style="color:#111">pixel-color-ii</span><span style="color:#111">)</span></code></pre></div>
 
 <footer class=" footline" >
 	
@@ -5754,6 +5818,38 @@
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -6074,7 +6170,7 @@
             <a class="nav nav-prev" href="/intermediate-cs/spaceinv/si-plan/" title="SI Plan"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch15/day1/" title="15. Slides" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/ch15/15-slides/" title="15. Slides" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

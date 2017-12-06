@@ -20,6 +20,7 @@ The quick reference guide is on page 208 of the PDF.
 * Comparisons for numbers: `<`, `<=`, `=`, `>=`, `>`
 * Comparisons for other things: `string<?`, `string<=?`, `string=?`, etc.
 * Case insensitive comparison: `string-ci<?`, etc.
+* Combinations: `and`, `or`, `not`
 
 ## Sections
 

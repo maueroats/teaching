@@ -5,6 +5,7 @@ draft: false
 type: slide
 theme: white
 description: "Day 1 Exercises"
+weight: 10
 ---
 
 # Mystery Function

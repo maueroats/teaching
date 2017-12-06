@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch15/15-slides/</loc>
+    <lastmod>2017-12-05T10:36:30-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/spaceinv/si-plan/</loc>
     <lastmod>2017-11-29T10:13:17-06:00</lastmod>
   </url>
@@ -463,8 +468,8 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch15/day1/</loc>
-    <lastmod>2017-12-05T10:36:30-06:00</lastmod>
+    <loc>http://wy-cs.info/intermediate-cs/pro/build-image/</loc>
+    <lastmod>2017-12-06T09:53:22-06:00</lastmod>
   </url>
   
   <url>
@@ -500,6 +505,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch09/ch9-ex3/</loc>
     <lastmod>2017-11-20T08:08:25-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/pro/pro-string/</loc>
+    <lastmod>2017-11-19T15:30:06-06:00</lastmod>
   </url>
   
   <url>
