@@ -9,6 +9,7 @@ weight: 30
 
 Day 1: read 3.1, skim 3.2 - read boldface, 3.3.
 Day 2: read 3.5-end.
+Day 3: [Writing Classes II](https://docs.google.com/document/d/1Uj4zGqRIpJBNXfSBTPbO2vZC70mog_gD_tS3U-KJmSc/edit?usp=sharing).
 
 ## Reading Questions
 

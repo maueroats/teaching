@@ -312,7 +312,7 @@
 	"title": "3. Objects and Classes",
 	"tags": [],
 	"description": "",
-	"content": " Day 1: read 3.1, skim 3.2 - read boldface, 3.3. Day 2: read 3.5-end.\nReading Questions  What does CRC stand for in the phrase \u0026ldquo;I wrote a CRC card for SuperBot\u0026rdquo;?  Classes (3.3)  What is a class, according to Java Methods?\n What is the difference between a class and an object? Give two examples not from the text.\n Are there any rules in Java governing the name of a file containing DinosaurBot? If so, what?\n Does Java force you to name your classes beginning with capital letters? Explain the context of this question.\n What is an instance variable? How does it compare to a field?\n What vocabulary word is used for behaviors of a class?\n Give an example of an \u0026ldquo;implicit\u0026rdquo; field, constructor, or method. (Appears later in the chapter.)\n If you refuse to use import statements, does that mean you cannot access information from other files, like the Color class? Explain.\n Does Java care what order methods and fields appear in a class?\n What conventions do Java programmers use when ordering the things that they put in a class?\n Is it considered good design to put the main method inside your WorkerBot class? What do the Java Methods authors say? Why do you think they say that?\n  Gridworld (3.4) Fields, Constructors, Methods (3.5)  Is it an error to have two constructors: public Bug() and public Bug(Color c)? If not, how do you determine which one is used?\n What is a \u0026ldquo;reference\u0026rdquo; (intuitively)?\n What is garbage collection?\n Is it possible for a class to have no constructors? How? Or why not?\n What does it mean to \u0026ldquo;send a message\u0026rdquo; to an object in Java (metaphorically speaking)?\n Does a method belong to an object or a class? Explain briefly.\n How do you indicate that a method gives no result?\n There is a technique mentioned called either encapsulation or information hiding. What is one way to implement encapsulation?\n What is one advantage of encapsulation? (One of the three mentioned in the book is more important than the other two - try to pick that one.)\n  Inheritance (3.6)  Why might adding methods to an existing class not be \u0026ldquo;feasible or desirable\u0026rdquo;? (Three reasons.)\n Reason 1: Reason 2: Reason 3:  What is inherited from a superclass? What is not?\n Is it possible to make a class that does not inherit from any other class? Explain.\n Bug is on page 52, UTurnBug is on page 65. Why can\u0026rsquo;t UTurnBug just have turnAround() function that is directon += 180?\n What are accessor methods?\n  "
+	"content": " Day 1: read 3.1, skim 3.2 - read boldface, 3.3. Day 2: read 3.5-end. Day 3: Writing Classes II.\nReading Questions  What does CRC stand for in the phrase \u0026ldquo;I wrote a CRC card for SuperBot\u0026rdquo;?  Classes (3.3)  What is a class, according to Java Methods?\n What is the difference between a class and an object? Give two examples not from the text.\n Are there any rules in Java governing the name of a file containing DinosaurBot? If so, what?\n Does Java force you to name your classes beginning with capital letters? Explain the context of this question.\n What is an instance variable? How does it compare to a field?\n What vocabulary word is used for behaviors of a class?\n Give an example of an \u0026ldquo;implicit\u0026rdquo; field, constructor, or method. (Appears later in the chapter.)\n If you refuse to use import statements, does that mean you cannot access information from other files, like the Color class? Explain.\n Does Java care what order methods and fields appear in a class?\n What conventions do Java programmers use when ordering the things that they put in a class?\n Is it considered good design to put the main method inside your WorkerBot class? What do the Java Methods authors say? Why do you think they say that?\n  Gridworld (3.4) Fields, Constructors, Methods (3.5)  Is it an error to have two constructors: public Bug() and public Bug(Color c)? If not, how do you determine which one is used?\n What is a \u0026ldquo;reference\u0026rdquo; (intuitively)?\n What is garbage collection?\n Is it possible for a class to have no constructors? How? Or why not?\n What does it mean to \u0026ldquo;send a message\u0026rdquo; to an object in Java (metaphorically speaking)?\n Does a method belong to an object or a class? Explain briefly.\n How do you indicate that a method gives no result?\n There is a technique mentioned called either encapsulation or information hiding. What is one way to implement encapsulation?\n What is one advantage of encapsulation? (One of the three mentioned in the book is more important than the other two - try to pick that one.)\n  Inheritance (3.6)  Why might adding methods to an existing class not be \u0026ldquo;feasible or desirable\u0026rdquo;? (Three reasons.)\n Reason 1: Reason 2: Reason 3:  What is inherited from a superclass? What is not?\n Is it possible to make a class that does not inherit from any other class? Explain.\n Bug is on page 52, UTurnBug is on page 65. Why can\u0026rsquo;t UTurnBug just have turnAround() function that is directon += 180?\n What are accessor methods?\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-3/",
@@ -592,7 +592,7 @@
 	"title": "15. Conditionals",
 	"tags": [],
 	"description": "Making choices in what racket does using &#39;cond&#39;.",
-	"content": " Opener 1 (define (scrunch x) (cond [(\u0026lt; x 10) 0] [else (/ x 2)])) Assignment 1 Read the first three sections of Chapter 15. Do Exercises 15.3.{1,2,4,5,6}.\nAdvanced: build-image The build-image uses a function that specifies the pixel color to create a rectangular image.\nThe first example is a function that always returns orange, so it makes an orange square:\n(define (pixel-color x y) \u0026#34;orange\u0026#34;) (build-image 300 200 pixel-color) Notice that pixel-color does not appear in parentheses. The build-image command needs to activate (run) the pixel-color function over and over again, so needs to know the name of the function.\nThe second example is to give different colors in different circumstances. This example uses a mathematical formula to make a nice picture. Try it.\n(define (pixel-color-ii x y) (cond [(\u0026lt;= (abs (- y x)) 30) \u0026#34;orange\u0026#34;] [else \u0026#34;blue\u0026#34;])) (build-image 300 200 pixel-color-ii)"
+	"content": " See slides for introductory material.\nAssignment 15.A Read the first three sections of Chapter 15. Do Exercises 15.3.{1,2,4,5,6}.\nAdvice:\n 15.3.4: The first input is the candidate for whom you are counting votes. (For example \u0026ldquo;Clinton\u0026rdquo;.) The next four inputs are votes cast for a person. (For example \u0026ldquo;Trump\u0026rdquo; \u0026ldquo;Clinton\u0026rdquo; \u0026ldquo;Sanders\u0026rdquo; \u0026ldquo;Trump\u0026rdquo;.) You are supposed to return the number of votes for the candidate from the first input. (For example: 1 in this case.)\n 15.3.7: Keep using build-image not build3-image.\n  Advanced students can do the image making functions 15.3.{3,7-11}.\nAssignment 15.B Exercises 15.5.{1,2,3,4,5}\nAssignment 15.C Read 15.6 (\u0026ldquo;Unnecessary conditionals\u0026rdquo;).\nDo Exercises 15.8.{2,3,5}. Exercise 15.5.6.\nAdvanced: build-image The build-image uses a function that specifies the pixel color to create a rectangular image.\nThe first example is a function that always returns orange, so it makes an orange square:\n(define (pixel-color x y) \u0026#34;orange\u0026#34;) (build-image 300 200 pixel-color) Notice that pixel-color does not appear in parentheses. The build-image command needs to activate (run) the pixel-color function over and over again, so needs to know the name of the function.\nThe second example is to give different colors in different circumstances. This example uses a mathematical formula to make a nice picture. Try it.\n(define (pixel-color-ii x y) (cond [(\u0026lt;= (abs (- y x)) 30) \u0026#34;orange\u0026#34;] [else \u0026#34;blue\u0026#34;])) (build-image 300 200 pixel-color-ii)"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/pro/",
@@ -645,10 +645,10 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch15/day1/",
-	"title": "15. Day 1",
+	"title": "15. Slides",
 	"tags": [],
 	"description": "Day 1 Exercises",
-	"content": " Mystery Function (define (scrunch x) (cond [(\u0026lt; x 10) 0] [else (/ x 2)])) Give 3 examples what it does.\n"
+	"content": " Mystery Function (define (scrunch x) (cond [(\u0026lt; x 10) 0] [else (/ x 2)])) Give 3 examples what it does.\nScrunch Sum  Scrunch three numbers Add the result  (scrunch-three 5 12 40) =\u0026gt; 26 Word Points  Each word gets 2 points per letter. Every word earns at least 7 points. Find the total points earned by four words.  (sum-points \u0026#34;saw\u0026#34; \u0026#34;it\u0026#34; \u0026#34;workhorse\u0026#34; \u0026#34;betadyne\u0026#34;) =\u0026gt; 48"
 },
 {
 	"uri": "http://wy-cs.info/ftc/meet-2/",
@@ -1001,14 +1001,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

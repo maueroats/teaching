@@ -8,19 +8,29 @@ weight: 150
 description: "Making choices in what racket does using 'cond'."
 ---
 
-## Opener 1
+See slides for introductory material.
 
-
-```racket
-(define (scrunch x)
-   (cond [(< x 10)       0]
-         [else     (/ x 2)]))
-```
-
-
-## Assignment 1
+## Assignment 15.A
 
 Read the first three sections of Chapter 15. Do Exercises 15.3.{1,2,4,5,6}. 
+
+Advice:
+
+* 15.3.4: The first input is the candidate for whom you are counting votes. (For example "Clinton".) The next four inputs are votes cast for a person. (For example "Trump" "Clinton" "Sanders" "Trump".) You are supposed to return the number of votes for the candidate from the first input. (For example: `1` in this case.)
+
+* 15.3.7: Keep using `build-image` not `build3-image`. 
+
+Advanced students can do the image making functions 15.3.{3,7-11}.
+
+## Assignment 15.B
+
+Exercises 15.5.{1,2,3,4,5}
+
+## Assignment 15.C
+
+Read 15.6 ("Unnecessary conditionals").
+
+Do Exercises 15.8.{2,3,5}. Exercise 15.5.6.
 
 ## Advanced: build-image
 
