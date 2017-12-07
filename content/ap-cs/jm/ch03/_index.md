@@ -74,7 +74,7 @@ they put in a class?
 
 23. Is it possible to make a class that does not inherit from any other class? Explain. 
 
-24. `Bug` is on page 52, `UTurnBug` is on page 65. Why can't `UTurnBug` just have `turnAround()` function that is `directon += 180`?
+24. `Bug` is on page 52, `UTurnBug` is on page 65. Why can't `UTurnBug` just have `turnAround()` function that is `direction += 180`?
 
 25. What are accessor methods? 
 

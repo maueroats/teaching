@@ -31,6 +31,11 @@ url = "/art-gallery"
 weight = 20
 
 [[menu.shortcuts]]
+name = "CS Events"
+url = "/events"
+weight = 21
+
+[[menu.shortcuts]]
 name = "Racket MOOC <img src='/intermediate-cs/e-courses/edX.png' height='16px'/>"
 url = "/intermediate-cs/e-courses"
 weight = 23
