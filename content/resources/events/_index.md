@@ -4,7 +4,8 @@ date: 2017-12-06T20:26:58-06:00
 draft: false
 #type: slide
 #theme: white
-alias: "/events"
+aliases:
+ - "/events"
 ---
 
 * [Computing Olympiad](http://usaco.org/)
