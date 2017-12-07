@@ -10,6 +10,12 @@ weight: 30
 * Day 1: read 3.1, skim 3.2 - read boldface, 3.3.
 * Day 2: read 3.5-end.
 * Day 3: [Writing Simple Classes II](https://docs.google.com/document/d/1Uj4zGqRIpJBNXfSBTPbO2vZC70mog_gD_tS3U-KJmSc/edit?usp=sharing).
+* Day 4: [Writing Simple Classes III](https://docs.google.com/document/d/1Uj4zGqRIpJBNXfSBTPbO2vZC70mog_gD_tS3U-KJmSc/edit?usp=sharing).
+* Statements and solution in the [new github repository](https://github.com/2017-2018-wy-ap-cs/java-rotary-phone).
+
+```shell
+git clone https://github.com/2017-2018-wy-ap-cs/java-rotary-phone
+```
 
 ## Reading Questions
 
