@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="Design your own house (art) and cost calculator (math). Practice managing complexity and good function-writing style.">
+    <meta name="description" content="Practice quiz, adapted from a previous year.">
 
 
-    <title>Home Project :: WY Computer Science</title>
+    <title>15. Practice Quiz :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch11/house-project/">
+  <body class="" data-url="/intermediate-cs/ch15/15-practice-quiz/">
     <nav id="sidebar" class="">
 
 
@@ -2812,7 +2812,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch11/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -2823,7 +2823,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2926,7 +2926,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch11/house-project/" class="dd-item
-     active
+     
       ">
         <a href="/intermediate-cs/ch11/house-project/">
         <span>Home Project</span> 
@@ -3081,7 +3081,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch15/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -3092,7 +3092,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -3135,7 +3135,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch15/15-practice-quiz/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/ch15/15-practice-quiz/">
         <span>15. Practice Quiz</span> 
@@ -3815,7 +3815,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch11/'>11. Planning</a> > Home Project
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch15/'>15. Conditionals</a> > 15. Practice Quiz
 
  
 
@@ -3832,13 +3832,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#timeline">Timeline</a></li>
-<li><a href="#house">House</a></li>
-<li><a href="#cost">Cost</a></li>
-<li><a href="#style-and-checks">Style and Checks</a></li>
-<li><a href="#creativity">Creativity</a></li>
-<li><a href="#student-work">Student Work</a></li>
-<li><a href="#inspiration">Inspiration</a></li>
+<li><a href="#review-concepts">Review Concepts</a></li>
+<li><a href="#quiz-questions">Quiz Questions</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -3850,7 +3845,7 @@
         
         <div id="body-inner">
           
-            <h1>Home Project</h1>
+            <h1>15. Practice Quiz</h1>
           
 
 
@@ -3858,114 +3853,31 @@
 
 
 
-<p>In this project you will design a house of your own. You will write functions to create the house and functions to determine how much it will cost. Your costs do not have to be realistic.</p>
-
-<h2 id="timeline">Timeline</h2>
-
-<p>We will spend two whole days working on this in class. I expect it
-will take 2-4 additional hours outside of class, although this will
-depends on your understanding and how ambitious of a house you create.</p>
-
-<p>Check in points:</p>
-
-<ol>
-<li>Paper sketch and function outline approved for house image.</li>
-<li>Style check of two completed functions.</li>
-<li>House functions completed.</li>
-<li>Paper outline of functions approved for costs.</li>
-<li>Cost functions completed.</li>
-</ol>
-
-<p>Work days:</p>
-
-<ol>
-<li>Sketch house and check-in plan.
+<h2 id="review-concepts">Review Concepts</h2>
 
 <ul>
-<li>List three traits you can change.</li>
-<li>List functions needed.</li>
-<li>Write two of the house functions.</li>
-<li>(Work on house at home. Do at least two functions.)</li>
-</ul></li>
-<li>Decide costs, outline functions needed. Start writing cost functions.
-Complete cost functions at home.</li>
-<li>We will need a third work day to finish up.</li>
-</ol>
+<li><p>Design process (as always!). Signature, purpose, examples, function, check-expect.
+Especially plan to use the design process when you can <strong>not</strong> write the function.</p></li>
 
-<p>Due: Thursday after Thanksgiving (note: we will work on new material this week).</p>
+<li><p>Helper functions as in: <code>count-votes-4</code>, <code>who-won</code>, <code>4-votes-&gt;winner</code>.
+Note that repeated code is <em>not</em> full credit.</p></li>
 
-<h2 id="house">House</h2>
-
-<p>Make decisions on each of these areas. I have listed possibilities but
-you can choose other ideas as well. Be creative and have fun.</p>
-
-<ol>
-<li>Shape of the roof: triangle, isosceles trapezoid, rectangle.</li>
-<li>Height of roof: fixed height, fixed slope.</li>
-<li>Base: probably a rectangle but could be an octagon, several triangles, or make your own shape.</li>
-<li>Option: Stilts? In hurricaine-prone areas, houses are built on stilts twelve feet off the ground so that a typical storm surge does not touch the ground floor.</li>
-<li>Door: maybe one rectangle or two rectangles; could be a sliding patio-door type.</li>
-<li>Windows could vary in height and style.
-
-<ul>
-<li>fixed height or make them grow taller as the house gets taller.</li>
-<li>windows of various sizes or styles (like add a smaller attic window)</li>
-<li>rectangular, octagonal, curved on top</li>
-</ul></li>
-<li>Color: the whole house could vary in color, or certain parts could be colored similarly, some parts could always be the same color (like white windows or a grey roof).</li>
-</ol>
-
-<h2 id="cost">Cost</h2>
-
-<ol>
-<li>Window cost depends on the dimensions and possibly shape.</li>
-<li>Door cost is probably always the same, but you could have multiple doors so they cost more.</li>
-<li>Base of the house cost should depend on the dimensions.</li>
-
-<li><p>(<strong>Attention: subtle instructions!</strong> )
-Roof cost depends on the area of the roof. You are almost certainly drawing a front view, so you should make the cost of the roof depend on the length of the top side that represents the part where the shingles would go.</p>
-
-<p>Example: let&rsquo;s say your roof costs $16/&ldquo;foot&rdquo;. Suppose you have made a roof by putting two 3-4-5 right triangles together. The part that you are going to count as the actual roof (for cost purposes) is the top two sides (hypotenuses). Each hypotenuse is 5ft, giving you 10ft of roof, which is a cost of $160.</p></li>
-</ol>
-
-<h2 id="style-and-checks">Style and Checks</h2>
-
-<p>Your project must be written in the style of a high quality Racket program:</p>
-
-<ul>
-<li>Functions are small and do <em>only one job</em>.</li>
-<li>VARIABLES are used to give meaning to the raw numbers you use.</li>
-<li>Meaningful names for function parameters. (Use &ldquo;ticket-price&rdquo; not just &ldquo;x&rdquo;.)</li>
-<li>Check-expects for all functions.</li>
-<li>Line breaks and indentation: close as many parentheses as you want,
-then move to the next line. Your code must not change when
-auto-indented.
-<br /></li>
+<li><p>Decisions based on types of inputs (Section 15.8).</p></li>
 </ul>
 
-<h2 id="creativity">Creativity</h2>
+<h2 id="quiz-questions">Quiz Questions</h2>
 
-<p>Feel free to be creative. Houses can have decoration (images and
-colors). Shapes do not have to be limited to triangles and
-rectangles - Racket has many shapes available!</p>
+<p>You may not consult any person or any old homework when taking this
+quiz. You may consult the book and the Racket Help Desk without citing
+them.</p>
 
-<h2 id="student-work">Student Work</h2>
+<ol>
+<li><p>Write a function short-between? that determines whether a word (string) is short (less than 6 letters) and also is alphabetically between &ldquo;good luck&rdquo; and &ldquo;quiz&rdquo; (inclusive). Ignore the case of the words. Spaces should get no special treatment just use the built-in behavior.</p></li>
 
-<p>Linked are three examples of initial sketches:</p>
+<li><p>Define a function beautiful-gpa that takes in a grade point average, which is a decimal number between 0.00 and 6.00, and outputs an image of the that GPA number colored according to its value: at least 4.50 is green, 3.5&lt;=gpa&lt;4.5 is orange, 2.5&lt;=gpa&lt;3.5 is purple, 1.5&lt;=gpa&lt;2.5 is red, and below that range is dark magenta. Make sure it prints out cases like a GPA of 3.5 correctly.</p></li>
 
-<ul>
-<li><a href="2017-11-17-architecture-1.jpg">Sketch 1</a></li>
-<li><a href="2017-11-17-architecture-2.jpg">Sketch 2</a></li>
-<li><a href="2017-11-17-architecture-3.jpg">Sketch 3</a></li>
-</ul>
-
-<h2 id="inspiration">Inspiration</h2>
-
-<ul>
-<li>Cathedrals and Temples: <a href="https://upload.wikimedia.org/wikipedia/commons/6/61/TruroCathedralWest.jpg">Truro</a>, <a href="https://upload.wikimedia.org/wikipedia/commons/7/74/Bristol.cathedral.west.front.arp.jpg">Bristol</a>, <a href="https://upload.wikimedia.org/wikipedia/commons/b/be/Notre_Dame_dalla_Senna_crop.jpg">Notre Dame</a>, <a href="https://en.wikipedia.org/wiki/File:Kinkaku-ji_the_Golden_Temple_in_Kyoto_overlooking_the_lake_-_high_rez.JPG">Kinkaku-ji Golden Temple</a>, <a href="https://en.wikipedia.org/wiki/File:Florence_Duomo_from_Michelangelo_hill.jpg">Florence Cathedral</a></li>
-<li>Exotic homes: <a href="http://cdn.trendhunterstatic.com/thumbs/coodo-my-home.jpeg">prefab on a lake</a>, <a href="https://www.egypttoursplus.com/wp-content/uploads/2014/03/Outside-view-of-the-Solar-Boat-Museum-Photo-by-Kormoran.jpg">Giza Pyramids visitor center</a></li>
-<li>Other: <a href="https://en.wikipedia.org/wiki/File:Taj_Mahal_(Edited).jpeg">Taj Mahal</a></li>
-</ul>
+<li><p>The game tryhard.io offers you special in-game abilities that you can buy for in-game diamonds. The long-distance shooter costs 150 diamonds, the super fast speed costs 200 diamonds, and the teleporter costs 400 diamonds. If your subtotal is at least 450 diamonds, you take a 10% discount to find your total. If your subtotal is at least 600 diamonds you take a 20% discount to find your total. (You are only eligible for one discount.) Write a function that takes in three number parameters. These determine how many shooter, speed, and teleporter abilities you purchase. Your function outputs the total cost.</p></li>
+</ol>
 
 
 <footer class=" footline" >
@@ -5751,467 +5663,6 @@ rectangles - Racket has many shapes available!</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -6335,6 +5786,467 @@ rectangles - Racket has many shapes available!</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
         
@@ -6342,10 +6254,10 @@ rectangles - Racket has many shapes available!</p>
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch11/11_6b/" title="11.6.2 Airline"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch15/15-slides/" title="15. Slides"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch13/" title="13. Booleans" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/pro/" title="Pro Features" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

@@ -123,7 +123,7 @@
 	"title": "15. Slides",
 	"tags": [],
 	"description": "Day 1 Exercises",
-	"content": " Mystery Function (define (scrunch x) (cond [(\u0026lt; x 10) 0] [else (/ x 2)])) Give 3 examples what it does.\nScrunch Sum  Scrunch three numbers Add the result  (scrunch-three 5 12 40) =\u0026gt; 26 Word Points  Each word gets 2 points per letter. Every word earns at least 7 points. Find the total points earned by four words.  (sum-points \u0026#34;saw\u0026#34; \u0026#34;it\u0026#34; \u0026#34;workhorse\u0026#34; \u0026#34;betadyne\u0026#34;) =\u0026gt; 48"
+	"content": " Mystery Function (define (scrunch x) (cond [(\u0026lt; x 10) 0] [else (/ x 2)])) Give 3 examples what it does.\nScrunch Sum  Scrunch three numbers Add the result  (scrunch-three 5 12 40) =\u0026gt; 26 Word Points  Each word gets 2 points per letter. Every word earns at least 7 points. Find the total points earned by four words.  (sum-points \u0026#34;saw\u0026#34; \u0026#34;it\u0026#34; \u0026#34;workhorse\u0026#34; \u0026#34;betadyne\u0026#34;) =\u0026gt; 48 Early Wake-Up Count the number of people who wake up before cutoff-time.\n(early-wake-up cutoff-time person-1-time person-2-time person-3-time)"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/si-plan/",
@@ -651,6 +651,13 @@
 	"content": "Make a plan before you start programming.\nThere are two essentials:\n Multiple functions! Variables to give your numbers meaning.  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch15/15-practice-quiz/",
+	"title": "15. Practice Quiz",
+	"tags": [],
+	"description": "Practice quiz, adapted from a previous year.",
+	"content": " Review Concepts  Design process (as always!). Signature, purpose, examples, function, check-expect. Especially plan to use the design process when you can not write the function.\n Helper functions as in: count-votes-4, who-won, 4-votes-\u0026gt;winner. Note that repeated code is not full credit.\n Decisions based on types of inputs (Section 15.8).\n  Quiz Questions You may not consult any person or any old homework when taking this quiz. You may consult the book and the Racket Help Desk without citing them.\n Write a function short-between? that determines whether a word (string) is short (less than 6 letters) and also is alphabetically between \u0026ldquo;good luck\u0026rdquo; and \u0026ldquo;quiz\u0026rdquo; (inclusive). Ignore the case of the words. Spaces should get no special treatment just use the built-in behavior.\n Define a function beautiful-gpa that takes in a grade point average, which is a decimal number between 0.00 and 6.00, and outputs an image of the that GPA number colored according to its value: at least 4.50 is green, 3.5\u0026lt;=gpa\u0026lt;4.5 is orange, 2.5\u0026lt;=gpa\u0026lt;3.5 is purple, 1.5\u0026lt;=gpa\u0026lt;2.5 is red, and below that range is dark magenta. Make sure it prints out cases like a GPA of 3.5 correctly.\n The game tryhard.io offers you special in-game abilities that you can buy for in-game diamonds. The long-distance shooter costs 150 diamonds, the super fast speed costs 200 diamonds, and the teleporter costs 400 diamonds. If your subtotal is at least 450 diamonds, you take a 10% discount to find your total. If your subtotal is at least 600 diamonds you take a 20% discount to find your total. (You are only eligible for one discount.) Write a function that takes in three number parameters. These determine how many shooter, speed, and teleporter abilities you purchase. Your function outputs the total cost.\n  "
+},
+{
 	"uri": "http://wy-cs.info/resources/events/",
 	"title": "CS Events",
 	"tags": [],
@@ -998,7 +1005,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  Intermediate Computer Science Recent Changes    Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Ch13 Exercises modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  9. Exercises 3 modified Mon 11-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  Intermediate Computer Science Recent Changes    15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Ch13 Exercises modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1022,14 +1029,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

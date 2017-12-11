@@ -1,6 +1,6 @@
 ---
 title: "15. Slides"
-date: 2017-12-05T10:36:30-06:00
+date: 2017-12-08T11:52:39-06:00
 draft: false
 type: slide
 theme: white
@@ -38,4 +38,17 @@ Give 3 examples what it does.
 ```racket
 (sum-points "saw" "it" "workhorse" "betadyne") => 48
 ```
+---
 
+## Early Wake-Up
+
+Count the number of people who wake up before `cutoff-time`.
+
+```racket
+(early-wake-up cutoff-time 
+               person-1-time
+               person-2-time
+               person-3-time)
+ ```
+ 
+ 
