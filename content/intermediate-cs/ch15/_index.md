@@ -37,3 +37,7 @@ Do Exercises 15.8.{2,3,5}. Exercise 15.5.6. These begin on the bottom of PDF pag
 See the [build-image]({{% relref "build-image.md" %}}) tutorial. Use that to do 15.3.3 and 
 15.3.{7-10}. Do not use `build3-image` even though the book says to use it. The `build-image` function is better.
 
+## Practice Quiz
+
+Get ready by doing [last year's Chapter 15 quiz](15-practice-quiz).
+
