@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch20/posn-util/</loc>
+    <lastmod>2017-12-14T08:09:55-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch15/15-slides/</loc>
     <lastmod>2017-12-08T11:52:39-06:00</lastmod>
   </url>
@@ -353,6 +358,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch06/</loc>
+    <lastmod>2017-12-13T09:59:49-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch06/</loc>
     <lastmod>2017-10-04T13:03:22-05:00</lastmod>
   </url>
@@ -403,6 +413,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch10/</loc>
+    <lastmod>2017-12-13T10:10:58-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ftc/learning/</loc>
     <lastmod>2017-10-23T15:03:17-05:00</lastmod>
   </url>
@@ -435,6 +450,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/pro/</loc>
     <lastmod>2017-11-19T15:30:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch20/</loc>
+    <lastmod>2017-12-13T09:43:23-06:00</lastmod>
   </url>
   
   <url>
@@ -737,14 +757,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   

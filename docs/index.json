@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch20/posn-util/",
+	"title": "20. Posn Util",
+	"tags": [],
+	"description": "",
+	"content": " The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.)\nRequire and provide The provide command makes functions available for other files to use. One way to use it is to list all of the functions you want to allow other files to use:\n(provide add-posn sub-posn scale-posn distance) Sometimes you just want to make every function in the file available. There is a shortcut to do that:\n(provide (all-defined-out)) In order to use the functions in another file, you need to require that file. You already know (require picturing-programs) but when we use require we need to give the whole filename.\n(require \u0026#34;posn-util.rkt\u0026#34;) You need to save your work in the same folder as your \u0026ldquo;posn-util.rkt\u0026rdquo; file, since Racket only looks in the current folder for other files.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch15/15-slides/",
 	"title": "15. Slides",
 	"tags": [],
@@ -298,7 +305,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   Pro Features   Calendar   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   Pro Features   20. Structures   Calendar   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -382,7 +389,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -490,6 +497,13 @@
 	"content": " You are going to make a play in which robots interact.\nDocumentation:\n Karel the Robot (all) Robot UrRobot Hacked Karel the Robot  Assignment in Brief Assignment Elements  One robot interacts with another robot. You create a new interface or abstract class for use. Robots interact in a non-formulaic way. Interesting plot line (please!). It\u0026rsquo;s supposed to be fun.  Assignment Timeline  Friday: Outline of the action which will happen. (Check in.) Tuesday: You should have at least 3 classes/interfaces written. (Check in.) Tuesday after Thanksgiving: project due.  SchoolBot abstract class We decided that every robot in school will have four basic functions.\nboolean isStudent(); boolean isTeacher(); boolean isHelpful(); Strategy getHelp(); Robots can be students or teachers. If a robot is helpful, then you can get a Strategy from it. (The idea is that the Strategy will get you help when you \u0026ldquo;doIt\u0026rdquo;.)\nStudentBot looks for TeacherBot To interact with other robots, I suggest using:\n the enhanced Robot class the neighbors() function  Robot vs UrRobot Use the Robot class instead of UrRobot. This lets your robot detect some things in its environment. For example, nextToARobot() returns true if there is at least one other robot with the same coordinates. Links to the Robot documentation are at the top of this page.\nneighbors The myRobot.neighbors() function returns an Enumeration. An Enumeration is an object that is basically a list of items. There is a nextElement() function which gives you the next item in the list. (You start before the first item.) There is a hasMoreElements() which returns true if there is another element you can get.\nIn order to use Enumeration you must include import java.util.* at the start of your document.\n Note: Karel the Robot is an old program and Enumeration is an old interface. New programs use an Iterator instead.\n"
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch06/",
+	"title": "6. Data Types",
+	"tags": [],
+	"description": "",
+	"content": " We did a whirlwind tour of Chapter 5 and 6\nChapter 5 Read Section 5.3 - reserved words. Look at Figure 5-1 on page 111 and do not use those words as variable names in your program. Especially try!\nInterested in mastering all of Java? Look up the unusual keywords:\n native transient synchroniszed assert strictfp  Chapter 6 Skim Chapter 6:\n 6.3: Declaring fields, including the use of final for constant instance variables. Constants are conventionally written in UPPERCASE. 6.4: The Table 6-1 on page 133 shows the size in bytes of each of the built-in types, as well as their range. 6.5: How do you get \u0026quot; inside a string? How about \\? 6.6: The section on scope is too brief, but the PowerPoint has good examples.  Read the code below and decide how new Demo(8) will print out?\npublic class Demo { private int num = 1; public Demo(int n) { int num = n; } public String toString { return \u0026#34;Demo: \u0026#34;+num; } } Chapter 6 exercises  Exercises: 3, 4, 6, 9, 11. Programming: 13.  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
 	"title": "6. Animations I",
 	"tags": [],
@@ -560,6 +574,13 @@
 	"content": " centr as shown below. Write a signature, purpose, and function for centr.  (centr \u0026#34;panda\u0026#34;) =\u0026gt; \u0026#34;*****panda*****\u0026#34; (centr \u0026#34;sinful\u0026#34;) =\u0026gt; \u0026#34;*****sinful****\u0026#34; (centr \u0026#34;conspicuous\u0026#34;) =\u0026gt; \u0026#34;**conspicuous**\u0026#34;"
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch10/",
+	"title": "10. Strings",
+	"tags": [],
+	"description": "",
+	"content": " There are a lot of tricky issues related to strings. Read the powerpoint carefully!\n Strings are immutable. \u0026ldquo;Changing\u0026rdquo; functions like s.toUpperCase() actually return a copy; they do not affect the original.\n Understand the box and arrow diagrams on page 269.\n String methods (summarized on page 271, Figure 10-3):\n s.length() s.charAt(idx): but note the answer is a char not a String. s.substring(start) s.substring(start,end) s.equals(otherString) s.compareTo() s.indexOf(\u0026quot;wanted\u0026quot;)  Useful in real life: trim, replace, toLowerCase.\n  10.5: Formatting Lots of detail on how to get a number to appear exactly the way you want it. Read if you are advanced.\nTutorial on printf, Tutorial on formatting numbers.\n10.6: Numbers to Strings This section includes basic parsing as well as how to handle \u0026ldquo;exceptions\u0026rdquo; that may occur.\n double x = Double.parseDouble(\u0026quot;3.14159\u0026quot;) int a = Integer.parseInt(\u0026quot;121\u0026quot;)  Exercises  Using the code below, compute:\n v == w v.equals(w) v.compareTo(w)   { String s = \u0026#34;cow\u0026#34;; String v = s; String w = new String(s); }"
+},
+{
 	"uri": "http://wy-cs.info/ftc/learning/",
 	"title": "Learning Resources",
 	"tags": [],
@@ -607,6 +628,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch20/",
+	"title": "20. Structures",
+	"tags": [],
+	"description": "Remembering or returning more than one thing. For example, coordinates.",
+	"content": ""
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/calendar/",
@@ -1005,7 +1033,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  4. Robot Drama modified Fri 11-17  4.* Advanced modified Fri 11-17  Intermediate Computer Science Recent Changes    15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Ch13 Exercises modified Mon 11-27  13. Booleans modified Mon 11-27  Home Project modified Mon 11-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  Intermediate Computer Science Recent Changes    20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Ch13 Exercises modified Mon 11-27  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1029,14 +1057,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
