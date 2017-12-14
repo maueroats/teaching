@@ -122,8 +122,8 @@
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/posn-util/",
 	"title": "20. Posn Util",
 	"tags": [],
-	"description": "",
-	"content": " The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.)\nRequire and provide The provide command makes functions available for other files to use. One way to use it is to list all of the functions you want to allow other files to use:\n(provide add-posn sub-posn scale-posn distance) Sometimes you just want to make every function in the file available. There is a shortcut to do that:\n(provide (all-defined-out)) In order to use the functions in another file, you need to require that file. You already know (require picturing-programs) but when we use require we need to give the whole filename.\n(require \u0026#34;posn-util.rkt\u0026#34;) You need to save your work in the same folder as your \u0026ldquo;posn-util.rkt\u0026rdquo; file, since Racket only looks in the current folder for other files.\n"
+	"description": "Utility functions for posns. Accessing functions defined in other files.",
+	"content": " The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.)\nRequire and provide Require loads functions from another file. Provide makes functions available for other files to load.\nProvide The provide command makes functions available for other files to use. One way to use it is to list all of the functions you want to allow other files to use:\n(provide add-posn sub-posn scale-posn distance) Sometimes you just want to make every function in the file available. There is a shortcut to do that:\n(provide (all-defined-out)) Require In order to use the functions in another file, you need to require that file. You already know (require picturing-programs) but when we use require we need to give the whole filename.\n(require \u0026#34;posn-util.rkt\u0026#34;) You need to save your work in the same folder as your \u0026ldquo;posn-util.rkt\u0026rdquo; file, since Racket only looks in the current folder for other files.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch15/15-slides/",
@@ -634,7 +634,7 @@
 	"title": "20. Structures",
 	"tags": [],
 	"description": "Remembering or returning more than one thing. For example, coordinates.",
-	"content": "  20. Posn Util  The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.) Require and provide The provide command makes functions available for other files to use. One way to use it is to list all of the functions you want to allow other files to use: (provide add-posn sub-posn scale-posn distance) Sometimes you just want to make every function in the file available.\n "
+	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/calendar/",
@@ -1057,14 +1057,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

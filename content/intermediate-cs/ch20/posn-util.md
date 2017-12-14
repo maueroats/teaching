@@ -5,6 +5,7 @@ draft: false
 #type: slide
 #theme: white
 weight: 10
+description: "Utility functions for posns. Accessing functions defined in other files."
 ---
 
 The functions in 20.5 are all useful later. When you do them, you should 
@@ -12,6 +13,9 @@ save them in a file called `posn-util.rkt`. (Please use that name.)
 
 ## Require and provide
 
+Require loads functions from another file. Provide makes functions available for other files to load.
+
+### Provide
 The `provide` command makes functions available for other files to use.
 One way to use it is to list all of the functions you want to allow
 other files to use:
@@ -23,6 +27,8 @@ There is a shortcut to do that:
 ```racket
 (provide (all-defined-out))
 ```
+
+### Require
 
 In order to use the functions in another file, you need to `require` that file.
 You already know `(require picturing-programs)` but when we use require 
