@@ -46,5 +46,7 @@ we need to give the whole filename.
 ```racket
 (require "posn-util.rkt")
 ```
-You need to save your work in the same folder as your "posn-util.rkt" file, since Racket only looks in the current folder for other files.
 
+{{% notice warning %}}
+You need to save your work in the same folder as your "posn-util.rkt" file, since Racket only looks in the current folder for other files.
+{{% /notice %}}
