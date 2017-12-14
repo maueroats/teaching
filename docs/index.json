@@ -634,7 +634,7 @@
 	"title": "20. Structures",
 	"tags": [],
 	"description": "Remembering or returning more than one thing. For example, coordinates.",
-	"content": ""
+	"content": "  20. Posn Util  The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.) Require and provide The provide command makes functions available for other files to use. One way to use it is to list all of the functions you want to allow other files to use: (provide add-posn sub-posn scale-posn distance) Sometimes you just want to make every function in the file available.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/calendar/",
@@ -1057,14 +1057,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
