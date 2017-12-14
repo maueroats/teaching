@@ -11,6 +11,16 @@ description: "Utility functions for posns. Accessing functions defined in other 
 The functions in 20.5 are all useful later. When you do them, you should 
 save them in a file called `posn-util.rkt`. (Please use that name.)
 
+The following functions should be in `posn-util.rkt`:
+
+* `add-posns`
+* `sub-posns`
+* `scale-posn`: number posn -> posn
+* `distance`: posn posn -> number
+* `place-image/posn`: image posn image(background) -> image. 
+
+    Place one image at a given set of coordinates on a given background.
+
 ## Require and provide
 
 Require loads functions from another file. Provide makes functions available for other files to load.

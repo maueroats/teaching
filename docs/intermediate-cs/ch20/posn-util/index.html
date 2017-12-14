@@ -3976,6 +3976,19 @@
 <p>The functions in 20.5 are all useful later. When you do them, you should
 save them in a file called <code>posn-util.rkt</code>. (Please use that name.)</p>
 
+<p>The following functions should be in <code>posn-util.rkt</code>:</p>
+
+<ul>
+<li><code>add-posns</code></li>
+<li><code>sub-posns</code></li>
+<li><code>scale-posn</code>: number posn -&gt; posn</li>
+<li><code>distance</code>: posn posn -&gt; number</li>
+
+<li><p><code>place-image/posn</code>: image posn image(background) -&gt; image.</p>
+
+<p>Place one image at a given set of coordinates on a given background.</p></li>
+</ul>
+
 <h2 id="require-and-provide">Require and provide</h2>
 
 <p>Require loads functions from another file. Provide makes functions available for other files to load.</p>
