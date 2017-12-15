@@ -43,6 +43,6 @@ public class Demo {
 
 ## Chapter 6 exercises
 
-* Exercises: 3, 4, 6, 9, 11. 
+* Exercises: 3, 4, 6, 7, 9, 11. 
 * Programming: 13.
 

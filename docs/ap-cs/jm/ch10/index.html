@@ -1768,8 +1768,64 @@
         
         
 
+          
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+          
+
+        
+
         
       </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/jm/ch10/10-overview/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/jm/ch10/10-overview/">
+        <span>10. Overview</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/jm/ch10/10-exercises/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/jm/ch10/10-exercises/">
+        <span>10. Exercises</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -3118,6 +3174,26 @@
 
             
           
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intermediate-cs/spaceinv/si-walkthrough/" class="dd-item
+     
+      ">
+        <a href="/intermediate-cs/spaceinv/si-walkthrough/">
+        <span>SI Walkthrough</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -3945,19 +4021,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#10-5-formatting">10.5: Formatting</a></li>
-<li><a href="#10-6-numbers-to-strings">10.6: Numbers to Strings</a></li>
-</ul></li>
-<li><a href="#exercises">Exercises</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -3974,61 +4038,78 @@
 
 
 
-
-
 <p>There are a lot of tricky issues related to strings. Read <a href="http://www.skylit.com/javamethods2/ppt/Ch10.ppt">the powerpoint</a> carefully!</p>
 
-<ul>
-<li><p>Strings are immutable. &ldquo;Changing&rdquo; functions like <code>s.toUpperCase()</code> actually return a copy; they do not affect the original.</p></li>
 
-<li><p>Understand the box and arrow diagrams on page 269.</p></li>
 
-<li><p>String methods (summarized on page 271, Figure 10-3):</p>
 
-<ul>
-<li><code>s.length()</code></li>
-<li><code>s.charAt(idx)</code>: but note the answer is a <code>char</code> not a <code>String</code>.</li>
-<li><code>s.substring(start)</code></li>
-<li><code>s.substring(start,end)</code></li>
-<li><code>s.equals(otherString)</code></li>
-<li><code>s.compareTo()</code></li>
-<li><code>s.indexOf(&quot;wanted&quot;)</code></li>
-</ul></li>
 
-<li><p>Useful in real life: <code>trim</code>, <code>replace</code>, <code>toLowerCase</code>.</p></li>
+
+
+
+
+
+
+
+
+<ul class="children children-li">
+	
+    
+    
+
+	
+		
+	
+		
+  
+
+
+<li>
+<a href="/ap-cs/jm/ch10/10-overview/" >10. Overview</a>
+</li>
+
+
+
+
+
+
+			
+		
+
+		
+			
+
+		
+	
+		
+  
+
+
+<li>
+<a href="/ap-cs/jm/ch10/10-exercises/" >10. Exercises</a>
+</li>
+
+
+
+
+
+
+			
+		
+
+		
+			
+
+		
+	
+
+	
 </ul>
 
-<h3 id="10-5-formatting">10.5: Formatting</h3>
 
-<p>Lots of detail on how to get a number to appear exactly the way you want it. Read if you are advanced.</p>
 
-<p><a href="https://docs.oracle.com/javase/tutorial/essential/io/formatting.html">Tutorial on printf</a>, <a href="https://docs.oracle.com/javase/tutorial/java/data/numberformat.html">Tutorial on formatting numbers</a>.</p>
 
-<h3 id="10-6-numbers-to-strings">10.6: Numbers to Strings</h3>
 
-<p>This section includes basic parsing as well as how to handle &ldquo;exceptions&rdquo; that may occur.</p>
-
-<ul>
-<li><code>double x = Double.parseDouble(&quot;3.14159&quot;)</code></li>
-<li><code>int a = Integer.parseInt(&quot;121&quot;)</code></li>
-</ul>
-
-<h2 id="exercises">Exercises</h2>
-
-<ol>
-<li><p>Using the code below, compute:</p>
-
-<ol>
-<li><code>v == w</code></li>
-<li><code>v.equals(w)</code></li>
-<li><code>v.compareTo(w)</code></li>
-</ol></li>
-</ol>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">{</span>
-   <span style="color:#111">String</span> <span style="color:#111">s</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;cow&#34;</span><span style="color:#f92672">;</span>
-   <span style="color:#111">String</span> <span style="color:#111">v</span> <span style="color:#f92672">=</span> <span style="color:#111">s</span><span style="color:#f92672">;</span>
-   <span style="color:#111">String</span> <span style="color:#111">w</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">String</span><span style="color:#f92672">(</span><span style="color:#111">s</span><span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div>
 
 <footer class=" footline" >
 	
@@ -5162,15 +5243,6 @@
                     
 
                     
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
                         
             
             
@@ -5178,66 +5250,6 @@
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -5265,6 +5277,43 @@
                     
             
         
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
                         
             
@@ -5378,6 +5427,70 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -5555,134 +5668,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -5844,6 +5829,134 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -5987,6 +6100,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -6470,7 +6599,7 @@
             <a class="nav nav-prev" href="/ap-cs/jm/ch06/" title="6. Data Types"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/" title="Intermediate CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/jm/ch10/10-overview/" title="10. Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

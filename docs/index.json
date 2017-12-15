@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch10/10-overview/",
+	"title": "10. Overview",
+	"tags": [],
+	"description": "",
+	"content": "  Strings are immutable. \u0026ldquo;Changing\u0026rdquo; functions like s.toUpperCase() actually return a copy; they do not affect the original.\n Understand the box and arrow diagrams on page 269.\n String methods (summarized on page 271, Figure 10-3):\n s.length() s.charAt(idx): but note the answer is a char not a String. s.substring(start) s.substring(start,end) s.equals(otherString) s.compareTo() s.indexOf(\u0026quot;wanted\u0026quot;)  Useful in real life: trim, replace, toLowerCase.\n  10.5: Formatting Lots of detail on how to get a number to appear exactly the way you want it. Read if you are advanced.\nTutorial on printf, Tutorial on formatting numbers.\n10.6: Numbers to Strings This section includes basic parsing as well as how to handle \u0026ldquo;exceptions\u0026rdquo; that may occur.\n double x = Double.parseDouble(\u0026quot;3.14159\u0026quot;) int a = Integer.parseInt(\u0026quot;121\u0026quot;)  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/posn-util/",
 	"title": "20. Posn Util",
 	"tags": [],
@@ -236,6 +243,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch10/10-exercises/",
+	"title": "10. Exercises",
+	"tags": [],
+	"description": "",
+	"content": "  Thursday 2017-12-14: Exercises 3,4,5,7,9,18. Friday 2017-12-15: Exercises: TBA  More Exercises  Using the code below, compute:\n v == w v.equals(w) v.compareTo(w)   { String s = \u0026#34;cow\u0026#34;; String v = s; String w = new String(s); }"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch02/",
@@ -501,7 +515,7 @@
 	"title": "6. Data Types",
 	"tags": [],
 	"description": "",
-	"content": " We did a whirlwind tour of Chapter 5 and 6\nChapter 5 Read Section 5.3 - reserved words. Look at Figure 5-1 on page 111 and do not use those words as variable names in your program. Especially try!\nInterested in mastering all of Java? Look up the unusual keywords:\n native transient synchroniszed assert strictfp  Chapter 6 Skim Chapter 6:\n 6.3: Declaring fields, including the use of final for constant instance variables. Constants are conventionally written in UPPERCASE. 6.4: The Table 6-1 on page 133 shows the size in bytes of each of the built-in types, as well as their range. 6.5: How do you get \u0026quot; inside a string? How about \\? 6.6: The section on scope is too brief, but the PowerPoint has good examples.  Read the code below and decide how new Demo(8) will print out?\npublic class Demo { private int num = 1; public Demo(int n) { int num = n; } public String toString { return \u0026#34;Demo: \u0026#34;+num; } } Chapter 6 exercises  Exercises: 3, 4, 6, 9, 11. Programming: 13.  "
+	"content": " We did a whirlwind tour of Chapter 5 and 6\nChapter 5 Read Section 5.3 - reserved words. Look at Figure 5-1 on page 111 and do not use those words as variable names in your program. Especially try!\nInterested in mastering all of Java? Look up the unusual keywords:\n native transient synchroniszed assert strictfp  Chapter 6 Skim Chapter 6:\n 6.3: Declaring fields, including the use of final for constant instance variables. Constants are conventionally written in UPPERCASE. 6.4: The Table 6-1 on page 133 shows the size in bytes of each of the built-in types, as well as their range. 6.5: How do you get \u0026quot; inside a string? How about \\? 6.6: The section on scope is too brief, but the PowerPoint has good examples.  Read the code below and decide how new Demo(8) will print out?\npublic class Demo { private int num = 1; public Demo(int n) { int num = n; } public String toString { return \u0026#34;Demo: \u0026#34;+num; } } Chapter 6 exercises  Exercises: 3, 4, 6, 7, 9, 11. Programming: 13.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
@@ -578,7 +592,7 @@
 	"title": "10. Strings",
 	"tags": [],
 	"description": "",
-	"content": " There are a lot of tricky issues related to strings. Read the powerpoint carefully!\n Strings are immutable. \u0026ldquo;Changing\u0026rdquo; functions like s.toUpperCase() actually return a copy; they do not affect the original.\n Understand the box and arrow diagrams on page 269.\n String methods (summarized on page 271, Figure 10-3):\n s.length() s.charAt(idx): but note the answer is a char not a String. s.substring(start) s.substring(start,end) s.equals(otherString) s.compareTo() s.indexOf(\u0026quot;wanted\u0026quot;)  Useful in real life: trim, replace, toLowerCase.\n  10.5: Formatting Lots of detail on how to get a number to appear exactly the way you want it. Read if you are advanced.\nTutorial on printf, Tutorial on formatting numbers.\n10.6: Numbers to Strings This section includes basic parsing as well as how to handle \u0026ldquo;exceptions\u0026rdquo; that may occur.\n double x = Double.parseDouble(\u0026quot;3.14159\u0026quot;) int a = Integer.parseInt(\u0026quot;121\u0026quot;)  Exercises  Using the code below, compute:\n v == w v.equals(w) v.compareTo(w)   { String s = \u0026#34;cow\u0026#34;; String v = s; String w = new String(s); }"
+	"content": "There are a lot of tricky issues related to strings. Read the powerpoint carefully!\n 10. Overview   10. Exercises   "
 },
 {
 	"uri": "http://wy-cs.info/ftc/learning/",
@@ -613,7 +627,7 @@
 	"title": "Space Invaders",
 	"tags": [],
 	"description": "Managing the space invaders game creation.",
-	"content": "See the plan for initial information! We are currently going to make the functions that decide when action happens.\n SI Plan   "
+	"content": "See the plan for initial information! We are currently going to make the functions that decide when action happens.\n SI Plan   SI Walkthrough   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch15/",
@@ -677,6 +691,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Make a plan before you start programming.\nThere are two essentials:\n Multiple functions! Variables to give your numbers meaning.  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/si-walkthrough/",
+	"title": "SI Walkthrough",
+	"tags": [],
+	"description": "",
+	"content": " Drawing  Draw alien at a given posn on a background\ndraw-alien: posn image(bg) -\u0026gt; image Draw turret at a given posn on a background\ndraw-turret: posn image(bg) -\u0026gt; image Draw bullet at a given posn on a background\ndraw-bullet: posn image(bg) -\u0026gt; image Draw win screen.\n Draw lose screen.\n  Action  Bullet activating function. This does not fit into our model so far.\nactivate-bullet: posn(turret-posn) -\u0026gt; posn(bullet-posn) Right arrow moves right, left arrow moves left\nturret-key-h: model(turret-posn) -\u0026gt; model(turret-posn)  Tick handler  Bullet moves up at a constant rate.\nupdate-bullet: posn -\u0026gt; posn Details: where should the bullet be when you start?\n Alien advances (harder).\nHow can you tell when to go right and when to move left? Discuss choices: y-coordinate or an extra direction parameter.\n  Logic For each of these, first write (or type) the information you will take as parameters in order to create the function. Do not include constants in your parameter list.\n enemy-right-edge?: posn (enemy-posn) number(direction) -\u0026gt; boolean enemy-left-edge?: posn (enemy-posn) number(direction) -\u0026gt; boolean bullet-hit-enemy?: posn (bullet-posn) posn (enemy-posn) -\u0026gt; boolean enemy-hit-turret?: posn (enemy-posn) posn (turret-posn) -\u0026gt; boolean game-over?: posn(bullet-posn) posn (enemy-posn) posn (turret-posn) -\u0026gt; boolean bullet-on-screen?: posn (bullet-posn) -\u0026gt; boolean can-fire?: posn (bullet-posn) -\u0026gt; boolean  Combining Now we need a model that will combine everything, and write handlers that combine the other handlers. They are going to look like basically like this:\n(define (real-tick-handler model) (alien-tick-handler (bullet-tick-handler model))) There are some technical details and I will end up providing functions that glue everything together.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch15/15-practice-quiz/",
@@ -1033,7 +1054,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Karel Intellij modified Tue 11-28  Karel Hacked modified Wed 11-22  Intermediate Computer Science Recent Changes    20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Ch13 Exercises modified Mon 11-27  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    SI Walkthrough modified Thu 12-14  20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

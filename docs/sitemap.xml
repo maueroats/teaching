@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch10/10-overview/</loc>
+    <lastmod>2017-12-14T22:19:19-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch20/posn-util/</loc>
     <lastmod>2017-12-14T08:09:55-06:00</lastmod>
   </url>
@@ -170,6 +175,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch10/10-exercises/</loc>
+    <lastmod>2017-12-14T22:19:55-06:00</lastmod>
   </url>
   
   <url>
@@ -485,6 +495,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch11/11_6b/</loc>
     <lastmod>2017-11-17T09:56:55-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/spaceinv/si-walkthrough/</loc>
+    <lastmod>2017-12-14T13:56:16-06:00</lastmod>
   </url>
   
   <url>
