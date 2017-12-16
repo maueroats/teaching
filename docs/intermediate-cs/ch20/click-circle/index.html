@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="">
+    <meta name="description" content="A circle moves around the screen randomly. You win if you can click on it.">
 
 
-    <title>Animation Portfolio :: WY Computer Science</title>
+    <title>20. Click Circle :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch06/portfolio/">
+  <body class="" data-url="/intermediate-cs/ch20/click-circle/">
     <nav id="sidebar" class="">
 
 
@@ -2225,7 +2225,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch06/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -2236,7 +2236,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2321,7 +2321,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch06/portfolio/" class="dd-item
-     active
+     
       ">
         <a href="/intermediate-cs/ch06/portfolio/">
         <span>Animation Portfolio</span> 
@@ -3294,7 +3294,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch20/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -3305,7 +3305,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -3348,7 +3348,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch20/click-circle/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/ch20/click-circle/">
         <span>20. Click Circle</span> 
@@ -4028,7 +4028,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch06/'>6. Animations I</a> > Animation Portfolio
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch20/'>20. Structures</a> > 20. Click Circle
 
  
 
@@ -4041,7 +4041,15 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#stop-when">Stop-when</a></li>
+<li><a href="#notes">Notes</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -4050,21 +4058,42 @@
         
         <div id="body-inner">
           
-            <h1>Animation Portfolio</h1>
+            <h1>20. Click Circle</h1>
           
 
 
 
 
-<ol>
-<li><p>Purple square that moves up when you hit any key.</p></li>
 
-<li><p>Throwing star that spins (and maybe moves across the screen) as time passes.</p></li>
 
-<li><p>Sunset with a horizon.</p></li>
+<p>Exercises 20.6.3 and 20.6.4.</p>
 
-<li><p>Car with two wheels that spin when you move the mouse.</p></li>
-</ol>
+<ul>
+<li><p>A circle moves to a random position on the screen every so often. (20.6.3)</p></li>
+
+<li><p>Clicking on the circle displays a win screen. (20.6.4) Note: I recommend using a special <code>posn</code> as the model to indicate when to display the win screen.</p></li>
+</ul>
+
+<h2 id="stop-when">Stop-when</h2>
+
+<p>There is a new clause in <code>big-bang</code> called <code>stop-when</code>. It works like the <a href="stop-when.rkt">linked demo code</a>. The <code>big-bang</code> looks like this:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">big-bang</span> <span style="color:#ae81ff">0</span>
+          <span style="color:#111">(</span><span style="color:#111">on-tick</span> <span style="color:#111">add1</span> <span style="color:#ae81ff">0.1</span><span style="color:#111">)</span>
+          <span style="color:#111">(</span><span style="color:#111">on-draw</span> <span style="color:#111">draw-num</span> <span style="color:#ae81ff">300</span> <span style="color:#ae81ff">200</span><span style="color:#111">)</span>
+          <span style="color:#111">(</span><span style="color:#111">stop-when</span> <span style="color:#111">above-ten?</span> <span style="color:#111">draw-done</span><span style="color:#111">))</span></code></pre></div>
+<p>The <code>above-ten?</code> method takes in a model and produces a boolean value. The big-bang stops if this function returns true.</p>
+
+<p>The <code>draw-done</code> method is a draw handler called when to produce the last frame of the animation - regarless of why the big-bang is ending.</p>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+<li>Never place randomness in the draw handler. The draw handler can be called lots more frequently than you imagine (for example, when you drag the window and it needs to redraw).</li>
+
+<li><p>Your model should not be an image any more. Use a better model.</p></li>
+
+<li><p><a href="https://docs.racket-lang.org/teachpack/2htdpuniverse.html">Complete big-bang documentation</a> so you can look up any unusual keys or functions that you need. For example: <code>button-down</code>.</p></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -5448,7 +5477,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -5463,9 +5491,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -5515,7 +5540,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -5531,9 +5555,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -6146,6 +6167,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -6158,6 +6180,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -6175,6 +6200,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -6193,6 +6219,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -6569,10 +6598,10 @@
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch06/examples/" title="Animation Examples"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch20/posn-util/" title="20. Posn Util"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch06/project/" title="Animation Project" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

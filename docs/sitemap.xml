@@ -243,6 +243,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch20/click-circle/</loc>
+    <lastmod>2017-12-15T15:38:59-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/jm/ch03/</loc>
     <lastmod>2017-12-04T09:00:52-06:00</lastmod>
   </url>
@@ -458,18 +463,8 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/pro/</loc>
-    <lastmod>2017-11-19T15:30:06-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch20/</loc>
     <lastmod>2017-12-13T09:43:23-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/intermediate-cs/calendar/</loc>
-    <lastmod>2017-09-18T22:38:42-05:00</lastmod>
   </url>
   
   <url>
@@ -495,6 +490,16 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch11/11_6b/</loc>
     <lastmod>2017-11-17T09:56:55-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/calendar/</loc>
+    <lastmod>2017-09-18T22:38:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/pro/</loc>
+    <lastmod>2017-11-19T15:30:06-06:00</lastmod>
   </url>
   
   <url>

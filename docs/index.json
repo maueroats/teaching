@@ -319,7 +319,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   Pro Features   20. Structures   Calendar   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   20. Structures   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -334,6 +334,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:\n Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form \u0026hellip; or email me.\nPhilosophy I aim to create an equitable challenge for everyone in my class. I want to provide everyone in the class meaningful work experiences at a manageable but challenging intellectual level. I may give the same credit for different actual assignments to accomplish this goal.\nThe student side of this equitable challenge is that I expect everyone to work on computer science 100% of the time in class. This applies even if someone is finished with the current assignment or has been absent for a week. I have a shelf full of books available for advanced or catch-up work.\nI expect everyone to take my suggestions for improving their work seriously. Computer science is an art as well as a science. Polish good habits, eradicate bad ones. Please admit if you cling to unproductive habits and work honestly to change them.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    Some grade should be updated every week. Every grade category except final exam should be updated every three weeks. Edline will have all raw score information. Only scaled (\u0026ldquo;curved\u0026rdquo;) scores will be posted on the CPS Gradebook.\nWe use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nGrading and attendance You must be present in order to learn from the class.\n   Absences Consequence     5 Call and email parent.   10 One letter grade (-10 point) deduction to final grade.   15 Additional -5 point deduction to final percentage.   20 Additional -5 point deduction to final percentage.   25 Failure in class    Three tardies more than 5 min late count as one absence.\nAny absence with a note from a medical doctor does not count toward the total absences. (Please make sure I see a copy of the note!) All other absences count. Please discuss necessary accomodations for IEP/504 in the first two weeks of class if I am not aware of them.\nDifferentiation All assigned work is expected to be completed.\nThere is no extra credit without regular credit. The way to improve a grade is through consistent effort, seeking help when needed, and allocating enough effective work time outside of class. Please track your work in your interactive notebook so we can discuss how to make your time more effective.\nAdvanced students may be allowed to replace standard work with projects, but all exceptions will be accompanied by a written contract detailing what other work will be completed to replace the main line coursework. In at most two weeks, the project is due and will receive a grade. Students are still responsible for standard material.\nEssentials of involvement As much as we can, we let students manage their own learning. Occasionally parents should be involved more at home. Sometimes adults need to talk directly. Please contact me directly if you see (or are being told) that grades are not up to date or your student is exempt from the work for any reason and does not have written documentation.\nDaily Materials  Notebook: A thin spiral or composition notebook dedicated to computer science is required for planning, reflection, and documenting progress.\n USB Flash Drive: A small USB drive to store files. (Any size is fine. Code is small.)\n  IEP and 504 plans will be followed Any student with a 504 or IEP will receive all accomodations listed. Please make sure the teacher has received a copy of the plan at the start of the year (especially if your schedule has changed, sometimes the paperwork follows too slowly).\nState standards Computer Science Teachers Association standards applicable in this class:\n 4.2.1 Computational Thinking (CT) 4.2.2 Collaboration (CL) 4.2.3 Computing Practice and Programming (CPP) See individual unit plans for more details.  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch20/click-circle/",
+	"title": "20. Click Circle",
+	"tags": [],
+	"description": "A circle moves around the screen randomly. You win if you can click on it.",
+	"content": " Exercises 20.6.3 and 20.6.4.\n A circle moves to a random position on the screen every so often. (20.6.3)\n Clicking on the circle displays a win screen. (20.6.4) Note: I recommend using a special posn as the model to indicate when to display the win screen.\n  Stop-when There is a new clause in big-bang called stop-when. It works like the linked demo code. The big-bang looks like this:\n(big-bang 0 (on-tick add1 0.1) (on-draw draw-num 300 200) (stop-when above-ten? draw-done)) The above-ten? method takes in a model and produces a boolean value. The big-bang stops if this function returns true.\nThe draw-done method is a draw handler called when to produce the last frame of the animation - regarless of why the big-bang is ending.\nNotes  Never place randomness in the draw handler. The draw handler can be called lots more frequently than you imagine (for example, when you drag the window and it needs to redraw). Your model should not be an image any more. Use a better model.\n Complete big-bang documentation so you can look up any unusual keys or functions that you need. For example: button-down.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch03/",
@@ -637,25 +644,11 @@
 	"content": " See slides for introductory material.\nAssignment 15.A Read the first three sections of Chapter 15. Do Exercises 15.3.{1,2,4,5,6}. These are on PDF page 223.\nAdvice:\n 15.3.4: The first input is the candidate for whom you are counting votes. (For example \u0026ldquo;Clinton\u0026rdquo;.) The next four inputs are votes cast for a person. (For example \u0026ldquo;Trump\u0026rdquo; \u0026ldquo;Clinton\u0026rdquo; \u0026ldquo;Sanders\u0026rdquo; \u0026ldquo;Trump\u0026rdquo;.) You are supposed to return the number of votes for the candidate from the first input. (For example: 1 in this case.)\n 15.3.7: Keep using build-image not build3-image.\n  Advanced students can do the image making (see below).\nAssignment 15.B Exercises 15.5.{1,2,3,4,5}. These begin on PDF page 229.\nAssignment 15.C Read 15.6 (\u0026ldquo;Unnecessary conditionals\u0026rdquo;). Skip Section 15.7.\nDo Exercises 15.8.{2,3,5}. Exercise 15.5.6. These begin on the bottom of PDF page 238.\nAdvanced See the build-image tutorial. Use that to do 15.3.3 and 15.3.{7-10}. Do not use build3-image even though the book says to use it. The build-image function is better.\nPractice Quiz Get ready by doing last year\u0026rsquo;s Chapter 15 quiz.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/pro/",
-	"title": "Pro Features",
-	"tags": [],
-	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
-	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
-},
-{
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/",
 	"title": "20. Structures",
 	"tags": [],
 	"description": "Remembering or returning more than one thing. For example, coordinates.",
-	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/calendar/",
-	"title": "Calendar",
-	"tags": [],
-	"description": "The course calendar and assignment sheet links.",
-	"content": "The assigment sheet goes with the calendar. "
+	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -691,6 +684,20 @@
 	"tags": [],
 	"description": "",
 	"content": "Make a plan before you start programming.\nThere are two essentials:\n Multiple functions! Variables to give your numbers meaning.  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/calendar/",
+	"title": "Calendar",
+	"tags": [],
+	"description": "The course calendar and assignment sheet links.",
+	"content": "The assigment sheet goes with the calendar. "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/pro/",
+	"title": "Pro Features",
+	"tags": [],
+	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
+	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/si-walkthrough/",
@@ -1054,7 +1061,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    SI Walkthrough modified Thu 12-14  20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Space Invaders modified Wed 11-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    20. Click Circle modified Fri 12-15  SI Walkthrough modified Thu 12-14  20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

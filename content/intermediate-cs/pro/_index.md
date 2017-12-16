@@ -4,7 +4,7 @@ date: 2017-11-19T15:30:06-06:00
 draft: false
 #type: slide
 #theme: white
-weight: 190
+weight: 9990
 description: "Brief descriptions of advanced topics that have come up in various individual projects."
 ---
 
