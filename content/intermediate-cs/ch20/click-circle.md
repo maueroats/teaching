@@ -33,6 +33,16 @@ The `above-ten?` method takes in a model and produces a boolean value. The big-b
 
 The `draw-done` method is a draw handler called when to produce the last frame of the animation - regarless of why the big-bang is ending.
 
+## Impossible State Trick
+
+One way to decide that an animation is over is to change the model to something that is impossible under regular circumstances. For example, a posn with negative coordinates could not be created by the mouse-handler under normal circumstances, so it could be used to indicate that the animation should end.
+```racket
+(define MODEL-END-IT (make-posn -1001 999))
+(define (stopping? model) 
+  (posn=? model MODEL-END-IT))
+```
+
+
 ## Notes
 
 * Never place randomness in the draw handler. The draw handler can be called lots more frequently than you imagine (for example, when you drag the window and it needs to redraw).
