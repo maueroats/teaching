@@ -14,6 +14,12 @@ Exercises 20.6.3 and 20.6.4.
 
 * Clicking on the circle displays a win screen. (20.6.4) Note: I recommend using a special `posn` as the model to indicate when to display the win screen.
 
+## check-with
+
+The clause `(check-with posn?)` makes sure that every handler returns a posn.
+You should add this clause to your big-bang whenever you work with posns. 
+Colors have a similar check, `color?`.
+
 ## Stop-when
 
 There is a new clause in `big-bang` called `stop-when`. It works like the [linked demo code](stop-when.rkt). The `big-bang` looks like this:
