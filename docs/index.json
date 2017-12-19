@@ -704,7 +704,7 @@
 	"title": "20. Tightrope",
 	"tags": [],
 	"description": "A square changes color as you balance between two circles.",
-	"content": " There are two unmoving blue circles on the screen.\n You can move a square with the mouse.\n Square color is:\n Green if the distances to circle 1 and circle 2 are within 20 of each otehr. Red otherwise.    Write:\n Model The function square-color: model -\u0026gt; color.  "
+	"content": " There are two unmoving blue circles on the screen.\n You can move a square with the mouse.\n Square color is:\n Green if the distances from the square to circle 1 and circle 2 are within 20 of each other. Red otherwise.   Example\na = distance from square to circle 1 b = distance from square to circle 2 green if a and b are within 20 of each other Write:\n Model The function square-color: model -\u0026gt; color.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/si-walkthrough/",
@@ -1092,14 +1092,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

@@ -13,8 +13,16 @@ description: "A square changes color as you balance between two circles."
 
 * Square color is:
    
-    - Green if the distances to circle 1 and circle 2 are within 20 of each otehr.
+    - Green if the distances from the square to circle 1 and circle 2 are within 20 of each other.
     - Red otherwise.
+
+Example
+
+```text
+a = distance from square to circle 1
+b = distance from square to circle 2
+green if a and b are within 20 of each other
+```
     
 Write:
 
