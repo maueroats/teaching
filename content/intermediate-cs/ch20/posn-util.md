@@ -13,13 +13,16 @@ save them in a file called `posn-util.rkt`. (Please use that name.)
 
 The following functions should be in `posn-util.rkt`:
 
+* `posn=?`
 * `add-posns`
 * `sub-posns`
 * `scale-posn`: number posn -> posn
 * `distance`: posn posn -> number
-* `place-image/posn`: image posn image(background) -> image. 
-
+* `place-image/posn`: image posn image(background) -> image. Purpose:
     Place one image at a given set of coordinates on a given background.
+
+* Anything else you want to have available for re-use.
+
 
 ## Require and provide
 

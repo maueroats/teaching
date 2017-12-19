@@ -130,7 +130,7 @@
 	"title": "20. Posn Util",
 	"tags": [],
 	"description": "Utility functions for posns. Accessing functions defined in other files.",
-	"content": " The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.)\nThe following functions should be in posn-util.rkt:\n add-posns sub-posns scale-posn: number posn -\u0026gt; posn distance: posn posn -\u0026gt; number place-image/posn: image posn image(background) -\u0026gt; image.\nPlace one image at a given set of coordinates on a given background.\n  Require and provide Require loads functions from another file. Provide makes functions available for other files to load.\nProvide The provide command makes functions available for other files to use. One way to use it is to list all of the functions you want to allow other files to use:\n(provide add-posn sub-posn scale-posn distance) Sometimes you just want to make every function in the file available. There is a shortcut to do that:\n(provide (all-defined-out)) Require In order to use the functions in another file, you need to require that file. You already know (require picturing-programs) but when we use require we need to give the whole filename.\n(require \u0026#34;posn-util.rkt\u0026#34;) You need to save your work in the same folder as your \u0026ldquo;posn-util.rkt\u0026rdquo; file, since Racket only looks in the current folder for other files.\n "
+	"content": " The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.)\nThe following functions should be in posn-util.rkt:\n posn=? add-posns sub-posns scale-posn: number posn -\u0026gt; posn distance: posn posn -\u0026gt; number place-image/posn: image posn image(background) -\u0026gt; image. Purpose: Place one image at a given set of coordinates on a given background.\n Anything else you want to have available for re-use.\n  Require and provide Require loads functions from another file. Provide makes functions available for other files to load.\nProvide The provide command makes functions available for other files to use. One way to use it is to list all of the functions you want to allow other files to use:\n(provide add-posn sub-posn scale-posn distance) Sometimes you just want to make every function in the file available. There is a shortcut to do that:\n(provide (all-defined-out)) Require In order to use the functions in another file, you need to require that file. You already know (require picturing-programs) but when we use require we need to give the whole filename.\n(require \u0026#34;posn-util.rkt\u0026#34;) You need to save your work in the same folder as your \u0026ldquo;posn-util.rkt\u0026rdquo; file, since Racket only looks in the current folder for other files.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch15/15-slides/",
@@ -648,7 +648,7 @@
 	"title": "20. Structures",
 	"tags": [],
 	"description": "Remembering or returning more than one thing. For example, coordinates.",
-	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n "
+	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n 20. Tightrope  A square changes color as you balance between two circles.\n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -698,6 +698,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch20/tightrope/",
+	"title": "20. Tightrope",
+	"tags": [],
+	"description": "A square changes color as you balance between two circles.",
+	"content": " There are two unmoving blue circles on the screen.\n You can move a square with the mouse.\n Square color is:\n Green if the distances to circle 1 and circle 2 are within 20 of each otehr. Red otherwise.    Write:\n Model The function square-color: model -\u0026gt; color.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/si-walkthrough/",
@@ -1061,7 +1068,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    20. Click Circle modified Fri 12-15  SI Walkthrough modified Thu 12-14  20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  SI Plan modified Wed 11-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    20. Tightrope modified Tue 12-19  20. Click Circle modified Fri 12-15  SI Walkthrough modified Thu 12-14  20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

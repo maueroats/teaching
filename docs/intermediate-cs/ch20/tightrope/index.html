@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="">
+    <meta name="description" content="A square changes color as you balance between two circles.">
 
 
-    <title>AP CS :: WY Computer Science</title>
+    <title>20. Tightrope :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ap-cs/">
+  <body class="" data-url="/intermediate-cs/ch20/tightrope/">
     <nav id="sidebar" class="">
 
 
@@ -80,8 +80,8 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/ap-cs/">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1857,7 +1857,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1868,7 +1868,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -3294,7 +3294,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch20/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -3305,7 +3305,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -3368,7 +3368,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch20/tightrope/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/ch20/tightrope/">
         <span>20. Tightrope</span> 
@@ -4042,7 +4042,17 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > AP CS
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch20/'>20. Structures</a> > 20. Tightrope
+
+ 
+
+ 
 
  
 
@@ -4060,35 +4070,37 @@
         
         <div id="body-inner">
           
-            <h1>AP CS</h1>
+            <h1>20. Tightrope</h1>
           
 
 
 
 
+<ul>
+<li><p>There are two unmoving blue circles on the screen.</p></li>
 
+<li><p>You can move a square with the mouse.</p></li>
 
-<p>AP Computer Science studies:</p>
+<li><p>Square color is:</p>
 
 <ul>
-<li><a href="haskell">Haskell</a> - an introduction to pure functional programming</li>
-<li><a href="karel">Karel the Robot</a> - an introduction to object oriented programming</li>
-<li><a href="jm">Java</a> - the language required for the AP test</li>
+<li>Green if the distances to circle 1 and circle 2 are within 20 of each otehr.</li>
+<li>Red otherwise.
+<br /></li>
+</ul></li>
 </ul>
 
+<p>Write:</p>
 
-<H3>Resources</H3>
-The course syllabus, grading weights, and other basic information can be found in the
-<a href="/resources/">resources</a> section of the site.
-
-
+<ol>
+<li>Model</li>
+<li>The function <code>square-color: model -&gt; color</code>.</li>
+</ol>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -4127,6 +4139,8 @@ The course syllabus, grading weights, and other basic information can be found i
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -4142,9 +4156,6 @@ The course syllabus, grading weights, and other basic information can be found i
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -5256,6 +5267,7 @@ The course syllabus, grading weights, and other basic information can be found i
             
             
                 
+                    
                     
                 
                 
@@ -5271,6 +5283,9 @@ The course syllabus, grading weights, and other basic information can be found i
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -6153,6 +6168,7 @@ The course syllabus, grading weights, and other basic information can be found i
             
             
                 
+                    
                     
                 
                 
@@ -6166,6 +6182,9 @@ The course syllabus, grading weights, and other basic information can be found i
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -6198,6 +6217,7 @@ The course syllabus, grading weights, and other basic information can be found i
             
             
                 
+                    
                     
                 
                 
@@ -6217,6 +6237,9 @@ The course syllabus, grading weights, and other basic information can be found i
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -6593,10 +6616,10 @@ The course syllabus, grading weights, and other basic information can be found i
 
 
         
-            <a class="nav nav-prev" href="/" title="Mauer-Oats Classes"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/ch20/click-circle/" title="20. Click Circle"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/haskell/" title="Haskell" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
