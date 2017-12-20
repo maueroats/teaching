@@ -406,6 +406,13 @@
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch20/tightrope/",
+	"title": "20. Tightrope",
+	"tags": [],
+	"description": "A square changes color as you balance between two circles.",
+	"content": " There are two unmoving blue circles on the screen.\n You can move a square with the mouse.\n Square color is:\n Green if the distance from the square to circle 1 and the distance from the square to circle 2 are within 20 of each other. Red otherwise.   Some people had trouble understanding this description. In a computer-like language:\na = distance from square to circle 1 b = distance from square to circle 2 green if a and b are within 20 of each other Write:\n Model The function square-color: model -\u0026gt; color.  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/",
 	"title": "Java Methods",
 	"tags": [],
@@ -648,7 +655,7 @@
 	"title": "20. Structures",
 	"tags": [],
 	"description": "Remembering or returning more than one thing. For example, coordinates.",
-	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n 20. Tightrope  A square changes color as you balance between two circles.\n "
+	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n 20. Tightrope  A square changes color as you balance between two circles.\n 20. Color Enhancing  \n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -700,11 +707,11 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch20/tightrope/",
-	"title": "20. Tightrope",
+	"uri": "http://wy-cs.info/intermediate-cs/ch20/color-enhancing/",
+	"title": "20. Color Enhancing",
 	"tags": [],
-	"description": "A square changes color as you balance between two circles.",
-	"content": " There are two unmoving blue circles on the screen.\n You can move a square with the mouse.\n Square color is:\n Green if the distances from the square to circle 1 and circle 2 are within 20 of each other. Red otherwise.   Example\na = distance from square to circle 1 b = distance from square to circle 2 green if a and b are within 20 of each other Write:\n Model The function square-color: model -\u0026gt; color.  "
+	"description": "",
+	"content": "Write a function that takes a color and does the following:\n cut the amount of red in half leave green the same double the amount of blue  Start using the design process - write a signature, then examples showing how each number changes. What possibly troublesome cases should appear in your examples?\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/si-walkthrough/",
@@ -1068,7 +1075,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    20. Tightrope modified Tue 12-19  20. Click Circle modified Fri 12-15  SI Walkthrough modified Thu 12-14  20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  15. Conditionals modified Tue 12-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  20. Click Circle modified Fri 12-15  SI Walkthrough modified Thu 12-14  20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  15. Practice Quiz modified Sun 12-10  Build Image modified Wed 12-06  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1092,14 +1099,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

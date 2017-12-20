@@ -5,6 +5,7 @@ draft: false
 #type: slide
 #theme: white
 description: "A square changes color as you balance between two circles."
+weight: 40
 ---
 
 * There are two unmoving blue circles on the screen.
@@ -13,11 +14,10 @@ description: "A square changes color as you balance between two circles."
 
 * Square color is:
    
-    - Green if the distances from the square to circle 1 and circle 2 are within 20 of each other.
+    - Green if the distance from the square to circle 1 and the distance from the square to circle 2 are within 20 of each other.
     - Red otherwise.
 
-Example
-
+Some people had trouble understanding this description. In a computer-like language:
 ```text
 a = distance from square to circle 1
 b = distance from square to circle 2
