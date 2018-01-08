@@ -319,7 +319,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   20. Structures   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   20. Structures   Semester I Review   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -669,7 +669,14 @@
 	"title": "20. Structures",
 	"tags": [],
 	"description": "Remembering or returning more than one thing. For example, coordinates.",
-	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n 20. Click Circle Questions  Main questions about the click circle project (20.6.4): Stopping an animation Stop condition How? user action return (stop-with model) from a handler model state (stop-when ...) in big-bang Win screen Question: How do you make a win screen show? Answer: There are three steps: Write a win-draw-handler function. Write a should-stop? function. This is a technical annoyance.\n 20. Tightrope  A square changes color as you balance between two circles.\n 20. Map Image  The map-image command runs a function on every pixel of an image. See the map-image documentation for the official info. Exercises for map-image blue-only: Keep only the blue, removing red and green. black-white: Turn an image to black and white. You will need to decide how to set the threshold. grayscale: Turn an image to grayscale. green-to-white: Change only green pixels to white. Color There are several logical ways of combining the red, green, and blue components to get one number.\n 20. Color Enhancing  Write a function that takes a color and does the following: cut the amount of red in half leave green the same double the amount of blue Start using the design process - write a signature, then examples showing how each number changes. What possibly troublesome cases should appear in your examples?\n "
+	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n 20. Click Circle Questions  Main questions about the click circle project (20.6.4): Stopping an animation Stop condition How? user action return (stop-with model) from a handler model state (stop-when ...) in big-bang Win screen Question: How do you make a win screen show? Answer: There are three steps: Write a win-draw-handler function. Write a should-stop? function. This is a technical annoyance.\n 20. Tightrope  A square changes color as you balance between two circles.\n 20. Map Image  The map-image command runs a function on every pixel of an image. See the map-image documentation for the official info. Exercises for map-image blue-only: Keep only the blue, removing red and green. black-white: Turn an image to black and white. You will need to decide how to set the threshold. grayscale: Turn an image to grayscale. green-to-white: Change only green pixels to white. Color There are several logical ways of combining the red, green, and blue components to get one number.\n 20. Color Enhancing  \n "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/sem1review/",
+	"title": "Semester I Review",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -719,6 +726,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-1/",
+	"title": "Semester I Review 1",
+	"tags": [],
+	"description": "Random shape. Drift to a new position. Reduce the amount of green.",
+	"content": " Random shape. Write a function that returns a square, circle, or triangle. All should be equally likely.\nrandom-shape: ignore -\u0026gt; image Drift. A smiley face starts at some position on the screen. It randomly drifts 5 pixels in some direction (up, down, left, or right) every 0.2 seconds. Write the function that gives its new position.\ndrift-to-new: posn(old) -\u0026gt; posn(new) Reduce green. Write a function less-green that reduces the amount of green in a color by 25%.\nless-green: color -\u0026gt; color  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/color-enhancing/",
@@ -1089,7 +1103,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  20. Click Circle modified Fri 12-15  SI Walkthrough modified Thu 12-14  20. Posn Util modified Thu 12-14  20. Structures modified Wed 12-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    Semester I Review 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  20. Click Circle modified Fri 12-15  SI Walkthrough modified Thu 12-14  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
