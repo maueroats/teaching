@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-1/",
+	"title": "Semester I Review Day 1",
+	"tags": [],
+	"description": "Random shape. Drift to a new position. Reduce the amount of green.",
+	"content": " Random shape. Write a function that returns a square, circle, or triangle. All should be equally likely.\nrandom-shape: ignore -\u0026gt; image Drift. A smiley face starts at some position on the screen. It randomly drifts 5 pixels in some direction (up, down, left, or right) every 0.2 seconds. Write the function that gives its new position.\ndrift-to-new: posn(old) -\u0026gt; posn(new) Reduce green. Write a function less-green that reduces the amount of green in a color by 25%.\nless-green: color -\u0026gt; color  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch10/10-overview/",
 	"title": "10. Overview",
 	"tags": [],
@@ -243,6 +250,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-2/",
+	"title": "Semester I Review Day 2",
+	"tags": [],
+	"description": "Random dots located on a circle, purify color, Benz symbol.",
+	"content": "  Random dots on a circle. Create an animation of a dot moving to one of six random locations on a circle. Ideally the locations will be equally spaced.\nAdvanced: use the x coordinate of the location to control the amount of red, and the y coordinate to control the amount of green.\nSolution to basic.\n Purify color. Given a color name, decide which component has the greatest color value and return it. In the case of a tie you can choose any of the tied values.\npurify-color: string(color-name) -\u0026gt; string(\u0026#34;red\u0026#34; \u0026#34;green\u0026#34; or \u0026#34;blue\u0026#34;) Cheap Benz symbol. Write a function to create the image below. Then make an animation that lets you control the size of the image (e.g., right and left arrow keys).\n   Extra  Dotted Pentagon. The dotted-pentagon function puts a colored dot on one of the five vertices of a regular pentagon. Challenge: the color of the dot is red, but fades\u0026hellip;   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch10/10-exercises/",
@@ -424,7 +438,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -637,6 +651,13 @@
 	"content": "One of the key ideas to keep in mind when learning from USA Computing Olympiad problems is that time matters. A slow algorithm is not good enough; keep thinking about the problem, trying to find a more efficient way to solve it. Always time your solutions. Always try your solutions on the official test cases \u0026mdash; many times they will contain a situation that you have not considered. Enjoy it when that happens.\n Haybales   "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/interlude-jan/",
+	"title": "Interlude",
+	"tags": [],
+	"description": "",
+	"content": "  CodingBat String-2: did 16 the week before Winter Break.  Review 1 Review 2  Change \u0026ldquo;snow\u0026rdquo; to \u0026ldquo;ice\u0026rdquo;, but only when it appears between \u0026ldquo;December\u0026rdquo; and \u0026ldquo;February\u0026rdquo;. To simplify, you may assume that both December and February appear in the string, and December comes before February.\nSystem.out.println(winter(\u0026#34;snow December snow ice snow February snow\u0026#34;)); ==\u0026gt; \u0026#34;snow December ice ice ice February snow\u0026#34; Create a ASCII tree. Given:\n height of whole tree (height \u0026gt;= 6) width of crown at the top (width odd) trunk is always 4 lines tall and 3 characters wide width of crown increases by two \u0026ldquo;*\u0026rdquo; each line between bottom and top of crown (then decreasing halfway in between)   Example:\ntree(10,5) ==\u0026gt; ***** ******* ********* ********* ******* ***** *** *** *** ***  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch11/",
 	"title": "11. Planning",
 	"tags": [],
@@ -676,7 +697,7 @@
 	"title": "Semester I Review",
 	"tags": [],
 	"description": "",
-	"content": "  Semester I Review 1  Random shape. Drift to a new position. Reduce the amount of green.\n "
+	"content": "  Semester I Review Day 1  Random shape. Drift to a new position. Reduce the amount of green.\n Semester I Review Day 2  Random dots located on a circle, purify color, Benz symbol.\n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -726,13 +747,6 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-1/",
-	"title": "Semester I Review 1",
-	"tags": [],
-	"description": "Random shape. Drift to a new position. Reduce the amount of green.",
-	"content": " Day 1  Random shape. Write a function that returns a square, circle, or triangle. All should be equally likely.\nrandom-shape: ignore -\u0026gt; image Drift. A smiley face starts at some position on the screen. It randomly drifts 5 pixels in some direction (up, down, left, or right) every 0.2 seconds. Write the function that gives its new position.\ndrift-to-new: posn(old) -\u0026gt; posn(new) Reduce green. Write a function less-green that reduces the amount of green in a color by 25%.\nless-green: color -\u0026gt; color  Day 2  Random dots on a circle. Create an animation of a dot moving to one of six random locations on a circle. Ideally the locations will be equally spaced.\nAdvanced: use the x coordinate of the location to control the amount of red, and the y coordinate to control the amount of green.\n Purify color. Given a color name, decide which component has the greatest color value and return it. In the case of a tie you can choose any of the tied values.\npurify-color: string(color-name) -\u0026gt; string(\u0026#34;red\u0026#34; \u0026#34;green\u0026#34; or \u0026#34;blue\u0026#34;) Peace symbol. Write a function to create the image below. Then make an animation that lets you control the size of the image (e.g., right and left arrow keys).\n   Extra  Dotted Pentagon. The dotted-pentagon function puts a colored dot on one of the five vertices of a regular pentagon. Challenge: the color of the dot is red, but fades\u0026hellip;   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/color-enhancing/",
@@ -1103,7 +1117,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Java Methods modified Tue 11-28  Intermediate Computer Science Recent Changes    Semester I Review 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  20. Click Circle modified Fri 12-15  SI Walkthrough modified Thu 12-14  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Intermediate Computer Science Recent Changes    Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  20. Click Circle modified Fri 12-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

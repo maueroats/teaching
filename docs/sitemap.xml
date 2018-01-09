@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/sem1review/sem-review-1/</loc>
+    <lastmod>2018-01-08T08:49:18-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/jm/ch10/10-overview/</loc>
     <lastmod>2017-12-14T22:19:19-06:00</lastmod>
   </url>
@@ -175,6 +180,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/sem1review/sem-review-2/</loc>
+    <lastmod>2018-01-09T15:08:52-06:00</lastmod>
   </url>
   
   <url>
@@ -458,6 +468,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/jm/interlude-jan/</loc>
+    <lastmod>2018-01-09T14:59:06-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch11/</loc>
     <lastmod>2017-11-10T10:38:30-06:00</lastmod>
   </url>
@@ -520,11 +535,6 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/pro/</loc>
     <lastmod>2017-11-19T15:30:06-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/intermediate-cs/sem1review/sem-review-1/</loc>
-    <lastmod>2018-01-08T08:49:18-06:00</lastmod>
   </url>
   
   <url>
