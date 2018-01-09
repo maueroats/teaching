@@ -676,7 +676,7 @@
 	"title": "Semester I Review",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "  Semester I Review 1  Random shape. Drift to a new position. Reduce the amount of green.\n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -732,7 +732,7 @@
 	"title": "Semester I Review 1",
 	"tags": [],
 	"description": "Random shape. Drift to a new position. Reduce the amount of green.",
-	"content": " Random shape. Write a function that returns a square, circle, or triangle. All should be equally likely.\nrandom-shape: ignore -\u0026gt; image Drift. A smiley face starts at some position on the screen. It randomly drifts 5 pixels in some direction (up, down, left, or right) every 0.2 seconds. Write the function that gives its new position.\ndrift-to-new: posn(old) -\u0026gt; posn(new) Reduce green. Write a function less-green that reduces the amount of green in a color by 25%.\nless-green: color -\u0026gt; color  "
+	"content": " Day 1  Random shape. Write a function that returns a square, circle, or triangle. All should be equally likely.\nrandom-shape: ignore -\u0026gt; image Drift. A smiley face starts at some position on the screen. It randomly drifts 5 pixels in some direction (up, down, left, or right) every 0.2 seconds. Write the function that gives its new position.\ndrift-to-new: posn(old) -\u0026gt; posn(new) Reduce green. Write a function less-green that reduces the amount of green in a color by 25%.\nless-green: color -\u0026gt; color  Day 2  Random dots on a circle. Create an animation of a dot moving to one of six random locations on a circle. Ideally the locations will be equally spaced.\nAdvanced: use the x coordinate of the location to control the amount of red, and the y coordinate to control the amount of green.\n Purify color. Given a color name, decide which component has the greatest color value and return it. In the case of a tie you can choose any of the tied values.\npurify-color: string(color-name) -\u0026gt; string(\u0026#34;red\u0026#34; \u0026#34;green\u0026#34; or \u0026#34;blue\u0026#34;) Peace symbol. Write a function to create the image below. Then make an animation that lets you control the size of the image (e.g., right and left arrow keys).\n   Extra  Dotted Pentagon. The dotted-pentagon function puts a colored dot on one of the five vertices of a regular pentagon. Challenge: the color of the dot is red, but fades\u0026hellip;   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/color-enhancing/",

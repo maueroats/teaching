@@ -4184,7 +4184,16 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#day-1">Day 1</a></li>
+<li><a href="#day-2">Day 2</a></li>
+<li><a href="#extra">Extra</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -4199,6 +4208,10 @@
 
 
 
+
+
+<h2 id="day-1">Day 1</h2>
+
 <ol>
 <li><p><strong>Random shape</strong>. Write a function that returns a square, circle, or triangle. All should be equally likely.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">random-shape: ignore -&gt; image</code></pre></div></li>
@@ -4209,6 +4222,38 @@
 <li><p><strong>Reduce green</strong>. Write a function <code>less-green</code> that reduces the amount of green in a color by 25%.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">less-green: color -&gt; color</code></pre></div></li>
 </ol>
+
+<h2 id="day-2">Day 2</h2>
+
+<ol>
+<li><p>Random dots on a circle. Create an animation of a dot moving to one of six random locations on a circle. Ideally the locations will be equally spaced.</p>
+
+<p>Advanced: use the x coordinate of the location to control the amount of red, and the y coordinate to control the amount of green.</p></li>
+
+<li><p><strong>Purify color</strong>. Given a color name, decide which component has the greatest color value and return it. In the case of a tie you can choose any of the tied values.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">purify-color: string(color-name) -&gt; string(&#34;red&#34; &#34;green&#34; or &#34;blue&#34;)</code></pre></div></li>
+
+<li><p><strong>Peace symbol</strong>. Write a function to create the image below. Then make an animation that lets you control the size of the image (e.g., right and left arrow keys).</p></li>
+</ol>
+
+
+<figure >
+    
+        <img src="peace.png" />
+    
+    
+</figure>
+
+
+<h2 id="extra">Extra</h2>
+
+<ul>
+<li><strong>Dotted Pentagon</strong>. The <code>dotted-pentagon</code> function puts a colored
+dot on one of the five vertices of a regular pentagon. Challenge: the color of the dot is red, but fades&hellip;
+<br />
+<br />
+<br /></li>
+</ul>
 
 
 <footer class=" footline" >
