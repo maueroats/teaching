@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Exploring CS (Teachers) :: WY Computer Science</title>
+    <title>Arrays :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ecs-teach/">
+  <body class="" data-url="/ap-cs/jm/ch12/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1614,7 +1614,7 @@
   
     
     <li data-nav-id="/ap-cs/jm/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1625,7 +1625,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1868,8 +1868,8 @@
   
     
     <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/ap-cs/jm/ch12/">
@@ -4115,8 +4115,8 @@
   
     
     <li data-nav-id="/ecs-teach/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/ecs-teach/">
@@ -4126,7 +4126,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -4259,7 +4259,17 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > Exploring CS (Teachers)
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > Arrays
+
+ 
+
+ 
 
  
 
@@ -4272,9 +4282,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#web-hosting-platforms">Web Hosting Platforms</a></li>
-<li><a href="#editors-mac">Editors: Mac</a></li>
-<li><a href="#editors-windows">Editors: Windows</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#homework">Homework</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -4286,7 +4295,7 @@
         
         <div id="body-inner">
           
-            <h1>Exploring CS (Teachers)</h1>
+            <h1>Arrays</h1>
           
 
 
@@ -4296,52 +4305,53 @@
 
 
 
-<p>This page is dedicated to <em>teacher links</em> for Exploring Computer Science.</p>
+<p>The fundamentals:</p>
 
 <ul>
-<li><a href="scratch">Scratch Resources</a> are on a separate page.</li>
+<li>Create (make space for) an array:</li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">[</span><span style="color:#111">50</span><span style="color:#f92672">];</span>
+<span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">names</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> <span style="color:#d88200">&#34;Justyn&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Connor&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Leo&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Ellie&#34;</span> <span style="color:#f92672">};</span></code></pre></div>
+<ul>
+<li>Arrays in Java do not grow or shrink. There is no <code>+=</code> for arrays.</li>
+<li>The length of the <code>data</code> array is <code>data.length</code>.</li>
+<li>Arrays without <code>new</code> have no space created for them.</li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">nums</span><span style="color:#f92672">;</span>
+<span style="color:#00a8c8">int</span> <span style="color:#111">len</span> <span style="color:#f92672">=</span> <span style="color:#111">nums</span><span style="color:#f92672">.</span><span style="color:#75af00">length</span><span style="color:#f92672">;</span> <span style="color:#75715e">// error, array is not made at all!!
+</span><span style="color:#75715e"></span><span style="color:#111">nums</span><span style="color:#f92672">[</span><span style="color:#111">0</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#111">1</span><span style="color:#f92672">;</span> <span style="color:#f92672">//</span> <span style="color:#111">error</span><span style="color:#f92672">,</span> <span style="color:#111">certainly</span> <span style="color:#111">no</span> <span style="color:#111">item</span> <span style="color:#111">0</span></code></pre></div>
+<ul>
+<li>Getting values from an array:</li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span> <span style="color:#111">first</span> <span style="color:#f92672">=</span> <span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">0</span><span style="color:#f92672">];</span>
+<span style="color:#00a8c8">int</span> <span style="color:#111">last</span> <span style="color:#f92672">=</span> <span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">length</span> <span style="color:#f92672">-</span> <span style="color:#111">1</span><span style="color:#f92672">];</span></code></pre></div>
+<ul>
+<li>Setting values in an array:</li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">0</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#111">10</span><span style="color:#f92672">;</span>
+<span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">1</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#111">50</span><span style="color:#f92672">;</span></code></pre></div>
+<ul>
+<li><p>Miscellaneous</p>
+
+<ul>
+<li>Arrays are handled like Java Objects in memory. The name of the array is a reference to a block of memory where the array data is stored.</li>
+<li>You cannot use the <code>{10,30,90}</code> form of the initializer anywhere except the declaration of the object.</li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">nums</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#111">10</span><span style="color:#f92672">,</span><span style="color:#111">30</span><span style="color:#f92672">,</span><span style="color:#111">90</span><span style="color:#f92672">};</span> <span style="color:#75715e">// OK
+</span><span style="color:#75715e"></span><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">bad</span><span style="color:#f92672">;</span>
+<span style="color:#111">bad</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#111">10</span><span style="color:#f92672">,</span><span style="color:#111">30</span><span style="color:#f92672">,</span><span style="color:#111">90</span><span style="color:#f92672">};</span> <span style="color:#f92672">//</span> <span style="color:#111">ERROR</span></code></pre></div></li>
 </ul>
 
-<h2 id="web-hosting-platforms">Web Hosting Platforms</h2>
+<h2 id="resources">Resources</h2>
+
+<p>If you missed class, you will want to read Chapter 12 and/or the <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html">Java Arrays Tutorial</a>.</p>
+
+<h2 id="homework">Homework</h2>
 
 <ul>
-<li><p><a href="https://c9.io/">Cloud9</a></p>
+<li><p>2018-01-10: CodingBat <a href="http://codingbat.com/java/Array-1">Array-1</a> exercises in class. Complete 5 or more; enough so you are comfortable with the basics - getting items from the start and end of an array, changing values, making new arrays.</p></li>
 
-<ul>
-<li>Cost: $1/teacher/month = basically free.</li>
-<li>Live display of website results.</li>
-<li>Easy to upload images. (&ldquo;Upload local files&hellip;&rdquo;)</li>
-<li>Interface is busy (lots of features, maybe too many for a beginner).</li>
-<li>Many languages.</li>
-</ul></li>
-
-<li><p><a href="https://repl.it">Repl.it</a></p>
-
-<ul>
-<li>Cost:</li>
-<li>No upload of images.</li>
-<li>Nice simple interface for beginners.</li>
-<li>Many languages including Python with turtle graphics.
-<br /></li>
-</ul></li>
-</ul>
-
-<h2 id="editors-mac">Editors: Mac</h2>
-
-<ul>
-<li><a href="https://macromates.com/">TextMate 2.0beta</a>. Tested and works fine on modern Mac OS (10.12) as well as older.
-
-<ul>
-<li>Light weight (13MB)</li>
-<li>Can run off a flash drive; no Administrator required.</li>
-<li>HTML mode highlights and saves as &ldquo;.html&rdquo; automatically.</li>
-</ul></li>
-</ul>
-
-<h2 id="editors-windows">Editors: Windows</h2>
-
-<ul>
-<li><a href="https://notepad-plus-plus.org/">NotePad++</a>.</li>
+<li><p>2018-01-12: CodingBat <a href="http://codingbat.com/java/Array-2">Array-2</a> exercises all day. You should have completed 8 already. Do 12 more before class Tuesday 2018-01-16.</p></li>
 </ul>
 
 
@@ -4388,8 +4398,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -4405,6 +4413,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5383,6 +5394,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -5398,6 +5410,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5526,6 +5541,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -5548,6 +5564,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -6962,7 +6981,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -6976,9 +6994,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -7001,10 +7016,10 @@
 
 
         
-            <a class="nav nav-prev" href="/ftc/meet-1/" title="FTC Meet 1"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/jm/interlude-jan/" title="Interlude"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ecs-teach/scratch/" title="Scratch" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/" title="Intermediate CS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

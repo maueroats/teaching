@@ -438,7 +438,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   Arrays   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -761,6 +761,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch12/",
+	"title": "Arrays",
+	"tags": [],
+	"description": "",
+	"content": " The fundamentals:\n Create (make space for) an array:  int[] data = new int[50]; String[] names = { \u0026#34;Justyn\u0026#34;, \u0026#34;Connor\u0026#34;, \u0026#34;Leo\u0026#34;, \u0026#34;Ellie\u0026#34; };  Arrays in Java do not grow or shrink. There is no += for arrays. The length of the data array is data.length. Arrays without new have no space created for them.  int[] nums; int len = nums.length; // error, array is not made at all!! nums[0] = -1; // error, certainly no item 0  Getting values from an array:  int first = data[0]; int last = data[data.length - 1];  Setting values in an array:  data[0] = 10; data[1] = 50;  Miscellaneous\n Arrays are handled like Java Objects in memory. The name of the array is a reference to a block of memory where the array data is stored. You cannot use the {10,30,90} form of the initializer anywhere except the declaration of the object.  int[] nums = {10,30,90}; // OK int[] bad; bad = {10,30,90}; // ERROR  Resources If you missed class, you will want to read Chapter 12 and/or the Java Arrays Tutorial.\nHomework  2018-01-10: CodingBat Array-1 exercises in class. Complete 5 or more; enough so you are comfortable with the basics - getting items from the start and end of an array, changing values, making new arrays.\n 2018-01-12: CodingBat Array-2 exercises all day. You should have completed 8 already. Do 12 more before class Tuesday 2018-01-16.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/si-walkthrough/",
@@ -1124,7 +1131,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Intermediate Computer Science Recent Changes    20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Arrays modified Wed 01-10  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  Intermediate Computer Science Recent Changes    20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
