@@ -11,6 +11,10 @@ description: "Utility functions for posns. Accessing functions defined in other 
 The functions in 20.5 are all useful later. When you do them, you should 
 save them in a file called `posn-util.rkt`. (Please use that name.)
 
+{{% notice note %}}
+You may download [my posn utilities file](posn-util.rkt) if you write your functions on paper instead of typing them.
+{{% /notice %}}
+
 The following functions should be in `posn-util.rkt`:
 
 * `posn=?`
