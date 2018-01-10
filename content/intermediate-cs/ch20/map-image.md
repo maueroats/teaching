@@ -5,6 +5,7 @@ draft: false
 #type: slide
 #theme: white
 weight: 50
+description: "Changing the colors in a picture, pixel by pixel."
 ---
 
 The `map-image` command runs a function on every pixel of an image. See the [map-image documentation](https://docs.racket-lang.org/picturing-programs/index.html?q=map-image#%28def._%28%28lib._picturing-programs%2Fprivate%2Fmap-image..rkt%29._map-image%29%29) for the official info.

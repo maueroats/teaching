@@ -416,7 +416,7 @@
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/click-circle-questions/",
 	"title": "20. Click Circle Questions",
 	"tags": [],
-	"description": "",
+	"description": "Brief explanation of how to stop animations and show a win screen.",
 	"content": " Main questions about the click circle project (20.6.4):\nStopping an animation    Stop condition How?     user action return (stop-with model) from a handler   model state (stop-when ...) in big-bang    Win screen Question: How do you make a win screen show?\nAnswer: There are three steps:\n Write a win-draw-handler function. Write a should-stop? function. This is a technical annoyance. For now this can do nothing:\n(define (should-stop? model) false) Add a (stop-when should-stop? win-draw-handler) clause to your big-bang.\n  "
 },
 {
@@ -521,7 +521,7 @@
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/map-image/",
 	"title": "20. Map Image",
 	"tags": [],
-	"description": "",
+	"description": "Changing the colors in a picture, pixel by pixel.",
 	"content": " The map-image command runs a function on every pixel of an image. See the map-image documentation for the official info.\nExercises for map-image  blue-only: Keep only the blue, removing red and green. black-white: Turn an image to black and white. You will need to decide how to set the threshold. grayscale: Turn an image to grayscale. green-to-white: Change only green pixels to white.  Color There are several logical ways of combining the red, green, and blue components to get one number. The most common is averaging, but it is not the only way.\n Average the numbers. Use the maximum of the numbers. Use the minimum of the numbers. (?!) Other unusual math methods like the geometric mean.  Extras Make the function color-distance: color-\u0026gt;color, which measures the distance between two colors in the same way that distance measures the distance between two posns.\nThe formula for color distance would be:\n(square root of (r1-r2)^2 + (g1-g2)^2 + (b1-b2)^2) Your color-distance function can be used to change colors near green to white, so you don\u0026rsquo;t have to have perfect green to see it work.\n"
 },
 {
@@ -551,6 +551,13 @@
 	"tags": [],
 	"description": "A skit involving robots making decisions.",
 	"content": " You are going to make a play in which robots interact.\nDocumentation:\n Karel the Robot (all) Robot UrRobot Hacked Karel the Robot  Assignment in Brief Assignment Elements  One robot interacts with another robot. You create a new interface or abstract class for use. Robots interact in a non-formulaic way. Interesting plot line (please!). It\u0026rsquo;s supposed to be fun.  Assignment Timeline  Friday: Outline of the action which will happen. (Check in.) Tuesday: You should have at least 3 classes/interfaces written. (Check in.) Tuesday after Thanksgiving: project due.  SchoolBot abstract class We decided that every robot in school will have four basic functions.\nboolean isStudent(); boolean isTeacher(); boolean isHelpful(); Strategy getHelp(); Robots can be students or teachers. If a robot is helpful, then you can get a Strategy from it. (The idea is that the Strategy will get you help when you \u0026ldquo;doIt\u0026rdquo;.)\nStudentBot looks for TeacherBot To interact with other robots, I suggest using:\n the enhanced Robot class the neighbors() function  Robot vs UrRobot Use the Robot class instead of UrRobot. This lets your robot detect some things in its environment. For example, nextToARobot() returns true if there is at least one other robot with the same coordinates. Links to the Robot documentation are at the top of this page.\nneighbors The myRobot.neighbors() function returns an Enumeration. An Enumeration is an object that is basically a list of items. There is a nextElement() function which gives you the next item in the list. (You start before the first item.) There is a hasMoreElements() which returns true if there is another element you can get.\nIn order to use Enumeration you must include import java.util.* at the start of your document.\n Note: Karel the Robot is an old program and Enumeration is an old interface. New programs use an Iterator instead.\n"
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch20/color-enhancing/",
+	"title": "20. Color Enhancing",
+	"tags": [],
+	"description": "One exercise working with color.",
+	"content": "Write a function that takes a color and does the following:\n cut the amount of red in half leave green the same double the amount of blue  Start using the design process - write a signature, then examples showing how each number changes. What possibly troublesome cases should appear in your examples?\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch06/",
@@ -586,6 +593,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following honor code regarding all of their work in this class.\n “I have neither given nor received improper aid on this test/project.”   “Improper aid” includes, but is not limited to:\n copying another student’s work allowing another student to copy your work sharing the problems given on a test to a student who has not taken the test copying work from any online or electronic resource without citation chatting or texting with another student during a test in which computer use is allowed  On a project (not test), it is acceptable to give suggestions to a student who knows less than you do.\n The student who is giving help may read the code of the student seeking help. The student who is giving help may not type (or write) any code.  Penalties when a student is caught cheating in this class may include:\n A zero on the assessment Final grade being lowered a letter Expulsion from National Honor Society (NHS or NJHS) Denial of a future application to National Honor Society (NHS or NJHS) Negatively affecting scholarships and post-high school programs for which you have applied  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch20/ch20-review/",
+	"title": "20. Review",
+	"tags": [],
+	"description": "Review questions on posn and color.",
+	"content": "Write checks and follow the design process as you write these functions.\n Move to parabola. Input any point, output a point on the graph of y=x^2. Find the output point by moving vertically up or down from the input point until you reach the graph of y=x^2.\nto-parabola: posn(initial) -\u0026gt; posn If you have time, make an animation that shows a gray circle where the mouse is and then connects that via a gray line to a blue circle on the parabola. You can use my 400x400 parabola image to see the whole parabola. (Read the code I used to make the parabola if you want.)\nIf you want to see an upward facing parabola in people coordinates, you should use the formula below:\n(define (f x) (+ 200 (* -1/200 (- x 200) (- x 200)))) Input a color, output a new color.\nmix-color: color -\u0026gt; color  output red is twice the input amount of green output green is the average of the input red, green, and blue output blue is 50 units less than half of the red input  Hot-Cold. Take in a posn and output a color. The color will depend on the distance of the point from (100,200).\n distance \u0026lt; 100: pure red distance \u0026gt; 355: pure yellow in between: red is 255 minus distance, green is distance minus 100, blue is 0   hot-cold: posn -\u0026gt; color  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch07/",
@@ -690,7 +704,7 @@
 	"title": "20. Structures",
 	"tags": [],
 	"description": "Remembering or returning more than one thing. For example, coordinates.",
-	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n 20. Click Circle Questions  Main questions about the click circle project (20.6.4): Stopping an animation Stop condition How? user action return (stop-with model) from a handler model state (stop-when ...) in big-bang Win screen Question: How do you make a win screen show? Answer: There are three steps: Write a win-draw-handler function. Write a should-stop? function. This is a technical annoyance.\n 20. Tightrope  A square changes color as you balance between two circles.\n 20. Map Image  The map-image command runs a function on every pixel of an image. See the map-image documentation for the official info. Exercises for map-image blue-only: Keep only the blue, removing red and green. black-white: Turn an image to black and white. You will need to decide how to set the threshold. grayscale: Turn an image to grayscale. green-to-white: Change only green pixels to white. Color There are several logical ways of combining the red, green, and blue components to get one number.\n 20. Color Enhancing  \n "
+	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n 20. Click Circle Questions  Brief explanation of how to stop animations and show a win screen.\n 20. Tightrope  A square changes color as you balance between two circles.\n 20. Map Image  Changing the colors in a picture, pixel by pixel.\n 20. Color Enhancing  One exercise working with color.\n 20. Review  Review questions on posn and color.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/",
@@ -747,13 +761,6 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/ch20/color-enhancing/",
-	"title": "20. Color Enhancing",
-	"tags": [],
-	"description": "",
-	"content": "Write a function that takes a color and does the following:\n cut the amount of red in half leave green the same double the amount of blue  Start using the design process - write a signature, then examples showing how each number changes. What possibly troublesome cases should appear in your examples?\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/si-walkthrough/",
@@ -1117,7 +1124,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Intermediate Computer Science Recent Changes    Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  20. Click Circle modified Fri 12-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  1. CS Basics modified Tue 11-28  Intermediate Computer Science Recent Changes    20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

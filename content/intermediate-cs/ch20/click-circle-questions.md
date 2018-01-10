@@ -5,6 +5,7 @@ draft: false
 #type: slide
 #theme: white
 weight: 35
+description: "Brief explanation of how to stop animations and show a win screen." 
 ---
 
 Main questions about the click circle project (20.6.4):

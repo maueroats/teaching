@@ -4,6 +4,8 @@ date: 2017-12-20T10:51:18-06:00
 draft: false
 #type: slide
 #theme: white
+weight: 60
+description: "One exercise working with color."
 ---
 
 Write a function that takes a color and does the following:
