@@ -183,6 +183,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch21/21-ws-a/</loc>
+    <lastmod>2018-01-11T22:07:05-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/sem1review/sem-review-2/</loc>
     <lastmod>2018-01-09T15:08:52-06:00</lastmod>
   </url>
@@ -508,6 +513,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch21/</loc>
+    <lastmod>2018-01-11T22:05:13-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/sem1review/</loc>
     <lastmod>2018-01-08T08:48:56-06:00</lastmod>
   </url>
@@ -545,6 +555,16 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/pro/</loc>
     <lastmod>2017-11-19T15:30:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch10/10-test/</loc>
+    <lastmod>2018-01-11T21:55:42-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch12/cb-array-2/</loc>
+    <lastmod>2018-01-11T21:41:44-06:00</lastmod>
   </url>
   
   <url>
@@ -827,14 +847,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

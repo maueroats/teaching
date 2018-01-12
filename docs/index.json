@@ -252,6 +252,13 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385  The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch21/21-ws-a/",
+	"title": "21. Worksheet A",
+	"tags": [],
+	"description": "Practice with Chapter 21 concepts.",
+	"content": " Write a data description for a structure \u0026ldquo;computer\u0026rdquo; that stores the memory (e.g., 4GB), used hard disk space (e.g., 104.9 GB) , and has a textual description of its location (e.g., \u0026ldquo;leftmost computer by the window\u0026rdquo;). Write the definition for this structure. Create the computer from the example above. Test your code by showing that the location of the computer you made is \u0026ldquo;leftmost computer by the window\u0026rdquo;. Design and test a function that is true when the computer has at least 4GB of memory. Design and test a function \u0026ldquo;empty-trash\u0026rdquo; which takes a computer and decreases the used hard disk space by 15% (producing a computer).  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-2/",
 	"title": "Semester I Review Day 2",
 	"tags": [],
@@ -333,7 +340,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   20. Structures   Semester I Review   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   20. Structures   21. Structures   Semester I Review   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -438,7 +445,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   Arrays   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -648,7 +655,7 @@
 	"title": "10. Strings",
 	"tags": [],
 	"description": "",
-	"content": "There are a lot of tricky issues related to strings. Read the powerpoint carefully!\n 10. Overview   10. Exercises   "
+	"content": "There are a lot of tricky issues related to strings. Read the powerpoint carefully!\n 10. Overview   10. Exercises   10. Test   "
 },
 {
 	"uri": "http://wy-cs.info/ftc/learning/",
@@ -707,6 +714,13 @@
 	"content": "  20. Posn Util  Utility functions for posns. Accessing functions defined in other files.\n 20. Click Circle  A circle moves around the screen randomly. You win if you can click on it.\n 20. Click Circle Questions  Brief explanation of how to stop animations and show a win screen.\n 20. Tightrope  A square changes color as you balance between two circles.\n 20. Map Image  Changing the colors in a picture, pixel by pixel.\n 20. Color Enhancing  One exercise working with color.\n 20. Review  Review questions on posn and color.\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch21/",
+	"title": "21. Structures",
+	"tags": [],
+	"description": "More than one piece of information in one variable, generalizing posn and color.",
+	"content": "2018-01-12 (Friday): Chapter 21 Reading Guide - Do pages 1 and 2 on Friday.\n 21. Worksheet A   "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/",
 	"title": "Semester I Review",
 	"tags": [],
@@ -763,8 +777,22 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch10/10-test/",
+	"title": "10. Test",
+	"tags": [],
+	"description": "Test on strings and loops.",
+	"content": "We took a test on Strings, a little bit of loops, and CodingBat. You should use the testing code template to make sure your code works before re-submitting it. Please resubmit Tuesday.\nYou should be able to copy and paste this code in to repl.it as well as using it in DrJava.\n"
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch12/cb-array-2/",
+	"title": "12. CodingBat",
+	"tags": [],
+	"description": "",
+	"content": "Friday 2018-01-18: Complete 12 more CodingBat Array-2 exercises, for a total of 20. Due Tuesday.\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch12/",
-	"title": "Arrays",
+	"title": "12. Arrays",
 	"tags": [],
 	"description": "",
 	"content": " The fundamentals:\n Create (make space for) an array:  int[] data = new int[50]; String[] names = { \u0026#34;Justyn\u0026#34;, \u0026#34;Connor\u0026#34;, \u0026#34;Leo\u0026#34;, \u0026#34;Ellie\u0026#34; };  Arrays in Java do not grow or shrink. There is no += for arrays. The length of the data array is data.length. Arrays without new have no space created for them.  int[] nums; int len = nums.length; // error, array is not made at all!! nums[0] = -1; // error, certainly no item 0  Getting values from an array:  int first = data[0]; int last = data[data.length - 1];  Setting values in an array:  data[0] = 10; data[1] = 50;  Miscellaneous\n Arrays are handled like Java Objects in memory. The name of the array is a reference to a block of memory where the array data is stored. You cannot use the {10,30,90} form of the initializer anywhere except the declaration of the object.  int[] nums = {10,30,90}; // OK int[] bad; bad = {10,30,90}; // ERROR  Resources If you missed class, you will want to read Chapter 12 and/or the Java Arrays Tutorial.\nHomework  2018-01-10: CodingBat Array-1 exercises in class. Complete 5 or more; enough so you are comfortable with the basics - getting items from the start and end of an array, changing values, making new arrays.\n 2018-01-12: CodingBat Array-2 exercises all day. You should have completed 8 already. Do 12 more before class Tuesday 2018-01-16.\n  "
@@ -1131,7 +1159,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Arrays modified Wed 01-10  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  3. Objects and Classes modified Mon 12-04  2. Software Engineering modified Fri 12-01  Intermediate Computer Science Recent Changes    20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  20. Color Enhancing modified Wed 12-20  20. Tightrope modified Tue 12-19  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   10. Test modified Thu 01-11  12. CodingBat modified Thu 01-11  12. Arrays modified Wed 01-10  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  Intermediate Computer Science Recent Changes    21. Worksheet A modified Thu 01-11  21. Structures modified Thu 01-11  20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  20. Click Circle Questions modified Wed 12-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1155,14 +1183,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

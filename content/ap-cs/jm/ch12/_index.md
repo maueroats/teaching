@@ -1,5 +1,5 @@
 ---
-title: "Arrays"
+title: "12. Arrays"
 date: 2018-01-10T10:44:21-06:00
 draft: false
 #type: slide
