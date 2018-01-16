@@ -1,6 +1,6 @@
 ---
 title: "12. Arrays"
-date: 2018-01-10T10:44:21-06:00
+date: 2018-01-16T09:13:44-06:00
 draft: false
 #type: slide
 #theme: white
