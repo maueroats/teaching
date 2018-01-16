@@ -57,3 +57,4 @@ If you missed class, you will want to read Chapter 12 and/or the [Java Arrays Tu
 
 * 2018-01-12: CodingBat [Array-2](http://codingbat.com/java/Array-2) exercises all day. You should have completed 8 already. Do 12 more before class Tuesday 2018-01-16.
 
+* 2018-01-16: [Class JavaMethods GitHub](https://github.com/2017-2018-wy-ap-cs/java-rotary-phone.git) - Chomp is Chapter 12.
