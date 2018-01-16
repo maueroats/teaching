@@ -784,6 +784,13 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch12/12-arrays-2d/",
+	"title": "12. Two Dimensional Arrays",
+	"tags": [],
+	"description": "Two dimensional arrays can represent temperatures across the states, locations of buildings, or hospital X-rays.",
+	"content": " Fundamentals int[][] data = new int[30][60]; int rows = data.length; int cols = data[0].length; import java.util.Arrays; int[][] given = {{1,2},{3,4},{5,6}}; System.out.println(Arrays.deepToString(given)); Exercises  Write the makeBoard function that creates a matrix of ones surrounded by a moat of zeros.\npublic static int[][] makeBoard(int rows, int cols);int[][] result = makeBoard(5,7); System.out.println(Arrays.deepToString(result); /* 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 1 1 1 1 1 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 */ Make boxSplit, which takes in a 1D array of integers of even length and splits it into two rows.\n  public static int[][] boxSplit(int[] data); int[] data = {10,20,40,80,120,160}; int[][] result = boxSplit(data); /* result == {{10,20,40}, {80,120,160}} */  The colMax function takes in a (nonempty, rectangular) 2D array of data and returns a 1D array containing the maximum value from each column of the array.  public static int[] colMax(int[][] data); int[][] data = {{-50, 100, 40}, {-30, 0, 90}, {-40, 95, 30}}; int[] result = colMax(data); System.out.println(Arrays.toString(result)); // {-50,100,90}  Hope you get here.  More Links  Array 2D intro and Practice slides  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch12/",
 	"title": "12. Arrays",
 	"tags": [],
@@ -1166,7 +1173,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " Tuesday, January 16, 2018\nTurn in test corrections or ask questions.\n AP CS:  Chomp program (Class JavaMethods GitHub Check in Array-2 CodingBat.  Intermediate CS: Chapter 21 Worksheet A.   AP Computer Science Recent Changes    12. Arrays modified Tue 01-16  10. Test modified Thu 01-11  12. CodingBat modified Thu 01-11  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  6. Data Types modified Wed 12-13  Intermediate Computer Science Recent Changes    21. Worksheet B modified Thu 01-11  21. Worksheet A modified Thu 01-11  21. Making Structures modified Thu 01-11  20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " Tuesday, January 16, 2018\nTurn in test corrections or ask questions.\n AP CS:  Chomp program (Class JavaMethods GitHub Check in Array-2 CodingBat.  Intermediate CS: Chapter 21 Worksheet A.   AP Computer Science Recent Changes    12. Two Dimensional Arrays modified Tue 01-16  12. Arrays modified Tue 01-16  10. Test modified Thu 01-11  12. CodingBat modified Thu 01-11  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  Intermediate Computer Science Recent Changes    21. Worksheet B modified Thu 01-11  21. Worksheet A modified Thu 01-11  21. Making Structures modified Thu 01-11  20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="">
+    <meta name="description" content="Two dimensional arrays can represent temperatures across the states, locations of buildings, or hospital X-rays.">
 
 
-    <title>2017-10-12 :: WY Computer Science</title>
+    <title>12. Two Dimensional Arrays :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch06/daily/2017-10-12/">
+  <body class="" data-url="/ap-cs/jm/ch12/12-arrays-2d/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1614,7 +1614,7 @@
   
     
     <li data-nav-id="/ap-cs/jm/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1625,7 +1625,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1888,7 +1888,7 @@
   
     
     <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1899,7 +1899,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1922,7 +1922,7 @@
   
     
       <li data-nav-id="/ap-cs/jm/ch12/12-arrays-2d/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/jm/ch12/12-arrays-2d/">
         <span>12. Two Dimensional Arrays</span> 
@@ -1987,7 +1987,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1998,7 +1998,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2355,7 +2355,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch06/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -2366,7 +2366,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2491,7 +2491,7 @@
   
     
     <li data-nav-id="/intermediate-cs/ch06/daily/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -2502,7 +2502,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2525,7 +2525,7 @@
   
     
       <li data-nav-id="/intermediate-cs/ch06/daily/2017-10-12/" class="dd-item
-     active
+     
       ">
         <a href="/intermediate-cs/ch06/daily/2017-10-12/">
         <span>2017-10-12</span> 
@@ -4427,7 +4427,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch06/'>6. Animations I</a> > <a href='/intermediate-cs/ch06/daily/'>Daily Animations</a> > 2017-10-12
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch12/'>12. Arrays</a> > 12. Two Dimensional Arrays
 
  
 
@@ -4444,7 +4444,12 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#memorize">Memorize</a></li>
+<li>
+<ul>
+<li><a href="#fundamentals">Fundamentals</a></li>
+<li><a href="#exercises">Exercises</a></li>
+<li><a href="#more-links">More Links</a></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -4455,7 +4460,7 @@
         
         <div id="body-inner">
           
-            <h1>2017-10-12</h1>
+            <h1>12. Two Dimensional Arrays</h1>
           
 
 
@@ -4463,17 +4468,56 @@
 
 
 
-<p>Make an animation of a dog that:</p>
+<h2 id="fundamentals">Fundamentals</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[][]</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">[</span><span style="color:#111">30</span><span style="color:#f92672">][</span><span style="color:#111">60</span><span style="color:#f92672">];</span>
+<span style="color:#00a8c8">int</span> <span style="color:#111">rows</span> <span style="color:#f92672">=</span> <span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">length</span><span style="color:#f92672">;</span>
+<span style="color:#00a8c8">int</span> <span style="color:#111">cols</span> <span style="color:#f92672">=</span> <span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">0</span><span style="color:#f92672">].</span><span style="color:#75af00">length</span><span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> <span style="color:#111">java.util.Arrays</span><span style="color:#f92672">;</span>
+<span style="color:#00a8c8">int</span><span style="color:#f92672">[][]</span> <span style="color:#111">given</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{{</span><span style="color:#111">1</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">},{</span><span style="color:#111">3</span><span style="color:#f92672">,</span><span style="color:#111">4</span><span style="color:#f92672">},{</span><span style="color:#111">5</span><span style="color:#f92672">,</span><span style="color:#111">6</span><span style="color:#f92672">}};</span>
+<span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">out</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#111">Arrays</span><span style="color:#f92672">.</span><span style="color:#75af00">deepToString</span><span style="color:#f92672">(</span><span style="color:#111">given</span><span style="color:#f92672">));</span></code></pre></div>
+<h2 id="exercises">Exercises</h2>
+
+<ol>
+<li><p>Write the <code>makeBoard</code> function that creates a matrix of ones surrounded by a moat of zeros.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">[][]</span> <span style="color:#75af00">makeBoard</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">rows</span><span style="color:#f92672">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">cols</span><span style="color:#f92672">);</span></code></pre></div><div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[][]</span> <span style="color:#111">result</span> <span style="color:#f92672">=</span> <span style="color:#111">makeBoard</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">,</span><span style="color:#111">7</span><span style="color:#f92672">);</span>
+<span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">out</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#111">Arrays</span><span style="color:#f92672">.</span><span style="color:#75af00">deepToString</span><span style="color:#f92672">(</span><span style="color:#111">result</span><span style="color:#f92672">);</span> 
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">0 0 0 0 0 0 0
+</span><span style="color:#75715e">0 1 1 1 1 1 0
+</span><span style="color:#75715e">0 1 1 1 1 1 0
+</span><span style="color:#75715e">0 1 1 1 1 1 0
+</span><span style="color:#75715e">0 0 0 0 0 0 0
+</span><span style="color:#75715e">*/</span></code></pre></div></li>
+
+<li><p>Make <code>boxSplit</code>, which takes in a 1D array of integers of even length and splits it into two rows.</p></li>
+</ol>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">[][]</span> <span style="color:#75af00">boxSplit</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">data</span><span style="color:#f92672">);</span>
+
+<span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#111">10</span><span style="color:#f92672">,</span><span style="color:#111">20</span><span style="color:#f92672">,</span><span style="color:#111">40</span><span style="color:#f92672">,</span><span style="color:#111">80</span><span style="color:#f92672">,</span><span style="color:#111">120</span><span style="color:#f92672">,</span><span style="color:#111">160</span><span style="color:#f92672">};</span>
+<span style="color:#00a8c8">int</span><span style="color:#f92672">[][]</span> <span style="color:#111">result</span> <span style="color:#f92672">=</span> <span style="color:#111">boxSplit</span><span style="color:#f92672">(</span><span style="color:#111">data</span><span style="color:#f92672">);</span> 
+<span style="color:#75715e">/* result == {{10,20,40},
+</span><span style="color:#75715e">              {80,120,160}} */</span></code></pre></div>
+<ol>
+<li>The <code>colMax</code> function takes in a (nonempty, rectangular) 2D array of data and returns a 1D array containing the maximum value from each column of the array.</li>
+</ol>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#75af00">colMax</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span><span style="color:#f92672">[][]</span> <span style="color:#111">data</span><span style="color:#f92672">);</span>
+
+<span style="color:#00a8c8">int</span><span style="color:#f92672">[][]</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{{-</span><span style="color:#111">50</span><span style="color:#f92672">,</span> <span style="color:#111">100</span><span style="color:#f92672">,</span> <span style="color:#111">40</span><span style="color:#f92672">},</span>
+                <span style="color:#f92672">{-</span><span style="color:#111">30</span><span style="color:#f92672">,</span>   <span style="color:#111">0</span><span style="color:#f92672">,</span> <span style="color:#111">90</span><span style="color:#f92672">},</span>
+                <span style="color:#f92672">{-</span><span style="color:#111">40</span><span style="color:#f92672">,</span>  <span style="color:#111">95</span><span style="color:#f92672">,</span> <span style="color:#111">30</span><span style="color:#f92672">}};</span>
+<span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">result</span> <span style="color:#f92672">=</span> <span style="color:#111">colMax</span><span style="color:#f92672">(</span><span style="color:#111">data</span><span style="color:#f92672">);</span>
+<span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">out</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#111">Arrays</span><span style="color:#f92672">.</span><span style="color:#75af00">toString</span><span style="color:#f92672">(</span><span style="color:#111">result</span><span style="color:#f92672">));</span>
+<span style="color:#f92672">//</span> <span style="color:#f92672">{-</span><span style="color:#111">50</span><span style="color:#f92672">,</span><span style="color:#111">100</span><span style="color:#f92672">,</span><span style="color:#111">90</span><span style="color:#f92672">}</span></code></pre></div>
+<ol>
+<li>Hope you get here.</li>
+</ol>
+
+<h2 id="more-links">More Links</h2>
 
 <ul>
-<li><p>gets bigger every time you hit a key (every key).</p></li>
-
-<li><p>gets smaller when you move the mouse.</p></li>
+<li><a href="https://docs.google.com/presentation/d/1QEp4FGMU1ShqXnAAwZ2gDNfMQqL6rmHUkAVeGWsszeU/edit?usp=sharing">Array 2D intro and Practice slides</a></li>
 </ul>
-
-<h1 id="memorize">Memorize</h1>
-
-<p>Memorize the steps of the design process!</p>
 
 
 <footer class=" footline" >
@@ -4517,8 +4561,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -4534,6 +4576,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5512,6 +5557,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -5528,6 +5574,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -5672,6 +5721,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -5684,6 +5734,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -5700,6 +5751,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5726,7 +5780,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -5741,9 +5794,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -5937,7 +5987,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -5952,9 +6001,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -6035,7 +6081,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -6050,7 +6095,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -6066,9 +6110,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -7235,10 +7276,10 @@
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch06/daily/" title="Daily Animations"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/jm/ch12/" title="12. Arrays"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch06/daily/2017-10-10/" title="2017-10-10" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/jm/ch12/cb-array-2/" title="12. CodingBat" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
