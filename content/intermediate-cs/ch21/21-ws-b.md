@@ -1,7 +1,7 @@
 ---
 title: "21. Worksheet B"
 date: 2018-01-11T22:09:02-06:00
-draft: true
+draft: false
 #type: slide
 #theme: white
 weight: 21

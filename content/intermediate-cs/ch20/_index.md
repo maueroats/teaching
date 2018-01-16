@@ -1,5 +1,5 @@
 ---
-title: "20. Structures"
+title: "20. Using Structures"
 date: 2017-12-13T09:43:23-06:00
 draft: false
 #type: slide

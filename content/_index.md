@@ -4,13 +4,15 @@ date: 2017-09-09T17:00:30-05:00
 ---
 
 {{% notice note %}}
-Friday, January 12.
+Tuesday, January 16, 2018
 
-* AP CS: [Array-2 CodingBat]({{% relref "cb-array-2.md" %}})
-* Intermediate CS: 
-[Chapter 21 Reading Guide](https://docs.google.com/document/d/1rGTwl1WN44YQaUNVknxikijdFVd1LDu6ptu-pd7mhVU/edit?usp=sharing).
+Turn in test corrections or ask questions.
 
-Homework is test corrections.
+* AP CS: 
+    - Chomp program (should be a link)
+    - Check in [Array-2 CodingBat]({{% relref "cb-array-2.md" %}}).
+* Intermediate CS: [Chapter 21 Worksheet A]({{% relref "21-ws-a.md" %}}).
+
 {{% /notice %}}
 
 ## AP Computer Science Recent Changes

@@ -1,5 +1,5 @@
 ---
-title: "21. Structures"
+title: "21. Making Structures"
 date: 2018-01-11T22:05:13-06:00
 draft: false
 #type: slide
