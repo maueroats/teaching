@@ -6,7 +6,8 @@ publishDir = "docs"
 themeVariant = "docmo"
 rssLimit = 10
 pygmentsStyle = "monokailight"
-pygmentsCodeFences = true
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
 
 [outputs]
 # removed RSS from both of the following

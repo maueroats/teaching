@@ -23,56 +23,48 @@ System.out.println(Arrays.deepToString(given));
 
 1. Write the `makeBoard` function that creates a matrix of ones surrounded by a moat of zeros. 
 
-     ```java
-public static int[][] makeBoard(int rows, int cols);
-```
+        public static int[][] makeBoard(int rows, int cols);
 
-     ```java
-int[][] result = makeBoard(5,7);
-System.out.println(Arrays.deepToString(result); 
-/*
-0 0 0 0 0 0 0
-0 1 1 1 1 1 0
-0 1 1 1 1 1 0
-0 1 1 1 1 1 0
-0 0 0 0 0 0 0
-*/
-```
+        int[][] result = makeBoard(5,7);
+        System.out.println(Arrays.deepToString(result); 
+        /*
+        0 0 0 0 0 0 0
+        0 1 1 1 1 1 0
+        0 1 1 1 1 1 0
+        0 1 1 1 1 1 0
+        0 0 0 0 0 0 0
+        */
+
 2. Make `boxSplit`, which takes in a 1D array of integers 
 of even length and splits it into two rows (in "row major order").
+     
+        public static int[][] boxSplit(int[] data);
+         
+        int[] data = {10,20,40,80,120,160};
+        int[][] result = boxSplit(data); 
+        /* result == {{10,20,40},
+                      {80,120,160}} */
 
-   ```java
-public static int[][] boxSplit(int[] data);
-
-int[] data = {10,20,40,80,120,160};
-int[][] result = boxSplit(data); 
-/* result == {{10,20,40},
-              {80,120,160}} */
-```
 3. Make the `boxSplitV`, which takes in a one dimensional array of integers of even length and splits it into two rows, but distributes the values in "column major order".
 
-```java
-public static int[][] boxSplitV(int[] data);
+        public static int[][] boxSplitV(int[] data);
 
-int[] data = {10,20,40,80,120,160};
-int[][] result = boxSplitV(data); 
-/* result == {{10,40,120},
-              {20,80,160}} */
-```
+        int[] data = {10,20,40,80,120,160};
+        int[][] result = boxSplitV(data); 
+        /* result == {{10,40,120},
+                      {20,80,160}} */
+
 
 4. The `colMax` function takes in a (nonempty, rectangular) 2D array of data and returns a 1D array containing the maximum value from each column of the array.
 
-```java
-public static int[] colMax(int[][] data);
+        public static int[] colMax(int[][] data);
 
-int[][] data = {{-50, 100, 40},
-                {-30,   0, 90},
-                {-40,  95, 30}};
-int[] result = colMax(data);
-System.out.println(Arrays.toString(result));
-// {-50,100,90}
-```
-5. No more exercises yet.
+        int[][] data = {{-50, 100, 40},
+                        {-30,   0, 90},
+                        {-40,  95, 30}};
+        int[] result = colMax(data);
+        System.out.println(Arrays.toString(result));
+        // {-50,100,90}
 
 ## More Links
 
