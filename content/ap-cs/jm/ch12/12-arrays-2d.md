@@ -38,9 +38,10 @@ System.out.println(Arrays.deepToString(result);
 0 0 0 0 0 0 0
 */
 ```
-2. Make `boxSplit`, which takes in a 1D array of integers of even length and splits it into two rows.
+2. Make `boxSplit`, which takes in a 1D array of integers 
+of even length and splits it into two rows (in "row major order").
 
-```java
+   ```java
 public static int[][] boxSplit(int[] data);
 
 int[] data = {10,20,40,80,120,160};
@@ -48,8 +49,18 @@ int[][] result = boxSplit(data);
 /* result == {{10,20,40},
               {80,120,160}} */
 ```
+3. Make the `boxSplitV`, which takes in a one dimensional array of integers of even length and splits it into two rows, but distributes the values in "column major order".
 
-3. The `colMax` function takes in a (nonempty, rectangular) 2D array of data and returns a 1D array containing the maximum value from each column of the array.
+```java
+public static int[][] boxSplitV(int[] data);
+
+int[] data = {10,20,40,80,120,160};
+int[][] result = boxSplitV(data); 
+/* result == {{10,40,120},
+              {20,80,160}} */
+```
+
+4. The `colMax` function takes in a (nonempty, rectangular) 2D array of data and returns a 1D array containing the maximum value from each column of the array.
 
 ```java
 public static int[] colMax(int[][] data);
@@ -61,7 +72,7 @@ int[] result = colMax(data);
 System.out.println(Arrays.toString(result));
 // {-50,100,90}
 ```
-4. Hope you get here.
+5. No more exercises yet.
 
 ## More Links
 
