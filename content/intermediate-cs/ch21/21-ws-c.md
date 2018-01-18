@@ -1,7 +1,7 @@
 ---
 title: "21. Worksheet C"
 date: 2018-01-17T22:52:49-06:00
-draft: true
+draft: false
 #type: slide
 #theme: white
 ---

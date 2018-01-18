@@ -725,7 +725,7 @@
 	"title": "21. Making Structures",
 	"tags": [],
 	"description": "More than one piece of information in one variable, generalizing posn and color.",
-	"content": "2018-01-12 (Friday): Chapter 21 Reading Guide - Do pages 1 and 2 on Friday.\n2018-01-16: Chapter 21 Worksheet A.\n2018-01-17: Chapter 21 Worksheet B. Make sure to test your code in DrRacket!\n 21. Worksheet A   21. Worksheet B   "
+	"content": "2018-01-12 (Friday): Chapter 21 Reading Guide - Do pages 1 and 2 on Friday.\n2018-01-16: Chapter 21 Worksheet A.\n2018-01-17: Chapter 21 Worksheet B. Make sure to test your code in DrRacket!\n 21. Worksheet A   21. Worksheet B   21. Worksheet C   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/",
@@ -782,6 +782,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch21/21-ws-c/",
+	"title": "21. Worksheet C",
+	"tags": [],
+	"description": "",
+	"content": "You are going to create a new struct np that remembers both a number and a posn.\n Data definition: write a human-understandable description for np.\n Write the Racket code to define the np structure.\n Write two check-expect to verify that you get out the same information that you put in to the structure.\n Design and test np-set-num: np(old) number -\u0026gt; np(new) that sets the number in a given number-position structure.\n Design and test np-set-posn: np(old) posn -\u0026gt; np(new) that makes the posn of the np into the given posn.\n Go do Exercise 21.6.3 using the idea from this worksheet.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch12/12-chomp/",
@@ -1180,7 +1187,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " Thursday, January 19, 2018\nTurn in test corrections or ask questions.\nAP CS: Quiz on strings and arrays. Complete CharMatrix.\nIntermediate CS: Exercise 21.6.3: count how many clicks before you hit the dot.\n AP Computer Science Recent Changes   12. Chomp modified Wed 01-17  12. Two Dimensional Arrays modified Tue 01-16  12. Arrays modified Tue 01-16  10. Test modified Thu 01-11  12. CodingBat modified Thu 01-11  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  Intermediate Computer Science Recent Changes    21. Making Structures modified Wed 01-17  21. Worksheet B modified Thu 01-11  21. Worksheet A modified Thu 01-11  20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " Thursday, January 19, 2018\nTurn in test corrections or ask questions.\nAP CS: Quiz on strings and arrays. Complete CharMatrix.\nIntermediate CS: Exercise 21.6.3: count how many clicks before you hit the dot.\n AP Computer Science Recent Changes   12. Chomp modified Wed 01-17  12. Two Dimensional Arrays modified Tue 01-16  12. Arrays modified Tue 01-16  10. Test modified Thu 01-11  12. CodingBat modified Thu 01-11  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  Intermediate Computer Science Recent Changes    21. Worksheet C modified Wed 01-17  21. Making Structures modified Wed 01-17  21. Worksheet B modified Thu 01-11  21. Worksheet A modified Thu 01-11  20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
