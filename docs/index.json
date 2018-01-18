@@ -74,7 +74,7 @@
 	"title": "4. Syntax in Functions",
 	"tags": ["haskell"],
 	"description": "",
-	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide  Questions to help you understand Chapter 4.\n Chapter 4 Problem Set  Exercises to improve your Haskell programming.\n Chapter 4 Summary  patterns, guards, where, let, case\n Chapter 4 Quiz  \n Chapter 4 Discussion  Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n"
+	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide  Questions to help you understand Chapter 4.\n Chapter 4 Problem Set  Exercises to improve your Haskell programming.\n Chapter 4 Summary  patterns, guards, where, let, case\n Chapter 4 Quiz  All functions should include appropriate type signatures. Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input. Mountain Questions The questions below all refer to a \u0026ldquo;mountain range\u0026rdquo;, which is a list of integers specifying the height in feet above sea level.\n Chapter 4 Discussion  Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/project/",
@@ -235,7 +235,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  Patterns, guards, where, let, and case.  5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro  A high-level overview of the Haskell language and why its features are good.  2. Starting Out  Learn how to make lists and tuples. We also learn the basic list manipulation commands.  3. Types and Typeclasses  Typeclasses abstract characteristics of types like String or Int.\n 4. Syntax in Functions  \n 5. Recursion  \n 6. Higher Order Functions  \n USACO Practice  Challenging problems for people who want to stretch their understanding.\n Haskell Daily Notes  Notes for each day.\n Connect Four  Connect Four project description, including function signatures.\n Typeclass Notes  Typeclasses you may encounter in everyday programming.\n Repl.it  \n Source Code Files (ghci)  \n "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
