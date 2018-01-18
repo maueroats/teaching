@@ -5,3 +5,17 @@ draft: true
 #type: slide
 #theme: white
 ---
+
+You are going to create a new struct `np` that remembers both a number and a posn. 
+
+1. Data definition: write a human-understandable description for `np`.
+
+2. Write the Racket code to define the `np` structure.
+
+3. Write two `check-expect` to verify that you get out the same information that 
+you put in to the structure.
+
+4. Design and test `np-set-num: np(old) number -> np(new)` that sets the number in a given number-position structure.
+
+5. Design and test `np-set-posn: np(old) posn -> np(new)` that makes the posn of the `np` into the given posn. 
+
