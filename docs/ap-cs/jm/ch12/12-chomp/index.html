@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>13. Booleans :: WY Computer Science</title>
+    <title>12. Chomp :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/intermediate-cs/ch13/">
+  <body class="" data-url="/ap-cs/jm/ch12/12-chomp/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1614,7 +1614,7 @@
   
     
     <li data-nav-id="/ap-cs/jm/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1625,7 +1625,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1888,7 +1888,7 @@
   
     
     <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1899,7 +1899,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1922,7 +1922,7 @@
   
     
       <li data-nav-id="/ap-cs/jm/ch12/12-chomp/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/jm/ch12/12-chomp/">
         <span>12. Chomp</span> 
@@ -2007,7 +2007,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -2018,7 +2018,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -3215,8 +3215,8 @@
   
     
     <li data-nav-id="/intermediate-cs/ch13/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/intermediate-cs/ch13/">
@@ -3226,7 +3226,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -4441,7 +4441,17 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > 13. Booleans
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch12/'>12. Arrays</a> > 12. Chomp
+
+ 
+
+ 
 
  
 
@@ -4456,8 +4466,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#sections">Sections</a></li>
+<li><a href="#issues">Issues</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -4469,7 +4478,7 @@
         
         <div id="body-inner">
           
-            <h1>13. Booleans</h1>
+            <h1>12. Chomp</h1>
           
 
 
@@ -4477,87 +4486,19 @@
 
 
 
+<p><a href="https://github.com/2017-2018-wy-ap-cs/java-rotary-phone.git">Class JavaMethods GitHub</a> -&gt; <a href="https://github.com/2017-2018-wy-ap-cs/java-rotary-phone/tree/master/ch12/Chomp">Chomp project directory</a> -&gt; <a href="https://github.com/2017-2018-wy-ap-cs/java-rotary-phone/blob/master/ch12/Chomp/CharMatrix.java">CharMatrix class</a>.
+The CharMatrix code can be copy-and-pasted into Repl.it or DrJava. Make sure you test your code as you go, so you know what the problems are. There is a <a href="https://github.com/2017-2018-wy-ap-cs/java-rotary-phone/blob/master/ch12/Chomp/CharMatrixTester.java">tester file</a> in the Chomp project directory that works with DrJava.</p>
 
-
-<p>The quick reference guide is on page 208 of the PDF.</p>
-
-<h2 id="summary">Summary</h2>
+<h2 id="issues">Issues</h2>
 
 <ul>
-<li><p>Functions end in <code>?</code> if (and only if) they return a boolean value for their answer.</p></li>
-
-<li><p>true, false</p></li>
-
-<li><p>Determine the type of something: string?, number?, integer?, image?, boolean?</p></li>
-
-<li><p>Decide equality: <code>string=?</code>, <code>image=?</code>, etc.</p></li>
-
-<li><p>Comparisons for numbers: <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;=</code>, <code>&gt;</code></p></li>
-
-<li><p>Comparisons for other things: <code>string&lt;?</code>, <code>string&lt;=?</code>, <code>string=?</code>, etc.</p></li>
-
-<li><p>Case insensitive comparison: <code>string-ci&lt;?</code>, etc.</p></li>
-
-<li><p>Combinations: <code>and</code>, <code>or</code>, <code>not</code></p></li>
+<li>Using DrJava: how do you run the tests? <strong>Answer</strong>: Make sure the file <code>CharMatrixTester.java</code> is in your proejct. Click <code>Compile Project</code> and then <code>Test Project</code>.</li>
 </ul>
-
-<h2 id="sections">Sections</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<ul class="children children-li">
-	
-    
-    
-
-	
-		
-	
-		
-  
-
-
-<li>
-<a href="/intermediate-cs/ch13/ch13-exa/" >Ch13 Exercises</a>
-</li>
-
-
-
-
-
-
-			
-		
-
-		
-			
-
-		
-	
-
-	
-</ul>
-
-
-
-
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -4596,8 +4537,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -4613,6 +4552,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5592,6 +5534,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -5606,6 +5549,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5751,6 +5697,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -5763,6 +5710,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -5780,6 +5728,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -5821,7 +5772,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -5836,9 +5786,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -6593,7 +6540,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -6607,9 +6553,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -7325,10 +7268,10 @@
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/ch11/house-project/" title="Home Project"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/jm/ch12/" title="12. Arrays"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/ch13/ch13-exa/" title="Ch13 Exercises" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/jm/ch12/12-arrays-2d/" title="12. Two Dimensional Arrays" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

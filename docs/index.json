@@ -347,7 +347,7 @@
 	"title": "21. Worksheet B",
 	"tags": [],
 	"description": "More practice with structures.",
-	"content": "Animation: Moving Colored Dot\n Create a data definition for a type \u0026ldquo;fc\u0026rdquo; (for full-circle) that is able to store the location of the center, color, and radius of a dot. Write the actual struct definition. Test each feature (center, color, radius). Write a function to create a solid circle of the given color and radius. Design and test a function to draw the circle at the given position on the background. Design and test a function fc-move that takes in a full-circle and a position, and returns a new full-circle with the same color and radius, but different position. Write a function fc-set-color. Include a sensible purpose and contract. Write a function fc-change-radius that takes in a full-circle and an amount to change the radius. Include sensible purpose and contract. Create an animation of a full-circle randomly moving around the screen.  "
+	"content": " Pay attention to contracts for the functions you are asked to write. When a full-circle is mentioned, that means the data type that you defined in question 1 and 2. Both \u0026ldquo;takes in\u0026rdquo; and \u0026ldquo;given\u0026rdquo; are indications that the parameters to the function are being specified.\n Animation: Moving Colored Dot  Create a data definition for a type \u0026ldquo;fc\u0026rdquo; (for full-circle) that is able to store the location of the center, color, and radius of a dot. Write the actual struct definition. Test each feature (center, color, radius). Write a function to create a solid circle of the given color and radius. Design and test a function to draw the circle at the given position on the background. Design and test a function fc-move that takes in a full-circle and a position, and returns a new full-circle with the same color and radius, but different position. Write a function fc-set-color. Include a sensible purpose and contract. Write a function fc-change-radius that takes in a full-circle and an amount to change the radius. Include sensible purpose and contract. Create an animation of a full-circle randomly moving around the screen.  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -784,6 +784,13 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch12/12-chomp/",
+	"title": "12. Chomp",
+	"tags": [],
+	"description": "",
+	"content": " Class JavaMethods GitHub -\u0026gt; Chomp project directory -\u0026gt; CharMatrix class. The CharMatrix code can be copy-and-pasted into Repl.it or DrJava. Make sure you test your code as you go, so you know what the problems are. There is a tester file in the Chomp project directory that works with DrJava.\nIssues  Using DrJava: how do you run the tests? Answer: Make sure the file CharMatrixTester.java is in your proejct. Click Compile Project and then Test Project.  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch12/12-arrays-2d/",
 	"title": "12. Two Dimensional Arrays",
 	"tags": [],
@@ -1173,7 +1180,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " Wednesday, January 17, 2018\nTurn in test corrections or ask questions.\nAP CS: Class JavaMethods GitHub -\u0026gt; Chomp project directory -\u0026gt; CharMatrix class. The CharMatrix code can be copy-and-pasted into Repl.it or DrJava. Make sure you test your code as you go, so you know what the problems are. There is a tester file in the Chomp project directory that works with DrJava.\nIntermediate CS: Chapter 21 Worksheet A and Worksheet B. Make sure to test your code in DrRacket!\n AP Computer Science Recent Changes    12. Two Dimensional Arrays modified Tue 01-16  12. Arrays modified Tue 01-16  10. Test modified Thu 01-11  12. CodingBat modified Thu 01-11  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  10. Strings modified Wed 12-13  Intermediate Computer Science Recent Changes    21. Making Structures modified Wed 01-17  21. Worksheet B modified Thu 01-11  21. Worksheet A modified Thu 01-11  20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " Thursday, January 19, 2018\nTurn in test corrections or ask questions.\nAP CS: Quiz on strings and arrays. Complete CharMatrix.\nIntermediate CS: Exercise 21.6.3: count how many clicks before you hit the dot.\n AP Computer Science Recent Changes   12. Chomp modified Wed 01-17  12. Two Dimensional Arrays modified Tue 01-16  12. Arrays modified Tue 01-16  10. Test modified Thu 01-11  12. CodingBat modified Thu 01-11  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  Intermediate Computer Science Recent Changes    21. Making Structures modified Wed 01-17  21. Worksheet B modified Thu 01-11  21. Worksheet A modified Thu 01-11  20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  20. Map Image modified Wed 12-20  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1197,14 +1204,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

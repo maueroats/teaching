@@ -8,7 +8,11 @@ weight: 21
 description: "More practice with structures."
 ---
 
-Animation: Moving Colored Dot
+{{% notice note %}}
+Pay attention to contracts for the functions you are asked to write. When a `full-circle` is mentioned, that means the data type that you defined in question 1 and 2. Both "takes in" and "given" are indications that the parameters to the function are being specified.
+{{% /notice %}}
+
+## Animation: Moving Colored Dot
 
 1. Create a data definition for a type "fc" (for full-circle) that is able to store the location of the center, color, and radius of a dot.
 2. Write the actual struct definition.

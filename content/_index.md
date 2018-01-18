@@ -4,15 +4,13 @@ date: 2017-09-09T17:00:30-05:00
 ---
 
 {{% notice note %}}
-Wednesday, January 17, 2018
+Thursday, January 19, 2018
 
 Turn in test corrections or ask questions.
 
-AP CS: 
-[Class JavaMethods GitHub](https://github.com/2017-2018-wy-ap-cs/java-rotary-phone.git) -> [Chomp project directory](https://github.com/2017-2018-wy-ap-cs/java-rotary-phone/tree/master/ch12/Chomp) -> [CharMatrix class](https://github.com/2017-2018-wy-ap-cs/java-rotary-phone/blob/master/ch12/Chomp/CharMatrix.java).
-The CharMatrix code can be copy-and-pasted into Repl.it or DrJava. Make sure you test your code as you go, so you know what the problems are. There is a [tester file](https://github.com/2017-2018-wy-ap-cs/java-rotary-phone/blob/master/ch12/Chomp/CharMatrixTester.java) in the Chomp project directory that works with DrJava.
+AP CS: Quiz on strings and arrays. Complete `CharMatrix`.
 
-Intermediate CS: [Chapter 21 Worksheet A]({{% relref "21-ws-a.md" %}}) and [Worksheet B]({{% relref "21-ws-b.md" %}}). Make sure to test your code in DrRacket!
+Intermediate CS: Exercise 21.6.3: count how many clicks before you hit the dot.
 
 {{% /notice %}}
 
