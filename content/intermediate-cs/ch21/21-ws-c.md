@@ -19,3 +19,5 @@ you put in to the structure.
 
 5. Design and test `np-set-posn: np(old) posn -> np(new)` that makes the posn of the `np` into the given posn. 
 
+6. Go do Exercise 21.6.3 using the idea from this worksheet.
+
