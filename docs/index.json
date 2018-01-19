@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/testing/testing-intro/",
+	"title": "Unit Testing Level I",
+	"tags": [],
+	"description": "An introduction to using the JUnit test system.",
+	"content": " Start testing little pieces of your code so it is not so hard for you to figure out what goes wrong. In Racket, we used the check-expect system. In Java there is a similar system called JUnit. This page explains how to use the old JUnit 4 system that is built into DrJava.\nBasic Testing (Include the boilerplate code from the next section!)\n @Test assertEquals(correct, actual) assertEquals(correct, actual, close_enough): Like check-within, this is for comparing floating point values (double). Test succeeds if |correct - actual| \u0026lt; close_enough.  Example:\n@Test public void test_math() { assertEquals(5, 2+3); assertEquals(.66, 2.0/3, 0.01); } Testing Boilerplate At the start of your code, include the following boilerplate:\nimport org.junit.*; import org.junit.runner.*; import static org.junit.Assert.*; DrJava  \u0026ldquo;Compile\u0026rdquo; \u0026ldquo;Test Project\u0026rdquo;  Green tests pass, red tests fail. A list of all errors follows the summarizing colored results.\nRepl.it  You should be using \u0026ldquo;Project Mode\u0026rdquo; and have multiple files open with names like \u0026ldquo;HospitalTest.java\u0026rdquo;. Capital letters matter, so match the name of the class.\n There is no \u0026ldquo;Test Project\u0026rdquo; button on Repl.it, but you can arrange for the main method to run your tests by using the code fragment below. (See the working main method.)\norg.junit.runner.JUnitCore.main(\u0026#34;Test_Class_Name_MUST_CHANGE\u0026#34;); Output should look like ..E.E...E.E.E.E....E, where the . indicates the test has begun running and the E indicates that it ended in an error. Notice there is no separate indication for a test passing.\n  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-1/",
 	"title": "Semester I Review Day 1",
 	"tags": [],
@@ -452,7 +459,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   Unit Testing   12. Arrays   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -714,6 +721,13 @@
 	"content": " See slides for introductory material.\nAssignment 15.A Read the first three sections of Chapter 15. Do Exercises 15.3.{1,2,4,5,6}. These are on PDF page 223.\nAdvice:\n 15.3.4: The first input is the candidate for whom you are counting votes. (For example \u0026ldquo;Clinton\u0026rdquo;.) The next four inputs are votes cast for a person. (For example \u0026ldquo;Trump\u0026rdquo; \u0026ldquo;Clinton\u0026rdquo; \u0026ldquo;Sanders\u0026rdquo; \u0026ldquo;Trump\u0026rdquo;.) You are supposed to return the number of votes for the candidate from the first input. (For example: 1 in this case.)\n 15.3.7: Keep using build-image not build3-image.\n  Advanced students can do the image making (see below).\nAssignment 15.B Exercises 15.5.{1,2,3,4,5}. These begin on PDF page 229.\nAssignment 15.C Read 15.6 (\u0026ldquo;Unnecessary conditionals\u0026rdquo;). Skip Section 15.7.\nDo Exercises 15.8.{2,3,5}. Exercise 15.5.6. These begin on the bottom of PDF page 238.\nAdvanced See the build-image tutorial. Use that to do 15.3.3 and 15.3.{7-10}. Do not use build3-image even though the book says to use it. The build-image function is better.\nPractice Quiz Get ready by doing last year\u0026rsquo;s Chapter 15 quiz.\n"
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/testing/",
+	"title": "Unit Testing",
+	"tags": [],
+	"description": "JUnit testing, like the check-expect system from Racket.",
+	"content": "  Unit Testing Level I  An introduction to using the JUnit test system.\n Unit Testing Level II  Slightly more advanced unit testing commands and techniques.\n "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/",
 	"title": "20. Using Structures",
 	"tags": [],
@@ -782,6 +796,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image  Build-image to create images from a formula for the pixel color.\n Strings for Experts  Strings: randomizing and creating by formula.\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/testing/testing-medium/",
+	"title": "Unit Testing Level II",
+	"tags": [],
+	"description": "Slightly more advanced unit testing commands and techniques.",
+	"content": " You can make common setup code run with @Before. Use it to give instance variables their initial values for each test. This method runs once before each test, so it will reset the variables to the values you want them to have at the start.\nCommon setup for all tests @Before: Method runs before every test. Used to set up instance variables containing objects to be tested.\nprivate int maxNum; @Before public void set_max() { maxNum = 4; } @Test public void test_max() { assertEquals(maxNum,4); } Many tests with the same setup I use parameterized tests. They may be to complex for beginners, but see my HospitalTest code on GitHub or the raw file.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21/21-ws-c/",
@@ -1187,7 +1208,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " Thursday, January 19, 2018\nTurn in test corrections or ask questions.\nAP CS: Quiz on strings and arrays. Complete CharMatrix.\nIntermediate CS: Exercise 21.6.3: count how many clicks before you hit the dot.\n AP Computer Science Recent Changes   12. Chomp modified Wed 01-17  12. Two Dimensional Arrays modified Tue 01-16  12. Arrays modified Tue 01-16  10. Test modified Thu 01-11  12. CodingBat modified Thu 01-11  Interlude modified Tue 01-09  10. Exercises modified Thu 12-14  10. Overview modified Thu 12-14  Intermediate Computer Science Recent Changes    21. Worksheet C modified Wed 01-17  21. Making Structures modified Wed 01-17  21. Worksheet B modified Thu 01-11  21. Worksheet A modified Thu 01-11  20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " Thursday, January 19, 2018\nTurn in test corrections or ask questions.\nAP CS: Quiz on strings and arrays. Complete CharMatrix.\nIntermediate CS: Exercise 21.6.3: count how many clicks before you hit the dot.\n AP Computer Science Recent Changes   Unit Testing Level II modified Fri 01-19  Unit Testing Level I modified Fri 01-19  Unit Testing modified Fri 01-19  12. Chomp modified Wed 01-17  12. Two Dimensional Arrays modified Tue 01-16  12. Arrays modified Tue 01-16  10. Test modified Thu 01-11  12. CodingBat modified Thu 01-11  Intermediate Computer Science Recent Changes    21. Worksheet C modified Wed 01-17  21. Making Structures modified Wed 01-17  21. Worksheet B modified Thu 01-11  21. Worksheet A modified Thu 01-11  20. Review modified Wed 01-10  Semester I Review Day 2 modified Tue 01-09  Semester I Review Day 1 modified Mon 01-08  Semester I Review modified Mon 01-08  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
