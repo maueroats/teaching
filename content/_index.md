@@ -3,6 +3,10 @@ title: "Mauer-Oats Classes"
 date: 2017-09-09T17:00:30-05:00
 ---
 
+{{% notice note %}}
+AP CS: [CharMatrixTester]({{% relref "12-chomp.md" %}}) corrected bad tests Jan 21. Copy new tests from GitHub.
+{{% /notice %}}
+
 ## Weekly Agenda
 
 January 22-26
@@ -10,7 +14,7 @@ January 22-26
 | Day | AP CS          | Intermediate      |
 |-----|----------------|-------------------|
 |Mon  | Ch 12, Ex 25-27| Finish 21.6.3     |
-|Tues | Quiz           | Review / 21.7.5   |
+|Tues | Quiz?          | Review / 21.7.5   |
 |Wed  | Practice Multiple Choice | Practice Test |
 |Thurs| Practice Free Response   | Answers, discussion. |
 |Friday | Review writing classes | Review |

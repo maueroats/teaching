@@ -4645,7 +4645,16 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#exercise-23-rotate">Exercise 23: Rotate</a></li>
+<li><a href="#exercise-24-add-digits">Exercise 24: Add Digits</a></li>
+<li><a href="#exercise-25-average-two-largest">Exercise 25: Average Two Largest</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -4660,7 +4669,51 @@
 
 
 
-<p>Chapter 12, exercises 25, 26, and 27. Write tests to prove that your work is correct.</p>
+
+
+<p>Chapter 12, exercises 23, 24, and 25. Write tests to prove that your work is correct.
+Those exercises, restated here, are:</p>
+
+<h2 id="exercise-23-rotate">Exercise 23: Rotate</h2>
+
+<ol>
+<li><code>public static int[] rotateLeft(int[] a)</code></li>
+<li><code>public static int[] rotateRight(int[] a)</code></li>
+<li><code>public static void rotate(int[] a, int amount)</code>: Rotate by <code>amount</code> to the right, so to the left when amount is negative.</li>
+</ol>
+
+<h2 id="exercise-24-add-digits">Exercise 24: Add Digits</h2>
+
+<ol>
+<li><p>Add two positive numbers given by arrays representing the individual digits.</p>
+
+<p><code>public static int[] add(int[] a, int[] b)</code></p>
+
+<p>Example 923+94=1017:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">@Test
+public void test_add_1() {
+    int[] a = {9,2,3};
+    int[] b = {9,4};
+    int[] ans = {1,0,1,7};
+    assertArrayEquals(ans, add(a,b));
+}</pre></div></li>
+</ol>
+
+<h2 id="exercise-25-average-two-largest">Exercise 25: Average Two Largest</h2>
+
+<ol>
+<li><p>Find the average of the greatest two elements in an array.</p>
+
+<p><code>public static double largestAverage(int [] data)</code></p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">@Test
+public void test_largest_average() {
+    int[] data = {100,40,90,30};
+    assertEquals(95, largestAverage(data), 0.1);
+
+    int[] fdata = {-1000,-30,-31,-80};
+    assertEQuals(-30.5, largestAverage(fdata), 0.1);
+}</pre></div></li>
+</ol>
 
 
 <footer class=" footline" >
