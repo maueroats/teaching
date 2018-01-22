@@ -573,6 +573,31 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/sem1review/sem-review-3/</loc>
+    <lastmod>2018-01-21T23:14:35-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch12/12-ex/</loc>
+    <lastmod>2018-01-21T23:13:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch12/12-chomp/</loc>
+    <lastmod>2018-01-21T23:08:32-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/sem1review/sem-review-topics-1/</loc>
+    <lastmod>2018-01-21T23:01:04-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch20/ch20-results/</loc>
+    <lastmod>2018-01-21T23:00:31-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/jm/testing/testing-medium/</loc>
     <lastmod>2018-01-19T10:39:50-06:00</lastmod>
   </url>
@@ -580,11 +605,6 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch21/21-ws-c/</loc>
     <lastmod>2018-01-17T22:52:49-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/jm/ch12/12-chomp/</loc>
-    <lastmod>2018-01-17T13:59:45-06:00</lastmod>
   </url>
   
   <url>
@@ -882,14 +902,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   

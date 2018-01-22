@@ -3,16 +3,20 @@ title: "Mauer-Oats Classes"
 date: 2017-09-09T17:00:30-05:00
 ---
 
-{{% notice note %}}
-Thursday, January 19, 2018
+## Weekly Agenda
 
-Turn in test corrections or ask questions.
+January 22-26
 
-AP CS: Quiz on strings and arrays. Complete `CharMatrix`.
+| Day | AP CS          | Intermediate      |
+|-----|----------------|-------------------|
+|Mon  | Ch 12, Ex 25-27| Finish 21.6.3     |
+|Tues | Quiz           | Review / 21.7.5   |
+|Wed  | Practice Multiple Choice | Practice Test |
+|Thurs| Practice Free Response   | Answers, discussion. |
+|Friday | Review writing classes | Review |
 
-Intermediate CS: Exercise 21.6.3: count how many clicks before you hit the dot.
-
-{{% /notice %}}
+Advanced students in Intermediate may continue 
+to work on 21.7.5 ("Paint" clone) and our "Space Invaders" clone.
 
 ## AP Computer Science Recent Changes
 
