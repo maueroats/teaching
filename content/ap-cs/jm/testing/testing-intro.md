@@ -20,6 +20,7 @@ that is built into DrJava.
 * `@Test`
 * `assertEquals(correct, actual)`
 * `assertEquals(correct, actual, close_enough)`: Like `check-within`, this is for comparing floating point values (`double`). Test succeeds if `|correct - actual| < close_enough`. 
+* `assertArrayEquals(correct, actual)`: Compare arrays.
 
 Example:
 ```java
@@ -27,6 +28,16 @@ Example:
 public void test_math() {
     assertEquals(5, 2+3);
     assertEquals(.66, 2.0/3, 0.01);
+}
+```
+
+Example for arrays:
+```java
+@Test
+public void test_always_ok() {
+    int[] correct = {1,2,3};
+    int[] actual = {1,2,3};
+    assertArrayEquals(correct, actual);
 }
 ```
 
