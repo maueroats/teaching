@@ -7,7 +7,7 @@
     <meta name="description" content="Practice: red-blue, spam-circle, rectangle limitations. Review reading.">
 
 
-    <title>Semester Review 3 :: WY Computer Science</title>
+    <title>Semester I Review 3 :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -3930,7 +3930,7 @@
      active
       ">
         <a href="/intermediate-cs/sem1review/sem-review-3/">
-        <span>Semester Review 3</span> 
+        <span>Semester I Review 3</span> 
         
         </a></li>
      
@@ -4627,7 +4627,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/sem1review/'>Semester I Review</a> > Semester Review 3
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/sem1review/'>Semester I Review</a> > Semester I Review 3
 
  
 
@@ -4657,7 +4657,7 @@
         
         <div id="body-inner">
           
-            <h1>Semester Review 3</h1>
+            <h1>Semester I Review 3</h1>
           
 
 
@@ -4682,9 +4682,28 @@
 
 <ol>
 <li><p><strong>Red-blue</strong>. Standard dice have 6 sides, numbered 1 through 6. Play a game with a standard blue die and two standard red dice. The number of points you get is ten times the blue roll plus three times the sum of the other two. Except you get zero points if your red dice total 4. Design and test the <code>red-blue</code> function.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">red-blue: any(ignore) -&gt; number(points)</code></pre></div></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">red-blue: any(ignore) -&gt; number(points)</code></pre></div>
+<p><a href="red-blue-soln.rkt">Solution to red-blue.</a></p></li>
 
-<li><p><strong>Spam-circle</strong>. Every time you click, a random size circle appears centered on the mouse. The color of the circle changes is red the first click, green the second, blue the third, red the fourth, and so on. Enter resets the color to red. The &ldquo;c&rdquo; key clears the screen. After five seconds, the game quits. (Advanced option: when it quits, show how many circles the person currently has showing on the screen.)</p></li>
+<li><p><strong>Spam-circle</strong>. Every time you click, a circle appears centered on
+the mouse.  The color of the circle changes is red the first click,
+green the second, blue the third, red the fourth, and so on. Choose one option:</p>
+
+<ol>
+<li>display one circle at a time</li>
+<li>display all of the circles made so far</li>
+</ol>
+
+<p>Advanced variations:</p>
+
+<ul>
+<li>Enter resets the color to red.</li>
+<li>The &ldquo;c&rdquo; key clears the screen.</li>
+<li>After five seconds, the game quits.</li>
+<li>When it quits, show how many circles the person currently has showing on the screen.</li>
+</ul>
+
+<p><a href="spam-circle.rkt">Solution to spam-circle.</a></p></li>
 
 <li><p><strong>Rectangle Limitations</strong>.
 This will take a while. As you work on it, keep the design process in mind. Have a signature, purpose, and tests for every function.</p>

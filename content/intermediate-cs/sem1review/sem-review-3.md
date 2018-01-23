@@ -1,5 +1,5 @@
 ---
-title: "Semester Review 3"
+title: "Semester I Review 3"
 date: 2018-01-21T23:14:35-06:00
 draft: false
 #type: slide
@@ -27,7 +27,23 @@ Other good chapters to read are: 20 (posn and color), and 17 (animations using c
     red-blue: any(ignore) -> number(points)
     ```
 
-2. **Spam-circle**. Every time you click, a random size circle appears centered on the mouse. The color of the circle changes is red the first click, green the second, blue the third, red the fourth, and so on. Enter resets the color to red. The "c" key clears the screen. After five seconds, the game quits. (Advanced option: when it quits, show how many circles the person currently has showing on the screen.)
+    [Solution to red-blue.](red-blue-soln.rkt)
+
+2. **Spam-circle**. Every time you click, a circle appears centered on
+the mouse.  The color of the circle changes is red the first click,
+green the second, blue the third, red the fourth, and so on. Choose one option:
+
+    1. display one circle at a time
+    2. display all of the circles made so far
+
+    Advanced variations:
+
+    * Enter resets the color to red. 
+    * The "c" key clears the screen. 
+    * After five seconds, the game quits. 
+    * When it quits, show how many circles the person currently has showing on the screen.
+
+    [Solution to spam-circle.](spam-circle.rkt)
 
 3. **Rectangle Limitations**. 
 This will take a while. As you work on it, keep the design process in mind. Have a signature, purpose, and tests for every function. 
