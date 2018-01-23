@@ -1,6 +1,7 @@
 ---
-title: "Semester I Review 3"
+title: "I.3 Semester I Review 3"
 date: 2018-01-21T23:14:35-06:00
+weight: 30
 draft: false
 #type: slide
 #theme: white
