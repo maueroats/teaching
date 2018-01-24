@@ -14,8 +14,8 @@ January 22-26
 | Day | AP CS          | Intermediate      |
 |-----|----------------|-------------------|
 |Mon  | Ch 12, Ex 25-27| Finish 21.6.3     |
-|Tues | Quiz?          | Review / 21.7.5   |
-|Wed  | Practice Multiple Choice | Practice Test |
+|Tues | Ex 25-27       | [Review I.3(#2)]({{% relref "sem-review-3.md" %}})    |
+|Wed  | Practice Multiple Choice | [Practice Test (I.4)]({{% relref "sem-review-4.md" %}}) |
 |Thurs| Practice Free Response   | Answers, discussion. |
 |Friday | Review writing classes | Review |
 
