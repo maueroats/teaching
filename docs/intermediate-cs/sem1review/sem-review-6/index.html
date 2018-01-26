@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>Sem Review 6 :: WY Computer Science</title>
+    <title>I.6 Semester I Review 6 :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -3990,7 +3990,7 @@
      active
       ">
         <a href="/intermediate-cs/sem1review/sem-review-6/">
-        <span>Sem Review 6</span> 
+        <span>I.6 Semester I Review 6</span> 
         
         </a></li>
      
@@ -4687,7 +4687,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/sem1review/'>Semester I Review</a> > Sem Review 6
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/sem1review/'>Semester I Review</a> > I.6 Semester I Review 6
 
  
 
@@ -4700,7 +4700,14 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#what-does-it-do">What does it do?</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -4709,12 +4716,57 @@
         
         <div id="body-inner">
           
-            <h1>Sem Review 6</h1>
+            <h1>I.6 Semester I Review 6</h1>
           
 
 
 
 
+
+
+<h2 id="what-does-it-do">What does it do?</h2>
+
+<p>Write check-expects.</p>
+
+<ol>
+<li><p>The <code>double-circle-img</code> function (abbeviate <code>dci</code>):</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (double-circle-image img)
+  (image-width 
+    (beside (circle 40 &#34;solid&#34; &#34;blue)
+            img
+            (circle 40 &#34;solid&#34; &#34;blue))))</pre></div></li>
+
+<li><p>Write and test a function <code>r2d</code> that returns a random two digit
+number. There is a 40% chance of the number beginning with a 2 and
+a 60% chance of it beginning with a 1. The ones digit should be
+random.</p></li>
+
+<li><p><strong>Gas gauge</strong>. You are making a <em>text</em> based gas gauge function.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">gas-gauge: number -&gt; string</pre></div>
+<ul>
+<li><p>The readout result will be 16 X&rsquo;s when the tank is full, and then should O&rsquo;s
+for the part that is empty. For example, half full is <code>&quot;XXXXXXXXOOOOOOOO&quot;</code>.</p></li>
+
+<li><p>The gas tank can hold a maximum of 12 gallons.</p></li>
+
+<li><p>When the tank is over half full, round the result, so 96% reads full.</p></li>
+
+<li><p>When the tank is less than half full, always round down to avoid
+suddenly running out of gas. (So 6% reads empty.)</p></li>
+</ul></li>
+
+<li><p><strong>Graphing</strong>. You are making an animation where a red circle
+follows the people-coordinate graph of the function</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">y = 1/600 * (x-200) * (x+200)</pre></div>
+<ul>
+<li>Graphing window is 500x300.</li>
+<li>Both x and y axes are visible.</li>
+<li>People-coordinate origin is (250,150) in computer coordinates.</li>
+<li>Positive y-axis for the graph is up.</li>
+<li>As you move the mouse, the red point shows on the graph is
+directly above/below your mouse.</li>
+</ul></li>
+</ol>
 
 
 <footer class=" footline" >
