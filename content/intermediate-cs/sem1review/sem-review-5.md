@@ -12,3 +12,17 @@ draft: false
    big steps (activated by "b"). The arrows let you move the circle.
    
    
+## Lite Review Questions
+
+1. Take a posn and a color. Give a new color that has:
+
+    * green = same as the original color
+    * red = original red plus x value of posn
+    * blue = original blue minus y value of posn
+    
+2. Math-er: takes in three numbers `code`, `a`, and `b`, puts out one number:
+
+    * when code is 1, put out the sum of a and b
+    * when code is 2, put out the positive difference between a and b
+    * when code is any other number multiply a and b for the answer
+    

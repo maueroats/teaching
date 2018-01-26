@@ -17,7 +17,7 @@ January 22-26
 |Tues | Ex 25-27       | [Review I.3(#2)]({{% relref "sem-review-3.md" %}})    |
 |Wed  | Practice Multiple Choice | [Practice Test (I.4)]({{% relref "sem-review-4.md" %}}) |
 |Thurs| Practice Free Response   | Answers, discussion. |
-|Friday | Review writing classes | Review |
+|Friday | Review writing classes | [I.5 Review]({{% relref "sem-review-5.md" %}}) |
 
 Advanced students in Intermediate may continue 
 to work on 21.7.5 ("Paint" clone) and our "Space Invaders" clone.

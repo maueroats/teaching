@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="Practice: red-blue, spam-circle, rectangle limitations. Review reading.">
+    <meta name="description" content="">
 
 
-    <title>I.3 Semester I Review 3 :: WY Computer Science</title>
+    <title>Sem Review 6 :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/intermediate-cs/sem1review/sem-review-3/">
+  <body class="" data-url="/intermediate-cs/sem1review/sem-review-6/">
     <nav id="sidebar" class="">
 
 
@@ -3927,7 +3927,7 @@
   
     
       <li data-nav-id="/intermediate-cs/sem1review/sem-review-3/" class="dd-item
-     active
+     
       ">
         <a href="/intermediate-cs/sem1review/sem-review-3/">
         <span>I.3 Semester I Review 3</span> 
@@ -3987,7 +3987,7 @@
   
     
       <li data-nav-id="/intermediate-cs/sem1review/sem-review-6/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/sem1review/sem-review-6/">
         <span>Sem Review 6</span> 
@@ -4687,7 +4687,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/sem1review/'>Semester I Review</a> > I.3 Semester I Review 3
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/sem1review/'>Semester I Review</a> > Sem Review 6
 
  
 
@@ -4700,15 +4700,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#review-reading">Review Reading</a></li>
-<li><a href="#review-questions">Review Questions</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -4717,81 +4709,12 @@
         
         <div id="body-inner">
           
-            <h1>I.3 Semester I Review 3</h1>
+            <h1>Sem Review 6</h1>
           
 
 
 
 
-
-
-<p>At home you may want to do some review reading and practice. You should be able to do review questions 1 and 2 in one day, and question 3 in a second day. Ask if you have questions!</p>
-
-<h2 id="review-reading">Review Reading</h2>
-
-<p>Reading the book and looking at old exercises is a very productive way to study. Struggling in Chapter 21 (new structures)?</p>
-
-<ul>
-<li>Read 21.5 (&ldquo;Functions returning user-defined structs&rdquo;) and do the exercises.</li>
-<li>Read the extended example in 21.6 (moving-x).</li>
-</ul>
-
-<p>Other good chapters to read are: 20 (posn and color), and 17 (animations using cond).</p>
-
-<h2 id="review-questions">Review Questions</h2>
-
-<ol>
-<li><p><strong>Red-blue</strong>. Standard dice have 6 sides, numbered 1 through 6. Play a game with a standard blue die and two standard red dice. The number of points you get is ten times the blue roll plus three times the sum of the other two. Except you get zero points if your red dice total 4. Design and test the <code>red-blue</code> function.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">red-blue: any(ignore) -&gt; number(points)</code></pre></div>
-<p><a href="red-blue-soln.rkt">Solution to red-blue.</a></p></li>
-
-<li><p><strong>Spam-circle</strong>. Every time you click, a circle appears centered on
-the mouse.  The color of the circle changes is red the first click,
-green the second, blue the third, red the fourth, and so on. Choose one option:</p>
-
-<ol>
-<li>display one circle at a time</li>
-<li>display all of the circles made so far</li>
-</ol>
-
-<p>Advanced variations:</p>
-
-<ul>
-<li>Enter resets the color to red.</li>
-<li>The &ldquo;c&rdquo; key clears the screen.</li>
-<li>After five seconds, the game quits.</li>
-<li>When it quits, show how many circles the person currently has showing on the screen.</li>
-</ul>
-
-<p><a href="spam-circle.rkt">Solution to spam-circle.</a></p></li>
-
-<li><p><strong>Rectangle Limitations</strong>.
-This will take a while. As you work on it, keep the design process in mind. Have a signature, purpose, and tests for every function.</p>
-
-<p>The animation: as you move the mouse on the screen, a small circle follows the mouse.</p>
-
-<ul>
-<li><p>At the start of the game, the circle is restricted to the rectangle 100&lt;=x&lt;=200 and 150 &lt;= y &lt;= 250.</p>
-
-<p>That means that if the mouse is outside of that rectangle, the circle will stick to one of the rectangle&rsquo;s walls.</p></li>
-
-<li><p>After t seconds, the circle can move in the larger rectangle 100-10t &lt;= x &lt;= 200+10t and 150-5t &lt;= y &lt;= 250 + 5t.</p></li>
-
-<li><p>After 10 seconds the animation ends.</p></li>
-</ul>
-
-<p>Breakdown of the creation process:</p>
-
-<ul>
-<li>What model? Call it &ldquo;m&rdquo;. It should be able to remember three posns: upper left, lower right, and a point anywhere on the screen.</li>
-<li>Design and test <code>m-set-pt: m(model) posn(new-point) -&gt; m(new-model)</code>&hellip; what should this function do? Look back at Chapter 21 Worksheets B and C if needed.</li>
-<li>Design and test <code>limit-pt: posn(upper-left) posn(lower-right) posn(pt) -&gt; posn (new-pt)</code>. This function makes a point that stays on the edge of the rectangle if pt is outside of the rectangle. Otherwise it does not change pt.</li>
-<li>Mouse-handler: remember the actual real position of the mouse.</li>
-<li>Draw-handler: use <code>limit-pt</code> to put the current mouse coordinates into the rectangle defined by the upper-left and lower-right posns in the model, then draw a circle there.</li>
-<li>Tick-handler: change the upper-left and lower-right posns by (10,5) in the correct direction (add or subtract).
-<br /></li>
-</ul></li>
-</ol>
 
 
 <footer class=" footline" >
@@ -7282,26 +7205,6 @@ This will take a while. As you work on it, keep the design process in mind. Have
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -7350,6 +7253,26 @@ This will take a while. As you work on it, keep the design process in mind. Have
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -7477,22 +7400,6 @@ This will take a while. As you work on it, keep the design process in mind. Have
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -7606,22 +7513,6 @@ This will take a while. As you work on it, keep the design process in mind. Have
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
             
             
@@ -7638,6 +7529,9 @@ This will take a while. As you work on it, keep the design process in mind. Have
             
         
                     
+            
+        
+                    
                         
             
             
@@ -7650,9 +7544,6 @@ This will take a while. As you work on it, keep the design process in mind. Have
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -7702,6 +7593,38 @@ This will take a while. As you work on it, keep the design process in mind. Have
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -7744,10 +7667,10 @@ This will take a while. As you work on it, keep the design process in mind. Have
 
 
         
-            <a class="nav nav-prev" href="/intermediate-cs/sem1review/sem-review-2/" title="I.2 Semester I Review 2"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/sem1review/sem-review-5/" title="I.5 Semeseter I Review 5"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/intermediate-cs/sem1review/sem-review-4/" title="I.4 Semester I Review 4" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/sem1review/sem-review-topics-1/" title="Semester Review Topics List" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
