@@ -8,7 +8,7 @@ draft: false
 description: "Period 2 final programming question."
 ---
 
-**sticksOut**. A word in an array "sticks out" if there are two words
+**sticksOut**. A word in an array "sticks out" if there is one word
 before it and one word after it, and it is alphabetically after the
 word that comes after it or it is at least two letters shorter than
 the word before it. Return a copy of the given array in which every
