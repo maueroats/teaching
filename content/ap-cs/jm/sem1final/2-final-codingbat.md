@@ -33,4 +33,5 @@ tests.
 
 * Write the function `sticksOut`.
 * Write at least three additional tests.
+* Use the [Starter code](SticksOut.java) and automated testing.
 
