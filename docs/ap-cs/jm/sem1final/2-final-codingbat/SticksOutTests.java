@@ -45,7 +45,7 @@ public class SticksOutTests {
         String[] input = 
             {"DELTA","eragon","FOXTROT","FOXTRO"};
         String[] correct =
-            {"DELTA","eragon","FOXTROT","FOXTRO"};
+            {"DELTA","eragon","TRO","FOXTRO"};
         test_it(correct,input);
     }
     @Test
