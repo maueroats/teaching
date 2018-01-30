@@ -266,13 +266,6 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/jm/sem1final/2-final-codingbat/",
-	"title": "Final - CodingBat",
-	"tags": [],
-	"description": "Period 2 final programming question.",
-	"content": "sticksOut. A word in an array \u0026ldquo;sticks out\u0026rdquo; if there are two words before it and one word after it, and it is alphabetically after the word that comes after it or it is at least two letters shorter than the word before it. Return a version of the given array in which every word that \u0026ldquo;sticks out\u0026rdquo; is replaced by the last half of the word after it.\n Use case-insensitive comparison. If the \u0026ldquo;halves\u0026rdquo; of a word must be uneven, make the first \u0026ldquo;half\u0026rdquo; larger.  sticksOut([\u0026#34;alfa\u0026#34;,\u0026#34;bravo\u0026#34;,\u0026#34;zulu\u0026#34;,\u0026#34;charlie\u0026#34;]) ==\u0026gt; [\u0026#34;alfa\u0026#34;,\u0026#34;bravo\u0026#34;,\u0026#34;lie\u0026#34;,\u0026#34;charlie\u0026#34;] sticksOut([\u0026#34;walnut\u0026#34;,\u0026#34;pie\u0026#34;,\u0026#34;quince\u0026#34;]) ==\u0026gt; [\u0026#34;walnut\u0026#34;, \u0026#34;nce\u0026#34;, \u0026#34;quince\u0026#34;] sticksOut([\u0026#34;DELTA\u0026#34;,\u0026#34;eragon\u0026#34;,\u0026#34;FOXTROT\u0026#34;,\u0026#34;FOXTRO\u0026#34;]) ==\u0026gt; [\u0026#34;DELTA\u0026#34;,\u0026#34;eragon\u0026#34;,\u0026#34;FOXTROT\u0026#34;,\u0026#34;FOXTRO\u0026#34;] Note: The notation [\u0026hellip;] denotes an array, although this is not syntactically correct Java. Use the correct syntax in your program and tests.\n Write the function sticksOut. Write at least three additional tests. Use the Starter code and automated testing.  "
-},
-{
 	"uri": "http://wy-cs.info/intermediate-cs/ch21/21-ws-a/",
 	"title": "21. Worksheet A",
 	"tags": [],
@@ -753,7 +746,7 @@
 	"title": "Semester 1 Final",
 	"tags": [],
 	"description": "Programming portion of the semester 1 final exam.",
-	"content": "  Final - CodingBat  Period 2 final programming question.\n "
+	"content": "  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch13/",
@@ -1292,7 +1285,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  12. Book Exercises modified Mon 01-22  12. Chomp modified Sun 01-21  Unit Testing Level II modified Fri 01-19  Unit Testing Level I modified Fri 01-19  Unit Testing modified Fri 01-19  12. Two Dimensional Arrays modified Tue 01-16  Intermediate Computer Science Recent Changes    I.Finals modified Mon 01-29  1. Final Exam modified Mon 01-29  I.7 Semester I Review 7 modified Mon 01-29  I.6 Semester I Review 6 modified Fri 01-26  I.5 Semeseter I Review 5 modified Thu 01-25  I.4 Semester I Review 4 modified Tue 01-23  I.3 Semester I Review 3 modified Sun 01-21  Semester Review Topics List modified Sun 01-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Semester 1 Final modified Tue 01-30  12. Book Exercises modified Mon 01-22  12. Chomp modified Sun 01-21  Unit Testing Level II modified Fri 01-19  Unit Testing Level I modified Fri 01-19  Unit Testing modified Fri 01-19  12. Two Dimensional Arrays modified Tue 01-16  12. Arrays modified Tue 01-16  Intermediate Computer Science Recent Changes    I.Finals modified Mon 01-29  1. Final Exam modified Mon 01-29  I.7 Semester I Review 7 modified Mon 01-29  I.6 Semester I Review 6 modified Fri 01-26  I.5 Semeseter I Review 5 modified Thu 01-25  I.4 Semester I Review 4 modified Tue 01-23  I.3 Semester I Review 3 modified Sun 01-21  Semester Review Topics List modified Sun 01-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
