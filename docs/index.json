@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/sem1final/1-final-exam/",
+	"title": "1. Final Exam",
+	"tags": [],
+	"description": "Period 1 final exam.",
+	"content": " PDF version.\nThis is the final exam for Intermediate Computer Science, Semester I, 2017-2018. Except as noted below, you may not use materials previously written by you or anyone else.\nThere are two sections: written (1\u0026frasl;3) and programming (2\u0026frasl;3). Before you use a computer, you must turn in your answers to the written questions.\nWrite all of your solutions on a separate sheet of paper.\nWritten Questions (30 points: do only 3)\nIn the written portion, you may not consult any sources. Suggested time: 30 minutes.\n (10 pts) What is one signifiant benefit of writing the signature of a function? Include a realistic example that supports the benefit you have chosen.\n (10 pts) Shelly is working with a mouse-handler:\n; Purpose: return a posn of last mouse position (define (mouse-h m e x y) (make-posn x y))  Critique Shelly\u0026rsquo;s choice of a signature:\nmouse-h: model string number number -\u0026gt; model Revise to make a complete, correct mouse-h signature and function.\n  (10 pts) Usually a function signature includes number or string. Sometimes it is appropriate to use any as part of a signature.\n Give an example of a function whose signature should include any.\n Explain why the any parameter is useful in this case.\n  (10 pts) Analyze the function below.\n Write one sentence explaining what roll-dice does. Write a test or edit so the function is testable.\n(define dice1 (random 10)) (define dice2 (random 10)) ; purpose: sum two random ten sided dice rolls ; each die can roll 1 through 10 (define (roll-dice n) (+ (dice1) (dice2)))   Programming Questions (60 points: do both)\nIn the programming portion, you may use the book Picturing Programs, the Racket Help Desk, your posn-util.rkt file, and the class blog.\nYour work will be evaluated on the basis of correctness and how well it demonstrates your understanding of the design process.\nSuggested time: 60 minutes.\n Pseudo-Roman. The Roman numerals representing the number 203 are CCIII, and the number 21 is XXI. In this question you are asked to write a converter pseudo-roman that takes in a positive integer between 1 and 999 and produce a string with one \u0026ldquo;C\u0026rdquo; for each hundred in the number, then one \u0026ldquo;X\u0026rdquo; for each 10 remaining after the hundreds are removed, and one \u0026ldquo;I\u0026rdquo; for each one remaining once the tens are removed.\nNote: Actual Roman numerals are more complicated than this. You may read the Wikipedia entry, but watch the time \u0026mdash; don\u0026rsquo;t get side-tracked!\nDesign and test the pseudo-roman function.\n Touch-it. A yellow circle of radius 100 is on the screen in a fixed location.\n You control a smaller blue circle with the mouse. (The blue circle is where the mouse points.) In every second that the blue circle is touching the yellow circle (at all), the player gets a point. Draw the big circle in a different shade of yellow when the player is going to get a point.   Extra Credit In the place of program #2 above, you may write the radiation circle game.\n You move a small blue dot with your mouse. A red dot at a random location starts at radius 50 and shrinks its radius by 10 every second. When the red dot radius reaches zero, it picks a new random location and starts over Every second that the blue dot touches the red dot (overlapping at all), you get a point. Show the score in one corner of the screen.  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/testing/testing-intro/",
 	"title": "Unit Testing Level I",
 	"tags": [],
@@ -259,6 +266,13 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/sem1final/2-final-codingbat/",
+	"title": "Final - CodingBat",
+	"tags": [],
+	"description": "Period 2 final programming question.",
+	"content": "sticksOut. A word in an array \u0026ldquo;sticks out\u0026rdquo; if there are two words before it and one word after it, and it is alphabetically after the word that comes after it or it is at least two letters shorter than the word before it. Return a version of the given array in which every word that \u0026ldquo;sticks out\u0026rdquo; is replaced by the last half of the word after it.\n Use case-insensitive comparison. If the \u0026ldquo;halves\u0026rdquo; of a word must be uneven, make the first \u0026ldquo;half\u0026rdquo; larger.  sticksOut([\u0026#34;alfa\u0026#34;,\u0026#34;bravo\u0026#34;,\u0026#34;zulu\u0026#34;,\u0026#34;charlie\u0026#34;]) ==\u0026gt; [\u0026#34;alfa\u0026#34;,\u0026#34;bravo\u0026#34;,\u0026#34;lie\u0026#34;,\u0026#34;charlie\u0026#34;] sticksOut([\u0026#34;walnut\u0026#34;,\u0026#34;pie\u0026#34;,\u0026#34;quince\u0026#34;]) ==\u0026gt; [\u0026#34;walnut\u0026#34;, \u0026#34;nce\u0026#34;, \u0026#34;quince\u0026#34;] sticksOut([\u0026#34;DELTA\u0026#34;,\u0026#34;eragon\u0026#34;,\u0026#34;FOXTROT\u0026#34;,\u0026#34;FOXTRO\u0026#34;]) ==\u0026gt; [\u0026#34;DELTA\u0026#34;,\u0026#34;eragon\u0026#34;,\u0026#34;FOXTROT\u0026#34;,\u0026#34;FOXTRO\u0026#34;] Note: The notation [\u0026hellip;] denotes an array, although this is not syntactically correct Java. Use the correct syntax in your program and tests.\n Write the function sticksOut. Write at least three additional tests.  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch21/21-ws-a/",
 	"title": "21. Worksheet A",
 	"tags": [],
@@ -347,7 +361,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   20. Using Structures   21. Making Structures   Semester I Review   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   20. Using Structures   21. Making Structures   I.Finals   Semester I Review   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21/21-ws-b/",
@@ -473,7 +487,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   Unit Testing   12. Arrays   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   Semester 1 Final   Unit Testing   12. Arrays   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -735,6 +749,13 @@
 	"content": "  11.3 Intro Slides  Intro to Chapter 11.\n 11.3 Homework 1  Homework for 11.3\n 11.6.1 House  Exercise 11.6.1 with help, from the book.\n 11.6.2 Airline  \n Home Project  Design your own house (art) and cost calculator (math). Practice managing complexity and good function-writing style.\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/sem1final/",
+	"title": "Semester 1 Final",
+	"tags": [],
+	"description": "Programming portion of the semester 1 final exam.",
+	"content": "  Final - CodingBat  Period 2 final programming question.\n "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch13/",
 	"title": "13. Booleans",
 	"tags": [],
@@ -775,6 +796,13 @@
 	"tags": [],
 	"description": "More than one piece of information in one variable, generalizing posn and color.",
 	"content": "2018-01-12 (Friday): Chapter 21 Reading Guide - Do pages 1 and 2 on Friday.\n2018-01-16: Chapter 21 Worksheet A.\n2018-01-17: Chapter 21 Worksheet B. Make sure to test your code in DrRacket!\n 21. Worksheet A   21. Worksheet B   21. Worksheet C   "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/sem1final/",
+	"title": "I.Finals",
+	"tags": [],
+	"description": "Semester I final exams.",
+	"content": "  1. Final Exam  Period 1 final exam.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/",
@@ -1264,7 +1292,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP CS: CharMatrixTester corrected bad tests Jan 21. Copy new tests from GitHub.\n Weekly Agenda January 22-26\n   Day AP CS Intermediate     Mon Ch 12, Ex 25-27 Finish 21.6.3   Tues Ex 25-27 Review I.3(#2)   Wed Practice Multiple Choice Practice Test (I.4)   Thurs Practice Free Response Answers, discussion.   Friday Review writing classes I.5 Review    Advanced students in Intermediate may continue to work on 21.7.5 (\u0026ldquo;Paint\u0026rdquo; clone) and our \u0026ldquo;Space Invaders\u0026rdquo; clone.\nAP Computer Science Recent Changes   12. Book Exercises modified Mon 01-22  12. Chomp modified Sun 01-21  Unit Testing Level II modified Fri 01-19  Unit Testing Level I modified Fri 01-19  Unit Testing modified Fri 01-19  12. Two Dimensional Arrays modified Tue 01-16  12. Arrays modified Tue 01-16  10. Test modified Thu 01-11  Intermediate Computer Science Recent Changes   I.7 Semester I Review 7 modified Mon 01-29  I.6 Semester I Review 6 modified Fri 01-26  I.5 Semeseter I Review 5 modified Thu 01-25  I.4 Semester I Review 4 modified Tue 01-23  I.3 Semester I Review 3 modified Sun 01-21  Semester Review Topics List modified Sun 01-21  20. Test Results modified Sun 01-21  21. Worksheet C modified Wed 01-17  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  12. Book Exercises modified Mon 01-22  12. Chomp modified Sun 01-21  Unit Testing Level II modified Fri 01-19  Unit Testing Level I modified Fri 01-19  Unit Testing modified Fri 01-19  12. Two Dimensional Arrays modified Tue 01-16  Intermediate Computer Science Recent Changes    I.Finals modified Mon 01-29  1. Final Exam modified Mon 01-29  I.7 Semester I Review 7 modified Mon 01-29  I.6 Semester I Review 6 modified Fri 01-26  I.5 Semeseter I Review 5 modified Thu 01-25  I.4 Semester I Review 4 modified Tue 01-23  I.3 Semester I Review 3 modified Sun 01-21  Semester Review Topics List modified Sun 01-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
