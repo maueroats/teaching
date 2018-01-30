@@ -21,10 +21,12 @@ it.
 ```
 sticksOut(["alfa","bravo","zulu","charlie"]) 
 ==> ["alfa","bravo","lie","charlie"]
+
 sticksOut(["walnut","pie","quince"])
 ==> ["walnut", "nce", "quince"]
+
 sticksOut(["DELTA","eragon","FOXTROT","FOXTRO"])
-==> ["DELTA","eragon","FOXTROT","FOXTRO"]
+==> ["DELTA","eragon","FOXTRO","FOXTROT"]
 ```
 
 Note: The notation [...] denotes an array, although this is not
