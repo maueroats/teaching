@@ -3,25 +3,6 @@ title: "Mauer-Oats Classes"
 date: 2017-09-09T17:00:30-05:00
 ---
 
-{{% notice note %}}
-AP CS: [CharMatrixTester]({{% relref "12-chomp.md" %}}) corrected bad tests Jan 21. Copy new tests from GitHub.
-{{% /notice %}}
-
-## Weekly Agenda
-
-January 22-26
-
-| Day | AP CS          | Intermediate      |
-|-----|----------------|-------------------|
-|Mon  | Ch 12, Ex 25-27| Finish 21.6.3     |
-|Tues | Ex 25-27       | [Review I.3(#2)]({{% relref "sem-review-3.md" %}})    |
-|Wed  | Practice Multiple Choice | [Practice Test (I.4)]({{% relref "sem-review-4.md" %}}) |
-|Thurs| Practice Free Response   | Answers, discussion. |
-|Friday | Review writing classes | [I.5 Review]({{% relref "sem-review-5.md" %}}) |
-
-Advanced students in Intermediate may continue 
-to work on 21.7.5 ("Paint" clone) and our "Space Invaders" clone.
-
 ## AP Computer Science Recent Changes
 
 {{% recent-changes "ap-cs" %}}
