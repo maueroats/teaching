@@ -2,7 +2,7 @@
 title: "Final - CodingBat"
 date: 2018-01-30T08:33:07-06:00
 weight: 20
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "Period 2 final programming question."

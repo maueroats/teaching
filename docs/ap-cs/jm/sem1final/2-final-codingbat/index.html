@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="">
+    <meta name="description" content="Period 2 final programming question.">
 
 
-    <title>Grade Weights :: WY Computer Science</title>
+    <title>Final - CodingBat :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/resources/grading-scale/">
+  <body class="" data-url="/ap-cs/jm/sem1final/2-final-codingbat/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -672,6 +672,26 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ap-cs/haskell/ch06/ch06-reading-guide/" class="dd-item
+     
+      ">
+        <a href="/ap-cs/haskell/ch06/ch06-reading-guide/">
+        <span>Chapter 6 Reading Guide</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
           
         
         </ul>
@@ -1594,7 +1614,7 @@
   
     
     <li data-nav-id="/ap-cs/jm/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1605,7 +1625,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1868,7 +1888,7 @@
   
     
     <li data-nav-id="/ap-cs/jm/sem1final/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1879,7 +1899,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1902,7 +1922,7 @@
   
     
       <li data-nav-id="/ap-cs/jm/sem1final/2-final-codingbat/" class="dd-item
-     
+     active
       ">
         <a href="/ap-cs/jm/sem1final/2-final-codingbat/">
         <span>Final - CodingBat</span> 
@@ -4312,7 +4332,7 @@
   
     
     <li data-nav-id="/resources/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -4323,7 +4343,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -4408,7 +4428,7 @@
   
     
       <li data-nav-id="/resources/grading-scale/" class="dd-item
-     active
+     
       ">
         <a href="/resources/grading-scale/">
         <span>Grade Weights</span> 
@@ -4810,7 +4830,17 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/resources/'>Resources</a> > Grade Weights
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/sem1final/'>Semester 1 Final</a> > Final - CodingBat
+
+ 
+
+ 
 
  
 
@@ -4821,15 +4851,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#grading-weights-and-scale">Grading weights and scale</a></li>
-<li><a href="#exceptional-circumstances">Exceptional circumstances</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -4838,60 +4860,38 @@
         
         <div id="body-inner">
           
-            <h1>Grade Weights</h1>
+            <h1>Final - CodingBat</h1>
           
 
 
 
 
+<p><strong>sticksOut</strong>. A word in an array &ldquo;sticks out&rdquo; if there are two words
+before it and one word after it, and it is alphabetically after the
+word that comes after it or it is at least two letters shorter than
+the word before it. Return a version of the given array in which every
+word that &ldquo;sticks out&rdquo; is replaced by the last half of the word after
+it.</p>
 
+<ul>
+<li>Use case-insensitive comparison.</li>
+<li>If the &ldquo;halves&rdquo; of a word must be uneven, make the <em>first</em> &ldquo;half&rdquo; larger.</li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">sticksOut([&#34;alfa&#34;,&#34;bravo&#34;,&#34;zulu&#34;,&#34;charlie&#34;]) 
+==&gt; [&#34;alfa&#34;,&#34;bravo&#34;,&#34;lie&#34;,&#34;charlie&#34;]
+sticksOut([&#34;walnut&#34;,&#34;pie&#34;,&#34;quince&#34;])
+==&gt; [&#34;walnut&#34;, &#34;nce&#34;, &#34;quince&#34;]
+sticksOut([&#34;DELTA&#34;,&#34;eragon&#34;,&#34;FOXTROT&#34;,&#34;FOXTRO&#34;])
+==&gt; [&#34;DELTA&#34;,&#34;eragon&#34;,&#34;FOXTROT&#34;,&#34;FOXTRO&#34;]</pre></div>
+<p>Note: The notation [&hellip;] denotes an array, although this is not
+syntactically correct Java. Use the correct syntax in your program and
+tests.</p>
 
-<p>The most common question people have is how grades are
-computed.</p>
-
-<h2 id="grading-weights-and-scale">Grading weights and scale</h2>
-
-<table>
-<thead>
-<tr>
-<th align="center">Percent</th>
-<th>Category</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center">20</td>
-<td>Final Exam/Project (Quarterly)</td>
-</tr>
-
-<tr>
-<td align="center">40</td>
-<td>Tests and Quizzes (individual)</td>
-</tr>
-
-<tr>
-<td align="center">20</td>
-<td>Projects</td>
-</tr>
-
-<tr>
-<td align="center">20</td>
-<td>Participation</td>
-</tr>
-</tbody>
-</table>
-
-<p>We use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).</p>
-
-<p>Class participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.</p>
-
-<h2 id="exceptional-circumstances">Exceptional circumstances</h2>
-
-<p>Please contact your teacher if you have a <strong>very</strong> unusual
-circumstance (extended illness, international competition,
-etc.). Ordinary events causing you to miss a day or two of school are
-not in that category.</p>
+<ul>
+<li>Write the function <code>sticksOut</code>.</li>
+<li>Write at least three additional tests.</li>
+<li>Use the <a href="SticksOut.java">Starter code</a> and automated testing.</li>
+</ul>
 
 
 <footer class=" footline" >
@@ -4935,8 +4935,6 @@ not in that category.</p>
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -4952,6 +4950,9 @@ not in that category.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5931,6 +5932,7 @@ not in that category.</p>
             
                 
                     
+                    
                 
                 
 
@@ -5945,6 +5947,9 @@ not in that category.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -6090,6 +6095,7 @@ not in that category.</p>
             
                 
                     
+                    
                 
                 
 
@@ -6102,6 +6108,7 @@ not in that category.</p>
             
             
                 
+                    
                     
                 
                 
@@ -6122,6 +6129,9 @@ not in that category.</p>
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -7636,7 +7646,6 @@ not in that category.</p>
             
                 
                     
-                    
                 
                 
 
@@ -7651,9 +7660,6 @@ not in that category.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -7702,7 +7708,6 @@ not in that category.</p>
             
             
                 
-                    
                     
                 
                 
@@ -7719,9 +7724,6 @@ not in that category.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -7920,10 +7922,10 @@ not in that category.</p>
 
 
         
-            <a class="nav nav-prev" href="/resources/intermediatecs-syllabus--2017-2018/" title="Syllabus: Intermediate"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/ap-cs/jm/sem1final/" title="Semester 1 Final"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/resources/academic-integrity/" title="Academic Integrity" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ap-cs/jm/testing/" title="Unit Testing" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
