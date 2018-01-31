@@ -5,6 +5,7 @@ weight: 60
 draft: false
 #type: slide
 #theme: white
+description: "Random numbers. Gas gauge. Graphing in people coordinates."
 ---
 
 ## What does it do? 

@@ -28,20 +28,32 @@ big-bang, writing high quality tests, and how to limit numerical values.
     - Test everything individually
     - Use `check-with` to catch signature errors. (See below.)
 
+* Testing
+
+    - Write two tests for each function.
+    - **Especially** when you do not know how to make it work! (Fight instinct to just hack.) 
+    - Use different numbers for each argument in a test. (Why is this important?)
+
+## Minor Topics
+    
+Still important enough to mention.
+
 * Numerical functions that limit or convert values:
 
     - `min`, `max` to limit values
     - `real->int`
     - `round`, `ceiling`, `floor`
 
-* Testing
+* People coordinates
 
-    - Write two tests for each function.
-    - **Especially** when you do not know how to make it work! (Fight instinct to just hack.) 
-    - Use different numbers for each argument in a test. (Why is this important?)
+    - Changing to and from
+
+* String functions.
+
+    - `substring`: both the two and three argument versions.
     
-    
-### Details on check-with
+
+## Details on check-with
 
 Example in `big-bang` is: `(check-with posn?)`. 
 [More in click-circle writeup]({{< relref "click-circle.md" >}}).

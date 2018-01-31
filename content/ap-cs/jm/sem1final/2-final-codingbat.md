@@ -1,5 +1,5 @@
 ---
-title: "Final - CodingBat"
+title: "2. Final - CodingBat"
 date: 2018-01-30T08:33:07-06:00
 weight: 20
 draft: false
@@ -27,6 +27,9 @@ sticksOut(["walnut","pie","quince"])
 
 sticksOut(["DELTA","eragon","FOXTROT","FOXTRO"])
 ==> ["DELTA","eragon","TRO","FOXTRO"]
+
+sticksOut(["aaa","b","cccc","f","dd"])
+==> ["aaa","cc","d","dd"]
 ```
 
 Note: The notation [...] denotes an array, although this is not

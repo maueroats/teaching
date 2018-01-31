@@ -1,18 +1,24 @@
 ---
-title: "I.5 Semeseter I Review 5"
+title: "I.5 Semester I Review 5"
 date: 2018-01-25T09:48:45-06:00
 weight: 50
 draft: false
 #type: slide
 #theme: white
+description: "The drifter animation that takes little or big steps while moving."
 ---
+
+
+## Drifter
 
 **Drifter**. A circle moves around inside a rectangle. There are
    two different modes of motion: small steps (activated by "s") and
    big steps (activated by "b"). The arrows let you move the circle.
    
-   
-## Lite Review Questions
+Example: `s left left` moves two small steps left, then `b up right
+up` takes three big steps (up, right, and up in that order).
+  
+## Extras: Lite Review Questions
 
 1. Take a posn and a color. Give a new color that has:
 

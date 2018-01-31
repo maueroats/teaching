@@ -5,6 +5,7 @@ draft: false
 weight: 40
 #type: slide
 #theme: white
+description: "Analysis of functions - signatures and check-expects. Structure practice."
 ---
 
 Remember to practice writing check-expects for your functions, so you

@@ -53,7 +53,8 @@ time: 30 minutes.
 4. (10 pts) Analyze the function below. 
 
     1. Write one sentence explaining  what `roll-dice` does. 
-    2. Write a test or edit so the function is testable.
+    2. The code below cannot be used as-is in a dice game
+       simulation. Rewrite the code so you have a function that is testable and also a function that can be used in a dice game big-bang.
 
             (define dice1 (random 10))
             (define dice2 (random 10))

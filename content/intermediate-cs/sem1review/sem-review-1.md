@@ -1,5 +1,5 @@
 ---
-title: "R.I Semester I Review 1"
+title: "I.1 Semester I Review 1"
 date: 2018-01-08T08:49:18-06:00
 draft: false
 weight: 10
