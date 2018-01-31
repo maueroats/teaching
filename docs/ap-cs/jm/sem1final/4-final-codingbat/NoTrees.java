@@ -1,3 +1,6 @@
+import org.junit.*;
+import org.junit.runner.*;
+import static org.junit.Assert.*;
 
 public class NoTrees {
 
