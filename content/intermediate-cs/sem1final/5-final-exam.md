@@ -2,11 +2,12 @@
 title: "5. Final Exam"
 date: 2018-01-29T22:46:47-06:00
 weight: 10
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "Period 5 final exam."
 # Final Exam 
+#\pagebreak
 ---
 
 This is the final exam for Intermediate Computer Science, Semester I,
@@ -34,11 +35,11 @@ wants to finish the design and test it.
      2. Write one good test for this function.
      3. Why might a function have a useless parameter like that?
 
-5. Write a mouse handler that changes the amount of green in the model
-color whenever the x coordinate is greater than the y coordinate. In
-that case, the new amount of green is the difference in the mouse
-coordinates (`x-y`). Critique the mouse handler below. Suggest changes
-if needed for correctness.
+2. The model is a color. A mouse handler changes the amount of green
+in the model whenever the x coordinate is greater than the y
+coordinate. In that case, the new amount of green is the difference in
+the mouse coordinates (`x-y`). Find the problems in the mouse handler
+below and fix them.
 
         ; mouse-h: model x y -> number
         (define (mouse-h model x y)
@@ -49,18 +50,18 @@ if needed for correctness.
                              (color-green model) 
                              (color-blue model))]))
 
-4. (10 pts) Write a key handler that adds ten points to the model,
+3. (10 pts) Write a key handler that adds ten points to the model,
    leaving the rest alone.
 
         ;STRUCT moo: center = posn, points = number, clr = color
         (define-struct moo (center points clr))
         
     1. Signature
-    3. One test.
-    2. Function.
+    2. One test.
+    3. Function.
 
 
-2. (10 pts)
+4. (10 pts)
 Comment _in particular detail_ about how the draw handler below will
 function when playing a kind of "click the dot" game. (What will you see? What will happen when you play the game?)
 
@@ -71,7 +72,7 @@ function when playing a kind of "click the dot" game. (What will you see? What w
               (+ 50 (random 200))
                BACKGROUND))
 
-3. (10 pts) You are writing a game called Mondrian. The person playing
+5. (10 pts) You are writing a game called Mondrian. The person playing
 places randomly colored squares on the screen. 
 
     * As the mouse moves, the new colored square "floats" above the 
@@ -83,8 +84,6 @@ places randomly colored squares on the screen.
        described above.
     3. Explain how the model allows you to write the mouse-handler
        described above.
-
-
 
 ## Programming Questions 
 

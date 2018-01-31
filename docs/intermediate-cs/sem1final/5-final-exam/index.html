@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.30.2" />
-    <meta name="description" content="">
+    <meta name="description" content="Period 5 final exam.">
 
 
-    <title>10. Strings :: WY Computer Science</title>
+    <title>5. Final Exam :: WY Computer Science</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/ap-cs/jm/ch10/">
+  <body class="" data-url="/intermediate-cs/sem1final/5-final-exam/">
     <nav id="sidebar" class="">
 
 
@@ -80,7 +80,7 @@
   
     
     <li data-nav-id="/ap-cs/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -91,7 +91,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1614,7 +1614,7 @@
   
     
     <li data-nav-id="/ap-cs/jm/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1625,7 +1625,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1758,8 +1758,8 @@
   
     
     <li data-nav-id="/ap-cs/jm/ch10/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/ap-cs/jm/ch10/">
@@ -1769,7 +1769,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -2193,7 +2193,7 @@
   
     
     <li data-nav-id="/intermediate-cs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -2204,7 +2204,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -4139,7 +4139,7 @@
   
     
     <li data-nav-id="/intermediate-cs/sem1final/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -4150,7 +4150,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -4193,7 +4193,7 @@
   
     
       <li data-nav-id="/intermediate-cs/sem1final/5-final-exam/" class="dd-item
-     
+     active
       ">
         <a href="/intermediate-cs/sem1final/5-final-exam/">
         <span>5. Final Exam</span> 
@@ -4873,7 +4873,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > 10. Strings
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/sem1final/'>I.Finals</a> > 5. Final Exam
 
  
 
@@ -4886,7 +4886,15 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#written-questions">Written Questions</a></li>
+<li><a href="#programming-questions">Programming Questions</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -4895,7 +4903,7 @@
         
         <div id="body-inner">
           
-            <h1>10. Strings</h1>
+            <h1>5. Final Exam</h1>
           
 
 
@@ -4903,105 +4911,129 @@
 
 
 
-<p>There are a lot of tricky issues related to strings. Read <a href="http://www.skylit.com/javamethods2/ppt/Ch10.ppt">the powerpoint</a> carefully!</p>
+<p>This is the final exam for Intermediate Computer Science, Semester I,
+2017-2018. Except as noted below, you may not use materials previously
+written by you or anyone else.</p>
 
+<p>There are two sections: written (<sup>1</sup>&frasl;<sub>3</sub>) and programming (<sup>2</sup>&frasl;<sub>3</sub>). Before
+you use a computer, you must turn in your answers to the written questions.</p>
 
+<p>Write all of your solutions on a separate sheet of paper.</p>
 
+<h2 id="written-questions">Written Questions</h2>
 
+<p><strong>(40 points: do four)</strong></p>
 
+<p>In the written portion, you may not consult any sources. Suggested
+time: 40 minutes.</p>
 
+<ol>
+<li><p>(10 pts) Meg is writing a program. She is part way done, and now
+wants to finish the design and test it.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (f x y any) (* x y))</pre></div>
+<ol>
+<li>Write a signature.</li>
+<li>Write one good test for this function.</li>
+<li>Why might a function have a useless parameter like that?</li>
+</ol></li>
 
+<li><p>The model is a color. A mouse handler changes the amount of green
+in the model whenever the x coordinate is greater than the y
+coordinate. In that case, the new amount of green is the difference in
+the mouse coordinates (<code>x-y</code>). Find the problems in the mouse handler
+below and fix them.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">; mouse-h: model x y -&gt; number
+(define (mouse-h model x y)
+  (cond [(&gt; x y)
+         (- x y)]
+        [else
+         (make-color (color-red model) 
+                     (color-green model) 
+                     (color-blue model))]))</pre></div></li>
 
+<li><p>(10 pts) Write a key handler that adds ten points to the model,
+leaving the rest alone.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">;STRUCT moo: center = posn, points = number, clr = color
+(define-struct moo (center points clr))</pre></div>
+<ol>
+<li>Signature</li>
+<li>One test.</li>
+<li>Function.</li>
+</ol></li>
 
+<li><p>(10 pts)
+Comment <em>in particular detail</em> about how the draw handler below will
+function when playing a kind of &ldquo;click the dot&rdquo; game. (What will you see? What will happen when you play the game?)</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">; purpose: place dot at a random position
+(define (draw-h model)
+  (place-image DOT 
+      (random 100)
+      (+ 50 (random 200))
+       BACKGROUND))</pre></div></li>
 
+<li><p>(10 pts) You are writing a game called Mondrian. The person playing
+places randomly colored squares on the screen.</p>
 
-
-
-<ul class="children children-li">
-	
-    
-    
-
-	
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/jm/ch10/10-overview/" >10. Overview</a>
-</li>
-
-
-
-
-
-
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/jm/ch10/10-exercises/" >10. Exercises</a>
-</li>
-
-
-
-
-
-
-			
-		
-
-		
-			
-
-		
-	
-		
-  
-
-
-<li>
-<a href="/ap-cs/jm/ch10/10-test/" >10. Test</a>
-</li>
-
-
-
-
-
-
-			
-		
-
-		
-			
-
-		
-	
-
-	
+<ul>
+<li>As the mouse moves, the new colored square &ldquo;floats&rdquo; above the
+image so far.</li>
+<li>They want to see every square placed since they start playing.</li>
 </ul>
 
+<ol>
+<li>Pick an appropriate structure to represent the model.</li>
+<li>Explain how the model allows you to write the draw-handler
+described above.</li>
+<li>Explain how the model allows you to write the mouse-handler
+described above.</li>
+</ol></li>
+</ol>
 
+<h2 id="programming-questions">Programming Questions</h2>
 
+<p><strong>(50 points: do both)</strong></p>
 
+<p>In the programming portion, you may use the book <em>Picturing Programs</em>,
+the Racket Help Desk, your <code>posn-util.rkt</code> file, and the class blog.</p>
+
+<p>Your work will be evaluated on the basis of correctness and how well
+it demonstrates your understanding of the design process.</p>
+
+<p>Suggested time: 50 minutes.</p>
+
+<ol>
+<li><p><strong>Random overlay</strong>. (20 points) Design and test a <code>random-overlay</code> function
+that takes in two images and then randomly places the first image
+on top of the second image. The placement will be done with
+<code>overlay/align</code>, choosing &ldquo;left&rdquo; &ldquo;middle&rdquo; &ldquo;right &ldquo;top&rdquo; and &ldquo;bottom&rdquo;
+as appropriate. Make the middle location 50% likely to occur (both
+vertically and horizontally), and the other choices equally likely.</p>
+
+<ul>
+<li>Signature</li>
+<li>Purpose</li>
+<li>Check-expects covering all possibilities.
+<br /></li>
+</ul></li>
+
+<li><p><strong>Color match</strong>. (30 points) Show a colored rectangle and the numbers from an
+RGB code.</p>
+
+<ul>
+<li>Clicks reveals a green circle if they match, red circle if they do not match.</li>
+<li>Space bar (only) and gets a new randomly colored rectangle.</li>
+<li>This game would be impossible, but
+you need to &ldquo;rig the game&rdquo; so there about a 25% chance that they
+will match.</li>
+<li>It should be possible for every color and color code to
+appear.</li>
+</ul></li>
+</ol>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -5040,6 +5072,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -5055,9 +5089,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -6036,7 +6067,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -6053,9 +6083,6 @@
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -6120,7 +6147,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -6133,9 +6159,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -6386,6 +6409,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -6400,6 +6424,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -7634,6 +7661,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -7648,6 +7676,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -7664,6 +7695,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -7682,6 +7714,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -8058,10 +8093,10 @@
 
 
         
-            <a class="nav nav-prev" href="/ap-cs/jm/ch06/" title="6. Data Types"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/intermediate-cs/sem1final/1-final-exam/" title="1. Final Exam"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/ap-cs/jm/ch10/10-overview/" title="10. Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
