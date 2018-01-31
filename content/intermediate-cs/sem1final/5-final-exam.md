@@ -6,9 +6,8 @@ draft: true
 #type: slide
 #theme: white
 description: "Period 5 final exam."
----
-
 # Final Exam 
+---
 
 This is the final exam for Intermediate Computer Science, Semester I,
 2017-2018. Except as noted below, you may not use materials previously
@@ -21,10 +20,10 @@ Write all of your solutions on a separate sheet of paper.
 
 ## Written Questions 
 
-**(30 points: do only 3)**
+**(40 points: do four)**
 
 In the written portion, you may not consult any sources. Suggested
-time: 30 minutes.
+time: 40 minutes.
 
 1. (10 pts) Meg is writing a program. She is part way done, and now
 wants to finish the design and test it.
@@ -89,7 +88,7 @@ places randomly colored squares on the screen.
 
 ## Programming Questions 
 
-**(60 points: do both)**
+**(50 points: do both)**
 
 In the programming portion, you may use the book _Picturing Programs_,
 the Racket Help Desk, your `posn-util.rkt` file, and the class blog. 
@@ -97,9 +96,9 @@ the Racket Help Desk, your `posn-util.rkt` file, and the class blog.
 Your work will be evaluated on the basis of correctness and how well
 it demonstrates your understanding of the design process.
 
-Suggested time: 60 minutes. 
+Suggested time: 50 minutes. 
 
-1. **Random overlay**. Design and test a `random-overlay` function
+1. **Random overlay**. (20 points) Design and test a `random-overlay` function
    that takes in two images and then randomly places the first image
    on top of the second image. The placement will be done with
    `overlay/align`, choosing "left" "middle" "right "top" and "bottom"
@@ -110,7 +109,7 @@ Suggested time: 60 minutes.
    * Purpose
    * Check-expects covering all possibilities.
    
-2. **Color match**. Show a colored rectangle and the numbers from an
+2. **Color match**. (30 points) Show a colored rectangle and the numbers from an
    RGB code. 
    
    * Clicks reveals a green circle if they match, red circle if they do not match.
