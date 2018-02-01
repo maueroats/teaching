@@ -46,6 +46,15 @@ time: 30 minutes.
    question as a model.  What could you add to your `big-bang` to help
    you find the source of errors in your mouse handler like: "game-t1:
    expected a game, given `12`"? Explain briefly.
+
+1. (10 pts) Meg is writing a program. She is part way done, and now
+wants to finish the design and test it.
+
+        (define (f x y any) (* x y))
+
+     1. Write a signature.
+     2. Write one good test for this function.
+     3. Why might a function have a useless parameter like that?
   
 ## Programming Questions 
 
