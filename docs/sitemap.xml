@@ -483,6 +483,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/sem1final/7-final-exam/</loc>
+    <lastmod>2018-01-31T22:42:36-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/sem1review/sem-review-7/</loc>
     <lastmod>2018-01-29T10:22:16-06:00</lastmod>
   </url>
@@ -952,14 +957,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   

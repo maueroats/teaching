@@ -2,7 +2,7 @@
 title: "7. Final Exam"
 date: 2018-01-31T22:42:36-06:00
 weight: 70
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "Period 7 final exam."
