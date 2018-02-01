@@ -35,7 +35,7 @@ wants to finish the design and test it.
      2. Write one good test for this function.
      3. Why might a function have a useless parameter like that?
 
-2. The model is a color. A mouse handler changes the amount of green
+2. (10 pts) The model is a color. A mouse handler changes the amount of green
 in the model whenever the x coordinate is greater than the y
 coordinate. In that case, the new amount of green is the difference in
 the mouse coordinates (`x-y`). Find the problems in the mouse handler
