@@ -4961,9 +4961,9 @@ how do you go about adding testing to this situation?)</li>
 <li><p>(10 pts) The data definition for the <code>game</code> struct is below.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">; STRUCT game: t1=number, t2=number, poss=number
 ; purpose: remember points for team 1 and team 2, 
-; and which team has possession of the ball</pre></div>
+; and which team has possession of the ball (1 or 2)</pre></div>
 <p>Write the <code>simple-score: game -&gt; game</code> function that records
-a two point score for the team that has possession.</p></li>
+a two point score for the team that has possession (which is always 1 or 2).</p></li>
 
 <li><p>(10 pts) An animation uses the <code>game</code> struct from the previous
 question as a model.  What could you add to your <code>big-bang</code> to help

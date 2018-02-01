@@ -37,10 +37,10 @@ time: 30 minutes.
 
         ; STRUCT game: t1=number, t2=number, poss=number
         ; purpose: remember points for team 1 and team 2, 
-        ; and which team has possession of the ball
+        ; and which team has possession of the ball (1 or 2)
 
     Write the `simple-score: game -> game` function that records
-    a two point score for the team that has possession. 
+    a two point score for the team that has possession (which is always 1 or 2). 
 
 3. (10 pts) An animation uses the `game` struct from the previous
    question as a model.  What could you add to your `big-bang` to help
