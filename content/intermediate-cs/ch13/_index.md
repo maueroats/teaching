@@ -22,6 +22,11 @@ The quick reference guide is on page 208 of the PDF.
 * Case insensitive comparison: `string-ci<?`, etc.
 * Combinations: `and`, `or`, `not`
 
+## Extras
+
+* `replicate`
+* `string-contains?`
+
 ## Sections
 
 {{% children %}}

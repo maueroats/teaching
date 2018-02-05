@@ -47,10 +47,10 @@ time: 30 minutes.
    you find the source of errors in your mouse handler like: "game-t1:
    expected a game, given `12`"? Explain briefly.
 
-1. (10 pts) Meg is writing a program. She is part way done, and now
+4. (10 pts) Meg is writing a program. She is part way done, and now
 wants to finish the design and test it.
 
-        (define (f x y any) (* x y))
+        (define (f x y z) (* x y))
 
      1. Write a signature.
      2. Write one good test for this function.
@@ -69,7 +69,7 @@ it demonstrates your understanding of the design process.
 Suggested time: 60 minutes. 
 
 1. **Grapher**. (30 pts) The equation `x=130*sqrt(1-(y/120)^2)` is half of an
-   ellipse when the y-coordinates range from -130 to 130. 
+   ellipse when the y-coordinates range from -120 to 120. 
    When the mouse is clicked, jump to the point
    on the graph with the same y-coordinate as the mouse.
 

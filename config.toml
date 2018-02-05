@@ -3,11 +3,13 @@ languageCode = "en-us"
 title = "WY Computer Science"
 theme = "docdock"
 publishDir = "docs"
-themeVariant = "docmo"
 rssLimit = 10
 pygmentsStyle = "monokailight"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
+
+[params]
+themeStyle = "original"
 
 [outputs]
 # removed RSS from both of the following

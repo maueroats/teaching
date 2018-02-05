@@ -29,7 +29,7 @@ time: 40 minutes.
 1. (10 pts) Meg is writing a program. She is part way done, and now
 wants to finish the design and test it.
 
-        (define (f x y any) (* x y))
+        (define (f x y z) (* x y))
 
      1. Write a signature.
      2. Write one good test for this function.

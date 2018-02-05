@@ -6,6 +6,7 @@ draft: false
 #type: slide
 #theme: white
 description: "Period 2 final programming question."
+notes: "Do not reuse. Requires compareTo."
 ---
 
 **sticksOut**. A word in an array "sticks out" if there is one word
@@ -40,3 +41,6 @@ tests.
 * Write at least three additional tests.
 * Use the [Starter code](SticksOut.java) and automated testing.
 
+{{% notice warning %}}
+Requires detailed understanding of the String chapter.
+{{% /notice %}}

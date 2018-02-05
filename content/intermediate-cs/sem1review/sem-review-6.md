@@ -32,11 +32,8 @@ Write check-expects.
 
     * The readout result will be 16 X's when the tank is full, and then should O's 
     for the part that is empty. For example, half full is `"XXXXXXXXOOOOOOOO"`.
-    
     * The gas tank can hold a maximum of 12 gallons. 
-    
     * When the tank is over half full, round the result, so 96% reads full.
-      
     * When the tank is less than half full, always round down to avoid
       suddenly running out of gas. (So 6% reads empty.)
 

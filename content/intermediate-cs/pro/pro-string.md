@@ -33,3 +33,6 @@ If you are actually looking at lists, you should change to Beginning Student wit
 * Single characters are different from single letter words. Racket uses `#\a` to denote the character "`a`" and `"a"` to denote the word containing a single letter a. Usually you do not work with characters, but...
 
 * The `make-string` command takes in a number and a character to repeat (meaning `#\a` not `"a"`). Example: `(check-expect (make-string 7 #\a) "aaaaaaa")`.
+
+* The `replicate` command repeats a string a certain number of times. 
+Example: `(check-expect (replicate 2 "moo") "moomoo")`.
