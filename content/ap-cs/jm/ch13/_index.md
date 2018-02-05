@@ -12,6 +12,6 @@ description: "An array-like class that (i) grows automatically and (ii) can dele
 
 * 2018-02-05: 
 
-   + Classwork: pages 2, 4, 8 in presentation linked above.
+   + Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above.
    + HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes.
-
+   + [Java Methods PowerPoints](http://www.skylit.com/javamethods2/ppt/index.html): Skim Chapter 13.
