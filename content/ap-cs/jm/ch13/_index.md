@@ -18,7 +18,6 @@ description: "An array-like class that (i) grows automatically and (ii) can dele
 
 * 2018-02-06
 
-    + [Supporting files]({{% relref "aardvark.md" %}})
-    + Learn to test ArrayList functions
-    + ArrayList "Avoid Aardvarks"
+    + [Aardvark Assignment]({{% relref "aardvark.md" %}})
+    + Learn to test ArrayList functions!
     

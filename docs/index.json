@@ -802,7 +802,7 @@
 	"title": "13. ArrayList",
 	"tags": [],
 	"description": "An array-like class that (i) grows automatically and (ii) can delete elements.",
-	"content": "ArrayList in-class problems\n 2018-02-05:\n Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above. HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes. Java Methods PowerPoints: Skim Chapter 13.  2018-02-06\n Supporting files Learn to test ArrayList functions ArrayList \u0026ldquo;Avoid Aardvarks\u0026rdquo;    "
+	"content": "ArrayList in-class problems\n 2018-02-05:\n Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above. HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes. Java Methods PowerPoints: Skim Chapter 13.  2018-02-06\n Aardvark Assignment Learn to test ArrayList functions!    "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch13/",
@@ -914,7 +914,7 @@
 	"title": "Avoid Aardvark",
 	"tags": [],
 	"description": "",
-	"content": " ArrayList in-class problems\npublic static void avoidAardvarks (ArrayList\u0026lt;String\u0026gt; data) Testing  Include the boilerplate.\nimport org.junit.*; import org.junit.runner.*; import static org.junit.Assert.*; See code at the end of the presentation (linked above) if you prefer not to just \u0026ldquo;add\u0026rdquo; to results.\n Recall: @Before and @Test must appear before functions, not statements.\n Testing ArrayList is simplest if you use the toArray() method and assertArrayEquals.\n  @Test public void simple_1() { ArrayList\u0026lt;String\u0026gt; correct = new ArrayList\u0026lt;\u0026gt;(); correct.add(\u0026#34;yes\u0026#34;); ArrayList\u0026lt;String\u0026gt; data = new ArrayList\u0026lt;\u0026gt;(); data.add(\u0026#34;not\u0026#34;); data.add(\u0026#34;yet\u0026#34;); change(data); assertArrayEquals(correct.toArray(), data.toArray()); }"
+	"content": " Google Presentation with all of the ArrayList in-class problems\n ArrayList 5, page 12 java public static void avoidAardvarks (ArrayList\u0026lt;String\u0026gt; data)   Testing  Include the boilerplate.\nimport org.junit.*; import org.junit.runner.*; import static org.junit.Assert.*; See code at the end of the presentation (linked above) if you prefer not to just \u0026ldquo;add\u0026rdquo; to results.\n Recall: @Before and @Test must appear before functions, not statements.\n Testing ArrayList is simplest if you use the toArray() method and assertArrayEquals.\n  @Test public void simple_1() { ArrayList\u0026lt;String\u0026gt; correct = new ArrayList\u0026lt;\u0026gt;(); correct.add(\u0026#34;yes\u0026#34;); ArrayList\u0026lt;String\u0026gt; data = new ArrayList\u0026lt;\u0026gt;(); data.add(\u0026#34;not\u0026#34;); data.add(\u0026#34;yet\u0026#34;); change(data); assertArrayEquals(correct.toArray(), data.toArray()); }"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/news/procom4/",

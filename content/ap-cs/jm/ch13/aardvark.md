@@ -7,8 +7,9 @@ draft: false
 #theme: white
 ---
 
-[ArrayList in-class problems](https://docs.google.com/presentation/d/1gLoI2KTCvALpSvW26gLePK7NVkqIe84Aq9lgYkWqL24/edit?usp=sharing)
+[Google Presentation with all of the ArrayList in-class problems](https://docs.google.com/presentation/d/1gLoI2KTCvALpSvW26gLePK7NVkqIe84Aq9lgYkWqL24/edit?usp=sharing)
 
+* ArrayList 5, page 12
 ```java
 public static void avoidAardvarks (ArrayList<String> data)
 ```
