@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Interlude :: WY Computer Science</title>
+<title>Avoid Aardvark :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/jm/interlude-jan/">
+  <body data-url="/ap-cs/jm/ch13/aardvark/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -570,7 +570,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/interlude-jan/" class="dd-item parent active
+    <li data-nav-id="/ap-cs/jm/interlude-jan/" class="dd-item
         ">
       <div>
       <a href="/ap-cs/jm/interlude-jan/">Interlude</a>
@@ -656,13 +656,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch13/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/ch13/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/ch13/">13. ArrayList</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/ch13/">13. ArrayList</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/jm/ch13/aardvark/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch13/aardvark/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/ch13/aardvark/">
             Avoid Aardvark
@@ -1511,7 +1512,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > Interlude
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch13/'>13. ArrayList</a> > Avoid Aardvark
+
+ 
 
  
 
@@ -1530,8 +1536,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#review-1">Review 1</a></li>
-<li><a href="#review-2">Review 2</a></li>
+<li><a href="#testing">Testing</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1544,7 +1549,7 @@
 
 <div id="body-inner">
   
-    <h1>Interlude</h1>
+    <h1>Avoid Aardvark</h1>
   
 
 
@@ -1552,50 +1557,37 @@
     
     
     
+    
 
-
-
-<ul>
-<li>CodingBat String-2: did 16 the week before Winter Break.</li>
-</ul>
-
-<h2 id="review-1">Review 1</h2>
-
-<h2 id="review-2">Review 2</h2>
-
-<ol>
-<li><p>Change &ldquo;snow&rdquo; to &ldquo;ice&rdquo;, but only when it appears between &ldquo;December&rdquo;
-and &ldquo;February&rdquo;.  To simplify, you may assume that both December and
-February appear in the string, and December comes before February.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">out</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#111">winter</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;snow December snow ice snow February snow&#34;</span><span style="color:#f92672">));</span>
-<span style="color:#f92672">==&gt;</span> <span style="color:#d88200">&#34;snow December ice ice ice February snow&#34;</span></code></pre></div></li>
-
-<li><p>Create a ASCII tree. Given:</p>
+<p><a href="https://docs.google.com/presentation/d/1gLoI2KTCvALpSvW26gLePK7NVkqIe84Aq9lgYkWqL24/edit?usp=sharing">ArrayList in-class problems</a></p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">avoidAardvarks</span> <span style="color:#f92672">(</span><span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">&gt;</span> <span style="color:#111">data</span><span style="color:#f92672">)</span></code></pre></div>
+<h2 id="testing">Testing</h2>
 
 <ul>
-<li>height of whole tree (height &gt;= 6)</li>
-<li>width of crown at the top (width odd)</li>
-<li>trunk is always 4 lines tall and 3 characters wide</li>
-<li>width of crown increases by two &ldquo;*&rdquo; each line between bottom and top of crown (then decreasing halfway in between)
-<br /></li>
+<li><p>Include the <a href="/ap-cs/jm/testing/testing-intro/">boilerplate</a>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">import org.junit.*;
+import org.junit.runner.*;
+import static org.junit.Assert.*;</pre></div></li>
+
+<li><p>See code at the end of the presentation (linked above) if you prefer not to just &ldquo;add&rdquo; to  results.</p></li>
+
+<li><p>Recall: <code>@Before</code> and <code>@Test</code> must appear before <em>functions</em>, not statements.</p></li>
+
+<li><p>Testing <code>ArrayList</code> is simplest if you use the <code>toArray()</code> method and <code>assertArrayEquals</code>.</p></li>
 </ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75af00">@Test</span>
+<span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">simple_1</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">&gt;</span> <span style="color:#111">correct</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span>
+    <span style="color:#111">correct</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;yes&#34;</span><span style="color:#f92672">);</span>
+    
+    <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">&gt;</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span>
+    <span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;not&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;yet&#34;</span><span style="color:#f92672">);</span>
 
-<p>Example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">tree(10,5)
-==&gt;
-    *****
-   *******
-  *********
-  *********
-   *******
-    *****
-     ***
-     ***
-     ***
-     ***</code></pre></div></li>
-</ol>
-
-
+    <span style="color:#111">change</span><span style="color:#f92672">(</span><span style="color:#111">data</span><span style="color:#f92672">);</span>
+    
+    <span style="color:#111">assertArrayEquals</span><span style="color:#f92672">(</span><span style="color:#111">correct</span><span style="color:#f92672">.</span><span style="color:#75af00">toArray</span><span style="color:#f92672">(),</span> <span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">toArray</span><span style="color:#f92672">());</span>
+<span style="color:#f92672">}</span></code></pre></div>
 
     
     
@@ -1606,8 +1598,8 @@ February appear in the string, and December comes before February.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/jm/ch10/10-test/" title="10. Test"> <i class="fa fa-chevron-left"></i><label>10. Test</label></a>
-    <a class="nav nav-next" href="/ap-cs/jm/ch12/" title="12. Arrays" style="margin-right: 0px;"><label>12. Arrays</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch13/" title="13. ArrayList"> <i class="fa fa-chevron-left"></i><label>13. ArrayList</label></a>
+    <a class="nav nav-next" href="/ap-cs/news/" title="News" style="margin-right: 0px;"><label>News</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

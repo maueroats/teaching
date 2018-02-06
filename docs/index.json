@@ -802,7 +802,7 @@
 	"title": "13. ArrayList",
 	"tags": [],
 	"description": "An array-like class that (i) grows automatically and (ii) can delete elements.",
-	"content": "ArrayList in-class problems\n 2018-02-05:\n Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above. HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes. Java Methods PowerPoints: Skim Chapter 13.   "
+	"content": "ArrayList in-class problems\n 2018-02-05:\n Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above. HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes. Java Methods PowerPoints: Skim Chapter 13.  2018-02-06\n Supporting files Learn to test ArrayList functions ArrayList \u0026ldquo;Avoid Aardvarks\u0026rdquo;    "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch13/",
@@ -908,6 +908,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image Build-image to create images from a formula for the pixel color.\n  Strings for Experts Strings: randomizing and creating by formula.\n  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch13/aardvark/",
+	"title": "Avoid Aardvark",
+	"tags": [],
+	"description": "",
+	"content": " ArrayList in-class problems\npublic static void avoidAardvarks (ArrayList\u0026lt;String\u0026gt; data) Testing  Include the boilerplate.\nimport org.junit.*; import org.junit.runner.*; import static org.junit.Assert.*; See code at the end of the presentation (linked above) if you prefer not to just \u0026ldquo;add\u0026rdquo; to results.\n Recall: @Before and @Test must appear before functions, not statements.\n Testing ArrayList is simplest if you use the toArray() method and assertArrayEquals.\n  @Test public void simple_1() { ArrayList\u0026lt;String\u0026gt; correct = new ArrayList\u0026lt;\u0026gt;(); correct.add(\u0026#34;yes\u0026#34;); ArrayList\u0026lt;String\u0026gt; data = new ArrayList\u0026lt;\u0026gt;(); data.add(\u0026#34;not\u0026#34;); data.add(\u0026#34;yet\u0026#34;); change(data); assertArrayEquals(correct.toArray(), data.toArray()); }"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/news/procom4/",
@@ -1348,7 +1355,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  12. Book Exercises modified Mon 01-22  12. Chomp modified Sun 01-21  Intermediate Computer Science Recent Changes    21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  5. Final Exam modified Mon 01-29  1. Final Exam modified Mon 01-29  I.7 Semester I Review 7 modified Mon 01-29  I.6 Semester I Review 6 modified Fri 01-26  I.5 Semester I Review 5 modified Thu 01-25  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  12. Book Exercises modified Mon 01-22  Intermediate Computer Science Recent Changes    21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  5. Final Exam modified Mon 01-29  1. Final Exam modified Mon 01-29  I.7 Semester I Review 7 modified Mon 01-29  I.6 Semester I Review 6 modified Fri 01-26  I.5 Semester I Review 5 modified Thu 01-25  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
