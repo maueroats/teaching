@@ -1309,20 +1309,6 @@
       <a href="/intermediate-cs/pro/">Pro Features</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/pro/build-image/" class="dd-item">
-        <div>
-          <a href="/intermediate-cs/pro/build-image/">
-            Build Image
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item">
-        <div>
-          <a href="/intermediate-cs/pro/pro-string/">
-            Strings for Experts
-          </a>
-        </div>
-    </li>
         </ul>
     </li>
       <li data-nav-id="/intermediate-cs/e-courses/" class="dd-item">
@@ -1584,16 +1570,15 @@ import static org.junit.Assert.*;</pre></div></li>
 </ul>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75af00">@Test</span>
 <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">simple_1</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-    <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">&gt;</span> <span style="color:#111">correct</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span>
-    <span style="color:#111">correct</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;yes&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">correct</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> <span style="color:#d88200">&#34;yes&#34;</span> <span style="color:#f92672">};</span>
     
     <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">&gt;</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span>
     <span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;not&#34;</span><span style="color:#f92672">);</span>
     <span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;yet&#34;</span><span style="color:#f92672">);</span>
 
-    <span style="color:#111">change</span><span style="color:#f92672">(</span><span style="color:#111">data</span><span style="color:#f92672">);</span>
+    <span style="color:#111">avoidAardvarks</span><span style="color:#f92672">(</span><span style="color:#111">data</span><span style="color:#f92672">);</span>
     
-    <span style="color:#111">assertArrayEquals</span><span style="color:#f92672">(</span><span style="color:#111">correct</span><span style="color:#f92672">.</span><span style="color:#75af00">toArray</span><span style="color:#f92672">(),</span> <span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">toArray</span><span style="color:#f92672">());</span>
+    <span style="color:#111">assertArrayEquals</span><span style="color:#f92672">(</span><span style="color:#111">correct</span><span style="color:#f92672">,</span> <span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">toArray</span><span style="color:#f92672">());</span>
 <span style="color:#f92672">}</span></code></pre></div>
 
     

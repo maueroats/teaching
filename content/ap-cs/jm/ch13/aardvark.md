@@ -29,16 +29,15 @@ public static void avoidAardvarks (ArrayList<String> data)
 ```java
 @Test
 public void simple_1() {
-    ArrayList<String> correct = new ArrayList<>();
-    correct.add("yes");
+    String[] correct = { "yes" };
     
     ArrayList<String> data = new ArrayList<>();
     data.add("not");
     data.add("yet");
 
-    change(data);
+    avoidAardvarks(data);
     
-    assertArrayEquals(correct.toArray(), data.toArray());
+    assertArrayEquals(correct, data.toArray());
 }
 ```
 
