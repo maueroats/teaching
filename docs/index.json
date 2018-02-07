@@ -263,7 +263,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro \n  2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions Patterns, guards, where, let, and case.   5. Recursion \n  6. Higher Order Functions \n  USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it \n  Source Code Files (ghci) \n  "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions Patterns, guards, where, let, and case.   5. Recursion \n  6. Higher Order Functions \n  USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it \n  Source Code Files (ghci) \n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
@@ -410,7 +410,7 @@
 	"title": "21.7.6 Tick Handler",
 	"tags": [],
 	"description": "Combining actions into one big tick handler.",
-	"content": "You can combine two tick-handler actions into one by using \u0026ldquo;function composition\u0026rdquo;:\n; first-action: model -\u0026gt; model ; second-action: model -\u0026gt; model ; tick-handler: model -\u0026gt; model (define (tick-handler model) (second-action (first-action model))) Try combining the ball bouncing and ball moving actions in this way.\n"
+	"content": " We will start by a using an analogy to talk about doing multiple actions in one tick handler.\nMath Analogy Suppose you have two functions, f and g. The f function takes its input, multiplies by three, and adds one. The g function takes its input, squares it, and subtracts 9. Make a new h function that takes it input, multiplies by 3, adds one, then squares the answer and subtracts 9.\n(define (f x) (+ (* 3 x) 1)) (define (g x) (- (sqr x) 9))  Solution 1 - typical but long. Solution 2 - much better.  Big-bang You can combine two tick-handler actions into one by using \u0026ldquo;function composition\u0026rdquo;:\n; first-action: model -\u0026gt; model ; second-action: model -\u0026gt; model ; tick-handler: model -\u0026gt; model (define (tick-handler model) (second-action (first-action model))) Try combining the ball bouncing and ball moving actions in this way.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-3/",
@@ -872,7 +872,7 @@
 	"title": "21B. Structures",
 	"tags": [],
 	"description": "Position and velocity - the last half of Chapter 21. Choosing the right model.",
-	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  "
+	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  Math Soln 2 \n  Math Soln 1 \n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -922,6 +922,20 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image Build-image to create images from a formula for the pixel color.\n  Strings for Experts Strings: randomizing and creating by formula.\n  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-tick-handler/math-soln-2/",
+	"title": "Math Soln 2",
+	"tags": [],
+	"description": "",
+	"content": "(define (h x) (g (f x)))"
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-tick-handler/math-soln-1/",
+	"title": "Math Soln 1",
+	"tags": [],
+	"description": "",
+	"content": "(define (h x) (- (sqr (+ (* 3 x) 1)) 9))"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch13/aardvark/",
@@ -1369,7 +1383,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  12. Book Exercises modified Mon 01-22  Intermediate Computer Science Recent Changes    21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  5. Final Exam modified Mon 01-29  1. Final Exam modified Mon 01-29  I.7 Semester I Review 7 modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  12. Book Exercises modified Mon 01-22  Intermediate Computer Science Recent Changes    Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  1. Final Exam modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

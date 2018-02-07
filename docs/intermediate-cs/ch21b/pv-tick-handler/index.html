@@ -1307,6 +1307,20 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/ch21b/pv-tick-handler/math-soln-2/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch21b/pv-tick-handler/math-soln-2/">
+            Math Soln 2
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch21b/pv-tick-handler/math-soln-1/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch21b/pv-tick-handler/math-soln-1/">
+            Math Soln 1
+          </a>
+        </div>
+    </li>
         </ul>
     </li>
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item">
@@ -1540,7 +1554,15 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#math-analogy">Math Analogy</a></li>
+<li><a href="#big-bang">Big-bang</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1558,7 +1580,27 @@
     
     
     
-    <p>You can combine two tick-handler actions into one by using &ldquo;function composition&rdquo;:</p>
+    
+
+<p>We will start by a using an analogy to talk about doing multiple actions in one tick handler.</p>
+
+<h2 id="math-analogy">Math Analogy</h2>
+
+<p>Suppose you have two functions, <code>f</code> and <code>g</code>. The <code>f</code> function takes
+its input, multiplies by three, and adds one. The <code>g</code> function takes
+its input, squares it, and subtracts 9. Make a new <code>h</code> function that
+takes it input, multiplies by 3, adds one, then squares the answer and
+subtracts 9.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">f</span> <span style="color:#111">x</span><span style="color:#111">)</span> <span style="color:#111">(</span><span style="color:#111">+</span> <span style="color:#111">(</span><span style="color:#111">*</span> <span style="color:#ae81ff">3</span> <span style="color:#111">x</span><span style="color:#111">)</span> <span style="color:#ae81ff">1</span><span style="color:#111">))</span>
+<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">g</span> <span style="color:#111">x</span><span style="color:#111">)</span> <span style="color:#111">(</span><span style="color:#111">-</span> <span style="color:#111">(</span><span style="color:#111">sqr</span> <span style="color:#111">x</span><span style="color:#111">)</span> <span style="color:#ae81ff">9</span><span style="color:#111">))</span></code></pre></div>
+<ul>
+<li><a href="math-soln-1">Solution 1 - typical but long</a>.</li>
+<li><a href="math-soln-2">Solution 2 - much better</a>.</li>
+</ul>
+
+<h2 id="big-bang">Big-bang</h2>
+
+<p>You can combine two tick-handler actions into one by using &ldquo;function composition&rdquo;:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#75715e">; first-action: model -&gt; model</span>
 <span style="color:#75715e">; second-action: model -&gt; model</span>
 <span style="color:#75715e">; tick-handler: model -&gt; model</span>
@@ -1577,7 +1619,7 @@
 
 <div id="navigation">
 <a class="nav nav-prev" href="/intermediate-cs/ch21b/pv-groundwork/" title="21.7.6 Groundwork"> <i class="fa fa-chevron-left"></i><label>21.7.6 Groundwork</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><label>Calendar</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/intermediate-cs/ch21b/pv-tick-handler/math-soln-2/" title="Math Soln 2" style="margin-right: 0px;"><label>Math Soln 2</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
