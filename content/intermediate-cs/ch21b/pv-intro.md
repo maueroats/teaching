@@ -5,6 +5,7 @@ weight: 10
 draft: false
 type: slide
 theme: white
+description: "Slides with introduction to position-velocity struct exercises."
 ---
 
 ## Pick a model
