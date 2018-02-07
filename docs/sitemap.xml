@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch13/aardvark/</loc>
+    <lastmod>2018-02-06T10:31:58-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch21b/pv-intro/</loc>
     <lastmod>2018-02-05T14:48:00-06:00</lastmod>
   </url>
@@ -200,6 +205,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch13/shopping-list/</loc>
+    <lastmod>2018-02-07T09:13:59-06:00</lastmod>
   </url>
   
   <url>
@@ -670,11 +680,6 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch21b/pv-tick-handler/math-soln-1/</loc>
     <lastmod>2018-02-07T08:18:24-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/jm/ch13/aardvark/</loc>
-    <lastmod>2018-02-06T10:31:58-06:00</lastmod>
   </url>
   
   <url>

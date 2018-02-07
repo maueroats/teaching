@@ -1,7 +1,7 @@
 ---
-title: "Avoid Aardvark"
+title: "13. Avoid Aardvark"
 date: 2018-02-06T10:31:58-06:00
-#weight: 
+weight: 10
 draft: false
 #type: slide
 #theme: white

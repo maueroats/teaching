@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch13/aardvark/",
+	"title": "13. Avoid Aardvark",
+	"tags": [],
+	"description": "",
+	"content": " Google Presentation with all of the ArrayList in-class problems\n ArrayList 5, page 12 java public static void avoidAardvarks (ArrayList\u0026lt;String\u0026gt; data)   Testing  Include the boilerplate.\nimport org.junit.*; import org.junit.runner.*; import static org.junit.Assert.*; See code at the end of the presentation (linked above) if you prefer not to just \u0026ldquo;add\u0026rdquo; to results.\n Recall: @Before and @Test must appear before functions, not statements.\n Testing ArrayList is simplest if you use the toArray() method and assertArrayEquals.\n  @Test public void simple_1() { String[] correct = { \u0026#34;yes\u0026#34; }; ArrayList\u0026lt;String\u0026gt; data = new ArrayList\u0026lt;\u0026gt;(); data.add(\u0026#34;not\u0026#34;); data.add(\u0026#34;yet\u0026#34;); avoidAardvarks(data); assertArrayEquals(correct, data.toArray()); }"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-intro/",
 	"title": "21. PV Intro",
 	"tags": [],
@@ -278,6 +285,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch13/shopping-list/",
+	"title": "13. Shopping List",
+	"tags": [],
+	"description": "",
+	"content": "See the ArrayList presentation, pages 9-11, exercise ArrayList 4/4a/4b.\nThe setup code is to provide you with a sample shopping list to use in your tests.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-groundwork/",
@@ -872,7 +886,7 @@
 	"title": "21B. Structures",
 	"tags": [],
 	"description": "Position and velocity - the last half of Chapter 21. Choosing the right model.",
-	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  Math Soln 2 \n  Math Soln 1 \n  "
+	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  Math Soln 2 (define (h x) (g (f x)))\n  Math Soln 1 (define (h x) (- (sqr (+ (* 3 x) 1)) 9))\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -936,13 +950,6 @@
 	"tags": [],
 	"description": "",
 	"content": "(define (h x) (- (sqr (+ (* 3 x) 1)) 9))"
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/jm/ch13/aardvark/",
-	"title": "Avoid Aardvark",
-	"tags": [],
-	"description": "",
-	"content": " Google Presentation with all of the ArrayList in-class problems\n ArrayList 5, page 12 java public static void avoidAardvarks (ArrayList\u0026lt;String\u0026gt; data)   Testing  Include the boilerplate.\nimport org.junit.*; import org.junit.runner.*; import static org.junit.Assert.*; See code at the end of the presentation (linked above) if you prefer not to just \u0026ldquo;add\u0026rdquo; to results.\n Recall: @Before and @Test must appear before functions, not statements.\n Testing ArrayList is simplest if you use the toArray() method and assertArrayEquals.\n  @Test public void simple_1() { String[] correct = { \u0026#34;yes\u0026#34; }; ArrayList\u0026lt;String\u0026gt; data = new ArrayList\u0026lt;\u0026gt;(); data.add(\u0026#34;not\u0026#34;); data.add(\u0026#34;yet\u0026#34;); avoidAardvarks(data); assertArrayEquals(correct, data.toArray()); }"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/news/procom4/",
@@ -1383,7 +1390,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  12. Book Exercises modified Mon 01-22  Intermediate Computer Science Recent Changes    Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  1. Final Exam modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  Intermediate Computer Science Recent Changes    Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  1. Final Exam modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
