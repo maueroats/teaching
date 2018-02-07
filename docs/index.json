@@ -886,7 +886,7 @@
 	"title": "21B. Structures",
 	"tags": [],
 	"description": "Position and velocity - the last half of Chapter 21. Choosing the right model.",
-	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  Math Soln 2 (define (h x) (g (f x)))\n  Math Soln 1 (define (h x) (- (sqr (+ (* 3 x) 1)) 9))\n  "
+	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  Math Soln 2 \n  Math Soln 1 \n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
