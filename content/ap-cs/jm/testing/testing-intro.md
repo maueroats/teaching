@@ -31,7 +31,7 @@ public void test_math() {
 }
 ```
 
-Example for arrays:
+Example for arrays (Chapter 12):
 ```java
 @Test
 public void test_always_ok() {
@@ -40,6 +40,20 @@ public void test_always_ok() {
     assertArrayEquals(correct, actual);
 }
 ```
+
+Example for ArrayList (Chapter 13):
+```java
+@Test
+public void test_arraylist() {
+  ArrayList<Integer> n = new ArrayList<>();
+  n.add(5); n.add(25); n.add(100);
+
+  List<Integer> correct = Arrays.asList(5,25,100);
+   
+  assertEquals(correct, n);
+} 
+```
+
 
 ## Testing Boilerplate
 

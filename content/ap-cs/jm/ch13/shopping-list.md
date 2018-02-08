@@ -11,3 +11,16 @@ See the [ArrayList presentation](https://docs.google.com/presentation/d/1gLoI2KT
 
 The [setup code](ShoppingSetup.java) is to provide you with a sample shopping list to use in your tests.
 
+Testing suggestion:
+
+```java
+@Test
+public void test_example() {
+  ArrayList<Integer> n = new ArrayList<>();
+  n.add(5); n.add(25); n.add(100);
+
+  List<Integer> correct = Arrays.asList(5,25,100);
+   
+  assertEquals(correct, n);
+} 
+```
