@@ -24,3 +24,5 @@ public void test_example() {
   assertEquals(correct, n);
 } 
 ```
+
+More detailed [example testing code](TestShoppingList.java) and a [useless function so the tests compile](ShoppingList.java).

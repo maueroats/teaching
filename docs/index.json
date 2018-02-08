@@ -291,7 +291,7 @@
 	"title": "13. Shopping List",
 	"tags": [],
 	"description": "",
-	"content": "See the ArrayList presentation, pages 9-11, exercise ArrayList 4/4a/4b.\nThe setup code is to provide you with a sample shopping list to use in your tests.\nTesting suggestion:\n@Test public void test_example() { ArrayList\u0026lt;Integer\u0026gt; n = new ArrayList\u0026lt;\u0026gt;(); n.add(5); n.add(25); n.add(100); List\u0026lt;Integer\u0026gt; correct = Arrays.asList(5,25,100); assertEquals(correct, n); } "
+	"content": "See the ArrayList presentation, pages 9-11, exercise ArrayList 4/4a/4b.\nThe setup code is to provide you with a sample shopping list to use in your tests.\nTesting suggestion:\n@Test public void test_example() { ArrayList\u0026lt;Integer\u0026gt; n = new ArrayList\u0026lt;\u0026gt;(); n.add(5); n.add(25); n.add(100); List\u0026lt;Integer\u0026gt; correct = Arrays.asList(5,25,100); assertEquals(correct, n); }  More detailed example testing code and a useless function so the tests compile.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-groundwork/",
@@ -509,6 +509,13 @@
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-review/",
+	"title": "21. PV Review",
+	"tags": [],
+	"description": "Review problems for PV quiz.",
+	"content": "Use computer coordinates for this review!\n As a background use (empty-scene 300 200). Graph a point or position with an arrow showing the direction of velocity.\n Point A. (make-pv (make-posn 225 30) (make-posn 25 -10)) Point B. (make-pv (make-posn 50 180) (make-posn -10 20))   Should each point bounce? Explain which wall and why.\n   Point Pos Vel     C (200, 10) (-10, 20)   D ( 0,190) ( -5, 15)   E (180,200) ( 10,-20)    Amaja has an animation that looks good until the ball tries to bounce off the right side. The ball slowly slides up the right side, shaking back and forth. What could be wrong?\n(define (should-bounce-right? w) (\u0026lt;= 300 (posn-x (pv-pos w)))) Helena\u0026rsquo;s program is almost done. The ball bounces correctly off the left, right, and top. However, it ignores the code to bounce off the bottom. What should she do?\n Travis has been written a tick handler to make the ball move and one tick handler to make the ball bounce off each side.\n(define (update-pos model) ...) (define (do-left-wall model) ...) (define (do-right-wall model) ...) (define (do-top-wall model) ...) (define (do-bottom-wall model) ...) What should he do to combine them? How can he make one tick handler to do all five actions?\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/sem1final/4-final-codingbat/",
@@ -830,7 +837,7 @@
 	"title": "13. ArrayList",
 	"tags": [],
 	"description": "An array-like class that (i) grows automatically and (ii) can delete elements.",
-	"content": "ArrayList in-class problems\n 2018-02-05:\n Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above. HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes. Java Methods PowerPoints: Skim Chapter 13.  2018-02-06\n Aardvark Assignment Learn to test ArrayList functions!    "
+	"content": "ArrayList in-class problems\n 2018-02-05:\n Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above. HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes. Java Methods PowerPoints: Skim Chapter 13.  2018-02-06\n Aardvark Assignment Learn to test ArrayList functions!   2018-02-18\n yesToNo (ArrayList 7) ShoppingList (ArrayList 4a,4b) from problems linked at the top of the page. Example: testing code and useless function so the tests compile.  2018-02-08\n Opener: throddPigs Quiz or Homework (if you were not present): ArrayList 8 \u0026ldquo;Penguin\u0026rdquo; from problems linked at the top of the page. Note on testing: A popular question is how to test functions that modify their arguments. See aardvark testing notes.   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch13/",
@@ -886,7 +893,7 @@
 	"title": "21B. Structures",
 	"tags": [],
 	"description": "Position and velocity - the last half of Chapter 21. Choosing the right model.",
-	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  Math Soln 2 \n  Math Soln 1 \n  "
+	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  21. PV Review Review problems for PV quiz.\n  Math Soln 2 \n  Math Soln 1 \n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1390,7 +1397,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  Intermediate Computer Science Recent Changes    Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  1. Final Exam modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  Intermediate Computer Science Recent Changes    21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

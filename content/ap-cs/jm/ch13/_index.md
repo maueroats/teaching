@@ -21,3 +21,13 @@ description: "An array-like class that (i) grows automatically and (ii) can dele
     + [Aardvark Assignment]({{% relref "aardvark.md" %}})
     + Learn to test ArrayList functions!
     
+* 2018-02-18
+
+    + yesToNo (ArrayList 7)
+    + ShoppingList (ArrayList 4a,4b) from problems linked at the top of the page. Example: [testing code](TestShoppingList.java) and [useless function so the tests compile](ShoppingList.java).
+
+* 2018-02-08
+
+    + Opener: throddPigs
+    + Quiz or Homework (if you were not present): ArrayList 8 "Penguin" from problems linked at the top of the page.
+    + _Note on testing_: A popular question is how to test functions that modify their arguments. See [aardvark]({{% relref "aardvark.md" %}}) testing notes. 
