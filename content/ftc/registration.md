@@ -4,7 +4,7 @@ date: 2017-10-23T14:04:56-05:00
 draft: false
 #type: slide
 #theme: white
-weight: 10
+weight: 5
 ---
 
 You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.

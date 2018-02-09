@@ -77,6 +77,13 @@
 	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Problem Set Exercises to improve your Haskell programming.\n  Chapter 4 Summary patterns, guards, where, let, case\n  Chapter 4 Quiz \n  Chapter 4 Discussion Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n "
 },
 {
+	"uri": "http://wy-cs.info/ftc/registration/",
+	"title": "Registration",
+	"tags": [],
+	"description": "",
+	"content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - This is a walkthrough of the registration process. Follow it! Online registration instructions. Pretty dense reading. Printable form. If all else fails, print this form and turn it in.  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch06/project/",
 	"title": "Animation Project",
 	"tags": [],
@@ -196,6 +203,13 @@
 	"content": " Read Chapter 1, including the Chapter 1 online component.\n (2017-11-28) Tuesday: Questions 1-6 at the end of Chapter 1. Wednesday: Binary numbers, hexadecimal, and representing data. Thursday: Wrap up, review. Friday: Quiz on Chapter 1.   "
 },
 {
+	"uri": "http://wy-cs.info/ftc/meet-1/",
+	"title": "FTC Meet 1",
+	"tags": [],
+	"description": "",
+	"content": " FIRST 5125 Hawks on the Horizon, FTC 7030 Robominds, FTC 7007 Mission Impossible, FTC 13956 Why Don\u0026rsquo;t We Build and Horizon Science Academy McKinley Park are excited to be hosting your team for a Chicago League Meet, this Saturday, November 11.\nEvent Details Location:\nHorizon Science Academy McKinley Park 2245 W. Pershing Rd Chicago, IL 60605 Parking is available behind the school, on Pershing Rd, and across the school at McKinley Park. Refer to the red stars on the attached map.\nTeams Attending If you are not supposed to be on this list please notify me ASAP:\n116 Crazy Eights 3216 Robophins 7007 Mission Impossible 7030 RoboMinds 7286 Wired Women 8728 Bionic Wolves 10109 De La Salle Meteors 10182 DRW Cheetahs 10253 Bobcats Robotics 10510 I\u0026#39;m BOT Man 11207 Iron Panthers 11647 Gnomebots 12083 DLS Meteorites 13699 RoboGrizzlies 13956 Why Dont We Build Schedule This schedule is approximate. It is vital for us to stay on time. Please ensure that your team comes prepared (see below).\n1:00 pm Doors Open 1:00 pm - 1:30pm Check-in 1:30 pm - 3:00 pm Inspections 3:00 pm - 3:15 pm Drivers meeting 3:30 pm - 7:00 pm Matches 7:00 pm - 7:15 pm Clean-Up \u0026amp; Departure Prior to the Event  Team Roster OR Paper Consent/Release Form: FIRST would prefer teams create a team roster through Youth Registration. Alternatively, teams can bring release forms signed by parents. Please see this link for more info - http://www.firstinspires.org/resource-library/youth-team-member-consent-and-release-form Late Arrival or Not attending: Please let me know by calling or texting me, Sravan Suryadevara, at [omitted]. If we do not hear from you by 2:45 pm we will have to continue the event without your team. Robot Self Inspection: In order to enable inspection run smoothly we HIGHLY encourage you to fill out the self inspection checklist which is attached. This will really benefit all teams as it will mean the event will run smoother Entrance/Parking: See attached map regarding entering the building and where to park. Red stars are lots where you can park. Blue stars are team entrances. When you enter please follow signs with the FTC logo. Please be sure to pack an extension cord and power strip! We have enough outlets but not enough extension cords for all 15 teams.  Food and Lunch Concessions in the form of light snacks will be available. Besides concessions there are several fast-food restaurants in the area, including pizza places such as Humberto\u0026rsquo;s Pizzeria, Naples Pizza. A little farther away, there\u0026rsquo;s Little Caesar\u0026rsquo;s and Domino\u0026rsquo;s.\nIf your team is planning on buying lunch or dinner and you would like more options please let me know.\nOther helpful links Game Materials\nhttp://www.firstinspires.org/node/4271\nTeam Management Resources\nhttp://www.firstinspires.org/node/5226\nTeam Information Management System\nhttps://my.firstinspires.org/Dashboard/\nPreparing for Competition\nhttp://www.firstinspires.org/node/5261\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-1/",
 	"title": "Number Models 1",
 	"tags": [],
@@ -208,13 +222,6 @@
 	"tags": ["git"],
 	"description": "",
 	"content": " Downloads for Home  Git package for all operating systems. Tortoise Git for Windows only.  Tutorials  A command line intro to git in 15 minutes.\n Git for Beginners.\n Beautiful and simple Git Guide.\n  Local instructions  Make an account on GitHub. Use your CPS email.\n Apply for an education account.\n Join our class in the GitHub Classroom. (Tell the teacher your username and get added manually.)\n  "
-},
-{
-	"uri": "http://wy-cs.info/ftc/registration/",
-	"title": "Registration",
-	"tags": [],
-	"description": "",
-	"content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - This is a walkthrough of the registration process. Follow it! Online registration instructions. Pretty dense reading. Printable form. If all else fails, print this form and turn it in.  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/karel/ch1+2/",
@@ -329,6 +336,13 @@
 	"content": "  Thursday 2017-12-14: Exercises 3,4,5,7,9,18. Friday 2017-12-15: Exercises: TBA  More Exercises  Using the code below, compute:\n v == w v.equals(w) v.compareTo(w)   { String s = \u0026#34;cow\u0026#34;; String v = s; String w = new String(s); }"
 },
 {
+	"uri": "http://wy-cs.info/ftc/meet-2/",
+	"title": "FTC Meet 2",
+	"tags": [],
+	"description": "",
+	"content": " Competition Location:\nBack of the Yards High School 2111 W 47th Street Chicago, IL 60609 Parking, Load-in, and Building Access: You may park in the school’s lot, which is located off of Hoyne Street to the South of the school. From the parking lot, go up the ramp on the right side of the school, and enter through the doors on the left at the top of this ramp. This side entrance will be available for one hour (8:00 - 9:00) at the start to load in, and one hour at the end (12:30 - 1:30) to load out. For security reasons, these doors will be locked from 9:00 to 12:00. If you need access during this time, please call or text me directly for assistance. Guests visiting during the match will need to enter through the main entrance of the school on 47th Street.\nCompetition Schedule: 7:30 -- Doors open, visiting volunteer and team check-in begins 8:00 -- Robot and field inspection begins 9:30 -- Schedule announced, drivers\u0026#39; meeting, queueing begins 10:00 -- Matches begin (approximate) 1:00 -- Matches and event conclude (approximate) Participating Teams If your team is listed below and not planning to participate, please contact me as soon as possible.\n   Team Name Team Number     Crazy Eights 116   Chicago Squires 329   Robophins 3216   Ryan Kamphuis 3758   Mission Impossible 7007   RoboMinds 7030   Bobcats Robotics 10253   Camelot STEM-Bulldogs 11822   LevelUP IRL 12176   Inca Eaglebots 12902   Olmec Eaglebots 12904   Aztec Eaglebots 12905   Mayan Eaglebots 12906   RUSH Robotics 13204   Why Don’t We Build 13956    Special Note about Make-up Matches A number of attending teams that played at the Arturo Velazquez Institute on November 4th did not have the opportunity to play all 5 matches, and will make up these cancelled matches at Back of the Yards. For example, a team that played only 3 matches on 11-04 will play 7 matches on 12-09. Teams that do not need make-up matches may be asked to play as proxies in some of these matches in addition to the 5 official matches they will play on 12-09. Please plan to stay until or possibly after 1:00 p.m. to accommodate this extended play, and thank you in advance for your gracious professionalism and flexibility as we work to provide fair opportunities to play to all teams!\nFood Options Concessions (cash only) will be available on-site at the match. There are also a variety of local and fast food options nearby \u0026ndash; one local favorite is the Back of the Yards Coffeehouse, right across Hoyne Street from our front entrance.\nPrior to the Event:  Team roster and consent forms: FIRST would prefer teams create a team roster through TIMS. If parents cannot complete consent forms online, teams can bring release forms signed by parents. Please see this link for more info: http://www.firstinspires.org/resource-library/youth-team-member-consent-and-release-form\n Late Arrival or Not Attending: If you run into unexpected difficulties arriving, please let me know by calling or texting me (Halllie) at (773) 896-6533. If we do not hear from you by 9:15 am, we will have to assume you will not be able to make it and continue the event without your team.\n Robot Self Inspection: In order to enable inspection run smoothly we HIGHLY encourage you to fill out the robot self-inspection and field self-inspection checklists. This will really benefit all teams as it will mean the event will run smoother\n Please remember to pack a power cord and spare tools and parts! \u0026ndash; Remember, even if you do not need a part you might be able to help out another team :-)\n FIRST Game Information: http://www.firstinspires.org/resource-library/ftc/game-and-season-info\n  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch02/",
 	"title": "2. Software Engineering",
 	"tags": [],
@@ -341,13 +355,6 @@
 	"tags": [],
 	"description": "Progress bar, dot that follows a line.",
 	"content": "Please read Sections 8.1-8.4 in the book!\n  Make a progress bar that shrinks in half every time a key is hit.     Make a dot that moves along a line from (50,0) to (250,300).\n Exercise 8.4.4 from the text. Be sure to follow the design process!\n  "
-},
-{
-	"uri": "http://wy-cs.info/ftc/t-shirt/",
-	"title": "Robophins T-Shirts",
-	"tags": [],
-	"description": "",
-	"content": " Cost Order going in Friday October 27. Sign up and give $15 to Doc Mo before Friday.\nFront  Back  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/git/everyday/",
@@ -509,6 +516,13 @@
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
+},
+{
+	"uri": "http://wy-cs.info/ftc/meet-4/",
+	"title": "Chicago League Qualifiers",
+	"tags": [],
+	"description": "Chicago league playoffs, state qualifier.",
+	"content": "  Location: Amundsen High School at 5110 N. Damen. Time: 7:30am-6:00pm  Schedule 7:30 a.m. - 8:00 a.m. -- Registration 8:00 a.m. - 10:00 a.m. -- Judging and inspections 10:15 a.m. -- Opening ceremonies and drivers’ and coaches’ meeting 10:30 a.m. -- Qualification matches begin 12:30 p.m. -- Break for lunch (½ hour) 1:00 p.m. -- Qualification matches resume 3:30 p.m. -- Alliance selection 4:00 p.m. -- Elimination matches begin 5:30 p.m. -- Closing ceremonies Robophins Specific Notes  8:15am Judging Room C Odd qualifier: ranked 5 in city.  General Notes The Robot and Field Inspection team would also like to remind teams of a few frequent issues (if you have questions or concerns about any of these please reply to this email and I will be happy to clarify and/or help). Please complete the self-inspection checklist prior to the day of the competition \u0026ndash; we will be running on a tight schedule and unfortunately will not be able to significantly delay the start of matches to accommodate unprepared teams. If you need help getting your robot ready in advance of the competition, please reply to this email and we will arrange assistance for your team:\n All robots, even those using Modern Robotics Core Power Modules, must have a separate, securely installed, easily accessible, and clearly labeled main power switch Robots must be labeled with team numbers at least 2.5 in tall with stroke width at least 0.5 in (this is especially important at the qualifier, as there will be many more teams in a much larger room and teams will be scouting for their alliance partners). The font “Impact” size about 375 works well for this. Motorola Moto G Play phones (the phones sold this year and last by the FTC storefront) must be updated to at least Android version 6.0.1. Operating system requirements for other phones vary. The Robot Controller and Drivers Station apps both must be updated to at least version 3.3, and both must be the same version. If possible, we recommend updating to the latest version (3.6) or at least 3.5, since stability of the app has improved through the season.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-review/",
@@ -775,6 +789,13 @@
 	"tags": [],
 	"description": "",
 	"content": " centr as shown below. Write a signature, purpose, and function for centr.  (centr \u0026#34;panda\u0026#34;) =\u0026gt; \u0026#34;*****panda*****\u0026#34; (centr \u0026#34;sinful\u0026#34;) =\u0026gt; \u0026#34;*****sinful****\u0026#34; (centr \u0026#34;conspicuous\u0026#34;) =\u0026gt; \u0026#34;**conspicuous**\u0026#34;"
+},
+{
+	"uri": "http://wy-cs.info/ftc/t-shirt/",
+	"title": "Robophins T-Shirts",
+	"tags": [],
+	"description": "",
+	"content": " Cost Order going in Friday October 27. Sign up and give $15 to Doc Mo before Friday.\nFront  Back  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch10/",
@@ -1057,13 +1078,6 @@
 	"content": " Computing Olympiad\n Dec 15-18: First Contest Jan 19-22: Second Contest Feb 23-26: Third Contest Mar 23-26: US Open May 24-Jun 2: Training Camp Sep 1-8: IOI 2018 in Japan  Feb 24, 2018: Introduce a Girl to Engineering at UIC. 10am-2pm. Free. Register by Feb 16, 2018.\n Ladies Who Make. Tuesdays, 5-8pm. January 2 - May 22, 2018. Silkscreen. Laser cutter. Etched wood or acrylic. Modeling in 3D.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ftc/meet-2/",
-	"title": "FTC Meet 2",
-	"tags": [],
-	"description": "",
-	"content": " Competition Location:\nBack of the Yards High School 2111 W 47th Street Chicago, IL 60609 Parking, Load-in, and Building Access: You may park in the school’s lot, which is located off of Hoyne Street to the South of the school. From the parking lot, go up the ramp on the right side of the school, and enter through the doors on the left at the top of this ramp. This side entrance will be available for one hour (8:00 - 9:00) at the start to load in, and one hour at the end (12:30 - 1:30) to load out. For security reasons, these doors will be locked from 9:00 to 12:00. If you need access during this time, please call or text me directly for assistance. Guests visiting during the match will need to enter through the main entrance of the school on 47th Street.\nCompetition Schedule: 7:30 -- Doors open, visiting volunteer and team check-in begins 8:00 -- Robot and field inspection begins 9:30 -- Schedule announced, drivers\u0026#39; meeting, queueing begins 10:00 -- Matches begin (approximate) 1:00 -- Matches and event conclude (approximate) Participating Teams If your team is listed below and not planning to participate, please contact me as soon as possible.\n   Team Name Team Number     Crazy Eights 116   Chicago Squires 329   Robophins 3216   Ryan Kamphuis 3758   Mission Impossible 7007   RoboMinds 7030   Bobcats Robotics 10253   Camelot STEM-Bulldogs 11822   LevelUP IRL 12176   Inca Eaglebots 12902   Olmec Eaglebots 12904   Aztec Eaglebots 12905   Mayan Eaglebots 12906   RUSH Robotics 13204   Why Don’t We Build 13956    Special Note about Make-up Matches A number of attending teams that played at the Arturo Velazquez Institute on November 4th did not have the opportunity to play all 5 matches, and will make up these cancelled matches at Back of the Yards. For example, a team that played only 3 matches on 11-04 will play 7 matches on 12-09. Teams that do not need make-up matches may be asked to play as proxies in some of these matches in addition to the 5 official matches they will play on 12-09. Please plan to stay until or possibly after 1:00 p.m. to accommodate this extended play, and thank you in advance for your gracious professionalism and flexibility as we work to provide fair opportunities to play to all teams!\nFood Options Concessions (cash only) will be available on-site at the match. There are also a variety of local and fast food options nearby \u0026ndash; one local favorite is the Back of the Yards Coffeehouse, right across Hoyne Street from our front entrance.\nPrior to the Event:  Team roster and consent forms: FIRST would prefer teams create a team roster through TIMS. If parents cannot complete consent forms online, teams can bring release forms signed by parents. Please see this link for more info: http://www.firstinspires.org/resource-library/youth-team-member-consent-and-release-form\n Late Arrival or Not Attending: If you run into unexpected difficulties arriving, please let me know by calling or texting me (Halllie) at (773) 896-6533. If we do not hear from you by 9:15 am, we will have to assume you will not be able to make it and continue the event without your team.\n Robot Self Inspection: In order to enable inspection run smoothly we HIGHLY encourage you to fill out the robot self-inspection and field self-inspection checklists. This will really benefit all teams as it will mean the event will run smoother\n Please remember to pack a power cord and spare tools and parts! \u0026ndash; Remember, even if you do not need a part you might be able to help out another team :-)\n FIRST Game Information: http://www.firstinspires.org/resource-library/ftc/game-and-season-info\n  "
-},
-{
 	"uri": "http://wy-cs.info/intermediate-cs/pro/build-image/",
 	"title": "Build Image",
 	"tags": [],
@@ -1127,13 +1141,6 @@
 	"content": "Chapter 8 Test\nDo corrections for +8 or more points of credit.\nCorrections mean complete, correct following of the design process for each function.\nScores will still be \u0026ldquo;curved\u0026rdquo;.\n"
 },
 {
-	"uri": "http://wy-cs.info/ftc/meet-1/",
-	"title": "FTC Meet 1",
-	"tags": [],
-	"description": "",
-	"content": " FIRST 5125 Hawks on the Horizon, FTC 7030 Robominds, FTC 7007 Mission Impossible, FTC 13956 Why Don\u0026rsquo;t We Build and Horizon Science Academy McKinley Park are excited to be hosting your team for a Chicago League Meet, this Saturday, November 11.\nEvent Details Location:\nHorizon Science Academy McKinley Park 2245 W. Pershing Rd Chicago, IL 60605 Parking is available behind the school, on Pershing Rd, and across the school at McKinley Park. Refer to the red stars on the attached map.\nTeams Attending If you are not supposed to be on this list please notify me ASAP:\n116 Crazy Eights 3216 Robophins 7007 Mission Impossible 7030 RoboMinds 7286 Wired Women 8728 Bionic Wolves 10109 De La Salle Meteors 10182 DRW Cheetahs 10253 Bobcats Robotics 10510 I\u0026#39;m BOT Man 11207 Iron Panthers 11647 Gnomebots 12083 DLS Meteorites 13699 RoboGrizzlies 13956 Why Dont We Build Schedule This schedule is approximate. It is vital for us to stay on time. Please ensure that your team comes prepared (see below).\n1:00 pm Doors Open 1:00 pm - 1:30pm Check-in 1:30 pm - 3:00 pm Inspections 3:00 pm - 3:15 pm Drivers meeting 3:30 pm - 7:00 pm Matches 7:00 pm - 7:15 pm Clean-Up \u0026amp; Departure Prior to the Event  Team Roster OR Paper Consent/Release Form: FIRST would prefer teams create a team roster through Youth Registration. Alternatively, teams can bring release forms signed by parents. Please see this link for more info - http://www.firstinspires.org/resource-library/youth-team-member-consent-and-release-form Late Arrival or Not attending: Please let me know by calling or texting me, Sravan Suryadevara, at [omitted]. If we do not hear from you by 2:45 pm we will have to continue the event without your team. Robot Self Inspection: In order to enable inspection run smoothly we HIGHLY encourage you to fill out the self inspection checklist which is attached. This will really benefit all teams as it will mean the event will run smoother Entrance/Parking: See attached map regarding entering the building and where to park. Red stars are lots where you can park. Blue stars are team entrances. When you enter please follow signs with the FTC logo. Please be sure to pack an extension cord and power strip! We have enough outlets but not enough extension cords for all 15 teams.  Food and Lunch Concessions in the form of light snacks will be available. Besides concessions there are several fast-food restaurants in the area, including pizza places such as Humberto\u0026rsquo;s Pizzeria, Naples Pizza. A little farther away, there\u0026rsquo;s Little Caesar\u0026rsquo;s and Domino\u0026rsquo;s.\nIf your team is planning on buying lunch or dinner and you would like more options please let me know.\nOther helpful links Game Materials\nhttp://www.firstinspires.org/node/4271\nTeam Management Resources\nhttp://www.firstinspires.org/node/5226\nTeam Information Management System\nhttps://my.firstinspires.org/Dashboard/\nPreparing for Competition\nhttp://www.firstinspires.org/node/5261\n"
-},
-{
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-review-more/",
 	"title": "Number Review More",
 	"tags": [],
@@ -1166,7 +1173,7 @@
 	"title": "Robophins 3216",
 	"tags": [],
 	"description": "",
-	"content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nMeet Schedule  November 11 at Horizon Science Academy, 2245 W Pershing Road, 1-6pm. December 9 at Back of the Yards, 2111 W 47th Street, 7:30am-12:30pm. January 27 at UIC Student Center, 750 S Halstead, 11am-4pm. February 10 at Arturo Velasquez Institute, 2800 S Western, 7:30am-6pm.  Game Resources  2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.  2018 Official Q\u0026amp;A. Limited responses to official queries.\n  Read Forums  Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n  Watch Videos There are tons of Ri3D (robot in 3 days) or Ri1W (robot in 1 week) videos available.\n Robot in 3 days Acto Defacto  Robophins Code  Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git Make sure to get added to the Robophins organization on github so you can push your changes! You can read how to Get Started with Git elsewhere on this site.\n  "
+	"content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nMeet Schedule  November 11 at Horizon Science Academy, 2245 W Pershing Road, 1-6pm. December 9 at Back of the Yards, 2111 W 47th Street, 7:30am-12:30pm. January 27 at UIC Student Center, 750 S Halstead, 11am-4pm. February 10 at Amundsen High School, 7:30am-6pm.  Game Resources  2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.  2018 Official Q\u0026amp;A. Limited responses to official queries.\n  Read Forums  Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n  Watch Videos There are tons of Ri3D (robot in 3 days) or Ri1W (robot in 1 week) videos available.\n Robot in 3 days Acto Defacto  Robophins Code  Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git Make sure to get added to the Robophins organization on github so you can push your changes! You can read how to Get Started with Git elsewhere on this site.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ecs-teach/",

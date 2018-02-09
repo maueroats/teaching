@@ -13,7 +13,7 @@ This is the web page for the [First Tech Challenge](https://www.firstinspires.or
 * [November 11 at Horizon Science Academy](meet-1), 2245 W Pershing Road, 1-6pm.
 * [December 9 at Back of the Yards](meet-2), 2111 W 47th Street, 7:30am-12:30pm.
 * January 27 at UIC Student Center, 750 S Halstead, 11am-4pm.
-* February 10 at Arturo Velasquez Institute, 2800 S Western, 7:30am-6pm.
+* [February 10 at Amundsen High School](meet-4), 7:30am-6pm.
 
 ## Game Resources
 
