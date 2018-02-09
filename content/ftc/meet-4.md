@@ -28,7 +28,25 @@ description: "Chicago league playoffs, state qualifier."
 * 8:15am Judging Room C
 * Odd qualifier: ranked 5 in city.
 
-## General Notes
+## Parking
+
+You can park in the South Lot (enter from Damen) or on Damen Avenue,
+and enter through the door in the southeast corner of the building
+(Door #4).  The parking lot off of Foster will *not* be available --- if
+you park in this lot you will be towed.
+
+## General Info 
+
+Concessions will be available on-site.  There will be a variety of
+snacks available for purchase, and an option to order pizza for lunch.
+
+Important reminders:
+
+*    Please bring enough safety glasses for your team, and remember to always wear safety glasses in the competition area and in the pits!
+*    Access to power will be somewhat limited.  Please bring a power strip, and please clearly label your team’s chargers, batteries, and power strip with your team number.
+*    Please complete the Robot and Field Self-Inspection Checklists prior to the competition, and refer to the special inspection notes below.
+
+## Special Inspection Notes
 
 The Robot and Field Inspection team would also like to remind teams of
 a few frequent issues (if you have questions or concerns about any of
