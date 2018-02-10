@@ -30,10 +30,13 @@ description: "Chicago league playoffs, state qualifier."
 
 ## Parking
 
-You can park in the South Lot (enter from Damen) or on Damen Avenue,
+* West parking lot, off Foster, is now available. (Earlier messages
+  stated that it would not be.) That is the best place to park.
+
+* You can also park in the South Lot (enter from Damen) or on Damen Avenue,
 and enter through the door in the southeast corner of the building
-(Door #4).  The parking lot off of Foster will *not* be available --- if
-you park in this lot you will be towed.
+(Door #4).
+
 
 ## General Info 
 
