@@ -1580,6 +1580,11 @@
 <li>
 <ul>
 <li><a href="#everyday-commands">Everyday Commands</a></li>
+<li><a href="#merge-conflicts">Merge Conflicts</a>
+<ul>
+<li><a href="#simple-merging">Simple Merging</a></li>
+<li><a href="#advanced-merging">Advanced Merging</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -1617,6 +1622,40 @@
 <li><code>./update</code>: git pull from the upstream repository.</li>
 <li><code>git pull</code></li>
 </ul>
+
+<h2 id="merge-conflicts">Merge Conflicts</h2>
+
+<p>Sometimes you will modify a file at home without having saved (pushed)
+your changes at school. This causes a dreaded &ldquo;merge conflict&rdquo; when
+you update.</p>
+
+<h3 id="simple-merging">Simple Merging</h3>
+
+<p>If you are lucky, you are at school and you know that you
+just want to use the code from home (the &ldquo;incoming code&rdquo; from the pull).
+In that case, you should do:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git checkout --theirs karelBasic.drjava</pre></div>
+<p>Of course, replace <code>karelBasic.drjava</code> with the names of the files with
+the merge conflicts.
+The converse, keeping the &ldquo;local&rdquo; changes, not the incoming ones, is the <code>--ours</code> flag.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git checkout --ours ImportantFile.java</pre></div>
+<h3 id="advanced-merging">Advanced Merging</h3>
+
+<p>When the problem is more difficult, edit the file with NotePad++ and you should see
+the &ldquo;ours&rdquo; and &ldquo;theirs&rdquo; sections marked off by a bunch of <code>&lt;</code> <code>=</code> and <code>&gt;</code> signs. Pick
+the code you want to keep and delete the rest.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">@@ -2,7 +2,11 @@ import java.io.*;
+
+ public class Merging {
+     public Merging () {
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+         System.out.println(&#34;Merging object was not constructed fast enough to avoid conflict!!&#34;);
+=======
+        System.out.println(&#34;Merging object is being constructed!!&#34;);
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 36215863faef38cac7822b290a893ce1e150420c
+     }
+ }</pre></div>
+<p>After deleting the markers and duplicated code, add and commit.</p>
 
 
     

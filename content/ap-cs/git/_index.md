@@ -19,4 +19,6 @@ You will use it for several purposes:
 
 ## Incomplete
 
-This page is incomplete. We will add more information later.
+It is impossible to write down everything you need to know about git. Even experienced developers need to look things up. There is the [Pro Git](https://git-scm.com/book/en/v2) book and many [StackOverflow questions about git](https://stackoverflow.com/questions/tagged/git?sort=votes&pageSize=15) that you can learn from.
+
+

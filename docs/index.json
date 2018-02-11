@@ -277,7 +277,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions Patterns, guards, where, let, and case.   5. Recursion \n  6. Higher Order Functions \n  USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it \n  Source Code Files (ghci) \n  "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions \n  5. Recursion \n  6. Higher Order Functions \n  USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it \n  Source Code Files (ghci) \n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
@@ -292,6 +292,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/git/everyday/",
+	"title": "Everyday Git",
+	"tags": ["git"],
+	"description": "",
+	"content": " Everyday Commands All of these need to be run in the karel-* directory:\n ./save-it ./update: git pull from the upstream repository. git pull  Merge Conflicts Sometimes you will modify a file at home without having saved (pushed) your changes at school. This causes a dreaded \u0026ldquo;merge conflict\u0026rdquo; when you update.\nSimple Merging If you are lucky, you are at school and you know that you just want to use the code from home (the \u0026ldquo;incoming code\u0026rdquo; from the pull). In that case, you should do:\ngit checkout --theirs karelBasic.drjava Of course, replace karelBasic.drjava with the names of the files with the merge conflicts. The converse, keeping the \u0026ldquo;local\u0026rdquo; changes, not the incoming ones, is the --ours flag.\ngit checkout --ours ImportantFile.java Advanced Merging When the problem is more difficult, edit the file with NotePad++ and you should see the \u0026ldquo;ours\u0026rdquo; and \u0026ldquo;theirs\u0026rdquo; sections marked off by a bunch of \u0026lt; = and \u0026gt; signs. Pick the code you want to keep and delete the rest.\n@@ -2,7 +2,11 @@ import java.io.*; public class Merging { public Merging () { \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; HEAD System.out.println(\u0026#34;Merging object was not constructed fast enough to avoid conflict!!\u0026#34;); ======= System.out.println(\u0026#34;Merging object is being constructed!!\u0026#34;); \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; 36215863faef38cac7822b290a893ce1e150420c } } After deleting the markers and duplicated code, add and commit.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch13/shopping-list/",
@@ -357,18 +364,11 @@
 	"content": "Please read Sections 8.1-8.4 in the book!\n  Make a progress bar that shrinks in half every time a key is hit.     Make a dot that moves along a line from (50,0) to (250,300).\n Exercise 8.4.4 from the text. Be sure to follow the design process!\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/git/everyday/",
-	"title": "Everyday Git",
-	"tags": ["git"],
-	"description": "",
-	"content": " Everyday Commands All of these need to be run in the karel-* directory:\n ./save-it ./update: git pull from the upstream repository. git pull  "
-},
-{
 	"uri": "http://wy-cs.info/ap-cs/git/",
 	"title": "Git",
 	"tags": ["git"],
 	"description": "",
-	"content": " Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do.\nYou will use it for several purposes:\n Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group  Incomplete This page is incomplete. We will add more information later.\n"
+	"content": " Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do.\nYou will use it for several purposes:\n Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group  Incomplete It is impossible to write down everything you need to know about git. Even experienced developers need to look things up. There is the Pro Git book and many StackOverflow questions about git that you can learn from.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/",
@@ -473,7 +473,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Book Links to the repository and documentation for the Karel the Robot unit.\n  Essentials Links to the repository and documentation for the Karel the Robot unit.\n  Karel 1 and 2 Reading and homework for the first two chapters of the Karel book.\n  Karel 3 Short list of updates and exercises for Chapter 3.\n  Karel 4.1-4.4 Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n  Karel 4.5-4.6 Great chapter: Strategy, Spy, Observer. Design patterns in Java.\n  CodingBat Interlude Practice for the fundamentals of coding in Java: logic and loops.\n  4.6 PrettyBoxBot PrettyBoxBot to practice interfaces\n  4.6 FishBot A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n  4.6 More Classes Three exercises to improve your understanding of classes and interfaces.\n  4.6 MurderBot Review exercises for class design.\n  4.* Advanced \n  4. Test Karel test, based on the review done earlier. Be sure to understand the material from 4.6.\n  4. Robot Drama A skit involving robots making decisions.\n  Karel Intellij How to use IntelliJ IDEA to work with our Karel the Robot configuration.\n  Karel Hacked \n  "
+	"content": "  Book Links to the repository and documentation for the Karel the Robot unit.\n  Essentials Links to the repository and documentation for the Karel the Robot unit.\n  Karel 1 and 2 Reading and homework for the first two chapters of the Karel book.\n  Karel 3 Short list of updates and exercises for Chapter 3.\n  Karel 4.1-4.4 Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n  Karel 4.5-4.6 Great chapter: Strategy, Spy, Observer. Design patterns in Java.\n  CodingBat Interlude Practice for the fundamentals of coding in Java: logic and loops.\n  4.6 PrettyBoxBot PrettyBoxBot to practice interfaces\n  4.6 FishBot A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n  4.6 More Classes Three exercises to improve your understanding of classes and interfaces.\n  4.6 MurderBot Review exercises for class design.\n  4.* Advanced Undoing Page 100, exercise 12 - the robot that has the undo command. I used the idea of a Decorator strategy. Simultaneous Action Chapter 8 in the text shows how to make more than one robot act at the same time. See the MultiThreadBot on the class GitHub. A brief summary is: World.setupThread(robot) prepares the robot to act in its own thread. World.startThreads() calls the run() method for every robot that is set up as threading using the command above.\n  4. Test Karel test, based on the review done earlier. Be sure to understand the material from 4.6.\n  4. Robot Drama A skit involving robots making decisions.\n  Karel Intellij How to use IntelliJ IDEA to work with our Karel the Robot configuration.\n  Karel Hacked \n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03/puzzle-opener/",
@@ -1404,7 +1404,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Semester 1 Final modified Tue 01-30  Intermediate Computer Science Recent Changes    21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Intermediate Computer Science Recent Changes    21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1428,14 +1428,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
