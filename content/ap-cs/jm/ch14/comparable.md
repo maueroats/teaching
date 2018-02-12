@@ -38,9 +38,9 @@ The `compareTo` function gives an integer that indicates whether
 |"bo" | "boat"  | -1      | a is before b  | < |
 |"same"| "same" | 0       | a is the same as b   | = |
 
-{{< notice note >}}
+{{% notice note %}}
 The `Comparable` interface does not require any particular number be returned from the `compareTo` function. Any positive result indicates that the left (`this`) argument is greater than the right (`other`) argument.
-{{< /notice >}}
+{{% /notice %}}
 
 
 ## Exercises
