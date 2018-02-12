@@ -51,7 +51,7 @@ The `Comparable` interface does not require any particular number be returned fr
         Drow a = new Drow("cat");
         Drow b = new Drow("dog");
         int cmp = a.compareTo(b);
-        // cmp is positive
+        // cmp is positive, but would be negative for Strings
     
     Write the `Drow` class, including any instance variables,
     constructor, and `compareTo` method.
