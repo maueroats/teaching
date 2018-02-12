@@ -473,7 +473,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Book Links to the repository and documentation for the Karel the Robot unit.\n  Essentials Links to the repository and documentation for the Karel the Robot unit.\n  Karel 1 and 2 Reading and homework for the first two chapters of the Karel book.\n  Karel 3 Short list of updates and exercises for Chapter 3.\n  Karel 4.1-4.4 Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n  Karel 4.5-4.6 Great chapter: Strategy, Spy, Observer. Design patterns in Java.\n  CodingBat Interlude Practice for the fundamentals of coding in Java: logic and loops.\n  4.6 PrettyBoxBot PrettyBoxBot to practice interfaces\n  4.6 FishBot A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n  4.6 More Classes Three exercises to improve your understanding of classes and interfaces.\n  4.6 MurderBot Review exercises for class design.\n  4.* Advanced Undoing Page 100, exercise 12 - the robot that has the undo command. I used the idea of a Decorator strategy. Simultaneous Action Chapter 8 in the text shows how to make more than one robot act at the same time. See the MultiThreadBot on the class GitHub. A brief summary is: World.setupThread(robot) prepares the robot to act in its own thread. World.startThreads() calls the run() method for every robot that is set up as threading using the command above.\n  4. Test Karel test, based on the review done earlier. Be sure to understand the material from 4.6.\n  4. Robot Drama A skit involving robots making decisions.\n  Karel Intellij How to use IntelliJ IDEA to work with our Karel the Robot configuration.\n  Karel Hacked \n  "
+	"content": "  Book Links to the repository and documentation for the Karel the Robot unit.\n  Essentials Links to the repository and documentation for the Karel the Robot unit.\n  Karel 1 and 2 Reading and homework for the first two chapters of the Karel book.\n  Karel 3 Short list of updates and exercises for Chapter 3.\n  Karel 4.1-4.4 Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n  Karel 4.5-4.6 Great chapter: Strategy, Spy, Observer. Design patterns in Java.\n  CodingBat Interlude Practice for the fundamentals of coding in Java: logic and loops.\n  4.6 PrettyBoxBot PrettyBoxBot to practice interfaces\n  4.6 FishBot A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n  4.6 More Classes Three exercises to improve your understanding of classes and interfaces.\n  4.6 MurderBot Review exercises for class design.\n  4.* Advanced \n  4. Test Karel test, based on the review done earlier. Be sure to understand the material from 4.6.\n  4. Robot Drama A skit involving robots making decisions.\n  Karel Intellij How to use IntelliJ IDEA to work with our Karel the Robot configuration.\n  Karel Hacked \n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch03/puzzle-opener/",
@@ -557,7 +557,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -971,6 +971,20 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image Build-image to create images from a formula for the pixel color.\n  Strings for Experts Strings: randomizing and creating by formula.\n  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch14/comparable/",
+	"title": "14. Comparable",
+	"tags": [],
+	"description": "",
+	"content": " Comparable means that two items in a class can be compared (less than, equal to, greater than). It is similar to the Ord typeclass in Haskell.\nComparable is an interface. You implement it. It is a template, so you put the class you are able to compare to in angle brackets afterwards. I expect this to be the same class as the one that is implementing the Comparable interface.\npublic class Whatever implements Comparable\u0026lt;Thing\u0026gt; { public int compareTo (Thing other) { // ... } } The compareTo function gives an integer that indicates whether this is greater than other.\n negative means this \u0026lt; other. This could be read \u0026ldquo;this comes before other\u0026rdquo;. zero means this = other positive means this \u0026gt; other     a b a.compareTo(b) meaning inquality     10 20 -10 a is before b \u0026lt;   30 17 13 a is after b \u0026gt;   20 20 0 a is the same as b =   \u0026ldquo;can\u0026rdquo; \u0026ldquo;ask\u0026rdquo; 2 a is after b \u0026gt;   \u0026ldquo;dang\u0026rdquo; \u0026ldquo;ghost\u0026rdquo; -3 a is before b \u0026lt;   \u0026ldquo;bo\u0026rdquo; \u0026ldquo;boat\u0026rdquo; -1 a is before b \u0026lt;   \u0026ldquo;same\u0026rdquo; \u0026ldquo;same\u0026rdquo; 0 a is the same as b =    {{\u0026lt; notice note \u0026gt;\u0026gt;} The Comparable interface does not require any particular number be returned from the compareTo function. Any positive result indicates that the left (this) argument is greater than the right (other) argument. {{\u0026lt; /notice \u0026gt;}}\nExercises  The Drow class holds a String, but when you compare two Drow instances you get the opposite answer from comparing two strings. Example:\nDrow a = new Drow(\u0026#34;cat\u0026#34;); Drow b = new Drow(\u0026#34;dog\u0026#34;); int cmp = a.compareTo(b); // cmp is positive Write the Drow class, including any instance variables, constructor, and compareTo method.\n EBO. The class EBO is like Integer except all evens appear before any odd number in the ordering created by compareTo.\nExamples:\n   a b a.compareTo(b) a interpretation b     2 4 -2 is before   9 3 6 is after   2 9 -7 is before   2 -3 -1 (any neg) is before   3 8 +1 (any pos) is after   5 10 +1 (any pos) is after    The constructor is of the form new EBO(7).\n The class Pt contains an (x,y) coordinate pair. The ordering of Pt is given by first comparing the x\u0026rsquo;s and then, if they are equal, comparing the y\u0026rsquo;s.\nExamples:\n   a b a.compareTo(b) a interpretation b     (20,50) (20,80) -30 is before   (10,5) (10,2) 3 is after   (10,30) (31,19) -21 is before    Write a class header, instance variables, constructor, and compareTo method.\n  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch14/",
+	"title": "14. Searching and Sorting",
+	"tags": [],
+	"description": "",
+	"content": "  14. Comparable   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-tick-handler/math-soln-2/",
@@ -1411,7 +1425,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  4. Final - CodingBat modified Tue 01-30  2. Final - CodingBat modified Tue 01-30  Intermediate Computer Science Recent Changes    21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   14. Comparable modified Mon 02-12  14. Searching and Sorting modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  Intermediate Computer Science Recent Changes    21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1435,14 +1449,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

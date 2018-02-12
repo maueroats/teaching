@@ -698,6 +698,16 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch14/comparable/</loc>
+    <lastmod>2018-02-12T11:49:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch14/</loc>
+    <lastmod>2018-02-12T11:48:04-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch21b/pv-tick-handler/math-soln-2/</loc>
     <lastmod>2018-02-07T08:18:26-06:00</lastmod>
   </url>
@@ -1027,14 +1037,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
