@@ -277,7 +277,7 @@
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
-	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions \n  5. Recursion \n  6. Higher Order Functions \n  USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it \n  Source Code Files (ghci) \n  "
+	"content": " Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions Patterns, guards, where, let, and case.   5. Recursion \n  6. Higher Order Functions \n  USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it \n  Source Code Files (ghci) \n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
@@ -519,7 +519,7 @@
 },
 {
 	"uri": "http://wy-cs.info/ftc/meet-4/",
-	"title": "Chicago League Qualifiers",
+	"title": "FTC Meet 4: Qualifiers",
 	"tags": [],
 	"description": "Chicago league playoffs, state qualifier.",
 	"content": "  Location: Amundsen High School at 5110 N. Damen. Time: 7:30am-6:00pm  Schedule 7:30 a.m. - 8:00 a.m. -- Registration 8:00 a.m. - 10:00 a.m. -- Judging and inspections 10:15 a.m. -- Opening ceremonies and drivers’ and coaches’ meeting 10:30 a.m. -- Qualification matches begin 12:30 p.m. -- Break for lunch (½ hour) 1:00 p.m. -- Qualification matches resume 3:30 p.m. -- Alliance selection 4:00 p.m. -- Elimination matches begin 5:30 p.m. -- Closing ceremonies Robophins Specific Notes  8:15am Judging Room C Odd qualifier: ranked 5 in city.  Parking  West parking lot, off Foster, is now available. (Earlier messages stated that it would not be.) That is the best place to park.\n You can also park in the South Lot (enter from Damen) or on Damen Avenue, and enter through the door in the southeast corner of the building (Door #4).\n  General Info Concessions will be available on-site. There will be a variety of snacks available for purchase, and an option to order pizza for lunch.\nImportant reminders:\n Please bring enough safety glasses for your team, and remember to always wear safety glasses in the competition area and in the pits! Access to power will be somewhat limited. Please bring a power strip, and please clearly label your team’s chargers, batteries, and power strip with your team number. Please complete the Robot and Field Self-Inspection Checklists prior to the competition, and refer to the special inspection notes below.  Special Inspection Notes The Robot and Field Inspection team would also like to remind teams of a few frequent issues (if you have questions or concerns about any of these please reply to this email and I will be happy to clarify and/or help). Please complete the self-inspection checklist prior to the day of the competition \u0026ndash; we will be running on a tight schedule and unfortunately will not be able to significantly delay the start of matches to accommodate unprepared teams. If you need help getting your robot ready in advance of the competition, please reply to this email and we will arrange assistance for your team:\n All robots, even those using Modern Robotics Core Power Modules, must have a separate, securely installed, easily accessible, and clearly labeled main power switch Robots must be labeled with team numbers at least 2.5 in tall with stroke width at least 0.5 in (this is especially important at the qualifier, as there will be many more teams in a much larger room and teams will be scouting for their alliance partners). The font “Impact” size about 375 works well for this. Motorola Moto G Play phones (the phones sold this year and last by the FTC storefront) must be updated to at least Android version 6.0.1. Operating system requirements for other phones vary. The Robot Controller and Drivers Station apps both must be updated to at least version 3.3, and both must be the same version. If possible, we recommend updating to the latest version (3.6) or at least 3.5, since stability of the app has improved through the season.  "
@@ -635,6 +635,13 @@
 	"tags": [],
 	"description": "Review exercises for class design.",
 	"content": " MurderBot  A MurderBot is a kind of StrategyLayer with two additional abilities:\n public void stab(): place two beepers public void flee(): move one step  The KillerStrategy is a kind of Strategy that makes the robot it controls stab the first time the strategy is invoked (via doStrat, which will call doIt). Every subsequent time the robot is told to doStrat(), it should flee.\n Make sure the same doStrat() call causes one stab or one flee each time.\n Test your MurderBot with 8 calls to doStrat().\n Challenge yourself: this can be done without variables (except what is built into the StrategyLayer).\n Advanced: use the techniques the Spy in Section 4.8 to cause the stab action to find another robot on the same corner as the MurderBot and turn it off.\n  ViciousMurderBot Create a kind of MurderBot that places six beepers when it is told to stab, instead of just two.\n"
+},
+{
+	"uri": "http://wy-cs.info/ftc/meet-state/",
+	"title": "FTC Meet 5: State",
+	"tags": [],
+	"description": "",
+	"content": "We qualified for the 2018 FTC State Championships as the 3rd place Inspire Award winner from the Chicago League Qualifier held February 10, 2018 at Amundsen High School.\n FTC State Info Page Friday, Feb. 23\n Notice: Friday evening activities!! Arrive by 6:30pm for judging and robot inspections. Finished by 9:00pm. Schedule is not published as of 2018-02-11. Check back later for more information.  Saturday Feb. 24\n All day event, like FLL fundraiser. Arrival target: 7:45am Expected departure: 6:30pm   Team issues to address\n Update roster including parent contact information. Send home paper information sheet. Who is going? Parents? Who can drive/carpool? Interest in staying in a hotel? Cost: about $80/night each room.   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-5/",
@@ -1173,7 +1180,7 @@
 	"title": "Robophins 3216",
 	"tags": [],
 	"description": "",
-	"content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nMeet Schedule  November 11 at Horizon Science Academy, 2245 W Pershing Road, 1-6pm. December 9 at Back of the Yards, 2111 W 47th Street, 7:30am-12:30pm. January 27 at UIC Student Center, 750 S Halstead, 11am-4pm. February 10 at Amundsen High School, 7:30am-6pm.  Game Resources  2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.  2018 Official Q\u0026amp;A. Limited responses to official queries.\n  Read Forums  Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n  Watch Videos There are tons of Ri3D (robot in 3 days) or Ri1W (robot in 1 week) videos available.\n Robot in 3 days Acto Defacto  Robophins Code  Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git Make sure to get added to the Robophins organization on github so you can push your changes! You can read how to Get Started with Git elsewhere on this site.\n  "
+	"content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nMeet Schedule  November 11 at Horizon Science Academy, 2245 W Pershing Road, 1-6pm. December 9 at Back of the Yards, 2111 W 47th Street, 7:30am-12:30pm. January 27 at UIC Student Center, 750 S Halstead, 11am-4pm. February 10 at Amundsen High School, 7:30am-6pm. February 23-24: FTC State finals in Elgin, IL, see linked document.  Game Resources  2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.  2018 Official Q\u0026amp;A. Limited responses to official queries.\n  Read Forums  Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n  Watch Videos There are tons of Ri3D (robot in 3 days) or Ri1W (robot in 1 week) videos available.\n Robot in 3 days Acto Defacto  Robophins Code  Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git Make sure to get added to the Robophins organization on github so you can push your changes! You can read how to Get Started with Git elsewhere on this site.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ecs-teach/",
@@ -1428,14 +1435,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
