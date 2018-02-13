@@ -921,7 +921,7 @@
 	"title": "21B. Structures",
 	"tags": [],
 	"description": "Position and velocity - the last half of Chapter 21. Choosing the right model.",
-	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  21. PV Review Review problems for PV quiz.\n  Math Soln 2 \n  Math Soln 1 \n  "
+	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  21. PV Review Review problems for PV quiz.\n  21b. PV Quiz 1 Quiz on the bouncing ball 21.7.6.\n  Math Soln 2 \n  Math Soln 1 \n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -971,6 +971,20 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image Build-image to create images from a formula for the pixel color.\n  Strings for Experts Strings: randomizing and creating by formula.\n  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch13/13-quiz-1/",
+	"title": "13. ArrayList Quiz",
+	"tags": [],
+	"description": "",
+	"content": "  Change the sequence \u0026ldquo;I\u0026rdquo; \u0026ldquo;run\u0026rdquo; \u0026ldquo;fast\u0026rdquo; to \u0026ldquo;You\u0026rdquo; \u0026ldquo;and\u0026rdquo; \u0026ldquo;I\u0026rdquo; \u0026ldquo;run\u0026rdquo; \u0026ldquo;fast\u0026rdquo; every place that the former occurs.\npublic static void runfast(ArrayList\u0026lt;String\u0026gt; data) No mice. Remove every \u0026ldquo;mouse\u0026rdquo; (or \u0026ldquo;mice\u0026rdquo;) in the input.\npublic static void noMouse(ArrayList\u0026lt;String\u0026gt; school)  Advanced Read Wolfram\u0026rsquo;s numbering scheme for one dimensional cellular automata. Write a function that creates a new ArrayList according to a given rule number.\npublic static ArrayList\u0026lt;Boolean\u0026gt; evolve (int rule, ArrayList\u0026lt;Boolean\u0026gt; data)"
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-quiz-1/",
+	"title": "21b. PV Quiz 1",
+	"tags": [],
+	"description": "Quiz on the bouncing ball 21.7.6.",
+	"content": "   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch14/comparable/",
@@ -1425,7 +1439,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   14. Comparable modified Mon 02-12  14. Searching and Sorting modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  13. ArrayList modified Mon 02-05  Intermediate Computer Science Recent Changes    21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  14. Searching and Sorting modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  Intermediate Computer Science Recent Changes    21b. PV Quiz 1 modified Tue 02-13  21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1449,14 +1463,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
