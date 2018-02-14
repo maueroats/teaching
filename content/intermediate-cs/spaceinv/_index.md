@@ -1,5 +1,5 @@
 ---
-title: "Space Invaders"
+title: "Project: Space Invaders"
 date: 2017-11-29T10:13:07-06:00
 draft: false
 #type: slide

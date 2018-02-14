@@ -24,7 +24,9 @@ description: "An array-like class that (i) grows automatically and (ii) can dele
 * 2018-02-18
 
     + yesToNo (ArrayList 7)
-    + ShoppingList (ArrayList 4a,4b) from problems linked at the top of the page. Example: [testing code](TestShoppingList.java) and [useless function so the tests compile](ShoppingList.java).
+    + ShoppingList (ArrayList 4a,4b) from problems linked at the top of the page. [Shopping List example code](shopping-list).
+
+Example: [testing code](.java" %}}) and [useless function so the tests compile](ShoppingList.java).
 
 * 2018-02-08
 

@@ -403,7 +403,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Space Invaders   15. Conditionals   20. Using Structures   21A. Making Structures   Semester I Review   I.Finals   21B. Structures   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Project: Space Invaders   15. Conditionals   20. Using Structures   21A. Making Structures   Semester I Review   I.Finals   21B. Structures   Project: PV   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -865,7 +865,7 @@
 	"title": "13. ArrayList",
 	"tags": [],
 	"description": "An array-like class that (i) grows automatically and (ii) can delete elements.",
-	"content": "ArrayList in-class problems\n 2018-02-05:\n Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above. HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes. Java Methods PowerPoints: Skim Chapter 13.  2018-02-06\n Aardvark Assignment Learn to test ArrayList functions!   2018-02-18\n yesToNo (ArrayList 7) ShoppingList (ArrayList 4a,4b) from problems linked at the top of the page. Example: testing code and useless function so the tests compile.  2018-02-08\n Opener: throddPigs Quiz or Homework (if you were not present): ArrayList 8 \u0026ldquo;Penguin\u0026rdquo; from problems linked at the top of the page. Note on testing: A popular question is how to test functions that modify their arguments. See aardvark testing notes.   "
+	"content": "ArrayList in-class problems\n 2018-02-05:\n Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above. HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes. Java Methods PowerPoints: Skim Chapter 13.  2018-02-06\n Aardvark Assignment Learn to test ArrayList functions!   2018-02-18\n yesToNo (ArrayList 7) ShoppingList (ArrayList 4a,4b) from problems linked at the top of the page. Shopping List example code.   Example: testing code and useless function so the tests compile.\n 2018-02-08\n Opener: throddPigs Quiz or Homework (if you were not present): ArrayList 8 \u0026ldquo;Penguin\u0026rdquo; from problems linked at the top of the page. Note on testing: A popular question is how to test functions that modify their arguments. See aardvark testing notes.   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch13/",
@@ -876,7 +876,7 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/spaceinv/",
-	"title": "Space Invaders",
+	"title": "Project: Space Invaders",
 	"tags": [],
 	"description": "Managing the space invaders game creation.",
 	"content": "See the plan for initial information! We are currently going to make the functions that decide when action happens.\n SI Plan   SI Walkthrough   "
@@ -922,6 +922,13 @@
 	"tags": [],
 	"description": "Position and velocity - the last half of Chapter 21. Choosing the right model.",
 	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  21. PV Review Review problems for PV quiz.\n  Math Soln 2 \n  Math Soln 1 \n  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/",
+	"title": "Project: PV",
+	"tags": [],
+	"description": "",
+	"content": " This project must incorporate position and velocity in some way.\n At least two moving items. Interaction of some kind between the items.  Theme  Period 1: Avocado. Period 5: French fries. Period 7: Rice / pasta.  Plan You need:\n two separate sketches of game ideas. pick one and draw two scenes from the game model paragraph description of the action  Do not miss anything in the model! It\u0026rsquo;s hard to add more in later.\nDraw Handler The next step is to make a draw handler that draws all of the scenes that you have drawn in your plan.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1432,7 +1439,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  14. Searching and Sorting modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  Intermediate Computer Science Recent Changes    21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  I.Finals modified Mon 01-29  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  14. Searching and Sorting modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  Intermediate Computer Science Recent Changes    Project: PV modified Tue 02-13  21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
