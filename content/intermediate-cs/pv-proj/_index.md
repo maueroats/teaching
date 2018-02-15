@@ -34,3 +34,20 @@ Do not miss anything in the model! It's hard to add more in later.
 The next step is to make a draw handler that draws all of the scenes
 that you have drawn in your plan.
 
+## Motion
+
+Make sure you have two things that move (or approval to skip this). It is likely to take two days to get the motion you want. Write checks as you go.
+
+## Style 
+
+* Check-expects for every function
+* Follow the [style guidelines](http://community.schemewiki.org/?scheme-style) that we have discussed in class.
+
+     + Close as many parentheses as you want on one line
+     + Break after every group of closed parentheses
+     
+## Grading
+
+* 25% style 
+* 25% check-expect
+* 50% content
