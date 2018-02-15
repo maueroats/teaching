@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Exploring CS (Teachers) :: WY Computer Science</title>
+<title>14. Binary Search :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ecs-teach/">
+  <body data-url="/ap-cs/jm/ch14/binary-search/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,10 +64,11 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -509,10 +510,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -683,10 +685,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch14/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/ch14/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/ch14/">14. Searching and Sorting</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/ch14/">14. Searching and Sorting</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/jm/ch14/comparable/" class="dd-item">
@@ -696,7 +699,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/ch14/binary-search/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch14/binary-search/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/ch14/binary-search/">
             14. Binary Search
@@ -1535,11 +1538,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ecs-teach/" class="dd-item parent active haschildren
+    <li data-nav-id="/ecs-teach/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ecs-teach/">Exploring CS (Teachers)</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ecs-teach/">Exploring CS (Teachers)</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ecs-teach/scratch/" class="dd-item">
@@ -1595,7 +1597,22 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > Exploring CS (Teachers)
+
+
+
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch14/'>14. Searching and Sorting</a> > 14. Binary Search
+
+ 
+
+ 
+
+ 
 
  
 
@@ -1606,16 +1623,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#web-hosting-platforms">Web Hosting Platforms</a></li>
-<li><a href="#editors-mac">Editors: Mac</a></li>
-<li><a href="#editors-windows">Editors: Windows</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -1625,7 +1633,7 @@
 
 <div id="body-inner">
   
-    <h1>Exploring CS (Teachers)</h1>
+    <h1>14. Binary Search</h1>
   
 
 
@@ -1633,57 +1641,15 @@
     
     
     
+    <ol>
+<li><p>Binary search: the traditional function returning an index where the wanted item is found, or <code>-1</code> if the item is not found.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">public static int binarySearch(ArrayList&lt;String&gt; data,
+                               String wanted);</pre></div></li>
 
-
-
-<p>This page is dedicated to <em>teacher links</em> for Exploring Computer Science.</p>
-
-<ul>
-<li><a href="scratch">Scratch Resources</a> are on a separate page.</li>
-</ul>
-
-<h2 id="web-hosting-platforms">Web Hosting Platforms</h2>
-
-<ul>
-<li><p><a href="https://c9.io/">Cloud9</a></p>
-
-<ul>
-<li>Cost: $1/teacher/month = basically free.</li>
-<li>Live display of website results.</li>
-<li>Easy to upload images. (&ldquo;Upload local files&hellip;&rdquo;)</li>
-<li>Interface is busy (lots of features, maybe too many for a beginner).</li>
-<li>Many languages.</li>
-</ul></li>
-
-<li><p><a href="https://repl.it">Repl.it</a></p>
-
-<ul>
-<li>Cost:</li>
-<li>No upload of images.</li>
-<li>Nice simple interface for beginners.</li>
-<li>Many languages including Python with turtle graphics.
-<br /></li>
-</ul></li>
-</ul>
-
-<h2 id="editors-mac">Editors: Mac</h2>
-
-<ul>
-<li><a href="https://macromates.com/">TextMate 2.0beta</a>. Tested and works fine on modern Mac OS (10.12) as well as older.
-
-<ul>
-<li>Light weight (13MB)</li>
-<li>Can run off a flash drive; no Administrator required.</li>
-<li>HTML mode highlights and saves as &ldquo;.html&rdquo; automatically.</li>
-</ul></li>
-</ul>
-
-<h2 id="editors-windows">Editors: Windows</h2>
-
-<ul>
-<li><a href="https://notepad-plus-plus.org/">NotePad++</a>.</li>
-</ul>
-
+<li><p>Binary insert: this function finds the index (<code>idx</code>) at which a new item fits in the ordering, so that <code>data.add(idx, newItem)</code> results in <code>data</code> still being sorted.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">public static int binaryInsert(ArrayList&lt;String&gt; data,
+                               String newItem);</pre></div></li>
+</ol>
 
 
     
@@ -1695,8 +1661,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ftc/learning/" title="Learning Resources"> <i class="fa fa-chevron-left"></i><label>Learning Resources</label></a>
-    <a class="nav nav-next" href="/ecs-teach/scratch/" title="Scratch" style="margin-right: 0px;"><label>Scratch</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch14/comparable/" title="14. Comparable"> <i class="fa fa-chevron-left"></i><label>14. Comparable</label></a>
+    <a class="nav nav-next" href="/ap-cs/news/" title="News" style="margin-right: 0px;"><label>News</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

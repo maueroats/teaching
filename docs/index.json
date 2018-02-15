@@ -126,6 +126,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch14/comparable/",
+	"title": "14. Comparable",
+	"tags": [],
+	"description": "",
+	"content": " Comparable means that two items in a class can be compared (less than, equal to, greater than). It is similar to the Ord typeclass in Haskell.\nComparable is an interface. You implement it. It is a template, so you put the class you are able to compare to in angle brackets afterwards. I expect this to be the same class as the one that is implementing the Comparable interface.\npublic class Whatever implements Comparable\u0026lt;Thing\u0026gt; { public int compareTo (Thing other) { // ... } } The compareTo function gives an integer that indicates whether this is greater than other.\n negative means this \u0026lt; other. This could be read \u0026ldquo;this comes before other\u0026rdquo;. zero means this = other positive means this \u0026gt; other     a b a.compareTo(b) meaning inquality     10 20 -10 a is before b \u0026lt;   30 17 13 a is after b \u0026gt;   20 20 0 a is the same as b =   \u0026ldquo;can\u0026rdquo; \u0026ldquo;ask\u0026rdquo; 2 a is after b \u0026gt;   \u0026ldquo;dang\u0026rdquo; \u0026ldquo;ghost\u0026rdquo; -3 a is before b \u0026lt;   \u0026ldquo;bo\u0026rdquo; \u0026ldquo;boat\u0026rdquo; -1 a is before b \u0026lt;   \u0026ldquo;same\u0026rdquo; \u0026ldquo;same\u0026rdquo; 0 a is the same as b =    The Comparable interface does not require any particular number be returned from the compareTo function. Any positive result indicates that the left (this) argument is greater than the right (other) argument.\n Exercises  The Drow class holds a String, but when you compare two Drow instances you get the opposite answer from comparing two strings. Example:\nDrow a = new Drow(\u0026#34;cat\u0026#34;); Drow b = new Drow(\u0026#34;dog\u0026#34;); int cmp = a.compareTo(b); // cmp is positive, but would be negative for Strings Write the Drow class, including any instance variables, constructor, and compareTo method.\n EBO. The class EBO is like Integer except all evens appear before any odd number in the ordering created by compareTo.\nExamples:\n   a b a.compareTo(b) a interpretation b     2 4 -2 is before   9 3 6 is after   2 9 -7 is before   2 -3 -1 (any neg) is before   3 8 +1 (any pos) is after   5 10 +1 (any pos) is after    The constructor is of the form new EBO(7).\n The class Pt contains an (x,y) coordinate pair. The ordering of Pt is given by first comparing the x\u0026rsquo;s and then, if they are equal, comparing the y\u0026rsquo;s.\nExamples:\n   a b a.compareTo(b) a interpretation b     (20,50) (20,80) -30 is before   (10,5) (10,2) 3 is after   (10,30) (31,19) -21 is before    Write a class header, instance variables, constructor, and compareTo method.\n  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch13/aardvark/",
 	"title": "13. Avoid Aardvark",
 	"tags": [],
@@ -292,6 +299,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch14/binary-search/",
+	"title": "14. Binary Search",
+	"tags": [],
+	"description": "Binary search to find an item or an insertion point.",
+	"content": " Binary search: the traditional function returning an index where the wanted item is found, or -1 if the item is not found.\npublic static int binarySearch(ArrayList\u0026lt;String\u0026gt; data, String wanted); Binary insert: this function finds the index (idx) at which a new item fits in the ordering, so that data.add(idx, newItem) results in data still being sorted.\npublic static int binaryInsert(ArrayList\u0026lt;String\u0026gt; data, String newItem);  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/git/everyday/",
@@ -987,18 +1001,11 @@
 	"content": "  Change the sequence \u0026ldquo;I\u0026rdquo; \u0026ldquo;run\u0026rdquo; \u0026ldquo;fast\u0026rdquo; to \u0026ldquo;You\u0026rdquo; \u0026ldquo;and\u0026rdquo; \u0026ldquo;I\u0026rdquo; \u0026ldquo;run\u0026rdquo; \u0026ldquo;fast\u0026rdquo; every place that the former occurs.\npublic static void runfast(ArrayList\u0026lt;String\u0026gt; data) No mice. Remove every \u0026ldquo;mouse\u0026rdquo; (or \u0026ldquo;mice\u0026rdquo;) in the input.\npublic static void noMouse(ArrayList\u0026lt;String\u0026gt; school)  Advanced Read Wolfram\u0026rsquo;s numbering scheme for one dimensional cellular automata. Write a function that creates a new ArrayList according to a given rule number.\npublic static ArrayList\u0026lt;Boolean\u0026gt; evolve (int rule, ArrayList\u0026lt;Boolean\u0026gt; data)"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/jm/ch14/comparable/",
-	"title": "14. Comparable",
-	"tags": [],
-	"description": "",
-	"content": " Comparable means that two items in a class can be compared (less than, equal to, greater than). It is similar to the Ord typeclass in Haskell.\nComparable is an interface. You implement it. It is a template, so you put the class you are able to compare to in angle brackets afterwards. I expect this to be the same class as the one that is implementing the Comparable interface.\npublic class Whatever implements Comparable\u0026lt;Thing\u0026gt; { public int compareTo (Thing other) { // ... } } The compareTo function gives an integer that indicates whether this is greater than other.\n negative means this \u0026lt; other. This could be read \u0026ldquo;this comes before other\u0026rdquo;. zero means this = other positive means this \u0026gt; other     a b a.compareTo(b) meaning inquality     10 20 -10 a is before b \u0026lt;   30 17 13 a is after b \u0026gt;   20 20 0 a is the same as b =   \u0026ldquo;can\u0026rdquo; \u0026ldquo;ask\u0026rdquo; 2 a is after b \u0026gt;   \u0026ldquo;dang\u0026rdquo; \u0026ldquo;ghost\u0026rdquo; -3 a is before b \u0026lt;   \u0026ldquo;bo\u0026rdquo; \u0026ldquo;boat\u0026rdquo; -1 a is before b \u0026lt;   \u0026ldquo;same\u0026rdquo; \u0026ldquo;same\u0026rdquo; 0 a is the same as b =    The Comparable interface does not require any particular number be returned from the compareTo function. Any positive result indicates that the left (this) argument is greater than the right (other) argument.\n Exercises  The Drow class holds a String, but when you compare two Drow instances you get the opposite answer from comparing two strings. Example:\nDrow a = new Drow(\u0026#34;cat\u0026#34;); Drow b = new Drow(\u0026#34;dog\u0026#34;); int cmp = a.compareTo(b); // cmp is positive, but would be negative for Strings Write the Drow class, including any instance variables, constructor, and compareTo method.\n EBO. The class EBO is like Integer except all evens appear before any odd number in the ordering created by compareTo.\nExamples:\n   a b a.compareTo(b) a interpretation b     2 4 -2 is before   9 3 6 is after   2 9 -7 is before   2 -3 -1 (any neg) is before   3 8 +1 (any pos) is after   5 10 +1 (any pos) is after    The constructor is of the form new EBO(7).\n The class Pt contains an (x,y) coordinate pair. The ordering of Pt is given by first comparing the x\u0026rsquo;s and then, if they are equal, comparing the y\u0026rsquo;s.\nExamples:\n   a b a.compareTo(b) a interpretation b     (20,50) (20,80) -30 is before   (10,5) (10,2) 3 is after   (10,30) (31,19) -21 is before    Write a class header, instance variables, constructor, and compareTo method.\n  "
-},
-{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch14/",
 	"title": "14. Searching and Sorting",
 	"tags": [],
 	"description": "",
-	"content": " 2018-02-12: Read Section 14.1-14.2 and do exercise 1 on the Comparable page.   14. Comparable   "
+	"content": " 2018-02-12: Read Section 14.1-14.2 and do exercise 1 on the Comparable page.\n 2018-02-14: Binary search.\n 2018-02-15: Binary insert.\n   14. Comparable   14. Binary Search   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-tick-handler/math-soln-2/",
@@ -1439,7 +1446,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  14. Searching and Sorting modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  News modified Mon 02-05  Intermediate Computer Science Recent Changes    Project: PV modified Tue 02-13  21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  14. Searching and Sorting modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  Intermediate Computer Science Recent Changes    Project: PV modified Tue 02-13  21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  7. Final Exam modified Wed 01-31  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

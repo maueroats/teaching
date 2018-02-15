@@ -93,6 +93,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch14/comparable/</loc>
+    <lastmod>2018-02-12T11:49:54-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/jm/ch13/aardvark/</loc>
     <lastmod>2018-02-06T10:31:58-06:00</lastmod>
   </url>
@@ -210,6 +215,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch14/binary-search/</loc>
+    <lastmod>2018-02-15T10:35:29-06:00</lastmod>
   </url>
   
   <url>
@@ -705,11 +715,6 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/jm/ch13/13-quiz-1/</loc>
     <lastmod>2018-02-13T08:20:28-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/jm/ch14/comparable/</loc>
-    <lastmod>2018-02-12T11:49:54-06:00</lastmod>
   </url>
   
   <url>

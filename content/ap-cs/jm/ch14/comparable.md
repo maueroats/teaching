@@ -1,7 +1,7 @@
 ---
 title: "14. Comparable"
 date: 2018-02-12T11:49:54-06:00
-#weight: 
+weight: 10
 draft: false
 #type: slide
 #theme: white
