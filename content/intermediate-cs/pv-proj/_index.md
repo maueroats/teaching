@@ -12,6 +12,10 @@ This project must incorporate position and velocity in some way.
 * At least two moving items. 
 * Interaction of some kind between the items.
 
+{{% notice note %}}
+Read the [Help with Corrupted Models]({{% relref "pv-help.md" %}}) page if you have problems like ```pv-pt: expects a pv, given (make-posn (make-posn 100 0) 8)```.
+{{% /notice %}}
+
 ## Theme
 
 * Period 1: Avocado.

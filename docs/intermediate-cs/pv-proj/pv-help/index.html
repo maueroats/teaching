@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Exercises 1 :: WY Computer Science</title>
+<title>Help with Corrupted Models :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch07/exercises-1/">
+  <body data-url="/intermediate-cs/pv-proj/pv-help/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -891,11 +891,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch07/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/ch07/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch07/">7. Numbers</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch07/">7. Numbers</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch07/exercises-4/" class="dd-item">
@@ -933,7 +932,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch07/exercises-1/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch07/exercises-1/" class="dd-item">
         <div>
           <a href="/intermediate-cs/ch07/exercises-1/">
             Exercises 1
@@ -1366,13 +1365,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/pv-proj/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/pv-proj/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/pv-proj/">Project: PV</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/pv-proj/">Project: PV</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/pv-proj/pv-help/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/pv-proj/pv-help/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/pv-proj/pv-help/">
             Help with Corrupted Models
@@ -1611,7 +1611,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch07/'>7. Numbers</a> > Exercises 1
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/pv-proj/'>Project: PV</a> > Help with Corrupted Models
 
  
 
@@ -1626,7 +1626,15 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#simple-check-with">Simple check-with</a></li>
+<li><a href="#advanced-check-with">Advanced check-with</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1636,7 +1644,7 @@
 
 <div id="body-inner">
   
-    <h1>Exercises 1</h1>
+    <h1>Help with Corrupted Models</h1>
   
 
 
@@ -1644,14 +1652,50 @@
     
     
     
-    <p>Practice the design process making each of these functions:</p>
+    
 
-<ul>
-<li><p>Write a function that takes in the radius of a circle and outputs the circumference.</p></li>
+<p>We have not talked about writing your own <code>check-with?</code> function. That can really help if you have not been careful about signatures and some of your functions do not do what they are supposed to do. Here is a brief tutorial how to create a really good checker function.</p>
 
-<li><p>Write a function to find the cost of a cart full of g pounds of grapefruit and b pounds of bananas. The grapefruit costs $1.49/lb and the bananas cost $0.59/lb.</p></li>
-</ul>
+<p>In the big-bang, <code>(check-with game?)</code> makes sure that the model is
+always a game. That saves you from the problem of returning a number
+from a tick handler that is supposed to return a game. It doesn&rsquo;t
+prevent you from messing up the things inside the <code>game</code> struct (like
+putting a number where a posn is supposed to be).</p>
 
+<p>To debug problems with your model being corrupted, you need to write
+your own check-with function that makes sure everything <em>inside</em> the
+model is OK too.</p>
+
+<h2 id="simple-check-with">Simple check-with</h2>
+
+<p>This example shows how to check a model that has two posns and a
+number.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define-struct</span> <span style="color:#111">game</span> <span style="color:#111">(</span><span style="color:#111">pos1</span> <span style="color:#111">pos2</span> <span style="color:#111">n</span><span style="color:#111">))</span> 
+
+<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">good-game?</span> <span style="color:#111">w</span><span style="color:#111">)</span>
+  <span style="color:#111">(</span><span style="color:#00a8c8">and</span> <span style="color:#111">(</span><span style="color:#111">game?</span> <span style="color:#111">w</span><span style="color:#111">)</span>
+       <span style="color:#111">(</span><span style="color:#111">posn?</span> <span style="color:#111">(</span><span style="color:#111">game-pos1</span> <span style="color:#111">w</span><span style="color:#111">))</span>
+       <span style="color:#111">(</span><span style="color:#111">posn?</span> <span style="color:#111">(</span><span style="color:#111">game-pos2</span> <span style="color:#111">w</span><span style="color:#111">))</span>
+       <span style="color:#111">(</span><span style="color:#111">number?</span> <span style="color:#111">(</span><span style="color:#111">game-n</span> <span style="color:#111">w</span><span style="color:#111">))))</span>
+       
+<span style="color:#111">(</span><span style="color:#111">big-bang</span> <span style="color:#00a8c8">...</span>
+   <span style="color:#111">(</span><span style="color:#111">check-with</span> <span style="color:#111">good-game?</span><span style="color:#111">))</span></code></pre></div>
+<h2 id="advanced-check-with">Advanced check-with</h2>
+
+<p>If your model is supposed to be a PV and a number, then you should write a really elaborate
+checker that makes sure everything has the right types.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define-struct</span> <span style="color:#111">pv</span> <span style="color:#111">(</span><span style="color:#111">p</span> <span style="color:#111">v</span><span style="color:#111">))</span>
+<span style="color:#111">(</span><span style="color:#00a8c8">define-struct</span> <span style="color:#111">game</span> <span style="color:#111">(</span><span style="color:#111">pv</span> <span style="color:#111">n</span><span style="color:#111">))</span>
+
+<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">good-pv?</span> <span style="color:#111">w</span><span style="color:#111">)</span>
+  <span style="color:#111">(</span><span style="color:#00a8c8">and</span> <span style="color:#111">(</span><span style="color:#111">pv?</span> <span style="color:#111">w</span><span style="color:#111">)</span>
+       <span style="color:#111">(</span><span style="color:#111">posn?</span> <span style="color:#111">(</span><span style="color:#111">pv-p</span> <span style="color:#111">w</span><span style="color:#111">))</span>
+       <span style="color:#111">(</span><span style="color:#111">posn?</span> <span style="color:#111">(</span><span style="color:#111">pv-v</span> <span style="color:#111">w</span><span style="color:#111">))))</span>
+
+<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">good-game?</span> <span style="color:#111">ww</span><span style="color:#111">)</span>
+  <span style="color:#111">(</span><span style="color:#00a8c8">and</span> <span style="color:#111">(</span><span style="color:#111">game?</span> <span style="color:#111">ww</span><span style="color:#111">)</span>
+       <span style="color:#111">(</span><span style="color:#111">good-pv?</span> <span style="color:#111">(</span><span style="color:#111">game-pv</span> <span style="color:#111">ww</span><span style="color:#111">))</span>
+       <span style="color:#111">(</span><span style="color:#111">number?</span> <span style="color:#111">(</span><span style="color:#111">game-n</span> <span style="color:#111">ww</span><span style="color:#111">))))</span></code></pre></div>
 
     
     
@@ -1662,8 +1706,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch07/exercises-2/" title="Exercises 2"> <i class="fa fa-chevron-left"></i><label>Exercises 2</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch08/" title="8. Number Animations" style="margin-right: 0px;"><label>8. Number Animations</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/pv-proj/" title="Project: PV"> <i class="fa fa-chevron-left"></i><label>Project: PV</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><label>Calendar</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
