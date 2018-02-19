@@ -5,11 +5,11 @@ weight: 20
 draft: false
 #type: slide
 #theme: white
-description: "Use multiple helper functions to create a big draw handler."
+description: "Use multiple helper functions to create a draw handler that draws multiple moving objects."
 ---
 
 Combining draw handlers works just like [combining tick handlers]({{% relref 
-"pv-tick-handler.md" %}})
+"pv-tick-handler.md" %}}).
 
 The best signature for a draw handler helper is:
 

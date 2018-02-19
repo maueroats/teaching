@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Why Racket? :: WY Computer Science</title>
+<title>Tick Handler Helpers :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/resources/why-racket/">
+  <body data-url="/intermediate-cs/pv-proj/pv-tickh/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -724,10 +724,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -1364,10 +1365,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/pv-proj/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/pv-proj/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/pv-proj/">Project: PV</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/pv-proj/">Project: PV</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/pv-proj/pv-drawh/" class="dd-item">
@@ -1377,7 +1379,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/pv-proj/pv-tickh/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/pv-proj/pv-tickh/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/pv-proj/pv-tickh/">
             Tick Handler Helpers
@@ -1438,11 +1440,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/resources/" class="dd-item parent haschildren
+    <li data-nav-id="/resources/" class="dd-item haschildren
         ">
       <div>
-      <a href="/resources/">Resources</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/resources/">Resources</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/resources/generic-cs-syllabus/" class="dd-item">
@@ -1486,7 +1487,7 @@
       <a href="/resources/events/">CS Events</a>
       </div>
     </li>
-      <li data-nav-id="/resources/why-racket/" class="dd-item active">
+      <li data-nav-id="/resources/why-racket/" class="dd-item">
         <div>
           <a href="/resources/why-racket/">
             Why Racket?
@@ -1621,7 +1622,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/resources/'>Resources</a> > Why Racket?
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/pv-proj/'>Project: PV</a> > Tick Handler Helpers
+
+ 
 
  
 
@@ -1644,7 +1650,7 @@
 
 <div id="body-inner">
   
-    <h1>Why Racket?</h1>
+    <h1>Tick Handler Helpers</h1>
   
 
 
@@ -1652,45 +1658,16 @@
     
     
     
-    <blockquote>
-<p>Many people we encounter tell us they wish they knew how to code and then ask which programming language they should learn. Given the press that some programming languages get, this question is not surprising. But it is also wholly inappropriate. Learning to program in a currently fashionable programming language often sets up students for eventual failure. Fashion in this world is extremely short lived. A typical “quick programming in X” book or course fails to teach principles that transfer to the next fashion language. Worse, the language itself often distracts from the acquisition of transferable skills, at the level of both expressing solutions and dealing with programming mistakes.</p>
-
-<p>&ndash; <a href="http://www.ccs.neu.edu/home/matthias/HtDP2e/part_preface.html">Felleison et al, <em>How to Design Programs</em>, Second Edition</a>.</p>
-</blockquote>
-
-<p>To understand why Racket is a good language to learn, one need read no further than <a href="http://www.picturingprograms.com/download/chap00.pdf">Section 0.1</a> of Stephen Bloch&rsquo;s <em>Picturing Programs</em>. Please read it now if you have not.</p>
-
-<p>To summarize, here are major arguments for choosing Racket over a more
-&ldquo;popular&rdquo; programming language:</p>
-
-<ul>
-<li><p>Racket&rsquo;s uniform syntax (everything is in parentheses, no order of
-operations, means that everything you do learn is a real
-intellectual concept.</p></li>
-
-<li><p>Racket works without any incantations that cannot be understood by a
-beginner. Example: Java&rsquo;s <code>public static void main (String[] args)</code>
-incantation.</p></li>
-
-<li><p>Racket&rsquo;s language levels protects you from advanced features that
-could be misunderstood at the start, but lets you continue to
-program in the same familiar language with more advanced features
-when you are ready.</p></li>
-
-<li><p>Any language you choose will be obsolete by the time you enter the
-workforce in 4-8 years, so effort spent learning language-specific
-syntax is not productive. Instead, you need to learn how to learn a
-new language. Most programmers find themselves working in a variety
-of languages depending on the requirements of their current task.</p></li>
-
-<li><p><a href="https://en.wikipedia.org/wiki/Paul_Graham_(computer_programmer)">Paul Graham&rsquo;s</a> article <a href="http://www.paulgraham.com/avg.html"><em>Beating the Averages</em></a> explains how they used Lisp to make a very successful business (it was worth almost $50 million when it was purchased by Yahoo!). Lisp is a language very similar to Racket.</p></li>
-
-<li><p>Racket includes a way to build <a href="https://docs.racket-lang.org/continue/index.html?q=web%20applications">web applications</a> as well as a
-<a href="https://docs.racket-lang.org/gui/windowing-overview.html?q=gui">graphical user interface builder</a> that works on any kind of computer.</p></li>
-
-<li><p>Nobody should pass judgement on Racket until they understand the
-<a href="http://www.greghendershott.com/fear-of-macros/Preface.html">macro system</a> that it has! Consider that a challenge if you are an advanced student.</p></li>
-</ul>
+    <p>(Copied from the earlier <a href="/intermediate-cs/ch21b/pv-tick-handler/">combining tick handlers</a> page.)
+You can combine two tick-handler actions into one by using &ldquo;function composition&rdquo;:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#75715e">; first-action: model -&gt; model</span>
+<span style="color:#75715e">; second-action: model -&gt; model</span>
+<span style="color:#75715e">; tick-handler: model -&gt; model</span>
+<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">tick-handler</span> <span style="color:#111">model</span><span style="color:#111">)</span>
+   <span style="color:#111">(</span><span style="color:#111">second-action</span> <span style="color:#111">(</span><span style="color:#111">first-action</span> <span style="color:#111">model</span><span style="color:#111">)))</span></code></pre></div>
+<p>Usually <code>first-action</code> makes one object move and <code>second-action</code> makes
+another object move. Writing separate functions makes it easier to test and reduces the
+confusion of doing multiple actions at once.</p>
 
 
     
@@ -1702,8 +1679,8 @@ of languages depending on the requirements of their current task.</p></li>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/resources/events/" title="CS Events"> <i class="fa fa-chevron-left"></i><label>CS Events</label></a>
-    <a class="nav nav-next" href="/resources/ics-wescheme-note/" title="WeScheme" style="margin-right: 0px;"><label>WeScheme</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/pv-proj/pv-drawh/" title="Draw Handler Helpers"> <i class="fa fa-chevron-left"></i><label>Draw Handler Helpers</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/pv-proj/pv-help/" title="Help with Corrupted Models" style="margin-right: 0px;"><label>Help with Corrupted Models</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
