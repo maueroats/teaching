@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Karel Intellij :: WY Computer Science</title>
+<title>Draw Handler Helpers :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/karel/karel-intellij/">
+  <body data-url="/intermediate-cs/pv-proj/pv-drawh/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,11 +64,10 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -390,11 +389,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/karel/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/karel/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/karel/">Karel the Robot</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/karel/">Karel the Robot</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/karel/book/" class="dd-item">
@@ -495,7 +493,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/karel/karel-intellij/" class="dd-item active">
+      <li data-nav-id="/ap-cs/karel/karel-intellij/" class="dd-item">
         <div>
           <a href="/ap-cs/karel/karel-intellij/">
             Karel Intellij
@@ -726,10 +724,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -1366,13 +1365,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/pv-proj/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/pv-proj/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/pv-proj/">Project: PV</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/pv-proj/">Project: PV</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/pv-proj/pv-drawh/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/pv-proj/pv-drawh/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/pv-proj/pv-drawh/">
             Draw Handler Helpers
@@ -1618,7 +1618,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/karel/'>Karel the Robot</a> > Karel Intellij
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/pv-proj/'>Project: PV</a> > Draw Handler Helpers
 
  
 
@@ -1633,15 +1633,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#easy-method">Easy method</a></li>
-<li><a href="#step-by-step">Step by step</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -1651,7 +1643,7 @@
 
 <div id="body-inner">
   
-    <h1>Karel Intellij</h1>
+    <h1>Draw Handler Helpers</h1>
   
 
 
@@ -1659,43 +1651,15 @@
     
     
     
-    
+    <p>Combining draw handlers works just like <a href="/intermediate-cs/ch21b/pv-tick-handler/">combining tick handlers</a></p>
 
-<p>This documents using <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> development environment. Way overkill unless <a href="http://drjava.org">DrJava</a> is giving you trouble.</p>
-
-<h2 id="easy-method">Easy method</h2>
-
-<ul>
-<li><p>Clone the <a href="https://github.com/2017-2018-wy-ap-cs/apcs-karel-intellij">apcs-karel-intellij</a> repository.</p>
-
-<p>This is just a snapshot to get you started at home. I just copied all of the java files from the karel repository to a new directory in the correct place.</p></li>
-</ul>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone https://github.com/2017-2018-wy-ap-cs/apcs-karel-intellij</code></pre></div>
-<ul>
-<li>IDEA has: File -&gt; New -&gt; Project from existing sources&hellip; that will let you import my files. If you are lucky you can even just use my whole folder.
-<br />
-<br /></li>
-</ul>
-
-<h2 id="step-by-step">Step by step</h2>
-
-<ol>
-<li>New project in IDEA: File -&gt; New -&gt; Project&hellip;</li>
-<li>Make lib and src subfolders.</li>
-<li><code>KarelJRobot.jar</code> goes into lib.</li>
-<li>All java files go into src.</li>
-<li>IDEA:
-
-<ul>
-<li>File -&gt; Project Structure&hellip; -&gt; Modules (under Project Settings on left)</li>
-<li>Select &ldquo;Dependencies&rdquo; tab.</li>
-<li>Use &ldquo;+&rdquo; and choose the KarelJRobot.jar file in the lib folder.</li>
-<li>I checked the box &ldquo;Export&rdquo;; not sure if that matters.</li>
-</ul></li>
-<li>Build -&gt; Build Project. I had to delete the &ldquo;HackBot.java&rdquo; since I did not include the hacked KarelHRobot library.</li>
-<li>Run -&gt; Run&hellip;</li>
-</ol>
-
+<p>The best signature for a draw handler helper is:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> draw-handler-helper: model image(background) -&gt; image</pre></div>
+<p>This helper draws its result on top of a background that it is given.
+Giving the answer from one draw handler helper to another lets you combine the images.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> (define (real-draw-handler model)
+     (draw-handler-helper-1 model 
+         (draw-handler-helper-2 model UNMOVING-BACKGROUND)))</pre></div>
 
     
     
@@ -1706,8 +1670,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/karel/ch4f-project/" title="4. Robot Drama"> <i class="fa fa-chevron-left"></i><label>4. Robot Drama</label></a>
-    <a class="nav nav-next" href="/ap-cs/karel/karel-hack/" title="Karel Hacked" style="margin-right: 0px;"><label>Karel Hacked</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/pv-proj/" title="Project: PV"> <i class="fa fa-chevron-left"></i><label>Project: PV</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/pv-proj/pv-help/" title="Help with Corrupted Models" style="margin-right: 0px;"><label>Help with Corrupted Models</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

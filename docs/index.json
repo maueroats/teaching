@@ -301,6 +301,20 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-drawh/",
+	"title": "Draw Handler Helpers",
+	"tags": [],
+	"description": "Use multiple helper functions to create a big draw handler.",
+	"content": "Combining draw handlers works just like combining tick handlers\nThe best signature for a draw handler helper is:\ndraw-handler-helper: model image(background) -\u0026gt; image This helper draws its result on top of a background that it is given. Giving the answer from one draw handler helper to another lets you combine the images.\n(define (real-draw-handler model) (draw-handler-helper-1 model (draw-handler-helper-2 model UNMOVING-BACKGROUND)))"
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-help/",
+	"title": "Help with Corrupted Models",
+	"tags": [],
+	"description": "How to debug corrupted model errors by using your own check-with function.",
+	"content": " We have not talked about writing your own check-with? function. That can really help if you have not been careful about signatures and some of your functions do not do what they are supposed to do. Here is a brief tutorial how to create a really good checker function.\nIn the big-bang, (check-with game?) makes sure that the model is always a game. That saves you from the problem of returning a number from a tick handler that is supposed to return a game. It doesn\u0026rsquo;t prevent you from messing up the things inside the game struct (like putting a number where a posn is supposed to be).\nTo debug problems with your model being corrupted, you need to write your own check-with function that makes sure everything inside the model is OK too.\nSimple check-with This example shows how to check a model that has two posns and a number.\n(define-struct game (pos1 pos2 n)) (define (good-game? w) (and (game? w) (posn? (game-pos1 w)) (posn? (game-pos2 w)) (number? (game-n w)))) (big-bang ... (check-with good-game?)) Advanced check-with If your model is supposed to be a PV and a number, then you should write a really elaborate checker that makes sure everything has the right types.\n(define-struct pv (p v)) (define-struct game (pv n)) (define (good-pv? w) (and (pv? w) (posn? (pv-p w)) (posn? (pv-v w)))) (define (good-game? ww) (and (game? ww) (good-pv? (game-pv ww)) (number? (game-n ww))))"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch14/binary-search/",
 	"title": "14. Binary Search",
 	"tags": [],
@@ -935,7 +949,7 @@
 	"title": "21B. Structures",
 	"tags": [],
 	"description": "Position and velocity - the last half of Chapter 21. Choosing the right model.",
-	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  21. PV Review Review problems for PV quiz.\n  Math Soln 2 \n  Math Soln 1 \n  "
+	"content": "  21. PV Intro Slides with introduction to position-velocity struct exercises.\n  21.7.6 Groundwork Groundwork practice for 21.7.6\n  21.7.6 Tick Handler Combining actions into one big tick handler.\n  21. PV Review Review problems for PV quiz.\n  Math Soln 2 (define (h x) (g (f x)))\n  Math Soln 1 (define (h x) (- (sqr (+ (* 3 x) 1)) 9))\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/",
@@ -992,13 +1006,6 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Build Image Build-image to create images from a formula for the pixel color.\n  Strings for Experts Strings: randomizing and creating by formula.\n  "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-help/",
-	"title": "Help with Corrupted Models",
-	"tags": [],
-	"description": "How to debug corrupted model errors by using your own check-with function.",
-	"content": " We have not talked about writing your own check-with? function. That can really help if you have not been careful about signatures and some of your functions do not do what they are supposed to do. Here is a brief tutorial how to create a really good checker function.\nIn the big-bang, (check-with game?) makes sure that the model is always a game. That saves you from the problem of returning a number from a tick handler that is supposed to return a game. It doesn\u0026rsquo;t prevent you from messing up the things inside the game struct (like putting a number where a posn is supposed to be).\nTo debug problems with your model being corrupted, you need to write your own check-with function that makes sure everything inside the model is OK too.\nSimple check-with This example shows how to check a model that has two posns and a number.\n(define-struct game (pos1 pos2 n)) (define (good-game? w) (and (game? w) (posn? (game-pos1 w)) (posn? (game-pos2 w)) (number? (game-n w)))) (big-bang ... (check-with good-game?)) Advanced check-with If your model is supposed to be a PV and a number, then you should write a really elaborate checker that makes sure everything has the right types.\n(define-struct pv (p v)) (define-struct game (pv n)) (define (good-pv? w) (and (pv? w) (posn? (pv-p w)) (posn? (pv-v w)))) (define (good-game? ww) (and (game? ww) (good-pv? (game-pv ww)) (number? (game-n ww))))"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch13/13-quiz-1/",
@@ -1453,7 +1460,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  14. Searching and Sorting modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  Intermediate Computer Science Recent Changes    Help with Corrupted Models modified Sun 02-18  Project: PV modified Tue 02-13  21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  21B. Structures modified Mon 02-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  14. Searching and Sorting modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  Intermediate Computer Science Recent Changes    Draw Handler Helpers modified Mon 02-19  Help with Corrupted Models modified Sun 02-18  Project: PV modified Tue 02-13  21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  21.7.6 Groundwork modified Tue 02-06  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

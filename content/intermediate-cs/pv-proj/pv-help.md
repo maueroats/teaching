@@ -1,7 +1,7 @@
 ---
 title: "Help with Corrupted Models"
 date: 2018-02-18T17:31:40-06:00
-#weight: 
+weight: 20
 draft: false
 #type: slide
 #theme: white
