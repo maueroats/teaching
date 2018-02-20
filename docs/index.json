@@ -1026,7 +1026,7 @@
 	"title": "14. Searching and Sorting",
 	"tags": [],
 	"description": "",
-	"content": " 2018-02-12: Read Section 14.1-14.2 and do exercise 1 on the Comparable page.\n 2018-02-14: Binary search.\n 2018-02-15: Binary insert.\n   14. Comparable   14. Binary Search   "
+	"content": " 2018-02-12: Read Section 14.1-14.2 and do exercise 1 on the Comparable page.\n 2018-02-14: Binary search.\n 2018-02-15: Binary insert.\n 2018-02-16: Selection sort.\n 2018-02-20: Insertion sort.\n 2018-02-21: Merge sort.\n   14. Comparable   14. Binary Search   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21b/pv-tick-handler/math-soln-2/",
@@ -1491,14 +1491,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

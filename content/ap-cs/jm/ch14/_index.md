@@ -13,5 +13,11 @@ draft: false
 
 * 2018-02-15: [Binary insert]({{% relref "binary-search.md" %}}).
 
+* 2018-02-16: Selection sort.
+
+* 2018-02-20: Insertion sort.
+
+* 2018-02-21: Merge sort.
+
 {{% children %}}
 
