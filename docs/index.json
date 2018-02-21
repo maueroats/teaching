@@ -126,6 +126,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/contracts/contract-intro/",
+	"title": "Contract Intro",
+	"tags": [],
+	"description": "An introduction to using contracts.",
+	"content": " Contracts are the signatures of functions that we have been using. The vocabulary word changes to make it sound more legal. Contracts are actually enforced by Racket.\nDefining a contract If you want to make sure a function takes in a number and puts out a number, you can include a contract when you define it. Here is a simple complete example of a function to add five to a number.\n(require picturing-programs) (require racket/contract) ; add-five: number -\u0026gt; number (define/contract (add-five n) (-\u0026gt; number? number?) (+ 5 n)) (add-five \u0026#34;whoops\u0026#34;) Demo files: no contract, simple contract.\nTypes in a contract You can use any of the familiar type-testing functions that end in a question mark. Here is an incomplete list:\n number? string? image? any/c: The /c stands for contract. Why any by itself is not correct is beyond what we will study.  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch14/comparable/",
 	"title": "14. Comparable",
 	"tags": [],
@@ -301,6 +308,13 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/contracts/contract-structs/",
+	"title": "Contract for Structs",
+	"tags": [],
+	"description": "",
+	"content": "When you are working with a structure, the best way to make sure it does not get \u0026ldquo;broken\u0026rdquo; is to write a function to check that each part of the struct has the correct type.\nHere is an example of a game struct that has fields for: player-1 posn, player-2 posn, player 1 score, and player 2 score. We write a function to use in our handlers that\n(define-struct game (p1pos p2pos p1score p2score)) (define (good-game? g) (and (game? g) (posn? (game-p1pos g)) (posn? (game-p2pos g)) (number? (game-p1score g)) (number? (game-p2score g))))"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-drawh/",
 	"title": "Draw Handler Helpers",
 	"tags": [],
@@ -424,7 +438,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Project: Space Invaders   15. Conditionals   20. Using Structures   21A. Making Structures   Semester I Review   I.Finals   21B. Structures   Project: PV   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Project: Space Invaders   15. Conditionals   20. Using Structures   21A. Making Structures   Semester I Review   I.Finals   21B. Structures   Project: PV   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -551,6 +565,13 @@
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-turnin/",
+	"title": "PV Turnin",
+	"tags": [],
+	"description": "How to turn in your project.",
+	"content": " Reflection  What was one specific difficulty you faced? How did you figure it out and fix it? Try to identify one change in your programming process that would help you get stuck less or find a problem faster. What part of the design process is most helpful to you? Explain.  Your reflection should be at least six sentences (1-2 paragraphs).\nTurn in  Email project to me.  "
 },
 {
 	"uri": "http://wy-cs.info/ftc/meet-4/",
@@ -963,7 +984,14 @@
 	"title": "Project: PV",
 	"tags": [],
 	"description": "",
-	"content": " This project must incorporate position and velocity in some way.\n At least two moving items. Interaction of some kind between the items.  Read the Help with Corrupted Models page if you have problems like pv-pt: expects a pv, given (make-posn (make-posn 100 0) 8).\n Helpful links  Draw Handler Helpers Use multiple helper functions to create a draw handler that draws multiple moving objects.\n  Tick Handler Helpers Use multiple helper funcitons to create a tick handler that does multiple actions.\n  Help with Corrupted Models How to debug corrupted model errors by using your own check-with function.\n  Theme  Period 1: Avocado. Period 5: French fries. Period 7: Rice / pasta.  Plan You need:\n two separate sketches of game ideas. pick one and draw two scenes from the game model paragraph description of the action  Do not miss anything in the model! It\u0026rsquo;s hard to add more in later.\nDraw Handler The next step is to make a draw handler that draws all of the scenes that you have drawn in your plan.\nMotion Make sure you have two things that move (or approval to skip this). It is likely to take two days to get the motion you want. Write checks as you go.\nStyle  Check-expects for every function Follow the style guidelines that we have discussed in class.\n Close as many parentheses as you want on one line Break after every group of closed parentheses    Grading  25% style 25% check-expect 50% content  "
+	"content": " This project must incorporate position and velocity in some way.\n At least two moving items. Interaction of some kind between the items.  Read the Help with Corrupted Models page if you have problems like pv-pt: expects a pv, given (make-posn (make-posn 100 0) 8).\n Helpful links  Draw Handler Helpers Use multiple helper functions to create a draw handler that draws multiple moving objects.\n  Tick Handler Helpers Use multiple helper funcitons to create a tick handler that does multiple actions.\n  Help with Corrupted Models How to debug corrupted model errors by using your own check-with function.\n  PV Turnin How to turn in your project.\n  Theme  Period 1: Avocado. Period 5: French fries. Period 7: Rice / pasta.  Plan You need:\n two separate sketches of game ideas. pick one and draw two scenes from the game model paragraph description of the action  Do not miss anything in the model! It\u0026rsquo;s hard to add more in later.\nDraw Handler The next step is to make a draw handler that draws all of the scenes that you have drawn in your plan.\nMotion Make sure you have two things that move (or approval to skip this). It is likely to take two days to get the motion you want. Write checks as you go.\nStyle  Check-expects for every function Follow the style guidelines that we have discussed in class.\n Close as many parentheses as you want on one line Break after every group of closed parentheses    Grading  25% style 25% check-expect 50% content  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/contracts/",
+	"title": "Contracts",
+	"tags": [],
+	"description": "Racket can enforce signatures (contracts). Learn how.",
+	"content": "We have been writing signatures for functions by using comments.\n; double-it: number -\u0026gt; number This works fine for organizing your thoughts, but it would be nice if Racket could actually stop you from doing something different from what you said you would do.\nIntermediate student mode is required to use contracts. (require racket/contract)\n  Contract Intro An introduction to using contracts.\n  Contract for Structs When you are working with a structure, the best way to make sure it does not get \u0026ldquo;broken\u0026rdquo; is to write a function to check that each part of the struct has the correct type. Here is an example of a game struct that has fields for: player-1 posn, player-2 posn, player 1 score, and player 2 score. We write a function to use in our handlers that (define-struct game (p1pos p2pos p1score p2score)) (define (good-game?\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1467,7 +1495,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  Intermediate Computer Science Recent Changes    Tick Handler Helpers modified Mon 02-19  Draw Handler Helpers modified Mon 02-19  Help with Corrupted Models modified Sun 02-18  Project: PV modified Tue 02-13  21. PV Review modified Thu 02-08  Math Soln 2 modified Wed 02-07  Math Soln 1 modified Wed 02-07  21.7.6 Tick Handler modified Tue 02-06  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  Intermediate Computer Science Recent Changes    PV Turnin modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Tick Handler Helpers modified Mon 02-19  Draw Handler Helpers modified Mon 02-19  Help with Corrupted Models modified Sun 02-18  Project: PV modified Tue 02-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

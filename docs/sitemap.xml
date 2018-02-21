@@ -93,6 +93,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/contracts/contract-intro/</loc>
+    <lastmod>2018-02-21T09:43:52-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/jm/ch14/comparable/</loc>
     <lastmod>2018-02-12T11:49:54-06:00</lastmod>
   </url>
@@ -215,6 +220,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/contracts/contract-structs/</loc>
+    <lastmod>2018-02-21T10:07:36-06:00</lastmod>
   </url>
   
   <url>
@@ -395,6 +405,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03art/</loc>
     <lastmod>2017-09-27T19:52:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/pv-proj/pv-turnin/</loc>
+    <lastmod>2018-02-21T11:45:37-06:00</lastmod>
   </url>
   
   <url>
@@ -690,6 +705,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/pv-proj/</loc>
     <lastmod>2018-02-13T11:43:43-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/contracts/</loc>
+    <lastmod>2018-02-21T09:32:37-06:00</lastmod>
   </url>
   
   <url>
