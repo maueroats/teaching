@@ -17,7 +17,7 @@ draft: false
 
 * 2018-02-20: Insertion sort.
 
-* 2018-02-21: Merge sort.
+* 2018-02-21: Merge sort. Use arrays of integers. [Colorful visual demo](https://visualgo.net/en/sorting) or another [visual demo](http://algostructure.com/sorting/mergesort.php).
 
 {{% children %}}
 
