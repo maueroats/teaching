@@ -1698,10 +1698,12 @@ function to use in our handlers that</p>
 
 (define (good-game? g)
   (and (game? g)
-    (posn? (game-p1pos g))
-    (posn? (game-p2pos g))
-    (number? (game-p1score g))
-    (number? (game-p2score g))))</pre></div>
+       (posn? (game-p1pos g))
+       (posn? (game-p2pos g))
+       (number? (game-p1score g))
+       (number? (game-p2score g))))</pre></div>
+<p>When the model is a <code>game</code>, how would you write the contract for the mouse-handler?</p>
+
 
     
     

@@ -38,3 +38,19 @@ question mark. Here is an incomplete list:
 * `string?`
 * `image?`
 * `any/c`: The `/c` stands for `contract`.  Why [any by itself is not correct](https://docs.racket-lang.org/guide/contract-func.html?q=any%2Fc#%28part._any_and_any_c%29) is beyond what we will study.
+
+## Multiple arguments
+
+You can write contracts for functions with more than one argument.
+The last argument of `->` is the type of the output.
+Usually we put the inputs on one line and the outputs on another.
+
+    ; add-num-length: number string -> number
+    ; add the number and the length of the string
+    (define/contract (add-num-length n s)
+      (-> number? string?
+          number?)
+      (+ n (string-length s)))
+    (add-num-length 10 "whoops") ; OK => 16
+    (add-num-length "whoops" 10) ; ERROR signalled here
+
