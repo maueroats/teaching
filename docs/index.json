@@ -571,7 +571,7 @@
 	"title": "PV Turnin",
 	"tags": [],
 	"description": "How to turn in your project.",
-	"content": " Reflection  What was one specific difficulty you faced? How did you figure it out and fix it? Try to identify one change in your programming process that would help you get stuck less or find a problem faster. What part of the design process is most helpful to you? Explain.  Your reflection should be at least six sentences (1-2 paragraphs).\nTurn in  Email project to me.  "
+	"content": " Reflection You may hand-write your reflection or place it as a comment at the start of your code.\n What was one specific difficulty you faced? How did you figure it out and fix it? Try to identify one change in your programming process that would help you get stuck less or find a problem faster. What part of the design process is most helpful to you? Explain.  Your reflection should be at least six sentences (1-2 paragraphs).\nTurn in  Email project to me. Include copy-and-pasted code as well as attachment.  "
 },
 {
 	"uri": "http://wy-cs.info/ftc/meet-4/",
