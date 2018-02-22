@@ -1,8 +1,8 @@
 ---
 title: "PV Project Quiz"
-date: 2018-02-21T14:45:05-06:00
+date: 2018-02-22T11:37:30-06:00
 #weight: 
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "Quiz on the concepts of the PV project."
