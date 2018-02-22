@@ -8,8 +8,6 @@ draft: false
 description: "Quiz on the concepts of the PV project."
 ---
 
-## Period 1
-
 **Match the number**. In this game you have a goal number, picked
 randomly by the computer. You start with 0 and 0 numerical velocity. 
 
