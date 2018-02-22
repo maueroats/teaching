@@ -9,7 +9,8 @@ description: "Quiz on the concepts of the PV project."
 ---
 
 **Match the number**. In this game you have a goal number, picked
-randomly by the computer. You start with 0 and 0 numerical velocity. 
+randomly by the computer. You start with 0 number displayed 
+and 0 numerical velocity. 
 
 * Up arrow increase velocity.
 * Down arrow decrease velocity.
