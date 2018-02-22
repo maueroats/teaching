@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Hw :: WY Computer Science</title>
+<title>Match :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/tags/hw/">
+  <body data-url="/intermediate-cs/pro/match/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -724,10 +724,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -1429,10 +1430,11 @@
           </a>
         </div>
     </li>
-    <li data-nav-id="/intermediate-cs/pro/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/pro/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/pro/">Pro Features</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/pro/">Pro Features</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item">
@@ -1449,7 +1451,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/pro/match/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/pro/match/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/pro/match/">
             Match
@@ -1650,7 +1652,22 @@
         <span class="links">
         
 
- Hw
+
+
+
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/pro/'>Pro Features</a> > Match
+
+ 
+
+ 
+
+ 
 
    
         </span>
@@ -1659,7 +1676,20 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#matching">Matching</a>
+<ul>
+<li><a href="#problem">Problem</a></li>
+<li><a href="#example-solution-cond">Example Solution: Cond</a></li>
+<li><a href="#example-solution-match">Example Solution: Match</a></li>
+</ul></li>
+<li><a href="#ignoring-parts-of-a-model">Ignoring parts of a model</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1669,7 +1699,7 @@
 
 <div id="body-inner">
   
-    <h1>Hw</h1>
+    <h1>Match</h1>
   
 
 
@@ -1677,59 +1707,48 @@
     
     
     
+    
 
+<p>Pattern matching lets you take apart structures into their component
+variables in a simple way.</p>
 
+<p>You can use <code>(require racket/match)</code> to activate <a href="https://docs.racket-lang.org/guide/match.html?q=pattern%20match">pattern matching</a>.</p>
 
-<div class="extra-pagination inner">
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
+<h2 id="matching">Matching</h2>
 
-</div>
+<p>The <code>match</code> function is like <code>cond</code> except it checks to see if a value
+matches a certain &ldquo;literal&rdquo; pattern or question. It can create
+variables to use immediately instead of requiring a helper function.</p>
 
+<h3 id="problem">Problem</h3>
 
-   <article class="post ap-cs">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/ap-cs/haskell/ch02/hw-a2/">Haskell HW 2</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p><p>Graph a function, is a pointon a line, get the numbers more than 100, break up a list,
-find the nearest point.
-</p> <a class="read-more" href="/ap-cs/haskell/ch02/hw-a2/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+<p>Write a function that takes in a number or a posn and returns the
+distance to the correct origin (either 0 or (0,0)) depending on which
+type it gets.</p>
 
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/homework/">homework</a>
-            
-                <a class="label label-default" href="http://wy-cs.infotags/hw/">hw</a>
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-                <a class="label label-default" href="http://wy-cs.infotags/ap-cs/">ap-cs</a>
-            
-        
+<h3 id="example-solution-cond">Example Solution: Cond</h3>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (cond-to-zero w)
+  (cond [(posn? w)    (sqrt (+ (sqr (posn-x w))
+                               (sqr (posn-y w))))]
+        [(number? w)  (abs w)]))</pre></div>
+<h3 id="example-solution-match">Example Solution: Match</h3>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (match-to-zero w)
+  (match n
+    [(posn x y)  (sqrt (+ (sqr x)
+                          (sqr y)))]
+    [number?     (abs w)]))</pre></div>
+<p>Notice how</p>
 
-    </footer>
-</article>
+<h2 id="ignoring-parts-of-a-model">Ignoring parts of a model</h2>
 
-
-<div style="margin-bottom:2rem"></div>
-
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
-
-
+<p>You can use the underscore <code>_</code> to match places that you want to
+ignore. This example shows how to pull out two scores from a model and
+use them to find the total number of points in the game.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define-struct game (p1pos p1score p2pos p2score))
+(define (total-score model)
+  (match model
+    [(game _ s1 _ s2)
+     (+ s1 s2)]</pre></div>
 
     
     
@@ -1740,7 +1759,8 @@ find the nearest point.
 </div>
 
 <div id="navigation">
-<a class="nav nav-next" href="/ap-cs/" title="AP CS" style="margin-right: 0px;"><label>AP CS</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/pro/build-image/" title="Build Image"> <i class="fa fa-chevron-left"></i><label>Build Image</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/e-courses/" title="Online Help" style="margin-right: 0px;"><label>Online Help</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

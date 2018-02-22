@@ -2,6 +2,7 @@
 title: "Strings for Experts"
 date: 2017-11-19T15:30:06-06:00
 draft: false
+weight: 10
 #type: slide
 #theme: white
 description: "Strings: randomizing and creating by formula."
