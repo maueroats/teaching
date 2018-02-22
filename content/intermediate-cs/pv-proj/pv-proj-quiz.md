@@ -23,3 +23,8 @@ randomly by the computer. You start with 0 and 0 numerical velocity.
     + Win if you hit the number
     + Lose if numbers are not the same
     
+Suggested model:
+
+     (define-struct g (n v goal))
+     
+     
