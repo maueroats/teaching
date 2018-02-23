@@ -126,6 +126,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch22/list-intro/",
+	"title": "22. List Intro",
+	"tags": [],
+	"description": "An introduction to lists in Racket.",
+	"content": " We started learning about lists. (Chapter 22-23 in Picturing Programs.) Picturing Programs can be kind of long-winded in these chapters.\nAlternative sources.\nThings to know:\n Empty lists: empty-list or (list ) or '() cons when beginning empty? : list -\u0026gt; boolean (list \u0026ldquo;a\u0026rdquo; \u0026ldquo;b\u0026rdquo; \u0026ldquo;c\u0026rdquo;) first: list of Things -\u0026gt; Thing rest: list -\u0026gt; list Advanced, use a bit later: list*  List processing always begins with a choice (conditional) to see if the list is empty or not. The else clause almost always contains (\u0026hellip;. (first the-list) \u0026hellip; (rest the-list)\u0026hellip;) combined in some way.\nDesign process Simplified design process:\n Write down lists of length 0, 1, and 2, and their results Write a program to get the correct answer with a list of length 0 Modify your program to get the correct answer with a list of length 1 (and still have length 0 correct) Modify that program to keep the correct answers and get the length 2 list to give the right answer. This is the step that will usually involve (rest the-list).  Skeleton The skeleton is very important for list-processing problems. It usually has a form like this:\n(define (do-something the-list) (cond [(empty? the-list) ...] [else (... (first the-list) ... (do-something (rest the-list)))])) Write down a skeleton like that when you are working through a list.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/contracts/contract-intro/",
 	"title": "Contract Intro",
 	"tags": [],
@@ -452,7 +459,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Project: Space Invaders   15. Conditionals   20. Using Structures   21A. Making Structures   Semester I Review   I.Finals   21B. Structures   Project: PV   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Project: Space Invaders   15. Conditionals   20. Using Structures   21A. Making Structures   Semester I Review   I.Finals   21B. Structures   Project: PV   Contracts   22. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -882,6 +889,13 @@
 	"content": " Cost Order going in Friday October 27. Sign up and give $15 to Doc Mo before Friday.\nFront  Back  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch22/list-resources/",
+	"title": "22. Additional Resources",
+	"tags": [],
+	"description": "",
+	"content": "In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful:\n How to Design Programs, Part II. Pairs and Lists in the Racket Guide.  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/ch10/",
 	"title": "10. Strings",
 	"tags": [],
@@ -1015,6 +1029,13 @@
 	"content": "We have been writing signatures for functions by using comments.\n; double-it: number -\u0026gt; number This works fine for organizing your thoughts, but it would be nice if Racket could actually stop you from doing something different from what you said you would do.\nIntermediate student mode is required to use contracts. (require racket/contract)\n  Contract Intro An introduction to using contracts.\n  Contract for Structs When you are working with a structure, the best way to make sure it does not get \u0026ldquo;broken\u0026rdquo; is to write a function to check that each part of the struct has the correct type. Here is an example of a game struct that has fields for: player-1 posn, player-2 posn, player 1 score, and player 2 score. We write a function to use in our handlers that (define-struct game (p1pos p2pos p1score p2score)) (define (good-game?\n  "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch22/",
+	"title": "22. Lists",
+	"tags": [],
+	"description": "Lists give a way to remember an unlimited number of items.",
+	"content": "  22. List Intro An introduction to lists in Racket.\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
 	"title": "Haskell Daily Notes",
 	"tags": ["haskell", "daily-notes"],
@@ -1064,6 +1085,13 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/news/procom4/",
+	"title": "ProCom 4",
+	"tags": [],
+	"description": "",
+	"content": "ProCom 4.0 will be March 3, 2018 at the University of Chicago Lab School.\nLast year\u0026rsquo;s contest is posted to HackerRank for practice.\nTeams of 4! Let me know if you are interested (as soon as possible).\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-proj-quiz/",
 	"title": "PV Project Quiz",
 	"tags": [],
@@ -1097,13 +1125,6 @@
 	"tags": [],
 	"description": "",
 	"content": "(define (h x) (- (sqr (+ (* 3 x) 1)) 9))"
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/news/procom4/",
-	"title": "ProCom 4",
-	"tags": [],
-	"description": "",
-	"content": "ProCom 4.0 will be March 3, 2018 at the University of Chicago Lab School.\nLast year\u0026rsquo;s contest is posted to HackerRank for practice.\nTeams of 4 will be organized once the final information comes out.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/news/",
@@ -1509,7 +1530,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  ProCom 4 modified Mon 02-05  Intermediate Computer Science Recent Changes    PV Project Quiz modified Thu 02-22  Match modified Wed 02-21  PV Turnin modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Tick Handler Helpers modified Mon 02-19  Draw Handler Helpers modified Mon 02-19  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  Intermediate Computer Science Recent Changes    22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22. Lists modified Fri 02-23  PV Project Quiz modified Thu 02-22  Match modified Wed 02-21  PV Turnin modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1533,14 +1554,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

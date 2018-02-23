@@ -93,6 +93,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22/list-intro/</loc>
+    <lastmod>2018-02-23T11:14:59-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/contracts/contract-intro/</loc>
     <lastmod>2018-02-21T09:43:52-06:00</lastmod>
   </url>
@@ -633,6 +638,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22/list-resources/</loc>
+    <lastmod>2018-02-23T11:13:06-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/jm/ch10/</loc>
     <lastmod>2017-12-13T10:10:58-06:00</lastmod>
   </url>
@@ -728,6 +738,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22/</loc>
+    <lastmod>2018-02-23T11:11:52-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/haskell/daily/</loc>
     <lastmod>2017-09-11T10:03:46-05:00</lastmod>
   </url>
@@ -763,6 +778,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/news/procom4/</loc>
+    <lastmod>2018-02-23T11:10:45-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/pv-proj/pv-proj-quiz/</loc>
     <lastmod>2018-02-22T11:37:30-06:00</lastmod>
   </url>
@@ -785,11 +805,6 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch21b/pv-tick-handler/math-soln-1/</loc>
     <lastmod>2018-02-07T08:18:24-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/news/procom4/</loc>
-    <lastmod>2018-02-05T10:41:45-06:00</lastmod>
   </url>
   
   <url>
@@ -1097,14 +1112,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
