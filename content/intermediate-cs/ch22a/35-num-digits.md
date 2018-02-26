@@ -1,10 +1,11 @@
 ---
 title: "Recursion: Digits"
 date: 2018-02-26T12:17:07-06:00
-weight: 32
+weight: 35
 draft: false
 type: slide
 theme: white
+description: "Counting the digits in a number."
 ---
 
 ## number of digits
@@ -21,6 +22,17 @@ Returns how many digits in the number.
 * Base: answer of 1 
 
 ---
+
+## number of digits
+
+```racket
+(define (num-digits n)
+  (cond [(< n 10) 1]
+        [else ... ]))
+```
+
+---
+
 ## number of digits
 
 * Use conditional.
@@ -31,28 +43,9 @@ Returns how many digits in the number.
 
 ## number of digits
 
-```racket
-(define (num-digits n)
-  (cond [(< n 10) 1]
-        [else ... ]))
-```
-
----
-
-## number of digits
-
-```racket
-(define (num-digits n)
-  (cond [(< n 10) 1]
-        [else ... ]))
-```
-
-## number of digits
-
 Trick: 
 
 * `(quotient number 10)` has one fewer digit
 
-
-
+---
 

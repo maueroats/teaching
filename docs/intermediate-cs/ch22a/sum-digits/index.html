@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>22. Additional Resources :: WY Computer Science</title>
+<title>Recursion: Sum Digits :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch22/list-resources/">
+  <body data-url="/intermediate-cs/ch22a/sum-digits/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1436,37 +1436,59 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22/">22. Lists</a>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/ch22/list-intro/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22/list-intro/">
-            22. List Intro
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/intermediate-cs/ch22/rec-fibonacci/" class="dd-item">
-        <div>
-          <a href="/intermediate-cs/ch22/rec-fibonacci/">
+          <a href="/intermediate-cs/ch22a/30-fibonacci/">
             Recursion: Fibonacci
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22/rec-digits/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/35-num-digits/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22/rec-digits/">
+          <a href="/intermediate-cs/ch22a/35-num-digits/">
             Recursion: Digits
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22/list-resources/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch22a/sum-digits/" class="dd-item active">
         <div>
-          <a href="/intermediate-cs/ch22/list-resources/">
+          <a href="/intermediate-cs/ch22a/sum-digits/">
+            Recursion: Sum Digits
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch22a/50-fibsum/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22a/50-fibsum/">
+            Recursion: Fibsum
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/intermediate-cs/ch22b/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/ch22b/">22b. Lists</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/ch22b/list-intro/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22b/list-intro/">
+            22. List Intro
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch22b/list-resources/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22b/list-resources/">
             22. Additional Resources
           </a>
         </div>
@@ -1710,7 +1732,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22/'>22. Lists</a> > 22. Additional Resources
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > Recursion: Sum Digits
 
  
 
@@ -1735,7 +1757,7 @@
 
 <div id="body-inner">
   
-    <h1>22. Additional Resources</h1>
+    <h1>Recursion: Sum Digits</h1>
   
 
 
@@ -1743,12 +1765,51 @@
     
     
     
-    <p>In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful:</p>
+    <p><code>sum-digits</code>: whole-number -&gt; number</p>
 
-<ul>
-<li><a href="http://htdp.org/2018-01-06/Book/part_two.html">How to Design Programs, Part II</a>.</li>
-<li><a href="https://docs.racket-lang.org/guide/pairs.html">Pairs and Lists</a> in the <a href="https://docs.racket-lang.org/guide/index.html?q=Racket%20guide">Racket Guide</a>.</li>
-</ul>
+<p>Find the sum of the digits in a number.</p>
+
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th><code>(sum-digits n)</code></th>
+<th>simplified</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>53</td>
+<td>5 + 3</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>921</td>
+<td>9 + 2 + 1</td>
+<td>12</td>
+</tr>
+
+<tr>
+<td>3216</td>
+<td>3 + 2 + 1 + 6</td>
+<td>12</td>
+</tr>
+
+<tr>
+<td>65536</td>
+<td>6 + 5 + 5 + 3 + 6</td>
+<td>25</td>
+</tr>
+</tbody>
+</table>
 
 
     
@@ -1760,8 +1821,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch22/rec-digits/" title="Recursion: Digits"> <i class="fa fa-chevron-left"></i><label>Recursion: Digits</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><label>Calendar</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/35-num-digits/" title="Recursion: Digits"> <i class="fa fa-chevron-left"></i><label>Recursion: Digits</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22a/50-fibsum/" title="Recursion: Fibsum" style="margin-right: 0px;"><label>Recursion: Fibsum</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

@@ -24,6 +24,17 @@ Returns how many digits in the number.
 * Base: answer of 1 
 
 ---
+
+## number of digits
+
+```racket
+(define (num-digits n)
+  (cond [(&lt; n 10) 1]
+        [else ... ]))
+```
+
+---
+
 ## number of digits
 
 * Use conditional.
@@ -34,30 +45,11 @@ Returns how many digits in the number.
 
 ## number of digits
 
-```racket
-(define (num-digits n)
-  (cond [(&lt; n 10) 1]
-        [else ... ]))
-```
-
----
-
-## number of digits
-
-```racket
-(define (num-digits n)
-  (cond [(&lt; n 10) 1]
-        [else ... ]))
-```
-
-## number of digits
-
 Trick: 
 
 * `(quotient number 10)` has one fewer digit
 
-
-
+---
 
 
 	</section>

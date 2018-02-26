@@ -126,7 +126,7 @@
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch22/list-intro/",
+	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-intro/",
 	"title": "22. List Intro",
 	"tags": [],
 	"description": "An introduction to lists in Racket.",
@@ -459,7 +459,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Project: Space Invaders   15. Conditionals   20. Using Structures   21A. Making Structures   Semester I Review   I.Finals   21B. Structures   Project: PV   Contracts   22. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Project: Space Invaders   15. Conditionals   20. Using Structures   21A. Making Structures   Semester I Review   I.Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -490,10 +490,10 @@
 	"content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:\n Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form \u0026hellip; or email me.\nPhilosophy I aim to create an equitable challenge for everyone in my class. I want to provide everyone in the class meaningful work experiences at a manageable but challenging intellectual level. I may give the same credit for different actual assignments to accomplish this goal.\nThe student side of this equitable challenge is that I expect everyone to work on computer science 100% of the time in class. This applies even if someone is finished with the current assignment or has been absent for a week. I have a shelf full of books available for advanced or catch-up work.\nI expect everyone to take my suggestions for improving their work seriously. Computer science is an art as well as a science. Polish good habits, eradicate bad ones. Please admit if you cling to unproductive habits and work honestly to change them.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    Some grade should be updated every week. Every grade category except final exam should be updated every three weeks. Edline will have all raw score information. Only scaled (\u0026ldquo;curved\u0026rdquo;) scores will be posted on the CPS Gradebook.\nWe use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nGrading and attendance You must be present in order to learn from the class.\n   Absences Consequence     5 Call and email parent.   10 One letter grade (-10 point) deduction to final grade.   15 Additional -5 point deduction to final percentage.   20 Additional -5 point deduction to final percentage.   25 Failure in class    Three tardies more than 5 min late count as one absence.\nAny absence with a note from a medical doctor does not count toward the total absences. (Please make sure I see a copy of the note!) All other absences count. Please discuss necessary accomodations for IEP/504 in the first two weeks of class if I am not aware of them.\nDifferentiation All assigned work is expected to be completed.\nThere is no extra credit without regular credit. The way to improve a grade is through consistent effort, seeking help when needed, and allocating enough effective work time outside of class. Please track your work in your interactive notebook so we can discuss how to make your time more effective.\nAdvanced students may be allowed to replace standard work with projects, but all exceptions will be accompanied by a written contract detailing what other work will be completed to replace the main line coursework. In at most two weeks, the project is due and will receive a grade. Students are still responsible for standard material.\nEssentials of involvement As much as we can, we let students manage their own learning. Occasionally parents should be involved more at home. Sometimes adults need to talk directly. Please contact me directly if you see (or are being told) that grades are not up to date or your student is exempt from the work for any reason and does not have written documentation.\nDaily Materials  Notebook: A thin spiral or composition notebook dedicated to computer science is required for planning, reflection, and documenting progress.\n USB Flash Drive: A small USB drive to store files. (Any size is fine. Code is small.)\n  IEP and 504 plans will be followed Any student with a 504 or IEP will receive all accomodations listed. Please make sure the teacher has received a copy of the plan at the start of the year (especially if your schedule has changed, sometimes the paperwork follows too slowly).\nState standards Computer Science Teachers Association standards applicable in this class:\n 4.2.1 Computational Thinking (CT) 4.2.2 Collaboration (CL) 4.2.3 Computing Practice and Programming (CPP) See individual unit plans for more details.  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch22/rec-fibonacci/",
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/30-fibonacci/",
 	"title": "Recursion: Fibonacci",
 	"tags": [],
-	"description": "",
+	"description": "Introduction to recursion using Fibonacci numbers.",
 	"content": " Fibonacci 1,1,2,3,5,8,\u0026hellip;\n What are next three? How to number them?  Fibonacci |n|0|1|2|3|4|5|6| |-|-|-|-|-|-|-|-| |fib(n)|1|1|2|3|5|8|13|\nf(8) = ?\nFibonacci Where does it start?\nfib(0) = 1\nfib(1) = 1\nPattern?\nfib(102) = ?\nFibonacci Write the function (fib n).\nUse a conditional.\nFibonacci (define (fib n) (cond [(= n 0) 1] [(= n 1) 1] [else ... ])) "
 },
 {
@@ -588,11 +588,11 @@
 	"content": " This document gives information specific to the AP Computer Science course. See the all course syllabus information as well.\nAP Review We will do approximately three weeks of AP review before the AP exam. Second semester grades will be significantly impacted by AP test preparation.\nMany people benefit from outside preparation. Start in February. As a rough guide, the Barron\u0026rsquo;s AP Computer Science A text is too easy and the Be Prepared for the AP Computer Science Exam in Java book by Litvin and Litvin is too difficult. I have not read the Princeton Review text.\nIn the last three years Whitney Young\u0026rsquo;s AP CS pass rate has been: 85%, 100%, and 93%, so you will be prepared.\nBig picture calendar for course These dates are tentative, but they should give an idea of the major deadlines in the course.\n Weeks 1\u0026ndash;5: Haskell Week 6: Begin Java and Semester Project. October 23: Quarter 2 project top-down plan due. (No code!) October 27: Quarter 1 exam. (One week before quarter ends.) January 22: Quarter 2 project due. January 26: Quarter 2 exam. (One week before quarter ends.) March 23: Quarter 3 project due for early bonus. (Day before spring break.) March 26\u0026ndash;30: Spring Break. April 6: Quarter 3 project due. April 9: Quarter 3 exam. (Week of quarter end.) This is also part of AP exam review. April 9 \u0026ndash; May 4: AP Test Review. (Four weeks minus two days.) May 7: AP testing begins. May 15 at 12pm: AP Computer Science Test  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch22/rec-digits/",
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/35-num-digits/",
 	"title": "Recursion: Digits",
 	"tags": [],
-	"description": "",
-	"content": " number of digits num-digits: whole-number -\u0026gt; number\nReturns how many digits in the number.\nnumber of digits  Use conditional. Base: answer of 1  number of digits  Use conditional. Base: answer of 1 Else: one more than \u0026hellip;  number of digits (define (num-digits n) (cond [(\u0026lt; n 10) 1] [else ... ])) number of digits (define (num-digits n) (cond [(\u0026lt; n 10) 1] [else ... ])) number of digits Trick:\n (quotient number 10) has one fewer digit  "
+	"description": "Counting the digits in a number.",
+	"content": " number of digits num-digits: whole-number -\u0026gt; number\nReturns how many digits in the number.\nnumber of digits  Use conditional. Base: answer of 1  number of digits (define (num-digits n) (cond [(\u0026lt; n 10) 1] [else ... ])) number of digits  Use conditional. Base: answer of 1 Else: one more than \u0026hellip;  number of digits Trick:\n (quotient number 10) has one fewer digit  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/click-circle-questions/",
@@ -607,6 +607,13 @@
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/sum-digits/",
+	"title": "Recursion: Sum Digits",
+	"tags": [],
+	"description": "Sum the digits in a number.",
+	"content": "sum-digits: whole-number -\u0026gt; number\nFind the sum of the digits in a number.\n   n (sum-digits n) simplified     5 5 5   53 5 + 3 8   921 9 + 2 + 1 12   3216 3 + 2 + 1 + 6 12   65536 6 + 5 + 5 + 3 + 6 25    "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-turnin/",
@@ -733,6 +740,13 @@
 	"tags": [],
 	"description": "Review exercises for class design.",
 	"content": " MurderBot  A MurderBot is a kind of StrategyLayer with two additional abilities:\n public void stab(): place two beepers public void flee(): move one step  The KillerStrategy is a kind of Strategy that makes the robot it controls stab the first time the strategy is invoked (via doStrat, which will call doIt). Every subsequent time the robot is told to doStrat(), it should flee.\n Make sure the same doStrat() call causes one stab or one flee each time.\n Test your MurderBot with 8 calls to doStrat().\n Challenge yourself: this can be done without variables (except what is built into the StrategyLayer).\n Advanced: use the techniques the Spy in Section 4.8 to cause the stab action to find another robot on the same corner as the MurderBot and turn it off.\n  ViciousMurderBot Create a kind of MurderBot that places six beepers when it is told to stab, instead of just two.\n"
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/50-fibsum/",
+	"title": "Recursion: Fibsum",
+	"tags": [],
+	"description": "Sum of Fibonacci numbers.",
+	"content": " fibsum (fibsum n): Sum of Fibonacci numbers 0 through n.\n   n (fibsum n) simplified     0 1 1   1 1+1 2   2 1+1+2 4   3 1+1+2+3 7   4 1+1+2+3+5 12   5 1+1+2+3+5+8 20    "
 },
 {
 	"uri": "http://wy-cs.info/ftc/meet-state/",
@@ -903,7 +917,7 @@
 	"content": " Cost Order going in Friday October 27. Sign up and give $15 to Doc Mo before Friday.\nFront  Back  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch22/list-resources/",
+	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-resources/",
 	"title": "22. Additional Resources",
 	"tags": [],
 	"description": "",
@@ -1057,11 +1071,18 @@
 	"content": "We have been writing signatures for functions by using comments.\n; double-it: number -\u0026gt; number This works fine for organizing your thoughts, but it would be nice if Racket could actually stop you from doing something different from what you said you would do.\nIntermediate student mode is required to use contracts. (require racket/contract)\n  Contract Intro An introduction to using contracts.\n  Contract for Structs When you are working with a structure, the best way to make sure it does not get \u0026ldquo;broken\u0026rdquo; is to write a function to check that each part of the struct has the correct type. Here is an example of a game struct that has fields for: player-1 posn, player-2 posn, player 1 score, and player 2 score. We write a function to use in our handlers that (define-struct game (p1pos p2pos p1score p2score)) (define (good-game?\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch22/",
-	"title": "22. Lists",
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/",
+	"title": "22a. Recursion",
+	"tags": [],
+	"description": "Recursion lets you solve a problem by solving simpler problems.",
+	"content": "  Recursion: Fibonacci Introduction to recursion using Fibonacci numbers.\n  Recursion: Digits Counting the digits in a number.\n  Recursion: Sum Digits Sum the digits in a number.\n  Recursion: Fibsum Sum of Fibonacci numbers.\n  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22b/",
+	"title": "22b. Lists",
 	"tags": [],
 	"description": "Lists give a way to remember an unlimited number of items.",
-	"content": "  22. List Intro An introduction to lists in Racket.\n  Recursion: Fibonacci  Fibonacci 1,1,2,3,5,8,\u0026hellip; What are next three? How to number them? Fibonacci |n|0|1|2|3|4|5|6| |-|-|-|-|-|-|-|-| |fib(n)|1|1|2|3|5|8|13| f(8) = ? Fibonacci Where does it start? fib(0) = 1 fib(1) = 1 Pattern? fib(102) = ? Fibonacci Write the function (fib n). Use a conditional. Fibonacci (define (fib n) (cond [(= n 0) 1] [(= n 1) 1] [else ... ]))   Recursion: Digits number of digits num-digits: whole-number -\u0026gt; number Returns how many digits in the number. number of digits Use conditional. Base: answer of 1 number of digits Use conditional. Base: answer of 1 Else: one more than \u0026hellip; number of digits (define (num-digits n) (cond [(\u0026lt; n 10) 1] [else ... ])) number of digits (define (num-digits n) (cond [(\u0026lt; n 10) 1] [else ... ])) number of digits Trick:\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
+	"content": "  22. List Intro An introduction to lists in Racket.\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1551,7 +1572,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   ProCom Practice modified Mon 02-26  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  Intermediate Computer Science Recent Changes    22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22. Lists modified Fri 02-23  PV Project Quiz modified Thu 02-22  Match modified Wed 02-21  PV Turnin modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   ProCom Practice modified Mon 02-26  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  Intermediate Computer Science Recent Changes    Recursion: Sum Digits modified Mon 02-26  Recursion: Fibsum modified Mon 02-26  22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22a. Recursion modified Fri 02-23  22b. Lists modified Fri 02-23  PV Project Quiz modified Thu 02-22  Match modified Wed 02-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

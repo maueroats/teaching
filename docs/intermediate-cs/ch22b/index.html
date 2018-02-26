@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>22. Lists :: WY Computer Science</title>
+<title>22b. Lists :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch22/">
+  <body data-url="/intermediate-cs/ch22b/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1436,37 +1436,59 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22/" class="dd-item parent active haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22/">22. Lists</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/ch22/list-intro/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22/list-intro/">
-            22. List Intro
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/intermediate-cs/ch22/rec-fibonacci/" class="dd-item">
-        <div>
-          <a href="/intermediate-cs/ch22/rec-fibonacci/">
+          <a href="/intermediate-cs/ch22a/30-fibonacci/">
             Recursion: Fibonacci
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22/rec-digits/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/35-num-digits/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22/rec-digits/">
+          <a href="/intermediate-cs/ch22a/35-num-digits/">
             Recursion: Digits
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22/list-resources/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/sum-digits/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22/list-resources/">
+          <a href="/intermediate-cs/ch22a/sum-digits/">
+            Recursion: Sum Digits
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch22a/50-fibsum/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22a/50-fibsum/">
+            Recursion: Fibsum
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/intermediate-cs/ch22b/" class="dd-item parent active haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/ch22b/">22b. Lists</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/ch22b/list-intro/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22b/list-intro/">
+            22. List Intro
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch22b/list-resources/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22b/list-resources/">
             22. Additional Resources
           </a>
         </div>
@@ -1707,7 +1729,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > 22. Lists
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > 22b. Lists
 
  
 
@@ -1730,7 +1752,7 @@
 
 <div id="body-inner">
   
-    <h1>22. Lists</h1>
+    <h1>22b. Lists</h1>
   
 
 
@@ -1744,34 +1766,12 @@
 <ul class="children children-li">
 
 <span><li>
-		<a href="/intermediate-cs/ch22/list-intro/" >22. List Intro</a></li>
+		<a href="/intermediate-cs/ch22b/list-intro/" >22. List Intro</a></li>
 <p>An introduction to lists in Racket.</p>
 </span>
 
 <span><li>
-		<a href="/intermediate-cs/ch22/rec-fibonacci/" >Recursion: Fibonacci</a></li>
-<p> Fibonacci 1,1,2,3,5,8,&hellip;
- What are next three? How to number them?  Fibonacci |n|0|1|2|3|4|5|6| |-|-|-|-|-|-|-|-| |fib(n)|1|1|2|3|5|8|13|
-f(8) = ?
-Fibonacci Where does it start?
-fib(0) = 1
-fib(1) = 1
-Pattern?
-fib(102) = ?
-Fibonacci Write the function (fib n).
-Use a conditional.
-Fibonacci (define (fib n) (cond [(= n 0) 1] [(= n 1) 1] [else ... ])) </p>
-</span>
-
-<span><li>
-		<a href="/intermediate-cs/ch22/rec-digits/" >Recursion: Digits</a></li>
-<p>number of digits num-digits: whole-number -&gt; number
-Returns how many digits in the number.
-number of digits  Use conditional. Base: answer of 1  number of digits  Use conditional. Base: answer of 1 Else: one more than &hellip;  number of digits (define (num-digits n) (cond [(&lt; n 10) 1] [else ... ])) number of digits (define (num-digits n) (cond [(&lt; n 10) 1] [else ... ])) number of digits Trick:</p>
-</span>
-
-<span><li>
-		<a href="/intermediate-cs/ch22/list-resources/" >22. Additional Resources</a></li>
+		<a href="/intermediate-cs/ch22b/list-resources/" >22. Additional Resources</a></li>
 <p>In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful:
  How to Design Programs, Part II. Pairs and Lists in the Racket Guide.  </p>
 </span>
@@ -1793,8 +1793,8 @@ number of digits  Use conditional. Base: answer of 1  number of digits  Use cond
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/contracts/contract-structs/" title="Contract for Structs"> <i class="fa fa-chevron-left"></i><label>Contract for Structs</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch22/list-intro/" title="22. List Intro" style="margin-right: 0px;"><label>22. List Intro</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/50-fibsum/" title="Recursion: Fibsum"> <i class="fa fa-chevron-left"></i><label>Recursion: Fibsum</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22b/list-intro/" title="22. List Intro" style="margin-right: 0px;"><label>22. List Intro</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

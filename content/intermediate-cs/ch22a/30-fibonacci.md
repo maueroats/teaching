@@ -5,6 +5,7 @@ weight: 30
 draft: false
 type: slide
 theme: white
+description: "Introduction to recursion using Fibonacci numbers."
 ---
 
 ## Fibonacci

@@ -93,7 +93,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch22/list-intro/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/ch22b/list-intro/</loc>
     <lastmod>2018-02-23T11:14:59-06:00</lastmod>
   </url>
   
@@ -353,7 +353,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch22/rec-fibonacci/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/30-fibonacci/</loc>
     <lastmod>2018-02-26T11:49:56-06:00</lastmod>
   </url>
   
@@ -423,7 +423,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch22/rec-digits/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/35-num-digits/</loc>
     <lastmod>2018-02-26T12:17:07-06:00</lastmod>
   </url>
   
@@ -435,6 +435,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch03art/</loc>
     <lastmod>2017-09-27T19:52:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/sum-digits/</loc>
+    <lastmod>2018-02-26T14:46:21-06:00</lastmod>
   </url>
   
   <url>
@@ -525,6 +530,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/karel/ch4d-review/</loc>
     <lastmod>2017-11-13T09:52:14-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/50-fibsum/</loc>
+    <lastmod>2018-02-26T14:26:20-06:00</lastmod>
   </url>
   
   <url>
@@ -648,7 +658,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch22/list-resources/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/ch22b/list-resources/</loc>
     <lastmod>2018-02-23T11:13:06-06:00</lastmod>
   </url>
   
@@ -758,7 +768,12 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch22/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/</loc>
+    <lastmod>2018-02-23T11:11:52-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22b/</loc>
     <lastmod>2018-02-23T11:11:52-06:00</lastmod>
   </url>
   
