@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Haskell HW 2 :: WY Computer Science</title>
+<title>ProCom Practice :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/ch02/hw-a2/">
+  <body data-url="/ap-cs/jm/interlude-feb/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -71,11 +71,10 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
@@ -93,11 +92,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch02/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/ch02/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch02/">2. Starting Out</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch02/">2. Starting Out</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/ch02/ch02-reading-guide/" class="dd-item">
@@ -114,7 +112,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/haskell/ch02/hw-a2/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/ch02/hw-a2/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/ch02/hw-a2/">
             Haskell HW 2
@@ -512,10 +510,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -708,7 +707,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/interlude-feb/" class="dd-item
+    <li data-nav-id="/ap-cs/jm/interlude-feb/" class="dd-item parent active
         ">
       <div>
       <a href="/ap-cs/jm/interlude-feb/">ProCom Practice</a>
@@ -1697,12 +1696,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch02/'>2. Starting Out</a> > Haskell HW 2
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > ProCom Practice
 
  
 
@@ -1721,8 +1715,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#homework">Homework</a></li>
-<li><a href="#omit">OMIT</a></li>
+<li><a href="#introduction">Introduction</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1733,21 +1726,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="http://wy-cs.infotags/homework">homework</a>
-    
-      <a class="label label-default" href="http://wy-cs.infotags/hw">hw</a>
-    
-      <a class="label label-default" href="http://wy-cs.infotags/haskell">haskell</a>
-    
-      <a class="label label-default" href="http://wy-cs.infotags/ap-cs">ap-cs</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>Haskell HW 2</h1>
+    <h1>ProCom Practice</h1>
   
 
 
@@ -1755,32 +1736,35 @@
     
     
     
-    <p>Graph a function, is a pointon a line, get the numbers more than 100, break up a list,
-find the nearest point.
-</p>
 
-<h2 id="homework">Homework</h2>
 
-<ol>
-<li><p>Write the &ldquo;grapher&rdquo; function whose inputs are (i) a function f that takes in a number and puts out a number, (ii) a lower bound, and (iii) an upper bound.  The grapher function should return a list of coordinates <code>(x,y)</code> where <code>y=f(x)</code> and <code>x</code> goes from the lower bound to the upper bound increasing by 1 each time.</p></li>
 
-<li><p>Write a function <code>onLine</code> that takes in a slope <code>m</code>, a y-intercept <code>b</code>, and a point <code>(x0,y0)</code> and gives back True if the point is on the line <code>y=m*x+b</code> and false otherwise.</p></li>
+<ul>
+<li>Make a <a href="https://www.hackerrack.com">HackerRank</a> account.</li>
+<li>Join <a href="https://www.hackerrank.com/pro-com-3">last year&rsquo;s contest</a>.</li>
+</ul>
 
-<li><p>Write a function <code>moreThan100</code> that takes in a list of numbers and puts out a list of numbers. The output is the same as the input with all of the numbers less than or equal to 100 removed.</p></li>
+<h2 id="introduction">Introduction</h2>
 
-<li><p><em>Break It Up</em>. Given a list of numbers, create a list containing every sequence of four numbers in a row. Example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">breakItUp [5,10,20,3,8,9] = [ [5,10,20,3], [10,20,3,8], [20,3,8,9] ]</pre></div></li>
+<p>2018-02-26:</p>
 
-<li><p><em>Target Practice</em>. (<em>Challenge</em>) Given a point <code>(x0,y0)</code> and a list of ordered pairs, return the point in the list that is closest to the given point. (Hint: skip the square root when you compare distances, it will save you some Haskell difficulties.)</p></li>
-</ol>
+<ul>
+<li><a href="https://www.hackerrank.com/contests/pro-com-3/challenges/keep-swimming">Keep Swimming</a></li>
 
-<h2 id="omit">OMIT</h2>
+<li><p><a href="https://www.hackerrank.com/contests/pro-com-3/challenges/keep-swimming">Pipe Pals</a></p>
 
-<ol>
-<li><p>Write a function <code>addp</code> that adds two ordered pairs.</p></li>
+<ul>
+<li>We learned how to look up the Javadoc pages for the <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Character.html">Character</a> class to find the <code>isUpperCase</code> and <code>isLowerCase</code> methods.</li>
+</ul></li>
 
-<li><p>(<em>Bonus</em>) The function <code>nextInDirection</code> takes in start point <code>(x0,y0)</code>, a direction <code>(dx,dy)</code>, and a list of ordered pairs. The function returns the point in the list that is closest to the start point and can be reached by beginning at the start and going in the given direction.</p></li>
-</ol>
+<li><p><a href="https://www.hackerrank.com/contests/pro-com-3/challenges/blurry-memory">Blurry Memory</a></p>
+
+<ul>
+<li>We wrote code to read in the data and discussed a strategy to finish.</li>
+</ul></li>
+</ul>
+
+
 
     
     
@@ -1791,8 +1775,8 @@ find the nearest point.
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/ch02/cw-a2/" title="Haskell CW 2"> <i class="fa fa-chevron-left"></i><label>Haskell CW 2</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/ch02/hw-a2-solution/" title="Haskell HW 2 Solutions" style="margin-right: 0px;"><label>Haskell HW 2 Solutions</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch14/binary-search/" title="14. Binary Search"> <i class="fa fa-chevron-left"></i><label>14. Binary Search</label></a>
+    <a class="nav nav-next" href="/ap-cs/news/" title="News" style="margin-right: 0px;"><label>News</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

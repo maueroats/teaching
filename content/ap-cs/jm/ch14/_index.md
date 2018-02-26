@@ -1,7 +1,7 @@
 ---
 title: "14. Searching and Sorting"
 date: 2018-02-21T09:31:24-06:00
-#weight: 
+weight: 140
 draft: false
 #type: slide
 #theme: white

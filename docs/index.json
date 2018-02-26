@@ -641,7 +641,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   ProCom Practice   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -973,6 +973,20 @@
 	"content": "See the plan for initial information! We are currently going to make the functions that decide when action happens.\n SI Plan   SI Walkthrough   "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch14/",
+	"title": "14. Searching and Sorting",
+	"tags": [],
+	"description": "",
+	"content": " 2018-02-12: Read Section 14.1-14.2 and do exercise 1 on the Comparable page.\n 2018-02-14: Binary search.\n 2018-02-15: Binary insert.\n 2018-02-16: Selection sort.\n 2018-02-20: Insertion sort.\n 2018-02-21: Merge sort. Use arrays of integers. Colorful visual demo or another visual demo.\n   14. Comparable   14. Binary Search   "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/",
+	"title": "ProCom Practice",
+	"tags": [],
+	"description": "",
+	"content": "  Make a HackerRank account. Join last year\u0026rsquo;s contest.  Introduction 2018-02-26:\n Keep Swimming Pipe Pals\n We learned how to look up the Javadoc pages for the Character class to find the isUpperCase and isLowerCase methods.  Blurry Memory\n We wrote code to read in the data and discussed a strategy to finish.   "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch15/",
 	"title": "15. Conditionals",
 	"tags": [],
@@ -1097,13 +1111,6 @@
 	"tags": [],
 	"description": "Quiz on the concepts of the PV project.",
 	"content": "Match the number. In this game you have a goal number, picked randomly by the computer. You start with 0 number displayed and 0 numerical velocity.\n Up arrow increase velocity. Down arrow decrease velocity. Every tick (0.2 sec), the displayed number changes by the velocity number. Velocity can\u0026rsquo;t be below 1 once you start moving. Color the changing number based on how far away from the goal number it is. Mouse click to reset the goal to a new random number and reset the displayed number and velocity to zero. Space bar to end game and invoke win screen. Win screen:\n Win if you hit the number Lose if numbers are not the same    Suggested model:\n(define-struct g (n v goal))"
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/jm/ch14/",
-	"title": "14. Searching and Sorting",
-	"tags": [],
-	"description": "",
-	"content": " 2018-02-12: Read Section 14.1-14.2 and do exercise 1 on the Comparable page.\n 2018-02-14: Binary search.\n 2018-02-15: Binary insert.\n 2018-02-16: Selection sort.\n 2018-02-20: Insertion sort.\n 2018-02-21: Merge sort. Use arrays of integers. Colorful visual demo or another visual demo.\n   14. Comparable   14. Binary Search   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch13/13-quiz-1/",
@@ -1530,7 +1537,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  13. Avoid Aardvark modified Tue 02-06  Intermediate Computer Science Recent Changes    22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22. Lists modified Fri 02-23  PV Project Quiz modified Thu 02-22  Match modified Wed 02-21  PV Turnin modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   ProCom Practice modified Mon 02-26  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  Intermediate Computer Science Recent Changes    22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22. Lists modified Fri 02-23  PV Project Quiz modified Thu 02-22  Match modified Wed 02-21  PV Turnin modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1554,14 +1561,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

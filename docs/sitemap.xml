@@ -698,6 +698,16 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/jm/ch14/</loc>
+    <lastmod>2018-02-21T09:31:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/ap-cs/jm/interlude-feb/</loc>
+    <lastmod>2018-02-26T09:50:24-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch15/</loc>
     <lastmod>2017-12-05T10:22:50-06:00</lastmod>
   </url>
@@ -785,11 +795,6 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/pv-proj/pv-proj-quiz/</loc>
     <lastmod>2018-02-22T11:37:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/jm/ch14/</loc>
-    <lastmod>2018-02-21T09:31:24-06:00</lastmod>
   </url>
   
   <url>
@@ -1112,14 +1117,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
