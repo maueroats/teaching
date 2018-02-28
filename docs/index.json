@@ -491,7 +491,7 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/30-fibonacci/",
-	"title": "Recursion: Fibonacci",
+	"title": "22a. Fibonacci",
 	"tags": [],
 	"description": "Introduction to recursion using Fibonacci numbers.",
 	"content": " Fibonacci 1,1,2,3,5,8,\u0026hellip;\n What are next three? How to number them?  Fibonacci |n|0|1|2|3|4|5|6| |-|-|-|-|-|-|-|-| |fib(n)|1|1|2|3|5|8|13|\nf(8) = ?\nFibonacci Where does it start?\nfib(0) = 1\nfib(1) = 1\nPattern?\nfib(102) = ?\nFibonacci Write the function (fib n).\nUse a conditional.\nFibonacci (define (fib n) (cond [(= n 0) 1] [(= n 1) 1] [else ... ])) "
@@ -589,7 +589,7 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/35-num-digits/",
-	"title": "Recursion: Digits",
+	"title": "22a. Digits",
 	"tags": [],
 	"description": "Counting the digits in a number.",
 	"content": " number of digits num-digits: whole-number -\u0026gt; number\nReturns how many digits in the number.\nnumber of digits  Use conditional. Base: answer of 1  number of digits (define (num-digits n) (cond [(\u0026lt; n 10) 1] [else ... ])) number of digits  Use conditional. Base: answer of 1 Else: one more than \u0026hellip;  number of digits Trick:\n (quotient number 10) has one fewer digit  "
@@ -609,8 +609,8 @@
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch22a/sum-digits/",
-	"title": "Recursion: Sum Digits",
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/40-sum-digits/",
+	"title": "22a. Sum Digits",
 	"tags": [],
 	"description": "Sum the digits in a number.",
 	"content": "sum-digits: whole-number -\u0026gt; number\nFind the sum of the digits in a number.\n   n (sum-digits n) simplified     5 5 5   53 5 + 3 8   921 9 + 2 + 1 12   3216 3 + 2 + 1 + 6 12   65536 6 + 5 + 5 + 3 + 6 25    "
@@ -743,7 +743,7 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/50-fibsum/",
-	"title": "Recursion: Fibsum",
+	"title": "22a. Fibsum",
 	"tags": [],
 	"description": "Sum of Fibonacci numbers.",
 	"content": " fibsum (fibsum n): Sum of Fibonacci numbers 0 through n.\n   n (fibsum n) simplified     0 1 1   1 1+1 2   2 1+1+2 4   3 1+1+2+3 7   4 1+1+2+3+5 12   5 1+1+2+3+5+8 20    "
@@ -1075,7 +1075,7 @@
 	"title": "22a. Recursion",
 	"tags": [],
 	"description": "Recursion lets you solve a problem by solving simpler problems.",
-	"content": "  Recursion: Fibonacci Introduction to recursion using Fibonacci numbers.\n  Recursion: Digits Counting the digits in a number.\n  Recursion: Sum Digits Sum the digits in a number.\n  Recursion: Fibsum Sum of Fibonacci numbers.\n  "
+	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/",
@@ -1132,6 +1132,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/60-more-rec/",
+	"title": "22a. More Recursion",
+	"tags": [],
+	"description": "Many more recursion practice problems.",
+	"content": " sum-cubes: number(n) -\u0026gt; number. Finds the sum of the first n perfect cubes.\n vblock: number(n) image(img) -\u0026gt; image. Makes a vertical stack of n copies of img.\n hblock: number(n) image(img) -\u0026gt; image. Make a horizontal stack of n copies of img.\n grid: number(rows) number(columns) image -\u0026gt; image. Make a grid that is columns wide and rows tall of the image repeated.\n add-sqrt: number(start) number(end) -\u0026gt; number. Add up (sqrt n) beginning with n=start and stopping at n=end-1.\n lots-of-hyphens: string(word) -\u0026gt; string. Insert a hyphen after every letter in the word.\n(lots-of-hyphens \u0026#34;grape\u0026#34;) ==\u0026gt; \u0026#34;g-r-a-p-e-\u0026#34;  Extra: get \u0026quot;g-r-a-p-e\u0026quot; instead.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/news/procom4/",
@@ -1572,7 +1579,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   ProCom Practice modified Mon 02-26  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  Intermediate Computer Science Recent Changes    Recursion: Sum Digits modified Mon 02-26  Recursion: Fibsum modified Mon 02-26  22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22a. Recursion modified Fri 02-23  22b. Lists modified Fri 02-23  PV Project Quiz modified Thu 02-22  Match modified Wed 02-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   ProCom Practice modified Mon 02-26  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  Intermediate Computer Science Recent Changes    22a. More Recursion modified Tue 02-27  22a. Sum Digits modified Mon 02-26  22a. Fibsum modified Mon 02-26  22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22b. Lists modified Fri 02-23  22a. Recursion modified Fri 02-23  PV Project Quiz modified Thu 02-22  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1596,14 +1603,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",

@@ -1,5 +1,5 @@
 ---
-title: "Recursion: Sum Digits"
+title: "22a. Sum Digits"
 date: 2018-02-26T14:46:21-06:00
 weight: 40
 draft: false

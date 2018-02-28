@@ -1,5 +1,5 @@
 ---
-title: "Recursion: Fibonacci"
+title: "22a. Fibonacci"
 date: 2018-02-26T11:49:56-06:00
 weight: 30
 draft: false

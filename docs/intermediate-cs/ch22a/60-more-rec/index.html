@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Connect Four :: WY Computer Science</title>
+<title>22a. More Recursion :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/connect-four/">
+  <body data-url="/intermediate-cs/ch22a/60-more-rec/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,18 +64,16 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
@@ -296,11 +294,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item parent active haschildren
+    <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/connect-four/">Connect Four</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/connect-four/">Connect Four</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/connect-four/timeline/" class="dd-item">
@@ -733,10 +730,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -1438,10 +1436,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/">22a. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
@@ -1472,7 +1471,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/60-more-rec/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/60-more-rec/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch22a/60-more-rec/">
             22a. More Recursion
@@ -1740,7 +1739,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > Connect Four
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. More Recursion
 
  
 
@@ -1755,17 +1754,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#functions-to-write">Functions to write</a></li>
-<li><a href="#advanced-functions">Advanced functions</a></li>
-<li><a href="#design-process">Design process</a></li>
-<li><a href="#technical-details">Technical details</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -1773,17 +1762,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="http://wy-cs.infotags/haskell">haskell</a>
-    
-      <a class="label label-default" href="http://wy-cs.infotags/project">project</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>Connect Four</h1>
+    <h1>22a. More Recursion</h1>
   
 
 
@@ -1791,98 +1772,22 @@
     
     
     
+    <ol>
+<li><p><code>sum-cubes</code>: number(n) -&gt; number. Finds the sum of the first <code>n</code> perfect cubes.</p></li>
 
+<li><p><code>vblock</code>: number(n) image(img) -&gt; image. Makes a vertical stack of <code>n</code> copies of <code>img</code>.</p></li>
 
+<li><p><code>hblock</code>: number(n) image(img) -&gt; image. Make a horizontal stack of <code>n</code> copies of <code>img</code>.</p></li>
 
-<p><strong>Due Monday, October 16</strong>. See <a href="/ap-cs/haskell/connect-four/timeline/">timeline</a>.</p>
+<li><p><code>grid</code>: number(rows) number(columns) image -&gt; image. Make a grid that is <code>columns</code> wide and <code>rows</code> tall of the image repeated.</p></li>
 
-<p>Familiarize yourself with the game of
-<a href="https://en.wikipedia.org/wiki/Connect_Four">Connect Four</a>, possibly <a href="https://www.mathsisfun.com/games/connect4.html">playing a few games</a>.</p>
+<li><p><code>add-sqrt</code>: number(start) number(end) -&gt; number. Add up <code>(sqrt n)</code> beginning with <code>n=start</code> and stopping at <code>n=end-1</code>.</p></li>
 
-<h2 id="functions-to-write">Functions to write</h2>
-
-<p>This is a minimum set of functions to write:</p>
-
-<ul>
-<li><p><code>draw_board :: Board -&gt; String</code></p>
-
-<p>Create a String representation of the board.</p></li>
-
-<li><p><code>make_move :: Board -&gt; Player -&gt; Position -&gt; Board</code></p>
-
-<p>Gives a new Board with a piece added. Assumes that the move is legal.</p></li>
-
-<li><p><code>is_legal_move :: Board -&gt; Player -&gt; Position -&gt; Bool</code></p>
-
-<p>True if the attempted move is legal. Used to prevent people from playing in full columns or off the board (e.g., column -5).
-The computer uses this information to decide whether the next move should be by the same player (attempted move was illegal) or the opponent.</p></li>
-
-<li><p><code>is_won :: Board -&gt; Bool</code></p>
-
-<p>True when either player has four in a row on the board.</p></li>
-</ul>
-
-<h2 id="advanced-functions">Advanced functions</h2>
-
-<p>When you are done with the minimum set of functions, consider writing
-functions that make better and better moves.</p>
-
-<ul>
-<li><p><code>any_legal</code> gives the first legal move it finds.</p></li>
-
-<li><p><code>win_or_any_move</code> is an improvement over <code>any_legal</code> that makes a
-winning move if there is one.</p></li>
-
-<li><p><code>win_or_get_three</code> is an improvement over <code>win_or_random_move</code> that
-plays to get three in a row if it cannot get four in a row.</p></li>
-
-<li><p><code>best_move</code> picks a move that will lead to a win if one exists and
-avoids moves that lead to losing.</p></li>
-</ul>
-
-<p>The last function is the most interesting, but will require doing some outside
-reading on the <a href="http://www.cs.cornell.edu/courses/cs2110/2014sp/assignments/a4/A4ConnectFour.pdf">minimax algorithm</a>, perhaps looking at an <a href="https://github.com/erikackermann/Connect-Four">implementation for Connect Four</a>.</p>
-
-<h2 id="design-process">Design process</h2>
-
-<p>Make a plan before you start writing code! I recommend the top-down
-design that we discussed last year.</p>
-
-<p>Please have each step of the design process visible for each
-function. It will speed your work and made it easier to understand!</p>
-
-<ol>
-<li>Purpose for the function</li>
-<li>Signature for the function</li>
-<li>Example(s) showing how the function will work.</li>
-<li>Write the function.</li>
-<li>Testing: put the examples for the function called <code>work</code> into a function called <code>test_work</code>.</li>
+<li><p><code>lots-of-hyphens</code>: string(word) -&gt; string. Insert a hyphen after every letter in the word.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(lots-of-hyphens &#34;grape&#34;) ==&gt; &#34;g-r-a-p-e-&#34;</pre></div></li>
 </ol>
 
-<h2 id="technical-details">Technical details</h2>
-
-<ol>
-<li><p>Question: How do you print on more than one line?</p>
-
-<p>Answer: Put &ldquo;\n&rdquo; in your string. For example: &ldquo;One line\nSecond line&rdquo;.</p>
-
-<p>Example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">drawBoard</span> <span style="color:#75af00">xs</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;__XX</span><span style="color:#8045ff">\n</span><span style="color:#d88200">_OOO&#34;</span>
-<span style="color:#75af00">main</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">do</span> <span style="color:#75af00">putStrLn</span> <span style="color:#f92672">$</span> <span style="color:#75af00">drawBoard</span> <span style="color:#111">[[</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">],[</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">]]</span></code></pre></div></li>
-
-<li><p>Question: What is the difference between &lsquo;X&rsquo; and &ldquo;X&rdquo;?</p>
-
-<p>Answer: &lsquo;x&rsquo; is a character (Char), and &ldquo;X&rdquo; is a String, which is a list of characters.</p></li>
-
-<li><p>Question: How do you define a type shortcut?</p>
-
-<p>Answer: <code>type Board = [[Int]]</code></p></li>
-
-<li><p>Question: How do you define a struct?</p>
-
-<p>Answer: it will be easier if you do not do this, but <a href="http://learnyouahaskell.com/making-our-own-types-and-typeclasses#record-syntax">Chapter 8 in LYaH</a> has all of the information you need.</p></li>
-</ol>
-
+<p>Extra: get <code>&quot;g-r-a-p-e&quot;</code> instead.</p>
 
 
     
@@ -1894,8 +1799,8 @@ function. It will speed your work and made it easier to understand!</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/daily/2017-09-11/" title="2017-09-11"> <i class="fa fa-chevron-left"></i><label>2017-09-11</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/connect-four/timeline/" title="Connect Four Timeline" style="margin-right: 0px;"><label>Connect Four Timeline</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/50-fibsum/" title="22a. Fibsum"> <i class="fa fa-chevron-left"></i><label>22a. Fibsum</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22b/" title="22b. Lists" style="margin-right: 0px;"><label>22b. Lists</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

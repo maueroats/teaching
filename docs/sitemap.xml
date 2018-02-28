@@ -438,7 +438,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch22a/sum-digits/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/40-sum-digits/</loc>
     <lastmod>2018-02-26T14:46:21-06:00</lastmod>
   </url>
   
@@ -813,6 +813,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/60-more-rec/</loc>
+    <lastmod>2018-02-27T08:46:23-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/news/procom4/</loc>
     <lastmod>2018-02-23T11:10:45-06:00</lastmod>
   </url>
@@ -1142,14 +1147,14 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>http://wy-cs.info/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wy-cs.info/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>http://wy-cs.info/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

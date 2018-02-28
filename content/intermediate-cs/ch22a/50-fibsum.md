@@ -1,5 +1,5 @@
 ---
-title: "Recursion: Fibsum"
+title: "22a. Fibsum"
 date: 2018-02-26T14:26:20-06:00
 weight: 50
 draft: false
