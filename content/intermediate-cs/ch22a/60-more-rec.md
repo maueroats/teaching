@@ -1,7 +1,7 @@
 ---
 title: "22a. More Recursion"
 date: 2018-02-28T08:11:33-06:00
-#weight: 
+weight: 60
 draft: false
 #type: slide
 #theme: white

@@ -798,6 +798,13 @@
 	"content": " You are going to make a play in which robots interact.\nDocumentation:\n Karel the Robot (all) Robot UrRobot Hacked Karel the Robot  Assignment in Brief Assignment Elements  One robot interacts with another robot. You create a new interface or abstract class for use. Robots interact in a non-formulaic way. Interesting plot line (please!). It\u0026rsquo;s supposed to be fun.  Assignment Timeline  Friday: Outline of the action which will happen. (Check in.) Tuesday: You should have at least 3 classes/interfaces written. (Check in.) Tuesday after Thanksgiving: project due.  SchoolBot abstract class We decided that every robot in school will have four basic functions.\nboolean isStudent(); boolean isTeacher(); boolean isHelpful(); Strategy getHelp(); Robots can be students or teachers. If a robot is helpful, then you can get a Strategy from it. (The idea is that the Strategy will get you help when you \u0026ldquo;doIt\u0026rdquo;.)\nStudentBot looks for TeacherBot To interact with other robots, I suggest using:\n the enhanced Robot class the neighbors() function  Robot vs UrRobot Use the Robot class instead of UrRobot. This lets your robot detect some things in its environment. For example, nextToARobot() returns true if there is at least one other robot with the same coordinates. Links to the Robot documentation are at the top of this page.\nneighbors The myRobot.neighbors() function returns an Enumeration. An Enumeration is an object that is basically a list of items. There is a nextElement() function which gives you the next item in the list. (You start before the first item.) There is a hasMoreElements() which returns true if there is another element you can get.\nIn order to use Enumeration you must include import java.util.* at the start of your document.\n Note: Karel the Robot is an old program and Enumeration is an old interface. New programs use an Iterator instead.\n"
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/60-more-rec/",
+	"title": "22a. More Recursion",
+	"tags": [],
+	"description": "Many more recursion practice problems.",
+	"content": " sum-cubes: number(n) -\u0026gt; number. Finds the sum of the first n perfect cubes.\n vblock: number(n) image(img) -\u0026gt; image. Makes a vertical stack of n copies of img.\n hblock: number(n) image(img) -\u0026gt; image. Make a horizontal stack of n copies of img.\n grid: number(rows) number(columns) image -\u0026gt; image. Make a grid that is columns wide and rows tall of the image repeated.\n add-sqrt: number(start) number(end) -\u0026gt; number. Add up (sqrt n) beginning with n=start and stopping at n=end-1.\n lots-of-hyphens: string(word) -\u0026gt; string. Insert a hyphen after every letter in the word.\n(lots-of-hyphens \u0026#34;grape\u0026#34;) ==\u0026gt; \u0026#34;g-r-a-p-e-\u0026#34;  Extra: get \u0026quot;g-r-a-p-e\u0026quot; instead.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-6/",
 	"title": "I.6 Semester I Review 6",
 	"tags": [],
@@ -1132,13 +1139,6 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/ch22a/60-more-rec/",
-	"title": "22a. More Recursion",
-	"tags": [],
-	"description": "Many more recursion practice problems.",
-	"content": " sum-cubes: number(n) -\u0026gt; number. Finds the sum of the first n perfect cubes.\n vblock: number(n) image(img) -\u0026gt; image. Makes a vertical stack of n copies of img.\n hblock: number(n) image(img) -\u0026gt; image. Make a horizontal stack of n copies of img.\n grid: number(rows) number(columns) image -\u0026gt; image. Make a grid that is columns wide and rows tall of the image repeated.\n add-sqrt: number(start) number(end) -\u0026gt; number. Add up (sqrt n) beginning with n=start and stopping at n=end-1.\n lots-of-hyphens: string(word) -\u0026gt; string. Insert a hyphen after every letter in the word.\n(lots-of-hyphens \u0026#34;grape\u0026#34;) ==\u0026gt; \u0026#34;g-r-a-p-e-\u0026#34;  Extra: get \u0026quot;g-r-a-p-e\u0026quot; instead.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/news/procom4/",
@@ -1603,14 +1603,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
