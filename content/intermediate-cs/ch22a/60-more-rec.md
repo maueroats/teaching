@@ -16,7 +16,12 @@ description: "Many more recursion practice problems."
 
 4. `grid`: number(rows) number(columns) image -> image. Make a grid that is `columns` wide and `rows` tall of the image repeated.
 
-5. `add-sqrt`: number(start) number(end) -> number. Add up `(sqrt n)` beginning with `n=start` and stopping at `n=end-1`.
+5. `add-sqrt`: number(start) number(end) -> number. Add up `(sqrt n)` beginning with `n=start` and stopping at `n=end-1`. If no numbers fit this description, the sum should be zero.
+
+        (check-expect (add-sqrt 4 5) 2)
+        (check-within (add-sqrt 4 9) 12.15 0.01)
+        (check-expect (add-sqrt 2 2) 0)
+        (check-expect (add-sqrt 100 4) 0)
 
 6. `lots-of-hyphens`: string(word) -> string. Insert a hyphen after every letter in the word. 
 
