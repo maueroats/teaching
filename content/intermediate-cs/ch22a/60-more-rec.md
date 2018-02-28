@@ -16,11 +16,12 @@ description: "Many more recursion practice problems."
 
 4. `grid`: number(rows) number(columns) image -> image. Make a grid that is `columns` wide and `rows` tall of the image repeated.
 
-5. `add-sqrt`: number(start) number(end) -> number. Add up `(sqrt n)` beginning with `n=start` and stopping at `n=end-1`. If no numbers fit this description, the sum should be zero.
+5. `add-sqrt`: number(start) number(end) -> number. Add up `(sqrt n)` for every integer `n` with `start <= n < end`
+If no numbers fit this description, the sum should be zero.
 
     Example: when start=4 and end=6, the answer is `(+ (sqrt 4) (sqrt 5))`, which is about 4.236.
 
-        (check-expect (add-sqrt 4 6) 2)
+        (check-expect (add-sqrt 4 5) 2)
         (check-expect (add-sqrt 2 2) 0)
         (check-expect (add-sqrt 100 4) 0)
         (check-within (add-sqrt 4 6) 4.23 0.01)
