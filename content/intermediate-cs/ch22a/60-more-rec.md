@@ -30,7 +30,7 @@ description: "Many more recursion practice problems."
 
         (lots-of-hyphens "grape") ==> "g-r-a-p-e-"
 
-Extra: get `"g-r-a-p-e"` instead.
+    Extra: get `"g-r-a-p-e"` instead.
 
-7. `ten-circle`: number(start) number(end) -> image. Produces concentric circles starting at radius `start` and drawing every 10 units until the radius is at least `end`.
+7. `ten-circle`: number(start) number(end) -> image. Produces concentric circles starting at radius `start` and drawing every 10 units until the radius is at least `end`. Assume `start < end`.
 

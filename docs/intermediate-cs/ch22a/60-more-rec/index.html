@@ -1798,13 +1798,10 @@
 (check-within (add-sqrt 4 9) 12.15 0.01)</pre></div></li>
 
 <li><p><code>lots-of-hyphens</code>: string(word) -&gt; string. Insert a hyphen after every letter in the word.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(lots-of-hyphens &#34;grape&#34;) ==&gt; &#34;g-r-a-p-e-&#34;</pre></div></li>
-</ol>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(lots-of-hyphens &#34;grape&#34;) ==&gt; &#34;g-r-a-p-e-&#34;</pre></div>
+<p>Extra: get <code>&quot;g-r-a-p-e&quot;</code> instead.</p></li>
 
-<p>Extra: get <code>&quot;g-r-a-p-e&quot;</code> instead.</p>
-
-<ol>
-<li><code>ten-circle</code>: number(start) number(end) -&gt; image. Produces concentric circles starting at radius <code>start</code> and drawing every 10 units until the radius is at least <code>end</code>.</li>
+<li><p><code>ten-circle</code>: number(start) number(end) -&gt; image. Produces concentric circles starting at radius <code>start</code> and drawing every 10 units until the radius is at least <code>end</code>. Assume <code>start &lt; end</code>.</p></li>
 </ol>
 
 
