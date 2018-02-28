@@ -7,7 +7,7 @@ draft: false
 #theme: white
 ---
 
-* Make a [HackerRank](https://www.hackerrack.com) account.
+* Make a [HackerRank](https://www.hackerrank.com/) account.
 * Join [last year's contest](https://www.hackerrank.com/pro-com-3).
 
 ## Introduction

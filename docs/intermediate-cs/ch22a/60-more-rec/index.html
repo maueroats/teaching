@@ -1478,6 +1478,13 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/ch22a/70-rec-helpers/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22a/70-rec-helpers/">
+            22a. Recursive Helpers
+          </a>
+        </div>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/intermediate-cs/ch22b/" class="dd-item haschildren
@@ -1782,16 +1789,23 @@
 <li><p><code>grid</code>: number(rows) number(columns) image -&gt; image. Make a grid that is <code>columns</code> wide and <code>rows</code> tall of the image repeated.</p></li>
 
 <li><p><code>add-sqrt</code>: number(start) number(end) -&gt; number. Add up <code>(sqrt n)</code> beginning with <code>n=start</code> and stopping at <code>n=end-1</code>. If no numbers fit this description, the sum should be zero.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (add-sqrt 4 5) 2)
-(check-within (add-sqrt 4 9) 12.15 0.01)
+
+<p>Example: when start=4 and end=6, the answer is <code>(+ (sqrt 4) (sqrt 5))</code>, which is about 4.236.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (add-sqrt 4 6) 2)
 (check-expect (add-sqrt 2 2) 0)
-(check-expect (add-sqrt 100 4) 0)</pre></div></li>
+(check-expect (add-sqrt 100 4) 0)
+(check-within (add-sqrt 4 6) 4.23 0.01)
+(check-within (add-sqrt 4 9) 12.15 0.01)</pre></div></li>
 
 <li><p><code>lots-of-hyphens</code>: string(word) -&gt; string. Insert a hyphen after every letter in the word.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(lots-of-hyphens &#34;grape&#34;) ==&gt; &#34;g-r-a-p-e-&#34;</pre></div></li>
 </ol>
 
 <p>Extra: get <code>&quot;g-r-a-p-e&quot;</code> instead.</p>
+
+<ol>
+<li><code>ten-circle</code>: number(start) number(end) -&gt; image. Produces concentric circles starting at radius <code>start</code> and drawing every 10 units until the radius is at least <code>end</code>.</li>
+</ol>
 
 
     
@@ -1804,7 +1818,7 @@
 
 <div id="navigation">
 <a class="nav nav-prev" href="/intermediate-cs/ch22a/50-fibsum/" title="22a. Fibsum"> <i class="fa fa-chevron-left"></i><label>22a. Fibsum</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch22b/" title="22b. Lists" style="margin-right: 0px;"><label>22b. Lists</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/intermediate-cs/ch22a/70-rec-helpers/" title="22a. Recursive Helpers" style="margin-right: 0px;"><label>22a. Recursive Helpers</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

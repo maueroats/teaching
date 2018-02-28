@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>6. Higher Order Functions :: WY Computer Science</title>
+<title>22a. Recursive Helpers :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/ch06/">
+  <body data-url="/intermediate-cs/ch22a/70-rec-helpers/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,18 +64,16 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
@@ -216,11 +214,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch06/" class="dd-item parent active haschildren
+    <li data-nav-id="/ap-cs/haskell/ch06/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch06/">6. Higher Order Functions</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch06/">6. Higher Order Functions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/ch06/ch06-reading-guide/" class="dd-item">
@@ -733,10 +730,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -1438,10 +1436,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/">22a. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
@@ -1479,7 +1478,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/70-rec-helpers/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/70-rec-helpers/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch22a/70-rec-helpers/">
             22a. Recursive Helpers
@@ -1747,7 +1746,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > 6. Higher Order Functions
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. Recursive Helpers
 
  
 
@@ -1772,7 +1771,7 @@
 
 <div id="body-inner">
   
-    <h1>6. Higher Order Functions</h1>
+    <h1>22a. Recursive Helpers</h1>
   
 
 
@@ -1780,23 +1779,9 @@
     
     
     
-
-<p>This is a fun chapter to read, but as a class we are done after Chapter 5 (for now).</p>
-
-
-
-<ul class="children children-li">
-
-<span><li>
-		<a href="/ap-cs/haskell/ch06/ch06-reading-guide/" >Chapter 6 Reading Guide</a></li>
-</span>
-</ul>
-
-
-
-
-
-
+    <ol>
+<li><code>big-bullseye</code>: number(n) -&gt; image. Draw n concentric circles, alternating color beginning with black on the inside. Begin with a radius of 10 and increase the radius by 10 each successive circle.</li>
+</ol>
 
 
     
@@ -1808,8 +1793,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/ch05/ch05-reading-guide/" title="Chapter 5 Reading Guide"> <i class="fa fa-chevron-left"></i><label>Chapter 5 Reading Guide</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/ch06/ch06-reading-guide/" title="Chapter 6 Reading Guide" style="margin-right: 0px;"><label>Chapter 6 Reading Guide</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/60-more-rec/" title="22a. More Recursion"> <i class="fa fa-chevron-left"></i><label>22a. More Recursion</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22b/" title="22b. Lists" style="margin-right: 0px;"><label>22b. Lists</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

@@ -802,7 +802,7 @@
 	"title": "22a. More Recursion",
 	"tags": [],
 	"description": "Many more recursion practice problems.",
-	"content": " sum-cubes: number(n) -\u0026gt; number. Finds the sum of the first n perfect cubes.\n vblock: number(n) image(img) -\u0026gt; image. Makes a vertical stack of n copies of img.\n hblock: number(n) image(img) -\u0026gt; image. Make a horizontal stack of n copies of img.\n grid: number(rows) number(columns) image -\u0026gt; image. Make a grid that is columns wide and rows tall of the image repeated.\n add-sqrt: number(start) number(end) -\u0026gt; number. Add up (sqrt n) beginning with n=start and stopping at n=end-1. If no numbers fit this description, the sum should be zero.\n(check-expect (add-sqrt 4 5) 2) (check-within (add-sqrt 4 9) 12.15 0.01) (check-expect (add-sqrt 2 2) 0) (check-expect (add-sqrt 100 4) 0) lots-of-hyphens: string(word) -\u0026gt; string. Insert a hyphen after every letter in the word.\n(lots-of-hyphens \u0026#34;grape\u0026#34;) ==\u0026gt; \u0026#34;g-r-a-p-e-\u0026#34;  Extra: get \u0026quot;g-r-a-p-e\u0026quot; instead.\n"
+	"content": " sum-cubes: number(n) -\u0026gt; number. Finds the sum of the first n perfect cubes.\n vblock: number(n) image(img) -\u0026gt; image. Makes a vertical stack of n copies of img.\n hblock: number(n) image(img) -\u0026gt; image. Make a horizontal stack of n copies of img.\n grid: number(rows) number(columns) image -\u0026gt; image. Make a grid that is columns wide and rows tall of the image repeated.\n add-sqrt: number(start) number(end) -\u0026gt; number. Add up (sqrt n) beginning with n=start and stopping at n=end-1. If no numbers fit this description, the sum should be zero.\nExample: when start=4 and end=6, the answer is (+ (sqrt 4) (sqrt 5)), which is about 4.236.\n(check-expect (add-sqrt 4 6) 2) (check-expect (add-sqrt 2 2) 0) (check-expect (add-sqrt 100 4) 0) (check-within (add-sqrt 4 6) 4.23 0.01) (check-within (add-sqrt 4 9) 12.15 0.01) lots-of-hyphens: string(word) -\u0026gt; string. Insert a hyphen after every letter in the word.\n(lots-of-hyphens \u0026#34;grape\u0026#34;) ==\u0026gt; \u0026#34;g-r-a-p-e-\u0026#34;  Extra: get \u0026quot;g-r-a-p-e\u0026quot; instead.\n ten-circle: number(start) number(end) -\u0026gt; image. Produces concentric circles starting at radius start and drawing every 10 units until the radius is at least end.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/sem-review-6/",
@@ -852,6 +852,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following honor code regarding all of their work in this class.\n “I have neither given nor received improper aid on this test/project.”   “Improper aid” includes, but is not limited to:\n copying another student’s work allowing another student to copy your work sharing the problems given on a test to a student who has not taken the test copying work from any online or electronic resource without citation chatting or texting with another student during a test in which computer use is allowed  On a project (not test), it is acceptable to give suggestions to a student who knows less than you do.\n The student who is giving help may read the code of the student seeking help. The student who is giving help may not type (or write) any code.  Penalties when a student is caught cheating in this class may include:\n A zero on the assessment Final grade being lowered a letter Expulsion from National Honor Society (NHS or NJHS) Denial of a future application to National Honor Society (NHS or NJHS) Negatively affecting scholarships and post-high school programs for which you have applied  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/70-rec-helpers/",
+	"title": "22a. Recursive Helpers",
+	"tags": [],
+	"description": "Exercises involving recursive functions with helper functions.",
+	"content": " big-bullseye: number(n) -\u0026gt; image. Draw n concentric circles, alternating color beginning with black on the inside. Begin with a radius of 10 and increase the radius by 10 each successive circle.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1final/7-final-exam/",
@@ -1082,7 +1089,7 @@
 	"title": "22a. Recursion",
 	"tags": [],
 	"description": "Recursion lets you solve a problem by solving simpler problems.",
-	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  "
+	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/",
@@ -1579,7 +1586,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   ProCom Practice modified Mon 02-26  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  Intermediate Computer Science Recent Changes    22a. More Recursion modified Wed 02-28  22a. Sum Digits modified Mon 02-26  22a. Fibsum modified Mon 02-26  22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22b. Lists modified Fri 02-23  22a. Recursion modified Fri 02-23  PV Project Quiz modified Thu 02-22  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   ProCom Practice modified Mon 02-26  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  13. Shopping List modified Wed 02-07  Intermediate Computer Science Recent Changes    22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  22a. Sum Digits modified Mon 02-26  22a. Fibsum modified Mon 02-26  22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22b. Lists modified Fri 02-23  22a. Recursion modified Fri 02-23  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
