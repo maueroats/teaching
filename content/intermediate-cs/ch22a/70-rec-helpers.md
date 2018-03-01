@@ -13,7 +13,7 @@ description: "Exercises involving recursive functions with helper functions."
 
 1. `big-bullseye`: number(n) -> image. Draw n concentric circles, alternating color beginning with black on the inside. Begin with a radius of 10 and increase the radius by 10 each successive circle.
 
-2. `sier-triangle`: number(n) number(size) -> image. Make a [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_gasket) with `n` sub-triangles and a side length of `size`. 
+2. `sier-triangle`: number(n) number(size) -> image. Make a [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_gasket) with `n` sub-triangles and a side length of `size`. Do this by dividing the size in two when you make a smaller triangle, and arrange those triangles themselves in a triangle (see images).
 
 ## Number Theory
 

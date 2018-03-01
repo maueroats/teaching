@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Connect Four Testcases :: WY Computer Science</title>
+<title>14. Test Corrections :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/connect-four/testcases/">
+  <body data-url="/ap-cs/jm/ch14/ch14-test-corr/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -71,11 +71,10 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
@@ -296,11 +295,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/connect-four/">Connect Four</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/connect-four/">Connect Four</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/connect-four/timeline/" class="dd-item">
@@ -324,7 +322,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/haskell/connect-four/testcases/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/connect-four/testcases/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/connect-four/testcases/">
             Connect Four Testcases
@@ -512,10 +510,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -686,10 +685,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch14/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/ch14/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/ch14/">14. Searching and Sorting</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/ch14/">14. Searching and Sorting</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/jm/ch14/comparable/" class="dd-item">
@@ -706,7 +706,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/ch14/ch14-test-corr/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch14/ch14-test-corr/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/ch14/ch14-test-corr/">
             14. Test Corrections
@@ -1757,7 +1757,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/connect-four/'>Connect Four</a> > Connect Four Testcases
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch14/'>14. Searching and Sorting</a> > 14. Test Corrections
 
  
 
@@ -1784,7 +1784,7 @@
 
 <div id="body-inner">
   
-    <h1>Connect Four Testcases</h1>
+    <h1>14. Test Corrections</h1>
   
 
 
@@ -1792,21 +1792,33 @@
     
     
     
-    <p>The <a href="connect4.zip">testcases zip file</a> contains all of the template files.</p>
+    <p>Tests from Chapter 14 are returned Thursday/Friday.</p>
 
-<p>You can also download them one by one:</p>
+<p>Understanding your score:</p>
 
 <ul>
-<li><a href="ConnectFour.hs">Connect Four</a></li>
-<li><a href="TestConnectFour.hs">TestConnectFour</a></li>
-<li><a href="UIConnectFour.hs">User Interface for Connect Four</a></li>
-<li><a href="Main.hs">Main method in its own file</a></li>
+<li><p>Number: multiple choice score, out of 20.</p></li>
+
+<li><p>Letter below number: programming free response score.</p></li>
 </ul>
 
-<p>It may help you to start from <strong><a href="https://repl.it/NP9L/1">my repl.it workspace</a></strong> with all of the
-testing code already in it. Your code should go in <code>ConnectFour.hs</code>. You may need
-to edit some of the function names. The list of what they are supposed to be is
-at the start.</p>
+<p>Grading:</p>
+
+<ul>
+<li><p>20 points multiple choice: turn in test corrections Monday for half
+points back.</p></li>
+
+<li><p>20 points free response: discuss with me if you had problems
+here. (A=95%, B=85%, etc.)</p></li>
+</ul>
+
+<p>Test corrections:</p>
+
+<ul>
+<li>Explain what the right answer is. Show work justifying you are correct.</li>
+<li>Code tracing (problems 3,8) - explain in writing what happens as you
+trace your example through the program.</li>
+</ul>
 
 
     
@@ -1818,8 +1830,8 @@ at the start.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/connect-four/spoilers/" title="Connect Four Spoilers"> <i class="fa fa-chevron-left"></i><label>Connect Four Spoilers</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/connect-four/rubric/" title="Connect Four Rubric" style="margin-right: 0px;"><label>Connect Four Rubric</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch14/binary-search/" title="14. Binary Search"> <i class="fa fa-chevron-left"></i><label>14. Binary Search</label></a>
+    <a class="nav nav-next" href="/ap-cs/jm/interlude-feb/" title="ProCom Practice" style="margin-right: 0px;"><label>ProCom Practice</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
