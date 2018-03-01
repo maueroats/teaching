@@ -858,7 +858,7 @@
 	"title": "22a. Recursive Helpers",
 	"tags": [],
 	"description": "Exercises involving recursive functions with helper functions.",
-	"content": " big-bullseye: number(n) -\u0026gt; image. Draw n concentric circles, alternating color beginning with black on the inside. Begin with a radius of 10 and increase the radius by 10 each successive circle.  "
+	"content": " Image Theory  big-bullseye: number(n) -\u0026gt; image. Draw n concentric circles, alternating color beginning with black on the inside. Begin with a radius of 10 and increase the radius by 10 each successive circle.\n sier-triangle: number(n) number(size) -\u0026gt; image. Make a Sierpinski triangle with n sub-triangles and a side length of size.\n  Number Theory  count-divisors: positive-integer(n) -\u0026gt; positive-integer. Count how many integers 1,2,\u0026hellip;,n divide the number n.\n is-prime?: positive-integer(n) -\u0026gt; boolean. Determine whether or not n is prime. Note: this can do less checking than the previous function.\n smallest-factor: positive-integer(n) -\u0026gt; positive-integer. Find the smallest integer divisor of n.\n smallest-prime-factor: positive-integer(n) -\u0026gt; positive-integer. Find the smallest prime factor of n.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1final/7-final-exam/",
