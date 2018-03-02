@@ -16,7 +16,7 @@ Use `define/contract` for each function.
 
 2. `double-ss`: string -> string. Double each `s` appearing in the string.
 
-        (check-expect (slash-vowels "The snake was silent.") 
+        (check-expect (double-ss "The snake was silent.") 
                       "The ssnake wass ssilent.")
 
 3. `math-mess`: number(start) number(end) -> number. Add the square of every even number, subtract the square root of every odd number.
