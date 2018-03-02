@@ -7,6 +7,8 @@ draft: false
 #theme: white
 ---
 
+Use `define/contract` for each function.
+
 1. `hawaiian-earring`: number(stage) number(radius) -> image. Create `stage` circles with each successive circle 80% of the radius of the previous one.
 
     {{< figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hawaiian_Earrings.svg/240px-Hawaiian_Earrings.svg.png" >}}
@@ -22,4 +24,5 @@ draft: false
         (math-mess 10 10) => (* 10 10)
         (math-mess 11 11) => (- (sqrt 11))
         (math-mess 10 11) => (- (* 10 10) (sqrt 11))
+
 
