@@ -34,3 +34,5 @@ If no numbers fit this description, the sum should be zero.
 
 7. `ten-circle`: number(start) number(end) -> image. Produces concentric circles starting at radius `start` and drawing every 10 units until the radius is at least `end`. Assume `start < end`.
 
+    {{< figure src="ten-circle.png" >}}
+    
