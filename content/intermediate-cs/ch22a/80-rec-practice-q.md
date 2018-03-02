@@ -19,7 +19,7 @@ Use `define/contract` for each function.
         (check-expect (double-ss "The snake was silent.") 
                       "The ssnake wass ssilent.")
 
-3. `math-mess`: number(start) number(end) -> number. Add the square of every even number, subtract the square root of every odd number.
+3. `math-mess`: number(start) number(end) -> number. For all of the numbers between `start` and `end`: add the squares of the even numbers, subtract the square roots of the odd numbers.
 
         (math-mess 10 10) => (* 10 10)
         (math-mess 11 11) => (- (sqrt 11))

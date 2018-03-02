@@ -1816,7 +1816,7 @@
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (double-ss &#34;The snake was silent.&#34;) 
               &#34;The ssnake wass ssilent.&#34;)</pre></div></li>
 
-<li><p><code>math-mess</code>: number(start) number(end) -&gt; number. Add the square of every even number, subtract the square root of every odd number.</p>
+<li><p><code>math-mess</code>: number(start) number(end) -&gt; number. For all of the numbers between <code>start</code> and <code>end</code>: add the squares of the even numbers, subtract the square roots of the odd numbers.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(math-mess 10 10) =&gt; (* 10 10)
 (math-mess 11 11) =&gt; (- (sqrt 11))
 (math-mess 10 11) =&gt; (- (* 10 10) (sqrt 11))</pre></div></li>
