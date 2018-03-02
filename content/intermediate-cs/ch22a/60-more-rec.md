@@ -16,15 +16,15 @@ description: "Many more recursion practice problems."
 
 4. `grid`: number(rows) number(columns) image -> image. Make a grid that is `columns` wide and `rows` tall of the image repeated.
 
-5. `add-sqrt`: number(start) number(end) -> number. Add up `(sqrt n)` for every integer `n` with `start <= n < end`
+5. `add-sqrt`: number(start) number(end) -> number. Add up `(sqrt n)` for every integer `n` with `start <= n <= end`
 If no numbers fit this description, the sum should be zero.
 
-    Example: when start=4 and end=6, the answer is `(+ (sqrt 4) (sqrt 5))`, which is about 4.236.
+    Example: when start=4 and end=5, the answer is `(+ (sqrt 4) (sqrt 5))`, which is about 4.236.
 
-        (check-expect (add-sqrt 4 4) 0)
-        (check-expect (add-sqrt 4 5) 2)
-        (check-within (add-sqrt 4 6) 4.23 0.01)
-        (check-within (add-sqrt 4 9) 12.15 0.01)
+        (check-expect (add-sqrt 4 3) 0)
+        (check-expect (add-sqrt 4 4) 2)
+        (check-within (add-sqrt 4 5) 4.23 0.01)
+        (check-within (add-sqrt 4 8) 12.15 0.01)
 
 6. `lots-of-hyphens`: string(word) -> string. Insert a hyphen after every letter in the word. 
 
