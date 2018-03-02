@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>2. Final - CodingBat :: WY Computer Science</title>
+<title>22a. Recursion Quiz Practice :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/jm/sem1final/2-final-codingbat/">
+  <body data-url="/intermediate-cs/ch22a/80-rec-practice-q/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,11 +64,10 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -510,11 +509,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -634,14 +632,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/sem1final/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/jm/sem1final/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/sem1final/">Semester 1 Final</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/sem1final/">Semester 1 Final</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/jm/sem1final/2-final-codingbat/" class="dd-item active">
+      <li data-nav-id="/ap-cs/jm/sem1final/2-final-codingbat/" class="dd-item">
         <div>
           <a href="/ap-cs/jm/sem1final/2-final-codingbat/">
             2. Final - CodingBat
@@ -740,10 +737,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -1445,10 +1443,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/">22a. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
@@ -1493,7 +1492,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/80-rec-practice-q/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/80-rec-practice-q/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch22a/80-rec-practice-q/">
             22a. Recursion Quiz Practice
@@ -1761,12 +1760,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/sem1final/'>Semester 1 Final</a> > 2. Final - CodingBat
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. Recursion Quiz Practice
 
  
 
@@ -1791,7 +1785,7 @@
 
 <div id="body-inner">
   
-    <h1>2. Final - CodingBat</h1>
+    <h1>22a. Recursion Quiz Practice</h1>
   
 
 
@@ -1799,41 +1793,29 @@
     
     
     
-    <p><strong>sticksOut</strong>. A word in an array &ldquo;sticks out&rdquo; if there is one word
-before it and one word after it, and it is alphabetically after the
-word that comes after it or it is at least two letters shorter than
-the word before it. Return a copy of the given array in which every
-word that &ldquo;sticks out&rdquo; is replaced by the last half of the word after
-it.</p>
+    <ol>
+<li><code>hawaiian-earring</code>: number(stage) number(radius) -&gt; image. Create <code>stage</code> circles with each successive circle 80% of the radius of the previous one.</li>
+</ol>
 
-<ul>
-<li>Use case-insensitive comparison.</li>
-<li>If the &ldquo;halves&rdquo; of a word must be uneven, make the <em>first</em> &ldquo;half&rdquo; larger.</li>
-</ul>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">sticksOut([&#34;alfa&#34;,&#34;bravo&#34;,&#34;zulu&#34;,&#34;charlie&#34;]) 
-==&gt; [&#34;alfa&#34;,&#34;bravo&#34;,&#34;lie&#34;,&#34;charlie&#34;]
 
-sticksOut([&#34;walnut&#34;,&#34;pie&#34;,&#34;quince&#34;])
-==&gt; [&#34;walnut&#34;, &#34;nce&#34;, &#34;quince&#34;]
+<figure >
+    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hawaiian_Earrings.svg/240px-Hawaiian_Earrings.svg.png" />
+    
+    
+</figure>
 
-sticksOut([&#34;DELTA&#34;,&#34;eragon&#34;,&#34;FOXTROT&#34;,&#34;FOXTRO&#34;])
-==&gt; [&#34;DELTA&#34;,&#34;eragon&#34;,&#34;TRO&#34;,&#34;FOXTRO&#34;]
 
-sticksOut([&#34;aaa&#34;,&#34;b&#34;,&#34;cccc&#34;,&#34;f&#34;,&#34;dd&#34;])
-==&gt; [&#34;aaa&#34;,&#34;cc&#34;,&#34;d&#34;,&#34;dd&#34;]</pre></div>
-<p>Note: The notation [&hellip;] denotes an array, although this is not
-syntactically correct Java. Use the correct syntax in your program and
-tests.</p>
+<ol>
+<li><p><code>slash-vowels</code>: string(word) -&gt; string. Surround each vowel by slashes (<code>/</code>).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (slash-vowels &#34;The snake was silent.&#34;) 
+              &#34;The ssnake wass ssilent.&#34;)</pre></div></li>
 
-<ul>
-<li>Write the function <code>sticksOut</code>.</li>
-<li>Write at least three additional tests.</li>
-<li>Use the <a href="SticksOut.java">Starter code</a> and automated testing.</li>
-</ul>
-
-<div class="notices warning" ><p>Requires detailed understanding of the String chapter.</p>
-</div>
-
+<li><p><code>math-mess</code>: number(start) number(end) -&gt; number. Add the square of every even number, subtract the square root of every odd number.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(math-mess 10 10) =&gt; (* 10 10)
+(math-mess 11 11) =&gt; (- (sqrt 11))
+(math-mess 10 11) =&gt; (- (* 10 10) (sqrt 11))</pre></div></li>
+</ol>
 
 
     
@@ -1845,8 +1827,8 @@ tests.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/jm/sem1final/" title="Semester 1 Final"> <i class="fa fa-chevron-left"></i><label>Semester 1 Final</label></a>
-    <a class="nav nav-next" href="/ap-cs/jm/sem1final/4-final-codingbat/" title="4. Final - CodingBat" style="margin-right: 0px;"><label>4. Final - CodingBat</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/70-rec-helpers/" title="22a. Recursive Helpers"> <i class="fa fa-chevron-left"></i><label>22a. Recursive Helpers</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22b/" title="22b. Lists" style="margin-right: 0px;"><label>22b. Lists</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
