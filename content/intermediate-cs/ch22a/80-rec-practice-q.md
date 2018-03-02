@@ -9,10 +9,10 @@ draft: false
 
 1. `hawaiian-earring`: number(stage) number(radius) -> image. Create `stage` circles with each successive circle 80% of the radius of the previous one.
 
-{{< figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hawaiian_Earrings.svg/240px-Hawaiian_Earrings.svg.png" >}}
+    {{< figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hawaiian_Earrings.svg/240px-Hawaiian_Earrings.svg.png" >}}
 
 
-2. `slash-vowels`: string(word) -> string. Surround each vowel by slashes (`/`). 
+2. `double-ss`: string -> string. Double each `s` appearing in the string.
 
         (check-expect (slash-vowels "The snake was silent.") 
                       "The ssnake wass ssilent.")

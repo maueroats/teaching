@@ -893,7 +893,7 @@
 	"title": "22a. Recursion Quiz Practice",
 	"tags": [],
 	"description": "",
-	"content": " hawaiian-earring: number(stage) number(radius) -\u0026gt; image. Create stage circles with each successive circle 80% of the radius of the previous one.    slash-vowels: string(word) -\u0026gt; string. Surround each vowel by slashes (/).\n(check-expect (slash-vowels \u0026#34;The snake was silent.\u0026#34;) \u0026#34;The ssnake wass ssilent.\u0026#34;) math-mess: number(start) number(end) -\u0026gt; number. Add the square of every even number, subtract the square root of every odd number.\n(math-mess 10 10) =\u0026gt; (* 10 10) (math-mess 11 11) =\u0026gt; (- (sqrt 11)) (math-mess 10 11) =\u0026gt; (- (* 10 10) (sqrt 11))  "
+	"content": " hawaiian-earring: number(stage) number(radius) -\u0026gt; image. Create stage circles with each successive circle 80% of the radius of the previous one.\n  double-ss: string -\u0026gt; string. Double each s appearing in the string.\n(check-expect (slash-vowels \u0026#34;The snake was silent.\u0026#34;) \u0026#34;The ssnake wass ssilent.\u0026#34;) math-mess: number(start) number(end) -\u0026gt; number. Add the square of every even number, subtract the square root of every odd number.\n(math-mess 10 10) =\u0026gt; (* 10 10) (math-mess 11 11) =\u0026gt; (- (sqrt 11)) (math-mess 10 11) =\u0026gt; (- (* 10 10) (sqrt 11))  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/",
@@ -1096,7 +1096,7 @@
 	"title": "22a. Recursion",
 	"tags": [],
 	"description": "Recursion lets you solve a problem by solving simpler problems.",
-	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice  hawaiian-earring: number(stage) number(radius) -\u0026gt; image. Create stage circles with each successive circle 80% of the radius of the previous one. slash-vowels: string(word) -\u0026gt; string. Surround each vowel by slashes (/). (check-expect (slash-vowels \u0026#34;The snake was silent.\u0026#34;) \u0026#34;The ssnake wass ssilent.\u0026#34;) math-mess: number(start) number(end) -\u0026gt; number. Add the square of every even number, subtract the square root of every odd number. (math-mess 10 10) =\u0026gt; (* 10 10) (math-mess 11 11) =\u0026gt; (- (sqrt 11)) (math-mess 10 11) =\u0026gt; (- (* 10 10) (sqrt 11))   "
+	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice  hawaiian-earring: number(stage) number(radius) -\u0026gt; image. Create stage circles with each successive circle 80% of the radius of the previous one. double-ss: string -\u0026gt; string. Double each s appearing in the string. (check-expect (slash-vowels \u0026#34;The snake was silent.\u0026#34;) \u0026#34;The ssnake wass ssilent.\u0026#34;) math-mess: number(start) number(end) -\u0026gt; number. Add the square of every even number, subtract the square root of every odd number. (math-mess 10 10) =\u0026gt; (* 10 10) (math-mess 11 11) =\u0026gt; (- (sqrt 11)) (math-mess 10 11) =\u0026gt; (- (* 10 10) (sqrt 11))   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/",
@@ -1624,14 +1624,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
