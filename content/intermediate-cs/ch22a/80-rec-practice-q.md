@@ -9,11 +9,9 @@ draft: false
 
 Use `define/contract` for each function.
 
-1. `hawaiian-earring`: number(stage) number(radius) -> image. Create `stage` circles with each successive circle 80% of the radius of the previous one.
+1. `hawaiian-earring`: number(stage) number(radius) -> image. Create `stage` circles with each successive circle 80% of the radius of the previous one. 
 
-    {{< figure src="hawaiian-earring.png" 
-               caption="(hawaiian-earring 10 100)" 
-               >}}
+    {{< figure src="hawaiian-earring.png" title="(hawaiian-earring 10 80)" >}}
 
 
 2. `double-ss`: string -> string. Double each `s` appearing in the string.
