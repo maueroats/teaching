@@ -26,5 +26,5 @@ Grading:
 Test corrections:
 
 - Explain what the right answer is. Show work justifying you are correct.
-- Code tracing (problems 3,8) - explain in writing what happens as you
+- Code tracing (problems 2,8) - explain in writing what happens as you
   trace your example through the program.
