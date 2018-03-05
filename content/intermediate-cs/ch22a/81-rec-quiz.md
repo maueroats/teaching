@@ -10,11 +10,11 @@ description: "First quiz on recursion: reciprocal-squares, blank-vowels, hollow-
 
 1. `reciprocal-squares`: number(start) number(end) -> number. Find the sum of `1/n^2` for every `n` between `start` and `end` (including both).
 
-|start|end|sum  |
-|-----|---|-----|
-| 1   | 1 | 1.0 |
-| 1   | 2 |1.25 |
-| 1   | 3 |1.36111... |
+    |start|end|sum  |
+    |-----|---|-----|
+    | 1   | 1 | 1.0 |
+    | 1   | 2 |1.25 |
+    | 1   | 3 |1.36111... |
 
 2. `blank-vowels`: string(word) -> string. Change every vowel (a,e,i,o,u) to an underscore (`_`). Example: `(blank-vowels "elephant") => "_l_ph_nt"`.
 
