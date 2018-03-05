@@ -126,6 +126,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-1/",
+	"title": "Programming Practice 1",
+	"tags": [],
+	"description": "",
+	"content": "2018-02-26:\n Keep Swimming Pipe Pals\n We learned how to look up the Javadoc pages for the Character class to find the isUpperCase and isLowerCase methods.   2018-02-28:\n Blurry Memory\n We wrote code to read in the data and discussed a strategy to finish.   "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-intro/",
 	"title": "22. List Intro",
 	"tags": [],
@@ -662,7 +669,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   ProCom Practice   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   Programming Practice   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
@@ -1030,10 +1037,10 @@
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/",
-	"title": "ProCom Practice",
+	"title": "Programming Practice",
 	"tags": [],
-	"description": "",
-	"content": "  Make a HackerRank account. Join last year\u0026rsquo;s contest.  Direct links to HackerRank pages below do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Introduction 2018-02-26:\n Keep Swimming Pipe Pals\n We learned how to look up the Javadoc pages for the Character class to find the isUpperCase and isLowerCase methods.   2018-02-28:\n Blurry Memory\n We wrote code to read in the data and discussed a strategy to finish.   2018-03-01:\n Water geysers.  2018-03-05:\n Magical Square 1  "
+	"description": "Learn to integrate all of the skills that you have acquired in AP Computer Science by solving problems.",
+	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pagesd do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice 2   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch15/",
@@ -1153,6 +1160,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-2/",
+	"title": "Programming Practice 2",
+	"tags": [],
+	"description": "",
+	"content": "2018-03-05:\n Magical Square 1  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch14/ch14-test-corr/",
@@ -1600,7 +1614,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   14. Test Corrections modified Thu 03-01  ProCom Practice modified Mon 02-26  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  14. Comparable modified Mon 02-12  Everyday Git modified Sun 02-11  Intermediate Computer Science Recent Changes    22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  22a. Sum Digits modified Mon 02-26  22a. Fibsum modified Mon 02-26  22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22b. Lists modified Fri 02-23  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Programming Practice 1 modified Mon 03-05  Programming Practice 2 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  Intermediate Computer Science Recent Changes    22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  22a. Sum Digits modified Mon 02-26  22a. Fibsum modified Mon 02-26  22. List Intro modified Fri 02-23  22. Additional Resources modified Fri 02-23  22b. Lists modified Fri 02-23  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
