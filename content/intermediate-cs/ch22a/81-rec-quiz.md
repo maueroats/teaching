@@ -8,6 +8,11 @@ draft: false
 description: "First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal."
 ---
 
+You may use the Picturing Programs textbook and the blog to look up functions th
+at you do not know. Do not consult any other programs written by you or anyone else. (No old homework, Stack Overflow, etc.)
+
+Use `define/contract` and have at least two check expects for each function.
+
 1. `reciprocal-squares`: number(start) number(end) -> number. Find the sum of `1/n^2` for every `n` between `start` and `end` (including both).
 
     |start|end|sum  |
@@ -24,7 +29,7 @@ description: "First quiz on recursion: reciprocal-squares, blank-vowels, hollow-
 4. `circle-circle`: number(big-radius) number(little-radius) number(turn-angle) number(n) -> image. Produce `n` circles of size `little-radius` around the perimeter of a circle of size `big-radius`. In between each, have a central angle of `turn-angle`.
 
     {{< figure src="circle-circle.png" title="(circle-circle 100 20 45 8)" >}}
-    
+    {{< figure src="circle-circle-partial.png" title="(circle-circle 120 15 30 6)" >}}
     
 ## Period 1 Only
 
