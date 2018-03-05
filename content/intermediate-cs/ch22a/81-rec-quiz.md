@@ -35,6 +35,6 @@ Use `define/contract` and have at least two check expects for each function.
 
 3. `hollow-diagonal`: number(radius) number(n): Produce `n` circles of the given radius along a diagonal.
 
-    {{< figure src="hollow-diagonal.png" title="(hollow-diagonal 20 5)" >}} 
+    [{{< figure src="hollow-diagonal-1.png" title="(hollow-diagonal 20 5)" >}}](hollow-diagonal-2.png)
 
 
