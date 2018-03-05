@@ -41,3 +41,7 @@ Your progress is only saved in the browser that you are using while you work on 
 
 
 
+2018-03-05: 
+
+* [Magical Square 1](https://www.hackerrank.com/contests/pro-com-3/challenges/magical-square-1)
+
