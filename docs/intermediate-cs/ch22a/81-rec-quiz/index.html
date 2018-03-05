@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>9. Exercises 2 :: WY Computer Science</title>
+<title>22a. Recursion Quiz :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch09/ch9-ex2/">
+  <body data-url="/intermediate-cs/ch22a/81-rec-quiz/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1011,11 +1011,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch09/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/ch09/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch09/">9. Strings</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch09/">9. Strings</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch09/ch9-ex1/" class="dd-item">
@@ -1025,7 +1024,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch09/ch9-ex2/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch09/ch9-ex2/" class="dd-item">
         <div>
           <a href="/intermediate-cs/ch09/ch9-ex2/">
             9. Exercises 2
@@ -1444,10 +1443,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/">22a. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
@@ -1499,7 +1499,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/81-rec-quiz/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/81-rec-quiz/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch22a/81-rec-quiz/">
             22a. Recursion Quiz
@@ -1767,7 +1767,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch09/'>9. Strings</a> > 9. Exercises 2
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. Recursion Quiz
 
  
 
@@ -1792,7 +1792,7 @@
 
 <div id="body-inner">
   
-    <h1>9. Exercises 2</h1>
+    <h1>22a. Recursion Quiz</h1>
   
 
 
@@ -1800,12 +1800,46 @@
     
     
     
-    <ul>
-<li><code>centr</code> as shown below. Write a signature, purpose, and function for <code>centr</code>.</li>
-</ul>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">centr</span> <span style="color:#d88200">&#34;panda&#34;</span><span style="color:#111">)</span> <span style="color:#00a8c8">=&gt;</span>       <span style="color:#d88200">&#34;*****panda*****&#34;</span>
-<span style="color:#111">(</span><span style="color:#111">centr</span> <span style="color:#d88200">&#34;sinful&#34;</span><span style="color:#111">)</span> <span style="color:#00a8c8">=&gt;</span>      <span style="color:#d88200">&#34;*****sinful****&#34;</span>
-<span style="color:#111">(</span><span style="color:#111">centr</span> <span style="color:#d88200">&#34;conspicuous&#34;</span><span style="color:#111">)</span> <span style="color:#00a8c8">=&gt;</span> <span style="color:#d88200">&#34;**conspicuous**&#34;</span></code></pre></div>
+    <ol>
+<li><code>reciprocal-squares</code>: number(start) number(end) -&gt; number. Find the sum of <code>1/n^2</code> for every <code>n</code> between <code>start</code> and <code>end</code> (including both).</li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th>start</th>
+<th>end</th>
+<th>sum</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>2</td>
+<td>1.25</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>3</td>
+<td>1.36111</td>
+</tr>
+</tbody>
+</table>
+
+<ol>
+<li><p><code>blank-vowels</code>: string(word) -&gt; string. Change every vowel (a,e,i,o,u) to an underscore (&rdquo;_&ldquo;). Example: <code>(blank-vowels &quot;elephant&quot;) =&gt; &quot;_l_ph_nt&quot;</code>.</p></li>
+
+<li><p><code>hollow-diagonal</code>: number(radius) number(n): Produce <code>n</code> circles of the given radius along a diagonal.</p></li>
+</ol>
+
 
     
     
@@ -1816,8 +1850,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch09/ch9-ex1/" title="9. Exercises 1"> <i class="fa fa-chevron-left"></i><label>9. Exercises 1</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch09/ch9-ex3/" title="9. Exercises 3" style="margin-right: 0px;"><label>9. Exercises 3</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/80-rec-practice-q/" title="22a. Recursion Quiz Practice"> <i class="fa fa-chevron-left"></i><label>22a. Recursion Quiz Practice</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22b/" title="22b. Lists" style="margin-right: 0px;"><label>22b. Lists</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
