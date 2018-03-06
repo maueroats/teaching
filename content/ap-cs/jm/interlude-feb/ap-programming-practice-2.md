@@ -11,3 +11,7 @@ draft: false
 
 * [Magical Square 1](https://www.hackerrank.com/contests/pro-com-3/challenges/magical-square-1)
 
+2018-03-06:
+
+* [Dory's Microbes](https://www.hackerrank.com/contests/pro-com-3/challenges/dorys-microbes)
+

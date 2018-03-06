@@ -16,13 +16,4 @@ description: "Exercises involving recursive functions with helper functions."
 
 {{< figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Sierpinski_triangle_evolution.svg/320px-Sierpinski_triangle_evolution.svg.png" >}}
 
-## Number Theory
-
-2. `count-divisors`: positive-integer(n) -> positive-integer. Count how many integers 1,2,...,n divide the number `n`.
-
-3. `is-prime?`: positive-integer(n) -> boolean. Determine whether or not `n` is prime. Note: this can do less checking than the previous function.
-
-4. `smallest-factor`: positive-integer(n) -> positive-integer. Find the smallest integer divisor of `n`. 
-
-5. `smallest-prime-factor`: positive-integer(n) -> positive-integer. Find the smallest prime factor of `n`.
-
+(Remaining content moved to a [later helper function page]({{% relref "90-helpers.md" %}}).)

@@ -24,7 +24,7 @@ Use `define/contract` and have at least two check expects for each function.
 2. `blank-vowels`: string(word) -> string. Change every vowel (a,e,i,o,u) to an underscore (`_`). Example: `(blank-vowels "elephant") => "_l_ph_nt"`.
 
 
-## Period 5 Only
+## Period 5,7 Only
 
 4. `circle-circle`: number(big-radius) number(little-radius) number(turn-angle) number(n) -> image. Produce `n` circles of size `little-radius` around the perimeter of a circle of size `big-radius`. In between each, have a central angle of `turn-angle`.
 
