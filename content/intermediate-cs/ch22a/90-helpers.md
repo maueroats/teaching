@@ -10,7 +10,7 @@ description: "Real introduction to helper functions in recursion."
 
 ## Warmup
 
-Write a function `count-div`: number(n) number(k) -> number that gives
+Write a function `count-div`: number(k) number(n) -> number that gives
 1 if k divides n and 0 otherwise.
 
 
@@ -25,42 +25,8 @@ many integers 1,2,...,n divide the number `n`.
 ## Number Theory
 
 
-3. `is-prime?`: positive-integer(n) -> boolean. Determine whether or not `n` is prime. Note: this can do less checking than the previous function.
-
-4. `smallest-factor`: positive-integer(n) -> positive-integer. Find the smallest integer divisor of `n`. 
-
-5. `smallest-prime-factor`: positive-integer(n) -> positive-integer. Find the smallest prime factor of `n`.
-
-
-## Number Theory
-
-2. `count-divisors`: positive-integer(n) -> positive-integer. Count how many integers 1,2,...,n divide the number `n`.
+4. `smallest-factor`: positive-integer(n) -> positive-integer. Find the smallest divisor of `n` that is greater than 1.
 
 3. `is-prime?`: positive-integer(n) -> boolean. Determine whether or not `n` is prime. Note: this can do less checking than the previous function.
 
-4. `smallest-factor`: positive-integer(n) -> positive-integer. Find the smallest integer divisor of `n`. 
-
 5. `smallest-prime-factor`: positive-integer(n) -> positive-integer. Find the smallest prime factor of `n`.
-
-
-## Number Theory
-
-2. `count-divisors`: positive-integer(n) -> positive-integer. Count how many integers 1,2,...,n divide the number `n`.
-
-3. `is-prime?`: positive-integer(n) -> boolean. Determine whether or not `n` is prime. Note: this can do less checking than the previous function.
-
-4. `smallest-factor`: positive-integer(n) -> positive-integer. Find the smallest integer divisor of `n`. 
-
-5. `smallest-prime-factor`: positive-integer(n) -> positive-integer. Find the smallest prime factor of `n`.
-
-
-## Number Theory
-
-2. `count-divisors`: positive-integer(n) -> positive-integer. Count how many integers 1,2,...,n divide the number `n`.
-
-3. `is-prime?`: positive-integer(n) -> boolean. Determine whether or not `n` is prime. Note: this can do less checking than the previous function.
-
-4. `smallest-factor`: positive-integer(n) -> positive-integer. Find the smallest integer divisor of `n`. 
-
-5. `smallest-prime-factor`: positive-integer(n) -> positive-integer. Find the smallest prime factor of `n`.
-
