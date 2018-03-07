@@ -1819,7 +1819,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#challenge">Challenge</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1837,7 +1844,10 @@
     
     
     
-    <p>Please make sure to write at least three tests for each function.</p>
+    
+
+<p>Do at least the first three.
+Please make sure to write at least three tests for each function.</p>
 
 <ol>
 <li><p><code>is-in-word?</code>: string(letter) string(word) -&gt; boolean. True if the letter is in the word, false otherwise.</p>
@@ -1859,6 +1869,64 @@
     
 </figure>
 </li>
+
+<li><p><code>sum-penta</code>: number(start) number(end) -&gt; number. The <a href="https://en.wikipedia.org/wiki/Pentagonal_number">pentagonal numbers</a> are created by making larger and larger pentagons - Wikipedia has a nice animated image. The formula for the nth pentagonal number is <code>(* 0.5 n (- (* 3 n 2)))</code>.</p>
+
+<p>Find the sum of all of pentagonal number <code>n</code> from <code>n=start</code> through <code>n=end</code>.</p>
+
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th>(penta n)</th>
+<th>(sum-penta 1 n)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>5</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>12</td>
+<td>12</td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+
+<h2 id="challenge">Challenge</h2>
+
+<ol>
+<li><p><code>draw-tic-tac-toe</code>: string -&gt; image. Take a string containing 9 characters (from &ldquo;X&rdquo; &ldquo;O&rdquo; and &ldquo;-&rdquo;) and turn it into a 3x3 image of &ldquo;X&rdquo; &ldquo;O&rdquo; and blank squares in a tic-tac-toe board.</p>
+
+<p>Hint: You will probably want helper functions <code>draw-one-space</code> and <code>draw-one-line</code>.</p>
+
+
+<figure >
+    
+        <img src="tictactoe.png" />
+    
+    
+    <figcaption>
+        <h4>(draw-tic-tac-toe &#34;XXOO-OOXX&#34;)</h4>
+        
+    </figcaption>
+    
+</figure>
+</li>
+
+<li><p>(Math) Write <code>is-pentagonal?</code>: number -&gt; boolean. Then read <a href="https://projecteuler.net/index.php?section=problems&amp;id=44">Project Euler 44</a>, which might be doable soon. You can celebrate if you find any two pentagonal numbers whose sum and difference are both pentagonal.</p></li>
 </ol>
 
 
