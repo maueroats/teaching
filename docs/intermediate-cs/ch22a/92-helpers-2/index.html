@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Count Divisors :: WY Computer Science</title>
+<title>22a. Recursion Practice 3 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch22a/90-helpers/count-divisors/">
+  <body data-url="/intermediate-cs/ch22a/92-helpers-2/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1529,10 +1529,17 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/90-helpers/count-divisors/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch22a/91-count-divisors/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/90-helpers/count-divisors/">
-            Count Divisors
+          <a href="/intermediate-cs/ch22a/91-count-divisors/">
+            22a. Helpers: Count Divisors
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch22a/92-helpers-2/" class="dd-item active">
+        <div>
+          <a href="/intermediate-cs/ch22a/92-helpers-2/">
+            22a. Recursion Practice 3
           </a>
         </div>
     </li>
@@ -1797,7 +1804,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > Count Divisors
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. Recursion Practice 3
 
  
 
@@ -1812,17 +1819,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#warmup">Warmup</a></li>
-<li><a href="#warmup-solution">Warmup Solution</a></li>
-<li><a href="#count-divisors-example">Count-divisors example</a></li>
-<li><a href="#count-divisors-walkthrough">Count-divisors walkthrough</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -1832,7 +1829,7 @@
 
 <div id="body-inner">
   
-    <h1>Count Divisors</h1>
+    <h1>22a. Recursion Practice 3</h1>
   
 
 
@@ -1840,40 +1837,29 @@
     
     
     
+    <p>Please make sure to write at least three tests for each function.</p>
+
+<ol>
+<li><p><code>is-in-word?</code>: string(letter) string(word) -&gt; boolean. True if the letter is in the word, false otherwise.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (is-in-word? &#34;x&#34; &#34;explode&#34;) true)
+(check-expect (is-in-word? &#34;s&#34; &#34;juliuc caecar&#34; false)</pre></div></li>
+
+<li><p><code>word-shrink</code>: string(word) number(starting-size) -&gt; image. Create a picture of the word in which each letter is four points smaller than the previous letter. Do not let the font size go below 5pt.</p>
+
+
+<figure >
     
-
-<h2 id="warmup">Warmup</h2>
-
-<p>Write a function <code>count-div</code>: number(n) number(k) -&gt; number that gives
-1 if k divides n and 0 otherwise.</p>
-
-<h2 id="warmup-solution">Warmup Solution</h2>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> (define (count-div n k)
-    (cond [(= 0 (remainder n k))
-            1]
-          [else
-            0]</pre></div>
-<h2 id="count-divisors-example">Count-divisors example</h2>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> (count-divisors 2) =&gt; 1 + 1
- (count-divisors 3) =&gt; 1 + 0 + 1
- (count-divisors 4) =&gt; 1 + 1 + 0 + 1
- (count-divisors 5) =&gt; 1 + 0 + 0 + 0 + 1</pre></div>
-<p>Notice that there is <em>not</em> a pattern of repeating previously used results!</p>
-
-<h2 id="count-divisors-walkthrough">Count-divisors walkthrough</h2>
-
-<p>It really looks like I need to keep track of two things:</p>
-
-<ul>
-<li>what number we are counting the divisors for (always the same, let&rsquo;s call it <code>num</code>)</li>
-<li>the number that we are test dividing (changes, let&rsquo;s call it <code>current</code>)</li>
-</ul>
-
-<p>Skeleton:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (count-divisors-help num current)
-  ; finish
-  0)</pre></div>
-<p>Now you write examples.</p>
+        <img src="shrink-word.png" />
+    
+    
+    <figcaption>
+        <h4>(shrink-word &#34;Perspective Drawing&#34; 64)</h4>
+        
+    </figcaption>
+    
+</figure>
+</li>
+</ol>
 
 
     
@@ -1885,7 +1871,7 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch22a/90-helpers/" title="22a. Helpers"> <i class="fa fa-chevron-left"></i><label>22a. Helpers</label></a>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/91-count-divisors/" title="22a. Helpers: Count Divisors"> <i class="fa fa-chevron-left"></i><label>22a. Helpers: Count Divisors</label></a>
     <a class="nav nav-next" href="/intermediate-cs/ch22b/" title="22b. Lists" style="margin-right: 0px;"><label>22b. Lists</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>

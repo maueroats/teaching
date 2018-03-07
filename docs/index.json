@@ -899,7 +899,7 @@
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/80-rec-practice-q/",
 	"title": "22a. Recursion Quiz Practice",
 	"tags": [],
-	"description": "",
+	"description": "Quiz practice: hawaiian-earring, double-ss, math-mess.",
 	"content": "Use define/contract for each function.\n hawaiian-earring: number(stage) number(radius) -\u0026gt; image. Create stage circles with each successive circle 80% of the radius of the previous one.\n (hawaiian-earring 10 80)    double-ss: string -\u0026gt; string. Double each s appearing in the string.\n(check-expect (double-ss \u0026#34;The snake was silent.\u0026#34;) \u0026#34;The ssnake wass ssilent.\u0026#34;) math-mess: number(start) number(end) -\u0026gt; number. For all of the numbers between start and end: add the squares of the even numbers, subtract the square roots of the odd numbers.\n(math-mess 10 10) =\u0026gt; (* 10 10) (math-mess 11 11) =\u0026gt; (- (sqrt 11)) (math-mess 10 11) =\u0026gt; (- (* 10 10) (sqrt 11))  "
 },
 {
@@ -928,7 +928,7 @@
 	"title": "22a. Helpers",
 	"tags": [],
 	"description": "Real introduction to helper functions in recursion.",
-	"content": " Warmup Write a function count-div: number(k) number(n) -\u0026gt; number that gives 1 if k divides n and 0 otherwise.\nOpener count-divisors: positive-integer(n) -\u0026gt; positive-integer. Count how many integers 1,2,\u0026hellip;,n divide the number n.\nCount-divisors solution.\nNumber Theory  smallest-factor: positive-integer(n) -\u0026gt; positive-integer. Find the smallest divisor of n that is greater than 1.\n is-prime?: positive-integer(n) -\u0026gt; boolean. Determine whether or not n is prime. Note: this can do less checking than the previous function.\n smallest-prime-factor: positive-integer(n) -\u0026gt; positive-integer. Find the smallest prime factor of n.\n  "
+	"content": " Warmup Write a function count-div: number(k) number(n) -\u0026gt; number that gives 1 if k divides n and 0 otherwise.\nOpener count-divisors: positive-integer(n) -\u0026gt; positive-integer. Count how many integers 1,2,\u0026hellip;,n divide the number n.\nCount-divisors solution.\nString Practice group-3: string(word) -\u0026gt; string. Insert spaces after every three letters of word. Example: (group-3 \u0026quot;pancake\u0026quot;) =\u0026gt; \u0026quot;pan cak e\u0026quot;.\nNumber Theory  smallest-factor: positive-integer(n) -\u0026gt; positive-integer. Find the smallest divisor of n that is greater than 1.\n is-prime?: positive-integer(n) -\u0026gt; boolean. Determine whether or not n is prime. Note: this can do less checking than the previous function.\n smallest-prime-factor: positive-integer(n) -\u0026gt; positive-integer. Find the smallest prime factor of n.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch09/",
@@ -938,11 +938,25 @@
 	"content": " This chapter takes one day to do. Read pages 149-150 in the book.\nHomework Page 151 (PDF page 162), exercises 9.2.2 through 9.2.7.\nChallenge: 10.2.6.\nKey Functions  string-append string-length number-\u0026gt;string substring: string number(start) number(end) -\u0026gt; string.  If you omit the end number, the result you get starts at the \u0026ldquo;start\u0026rdquo; position and goes until the end of the original string.\nIllustration of positions in the string \u0026ldquo;Cattle\u0026rdquo;:\nC a t t l e 0 1 2 3 4 5 6  So (substring \u0026quot;Cattle\u0026quot; 1 3) produces \u0026quot;at\u0026quot;.\nThe function string-\u0026gt;number is sometimes useful but not nearly as important. Usually it is misused.\n"
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/91-count-divisors/",
+	"title": "22a. Helpers: Count Divisors",
+	"tags": [],
+	"description": "A complete lecture on count-divisors.",
+	"content": " Warmup Write a function count-div: number(k) number(n) -\u0026gt; number that gives 1 if k divides n and 0 otherwise.\nWarmup Solution (define (count-div k n) (cond [(= 0 (remainder n k)) 1] [else 0] (check-expect (count-div 3 6) 1) (check-expect (count-div 4 6) 0) Count-divisors example (count-divisors 2) =\u0026gt; 1 + 1 (count-divisors 3) =\u0026gt; 1 + 0 + 1 (count-divisors 4) =\u0026gt; 1 + 1 + 0 + 1 (count-divisors 5) =\u0026gt; 1 + 0 + 0 + 0 + 1 Notice that there is not a pattern of repeating previously used results! See the longer list of factors to confirm:\n1 =\u0026gt; 1 2 =\u0026gt; 1,2 3 =\u0026gt; 1,3 4 =\u0026gt; 1,2,4 5 =\u0026gt; 1,5 6 =\u0026gt; 1,2,3,6 7 =\u0026gt; 1,7 8 =\u0026gt; 1,2,4,8 9 =\u0026gt; 1,3,9 This means that you cannot write a recursive function the way we have been writing them. (count-divisors 5) has nothing to do with (count-divisors 4).\nCount-divisors walkthrough It really looks like we need to keep track of two things:\n what number we are counting the divisors for (always the same, let\u0026rsquo;s call it end) the number that we are test dividing (changes, let\u0026rsquo;s call it start)  Skeleton:\n(define (count-divisors-help start end) ; not finished 0) Now you write examples. You could abbreviate this function\u0026rsquo;s name as cdh if writing on paper.\nExamples Your examples should look like this list below (abbreviating count-divisors-help as cdh:\n(cdh 1 6) =\u0026gt; 4 (cdh 2 6) =\u0026gt; 3 (cdh 3 6) =\u0026gt; 2 (cdh 4 6) =\u0026gt; 1 (cdh 5 6) =\u0026gt; 1 (cdh 6 6) =\u0026gt; 1 Finale You know there are two steps to writing a recursive function:\n make sure it stops, when it should stop; and make sure it keeps going when it should keep going.  Stops You can write a conditional that always gets the right answer in one case. Try it!\nKeep going You can see that there could be a recursive function call with start increasing by one each time, because the answer for start=3 builds off the answer for start=4.\nThe two ingredients for this part are:\n (count-divisors-help (+1 start) end) (count-div start end)  You have to try writing the rest of the function now!\nAnswer I hope you have worked through each step and tried to understand it before reading the solution.\nBare-bones solution and a complete solution with checks, straight from lecture.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch09/ch9-ex1/",
 	"title": "9. Exercises 1",
 	"tags": [],
 	"description": "",
 	"content": " dot-fill: Take in a string(word) and put out a string. The output string is the same as the input string, except that it has periods added (\u0026ldquo;.\u0026rdquo;) to bring it to 10 characters long.\nExamples:\n(check-expect (dot-fill \u0026#34;abc\u0026#34;) \u0026#34;abc.......\u0026#34;) (check-expect (dot-fill \u0026#34;0123456789\u0026#34;) \u0026#34;0123456789\u0026#34;) You may assume that the word has no more than ten letters.\n cash: num(dollars) num(cents) -\u0026gt; string(price)\nWrite the price including the dollar sign.\n(check-expect (cash 5 99) \u0026#34;$5.99\u0026#34;) (check-expect (cash 10 0) \u0026#34;$10.00\u0026#34;) (check-expect (cash 98 15) \u0026#34;$98.15\u0026#34;) (check-expect (cash 6 4) \u0026#34;$6.04\u0026#34;)  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/92-helpers-2/",
+	"title": "22a. Recursion Practice 3",
+	"tags": [],
+	"description": "Even more recursion practice.",
+	"content": "Please make sure to write at least three tests for each function.\n is-in-word?: string(letter) string(word) -\u0026gt; boolean. True if the letter is in the word, false otherwise.\n(check-expect (is-in-word? \u0026#34;x\u0026#34; \u0026#34;explode\u0026#34;) true) (check-expect (is-in-word? \u0026#34;s\u0026#34; \u0026#34;juliuc caecar\u0026#34; false) word-shrink: string(word) number(starting-size) -\u0026gt; image. Create a picture of the word in which each letter is four points smaller than the previous letter. Do not let the font size go below 5pt.\n (shrink-word \u0026#34;Perspective Drawing\u0026#34; 64)     "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch09/ch9-ex2/",
@@ -1117,7 +1131,7 @@
 	"title": "22a. Recursion",
 	"tags": [],
 	"description": "Recursion lets you solve a problem by solving simpler problems.",
-	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Use define/contract for each function. hawaiian-earring: number(stage) number(radius) -\u0026gt; image. Create stage circles with each successive circle 80% of the radius of the previous one. (hawaiian-earring 10 80) double-ss: string -\u0026gt; string. Double each s appearing in the string. (check-expect (double-ss \u0026#34;The snake was silent.\u0026#34;) \u0026#34;The ssnake wass ssilent.\u0026#34;) math-mess: number(start) number(end) -\u0026gt; number. For all of the numbers between start and end: add the squares of the even numbers, subtract the square roots of the odd numbers.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  Count Divisors \n  "
+	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Quiz practice: hawaiian-earring, double-ss, math-mess.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  22a. Helpers: Count Divisors A complete lecture on count-divisors.\n  22a. Recursion Practice 3 Even more recursion practice.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/",
@@ -1174,13 +1188,6 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/ch22a/90-helpers/count-divisors/",
-	"title": "Count Divisors",
-	"tags": [],
-	"description": "",
-	"content": " Warmup Write a function count-div: number(n) number(k) -\u0026gt; number that gives 1 if k divides n and 0 otherwise.\nWarmup Solution (define (count-div n k) (cond [(= 0 (remainder n k)) 1] [else 0] Count-divisors example (count-divisors 2) =\u0026gt; 1 + 1 (count-divisors 3) =\u0026gt; 1 + 0 + 1 (count-divisors 4) =\u0026gt; 1 + 1 + 0 + 1 (count-divisors 5) =\u0026gt; 1 + 0 + 0 + 0 + 1 Notice that there is not a pattern of repeating previously used results!\nCount-divisors walkthrough It really looks like I need to keep track of two things:\n what number we are counting the divisors for (always the same, let\u0026rsquo;s call it num) the number that we are test dividing (changes, let\u0026rsquo;s call it current)  Skeleton:\n(define (count-divisors-help num current) ; finish 0) Now you write examples.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-2/",
@@ -1635,7 +1642,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Programming Practice 2 modified Mon 03-05  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  Intermediate Computer Science Recent Changes    Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  22a. Sum Digits modified Mon 02-26  22a. Fibsum modified Mon 02-26  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Programming Practice 2 modified Mon 03-05  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  Intermediate Computer Science Recent Changes    22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  22a. Sum Digits modified Mon 02-26  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

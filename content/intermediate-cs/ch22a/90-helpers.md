@@ -21,6 +21,10 @@ many integers 1,2,...,n divide the number `n`.
 
 [Count-divisors solution](count-divisors).
 
+## String Practice
+
+`group-3`: string(word) -> string. Insert spaces after every three letters of `word`. Example: `(group-3 "pancake") => "pan cak e"`.
+
 
 ## Number Theory
 

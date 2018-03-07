@@ -5,6 +5,7 @@ weight: 80
 draft: false
 #type: slide
 #theme: white
+description: "Quiz practice: hawaiian-earring, double-ss, math-mess."
 ---
 
 Use `define/contract` for each function.

@@ -4,7 +4,8 @@
 {{ $match := where $.Site.Pages "Type" $wanted }}
 <ul>
   {{ $ordered := sort $match "Lastmod" "desc" }}
-  {{ range first 8 $ordered }}
+  {{ $notexcluded := where $ordered "Params.exclude" "ne" "true" }}
+  {{ range first 8 $notexcluded }}
   <li> <a href="{{.RelPermalink}}">{{ .LinkTitle }}</a> modified {{ .Lastmod.Format "Mon 01-02" }}
   {{ end }}
 </ul>
