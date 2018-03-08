@@ -1,7 +1,7 @@
 ---
 title: "ProCom 4"
 date: 2018-02-23T11:10:45-06:00
-#weight: 
+weight: 10
 draft: false
 #type: slide
 #theme: white

@@ -18,7 +18,7 @@ and 0 numerical velocity.
 * Velocity can't be below 1 once you start moving.
 * Color the changing number based on how far away from the goal number it is.
 * Mouse click to reset the goal to a new random number and reset the displayed number and velocity to zero.
-* Space bar to end game and invoke win screen.
+* Space bar to end game and invoke win screen (see below).
 * Win screen:
 
     + Win if you hit the number

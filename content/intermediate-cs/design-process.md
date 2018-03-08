@@ -19,7 +19,7 @@ The function design process that we use is:
 
 ## Animations
 
-* See [Chapter 6 Animations]({{% relref "intermediate-cs/ch06" %}}) for the design process as it applies to writing animations (big-bang).
+* See [Chapter 6 Animations]({{% relref "intermediate-cs/part-i/ch06" %}}) for the design process as it applies to writing animations (big-bang).
 
 * The [Animations Slides]({{% relref "animation2.md" %}}) detail the issues when 
 writing handlers.

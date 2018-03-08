@@ -7,14 +7,14 @@
 	"content": "   Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Share difficulties and troubleshoot.   7 Thurs, Oct 11 (early release) Plan, write, and test: is_won.   8 Fri, Oct 12 Write tests demonstrating code works.   - Mon, Oct 16 Last day to turn in project.    I expect this project to take 4-6 hours to complete over the course of a week. If you spend less than 3 hours on the project you should read the advanced notes about the minimax algorithm and (partially?) implement it.\nExpected times and other notes:\n draw_board: 1.0 hour, including class time is_legal_move: 0.5 hour is_won: 1.5-2 hours, including 0.5-1.0 hours planning time Expect to use several helper functions. See spoilers if needed. make_move: 1.0 hour, including class time. See spoilers if needed.  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/animation/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/animation/",
 	"title": "Intro to Animations",
 	"tags": [],
 	"description": "The basics of big-bang: on-tick, on-draw.",
 	"content": " Intro to Animation Opener Write two functions:\n rotator: image -\u0026gt; image that turns the image 10 degrees.\n middle-placer: image -\u0026gt; image that places the given image in the center of a yellow circle of radius 200.\n  Animation Code (define starter (rectangle 50 200 \u0026#34;solid\u0026#34; \u0026#34;purple\u0026#34;)) (define delay-time 3) (big-bang starter (on-tick rotator delay-time) (on-draw middle-placer)) Animation Vocabulary  model: the part that changes\n on-tick: model -\u0026gt; model\n  Moves to next time.\n on-draw: model -\u0026gt; image  Shows the result. Draw things that do not move here.\nPaper Exercise I  A shape is shown on a yellow circle of radius 200.\n The shape grows 25% larger every tick, but the circle does not.\n   Write a tick handler.\n Write the big-bang.\n  Paper Exercise II  A shape starts in the center of a circle.\n The shape moves to the right 10 pixels every tick.\n  Write the tick handler Class work Exercises 6.4.2 and 6.4.3 (pdf page 106)\nBonus: 6.4.4\nHomework Read Section 6.3 (beginner mistakes)\nAnimation more vocab  on-key: model key -\u0026gt; model\n on-mouse: model number(x) number(y) event -\u0026gt; model\n  You found the code!\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch03art/period-1/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03art/period-1/",
 	"title": "Art Period 1",
 	"tags": [],
 	"description": "",
@@ -28,7 +28,7 @@
 	"content": "A high-level overview of the Haskell language and why its features are good. You should read it carefully and note what items you are unfamiliar with. Writing down your questions will help you remember what parts were difficult so that we can discuss them in class.\n Haskell Chapter 1 Reading Guide "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/animation2/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/animation2/",
 	"title": "Animations Outline",
 	"tags": ["design-process"],
 	"description": "Step by step, how to make a basic animation.",
@@ -42,7 +42,7 @@
 	"content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | n\u0026lt;-[1..100], even n] Create a tuple: (5,12) Key to remember: head, tail, init, last, :, ++ Other list functions: maximum, minimum, sum, product, reverse  Resources  Reading guide Problem Set hw:a2 for chapter 2. (Also PDF.) "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/examples/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/examples/",
 	"title": "Animation Examples",
 	"tags": [],
 	"description": "",
@@ -63,7 +63,7 @@
 	"content": "The book is Karel J Robot: \u0026ldquo;A Gentle Introduction to the Art of Object-Oriented Programming in Java\u0026rdquo;, by Joseph Bergin, Mark Stehlik, Jim Roberts, and Rich Pattis. We have the January 2008 printing, but all versions are very similar. Happily, the book is available for under $10 used if you want one or want to donate one.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/portfolio/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/portfolio/",
 	"title": "Animation Portfolio",
 	"tags": [],
 	"description": "",
@@ -84,7 +84,7 @@
 	"content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - This is a walkthrough of the registration process. Follow it! Online registration instructions. Pretty dense reading. Printable form. If all else fails, print this form and turn it in.  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/project/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/project/",
 	"title": "Animation Project",
 	"tags": [],
 	"description": "",
@@ -105,7 +105,7 @@
 	"content": " The user interface code for Connect Four is a little clunky. (Repl.it shared code.) You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).\nCode Outline main: just make board and call event loop\nevent loop:\n draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Code All of the user interface code is linked separately (open in WordPad if necessary).\nThe setup of the code, which you should change to match your own functions is below. You need: drawBoard, is_won, is_move_legal, and make_move.\ntype Board = [[Int]] drawBoard :: Board -\u0026gt; String drawBoard board = show $ simplify board is_won :: Board -\u0026gt; Bool is_won board = False is_move_legal :: Board -\u0026gt; Int -\u0026gt; Bool is_move_legal board col = (col == 0) make_move :: Board -\u0026gt; Int -\u0026gt; Int -\u0026gt; Board make_move board col player = [[player]] -- Just for the demo: force the board to be 1x1. simplify board = [[board!!0!!0]] The essentials of the code are an event loop function, which draws the board, checks to see if it is won, gets the next move, and then calls a sepeate function to handle the move.\nevent_loop :: Board -\u0026gt; Int -\u0026gt; IO() event_loop board player = do putStrLn $ drawBoard board if is_won board then do win_message board player return () else do col \u0026lt;- get_move player handle_move board player col The handle move function recursively calls the event loop with an improved board and sets the next player. If the attempted move is illegal, then the recursive call to event loop does not update the board or player, so the same player moves again.\nhandle_move :: Board -\u0026gt; Int -\u0026gt; Int -\u0026gt; IO () handle_move board player col | col == -99 = goodbye | is_move_legal board col = event_loop new_board (next_ player) | otherwise = complain_and_restart where complain_and_restart = do putStrLn \u0026#34;ERROR: That is not a legal move.\u0026#34; event_loop board player new_board = make_move board col player goodbye = do putStrLn \u0026#34;You quit\u0026#34; Example run *Main\u0026gt; main (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 2 O X (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X O X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 3 X OO X (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X X OO X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 4 X X OOOX (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X X X OOOX The game is over Player 1 won!"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch03art/period-5/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03art/period-5/",
 	"title": "Art Period 5",
 	"tags": [],
 	"description": "",
@@ -119,11 +119,18 @@
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch03art/period-7/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03art/period-7/",
 	"title": "Art Period 7",
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/",
+	"title": "Part I: Ch 1-19",
+	"tags": [],
+	"description": "Part I of How to Design Programs. The fundamentals of primitive types and everything you can build with them. Images. Numbers. Animations. Conditionals.",
+	"content": "  1. Introduction \n  3. More Interesting Pictures \n  3. Art with Racket Student art-inspired programming projects.\n  4. Writing Functions \n  6. Animations I Big-bang for animations. Essential information and walkthroughs.\n  7. Numbers \n  8. Number Animations \n  9. Strings \n  11. Planning \n  13. Booleans \n  15. Conditionals Making choices in Racket using \u0026#39;cond\u0026#39;.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-1/",
@@ -138,6 +145,13 @@
 	"tags": [],
 	"description": "An introduction to lists in Racket.",
 	"content": " We started learning about lists. (Chapter 22-23 in Picturing Programs.) Picturing Programs can be kind of long-winded in these chapters.\nAlternative sources.\nThings to know:\n Empty lists: empty-list or (list ) or '() cons when beginning empty? : list -\u0026gt; boolean (list \u0026ldquo;a\u0026rdquo; \u0026ldquo;b\u0026rdquo; \u0026ldquo;c\u0026rdquo;) first: list of Things -\u0026gt; Thing rest: list -\u0026gt; list Advanced, use a bit later: list*  List processing always begins with a choice (conditional) to see if the list is empty or not. The else clause almost always contains (\u0026hellip;. (first the-list) \u0026hellip; (rest the-list)\u0026hellip;) combined in some way.\nDesign process Simplified design process:\n Write down lists of length 0, 1, and 2, and their results Write a program to get the correct answer with a list of length 0 Modify your program to get the correct answer with a list of length 1 (and still have length 0 correct) Modify that program to keep the correct answers and get the length 2 list to give the right answer. This is the step that will usually involve (rest the-list).  Skeleton The skeleton is very important for list-processing problems. It usually has a form like this:\n(define (do-something the-list) (cond [(empty? the-list) ...] [else (... (first the-list) ... (do-something (rest the-list)))])) Write down a skeleton like that when you are working through a list.\n"
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/news/procom4/",
+	"title": "ProCom 4",
+	"tags": [],
+	"description": "",
+	"content": "ProCom 4.0 will be March 3, 2018 at the University of Chicago Lab School.\nLast year\u0026rsquo;s contest is posted to HackerRank for practice.\nTeams of 4! Let me know if you are interested (as soon as possible).\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/contracts/contract-intro/",
@@ -210,7 +224,7 @@
 	"content": " The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.)\nYou may download my posn utilities file if you write your functions on paper instead of typing them.\n The following functions should be in posn-util.rkt:\n posn=? add-posns sub-posns scale-posn: number posn -\u0026gt; posn distance: posn posn -\u0026gt; number place-image/posn: image posn image(background) -\u0026gt; image. Purpose: Place one image at a given set of coordinates on a given background.\n Anything else you want to have available for re-use.\n  Require and provide Require loads functions from another file. Provide makes functions available for other files to load.\nProvide The provide command makes functions available for other files to use. One way to use it is to list all of the functions you want to allow other files to use:\n(provide add-posn sub-posn scale-posn distance) Sometimes you just want to make every function in the file available. There is a shortcut to do that:\n(provide (all-defined-out)) Require In order to use the functions in another file, you need to require that file. You already know (require picturing-programs) but when we use require we need to give the whole filename.\n(require \u0026#34;posn-util.rkt\u0026#34;) You need to save your work in the same folder as your \u0026ldquo;posn-util.rkt\u0026rdquo; file, since Racket only looks in the current folder for other files.\n "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch15/15-slides/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch15/15-slides/",
 	"title": "15. Slides",
 	"tags": [],
 	"description": "Day 1 Exercises",
@@ -245,7 +259,7 @@
 	"content": " FIRST 5125 Hawks on the Horizon, FTC 7030 Robominds, FTC 7007 Mission Impossible, FTC 13956 Why Don\u0026rsquo;t We Build and Horizon Science Academy McKinley Park are excited to be hosting your team for a Chicago League Meet, this Saturday, November 11.\nEvent Details Location:\nHorizon Science Academy McKinley Park 2245 W. Pershing Rd Chicago, IL 60605 Parking is available behind the school, on Pershing Rd, and across the school at McKinley Park. Refer to the red stars on the attached map.\nTeams Attending If you are not supposed to be on this list please notify me ASAP:\n116 Crazy Eights 3216 Robophins 7007 Mission Impossible 7030 RoboMinds 7286 Wired Women 8728 Bionic Wolves 10109 De La Salle Meteors 10182 DRW Cheetahs 10253 Bobcats Robotics 10510 I\u0026#39;m BOT Man 11207 Iron Panthers 11647 Gnomebots 12083 DLS Meteorites 13699 RoboGrizzlies 13956 Why Dont We Build Schedule This schedule is approximate. It is vital for us to stay on time. Please ensure that your team comes prepared (see below).\n1:00 pm Doors Open 1:00 pm - 1:30pm Check-in 1:30 pm - 3:00 pm Inspections 3:00 pm - 3:15 pm Drivers meeting 3:30 pm - 7:00 pm Matches 7:00 pm - 7:15 pm Clean-Up \u0026amp; Departure Prior to the Event  Team Roster OR Paper Consent/Release Form: FIRST would prefer teams create a team roster through Youth Registration. Alternatively, teams can bring release forms signed by parents. Please see this link for more info - http://www.firstinspires.org/resource-library/youth-team-member-consent-and-release-form Late Arrival or Not attending: Please let me know by calling or texting me, Sravan Suryadevara, at [omitted]. If we do not hear from you by 2:45 pm we will have to continue the event without your team. Robot Self Inspection: In order to enable inspection run smoothly we HIGHLY encourage you to fill out the self inspection checklist which is attached. This will really benefit all teams as it will mean the event will run smoother Entrance/Parking: See attached map regarding entering the building and where to park. Red stars are lots where you can park. Blue stars are team entrances. When you enter please follow signs with the FTC logo. Please be sure to pack an extension cord and power strip! We have enough outlets but not enough extension cords for all 15 teams.  Food and Lunch Concessions in the form of light snacks will be available. Besides concessions there are several fast-food restaurants in the area, including pizza places such as Humberto\u0026rsquo;s Pizzeria, Naples Pizza. A little farther away, there\u0026rsquo;s Little Caesar\u0026rsquo;s and Domino\u0026rsquo;s.\nIf your team is planning on buying lunch or dinner and you would like more options please let me know.\nOther helpful links Game Materials\nhttp://www.firstinspires.org/node/4271\nTeam Management Resources\nhttp://www.firstinspires.org/node/5226\nTeam Information Management System\nhttps://my.firstinspires.org/Dashboard/\nPreparing for Competition\nhttp://www.firstinspires.org/node/5261\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-1/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/number-1/",
 	"title": "Number Models 1",
 	"tags": [],
 	"description": "Three animations to practice identifying number models.",
@@ -273,7 +287,7 @@
 	"content": " Two problems with connect four: changing an entry in a matrix ([[Int]]) and seeing if there is a win.\nChanging entries in the board The biggest problem with the representation of the board as [[Int]] is that it is really hard to change the entries. If you use [((Int,Int),Player)] then it\u0026rsquo;s lots easier to make moves.\nOutline of plan:\n (changeCol: [Int] -\u0026gt; Int -\u0026gt; Int -\u0026gt; [Int]) Change value at index col in a single row to newVal; every other value in the list just output unchanged.\nchangeCol [10,11,12] 2 99 == [10,11,99] We have basically written this function as a Coding Bat problem.\n (changeRowCol: [[Int]] -\u0026gt; Int -\u0026gt; Int -\u0026gt; Int -\u0026gt; [[Int]]) Run changeCol only on the index row entry, everything else stays the same.\nchangeRowCol [[1,2,3,4],[5,6,7,8]] 1 3 99 == [[1,2,3,4],[5,6,7,99]]  There is actually spoiler code and fancy spoiler code that uses Chapter 6.\nDetecting a win Please email me questions. I know this is tricky. My own breakdown was:\n Generate a list containing four ordered pairs in a row. Input: (x,y) coordinates of the first entry, and (dx,dy) to be added to (x,y) to get the other three pairs needed.\n Given a board and one list of four ordered pairs, return True if all of the ordered pairs are legal coordinates for that board.\n Given a board, return a list of all possible lists of four ordered pairs in straight lines. For example, if the board is just the flat 5x1 board [[0,0,0,0,0]], then this function should give a list of the two possible 4-in-a-rows: [[(0,0),(1,0),(2,0),(3,0)], [(1,0),(2,0),(3,0),(4,0)]].\n Given a board and a single ordered pair, get the corresponding value from the board.\n Given a board and four ordered pairs, return True if all of the corrsponding values are the same.\n Do the preceding to a whole list of 4 pairs of coordinates.\n Given a board, return True if it is won.\n There are a few more steps but you are almost there!\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch03/color/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03/color/",
 	"title": "Color Commands",
 	"tags": [],
 	"description": "",
@@ -287,7 +301,7 @@
 	"content": " Sections 4.1\u0026ndash;4.3  A pattern starts out with \u0026ldquo;dog\u0026rdquo;,\u0026ldquo;cat\u0026rdquo;, \u0026ldquo;cat dog\u0026rdquo;, \u0026ldquo;cat dog cat\u0026rdquo;, \u0026ldquo;cat dog cat cat dog\u0026rdquo;, and so on - each new string is created by appending the previous two with a space in between them. Write a function that takes in the number of the word in the sequence and returns the word, starting with 1 is \u0026ldquo;dog\u0026rdquo;.\n Write the function scalar_mult :: (Num a) =\u0026gt; a -\u0026gt; (a,a) -\u0026gt; (a,a) that multiplies each number in a coordinate pair by the same number, so scalar_mult 5 (1,3) == (5,15).\n Write a signature and function body for pair_prod that takes in a list of ordered pairs of numbers and returns a list of the products of the pairs, so pair_prod [(3,5), (10,0), (7,3)]===[15,0,21].\n What pattern do you use to recursively process the first item in a list and the rest of the list?\n What Haskell function is used to indicate that the user is asking the program to do something impossible?\n Are parentheses necessary when writing a function using the pattern from the previous question? Explain why or why not.\n A function two_of takes in a list of showable numbers and puts out a String that says \u0026ldquo;__ is item 2 of __\u0026ldquo;. For example two_of [10,25,50] == \u0026quot;25 is item 2 of [10,25,50]\u0026quot;. Write the signature and function definition fortwo_of`.\n Write the type signature and function definition for double_double which takes in any list and produces the same kind of list. The double_double function makes a list where the first term of the input appears twice, follwed by the whole input twice, so\ndouble_double [5,10,15] == [5,5,5,10,15,5,10,15] Write a function that takes in a number and returns \u0026ldquo;small\u0026rdquo; if the number is below 10, \u0026ldquo;medium\u0026rdquo; if the number is between 10 and 20 (inclusive), and \u0026ldquo;large\u0026rdquo; if the number is larger than 20. Do not use the if...then...else construct.\n Define the function burgers_of using an infix definition so that\n3 `burgers_of` \u0026#34;beef\u0026#34; == \u0026#34;Three hamburgers\u0026#34; 5 `burgers_of` \u0026#34;soy\u0026#34; == \u0026#34;Five tofu burgers\u0026#34; any other set of inputs gives \u0026#34;No thanks, not hungry\u0026#34; Repeating yourself.\n What code segment do you see repeated in the version of the bmi function that includes the bmi calculating code? What experience does the author compare writing to writing this code? What does the book suggest that you should do instead of this coding style?   Sections 4.4\u0026ndash;4.5  Visibility. What is the difference between where you can see terms from let bindings and where bindings?\n The book says let bindings are expressions. What does this mean? Even if you don\u0026rsquo;t know, at least give one consequence of that fact.\n List five different ways to use let bindings:\n You want to define two different variables in one let binding. Give two ways you can separate those definitions.\n Are patterns in function definitions and the \u0026ldquo;case\u0026rdquo; statement interchangeable? Give one way they are and one way they are not.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch01/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch01/",
 	"title": "1. Introduction",
 	"tags": [],
 	"description": "",
@@ -327,6 +341,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/news/codejam/",
+	"title": "CodeJam 2018",
+	"tags": [],
+	"description": "Online programming contest for everyone.",
+	"content": "Google CodeJam is an accessible programming contest run online. Register now!\n April 6-8: Qualification round. April 13: Sub-round A. 8-10:30pm (best time) April 29: Sub-round B. 11am-1:30pm (second choice - need sign out)  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/contracts/contract-structs/",
@@ -420,7 +441,7 @@
 	"content": " Resource: read the book and/or Chapter 2 Powerpoint.\nReading Guide  Where does the word \u0026ldquo;coding\u0026rdquo; come from?\n How is assembly laguage different from machine code?\n What decade was FORTRAN created? Pascal? C++?\n What type of program produces executables from the object code?\n What is the difference between code compiled to machine instructions and interpreted code?\n What are two advantages of byte code over machine code?\n What does JIT mean? What does a JIT compiler do?\n Who originated the term \u0026ldquo;bug\u0026rdquo; and why?\n Compare syntax errors and logic errors.\n What is the usual result of a runtime exception?\n What are two traits your code needs in order to be reusable? (There are four and the last one in the list is the most important.)\n Say you have a class named Dinosaur and everything in your program works. Change Dinosaur to dinosaur in every Java file\u0026hellip; Does it still work? Explain.\n What was the first popular object oriented language? Where was it made? What hope did the author have for it?\n What makes inheritance useful? (Not the goals of inheritance.)\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-2/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/number-2/",
 	"title": "Number Models 2",
 	"tags": [],
 	"description": "Progress bar, dot that follows a line.",
@@ -434,7 +455,7 @@
 	"content": " Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do.\nYou will use it for several purposes:\n Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group  Incomplete It is impossible to write down everything you need to know about git. Even experienced developers need to look things up. There is the Pro Git book and many StackOverflow questions about git that you can learn from.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch03/ch03-art-project/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03/ch03-art-project/",
 	"title": "Art Project",
 	"tags": ["project"],
 	"description": "",
@@ -466,7 +487,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n 1. Introduction   3. More Interesting Pictures   3. Art with Racket   4. Writing Functions   6. Animations I   7. Numbers   8. Number Animations   9. Strings   11. Planning   13. Booleans   Project: Space Invaders   15. Conditionals   20. Using Structures   21A. Making Structures   Semester I Review   I.Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -546,7 +567,7 @@
 	"content": "  Day 1: read 3.1, skim 3.2 - read boldface, 3.3. Day 2: read 3.5-end. Day 3: Writing Simple Classes II. Day 4: Writing Simple Classes III. Statements and solution in the new github repository.  git clone https://github.com/2017-2018-wy-ap-cs/java-rotary-phone Reading Questions  What does CRC stand for in the phrase \u0026ldquo;I wrote a CRC card for SuperBot\u0026rdquo;?  Classes (3.3)  What is a class, according to Java Methods?\n What is the difference between a class and an object? Give two examples not from the text.\n Are there any rules in Java governing the name of a file containing DinosaurBot? If so, what?\n Does Java force you to name your classes beginning with capital letters? Explain the context of this question.\n What is an instance variable? How does it compare to a field?\n What vocabulary word is used for behaviors of a class?\n Give an example of an \u0026ldquo;implicit\u0026rdquo; field, constructor, or method. (Appears later in the chapter.)\n If you refuse to use import statements, does that mean you cannot access information from other files, like the Color class? Explain.\n Does Java care what order methods and fields appear in a class?\n What conventions do Java programmers use when ordering the things that they put in a class?\n Is it considered good design to put the main method inside your WorkerBot class? What do the Java Methods authors say? Why do you think they say that?\n  Gridworld (3.4) Fields, Constructors, Methods (3.5)  Is it an error to have two constructors: public Bug() and public Bug(Color c)? If not, how do you determine which one is used?\n What is a \u0026ldquo;reference\u0026rdquo; (intuitively)?\n What is garbage collection?\n Is it possible for a class to have no constructors? How? Or why not?\n What does it mean to \u0026ldquo;send a message\u0026rdquo; to an object in Java (metaphorically speaking)?\n Does a method belong to an object or a class? Explain briefly.\n How do you indicate that a method gives no result?\n There is a technique mentioned called either encapsulation or information hiding. What is one way to implement encapsulation?\n What is one advantage of encapsulation? (One of the three mentioned in the book is more important than the other two - try to pick that one.)\n  Inheritance (3.6)  Why might adding methods to an existing class not be \u0026ldquo;feasible or desirable\u0026rdquo;? (Three reasons.)\n Reason 1: Reason 2: Reason 3:  What is inherited from a superclass? What is not?\n Is it possible to make a class that does not inherit from any other class? Explain.\n Bug is on page 52, UTurnBug is on page 65. Why can\u0026rsquo;t UTurnBug just have turnAround() function that is direction += 180?\n What are accessor methods?\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-3/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/number-3/",
 	"title": "Number Models 3",
 	"tags": [],
 	"description": "Remainder to repeat. Random dots.",
@@ -567,14 +588,14 @@
 	"content": "  Book Links to the repository and documentation for the Karel the Robot unit.\n  Essentials Links to the repository and documentation for the Karel the Robot unit.\n  Karel 1 and 2 Reading and homework for the first two chapters of the Karel book.\n  Karel 3 Short list of updates and exercises for Chapter 3.\n  Karel 4.1-4.4 Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n  Karel 4.5-4.6 Great chapter: Strategy, Spy, Observer. Design patterns in Java.\n  CodingBat Interlude Practice for the fundamentals of coding in Java: logic and loops.\n  4.6 PrettyBoxBot PrettyBoxBot to practice interfaces\n  4.6 FishBot A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n  4.6 More Classes Three exercises to improve your understanding of classes and interfaces.\n  4.6 MurderBot Review exercises for class design.\n  4.* Advanced \n  4. Test Karel test, based on the review done earlier. Be sure to understand the material from 4.6.\n  4. Robot Drama A skit involving robots making decisions.\n  Karel Intellij How to use IntelliJ IDEA to work with our Karel the Robot configuration.\n  Karel Hacked \n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch03/puzzle-opener/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03/puzzle-opener/",
 	"title": "Puzzle Opener",
 	"tags": ["opener"],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch03/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03/",
 	"title": "3. More Interesting Pictures",
 	"tags": ["homework"],
 	"description": "",
@@ -609,7 +630,7 @@
 	"content": " Main questions about the click circle project (20.6.4):\nStopping an animation    Stop condition How?     user action return (stop-with model) from a handler   model state (stop-when ...) in big-bang    Win screen Question: How do you make a win screen show?\nAnswer: There are three steps:\n Write a win-draw-handler function. Write a should-stop? function. This is a technical annoyance. For now this can do nothing:\n(define (should-stop? model) false) Add a (stop-when should-stop? win-draw-handler) clause to your big-bang.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch03art/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03art/",
 	"title": "3. Art with Racket",
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
@@ -672,7 +693,7 @@
 	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   Programming Practice   "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-4/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/number-4/",
 	"title": "Number Models 4",
 	"tags": [],
 	"description": "",
@@ -686,7 +707,7 @@
 	"content": "  Monday, October 23, 2017: Read Section 4.1-4.3 and do Exercise 3.5 (DiamondBot) with a Choreographer robot.\n Tuesday October 24, 2017: Section 4.2 review (abstract class, override methods).\n Class: make a robot (team) to create my figure 4.2b ending from the old blog. Then make a robot (team) to pick up my figure 4.2b start. Homework: Read Section 4.4.  What is the function of an interface? What does delegation mean in cs?   Wednesday, October 25, 2017: Section 4.4 (interfaces)\n Class: review box on page 76 (purpose of interface, no methods in an interface) Class: review box on page 79 (references can point anywhere) Class: \u0026ldquo;delegation\u0026rdquo;. Assignment: Forester. The Forester plants trees and bushes. In the robot world, you see a top view of the forest - tall plants are represented by lots of beepers, short plants are represented by few beepers in a pile. Oak trees are tall (7 beepers in a location). Maple trees are medium height (3 beepers), and bushes are only 1 beeper tall but they take up four locations instead of one.  Make a Forester interface that has the doPlanting() method. Implement the Forester interface in OakPlanter, MaplePlanter and BushPlanter. Demonstrate with a short program that plants two oak trees 5 squares apart, and a maple next to a bush.   Thursday, October 26, 2017: Practice for quiz Friday.\n Create two robot classes: SpeedyMover and DropMover.  SpeedyMover moves two steps when told to move one. DropMover drops a beeper and moves when told to move.  Create an interface ArmyCaricature that defines the march() and crawl() methods.  march(): go three steps crawl(): go one step and drop a beeper  Create a DrillSargent class that bosses two ArmyCaricature robots. The drill sargent should have a void bootCamp(ArmyCaricature a, ArmyCaricature b) method that tells a to do three marches and b to do three crawls. Verify that your DrillSargent works by giving it a SpeedyMover and a DropMover.   Quiz 4.1-4.4 on Friday You should be able to demonstrate the following skills from Sections 4.1-4.4.\n Create a new class (including constructor from memory). Instance variables to remember helper robots. Abstract class, then concrete implementation to fill in missing parts. Interface: create and implement. Comparison of abstract class and interface.   Additional Notes  Read: old notes, still good.\n Android programming has an AbstractCursor class that handles many commom behaviors. Notice that some of the methods are not there, like:\nabstract public String[] getColumnNames();  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch04/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch04/",
 	"title": "4. Writing Functions",
 	"tags": [],
 	"description": "",
@@ -784,7 +805,7 @@
 	"content": " Undoing Page 100, exercise 12 - the robot that has the undo command. I used the idea of a Decorator strategy.\nSimultaneous Action Chapter 8 in the text shows how to make more than one robot act at the same time. See the MultiThreadBot on the class GitHub.\nA brief summary is:\n World.setupThread(robot) prepares the robot to act in its own thread.\n World.startThreads() calls the run() method for every robot that is set up as threading using the command above.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-review/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/number-review/",
 	"title": "Number Model Review",
 	"tags": [],
 	"description": "A summary of the key points of Chapters 7-8. Preparation for a test.",
@@ -833,7 +854,7 @@
 	"content": " We did a whirlwind tour of Chapter 5 and 6\nChapter 5 Read Section 5.3 - reserved words. Look at Figure 5-1 on page 111 and do not use those words as variable names in your program. Especially try!\nInterested in mastering all of Java? Look up the unusual keywords:\n native transient synchroniszed assert strictfp  Chapter 6 Skim Chapter 6:\n 6.3: Declaring fields, including the use of final for constant instance variables. Constants are conventionally written in UPPERCASE. 6.4: The Table 6-1 on page 133 shows the size in bytes of each of the built-in types, as well as their range. 6.5: How do you get \u0026quot; inside a string? How about \\? 6.6: The section on scope is too brief, but the PowerPoint has good examples.  Read the code below and decide how new Demo(8) will print out?\npublic class Demo { private int num = 1; public Demo(int n) { int num = n; } public String toString { return \u0026#34;Demo: \u0026#34;+num; } } Chapter 6 exercises  Exercises: 3, 4, 6, 7, 9, 11. Programming: 13.  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/",
 	"title": "6. Animations I",
 	"tags": [],
 	"description": "Big-bang for animations. Essential information and walkthroughs.",
@@ -889,7 +910,7 @@
 	"content": "Write checks and follow the design process as you write these functions.\n Move to parabola. Input any point, output a point on the graph of y=x^2. Find the output point by moving vertically up or down from the input point until you reach the graph of y=x^2.\nto-parabola: posn(initial) -\u0026gt; posn If you have time, make an animation that shows a gray circle where the mouse is and then connects that via a gray line to a blue circle on the parabola. You can use my 400x400 parabola image to see the whole parabola. (Read the code I used to make the parabola if you want.)\nIf you want to see an upward facing parabola in people coordinates, you should use the formula below:\n(define (f x) (+ 200 (* -1/200 (- x 200) (- x 200)))) Input a color, output a new color.\nmix-color: color -\u0026gt; color  output red is twice the input amount of green output green is the average of the input red, green, and blue output blue is 50 units less than half of the red input  Hot-Cold. Take in a posn and output a color. The color will depend on the distance of the point from (100,200).\n distance \u0026lt; 100: pure red distance \u0026gt; 355: pure yellow in between: red is 255 minus distance, green is distance minus 100, blue is 0   hot-cold: posn -\u0026gt; color  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch07/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch07/",
 	"title": "7. Numbers",
 	"tags": [],
 	"description": "",
@@ -903,7 +924,7 @@
 	"content": "Use define/contract for each function.\n hawaiian-earring: number(stage) number(radius) -\u0026gt; image. Create stage circles with each successive circle 80% of the radius of the previous one.\n (hawaiian-earring 10 80)    double-ss: string -\u0026gt; string. Double each s appearing in the string.\n(check-expect (double-ss \u0026#34;The snake was silent.\u0026#34;) \u0026#34;The ssnake wass ssilent.\u0026#34;) math-mess: number(start) number(end) -\u0026gt; number. For all of the numbers between start and end: add the squares of the even numbers, subtract the square roots of the odd numbers.\n(math-mess 10 10) =\u0026gt; (* 10 10) (math-mess 11 11) =\u0026gt; (- (sqrt 11)) (math-mess 10 11) =\u0026gt; (- (* 10 10) (sqrt 11))  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/",
 	"title": "8. Number Animations",
 	"tags": [],
 	"description": "",
@@ -931,7 +952,7 @@
 	"content": " Warmup Write a function count-div: number(k) number(n) -\u0026gt; number that gives 1 if k divides n and 0 otherwise.\nOpener count-divisors: positive-integer(n) -\u0026gt; positive-integer. Count how many integers 1,2,\u0026hellip;,n divide the number n.\nCount-divisors solution.\nString Practice group-3: string(word) -\u0026gt; string. Insert spaces after every three letters of word. Example: (group-3 \u0026quot;pancake\u0026quot;) =\u0026gt; \u0026quot;pan cak e\u0026quot;.\nNumber Theory  smallest-factor: positive-integer(n) -\u0026gt; positive-integer. Find the smallest divisor of n that is greater than 1.\n is-prime?: positive-integer(n) -\u0026gt; boolean. Determine whether or not n is prime. Note: this can do less checking than the previous function.\n smallest-prime-factor: positive-integer(n) -\u0026gt; positive-integer. Find the smallest prime factor of n.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch09/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch09/",
 	"title": "9. Strings",
 	"tags": [],
 	"description": "",
@@ -945,7 +966,7 @@
 	"content": " Warmup Write a function count-div: number(k) number(n) -\u0026gt; number that gives 1 if k divides n and 0 otherwise.\nWarmup Solution (define (count-div k n) (cond [(= 0 (remainder n k)) 1] [else 0] (check-expect (count-div 3 6) 1) (check-expect (count-div 4 6) 0) Count-divisors example (count-divisors 2) =\u0026gt; 1 + 1 (count-divisors 3) =\u0026gt; 1 + 0 + 1 (count-divisors 4) =\u0026gt; 1 + 1 + 0 + 1 (count-divisors 5) =\u0026gt; 1 + 0 + 0 + 0 + 1 Notice that there is not a pattern of repeating previously used results! See the longer list of factors to confirm:\n1 =\u0026gt; 1 2 =\u0026gt; 1,2 3 =\u0026gt; 1,3 4 =\u0026gt; 1,2,4 5 =\u0026gt; 1,5 6 =\u0026gt; 1,2,3,6 7 =\u0026gt; 1,7 8 =\u0026gt; 1,2,4,8 9 =\u0026gt; 1,3,9 This means that you cannot write a recursive function the way we have been writing them. (count-divisors 5) has nothing to do with (count-divisors 4).\nCount-divisors walkthrough It really looks like we need to keep track of two things:\n what number we are counting the divisors for (always the same, let\u0026rsquo;s call it end) the number that we are test dividing (changes, let\u0026rsquo;s call it start)  Skeleton:\n(define (count-divisors-help start end) ; not finished 0) Now you write examples. You could abbreviate this function\u0026rsquo;s name as cdh if writing on paper.\nExamples Your examples should look like this list below (abbreviating count-divisors-help as cdh:\n(cdh 1 6) =\u0026gt; 4 (cdh 2 6) =\u0026gt; 3 (cdh 3 6) =\u0026gt; 2 (cdh 4 6) =\u0026gt; 1 (cdh 5 6) =\u0026gt; 1 (cdh 6 6) =\u0026gt; 1 Finale You know there are two steps to writing a recursive function:\n make sure it stops, when it should stop; and make sure it keeps going when it should keep going.  Stops You can write a conditional that always gets the right answer in one case. Try it!\nKeep going You can see that there could be a recursive function call with start increasing by one each time, because the answer for start=3 builds off the answer for start=4.\nThe two ingredients for this part are:\n (count-divisors-help (+1 start) end) (count-div start end)  You have to try writing the rest of the function now!\nAnswer I hope you have worked through each step and tried to understand it before reading the solution.\nBare-bones solution and a complete solution with checks, straight from lecture.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch09/ch9-ex1/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch09/ch9-ex1/",
 	"title": "9. Exercises 1",
 	"tags": [],
 	"description": "",
@@ -956,10 +977,10 @@
 	"title": "22a. Recursion Practice 3",
 	"tags": [],
 	"description": "Even more recursion practice.",
-	"content": " Do at least the first three. Please make sure to write at least three tests for each function.\n is-in-word?: string(letter) string(word) -\u0026gt; boolean. True if the letter is in the word, false otherwise.\n(check-expect (is-in-word? \u0026#34;x\u0026#34; \u0026#34;explode\u0026#34;) true) (check-expect (is-in-word? \u0026#34;s\u0026#34; \u0026#34;juliuc caecar\u0026#34; false) word-shrink: string(word) number(starting-size) -\u0026gt; image. Create a picture of the word in which each letter is four points smaller than the previous letter. Do not let the font size go below 5pt.\n (shrink-word \u0026#34;Perspective Drawing\u0026#34; 64)    sum-penta: number(start) number(end) -\u0026gt; number. The pentagonal numbers are created by making larger and larger pentagons - Wikipedia has a nice animated image. The formula for the nth pentagonal number is (* 0.5 n (- (* 3 n 2))).\nFind the sum of all of pentagonal number n from n=start through n=end.\n   n (penta n) (sum-penta 1 n)     1 1 1   2 5 6   3 12 12     Challenge  draw-tic-tac-toe: string -\u0026gt; image. Take a string containing 9 characters (from \u0026ldquo;X\u0026rdquo; \u0026ldquo;O\u0026rdquo; and \u0026ldquo;-\u0026rdquo;) and turn it into a 3x3 image of \u0026ldquo;X\u0026rdquo; \u0026ldquo;O\u0026rdquo; and blank squares in a tic-tac-toe board.\nHint: You will probably want helper functions draw-one-space and draw-one-line.\n (draw-tic-tac-toe \u0026#34;XXOO-OOXX\u0026#34;)    (Math) Write is-pentagonal?: number -\u0026gt; boolean. Then read Project Euler 44, which might be doable soon. You can celebrate if you find any two pentagonal numbers whose sum and difference are both pentagonal.\n  "
+	"content": " Do at least the first three. Please make sure to write at least three tests for each function.\n is-in-word?: string(letter) string(word) -\u0026gt; boolean. True if the letter is in the word, false otherwise.\n(check-expect (is-in-word? \u0026#34;x\u0026#34; \u0026#34;explode\u0026#34;) true) (check-expect (is-in-word? \u0026#34;s\u0026#34; \u0026#34;juliuc caecar\u0026#34; false) word-shrink: string(word) number(starting-size) -\u0026gt; image. Create a picture of the word in which each letter is four points smaller than the previous letter. Do not let the font size go below 5pt.\n (shrink-word \u0026#34;Perspective Drawing\u0026#34; 64)    sum-penta: number(start) number(end) -\u0026gt; number. The pentagonal numbers are created by making larger and larger pentagons - Wikipedia has a nice animated image. The formula for the nth pentagonal number is (* 0.5 n (- (* 3 n) 1)).\nFind the sum of all of pentagonal number n from n=start through n=end.\n   n (penta n) (sum-penta 1 n)     1 1 1   2 5 6   3 12 12     Challenge  draw-tic-tac-toe: string -\u0026gt; image. Take a string containing 9 characters (from \u0026ldquo;X\u0026rdquo; \u0026ldquo;O\u0026rdquo; and \u0026ldquo;-\u0026rdquo;) and turn it into a 3x3 image of \u0026ldquo;X\u0026rdquo; \u0026ldquo;O\u0026rdquo; and blank squares in a tic-tac-toe board.\nHint: You will probably want helper functions draw-one-space and draw-one-line.\n (draw-tic-tac-toe \u0026#34;XXOO-OOXX\u0026#34;)    (Math) Write is-pentagonal?: number -\u0026gt; boolean. Then read Project Euler 44, which might be doable soon. You can celebrate if you find any two pentagonal numbers whose sum and difference are both pentagonal.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch09/ch9-ex2/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch09/ch9-ex2/",
 	"title": "9. Exercises 2",
 	"tags": [],
 	"description": "",
@@ -1008,7 +1029,7 @@
 	"content": "  CodingBat String-2: did 16 the week before Winter Break.  Review 1 Review 2  Change \u0026ldquo;snow\u0026rdquo; to \u0026ldquo;ice\u0026rdquo;, but only when it appears between \u0026ldquo;December\u0026rdquo; and \u0026ldquo;February\u0026rdquo;. To simplify, you may assume that both December and February appear in the string, and December comes before February.\nSystem.out.println(winter(\u0026#34;snow December snow ice snow February snow\u0026#34;)); ==\u0026gt; \u0026#34;snow December ice ice ice February snow\u0026#34; Create a ASCII tree. Given:\n height of whole tree (height \u0026gt;= 6) width of crown at the top (width odd) trunk is always 4 lines tall and 3 characters wide width of crown increases by two \u0026ldquo;*\u0026rdquo; each line between bottom and top of crown (then decreasing halfway in between)   Example:\ntree(10,5) ==\u0026gt; ***** ******* ********* ********* ******* ***** *** *** *** ***  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch11/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch11/",
 	"title": "11. Planning",
 	"tags": [],
 	"description": "",
@@ -1043,7 +1064,7 @@
 	"content": "ArrayList in-class problems\n 2018-02-05:\n Classwork: pages 2, 4, 8 (ArrayList 0, 2, 3) in presentation linked above. HW: Read Chapter 13. Do reading comprehension questions (exercises) 1-6 on pages 378-379. Answering the questions should take about 10 minutes. Java Methods PowerPoints: Skim Chapter 13.  2018-02-06\n Aardvark Assignment Learn to test ArrayList functions!   2018-02-18\n yesToNo (ArrayList 7) ShoppingList (ArrayList 4a,4b) from problems linked at the top of the page. Shopping List example code.   Example: testing code and useless function so the tests compile.\n 2018-02-08\n Opener: throddPigs Quiz or Homework (if you were not present): ArrayList 8 \u0026ldquo;Penguin\u0026rdquo; from problems linked at the top of the page. Note on testing: A popular question is how to test functions that modify their arguments. See aardvark testing notes.   "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch13/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch13/",
 	"title": "13. Booleans",
 	"tags": [],
 	"description": "",
@@ -1071,7 +1092,7 @@
 	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pagesd do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice 2   "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch15/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch15/",
 	"title": "15. Conditionals",
 	"tags": [],
 	"description": "Making choices in Racket using &#39;cond&#39;.",
@@ -1093,14 +1114,14 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1review/",
-	"title": "Semester I Review",
+	"title": "Sem.I Review",
 	"tags": [],
 	"description": "",
 	"content": "  I.1 Semester I Review 1 Random shape. Drift to a new position. Reduce the amount of green.\n  I.2 Semester I Review 2 Random dots located on a circle, purify color, Benz symbol.\n  I.3 Semester I Review 3 Practice: red-blue, spam-circle, rectangle limitations. Review reading.\n  I.4 Semester I Review 4 Analysis of functions - signatures and check-expects. Structure practice.\n  I.5 Semester I Review 5 The drifter animation that takes little or big steps while moving.\n  I.6 Semester I Review 6 Random numbers. Gas gauge. Graphing in people coordinates.\n  I.7 Semester I Review 7 Additional review exercises.\n  Semester Review Topics List Major topics missed on Chapter 20 test: randomness, consistent signatures for big-bang, good testing.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem1final/",
-	"title": "I.Finals",
+	"title": "Sem.I Finals",
 	"tags": [],
 	"description": "Semester I final exams.",
 	"content": "  1. Final Exam Period 1 final exam.\n  5. Final Exam Period 5 final exam.\n  7. Final Exam Period 7 final exam.\n  "
@@ -1148,28 +1169,28 @@
 	"content": "  2017-10-04 More CodingBat problems.\n  2017-10-03 CodingBat problems to improve your problem-solving skills.\n  2017-09-18 Battleship and homework review.\n  2017-09-14 Indentation Indentation matters. A lot.\n  2017-09-12 Technical details that came up while doing Chapter 2 Homework.\n  2017-09-11 worked examples - removeVowels and wordLenPairs\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch11/11_3a/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch11/11_3a/",
 	"title": "11.3 Intro Slides",
 	"tags": [],
 	"description": "Intro to Chapter 11.",
 	"content": " gas cost  number(miles) -\u0026gt; number(dollars) $3.09 per gallon 26 miles per gallon  bad idea (define (gas-cost miles) (* miles #i0.118846153)) good idea (define MILES-PER-GALLON 26) (define DOLLARS-PER-GALLON 3.09) (define (gas-cost miles) ; to do 0) even better: break it down  gas-needed cost-of-gallons gas-cost (improved)  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch11/11_3b/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch11/11_3b/",
 	"title": "11.3 Homework 1",
 	"tags": [],
 	"description": "Homework for 11.3",
 	"content": " homework  11.3.1  gas-needed: number(miles) -\u0026gt; number(gallons) cost-of-gallons: number(gallons) -\u0026gt; number(dollars) gas-cost: number(miles) -\u0026gt; number(dollars) using the above  11.3.2 cylinder-volume 11.3.3 cylinder-area: find the surface area of a cylinder  Ask a search engine for the surface area and volume of a cylinder if you need them.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch11/11_6a/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch11/11_6a/",
 	"title": "11.6.1 House",
 	"tags": [],
 	"description": "Exercise 11.6.1 with help, from the book.",
 	"content": " We discussed the following function using tools from Chapter 9:\n(centr \u0026#34;panda\u0026#34;) =\u0026gt; \u0026#34;*****panda*****\u0026#34; (centr \u0026#34;sinful\u0026#34;) =\u0026gt; \u0026#34;*****sinful****\u0026#34; (centr \u0026#34;conspicuous\u0026#34;) =\u0026gt; \u0026#34;**conspicuous**\u0026#34; Write a signature, purpose, and function for centr.\n We discussed 11.6.1, the house:\n identifying pieces of house separate functions for each piece how to create the roof   You should finish the house 11.6.1 for homework if you did not finish it in class.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch11/11_6b/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch11/11_6b/",
 	"title": "11.6.2 Airline",
 	"tags": [],
 	"description": "",
@@ -1204,18 +1225,11 @@
 	"content": "Tests from Chapter 14 are returned Thursday/Friday.\nUnderstanding your score:\n Number: multiple choice score, out of 20.\n Letter below number: programming free response score.\n  Grading:\n 20 points multiple choice: turn in test corrections Monday for half points back.\n 20 points free response: discuss with me if you had problems here. (A=95%, B=85%, etc.)\n  Test corrections:\n Explain what the right answer is. Show work justifying you are correct. Code tracing (problems 2,8) - explain in writing what happens as you trace your example through the program.  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/news/procom4/",
-	"title": "ProCom 4",
-	"tags": [],
-	"description": "",
-	"content": "ProCom 4.0 will be March 3, 2018 at the University of Chicago Lab School.\nLast year\u0026rsquo;s contest is posted to HackerRank for practice.\nTeams of 4! Let me know if you are interested (as soon as possible).\n"
-},
-{
 	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-proj-quiz/",
 	"title": "PV Project Quiz",
 	"tags": [],
 	"description": "Quiz on the concepts of the PV project.",
-	"content": "Match the number. In this game you have a goal number, picked randomly by the computer. You start with 0 number displayed and 0 numerical velocity.\n Up arrow increase velocity. Down arrow decrease velocity. Every tick (0.2 sec), the displayed number changes by the velocity number. Velocity can\u0026rsquo;t be below 1 once you start moving. Color the changing number based on how far away from the goal number it is. Mouse click to reset the goal to a new random number and reset the displayed number and velocity to zero. Space bar to end game and invoke win screen. Win screen:\n Win if you hit the number Lose if numbers are not the same    Suggested model:\n(define-struct g (n v goal))"
+	"content": "Match the number. In this game you have a goal number, picked randomly by the computer. You start with 0 number displayed and 0 numerical velocity.\n Up arrow increase velocity. Down arrow decrease velocity. Every tick (0.2 sec), the displayed number changes by the velocity number. Velocity can\u0026rsquo;t be below 1 once you start moving. Color the changing number based on how far away from the goal number it is. Mouse click to reset the goal to a new random number and reset the displayed number and velocity to zero. Space bar to end game and invoke win screen (see below). Win screen:\n Win if you hit the number Lose if numbers are not the same    Suggested model:\n(define-struct g (n v goal))"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch13/13-quiz-1/",
@@ -1243,7 +1257,7 @@
 	"title": "News",
 	"tags": [],
 	"description": "",
-	"content": "  ProCom 4   "
+	"content": "  ProCom 4   CodeJam 2018   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch12/12-ex/",
@@ -1316,7 +1330,7 @@
 	"content": " Drawing  Draw alien at a given posn on a background\ndraw-alien: posn image(bg) -\u0026gt; image Draw turret at a given posn on a background\ndraw-turret: posn image(bg) -\u0026gt; image Draw bullet at a given posn on a background\ndraw-bullet: posn image(bg) -\u0026gt; image Draw win screen.\n Draw lose screen.\n  Action  Bullet activating function. This does not fit into our model so far.\nactivate-bullet: posn(turret-posn) -\u0026gt; posn(bullet-posn) Right arrow moves right, left arrow moves left\nturret-key-h: model(turret-posn) -\u0026gt; model(turret-posn)  Tick handler  Bullet moves up at a constant rate.\nupdate-bullet: posn -\u0026gt; posn Details: where should the bullet be when you start?\n Alien advances (harder).\nHow can you tell when to go right and when to move left? Discuss choices: y-coordinate or an extra direction parameter.\n  Logic For each of these, first write (or type) the information you will take as parameters in order to create the function. Do not include constants in your parameter list.\n enemy-right-edge?: posn (enemy-posn) number(direction) -\u0026gt; boolean enemy-left-edge?: posn (enemy-posn) number(direction) -\u0026gt; boolean bullet-hit-enemy?: posn (bullet-posn) posn (enemy-posn) -\u0026gt; boolean enemy-hit-turret?: posn (enemy-posn) posn (turret-posn) -\u0026gt; boolean game-over?: posn(bullet-posn) posn (enemy-posn) posn (turret-posn) -\u0026gt; boolean bullet-on-screen?: posn (bullet-posn) -\u0026gt; boolean can-fire?: posn (bullet-posn) -\u0026gt; boolean  Combining Now we need a model that will combine everything, and write handlers that combine the other handlers. They are going to look like basically like this:\n(define (real-tick-handler model) (alien-tick-handler (bullet-tick-handler model))) There are some technical details and I will end up providing functions that glue everything together.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch15/15-practice-quiz/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch15/15-practice-quiz/",
 	"title": "15. Practice Quiz",
 	"tags": [],
 	"description": "Practice quiz, adapted from a previous year.",
@@ -1344,7 +1358,7 @@
 	"content": " This documents using IntelliJ IDEA development environment. Way overkill unless DrJava is giving you trouble.\nEasy method  Clone the apcs-karel-intellij repository.\nThis is just a snapshot to get you started at home. I just copied all of the java files from the karel repository to a new directory in the correct place.\n  git clone https://github.com/2017-2018-wy-ap-cs/apcs-karel-intellij  IDEA has: File -\u0026gt; New -\u0026gt; Project from existing sources\u0026hellip; that will let you import my files. If you are lucky you can even just use my whole folder.   Step by step  New project in IDEA: File -\u0026gt; New -\u0026gt; Project\u0026hellip; Make lib and src subfolders. KarelJRobot.jar goes into lib. All java files go into src. IDEA:  File -\u0026gt; Project Structure\u0026hellip; -\u0026gt; Modules (under Project Settings on left) Select \u0026ldquo;Dependencies\u0026rdquo; tab. Use \u0026ldquo;+\u0026rdquo; and choose the KarelJRobot.jar file in the lib folder. I checked the box \u0026ldquo;Export\u0026rdquo;; not sure if that matters.  Build -\u0026gt; Build Project. I had to delete the \u0026ldquo;HackBot.java\u0026rdquo; since I did not include the hacked KarelHRobot library. Run -\u0026gt; Run\u0026hellip;  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch13/ch13-exa/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch13/ch13-exa/",
 	"title": "Ch13 Exercises",
 	"tags": [],
 	"description": "",
@@ -1358,28 +1372,28 @@
 	"content": "On GitHub, I have placed a KarelHRobot.jar that has a hacked UrRobot that has the following capabilities:\n street(): The current street the robot is on (row = y) avenue(): The current avenue the robot is on (column = x) direction(): The direction the robot is facing. beepers(): The number of beepers the robot has in its beeper bag.  I know some people have already enhanced UrRobot with similar capabilities. These hacks are to let the rest of you finish your project without learning every trick of Karel programming.\nThere is a sample project karelPlayProject.drjava that includes the hacked library. It also contains a demo HackBot.java that shows some of the functions in action. Update to get the most recent code from GitHub.\n "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch11/house-project/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch11/house-project/",
 	"title": "Home Project",
 	"tags": [],
 	"description": "Design your own house (art) and cost calculator (math). Practice managing complexity and good function-writing style.",
 	"content": " In this project you will design a house of your own. You will write functions to create the house and functions to determine how much it will cost. Your costs do not have to be realistic.\nTimeline We will spend two whole days working on this in class. I expect it will take 2-4 additional hours outside of class, although this will depends on your understanding and how ambitious of a house you create.\nCheck in points:\n Paper sketch and function outline approved for house image. Style check of two completed functions. House functions completed. Paper outline of functions approved for costs. Cost functions completed.  Work days:\n Sketch house and check-in plan.  List three traits you can change. List functions needed. Write two of the house functions. (Work on house at home. Do at least two functions.)  Decide costs, outline functions needed. Start writing cost functions. Complete cost functions at home. We will need a third work day to finish up.  Due: Thursday after Thanksgiving (note: we will work on new material this week).\nHouse Make decisions on each of these areas. I have listed possibilities but you can choose other ideas as well. Be creative and have fun.\n Shape of the roof: triangle, isosceles trapezoid, rectangle. Height of roof: fixed height, fixed slope. Base: probably a rectangle but could be an octagon, several triangles, or make your own shape. Option: Stilts? In hurricaine-prone areas, houses are built on stilts twelve feet off the ground so that a typical storm surge does not touch the ground floor. Door: maybe one rectangle or two rectangles; could be a sliding patio-door type. Windows could vary in height and style.  fixed height or make them grow taller as the house gets taller. windows of various sizes or styles (like add a smaller attic window) rectangular, octagonal, curved on top  Color: the whole house could vary in color, or certain parts could be colored similarly, some parts could always be the same color (like white windows or a grey roof).  Cost  Window cost depends on the dimensions and possibly shape. Door cost is probably always the same, but you could have multiple doors so they cost more. Base of the house cost should depend on the dimensions. (Attention: subtle instructions! ) Roof cost depends on the area of the roof. You are almost certainly drawing a front view, so you should make the cost of the roof depend on the length of the top side that represents the part where the shingles would go.\nExample: let\u0026rsquo;s say your roof costs $16/\u0026ldquo;foot\u0026rdquo;. Suppose you have made a roof by putting two 3-4-5 right triangles together. The part that you are going to count as the actual roof (for cost purposes) is the top two sides (hypotenuses). Each hypotenuse is 5ft, giving you 10ft of roof, which is a cost of $160.\n  Style and Checks Your project must be written in the style of a high quality Racket program:\n Functions are small and do only one job. VARIABLES are used to give meaning to the raw numbers you use. Meaningful names for function parameters. (Use \u0026ldquo;ticket-price\u0026rdquo; not just \u0026ldquo;x\u0026rdquo;.) Check-expects for all functions. Line breaks and indentation: close as many parentheses as you want, then move to the next line. Your code must not change when auto-indented.   Creativity Feel free to be creative. Houses can have decoration (images and colors). Shapes do not have to be limited to triangles and rectangles - Racket has many shapes available!\nStudent Work Linked are three examples of initial sketches:\n Sketch 1 Sketch 2 Sketch 3  Inspiration  Cathedrals and Temples: Truro, Bristol, Notre Dame, Kinkaku-ji Golden Temple, Florence Cathedral Exotic homes: prefab on a lake, Giza Pyramids visitor center Other: Taj Mahal  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch09/ch9-ex3/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch09/ch9-ex3/",
 	"title": "9. Exercises 3",
 	"tags": [],
 	"description": "",
 	"content": " Write signature, purpose, function:\n(check-expect (quiz \u0026#34;bucket\u0026#34;) \u0026#34;ket----\u0026#34;) (check-expect (quiz \u0026#34;ketchup\u0026#34;) \u0026#34;chup---\u0026#34;) (check-expect (quiz \u0026#34;chappatis\u0026#34;) \u0026#34;patis--\u0026#34;) Write signature, purpose, function:\n  (check-expect (qq \u0026#34;walrus\u0026#34;) \u0026#34;rus-wal\u0026#34;) (check-expect (qq \u0026#34;banak\u0026#34;) \u0026#34;ak-ba\u0026#34;) (check-expect (qq \u0026#34;longaword) \u0026#34;word-long\u0026#34;)"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/test-corrections/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/test-corrections/",
 	"title": "8. Test Corrections",
 	"tags": [],
 	"description": "",
 	"content": "Chapter 8 Test\nDo corrections for +8 or more points of credit.\nCorrections mean complete, correct following of the design process for each function.\nScores will still be \u0026ldquo;curved\u0026rdquo;.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch08/number-review-more/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/number-review-more/",
 	"title": "Number Review More",
 	"tags": [],
 	"description": "",
@@ -1400,7 +1414,7 @@
 	"content": "The testcases zip file contains all of the template files.\nYou can also download them one by one:\n Connect Four TestConnectFour User Interface for Connect Four Main method in its own file  It may help you to start from my repl.it workspace with all of the testing code already in it. Your code should go in ConnectFour.hs. You may need to edit some of the function names. The list of what they are supposed to be is at the start.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-4/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch07/exercises-4/",
 	"title": "More Exercises 4",
 	"tags": [],
 	"description": "",
@@ -1421,35 +1435,35 @@
 	"content": " This page is dedicated to teacher links for Exploring Computer Science.\n Scratch Resources are on a separate page.  Web Hosting Platforms  Cloud9\n Cost: $1/teacher/month = basically free. Live display of website results. Easy to upload images. (\u0026ldquo;Upload local files\u0026hellip;\u0026rdquo;) Interface is busy (lots of features, maybe too many for a beginner). Many languages.  Repl.it\n Cost: No upload of images. Nice simple interface for beginners. Many languages including Python with turtle graphics.    Editors: Mac  TextMate 2.0beta. Tested and works fine on modern Mac OS (10.12) as well as older.  Light weight (13MB) Can run off a flash drive; no Administrator required. HTML mode highlights and saves as \u0026ldquo;.html\u0026rdquo; automatically.   Editors: Windows  NotePad++.  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-3/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch07/exercises-3/",
 	"title": "Exercises 3",
 	"tags": [],
 	"description": "",
 	"content": " Write a function at-most-250 that takes in a number and puts out the same number, or 250 if the number is larger than 250.\n Write a function small-0 that takes in two numbers and gives out the distance to zero of the number that is closest to zero on the number line. It should work with negative numbers as well.\n Write a function stuck-50-150 that takes in a number x and gives out x. Except if x is below 50, give an answer of 50. Also if x is more than 150, give an answer of 150.\n random-3: Write a function that gives a random number between -50 and 50.\n random-4: Write a function that gives a random even number 0-200.\n dice: Write a function that gives the total from randomly rolling two six sided dice.\n rstar: Write a function that makes a star with a random side length.\n dstar: Write a function that makes two stars next to each other, one should have a random side length and the other should have sides that are twice as long.\n Challenge: make a star with a random number of sides. For the third number, the \u0026ldquo;step\u0026rdquo;, try (remainder 31 sides). You will want a helper function that knows the number of sides.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch07/maxmin/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch07/maxmin/",
 	"title": "Max and min slides",
 	"tags": [],
 	"description": "Slideshow of exercises to learn max, min, abs, and random.",
 	"content": " Maximum, Minimum, Random Make a Table Max = greatest. Min = least. Abs = absolute value.\n   x (min x 10) (max x 10) (abs x)     -15      -5      \u0026hellip;       Include x = 8, 13, 18 as well.\nWhich keeps numbers small?    x (min x 10) (max x 10) (abs x)     -15 -15 10 15   -5 -5 10 5   8 8 10 8   13 10 13 13   18 10 18 18    Use Check-expect Always write check-expects when keeping numbers small or large. It is very easy to have mistakes in this kind of code.\nRandom (random 5) =\u0026gt; 0, 1, 2, 3, 4\n( ???? ) =\u0026gt; 0, 1, 2, \u0026hellip;, 100\nRandom range (random 101) =\u0026gt; 0, 1, 2, \u0026hellip;, 100\n( ???? ) =\u0026gt; 50, 51,52, \u0026hellip;, 150\nRandom functions Beginning student needs at least one parameter for a function. You can give the parameter a job if you want:\n(define (random start-num) (+ start-num (random 101)) Checking random?  Uses random number? Test a helper function.\n Produces a random number? No check.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch07/random/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch07/random/",
 	"title": "Randomness",
 	"tags": [],
 	"description": "Making random numbers.  Testing functions that use random numbers.",
 	"content": "  Random numbers: (random 3) gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the code below and you should get different answers each time. racket (random 10) (random 10) (random 10)   Random ranges We use the phrase \u0026ldquo;from 10 to 200\u0026rdquo; or \u0026ldquo;between 10 and 200\u0026rdquo; to both mean all of the integers n so that 10\u0026lt;=n\u0026lt;=200.\n How many numbers are there from 10 to 200, inclusive? It\u0026rsquo;s easy to make a mistake. My favorite method is to subtract a number to make the bottom of the range start counting at one.\nBe sure you understand the previous paragraph before reading on!\nWhen you already have a random number from 0 to 50, how can you get a random number between 30 and 80?\nUsing randomness It is hard to test random functions, so write non-random versions first, and use the randomness as an input. Test the non-random functions!\nExample: Make an ellipse of a random height 150-250 pixels tall, and twice as wide.\n; make-ellipse-nr: string(color) number(height) -\u0026gt; image ; purpose: make an ellipse height units tall and 2*height units wide in the given color (define (make-ellipse-nr color height) (ellipse (* 2 height) height \u0026#34;solid\u0026#34; color)) ; see below for check-expect (define (make-ellipse color) (make-ellipse-nr color (+ 150 (random 101))))  Test your nonrandom function well!   "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-2/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch07/exercises-2/",
 	"title": "Exercises 2",
 	"tags": [],
 	"description": "Exercises working with number functions.",
 	"content": "Exercises:\n hypotenuse: Given the lengths of two legs of a right triangle, return the length of the third side.\n slope: Given the x and y coordinates of two points (x1,y1) and (x2,y2) - in that order - return the slope of the line between those points. (OK if it does not work for vertical lines.)\n distance: Given the x and y coordinates of two points (x1,y1) and (x2,y2), find the distance between them.\n quadratic-1: Given a, b, and c, find one solution to the equation a x^2+b x + c = 0.\n quadratic-2: Given a, b, and c, find the other solution to a x^2+b x + c = 0.\n Make an animation with a number model. Use the number to control the current amount of rotation of the object. The tick handler makes the object spin. Moving the mouse causes the animation to spin faster. Make hitting a key reset the position to zero.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch07/exercises-1/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch07/exercises-1/",
 	"title": "Exercises 1",
 	"tags": [],
 	"description": "Exercises.",
@@ -1463,7 +1477,7 @@
 	"content": " DRAFT: MAY CHANGE\nThere are four functions that you are expected to design and test:\n draw_board: Create a String representation of the board. is_legal_move: True if the attempted move is legal. Used to prevent players from moving in full columns or playing in column -5. is_won: True if the game is over (either player has four in a row). make_move: Gives a new Board with a piece added. Assumes that the move is legal.  To keep scoring straightforward, each function is worth 10 points.\nDraw Board This should draw with no issues, showing the board each row on its own line. I do not anticipate problems with this function.\nMake Move  5 points: piece falls to the bottom of the row when empty (basic move) 5 points: piece falls to the appropriate place (follows all rules)  Is Legal Move  5 points: moves outside of board are not allowed (column negative or too large) 5 points: moves not permitted in full column  Is Won  5 points: horizontal and vertical wins detected 5 points: diagonal wins detected  Deductions  Brute force instead of a thoughtful approach (-4)  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/daily/2017-10-12/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/daily/2017-10-12/",
 	"title": "2017-10-12",
 	"tags": [],
 	"description": "",
@@ -1477,14 +1491,14 @@
 	"content": " Function The function design process that we use is:\n Signature Purpose Examples (two) Function - write it.\n4A. Skeleton - not visible when finished. Check-expect - examples provide correct answers.  Animations  See Chapter 6 Animations for the design process as it applies to writing animations (big-bang).\n The Animations Slides detail the issues when writing handlers.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/daily/2017-10-10/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/daily/2017-10-10/",
 	"title": "2017-10-10",
 	"tags": [],
 	"description": "",
 	"content": " Flying purple rectangle  Make a small rectangle centered in the middle of the bottom of a big white rectangular canvas. As time goes on the rectangle should move up.\n  Growing diamond. Make a diamond that sits on the right side of the page and gets larger.  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/daily/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/daily/",
 	"title": "Daily Animations",
 	"tags": [],
 	"description": "",
@@ -1498,7 +1512,7 @@
 	"content": " Due Monday, October 16. See timeline.\nFamiliarize yourself with the game of Connect Four, possibly playing a few games.\nFunctions to write This is a minimum set of functions to write:\n draw_board :: Board -\u0026gt; String\nCreate a String representation of the board.\n make_move :: Board -\u0026gt; Player -\u0026gt; Position -\u0026gt; Board\nGives a new Board with a piece added. Assumes that the move is legal.\n is_legal_move :: Board -\u0026gt; Player -\u0026gt; Position -\u0026gt; Bool\nTrue if the attempted move is legal. Used to prevent people from playing in full columns or off the board (e.g., column -5). The computer uses this information to decide whether the next move should be by the same player (attempted move was illegal) or the opponent.\n is_won :: Board -\u0026gt; Bool\nTrue when either player has four in a row on the board.\n  Advanced functions When you are done with the minimum set of functions, consider writing functions that make better and better moves.\n any_legal gives the first legal move it finds.\n win_or_any_move is an improvement over any_legal that makes a winning move if there is one.\n win_or_get_three is an improvement over win_or_random_move that plays to get three in a row if it cannot get four in a row.\n best_move picks a move that will lead to a win if one exists and avoids moves that lead to losing.\n  The last function is the most interesting, but will require doing some outside reading on the minimax algorithm, perhaps looking at an implementation for Connect Four.\nDesign process Make a plan before you start writing code! I recommend the top-down design that we discussed last year.\nPlease have each step of the design process visible for each function. It will speed your work and made it easier to understand!\n Purpose for the function Signature for the function Example(s) showing how the function will work. Write the function. Testing: put the examples for the function called work into a function called test_work.  Technical details  Question: How do you print on more than one line?\nAnswer: Put \u0026ldquo;\\n\u0026rdquo; in your string. For example: \u0026ldquo;One line\\nSecond line\u0026rdquo;.\nExample:\ndrawBoard xs = \u0026#34;__XX\\n_OOO\u0026#34; main = do putStrLn $ drawBoard [[0,0,1,1],[0,2,2,2]] Question: What is the difference between \u0026lsquo;X\u0026rsquo; and \u0026ldquo;X\u0026rdquo;?\nAnswer: \u0026lsquo;x\u0026rsquo; is a character (Char), and \u0026ldquo;X\u0026rdquo; is a String, which is a list of characters.\n Question: How do you define a type shortcut?\nAnswer: type Board = [[Int]]\n Question: How do you define a struct?\nAnswer: it will be easier if you do not do this, but Chapter 8 in LYaH has all of the information you need.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch06/daily/animation-practice/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch06/daily/animation-practice/",
 	"title": "Animation Practice",
 	"tags": [],
 	"description": "Practice writing big-bang code and identifying common errors.",
@@ -1519,7 +1533,7 @@
 	"content": "The haybales problem is from Bronze 1, December 2016. In this directory you can download the starter code. If you are new to Unix, you unpack it with the command tar zvxf usaco-y2016-m12.tar.bz2. Inside there is a README.md file that has a few more instructions.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch04/homework/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch04/homework/",
 	"title": "Chapter 4 Homework",
 	"tags": ["homework"],
 	"description": "",
@@ -1610,7 +1624,7 @@
 	"content": " Memorize how to write a basic main method:  main = do putStrLn \u0026#34;Loaded\u0026#34;  Use \u0026ldquo;\u0026ndash;\u0026rdquo; (two dashes) to comment to the end of the line. This is equivalent to Racket \u0026ldquo;;\u0026rdquo; (semicolon).\n Function name rules:\n Must begin with lowercase letter. Hyphens (-) are not allowed in names. Underscore (_) may be used instead.\n Traditionally camelCase is used for functions. (First letter lowercase, then uppercase each new word.)\n  We will learn about the $ sign soon, but it is a substitute for putting parentheses from somewhere to the end of the line. That means\nputStrLn ( show ( grapher f 0 10 ) ) could be written as\nputStrLn $ show $ grapher f 0 10  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch01/ch01-review/",
+	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch01/ch01-review/",
 	"title": "Chapter 01 Review",
 	"tags": [],
 	"description": "",
@@ -1642,7 +1656,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Programming Practice 2 modified Mon 03-05  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  13. ArrayList Quiz modified Tue 02-13  Intermediate Computer Science Recent Changes    22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  22a. Sum Digits modified Mon 02-26  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   CodeJam 2018 modified Wed 03-07  Programming Practice 2 modified Mon 03-05  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  Intermediate Computer Science Recent Changes    Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

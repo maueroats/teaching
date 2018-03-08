@@ -20,7 +20,7 @@ Please make sure to write at least three tests for each function.
 
      {{< figure src="shrink-word.png" title="(shrink-word \"Perspective Drawing\" 64)" >}}
 
-3. `sum-penta`: number(start) number(end) -> number. The [pentagonal numbers](https://en.wikipedia.org/wiki/Pentagonal_number) are created by making larger and larger pentagons - Wikipedia has a nice animated image. The formula for the nth pentagonal number is `(* 0.5 n (- (* 3 n 2)))`. 
+3. `sum-penta`: number(start) number(end) -> number. The [pentagonal numbers](https://en.wikipedia.org/wiki/Pentagonal_number) are created by making larger and larger pentagons - Wikipedia has a nice animated image. The formula for the nth pentagonal number is `(* 0.5 n (- (* 3 n) 1))`. 
 
     Find the sum of all of pentagonal number `n` from `n=start` through `n=end`. 
     
