@@ -8,7 +8,7 @@ draft: false
 description: "Online programming contest for everyone."
 ---
 
-[Google CodeJam](g.co/codejam) is an accessible programming contest run online. Register now!
+[Google CodeJam](https://g.co/codejam) is an accessible programming contest run online. Register now!
 
 * April 6-8: Qualification round.
 * April 13: Sub-round A. 8-10:30pm (best time)
