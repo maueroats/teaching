@@ -28,7 +28,7 @@ Please make sure to write at least three tests for each function.
     |---|-----------|-----------------|
     | 1 | 1         |     1           |
     | 2 | 5         |     6           |
-    | 3 | 12        |    12           |
+    | 3 | 12        |    18           |
      
 ## Challenge
 
