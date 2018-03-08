@@ -13,7 +13,7 @@ description: "Learn to integrate all of the skills that you have acquired in AP 
 * Join the [ProCom 3](https://www.hackerrank.com/pro-com-3) contest.
 
 {{% notice note %}}
-Direct links to HackerRank pagesd do not work. You need to log in,
+Direct links to HackerRank pages do not work. You need to log in,
 then join the contest and find the linked problem.
 {{% /notice %}}
 

@@ -1089,7 +1089,7 @@
 	"title": "Programming Practice",
 	"tags": [],
 	"description": "Learn to integrate all of the skills that you have acquired in AP Computer Science by solving problems.",
-	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pagesd do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice 2   "
+	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pages do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice 2   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch15/",
@@ -1215,7 +1215,7 @@
 	"title": "Programming Practice 2",
 	"tags": [],
 	"description": "",
-	"content": "2018-03-05:\n Magical Square 1  2018-03-06:\n Dory\u0026rsquo;s Microbes  "
+	"content": "Direct links below do not work. Use this link for ProCom 3 contest.\n 2018-03-05:\n Magical Square 1  2018-03-06:\n Dory\u0026rsquo;s Microbes  2018-03-07:\n Catch up.  2018-03-08:\n Happy Trails  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch14/ch14-test-corr/",
@@ -1656,7 +1656,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   CodeJam 2018 modified Wed 03-07  Programming Practice 2 modified Mon 03-05  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  Intermediate Computer Science Recent Changes    Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Programming Practice 2 modified Thu 03-08  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  Intermediate Computer Science Recent Changes    Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
