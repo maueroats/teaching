@@ -1,6 +1,6 @@
 ---
 title: "Programming Practice 2"
-date: 2018-03-08T09:51:42-06:00
+date: 2018-03-09T10:41:32-06:00
 #weight: 
 draft: false
 #type: slide
@@ -28,3 +28,10 @@ Use this link for [**ProCom 3**](https://www.hackerrank.com/auth/signup/pro-com-
 2018-03-08: 
 
 * [Happy Trails](https://www.hackerrank.com/contests/pro-com-3/challenges/happy-trails)
+
+## [ProCom 4](https://www.hackerrank.com/auth/signup/pro-com-4)
+
+2018-03-09:
+
+* [Rebuilding the Rebellion, Part 2](https://www.hackerrank.com/contests/pro-com-4/challenges/rebuilding-the-rebellion-part-two)
+

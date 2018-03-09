@@ -987,6 +987,13 @@
 	"content": " centr as shown below. Write a signature, purpose, and function for centr.  (centr \u0026#34;panda\u0026#34;) =\u0026gt; \u0026#34;*****panda*****\u0026#34; (centr \u0026#34;sinful\u0026#34;) =\u0026gt; \u0026#34;*****sinful****\u0026#34; (centr \u0026#34;conspicuous\u0026#34;) =\u0026gt; \u0026#34;**conspicuous**\u0026#34;"
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/93-self-quiz/",
+	"title": "22a. Recursion Self Quiz",
+	"tags": [],
+	"description": "A brief quiz to make sure you understand recursion.",
+	"content": "draw-cats: string -\u0026gt; image\nDraw one cat for every time the word \u0026ldquo;cat\u0026rdquo; appears in the string.\n  (draw-cats \u0026#34;nyan cat\u0026#34;)    (draw-cats \u0026#34;cat dog cat\u0026#34;)   I have had problems with tests failing even though the images are identical. I found that scaling the image in Racket caused the problem. Now I do not scale the size of the images I use in my tests.\n "
+},
+{
 	"uri": "http://wy-cs.info/ftc/t-shirt/",
 	"title": "Robophins T-Shirts",
 	"tags": [],
@@ -1089,7 +1096,7 @@
 	"title": "Programming Practice",
 	"tags": [],
 	"description": "Learn to integrate all of the skills that you have acquired in AP Computer Science by solving problems.",
-	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pages do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice 2   "
+	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pages do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice 2   Java Bloopers   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch15/",
@@ -1152,7 +1159,7 @@
 	"title": "22a. Recursion",
 	"tags": [],
 	"description": "Recursion lets you solve a problem by solving simpler problems.",
-	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Quiz practice: hawaiian-earring, double-ss, math-mess.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  22a. Helpers: Count Divisors A complete lecture on count-divisors.\n  22a. Recursion Practice 3 Even more recursion practice.\n  "
+	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Quiz practice: hawaiian-earring, double-ss, math-mess.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  22a. Helpers: Count Divisors A complete lecture on count-divisors.\n  22a. Recursion Practice 3 Even more recursion practice.\n  22a. Recursion Self Quiz A brief quiz to make sure you understand recursion.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/",
@@ -1215,7 +1222,14 @@
 	"title": "Programming Practice 2",
 	"tags": [],
 	"description": "",
-	"content": "Direct links below do not work. Use this link for ProCom 3 contest.\n 2018-03-05:\n Magical Square 1  2018-03-06:\n Dory\u0026rsquo;s Microbes  2018-03-07:\n Catch up.  2018-03-08:\n Happy Trails  "
+	"content": " Direct links below do not work. Use this link for ProCom 3 contest.\n 2018-03-05:\n Magical Square 1  2018-03-06:\n Dory\u0026rsquo;s Microbes  2018-03-07:\n Catch up.  2018-03-08:\n Happy Trails  ProCom 4 2018-03-09:\n Rebuilding the Rebellion, Part 2  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/bloopers/",
+	"title": "Java Bloopers",
+	"tags": [],
+	"description": "",
+	"content": " Here are two very tricky problems that people in our class had.\nExponentiation What should the output of loop(5) be?\npublic static void loop(int y) { for (int k = 0; k \u0026lt; (y^2); k++) { System.out.println(k); } } Explain:\nDemoBlooper.loop(5); 0 1 2 3 4 5 6  Uh-oh:\nDemoBlooper.loop(7); 0 1 2 3 4  I\u0026rsquo;ll leave it a mystery for now. If you want the compiler to give you a hint, remove the parentheses around y^2.\nConditionals The following code is supposed to examine the neighbors of the element row=r, col=c in the array temp. If the element is 1 but it has less than 2 or more than 3 neighbors, it becomes 0. If the element is 0 but has 3 neighbors, it becomes 1.\nint nextalive = countnextalive(size, r, c, temp); if(temp[r][c] == 1) if(nextalive \u0026lt; 2 || nextalive \u0026gt; 3) nums[r][c] = 0; else if(nextalive == 3) nums[r][c] = 1; The code has a bug in it\u0026hellip; any ideas? You\u0026rsquo;ll probably need to test it to figure out what\u0026rsquo;s wrong.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch14/ch14-test-corr/",
@@ -1656,7 +1670,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Programming Practice 2 modified Thu 03-08  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  14. Binary Search modified Thu 02-15  Intermediate Computer Science Recent Changes    Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  22a. More Recursion modified Wed 02-28  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  14. Searching and Sorting modified Wed 02-21  Intermediate Computer Science Recent Changes    22a. Recursion Self Quiz modified Fri 03-09  Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  22a. Recursion Quiz Practice modified Fri 03-02  22a. Recursive Helpers modified Wed 02-28  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
