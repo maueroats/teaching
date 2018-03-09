@@ -33,5 +33,6 @@ Use this link for [**ProCom 3**](https://www.hackerrank.com/auth/signup/pro-com-
 
 2018-03-09:
 
-* [Rebuilding the Rebellion, Part 2](https://www.hackerrank.com/contests/pro-com-4/challenges/rebuilding-the-rebellion-part-two)
+* [Rebuilding the Rebellion, Part 2](https://www.hackerrank.com/contests/pro-com-4/challenges).
+
 
