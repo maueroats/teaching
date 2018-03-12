@@ -1876,6 +1876,8 @@
     <ol>
 <li><p><code>zoo-1</code>: string -&gt; string. Change every occurrence of &ldquo;penguin&rdquo; to &ldquo;penguins&rdquo; and change every occurrence of &ldquo;mouse&rdquo; to &ldquo;mice. Leave everything else alone.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> (check-expect (zoo-1 &#34;mouse&#34;) &#34;mice&#34;)
+ (check-expect (zoo-1 &#34;xmouse&#34;) &#34;xmice&#34;)
+ (check-expect (zoo-1 &#34;mousex&#34;) &#34;micex&#34;)
  (check-expect (zoo-1 &#34;mouse mouse&#34;) &#34;mice mice&#34;)
  (check-expect (zoo-1 &#34;mouse moose&#34;) &#34;mice moose&#34;)
  (check-expect (zoo-1 &#34;penguin penguins&#34;) &#34;penguins penguinss&#34;)</pre></div></li>
