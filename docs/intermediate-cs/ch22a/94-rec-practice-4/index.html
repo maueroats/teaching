@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Unit Testing Level II :: WY Computer Science</title>
+<title>22a. Recursion Practice 4 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/jm/testing/testing-medium/">
+  <body data-url="/intermediate-cs/ch22a/94-rec-practice-4/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,11 +64,10 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -510,11 +509,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -612,11 +610,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/testing/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/jm/testing/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/testing/">Unit Testing</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/testing/">Unit Testing</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/jm/testing/testing-intro/" class="dd-item">
@@ -626,7 +623,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/testing/testing-medium/" class="dd-item active">
+      <li data-nav-id="/ap-cs/jm/testing/testing-medium/" class="dd-item">
         <div>
           <a href="/ap-cs/jm/testing/testing-medium/">
             Unit Testing Level II
@@ -770,10 +767,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
@@ -1483,10 +1481,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/">22a. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
@@ -1573,7 +1572,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/94-rec-practice-4/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/94-rec-practice-4/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch22a/94-rec-practice-4/">
             22a. Recursion Practice 4
@@ -1841,12 +1840,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/testing/'>Unit Testing</a> > Unit Testing Level II
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. Recursion Practice 4
 
  
 
@@ -1861,15 +1855,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#common-setup-for-all-tests">Common setup for all tests</a></li>
-<li><a href="#many-tests-with-the-same-setup">Many tests with the same setup</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -1879,7 +1865,7 @@
 
 <div id="body-inner">
   
-    <h1>Unit Testing Level II</h1>
+    <h1>22a. Recursion Practice 4</h1>
   
 
 
@@ -1887,27 +1873,13 @@
     
     
     
-    
-
-<p>You can make common setup code run with <code>@Before</code>. Use it to give instance variables
-their initial values for each test. This method runs once before <strong>each</strong> test, so it will reset the variables to the values you want them to have at the start.</p>
-
-<h2 id="common-setup-for-all-tests">Common setup for all tests</h2>
-
-<p><code>@Before</code>: Method runs before every test. Used to set up instance variables containing objects to be tested.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    private int maxNum;
-    @Before
-    public void set_max() {
-        maxNum = 4;
-    }
-    @Test
-    public void test_max() {
-        assertEquals(maxNum,4);
-    }</pre></div>
-<h2 id="many-tests-with-the-same-setup">Many tests with the same setup</h2>
-
-<p>I use <a href="https://github.com/junit-team/junit4/wiki/Parameterized-tests">parameterized tests</a>.
-They may be to complex for beginners, but see <a href="https://github.com/2017-2018-wy-ap-cs/java-rotary-phone/blob/master/ch10q2/HospitalTest.java">my HospitalTest code on GitHub</a> or <a href="HospitalTest.java">the raw file</a>.</p>
+    <ol>
+<li><p><code>zoo-1</code>: string -&gt; string. Change every occurrence of &ldquo;penguin&rdquo; to &ldquo;penguins&rdquo; and change every occurrence of &ldquo;mouse&rdquo; to &ldquo;mice. Leave everything else alone.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> (check-expect (zoo-1 &#34;mouse&#34;) &#34;mice&#34;)
+ (check-expect (zoo-1 &#34;mouse mouse&#34;) &#34;mice mice&#34;)
+ (check-expect (zoo-1 &#34;mouse moose&#34;) &#34;mice moose&#34;)
+ (check-expect (zoo-1 &#34;penguin penguins&#34;) &#34;penguins penguinss&#34;)</pre></div></li>
+</ol>
 
 
     
@@ -1919,8 +1891,8 @@ They may be to complex for beginners, but see <a href="https://github.com/2017-2
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/jm/testing/testing-intro/" title="Unit Testing Level I"> <i class="fa fa-chevron-left"></i><label>Unit Testing Level I</label></a>
-    <a class="nav nav-next" href="/ap-cs/jm/sem1final/" title="Semester 1 Final" style="margin-right: 0px;"><label>Semester 1 Final</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/93-self-quiz/" title="22a. Recursion Self Quiz"> <i class="fa fa-chevron-left"></i><label>22a. Recursion Self Quiz</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22b/" title="22b. Lists" style="margin-right: 0px;"><label>22b. Lists</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
