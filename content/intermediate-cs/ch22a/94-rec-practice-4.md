@@ -7,7 +7,7 @@ draft: false
 #theme: white
 ---
 
-1. `zoo-1`: string -> string. Change every occurrence of "penguin" to "penguins" and change every occurrence of "mouse" to "mice. Leave everything else alone.
+1. `zoo-1`: string -> string. Change every occurrence of "penguin" to "penguins" and change every occurrence of "mouse" to "mice". Leave everything else alone.
 
          (check-expect (zoo-1 "mouse") "mice")
          (check-expect (zoo-1 "xmouse") "xmice")

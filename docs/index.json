@@ -343,6 +343,13 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-2/",
+	"title": "Programming Practice 2",
+	"tags": [],
+	"description": "",
+	"content": " Direct links below do not work. Use this link for ProCom 3 contest.\n 2018-03-05:\n Magical Square 1  2018-03-06:\n Dory\u0026rsquo;s Microbes  2018-03-07:\n Catch up.  2018-03-08:\n Happy Trails  ProCom 4 2018-03-09:\n Rebuilding the Rebellion, Part 2.  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/news/codejam/",
 	"title": "CodeJam 2018",
 	"tags": [],
@@ -516,6 +523,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:\n Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form \u0026hellip; or email me.\nPhilosophy I aim to create an equitable challenge for everyone in my class. I want to provide everyone in the class meaningful work experiences at a manageable but challenging intellectual level. I may give the same credit for different actual assignments to accomplish this goal.\nThe student side of this equitable challenge is that I expect everyone to work on computer science 100% of the time in class. This applies even if someone is finished with the current assignment or has been absent for a week. I have a shelf full of books available for advanced or catch-up work.\nI expect everyone to take my suggestions for improving their work seriously. Computer science is an art as well as a science. Polish good habits, eradicate bad ones. Please admit if you cling to unproductive habits and work honestly to change them.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    Some grade should be updated every week. Every grade category except final exam should be updated every three weeks. Edline will have all raw score information. Only scaled (\u0026ldquo;curved\u0026rdquo;) scores will be posted on the CPS Gradebook.\nWe use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nGrading and attendance You must be present in order to learn from the class.\n   Absences Consequence     5 Call and email parent.   10 One letter grade (-10 point) deduction to final grade.   15 Additional -5 point deduction to final percentage.   20 Additional -5 point deduction to final percentage.   25 Failure in class    Three tardies more than 5 min late count as one absence.\nAny absence with a note from a medical doctor does not count toward the total absences. (Please make sure I see a copy of the note!) All other absences count. Please discuss necessary accomodations for IEP/504 in the first two weeks of class if I am not aware of them.\nDifferentiation All assigned work is expected to be completed.\nThere is no extra credit without regular credit. The way to improve a grade is through consistent effort, seeking help when needed, and allocating enough effective work time outside of class. Please track your work in your interactive notebook so we can discuss how to make your time more effective.\nAdvanced students may be allowed to replace standard work with projects, but all exceptions will be accompanied by a written contract detailing what other work will be completed to replace the main line coursework. In at most two weeks, the project is due and will receive a grade. Students are still responsible for standard material.\nEssentials of involvement As much as we can, we let students manage their own learning. Occasionally parents should be involved more at home. Sometimes adults need to talk directly. Please contact me directly if you see (or are being told) that grades are not up to date or your student is exempt from the work for any reason and does not have written documentation.\nDaily Materials  Notebook: A thin spiral or composition notebook dedicated to computer science is required for planning, reflection, and documenting progress.\n USB Flash Drive: A small USB drive to store files. (Any size is fine. Code is small.)\n  IEP and 504 plans will be followed Any student with a 504 or IEP will receive all accomodations listed. Please make sure the teacher has received a copy of the plan at the start of the year (especially if your schedule has changed, sometimes the paperwork follows too slowly).\nState standards Computer Science Teachers Association standards applicable in this class:\n 4.2.1 Computational Thinking (CT) 4.2.2 Collaboration (CL) 4.2.3 Computing Practice and Programming (CPP) See individual unit plans for more details.  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-3/",
+	"title": "Programming Practice 3",
+	"tags": [],
+	"description": "",
+	"content": "Direct links below do not work. Use this link for ProCom 4 contest.\n 2018-03-12:\n Ship prices. This counts as your problem solving quiz if you do it yourself.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/30-fibonacci/",
@@ -945,6 +959,13 @@
 	"content": " You may use the Picturing Programs textbook and the blog to look up functions th at you do not know. Do not consult any other programs written by you or anyone else. (No old homework, Stack Overflow, etc.)\nUse define/contract and have at least two check expects for each function.\n reciprocal-squares: number(start) number(end) -\u0026gt; number. Find the sum of 1/n^2 for every n between start and end (including both).\n   start end sum     1 1 1.0   1 2 1.25   1 3 1.36111\u0026hellip;    blank-vowels: string(word) -\u0026gt; string. Change every vowel (a,e,i,o,u) to an underscore (_). Example: (blank-vowels \u0026quot;elephant\u0026quot;) =\u0026gt; \u0026quot;_l_ph_nt\u0026quot;.\n  Period 5,7 Only  circle-circle: number(big-radius) number(little-radius) number(turn-angle) number(n) -\u0026gt; image. Produce n circles of size little-radius around the perimeter of a circle of size big-radius. In between each, have a central angle of turn-angle.\n  (circle-circle 100 20 45 8)    (circle-circle 120 15 30 6)     Period 1 Only  hollow-diagonal: number(radius) number(n): Produce n circles of the given radius along a diagonal.\n (hollow-diagonal 20 5)   \n  "
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/bloopers/",
+	"title": "Java Bloopers",
+	"tags": [],
+	"description": "",
+	"content": " Here are two very tricky problems that people in our class had.\nExponentiation What should the output of loop(5) be?\npublic static void loop(int y) { for (int k = 0; k \u0026lt; (y^2); k++) { System.out.println(k); } } Explain:\nDemoBlooper.loop(5); 0 1 2 3 4 5 6  Uh-oh:\nDemoBlooper.loop(7); 0 1 2 3 4  I\u0026rsquo;ll leave it a mystery for now. If you want the compiler to give you a hint, remove the parentheses around y^2.\nConditionals The following code is supposed to examine the neighbors of the element row=r, col=c in the array temp. If the element is 1 but it has less than 2 or more than 3 neighbors, it becomes 0. If the element is 0 but has 3 neighbors, it becomes 1.\nint nextalive = countnextalive(size, r, c, temp); if(temp[r][c] == 1) if(nextalive \u0026lt; 2 || nextalive \u0026gt; 3) nums[r][c] = 0; else if(nextalive == 3) nums[r][c] = 1; The code has a bug in it\u0026hellip; any ideas? You\u0026rsquo;ll probably need to test it to figure out what\u0026rsquo;s wrong.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/90-helpers/",
 	"title": "22a. Helpers",
 	"tags": [],
@@ -999,6 +1020,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Cost Order going in Friday October 27. Sign up and give $15 to Doc Mo before Friday.\nFront  Back  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/99-hangman/",
+	"title": "22a. Hangman Project",
+	"tags": [],
+	"description": "Make the classic game of hangman.",
+	"content": " The game of hangman a classic guess-the-word game. You can try hangman online, but do not play too long - just learn the rules.\nOutline  Three illustrations of \u0026ldquo;action\u0026rdquo; that should occur in the game. Explain what they are. Model Top-down design. Key-handler\n Purpose Examples: at least two (which become tests) Write function.  Draw-handler\n Purpose Illustrations on paper (two) - easier than making computer examples. Examples: at least two (which will become tests) Write function.  Final screens: win and lose.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-resources/",
@@ -1096,7 +1124,7 @@
 	"title": "Programming Practice",
 	"tags": [],
 	"description": "Learn to integrate all of the skills that you have acquired in AP Computer Science by solving problems.",
-	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pages do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice3   Programming Practice 2   Java Bloopers   "
+	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pages do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice 2   Programming Practice 3   Java Bloopers   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch15/",
@@ -1159,7 +1187,7 @@
 	"title": "22a. Recursion",
 	"tags": [],
 	"description": "Recursion lets you solve a problem by solving simpler problems.",
-	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Quiz practice: hawaiian-earring, double-ss, math-mess.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  22a. Helpers: Count Divisors A complete lecture on count-divisors.\n  22a. Recursion Practice 3 Even more recursion practice.\n  22a. Recursion Self Quiz A brief quiz to make sure you understand recursion.\n  22a. Recursion Practice 4  zoo-1: string -\u0026gt; string. Change every occurrence of \u0026ldquo;penguin\u0026rdquo; to \u0026ldquo;penguins\u0026rdquo; and change every occurrence of \u0026ldquo;mouse\u0026rdquo; to \u0026ldquo;mice. Leave everything else alone. (check-expect (zoo-1 \u0026#34;mouse\u0026#34;) \u0026#34;mice\u0026#34;) (check-expect (zoo-1 \u0026#34;xmouse\u0026#34;) \u0026#34;xmice\u0026#34;) (check-expect (zoo-1 \u0026#34;mousex\u0026#34;) \u0026#34;micex\u0026#34;) (check-expect (zoo-1 \u0026#34;mouse moose\u0026#34;) \u0026#34;mice moose\u0026#34;) (check-expect (zoo-1 \u0026#34;mouse mouse\u0026#34;) \u0026#34;mice mice\u0026#34;) (check-expect (zoo-1 \u0026#34;penguin penguins\u0026#34;) \u0026#34;penguins penguinss\u0026#34;)   "
+	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Quiz practice: hawaiian-earring, double-ss, math-mess.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  22a. Helpers: Count Divisors A complete lecture on count-divisors.\n  22a. Recursion Practice 3 Even more recursion practice.\n  22a. Recursion Self Quiz A brief quiz to make sure you understand recursion.\n  22a. Hangman Project Make the classic game of hangman.\n  22a. Recursion Practice 4 \n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/",
@@ -1218,32 +1246,11 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-3/",
-	"title": "Programming Practice3",
-	"tags": [],
-	"description": "",
-	"content": "Direct links below do not work. Use this link for ProCom 4 contest.\n 2018-03-12:\n Ship prices. This counts as your problem solving quiz if you do it yourself.  "
-},
-{
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/94-rec-practice-4/",
 	"title": "22a. Recursion Practice 4",
 	"tags": [],
 	"description": "",
-	"content": " zoo-1: string -\u0026gt; string. Change every occurrence of \u0026ldquo;penguin\u0026rdquo; to \u0026ldquo;penguins\u0026rdquo; and change every occurrence of \u0026ldquo;mouse\u0026rdquo; to \u0026ldquo;mice. Leave everything else alone.\n(check-expect (zoo-1 \u0026#34;mouse\u0026#34;) \u0026#34;mice\u0026#34;) (check-expect (zoo-1 \u0026#34;xmouse\u0026#34;) \u0026#34;xmice\u0026#34;) (check-expect (zoo-1 \u0026#34;mousex\u0026#34;) \u0026#34;micex\u0026#34;) (check-expect (zoo-1 \u0026#34;mouse moose\u0026#34;) \u0026#34;mice moose\u0026#34;) (check-expect (zoo-1 \u0026#34;mouse mouse\u0026#34;) \u0026#34;mice mice\u0026#34;) (check-expect (zoo-1 \u0026#34;penguin penguins\u0026#34;) \u0026#34;penguins penguinss\u0026#34;)  "
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-2/",
-	"title": "Programming Practice 2",
-	"tags": [],
-	"description": "",
-	"content": " Direct links below do not work. Use this link for ProCom 3 contest.\n 2018-03-05:\n Magical Square 1  2018-03-06:\n Dory\u0026rsquo;s Microbes  2018-03-07:\n Catch up.  2018-03-08:\n Happy Trails  ProCom 4 2018-03-09:\n Rebuilding the Rebellion, Part 2.  "
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/bloopers/",
-	"title": "Java Bloopers",
-	"tags": [],
-	"description": "",
-	"content": " Here are two very tricky problems that people in our class had.\nExponentiation What should the output of loop(5) be?\npublic static void loop(int y) { for (int k = 0; k \u0026lt; (y^2); k++) { System.out.println(k); } } Explain:\nDemoBlooper.loop(5); 0 1 2 3 4 5 6  Uh-oh:\nDemoBlooper.loop(7); 0 1 2 3 4  I\u0026rsquo;ll leave it a mystery for now. If you want the compiler to give you a hint, remove the parentheses around y^2.\nConditionals The following code is supposed to examine the neighbors of the element row=r, col=c in the array temp. If the element is 1 but it has less than 2 or more than 3 neighbors, it becomes 0. If the element is 0 but has 3 neighbors, it becomes 1.\nint nextalive = countnextalive(size, r, c, temp); if(temp[r][c] == 1) if(nextalive \u0026lt; 2 || nextalive \u0026gt; 3) nums[r][c] = 0; else if(nextalive == 3) nums[r][c] = 1; The code has a bug in it\u0026hellip; any ideas? You\u0026rsquo;ll probably need to test it to figure out what\u0026rsquo;s wrong.\n"
+	"content": " zoo-1: string -\u0026gt; string. Change every occurrence of \u0026ldquo;penguin\u0026rdquo; to \u0026ldquo;penguins\u0026rdquo; and change every occurrence of \u0026ldquo;mouse\u0026rdquo; to \u0026ldquo;mice\u0026rdquo;. Leave everything else alone.\n(check-expect (zoo-1 \u0026#34;mouse\u0026#34;) \u0026#34;mice\u0026#34;) (check-expect (zoo-1 \u0026#34;xmouse\u0026#34;) \u0026#34;xmice\u0026#34;) (check-expect (zoo-1 \u0026#34;mousex\u0026#34;) \u0026#34;micex\u0026#34;) (check-expect (zoo-1 \u0026#34;mouse moose\u0026#34;) \u0026#34;mice moose\u0026#34;) (check-expect (zoo-1 \u0026#34;mouse mouse\u0026#34;) \u0026#34;mice mice\u0026#34;) (check-expect (zoo-1 \u0026#34;penguin penguins\u0026#34;) \u0026#34;penguins penguinss\u0026#34;)  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch14/ch14-test-corr/",
@@ -1684,7 +1691,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Programming Practice3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  Intermediate Computer Science Recent Changes    22a. Recursion Practice 4 modified Mon 03-12  22a. Recursion Self Quiz modified Fri 03-09  Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  22a. Recursion Quiz Practice modified Fri 03-02  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  Intermediate Computer Science Recent Changes    22a. Hangman Project modified Mon 03-12  22a. Recursion Practice 4 modified Mon 03-12  22a. Recursion Self Quiz modified Fri 03-09  Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

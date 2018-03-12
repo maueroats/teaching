@@ -1,7 +1,7 @@
 ---
 title: "Java Bloopers"
 date: 2018-03-09T10:29:38-06:00
-#weight: 
+weight: 90
 draft: false
 #type: slide
 #theme: white

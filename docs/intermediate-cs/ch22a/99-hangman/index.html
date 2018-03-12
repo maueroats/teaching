@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>WeScheme :: WY Computer Science</title>
+<title>22a. Hangman Project :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/resources/ics-wescheme-note/">
+  <body data-url="/intermediate-cs/ch22a/99-hangman/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -774,10 +774,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
@@ -1487,10 +1488,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/">22a. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
@@ -1577,7 +1579,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch22a/99-hangman/">
             22a. Hangman Project
@@ -1667,11 +1669,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/resources/" class="dd-item parent haschildren
+    <li data-nav-id="/resources/" class="dd-item haschildren
         ">
       <div>
-      <a href="/resources/">Resources</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/resources/">Resources</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/resources/generic-cs-syllabus/" class="dd-item">
@@ -1722,7 +1723,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/resources/ics-wescheme-note/" class="dd-item active">
+      <li data-nav-id="/resources/ics-wescheme-note/" class="dd-item">
         <div>
           <a href="/resources/ics-wescheme-note/">
             WeScheme
@@ -1850,7 +1851,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/resources/'>Resources</a> > WeScheme
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. Hangman Project
+
+ 
 
  
 
@@ -1865,7 +1871,10 @@
         <div class="wrapper">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#special-notes-for-wescheme-users">Special notes for WeScheme users</a></li>
+<li>
+<ul>
+<li><a href="#outline">Outline</a></li>
+</ul></li>
 </ul>
 </nav>
         </div>
@@ -1877,7 +1886,7 @@
 
 <div id="body-inner">
   
-    <h1>WeScheme</h1>
+    <h1>22a. Hangman Project</h1>
   
 
 
@@ -1887,30 +1896,36 @@
     
     
 
-<h1 id="special-notes-for-wescheme-users">Special notes for WeScheme users</h1>
+<p>The game of <a href="https://en.wikipedia.org/wiki/Hangman_(game)">hangman</a> a
+classic guess-the-word game.  You can <a href="http://www.playhangman.com">try hangman
+online</a>, but do not play too long - just learn the rules.</p>
 
-<p>You can use <a href="http://wescheme.org">WeScheme</a> if you cannot install <a href="http://racket
--lang.org">DrRacket</a>. For example, if you have a Chromebook for your home computer.</p>
+<h2 id="outline">Outline</h2>
 
-<p>There are a few differences:</p>
+<ol>
+<li>Three illustrations of &ldquo;action&rdquo; that should occur in the game. Explain what they are.</li>
+<li>Model</li>
+<li>Top-down design.</li>
+
+<li><p>Key-handler</p>
 
 <ul>
-<li><p>Omit the <code>(require picturing-programs)</code> line.</p></li>
+<li>Purpose</li>
+<li>Examples: at least two (which become tests)</li>
+<li>Write function.</li>
+</ul></li>
 
-<li><p>(<strong>Chapter 3</strong>)
-Instead of copy and pasting in a picture, you need to copy the link for the image and use <code>bitmap/url</code> like this:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">bitmap/url</span> <span style="color:#d88200">&#34;https://www.what-dog.net/Images/faces2/main004.jpg&#34;</span><span style="color:#111">)</span></code></pre></div></li>
+<li><p>Draw-handler</p>
 
-<li><p>(<strong>Chapter 6</strong>) Inside <code>big-bang</code> you need to use the phrase <code>to-draw</code> instead of <code>on-draw</code> that we use in DrRacket.
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">draw-handler</span> <span style="color:#111">model</span><span style="color:#111">)</span> 
-    <span style="color:#111">(</span><span style="color:#111">overlay</span> <span style="color:#111">model</span> <span style="color:#111">(</span><span style="color:#111">empty-scene</span> <span style="color:#ae81ff">300</span> <span style="color:#ae81ff">200</span><span style="color:#111">)))</span>
-<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">tick-handler</span> <span style="color:#111">model</span><span style="color:#111">)</span> 
-    <span style="color:#111">(</span><span style="color:#111">scale</span> <span style="color:#ae81ff">1.01</span> <span style="color:#111">model</span><span style="color:#111">))</span>
+<ul>
+<li>Purpose</li>
+<li>Illustrations on paper (two) - easier than making computer examples.</li>
+<li>Examples: at least two (which will become tests)</li>
+<li>Write function.</li>
+</ul></li>
 
-<span style="color:#111">(</span><span style="color:#111">big-bang</span> <span style="color:#111">(</span><span style="color:#111">circle</span> <span style="color:#ae81ff">10</span> <span style="color:#d88200">&#34;solid&#34;</span> <span style="color:#d88200">&#34;green&#34;</span><span style="color:#111">)</span>
-          <span style="color:#111">(</span><span style="color:#111">on-tick</span> <span style="color:#111">tick-handler</span><span style="color:#111">)</span>
-<span style="display:block;width:100%;background-color:#e1e1e1">          <span style="color:#111">(</span><span style="color:#111">to-draw</span> <span style="color:#111">draw-handler</span><span style="color:#111">))</span></span></code></pre></div></p></li>
-</ul>
+<li><p>Final screens: win and lose.</p></li>
+</ol>
 
 
     
@@ -1922,8 +1937,8 @@ Instead of copy and pasting in a picture, you need to copy the link for the imag
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/resources/why-racket/" title="Why Racket?"> <i class="fa fa-chevron-left"></i><label>Why Racket?</label></a>
-    <a class="nav nav-next" href="/ftc/" title="Robophins 3216" style="margin-right: 0px;"><label>Robophins 3216</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/93-self-quiz/" title="22a. Recursion Self Quiz"> <i class="fa fa-chevron-left"></i><label>22a. Recursion Self Quiz</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22a/94-rec-practice-4/" title="22a. Recursion Practice 4" style="margin-right: 0px;"><label>22a. Recursion Practice 4</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

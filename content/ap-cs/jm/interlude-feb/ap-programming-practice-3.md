@@ -1,7 +1,7 @@
 ---
-title: "Programming Practice3"
+title: "Programming Practice 3"
 date: 2018-03-12T11:02:06-05:00
-#weight: 
+weight: 30
 draft: false
 #type: slide
 #theme: white

@@ -1,7 +1,7 @@
 ---
 title: "Programming Practice 2"
 date: 2018-03-09T10:41:32-06:00
-#weight: 
+weight: 20
 draft: false
 #type: slide
 #theme: white
