@@ -12,8 +12,8 @@ draft: false
          (check-expect (zoo-1 "mouse") "mice")
          (check-expect (zoo-1 "xmouse") "xmice")
          (check-expect (zoo-1 "mousex") "micex")
-         (check-expect (zoo-1 "mouse mouse") "mice mice")
          (check-expect (zoo-1 "mouse moose") "mice moose")
+         (check-expect (zoo-1 "mouse mouse") "mice mice")
          (check-expect (zoo-1 "penguin penguins") "penguins penguinss")
 
 
