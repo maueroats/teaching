@@ -1015,6 +1015,13 @@
 	"content": "draw-cats: string -\u0026gt; image\nDraw one cat for every time the word \u0026ldquo;cat\u0026rdquo; appears in the string.\n  (draw-cats \u0026#34;nyan cat\u0026#34;)    (draw-cats \u0026#34;cat dog cat\u0026#34;)   I have had problems with tests failing even though the images are identical. I found that scaling the image in Racket caused the problem. Now I do not scale the size of the images I use in my tests.\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/95-rec-quiz-2/",
+	"title": "22a. Recursion Quiz 2",
+	"tags": [],
+	"description": "Ice cream quiz.",
+	"content": " An ice cream cone can have strawberry, vanilla, or chocolate ice cream scoops. The number of scoops is unlimited, specified by the string of flavors that is input.\nice-cream: string -\u0026gt; image  (ice-cream \u0026#34;chocolate vanilla strawberry strawberry chocolate\u0026#34;)   Detailed Instructions  Build up to all of the flavors by first picking a single flavor and creating a cone for only that flavor. Write checks as we have discussed in class. It is worth your time! Permitted resources: Picturing Programs book and Racket Help Desk. No old homework or notes.  Grading  Flawless single flavor cone = 70% Good tests = +10% Multi-flavor cone, no problems: 90%. Penalty for untested code, or errors when tested -5.  F.A.Q.  You may write any helper functions that you want.  "
+},
+{
 	"uri": "http://wy-cs.info/ftc/t-shirt/",
 	"title": "Robophins T-Shirts",
 	"tags": [],
@@ -1187,7 +1194,7 @@
 	"title": "22a. Recursion",
 	"tags": [],
 	"description": "Recursion lets you solve a problem by solving simpler problems.",
-	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Quiz practice: hawaiian-earring, double-ss, math-mess.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  22a. Helpers: Count Divisors A complete lecture on count-divisors.\n  22a. Recursion Practice 3 Even more recursion practice.\n  22a. Recursion Self Quiz A brief quiz to make sure you understand recursion.\n  22a. Hangman Project Make the classic game of hangman.\n  22a. Recursion Practice 4 \n  "
+	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Quiz practice: hawaiian-earring, double-ss, math-mess.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  22a. Helpers: Count Divisors A complete lecture on count-divisors.\n  22a. Recursion Practice 3 Even more recursion practice.\n  22a. Recursion Self Quiz A brief quiz to make sure you understand recursion.\n  22a. Recursion Quiz 2 Ice cream quiz.\n  22a. Hangman Project Make the classic game of hangman.\n  22a. Recursion Practice 4  zoo-1: string -\u0026gt; string. Change every occurrence of \u0026ldquo;penguin\u0026rdquo; to \u0026ldquo;penguins\u0026rdquo; and change every occurrence of \u0026ldquo;mouse\u0026rdquo; to \u0026ldquo;mice\u0026rdquo;. Leave everything else alone. (check-expect (zoo-1 \u0026#34;mouse\u0026#34;) \u0026#34;mice\u0026#34;) (check-expect (zoo-1 \u0026#34;xmouse\u0026#34;) \u0026#34;xmice\u0026#34;) (check-expect (zoo-1 \u0026#34;mousex\u0026#34;) \u0026#34;micex\u0026#34;) (check-expect (zoo-1 \u0026#34;mouse moose\u0026#34;) \u0026#34;mice moose\u0026#34;) (check-expect (zoo-1 \u0026#34;mouse mouse\u0026#34;) \u0026#34;mice mice\u0026#34;) (check-expect (zoo-1 \u0026#34;penguin penguins\u0026#34;) \u0026#34;penguins penguinss\u0026#34;)   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/",
@@ -1691,7 +1698,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  Intermediate Computer Science Recent Changes    22a. Hangman Project modified Mon 03-12  22a. Recursion Practice 4 modified Mon 03-12  22a. Recursion Self Quiz modified Fri 03-09  Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  22a. Recursion Quiz modified Mon 03-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  Intermediate Computer Science Recent Changes    22a. Recursion Quiz 2 modified Tue 03-13  22a. Hangman Project modified Mon 03-12  22a. Recursion Practice 4 modified Mon 03-12  22a. Recursion Self Quiz modified Fri 03-09  Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  22a. Helpers modified Tue 03-06  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

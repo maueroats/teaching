@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Interlude :: WY Computer Science</title>
+<title>22a. Recursion Quiz 2 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/jm/interlude-jan/">
+  <body data-url="/intermediate-cs/ch22a/95-rec-quiz-2/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,11 +64,10 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -510,11 +509,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -570,7 +568,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/interlude-jan/" class="dd-item parent active
+    <li data-nav-id="/ap-cs/jm/interlude-jan/" class="dd-item
         ">
       <div>
       <a href="/ap-cs/jm/interlude-jan/">Interlude</a>
@@ -776,10 +774,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
@@ -1489,10 +1488,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/">22a. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
@@ -1579,7 +1579,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/95-rec-quiz-2/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/95-rec-quiz-2/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch22a/95-rec-quiz-2/">
             22a. Recursion Quiz 2
@@ -1861,7 +1861,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > Interlude
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. Recursion Quiz 2
 
  
 
@@ -1880,8 +1880,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#review-1">Review 1</a></li>
-<li><a href="#review-2">Review 2</a></li>
+<li><a href="#detailed-instructions">Detailed Instructions</a></li>
+<li><a href="#grading">Grading</a></li>
+<li><a href="#f-a-q">F.A.Q.</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1894,7 +1895,7 @@
 
 <div id="body-inner">
   
-    <h1>Interlude</h1>
+    <h1>22a. Recursion Quiz 2</h1>
   
 
 
@@ -1902,49 +1903,48 @@
     
     
     
+    
+
+<p>An ice cream cone can have strawberry, vanilla, or chocolate ice cream scoops.
+The number of scoops is unlimited, specified by the string of flavors that is input.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">ice-cream: string -&gt; image</pre></div>
+
+<figure >
+    
+        <img src="ice-cream.png" />
+    
+    
+    <figcaption>
+        <h4>(ice-cream &#34;chocolate vanilla strawberry strawberry chocolate&#34;)</h4>
+        
+    </figcaption>
+    
+</figure>
 
 
-
-<ul>
-<li>CodingBat String-2: did 16 the week before Winter Break.</li>
-</ul>
-
-<h2 id="review-1">Review 1</h2>
-
-<h2 id="review-2">Review 2</h2>
+<h2 id="detailed-instructions">Detailed Instructions</h2>
 
 <ol>
-<li><p>Change &ldquo;snow&rdquo; to &ldquo;ice&rdquo;, but only when it appears between &ldquo;December&rdquo;
-and &ldquo;February&rdquo;.  To simplify, you may assume that both December and
-February appear in the string, and December comes before February.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">out</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#111">winter</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;snow December snow ice snow February snow&#34;</span><span style="color:#f92672">));</span>
-<span style="color:#f92672">==&gt;</span> <span style="color:#d88200">&#34;snow December ice ice ice February snow&#34;</span></code></pre></div></li>
-
-<li><p>Create a ASCII tree. Given:</p>
-
-<ul>
-<li>height of whole tree (height &gt;= 6)</li>
-<li>width of crown at the top (width odd)</li>
-<li>trunk is always 4 lines tall and 3 characters wide</li>
-<li>width of crown increases by two &ldquo;*&rdquo; each line between bottom and top of crown (then decreasing halfway in between)
-<br /></li>
-</ul>
-
-<p>Example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">tree(10,5)
-==&gt;
-    *****
-   *******
-  *********
-  *********
-   *******
-    *****
-     ***
-     ***
-     ***
-     ***</code></pre></div></li>
+<li>Build up to all of the flavors by first picking a single flavor and
+creating a cone for only that flavor.</li>
+<li>Write checks as we have discussed in class. It is worth your time!</li>
+<li>Permitted resources: Picturing Programs book and Racket Help Desk. No old homework or notes.</li>
 </ol>
 
+<h2 id="grading">Grading</h2>
+
+<ul>
+<li>Flawless single flavor cone = 70%</li>
+<li>Good tests = +10%</li>
+<li>Multi-flavor cone, no problems: 90%.</li>
+<li>Penalty for untested code, or errors when tested -5.</li>
+</ul>
+
+<h2 id="f-a-q">F.A.Q.</h2>
+
+<ul>
+<li>You may write any helper functions that you want.</li>
+</ul>
 
 
     
@@ -1956,8 +1956,8 @@ February appear in the string, and December comes before February.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/jm/ch10/10-test/" title="10. Test"> <i class="fa fa-chevron-left"></i><label>10. Test</label></a>
-    <a class="nav nav-next" href="/ap-cs/jm/ch12/" title="12. Arrays" style="margin-right: 0px;"><label>12. Arrays</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/93-self-quiz/" title="22a. Recursion Self Quiz"> <i class="fa fa-chevron-left"></i><label>22a. Recursion Self Quiz</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22a/99-hangman/" title="22a. Hangman Project" style="margin-right: 0px;"><label>22a. Hangman Project</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

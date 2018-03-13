@@ -2,7 +2,7 @@
 title: "22a. Recursion Quiz 2"
 date: 2018-03-13T09:44:07-05:00
 weight: 95
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "Ice cream quiz."
