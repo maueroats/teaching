@@ -22,6 +22,7 @@ title="(ice-cream \"chocolate vanilla strawberry strawberry chocolate\")"
 1. Build up to all of the flavors by first picking a single flavor and
    creating a cone for only that flavor. 
 2. Write checks as we have discussed in class. It is worth your time!
+3. Permitted resources: Picturing Programs book and Racket Help Desk. No old homework or notes.
 
 ## Grading
 
