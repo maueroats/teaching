@@ -29,3 +29,10 @@ online](http://www.playhangman.com), but do not play too long - just learn the r
      * Examples: at least two (which will become tests)
      * Write function.
 5. Final screens: win and lose.
+
+## Check in
+
+* 2018-03-15: Illustrations and model.
+* 2018-03-16: Key handler and logic helper function: `(string-contains-letter? str letter)`.
+* 2018-03-17 (Monday): Draw handler and `define/contract`.
+* 2018-03-18 (Tuesday): Completed project.

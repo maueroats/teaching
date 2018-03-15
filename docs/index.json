@@ -1040,7 +1040,7 @@
 	"title": "22a. Hangman Project",
 	"tags": [],
 	"description": "Make the classic game of hangman.",
-	"content": " The game of hangman a classic guess-the-word game. You can try hangman online, but do not play too long - just learn the rules.\nOutline  Three illustrations of \u0026ldquo;action\u0026rdquo; that should occur in the game. Explain what they are. Model Top-down design. Key-handler\n Purpose Examples: at least two (which become tests) Write function.  Draw-handler\n Purpose Illustrations on paper (two) - easier than making computer examples. Examples: at least two (which will become tests) Write function.  Final screens: win and lose.\n  "
+	"content": " The game of hangman a classic guess-the-word game. You can try hangman online, but do not play too long - just learn the rules.\nOutline  Three illustrations of \u0026ldquo;action\u0026rdquo; that should occur in the game. Explain what they are. Model Top-down design. Key-handler\n Purpose Examples: at least two (which become tests) Write function.  Draw-handler\n Purpose Illustrations on paper (two) - easier than making computer examples. Examples: at least two (which will become tests) Write function.  Final screens: win and lose.\n  Check in  2018-03-15: Illustrations and model. 2018-03-16: Key handler and logic helper function: (string-contains-letter? str letter). 2018-03-17 (Monday): Draw handler and define/contract. 2018-03-18 (Tuesday): Completed project.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-resources/",
