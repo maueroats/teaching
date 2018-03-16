@@ -33,6 +33,9 @@ Examples:
 * `(bitmap/file "hang-0.png")`
 * `(bitmap/file "pics/hang-1.png")`
 
+{{% notice note %}}
+For the simplest loading, save the Racket file in the same folder as your images. "Untitled" programs will not find your images - save!
+{{%  /notice %}}
 
 
 ## Why?
