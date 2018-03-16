@@ -1236,7 +1236,7 @@
 	"title": "22a. Hangman Key Handler",
 	"tags": [],
 	"description": "Every keypress is a guess - adjust the model accordingly.",
-	"content": "The key handler needs to change the model depending on what key was typed.\n Create an example model for some state in the game. You could use one of your examples from the initial planning.\n Write a check-expect that demonstrates what should happen when the person hits a key which is in the word.\n Write a check-expect that demonstrates what should happen when teh person hits a key which is not in the word.\n Recommendation: Write the helper function (string-contains-letter? str letter) that determines if a letter is in the word.\n Write the key handler. Remember to use define/contract.\n  "
+	"content": "The key handler needs to change the model depending on what key was typed.\n Create an example model for some state in the game. You could use one of your examples from the initial planning.\n Write a check-expect that demonstrates what should happen when the person hits a key which is in the word.\n Write a check-expect that demonstrates what should happen when the person hits a key which is not in the word.\n Seriously!! Write check-expects. See my example checks for the key handler.\n Recommendation: Write the helper function (string-contains-letter? str letter) that determines if a letter is in the word.\n Write the key handler. Remember to use define/contract.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/",

@@ -17,8 +17,10 @@ typed.
 2. Write a check-expect that demonstrates what should happen when the
    person hits a key which is in the word.
    
-3. Write a check-expect that demonstrates what should happen when teh
+3. Write a check-expect that demonstrates what should happen when the
    person hits a key which is not in the word.
+
+3. **Seriously!!** Write check-expects. See [my example checks for the key handler](hangman-key-testing.rkt).
 
 4. Recommendation: Write the helper function `(string-contains-letter? str letter)` that determines if a letter is in the word.
 
