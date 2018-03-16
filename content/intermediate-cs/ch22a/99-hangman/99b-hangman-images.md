@@ -18,17 +18,22 @@ Draw a sequence of images `hang-0.png`, `hang-1.png`, etc., with the appropriate
 Tools:
 
 * Microsoft Paint on Windows
-* [Paintbrush](https://paintbrush.sourceforge.io/) ([download](https://sourceforge.net/projects/paintbrush/files/latest/download?source=files)) on Macintosh.
+* [Paintbrush](https://paintbrush.sourceforge.io/) ([download](https://sourceforge.net/projects/paintbrush/files/latest/download?source=files)) on Macintosh. You will need to hold down Control when you click on the application to allow it to open for the first time.
 * [Gimp](https://www.gimp.org/) on Linux. 
 
-## Load into Racket
+## Make a Racket function
+
+1. Load images into Racket.
+2. Write a function that takes in the number of mistakes and returns the correct image of the gallows.
 
 The best way to load an image from a file is to use `bitmap/file`. 
 
 Examples:
 
 * `(bitmap/file "hang-0.png")`
-* `(bitmap "pics/hang-1.png")`
+* `(bitmap/file "pics/hang-1.png")`
+
+
 
 ## Why?
 

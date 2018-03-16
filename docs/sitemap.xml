@@ -873,8 +873,18 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch22a/99a-hangman-images/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/</loc>
+    <lastmod>2018-03-15T13:48:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/99-hangman/99b-hangman-images/</loc>
     <lastmod>2018-03-15T13:20:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/</loc>
+    <lastmod>2018-03-15T15:31:22-05:00</lastmod>
   </url>
   
   <url>

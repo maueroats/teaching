@@ -1040,7 +1040,7 @@
 	"title": "22a. Hangman Project",
 	"tags": [],
 	"description": "Make the classic game of hangman.",
-	"content": " The game of hangman a classic guess-the-word game. You can try hangman online, but do not play too long - just learn the rules.\nOutline  Three illustrations of \u0026ldquo;action\u0026rdquo; that should occur in the game. Explain what they are. Model Top-down design. Key-handler\n Purpose Examples: at least two (which become tests) Write function.  Draw-handler\n Purpose Illustrations on paper (two) - easier than making computer examples. Examples: at least two (which will become tests) Write function.  Final screens: win and lose.\n  Check in  2018-03-15: Illustrations and model. 2018-03-16: Key handler and logic helper function: (string-contains-letter? str letter). 2018-03-17 (Monday): Draw handler and define/contract. 2018-03-18 (Tuesday): Completed project.  Image sequence Draw a sequence of images hang-0.png, hang-1.png, etc., with the appropriate number of parts of the person filled in. Use \u0026ldquo;File -\u0026gt; Export as\u0026hellip;\u0026rdquo; to save each file with a different name.\nTools:\n Microsoft Paint on Windows Paintbrush (download) on Macintosh. Gimp on Linux.  "
+	"content": " The game of hangman a classic guess-the-word game. You can try hangman online, but do not play too long - just learn the rules.\nCheck in  2018-03-15: Illustrations and model. 2018-03-16: Key handler and logic helper function: (string-contains-letter? str letter). 2018-03-17 (Monday): Draw handler and define/contract. 2018-03-18 (Tuesday): Completed project.  Steps  22a. Hangman Outline Outline of everything to do for hangman project.\n  22a. Hangman Images How to load a sequence of images into DrRacket.\n  22a. Hangman Key Handler Every keypress is a guess - adjust the model accordingly.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-resources/",
@@ -1201,7 +1201,7 @@
 	"title": "22a. Recursion",
 	"tags": [],
 	"description": "Recursion lets you solve a problem by solving simpler problems.",
-	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Quiz practice: hawaiian-earring, double-ss, math-mess.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  22a. Helpers: Count Divisors A complete lecture on count-divisors.\n  22a. Recursion Practice 3 Even more recursion practice.\n  22a. Recursion Self Quiz A brief quiz to make sure you understand recursion.\n  22a. Recursion Practice 4 Change penguin to penguins and mouse to mice in zoo-1, sum5, double-middle.\n  22a. Recursion Quiz 2 Ice cream quiz.\n  22a. Hangman Project Make the classic game of hangman.\n  22a. Hangman Images How to load a sequence of images into DrRacket.\n  "
+	"content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in a number.\n  22a. Fibsum Sum of Fibonacci numbers.\n  22a. More Recursion Many more recursion practice problems.\n  22a. Recursive Helpers Exercises involving recursive functions with helper functions.\n  22a. Recursion Quiz Practice Quiz practice: hawaiian-earring, double-ss, math-mess.\n  22a. Recursion Quiz First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.\n  22a. Helpers Real introduction to helper functions in recursion.\n  22a. Helpers: Count Divisors A complete lecture on count-divisors.\n  22a. Recursion Practice 3 Even more recursion practice.\n  22a. Recursion Self Quiz A brief quiz to make sure you understand recursion.\n  22a. Recursion Practice 4 Change penguin to penguins and mouse to mice in zoo-1, sum5, double-middle.\n  22a. Recursion Quiz 2 Ice cream quiz.\n  22a. Hangman Project Make the classic game of hangman.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/",
@@ -1218,11 +1218,25 @@
 	"content": "  2017-10-04 More CodingBat problems.\n  2017-10-03 CodingBat problems to improve your problem-solving skills.\n  2017-09-18 Battleship and homework review.\n  2017-09-14 Indentation Indentation matters. A lot.\n  2017-09-12 Technical details that came up while doing Chapter 2 Homework.\n  2017-09-11 worked examples - removeVowels and wordLenPairs\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch22a/99a-hangman-images/",
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/",
+	"title": "22a. Hangman Outline",
+	"tags": [],
+	"description": "Outline of everything to do for hangman project.",
+	"content": "Use define/contract for all of your functions. Write two check expects for every non-trivial function.\n Three illustrations of \u0026ldquo;action\u0026rdquo; that should occur in the game. Explain what they are. Model Top-down design. Image sequence and loading images into Racket. Key-handler\n Purpose Examples: at least two (which become tests) Write function.  Draw-handler\n Purpose Illustrations on paper (two) - easier than making computer examples. Examples: at least two (which will become tests) Write function.  Final screens: win and lose.\n  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/99-hangman/99b-hangman-images/",
 	"title": "22a. Hangman Images",
 	"tags": [],
 	"description": "How to load a sequence of images into DrRacket.",
-	"content": " Goal for the day: produce a sequence of images to use for \u0026ldquo;hangman\u0026rdquo; and load it into Racket.\nImage sequence Draw a sequence of images hang-0.png, hang-1.png, etc., with the appropriate number of parts of the person filled in. Use \u0026ldquo;File -\u0026gt; Export as\u0026hellip;\u0026rdquo; to save each file with a different name.\nTools:\n Microsoft Paint on Windows Paintbrush (download) on Macintosh. Gimp on Linux.  Load into Racket The best way to load an image from a file is to use bitmap/file.\nExamples:\n (bitmap/file \u0026quot;hang-0.png\u0026quot;) (bitmap \u0026quot;pics/hang-1.png\u0026quot;)  Why? The only cases of file corruption I have seen involve large images being pasted into DrRacket files. Keeping the images in separate files prevents that problem.\n"
+	"content": " Goal for the day: produce a sequence of images to use for \u0026ldquo;hangman\u0026rdquo; and load it into Racket.\nImage sequence Draw a sequence of images hang-0.png, hang-1.png, etc., with the appropriate number of parts of the person filled in. Use \u0026ldquo;File -\u0026gt; Export as\u0026hellip;\u0026rdquo; to save each file with a different name.\nTools:\n Microsoft Paint on Windows Paintbrush (download) on Macintosh. You will need to hold down Control when you click on the application to allow it to open for the first time. Gimp on Linux.  Make a Racket function  Load images into Racket. Write a function that takes in the number of mistakes and returns the correct image of the gallows.  The best way to load an image from a file is to use bitmap/file.\nExamples:\n (bitmap/file \u0026quot;hang-0.png\u0026quot;) (bitmap/file \u0026quot;pics/hang-1.png\u0026quot;)  Why? The only cases of file corruption I have seen involve large images being pasted into DrRacket files. Keeping the images in separate files prevents that problem.\n"
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/",
+	"title": "22a. Hangman Key Handler",
+	"tags": [],
+	"description": "Every keypress is a guess - adjust the model accordingly.",
+	"content": "The key handler needs to change the model depending on what key was typed.\n Create an example model for some state in the game. You could use one of your examples from the initial planning.\n Write a check-expect that demonstrates what should happen when the person hits a key which is in the word.\n Write a check-expect that demonstrates what should happen when teh person hits a key which is not in the word.\n Recommendation: Write the helper function (string-contains-letter? str letter) that determines if a letter is in the word.\n Write the key handler. Remember to use define/contract.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch11/11_3a/",
@@ -1705,7 +1719,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  Intermediate Computer Science Recent Changes    22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  22a. Recursion Practice 4 modified Mon 03-12  22a. Recursion Self Quiz modified Fri 03-09  Part I: Ch 1-19 modified Wed 03-07  22a. Recursion Practice 3 modified Tue 03-06  22a. Helpers: Count Divisors modified Tue 03-06  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  Intermediate Computer Science Recent Changes    22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  22a. Recursion Practice 4 modified Mon 03-12  22a. Recursion Self Quiz modified Fri 03-09  Part I: Ch 1-19 modified Wed 03-07  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

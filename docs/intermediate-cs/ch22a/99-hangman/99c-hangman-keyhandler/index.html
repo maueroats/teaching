@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>22a. Hangman Images :: WY Computer Science</title>
+<title>22a. Hangman Key Handler :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch22a/99a-hangman-images/">
+  <body data-url="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1593,19 +1593,35 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/" class="dd-item">
+    <li data-nav-id="/intermediate-cs/ch22a/99-hangman/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/ch22a/99-hangman/">22a. Hangman Project</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/">
-            22a. Hangman Project
+          <a href="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/">
+            22a. Hangman Outline
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99a-hangman-images/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99a-hangman-images/">
+          <a href="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/">
             22a. Hangman Images
           </a>
         </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/" class="dd-item active">
+        <div>
+          <a href="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/">
+            22a. Hangman Key Handler
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -1868,7 +1884,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. Hangman Images
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > <a href='/intermediate-cs/ch22a/99-hangman/'>22a. Hangman Project</a> > 22a. Hangman Key Handler
+
+ 
 
  
 
@@ -1883,16 +1904,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#image-sequence">Image sequence</a></li>
-<li><a href="#load-into-racket">Load into Racket</a></li>
-<li><a href="#why">Why?</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -1902,7 +1914,7 @@
 
 <div id="body-inner">
   
-    <h1>22a. Hangman Images</h1>
+    <h1>22a. Hangman Key Handler</h1>
   
 
 
@@ -1910,38 +1922,23 @@
     
     
     
-    
+    <p>The key handler needs to change the model depending on what key was
+typed.</p>
 
-<p>Goal for the day: produce a sequence of images to use for &ldquo;hangman&rdquo; and load it into Racket.</p>
+<ol>
+<li><p>Create an example model for some state in the game. You could use
+one of your examples from the initial planning.</p></li>
 
-<h2 id="image-sequence">Image sequence</h2>
+<li><p>Write a check-expect that demonstrates what should happen when the
+person hits a key which is in the word.</p></li>
 
-<p>Draw a sequence of images <code>hang-0.png</code>, <code>hang-1.png</code>, etc., with the appropriate number of parts of the person filled in. Use &ldquo;File -&gt; Export as&hellip;&rdquo; to save each file with a different name.</p>
+<li><p>Write a check-expect that demonstrates what should happen when teh
+person hits a key which is not in the word.</p></li>
 
-<p>Tools:</p>
+<li><p>Recommendation: Write the helper function <code>(string-contains-letter? str letter)</code> that determines if a letter is in the word.</p></li>
 
-<ul>
-<li>Microsoft Paint on Windows</li>
-<li><a href="https://paintbrush.sourceforge.io/">Paintbrush</a> (<a href="https://sourceforge.net/projects/paintbrush/files/latest/download?source=files">download</a>) on Macintosh.</li>
-<li><a href="https://www.gimp.org/">Gimp</a> on Linux.</li>
-</ul>
-
-<h2 id="load-into-racket">Load into Racket</h2>
-
-<p>The best way to load an image from a file is to use <code>bitmap/file</code>.</p>
-
-<p>Examples:</p>
-
-<ul>
-<li><code>(bitmap/file &quot;hang-0.png&quot;)</code></li>
-<li><code>(bitmap &quot;pics/hang-1.png&quot;)</code></li>
-</ul>
-
-<h2 id="why">Why?</h2>
-
-<p>The only cases of file corruption I have seen involve large images
-being pasted into DrRacket files. Keeping the images in separate files
-prevents that problem.</p>
+<li><p>Write the key handler. Remember to use <code>define/contract</code>.</p></li>
+</ol>
 
 
     
@@ -1953,7 +1950,7 @@ prevents that problem.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch22a/99-hangman/" title="22a. Hangman Project"> <i class="fa fa-chevron-left"></i><label>22a. Hangman Project</label></a>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/" title="22a. Hangman Images"> <i class="fa fa-chevron-left"></i><label>22a. Hangman Images</label></a>
     <a class="nav nav-next" href="/intermediate-cs/ch22b/" title="22b. Lists" style="margin-right: 0px;"><label>22b. Lists</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
