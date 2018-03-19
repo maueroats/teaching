@@ -494,7 +494,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": "Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\n Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   22a. Hangman Draw Handler modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  22a. Recursion Practice 4 modified Mon 03-12  22a. Recursion Self Quiz modified Fri 03-09  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -649,6 +649,13 @@
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/programming-project/",
+	"title": "Programming Project",
+	"tags": [],
+	"description": "",
+	"content": " Briefly: Complete 3-5 problems from ProCom 4 on HackerRank.\nExpectations Five \u0026ldquo;points\u0026rdquo; is an A. You should be working on problems of an appropriate level of difficulty for you. (Don\u0026rsquo;t do five easy problems in one day and then say you are done.)\nDebrief  List the programs that you have completed. For each one:\n Did you have any difficulties? What were they? What was the root cause of one of those difficulties? Did you learn something? What?    "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/40-sum-digits/",
@@ -1138,7 +1145,7 @@
 	"title": "Programming Practice",
 	"tags": [],
 	"description": "Learn to integrate all of the skills that you have acquired in AP Computer Science by solving problems.",
-	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pages do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice 2   Programming Practice 3   Java Bloopers   "
+	"content": "  Make a HackerRank account. Log in. Join the ProCom 3 contest.  Direct links to HackerRank pages do not work. You need to log in, then join the contest and find the linked problem.\n Your progress is only saved in the browser that you are using while you work on the problem. You can get submitted code from anywhere, though.\n Assignments  Programming Practice 1   Programming Practice 2   Programming Practice 3   Programming Project   Java Bloopers   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch15/",
@@ -1726,7 +1733,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  ProCom 4 modified Fri 02-23  Intermediate Computer Science Recent Changes    22a. Hangman Draw Handler modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  22a. Recursion Practice 4 modified Mon 03-12  22a. Recursion Self Quiz modified Fri 03-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  14. Test Corrections modified Thu 03-01  Intermediate Computer Science Recent Changes    22a. Hangman Draw Handler modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  22a. Recursion Practice 4 modified Mon 03-12  22a. Recursion Self Quiz modified Fri 03-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
