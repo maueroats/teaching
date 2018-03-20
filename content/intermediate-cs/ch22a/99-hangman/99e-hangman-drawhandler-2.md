@@ -1,4 +1,4 @@
-e---
+---
 title: "22a. Hangman Draw Handler"
 date: 2018-03-20T09:32:59-05:00
 weight: 995
