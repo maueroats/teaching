@@ -1,4 +1,4 @@
----
+e---
 title: "22a. Hangman Draw Handler"
 date: 2018-03-20T09:32:59-05:00
 weight: 995
@@ -34,5 +34,5 @@ Advice:
 * Write tests that build up to your solution in the way we have
 discussed and demonstrated in class.
 
-Mnay approaches work. If you have no preference, I recommend the first
+Many approaches work. If you have no preference, I recommend the first
 approach.
