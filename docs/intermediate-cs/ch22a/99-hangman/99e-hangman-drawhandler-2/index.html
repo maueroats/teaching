@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>9. Strings :: WY Computer Science</title>
+<title>22a. Hangman Draw Handler :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/part-i/ch09/">
+  <body data-url="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -795,11 +795,10 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/part-i/ch01/" class="dd-item haschildren
@@ -1069,11 +1068,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/part-i/ch09/" class="dd-item parent active haschildren
+    <li data-nav-id="/intermediate-cs/part-i/ch09/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/part-i/ch09/">9. Strings</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/part-i/ch09/">9. Strings</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/part-i/ch09/ch9-ex1/" class="dd-item">
@@ -1504,10 +1502,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/">22a. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/">22a. Recursion</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22a/30-fibonacci/" class="dd-item">
@@ -1608,10 +1607,11 @@
           </a>
         </div>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/99-hangman/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22a/99-hangman/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/99-hangman/">22a. Hangman Project</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/99-hangman/">22a. Hangman Project</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/" class="dd-item">
@@ -1642,7 +1642,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/">
             22a. Hangman Draw Handler
@@ -1912,7 +1912,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/part-i/'>Part I: Ch 1-19</a> > 9. Strings
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > <a href='/intermediate-cs/ch22a/99-hangman/'>22a. Hangman Project</a> > 22a. Hangman Draw Handler
+
+ 
 
  
 
@@ -1927,15 +1932,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#homework">Homework</a></li>
-<li><a href="#key-functions">Key Functions</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -1945,7 +1942,7 @@
 
 <div id="body-inner">
   
-    <h1>9. Strings</h1>
+    <h1>22a. Hangman Draw Handler</h1>
   
 
 
@@ -1953,36 +1950,39 @@
     
     
     
+    <p>Draw the whole scene by using helper functions to draw the different
+parts. At first you can just put all of the images <code>above</code> each other;
+later you can change the placement so it looks the way you prefer.</p>
 
+<ol>
+<li>Draw the gallows based on how many wrong answers.</li>
+<li>Draw the mistaken letters.</li>
+<li>Draw the word with underscores for letters that are not guessed.</li>
+</ol>
 
+<p>The key step is to draw the word with underscores for the letters missed.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">underscorizer: string(word) string(letters-guessed) -&gt; string
+(check-expect (underscorizer &#34;wow&#34; &#34;w&#34;) &#34;w_w&#34;)
+(check-expect (underscorizer &#34;wow&#34; &#34;ow&#34;) &#34;wow&#34;)</pre></div>
+<p>Of course you can take in the correct guesses instead of all guesses,
+or you can take in anything else from your model that makes sense.</p>
 
-<p>This chapter takes one day to do. Read pages 149-150 in the book.</p>
-
-<h2 id="homework">Homework</h2>
-
-<p>Page 151 (PDF page 162), exercises 9.2.2 through 9.2.7.</p>
-
-<p>Challenge: 10.2.6.</p>
-
-<h2 id="key-functions">Key Functions</h2>
+<p>Advice:</p>
 
 <ul>
-<li><code>string-append</code></li>
-<li><code>string-length</code></li>
-<li><code>number-&gt;string</code></li>
-<li><code>substring</code>: string number(start) number(end) -&gt; string.</li>
+<li><p>Decide on an approach:</p>
+
+<ul>
+<li>Examine word letter by letter?</li>
+<li>Examine letters guessed letter by letter?</li>
+</ul></li>
+
+<li><p>Write tests that build up to your solution in the way we have
+discussed and demonstrated in class.</p></li>
 </ul>
 
-<p>If you omit the end number, the result you get starts at the &ldquo;start&rdquo; position and goes until the end of the original string.</p>
-
-<p>Illustration of positions in the string &ldquo;Cattle&rdquo;:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">      C a t t l e
-     0 1 2 3 4 5 6 </code></pre></div>
-<p>So <code>(substring &quot;Cattle&quot; 1 3)</code> produces <code>&quot;at&quot;</code>.</p>
-
-<p>The function <code>string-&gt;number</code> is sometimes useful but not nearly as important.
-Usually it is misused.</p>
-
+<p>Mnay approaches work. If you have no preference, I recommend the first
+approach.</p>
 
 
     
@@ -1994,8 +1994,8 @@ Usually it is misused.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/part-i/ch08/number-review-more/" title="Number Review More"> <i class="fa fa-chevron-left"></i><label>Number Review More</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/part-i/ch09/ch9-ex1/" title="9. Exercises 1" style="margin-right: 0px;"><label>9. Exercises 1</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/" title="22a. Hangman DH Warmup"> <i class="fa fa-chevron-left"></i><label>22a. Hangman DH Warmup</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22b/" title="22b. Lists" style="margin-right: 0px;"><label>22b. Lists</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

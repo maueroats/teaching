@@ -1,19 +1,12 @@
 ---
-title: "22a. Hangman Draw Handler"
+title: "22a. Hangman DH Warmup"
 date: 2018-03-16T07:58:46-05:00
 weight: 994
 draft: false
 #type: slide
 #theme: white
 ---
-
-Draw the whole scene by using helper functions to draw the different
-parts. At first you can just put all of the images `above` each other;
-later you can change the placement so it looks the way you prefer.
-
-1. Draw the gallows based on how many wrong answers.
-2. Draw the mistaken letters.
-3. Draw the word with underscores for letters that are not guessed.
+The key step is to draw the word with underscores for the letters missed.
 
 This page will not include any specific advice on how to draw the word
 with underscores for the letters that are not guessed. The `wipeout`

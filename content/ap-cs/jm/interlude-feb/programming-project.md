@@ -25,4 +25,12 @@ in one day and then say you are done.)
   - What was the root cause of one of those difficulties?
   - Did you learn something? What?
   
+## Problem-specific comments
+
+* _A Hexing Situation_: You cannot use split() - test cases have extra
+  whitespace in them (not every word is separated by a single space).
+  
+* _Rebuilding the Rebellion Part Two_: Many people forget to handle the "No Win" situation. Another common problem is to check the main diagonal twice instead of checking both diagonals once.
+
+
 
