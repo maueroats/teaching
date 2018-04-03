@@ -126,13 +126,6 @@
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-exercises-1/",
-	"title": "List Exercises 1",
-	"tags": [],
-	"description": "Introductory exercises with lists.",
-	"content": "List Exercises - Google Slides.\n"
-},
-{
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/",
 	"title": "Part I: Ch 1-19",
 	"tags": [],
@@ -350,6 +343,13 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-exercises-1/",
+	"title": "22b. List Exercises 1",
+	"tags": [],
+	"description": "Introductory exercises with lists.",
+	"content": " Monday 2018-04-02: We completed the lists worksheet.  Lists Worksheet I\n Tuesday 2018-04-03: 4.4b, 4.6, 4.6 enhancement - from the slides below.  List Exercises - Google Slides.\n"
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-2/",
 	"title": "Programming Practice 2",
 	"tags": [],
@@ -501,7 +501,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   22b. List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -1222,7 +1222,7 @@
 	"title": "22b. Lists",
 	"tags": [],
 	"description": "Lists give a way to remember an unlimited number of items.",
-	"content": "  List Exercises 1 Introductory exercises with lists.\n  22. List Intro An introduction to lists in Racket.\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
+	"content": "  22. List Intro An introduction to lists in Racket.\n  22b. List Exercises 1 Introductory exercises with lists.\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1754,7 +1754,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  Intermediate Computer Science Recent Changes    List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  Intermediate Computer Science Recent Changes    22b. List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

@@ -93,11 +93,6 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch22b/list-exercises-1/</loc>
-    <lastmod>2018-04-03T08:08:02-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://wy-cs.info/intermediate-cs/part-i/</loc>
     <lastmod>2018-03-07T14:32:07-06:00</lastmod>
   </url>
@@ -250,6 +245,11 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22b/list-exercises-1/</loc>
+    <lastmod>2018-04-03T08:08:02-05:00</lastmod>
   </url>
   
   <url>
