@@ -126,6 +126,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-exercises-1/",
+	"title": "List Exercises 1",
+	"tags": [],
+	"description": "Introductory exercises with lists.",
+	"content": "List Exercises - Google Slides.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/",
 	"title": "Part I: Ch 1-19",
 	"tags": [],
@@ -494,7 +501,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  22a. Recursion Practice 4 modified Mon 03-12  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -1215,7 +1222,7 @@
 	"title": "22b. Lists",
 	"tags": [],
 	"description": "Lists give a way to remember an unlimited number of items.",
-	"content": "  22. List Intro An introduction to lists in Racket.\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
+	"content": "  List Exercises 1 Introductory exercises with lists.\n  22. List Intro An introduction to lists in Racket.\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1257,7 +1264,7 @@
 	"title": "22a. Hangman Draw Handler",
 	"tags": [],
 	"description": "",
-	"content": "Draw the whole scene by using helper functions to draw the different parts. At first you can just put all of the images above each other; later you can change the placement so it looks the way you prefer.\n Draw the gallows based on how many wrong answers. Draw the mistaken letters. Draw the word with underscores for letters that are not guessed.  The key step is to draw the word with underscores for the letters missed.\nunderscorizer: string(word) string(letters-guessed) -\u0026gt; string (check-expect (underscorizer \u0026#34;wow\u0026#34; \u0026#34;w\u0026#34;) \u0026#34;w_w\u0026#34;) (check-expect (underscorizer \u0026#34;wow\u0026#34; \u0026#34;ow\u0026#34;) \u0026#34;wow\u0026#34;) Of course you can take in the correct guesses instead of all guesses, or you can take in anything else from your model that makes sense.\nAdvice:\n Decide on an approach:\n Examine word letter by letter? Examine letters guessed letter by letter?  Write tests that build up to your solution in the way we have discussed and demonstrated in class.\n  Many approaches work. If you have no preference, I recommend the first approach.\n"
+	"content": " Draw the whole scene by using helper functions to draw the different parts. At first you can just put all of the images above each other; later you can change the placement so it looks the way you prefer.\n Draw the gallows based on how many wrong answers. Draw the mistaken letters. Draw the word with underscores for letters that are not guessed.  The key step is to draw the word with underscores for the letters missed.\nunderscorizer: string(word) string(letters-guessed) -\u0026gt; string (check-expect (underscorizer \u0026#34;wow\u0026#34; \u0026#34;w\u0026#34;) \u0026#34;w_w\u0026#34;) (check-expect (underscorizer \u0026#34;wow\u0026#34; \u0026#34;ow\u0026#34;) \u0026#34;wow\u0026#34;) Of course you can take in the correct guesses instead of all guesses, or you can take in anything else from your model that makes sense.\nAdvice Decide on an approach:\n Examine word letter by letter? Examine letters guessed letter by letter?  Write tests that build up to your solution in the way we have discussed and demonstrated in class.\nMany approaches work. If you have no preference, I recommend the first approach.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch11/11_3a/",
@@ -1747,7 +1754,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  Intermediate Computer Science Recent Changes    22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  22a. Recursion Practice 4 modified Mon 03-12  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Programming Practice 1 modified Mon 03-05  Programming Practice modified Mon 03-05  Intermediate Computer Science Recent Changes    List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  22a. Recursion Quiz 2 modified Tue 03-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

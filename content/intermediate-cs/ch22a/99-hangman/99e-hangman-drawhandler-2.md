@@ -24,14 +24,14 @@ The key step is to draw the word with underscores for the letters missed.
 Of course you can take in the correct guesses instead of all guesses,
 or you can take in anything else from your model that makes sense.
 
-Advice:
+## Advice
 
-* Decide on an approach:
+Decide on an approach:
 
-    - Examine word letter by letter?
-    - Examine letters guessed letter by letter?
+   - Examine word letter by letter?
+   - Examine letters guessed letter by letter?
 
-* Write tests that build up to your solution in the way we have
+Write tests that build up to your solution in the way we have
 discussed and demonstrated in class.
 
 Many approaches work. If you have no preference, I recommend the first
