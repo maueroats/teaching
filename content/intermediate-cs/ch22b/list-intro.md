@@ -14,12 +14,12 @@ We started learning about lists. (Chapter 22-23 in Picturing Programs.) Picturin
 Things to know:
 
 *    Empty lists: `empty-list` or `(list )` or `'()`
-*    `cons` when beginning
 *    `empty?` : list -> boolean
 *    (list "a" "b" "c") 
 *    `first`: list of Things -> Thing
 *    `rest`: list -> list
-*    Advanced, use a bit later: `list*`
+*    Advanced: `list*` to add to the front of a list
+*    Contract example: `(-> (listof number?) number?)`
 
 List processing always begins with a choice (conditional) to see if
 the list is empty or not. The else clause almost always contains
