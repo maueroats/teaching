@@ -1958,6 +1958,7 @@
 <ul>
 <li>
 <ul>
+<li><a href="#noisydog">NoisyDog</a></li>
 <li><a href="#sportsfan">SportsFan</a></li>
 </ul></li>
 </ul>
@@ -1981,30 +1982,32 @@
     
     
 
-<ol>
-<li><p>Write the abstract class <code>Noisy</code> and the subclass <code>NoisyDog</code>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">public abstract class Noisy {
-    public Noisy (int n);
+<p>We have <code>NoisyDog</code> and <code>SportsFan</code> classes to practice working with
+abstract classes and implementing interfaces.</p>
 
-    // print the designated noise one time
-    public abstract void noise();
+<h2 id="noisydog">NoisyDog</h2>
 
-    // print the designated noise N times
-    public void makeNoise();
-}
+<p>Write the abstract class <code>Noisy</code> and the subclass <code>NoisyDog</code>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    public abstract class Noisy {
+        public Noisy (int n);
 
-public class NoisyDog extends Noisy {
-    // &#34;bark&#34; three times by default
-    public NoisyDog(); 
+        // print the designated noise one time
+        public abstract void noise();
 
-    // prints the bark string 3 times
-    public NoisyDog(String bark);
+        // print the designated noise N times
+        public void makeNoise();
+    }
 
-    // Also need to implement this
-    public void makeNoise();
-}</pre></div></li>
-</ol>
+    public class NoisyDog extends Noisy {
+        // &#34;bark&#34; three times by default
+        public NoisyDog(); 
 
+        // prints the bark string 3 times
+        public NoisyDog(String bark);
+
+        // Also need to implement this
+        public void noise();
+    }</pre></div>
 <h2 id="sportsfan">SportsFan</h2>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    public interface SportsFan { 
         String cheer();
@@ -2013,12 +2016,28 @@ public class NoisyDog extends Noisy {
 <ol>
 <li><p>Make a <code>BoorFan</code> class that implements the SportsFan interface. A <code>BoorFan</code> does not cheer, so just return the empty string for that method. A <code>BoorFan</code> returns <code>&quot;You stink!&quot;</code> when booing.</p></li>
 
-<li><p>Make a <code>GetRowdy</code> class that cheers twice, separated by spaces, and boos three times.</p>
+<li><p>Make a <code>GetRowdy</code> class that cheers twice, separated by spaces, when asked to cheer. It boos three times.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">public class GetRowdy implements SportsFan {
     public GetRowdy (SportsFan p) {
         // write this
     }
-    // other methods required to implement interface
+    // other methods required 
+}</pre></div></li>
+
+<li><p>A <code>DolphinFan</code> says <code>&quot;flip&quot;</code> to cheer and <code>&quot;glub&quot;</code> to boo. Make the
+<code>DolphinFan</code> class.</p></li>
+
+<li><p>The following code has some OK parts and some errors. Which lines are errors? If a line is not an error, explain what happens when you call the <code>cheer()</code> method of that object.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">public void demo() {
+    SportsFan s = new SportsFan();  // 1
+    SportsFan t = new BoorFan();    // 2
+    BoorFan b = new SportsFan();    // 3
+    GetRowdy r = new GetRowdy();    // 4
+    GetRowdy rr = new GetRowdy(t);  // 5
+    GetRowdy d = 
+       new GetRowdy(new DolphinFan()); // 6
+
+    /* Call cheer() on all of them. What do they do? */ 
 }</pre></div></li>
 </ol>
 
