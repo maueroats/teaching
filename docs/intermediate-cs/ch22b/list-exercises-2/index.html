@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Chapter 01 Review :: WY Computer Science</title>
+<title>22b. List Exercises 2 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/part-i/ch01/ch01-review/">
+  <body data-url="/intermediate-cs/ch22b/list-exercises-2/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -810,21 +810,19 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/part-i/ch01/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/part-i/ch01/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/part-i/ch01/">1. Introduction</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/part-i/ch01/">1. Introduction</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/part-i/ch01/ch01-review/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/part-i/ch01/ch01-review/" class="dd-item">
         <div>
           <a href="/intermediate-cs/part-i/ch01/ch01-review/">
             Chapter 01 Review
@@ -1668,10 +1666,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22b/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch22b/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22b/">22b. Lists</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22b/">22b. Lists</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch22b/list-intro/" class="dd-item">
@@ -1688,7 +1687,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22b/list-exercises-2/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22b/list-exercises-2/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch22b/list-exercises-2/">
             22b. List Exercises 2
@@ -1941,12 +1940,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/part-i/'>Part I: Ch 1-19</a> > <a href='/intermediate-cs/part-i/ch01/'>1. Introduction</a> > Chapter 01 Review
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22b/'>22b. Lists</a> > 22b. List Exercises 2
 
  
 
@@ -1961,7 +1955,15 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#vocabulary">Vocabulary</a></li>
+<li><a href="#practice-problems">Practice Problems</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1971,7 +1973,7 @@
 
 <div id="body-inner">
   
-    <h1>Chapter 01 Review</h1>
+    <h1>22b. List Exercises 2</h1>
   
 
 
@@ -1979,13 +1981,34 @@
     
     
     
-    <p>Two images of designs to practice making in Racket.</p>
+    
 
-<p></p>
+<h2 id="vocabulary">Vocabulary</h2>
 
-<p>You may omit the border lines.</p>
+<p>There are four major kinds of functions on lists that we will learn to write. They are: reduce, create, map, and filter.</p>
 
-<p><img src="ch01-review-small.jpg" alt="Two designs to make" title="Chapter 1 Review" /></p>
+<ul>
+<li><p>reduce: Any function that takes a list of things and produces a single thing. For example: <code>add-them</code>, which adds all of the numbers in a list of numbers.</p></li>
+
+<li><p>create: A function that creates a list from something that is not a list. Example: <code>multiples-of-7</code>, which takes a number N and produces a list of the first N multiples of 7.</p></li>
+
+<li><p>map: A function that performs the same action on every thing in a list of things, giving a list of things as its answer. Example: <code>double-all</code> which doubles every number in a list.</p></li>
+
+<li><p>filter: A function which removes some items from a list of items, leaving a list of items. Example: <code>remove-small</code> which removes every number less than 20 from a list of numbers.</p></li>
+</ul>
+
+<h2 id="practice-problems">Practice Problems</h2>
+
+<ol>
+<li><p><code>my-range</code>: number(start) number(end) -&gt; list of numbers. Create a list containing all of the numbers from start to end, inclusive. Example: <code>(my-range 5 11) =&gt; (list 5 6 7 8 9 10 11)</code>.</p></li>
+
+<li><p><code>two-power</code>: number(n) -&gt; list of numbers. Create a list of powers of two, starting with 2^n and ending with 2^0. Example: <code>(two-power 5) =&gt; (list 32 16 8 4 2 1)</code>.</p></li>
+
+<li><p><code>double-all</code>: list of numbers -&gt; list of numbers. Double each number in the list.</p></li>
+
+<li><p><code>remove-small</code>: list of numbers -&gt; list of numbers. Create a list that excludes numbers smaller than 20 from the original list.</p></li>
+</ol>
+
 
     
     
@@ -1996,8 +2019,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/part-i/ch01/" title="1. Introduction"> <i class="fa fa-chevron-left"></i><label>1. Introduction</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/part-i/ch03/" title="3. More Interesting Pictures" style="margin-right: 0px;"><label>3. More Interesting Pictures</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22b/list-exercises-1/" title="22b. List Exercises 1"> <i class="fa fa-chevron-left"></i><label>22b. List Exercises 1</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22b/list-resources/" title="22. Additional Resources" style="margin-right: 0px;"><label>22. Additional Resources</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

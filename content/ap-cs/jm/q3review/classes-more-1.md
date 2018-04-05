@@ -16,6 +16,7 @@ abstract classes and implementing interfaces.
 Write the abstract class `Noisy` and the subclass `NoisyDog`.
 
         public abstract class Noisy {
+            // add any variables you need
             public Noisy (int n);
 
             // print the designated noise one time
