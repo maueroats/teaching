@@ -588,11 +588,6 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/ch22b/list-exercises-3/</loc>
-    <lastmod>2018-04-06T08:20:03-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://wy-cs.info/intermediate-cs/ch22a/50-fibsum/</loc>
     <lastmod>2018-02-26T14:26:20-06:00</lastmod>
   </url>
@@ -620,6 +615,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/part-i/ch08/number-review/</loc>
     <lastmod>2017-10-31T14:31:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/ch22b/list-exercises-3/</loc>
+    <lastmod>2018-04-06T08:20:03-05:00</lastmod>
   </url>
   
   <url>

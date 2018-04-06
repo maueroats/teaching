@@ -27,7 +27,7 @@ There are four major kinds of functions on lists that we will learn to write. Th
 
 2. `two-power`: number(n) -> list of numbers. Create a list of powers of two, starting with 2^n and ending with 2^0. Example: `(two-power 5) => (list 32 16 8 4 2 1)`.
 
-3. `double-all`: list of numbers -> list of numbers. Double each number in the list.
+3. `double-all`: list of numbers -> list of numbers. Double each number in the list. Example `(double-all (list 1 30)) => (list 2 60)`.
 
 4. `remove-small`: list of numbers -> list of numbers. Create a list that excludes numbers smaller than 20 from the original list.
 

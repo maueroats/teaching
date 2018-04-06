@@ -1987,12 +1987,29 @@
     
     
     
-    <ol>
-<li><p><code>random-gen</code>: number(<code>N</code>) -&gt; list of numbers. Generate <code>N</code> random numbers, each one -150 &lt;= number &lt;= 150.</p></li>
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']]
+}});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
-<li><p><code>parabola-it</code>: list of numbers -&gt; list of posn. Use the numbers as the x-coordinates of function</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">f(x) = 0.01 * x^2 - 50</pre></div></li>
 
+<p>Note: This page uses MathJax to show fancy formulas.</p>
+
+<ol>
+<li><p><code>random-gen</code>: number(<code>N</code>) -&gt; list of numbers. Generate <code>N</code> random numbers, each one in the interval $-150 &lt;= x &lt;= 150$. Example (random so numbers will be different each time):</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(random-gen 5) =&gt; (list -75 100 -30 50 21)</pre></div></li>
+
+<li><p><code>parabola-it</code>: list of numbers -&gt; list of posn. Use the numbers as the x-coordinates of function</p></li>
+</ol>
+
+<p><span  class="math">\[  f(x) = 0.01 * x^2 - 50 \]</span></p>
+
+<ol start="3">
 <li><p><code>people-graph</code>: list of posn -&gt; image. Place the posns in people coordinates on a 300x200 rectangle with origin at the center.</p>
 
 
@@ -2005,6 +2022,8 @@
 </li>
 </ol>
 
+<p>A quick check to make sure everything is in order is to run all of the functions together:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(people-graph (parabola-it (random-gen 50)))</pre></div>
 
     
     
