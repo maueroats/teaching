@@ -508,7 +508,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   22b. List Exercises 2 modified Wed 04-04  22b. List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   22b. List Exercises 3 modified Fri 04-06  22b. Bubble Wrap modified Thu 04-05  22b. List Exercises 2 modified Wed 04-04  22b. List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -543,7 +543,7 @@
 	"title": "22b. List Exercises 2",
 	"tags": [],
 	"description": "Vocabulary for list functions. More practice problems.",
-	"content": " Vocabulary There are four major kinds of functions on lists that we will learn to write. They are: reduce, create, map, and filter.\n reduce: Any function that takes a list of things and produces a single thing. For example: add-them, which adds all of the numbers in a list of numbers.\n create: A function that creates a list from something that is not a list. Example: multiples-of-7, which takes a number N and produces a list of the first N multiples of 7.\n map: A function that performs the same action on every thing in a list of things, giving a list of things as its answer. Example: double-all which doubles every number in a list.\n filter: A function which removes some items from a list of items, leaving a list of items. Example: remove-small which removes every number less than 20 from a list of numbers.\n  Practice Problems  my-range: number(start) number(end) -\u0026gt; list of numbers. Create a list containing all of the numbers from start to end, inclusive. Example: (my-range 5 11) =\u0026gt; (list 5 6 7 8 9 10 11).\n two-power: number(n) -\u0026gt; list of numbers. Create a list of powers of two, starting with 2^n and ending with 2^0. Example: (two-power 5) =\u0026gt; (list 32 16 8 4 2 1).\n double-all: list of numbers -\u0026gt; list of numbers. Double each number in the list.\n remove-small: list of numbers -\u0026gt; list of numbers. Create a list that excludes numbers smaller than 20 from the original list.\n  "
+	"content": " Vocabulary There are four major kinds of functions on lists that we will learn to write. They are: reduce, create, map, and filter.\n reduce: Any function that takes a list of things and produces a single thing. For example: add-them, which adds all of the numbers in a list of numbers. Functions like sea-of-stars that take a list of posns and produce an image also fall in this category.\n create: A function that creates a list from something that is not a list. Example: multiples-of-7, which takes a number N and produces a list of the first N multiples of 7.\n map: A function that performs the same action on every thing in a list of things, giving a list of things as its answer. Example: double-all which doubles every number in a list.\n filter: A function which removes some items from a list of items, leaving a list of items. Example: remove-small which removes every number less than 20 from a list of numbers.\n  Practice Problems  my-range: number(start) number(end) -\u0026gt; list of numbers. Create a list containing all of the numbers from start to end, inclusive. Example: (my-range 5 11) =\u0026gt; (list 5 6 7 8 9 10 11).\n two-power: number(n) -\u0026gt; list of numbers. Create a list of powers of two, starting with 2^n and ending with 2^0. Example: (two-power 5) =\u0026gt; (list 32 16 8 4 2 1).\n double-all: list of numbers -\u0026gt; list of numbers. Double each number in the list.\n remove-small: list of numbers -\u0026gt; list of numbers. Create a list that excludes numbers smaller than 20 from the original list.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/ap-programming-practice-3/",
@@ -670,6 +670,13 @@
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22b/bubble-wrap/",
+	"title": "22b. Bubble Wrap",
+	"tags": [],
+	"description": "Random size circles all around the screen. Circles disappear when you click on them.",
+	"content": " A bunch of circles of random size and color are placed around the screen. When you click on a circle, it disappears. Only the top circle should disappear if multiple circles are stacked.  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/programming-project/",
@@ -810,6 +817,13 @@
 	"tags": [],
 	"description": "Review exercises for class design.",
 	"content": " MurderBot  A MurderBot is a kind of StrategyLayer with two additional abilities:\n public void stab(): place two beepers public void flee(): move one step  The KillerStrategy is a kind of Strategy that makes the robot it controls stab the first time the strategy is invoked (via doStrat, which will call doIt). Every subsequent time the robot is told to doStrat(), it should flee.\n Make sure the same doStrat() call causes one stab or one flee each time.\n Test your MurderBot with 8 calls to doStrat().\n Challenge yourself: this can be done without variables (except what is built into the StrategyLayer).\n Advanced: use the techniques the Spy in Section 4.8 to cause the stab action to find another robot on the same corner as the MurderBot and turn it off.\n  ViciousMurderBot Create a kind of MurderBot that places six beepers when it is told to stab, instead of just two.\n"
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-exercises-3/",
+	"title": "22b. List Exercises 3",
+	"tags": [],
+	"description": "",
+	"content": " random-gen: number(N) -\u0026gt; list of numbers. Generate N random numbers, each one -150 \u0026lt;= number \u0026lt;= 150.\n parabola-it: list of numbers -\u0026gt; list of posn. Use the numbers as the x-coordinates of function\nf(x) = 0.01 * x^2 - 50 people-graph: list of posn -\u0026gt; image. Place the posns in people coordinates on a 300x200 rectangle with origin at the center.\n   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/50-fibsum/",
@@ -1243,7 +1257,7 @@
 	"title": "22b. Lists",
 	"tags": [],
 	"description": "Lists give a way to remember an unlimited number of items.",
-	"content": "  22. List Intro An introduction to lists in Racket.\n  22b. List Exercises 1 Introductory exercises with lists.\n  22b. List Exercises 2 Vocabulary for list functions. More practice problems.\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
+	"content": "  22. List Intro An introduction to lists in Racket.\n  22b. List Exercises 1 Introductory exercises with lists.\n  22b. List Exercises 2 Vocabulary for list functions. More practice problems.\n  22b. Bubble Wrap Random size circles all around the screen. Circles disappear when you click on them.\n  22b. List Exercises 3  random-gen: number(N) -\u0026gt; list of numbers. Generate N random numbers, each one -150 \u0026lt;= number \u0026lt;= 150. parabola-it: list of numbers -\u0026gt; list of posn. Use the numbers as the x-coordinates of function f(x) = 0.01 * x^2 - 50 people-graph: list of posn -\u0026gt; image. Place the posns in people coordinates on a 300x200 rectangle with origin at the center.   22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1775,7 +1789,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Intermediate Computer Science Recent Changes    22b. List Exercises 2 modified Wed 04-04  22b. List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  22a. Hangman Images modified Thu 03-15  22a. Hangman Project modified Tue 03-13  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Intermediate Computer Science Recent Changes    22b. List Exercises 3 modified Fri 04-06  22b. Bubble Wrap modified Thu 04-05  22b. List Exercises 2 modified Wed 04-04  22b. List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  22a. Hangman Outline modified Thu 03-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

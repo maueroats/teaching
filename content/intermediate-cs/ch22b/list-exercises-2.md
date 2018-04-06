@@ -12,7 +12,7 @@ description: "Vocabulary for list functions. More practice problems."
 
 There are four major kinds of functions on lists that we will learn to write. They are: reduce, create, map, and filter.
 
-* reduce: Any function that takes a list of things and produces a single thing. For example: `add-them`, which adds all of the numbers in a list of numbers.
+* reduce: Any function that takes a list of things and produces a single thing. For example: `add-them`, which adds all of the numbers in a list of numbers. Functions like `sea-of-stars` that take a list of posns and produce an image also fall in this category.
 
 * create: A function that creates a list from something that is not a list. Example: `multiples-of-7`, which takes a number N and produces a list of the first N multiples of 7.
 
