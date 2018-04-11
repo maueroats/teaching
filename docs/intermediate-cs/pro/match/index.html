@@ -1723,6 +1723,29 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/intermediate-cs/proj/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/proj/">23. Projects</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/intermediate-cs/proj/battleship/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/proj/battleship/">Battleship</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/proj/battleship/model/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/proj/battleship/model/">
+            Battleship Model
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item">
         <div>
           <a href="/intermediate-cs/calendar/">
@@ -1987,6 +2010,7 @@
 <li><a href="#example-solution-match">Example Solution: Match</a></li>
 </ul></li>
 <li><a href="#ignoring-parts-of-a-model">Ignoring parts of a model</a></li>
+<li><a href="#list-processing-with-matching">List processing with matching</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2049,6 +2073,17 @@ use them to find the total number of points in the game.</p>
   (match model
     [(game _ s1 _ s2)
      (+ s1 s2)]</pre></div>
+<h2 id="list-processing-with-matching">List processing with matching</h2>
+
+<p>Suppose you want to add all of the numbers in a list. You can use the
+<code>'()</code> pattern to match the empty list. The pattern <code>(list a more ...)</code>
+makes <code>a</code> match the first of the list and <code>more</code> match the rest of the list.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (add-all data)
+    (match data
+      [&#39;()
+       0]
+      [(list a more ...)
+       (+ a (add-add more))]))</pre></div>
 
     
     

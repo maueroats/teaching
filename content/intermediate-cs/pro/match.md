@@ -53,3 +53,16 @@ use them to find the total number of points in the game.
       (match model
         [(game _ s1 _ s2)
          (+ s1 s2)]
+
+## List processing with matching
+
+Suppose you want to add all of the numbers in a list. You can use the
+`'()` pattern to match the empty list. The pattern `(list a more ...)`
+makes `a` match the first of the list and `more` match the rest of the list.
+
+    (define (add-all data)
+        (match data
+          ['()
+           0]
+          [(list a more ...)
+           (+ a (add-add more))]))

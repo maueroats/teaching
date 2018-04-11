@@ -126,6 +126,20 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/proj/battleship/model/",
+	"title": "Battleship Model",
+	"tags": [],
+	"description": "Play battleship on paper to develop the model.",
+	"content": " The process for developing a model is always the same:\n Background knowledge: understand the rules and decide what you want your game to look like when you play it. We will play Battleship on paper. Draw at least three scenes from different stages of the game. In this case, you will want more \u0026ndash; include a win screen, a lose screen, and three others. List the information necessary to draw the scenes. Write down the model you will use.  Step 1: Battleship on paper  Make two 8x8 grids, one for your ships and one for your attacks on the opponent.\n Number the rows and columns like a computer screen, beginning with (0,0) in the upper left.\n Place your ships. Each ship can go either horizontally or vertically. The number and size of ships varies in different versions of the game. Today we will use this list:\n Aircraft carrier (5 squares) Battleship (4 squares) Cruiser (3 squares) Destroyer (Two, each 2 squares) Submarine (1 square)  Play at least ten rounds with a partner. Keep going until at least one ship is sunk.\n  Step 2: Develop the model For developing the model we will think about only two ships. Later you can add the rest.\n Draw five different situations, including a win and lose end game. List information you need to draw those situations. Discuss what information must be remembered (the \u0026ldquo;independent variables\u0026rdquo;) and what can be computed (the \u0026ldquo;dependent variables\u0026rdquo;). Write the model that corresponds to each one of your scenes. Save this paper! Check in your work and don\u0026rsquo;t lose it.  Interesting variations You can explore these ideas later in your game.\n Some games allow you to shoot multiple times in one turn: one shot for each un-sunk ship you have.  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/proj/battleship/",
+	"title": "Battleship",
+	"tags": [],
+	"description": "The classic Battleship game, one player version.",
+	"content": "The game of Battleship is a classic game from the early 20th Century in which you try to guess the locations of your opponent\u0026rsquo;s ships in a grid.\nYou may be able to play Battleship online but do not waste much time doing that kind of research. Playing on paper is better for developing your understanding of what information needs to be tracked (the model).\n Battleship Model Play battleship on paper to develop the model.\n  "
+},
+{
 	"uri": "http://wy-cs.info/ap-cs/jm/q3review/classes-more-1/",
 	"title": "Q3. Classes More 1",
 	"tags": [],
@@ -508,7 +522,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   22b. List Exercises 4 Quiz modified Mon 04-09  22b. List Exercises 3 modified Fri 04-06  22b. Bubble Wrap modified Thu 04-05  22b. List Exercises 2 modified Wed 04-04  22b. List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Battleship Model modified Tue 04-10  Battleship modified Tue 04-10  23. Projects modified Tue 04-10  22b. List Exercises 4 Quiz modified Mon 04-09  22b. List Exercises 3 modified Fri 04-06  22b. Bubble Wrap modified Thu 04-05  22b. List Exercises 2 modified Wed 04-04  22b. List Exercises 1 modified Tue 04-03  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Projects   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -564,7 +578,7 @@
 	"title": "Match",
 	"tags": [],
 	"description": "",
-	"content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate pattern matching.\nMatching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function.\nProblem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\nExample Solution: Cond (define (cond-to-zero w) (cond [(posn? w) (sqrt (+ (sqr (posn-x w)) (sqr (posn-y w))))] [(number? w) (abs w)])) Example Solution: Match (define (match-to-zero w) (match n [(posn x y) (sqrt (+ (sqr x) (sqr y)))] [number? (abs w)])) Notice how\nIgnoring parts of a model You can use the underscore _ to match places that you want to ignore. This example shows how to pull out two scores from a model and use them to find the total number of points in the game.\n(define-struct game (p1pos p1score p2pos p2score)) (define (total-score model) (match model [(game _ s1 _ s2) (+ s1 s2)]"
+	"content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate pattern matching.\nMatching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function.\nProblem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\nExample Solution: Cond (define (cond-to-zero w) (cond [(posn? w) (sqrt (+ (sqr (posn-x w)) (sqr (posn-y w))))] [(number? w) (abs w)])) Example Solution: Match (define (match-to-zero w) (match n [(posn x y) (sqrt (+ (sqr x) (sqr y)))] [number? (abs w)])) Notice how\nIgnoring parts of a model You can use the underscore _ to match places that you want to ignore. This example shows how to pull out two scores from a model and use them to find the total number of points in the game.\n(define-struct game (p1pos p1score p2pos p2score)) (define (total-score model) (match model [(game _ s1 _ s2) (+ s1 s2)] List processing with matching Suppose you want to add all of the numbers in a list. You can use the '() pattern to match the empty list. The pattern (list a more ...) makes a match the first of the list and more match the rest of the list.\n(define (add-all data) (match data [\u0026#39;() 0] [(list a more ...) (+ a (add-add more))]))"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-help/",
@@ -886,7 +900,7 @@
 	"title": "22b. List Exercises 4 Quiz",
 	"tags": [],
 	"description": "",
-	"content": " count-down-odd: number(start) number(end) -\u0026gt; list of numbers. Generate a list of all of the odd numbers from end down to start (inclusive).\n(count-down-odd 5 10) =\u0026gt; (list 9 7 5) (count-down-odd 5 5) =\u0026gt; (list 5) dinosaur: list of numbers -\u0026gt; list of strings. Change a list of numbers, all of which will be between 0 and 7 inclusive, into a list of the corresponding letters from the word dinosaur.\n(dinosaur (list 4 5 0)) =\u0026gt; (list \u0026#34;s\u0026#34; \u0026#34;a\u0026#34; \u0026#34;d\u0026#34;) shaper: list of numbers -\u0026gt; image. Choose an image based on the number (1=triangle, 2=square, 3=circle; pick colors and sizes you like). Randomly place the image on a 400x300 gray rectangle.\n  Advanced bonus: the list of numbers comes in pairs - the first number selects the shape and the second number selects its size.\n(shaper (list 1 50 3 20))  The call above would place a triangle of side length 50 and a circle of radius 20.\n"
+	"content": " count-down-odd: number(start) number(end) -\u0026gt; list of numbers. Generate a list of all of the odd numbers from end down to start (inclusive).\n(count-down-odd 5 10) =\u0026gt; (list 9 7 5) (count-down-odd 5 5) =\u0026gt; (list 5) dinosaur: list of numbers -\u0026gt; list of strings. Change a list of numbers, all of which will be between 0 and 7 inclusive, into a list of the corresponding letters from the word dinosaur.\n(dinosaur (list 4 5 0)) =\u0026gt; (list \u0026#34;s\u0026#34; \u0026#34;a\u0026#34; \u0026#34;d\u0026#34;) shaper: list of numbers -\u0026gt; image. Choose an image based on the number (1=triangle, 2=square, 3=circle; pick colors and sizes you like). Randomly place the image on a 400x300 gray rectangle.\nAdvanced bonus: the list of numbers comes in pairs - the first number selects the shape and the second number selects its size.\n(shaper (list 1 50 3 20))  The call above would place a triangle of side length 50 and a circle of radius 20.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/60-more-rec/",
@@ -1265,6 +1279,13 @@
 	"tags": [],
 	"description": "Lists give a way to remember an unlimited number of items.",
 	"content": "  22. List Intro An introduction to lists in Racket.\n  22b. List Exercises 1 Introductory exercises with lists.\n  22b. List Exercises 2 Vocabulary for list functions. More practice problems.\n  22b. Bubble Wrap Random size circles all around the screen. Circles disappear when you click on them.\n  22b. List Exercises 3 Randomly generate points on a parabola and graph them in people coordinates.\n  22b. List Exercises 4 Quiz count-down-odd: number(start) number(end) -\u0026gt; list of numbers. Generate a list of all of the odd numbers from end down to start (inclusive). (count-down-odd 5 10) =\u0026gt; (list 9 7 5) (count-down-odd 5 5) =\u0026gt; (list 5) dinosaur: list of numbers -\u0026gt; list of strings. Change a list of numbers, all of which will be between 0 and 7 inclusive, into a list of the corresponding letters from the word dinosaur.\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/proj/",
+	"title": "23. Projects",
+	"tags": [],
+	"description": "Projects to develop your ability to manage complexity.",
+	"content": "Learning to manage complexity through planning and unit testing (check-expect) is a very important skill for you to acquire. These projects will help you develop as a programmer.\n Battleship The classic Battleship game, one player version.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1796,7 +1817,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Intermediate Computer Science Recent Changes    22b. List Exercises 4 Quiz modified Mon 04-09  22b. List Exercises 3 modified Fri 04-06  22b. Bubble Wrap modified Thu 04-05  22b. List Exercises 2 modified Wed 04-04  22b. List Exercises 1 modified Tue 04-03  22a. Hangman Draw Handler modified Tue 03-20  22a. Hangman DH Warmup modified Fri 03-16  22a. Hangman Key Handler modified Thu 03-15  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Intermediate Computer Science Recent Changes    Battleship Model modified Tue 04-10  Battleship modified Tue 04-10  23. Projects modified Tue 04-10  22b. List Exercises 4 Quiz modified Mon 04-09  22b. List Exercises 3 modified Fri 04-06  22b. Bubble Wrap modified Thu 04-05  22b. List Exercises 2 modified Wed 04-04  22b. List Exercises 1 modified Tue 04-03  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1820,14 +1841,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
