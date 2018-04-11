@@ -1999,7 +1999,16 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#model">Model</a></li>
+<li><a href="#drawing">Drawing</a></li>
+<li><a href="#logic">Logic</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2017,10 +2026,39 @@
     
     
     
-    <ul>
+    
+
+<ul>
 <li>A bunch of circles of random size and color are placed around the screen.</li>
 <li>When you click on a circle, it disappears.</li>
 <li>Only the top circle should disappear if multiple circles are stacked.</li>
+</ul>
+
+<h2 id="model">Model</h2>
+
+<p>First, think about <em>one bubble</em>. How will you represent that? You need to keep track of at least:</p>
+
+<ul>
+<li>center</li>
+<li>radius</li>
+<li>color</li>
+</ul>
+
+<p>Next, think about <em>all of the bubbles</em>. How will you represent a bunch
+of bubbles?</p>
+
+<h2 id="drawing">Drawing</h2>
+
+<p>It is good to get your draw handler written early, so you can see what is going on. I recommend that you write one function to draw a single bubble on a background, and another function to draw all of the bubbles.</p>
+
+<h2 id="logic">Logic</h2>
+
+<p>You need to remove the bubble you click on from the game. I think that is best done in two steps:</p>
+
+<ul>
+<li><code>clicked-on-bubble?</code>: bubble posn(click) -&gt; boolean. True if the
+click is inside the given bubble.</li>
+<li><code>remove-clicked</code>: list of bubbles posn(click) -&gt; list of bubbles</li>
 </ul>
 
 

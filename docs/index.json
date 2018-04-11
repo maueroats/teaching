@@ -690,7 +690,7 @@
 	"title": "22b. Bubble Wrap",
 	"tags": [],
 	"description": "Random size circles all around the screen. Circles disappear when you click on them.",
-	"content": " A bunch of circles of random size and color are placed around the screen. When you click on a circle, it disappears. Only the top circle should disappear if multiple circles are stacked.  "
+	"content": "  A bunch of circles of random size and color are placed around the screen. When you click on a circle, it disappears. Only the top circle should disappear if multiple circles are stacked.  Model First, think about one bubble. How will you represent that? You need to keep track of at least:\n center radius color  Next, think about all of the bubbles. How will you represent a bunch of bubbles?\nDrawing It is good to get your draw handler written early, so you can see what is going on. I recommend that you write one function to draw a single bubble on a background, and another function to draw all of the bubbles.\nLogic You need to remove the bubble you click on from the game. I think that is best done in two steps:\n clicked-on-bubble?: bubble posn(click) -\u0026gt; boolean. True if the click is inside the given bubble. remove-clicked: list of bubbles posn(click) -\u0026gt; list of bubbles  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/programming-project/",
@@ -1194,7 +1194,7 @@
 	"title": "14. Searching and Sorting",
 	"tags": [],
 	"description": "",
-	"content": " 2018-02-12: Read Section 14.1-14.2 and do exercise 1 on the Comparable page.\n 2018-02-14: Binary search.\n 2018-02-15: Binary insert.\n 2018-02-16: Selection sort.\n 2018-02-20: Insertion sort.\n 2018-02-21: Merge sort. Use arrays of integers. Colorful visual demo or another visual demo.\n   14. Comparable   14. Binary Search   14. Test Corrections   "
+	"content": " 2018-02-12: Read Section 14.1-14.2 and do exercise 1 on the Comparable page.\n 2018-02-13: EBO, exercise 2 on the Comparable page.\n 2018-02-14: Binary search.\n 2018-02-15: Binary insert.\n 2018-02-16: Selection sort.\n 2018-02-20: Insertion sort.\n 2018-02-21: Merge sort. Use arrays of integers. Colorful visual demo or another visual demo.\n   14. Comparable   14. Binary Search   14. Test Corrections   "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/",
