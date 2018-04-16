@@ -17,3 +17,4 @@ description: "Introductory exercises with lists."
 
 [List Exercises - Google Slides](https://docs.google.com/presentation/d/1u0uOCMy9U-QG2GdPAExzW_MqskPxd2Ga837iAwcXvbc/edit?usp=sharing).
 
+* Wednesday 2018-04-04: 6.1 and 6.2 from the slides. (`star-triangle`)

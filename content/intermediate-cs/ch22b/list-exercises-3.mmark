@@ -18,7 +18,9 @@ Note: This page uses MathJax to show fancy formulas.
 
 2. `parabola-it`: list of numbers -> list of posn. Use the numbers as the x-coordinates of function
 
-$$  f(x) = 0.01 * x^2 - 50 $$
+    $$  f(x) = 0.01 * x^2 - 50 $$
+
+        (parabola-it (list 5 10)) => (list (make-posn 5 25) (make-posn 10 100))
 
 3. `people-graph`: list of posn -> image. Place the posns in people coordinates on a 300x200 rectangle with origin at the center.
 

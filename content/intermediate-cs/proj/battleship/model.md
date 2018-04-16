@@ -45,6 +45,11 @@ For developing the model we will think about only two ships. Later you can add t
 * Write the model that corresponds to each one of your scenes.
 * Save this paper! Check in your work and don't lose it.
 
+## Step 3: Check your model
+
+* How do you represent one ship?
+* How do you represent one shot fired?
+
 ## Interesting variations
 
 You can explore these ideas later in your game.

@@ -1743,6 +1743,20 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/proj/battleship/examples/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/proj/battleship/examples/">
+            Battleship Examples
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/proj/battleship/outline/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/proj/battleship/outline/">
+            Battleship Outline
+          </a>
+        </div>
+    </li>
         </ul>
     </li>
         </ul>
@@ -2034,12 +2048,11 @@ tex2jax: {
 <li><p><code>random-gen</code>: number(<code>N</code>) -&gt; list of numbers. Generate <code>N</code> random numbers, each one in the interval $-150 &lt;= x &lt;= 150$. Example (random so numbers will be different each time):</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(random-gen 5) =&gt; (list -75 100 -30 50 21)</pre></div></li>
 
-<li><p><code>parabola-it</code>: list of numbers -&gt; list of posn. Use the numbers as the x-coordinates of function</p></li>
-</ol>
+<li><p><code>parabola-it</code>: list of numbers -&gt; list of posn. Use the numbers as the x-coordinates of function</p>
 
 <p><span  class="math">\[  f(x) = 0.01 * x^2 - 50 \]</span></p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(parabola-it (list 5 10)) =&gt; (list (make-posn 5 25) (make-posn 10 100))</pre></div></li>
 
-<ol start="3">
 <li><p><code>people-graph</code>: list of posn -&gt; image. Place the posns in people coordinates on a 300x200 rectangle with origin at the center.</p>
 
 
