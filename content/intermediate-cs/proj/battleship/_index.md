@@ -14,7 +14,7 @@ classic game from the early 20th Century in which you try to guess the
 locations of your opponent's ships in a grid.
 
 You may be able to [play Battleship
-online](http://www.battleshiponline.org/) but do not waste much time
+online](https://battleship-game.org/en/) but do not waste much time
 doing that kind of research. Playing on paper is better for developing
 your understanding of what information needs to be tracked (the
 model).
