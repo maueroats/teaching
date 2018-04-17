@@ -2061,11 +2061,18 @@ uses the definitions below for <code>ship</code> and <code>game</code>.</p>
 <h2 id="game-logic">Game logic</h2>
 
 <ul>
+<li><p><code>posn-in-list</code>: posn(x) list-of-posns(data) -&gt; boolean. True if x is
+one of the posns in data. You may have to write the <code>posn=?</code>
+function yourself if it is not in your <code>posn-util</code>.</p></li>
+
 <li><p><code>shot-hit-ship?</code>: posn(shot) list-of-posns(ps) -&gt; boolean. True if
 the shot hit the ship specified by the posns.</p></li>
 
 <li><p><code>shot-hit-any-ship?</code>: posn(shot) list-of-ships -&gt; boolean. True if
 the shot hits any one of the ships.</p></li>
+
+<li><p><code>ship-sunk?</code>: ship list-of-posn(shots) -&gt; boolean. True if the ship
+is sunk (every part of the ship is hit by a shot).</p></li>
 </ul>
 
 <h2 id="drawing">Drawing</h2>
@@ -2119,7 +2126,7 @@ Draw a picture and figure it out now!</p>
 
 <ul>
 <li><p><code>grid-&gt;image-coords</code>: posn -&gt; posn. Translate the grid coordinates
-to image coordinates. should depend on the size of the square.</p></li>
+to image coordinates. The result should depend on the size of the squares in the grid.</p></li>
 
 <li><p><code>draw-one-shot</code>: game posn(shot) image(bg) -&gt; image. Draw one shot
 on the background. You will need to decide if the shot is a hit or

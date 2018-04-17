@@ -16,11 +16,18 @@ uses the definitions below for `ship` and `game`.
         
 ## Game logic
 
+* `posn-in-list`: posn(x) list-of-posns(data) -> boolean. True if x is
+  one of the posns in data. You may have to write the `posn=?`
+  function yourself if it is not in your `posn-util`.
+
 * `shot-hit-ship?`: posn(shot) list-of-posns(ps) -> boolean. True if
   the shot hit the ship specified by the posns.
   
 * `shot-hit-any-ship?`: posn(shot) list-of-ships -> boolean. True if
   the shot hits any one of the ships.
+
+* `ship-sunk?`: ship list-of-posn(shots) -> boolean. True if the ship
+  is sunk (every part of the ship is hit by a shot).
 
 ## Drawing
 
@@ -66,7 +73,7 @@ When each square is 40x40, what are the coordinates of the center of grid square
 Draw a picture and figure it out now!
 
 * `grid->image-coords`: posn -> posn. Translate the grid coordinates
-  to image coordinates. should depend on the size of the square.
+  to image coordinates. The result should depend on the size of the squares in the grid.
 
 * `draw-one-shot`: game posn(shot) image(bg) -> image. Draw one shot
   on the background. You will need to decide if the shot is a hit or
