@@ -126,6 +126,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch15/file-intro/",
+	"title": "15. File Intro",
+	"tags": [],
+	"description": "API for File, Scanner, PrintWriter.",
+	"content": " Sample code: class github.\nYou should be familiar with the basic methods listed in the JavaMethods Chapter 15 PowerPoint.\nFile The official File documentation has all of the details. This is a brief summary of methods you are likely to use.\n new File(\u0026quot;filename\u0026quot;). I recommend you only files in the same directory as your Java program, until you become very comfortable with Files. String getName() long lastModified(): Return modification time, in unusual units. boolean isDirectory() File[] listFiles()  Scanner Consult the Chapter 15 PowerPoint for common functions or the official documentation for full information.\n   Inquire (all return boolean) Get Notes     hasNextLine() String nextLine() Rest of the line, starting at the current location.   hasNext() String next() One token (group of letters and numbers) until next whitespace.   hasNextInt() int nextInt() One integer.   hasNextDouble() double nextDouble() One decimal.    PrintWriter  PrintWriter out = PrintWriter (file): Construct based on a File object. out.println(): Print, like usual. out.close(): Write all of the data to the disk.  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/proj/battleship/model/",
 	"title": "Battleship Model",
 	"tags": [],
@@ -362,6 +369,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch15/file-assign/",
+	"title": "15. File Assignments",
+	"tags": [],
+	"description": "Short problems using File.",
+	"content": " Count the number of lines in a file. Count the number of words in a file. Count the number of characters in a file. Find the sum of all of the integers in a file. Print out the file with line numbers in front of each line. Implement the \u0026ldquo;tree\u0026rdquo; command.\n. └── Risk ├── build.bat ├── build.sh ├── changelog.txt ├── compress.rkt ├── contributors.txt ├── notes.txt ├── PlannedAdditions.txt ├── README.md └── src ├── dice-functs.rkt ├── ellipse.rkt ├── fonts │ └── Roboto-Light.ttf ├── graph.rkt ├── hit-box-determiner.rkt ├── imgs │ ├── 6ca.jpg │ ├── board.png │ ├── cardico.png │ ├── close.png etc you get the idea  Additional exercises\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/proj/battleship/examples/",
@@ -648,7 +662,7 @@
 	"title": "Karel the Robot",
 	"tags": [],
 	"description": "",
-	"content": "  Book Links to the repository and documentation for the Karel the Robot unit.\n  Essentials Links to the repository and documentation for the Karel the Robot unit.\n  Karel 1 and 2 Reading and homework for the first two chapters of the Karel book.\n  Karel 3 Short list of updates and exercises for Chapter 3.\n  Karel 4.1-4.4 Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n  Karel 4.5-4.6 Great chapter: Strategy, Spy, Observer. Design patterns in Java.\n  CodingBat Interlude Practice for the fundamentals of coding in Java: logic and loops.\n  4.6 PrettyBoxBot PrettyBoxBot to practice interfaces\n  4.6 FishBot A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n  4.6 More Classes Three exercises to improve your understanding of classes and interfaces.\n  4.6 MurderBot Review exercises for class design.\n  4.* Advanced \n  4. Test Karel test, based on the review done earlier. Be sure to understand the material from 4.6.\n  4. Robot Drama A skit involving robots making decisions.\n  Karel Intellij How to use IntelliJ IDEA to work with our Karel the Robot configuration.\n  Karel Hacked \n  "
+	"content": "  Book Links to the repository and documentation for the Karel the Robot unit.\n  Essentials Links to the repository and documentation for the Karel the Robot unit.\n  Karel 1 and 2 Reading and homework for the first two chapters of the Karel book.\n  Karel 3 Short list of updates and exercises for Chapter 3.\n  Karel 4.1-4.4 Very important chapter: Choreographer, Contractor, Strategy, Spy, Observer. Design patterns in Java.\n  Karel 4.5-4.6 Great chapter: Strategy, Spy, Observer. Design patterns in Java.\n  CodingBat Interlude Practice for the fundamentals of coding in Java: logic and loops.\n  4.6 PrettyBoxBot PrettyBoxBot to practice interfaces\n  4.6 FishBot A fish robot that alternates between two strategies so it is harder for predators to predict its motion.\n  4.6 More Classes Three exercises to improve your understanding of classes and interfaces.\n  4.6 MurderBot Review exercises for class design.\n  4.* Advanced Undoing Page 100, exercise 12 - the robot that has the undo command. I used the idea of a Decorator strategy. Simultaneous Action Chapter 8 in the text shows how to make more than one robot act at the same time. See the MultiThreadBot on the class GitHub. A brief summary is: World.setupThread(robot) prepares the robot to act in its own thread. World.startThreads() calls the run() method for every robot that is set up as threading using the command above.\n  4. Test Karel test, based on the review done earlier. Be sure to understand the material from 4.6.\n  4. Robot Drama A skit involving robots making decisions.\n  Karel Intellij How to use IntelliJ IDEA to work with our Karel the Robot configuration.\n  Karel Hacked \n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03/puzzle-opener/",
@@ -767,7 +781,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   Programming Practice   Q3. Review   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   Programming Practice   Q3. Review   15. Files and Streams   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/number-4/",
@@ -1230,6 +1244,13 @@
 	"tags": [],
 	"description": "Making choices in Racket using &#39;cond&#39;.",
 	"content": " See slides for introductory material.\nAssignment 15.A Read the first three sections of Chapter 15. Do Exercises 15.3.{1,2,4,5,6}. These are on PDF page 223.\nAdvice:\n 15.3.4: The first input is the candidate for whom you are counting votes. (For example \u0026ldquo;Clinton\u0026rdquo;.) The next four inputs are votes cast for a person. (For example \u0026ldquo;Trump\u0026rdquo; \u0026ldquo;Clinton\u0026rdquo; \u0026ldquo;Sanders\u0026rdquo; \u0026ldquo;Trump\u0026rdquo;.) You are supposed to return the number of votes for the candidate from the first input. (For example: 1 in this case.)\n 15.3.7: Keep using build-image not build3-image.\n  Advanced students can do the image making (see below).\nAssignment 15.B Exercises 15.5.{1,2,3,4,5}. These begin on PDF page 229.\nAssignment 15.C Read 15.6 (\u0026ldquo;Unnecessary conditionals\u0026rdquo;). Skip Section 15.7.\nDo Exercises 15.8.{2,3,5}. Exercise 15.5.6. These begin on the bottom of PDF page 238.\nAdvanced See the build-image tutorial. Use that to do 15.3.3 and 15.3.{7-10}. Do not use build3-image even though the book says to use it. The build-image function is better.\nPractice Quiz Get ready by doing last year\u0026rsquo;s Chapter 15 quiz.\n"
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch15/",
+	"title": "15. Files and Streams",
+	"tags": [],
+	"description": "Using Scanner, File, PrintWriter.",
+	"content": "  2018-04-18: Introduction to using Scanner and File.  Topics  15. File Intro API for File, Scanner, PrintWriter.\n  15. File Assignments Short problems using File.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/",
@@ -1831,7 +1852,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Programming Practice 2 modified Fri 03-09  Java Bloopers modified Fri 03-09  CodeJam 2018 modified Wed 03-07  Intermediate Computer Science Recent Changes    Battleship Examples modified Mon 04-16  Battleship Outline modified Mon 04-16  Battleship Model modified Tue 04-10  Battleship modified Tue 04-10  23. Projects modified Tue 04-10  22b. List Exercises 4 Quiz modified Mon 04-09  22b. List Exercises 3 modified Fri 04-06  22b. Bubble Wrap modified Thu 04-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  CS Sail at UIUC modified Mon 03-19  Programming Project modified Mon 03-19  Programming Practice 3 modified Mon 03-12  Intermediate Computer Science Recent Changes    Battleship Examples modified Mon 04-16  Battleship Outline modified Mon 04-16  Battleship Model modified Tue 04-10  Battleship modified Tue 04-10  23. Projects modified Tue 04-10  22b. List Exercises 4 Quiz modified Mon 04-09  22b. List Exercises 3 modified Fri 04-06  22b. Bubble Wrap modified Thu 04-05  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
