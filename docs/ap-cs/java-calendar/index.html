@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Color Commands :: WY Computer Science</title>
+<title>Java Review Calendar :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/part-i/ch03/color/">
+  <body data-url="/ap-cs/java-calendar/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,10 +64,11 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -367,7 +368,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/java-calendar/" class="dd-item">
+      <li data-nav-id="/ap-cs/java-calendar/" class="dd-item active">
         <div>
           <a href="/ap-cs/java-calendar/">
             Java Review Calendar
@@ -832,18 +833,16 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/part-i/ch01/" class="dd-item haschildren
@@ -861,14 +860,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/part-i/ch03/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/part-i/ch03/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/part-i/ch03/">3. More Interesting Pictures</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/part-i/ch03/">3. More Interesting Pictures</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/part-i/ch03/color/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/part-i/ch03/color/" class="dd-item">
         <div>
           <a href="/intermediate-cs/part-i/ch03/color/">
             Color Commands
@@ -2025,17 +2023,7 @@
 
 
 
-
-
-
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/part-i/'>Part I: Ch 1-19</a> > <a href='/intermediate-cs/part-i/ch03/'>3. More Interesting Pictures</a> > Color Commands
-
- 
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > Java Review Calendar
 
  
 
@@ -2056,9 +2044,15 @@
   </div>
 
 
+  <div id="tags">
+    
+      <a class="label label-default" href="http://wy-cs.infotags/calendar">calendar</a>
+    
+  </div>
+
 <div id="body-inner">
   
-    <h1>Color Commands</h1>
+    <h1>Java Review Calendar</h1>
   
 
 
@@ -2066,28 +2060,10 @@
     
     
     
-    <ul>
-<li><code>name-&gt;color</code> changes a string name to a color, like this:
-<code>
-&gt; (name-&gt;color &quot;lavender&quot;) 
-(make-color 230 230 250)
-</code></li>
-</ul>
+    <p>Daily calendar for the Java review, beginning in mid-April.</p>
 
-<p>If you give it a color already, the computer complains:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    &gt; (name-&gt;color (make-color 230 230 250))
-    name-&gt;color: Expected a string or symbol, but received (make-color 230 230 250 255) </pre></div>
-<ul>
-<li><code>colorize</code> changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than <code>name-&gt;color</code>.
-<code>
-&gt; (colorize &quot;lavender&quot;) 
-(make-color 230 230 250)
-</code></li>
-</ul>
+<iframe src="https://calendar.google.com/calendar/embed?src=kujl16o2i5b5rda1h4s9plnb28%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-<p>If you give it a color already, the computer complains:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    &gt; (colorize (make-color 230 230 250))
-    (make-color 230 230 250))</pre></div>
 
     
     
@@ -2098,8 +2074,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/part-i/ch03/" title="3. More Interesting Pictures"> <i class="fa fa-chevron-left"></i><label>3. More Interesting Pictures</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/part-i/ch03/ch03-art-project/" title="Art Project" style="margin-right: 0px;"><label>Art Project</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/haskell-calendar/" title="Haskell Calendar"> <i class="fa fa-chevron-left"></i><label>Haskell Calendar</label></a>
+    <a class="nav nav-next" href="/ap-cs/git/" title="Git" style="margin-right: 0px;"><label>Git</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
