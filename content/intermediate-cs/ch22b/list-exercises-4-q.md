@@ -5,6 +5,7 @@ weight: 60
 draft: false
 #type: slide
 #theme: white
+description: "Quiz on lists."
 ---
 
 1. `count-down-odd`: number(start) number(end) -> list of numbers. Generate a list of all of the odd numbers from `end` down to `start` (inclusive).

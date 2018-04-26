@@ -33,6 +33,10 @@ Consult the [Chapter 15 PowerPoint](http://www.skylit.com/javamethods2/ppt/Ch15.
 | `hasNextInt()`  | `int nextInt()`      | One integer. |
 | `hasNextDouble()` | `double nextDouble()` | One decimal. |
 
+Miscellaneous:
+
+* `NoSuchElementException` is returned when a Scanner is asked for something that it cannot provide - for example, `nextInt()` when the next item is not an integer.
+
 ## PrintWriter
 
 * `PrintWriter out = PrintWriter (file)`: Construct based on a `File` object.
