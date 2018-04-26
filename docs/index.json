@@ -585,7 +585,7 @@
 	"title": "15. File Divvy",
 	"tags": [],
 	"description": "Questions about the Divvy trip database.",
-	"content": "Get a subset of Divvy bike trip data.\n Find the trip of longest duration. Find the oldest female rider in this dataset.  "
+	"content": " Get a subset of Divvy bike trip data. Later you may want the Divvy station data as well.\n Find the trip of longest duration. Find the oldest female rider in this dataset.  Tips You do not have to store the data in an ArrayList, but if you want to do that, you should make a class BikeInfo that has all of the information contained on one line in the database. Making 12 separate ArrayLists is lots harder to work with.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/proj/battleship/outline/",

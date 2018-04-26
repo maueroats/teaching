@@ -2055,7 +2055,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#tips">Tips</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2073,12 +2080,18 @@
     
     
     
-    <p>Get a subset of <a href="smalltrips.csv">Divvy bike trip data</a>.</p>
+    
+
+<p>Get a subset of <a href="smalltrips.csv">Divvy bike trip data</a>. Later you may want the <a href="stations.csv">Divvy station data</a> as well.</p>
 
 <ol>
 <li>Find the trip of longest duration.</li>
 <li>Find the oldest female rider in this dataset.</li>
 </ol>
+
+<h2 id="tips">Tips</h2>
+
+<p>You do not have to store the data in an <code>ArrayList</code>, but if you want to do that, you should make a class <code>BikeInfo</code> that has all of the information contained on one line in the database. Making 12 separate ArrayLists is lots harder to work with.</p>
 
 
     
