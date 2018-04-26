@@ -206,6 +206,13 @@
       <a href="/ap-cs/haskell/ch05/">5. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/ap-cs/haskell/ch05/ch05-reading-guide/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch05/ch05-reading-guide/">
+            Chapter 5 Reading Guide
+          </a>
+        </div>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/ap-cs/haskell/ch06/" class="dd-item haschildren
@@ -790,6 +797,13 @@
         <div>
           <a href="/ap-cs/jm/ch15/file-assign/">
             15. File Assignments
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch15/file-quiz/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch15/file-quiz/">
+            15. File Quiz
           </a>
         </div>
     </li>
@@ -1789,6 +1803,12 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/intermediate-cs/proj/universe/" class="dd-item
+        ">
+      <div>
+      <a href="/intermediate-cs/proj/universe/">Universe</a>
+      </div>
+    </li>
         </ul>
     </li>
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item">
@@ -2055,6 +2075,7 @@
 <li><a href="#file">File</a></li>
 <li><a href="#scanner">Scanner</a></li>
 <li><a href="#printwriter">PrintWriter</a></li>
+<li><a href="#common-problems-and-advice">Common Problems and Advice</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2145,6 +2166,36 @@
 <li><code>PrintWriter out = PrintWriter (file)</code>: Construct based on a <code>File</code> object.</li>
 <li><code>out.println()</code>: Print, like usual.</li>
 <li><code>out.close()</code>: Write all of the data to the disk.</li>
+</ul>
+
+<h2 id="common-problems-and-advice">Common Problems and Advice</h2>
+
+<ul>
+<li><p>Read error messages closely.</p>
+
+<ul>
+<li><p>Know what the error is. For example, this is a <code>FileNotFound</code> error caused by trying to read <code>myfolder</code> with <code>Scanner</code>, like a file.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">java.io.FileNotFoundException: myfolder (Is a directory)
+    at java.io.FileInputStream.open0(Native Method)
+    at java.io.FileInputStream.open(FileInputStream.java:195)
+    at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+    at java.util.Scanner.&lt;init&gt;(Scanner.java:611)</pre></div></li>
+
+<li><p>from a File? Know what File causes it.</p></li>
+
+<li><p>from a Scanner? Know exactly what input causes the problem. Print lots! For example, this error comes from trying to get the <code>next()</code> item when there is nothing more available.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">java.util.NoSuchElementException
+    at java.util.Scanner.throwFor(Scanner.java:862)
+    at java.util.Scanner.next(Scanner.java:1371)</pre></div></li>
+</ul></li>
+
+<li><p>Make sure you only call <code>listFiles</code> on a <code>File</code> that is a directory.</p></li>
+
+<li><p>Reading a directory like a file will give you a <code>FileNotFound</code> or permissions error.</p></li>
+
+<li><p>Listing the files in a file that is not a directory will return <code>null</code> but not give an error. This is dangerous because you cannot loop through the returned array (since nothing is created).</p></li>
+
+<li><p>You can get very unusual error messages if you start recursively examining a folder that contains your system files. Make folders especially for testing.</p></li>
 </ul>
 
 
