@@ -93,6 +93,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-overview/</loc>
+    <lastmod>2018-04-30T09:22:06-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/jm/ch15/file-intro/</loc>
     <lastmod>2018-04-18T10:28:09-05:00</lastmod>
   </url>
@@ -268,6 +273,16 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-mini-proj/</loc>
+    <lastmod>2018-04-30T09:28:07-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/proj/universe/</loc>
+    <lastmod>2018-04-26T12:45:48-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/java-calendar/</loc>
     <lastmod>2018-04-18T15:09:22-05:00</lastmod>
   </url>
@@ -418,6 +433,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-color/</loc>
+    <lastmod>2018-04-30T11:11:58-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/ap-cs/jm/ch15/file-quiz/</loc>
     <lastmod>2018-04-26T09:30:51-05:00</lastmod>
   </url>
@@ -520,6 +540,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/part-i/ch03art/</loc>
     <lastmod>2017-09-27T19:52:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-spin/</loc>
+    <lastmod>2018-04-30T10:22:34-05:00</lastmod>
   </url>
   
   <url>
@@ -765,6 +790,11 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/ch22a/81-rec-quiz/</loc>
     <lastmod>2018-03-05T07:59:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-resources/</loc>
+    <lastmod>2018-04-30T08:58:00-05:00</lastmod>
   </url>
   
   <url>
@@ -1020,11 +1050,6 @@
   <url>
     <loc>http://wy-cs.info/intermediate-cs/pro/</loc>
     <lastmod>2017-11-19T15:30:06-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/universe/</loc>
-    <lastmod>2018-04-26T12:45:48-05:00</lastmod>
   </url>
   
   <url>

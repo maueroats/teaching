@@ -20,3 +20,7 @@ You do not have to store the data in an `ArrayList`, but if you want to do that,
 The `Scanner` class has a `useDelimiter` method that can be used to split on things that are not whitespace.
 
 The `String` class has a `split` method that can be used in a similar way.
+
+## Advanced
+
+Your teacher regularly takes the Divvy to the station right next to school, arriving 7:40-7:50am. See if you can identify any trips in the full dataset.

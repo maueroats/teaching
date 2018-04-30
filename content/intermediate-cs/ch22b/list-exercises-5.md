@@ -20,13 +20,11 @@ description: "Further practice, retake quiz."
         (find-it "dinosaur" (list 4 5 0)) => (list "s" "a" "d")
         (find-it "bad" (list 1 90)) => (list "a" "-")
         
-3. `shaper`: list of numbers -> image. Choose an image based on the number (1=triangle, 2=square, 3=circle; pick colors and sizes you like). Randomly place the image on a 400x300 gray rectangle. 
+3. `shop-for`: string(item) list of strings(names) list of numbers(prices) -> number. 
+The lists "store" and "prices" give the costs of items. Find _item_ in the list and return its price.
 
-    Advanced bonus: the list of numbers comes in pairs - the first number selects the shape and the second number selects its size.
-
-        (shaper (list 1 50 3 20)) 
-
-    The call above would place a triangle of side length 50 and a circle of radius 20. 
-
+        (define n (list "carrots" "bananas" "rice"))
+        (define p (list 0.99         1.29     1.59))
+        (check-expect (shop-for "rice" n p) 1.59)
 
 
