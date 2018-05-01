@@ -1,7 +1,7 @@
 ---
-title: "Battleship"
+title: "23. Battleship"
 date: 2018-04-10T21:45:16-05:00
-weight: 10
+weight: 300
 draft: false
 #type: slide
 #theme: white

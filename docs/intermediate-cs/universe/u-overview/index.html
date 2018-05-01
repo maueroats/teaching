@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/proj/universe/u-overview/">
+  <body data-url="/intermediate-cs/universe/u-overview/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1766,85 +1766,76 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/proj/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/battleship/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/proj/">23. Projects</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/battleship/">23. Battleship</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/proj/battleship/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/intermediate-cs/proj/battleship/">Battleship</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/intermediate-cs/proj/battleship/model/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/battleship/model/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/battleship/model/">
+          <a href="/intermediate-cs/battleship/model/">
             Battleship Model
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/battleship/examples/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/battleship/examples/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/battleship/examples/">
+          <a href="/intermediate-cs/battleship/examples/">
             Battleship Examples
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/battleship/outline/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/battleship/outline/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/battleship/outline/">
+          <a href="/intermediate-cs/battleship/outline/">
             Battleship Outline
           </a>
         </div>
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/proj/universe/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/universe/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/proj/universe/">Universe</a>
+      <a href="/intermediate-cs/universe/">24. Universe</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-overview/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/universe/u-overview/" class="dd-item active">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-overview/">
+          <a href="/intermediate-cs/universe/u-overview/">
             Universe Overview
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-mini-proj/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-mini-proj/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-mini-proj/">
+          <a href="/intermediate-cs/universe/u-mini-proj/">
             Universe Mini Projects
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-color/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-color/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-color/">
+          <a href="/intermediate-cs/universe/u-color/">
             Universe Color
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-spin/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-spin/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-spin/">
+          <a href="/intermediate-cs/universe/u-spin/">
             Universe Spin
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-resources/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-resources/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-resources/">
+          <a href="/intermediate-cs/universe/u-resources/">
             Universe Resources
           </a>
         </div>
-    </li>
-        </ul>
     </li>
         </ul>
     </li>
@@ -2085,12 +2076,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/proj/'>23. Projects</a> > <a href='/intermediate-cs/proj/universe/'>Universe</a> > Universe Overview
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/universe/'>24. Universe</a> > Universe Overview
 
  
 
@@ -2109,6 +2095,8 @@
 <ul>
 <li>
 <ul>
+<li><a href="#technical-information">Technical Information</a></li>
+<li><a href="#design-process">Design Process</a></li>
 <li><a href="#miscellaneous">Miscellaneous</a></li>
 <li><a href="#code">Code</a></li>
 </ul></li>
@@ -2133,6 +2121,14 @@
     
     
 
+<p>Universe gives a way to have multiple big-bangs communicate.</p>
+
+<p>Each big-bang is individually called a &ldquo;world&rdquo;. They are also called &ldquo;clients&rdquo;. There is one &ldquo;universe&rdquo; running, which is the &ldquo;server&rdquo;. The universe server coordinates all of the communication between the big-bang clients.</p>
+
+<p>There are some new technical additions to <code>big-bang</code>, and some recommendations for the design process.</p>
+
+<h2 id="technical-information">Technical Information</h2>
+
 <ul>
 <li><code>(make-package model message)</code>: Returned from a handler to update the model and send a message.</li>
 <li>Any handler (for example: <code>key</code>,<code>mouse</code>,<code>tick</code>) can return a <code>package</code>, which updates your own model and sends a message to the server.</li>
@@ -2147,6 +2143,16 @@
 <ul>
 <li><code>model</code> is called <code>WorldState</code></li>
 <li><code>HandlerResult</code> means either a model or a <code>package</code>.</li>
+</ul>
+
+<h2 id="design-process">Design Process</h2>
+
+<ul>
+<li><p>Decide your <strong>big-bang model</strong> first. Use the usual process (draw
+scenes, write the model that goes with those scenes).</p></li>
+
+<li><p>Decide your <strong>universe model</strong> next. This means you need to decide
+what <strong>messages</strong> will be sent between worlds (big-bangs).</p></li>
 </ul>
 
 <h2 id="miscellaneous">Miscellaneous</h2>
@@ -2169,8 +2175,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/proj/universe/" title="Universe"> <i class="fa fa-chevron-left"></i><label>Universe</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/proj/universe/u-mini-proj/" title="Universe Mini Projects" style="margin-right: 0px;"><label>Universe Mini Projects</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/universe/" title="24. Universe"> <i class="fa fa-chevron-left"></i><label>24. Universe</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/universe/u-mini-proj/" title="Universe Mini Projects" style="margin-right: 0px;"><label>Universe Mini Projects</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

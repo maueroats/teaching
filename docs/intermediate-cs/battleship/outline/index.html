@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Universe :: WY Computer Science</title>
+<title>Battleship Outline :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/proj/universe/">
+  <body data-url="/intermediate-cs/battleship/outline/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1766,85 +1766,76 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/proj/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/battleship/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/proj/">23. Projects</a>
+      <a href="/intermediate-cs/battleship/">23. Battleship</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/proj/battleship/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/intermediate-cs/proj/battleship/">Battleship</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/intermediate-cs/proj/battleship/model/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/battleship/model/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/battleship/model/">
+          <a href="/intermediate-cs/battleship/model/">
             Battleship Model
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/battleship/examples/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/battleship/examples/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/battleship/examples/">
+          <a href="/intermediate-cs/battleship/examples/">
             Battleship Examples
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/battleship/outline/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/battleship/outline/" class="dd-item active">
         <div>
-          <a href="/intermediate-cs/proj/battleship/outline/">
+          <a href="/intermediate-cs/battleship/outline/">
             Battleship Outline
           </a>
         </div>
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/proj/universe/" class="dd-item parent active haschildren
+    <li data-nav-id="/intermediate-cs/universe/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/proj/universe/">Universe</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/universe/">24. Universe</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-overview/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-overview/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-overview/">
+          <a href="/intermediate-cs/universe/u-overview/">
             Universe Overview
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-mini-proj/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-mini-proj/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-mini-proj/">
+          <a href="/intermediate-cs/universe/u-mini-proj/">
             Universe Mini Projects
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-color/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-color/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-color/">
+          <a href="/intermediate-cs/universe/u-color/">
             Universe Color
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-spin/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-spin/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-spin/">
+          <a href="/intermediate-cs/universe/u-spin/">
             Universe Spin
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-resources/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-resources/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-resources/">
+          <a href="/intermediate-cs/universe/u-resources/">
             Universe Resources
           </a>
         </div>
-    </li>
-        </ul>
     </li>
         </ul>
     </li>
@@ -2085,7 +2076,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/proj/'>23. Projects</a> > Universe
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/battleship/'>23. Battleship</a> > Battleship Outline
 
  
 
@@ -2100,7 +2091,22 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#game-logic">Game logic</a></li>
+<li><a href="#drawing">Drawing</a>
+<ul>
+<li><a href="#sizes">Sizes</a></li>
+<li><a href="#draw-grid">Draw grid</a></li>
+<li><a href="#grid-coordinates">Grid coordinates</a></li>
+<li><a href="#draw-shots">Draw shots</a></li>
+</ul></li>
+<li><a href="#mouse-handler">Mouse handler</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2110,7 +2116,7 @@
 
 <div id="body-inner">
   
-    <h1>Universe</h1>
+    <h1>Battleship Outline</h1>
   
 
 
@@ -2118,45 +2124,105 @@
     
     
     
+    
 
-<p>The <code>universe</code> functions let you build multiple <code>big-bang</code> windows
-that communicate with each other.</p>
+<p>In order for all of us to be working with a similar model, this page
+uses the definitions below for <code>ship</code> and <code>game</code>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    (define-struct ship (name posns))
+    (define-struct game (ships shots))</pre></div>
+<h2 id="game-logic">Game logic</h2>
 
+<ul>
+<li><p><code>posn-in-list</code>: posn(x) list-of-posns(data) -&gt; boolean. True if x is
+one of the posns in data. You may have to write the <code>posn=?</code>
+function yourself if it is not in your <code>posn-util</code>.</p></li>
 
+<li><p><code>shot-hit-ship?</code>: posn(shot) list-of-posns(ps) -&gt; boolean. True if
+the shot hit the ship specified by the posns.</p></li>
 
-<ul class="children children-li">
+<li><p><code>shot-hit-any-ship?</code>: posn(shot) list-of-ships -&gt; boolean. True if
+the shot hits any one of the ships.</p></li>
 
-<span><li>
-		<a href="/intermediate-cs/proj/universe/u-overview/" >Universe Overview</a></li>
-<p>Overview of the Universe.</p>
-</span>
-
-<span><li>
-		<a href="/intermediate-cs/proj/universe/u-mini-proj/" >Universe Mini Projects</a></li>
-<p>Short projects to get used to the Universe code.</p>
-</span>
-
-<span><li>
-		<a href="/intermediate-cs/proj/universe/u-color/" >Universe Color</a></li>
-<p>Change the color on all of the clients by hitting a key.</p>
-</span>
-
-<span><li>
-		<a href="/intermediate-cs/proj/universe/u-spin/" >Universe Spin</a></li>
-<p>Take turns making an image spin.</p>
-</span>
-
-<span><li>
-		<a href="/intermediate-cs/proj/universe/u-resources/" >Universe Resources</a></li>
-<p>Tutorials on the Universe.</p>
-</span>
+<li><p><code>ship-sunk?</code>: ship list-of-posn(shots) -&gt; boolean. True if the ship
+is sunk (every part of the ship is hit by a shot).</p></li>
 </ul>
 
+<h2 id="drawing">Drawing</h2>
 
+<ul>
+<li>You should have constants defined for the width and height of the board.
+Call them <code>COLUMNS</code> and <code>ROWS</code>.</li>
+</ul>
 
+<p>There are two different, equally valid, ways to draw:</p>
 
+<ol>
+<li>Draw the grid, filling in the correct coloring for each square as you go.</li>
+<li>Draw an empty grid, then fill in each shot using <code>place-image</code>.</li>
+</ol>
 
+<p>This discussion will use the second method.</p>
 
+<h3 id="sizes">Sizes</h3>
+
+<p>How big should each grid square be? You get to decide, but make a
+constant instead of just writing &ldquo;40&rdquo; or &ldquo;50&rdquo; everywhere in your code.</p>
+
+<h3 id="draw-grid">Draw grid</h3>
+
+<p>Hopefully you&rsquo;ve done this before. Usually two functions combine to make a grid.</p>
+
+<ol>
+<li><p><code>horizontal-stack</code>: number(m) image -&gt; image. Repeat the image
+(which will be a grid square) M times.</p></li>
+
+<li><p><code>vertical-stack</code>: number(n) image -&gt; image. Repeat the image (which
+will be a row of squares) N times.</p></li>
+</ol>
+
+<h3 id="grid-coordinates">Grid coordinates</h3>
+
+<p>When we talk about the square at grid coordinates (0,2), we mean row 0
+(the top row) and column 2 (which is the third column, since we start
+counting from zero).</p>
+
+<p>Image coordinates are usually numbers like (20,100), representing the
+actual location in the image of the center of the grid square.</p>
+
+<h3 id="draw-shots">Draw shots</h3>
+
+<p>Drawing the shots means we have to translate from grid coordinates to image coordinates.</p>
+
+<p>When each square is 40x40, what are the coordinates of the center of grid square (2,1)?
+Draw a picture and figure it out now!</p>
+
+<ul>
+<li><p><code>grid-&gt;image-coords</code>: posn -&gt; posn. Translate the grid coordinates
+to image coordinates. The result should depend on the size of the squares in the grid.</p></li>
+
+<li><p><code>draw-one-shot</code>: game posn(shot) image(bg) -&gt; image. Draw one shot
+on the background. You will need to decide if the shot is a hit or
+a miss before you draw it.</p></li>
+
+<li><p><code>draw-all-shots</code>: game list-of-posn(shots) image(bg) -&gt; image. Draw
+all shots on the background.</p></li>
+</ul>
+
+<h2 id="mouse-handler">Mouse handler</h2>
+
+<p>When you click on a square, it should make a &ldquo;shot&rdquo; that hits that square.</p>
+
+<p>Example: grid squares are huge, 100x100. You click on (310, 190). What
+board square contains that click?</p>
+
+<p>Answer: (3,1). Just divide each coordinate by the size of one grid square.</p>
+
+<ul>
+<li><p>Signature: <code>mouse-handler</code>: game(old-model) x y event -&gt; game(new-model).</p></li>
+
+<li><p>Purpose: when the event is a click, add the corresponding square to
+the list of shots in the model.</p></li>
+</ul>
 
 
     
@@ -2168,8 +2234,8 @@ that communicate with each other.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/proj/battleship/outline/" title="Battleship Outline"> <i class="fa fa-chevron-left"></i><label>Battleship Outline</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/proj/universe/u-overview/" title="Universe Overview" style="margin-right: 0px;"><label>Universe Overview</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/battleship/examples/" title="Battleship Examples"> <i class="fa fa-chevron-left"></i><label>Battleship Examples</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/universe/" title="24. Universe" style="margin-right: 0px;"><label>24. Universe</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

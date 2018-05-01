@@ -126,11 +126,11 @@
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/proj/universe/u-overview/",
+	"uri": "http://wy-cs.info/intermediate-cs/universe/u-overview/",
 	"title": "Universe Overview",
 	"tags": [],
 	"description": "Overview of the Universe.",
-	"content": "  (make-package model message): Returned from a handler to update the model and send a message. Any handler (for example: key,mouse,tick) can return a package, which updates your own model and sends a message to the server. New handler: on-receive.\nreceive-h: model message -\u0026gt; model Update your model based on a message you receive from the server.\n  Reading the Racket Documentation:\n model is called WorldState HandlerResult means either a model or a package.  Miscellaneous  The on-receive handler can return a package if needed.  Code Generic server\n"
+	"content": " Universe gives a way to have multiple big-bangs communicate.\nEach big-bang is individually called a \u0026ldquo;world\u0026rdquo;. They are also called \u0026ldquo;clients\u0026rdquo;. There is one \u0026ldquo;universe\u0026rdquo; running, which is the \u0026ldquo;server\u0026rdquo;. The universe server coordinates all of the communication between the big-bang clients.\nThere are some new technical additions to big-bang, and some recommendations for the design process.\nTechnical Information  (make-package model message): Returned from a handler to update the model and send a message. Any handler (for example: key,mouse,tick) can return a package, which updates your own model and sends a message to the server. New handler: on-receive.\nreceive-h: model message -\u0026gt; model Update your model based on a message you receive from the server.\n  Reading the Racket Documentation:\n model is called WorldState HandlerResult means either a model or a package.  Design Process  Decide your big-bang model first. Use the usual process (draw scenes, write the model that goes with those scenes).\n Decide your universe model next. This means you need to decide what messages will be sent between worlds (big-bangs).\n  Miscellaneous  The on-receive handler can return a package if needed.  Code Generic server\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch15/file-intro/",
@@ -140,18 +140,11 @@
 	"content": " Sample code: class github.\nYou should be familiar with the basic methods listed in the JavaMethods Chapter 15 PowerPoint.\nFile The official File documentation has all of the details. This is a brief summary of methods you are likely to use.\n new File(\u0026quot;filename\u0026quot;). I recommend you only files in the same directory as your Java program, until you become very comfortable with Files. String getName() long lastModified(): Return modification time, in unusual units. boolean isDirectory() File[] listFiles()  Scanner Consult the Chapter 15 PowerPoint for common functions or the official documentation for full information.\n   Inquire (all return boolean) Get Notes     hasNextLine() String nextLine() Rest of the line, starting at the current location.   hasNext() String next() One token (group of letters and numbers) until next whitespace.   hasNextInt() int nextInt() One integer.   hasNextDouble() double nextDouble() One decimal.    Miscellaneous:\n NoSuchElementException is returned when a Scanner is asked for something that it cannot provide - for example, nextInt() when the next item is not an integer.  PrintWriter  PrintWriter out = PrintWriter (file): Construct based on a File object. out.println(): Print, like usual. out.close(): Write all of the data to the disk.  Common Problems and Advice  Read error messages closely.\n Know what the error is. For example, this is a FileNotFound error caused by trying to read myfolder with Scanner, like a file.\njava.io.FileNotFoundException: myfolder (Is a directory) at java.io.FileInputStream.open0(Native Method) at java.io.FileInputStream.open(FileInputStream.java:195) at java.io.FileInputStream.\u0026lt;init\u0026gt;(FileInputStream.java:138) at java.util.Scanner.\u0026lt;init\u0026gt;(Scanner.java:611) from a File? Know what File causes it.\n from a Scanner? Know exactly what input causes the problem. Print lots! For example, this error comes from trying to get the next() item when there is nothing more available.\njava.util.NoSuchElementException at java.util.Scanner.throwFor(Scanner.java:862) at java.util.Scanner.next(Scanner.java:1371)  Make sure you only call listFiles on a File that is a directory.\n Reading a directory like a file will give you a FileNotFound or permissions error.\n Listing the files in a file that is not a directory will return null but not give an error. This is dangerous because you cannot loop through the returned array (since nothing is created).\n You can get very unusual error messages if you start recursively examining a folder that contains your system files. Make folders especially for testing.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/proj/battleship/model/",
+	"uri": "http://wy-cs.info/intermediate-cs/battleship/model/",
 	"title": "Battleship Model",
 	"tags": [],
 	"description": "Play battleship on paper to develop the model.",
 	"content": " The process for developing a model is always the same:\n Background knowledge: understand the rules and decide what you want your game to look like when you play it. We will play Battleship on paper. Draw at least three scenes from different stages of the game. In this case, you will want more \u0026ndash; include a win screen, a lose screen, and three others. List the information necessary to draw the scenes. Write down the model you will use.  Step 1: Battleship on paper  Make two 8x8 grids, one for your ships and one for your attacks on the opponent.\n Number the rows and columns like a computer screen, beginning with (0,0) in the upper left.\n Place your ships. Each ship can go either horizontally or vertically. The number and size of ships varies in different versions of the game. Today we will use this list:\n Aircraft carrier (5 squares) Battleship (4 squares) Cruiser (3 squares) Destroyer (Two, each 2 squares) Submarine (1 square)  Play at least ten rounds with a partner. Keep going until at least one ship is sunk.\n  Step 2: Develop the model For developing the model we will think about only two ships. Later you can add the rest.\n Draw five different situations, including a win and lose end game. List information you need to draw those situations. Discuss what information must be remembered (the \u0026ldquo;independent variables\u0026rdquo;) and what can be computed (the \u0026ldquo;dependent variables\u0026rdquo;). Write the model that corresponds to each one of your scenes. Save this paper! Check in your work and don\u0026rsquo;t lose it.  Step 3: Check your model  How do you represent one ship? How do you represent one shot fired?  Interesting variations You can explore these ideas later in your game.\n Some games allow you to shoot multiple times in one turn: one shot for each un-sunk ship you have.  "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/proj/battleship/",
-	"title": "Battleship",
-	"tags": [],
-	"description": "The classic Battleship game, one player version.",
-	"content": "The game of Battleship is a classic game from the early 20th Century in which you try to guess the locations of your opponent\u0026rsquo;s ships in a grid.\nYou may be able to play Battleship online but do not waste much time doing that kind of research. Playing on paper is better for developing your understanding of what information needs to be tracked (the model).\n Battleship Model Play battleship on paper to develop the model.\n  Battleship Examples An example of how to use the model you defined.\n  Battleship Outline Game logic, draw handler, mouse handler.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/q3review/classes-more-1/",
@@ -378,18 +371,11 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/proj/universe/u-mini-proj/",
+	"uri": "http://wy-cs.info/intermediate-cs/universe/u-mini-proj/",
 	"title": "Universe Mini Projects",
 	"tags": [],
 	"description": "Short projects to get used to the Universe code.",
 	"content": "These short projects (1-2 days) will help you get used to writing code using the Universe.\n Color: set everyone\u0026rsquo;s color to yours. Count: add your own number to the total, display your number in a small box and the total big on the screen.\n  Color Strip. Modify the color program from above so that the model is a list of colors and hitting a key adds your color to the start of the list. Draw either the whole list of colors or the first 10.\n  Spinning. Each world has a separate image. Only one image spins at a time. When you hit a key in a window, that world\u0026rsquo;s image starts spinning and the other window(s) stop.\n Chase. Each world has one image that it controls with the mouse. Hitting a key makes the mouse inactive for about one second. (Use a tick handler to reactivate.) I used a colored bar to indicate whether the window is active or not.\n     "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/proj/universe/",
-	"title": "Universe",
-	"tags": [],
-	"description": "Make multi-player, multi-computer games in Racket.",
-	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Spin Take turns making an image spin.\n  Universe Resources Tutorials on the Universe.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/java-calendar/",
@@ -406,7 +392,7 @@
 	"content": "  Count the number of lines in a file. Count the number of words in a file. Count the number of characters in a file. Find the sum of all of the integers in a file. Print out the file with line numbers in front of each line. Where\u0026rsquo;s Waldo? Create a file called \u0026ldquo;waldo.txt\u0026rdquo; that consists of 10000 lines of text. Each line should have 10 random integers from 0 to 9999. Except that there is a 0.1% chance that a given line will instead have all of the same integer. Find Waldo Read a file called \u0026ldquo;waldo.txt\u0026rdquo; and print out every integer that occurs 10 times on a line, just like you would make in the previous problem. Implement the \u0026ldquo;tree\u0026rdquo; command.\n. └── Risk ├── build.bat ├── build.sh ├── changelog.txt ├── compress.rkt ├── contributors.txt ├── notes.txt ├── PlannedAdditions.txt ├── README.md └── src ├── dice-functs.rkt ├── ellipse.rkt ├── fonts │ └── Roboto-Light.ttf ├── graph.rkt ├── hit-box-determiner.rkt ├── imgs │ ├── 6ca.jpg │ ├── board.png │ ├── cardico.png │ ├── close.png etc you get the idea  More Practice Additional exercises\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/proj/battleship/examples/",
+	"uri": "http://wy-cs.info/intermediate-cs/battleship/examples/",
 	"title": "Battleship Examples",
 	"tags": [],
 	"description": "An example of how to use the model you defined.",
@@ -571,7 +557,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  Universe modified Thu 04-26  Battleship Examples modified Mon 04-16  Battleship Outline modified Mon 04-16  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Projects   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  Battleship Examples modified Mon 04-16  Battleship Outline modified Mon 04-16  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -602,7 +588,7 @@
 	"content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:\n Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form \u0026hellip; or email me.\nPhilosophy I aim to create an equitable challenge for everyone in my class. I want to provide everyone in the class meaningful work experiences at a manageable but challenging intellectual level. I may give the same credit for different actual assignments to accomplish this goal.\nThe student side of this equitable challenge is that I expect everyone to work on computer science 100% of the time in class. This applies even if someone is finished with the current assignment or has been absent for a week. I have a shelf full of books available for advanced or catch-up work.\nI expect everyone to take my suggestions for improving their work seriously. Computer science is an art as well as a science. Polish good habits, eradicate bad ones. Please admit if you cling to unproductive habits and work honestly to change them.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    Some grade should be updated every week. Every grade category except final exam should be updated every three weeks. Edline will have all raw score information. Only scaled (\u0026ldquo;curved\u0026rdquo;) scores will be posted on the CPS Gradebook.\nWe use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nGrading and attendance You must be present in order to learn from the class.\n   Absences Consequence     5 Call and email parent.   10 One letter grade (-10 point) deduction to final grade.   15 Additional -5 point deduction to final percentage.   20 Additional -5 point deduction to final percentage.   25 Failure in class    Three tardies more than 5 min late count as one absence.\nAny absence with a note from a medical doctor does not count toward the total absences. (Please make sure I see a copy of the note!) All other absences count. Please discuss necessary accomodations for IEP/504 in the first two weeks of class if I am not aware of them.\nDifferentiation All assigned work is expected to be completed.\nThere is no extra credit without regular credit. The way to improve a grade is through consistent effort, seeking help when needed, and allocating enough effective work time outside of class. Please track your work in your interactive notebook so we can discuss how to make your time more effective.\nAdvanced students may be allowed to replace standard work with projects, but all exceptions will be accompanied by a written contract detailing what other work will be completed to replace the main line coursework. In at most two weeks, the project is due and will receive a grade. Students are still responsible for standard material.\nEssentials of involvement As much as we can, we let students manage their own learning. Occasionally parents should be involved more at home. Sometimes adults need to talk directly. Please contact me directly if you see (or are being told) that grades are not up to date or your student is exempt from the work for any reason and does not have written documentation.\nDaily Materials  Notebook: A thin spiral or composition notebook dedicated to computer science is required for planning, reflection, and documenting progress.\n USB Flash Drive: A small USB drive to store files. (Any size is fine. Code is small.)\n  IEP and 504 plans will be followed Any student with a 504 or IEP will receive all accomodations listed. Please make sure the teacher has received a copy of the plan at the start of the year (especially if your schedule has changed, sometimes the paperwork follows too slowly).\nState standards Computer Science Teachers Association standards applicable in this class:\n 4.2.1 Computational Thinking (CT) 4.2.2 Collaboration (CL) 4.2.3 Computing Practice and Programming (CPP) See individual unit plans for more details.  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/proj/universe/u-color/",
+	"uri": "http://wy-cs.info/intermediate-cs/universe/u-color/",
 	"title": "Universe Color",
 	"tags": [],
 	"description": "Change the color on all of the clients by hitting a key.",
@@ -616,7 +602,7 @@
 	"content": " Given the name of a folder (directory), find all of the files inside that directory that have either:\n more than 50 lines; or a number on the first line.  You may assume that the number on the first line is separated by whitespace from the other characters. You need only handle lines of these forms:\n211 S. Laflin St Room 306 I ate 4 cookies. There is a zip file containing a folder of test cases that you may use to test your code.\nQuestions and Problems  Is it required to look inside folders (directories) that you find? No. NullPointerException: Commonly caused by attempting to list the files of something that is not a directory. Generic debugging advice: Add print statements so you can see what is going on!  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/proj/battleship/outline/",
+	"uri": "http://wy-cs.info/intermediate-cs/battleship/outline/",
 	"title": "Battleship Outline",
 	"tags": [],
 	"description": "Game logic, draw handler, mouse handler.",
@@ -756,7 +742,7 @@
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/proj/universe/u-spin/",
+	"uri": "http://wy-cs.info/intermediate-cs/universe/u-spin/",
 	"title": "Universe Spin",
 	"tags": [],
 	"description": "Take turns making an image spin.",
@@ -1106,11 +1092,11 @@
 	"content": " You may use the Picturing Programs textbook and the blog to look up functions th at you do not know. Do not consult any other programs written by you or anyone else. (No old homework, Stack Overflow, etc.)\nUse define/contract and have at least two check expects for each function.\n reciprocal-squares: number(start) number(end) -\u0026gt; number. Find the sum of 1/n^2 for every n between start and end (including both).\n   start end sum     1 1 1.0   1 2 1.25   1 3 1.36111\u0026hellip;    blank-vowels: string(word) -\u0026gt; string. Change every vowel (a,e,i,o,u) to an underscore (_). Example: (blank-vowels \u0026quot;elephant\u0026quot;) =\u0026gt; \u0026quot;_l_ph_nt\u0026quot;.\n  Period 5,7 Only  circle-circle: number(big-radius) number(little-radius) number(turn-angle) number(n) -\u0026gt; image. Produce n circles of size little-radius around the perimeter of a circle of size big-radius. In between each, have a central angle of turn-angle.\n  (circle-circle 100 20 45 8)    (circle-circle 120 15 30 6)     Period 1 Only  hollow-diagonal: number(radius) number(n): Produce n circles of the given radius along a diagonal.\n (hollow-diagonal 20 5)   \n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/proj/universe/u-resources/",
+	"uri": "http://wy-cs.info/intermediate-cs/universe/u-resources/",
 	"title": "Universe Resources",
 	"tags": [],
-	"description": "Tutorials on the Universe.",
-	"content": " Universe in Racket Documentation. See especially Section 2.4.7, the examples, where a ball-bouncing example is developed.\n Universe tutorial by Sub\n  "
+	"description": "Reference material and tutorials on the Universe.",
+	"content": " This page contains only the bare-bones information.\n  Racket Code   generic-server-v1.rkt  (1 kB)     Generic server (see attachment). (make-package model message) to update model and send a message. A main function start-big-bang to launch the windows.\n(define (start-big-bang my-name initial-model) (big-bang initial-model (on-draw draw-h) (on-receive receive-h) (on-key key-h) (register LOCALHOST) (name my-name) (close-on-stop true))) The launch-many-worlds command to quickly and easily start several windows.\n(launch-many-worlds (start-big-bang \u0026#34;whale\u0026#34; (make-model \u0026#34;blue\u0026#34; \u0026#34;gray\u0026#34;)) (start-big-bang \u0026#34;squirrel\u0026#34; (make-model \u0026#34;red\u0026#34; \u0026#34;yellow\u0026#34;)))  Additional Resources  Universe in Racket Documentation. See especially Section 2.4.7, the examples, where a ball-bouncing example is developed.\n Universe tutorial by Sub\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/interlude-feb/bloopers/",
@@ -1379,11 +1365,18 @@
 	"content": "  22. List Intro An introduction to lists in Racket.\n  22b. List Exercises 1 Introductory exercises with lists.\n  22b. List Exercises 2 Vocabulary for list functions. More practice problems.\n  22b. Bubble Wrap Random size circles all around the screen. Circles disappear when you click on them.\n  22b. List Exercises 3 Randomly generate points on a parabola and graph them in people coordinates.\n  22b. List Exercises 4 Quiz Quiz on lists.\n  22. Additional Resources In addition to Chapters 22-23 in Picturing Programs, students in the past have found these resource useful: How to Design Programs, Part II. Pairs and Lists in the Racket Guide.   "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/proj/",
-	"title": "23. Projects",
+	"uri": "http://wy-cs.info/intermediate-cs/battleship/",
+	"title": "23. Battleship",
 	"tags": [],
-	"description": "Projects to develop your ability to manage complexity.",
-	"content": "Learning to manage complexity through planning and unit testing (check-expect) is a very important skill for you to acquire. These projects will help you develop as a programmer.\n Battleship The classic Battleship game, one player version.\n  Universe Make multi-player, multi-computer games in Racket.\n  "
+	"description": "The classic Battleship game, one player version.",
+	"content": "The game of Battleship is a classic game from the early 20th Century in which you try to guess the locations of your opponent\u0026rsquo;s ships in a grid.\nYou may be able to play Battleship online but do not waste much time doing that kind of research. Playing on paper is better for developing your understanding of what information needs to be tracked (the model).\n Battleship Model Play battleship on paper to develop the model.\n  Battleship Examples An example of how to use the model you defined.\n  Battleship Outline Game logic, draw handler, mouse handler.\n  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/universe/",
+	"title": "24. Universe",
+	"tags": [],
+	"description": "Make multi-player, multi-computer games in Racket.",
+	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Spin Take turns making an image spin.\n  Universe Resources Reference material and tutorials on the Universe.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1915,7 +1908,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  Universe modified Thu 04-26  Battleship Examples modified Mon 04-16  Battleship Outline modified Mon 04-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  Battleship Examples modified Mon 04-16  Battleship Outline modified Mon 04-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

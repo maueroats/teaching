@@ -93,7 +93,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-overview/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/universe/u-overview/</loc>
     <lastmod>2018-04-30T09:22:06-05:00</lastmod>
   </url>
   
@@ -103,13 +103,8 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/battleship/model/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/battleship/model/</loc>
     <lastmod>2018-04-10T21:45:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/battleship/</loc>
-    <lastmod>2018-04-10T21:45:16-05:00</lastmod>
   </url>
   
   <url>
@@ -273,13 +268,8 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-mini-proj/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/universe/u-mini-proj/</loc>
     <lastmod>2018-04-30T09:28:07-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/universe/</loc>
-    <lastmod>2018-04-26T12:45:48-05:00</lastmod>
   </url>
   
   <url>
@@ -293,7 +283,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/battleship/examples/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/battleship/examples/</loc>
     <lastmod>2018-04-16T15:05:11-05:00</lastmod>
   </url>
   
@@ -433,7 +423,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-color/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/universe/u-color/</loc>
     <lastmod>2018-04-30T11:11:58-05:00</lastmod>
   </url>
   
@@ -443,7 +433,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/battleship/outline/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/battleship/outline/</loc>
     <lastmod>2018-04-16T15:05:11-05:00</lastmod>
   </url>
   
@@ -543,7 +533,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-spin/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/universe/u-spin/</loc>
     <lastmod>2018-04-30T10:22:34-05:00</lastmod>
   </url>
   
@@ -793,7 +783,7 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/universe/u-resources/</loc>
+    <loc>http://wy-cs.info/intermediate-cs/universe/u-resources/</loc>
     <lastmod>2018-04-30T08:58:00-05:00</lastmod>
   </url>
   
@@ -988,8 +978,13 @@
   </url>
   
   <url>
-    <loc>http://wy-cs.info/intermediate-cs/proj/</loc>
-    <lastmod>2018-04-10T21:11:34-05:00</lastmod>
+    <loc>http://wy-cs.info/intermediate-cs/battleship/</loc>
+    <lastmod>2018-04-10T21:45:16-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wy-cs.info/intermediate-cs/universe/</loc>
+    <lastmod>2018-04-26T12:45:48-05:00</lastmod>
   </url>
   
   <url>

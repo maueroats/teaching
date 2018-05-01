@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>23. Projects :: WY Computer Science</title>
+<title>Battleship Model :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/proj/">
+  <body data-url="/intermediate-cs/battleship/model/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1766,84 +1766,76 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/proj/" class="dd-item parent active haschildren
+    <li data-nav-id="/intermediate-cs/battleship/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/proj/">23. Projects</a>
+      <a href="/intermediate-cs/battleship/">23. Battleship</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/proj/battleship/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/intermediate-cs/proj/battleship/">Battleship</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/intermediate-cs/proj/battleship/model/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/battleship/model/" class="dd-item active">
         <div>
-          <a href="/intermediate-cs/proj/battleship/model/">
+          <a href="/intermediate-cs/battleship/model/">
             Battleship Model
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/battleship/examples/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/battleship/examples/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/battleship/examples/">
+          <a href="/intermediate-cs/battleship/examples/">
             Battleship Examples
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/battleship/outline/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/battleship/outline/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/battleship/outline/">
+          <a href="/intermediate-cs/battleship/outline/">
             Battleship Outline
           </a>
         </div>
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/proj/universe/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/universe/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/proj/universe/">Universe</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/universe/">24. Universe</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-overview/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-overview/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-overview/">
+          <a href="/intermediate-cs/universe/u-overview/">
             Universe Overview
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-mini-proj/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-mini-proj/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-mini-proj/">
+          <a href="/intermediate-cs/universe/u-mini-proj/">
             Universe Mini Projects
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-color/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-color/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-color/">
+          <a href="/intermediate-cs/universe/u-color/">
             Universe Color
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-spin/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-spin/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-spin/">
+          <a href="/intermediate-cs/universe/u-spin/">
             Universe Spin
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/proj/universe/u-resources/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-resources/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/proj/universe/u-resources/">
+          <a href="/intermediate-cs/universe/u-resources/">
             Universe Resources
           </a>
         </div>
-    </li>
-        </ul>
     </li>
         </ul>
     </li>
@@ -2081,7 +2073,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > 23. Projects
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/battleship/'>23. Battleship</a> > Battleship Model
+
+ 
 
  
 
@@ -2094,7 +2091,17 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#step-1-battleship-on-paper">Step 1: Battleship on paper</a></li>
+<li><a href="#step-2-develop-the-model">Step 2: Develop the model</a></li>
+<li><a href="#step-3-check-your-model">Step 3: Check your model</a></li>
+<li><a href="#interesting-variations">Interesting variations</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2104,7 +2111,7 @@
 
 <div id="body-inner">
   
-    <h1>23. Projects</h1>
+    <h1>Battleship Model</h1>
   
 
 
@@ -2112,31 +2119,68 @@
     
     
     
+    
 
-<p>Learning to manage complexity through planning and unit testing
-(<code>check-expect</code>) is a very important skill for you to acquire.
-These projects will help you develop as a programmer.</p>
+<p>The process for developing a model is always the same:</p>
 
+<ol>
+<li>Background knowledge: understand the rules and decide what you want
+your game to look like when you play it. We will play <a href="https://en.wikipedia.org/wiki/File:Battleships_Paper_Game.svg">Battleship on paper</a>.</li>
+<li>Draw at least three scenes from different stages of the game. In
+this case, you will want more &ndash; include a win screen, a lose
+screen, and three others.</li>
+<li>List the information necessary to draw the scenes.</li>
+<li>Write down the model you will use.</li>
+</ol>
 
+<h2 id="step-1-battleship-on-paper">Step 1: Battleship on paper</h2>
 
-<ul class="children children-li">
+<ul>
+<li><p>Make two 8x8 grids, one for your ships and one for your attacks on the opponent.</p></li>
 
-<span><li>
-		<a href="/intermediate-cs/proj/battleship/" >Battleship</a></li>
-<p>The classic Battleship game, one player version.</p>
-</span>
+<li><p>Number the rows and columns like a computer screen, beginning with
+(0,0) in the upper left.</p></li>
 
-<span><li>
-		<a href="/intermediate-cs/proj/universe/" >Universe</a></li>
-<p>Make multi-player, multi-computer games in Racket.</p>
-</span>
+<li><p>Place your ships. Each ship can go either horizontally or vertically. The number and size of ships varies in different versions of the game. Today we will use this list:</p>
+
+<ul>
+<li>Aircraft carrier (5 squares)</li>
+<li>Battleship (4 squares)</li>
+<li>Cruiser (3 squares)</li>
+<li>Destroyer (Two, each 2 squares)</li>
+<li>Submarine (1 square)</li>
+</ul></li>
+
+<li><p>Play at least ten rounds with a partner. Keep going until at least one ship is sunk.</p></li>
 </ul>
 
+<h2 id="step-2-develop-the-model">Step 2: Develop the model</h2>
 
+<p>For developing the model we will think about only two ships. Later you can add the rest.</p>
 
+<ul>
+<li>Draw five different situations, including a win and lose end game.</li>
+<li>List information you need to draw those situations.</li>
+<li>Discuss what information must be <em>remembered</em> (the &ldquo;independent variables&rdquo;) and what can be <em>computed</em> (the &ldquo;dependent variables&rdquo;).</li>
+<li>Write the model that corresponds to each one of your scenes.</li>
+<li>Save this paper! Check in your work and don&rsquo;t lose it.</li>
+</ul>
 
+<h2 id="step-3-check-your-model">Step 3: Check your model</h2>
 
+<ul>
+<li>How do you represent one ship?</li>
+<li>How do you represent one shot fired?</li>
+</ul>
 
+<h2 id="interesting-variations">Interesting variations</h2>
+
+<p>You can explore these ideas later in your game.</p>
+
+<ul>
+<li>Some games allow you to shoot multiple times in one turn: one shot
+for each un-sunk ship you have.</li>
+</ul>
 
 
     
@@ -2148,8 +2192,8 @@ These projects will help you develop as a programmer.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch22b/list-resources/" title="22. Additional Resources"> <i class="fa fa-chevron-left"></i><label>22. Additional Resources</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/proj/battleship/" title="Battleship" style="margin-right: 0px;"><label>Battleship</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/battleship/" title="23. Battleship"> <i class="fa fa-chevron-left"></i><label>23. Battleship</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/battleship/examples/" title="Battleship Examples" style="margin-right: 0px;"><label>Battleship Examples</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
