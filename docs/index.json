@@ -557,7 +557,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Universe Taking Turns modified Wed 05-02  Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  Battleship Outline modified Mon 04-16  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Universe Quiz 1 modified Mon 05-07  Universe Taking Turns modified Wed 05-02  Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -908,6 +908,13 @@
 	"tags": [],
 	"description": "Review exercises for class design.",
 	"content": " MurderBot  A MurderBot is a kind of StrategyLayer with two additional abilities:\n public void stab(): place two beepers public void flee(): move one step  The KillerStrategy is a kind of Strategy that makes the robot it controls stab the first time the strategy is invoked (via doStrat, which will call doIt). Every subsequent time the robot is told to doStrat(), it should flee.\n Make sure the same doStrat() call causes one stab or one flee each time.\n Test your MurderBot with 8 calls to doStrat().\n Challenge yourself: this can be done without variables (except what is built into the StrategyLayer).\n Advanced: use the techniques the Spy in Section 4.8 to cause the stab action to find another robot on the same corner as the MurderBot and turn it off.\n  ViciousMurderBot Create a kind of MurderBot that places six beepers when it is told to stab, instead of just two.\n"
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/universe/u-quiz-1/",
+	"title": "Universe Quiz 1",
+	"tags": [],
+	"description": "Quiz on week one of the Universe teachpack.",
+	"content": " Every window has a different list of numbers at the start. Show the sum of the list of numbers and the total, like this:\n20 = 8 + 7 + 5 When a person hits a number key from the top of the keyboard (\u0026quot;1\u0026quot;,\u0026quot;2\u0026quot;,\u0026hellip;,\u0026quot;9\u0026quot;, \u0026quot;0\u0026quot;), that number is added to the right hand side of the sum, and the correct new total is displayed. For example, when the \u0026ldquo;4\u0026rdquo; key is hit, the display should show:\n24 = 8 + 7 + 5 + 4 Advice  Make sure the server is running. Correct code will do nothing without a server.  Challenges  Allow the entry of multi-digit numbers which are then sent by hitting space.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/50-fibsum/",
@@ -1383,7 +1390,7 @@
 	"title": "24. Universe",
 	"tags": [],
 	"description": "Make multi-player, multi-computer games in Racket.",
-	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Taking Turns An introduction to taking turns when the universe broadcasts all messages to every client.\n  Universe Spin Take turns making an image spin.\n  Universe Resources Reference material and tutorials on the Universe.\n  "
+	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Taking Turns An introduction to taking turns when the universe broadcasts all messages to every client.\n  Universe Spin Take turns making an image spin.\n  Universe Quiz 1 Quiz on week one of the Universe teachpack.\n  Universe Resources Reference material and tutorials on the Universe.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1915,7 +1922,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Universe Taking Turns modified Wed 05-02  Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  Battleship Outline modified Mon 04-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Universe Quiz 1 modified Mon 05-07  Universe Taking Turns modified Wed 05-02  Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

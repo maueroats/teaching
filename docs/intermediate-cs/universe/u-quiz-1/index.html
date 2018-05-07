@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>12. Book Exercises :: WY Computer Science</title>
+<title>Universe Quiz 1 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/jm/ch12/12-ex/">
+  <body data-url="/intermediate-cs/universe/u-quiz-1/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,11 +64,10 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -517,11 +516,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -583,14 +581,13 @@
       <a href="/ap-cs/jm/interlude-jan/">Interlude</a>
       </div>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/ch12/">12. Arrays</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/ch12/">12. Arrays</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/jm/ch12/12-ex/" class="dd-item active">
+      <li data-nav-id="/ap-cs/jm/ch12/12-ex/" class="dd-item">
         <div>
           <a href="/ap-cs/jm/ch12/12-ex/">
             12. Book Exercises
@@ -849,10 +846,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
@@ -1797,10 +1795,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/universe/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/universe/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/universe/">24. Universe</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/universe/">24. Universe</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/universe/u-overview/" class="dd-item">
@@ -1838,7 +1837,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/universe/u-quiz-1/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/universe/u-quiz-1/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/universe/u-quiz-1/">
             Universe Quiz 1
@@ -2091,12 +2090,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch12/'>12. Arrays</a> > 12. Book Exercises
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/universe/'>24. Universe</a> > Universe Quiz 1
 
  
 
@@ -2115,9 +2109,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#exercise-23-rotate">Exercise 23: Rotate</a></li>
-<li><a href="#exercise-24-add-digits">Exercise 24: Add Digits</a></li>
-<li><a href="#exercise-25-average-two-largest">Exercise 25: Average Two Largest</a></li>
+<li><a href="#advice">Advice</a></li>
+<li><a href="#challenges">Challenges</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2130,7 +2123,7 @@
 
 <div id="body-inner">
   
-    <h1>12. Book Exercises</h1>
+    <h1>Universe Quiz 1</h1>
   
 
 
@@ -2140,49 +2133,24 @@
     
     
 
-<p>Chapter 12, exercises 23, 24, and 25. Write tests to prove that your work is correct.
-Those exercises, restated here, are:</p>
+<p>Every window has a different list of numbers at the start.
+Show the sum of the list of numbers and the total, like this:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">20 = 8 + 7 + 5</pre></div>
+<p>When a person hits a number key from the top of the keyboard (<code>&quot;1&quot;</code>,<code>&quot;2&quot;</code>,&hellip;,<code>&quot;9&quot;</code>, <code>&quot;0&quot;</code>), that
+number is added to the right hand side of the sum, and the correct new total is displayed.
+For example, when the &ldquo;4&rdquo; key is hit, the display should show:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">24 = 8 + 7 + 5 + 4</pre></div>
+<h2 id="advice">Advice</h2>
 
-<h2 id="exercise-23-rotate">Exercise 23: Rotate</h2>
+<ul>
+<li>Make sure the server is running. Correct code will do nothing without a server.</li>
+</ul>
 
-<ol>
-<li><code>public static int[] rotateLeft(int[] a)</code></li>
-<li><code>public static int[] rotateRight(int[] a)</code></li>
-<li><code>public static int[] rotate(int[] a, int amount)</code>: Rotate by <code>amount</code> to the right, so to the left when amount is negative.</li>
-</ol>
+<h2 id="challenges">Challenges</h2>
 
-<h2 id="exercise-24-add-digits">Exercise 24: Add Digits</h2>
-
-<ol>
-<li><p>Add two positive numbers given by arrays representing the individual digits.</p>
-
-<p><code>public static int[] add(int[] a, int[] b)</code></p>
-
-<p>Example 923+94=1017:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">@Test
-public void test_add_1() {
-    int[] a = {9,2,3};
-    int[] b = {9,4};
-    int[] ans = {1,0,1,7};
-    assertArrayEquals(ans, add(a,b));
-}</pre></div></li>
-</ol>
-
-<h2 id="exercise-25-average-two-largest">Exercise 25: Average Two Largest</h2>
-
-<ol>
-<li><p>Find the average of the greatest two elements in an array.</p>
-
-<p><code>public static double largestAverage(int [] data)</code></p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">@Test
-public void test_largest_average() {
-    int[] data = {100,40,90,30};
-    assertEquals(95, largestAverage(data), 0.1);
-
-    int[] fdata = {-1000,-30,-31,-80};
-    assertEQuals(-30.5, largestAverage(fdata), 0.1);
-}</pre></div></li>
-</ol>
+<ul>
+<li>Allow the entry of multi-digit numbers which are then sent by hitting space.</li>
+</ul>
 
 
     
@@ -2194,8 +2162,8 @@ public void test_largest_average() {
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/jm/ch12/" title="12. Arrays"> <i class="fa fa-chevron-left"></i><label>12. Arrays</label></a>
-    <a class="nav nav-next" href="/ap-cs/jm/ch12/12-chomp/" title="12. Chomp" style="margin-right: 0px;"><label>12. Chomp</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/universe/u-spin/" title="Universe Spin"> <i class="fa fa-chevron-left"></i><label>Universe Spin</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/universe/u-resources/" title="Universe Resources" style="margin-right: 0px;"><label>Universe Resources</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
