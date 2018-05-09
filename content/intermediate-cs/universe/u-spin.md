@@ -2,7 +2,8 @@
 title: "Universe Spin"
 date: 2018-04-30T10:22:34-05:00
 weight: 40
-draft: false
+# DRAFT DRAFT DRAFT DRAFT DRAFT
+draft: true
 #type: slide
 #theme: white
 description: "Take turns making an image spin."

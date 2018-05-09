@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Universe Spin :: WY Computer Science</title>
+<title>Universe Mistakes :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/universe/u-spin/">
+  <body data-url="/intermediate-cs/universe/u-mistakes/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1830,17 +1830,17 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/universe/u-spin/" class="dd-item active">
-        <div>
-          <a href="/intermediate-cs/universe/u-spin/">
-            Universe Spin
-          </a>
-        </div>
-    </li>
       <li data-nav-id="/intermediate-cs/universe/u-quiz-1/" class="dd-item">
         <div>
           <a href="/intermediate-cs/universe/u-quiz-1/">
             Universe Quiz 1
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/universe/u-mistakes/" class="dd-item active">
+        <div>
+          <a href="/intermediate-cs/universe/u-mistakes/">
+            Universe Mistakes
           </a>
         </div>
     </li>
@@ -2090,7 +2090,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/universe/'>24. Universe</a> > Universe Spin
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/universe/'>24. Universe</a> > Universe Mistakes
 
  
 
@@ -2109,9 +2109,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#big-bang-model">Big-bang model</a></li>
-<li><a href="#universe-model">Universe model</a></li>
-<li><a href="#handlers">Handlers</a></li>
+<li><a href="#advice">Advice</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2124,7 +2122,7 @@
 
 <div id="body-inner">
   
-    <h1>Universe Spin</h1>
+    <h1>Universe Mistakes</h1>
   
 
 
@@ -2134,30 +2132,30 @@
     
     
 
-<p>Each world has its own image which spins. Hitting a key makes that world&rsquo;s image start spinning and the other worlds&rsquo; images stop spinning.</p>
-
-<h2 id="big-bang-model">Big-bang model</h2>
-
-<p>We will remember:</p>
-
 <ul>
-<li>our image</li>
-<li>our world number (1, 2, &hellip;)</li>
-<li>the number of the world that should be spinning</li>
+<li><p>A <code>package</code> must have the entire model as its first argument. You can&rsquo;t put part of the model in the first argument and another part in the second argument (where the message goes).</p></li>
+
+<li><p>Do not write recursive functions that take a <code>model</code> as an input.
+It is a bad idea. Your code gets more complicated and there is no benefit.
+Instead, write a helper function that takes in the list part of the model
+(along with any other needed information).</p></li>
 </ul>
 
-<h2 id="universe-model">Universe model</h2>
-
-<p>The message will be a single number indicating which world should spin.</p>
-
-<h2 id="handlers">Handlers</h2>
+<h2 id="advice">Advice</h2>
 
 <ul>
-<li>draw-handler: model -&gt; image</li>
-<li>tick-handler: model -&gt; model</li>
-<li>key-handler: model key -&gt; package</li>
-<li>message-handler: model message -&gt; model</li>
-<li>main: string(name) image number(our-world-number) -&gt; runs big-bang</li>
+<li><p>Send only the minimum amount of information that needs to be sent.</p></li>
+
+<li><p>Split actions between local key/mouse/tick handlers and the receive handler.</p>
+
+<ul>
+<li><p>changes affecting only one world&rsquo;s model should be
+done in a key or mouse handler (or the first argument of
+<code>make-package</code>)</p></li>
+
+<li><p>changes in every world&rsquo;s model should be done in the receive
+handler</p></li>
+</ul></li>
 </ul>
 
 
@@ -2170,8 +2168,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/universe/u-take-turns/" title="Universe Taking Turns"> <i class="fa fa-chevron-left"></i><label>Universe Taking Turns</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/universe/u-quiz-1/" title="Universe Quiz 1" style="margin-right: 0px;"><label>Universe Quiz 1</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/universe/u-quiz-1/" title="Universe Quiz 1"> <i class="fa fa-chevron-left"></i><label>Universe Quiz 1</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/universe/u-resources/" title="Universe Resources" style="margin-right: 0px;"><label>Universe Resources</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

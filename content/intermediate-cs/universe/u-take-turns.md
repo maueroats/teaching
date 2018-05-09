@@ -12,7 +12,7 @@ description: "An introduction to taking turns when the universe broadcasts all m
 
 2. **Colored worlds**. The world you hit a key in turns green. All other worlds turn yellow. Still show each world's identity.
 
-3. **Active stamping**. Add on to your _colored worlds_ program. When you click in the active world, it shows a solid circle. Inactive worlds show an outline circle. (Basic: only one circle at a time, no control over where it appears, disappears when de-/activating. Challenge: show all circles, centered at the location of the click.
+3. **Active stamping**. Add on to your _colored worlds_ program. Hit a key to activate a world. Only one world is active at a time. When you click in the active world, it shows a solid circle. Inactive worlds show an outline circle. (Basic: only one circle at a time, no control over where it appears, disappears when de-/activating. Challenge: show all circles, centered at the location of the click.
 
 4. [Spinning]({{% relref "u-spin" %}}). Each world has a separate image. Only one image spins at a time. When you hit a key in a window, that world's image starts spinning and the other window(s) stop.
 

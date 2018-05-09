@@ -557,7 +557,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Universe Quiz 1 modified Mon 05-07  Universe Taking Turns modified Wed 05-02  Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Universe Mistakes modified Wed 05-09  Universe Quiz 1 modified Mon 05-07  Universe Taking Turns modified Wed 05-02  Universe Color modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -725,7 +725,7 @@
 	"title": "Universe Taking Turns",
 	"tags": [],
 	"description": "An introduction to taking turns when the universe broadcasts all messages to every client.",
-	"content": " Labeled worlds. Give each world a unique identity (a string name or a number). Show the world\u0026rsquo;s identity in the upper left corner. When you hit a key in a world, every world also shows the identity of the world you clicked in.\n Colored worlds. The world you hit a key in turns green. All other worlds turn yellow. Still show each world\u0026rsquo;s identity.\n Active stamping. Add on to your colored worlds program. When you click in the active world, it shows a solid circle. Inactive worlds show an outline circle. (Basic: only one circle at a time, no control over where it appears, disappears when de-/activating. Challenge: show all circles, centered at the location of the click.\n Spinning. Each world has a separate image. Only one image spins at a time. When you hit a key in a window, that world\u0026rsquo;s image starts spinning and the other window(s) stop.\n Chase. Each world has one image that it controls with the mouse. Hitting a key makes the mouse inactive for about one second. (Use a tick handler to reactivate.) I used a colored bar to indicate whether the window is active or not.\n     You cannot send a posn as a message for technical reasons. Reasonable replacements: (define-struct msg (x y)) or use (list x y) for the message.\n "
+	"content": " Labeled worlds. Give each world a unique identity (a string name or a number). Show the world\u0026rsquo;s identity in the upper left corner. When you hit a key in a world, every world also shows the identity of the world you clicked in.\n Colored worlds. The world you hit a key in turns green. All other worlds turn yellow. Still show each world\u0026rsquo;s identity.\n Active stamping. Add on to your colored worlds program. Hit a key to activate a world. Only one world is active at a time. When you click in the active world, it shows a solid circle. Inactive worlds show an outline circle. (Basic: only one circle at a time, no control over where it appears, disappears when de-/activating. Challenge: show all circles, centered at the location of the click.\n Spinning. Each world has a separate image. Only one image spins at a time. When you hit a key in a window, that world\u0026rsquo;s image starts spinning and the other window(s) stop.\n Chase. Each world has one image that it controls with the mouse. Hitting a key makes the mouse inactive for about one second. (Use a tick handler to reactivate.) I used a colored bar to indicate whether the window is active or not.\n     You cannot send a posn as a message for technical reasons. Reasonable replacements: (define-struct msg (x y)) or use (list x y) for the message.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/35-num-digits/",
@@ -747,13 +747,6 @@
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
-},
-{
-	"uri": "http://wy-cs.info/intermediate-cs/universe/u-spin/",
-	"title": "Universe Spin",
-	"tags": [],
-	"description": "Take turns making an image spin.",
-	"content": " Each world has its own image which spins. Hitting a key makes that world\u0026rsquo;s image start spinning and the other worlds\u0026rsquo; images stop spinning.\nBig-bang model We will remember:\n our image our world number (1, 2, \u0026hellip;) the number of the world that should be spinning  Universe model The message will be a single number indicating which world should spin.\nHandlers  draw-handler: model -\u0026gt; image tick-handler: model -\u0026gt; model key-handler: model key -\u0026gt; package message-handler: model message -\u0026gt; model main: string(name) image number(our-world-number) -\u0026gt; runs big-bang  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch15/file-divvy/",
@@ -1078,6 +1071,13 @@
 	"content": "We learn to do math with numbers. Essential summary  Basic arithmetic\n(+ 5 3) (/ 13 7) ; thirteen divided by seven (* 11 2) (- 9 1) ; nine minus one (- 8) (quotient 21912 7) (remainder 21912 7) Exponents, square root, squaring:\n(expt 1.01 95) ; 1.01 to the 95 power is about 2.57 (sqrt 9) ; square root of 9 is three (sqr 1241) ; when you square 1241 you get 1540081 Inexact answers, checking with tolerance\n\u0026gt; (sqrt 5) ; about 2.236 #i2.23606797749979 The #i at the start of #i2.236... means that the number is an \u0026ldquo;inexact\u0026rdquo; decimal. You should never use check-expect with inexact numbers, because the inexact results can be different on different computers! Instead, use check-within.\n(check-within (sqrt 5) 2.236 0.001) Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of pi or 3.1415.\n\u0026gt; pi #i3.141592653589793 Maximum, minimum, absolute value\n(max 0 -4) ; ==\u0026gt; 0 (min 255 300) ; ==\u0026gt; 255 (abs -10) ; ==\u0026gt; 10 Getting rid of fractions. The best generic method to use is real-\u0026gt;int. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).\n(real-\u0026gt;int 0.5) (real-\u0026gt;int 1.5) (real-\u0026gt;int 2.5) (ceiling 1.2) (floor 1.7) (round 1.6)  Further Information  More Exercises 4 \n  Exercises 3 \n  Max and min slides Slideshow of exercises to learn max, min, abs, and random.\n  Randomness Making random numbers. Testing functions that use random numbers.\n  Exercises 2 Exercises working with number functions.\n  Exercises 1 Exercises.\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/universe/u-mistakes/",
+	"title": "Universe Mistakes",
+	"tags": [],
+	"description": "A list of common mistakes made when writing universe animations.",
+	"content": "  A package must have the entire model as its first argument. You can\u0026rsquo;t put part of the model in the first argument and another part in the second argument (where the message goes).\n Do not write recursive functions that take a model as an input. It is a bad idea. Your code gets more complicated and there is no benefit. Instead, write a helper function that takes in the list part of the model (along with any other needed information).\n  Advice  Send only the minimum amount of information that needs to be sent.\n Split actions between local key/mouse/tick handlers and the receive handler.\n changes affecting only one world\u0026rsquo;s model should be done in a key or mouse handler (or the first argument of make-package)\n changes in every world\u0026rsquo;s model should be done in the receive handler\n   "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/80-rec-practice-q/",
 	"title": "22a. Recursion Quiz Practice",
 	"tags": [],
@@ -1390,7 +1390,7 @@
 	"title": "24. Universe",
 	"tags": [],
 	"description": "Make multi-player, multi-computer games in Racket.",
-	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Taking Turns An introduction to taking turns when the universe broadcasts all messages to every client.\n  Universe Spin Take turns making an image spin.\n  Universe Quiz 1 Quiz on week one of the Universe teachpack.\n  Universe Resources Reference material and tutorials on the Universe.\n  "
+	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Taking Turns An introduction to taking turns when the universe broadcasts all messages to every client.\n  Universe Quiz 1 Quiz on week one of the Universe teachpack.\n  Universe Mistakes A list of common mistakes made when writing universe animations.\n  Universe Resources Reference material and tutorials on the Universe.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1922,7 +1922,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Universe Quiz 1 modified Mon 05-07  Universe Taking Turns modified Wed 05-02  Universe Color modified Mon 04-30  Universe Spin modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Universe Mistakes modified Wed 05-09  Universe Quiz 1 modified Mon 05-07  Universe Taking Turns modified Wed 05-02  Universe Color modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
