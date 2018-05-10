@@ -2109,6 +2109,7 @@
 <ul>
 <li>
 <ul>
+<li><a href="#sending-posns">Sending Posns</a></li>
 <li><a href="#additional-resources">Additional Resources</a></li>
 </ul></li>
 </ul>
@@ -2158,6 +2159,23 @@ role="alert"><section class="attachments">
             
         
     
+        
+        
+            
+                <li>
+                    <a href="http://wy-cs.info/intermediate-cs/universe/u-resources.files/posn-util-enhanced.rkt" >
+                        posn-util-enhanced.rkt
+                    </a>
+                    (0 kB)
+                </li>
+            
+        
+    
+        
+        
+            
+        
+    
 </section>
 </div>
 
@@ -2183,6 +2201,13 @@ role="alert"><section class="attachments">
     (start-big-bang &#34;squirrel&#34; (make-model &#34;red&#34; &#34;yellow&#34;)))</pre></div></li>
 </ul>
 
+<h2 id="sending-posns">Sending Posns</h2>
+
+<p>You cannot send posns without a hack. The hack is to make a separate file that contains
+a little bit of lower level Racket code and require it. This code could go in your <code>posn-util.rkt</code> file!</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    #lang racket
+    (provide (all-defined-out))
+    (define-struct posn (x y) #:prefab)</pre></div>
 <h2 id="additional-resources">Additional Resources</h2>
 
 <ul>

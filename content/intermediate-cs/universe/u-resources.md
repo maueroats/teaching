@@ -34,6 +34,15 @@ This page contains only the bare-bones information.
             (start-big-bang "whale" (make-model "blue" "gray"))
             (start-big-bang "squirrel" (make-model "red" "yellow")))
 
+## Sending Posns 
+
+You cannot send posns without a hack. The hack is to make a separate file that contains 
+a little bit of lower level Racket code and require it. This code could go in your `posn-util.rkt` file!
+
+        #lang racket
+        (provide (all-defined-out))
+        (define-struct posn (x y) #:prefab)
+
 ## Additional Resources
 
 * [Universe in Racket Documentation](https://docs.racket-lang.org/teachpack/2htdpuniverse.html). See especially [Section 2.4.7, the examples](https://docs.racket-lang.org/teachpack/2htdpuniverse.html#%28part._universe-sample%29), where a ball-bouncing example is developed.

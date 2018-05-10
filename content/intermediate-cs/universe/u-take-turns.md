@@ -22,6 +22,6 @@ description: "An introduction to taking turns when the universe broadcasts all m
     {{% figure src="chase-drawn-running.png"  %}}
 
 {{% alert warning %}}
-You cannot send a `posn` as a message for technical reasons. Reasonable replacements: `(define-struct msg (x y))` or use `(list x y)` for the message.
+You cannot send a `posn` as a message for technical reasons. Reasonable replacements: [enhanced posn-util]({{% relref "u-resources.md" %}}), `(define-struct msg (x y))` or use `(list x y)` for the message.
 {{% /alert %}}
 
