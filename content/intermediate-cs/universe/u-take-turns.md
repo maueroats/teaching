@@ -1,6 +1,6 @@
 ---
 title: "Universe Taking Turns"
-date: 2018-05-02T21:18:09-05:00
+date: 2018-05-10T16:57:52-05:00
 weight: 35
 draft: false
 #type: slide
