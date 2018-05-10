@@ -37,7 +37,7 @@ This page contains only the bare-bones information.
 ## Sending Posns 
 
 You cannot send posns without a hack. The hack is to make a separate file that contains 
-a little bit of lower level Racket code and require it. This code could go in your `posn-util.rkt` file!
+a little bit of lower level Racket code and require it. This code could go in your `posn-util.rkt` file! You need to use Racket mode, not Beginning Student.
 
         #lang racket
         (provide (all-defined-out))
