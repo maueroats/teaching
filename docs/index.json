@@ -557,7 +557,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Universe Taking Turns modified Thu 05-10  Universe Mistakes modified Wed 05-09  Universe Quiz 1 modified Mon 05-07  Universe Color modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Universe Quiz 2 modified Mon 05-14  Universe Taking Turns modified Thu 05-10  Universe Mistakes modified Wed 05-09  Universe Quiz 1 modified Mon 05-07  Universe Color modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -971,6 +971,13 @@
 	"tags": [],
 	"description": "A skit involving robots making decisions.",
 	"content": " You are going to make a play in which robots interact.\nDocumentation:\n Karel the Robot (all) Robot UrRobot Hacked Karel the Robot  Assignment in Brief Assignment Elements  One robot interacts with another robot. You create a new interface or abstract class for use. Robots interact in a non-formulaic way. Interesting plot line (please!). It\u0026rsquo;s supposed to be fun.  Assignment Timeline  Friday: Outline of the action which will happen. (Check in.) Tuesday: You should have at least 3 classes/interfaces written. (Check in.) Tuesday after Thanksgiving: project due.  SchoolBot abstract class We decided that every robot in school will have four basic functions.\nboolean isStudent(); boolean isTeacher(); boolean isHelpful(); Strategy getHelp(); Robots can be students or teachers. If a robot is helpful, then you can get a Strategy from it. (The idea is that the Strategy will get you help when you \u0026ldquo;doIt\u0026rdquo;.)\nStudentBot looks for TeacherBot To interact with other robots, I suggest using:\n the enhanced Robot class the neighbors() function  Robot vs UrRobot Use the Robot class instead of UrRobot. This lets your robot detect some things in its environment. For example, nextToARobot() returns true if there is at least one other robot with the same coordinates. Links to the Robot documentation are at the top of this page.\nneighbors The myRobot.neighbors() function returns an Enumeration. An Enumeration is an object that is basically a list of items. There is a nextElement() function which gives you the next item in the list. (You start before the first item.) There is a hasMoreElements() which returns true if there is another element you can get.\nIn order to use Enumeration you must include import java.util.* at the start of your document.\n Note: Karel the Robot is an old program and Enumeration is an old interface. New programs use an Iterator instead.\n"
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/universe/u-quiz-2/",
+	"title": "Universe Quiz 2",
+	"tags": [],
+	"description": "Quiz on taking turns.",
+	"content": "  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-exercises-4-q/",
@@ -1390,7 +1397,7 @@
 	"title": "24. Universe",
 	"tags": [],
 	"description": "Make multi-player, multi-computer games in Racket.",
-	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Taking Turns An introduction to taking turns when the universe broadcasts all messages to every client.\n  Universe Quiz 1 Quiz on week one of the Universe teachpack.\n  Universe Mistakes A list of common mistakes made when writing universe animations.\n  Universe Resources Reference material and tutorials on the Universe.\n  "
+	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Taking Turns An introduction to taking turns when the universe broadcasts all messages to every client.\n  Universe Quiz 1 Quiz on week one of the Universe teachpack.\n  Universe Quiz 2 Quiz on taking turns.\n  Universe Mistakes A list of common mistakes made when writing universe animations.\n  Universe Resources Reference material and tutorials on the Universe.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1922,7 +1929,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Universe Taking Turns modified Thu 05-10  Universe Mistakes modified Wed 05-09  Universe Quiz 1 modified Mon 05-07  Universe Color modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  24. Universe modified Thu 04-26  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Universe Quiz 2 modified Mon 05-14  Universe Taking Turns modified Thu 05-10  Universe Mistakes modified Wed 05-09  Universe Quiz 1 modified Mon 05-07  Universe Color modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
