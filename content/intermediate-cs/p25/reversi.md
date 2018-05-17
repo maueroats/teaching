@@ -57,12 +57,24 @@ It is a lot simpler to build something complex like Reversi by building helper f
 * `has-piece?: listof-piece posn -> boolean`. Returns true if there is a piece at the given posn in the list.
 * `get-piece: listof-piece posn -> piece`. Get the piece at the given position out of the list. You could return `false` if the piece is not in the list, or give an `error`.
 
+## Warmup Exercises
+
+* `take-flippable: listof-number(data) number(player) -> listof-number`: Get a list of the numbers from the start of `data` that do not match `player` (i.e., opponent's pieces) and the first occurrence of `player` if there is one.
+
+        (take-sequence (list 1 1 2 1) 1) => (list 1 1 2)
+        (take-sequence (list 1 1 2 1) 2) => (list 1)
+        (take-sequence (list 1 1 1) 2) => (list 1 1 1)
+
+    Why is this useful? When we play, we need to flip at least one piece. Pieces that are flipped must be sandwiched between two pieces of the same color. The pieces that do not match the player will be flipped. We need the first matching piece in order make sure the sequence does not stop at the edge of the board (like the third example above).
+    
+
+# Wrong stuff below = fixme
 
 ## Flipping pieces
 
 The trickiest part is making the pieces flip over. This is important to get right because a move is not even legal if it does not flip any pieces. I suggest checking in each direction from a given position to see if there are any pieces that will flip.
 
-* `will-flip-dir?: listof-piece posn(start) posn(direction) player -> boolean`. Will placing a piece for `player` at `start` cause any pieces in the given `direction` to flip?
+* `take-flip-dir?: listof-piece posn(start) posn(direction) player -> boolean`. Will placing a piece for `player` at `start` cause any pieces in the given `direction` to flip?
  
     Assume we have already constucted a variable `pieces` with dark as `X` and light as `O`, representing the board below:
 

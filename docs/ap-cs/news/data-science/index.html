@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Strings for Experts :: WY Computer Science</title>
+<title>Data Science Summer Camp :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/pro/pro-string/">
+  <body data-url="/ap-cs/news/data-science/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,10 +64,11 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -815,10 +816,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/news/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/news/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/news/">News</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/news/">News</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/news/procom4/" class="dd-item">
@@ -835,7 +837,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/news/data-science/" class="dd-item">
+      <li data-nav-id="/ap-cs/news/data-science/" class="dd-item active">
         <div>
           <a href="/ap-cs/news/data-science/">
             Data Science Summer Camp
@@ -853,11 +855,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
@@ -1902,14 +1903,13 @@
           </a>
         </div>
     </li>
-    <li data-nav-id="/intermediate-cs/pro/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/pro/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/pro/">Pro Features</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/pro/">Pro Features</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item">
         <div>
           <a href="/intermediate-cs/pro/pro-string/">
             Strings for Experts
@@ -2133,7 +2133,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/pro/'>Pro Features</a> > Strings for Experts
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/news/'>News</a> > Data Science Summer Camp
 
  
 
@@ -2152,8 +2152,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#randomizing-letters-of-a-string">Randomizing Letters of a String</a></li>
-<li><a href="#advanced-string-making">Advanced String Making</a></li>
+<li><a href="#executive-summary">Executive summary</a></li>
+<li><a href="#organizational-information">Organizational Information</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2166,7 +2166,7 @@
 
 <div id="body-inner">
   
-    <h1>Strings for Experts</h1>
+    <h1>Data Science Summer Camp</h1>
   
 
 
@@ -2176,32 +2176,22 @@
     
     
 
-<p>This page contains information about advanced topics that I have been asked.</p>
+<p>There is a <a href="https://www.cdm.depaul.edu/academics/Pages/Data-Science-Summer-Academy.aspx">Data Science Summer Camp at DePaul</a>.</p>
 
-<h2 id="randomizing-letters-of-a-string">Randomizing Letters of a String</h2>
-
-<p>The <code>implode</code> and <code>explode</code> functions change strings to and from lists of single letters.
-To randomize a list, import <code>racket/list</code> and then use the <code>shuffle</code> function.
-If you are actually looking at lists, you should change to Beginning Student with List Abbreviations.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">require</span> <span style="color:#111">picturing-programs</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#00a8c8">require</span> <span style="color:#111">racket/list</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">mix</span> <span style="color:#111">letters</span><span style="color:#111">)</span>
-  <span style="color:#111">(</span><span style="color:#111">implode</span>
-   <span style="color:#111">(</span><span style="color:#111">shuffle</span>
-    <span style="color:#111">(</span><span style="color:#111">explode</span> <span style="color:#111">letters</span><span style="color:#111">))))</span>
-<span style="color:#111">(</span><span style="color:#111">mix</span> <span style="color:#d88200">&#34;alphabet soup&#34;</span><span style="color:#111">)</span></code></pre></div>
-<h2 id="advanced-string-making">Advanced String Making</h2>
+<h2 id="executive-summary">Executive summary</h2>
 
 <ul>
-<li><p>There is an optional second argument to <code>number-&gt;string</code> that is the base to work in.
-<code>(check-expect (number-&gt;string 31 2) &quot;11111&quot;)</code></p></li>
+<li>Age: current sophomores and up.</li>
+<li>CS: finished Exploring CS.</li>
+<li>Math: have taken &ldquo;geometry and/or algebra&rdquo;.</li>
+</ul>
 
-<li><p>Single characters are different from single letter words. Racket uses <code>#\a</code> to denote the character &ldquo;<code>a</code>&rdquo; and <code>&quot;a&quot;</code> to denote the word containing a single letter a. Usually you do not work with characters, but&hellip;</p></li>
+<h2 id="organizational-information">Organizational Information</h2>
 
-<li><p>The <code>make-string</code> command takes in a number and a character to repeat (meaning <code>#\a</code> not <code>&quot;a&quot;</code>). Example: <code>(check-expect (make-string 7 #\a) &quot;aaaaaaa&quot;)</code>.</p></li>
-
-<li><p>The <code>replicate</code> command repeats a string a certain number of times.
-Example: <code>(check-expect (replicate 2 &quot;moo&quot;) &quot;moomoo&quot;)</code>.</p></li>
+<ul>
+<li>Location: DePaul University&rsquo;s Loop campus</li>
+<li>Time: from 9:30 a.m. to 3:30 p.m.</li>
+<li>Dates: June 25th-29th, 2018</li>
 </ul>
 
 
@@ -2214,8 +2204,8 @@ Example: <code>(check-expect (replicate 2 &quot;moo&quot;) &quot;moomoo&quot;)</
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/pro/" title="Pro Features"> <i class="fa fa-chevron-left"></i><label>Pro Features</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/pro/build-image/" title="Build Image" style="margin-right: 0px;"><label>Build Image</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/news/codejam/" title="CodeJam 2018"> <i class="fa fa-chevron-left"></i><label>CodeJam 2018</label></a>
+    <a class="nav nav-next" href="/ap-cs/news/sail-uiuc/" title="CS Sail at UIUC" style="margin-right: 0px;"><label>CS Sail at UIUC</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
