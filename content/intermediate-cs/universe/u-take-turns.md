@@ -16,7 +16,7 @@ description: "An introduction to taking turns when the universe broadcasts all m
 
 4. **Spinning**. Each world has a separate image. Only one image spins at a time. When you hit a key in a window, that world's image starts spinning and the other window(s) stop.
 
-5. Chase. Each world has one image that it controls with the mouse. Hitting a key makes the mouse inactive for about one second. (Use a tick handler to reactivate.) I used a colored bar to indicate whether the window is active or not.
+5. **Chase**. Each world has one image that it controls with the mouse. Hitting a key makes the mouse inactive for about one second. (Use a tick handler to reactivate.) I used a colored bar to indicate whether the window is active or not.
 
     {{% figure src="chase-drawn-frozen.png"  %}}
     {{% figure src="chase-drawn-running.png"  %}}

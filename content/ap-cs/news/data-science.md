@@ -1,7 +1,7 @@
 ---
 title: "Data Science Summer Camp"
 date: 2018-05-17T09:33:22-05:00
-weight: 30
+#weight: 
 draft: false
 #type: slide
 #theme: white

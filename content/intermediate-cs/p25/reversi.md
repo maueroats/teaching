@@ -74,7 +74,7 @@ It is a lot simpler to build something complex like Reversi by building helper f
 
 The trickiest part is making the pieces flip over. This is important to get right because a move is not even legal if it does not flip any pieces. I suggest checking in each direction from a given position to see if there are any pieces that will flip.
 
-* `take-flip-dir?: listof-piece posn(start) posn(direction) player -> boolean`. Will placing a piece for `player` at `start` cause any pieces in the given `direction` to flip?
+* `will-flip-dir?: listof-piece posn(start) posn(direction) player -> boolean`. Will placing a piece for `player` at `start` cause any pieces in the given `direction` to flip?
  
     Assume we have already constucted a variable `pieces` with dark as `X` and light as `O`, representing the board below:
 
