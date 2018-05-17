@@ -126,6 +126,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/p25/reversi/",
+	"title": "Reversi",
+	"tags": [],
+	"description": "The game of Reversi.",
+	"content": " The game of Reversi is played with black and white pieces on an 8x8 board.\nRead the official rules; this is just a summary:\n A play must flip at least one piece to the player\u0026rsquo;s color. (See the rules for when pieces flip.) Pieces are never removed from the board. The winner has the most pieces on the board when no more moves are possible.  Notes on design Making a two-player, one-screen game is most of the effort. Making two players on two screens is a short addition to that.\nBoard Coordinates What you read will suggest labeling columns with letters a-h and rows with numbers 1-8. I recommend using typical computer coordinates 0-7 for each, and representing a location on the board by a posn.\nPlayer Naming You could identify your players by colors (dark or light) or numbers (0 or 1). The draw handler is easier if your players are \u0026ldquo;black\u0026rdquo; and \u0026ldquo;white\u0026rdquo;, but other functions may be more annoying. I suggest 0 and 1.\nModel There are two possibilities, both have advantages and drawbacks. My guidance will focus on the first method.\n Keep the color (light/dark) and position inside a piece structure, and then the whole state of the board is represented by a list of pieces.\n(define-struct piece (player posn)) (define-struct game (turn piece-list)) Keep a separate list of light and dark piece positions.\n(define-struct game (turn light-list dark-list)) ; light-list: (listof posn?) ; dark-list: (listof posn?)  Useful functions It is a lot simpler to build something complex like Reversi by building helper functions first.\n off-board?: posn -\u0026gt; boolean. Is the posn off the board? opponent: player -\u0026gt; player. Return the opponent. flip: piece -\u0026gt; piece. Return a new piece with the same position but the opposite player. draw-one-piece: piece image(bg) -\u0026gt; image. Draw one piece on a given background image. draw-all-pieces: listof-piece image(bg) -\u0026gt; image. Draw a whole list of pieces on a background image. has-piece?: listof-piece posn -\u0026gt; boolean. Returns true if there is a piece at the given posn in the list. get-piece: listof-piece posn -\u0026gt; piece. Get the piece at the given position out of the list. You could return false if the piece is not in the list, or give an error.  Flipping pieces The trickiest part is making the pieces flip over. This is important to get right because a move is not even legal if it does not flip any pieces. I suggest checking in each direction from a given position to see if there are any pieces that will flip.\n will-flip-dir?: listof-piece posn(start) posn(direction) player -\u0026gt; boolean. Will placing a piece for player at start cause any pieces in the given direction to flip?\nAssume we have already constucted a variable pieces with dark as X and light as O, representing the board below:\n#| 0123 0 -OOX 1 XXOO 2 X-OX 3 ---- |# (will-flip-dir? pieces (make-posn 0 0) (make-posn 1 0) \u0026#39;X\u0026#39;) =\u0026gt; true (will-flip-dir? pieces (make-posn 0 0) (make-posn 0 1) \u0026#39;X\u0026#39;) =\u0026gt; false (will-flip-dir? pieces (make-posn 1 2) (make-posn 0 -1) \u0026#39;X\u0026#39;) =\u0026gt; false (will-flip-dir? pieces (make-posn 1 2) (make-posn 0 -1) \u0026#39;O\u0026#39;) =\u0026gt; true (will-flip-dir? pieces (make-posn 1 2) (make-posn 1 -1) \u0026#39;X\u0026#39;) =\u0026gt; true (will-flip-dir? pieces (make-posn 1 2) (make-posn 1 0) \u0026#39;X\u0026#39;) =\u0026gt; true (will-flip-dir? pieces (make-posn 3 3) (make-posn -1 -1) \u0026#39;X\u0026#39;) =\u0026gt; true (will-flip-dir? pieces (make-posn 2 3) (make-posn 0 -1) \u0026#39;X\u0026#39;) =\u0026gt; false A careful consideration of all of the possibilities on a small board is a good idea. Obviously you need lots of checks!\n will-flip-any-dir?: listof-piece posn(start) color(player) -\u0026gt; boolean. Will placing the player color piece at start cause any pieces in any direction? This should be straightforwad to write once you have will-flip-dir?.\n flip-pieces: listof-piece posn(start) posn(direction) player -\u0026gt; listof-piece. Flip the pieces from start going in the given direction.\n flip-all-pieces: listof-piece posn(start) -\u0026gt; listof-piece. Make all of the flips caused by placing a piece at the given position.\n  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/universe/u-overview/",
 	"title": "Universe Overview",
 	"tags": [],
@@ -371,6 +378,13 @@
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
+	"uri": "http://wy-cs.info/intermediate-cs/p25/agario/",
+	"title": "Agar.io",
+	"tags": [],
+	"description": "A clone of the agar.io web game.",
+	"content": " Do not play the agar.io game more than necessary to learn the rules. We don\u0026rsquo;t plan to make a full clone of the game, just allow an unlimited number of individual circles to move about the screen.\nWarning: your clone will lag more than the original web site. Don\u0026rsquo;t expect lightning fast responses.\nModel  A single player has: unique identity (id), color, position, and radius. One big-bang is a player that is being controlled and a list of other players.  Message The mouse-handler will send a message indicating how the player being controlled has moved.\nReceiving the message When a big-bang receives a message, it will:\n update the current player being controlled, if the message comes from the same world; or go through the list of players and replace the player with the newly received player info  Helper functions  replace-player: player(new) listof-player(players) -\u0026gt; listof-player. Replace the player with the same identity as new by the actual player new. All other players in the list are returned unchanged.  "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/universe/u-mini-proj/",
 	"title": "Universe Mini Projects",
 	"tags": [],
@@ -557,7 +571,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Universe Quiz 2 modified Mon 05-14  Universe Taking Turns modified Thu 05-10  Universe Mistakes modified Wed 05-09  Universe Quiz 1 modified Mon 05-07  Universe Color modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  Universe Quiz 2 modified Mon 05-14  Universe Taking Turns modified Thu 05-10  Universe Mistakes modified Wed 05-09  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   25. Universe Projects   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -977,7 +991,7 @@
 	"title": "Universe Quiz 2",
 	"tags": [],
 	"description": "Quiz on taking turns.",
-	"content": "  "
+	"content": "  In each window:\n e makes that window count down \u0026ldquo;exclusively\u0026rdquo;, stopping any others from counting g makes that window count down without affecting any other window s stops all windows from counting down r resets that window to its original count  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22b/list-exercises-4-q/",
@@ -1041,6 +1055,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following honor code regarding all of their work in this class.\n “I have neither given nor received improper aid on this test/project.”   “Improper aid” includes, but is not limited to:\n copying another student’s work allowing another student to copy your work sharing the problems given on a test to a student who has not taken the test copying work from any online or electronic resource without citation chatting or texting with another student during a test in which computer use is allowed  On a project (not test), it is acceptable to give suggestions to a student who knows less than you do.\n The student who is giving help may read the code of the student seeking help. The student who is giving help may not type (or write) any code.  Penalties when a student is caught cheating in this class may include:\n A zero on the assessment Final grade being lowered a letter Expulsion from National Honor Society (NHS or NJHS) Denial of a future application to National Honor Society (NHS or NJHS) Negatively affecting scholarships and post-high school programs for which you have applied  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/universe/u-slapjack/",
+	"title": "Universe Slapjack",
+	"tags": [],
+	"description": "Once the screen shows green, hit a key fast and get a point.",
+	"content": " A bunch of players connect to the server. (One player per window.) The screen is yellow for a random amount of time (say 1-10 seconds). When the screen turns green, the first window to hit a key gets a point. The others are locked out until the next time the screen turns green.\n Show points on screen. Any key hit in a window scores for that window. Only one point per green screen. No points can be earned when the screen is yellow.  Planning  Model Message(s) What will happen when the message is received?  Images The grey background and the line are not part of the animation; they just separate the active worlds.\n  Ready to score    Waiting, cannot score   Hints  Show the time remaining until someone can score again. (The color gray is unobtrusive.)  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch22a/70-rec-helpers/",
@@ -1397,7 +1418,14 @@
 	"title": "24. Universe",
 	"tags": [],
 	"description": "Make multi-player, multi-computer games in Racket.",
-	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Taking Turns An introduction to taking turns when the universe broadcasts all messages to every client.\n  Universe Quiz 1 Quiz on week one of the Universe teachpack.\n  Universe Quiz 2 Quiz on taking turns.\n  Universe Mistakes A list of common mistakes made when writing universe animations.\n  Universe Resources Reference material and tutorials on the Universe.\n  "
+	"content": "The universe functions let you build multiple big-bang windows that communicate with each other.\n Universe Overview Overview of the Universe.\n  Universe Mini Projects Short projects to get used to the Universe code.\n  Universe Color Change the color on all of the clients by hitting a key.\n  Universe Taking Turns An introduction to taking turns when the universe broadcasts all messages to every client.\n  Universe Quiz 1 Quiz on week one of the Universe teachpack.\n  Universe Quiz 2 Quiz on taking turns.\n  Universe Slapjack Once the screen shows green, hit a key fast and get a point.\n  Universe Mistakes A list of common mistakes made when writing universe animations.\n  Universe Resources Reference material and tutorials on the Universe.\n  "
+},
+{
+	"uri": "http://wy-cs.info/intermediate-cs/p25/",
+	"title": "25. Universe Projects",
+	"tags": [],
+	"description": "Longer projects using the universe and messages.",
+	"content": "  Reversi The game of Reversi.\n  Agar.io A clone of the agar.io web game.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -1929,7 +1957,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Universe Quiz 2 modified Mon 05-14  Universe Taking Turns modified Thu 05-10  Universe Mistakes modified Wed 05-09  Universe Quiz 1 modified Mon 05-07  Universe Color modified Mon 04-30  Universe Mini Projects modified Mon 04-30  Universe Overview modified Mon 04-30  Universe Resources modified Mon 04-30  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Q3. Classes More 1 modified Wed 04-04  Q3. Review modified Wed 04-04  Intermediate Computer Science Recent Changes    Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  Universe Quiz 2 modified Mon 05-14  Universe Taking Turns modified Thu 05-10  Universe Mistakes modified Wed 05-09  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
