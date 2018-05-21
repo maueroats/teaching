@@ -813,6 +813,12 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/ap-cs/jm/ch20/" class="dd-item
+        ">
+      <div>
+      <a href="/ap-cs/jm/ch20/">20. Set and Map</a>
+      </div>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/ap-cs/news/" class="dd-item haschildren
@@ -1896,6 +1902,28 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/intermediate-cs/sem2review/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/sem2review/">Sem II Review</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/sem2review/10-jackpot/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/sem2review/10-jackpot/">
+            P1. Jackpot
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/sem2review/20-attendance/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/sem2review/20-attendance/">
+            P2. Attendance
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item">
         <div>
           <a href="/intermediate-cs/calendar/">
@@ -2230,13 +2258,12 @@ I recommend using typical computer coordinates 0-7 for each, and representing a 
 <p>It is a lot simpler to build something complex like Reversi by building helper functions first.</p>
 
 <ul>
-<li><code>off-board?: posn -&gt; boolean</code>. Is the posn off the board?</li>
 <li><code>opponent: player -&gt; player</code>. Return the opponent.</li>
 <li><code>flip: piece -&gt; piece</code>. Return a new piece with the same position but the opposite player.</li>
 <li><code>draw-one-piece: piece image(bg) -&gt; image</code>. Draw one piece on a given background image.</li>
 <li><code>draw-all-pieces: listof-piece image(bg) -&gt; image</code>. Draw a whole list of pieces on a background image.</li>
 <li><code>has-piece?: listof-piece posn -&gt; boolean</code>. Returns true if there is a piece at the given posn in the list.</li>
-<li><code>get-piece: listof-piece posn -&gt; piece</code>. Get the piece at the given position out of the list. You could return <code>false</code> if the piece is not in the list, or give an <code>error</code>.</li>
+<li><code>get-piece: listof-piece posn -&gt; piece</code>. Get the piece at the given position out of the list. You should return <code>false</code> if the piece is not in the list.</li>
 </ul>
 
 <h2 id="warmup-exercises">Warmup Exercises</h2>

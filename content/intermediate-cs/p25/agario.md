@@ -12,6 +12,11 @@ Do not play the [agar.io](http://agar.io/) game more than necessary to learn the
 
 Warning: your clone will lag more than the original web site. Don't expect lightning fast responses.
 
+Expectations:
+
+* Draw any number of players on the screen.
+* The player that you control moves toward your mouse position.
+
 ## Model
 
 * A single player has: unique identity (id), color, position, and radius.
@@ -32,3 +37,8 @@ When a big-bang receives a message, it will:
 
 * `replace-player: player(new) listof-player(players) -> listof-player`. Replace the player with the same identity as `new` by the actual player `new`. All other players in the list are returned unchanged.
 
+## Extras (not required)
+
+* Cell movement speed decreases as the cell gets larger
+* Eating small cells happens and increases your radius (or "mass")
+* Splitting!?

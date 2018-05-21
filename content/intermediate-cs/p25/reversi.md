@@ -49,13 +49,12 @@ There are two possibilities, both have advantages and drawbacks. My guidance wil
 
 It is a lot simpler to build something complex like Reversi by building helper functions first.
 
-* `off-board?: posn -> boolean`. Is the posn off the board?
 * `opponent: player -> player`. Return the opponent.
 * `flip: piece -> piece`. Return a new piece with the same position but the opposite player.
 * `draw-one-piece: piece image(bg) -> image`. Draw one piece on a given background image.
 * `draw-all-pieces: listof-piece image(bg) -> image`. Draw a whole list of pieces on a background image.
 * `has-piece?: listof-piece posn -> boolean`. Returns true if there is a piece at the given posn in the list.
-* `get-piece: listof-piece posn -> piece`. Get the piece at the given position out of the list. You could return `false` if the piece is not in the list, or give an `error`.
+* `get-piece: listof-piece posn -> piece`. Get the piece at the given position out of the list. You should return `false` if the piece is not in the list.
 
 ## Warmup Exercises
 
