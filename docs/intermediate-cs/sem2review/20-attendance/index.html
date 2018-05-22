@@ -2192,7 +2192,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#common-misconceptions">Common Misconceptions</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2210,12 +2217,25 @@
     
     
     
-    <p>World 1 is the teacher counting students in a class. Other worlds are
+    
+
+<p>World 1 is the teacher counting students in a class. Other worlds are
 students. The teacher yells &ldquo;attendance&rdquo; and then each student
-responds &ldquo;present&rdquo;.</p>
+responds &ldquo;present&rdquo;. Hitting a key in the teacher&rsquo;s window triggers the
+attendance-taking process. The teacher&rsquo;s window should show how many
+students are present.</p>
 
 <p>Write down your <strong>model</strong>, <strong>message(s)</strong>, and the <strong>reaction</strong> to
 receiving each message in detail before programming.</p>
+
+<h2 id="common-misconceptions">Common Misconceptions</h2>
+
+<ul>
+<li>No special treatment is required if a student is absent. Absent corresponds to not having a window open.</li>
+<li>One keypress runs the whole procedure. It should not be necessary to hit a key in each
+window.</li>
+<li>Close one student window and take attendance again - make sure you get a different number.</li>
+</ul>
 
 
     

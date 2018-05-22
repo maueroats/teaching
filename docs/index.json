@@ -403,7 +403,7 @@
 	"title": "P2. Attendance",
 	"tags": [],
 	"description": "",
-	"content": "World 1 is the teacher counting students in a class. Other worlds are students. The teacher yells \u0026ldquo;attendance\u0026rdquo; and then each student responds \u0026ldquo;present\u0026rdquo;.\nWrite down your model, message(s), and the reaction to receiving each message in detail before programming.\n"
+	"content": " World 1 is the teacher counting students in a class. Other worlds are students. The teacher yells \u0026ldquo;attendance\u0026rdquo; and then each student responds \u0026ldquo;present\u0026rdquo;. Hitting a key in the teacher\u0026rsquo;s window triggers the attendance-taking process. The teacher\u0026rsquo;s window should show how many students are present.\nWrite down your model, message(s), and the reaction to receiving each message in detail before programming.\nCommon Misconceptions  No special treatment is required if a student is absent. Absent corresponds to not having a window open. One keypress runs the whole procedure. It should not be necessary to hit a key in each window. Close one student window and take attendance again - make sure you get a different number.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/p25/agario/",
@@ -1467,7 +1467,7 @@
 	"title": "Sem II Review",
 	"tags": [],
 	"description": "Review of skill from Semester II.",
-	"content": "  P1. Jackpot Give each world an id number (1, 2, 3, \u0026hellip;). The worlds are all lined up according to their id number. Every world has some money. When a \u0026ldquo;jackpot\u0026rdquo; happens, the money from one world is distributed to its neighbors (each gets half). Write down your model, message, and reaction to the message in detail before programming.\n  P2. Attendance World 1 is the teacher counting students in a class. Other worlds are students. The teacher yells \u0026ldquo;attendance\u0026rdquo; and then each student responds \u0026ldquo;present\u0026rdquo;. Write down your model, message(s), and the reaction to receiving each message in detail before programming.\n  "
+	"content": "  P1. Jackpot Give each world an id number (1, 2, 3, \u0026hellip;). The worlds are all lined up according to their id number. Every world has some money. When a \u0026ldquo;jackpot\u0026rdquo; happens, the money from one world is distributed to its neighbors (each gets half). Write down your model, message, and reaction to the message in detail before programming.\n  P2. Attendance World 1 is the teacher counting students in a class. Other worlds are students. The teacher yells \u0026ldquo;attendance\u0026rdquo; and then each student responds \u0026ldquo;present\u0026rdquo;. Hitting a key in the teacher\u0026rsquo;s window triggers the attendance-taking process. The teacher\u0026rsquo;s window should show how many students are present. Write down your model, message(s), and the reaction to receiving each message in detail before programming. Common Misconceptions No special treatment is required if a student is absent.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
