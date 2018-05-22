@@ -137,7 +137,7 @@
 	"title": "P1. Jackpot",
 	"tags": [],
 	"description": "",
-	"content": "Give each world an id number (1, 2, 3, \u0026hellip;). The worlds are all lined up according to their id number. Every world has some money. When a \u0026ldquo;jackpot\u0026rdquo; happens, the money from one world is distributed to its neighbors (each gets half).\nWrite down your model, message, and reaction to the message in detail before programming.\n"
+	"content": "Give each world an id number (1, 2, 3, \u0026hellip;). The worlds are all lined up according to their id number. Every world has some money. When a \u0026ldquo;jackpot\u0026rdquo; happens, the money from one world is distributed to its neighbors (each gets half).\nConsider the first world to be the neighbor of the last world, so half of the money from world 1 would go to world 4 in the example below.\nOnce the world distributes its money, it has no money left.\nWrite down your model, message, and reaction to the message in detail before programming.\n "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/p25/reversi/",
@@ -403,7 +403,7 @@
 	"title": "P2. Attendance",
 	"tags": [],
 	"description": "",
-	"content": " World 1 is the teacher counting students in a class. Other worlds are students. The teacher yells \u0026ldquo;attendance\u0026rdquo; and then each student responds \u0026ldquo;present\u0026rdquo;. Hitting a key in the teacher\u0026rsquo;s window triggers the attendance-taking process. The teacher\u0026rsquo;s window should show how many students are present.\nWrite down your model, message(s), and the reaction to receiving each message in detail before programming.\nCommon Misconceptions  No special treatment is required if a student is absent. Absent corresponds to not having a window open. One keypress runs the whole procedure. It should not be necessary to hit a key in each window. Close one student window and take attendance again - make sure you get a different number.  "
+	"content": " World 1 is the teacher counting students in a class. Other worlds are students. The teacher yells \u0026ldquo;attendance\u0026rdquo; and then each student responds \u0026ldquo;present\u0026rdquo;. Hitting a key in the teacher\u0026rsquo;s window triggers the attendance-taking process. The teacher\u0026rsquo;s window should show how many students are present.\nWrite down your model, message(s), and the reaction to receiving each message in detail before programming.\nCommon Misconceptions  No special treatment is required if a student is absent. Absent corresponds to not having a window open. One keypress runs the whole procedure. It should not be necessary to hit a key in each window. Close one student window and take attendance again - make sure you get a different number.   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/p25/agario/",
@@ -599,7 +599,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem II Review modified Mon 05-21  Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   25. Universe Projects   Sem II Review   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem.II Review modified Mon 05-21  Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  All Content   Part I: Ch 1-19   Project: Space Invaders   20. Using Structures   21A. Making Structures   Sem.I Review   Sem.I Finals   21B. Structures   Project: PV   Contracts   22a. Recursion   22b. Lists   23. Battleship   24. Universe   25. Universe Projects   Sem.II Review   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch21a/21-ws-b/",
@@ -1464,10 +1464,10 @@
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem2review/",
-	"title": "Sem II Review",
+	"title": "Sem.II Review",
 	"tags": [],
 	"description": "Review of skill from Semester II.",
-	"content": "  P1. Jackpot Give each world an id number (1, 2, 3, \u0026hellip;). The worlds are all lined up according to their id number. Every world has some money. When a \u0026ldquo;jackpot\u0026rdquo; happens, the money from one world is distributed to its neighbors (each gets half). Write down your model, message, and reaction to the message in detail before programming.\n  P2. Attendance World 1 is the teacher counting students in a class. Other worlds are students. The teacher yells \u0026ldquo;attendance\u0026rdquo; and then each student responds \u0026ldquo;present\u0026rdquo;. Hitting a key in the teacher\u0026rsquo;s window triggers the attendance-taking process. The teacher\u0026rsquo;s window should show how many students are present. Write down your model, message(s), and the reaction to receiving each message in detail before programming. Common Misconceptions No special treatment is required if a student is absent.\n  "
+	"content": "  P1. Jackpot Give each world an id number (1, 2, 3, \u0026hellip;). The worlds are all lined up according to their id number. Every world has some money. When a \u0026ldquo;jackpot\u0026rdquo; happens, the money from one world is distributed to its neighbors (each gets half). Consider the first world to be the neighbor of the last world, so half of the money from world 1 would go to world 4 in the example below.\n  P2. Attendance World 1 is the teacher counting students in a class. Other worlds are students. The teacher yells \u0026ldquo;attendance\u0026rdquo; and then each student responds \u0026ldquo;present\u0026rdquo;. Hitting a key in the teacher\u0026rsquo;s window triggers the attendance-taking process. The teacher\u0026rsquo;s window should show how many students are present. Write down your model, message(s), and the reaction to receiving each message in detail before programming. Common Misconceptions No special treatment is required if a student is absent.\n  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
@@ -2006,7 +2006,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   20. Frequency Analysis modified Tue 05-22  20. Set Map Intro modified Tue 05-22  20. Set and Map modified Mon 05-21  Data Science Summer Camp modified Thu 05-17  15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  Intermediate Computer Science Recent Changes    P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem II Review modified Mon 05-21  Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   20. Frequency Analysis modified Tue 05-22  20. Set Map Intro modified Tue 05-22  20. Set and Map modified Mon 05-21  Data Science Summer Camp modified Thu 05-17  15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  Intermediate Computer Science Recent Changes    P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem.II Review modified Mon 05-21  Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

@@ -22,3 +22,5 @@ receiving each message in detail before programming.
 * One keypress runs the whole procedure. It should not be necessary to hit a key in each 
 window.
 * Close one student window and take attendance again - make sure you get a different number.
+
+{{% figure src="attendance.jpg" %}}
