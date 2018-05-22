@@ -126,6 +126,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch20/10-set-map-intro/",
+	"title": "20. Set Map Intro",
+	"tags": [],
+	"description": "Introduction to set and map.",
+	"content": " See the Java Methods Chapter 20 Powerpoint for a discussion.\nHashing vs Trees When dealing with Sets and Maps one needs to find a value quickly. There are two main ways storing the data: hashing and using a tree.\nHashing Hashing gives you a \u0026ldquo;random-ish\u0026rdquo; number to associate with the thing you are storing. The number is always the same, so you can store the object at the location given by the number and look in that location (with no searching) later when you want to find the object. The drawback is that hashing does not keep the objects in any kind of order.\nOne simplified example is to take integers and use the remainder after dividing by a medium-sized prime (like 173). This lets someone use an array of length 173 to store numbers that may be much larger:\n{ int [] data = new int[173]; for (int k=0; k\u0026lt;30; k++) { int num = (int)(Math.random()*100000); data[num%173] = num } } With that code it is very fast to find if a number is in the array. (Just check to see if data[newnum%173] == newnum.)\nDividing by a prime means smaller numbers will not be able to have short cycles - as a non-example, think what happens with the multiples of 16 when you divide by 128 (which is not prime). The \u0026ldquo;hashes\u0026rdquo; of the multiples of 16 would be 16, 32, 64, 80, 96, 112, 0, and then repeat.\nTree A binary tree records \u0026ldquo;smaller\u0026rdquo;, \u0026ldquo;bigger\u0026rdquo;, or \u0026ldquo;equal to\u0026rdquo; by offering a number and two choices at each step of the tree. Searching a tree for your object takes about log(N) steps, where N is the number of objects stored in the tree so far. This is slower than a hash function, and requires the objects to be ordered, but it keeps them in order - which can be very useful.\nSet The interface Set represents a mathematical set. Implementing classes include HashSet and TreeSet.\nMap The interface Map represents a mathematical function. Implementing classes include HashMap and TreeMap.\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/sem2review/10-jackpot/",
 	"title": "P1. Jackpot",
 	"tags": [],
@@ -383,6 +390,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/ch20/20-word-freq/",
+	"title": "20. Frequency Analysis",
+	"tags": [],
+	"description": "Find the most frequent words in a text document.",
+	"content": "In this assignment, we will find the most frequent words in Jane Austen\u0026rsquo;s Sense and Sensibility.\nYour goal is to print the top 100 most frequent words and their frequency count. Your method should be fast and flexible so that you can handle longer documents and more or less than the top 100.\n Read the information in the file using File and Scanner. Clean up the information by removing non-word characters. Make everything lowercase for consistency. This step is surprisingly tricky to get perfect. I recommend replaceAll using the regular expression \u0026quot;\\\\W+\u0026quot; to match at least one non-word character. See a handy cheat sheet (pdf) for more information. Create a Map to count each word and their frequency. Create your own custom WordCount class that will hold one word and its frequency together.  Constructor Write a toString method. Write a compareTo method and implement the Comparable interface. This should be written so that the highest frequency comes first.  Make a TreeSet with the WordCount class using the data from the file. Print the top 100 most frequent words in your TreeSet.  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/sem2review/20-attendance/",
@@ -1362,7 +1376,7 @@
 	"title": "20. Set and Map",
 	"tags": [],
 	"description": "Important data structures for actually using Java to get stuff done quickly.",
-	"content": " See the Java Methods Chapter 20 Powerpoint for a discussion.\nHashing vs Trees When dealing with Sets and Maps one needs to find a value quickly. There are two main ways storing the data: hashing and using a tree.\nHashing Hashing gives you a \u0026ldquo;random-ish\u0026rdquo; number to associate with the thing you are storing. The number is always the same, so you can store the object at the location given by the number and look in that location (with no searching) later when you want to find the object. The drawback is that hashing does not keep the objects in any kind of order.\nOne simplified example is to take integers and use the remainder after dividing by a medium-sized prime (like 173). This lets someone use an array of length 173 to store numbers that may be much larger:\n{ int [] data = new int[173]; for (int k=0; k\u0026lt;30; k++) { int num = (int)(Math.random()*100000); data[num%173] = num } } With that code it is very fast to find if a number is in the array. (Just check to see if data[newnum%173] == newnum.)\nDividing by a prime means smaller numbers will not be able to have short cycles - as a non-example, think what happens with the multiples of 16 when you divide by 128 (which is not prime). The \u0026ldquo;hashes\u0026rdquo; of the multiples of 16 would be 16, 32, 64, 80, 96, 112, 0, and then repeat.\nTree A binary tree records \u0026ldquo;smaller\u0026rdquo;, \u0026ldquo;bigger\u0026rdquo;, or \u0026ldquo;equal to\u0026rdquo; by offering a number and two choices at each step of the tree. Searching a tree for your object takes about log(N) steps, where N is the number of objects stored in the tree so far. This is slower than a hash function, and requires the objects to be ordered, but it keeps them in order - which can be very useful.\nSet The interface Set represents a mathematical set. Implementing classes include HashSet and TreeSet.\nMap The interface Map represents a mathematical function. Implementing classes include HashMap and TreeMap.\n"
+	"content": "  20. Set Map Intro Introduction to set and map.\n  20. Frequency Analysis Find the most frequent words in a text document.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/",
@@ -1992,7 +2006,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   20. Set and Map modified Mon 05-21  Data Science Summer Camp modified Thu 05-17  15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  15. File Intro modified Wed 04-18  15. Files and Streams modified Wed 04-18  Intermediate Computer Science Recent Changes    P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem II Review modified Mon 05-21  Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   20. Frequency Analysis modified Tue 05-22  20. Set Map Intro modified Tue 05-22  20. Set and Map modified Mon 05-21  Data Science Summer Camp modified Thu 05-17  15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Java Review Calendar modified Wed 04-18  15. File Assignments modified Wed 04-18  Intermediate Computer Science Recent Changes    P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem II Review modified Mon 05-21  Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

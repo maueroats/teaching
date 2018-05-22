@@ -815,11 +815,28 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch20/" class="dd-item parent active
+    <li data-nav-id="/ap-cs/jm/ch20/" class="dd-item parent active haschildren
         ">
       <div>
       <a href="/ap-cs/jm/ch20/">20. Set and Map</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
+        <ul>
+      <li data-nav-id="/ap-cs/jm/ch20/10-set-map-intro/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch20/10-set-map-intro/">
+            20. Set Map Intro
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch20/20-word-freq/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch20/20-word-freq/">
+            20. Frequency Analysis
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -2176,20 +2193,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#hashing-vs-trees">Hashing vs Trees</a>
-<ul>
-<li><a href="#hashing">Hashing</a></li>
-<li><a href="#tree">Tree</a></li>
-</ul></li>
-<li><a href="#set">Set</a></li>
-<li><a href="#map">Map</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -2210,41 +2214,23 @@
 
 
 
-<p>See the <a href="http://www.skylit.com/javamethods2/ppt/Ch20.ppt">Java Methods Chapter 20 Powerpoint</a> for a discussion.</p>
+<ul class="children children-li">
 
-<h2 id="hashing-vs-trees">Hashing vs Trees</h2>
+<span><li>
+		<a href="/ap-cs/jm/ch20/10-set-map-intro/" >20. Set Map Intro</a></li>
+<p>Introduction to set and map.</p>
+</span>
 
-<p>When dealing with Sets and Maps one needs to find a value quickly. There are two main ways storing the data: hashing and using a tree.</p>
+<span><li>
+		<a href="/ap-cs/jm/ch20/20-word-freq/" >20. Frequency Analysis</a></li>
+<p>Find the most frequent words in a text document.</p>
+</span>
+</ul>
 
-<h3 id="hashing">Hashing</h3>
 
-<p>Hashing gives you a &ldquo;random-ish&rdquo; number to associate with the thing you are storing. The number is always the same, so you can store the object at the location given by the number and look in that location (with no searching) later when you want to find the object. The drawback is that hashing does not keep the objects in any kind of order.</p>
 
-<p>One simplified example is to take integers and use the remainder after dividing by a medium-sized prime (like 173). This lets someone use an array of length 173 to store numbers that may be much larger:</p>
 
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">{</span>
-  <span style="color:#00a8c8">int</span> <span style="color:#f92672">[]</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">[</span><span style="color:#111">173</span><span style="color:#f92672">];</span>
-  <span style="color:#00a8c8">for</span> <span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">k</span><span style="color:#f92672">=</span><span style="color:#111">0</span><span style="color:#f92672">;</span> <span style="color:#111">k</span><span style="color:#f92672">&lt;</span><span style="color:#111">30</span><span style="color:#f92672">;</span> <span style="color:#111">k</span><span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
-    <span style="color:#00a8c8">int</span> <span style="color:#111">num</span> <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#00a8c8">int</span><span style="color:#f92672">)(</span><span style="color:#111">Math</span><span style="color:#f92672">.</span><span style="color:#75af00">random</span><span style="color:#f92672">()*</span><span style="color:#111">100000</span><span style="color:#f92672">);</span>
-    <span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">num</span><span style="color:#f92672">%</span><span style="color:#111">173</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#111">num</span>
-  <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
 
-<p>With that code it is very fast to find if a number is in the array. (Just check to see if <code>data[newnum%173] == newnum</code>.)</p>
-
-<p>Dividing by a prime means smaller numbers will not be able to have short cycles - as a non-example, think what happens with the multiples of 16 when you divide by 128 (which is not prime). The &ldquo;hashes&rdquo; of the multiples of 16 would be 16, 32, 64, 80, 96, 112, 0, and then repeat.</p>
-
-<h3 id="tree">Tree</h3>
-
-<p>A binary tree records &ldquo;smaller&rdquo;, &ldquo;bigger&rdquo;, or &ldquo;equal to&rdquo; by offering a number and two choices at each step of the tree. Searching a tree for your object takes about log(N) steps, where N is the number of objects stored in the tree so far. This is slower than a hash function, and requires the objects to be ordered, but it keeps them in order - which can be very useful.</p>
-
-<h2 id="set">Set</h2>
-
-<p>The interface <code>Set</code> represents a mathematical set. Implementing classes include <code>HashSet</code> and <code>TreeSet</code>.</p>
-
-<h2 id="map">Map</h2>
-
-<p>The interface <code>Map</code> represents a mathematical function. Implementing classes include <code>HashMap</code> and <code>TreeMap</code>.</p>
 
 
 
@@ -2258,7 +2244,7 @@
 
 <div id="navigation">
 <a class="nav nav-prev" href="/ap-cs/jm/ch15/file-divvy/" title="15. File Divvy"> <i class="fa fa-chevron-left"></i><label>15. File Divvy</label></a>
-    <a class="nav nav-next" href="/ap-cs/news/" title="News" style="margin-right: 0px;"><label>News</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/ap-cs/jm/ch20/10-set-map-intro/" title="20. Set Map Intro" style="margin-right: 0px;"><label>20. Set Map Intro</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
