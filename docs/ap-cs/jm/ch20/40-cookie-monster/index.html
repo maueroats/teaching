@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.40.3" />
 
-<title>3. Types and Typeclasses :: WY Computer Science</title>
+<title>20. Cookie Monster :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/ch03/">
+  <body data-url="/ap-cs/jm/ch20/40-cookie-monster/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -71,11 +71,10 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
@@ -129,11 +128,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch03/" class="dd-item parent active haschildren
+    <li data-nav-id="/ap-cs/haskell/ch03/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch03/">3. Types and Typeclasses</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch03/">3. Types and Typeclasses</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/ch03/ch03-reading-guide-haskell/" class="dd-item">
@@ -519,10 +517,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -816,10 +815,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch20/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/ch20/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/ch20/">20. Set and Map</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/ch20/">20. Set and Map</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/jm/ch20/10-set-map-intro/" class="dd-item">
@@ -843,7 +843,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/ch20/40-cookie-monster/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch20/40-cookie-monster/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/ch20/40-cookie-monster/">
             20. Cookie Monster
@@ -2192,7 +2192,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > 3. Types and Typeclasses
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch20/'>20. Set and Map</a> > 20. Cookie Monster
+
+ 
 
  
 
@@ -2215,15 +2220,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="http://wy-cs.infotags/haskell">haskell</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>3. Types and Typeclasses</h1>
+    <h1>20. Cookie Monster</h1>
   
 
 
@@ -2231,29 +2230,19 @@
     
     
     
+    <p>This is Exercise 12 from Java Methods Chapter 20.</p>
 
-<p>Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have.
-</p>
+<p>Start at the upper left (0,0) of a grid of numbers. Find a path to the lower right corner (cols-1,rows-1) that has the greatest sum. You can only go right and down. Your path is not allowed to contain a square with the number -1.</p>
 
-<p>For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a &ldquo;show&rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).</p>
+<p>Data: Read a file describing a 2D array. The first line of the file contains two integers rows and cols. What follows is ROWS lines of data with COLS numbers in each line.</p>
 
+<p>Output: The maximum sum.</p>
 
-
-<ul class="children children-li">
-
-<span><li>
-		<a href="/ap-cs/haskell/ch03/ch03-reading-guide-haskell/" >Chapter 3 Reading Guide</a></li>
-</span>
-
-<span><li>
-		<a href="/ap-cs/haskell/ch03/ch03-hw1/" >Chapter 3 Problem Set</a></li>
-</span>
-
-<span><li>
-		<a href="/ap-cs/haskell/ch03/ch03-quiz/" >Chapter 3 Quiz</a></li>
-</span>
-</ul>
-
+<p>Advanced: Report the path taken (an ordered list of coordinates).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">3 4
+1  2  2  3  4
+5 -1  5  7  9
+9 -1  9 -1 -1</pre></div>
 
     
     
@@ -2264,8 +2253,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/ch02/hw-a2-solution/" title="Haskell HW 2 Solutions"> <i class="fa fa-chevron-left"></i><label>Haskell HW 2 Solutions</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/ch03/ch03-reading-guide-haskell/" title="Chapter 3 Reading Guide" style="margin-right: 0px;"><label>Chapter 3 Reading Guide</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch20/30-linked-list/" title="20. Linked Lists"> <i class="fa fa-chevron-left"></i><label>20. Linked Lists</label></a>
+    <a class="nav nav-next" href="/ap-cs/news/" title="News" style="margin-right: 0px;"><label>News</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
