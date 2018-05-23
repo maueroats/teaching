@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solutions on WY Computer Science</title>
+    <link>http://wy-cs.info/tags/solutions/</link>
+    <description>Recent content in Solutions on WY Computer Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Sep 2017 10:18:00 -0500</lastBuildDate>
+    
+	<atom:link href="http://wy-cs.info/tags/solutions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Haskell HW 2 Solutions</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/</link>
+      <pubDate>Thu, 14 Sep 2017 10:18:00 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/</guid>
+      <description>breakItUp plan:
+ replicate input list (length - 3) times zip with count helper function knows count and list, drop &amp;amp; take  breaklicator xs = replicate (length xs - 3) xs numberIt ys = zip ys [0..] breakItUp&amp;#39; :: ([a],Int) -&amp;gt; [a] breakItUp&amp;#39; (xs,y) = take 4 $ drop y xs breakItUp_v2 :: [a] -&amp;gt; [[a]] breakItUp_v2 xs = [ breakItUp&amp;#39; w | w &amp;lt;- numberIt $ breaklicator xs ] Fancy solution for breakItUp, shows power of Haskell pattern matching (Chapter 4):</description>
+    </item>
+    
+  </channel>
+</rss>

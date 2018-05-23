@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.35" />
+<meta name="generator" content="Hugo 0.40.3" />
 
 <title>20. Set Map Intro :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
@@ -833,6 +833,13 @@
         <div>
           <a href="/ap-cs/jm/ch20/20-word-freq/">
             20. Frequency Analysis
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch20/30-linked-list/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch20/30-linked-list/">
+            20. Linked Lists
           </a>
         </div>
     </li>
@@ -2241,6 +2248,10 @@
 
 <p>Hashing gives you a &ldquo;random-ish&rdquo; number to associate with the thing you are storing. The number is always the same, so you can store the object at the location given by the number and look in that location (with no searching) later when you want to find the object. The drawback is that hashing does not keep the objects in any kind of order.</p>
 
+<p><strong>Advantage of hashing</strong>: constant time access.</p>
+
+<p><strong>Requirements to use a hash</strong>: none; all Java objects have a built-in hash function. (If your object changes the default notion of equality, like you define your own <code>compareTo</code> method, you should learn how to change the hash function or avoid hashes.)</p>
+
 <p>One simplified example is to take integers and use the remainder after dividing by a medium-sized prime (like 173). This lets someone use an array of length 173 to store numbers that may be much larger:</p>
 
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">{</span>
@@ -2259,13 +2270,18 @@
 
 <p>A binary tree records &ldquo;smaller&rdquo;, &ldquo;bigger&rdquo;, or &ldquo;equal to&rdquo; by offering a number and two choices at each step of the tree. Searching a tree for your object takes about log(N) steps, where N is the number of objects stored in the tree so far. This is slower than a hash function, and requires the objects to be ordered, but it keeps them in order - which can be very useful.</p>
 
+<p><strong>Advantage of tree</strong>: items are kept in order.</p>
+
+<p><strong>Requirements to use a tree</strong>: items have to be <code>Comparable</code> to use a <code>Tree</code>.</p>
+
 <h2 id="set">Set</h2>
 
-<p>The interface <code>Set</code> represents a mathematical set. Implementing classes include <code>HashSet</code> and <code>TreeSet</code>.</p>
+<p>The interface <code>Set</code> represents a mathematical set. Implementing classes include <code>HashSet</code> and <code>TreeSet</code>. Sets can answer the question &ldquo;is this item in the set?&rdquo; using the <code>contains</code> method. That&rsquo;s really all a set can do.</p>
 
 <h2 id="map">Map</h2>
 
-<p>The interface <code>Map</code> represents a mathematical function. Implementing classes include <code>HashMap</code> and <code>TreeMap</code>.</p>
+<p>The interface <code>Map</code> represents a mathematical function. The inputs to the function are called &ldquo;keys&rdquo; and the outputs of the function are called &ldquo;values&rdquo;. Implementing classes include <code>HashMap</code> and <code>TreeMap</code>.
+A map can answer the question &ldquo;when I put this item in, what value comes out?&rdquo; by using the <code>get</code> method. There is no <code>set</code> method, but you can change the output value by using <code>put(key, newValue)</code>.</p>
 
 
     

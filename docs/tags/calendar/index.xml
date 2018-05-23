@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Calendar on WY Computer Science</title>
+    <link>http://wy-cs.info/tags/calendar/</link>
+    <description>Recent content in Calendar on WY Computer Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://wy-cs.info/tags/calendar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Haskell Calendar</title>
+      <link>http://wy-cs.info/ap-cs/haskell-calendar/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell-calendar/</guid>
+      <description>Daily calendar for Haskell unit.
+ </description>
+    </item>
+    
+    <item>
+      <title>Java Review Calendar</title>
+      <link>http://wy-cs.info/ap-cs/java-calendar/</link>
+      <pubDate>Wed, 18 Apr 2018 15:09:22 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/java-calendar/</guid>
+      <description>Daily calendar for the Java review, beginning in mid-April.
+ </description>
+    </item>
+    
+  </channel>
+</rss>

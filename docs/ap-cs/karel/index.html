@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.35" />
+<meta name="generator" content="Hugo 0.40.3" />
 
 <title>Karel the Robot :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
@@ -832,6 +832,13 @@
         <div>
           <a href="/ap-cs/jm/ch20/20-word-freq/">
             20. Frequency Analysis
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch20/30-linked-list/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch20/30-linked-list/">
+            20. Linked Lists
           </a>
         </div>
     </li>
@@ -2267,7 +2274,11 @@
 
 <span><li>
 		<a href="/ap-cs/karel/ch4b-adv/" >4.* Advanced</a></li>
-<p></p>
+<p>Undoing Page 100, exercise 12 - the robot that has the undo command. I used the idea of a Decorator strategy.
+Simultaneous Action Chapter 8 in the text shows how to make more than one robot act at the same time. See the MultiThreadBot on the class GitHub.
+A brief summary is:
+ World.setupThread(robot) prepares the robot to act in its own thread.
+ World.startThreads() calls the run() method for every robot that is set up as threading using the command above.</p>
 </span>
 
 <span><li>
@@ -2287,7 +2298,8 @@
 
 <span><li>
 		<a href="/ap-cs/karel/karel-hack/" >Karel Hacked</a></li>
-<p></p>
+<p>On GitHub, I have placed a KarelHRobot.jar that has a hacked UrRobot that has the following capabilities:
+ street(): The current street the robot is on (row = y) avenue(): The current avenue the robot is on (column = x) direction(): The direction the robot is facing. beepers(): The number of beepers the robot has in its beeper bag.  I know some people have already enhanced UrRobot with similar capabilities.</p>
 </span>
 </ul>
 
