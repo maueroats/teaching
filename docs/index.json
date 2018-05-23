@@ -802,7 +802,7 @@
 	"title": "20. Cookie Monster",
 	"tags": [],
 	"description": "",
-	"content": "This is Exercise 12 from Java Methods Chapter 20.\nStart at the upper left (0,0) of a grid of numbers. Find a path to the lower right corner (cols-1,rows-1) that has the greatest sum. You can only go right and down. Your path is not allowed to contain a square with the number -1.\nData: Read a file describing a 2D array. The first line of the file contains two integers rows and cols. What follows is ROWS lines of data with COLS numbers in each line.\nOutput: The maximum sum.\nAdvanced: Report the path taken (an ordered list of coordinates).\n3 4 1 2 2 3 4 5 -1 5 7 9 9 -1 9 -1 -1"
+	"content": "This is Exercise 12 from Java Methods Chapter 20.\nStart at the upper left (0,0) of a grid of numbers. Find a path to the lower right corner (cols-1,rows-1) that has the greatest sum. You can only go right and down. Your path is not allowed to contain a square with the number -1.\nData: Read a file describing a 2D array. The first line of the file contains two integers rows and cols. What follows is ROWS lines of data with COLS numbers in each line.\nOutput: The maximum sum.\nAdvanced: Report the path taken (an ordered list of coordinates).\n4 5 1 2 2 3 4 5 -1 5 7 9 9 -1 9 -1 -1 8 -1 10 9 3"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch15/file-divvy/",

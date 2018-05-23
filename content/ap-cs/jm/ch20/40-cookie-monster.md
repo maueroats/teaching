@@ -17,7 +17,9 @@ Output: The maximum sum.
 
 Advanced: Report the path taken (an ordered list of coordinates).
 
-    3 4
+    4 5
     1  2  2  3  4
     5 -1  5  7  9
     9 -1  9 -1 -1
+    8 -1 10  9  3
+
