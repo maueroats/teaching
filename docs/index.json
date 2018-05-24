@@ -616,6 +616,13 @@
 	"content": "breakItUp plan:\n replicate input list (length - 3) times zip with count helper function knows count and list, drop \u0026amp; take  breaklicator xs = replicate (length xs - 3) xs numberIt ys = zip ys [0..] breakItUp\u0026#39; :: ([a],Int) -\u0026gt; [a] breakItUp\u0026#39; (xs,y) = take 4 $ drop y xs breakItUp_v2 :: [a] -\u0026gt; [[a]] breakItUp_v2 xs = [ breakItUp\u0026#39; w | w \u0026lt;- numberIt $ breaklicator xs ] Fancy solution for breakItUp, shows power of Haskell pattern matching (Chapter 4):\nbreakItUp :: [a] -\u0026gt; [[a]] breakItUp [a,b,c,d] = [[a,b,c,d]] breakItUp (x:xs) = (x:take 3 xs) : breakItUp xs targetPractice plan:\n distance formula helper function that remembers the closest point so far recursively go through list of all points  -- you should just write (Int,Int) everywhere I write Pt type Pt = (Int,Int) dist :: Pt -\u0026gt; Pt -\u0026gt; Int dist (x0,y0) (x1,y1) = (x1-x0)^2 + (y1-y0)^2 targetPractice :: Pt -\u0026gt; [Pt] -\u0026gt; Pt targetPractice pt ptList = targetPractice\u0026#39; pt ptList (head ptList) targetPractice\u0026#39; :: Pt -\u0026gt; [Pt] -\u0026gt; Pt -\u0026gt; Pt targetPractice\u0026#39; pt [] closestSoFar = closestSoFar targetPractice\u0026#39; pt (x:xs) closestSoFar = targetPractice\u0026#39; pt xs newClosest where newClosest = if (dist x pt) \u0026lt; (dist closestSoFar pt) then x else closestSoFar"
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/jm/ch20/25-substitution-cipher/",
+	"title": "20. Substitution Cipher",
+	"tags": [],
+	"description": "",
+	"content": "Encrypted text\n"
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-tickh/",
 	"title": "Tick Handler Helpers",
 	"tags": [],
@@ -802,7 +809,7 @@
 	"title": "20. Cookie Monster",
 	"tags": [],
 	"description": "",
-	"content": "This is Exercise 12 from Java Methods Chapter 20.\nStart at the upper left (0,0) of a grid of numbers. Find a path to the lower right corner (cols-1,rows-1) that has the greatest sum. You can only go right and down. Your path is not allowed to contain a square with the number -1.\nData: Read a file describing a 2D array. The first line of the file contains two integers rows and cols. What follows is ROWS lines of data with COLS numbers in each line.\nOutput: The maximum sum.\nAdvanced: Report the path taken (an ordered list of coordinates).\n4 5 1 2 2 3 4 5 -1 5 7 9 9 -1 9 -1 -1 8 -1 10 9 3"
+	"content": "This is Exercise 12 from Java Methods Chapter 20.\nStart at the upper left (0,0) of a grid of numbers. Find a path to the lower right corner (cols-1,rows-1) that has the greatest sum. You can only go right and down. Your path is not allowed to contain a square with the number -1.\nData: Read a file describing a 2D array. The first line of the file contains two integers rows and cols. What follows is ROWS lines of data with COLS numbers in each line.\nOutput: The maximum sum.\nAdvanced: Report the path taken (an ordered list of coordinates).\n4 5 1 2 2 3 4 5 -1 5 7 9 9 -1 9 -1 -1 8 -1 10 9 3 The maximum sum is 1+2+2+5+9+10+9+3 = 41.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/ch15/file-divvy/",
@@ -1390,7 +1397,7 @@
 	"title": "20. Set and Map",
 	"tags": [],
 	"description": "Important data structures for actually using Java to get stuff done quickly.",
-	"content": "  20. Set Map Intro Introduction to set and map.\n  20. Frequency Analysis Find the most frequent words in a text document.\n  20. Linked Lists LinkedList is a List that has the ability to add items quickly on the front or back.\n  20. Cookie Monster This is Exercise 12 from Java Methods Chapter 20. Start at the upper left (0,0) of a grid of numbers. Find a path to the lower right corner (cols-1,rows-1) that has the greatest sum. You can only go right and down. Your path is not allowed to contain a square with the number -1. Data: Read a file describing a 2D array. The first line of the file contains two integers rows and cols.\n  "
+	"content": "  20. Set Map Intro Introduction to set and map.\n  20. Frequency Analysis Find the most frequent words in a text document.\n  20. Substitution Cipher Encrypted text\n  20. Linked Lists LinkedList is a List that has the ability to add items quickly on the front or back.\n  20. Cookie Monster This is Exercise 12 from Java Methods Chapter 20. Start at the upper left (0,0) of a grid of numbers. Find a path to the lower right corner (cols-1,rows-1) that has the greatest sum. You can only go right and down. Your path is not allowed to contain a square with the number -1. Data: Read a file describing a 2D array. The first line of the file contains two integers rows and cols.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/",
@@ -2020,7 +2027,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   20. Cookie Monster modified Tue 05-22  20. Linked Lists modified Tue 05-22  20. Frequency Analysis modified Tue 05-22  20. Set Map Intro modified Tue 05-22  20. Set and Map modified Mon 05-21  Data Science Summer Camp modified Thu 05-17  15. File Divvy modified Thu 04-26  15. File Quiz modified Thu 04-26  Intermediate Computer Science Recent Changes    P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem.II Review modified Mon 05-21  Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   20. Substitution Cipher modified Thu 05-24  20. Cookie Monster modified Tue 05-22  20. Linked Lists modified Tue 05-22  20. Frequency Analysis modified Tue 05-22  20. Set Map Intro modified Tue 05-22  20. Set and Map modified Mon 05-21  Data Science Summer Camp modified Thu 05-17  15. File Divvy modified Thu 04-26  Intermediate Computer Science Recent Changes    P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem.II Review modified Mon 05-21  Agar.io modified Wed 05-16  Reversi modified Wed 05-16  25. Universe Projects modified Wed 05-16  Universe Slapjack modified Wed 05-16  Universe Resources modified Wed 05-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

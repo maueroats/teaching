@@ -23,3 +23,4 @@ Advanced: Report the path taken (an ordered list of coordinates).
     9 -1  9 -1 -1
     8 -1 10  9  3
 
+The maximum sum is 1+2+2+5+9+10+9+3 = 41.
