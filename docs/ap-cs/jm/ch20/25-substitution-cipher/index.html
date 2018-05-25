@@ -2226,7 +2226,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#sample-texts">Sample texts</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2244,7 +2251,19 @@
     
     
     
-    <ul>
+    
+
+<p>You have to know the basic definition of a <a href="https://en.wikipedia.org/wiki/Substitution_cipher">substitution cipher</a>. You permute the meaning of letters, so for examples &ldquo;H&rdquo; will mean &ldquo;E&rdquo;, then &ldquo;T&rdquo; will mean &ldquo;H&rdquo;, and &ldquo;E&rdquo; will mean &ldquo;T&rdquo;. Every encrypted letter stands for exactly one plaintext letter, and no encrypted letter stands for more than one plaintext letter.</p>
+
+<ol>
+<li>Find the frequency of each individual letter in a large file. This gives you an estimate of how often each letter occurs.</li>
+<li>Find the frequency of each letter in the encrypted text (see below).</li>
+<li>Match the frequencies and try to decrypt the text.</li>
+</ol>
+
+<h2 id="sample-texts">Sample texts</h2>
+
+<ul>
 <li><a href="encrypted-caesar.txt">Easy encrypted text</a> - just shifted by a constant amount.</li>
 <li><a href="encrypted-subst.txt">Harder encrypted text</a></li>
 </ul>

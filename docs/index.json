@@ -619,8 +619,8 @@
 	"uri": "http://wy-cs.info/ap-cs/jm/ch20/25-substitution-cipher/",
 	"title": "20. Substitution Cipher",
 	"tags": [],
-	"description": "",
-	"content": " Easy encrypted text - just shifted by a constant amount. Harder encrypted text  "
+	"description": "How to break a substitution cipher.",
+	"content": " You have to know the basic definition of a substitution cipher. You permute the meaning of letters, so for examples \u0026ldquo;H\u0026rdquo; will mean \u0026ldquo;E\u0026rdquo;, then \u0026ldquo;T\u0026rdquo; will mean \u0026ldquo;H\u0026rdquo;, and \u0026ldquo;E\u0026rdquo; will mean \u0026ldquo;T\u0026rdquo;. Every encrypted letter stands for exactly one plaintext letter, and no encrypted letter stands for more than one plaintext letter.\n Find the frequency of each individual letter in a large file. This gives you an estimate of how often each letter occurs. Find the frequency of each letter in the encrypted text (see below). Match the frequencies and try to decrypt the text.  Sample texts  Easy encrypted text - just shifted by a constant amount. Harder encrypted text  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/pv-proj/pv-tickh/",
@@ -1404,7 +1404,7 @@
 	"title": "20. Set and Map",
 	"tags": [],
 	"description": "Important data structures for actually using Java to get stuff done quickly.",
-	"content": "  20. Set Map Intro Introduction to set and map.\n  20. Frequency Analysis Find the most frequent words in a text document.\n  20. Substitution Cipher  Easy encrypted text - just shifted by a constant amount. Harder encrypted text   20. Linked Lists LinkedList is a List that has the ability to add items quickly on the front or back.\n  20. Cookie Monster This is Exercise 12 from Java Methods Chapter 20. Start at the upper left (0,0) of a grid of numbers. Find a path to the lower right corner (cols-1,rows-1) that has the greatest sum. You can only go right and down. Your path is not allowed to contain a square with the number -1. Data: Read a file describing a 2D array. The first line of the file contains two integers rows and cols.\n  "
+	"content": "  20. Set Map Intro Introduction to set and map.\n  20. Frequency Analysis Find the most frequent words in a text document.\n  20. Substitution Cipher How to break a substitution cipher.\n  20. Linked Lists LinkedList is a List that has the ability to add items quickly on the front or back.\n  20. Cookie Monster This is Exercise 12 from Java Methods Chapter 20. Start at the upper left (0,0) of a grid of numbers. Find a path to the lower right corner (cols-1,rows-1) that has the greatest sum. You can only go right and down. Your path is not allowed to contain a square with the number -1. Data: Read a file describing a 2D array. The first line of the file contains two integers rows and cols.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/ch20/",
