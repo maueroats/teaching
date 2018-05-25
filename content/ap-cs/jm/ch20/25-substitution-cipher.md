@@ -7,6 +7,6 @@ draft: false
 #theme: white
 ---
 
-[Encrypted text](encrypted.txt)
-
+* [Easy encrypted text](encrypted-caesar.txt) - just shifted by a constant amount.
+* [Harder encrypted text](encrypted-subst.txt)
 
