@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.40.3" />
 
-<title>Pro Features :: WY Computer Science</title>
+<title>P4. Model Message :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/pro/">
+  <body data-url="/intermediate-cs/sem2review/32-model-message/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -1938,10 +1938,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/sem2review/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/sem2review/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/sem2review/">Sem.II Review</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/sem2review/">Sem.II Review</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/sem2review/10-jackpot/" class="dd-item">
@@ -1965,7 +1966,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/sem2review/32-model-message/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/sem2review/32-model-message/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/sem2review/32-model-message/">
             P4. Model Message
@@ -1981,11 +1982,10 @@
           </a>
         </div>
     </li>
-    <li data-nav-id="/intermediate-cs/pro/" class="dd-item parent active haschildren
+    <li data-nav-id="/intermediate-cs/pro/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/pro/">Pro Features</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/pro/">Pro Features</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item">
@@ -2209,7 +2209,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > Pro Features
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/sem2review/'>Sem.II Review</a> > P4. Model Message
+
+ 
 
  
 
@@ -2222,7 +2227,16 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#model">Model</a></li>
+<li><a href="#message">Message</a></li>
+<li><a href="#model-vs-message">Model vs Message</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2232,7 +2246,7 @@
 
 <div id="body-inner">
   
-    <h1>Pro Features</h1>
+    <h1>P4. Model Message</h1>
   
 
 
@@ -2240,37 +2254,32 @@
     
     
     
+    
 
-<p>This page contains information about advanced topics that I have been asked.</p>
+<h2 id="model">Model</h2>
 
+<p>The <strong>model</strong> carries all of the information. The mouse-handler can only change the model, the tick-handler can only change the model. The draw-handler can only look at the model to decide what to draw.</p>
 
+<p>Once you relly understand that everything you want to do has to be done through the model, you begin to ask questions like &ldquo;How will I know in the model that my animation is paused?&rdquo; instead of &ldquo;How will I pause my animation?&rdquo; This makes a huge difference - it makes writing programs much easier, because the way you are thinking is the way the program actually works.</p>
 
-<ul class="children children-li">
+<h2 id="message">Message</h2>
 
-<span><li>
-		<a href="/intermediate-cs/pro/pro-string/" >Strings for Experts</a></li>
-<p>Strings: randomizing and creating by formula.</p>
-</span>
+<p>The <strong>message</strong> is the only way to communicate information between worlds. If you need to know anything about the model from another world, you communicate that information in a message.</p>
 
-<span><li>
-		<a href="/intermediate-cs/pro/build-image/" >Build Image</a></li>
-<p>Build-image to create images from a formula for the pixel color.</p>
-</span>
-
-<span><li>
-		<a href="/intermediate-cs/pro/match/" >Match</a></li>
-<p>Pattern matching lets you take apart structures into their component variables in a simple way.
-You can use (require racket/match) to activate pattern matching.
-Matching The match function is like cond except it checks to see if a value matches a certain &ldquo;literal&rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function.
-Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.</p>
-</span>
+<ul>
+<li>The model should only know one world&rsquo;s information.</li>
+<li>You cannot change the world by changing its &ldquo;id&rdquo;. That would be like saying you are going to Doc Mo&rsquo;s class by changing your name to &ldquo;Doc Mo&rdquo;. Never change the world id.</li>
+<li>Advice: only remember what you need from a message. This means change the model in the receive-handler, but do not place the whole message in the model. When someone gives you a donut, you eat the donut (that&rsquo;s changing your model). You don&rsquo;t usually walk around with a note saying &ldquo;I got a donut from Carol.&rdquo; (That would be saving the message.)</li>
 </ul>
 
+<h2 id="model-vs-message">Model vs Message</h2>
 
+<p>Every handler needs to decide whether to return a model or a package containing the model and a message.</p>
 
-
-
-
+<ul>
+<li>Model: only affects one world</li>
+<li>Message: affects all worlds</li>
+</ul>
 
 
     
@@ -2282,8 +2291,8 @@ Problem Write a function that takes in a number or a posn and returns the distan
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/calendar/" title="Calendar"> <i class="fa fa-chevron-left"></i><label>Calendar</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/pro/pro-string/" title="Strings for Experts" style="margin-right: 0px;"><label>Strings for Experts</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/sem2review/30-color-spin/" title="P3. Color Spin"> <i class="fa fa-chevron-left"></i><label>P3. Color Spin</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><label>Calendar</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
