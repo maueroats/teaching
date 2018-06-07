@@ -2247,6 +2247,7 @@
 <li>
 <ul>
 <li><a href="#drawing">Drawing</a></li>
+<li><a href="#listing">Listing</a></li>
 <li><a href="#four-square">Four-Square</a></li>
 </ul></li>
 </ul>
@@ -2305,6 +2306,17 @@ You may use the Racket help desk and the blog, if necessary.</p>
 <li>How will you position the red circle just above and to the right of the green box, as shown in the picture? Be specific.</li>
 <li>Write a <code>check-expect</code> that shows what the key-handler does when you hit the right arrow key.</li>
 <li>The left-most blue circle has a radius equal to the diameter of the red circle. Each blue circle has a 10% smaller radius than the one to its left. Write the <code>draw-blue-circles</code> (<code>dbs</code>) function, including contract and Racket code.</li>
+</ol>
+
+<h2 id="listing">Listing</h2>
+
+<ol>
+<li><p>Middle age is defined as being age 30 through 55, inclusive. It can
+be hard to find out how old someone is, so we will just estimate based
+on the year. Write <code>is-middle-age?: string(birthday) number(current year) -&gt; boolean</code>. Note the different formats of birthday we accept (below).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">  (check-expect (is-middle-age? &#34;1/4/1960&#34; 2000) true)</pre></div>
+<p>(check-expect (is-middle-age? &ldquo;11/30/1955&rdquo; 2005) false)
+  (check-expect (is-middle-age? &ldquo;6/25/2000&rdquo; 2018) false)</p></li>
 </ol>
 
 <h2 id="four-square">Four-Square</h2>

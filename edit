@@ -1,0 +1,22 @@
+#! /bin/bash
+function die() {
+   echo "$@" 1>&2
+   exit 1
+}
+
+if [ -n "$www" ]; then
+   cd "$www"
+fi
+
+if [ ! -f ./hugo-server ]; then
+   echo "$0: not running in correct directory" 1>&2
+   exit 1
+fi
+
+# cd $www
+i3-msg "workspace 3; append_layout $HOME/.config/i3/layout-www-edit.json"
+emacs --title "Site Editor" content content/intermediate-cs &
+i3-sensible-terminal --title "Hugo Site Generator" -e ./hugo-server &
+i3-sensible-terminal --title "Publisher" -e fish &
+
+

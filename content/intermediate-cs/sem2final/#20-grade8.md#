@@ -28,7 +28,7 @@ You are planning a graphics animation. Description:
    3. Write a `check-expect` that shows what the key-handler does when you hit the right arrow key.
    4. The left-most blue circle has a radius equal to the diameter of the red circle. Each blue circle has a 10% smaller radius than the one to its left. Write the `draw-blue-circles` (`dbs`) function, including contract and Racket code.
 
-## Listing
+## Logic
 
 1. Middle age is defined as being age 30 through 55, inclusive. It can
 be hard to find out how old someone is, so we will just estimate based
@@ -38,6 +38,8 @@ on the year. Write `is-middle-age?: string(birthday) number(current year) -> boo
 	  (check-expect (is-middle-age? "11/30/1955" 2005) false)
 	  (check-expect (is-middle-age? "6/25/2000" 2018) false)
 
+
+2. 
 
 
 ## Four-Square
