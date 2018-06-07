@@ -28,16 +28,17 @@ You are planning a graphics animation. Description:
    3. Write a `check-expect` that shows what the key-handler does when you hit the right arrow key.
    4. The left-most blue circle has a radius equal to the diameter of the red circle. Each blue circle has a 10% smaller radius than the one to its left. Write the `draw-blue-circles` (`dbs`) function, including contract and Racket code.
 
-## Listing
+## Logic
 
 1. Middle age is defined as being age 30 through 55, inclusive. It can
 be hard to find out how old someone is, so we will just estimate based
 on the year. Write `is-middle-age?: string(birthday) number(current year) -> boolean`. Note the different formats of birthday we accept (below). 
 
           (check-expect (is-middle-age? "1/4/1960" 2000) true)
-	  (check-expect (is-middle-age? "11/30/1955" 2005) false)
-	  (check-expect (is-middle-age? "6/25/2000" 2018) false)
+          (check-expect (is-middle-age? "11/30/1955" 2005) false)
+          (check-expect (is-middle-age? "6/25/2000" 2018) false)
 
+2. *Number list*. Create a list of all of the numbers from start to end that are divisible by 7. Except if you discover a number divisble by 49 then stop your list there. `n1: number(start) number(end) -> list of numbers`.
 
 
 ## Four-Square
