@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.3" />
+<meta name="generator" content="Hugo 0.35" />
 
 <title>4.6 More Classes :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
@@ -1975,6 +1975,21 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/intermediate-cs/sem2final/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/sem2final/">Sem.II Final</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/sem2final/20-grade8/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/sem2final/20-grade8/">
+            Sem.II Final 8
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item">
         <div>
           <a href="/intermediate-cs/calendar/">
@@ -2280,13 +2295,13 @@
 <p>The <code>AndThenStrat</code> is a Strategy that combines two strategies by doing one and then the other. See lines 5-6 in the code sample below for its construction and use.</p>
 
 <p>The following sample code should cause the robot to step and then turn. The <code>MoveOneStrat</code> is supposed to make the robot move one step. The <code>TurnOneStrat</code> is supposed to mkae the robot turn to the left. You do not need to write either of those strategies; they are just here to illustrate how the <code>AndThenStrat</code> works.
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">1</span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">demoAndThen</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">2</span>  <span style="color:#111">UrRobot</span> <span style="color:#111">r</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">UrRobot</span><span style="color:#f92672">(</span><span style="color:#111">4</span><span style="color:#f92672">,</span><span style="color:#111">1</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">20</span><span style="color:#f92672">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">3</span>  <span style="color:#111">Strategy</span> <span style="color:#111">step</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MoveOneStrat</span><span style="color:#f92672">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">4</span>  <span style="color:#111">Strategy</span> <span style="color:#111">turn</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">TurnOneStrat</span><span style="color:#f92672">();</span>
-<span style="display:block;width:100%;background-color:#e1e1e1"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">5</span>  <span style="color:#111">AndThenStrat</span> <span style="color:#111">combine</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">AndThenStrat</span><span style="color:#f92672">(</span><span style="color:#111">step</span><span style="color:#f92672">,</span> <span style="color:#111">turn</span><span style="color:#f92672">);</span>
-</span><span style="display:block;width:100%;background-color:#e1e1e1"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">6</span>  <span style="color:#111">combine</span><span style="color:#f92672">.</span><span style="color:#75af00">doIt</span><span style="color:#f92672">(</span> <span style="color:#111">r</span> <span style="color:#f92672">);</span>
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">7</span><span style="color:#f92672">}</span></code></pre></div></p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:00.4em00.4em;color:#939390">1</span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">demoAndThen</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:00.4em00.4em;color:#939390">2</span>  <span style="color:#111">UrRobot</span> <span style="color:#111">r</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">UrRobot</span><span style="color:#f92672">(</span><span style="color:#111">4</span><span style="color:#f92672">,</span><span style="color:#111">1</span><span style="color:#f92672">,</span><span style="color:#111">East</span><span style="color:#f92672">,</span><span style="color:#111">20</span><span style="color:#f92672">);</span>
+<span style="margin-right:0.4em;padding:00.4em00.4em;color:#939390">3</span>  <span style="color:#111">Strategy</span> <span style="color:#111">step</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MoveOneStrat</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:00.4em00.4em;color:#939390">4</span>  <span style="color:#111">Strategy</span> <span style="color:#111">turn</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">TurnOneStrat</span><span style="color:#f92672">();</span>
+<span style="display:block;width:100%;background-color:#e1e1e1"><span style="margin-right:0.4em;padding:00.4em00.4em;color:#939390">5</span>  <span style="color:#111">AndThenStrat</span> <span style="color:#111">combine</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">AndThenStrat</span><span style="color:#f92672">(</span><span style="color:#111">step</span><span style="color:#f92672">,</span> <span style="color:#111">turn</span><span style="color:#f92672">);</span>
+</span><span style="display:block;width:100%;background-color:#e1e1e1"><span style="margin-right:0.4em;padding:00.4em00.4em;color:#939390">6</span>  <span style="color:#111">combine</span><span style="color:#f92672">.</span><span style="color:#75af00">doIt</span><span style="color:#f92672">(</span> <span style="color:#111">r</span> <span style="color:#f92672">);</span>
+</span><span style="margin-right:0.4em;padding:00.4em00.4em;color:#939390">7</span><span style="color:#f92672">}</span></code></pre></div></p>
 
 <h2 id="zigstrat">ZigStrat</h2>
 

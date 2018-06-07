@@ -154,7 +154,7 @@ jQuery(document).ready(function() {
 
     // clipboard
     var clipInit = false;
-    $('xxxamoxxxcode').each(function() {
+    $('code').each(function() {
         var code = $(this),
             text = code.text();
 
