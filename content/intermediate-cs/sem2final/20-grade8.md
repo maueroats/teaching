@@ -48,4 +48,7 @@ interpreting for a computer game:
 
 1. Struct for the player
 2. Struct for the ball
-2. An AI player called "hater" is randomly sends the ball to square 1 (75% of the time) or square 2 (25% of the time).  Unless the player is in one of those squares, in which case it attacks the strongest two opponents that it can (with the same likelihoods). Write the function `play: player ball -> ball` that has the AI play. Assume there is a `hit: ball -> ball` function that updates the ball velocity.
+3. An AI player called "hater" is randomly sends the ball to square 1 (75% of the time) or square 2 (25% of the time).  Unless the player is in one of those squares, in which case it attacks the strongest two opponents that it can (with the same likelihoods). Write the function `play: player ball -> ball` that has the AI play. Assume there is a `hit: ball -> ball` function that updates the ball velocity.
+4. What handler(s) should be responsible for actually making the ball move from one "square" (world) to another? Explain carefully.
+
+
