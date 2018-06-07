@@ -26,7 +26,7 @@ You are planning a graphics animation. Description:
    1. What model should you use?
    2. How will you position the red circle just above and to the right of the green box, as shown in the picture? Be specific.
    3. Write a `check-expect` that shows what the key-handler does when you hit the right arrow key.
-   4. The left-most blue circle has a radius equal to the diameter of the red circle. Each blue circle has a 10% smaller radius than the one to its left. Write the `draw-blue-circles` (`dbs`) function, including contract and Racket code.
+   4. The left-most blue circle has a radius equal to the diameter of the red circle. Each blue circle has a 10% smaller radius than the one to its left. Write the `draw-blue-circles` (`dbs`) function, including contract and Racket code. You can make the signature as needed 
 
 ## Logic
 
@@ -38,7 +38,7 @@ on the year. Write `is-middle-age?: string(birthday) number(current year) -> boo
           (check-expect (is-middle-age? "11/30/1955" 2015) false)
           (check-expect (is-middle-age? "6/25/2000" 2018) false)
 
-2. *Number list*. Create a list of all of the numbers from start to end that are divisible by 7. Except if you discover a number divisble by 49 then stop your list there. `n1: number(start) number(end) -> list of numbers`.
+2. *Number list*. Create a list of all of the numbers from start to end that are divisible by 7. Except if you discover a number divisible by 49 then stop your list there. `n7: number(start) number(end) -> list of numbers`.
 
 
 
