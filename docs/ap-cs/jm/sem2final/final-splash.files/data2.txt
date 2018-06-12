@@ -7,4 +7,5 @@
 3 3 3 3 3 3
 
 # one player best: number two has 11
-# two player best: 21
+# two player best: 27
+
