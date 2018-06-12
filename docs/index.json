@@ -1494,8 +1494,8 @@
 	"uri": "http://wy-cs.info/ap-cs/jm/sem2final/",
 	"title": "Sem.II Final Exam",
 	"tags": [],
-	"description": "",
-	"content": ""
+	"description": "Final exam, possibly including advanced data structures and problem solving.",
+	"content": "  Final Problem Splash game.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/battleship/",
@@ -1615,6 +1615,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
+},
+{
+	"uri": "http://wy-cs.info/ap-cs/jm/sem2final/final-splash/",
+	"title": "Final Problem",
+	"tags": [],
+	"description": "Splash game.",
+	"content": " The Whitney Young Dolphins have come up with a new game to play: \u0026ldquo;Splash\u0026rdquo;.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   The game of splash is played on an $N \\times N$ grid. A dolphin claims a square by splashing their fin and writing their id number in the square.\nThe game ends when all of the squares have numbers in them.\nAn individual dolphin wins if they have connected the largest contiguous region. Two squares belong to the same region if the have the same id number and there is a path from one to the other going up, down, left, right (but no diagonals) all on squares with the same id number as the start and end.\nDolphins are team players, so they prefer to play the game with a partner. When two dolphins play on a team together, either one of their id numbers can be used at any step of the connecting path to form a region. In fact, for a team to count a region, the id numbers of both players must be used in the region.\nInput Format The first line of the file with be the number N.\nEach of the N lines following will contain N positive integers separated by spaces.\nOutput Format Output two lines, each containing one number.\n The first number is the largest sized region for any single dolphin. The second number is the largest sized region for any two-dolphin team.  Constraints The board will be at most 250x250. The id numbers will all be nonnegative integers less than one million.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/news/data-science/",
@@ -2069,7 +2076,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Sem.II Final Exam modified Tue 06-12  20. Substitution Cipher modified Thu 05-24  20. Cookie Monster modified Tue 05-22  20. Linked Lists modified Tue 05-22  20. Frequency Analysis modified Tue 05-22  20. Set Map Intro modified Tue 05-22  20. Set and Map modified Mon 05-21  Data Science Summer Camp modified Thu 05-17  Intermediate Computer Science Recent Changes    Sem.II Final Exam 9-11 modified Mon 06-11  Sem.II Final 8 modified Wed 06-06  Sem.II Final modified Wed 06-06  P4. Model Message modified Fri 05-25  P3. Color Spin modified Thu 05-24  P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem.II Review modified Mon 05-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Final Problem modified Tue 06-12  Sem.II Final Exam modified Tue 06-12  20. Substitution Cipher modified Thu 05-24  20. Cookie Monster modified Tue 05-22  20. Linked Lists modified Tue 05-22  20. Frequency Analysis modified Tue 05-22  20. Set Map Intro modified Tue 05-22  20. Set and Map modified Mon 05-21  Intermediate Computer Science Recent Changes    Sem.II Final Exam 9-11 modified Mon 06-11  Sem.II Final 8 modified Wed 06-06  Sem.II Final modified Wed 06-06  P4. Model Message modified Fri 05-25  P3. Color Spin modified Thu 05-24  P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem.II Review modified Mon 05-21  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

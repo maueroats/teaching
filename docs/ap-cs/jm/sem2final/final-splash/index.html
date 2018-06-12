@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Daily Notes :: WY Computer Science</title>
+<title>Final Problem :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/tags/daily-notes/">
+  <body data-url="/ap-cs/jm/sem2final/final-splash/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,10 +64,11 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -516,10 +517,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -856,13 +858,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/sem2final/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/sem2final/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/sem2final/">Sem.II Final Exam</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/sem2final/">Sem.II Final Exam</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/jm/sem2final/final-splash/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/sem2final/final-splash/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/sem2final/final-splash/">
             Final Problem
@@ -2238,7 +2241,27 @@
         <span class="links">
         
 
- Daily Notes
+
+
+
+
+
+
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/sem2final/'>Sem.II Final Exam</a> > Final Problem
+
+ 
+
+ 
+
+ 
+
+ 
 
    
         </span>
@@ -2247,7 +2270,16 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#input-format">Input Format</a></li>
+<li><a href="#output-format">Output Format</a></li>
+<li><a href="#constraints">Constraints</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2257,7 +2289,7 @@
 
 <div id="body-inner">
   
-    <h1>Daily Notes</h1>
+    <h1>Final Problem</h1>
   
 
 
@@ -2265,82 +2297,59 @@
     
     
     
+    
+
+<p>The Whitney Young Dolphins have come up with a new game to play: &ldquo;Splash&rdquo;.</p>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']]
+}});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
+<p>The game of splash is played on an $N \times N$ grid. A dolphin claims
+a square by splashing their fin and writing their id number in the
+square.</p>
 
-<div class="extra-pagination inner">
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
+<p>The game ends when all of the squares have numbers in them.</p>
 
-</div>
+<p>An individual dolphin wins if they have connected the largest
+contiguous region. Two squares belong to the same region if the have
+the same id number and there is a path from one to the other going up,
+down, left, right (but no diagonals) all on squares with the same id
+number as the start and end.</p>
 
+<p>Dolphins are team players, so they prefer to play the game with a
+partner. When two dolphins play on a team together, either one of
+their id numbers can be used at any step of the connecting path to
+form a region. In fact, for a team to count a region,
+the id numbers of both players <em>must</em> be used in the region.</p>
 
-   <article class="post ap-cs">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/ap-cs/haskell/daily/">Haskell Daily Notes</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>  2017-10-04 More CodingBat problems.
-  2017-10-03 CodingBat problems to improve your problem-solving skills.
-  2017-09-18 Battleship and homework review.
-  2017-09-14 Indentation Indentation matters. A lot.
-  2017-09-12 Technical details that came up while doing Chapter 2 Homework.
-  2017-09-11 worked examples - removeVowels and wordLenPairs
-   <a class="read-more" href="/ap-cs/haskell/daily/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+<h2 id="input-format">Input Format</h2>
 
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-                <a class="label label-default" href="http://wy-cs.infotags/daily-notes/">daily-notes</a>
-            
-        
+<p>The first line of the file with be the number N.</p>
 
-    </footer>
-</article>
+<p>Each of the N lines following will contain N positive integers
+separated by spaces.</p>
 
-   <article class="post ap-cs">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/ap-cs/haskell/daily/2017-09-11/">2017-09-11</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>removeVowels word = [ letter | letter &lt;- word, not (letter elem &ldquo;aeiouAEIOU&rdquo; )]
-wordLenPairs wordlist = [ (word, length word) | word &lt;- wordlist ] <a class="read-more" href="/ap-cs/haskell/daily/2017-09-11/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+<h2 id="output-format">Output Format</h2>
 
-        
-          
-            
-                <a class="label label-default" href="http://wy-cs.infotags/haskell/">haskell</a>
-            
-                <a class="label label-default" href="http://wy-cs.infotags/daily-notes/">daily-notes</a>
-            
-        
+<p>Output two lines, each containing one number.</p>
 
-    </footer>
-</article>
+<ul>
+<li>The first number is the largest sized region for any single dolphin.</li>
+<li>The second number is the largest sized region for any two-dolphin team.</li>
+</ul>
 
+<h2 id="constraints">Constraints</h2>
 
-<div style="margin-bottom:2rem"></div>
-
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
-
+<p>The board will be at most 250x250. The id numbers will all be
+nonnegative integers less than one million.</p>
 
 
     
@@ -2352,7 +2361,8 @@ wordLenPairs wordlist = [ (word, length word) | word &lt;- wordlist ] <a class="
 </div>
 
 <div id="navigation">
-<a class="nav nav-next" href="/ap-cs/" title="AP CS" style="margin-right: 0px;"><label>AP CS</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/sem2final/" title="Sem.II Final Exam"> <i class="fa fa-chevron-left"></i><label>Sem.II Final Exam</label></a>
+    <a class="nav nav-next" href="/ap-cs/news/" title="News" style="margin-right: 0px;"><label>News</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
