@@ -8,6 +8,8 @@ draft: false
 description: "Full length final exam for intermediate computer science."
 ---
 
+{{< use-goodlists >}}
+
 This is the Spring 2018 final exam for Intermediate Computer Science. The exam is 60 points. There are 40 points for the paper questions and 20 points for the computer program.
 
 ## Paper analysis
@@ -20,18 +22,18 @@ You may not use the computer to do anything but read this section. Turn in your 
     2. `(list 20 40 (list 60 80) 100)`
     3. `(list* (list 1 2 3) 4)`
     4. `(list 11 12 (list* 13 14 empty))`
-    5. `(cons 2 (cons 8 (list* 16 (cons 32 64))))`
+    5. `(cons 2 (cons 8 (list* 16 (cons 32 empty))))`
 
-2. (5 points) The code below is intended to add up all of the integers in the
-`data` that are above 50, but replacing numbers below 100 with 100. 
+2. (5 points) The code below is intended to make a list of all of the
+integers in the `data` that are above 50. Of the numbers that are above 50, the ones below 100 should be replaced with 100.
 
     Give an example of a test case that it can pass and a test case that it fails.
 
         (define (add-ex data)
-          (cond [(>= 50 (first data))
+          (cond [(> 50 (first data))
                  (list* (first data) 
                         (add-ex (rest data)))]
-                [(<= 50 (first data) 100)
+                [(< 50 (first data) 100)
                  100]
                 [else (add-ex (rest data))]))
 
