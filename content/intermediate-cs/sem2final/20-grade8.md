@@ -55,7 +55,7 @@ interpreting for a computer game:
 * ball speeds up a little if it is going down when you hit it
 * ball can be passed to any other square
 * we need to see the ball move to play the game
-* Squares are numbered 1 through 4, where 1 is the strongest player.
+* Squares are numbered 1 through 4. Players enter in square 4 and move up to square one as players above them are eliminated.
 * A player is eliminated when the ball hits their square and they do not hit it before it bounces again.
 * When a player is eliminated, the other players move up (in order) and a new player joins the board in square four. 
 

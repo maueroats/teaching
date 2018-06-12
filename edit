@@ -1,8 +1,12 @@
-#! /bin/bash
+#! /bin/bash -e
 function die() {
    echo "$@" 1>&2
    exit 1
 }
+
+if [ -z "$www" ]; then
+   www="$HOME/Documents/2017b/2017-2018--HOME/www/wy-cs"
+fi
 
 if [ -n "$www" ]; then
    cd "$www"
