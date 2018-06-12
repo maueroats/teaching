@@ -1,5 +1,5 @@
 ---
-title: "Sem.II Final Grades 9-11"
+title: "Sem.II Final Exam 9-11"
 date: 2018-06-11T20:40:26-05:00
 weight: 30
 draft: false
