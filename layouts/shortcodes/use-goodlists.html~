@@ -1,5 +1,0 @@
-<style type="text/css">
-    ol { list-style-type: roman; }
-    ol ol { list-style-type: lower-alpha; }
-    ol ol ol { list-style-type: lower-roman; }
-</style>

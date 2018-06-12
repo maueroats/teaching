@@ -60,7 +60,10 @@ You may use the Racket Help Desk and the class blog to write this function.
 
     Design and implement the `shuffle` function, including all "edge cases" (so the function will always work). As always, you may use helper functions.
 
-        (check-expect (shuffle (list 10 20 30 40)) (list 10 30 20 40))
+        (check-expect (shuffle (list 10 20 30 40)) 
+                               (list 10 30 20 40))
+		(check-expect (shuffle (list 10 20 30 40 50))
+                               (list 10 40 20 50 30))
 
 Points for testing (5 points) and function correctness (15 points).
 

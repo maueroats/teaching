@@ -2342,7 +2342,10 @@ to the model or messages sent.</li>
 <li><p>(20 points) The function <code>shuffle</code>: list(deck) -&gt; list is supposed to split the deck into two pieces <code>(a1 a2 a3 ...)</code> and <code>(b1 b2 b3 ...)</code> and then put them back together by interleaving the two pieces: <code>(a1 b1 a2 b2 ...)</code>. There should be no randomization.</p>
 
 <p>Design and implement the <code>shuffle</code> function, including all &ldquo;edge cases&rdquo; (so the function will always work). As always, you may use helper functions.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (shuffle (list 10 20 30 40)) (list 10 30 20 40))</pre></div></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (shuffle (list 10 20 30 40)) 
+                       (list 10 30 20 40))
+(check-expect (shuffle (list 10 20 30 40 50))
+                       (list 10 40 20 50 30))</pre></div></li>
 </ol>
 
 <p>Points for testing (5 points) and function correctness (15 points).</p>
