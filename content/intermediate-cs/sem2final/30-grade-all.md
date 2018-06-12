@@ -2,7 +2,7 @@
 title: "Sem.II Final Exam 9-11"
 date: 2018-06-11T20:40:26-05:00
 weight: 30
-draft: false
+draft: true
 #type: slide
 #theme: white
 description: "Full length final exam for intermediate computer science."
@@ -62,7 +62,7 @@ You may use the Racket Help Desk and the class blog to write this function.
 
         (check-expect (shuffle (list 10 20 30 40)) 
                                (list 10 30 20 40))
-		(check-expect (shuffle (list 10 20 30 40 50))
+        (check-expect (shuffle (list 10 20 30 40 50))
                                (list 10 40 20 50 30))
 
 Points for testing (5 points) and function correctness (15 points).
