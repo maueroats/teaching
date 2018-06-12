@@ -8,6 +8,10 @@ draft: false
 description: "Splash game."
 ---
 
+{{% alert theme="info" %}}
+{{% attachments title="Helper Classes" pattern=".*\.java$" /%}}
+{{% /alert %}}
+
 The Whitney Young Dolphins have come up with a new game to play: "Splash".
 
 {{< use-mathjax >}}
@@ -48,4 +52,8 @@ Output two lines, each containing one number.
 
 The board will be at most 250x250. The id numbers will all be
 nonnegative integers less than one million.
+
+{{% alert theme="info" %}}
+{{% attachments title="Test Data" pattern=".*\.txt$" /%}}
+{{% /alert %}}
 
