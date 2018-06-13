@@ -35,6 +35,10 @@ You may not use the computer to do anything but read this section. Turn in your 
 integers in the `data` that are above 50. Of the numbers that are
 above 50, the ones below 100 should be replaced with 100.
 
+    The program for `add-ex` is wrong. It does not always produce the
+    result that the purpose statement says it should. Answers that
+    agree with the purpose statement are considered "correct".
+
     Give an example of a (nonempty) test case in which the `add-ex`
     function gives the correct answer, and another test case in which it
     fails to give the correct answer.
