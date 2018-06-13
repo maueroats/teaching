@@ -29,7 +29,7 @@ You may not use the computer to do anything but read this section. Turn in your 
             (list* (+ 7 (first data))
                    (add-7-list (rest data))))
                    
-    What result will be produced from `(add-5-list (list 20 40 90))`?
+    What result will be produced from `(add-7-list (list 20 40 90))`?
 
 2. (5 points) The code below is intended to make a list of all of the
 integers in the `data` that are above 50. Of the numbers that are
