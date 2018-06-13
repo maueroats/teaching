@@ -53,7 +53,7 @@ above 50, the ones below 100 should be replaced with 100.
                  (list 100)]
                 [else (add-ex (rest data))]))
 
-4. (25 points) In a universe program, there are plants (circles) at various coordinates. Each one naturally grows at a 1mm (radius) per tick.  There are two possible actions: click an area to "fertilize" and "reset".
+4. (25 points) In a universe program, there are plants (circles) at various coordinates. Each one naturally grows at a 1mm (radius) per tick.  There are two possible actions:  "fertilize" and "reset".
 
     * The "fertilize" message will affect every player within distance of 10 units from the place it was applied. 
     * The "fertilize" message causes each world to grow +2 faster than previously.
