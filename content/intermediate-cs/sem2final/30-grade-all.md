@@ -46,7 +46,7 @@ above 50, the ones below 100 should be replaced with 100.
                  (list* (first data) 
                         (add-ex (rest data)))]
                 [(< 50 (first data) 100)
-                 100]
+                 (list 100)]
                 [else (add-ex (rest data))]))
 
 4. (25 points) In a universe program, there are plants (circles) at various coordinates. Each one naturally grows at a 1mm (radius) per tick.  There are two possible actions: click an area to "fertilize" and "reset".

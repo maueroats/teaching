@@ -2338,7 +2338,7 @@ fails to give the correct answer.</p>
          (list* (first data) 
                 (add-ex (rest data)))]
         [(&lt; 50 (first data) 100)
-         100]
+         (list 100)]
         [else (add-ex (rest data))]))</pre></div></li>
 
 <li><p>(25 points) In a universe program, there are plants (circles) at various coordinates. Each one naturally grows at a 1mm (radius) per tick.  There are two possible actions: click an area to &ldquo;fertilize&rdquo; and &ldquo;reset&rdquo;.</p>
