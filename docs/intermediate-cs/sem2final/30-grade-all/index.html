@@ -2350,14 +2350,18 @@ various coordinates. Each one naturally grows at a 1mm (radius) per
 tick.  There are three possible actions:  &ldquo;fertilize&rdquo;, &ldquo;reset&rdquo;, and &ldquo;trim&rdquo;.</p>
 
 <ul>
-<li>The &ldquo;fertilize&rdquo; message will affect every player within distance of 10 units from the place it was applied.</li>
-<li>The &ldquo;fertilize&rdquo; message causes each world to grow +2 faster than previously.</li>
-<li>The &ldquo;reset&rdquo; message will affect everyone. The reset message resets them to their initial growth rate.</li>
 <li>A single player can fertilize their plant by hitting
-&ldquo;f&rdquo;. Fertilizing also helps the plants nearby (see above).</li>
+&ldquo;f&rdquo;. Fertilizing also helps the plants nearby (see below).</li>
+<li>Fertilizing causes each affected plant to grow +2 faster than previously.</li>
+<li>Fertilizing a plant will also affect every plant within distance
+of 10 units in the same way.</li>
 <li>A single player can trim their plant (shrinking radius by 9) by
 hitting &ldquo;t&rdquo;.</li>
-<li><strong>Simplification</strong>: only keep the data for one plant in your model.</li>
+<li>A single player clicking anywhere resets all plants to their
+initial growth rate of 1/tick.</li>
+<li><strong>Simplification</strong>: only keep the data for one plant in your
+model. You will interact with other plants as if they were in
+the same space, but you will not be able to see them.</li>
 </ul>
 
 <p>Your job is:</p>
@@ -2381,9 +2385,11 @@ to the model.</li>
 
 <p>Design and implement the <code>shuffle</code> function, including all &ldquo;edge cases&rdquo; (so the function will always work). As always, you may use helper functions.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (shuffle (list 10 20 30 40)) 
-                       (list 10 30 20 40))
+              (list 10 30 20 40))
 (check-expect (shuffle (list 10 20 30 40 50))
-                       (list 10 40 20 50 30))</pre></div></li>
+              (list 10 40 20 50 30))
+(check-expect (shuffle (list 1 2 3 4 10 20 30 40))
+              (list 1 10 2 20 3 30 4 40))</pre></div></li>
 </ol>
 
 <p>Points for testing (5 points) and function correctness (15 points).</p>

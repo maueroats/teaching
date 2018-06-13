@@ -57,14 +57,18 @@ above 50, the ones below 100 should be replaced with 100.
    various coordinates. Each one naturally grows at a 1mm (radius) per
    tick.  There are three possible actions:  "fertilize", "reset", and "trim".
 
-    * The "fertilize" message will affect every player within distance of 10 units from the place it was applied. 
-    * The "fertilize" message causes each world to grow +2 faster than previously.
-    * The "reset" message will affect everyone. The reset message resets them to their initial growth rate.
     * A single player can fertilize their plant by hitting
-      "f". Fertilizing also helps the plants nearby (see above).
+      "f". Fertilizing also helps the plants nearby (see below).
+    * Fertilizing causes each affected plant to grow +2 faster than previously.
+    * Fertilizing a plant will also affect every plant within distance
+      of 10 units in the same way. 
     * A single player can trim their plant (shrinking radius by 9) by
       hitting "t".
-    * **Simplification**: only keep the data for one plant in your model.
+    * A single player clicking anywhere resets all plants to their
+      initial growth rate of 1/tick.
+    * **Simplification**: only keep the data for one plant in your
+      model. You will interact with other plants as if they were in
+      the same space, but you will not be able to see them.
 
     Your job is:
 
@@ -84,9 +88,11 @@ You may use the Racket Help Desk and the class blog to write this function.
     Design and implement the `shuffle` function, including all "edge cases" (so the function will always work). As always, you may use helper functions.
 
         (check-expect (shuffle (list 10 20 30 40)) 
-                               (list 10 30 20 40))
+                      (list 10 30 20 40))
         (check-expect (shuffle (list 10 20 30 40 50))
-                               (list 10 40 20 50 30))
+                      (list 10 40 20 50 30))
+        (check-expect (shuffle (list 1 2 3 4 10 20 30 40))
+                      (list 1 10 2 20 3 30 4 40))
 
 Points for testing (5 points) and function correctness (15 points).
 
