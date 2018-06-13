@@ -2325,7 +2325,8 @@ numbers.</p>
 <p>What result will be produced from <code>(add-5-list (list 20 40 90))</code>?</p></li>
 
 <li><p>(5 points) The code below is intended to make a list of all of the
-integers in the <code>data</code> that are above 50. Of the numbers that are above 50, the ones below 100 should be replaced with 100.</p>
+integers in the <code>data</code> that are above 50. Of the numbers that are
+above 50, the ones below 100 should be replaced with 100.</p>
 
 <p>Give an example of a (nonempty) test case in which the <code>add-ex</code>
 function gives the correct answer, and another test case in which it
@@ -2333,7 +2334,7 @@ fails to give the correct answer.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (add-ex data)
   (cond [(empty? data) 
          data]
-        [(&gt; 50 (first data))
+        [(&lt; 50 (first data))
          (list* (first data) 
                 (add-ex (rest data)))]
         [(&lt; 50 (first data) 100)
@@ -2344,9 +2345,12 @@ fails to give the correct answer.</p>
 
 <ul>
 <li>The &ldquo;fertilize&rdquo; message will affect every player within distance of 10 units from the place it was applied.</li>
-<li>The spread message causes each world to grow +2 faster than previously.</li>
+<li>The &ldquo;fertilize&rdquo; message causes each world to grow +2 faster than previously.</li>
 <li>The &ldquo;reset&rdquo; message will affect everyone. The reset message resets them to their initial growth rate.</li>
-<li>A single player can fertilize their plant by hitting &ldquo;f&rdquo; and trim their plant (shrinking radius by 9) by hitting &ldquo;t&rdquo;.</li>
+<li>A single player can fertilize their plant by hitting
+&ldquo;f&rdquo;. Fertilizing also helps the plants nearby (see above).</li>
+<li>A single player can trim their plant (shrinking radius by 9) by
+hitting &ldquo;t&rdquo;.</li>
 <li><strong>Simplification</strong>: only keep the data for one plant in your model.</li>
 </ul>
 
@@ -2355,8 +2359,8 @@ fails to give the correct answer.</p>
 <ol>
 <li>(5 points) List some essential items in the model, and explain your choice.</li>
 <li>(5 points) Describe a possible message struct.</li>
-<li>(5 points) Explain in detail the receive-handler, including any
-messages sent or changes
+<li>(5 points) Explain in detail how the receive-handler handles
+the &ldquo;fertilize&rdquo; message, including any messages sent or changes
 to the model.</li>
 <li>(10 points) Write the key handler.</li>
 </ol></li>

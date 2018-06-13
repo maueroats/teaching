@@ -32,7 +32,8 @@ You may not use the computer to do anything but read this section. Turn in your 
     What result will be produced from `(add-5-list (list 20 40 90))`?
 
 2. (5 points) The code below is intended to make a list of all of the
-integers in the `data` that are above 50. Of the numbers that are above 50, the ones below 100 should be replaced with 100.
+integers in the `data` that are above 50. Of the numbers that are
+above 50, the ones below 100 should be replaced with 100.
 
     Give an example of a (nonempty) test case in which the `add-ex`
     function gives the correct answer, and another test case in which it
@@ -41,7 +42,7 @@ integers in the `data` that are above 50. Of the numbers that are above 50, the 
         (define (add-ex data)
           (cond [(empty? data) 
                  data]
-                [(> 50 (first data))
+                [(< 50 (first data))
                  (list* (first data) 
                         (add-ex (rest data)))]
                 [(< 50 (first data) 100)
@@ -51,17 +52,20 @@ integers in the `data` that are above 50. Of the numbers that are above 50, the 
 4. (25 points) In a universe program, there are plants (circles) at various coordinates. Each one naturally grows at a 1mm (radius) per tick.  There are two possible actions: click an area to "fertilize" and "reset".
 
     * The "fertilize" message will affect every player within distance of 10 units from the place it was applied. 
-    * The spread message causes each world to grow +2 faster than previously.
+    * The "fertilize" message causes each world to grow +2 faster than previously.
     * The "reset" message will affect everyone. The reset message resets them to their initial growth rate.
-    * A single player can fertilize their plant by hitting "f" and trim their plant (shrinking radius by 9) by hitting "t". 
+    * A single player can fertilize their plant by hitting
+      "f". Fertilizing also helps the plants nearby (see above).
+    * A single player can trim their plant (shrinking radius by 9) by
+      hitting "t".
     * **Simplification**: only keep the data for one plant in your model.
 
     Your job is:
 
     1. (5 points) List some essential items in the model, and explain your choice.
     2. (5 points) Describe a possible message struct.
-    3. (5 points) Explain in detail the receive-handler, including any
-    messages sent or changes 
+    3. (5 points) Explain in detail how the receive-handler handles
+    the "fertilize" message, including any messages sent or changes 
     to the model.
     4. (10 points) Write the key handler.
 
