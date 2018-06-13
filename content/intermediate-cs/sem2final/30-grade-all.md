@@ -2,9 +2,7 @@
 title: "Sem.II Final Exam 9-11"
 date: 2018-06-11T20:40:26-05:00
 weight: 30
-draft: true
-#type: slide
-#theme: white
+draft: false
 description: "Full length final exam for intermediate computer science."
 ---
 
@@ -36,7 +34,9 @@ You may not use the computer to do anything but read this section. Turn in your 
 2. (5 points) The code below is intended to make a list of all of the
 integers in the `data` that are above 50. Of the numbers that are above 50, the ones below 100 should be replaced with 100.
 
-    Give an example of a test case that it can pass and a test case that it fails.
+    Give an example of a (nonempty) test case in which the `add-ex`
+    function gives the correct answer, and another test case in which it
+    fails to give the correct answer.
 
         (define (add-ex data)
           (cond [(empty? data) 

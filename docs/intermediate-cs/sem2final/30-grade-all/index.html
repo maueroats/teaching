@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.35" />
 
-<title>Chapter 5 Reading Guide :: WY Computer Science</title>
+<title>Sem.II Final Exam 9-11 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/ch05/ch05-reading-guide/">
+  <body data-url="/intermediate-cs/sem2final/30-grade-all/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -64,18 +64,16 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
@@ -201,14 +199,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch05/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/ch05/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch05/">5. Recursion</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch05/">5. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/haskell/ch05/ch05-reading-guide/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/ch05/ch05-reading-guide/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/ch05/ch05-reading-guide/">
             Chapter 5 Reading Guide
@@ -914,10 +911,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
@@ -1991,10 +1989,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/sem2final/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/sem2final/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/sem2final/">Sem.II Final</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/sem2final/">Sem.II Final</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/sem2final/20-grade8/" class="dd-item">
@@ -2004,7 +2003,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/sem2final/30-grade-all/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/sem2final/30-grade-all/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/sem2final/30-grade-all/">
             Sem.II Final Exam 9-11
@@ -2250,12 +2249,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch05/'>5. Recursion</a> > Chapter 5 Reading Guide
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/sem2final/'>Sem.II Final</a> > Sem.II Final Exam 9-11
 
  
 
@@ -2270,7 +2264,15 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#paper-analysis">Paper analysis</a></li>
+<li><a href="#coding-on-the-computer">Coding on the computer</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2278,15 +2280,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="http://wy-cs.infotags/reading-guide">reading-guide</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>Chapter 5 Reading Guide</h1>
+    <h1>Sem.II Final Exam 9-11</h1>
   
 
 
@@ -2294,53 +2290,94 @@
     
     
     
-    <p>The purpose of reading this section is to see how an experienced
-author writes functions that work on lists.
-</p>
+    
 
-<p>Functions:</p>
+<style type="text/css">
+    ol { list-style-type: roman; }
+    ol ol { list-style-type: lower-alpha; }
+    ol ol ol { list-style-type: lower-roman; }
+    ol ol ol ol { list-style-type: decimal; }
+</style>
 
-<ul>
-<li><code>maximum</code>: Two different versions.</li>
-<li><code>replicate</code></li>
-<li><code>take</code></li>
-<li><code>reverse</code></li>
-<li><code>repeat</code></li>
-<li><code>zip</code></li>
-<li><code>elem</code></li>
-<li><code>quicksort</code>: This one takes some thinking to understand.</li>
-</ul>
 
-<p>After you have read the chapter, write answers to these questions:</p>
+<p>This is the Spring 2018 final exam for Intermediate Computer Science. The exam is 60 points. There are 40 points for the paper questions and 20 points for the computer program.</p>
+
+<h2 id="paper-analysis">Paper analysis</h2>
+
+<p>You may not use the computer to do anything but read this section. Turn in your paper when you are done and ready to begin the next section (coding). You cannot come back to this section after you turn in your paper.</p>
 
 <ol>
-<li><p>What is the main idea behind the <code>quicksort</code> function?</p></li>
+<li><p>(5 points) Write the output from each. If an error results, indicate why.</p>
 
-<li><p>Write the <code>insertBefore</code> function that places an element before the current item with the given index in a list. Use as few built-in functions as you can. This is a thinking exercise not a practical exercise &ndash; figure out how to do it without <code>take</code>, <code>drop</code> or <code>splitAt</code>.
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">    <span style="color:#75af00">insertBefore</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#75af00">a</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#75af00">a</span><span style="color:#111">]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#75af00">a</span><span style="color:#111">]</span>
-    <span style="color:#75af00">insertBefore</span> <span style="color:#75af00">n</span> <span style="color:#75af00">item</span> <span style="color:#75af00">xs</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span>
-    <span style="color:#75715e">-- Examples:</span>
-    <span style="color:#75af00">insertBefore</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">3</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span>
-    <span style="color:#75af00">insertBefore</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">6</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span>
-    <span style="color:#75af00">insertBefore</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">9</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span><span style="color:#ae81ff">9</span><span style="color:#111">]</span></code></pre></div></p></li>
+<ol>
+<li><code>(list 1 20 30 empty)</code></li>
+<li><code>(list 20 40 (list 60 80) 100)</code></li>
+<li><code>(list* (list 1 2 3) 4)</code></li>
+<li><code>(list 11 12 (list* 13 14 empty))</code></li>
+<li><code>(cons 2 (cons 8 (list* 16 (cons 32 empty))))</code></li>
+</ol></li>
 
-<li><p>The <code>allPermutations</code> function takes in a list and returns a list
-of lists. The output contains every permutation of the input list
-exactly once. (Treat all of the input list elements as
-distinguishable; see last test case.) The permutations do not have
-to appear in the order given below.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">allPermutations</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]]</span>
-<span style="color:#75af00">allPermutations</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">],[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]]</span>
-<span style="color:#75af00">allPermutations</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]]</span> <span style="color:#75715e">-- do not try to see the items are the same</span></code></pre></div></li>
+<li><p>(5 points) The code below should add 7 to every number in a list of
+numbers.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (add-7-list data)
+    (list* (+ 7 (first data))
+           (add-7-list (rest data))))</pre></div>
+<p>What result will be produced from <code>(add-5-list (list 20 40 90))</code>?</p></li>
 
-<li><p>Write the <code>combinations</code> function that takes in a number k and a list, and returns a list of lists. The output contains every distinct k item subset of the list (keep the items in the order they appear in the original list).</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">combinations</span> <span style="color:#ae81ff">2</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">]]</span>
-<span style="color:#75af00">combinations</span> <span style="color:#ae81ff">3</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">5</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],</span>
-                          <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">]]</span></code></pre></div></li>
+<li><p>(5 points) The code below is intended to make a list of all of the
+integers in the <code>data</code> that are above 50. Of the numbers that are above 50, the ones below 100 should be replaced with 100.</p>
 
-<li><p>Write the <code>grouper</code> function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">grouper</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">]]</span></code></pre></div></li>
+<p>Give an example of a (nonempty) test case in which the <code>add-ex</code>
+function gives the correct answer, and another test case in which it
+fails to give the correct answer.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (add-ex data)
+  (cond [(empty? data) 
+         data]
+        [(&gt; 50 (first data))
+         (list* (first data) 
+                (add-ex (rest data)))]
+        [(&lt; 50 (first data) 100)
+         100]
+        [else (add-ex (rest data))]))</pre></div></li>
+
+<li><p>(25 points) In a universe program, there are plants (circles) at various coordinates. Each one naturally grows at a 1mm (radius) per tick.  There are two possible actions: click an area to &ldquo;fertilize&rdquo; and &ldquo;reset&rdquo;.</p>
+
+<ul>
+<li>The &ldquo;fertilize&rdquo; message will affect every player within distance of 10 units from the place it was applied.</li>
+<li>The spread message causes each world to grow +2 faster than previously.</li>
+<li>The &ldquo;reset&rdquo; message will affect everyone. The reset message resets them to their initial growth rate.</li>
+<li>A single player can fertilize their plant by hitting &ldquo;f&rdquo; and trim their plant (shrinking radius by 9) by hitting &ldquo;t&rdquo;.</li>
+<li><strong>Simplification</strong>: only keep the data for one plant in your model.</li>
+</ul>
+
+<p>Your job is:</p>
+
+<ol>
+<li>(5 points) List some essential items in the model, and explain your choice.</li>
+<li>(5 points) Describe a possible message struct.</li>
+<li>(5 points) Explain in detail the receive-handler, including any
+messages sent or changes
+to the model.</li>
+<li>(10 points) Write the key handler.</li>
+</ol></li>
 </ol>
+
+<h2 id="coding-on-the-computer">Coding on the computer</h2>
+
+<p>You may use the Racket Help Desk and the class blog to write this function.</p>
+
+<ol>
+<li><p>(20 points) The function <code>shuffle</code>: list(deck) -&gt; list is supposed to split the deck into two pieces <code>(a1 a2 a3 ...)</code> and <code>(b1 b2 b3 ...)</code> and then put them back together by interleaving the two pieces: <code>(a1 b1 a2 b2 ...)</code>. There should be no randomization.</p>
+
+<p>Design and implement the <code>shuffle</code> function, including all &ldquo;edge cases&rdquo; (so the function will always work). As always, you may use helper functions.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (shuffle (list 10 20 30 40)) 
+                       (list 10 30 20 40))
+(check-expect (shuffle (list 10 20 30 40 50))
+                       (list 10 40 20 50 30))</pre></div></li>
+</ol>
+
+<p>Points for testing (5 points) and function correctness (15 points).</p>
+
 
     
     
@@ -2351,8 +2388,8 @@ to appear in the order given below.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/ch05/" title="5. Recursion"> <i class="fa fa-chevron-left"></i><label>5. Recursion</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/ch06/" title="6. Higher Order Functions" style="margin-right: 0px;"><label>6. Higher Order Functions</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/sem2final/20-grade8/" title="Sem.II Final 8"> <i class="fa fa-chevron-left"></i><label>Sem.II Final 8</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><label>Calendar</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
