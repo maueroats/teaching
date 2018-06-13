@@ -24,32 +24,45 @@ You may not use the computer to do anything but read this section. Turn in your 
     4. `(list 11 12 (list* 13 14 empty))`
     5. `(cons 2 (cons 8 (list* 16 (cons 32 empty))))`
 
+2. (5 points) The code below should add 7 to every number in a list of
+   numbers.
+   
+        (define (add-7-list data)
+            (list* (+ 7 (first data))
+                   (add-7-list (rest data))))
+                   
+    What result will be produced from `(add-5-list (list 20 40 90))`?
+
 2. (5 points) The code below is intended to make a list of all of the
 integers in the `data` that are above 50. Of the numbers that are above 50, the ones below 100 should be replaced with 100.
 
     Give an example of a test case that it can pass and a test case that it fails.
 
         (define (add-ex data)
-          (cond [(> 50 (first data))
+          (cond [(empty? data) 
+                 data]
+                [(> 50 (first data))
                  (list* (first data) 
                         (add-ex (rest data)))]
                 [(< 50 (first data) 100)
                  100]
                 [else (add-ex (rest data))]))
 
-4. In a universe program, there are plants (circles) at various coordinates. Each one naturally grows at a 1mm (radius) per tick.  There are two possible actions: click an area to "fertilize" and "reset".
+4. (25 points) In a universe program, there are plants (circles) at various coordinates. Each one naturally grows at a 1mm (radius) per tick.  There are two possible actions: click an area to "fertilize" and "reset".
 
     * The "fertilize" message will affect every player within distance of 10 units from the place it was applied. 
     * The spread message causes each world to grow +2 faster than previously.
     * The "reset" message will affect everyone. The reset message resets them to their initial growth rate.
     * A single player can fertilize their plant by hitting "f" and trim their plant (shrinking radius by 9) by hitting "t". 
+    * **Simplification**: only keep the data for one plant in your model.
 
     Your job is:
 
     1. (5 points) List some essential items in the model, and explain your choice.
     2. (5 points) Describe a possible message struct.
-    3. (10 points) Explain in detail the receive-handler, including any changes 
-    to the model or messages sent. 
+    3. (5 points) Explain in detail the receive-handler, including any
+    messages sent or changes 
+    to the model.
     4. (10 points) Write the key handler.
 
 ## Coding on the computer

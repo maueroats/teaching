@@ -907,7 +907,7 @@
 	"title": "Java Methods",
 	"tags": [],
 	"description": "",
-	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   Programming Practice   Q3. Review   15. Files and Streams   20. Set and Map   Sem.II Final Exam   "
+	"content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many resources:\n Home page for all textbook resources PowerPoint slides for each chapter. These are quite thorough. Starter code for students.  Note that we have the second edition, which is from 2011 (now out of date). There are probably few changes.\nChapters  1. CS Basics   2. Software Engineering   3. Objects and Classes   6. Data Types   10. Strings   Interlude   12. Arrays   Unit Testing   Semester 1 Final   13. ArrayList   14. Searching and Sorting   Programming Practice   Q3. Review   15. Files and Streams   20. Set and Map   Sem.II Final Index   "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch08/number-4/",
@@ -1485,10 +1485,10 @@
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/sem2final/",
-	"title": "Sem.II Final Exam",
+	"title": "Sem.II Final Index",
 	"tags": [],
 	"description": "Final exam, possibly including advanced data structures and problem solving.",
-	"content": "  Final Problem Splash game.\n  "
+	"content": "  Sem.II Final Splash Splash game.\n  "
 },
 {
 	"uri": "http://wy-cs.info/intermediate-cs/battleship/",
@@ -1611,7 +1611,7 @@
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/jm/sem2final/final-splash/",
-	"title": "Final Problem",
+	"title": "Sem.II Final Splash",
 	"tags": [],
 	"description": "Splash game.",
 	"content": "   Helper Classes   ReadMatrix.java  (0 kB)    The Whitney Young Dolphins have come up with a new game to play: \u0026ldquo;Splash\u0026rdquo;.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   The game of splash is played on an $N \\times N$ grid. A dolphin claims a square by splashing their fin and writing their id number in the square.\nThe game ends when all of the squares have numbers in them.\nAn individual dolphin wins if they have connected the largest contiguous region. Two squares belong to the same region if the have the same id number and there is a path from one to the other going up, down, left, right (but no diagonals) all on squares with the same id number as the start and end.\nDolphins are team players, so they prefer to play the game with a partner. When two dolphins play on a team together, either one of their id numbers can be used at any step of the connecting path to form a region. In fact, for a team to count a region, the id numbers of both players must be used in the region.\nInput Format The first line of the file with be the number N.\nEach of the N lines following will contain N positive integers separated by spaces.\nOutput Format Output two lines, each containing one number.\n The first number is the largest sized region for any single dolphin. The second number is the largest sized region for any two-dolphin team.  Constraints The board will be at most 250x250. The id numbers will all be nonnegative integers less than one million.\n  Test Data   data1.txt  (0 kB)   data2.txt  (0 kB)   data3.txt  (0 kB)   data4.txt  (0 kB)    "
@@ -2069,7 +2069,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Final Problem modified Tue 06-12  Sem.II Final Exam modified Tue 06-12  20. Substitution Cipher modified Thu 05-24  20. Cookie Monster modified Tue 05-22  20. Linked Lists modified Tue 05-22  20. Frequency Analysis modified Tue 05-22  20. Set Map Intro modified Tue 05-22  20. Set and Map modified Mon 05-21  Intermediate Computer Science Recent Changes    Sem.II Final 8 modified Wed 06-06  Sem.II Final modified Wed 06-06  P4. Model Message modified Fri 05-25  P3. Color Spin modified Thu 05-24  P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem.II Review modified Mon 05-21  Agar.io modified Wed 05-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
+	"content": " AP Computer Science Recent Changes   Sem.II Final Splash modified Tue 06-12  Sem.II Final Index modified Tue 06-12  20. Substitution Cipher modified Thu 05-24  20. Cookie Monster modified Tue 05-22  20. Linked Lists modified Tue 05-22  20. Frequency Analysis modified Tue 05-22  20. Set Map Intro modified Tue 05-22  20. Set and Map modified Mon 05-21  Intermediate Computer Science Recent Changes    Sem.II Final 8 modified Wed 06-06  Sem.II Final modified Wed 06-06  P4. Model Message modified Fri 05-25  P3. Color Spin modified Thu 05-24  P2. Attendance modified Mon 05-21  P1. Jackpot modified Mon 05-21  Sem.II Review modified Mon 05-21  Agar.io modified Wed 05-16  Site RSS Feed The site feed only includes both Intermediate and AP CS combined (for now).\nRSS Feed "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -2093,14 +2093,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "http://wy-cs.info/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "http://wy-cs.info/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
