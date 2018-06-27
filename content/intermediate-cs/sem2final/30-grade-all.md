@@ -60,8 +60,8 @@ above 50, the ones below 100 should be replaced with 100.
     * A single player can fertilize their plant by hitting
       "f". Fertilizing also helps the plants nearby (see below).
     * Fertilizing causes each affected plant to grow +2 faster than previously.
-    * Fertilizing a plant will also affect every plant within distance
-      of 10 units in the same way. 
+    * Fertilizing a plant will also affect the growth rate of every
+      plant within a distance of 10 units of the initial plant. 
     * A single player can trim their plant (shrinking radius by 9) by
       hitting "t".
     * A single player clicking anywhere resets all plants to their
