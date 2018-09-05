@@ -1,6 +1,6 @@
 ---
 title: Haskell Calendar
-date: 2017-09-13
+date: 2018-09-05
 tags: 
  - haskell
  - calendar

@@ -144,7 +144,7 @@
 	"title": "AP CS",
 	"tags": [],
 	"description": "",
-	"content": "AP Computer Science studies:\n Haskell - an introduction to pure functional programming  Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
+	"content": " You will need the the text Learn You a Haskell For Great Good.\n AP Computer Science studies:\n Haskell - an introduction to pure functional programming  Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site. "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/",
@@ -599,7 +599,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Connect Four Timeline modified Sat 10-07  Intermediate Computer Science Recent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  "
+	"content": " AP Computer Science Recent Changes   Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Intermediate Computer Science Recent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
