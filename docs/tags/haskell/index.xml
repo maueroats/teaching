@@ -79,14 +79,15 @@ We also learn the basic list manipulation commands.
       <pubDate>Sat, 09 Sep 2017 15:48:14 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/haskell/</guid>
-      <description>Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.
-Chapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.</description>
+      <description>You will need the the text Learn You a Haskell For Great Good.
+ Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.
+Chapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples.</description>
     </item>
     
     <item>
       <title>Haskell Calendar</title>
       <link>http://wy-cs.info/ap-cs/haskell-calendar/</link>
-      <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Sep 2018 11:19:45 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/haskell-calendar/</guid>
       <description>Daily calendar for Haskell unit.

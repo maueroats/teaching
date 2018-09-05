@@ -14,4 +14,8 @@ AP Computer Science studies:
 
 * [Haskell](haskell) - an introduction to pure functional programming
 
+## All Topics
+
+{{% children description="true" %}}
+
 {{< std-resources >}}

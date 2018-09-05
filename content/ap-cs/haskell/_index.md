@@ -7,6 +7,12 @@ categories:
 weight: 10
 ---
 
+{{% note alert %}}
+You will need the the text [Learn You a Haskell For Great
+Good](http://learnyouahaskell.com/).
+{{% /note %}}
+
+
 Haskell is a pure, lazy, statically typed language. 
 In the first chapter you will learn what those terms mean.
 Later you will learn how to write programs.

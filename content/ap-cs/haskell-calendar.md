@@ -1,6 +1,6 @@
 ---
 title: Haskell Calendar
-date: 2018-09-05
+date: "2018-09-05T11:19:45-05:00"
 tags: 
  - haskell
  - calendar

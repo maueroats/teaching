@@ -6,7 +6,7 @@
     <description>Recent content in Calendar on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Sep 2018 11:19:45 -0500</lastBuildDate>
     
 	<atom:link href="http://wy-cs.info/tags/calendar/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Haskell Calendar</title>
       <link>http://wy-cs.info/ap-cs/haskell-calendar/</link>
-      <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Sep 2018 11:19:45 -0500</pubDate>
       
       <guid>http://wy-cs.info/ap-cs/haskell-calendar/</guid>
       <description>Daily calendar for Haskell unit.
