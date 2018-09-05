@@ -58,6 +58,11 @@
   </url>
   
   <url>
+    <loc>http://wy-cs.info/ap-cs/haskell/</loc>
+    <lastmod>2018-09-05T11:26:51-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wy-cs.info/intermediate-cs/part-i/</loc>
     <lastmod>2018-03-07T14:32:07-06:00</lastmod>
   </url>
@@ -105,11 +110,6 @@
   <url>
     <loc>http://wy-cs.info/ap-cs/</loc>
     <lastmod>2017-09-09T15:49:20-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wy-cs.info/ap-cs/haskell/</loc>
-    <lastmod>2017-09-09T15:48:14-05:00</lastmod>
   </url>
   
   <url>

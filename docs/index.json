@@ -77,6 +77,13 @@
 	"content": ""
 },
 {
+	"uri": "http://wy-cs.info/ap-cs/haskell/",
+	"title": "Haskell",
+	"tags": ["haskell"],
+	"description": "",
+	"content": " You will need the the text Learn You a Haskell For Great Good.\n Use repl.it for programming.\n Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions Patterns, guards, where, let, and case.   5. Recursion \n  6. Higher Order Functions This is a fun chapter to read, but as a class we are done after Chapter 5 (for now). Chapter 6 Reading Guide   USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it A summary of any special problems that have arisen with repl.it.   Source Code Files (ghci) Writing a file is different from typing in an interpreter like repl.it or ghci.   "
+},
+{
 	"uri": "http://wy-cs.info/intermediate-cs/part-i/",
 	"title": "Part I: Ch 1-19",
 	"tags": [],
@@ -144,14 +151,7 @@
 	"title": "AP CS",
 	"tags": [],
 	"description": "",
-	"content": " You will need the the text Learn You a Haskell For Great Good.\n AP Computer Science studies:\n Haskell - an introduction to pure functional programming  All Topics  Haskell You will need the the text Learn You a Haskell For Great Good. Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs. Chapters 1. Intro A high-level overview of the Haskell language and why its features are good. 2. Starting Out Learn how to make lists and tuples.\n  Haskell Calendar Daily calendar for Haskell unit.   Git Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do. You will use it for several purposes: Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group Incomplete It is impossible to write down everything you need to know about git.\n  News    Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
-},
-{
-	"uri": "http://wy-cs.info/ap-cs/haskell/",
-	"title": "Haskell",
-	"tags": ["haskell"],
-	"description": "",
-	"content": " You will need the the text Learn You a Haskell For Great Good.\n Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions Patterns, guards, where, let, and case.   5. Recursion \n  6. Higher Order Functions This is a fun chapter to read, but as a class we are done after Chapter 5 (for now). Chapter 6 Reading Guide   USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it A summary of any special problems that have arisen with repl.it.   Source Code Files (ghci) Writing a file is different from typing in an interpreter like repl.it or ghci.   "
+	"content": " You will need the the text Learn You a Haskell For Great Good.\n AP Computer Science studies:\n Haskell - an introduction to pure functional programming  All Topics  Haskell You will need the the text Learn You a Haskell For Great Good. Use repl.it for programming. Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs. Chapters 1. Intro A high-level overview of the Haskell language and why its features are good. 2. Starting Out Learn how to make lists and tuples.\n  Haskell Calendar Daily calendar for Haskell unit.   Git Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do. You will use it for several purposes: Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group Incomplete It is impossible to write down everything you need to know about git.\n  News    Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
@@ -599,7 +599,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Git modified Tue 10-10  Intermediate Computer Science Recent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  "
+	"content": " AP Computer Science Recent Changes   Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Intermediate Computer Science Recent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  "
 },
 {
 	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",

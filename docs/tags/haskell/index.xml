@@ -53,6 +53,18 @@ We also learn the basic list manipulation commands.
     </item>
     
     <item>
+      <title>Haskell</title>
+      <link>http://wy-cs.info/ap-cs/haskell/</link>
+      <pubDate>Wed, 05 Sep 2018 11:26:51 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/</guid>
+      <description>You will need the the text Learn You a Haskell For Great Good.
+ Use repl.it for programming.
+ Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.
+Chapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples.</description>
+    </item>
+    
+    <item>
       <title>Chapter 4 Reading Guide</title>
       <link>http://wy-cs.info/ap-cs/haskell/ch04/ch04-reading-guide/</link>
       <pubDate>Sun, 17 Sep 2017 20:47:05 -0500</pubDate>
@@ -71,17 +83,6 @@ We also learn the basic list manipulation commands.
       <description>Haskell Starting Out Questions A. Sections 2.1&amp;ndash;2.3  There is an annoyance with negative numbers that is mentioned.
  What is the correct way to write five times negative three in Haskell? What is a wrong way to do the same thing?  Logical operations are basic building blocks of programs. How do you write:
  and or not equals not equals  Haskell follows mostly the normal order of operations from mathematics.</description>
-    </item>
-    
-    <item>
-      <title>Haskell</title>
-      <link>http://wy-cs.info/ap-cs/haskell/</link>
-      <pubDate>Sat, 09 Sep 2017 15:48:14 -0500</pubDate>
-      
-      <guid>http://wy-cs.info/ap-cs/haskell/</guid>
-      <description>You will need the the text Learn You a Haskell For Great Good.
- Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.
-Chapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples.</description>
     </item>
     
     <item>

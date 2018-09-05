@@ -1,17 +1,20 @@
 ---
 title: "Haskell"
-date: 2017-09-09T15:48:14-05:00
+date: 2018-09-05T11:26:51-05:00
 tags: ["haskell"]
 categories:
     - ap-cs
 weight: 10
 ---
 
-{{% note alert %}}
+{{% notice note %}}
 You will need the the text [Learn You a Haskell For Great
 Good](http://learnyouahaskell.com/).
-{{% /note %}}
+{{% /notice %}}
 
+{{% notice tip %}}
+Use [repl.it](https://repl.it/languages/haskell) for programming.
+{{% /notice %}}
 
 Haskell is a pure, lazy, statically typed language. 
 In the first chapter you will learn what those terms mean.
