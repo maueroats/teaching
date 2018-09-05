@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intermediate Cs on WY Computer Science</title>
+    <link>http://wy-cs.info/categories/intermediate-cs/</link>
+    <description>Recent content in Intermediate Cs on WY Computer Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Sep 2017 01:23:58 -0500</lastBuildDate>
+    
+	<atom:link href="http://wy-cs.info/categories/intermediate-cs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1. Introduction</title>
+      <link>http://wy-cs.info/intermediate-cs/ch01/</link>
+      <pubDate>Sun, 10 Sep 2017 01:23:58 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/ch01/</guid>
+      <description>&lt;p&gt;Learn the essentials of image manipulation: rotating, flipping, and combining images.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Intermediate CS</title>
+      <link>http://wy-cs.info/intermediate-cs/</link>
+      <pubDate>Sat, 09 Sep 2017 19:49:27 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/</guid>
+      <description>Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.
+Recent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  All Content  Part I: Ch 1-19   1.</description>
+    </item>
+    
+    <item>
+      <title>Calendar</title>
+      <link>http://wy-cs.info/intermediate-cs/calendar/</link>
+      <pubDate>Mon, 18 Sep 2017 22:38:42 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/intermediate-cs/calendar/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1p1JGIOWxwFkcFBZ01UxC-lOIkXn0ORUHfIt3aQVNTEU/edit?usp=sharing&#34;&gt;assigment sheet&lt;/a&gt; goes with the calendar.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

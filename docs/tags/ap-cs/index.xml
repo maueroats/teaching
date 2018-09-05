@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ap Cs on WY Computer Science</title>
+    <link>http://wy-cs.info/tags/ap-cs/</link>
+    <description>Recent content in Ap Cs on WY Computer Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Sep 2017 15:57:47 -0500</lastBuildDate>
+    
+	<atom:link href="http://wy-cs.info/tags/ap-cs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Haskell CW 2</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</link>
+      <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/</guid>
+      <description>&lt;h2 id=&#34;class-work-for-2-1-2-3&#34;&gt;Class work for 2.1&amp;ndash;2.3&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://projecteuler.net/problem=6&#34;&gt;Sum Square Difference&lt;/a&gt;
+The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;1^2 + 2^2 + ... + 10^2 = 385&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The square of the sum of the first ten natural numbers is,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;(1 + 2 + ... + 10)^2 = 55^2 = 3025&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.&lt;/p&gt;
+
+&lt;p&gt;Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Haskell HW 2</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/</link>
+      <pubDate>Tue, 12 Sep 2017 15:57:47 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/</guid>
+      <description>&lt;p&gt;Graph a function, is a pointon a line, get the numbers more than 100, break up a list,
+find the nearest point.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Haskell HW 2 Solutions</title>
+      <link>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/</link>
+      <pubDate>Thu, 14 Sep 2017 10:18:00 -0500</pubDate>
+      
+      <guid>http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/</guid>
+      <description>breakItUp plan:
+ replicate input list (length - 3) times zip with count helper function knows count and list, drop &amp;amp; take  breaklicator xs = replicate (length xs - 3) xs numberIt ys = zip ys [0..] breakItUp&amp;#39; :: ([a],Int) -&amp;gt; [a] breakItUp&amp;#39; (xs,y) = take 4 $ drop y xs breakItUp_v2 :: [a] -&amp;gt; [[a]] breakItUp_v2 xs = [ breakItUp&amp;#39; w | w &amp;lt;- numberIt $ breaklicator xs ] Fancy solution for breakItUp, shows power of Haskell pattern matching (Chapter 4):</description>
+    </item>
+    
+  </channel>
+</rss>

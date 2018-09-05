@@ -29,11 +29,6 @@ weight = 15
 
 [[menu.shortcuts]]
 pre = "<h3>Other</h3>"
-name = "Art Gallery"
-url = "/art-gallery"
-weight = 20
-
-[[menu.shortcuts]]
 name = "CS Events"
 url = "/events"
 weight = 21
@@ -50,7 +45,7 @@ weight = 25
 
 [[menu.shortcuts]]
 pre = "<h3>External</h3>"
-name = "<i class='fa fa-calendar' aria-hidden='true'></i>AP Exam Calendar 2018"
+name = "<i class='fa fa-calendar' aria-hidden='true'></i>AP Exam Calendar 2019"
 identifier = "apcal"
 url = "https://apcentral.collegeboard.org/courses/exam-dates-and-fees"
 weight = 50
