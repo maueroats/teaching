@@ -1,6 +1,6 @@
 ---
 title: "Why Racket?"
-date: 2017-09-29T20:12:44-05:00
+date: 2018-09-05T20:12:44-05:00
 section:
  - intermediate-cs
 draft: false

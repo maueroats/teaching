@@ -228,7 +228,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  All Content  Part I: Ch 1-19   1. Introduction   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nEventually you will want to understand why we learn Racket instead of a more popular language like Python.\nRecent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  All Content  Part I: Ch 1-19   1. Introduction   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/hw-a2-solution/",
@@ -333,7 +333,7 @@
 	"title": "Resources",
 	"tags": [],
 	"description": "",
-	"content": " These resources may be useful throughout the year.\n Syllabus for all classes Git program information (work in progress)  Course-specific information  AP Computer Science  Syllabus extra info  Intermediate Computer Science  Syllabus extra info WeScheme - when you cannot install software   "
+	"content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info  Intermediate Computer Science  Syllabus extra info WeScheme - when you cannot install software   Everything  Syllabus: All Courses   Syllabus: AP CS   Syllabus: Intermediate   Grade Weights   Academic Integrity   Why Racket?   CS Events   WeScheme   "
 },
 {
 	"uri": "https://wy-cs.site/machine-learning/resources/",
@@ -385,6 +385,13 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
 },
 {
+	"uri": "https://wy-cs.site/resources/why-racket/",
+	"title": "Why Racket?",
+	"tags": [],
+	"description": "",
+	"content": " Many people we encounter tell us they wish they knew how to code and then ask which programming language they should learn. Given the press that some programming languages get, this question is not surprising. But it is also wholly inappropriate. Learning to program in a currently fashionable programming language often sets up students for eventual failure. Fashion in this world is extremely short lived. A typical “quick programming in X” book or course fails to teach principles that transfer to the next fashion language. Worse, the language itself often distracts from the acquisition of transferable skills, at the level of both expressing solutions and dealing with programming mistakes.\n\u0026ndash; Felleison et al, How to Design Programs, Second Edition.\n To understand why Racket is a good language to learn, one need read no further than Section 0.1 of Stephen Bloch\u0026rsquo;s Picturing Programs. Please read it now if you have not.\nTo summarize, here are major arguments for choosing Racket over a more \u0026ldquo;popular\u0026rdquo; programming language:\n Racket\u0026rsquo;s uniform syntax (everything is in parentheses, no order of operations, means that everything you do learn is a real intellectual concept.\n Racket works without any incantations that cannot be understood by a beginner. Example: Java\u0026rsquo;s public static void main (String[] args) incantation.\n Racket\u0026rsquo;s language levels protects you from advanced features that could be misunderstood at the start, but lets you continue to program in the same familiar language with more advanced features when you are ready.\n Any language you choose will be obsolete by the time you enter the workforce in 4-8 years, so effort spent learning language-specific syntax is not productive. Instead, you need to learn how to learn a new language. Most programmers find themselves working in a variety of languages depending on the requirements of their current task.\n Paul Graham\u0026rsquo;s article Beating the Averages explains how they used Lisp to make a very successful business (it was worth almost $50 million when it was purchased by Yahoo!). Lisp is a language very similar to Racket.\n Racket includes a way to build web applications as well as a graphical user interface builder that works on any kind of computer.\n Nobody should pass judgement on Racket until they understand the macro system that it has! Consider that a challenge if you are an advanced student.\n  "
+},
+{
 	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
 	"title": "2018.09.05",
 	"tags": [],
@@ -392,18 +399,11 @@
 	"content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   $\\DeclareMathOperator{\\Var}{Var}$\n Given the probability table below for the random variable W.\n Find the expected value of W. Find the variance of W.       Prob W     1\u0026frasl;3 6   1\u0026frasl;2 12   1\u0026frasl;6 24     Prove that the variance is not linear by adding to your example above. That is, $\\Var(3 W) \\not= 3 \\Var(W)$.\n Guess a formula for $\\Var (m W)$.\n  "
 },
 {
-	"uri": "https://wy-cs.site/machine-learning/outline/daily-a/",
-	"title": "Daily Skeleton",
-	"tags": [],
-	"description": "",
-	"content": " 2018-09-05:  "
-},
-{
 	"uri": "https://wy-cs.site/machine-learning/outline/",
 	"title": "Course Outline",
 	"tags": [],
 	"description": "A broad outline of what we plan to cover, so you can see how it all fits together.",
-	"content": " Note: MathJax formulas used on this page. Ugly if you block Javascript from Cloudflare.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   There are a lot of pieces of knowledge that we need to fit together.\nCurrent daily plans.\n Statistics  Expected value (mean), variance, covariance. Algebraic properties. Standard deviation. Random variables. Distributions (probability density function). Standard normal distribution (\u0026ldquo;Gaussian\u0026rdquo;) with $\\mu = 0$ and $\\sigma = 1$. Scaling to get mean = 0, variance = 1. Area under normal distribution. Computations.  Linear algebra  Shapes. Transpose. Inverse. Determinant? Matrix-vector product. Dot product. Projection onto a vector. Solving linear systems. Derivative of matrix function like (X.w)^2 ?  Regression  Not sure. Do it and see that the method works.  "
+	"content": " Note: MathJax formulas used on this page. Ugly if you block Javascript from Cloudflare.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   There are a lot of pieces of knowledge that we need to fit together.\nStatistics  Expected value (mean), variance, covariance. Algebraic properties. Standard deviation. Random variables. Distributions (probability density function). Standard normal distribution (\u0026ldquo;Gaussian\u0026rdquo;) with $\\mu = 0$ and $\\sigma = 1$. Scaling to get mean = 0, variance = 1. Area under normal distribution. Computations.  Linear algebra  Shapes. Transpose. Inverse. Determinant? Matrix-vector product. Dot product. Projection onto a vector. Solving linear systems. Derivative of matrix function like (X.w)^2 ?  Regression  Not sure. Do it and see that the method works.  "
 },
 {
 	"uri": "https://wy-cs.site/machine-learning/daily/",
@@ -509,13 +509,6 @@
 	"tags": ["haskell", "reading-guide"],
 	"description": "",
 	"content": " Take in a list of numbers and output a list containing all of the numbers greater than 8.\n Take in a list of numbers and output a list containing all of the numbers between 10 and 20 (inclusive).\n Take in a list of numbers. Multiply all of the numbers in a list by 10 to make the output list.\n Take in a list of lists. Arrange the list of lists according to how many elements each list has, so longer sublists go first and shorter sublists go later.\n  "
-},
-{
-	"uri": "https://wy-cs.site/resources/why-racket/",
-	"title": "Why Racket?",
-	"tags": [],
-	"description": "",
-	"content": " Many people we encounter tell us they wish they knew how to code and then ask which programming language they should learn. Given the press that some programming languages get, this question is not surprising. But it is also wholly inappropriate. Learning to program in a currently fashionable programming language often sets up students for eventual failure. Fashion in this world is extremely short lived. A typical “quick programming in X” book or course fails to teach principles that transfer to the next fashion language. Worse, the language itself often distracts from the acquisition of transferable skills, at the level of both expressing solutions and dealing with programming mistakes.\n\u0026ndash; Felleison et al, How to Design Programs, Second Edition.\n To understand why Racket is a good language to learn, one need read no further than Section 0.1 of Stephen Bloch\u0026rsquo;s Picturing Programs. Please read it now if you have not.\nTo summarize, here are major arguments for choosing Racket over a more \u0026ldquo;popular\u0026rdquo; programming language:\n Racket\u0026rsquo;s uniform syntax (everything is in parentheses, no order of operations, means that everything you do learn is a real intellectual concept.\n Racket works without any incantations that cannot be understood by a beginner. Example: Java\u0026rsquo;s public static void main (String[] args) incantation.\n Racket\u0026rsquo;s language levels protects you from advanced features that could be misunderstood at the start, but lets you continue to program in the same familiar language with more advanced features when you are ready.\n Any language you choose will be obsolete by the time you enter the workforce in 4-8 years, so effort spent learning language-specific syntax is not productive. Instead, you need to learn how to learn a new language. Most programmers find themselves working in a variety of languages depending on the requirements of their current task.\n Paul Graham\u0026rsquo;s article Beating the Averages explains how they used Lisp to make a very successful business (it was worth almost $50 million when it was purchased by Yahoo!). Lisp is a language very similar to Racket.\n Racket includes a way to build web applications as well as a graphical user interface builder that works on any kind of computer.\n Nobody should pass judgement on Racket until they understand the macro system that it has! Consider that a challenge if you are an advanced student.\n  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz/",

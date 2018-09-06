@@ -7,7 +7,17 @@ categories:
   - intermediate-cs
 ---
 
-Intermediate Computer Science uses the [DrRacket](http://racket-lang.org) environment and the [Picturing Programs](http://PicturingPrograms.com) textbook. Use [WeScheme](http://wescheme.org) if you cannot install programs, but read the [notes on WeScheme]({{< ref "/resources/ICS-WeScheme-Note.md">}}) because it is different in some ways.
+Intermediate Computer Science uses the
+[DrRacket](https://racket-lang.org) environment and the [Picturing
+Programs](http://PicturingPrograms.com) textbook. Use
+[WeScheme](https://www.wescheme.org) if you cannot install programs, but
+read the [notes on WeScheme]({{< ref
+"/resources/ICS-WeScheme-Note.md">}}) because it is different in some
+ways.
+
+Eventually you will want to understand [why we learn
+Racket]({{< relref "why-racket.md" >}}) instead of a more popular
+language like Python.
 
 ## Recent Changes
 

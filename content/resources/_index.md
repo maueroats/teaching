@@ -11,7 +11,6 @@ aliases:
 These resources may be useful throughout the year.
 
 * [Syllabus for all classes]({{< relref "Generic-CS-Syllabus.md" >}})
-* Git program information (work in progress)
 
 ## Course-specific information
 * AP Computer Science
@@ -20,3 +19,6 @@ These resources may be useful throughout the year.
     * [Syllabus extra info]({{< relref "IntermediateCS-Syllabus--2017-2018.md" >}})
     * [WeScheme]({{< relref "ICS-WeScheme-Note.md" >}}) - when you cannot install software
 
+## Everything
+
+{{% children %}}
