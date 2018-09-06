@@ -15,6 +15,10 @@ from Cloudflare.
 
 There are a lot of pieces of knowledge that we need to fit together.
 
+{{% alert %}}
+[Current daily plans](daily-A.md).
+{{% /alert %}}
+
 ## Statistics
 
 * Expected value (mean), variance, covariance. Algebraic properties.

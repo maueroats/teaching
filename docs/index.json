@@ -1,741 +1,755 @@
 [
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/timeline/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/connect-four/timeline/",
 	"title": "Connect Four Timeline",
 	"tags": [],
 	"description": "",
 	"content": "   Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Share difficulties and troubleshoot.   7 Thurs, Oct 11 (early release) Plan, write, and test: is_won.   8 Fri, Oct 12 Write tests demonstrating code works.   - Mon, Oct 16 Last day to turn in project.    I expect this project to take 4-6 hours to complete over the course of a week. If you spend less than 3 hours on the project you should read the advanced notes about the minimax algorithm and (partially?) implement it.\nExpected times and other notes:\n draw_board: 1.0 hour, including class time is_legal_move: 0.5 hour is_won: 1.5-2 hours, including 0.5-1.0 hours planning time Expect to use several helper functions. See spoilers if needed. make_move: 1.0 hour, including class time. See spoilers if needed.  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03art/period-1/",
+	"uri": "https://wy-cs.site/intermediate-cs/part-i/ch03art/period-1/",
 	"title": "Art Period 1",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch01/",
 	"title": "1. Intro",
 	"tags": ["haskell"],
 	"description": "",
 	"content": "A high-level overview of the Haskell language and why its features are good. You should read it carefully and note what items you are unfamiliar with. Writing down your questions will help you remember what parts were difficult so that we can discuss them in class.\n Haskell Chapter 1 Reading Guide "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/",
 	"title": "2. Starting Out",
 	"tags": ["haskell"],
 	"description": "",
 	"content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | n\u0026lt;-[1..100], even n] Create a tuple: (5,12) Key to remember: head, tail, init, last, :, ++ Other list functions: maximum, minimum, sum, product, reverse  Resources  Reading guide Problem Set hw:a2 for chapter 2. (Also PDF.) "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/",
 	"title": "3. Types and Typeclasses",
 	"tags": ["haskell"],
 	"description": "Typeclasses abstract characteristics of types like String or Int.",
 	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set   Chapter 3 Quiz  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
 	"title": "4. Syntax in Functions",
 	"tags": ["haskell"],
 	"description": "",
 	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Problem Set Exercises to improve your Haskell programming.\n  Chapter 4 Summary patterns, guards, where, let, case\n  Chapter 4 Quiz All functions should include appropriate type signatures. Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input. Mountain Questions The questions below all refer to a \u0026ldquo;mountain range\u0026rdquo;, which is a list of integers specifying the height in feet above sea level.\n  Chapter 4 Discussion Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n "
 },
 {
-	"uri": "http://wy-cs.info/ftc/registration/",
+	"uri": "https://wy-cs.site/ftc/registration/",
 	"title": "Registration",
 	"tags": [],
 	"description": "",
 	"content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - This is a walkthrough of the registration process. Follow it! Online registration instructions. Pretty dense reading. Printable form. If all else fails, print this form and turn it in.  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/ui/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/connect-four/ui/",
 	"title": "Connect Four UI",
 	"tags": [],
 	"description": "",
 	"content": " The user interface code for Connect Four is a little clunky. (Repl.it shared code.) You may use the linked code. You do not have to learn this part of writing Haskell programs (yet).\nCode Outline main: just make board and call event loop\nevent loop:\n draw board is it won?  print the win message  not won?  get a move recursive call to event loop with updated board, next player   Code All of the user interface code is linked separately (open in WordPad if necessary).\nThe setup of the code, which you should change to match your own functions is below. You need: drawBoard, is_won, is_move_legal, and make_move.\ntype Board = [[Int]] drawBoard :: Board -\u0026gt; String drawBoard board = show $ simplify board is_won :: Board -\u0026gt; Bool is_won board = False is_move_legal :: Board -\u0026gt; Int -\u0026gt; Bool is_move_legal board col = (col == 0) make_move :: Board -\u0026gt; Int -\u0026gt; Int -\u0026gt; Board make_move board col player = [[player]] -- Just for the demo: force the board to be 1x1. simplify board = [[board!!0!!0]] The essentials of the code are an event loop function, which draws the board, checks to see if it is won, gets the next move, and then calls a sepeate function to handle the move.\nevent_loop :: Board -\u0026gt; Int -\u0026gt; IO() event_loop board player = do putStrLn $ drawBoard board if is_won board then do win_message board player return () else do col \u0026lt;- get_move player handle_move board player col The handle move function recursively calls the event loop with an improved board and sets the next player. If the attempted move is illegal, then the recursive call to event loop does not update the board or player, so the same player moves again.\nhandle_move :: Board -\u0026gt; Int -\u0026gt; Int -\u0026gt; IO () handle_move board player col | col == -99 = goodbye | is_move_legal board col = event_loop new_board (next_ player) | otherwise = complain_and_restart where complain_and_restart = do putStrLn \u0026#34;ERROR: That is not a legal move.\u0026#34; event_loop board player new_board = make_move board col player goodbye = do putStrLn \u0026#34;You quit\u0026#34; Example run *Main\u0026gt; main (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 2 O X (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X O X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 3 X OO X (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X X OO X (Enter -99 to quit.) Player 2 moves. Column [0-7]? 4 X X OOOX (Enter -99 to quit.) Player 1 moves. Column [0-7]? 5 X X X OOOX The game is over Player 1 won!"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03art/period-5/",
+	"uri": "https://wy-cs.site/intermediate-cs/part-i/ch03art/period-5/",
 	"title": "Art Period 5",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch05/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch05/",
 	"title": "5. Recursion",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03art/period-7/",
+	"uri": "https://wy-cs.site/intermediate-cs/part-i/ch03art/period-7/",
 	"title": "Art Period 7",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/",
 	"title": "Haskell",
 	"tags": ["haskell"],
 	"description": "",
 	"content": " You will need the the text Learn You a Haskell For Great Good.\n Use repl.it for programming.\n Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions Patterns, guards, where, let, and case.   5. Recursion \n  6. Higher Order Functions This is a fun chapter to read, but as a class we are done after Chapter 5 (for now). Chapter 6 Reading Guide   USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it A summary of any special problems that have arisen with repl.it.   Source Code Files (ghci) Writing a file is different from typing in an interpreter like repl.it or ghci.   "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/part-i/",
+	"uri": "https://wy-cs.site/intermediate-cs/part-i/",
 	"title": "Part I: Ch 1-19",
 	"tags": [],
 	"description": "Part I of How to Design Programs. The fundamentals of primitive types and everything you can build with them. Images. Numbers. Animations. Conditionals.",
 	"content": "  3. More Interesting Pictures Pictures and Color Quick guide to image variables in Picturing Programs. All of the images from the book online. Commands to change words to colors. Homework 3.a, done in two days: pages 1-2 and pages 3-4. 3.b: problems 1-8. (Come in ready to discuss 8 if you cannot do it.) See assignment sheet for more information.\n  3. Art with Racket Student art-inspired programming projects.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/contracts/contract-intro/",
+	"uri": "https://wy-cs.site/intermediate-cs/contracts/contract-intro/",
 	"title": "Contract Intro",
 	"tags": [],
 	"description": "An introduction to using contracts.",
 	"content": " Contracts are the signatures of functions that we have been using. The vocabulary word changes to make it sound more legal. Contracts are actually enforced by Racket.\nDefining a contract If you want to make sure a function takes in a number and puts out a number, you can include a contract when you define it. Here is a simple complete example of a function to add five to a number.\n(require picturing-programs) (require racket/contract) ; add-five: number -\u0026gt; number (define/contract (add-five n) (-\u0026gt; number? number?) (+ 5 n)) (add-five \u0026#34;whoops\u0026#34;) Demo files: no contract, simple contract.\nTypes in a contract You can use any of the familiar type-testing functions that end in a question mark. Here is an incomplete list:\n number? string? image? any/c: The /c stands for contract. Why any by itself is not correct is beyond what we will study.  Multiple arguments You can write contracts for functions with more than one argument. The last argument of -\u0026gt; is the type of the output. Usually we put the inputs on one line and the outputs on another.\n; add-num-length: number string -\u0026gt; number ; add the number and the length of the string (define/contract (add-num-length n s) (-\u0026gt; number? string? number?) (+ n (string-length s))) (add-num-length 10 \u0026#34;whoops\u0026#34;) ; OK =\u0026gt; 16 (add-num-length \u0026#34;whoops\u0026#34; 10) ; ERROR signalled here"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/pro/pro-string/",
+	"uri": "https://wy-cs.site/intermediate-cs/pro/pro-string/",
 	"title": "Strings for Experts",
 	"tags": [],
 	"description": "Strings: randomizing and creating by formula.",
 	"content": " This page contains information about advanced topics that I have been asked.\nRandomizing Letters of a String The implode and explode functions change strings to and from lists of single letters. To randomize a list, import racket/list and then use the shuffle function. If you are actually looking at lists, you should change to Beginning Student with List Abbreviations.\n(require picturing-programs) (require racket/list) (define (mix letters) (implode (shuffle (explode letters)))) (mix \u0026#34;alphabet soup\u0026#34;) Advanced String Making  There is an optional second argument to number-\u0026gt;string that is the base to work in. (check-expect (number-\u0026gt;string 31 2) \u0026quot;11111\u0026quot;)\n Single characters are different from single letter words. Racket uses #\\a to denote the character \u0026ldquo;a\u0026rdquo; and \u0026quot;a\u0026quot; to denote the word containing a single letter a. Usually you do not work with characters, but\u0026hellip;\n The make-string command takes in a number and a character to repeat (meaning #\\a not \u0026quot;a\u0026quot;). Example: (check-expect (make-string 7 #\\a) \u0026quot;aaaaaaa\u0026quot;).\n The replicate command repeats a string a certain number of times. Example: (check-expect (replicate 2 \u0026quot;moo\u0026quot;) \u0026quot;moomoo\u0026quot;).\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/git/getting-started/",
+	"uri": "https://wy-cs.site/ap-cs/git/getting-started/",
 	"title": "Git-ting Started",
 	"tags": ["git"],
 	"description": "",
 	"content": " Downloads for Home  Git package for all operating systems. Tortoise Git for Windows only.  Tutorials  A command line intro to git in 15 minutes.\n Git for Beginners.\n Beautiful and simple Git Guide.\n  Local instructions  Make an account on GitHub. Use your CPS email.\n Apply for an education account.\n Join our class in the GitHub Classroom. (Tell the teacher your username and get added manually.)\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/spoilers/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/connect-four/spoilers/",
 	"title": "Connect Four Spoilers",
 	"tags": [],
 	"description": "",
 	"content": " Two problems with connect four: changing an entry in a matrix ([[Int]]) and seeing if there is a win.\nChanging entries in the board The biggest problem with the representation of the board as [[Int]] is that it is really hard to change the entries. If you use [((Int,Int),Player)] then it\u0026rsquo;s lots easier to make moves.\nOutline of plan:\n (changeCol: [Int] -\u0026gt; Int -\u0026gt; Int -\u0026gt; [Int]) Change value at index col in a single row to newVal; every other value in the list just output unchanged.\nchangeCol [10,11,12] 2 99 == [10,11,99] We have basically written this function as a Coding Bat problem.\n (changeRowCol: [[Int]] -\u0026gt; Int -\u0026gt; Int -\u0026gt; Int -\u0026gt; [[Int]]) Run changeCol only on the index row entry, everything else stays the same.\nchangeRowCol [[1,2,3,4],[5,6,7,8]] 1 3 99 == [[1,2,3,4],[5,6,7,99]]  There is actually spoiler code and fancy spoiler code that uses Chapter 6.\nDetecting a win Please email me questions. I know this is tricky. My own breakdown was:\n Generate a list containing four ordered pairs in a row. Input: (x,y) coordinates of the first entry, and (dx,dy) to be added to (x,y) to get the other three pairs needed.\n Given a board and one list of four ordered pairs, return True if all of the ordered pairs are legal coordinates for that board.\n Given a board, return a list of all possible lists of four ordered pairs in straight lines. For example, if the board is just the flat 5x1 board [[0,0,0,0,0]], then this function should give a list of the two possible 4-in-a-rows: [[(0,0),(1,0),(2,0),(3,0)], [(1,0),(2,0),(3,0),(4,0)]].\n Given a board and a single ordered pair, get the corresponding value from the board.\n Given a board and four ordered pairs, return True if all of the corrsponding values are the same.\n Do the preceding to a whole list of 4 pairs of coordinates.\n Given a board, return True if it is won.\n There are a few more steps but you are almost there!\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03/color/",
+	"uri": "https://wy-cs.site/intermediate-cs/part-i/ch03/color/",
 	"title": "Color Commands",
 	"tags": [],
 	"description": "",
 	"content": " name-\u0026gt;color changes a string name to a color, like this:  \u0026gt; (name-\u0026gt;color \u0026quot;lavender\u0026quot;) (make-color 230 230 250)   If you give it a color already, the computer complains:\n\u0026gt; (name-\u0026gt;color (make-color 230 230 250)) name-\u0026gt;color: Expected a string or symbol, but received (make-color 230 230 250 255)   colorize changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than name-\u0026gt;color.  \u0026gt; (colorize \u0026quot;lavender\u0026quot;) (make-color 230 230 250)   If you give it a color already, the computer complains:\n\u0026gt; (colorize (make-color 230 230 250)) (make-color 230 230 250))"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-reading-guide/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-reading-guide/",
 	"title": "Chapter 4 Reading Guide",
 	"tags": ["haskell", "reading-guide"],
 	"description": "Questions to help you understand Chapter 4.",
 	"content": " Sections 4.1\u0026ndash;4.3  A pattern starts out with \u0026ldquo;dog\u0026rdquo;,\u0026ldquo;cat\u0026rdquo;, \u0026ldquo;cat dog\u0026rdquo;, \u0026ldquo;cat dog cat\u0026rdquo;, \u0026ldquo;cat dog cat cat dog\u0026rdquo;, and so on - each new string is created by appending the previous two with a space in between them. Write a function that takes in the number of the word in the sequence and returns the word, starting with 1 is \u0026ldquo;dog\u0026rdquo;.\n Write the function scalar_mult :: (Num a) =\u0026gt; a -\u0026gt; (a,a) -\u0026gt; (a,a) that multiplies each number in a coordinate pair by the same number, so scalar_mult 5 (1,3) == (5,15).\n Write a signature and function body for pair_prod that takes in a list of ordered pairs of numbers and returns a list of the products of the pairs, so pair_prod [(3,5), (10,0), (7,3)]===[15,0,21].\n What pattern do you use to recursively process the first item in a list and the rest of the list?\n What Haskell function is used to indicate that the user is asking the program to do something impossible?\n Are parentheses necessary when writing a function using the pattern from the previous question? Explain why or why not.\n A function two_of takes in a list of showable numbers and puts out a String that says \u0026ldquo;__ is item 2 of __\u0026ldquo;. For example two_of [10,25,50] == \u0026quot;25 is item 2 of [10,25,50]\u0026quot;. Write the signature and function definition fortwo_of`.\n Write the type signature and function definition for double_double which takes in any list and produces the same kind of list. The double_double function makes a list where the first term of the input appears twice, follwed by the whole input twice, so\ndouble_double [5,10,15] == [5,5,5,10,15,5,10,15] Write a function that takes in a number and returns \u0026ldquo;small\u0026rdquo; if the number is below 10, \u0026ldquo;medium\u0026rdquo; if the number is between 10 and 20 (inclusive), and \u0026ldquo;large\u0026rdquo; if the number is larger than 20. Do not use the if...then...else construct.\n Define the function burgers_of using an infix definition so that\n3 `burgers_of` \u0026#34;beef\u0026#34; == \u0026#34;Three hamburgers\u0026#34; 5 `burgers_of` \u0026#34;soy\u0026#34; == \u0026#34;Five tofu burgers\u0026#34; any other set of inputs gives \u0026#34;No thanks, not hungry\u0026#34; Repeating yourself.\n What code segment do you see repeated in the version of the bmi function that includes the bmi calculating code? What experience does the author compare writing to writing this code? What does the book suggest that you should do instead of this coding style?   Sections 4.4\u0026ndash;4.5  Visibility. What is the difference between where you can see terms from let bindings and where bindings?\n The book says let bindings are expressions. What does this mean? Even if you don\u0026rsquo;t know, at least give one consequence of that fact.\n List five different ways to use let bindings:\n You want to define two different variables in one let binding. Give two ways you can separate those definitions.\n Are patterns in function definitions and the \u0026ldquo;case\u0026rdquo; statement interchangeable? Give one way they are and one way they are not.\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch01/",
+	"uri": "https://wy-cs.site/intermediate-cs/ch01/",
 	"title": "1. Introduction",
 	"tags": [],
 	"description": "",
 	"content": "Learn the essentials of image manipulation: rotating, flipping, and combining images.  Chapter 01 Review  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/ch02-reading-guide/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/ch02-reading-guide/",
 	"title": "Ch02 Reading Guide",
 	"tags": ["haskell", "reading-guide"],
 	"description": "",
 	"content": " Haskell Starting Out Questions A. Sections 2.1\u0026ndash;2.3  There is an annoyance with negative numbers that is mentioned.\n What is the correct way to write five times negative three in Haskell? What is a wrong way to do the same thing?  Logical operations are basic building blocks of programs. How do you write:\n and or not equals not equals  Haskell follows mostly the normal order of operations from mathematics. However, in math functions must be written f(x) with parentheses, whereas in Haskell functions can be written f x without parentheses. This means we need to fit functions into the order of operations.\n Where does function calling fit in the order of operations? Give an example of a problem that this could create. (That is, the program does not do what a math student would expect it to do.)  Write the function hypSquare a b that computes the square of the length of the hypotenuse of a right triangle with legs a and b.\n The apostrophe character (') is usually used for one of two purposes. List both:\n Purpose 1: Purpose 2:  Are you allowed to use the apostrophe in function or variable names?\n In Racket you used (cons x listy) to make a list with x before an existing list. How do you do that in Haskell?\n In Racket you used (concatenate firstStr secondStr) to put two strings together. How do you do that in Haskell?\n Slightly longer exercise:\n Make a list learn containing the words \u0026ldquo;this\u0026rdquo; \u0026ldquo;is\u0026rdquo; \u0026ldquo;all\u0026rdquo; \u0026ldquo;good\u0026rdquo;. Make a new list called learnMore containing \u0026ldquo;Hopefully\u0026rdquo; \u0026ldquo;this\u0026rdquo; \u0026ldquo;is\u0026rdquo; \u0026ldquo;all\u0026rdquo; \u0026ldquo;good\u0026rdquo; What is learnMore !! 4.  Complete the table of equivalents\n     Racket Haskell language equivalent functions     first \u0026hellip;   rest \u0026hellip;   length \u0026hellip;   empty? \u0026hellip;     What are the signatures and purposes of these functions?\n init last take drop  How can you ask the computer if the list called xs contains the number 5?\n There are several more functions that are used less often, but still make it into the basic starting out chapter. Write quick summaries as necessary.\n reverse maximum minimum sum product   B. Sections 2.4\u0026ndash;2.6  Create a list of integers from 1 to 1000 (inclusive).\n Create a list of letters from 'm' to 'a' in that order.\n New functions: write signature and purpose for each.\n cycle repeat replicate  Write a function that removes all of the vowels from a word.\n What is the main difference between a tuple and a list?\n New functions: write signature and purpose for each.\n fst snd zip  Write a function that takes in a list of words and puts out a list of ordered pairs (word, length of word).\n Write a function that takes in a list of words and puts out a list with the second word doubled in its own list, the third word tripled in its own list, etc.\n  For example, the function call\namplify [\u0026#34;hill\u0026#34;,\u0026#34;rock\u0026#34;,\u0026#34;star\u0026#34;,\u0026#34;four\u0026#34;] should produce\n[[\u0026#34;hill\u0026#34;],[\u0026#34;rock\u0026#34;,\u0026#34;rock\u0026#34;],[\u0026#34;star\u0026#34;,\u0026#34;star\u0026#34;,\u0026#34;star\u0026#34;], [\u0026#34;four\u0026#34;,\u0026#34;four\u0026#34;,\u0026#34;four\u0026#34;,\u0026#34;four\u0026#34;]]"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/",
+	"uri": "https://wy-cs.site/ap-cs/",
 	"title": "AP CS",
 	"tags": [],
 	"description": "",
 	"content": " You will need the the text Learn You a Haskell For Great Good.\n AP Computer Science studies:\n Haskell - an introduction to pure functional programming  All Topics  Haskell You will need the the text Learn You a Haskell For Great Good. Use repl.it for programming. Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs. Chapters 1. Intro A high-level overview of the Haskell language and why its features are good. 2. Starting Out Learn how to make lists and tuples.\n  Haskell Calendar Daily calendar for Haskell unit.   Git Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do. You will use it for several purposes: Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group Incomplete It is impossible to write down everything you need to know about git.\n  News    Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell-calendar/",
+	"uri": "https://wy-cs.site/ap-cs/haskell-calendar/",
 	"title": "Haskell Calendar",
 	"tags": ["haskell", "calendar"],
 	"description": "",
 	"content": "Daily calendar for Haskell unit.\n "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/cw-a2/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/cw-a2/",
 	"title": "Haskell CW 2",
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/contracts/contract-structs/",
+	"uri": "https://wy-cs.site/intermediate-cs/contracts/contract-structs/",
 	"title": "Contract for Structs",
 	"tags": [],
 	"description": "",
 	"content": "When you are working with a structure, the best way to make sure it does not get \u0026ldquo;broken\u0026rdquo; is to write a function to check that each part of the struct has the correct type.\nHere is an example of a game struct that has fields for: player-1 posn, player-2 posn, player 1 score, and player 2 score. We write a function to use in our handlers that\n(define-struct game (p1pos p2pos p1score p2score)) (define (good-game? g) (and (game? g) (posn? (game-p1pos g)) (posn? (game-p2pos g)) (number? (game-p1score g)) (number? (game-p2score g)))) When the model is a game, how would you write the contract for the mouse-handler?\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/git/everyday/",
+	"uri": "https://wy-cs.site/ap-cs/git/everyday/",
 	"title": "Everyday Git",
 	"tags": ["git"],
 	"description": "",
 	"content": " Everyday Commands All of these need to be run in the karel-* directory:\n ./save-it ./update: git pull from the upstream repository. git pull  Merge Conflicts Sometimes you will modify a file at home without having saved (pushed) your changes at school. This causes a dreaded \u0026ldquo;merge conflict\u0026rdquo; when you update.\nSimple Merging If you are lucky, you are at school and you know that you just want to use the code from home (the \u0026ldquo;incoming code\u0026rdquo; from the pull). In that case, you should do:\ngit checkout --theirs karelBasic.drjava Of course, replace karelBasic.drjava with the names of the files with the merge conflicts. The converse, keeping the \u0026ldquo;local\u0026rdquo; changes, not the incoming ones, is the --ours flag.\ngit checkout --ours ImportantFile.java Advanced Merging When the problem is more difficult, edit the file with NotePad++ and you should see the \u0026ldquo;ours\u0026rdquo; and \u0026ldquo;theirs\u0026rdquo; sections marked off by a bunch of \u0026lt; = and \u0026gt; signs. Pick the code you want to keep and delete the rest.\n@@ -2,7 +2,11 @@ import java.io.*; public class Merging { public Merging () { \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; HEAD System.out.println(\u0026#34;Merging object was not constructed fast enough to avoid conflict!!\u0026#34;); ======= System.out.println(\u0026#34;Merging object is being constructed!!\u0026#34;); \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; 36215863faef38cac7822b290a893ce1e150420c } } After deleting the markers and duplicated code, add and commit.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/pro/build-image/",
+	"uri": "https://wy-cs.site/intermediate-cs/pro/build-image/",
 	"title": "Build Image",
 	"tags": [],
 	"description": "Build-image to create images from a formula for the pixel color.",
 	"content": " You should learn how to use build-image to make the pictures in Chapter 15.\nAdvanced: build-image The build-image uses a function that specifies the pixel color to create a rectangular image.\nThe first example is a function that always returns orange, so it makes an orange square:\n(define (pixel-color x y) \u0026#34;orange\u0026#34;) (build-image 300 200 pixel-color) Notice that pixel-color does not appear in parentheses. The build-image command needs to activate (run) the pixel-color function over and over again, so needs to know the name of the function.\nThe second example is to give different colors in different circumstances. This example uses a mathematical formula to make a nice picture. Try it.\n(define (pixel-color-ii x y) (cond [(\u0026lt;= (abs (- y x)) 30) \u0026#34;orange\u0026#34;] [else \u0026#34;blue\u0026#34;])) (build-image 300 200 pixel-color-ii)"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/git/",
+	"uri": "https://wy-cs.site/ap-cs/git/",
 	"title": "Git",
 	"tags": ["git"],
 	"description": "",
 	"content": " Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do.\nYou will use it for several purposes:\n Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group  Incomplete It is impossible to write down everything you need to know about git. Even experienced developers need to look things up. There is the Pro Git book and many StackOverflow questions about git that you can learn from.\nPages  Git-ting Started Downloads for Home Git package for all operating systems. Tortoise Git for Windows only. Tutorials A command line intro to git in 15 minutes. Git for Beginners. Beautiful and simple Git Guide. Local instructions Make an account on GitHub. Use your CPS email. Apply for an education account. Join our class in the GitHub Classroom. (Tell the teacher your username and get added manually.\n  Everyday Git Everyday Commands All of these need to be run in the karel-* directory: ./save-it ./update: git pull from the upstream repository. git pull Merge Conflicts Sometimes you will modify a file at home without having saved (pushed) your changes at school. This causes a dreaded \u0026ldquo;merge conflict\u0026rdquo; when you update. Simple Merging If you are lucky, you are at school and you know that you just want to use the code from home (the \u0026ldquo;incoming code\u0026rdquo; from the pull).\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03/ch03-art-project/",
+	"uri": "https://wy-cs.site/intermediate-cs/part-i/ch03/ch03-art-project/",
 	"title": "Art Project",
 	"tags": ["project"],
 	"description": "",
 	"content": " Deadline: Finish before Tuesday, September 26 (chapter 3 test day). Turn in Wednesday, September 27.\nProduce: One complex piece of art per person in the group. (Two simpler pieces.) (Groups of at most two.)\nGoal: Art projects should demonstrate a range of functions from the chapter, try to use 3-4 from each category in your whole project.\n Methods of placement: beside, above, overlay, place-image, as well as the \u0026ldquo;/align\u0026rdquo; variations. (Use the variations!)\n Changing pictures: crop, scale, rotate.\n Shapes: triangles (many!), lots more listed at the end of Chapter 3 (PDF pages 60\u0026ndash;61).\n Colors: color-database, make-color from the internet, colorize or name-\u0026gt;color.\n  Remember: This is a short project. I expect you will spend no more than two hours on it, including time working in class Friday and Monday.\nIt is OK to simplify and focus on using the goal functions (see above).\nSteps  Find one inspiration piece of art. Have idea approved before the first class ends. Complete by working in class Friday and Monday, and possibly some time at home over the weekend.  Choice 1: DrRacket\u0026rsquo;s take on MoMA Choose a piece of art for inspiration.\n School appropriate. No duplicates with anyone you know in any class. MoMA archive:  Textiles from Japan - which could have floral patterns or numbers from the cataloging process Islamic art \u0026mdash; like this   Choice #2: Picture Puzzles Goal: create two pictures that are challenging or interesting to recreate once they are finished. If you can get someone to say, \u0026ldquo;How did you do that?\u0026ldquo;, your puzzle is a success.\nPossible sources:\n Geometry puzzles Triangle puzzles Mondrian  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-problemset/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/",
 	"title": "Chapter 4 Problem Set",
 	"tags": ["haskell", "homework"],
 	"description": "Exercises to improve your Haskell programming.",
 	"content": " Key new concepts: patterns, guards, where, let, case.\nPlease write function signatures for every solution.\n Some of these problems are classical exercises with solutions online. Please do not search for them or read them before turning in your work. (See Academic Integrity.)\nExercises  First Third. Return the sum of the first and third elements in the list. Example: firstThird [10,30,50,90] == 60.\n Take a list of items that can be compared for equality (Eq a) and reduce repeats to a single element. Only reduce repeats that are next to each other in the list.\nnoTwins [1,1,5,1,2,2,2] == [1,5,1,2] (CodingBat sum67.) Return the sum of the integers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.\nsum67 [1, 2, 2] == 5 sum67 [1, 2, 2, 6, 99, 99, 7] == 5 sum67 [1, 1, 6, 7, 2] == 4 (Discuss!) Make a newFibonacci function that takes in the two starting values for the Fibonacci sequence (usually 1 and 1) and then the term in the sequence that you want, and computes that term in the sequence.\nnewFibonacci 1 1 10 == 55 newFibonacci 5 8 9 == 233 Hint: Get the standard Fibonacci fib function working, then move it completely inside a let binding so you can alter the starting values.\n Block Game. Do this bronze level USA Computing Olympiad problem. (You should start with a list of pairs of words, that is [(String,String)]; you do not have to read them from a file.)\n  Games We discussed these in class. You should be able to do them. If you missed class, talk to someone who was there.\n Laser Tag I. You are playing laser tag on the integer coordinate plane. You stand at (x0,y0) and fire your laser parallel to one of the axes. We will write the direction using unit coordinates, so (1,0) will be the positive x-direction. The coordinates of the other players are in a list. Assuming that you hit a player, report the coordinates of the player who is hit.\nlaserTag (1,2) (0,1) [(5,2), (1,-4), (1,50), (1,25), (1,30)] == (1,25) Laser Tag II. (Save for later if needed.) We continue to play the laser tag game, except now there are both people and double-sided mirrors oriented at 45 degrees to the coordinate axes. Represent the objects by triples (x,y,c) where c is a character * for a person, / or \\ for a mirror (depending on the orientation). Assume that eventually the laser will hit someone (maybe you?!). Find the coordinates of the person who gets hit.\nlaserTagMirrors (1,2) (0,1) [(1,2,\u0026#39;*\u0026#39;), (5,2,\u0026#39;*\u0026#39;), (1,5,\u0026#39;/\u0026#39;), (4,5,\u0026#39;*\u0026#39;), (-3,5,\u0026#39;*\u0026#39;)] == (4,5) Flipping the mirror at (1,5) should make the answer (-3,5). You should draw some test cases and make a tester function to verify your code is correct when there are more mirrors.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-reading-guide-haskell/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-reading-guide-haskell/",
 	"title": "Chapter 3 Reading Guide",
 	"tags": ["haskell", "reading-guide"],
 	"description": "",
 	"content": "We learn about types and typeclasses. You should use valid Haskell types in all of your answers. Unless needed, I stick with Int for the type for integers.\nBasics  How do you find the type of an expression (when using the interpreter)? What is the type of a string, written in correct Haskell type syntax? What is the type of the expression (5 == 5)? What is the type signature for a function that takes in an integer and puts out a string? What is the type signature for a function that takes in two integers and multiplies them? What is the type of (factorial 50) from the book? How is that different from an Int? Write the signature of a function prob3 that takes in a number and puts out a string. What is the correct way to write the type signature of a function prob4 that take single number and a list of numbers and puts out a list of numbers?\n Find out the difference between Float and Double. Summarize it here.\n How can you tell whether the text \u0026ldquo;string\u0026rdquo; in a program refers to a variable or a type?\n Write the type signature for:\n snd repeat init    Class Constraints  Where can you find a class constraint? What special symbol separate a class constraint from a function\u0026rsquo;s type? What is the best type to give the function:\nmystery a b = if ( a \u0026lt; b ) then \u0026#34;A small\u0026#34; else \u0026#34;A large\u0026#34; What familiar typeclass indicates that something can be written in string form?\n  The Read Typeclass  What does being in the Read typeclass indicate? How can you convert the string \u0026ldquo;10230\u0026rdquo; to an integer?  Miscellaneous Typeclasses  What is the main use of the Enum typeclass? Aside from integers, give two other examples of things in the Enum typeclass. What typeclass tells you that something has a largest and smallest value? How would you find the smallest possible Int in Haskell?  Math  What is the difference between 5 and (5 :: Int)? Can you do this math?  3.2 * (5 :: Int) 5.63 * 20  What will happen when you use the following function? listBigSize aList = 3 * (length aList)  Integral vs Floating  The last function discussed in the chapter is the most important by far.\n Write its name and signature here. What is it used for?  Programming exercise: the quadratic formula. Write and test a function that takes in a,b, and c, and produces the larger root of ax^2+bx+c. (Assume there is at least one real root.)\n "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/hw-a2/",
 	"title": "Haskell HW 2",
 	"tags": ["homework", "hw", "haskell", "ap-cs"],
 	"description": "",
 	"content": "Graph a function, is a pointon a line, get the numbers more than 100, break up a list, find the nearest point. Homework  Write the \u0026ldquo;grapher\u0026rdquo; function whose inputs are (i) a function f that takes in a number and puts out a number, (ii) a lower bound, and (iii) an upper bound. The grapher function should return a list of coordinates (x,y) where y=f(x) and x goes from the lower bound to the upper bound increasing by 1 each time.\n Write a function onLine that takes in a slope m, a y-intercept b, and a point (x0,y0) and gives back True if the point is on the line y=m*x+b and false otherwise.\n Write a function moreThan100 that takes in a list of numbers and puts out a list of numbers. The output is the same as the input with all of the numbers less than or equal to 100 removed.\n Break It Up. Given a list of numbers, create a list containing every sequence of four numbers in a row. Example:\nbreakItUp [5,10,20,3,8,9] = [ [5,10,20,3], [10,20,3,8], [20,3,8,9] ] Target Practice. (Challenge) Given a point (x0,y0) and a list of ordered pairs, return the point in the list that is closest to the given point. (Hint: skip the square root when you compare distances, it will save you some Haskell difficulties.)\n  OMIT  Write a function addp that adds two ordered pairs.\n (Bonus) The function nextInDirection takes in start point (x0,y0), a direction (dx,dy), and a list of ordered pairs. The function returns the point in the list that is closest to the start point and can be reached by beginning at the start and going in the given direction.\n "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/",
+	"uri": "https://wy-cs.site/intermediate-cs/",
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
 	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nRecent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  All Content  Part I: Ch 1-19   1. Introduction   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch02/hw-a2-solution/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/hw-a2-solution/",
 	"title": "Haskell HW 2 Solutions",
 	"tags": ["homework", "solutions", "haskell", "ap-cs"],
 	"description": "",
 	"content": "breakItUp plan:\n replicate input list (length - 3) times zip with count helper function knows count and list, drop \u0026amp; take  breaklicator xs = replicate (length xs - 3) xs numberIt ys = zip ys [0..] breakItUp\u0026#39; :: ([a],Int) -\u0026gt; [a] breakItUp\u0026#39; (xs,y) = take 4 $ drop y xs breakItUp_v2 :: [a] -\u0026gt; [[a]] breakItUp_v2 xs = [ breakItUp\u0026#39; w | w \u0026lt;- numberIt $ breaklicator xs ] Fancy solution for breakItUp, shows power of Haskell pattern matching (Chapter 4):\nbreakItUp :: [a] -\u0026gt; [[a]] breakItUp [a,b,c,d] = [[a,b,c,d]] breakItUp (x:xs) = (x:take 3 xs) : breakItUp xs targetPractice plan:\n distance formula helper function that remembers the closest point so far recursively go through list of all points  -- you should just write (Int,Int) everywhere I write Pt type Pt = (Int,Int) dist :: Pt -\u0026gt; Pt -\u0026gt; Int dist (x0,y0) (x1,y1) = (x1-x0)^2 + (y1-y0)^2 targetPractice :: Pt -\u0026gt; [Pt] -\u0026gt; Pt targetPractice pt ptList = targetPractice\u0026#39; pt ptList (head ptList) targetPractice\u0026#39; :: Pt -\u0026gt; [Pt] -\u0026gt; Pt -\u0026gt; Pt targetPractice\u0026#39; pt [] closestSoFar = closestSoFar targetPractice\u0026#39; pt (x:xs) closestSoFar = targetPractice\u0026#39; pt xs newClosest where newClosest = if (dist x pt) \u0026lt; (dist closestSoFar pt) then x else closestSoFar"
 },
 {
-	"uri": "http://wy-cs.info/resources/generic-cs-syllabus/",
+	"uri": "https://wy-cs.site/resources/generic-cs-syllabus/",
 	"title": "Syllabus: All Courses",
 	"tags": [],
 	"description": "",
 	"content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:\n Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form \u0026hellip; or email me.\nPhilosophy I aim to create an equitable challenge for everyone in my class. I want to provide everyone in the class meaningful work experiences at a manageable but challenging intellectual level. I may give the same credit for different actual assignments to accomplish this goal.\nThe student side of this equitable challenge is that I expect everyone to work on computer science 100% of the time in class. This applies even if someone is finished with the current assignment or has been absent for a week. I have a shelf full of books available for advanced or catch-up work.\nI expect everyone to take my suggestions for improving their work seriously. Computer science is an art as well as a science. Polish good habits, eradicate bad ones. Please admit if you cling to unproductive habits and work honestly to change them.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    Some grade should be updated every week. Every grade category except final exam should be updated every three weeks. Edline will have all raw score information. Only scaled (\u0026ldquo;curved\u0026rdquo;) scores will be posted on the CPS Gradebook.\nWe use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nGrading and attendance You must be present in order to learn from the class.\n   Absences Consequence     5 Call and email parent.   10 One letter grade (-10 point) deduction to final grade.   15 Additional -5 point deduction to final percentage.   20 Additional -5 point deduction to final percentage.   25 Failure in class    Three tardies more than 5 min late count as one absence.\nAny absence with a note from a medical doctor does not count toward the total absences. (Please make sure I see a copy of the note!) All other absences count. Please discuss necessary accomodations for IEP/504 in the first two weeks of class if I am not aware of them.\nDifferentiation All assigned work is expected to be completed.\nThere is no extra credit without regular credit. The way to improve a grade is through consistent effort, seeking help when needed, and allocating enough effective work time outside of class. Please track your work in your interactive notebook so we can discuss how to make your time more effective.\nAdvanced students may be allowed to replace standard work with projects, but all exceptions will be accompanied by a written contract detailing what other work will be completed to replace the main line coursework. In at most two weeks, the project is due and will receive a grade. Students are still responsible for standard material.\nEssentials of involvement As much as we can, we let students manage their own learning. Occasionally parents should be involved more at home. Sometimes adults need to talk directly. Please contact me directly if you see (or are being told) that grades are not up to date or your student is exempt from the work for any reason and does not have written documentation.\nDaily Materials  Notebook: A thin spiral or composition notebook dedicated to computer science is required for planning, reflection, and documenting progress.\n USB Flash Drive: A small USB drive to store files. (Any size is fine. Code is small.)\n  IEP and 504 plans will be followed Any student with a 504 or IEP will receive all accomodations listed. Please make sure the teacher has received a copy of the plan at the start of the year (especially if your schedule has changed, sometimes the paperwork follows too slowly).\nState standards Computer Science Teachers Association standards applicable in this class:\n 4.2.1 Computational Thinking (CT) 4.2.2 Collaboration (CL) 4.2.3 Computing Practice and Programming (CPP) See individual unit plans for more details.  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/pro/match/",
+	"uri": "https://wy-cs.site/intermediate-cs/pro/match/",
 	"title": "Match",
 	"tags": [],
 	"description": "",
 	"content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate pattern matching.\nMatching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function.\nProblem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\nExample Solution: Cond (define (cond-to-zero w) (cond [(posn? w) (sqrt (+ (sqr (posn-x w)) (sqr (posn-y w))))] [(number? w) (abs w)])) Example Solution: Match (define (match-to-zero w) (match n [(posn x y) (sqrt (+ (sqr x) (sqr y)))] [number? (abs w)])) Notice how\nIgnoring parts of a model You can use the underscore _ to match places that you want to ignore. This example shows how to pull out two scores from a model and use them to find the total number of points in the game.\n(define-struct game (p1pos p1score p2pos p2score)) (define (total-score model) (match model [(game _ s1 _ s2) (+ s1 s2)] List processing with matching Suppose you want to add all of the numbers in a list. You can use the '() pattern to match the empty list. The pattern (list a more ...) makes a match the first of the list and more match the rest of the list.\n(define (add-all data) (match data [\u0026#39;() 0] [(list a more ...) (+ a (add-add more))]))"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03/puzzle-opener/",
+	"uri": "https://wy-cs.site/intermediate-cs/part-i/ch03/puzzle-opener/",
 	"title": "Puzzle Opener",
 	"tags": ["opener"],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03/",
+	"uri": "https://wy-cs.site/intermediate-cs/part-i/ch03/",
 	"title": "3. More Interesting Pictures",
 	"tags": ["homework"],
 	"description": "",
 	"content": " Pictures and Color  Quick guide to image variables in Picturing Programs. All of the images from the book online.\n Commands to change words to colors.\n  Homework  3.a, done in two days: pages 1-2 and pages 3-4. 3.b: problems 1-8. (Come in ready to discuss 8 if you cannot do it.)  See assignment sheet for more information.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-hw1/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-hw1/",
 	"title": "Chapter 3 Problem Set",
 	"tags": ["haskell", "homework"],
 	"description": "",
 	"content": "The essentials of the Types and Typeclasses chapter are: writing type signatures for functions, reading string inputs with the Read class, and dealing with Integral to Fractional conversions when they are needed.  You can explicitly say what type a number is by using two colons and the type you want - for example, (5::Int) or (5::Float). Find the types of each of the operations below, or say in English why it does not work. Do not just copy error messages.\n (/) (5::Int) / (10::Int) (5::Int) / (10::Float) (5::Float) / (10::Float)   Write a function to find the average of numbers in a list. This should bring up the difficulty that you cannot divide an integer by an integer(!).\nExamples: avg [10,20] should give 15 or 15.0, and avg [3.5, 4.5] should give 4.0.\n Write a signature and function body for add10Word which reads an integer from a string and adds 10 to it.\nExample: add10Word \u0026quot;15\u0026quot; should produce 25.\n Write a signature and function body for numberInSentence, which takes a number and returns the sentence \u0026ldquo;I have ___ pounds of flour.\u0026rdquo;\nExample: numberInSentence 5.5 reports \u0026ldquo;I have 5.5 pounds of flour.\u0026rdquo;\n Write a signature and function body for doubleDebt which takes a String and puts out a Float. The String contains a floating point number that represents how much money someone owes, and the Float output is twice that much.\nExample: doubleDebt \u0026quot;50.10\u0026quot; produces 100.20.\n Write a signature and function body for sampleStdDev that finds the sample standard deviation of a list of (the right kind of) numbers. Check the type signature for square root (sqrt)!\nPlease do not skip this problem with the excuse that you do not know how to find standard deviation. Look it up or ask someone who knows!\n Possibly Challenging: Write the function median to find the median of a list of items that can be ordered. (Use the type Int, if you prefer.) Assume the list is sorted.\n  We will learn how to sort a list later, but it goes like this:\nimport Data.List result = sort xs"
 },
 {
-	"uri": "http://wy-cs.info/resources/apcs-syllabus--2017-2018/",
+	"uri": "https://wy-cs.site/resources/apcs-syllabus--2017-2018/",
 	"title": "Syllabus: AP CS",
 	"tags": [],
 	"description": "",
 	"content": " This document gives information specific to the AP Computer Science course. See the all course syllabus information as well.\nAP Review We will do approximately three weeks of AP review before the AP exam. Second semester grades will be significantly impacted by AP test preparation.\nMany people benefit from outside preparation. Start in February. As a rough guide, the Barron\u0026rsquo;s AP Computer Science A text is too easy and the Be Prepared for the AP Computer Science Exam in Java book by Litvin and Litvin is too difficult. I have not read the Princeton Review text.\nIn the last three years Whitney Young\u0026rsquo;s AP CS pass rate has been: 85%, 100%, and 93%, so you will be prepared.\nBig picture calendar for course These dates are tentative, but they should give an idea of the major deadlines in the course.\n Weeks 1\u0026ndash;5: Haskell Week 6: Begin Java and Semester Project. October 23: Quarter 2 project top-down plan due. (No code!) October 27: Quarter 1 exam. (One week before quarter ends.) January 22: Quarter 2 project due. January 26: Quarter 2 exam. (One week before quarter ends.) March 23: Quarter 3 project due for early bonus. (Day before spring break.) March 26\u0026ndash;30: Spring Break. April 6: Quarter 3 project due. April 9: Quarter 3 exam. (Week of quarter end.) This is also part of AP exam review. April 9 \u0026ndash; May 4: AP Test Review. (Four weeks minus two days.) May 7: AP testing begins. May 15 at 12pm: AP Computer Science Test  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/part-i/ch03art/",
+	"uri": "https://wy-cs.site/intermediate-cs/part-i/ch03art/",
 	"title": "3. Art with Racket",
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
 },
 {
-	"uri": "http://wy-cs.info/machine-learning/",
+	"uri": "https://wy-cs.site/machine-learning/",
 	"title": "Machine Learning",
 	"tags": [],
 	"description": "",
-	"content": "  ML Resources Resources for machine learning that we refer to in the class.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits together.\n  ML Daily Lecture notes will be posted here.   "
+	"content": "  ML Resources Resources for machine learning that we refer to in the class.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits together.\n  ML Daily Lecture notes will be posted here. 2018.09.05   "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-summary/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-summary/",
 	"title": "Chapter 4 Summary",
 	"tags": [],
 	"description": "patterns, guards, where, let, case",
 	"content": " patterns  f [] = 0 f (x:xs) = x + f xs  guards  numword x | x \u0026lt; 0 = \u0026#34;Negative\u0026#34; | x == 0 = \u0026#34;Zero\u0026#34; | otherwise = \u0026#34;Positive\u0026#34;  where  h x = constant * x where constant = 100  let  yis65 x = let (parabola = 10 * x * x + 25) in parabola == 65  case  numit value = case (value) of 5 -\u0026gt; \u0026#34;Five\u0026#34; 4 -\u0026gt; \u0026#34;Four\u0026#34; _ -\u0026gt; \u0026#34;Something else\u0026#34;"
 },
 {
-	"uri": "http://wy-cs.info/resources/intermediatecs-syllabus--2017-2018/",
+	"uri": "https://wy-cs.site/resources/intermediatecs-syllabus--2017-2018/",
 	"title": "Syllabus: Intermediate",
 	"tags": [],
 	"description": "",
 	"content": " This document details the information specific to Intermediate Computer Science. See the all course syllabus information as well.\nMaterials  Notebook - a lightweight paper notebook dedicated to computer science. USB Drive of any size. Picturing Programs book electronic version - downloaded onto flash drive. DrRacket programming environment - installed at home. WeScheme - Online only replacement for DrRacket. Use if you cannot install software. You have to read special instructions to make it work.  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch06/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch06/",
 	"title": "6. Higher Order Functions",
 	"tags": [],
 	"description": "",
 	"content": "This is a fun chapter to read, but as a class we are done after Chapter 5 (for now).\n Chapter 6 Reading Guide   "
 },
 {
-	"uri": "http://wy-cs.info/resources/grading-scale/",
+	"uri": "https://wy-cs.site/resources/grading-scale/",
 	"title": "Grade Weights",
 	"tags": [],
 	"description": "",
 	"content": " The most common question people have is how grades are computed.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    We use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nExceptional circumstances Please contact your teacher if you have a very unusual circumstance (extended illness, international competition, etc.). Ordinary events causing you to miss a day or two of school are not in that category.\n"
 },
 {
-	"uri": "http://wy-cs.info/resources/academic-integrity/",
+	"uri": "https://wy-cs.site/resources/academic-integrity/",
 	"title": "Academic Integrity",
 	"tags": [],
 	"description": "",
 	"content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following honor code regarding all of their work in this class.\n “I have neither given nor received improper aid on this test/project.”   “Improper aid” includes, but is not limited to:\n copying another student’s work allowing another student to copy your work sharing the problems given on a test to a student who has not taken the test copying work from any online or electronic resource without citation chatting or texting with another student during a test in which computer use is allowed  On a project (not test), it is acceptable to give suggestions to a student who knows less than you do.\n The student who is giving help may read the code of the student seeking help. The student who is giving help may not type (or write) any code.  Penalties when a student is caught cheating in this class may include:\n A zero on the assessment Final grade being lowered a letter Expulsion from National Honor Society (NHS or NJHS) Denial of a future application to National Honor Society (NHS or NJHS) Negatively affecting scholarships and post-high school programs for which you have applied  "
 },
 {
-	"uri": "http://wy-cs.info/resources/",
+	"uri": "https://wy-cs.site/resources/",
 	"title": "Resources",
 	"tags": [],
 	"description": "",
 	"content": " These resources may be useful throughout the year.\n Syllabus for all classes Git program information (work in progress)  Course-specific information  AP Computer Science  Syllabus extra info  Intermediate Computer Science  Syllabus extra info WeScheme - when you cannot install software   "
 },
 {
-	"uri": "http://wy-cs.info/machine-learning/resources/",
+	"uri": "https://wy-cs.site/machine-learning/resources/",
 	"title": "ML Resources",
 	"tags": [],
 	"description": "Resources for machine learning that we refer to in the class.",
 	"content": " There is an incredible amount of information online. I will only refer to material that I have personally read or watched. See posts on Hacker News or Stack Overflow for others\u0026rsquo; perspectives.\nDownload the texts you use to your computer and flash drive!\n Texts: Primary  Introduction to Statistical Learning, a.k.a ISLR: The first text for the course. Lots of practice applying techniques on practical datasets. The book shows how to do the analysis in the R language, but we will be working in Python and implementing the algorithms on our own where it is practical.  Videos  Andrew Ng of Stanford wrote a course in Machine Learning: Overview without lots of mathematical details. Great for watching individually or on days the teacher is absent. Environment: free Octave or commercial Matlab. If you want to experiment, use Octave Online. Although this course seems light on the mathematics, reviewers with serious mathematical skills say that it gave them the overview to understand machine learning.\n Yaser Abu-Mostafa of CalTech\u0026rsquo;s Learning from Data. Deep into the mathematical theory, Professor Abu-Mostafa begins with the question \u0026ldquo;Is learning possible?\u0026rdquo; Serious homework questions, too.\n  Texts: Supplementary  A Course in Machine Learning: \u0026ldquo;CiML\u0026rdquo;. Good points: attempts rigorous mathematical presentation of the material. Some proofs can be understood from this text that you will not find elsewhere. Bad points: mathematics does not seem rigorous, terms not defined, text has been rearranged between versions 0.9 and 0.99 leading to the need to read chapters out of order. Goes really fast in some places.\n Carnegie-Mellon Math 36-401 Modern Regression.\n Carnegie-Mellon Math 36-402 Advanced Data Analysis from an Elementary Point of View.\n CMU Machine Learning 1 and 2.\n  Programming  Python Data Processing\n Seaborn: A pretty visualization library. Matplotlib: Harder to use, more control. Pandas: Managing related data assembled together into one \u0026ldquo;data frame\u0026rdquo;. NumPy and its big cousin SciPy: numerical mathematics of all kinds.  Kaggle\nUse Kaggle to test the ideas that you have learned in a realistic situation. I would stick with the classic data sets for a long time; they should be challenging enough.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ftc/learning/",
+	"uri": "https://wy-cs.site/ftc/learning/",
 	"title": "Learning Resources",
 	"tags": [],
 	"description": "",
 	"content": " Servos and Pivots  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/usaco/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/usaco/",
 	"title": "USACO Practice",
 	"tags": [],
 	"description": "Challenging problems for people who want to stretch their understanding.",
 	"content": "One of the key ideas to keep in mind when learning from USA Computing Olympiad problems is that time matters. A slow algorithm is not good enough; keep thinking about the problem, trying to find a more efficient way to solve it. Always time your solutions. Always try your solutions on the official test cases \u0026mdash; many times they will contain a situation that you have not considered. Enjoy it when that happens.\n Haybales   "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/contracts/",
+	"uri": "https://wy-cs.site/intermediate-cs/contracts/",
 	"title": "Contracts",
 	"tags": [],
 	"description": "Racket can enforce signatures (contracts). Learn how.",
 	"content": "We have been writing signatures for functions by using comments.\n; double-it: number -\u0026gt; number This works fine for organizing your thoughts, but it would be nice if Racket could actually stop you from doing something different from what you said you would do.\nIntermediate student mode is required to use contracts. (require racket/contract)\n  Contract Intro An introduction to using contracts.\n  Contract for Structs When you are working with a structure, the best way to make sure it does not get \u0026ldquo;broken\u0026rdquo; is to write a function to check that each part of the struct has the correct type. Here is an example of a game struct that has fields for: player-1 posn, player-2 posn, player 1 score, and player 2 score. We write a function to use in our handlers that (define-struct game (p1pos p2pos p1score p2score)) (define (good-game?\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/daily/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/daily/",
 	"title": "Haskell Daily Notes",
 	"tags": ["haskell", "daily-notes"],
 	"description": "Notes for each day.",
 	"content": "  2017-10-04 More CodingBat problems.\n  2017-10-03 CodingBat problems to improve your problem-solving skills.\n  2017-09-18 Battleship and homework review.\n  2017-09-14 Indentation Indentation matters. A lot.\n  2017-09-12 Technical details that came up while doing Chapter 2 Homework.\n  2017-09-11 worked examples - removeVowels and wordLenPairs\n  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/calendar/",
+	"uri": "https://wy-cs.site/intermediate-cs/calendar/",
 	"title": "Calendar",
 	"tags": [],
 	"description": "The course calendar and assignment sheet links.",
 	"content": "The assigment sheet goes with the calendar. "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/pro/",
+	"uri": "https://wy-cs.site/intermediate-cs/pro/",
 	"title": "Pro Features",
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
 },
 {
-	"uri": "http://wy-cs.info/machine-learning/outline/",
+	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
+	"title": "2018.09.05",
+	"tags": [],
+	"description": "",
+	"content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   $\\DeclareMathOperator{\\Var}{Var}$\n Given the probability table below for the random variable W.\n Find the expected value of W. Find the variance of W.       Prob W     1\u0026frasl;3 6   1\u0026frasl;2 12   1\u0026frasl;6 24     Prove that the variance is not linear by adding to your example above. That is, $\\Var(3 W) \\not= 3 \\Var(W)$.\n Guess a formula for $\\Var (m W)$.\n  "
+},
+{
+	"uri": "https://wy-cs.site/machine-learning/outline/daily-a/",
+	"title": "Daily Skeleton",
+	"tags": [],
+	"description": "",
+	"content": " 2018-09-05:  "
+},
+{
+	"uri": "https://wy-cs.site/machine-learning/outline/",
 	"title": "Course Outline",
 	"tags": [],
 	"description": "A broad outline of what we plan to cover, so you can see how it all fits together.",
-	"content": " Note: MathJax formulas used on this page. Ugly if you block Javascript from Cloudflare.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   There are a lot of pieces of knowledge that we need to fit together.\nStatistics  Expected value (mean), variance, covariance. Algebraic properties. Standard deviation. Random variables. Distributions (probability density function). Standard normal distribution (\u0026ldquo;Gaussian\u0026rdquo;) with $\\mu = 0$ and $\\sigma = 1$. Scaling to get mean = 0, variance = 1. Area under normal distribution. Computations.  Linear algebra  Shapes. Transpose. Inverse. Determinant? Matrix-vector product. Dot product. Projection onto a vector. Solving linear systems. Derivative of matrix function like (X.w)^2 ?  Regression  Not sure. Do it and see that the method works.  "
+	"content": " Note: MathJax formulas used on this page. Ugly if you block Javascript from Cloudflare.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   There are a lot of pieces of knowledge that we need to fit together.\nCurrent daily plans.\n Statistics  Expected value (mean), variance, covariance. Algebraic properties. Standard deviation. Random variables. Distributions (probability density function). Standard normal distribution (\u0026ldquo;Gaussian\u0026rdquo;) with $\\mu = 0$ and $\\sigma = 1$. Scaling to get mean = 0, variance = 1. Area under normal distribution. Computations.  Linear algebra  Shapes. Transpose. Inverse. Determinant? Matrix-vector product. Dot product. Projection onto a vector. Solving linear systems. Derivative of matrix function like (X.w)^2 ?  Regression  Not sure. Do it and see that the method works.  "
 },
 {
-	"uri": "http://wy-cs.info/machine-learning/daily/",
+	"uri": "https://wy-cs.site/machine-learning/daily/",
 	"title": "ML Daily",
 	"tags": [],
 	"description": "",
-	"content": "Lecture notes will be posted here.\n "
+	"content": "Lecture notes will be posted here.\n 2018.09.05   "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/news/",
+	"uri": "https://wy-cs.site/ap-cs/news/",
 	"title": "News",
 	"tags": [],
 	"description": "",
 	"content": "  "
 },
 {
-	"uri": "http://wy-cs.info/resources/events/",
+	"uri": "https://wy-cs.site/resources/events/",
 	"title": "CS Events",
 	"tags": [],
 	"description": "",
 	"content": " Computing Olympiad\n Dec 15-18: First Contest Jan 19-22: Second Contest Feb 23-26: Third Contest Mar 23-26: US Open May 24-Jun 2: Training Camp Sep 1-8: IOI 2018 in Japan  Feb 24, 2018: Introduce a Girl to Engineering at UIC. 10am-2pm. Free. Register by Feb 16, 2018.\n Ladies Who Make. Tuesdays, 5-8pm. January 2 - May 22, 2018. Silkscreen. Laser cutter. Etched wood or acrylic. Modeling in 3D.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ecs-teach/scratch/",
+	"uri": "https://wy-cs.site/ecs-teach/scratch/",
 	"title": "Scratch",
 	"tags": [],
 	"description": "",
 	"content": "Resources (all are Google Drive shared folders):\n Introductory materials Variables Lists  There are quizzes as well; email me for access if you are an instructor.\n"
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/e-courses/",
+	"uri": "https://wy-cs.site/intermediate-cs/e-courses/",
 	"title": "Online Help",
 	"tags": [],
 	"description": "",
 	"content": " The best resource I am aware of is Gregor Kiczales\u0026rsquo; course How to Code: Simple Data. The course is available for free through edX.\nKiczales Course Structure The two most important parts of the course (from my point of view) are:\n Module 1b: How to Design Functions. The design process.\n Module 3a: How to Design Worlds. Big-bang.\n  Other Resources Signing up for a free online course is too much commitment? You could browse the YouTube playlists of Professor Kiczales. The first video of Summer 110 Weeks 3-4 is an introduction to big-bang.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/testcases/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/connect-four/testcases/",
 	"title": "Connect Four Testcases",
 	"tags": [],
 	"description": "",
 	"content": "The testcases zip file contains all of the template files.\nYou can also download them one by one:\n Connect Four TestConnectFour User Interface for Connect Four Main method in its own file  It may help you to start from my repl.it workspace with all of the testing code already in it. Your code should go in ConnectFour.hs. You may need to edit some of the function names. The list of what they are supposed to be is at the start.\n"
 },
 {
-	"uri": "http://wy-cs.info/ftc/",
+	"uri": "https://wy-cs.site/ftc/",
 	"title": "Robophins 3216",
 	"tags": [],
 	"description": "",
 	"content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nMeet Schedule  November 11 at Horizon Science Academy, 2245 W Pershing Road, 1-6pm. December 9 at Back of the Yards, 2111 W 47th Street, 7:30am-12:30pm. January 27 at UIC Student Center, 750 S Halstead, 11am-4pm. February 10 at Amundsen High School, 7:30am-6pm. February 23-24: FTC State finals in Elgin, IL, see linked document.  Game Resources  2018 Relic Recovery Resources\n Rules manual: part 1 and part 2.  2018 Official Q\u0026amp;A. Limited responses to official queries.\n  Read Forums  Chief Delphi Forum. Especially the FTC Subforum.\n FTC subreddit. Blocked in CPS. Excellent source of information from other teams and mentors.\n  Watch Videos There are tons of Ri3D (robot in 3 days) or Ri1W (robot in 1 week) videos available.\n Robot in 3 days Acto Defacto  Robophins Code  Robophins git repository\nClone repository with command:\ngit clone --depth=1 git@github.com:2017-2018-wy-robophins/ftc_app.git Make sure to get added to the Robophins organization on github so you can push your changes! You can read how to Get Started with Git elsewhere on this site.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ecs-teach/",
+	"uri": "https://wy-cs.site/ecs-teach/",
 	"title": "Exploring CS (Teachers)",
 	"tags": [],
 	"description": "",
 	"content": " This page is dedicated to teacher links for Exploring Computer Science.\n Scratch Resources are on a separate page.  Web Hosting Platforms  Cloud9\n Cost: $1/teacher/month = basically free. Live display of website results. Easy to upload images. (\u0026ldquo;Upload local files\u0026hellip;\u0026rdquo;) Interface is busy (lots of features, maybe too many for a beginner). Many languages.  Repl.it\n Cost: No upload of images. Nice simple interface for beginners. Many languages including Python with turtle graphics.    Editors: Mac  TextMate 2.0beta. Tested and works fine on modern Mac OS (10.12) as well as older.  Light weight (13MB) Can run off a flash drive; no Administrator required. HTML mode highlights and saves as \u0026ldquo;.html\u0026rdquo; automatically.   Editors: Windows  NotePad++.  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/rubric/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/connect-four/rubric/",
 	"title": "Connect Four Rubric",
 	"tags": [],
 	"description": "",
 	"content": " DRAFT: MAY CHANGE\nThere are four functions that you are expected to design and test:\n draw_board: Create a String representation of the board. is_legal_move: True if the attempted move is legal. Used to prevent players from moving in full columns or playing in column -5. is_won: True if the game is over (either player has four in a row). make_move: Gives a new Board with a piece added. Assumes that the move is legal.  To keep scoring straightforward, each function is worth 10 points.\nDraw Board This should draw with no issues, showing the board each row on its own line. I do not anticipate problems with this function.\nMake Move  5 points: piece falls to the bottom of the row when empty (basic move) 5 points: piece falls to the appropriate place (follows all rules)  Is Legal Move  5 points: moves outside of board are not allowed (column negative or too large) 5 points: moves not permitted in full column  Is Won  5 points: horizontal and vertical wins detected 5 points: diagonal wins detected  Deductions  Brute force instead of a thoughtful approach (-4)  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/design-process/",
+	"uri": "https://wy-cs.site/intermediate-cs/design-process/",
 	"title": "Design Process",
 	"tags": ["design-process"],
 	"description": "",
 	"content": " Function The function design process that we use is:\n Signature Purpose Examples (two) Function - write it.\n4A. Skeleton - not visible when finished. Check-expect - examples provide correct answers.  Animations  See Chapter 6 Animations for the design process as it applies to writing animations (big-bang).\n The Animations Slides detail the issues when writing handlers.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/connect-four/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/connect-four/",
 	"title": "Connect Four",
 	"tags": ["haskell", "project"],
 	"description": "Connect Four project description, including function signatures.",
 	"content": " Due Monday, October 16. See timeline.\nFamiliarize yourself with the game of Connect Four, possibly playing a few games.\nFunctions to write This is a minimum set of functions to write:\n draw_board :: Board -\u0026gt; String\nCreate a String representation of the board.\n make_move :: Board -\u0026gt; Player -\u0026gt; Position -\u0026gt; Board\nGives a new Board with a piece added. Assumes that the move is legal.\n is_legal_move :: Board -\u0026gt; Player -\u0026gt; Position -\u0026gt; Bool\nTrue if the attempted move is legal. Used to prevent people from playing in full columns or off the board (e.g., column -5). The computer uses this information to decide whether the next move should be by the same player (attempted move was illegal) or the opponent.\n is_won :: Board -\u0026gt; Bool\nTrue when either player has four in a row on the board.\n  Advanced functions When you are done with the minimum set of functions, consider writing functions that make better and better moves.\n any_legal gives the first legal move it finds.\n win_or_any_move is an improvement over any_legal that makes a winning move if there is one.\n win_or_get_three is an improvement over win_or_random_move that plays to get three in a row if it cannot get four in a row.\n best_move picks a move that will lead to a win if one exists and avoids moves that lead to losing.\n  The last function is the most interesting, but will require doing some outside reading on the minimax algorithm, perhaps looking at an implementation for Connect Four.\nDesign process Make a plan before you start writing code! I recommend the top-down design that we discussed last year.\nPlease have each step of the design process visible for each function. It will speed your work and made it easier to understand!\n Purpose for the function Signature for the function Example(s) showing how the function will work. Write the function. Testing: put the examples for the function called work into a function called test_work.  Technical details  Question: How do you print on more than one line?\nAnswer: Put \u0026ldquo;\\n\u0026rdquo; in your string. For example: \u0026ldquo;One line\\nSecond line\u0026rdquo;.\nExample:\ndrawBoard xs = \u0026#34;__XX\\n_OOO\u0026#34; main = do putStrLn $ drawBoard [[0,0,1,1],[0,2,2,2]] Question: What is the difference between \u0026lsquo;X\u0026rsquo; and \u0026ldquo;X\u0026rdquo;?\nAnswer: \u0026lsquo;x\u0026rsquo; is a character (Char), and \u0026ldquo;X\u0026rdquo; is a String, which is a list of characters.\n Question: How do you define a type shortcut?\nAnswer: type Board = [[Int]]\n Question: How do you define a struct?\nAnswer: it will be easier if you do not do this, but Chapter 8 in LYaH has all of the information you need.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-10-04/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-10-04/",
 	"title": "2017-10-04",
 	"tags": ["haskell"],
 	"description": "More CodingBat problems.",
 	"content": " Without10 (source). Take a list of numbers and remove all of the tens. The remaining numbers shift toward the start of the list and zeros fill in at the end.\n NotAlone (source). We will say that an element in an array is \u0026ldquo;alone\u0026rdquo; if there are values before and after it, and those values are different from it. Return a version of the list where every instance of the given value which is alone is replaced by whichever value to its left or right is larger.\n TwoTwo (source). True if every two is that appears in the list is next to another two.\n pre4 (source). Given a non-empty array of ints, return a new array containing the elements from the original array that come before the first four in the original array.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/usaco/haybales/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/usaco/haybales/",
 	"title": "Haybales",
 	"tags": [],
 	"description": "",
 	"content": "The haybales problem is from Bronze 1, December 2016. In this directory you can download the starter code. If you are new to Unix, you unpack it with the command tar zvxf usaco-y2016-m12.tar.bz2. Inside there is a README.md file that has a few more instructions.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-10-03/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-10-03/",
 	"title": "2017-10-03",
 	"tags": ["haskell"],
 	"description": "CodingBat problems to improve your problem-solving skills.",
 	"content": " (Previous class leftover.) Write only14 (source) that takes in a list of numbers and gives a boolean result. The result is true if every number in the list is either a 1 or a 4.\n Write isEverywhere(source). \u0026ldquo;We\u0026rsquo;ll say that a value is \u0026ldquo;everywhere\u0026rdquo; in an array if for every pair of adjacent elements in the array, at least one of the pair is that value. Return true if the given value is everywhere in the array.\u0026rdquo;\nWe discussed how to program this one, including the tricky edge cases like stopping when there are two elements left in the list instead of one or zero.\n Write haveThree (source), which returns true if the number 3 appears three times in the list, and no threes are next to each other in the list.\nhaveThree:: [Int] -\u0026gt; Bool (Homework) The cow signal. Briefly: take in a [[Int]] with every entry 0 or 1. Produce a [[Int]] with four entries in a square corresponding to every one entry in the original. If you made a picture with the rows of 0\u0026rsquo;s and 1\u0026rsquo;s, the new picture would be twice as wide and twice as high.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch06/ch06-reading-guide/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch06/ch06-reading-guide/",
 	"title": "Chapter 6 Reading Guide",
 	"tags": ["haskell", "reading-guide"],
 	"description": "",
 	"content": " Take in a list of numbers and output a list containing all of the numbers greater than 8.\n Take in a list of numbers and output a list containing all of the numbers between 10 and 20 (inclusive).\n Take in a list of numbers. Multiply all of the numbers in a list by 10 to make the output list.\n Take in a list of lists. Arrange the list of lists according to how many elements each list has, so longer sublists go first and shorter sublists go later.\n  "
 },
 {
-	"uri": "http://wy-cs.info/resources/why-racket/",
+	"uri": "https://wy-cs.site/resources/why-racket/",
 	"title": "Why Racket?",
 	"tags": [],
 	"description": "",
 	"content": " Many people we encounter tell us they wish they knew how to code and then ask which programming language they should learn. Given the press that some programming languages get, this question is not surprising. But it is also wholly inappropriate. Learning to program in a currently fashionable programming language often sets up students for eventual failure. Fashion in this world is extremely short lived. A typical “quick programming in X” book or course fails to teach principles that transfer to the next fashion language. Worse, the language itself often distracts from the acquisition of transferable skills, at the level of both expressing solutions and dealing with programming mistakes.\n\u0026ndash; Felleison et al, How to Design Programs, Second Edition.\n To understand why Racket is a good language to learn, one need read no further than Section 0.1 of Stephen Bloch\u0026rsquo;s Picturing Programs. Please read it now if you have not.\nTo summarize, here are major arguments for choosing Racket over a more \u0026ldquo;popular\u0026rdquo; programming language:\n Racket\u0026rsquo;s uniform syntax (everything is in parentheses, no order of operations, means that everything you do learn is a real intellectual concept.\n Racket works without any incantations that cannot be understood by a beginner. Example: Java\u0026rsquo;s public static void main (String[] args) incantation.\n Racket\u0026rsquo;s language levels protects you from advanced features that could be misunderstood at the start, but lets you continue to program in the same familiar language with more advanced features when you are ready.\n Any language you choose will be obsolete by the time you enter the workforce in 4-8 years, so effort spent learning language-specific syntax is not productive. Instead, you need to learn how to learn a new language. Most programmers find themselves working in a variety of languages depending on the requirements of their current task.\n Paul Graham\u0026rsquo;s article Beating the Averages explains how they used Lisp to make a very successful business (it was worth almost $50 million when it was purchased by Yahoo!). Lisp is a language very similar to Racket.\n Racket includes a way to build web applications as well as a graphical user interface builder that works on any kind of computer.\n Nobody should pass judgement on Racket until they understand the macro system that it has! Consider that a challenge if you are an advanced student.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-quiz/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz/",
 	"title": "Chapter 4 Quiz",
 	"tags": ["haskell", "quiz"],
 	"description": "",
 	"content": " All functions should include appropriate type signatures.\n Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input.  Mountain Questions The questions below all refer to a \u0026ldquo;mountain range\u0026rdquo;, which is a list of integers specifying the height in feet above sea level.\n Base camp is half of the height of the highest mountain. New mountains start/end when altitude goes above/below base camp. The mountain range data is guaranteed to begin and end with a number below the height of base camp.  Example:\nmountains = [0, 50, 100, 99, 98, 50, 75, 60, 20, 10, 15, 10, 90, -5] highestPeak mountains == 100 baseCamp mountains == 50 countPeaks mountains == 3 tallestWidth mountains == 4 In the example above, the three mountains are:\n [50,100,99,98,50] with width = 4 [50,75,60,20] with width = 3 [10,90,-5] with width = 2   Find the height of the highest mountain..\n Write a function to find the height of base camp.\n Write a function to count the number of peaks.\n Write a function to estimate the width of the tallest mountain.\n  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch05/ch05-reading-guide/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch05/ch05-reading-guide/",
 	"title": "Chapter 5 Reading Guide",
 	"tags": ["reading-guide"],
 	"description": "",
 	"content": "The purpose of reading this section is to see how an experienced author writes functions that work on lists. Functions:\n maximum: Two different versions. replicate take reverse repeat zip elem quicksort: This one takes some thinking to understand.  After you have read the chapter, write answers to these questions:\n What is the main idea behind the quicksort function?\n Write the insertBefore function that places an element before the current item with the given index in a list. Use as few built-in functions as you can. This is a thinking exercise not a practical exercise \u0026ndash; figure out how to do it without take, drop or splitAt. insertBefore :: Int -\u0026gt; a -\u0026gt; [a] -\u0026gt; [a] insertBefore n item xs = undefined -- Examples: insertBefore 0 3 [5,7] == [3,5,7] insertBefore 1 6 [5,7] == [5,6,7] insertBefore 2 9 [5,7] == [5,7,9]\n The allPermutations function takes in a list and returns a list of lists. The output contains every permutation of the input list exactly once. (Treat all of the input list elements as distinguishable; see last test case.) The permutations do not have to appear in the order given below.\nallPermutations [1,2] == [[1,2],[2,1]] allPermutations [1,2,3] == [ [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]] allPermutations [1,1] == [[1,1],[1,1]] -- do not try to see the items are the same Write the combinations function that takes in a number k and a list, and returns a list of lists. The output contains every distinct k item subset of the list (keep the items in the order they appear in the original list).\ncombinations 2 [1,2,3] == [[1,2],[1,3],[2,3]] combinations 3 [1..5] == [[1,2,3],[1,2,4],[1,2,5],[1,3,4],[1,3,5], [1,4,5],[2,3,4],[2,3,5],[2,4,5],[3,4,5]] Write the grouper function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order.\ngrouper [1,1,1,2,3,3,2] = [[1,1,1],[2],[3,3],[2]] "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/typeclass-notes/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/typeclass-notes/",
 	"title": "Typeclass Notes",
 	"tags": [],
 	"description": "Typeclasses you may encounter in everyday programming.",
 	"content": " Num: Addition, multiplication, a way to convert from an integer. Also absolute value and negation. Real: Part of the real number line. Ordered numbers. toRational. Does not imply decimals! Enum: Next and previous (succ-essor and pred-ecessor). Integral: Integer division. Fractional: \u0026ldquo;Decimal\u0026rdquo; division. Floating: transcendental functions (exponentials, trig, pi, e). RealFrac: truncate and round. RealFloat: efficient floating point.  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch04/ch04-discussion/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion/",
 	"title": "Chapter 4 Discussion",
 	"tags": [],
 	"description": "Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.",
 	"content": " Chapter 4 Discussion Absence Interpretation    Periods Absent Probability of all day absence     a \u0026gt;= 6 1.0   a \u0026gt;= 3 0.5   a \u0026lt; 3 0.0    Speaker    Input Pattern output     1 \u0026ldquo;welcome\u0026rdquo;   2 \u0026ldquo;students\u0026rdquo;   3 \u0026ldquo;students welcome welcome students\u0026ldquo;   4 \u0026ldquo;students welcome welcome students students students students welcome welcome students\u0026ldquo;   n (previous output) (output before that) (output before that) (previous output)    Trimult Given a list of numbers, produce a list of all products of three terms in a row.\n trimult [10,20,50] = [10000] trimult [1,2,3,4,5,6] = [6,24,60,120]  Second and third    Input Output     [1,5,10] \u0026ldquo;The second and third items of [1,5,10] add to be 15\u0026rdquo;   [3,40,60,99] \u0026ldquo;The second and third items of [3,40,60,99] add to be 100\u0026rdquo;    Try two different ways!\nEighty-first Find the eighty-first item in a list.\n   Input Output     [0,2..200] 162   [110,120..] 920    "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch03/ch03-quiz/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-quiz/",
 	"title": "Chapter 3 Quiz",
 	"tags": ["haskell", "quiz"],
 	"description": "",
 	"content": " Write a good (technically correct) type signature for\n f(x) = x*(x+1) g(xs) = [ x/7 | x \u0026lt;- xs ] h(x) = \u0026quot;You told me \u0026quot;++(show x) k(x,y) = y*x - 5  Write a function to extract an integer from one string and output a list containing the second string repeated that many times.\nprob2 \u0026#34;5\u0026#34; \u0026#34;dog\u0026#34; == [\u0026#34;dog\u0026#34;,\u0026#34;dog\u0026#34;,\u0026#34;dog\u0026#34;,\u0026#34;dog\u0026#34;,\u0026#34;dog\u0026#34;] Given two strings containing floating point numbers, return the sum of those numbers.\nprob3 \u0026#34;3.14\u0026#34; \u0026#34;2.81\u0026#34; == 5.95 The root mean square of a list of numbers is the square root of the average of the squares of the numbers. Write a function to find the RMS of a list of floating point numbers.\n-- results are approximate prob4 [1, 10, 100] == 58.0259 prob4 [3.14, 2.81] == 2.979 The mode of a list of integers is the number that appears the most often. Write a function to find the mode of a list of integers.\nprob5 [1,1,1,2,2,2,2,2,3,3] == 2 prob5 [1,1,1,2,2,2] == 1 -- any one of the modes is ok  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-18/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-18/",
 	"title": "2017-09-18",
 	"tags": ["haskell"],
 	"description": "Battleship and homework review.",
 	"content": "We discussed problem 7 from the homework. You should finish it based on the discussion.\nMentioned from Chapter 5: type to make short ways to say types. Examples:\ntype Pt = (Int,Int) type Ship = [Pt] type Shots = [Pt] We wrote the function is_sunk for battleship.\nFunctions we discussed:\n [\u0026amp;\u0026amp;]: Join two Boolean values with logical and. and: Join a list of Boolean values with logical and. all: Apply a tester function and then join all of the values together with \u0026ldquo;and\u0026rdquo;.  All of these functions have counterparts for logical or; they are: ||, or, any.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-13/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-13/",
 	"title": "2017-09-14 Indentation",
 	"tags": ["haskell"],
 	"description": "Indentation matters. A lot.",
 	"content": " Indentation is significant in Haskell. Haskell uses indentation to group pieces of code together. This is similar to Python, but there are \u0026ldquo;false cognates\u0026rdquo; - similar code that is indented differently in the two languages. In Racket, grouping is done only by parentheses.\nIndenting to the same level \u0026ldquo;All grouped expressions must be exactly aligned.\u0026rdquo;\n Example 1a: good indentation\nif x `mod` 3 == 0 \u0026amp;\u0026amp; x `mod` 5 == 0 -- good. aligned with top x. ... Example 1a: bad indentation\nif x `mod` 3 == 0 \u0026amp;\u0026amp; x `mod` 5 == 0 -- wrong. not aligned with top x ... Indenting further \u0026ldquo;Code which is part of some expression [must] be indented further than the beginning of that expression.\n Not enough indentation On one hand, this means that if you do not indent, you are not continuing a preceding expression. Example 2:\nif x `mod` 3 == 0 \u0026amp;\u0026amp; x `mod` 5 == 0 then -- wrong; needs to be indented further than the if x else -- wrong again 0 Too much indentation On the other hand, if you do indent, you may be continuing something you wrote previously.\nHow could this be an issue? If you write one function and then indent a later function, Haskell thinks you want the second function to be inside the first function (as in, a \u0026ldquo;sub-function\u0026rdquo;).\nExample:\nmain = do putStrLn $ helper 5 -- all this space does not change anything... -- answer x = 200 * x helper x = answer x + 1 Notice how answer is indented more than main? That makes the answer function live inside of main\u0026hellip; this will cause all sorts of problems, but the first one is that helper cannot see answer because helper cannot see anything inside of another function like main.\nThe source for all quotes in this article is the Haskell article on indentation. Other example issues came from observations in class.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/replit/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/replit/",
 	"title": "Repl.it",
 	"tags": ["haskell"],
 	"description": "",
 	"content": "A summary of any special problems that have arisen with repl.it. Repl.it requires a main method The particular interpreter repl.it requires that you have a main method. Write a simple one and then type your tests in the interactions pane.\nmain = do putStrLn \u0026#34;Loaded\u0026#34;"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-12/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-12/",
 	"title": "2017-09-12",
 	"tags": ["haskell"],
 	"description": "Technical details that came up while doing Chapter 2 Homework.",
 	"content": " Memorize how to write a basic main method:  main = do putStrLn \u0026#34;Loaded\u0026#34;  Use \u0026ldquo;\u0026ndash;\u0026rdquo; (two dashes) to comment to the end of the line. This is equivalent to Racket \u0026ldquo;;\u0026rdquo; (semicolon).\n Function name rules:\n Must begin with lowercase letter. Hyphens (-) are not allowed in names. Underscore (_) may be used instead.\n Traditionally camelCase is used for functions. (First letter lowercase, then uppercase each new word.)\n  We will learn about the $ sign soon, but it is a substitute for putting parentheses from somewhere to the end of the line. That means\nputStrLn ( show ( grapher f 0 10 ) ) could be written as\nputStrLn $ show $ grapher f 0 10  "
 },
 {
-	"uri": "http://wy-cs.info/intermediate-cs/ch01/ch01-review/",
+	"uri": "https://wy-cs.site/intermediate-cs/ch01/ch01-review/",
 	"title": "Chapter 01 Review",
 	"tags": [],
 	"description": "",
 	"content": "Two images of designs to practice making in Racket.\n\nYou may omit the border lines.\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/daily/2017-09-11/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-11/",
 	"title": "2017-09-11",
 	"tags": ["haskell", "daily-notes"],
 	"description": "worked examples - removeVowels and wordLenPairs",
 	"content": "removeVowels word = [ letter | letter \u0026lt;- word, not (letter elem \u0026ldquo;aeiouAEIOU\u0026rdquo; )]\nwordLenPairs wordlist = [ (word, length word) | word \u0026lt;- wordlist ]\n"
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ghci-details/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ghci-details/",
 	"title": "Source Code Files (ghci)",
 	"tags": ["haskell"],
 	"description": "",
 	"content": "Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no let statements at the top level and no automatic printing of results.\nInterpreter vs file An interpreter is what the \u0026ldquo;interactions pane\u0026rdquo; is called. In DrRacket, the interactions pane is the one on the bottom. In repl.it, the interactions pane is on the right side. Interactions with an interpreter can not be saved. There is a command line interpeter in the Haskell Platform called ghci.\nA file is equivalent to the \u0026ldquo;definitions pane\u0026rdquo; in DrRacket. In repl.it, the left hand side of the window is a file. Files can be saved. You need to load (or \u0026ldquo;play\u0026rdquo;) a file to see the results.\nNo let statements needed to make variables or functions Writing a file is different than typing in an interpreter. The whole file is loaded and (usually) the main function is run. When defining functions and variables a file, the word let is not used and the results are not immediately printed. A file equivalent might be written:\nw = \u0026#34;Cat\u0026#34; wlen = length w main = do putStrLn (show wlen) Typing in an interpreter, every statement gives an immediate result, so the following is similar code for comparison:\nPrelude\u0026gt; let w = \u0026#34;Cat\u0026#34; Prelude\u0026gt; length w 3 Output to screen when running a file Loading or running a file will not automatically cause results to print.\nUse the putStrLn function to output a string.\n w = \u0026#34;Cat\u0026#34; main = do putStrLn w Printing items that are not strings requires the use of show to make the string that is printed.\nPrelude\u0026gt; let w = [\u0026#34;list\u0026#34;,\u0026#34;of\u0026#34;,\u0026#34;big words\u0026#34;] Prelude\u0026gt; putStrLn (show w) [\u0026#34;list\u0026#34;,\u0026#34;of\u0026#34;,\u0026#34;big words\u0026#34;] Omitting the show will produce an error message:\nPrelude\u0026gt; putStrLn w \u0026lt;interactive\u0026gt;:7:10: error: • Couldn\u0026#39;t match type ‘[Char]’ with ‘Char’ Expected type: String Actual type: [[Char]] • In the first argument of ‘putStrLn’, namely ‘w’ In the expression: putStrLn w In an equation for ‘it’: it = putStrLn w"
 },
 {
-	"uri": "http://wy-cs.info/biography/",
+	"uri": "https://wy-cs.site/biography/",
 	"title": "Biography",
 	"tags": [],
 	"description": "",
 	"content": " Dr. Mauer-Oats has been at Whitney Young for more than five years. He holds a Ph.D. in Mathematics from the University of Illinois at Urbana-Champaign.\nCourses Courses taught in 2017-2018:\n AP Computer Science Intermediate Computer Science  Courses taught in prior years at Whitney Young:\n Exploring Computer Science Precalculus Honors Algebra 2 with Trigonometry  Clubs Clubs sponsored in 2017-2018:\n Aerospace club - qualified for the TARC National Fly-off in 2017. Robotics club (FTC) - Rockwell Innovation Award in 2017. Coding Club - Competition computer programming. Math team (assistant coach). Girls Who Code (assistant mentor).  "
 },
 {
-	"uri": "http://wy-cs.info/",
+	"uri": "https://wy-cs.site/",
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
 	"content": " AP Computer Science Recent Changes   Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Intermediate Computer Science Recent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  "
 },
 {
-	"uri": "http://wy-cs.info/ap-cs/haskell/ch01/ch01-reading-guide/",
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
 	"title": "Ch01 Reading Guide",
 	"tags": ["reading-guide", "haskell"],
 	"description": "",
 	"content": " Haskell introduction reading questions  Haskell is supposed to be a purely functional language. Unpack that:\n What does pure mean? What is the difference between functional and imperative? (The book is not so clear on this point. What do you think it says, in your own words?)  Haskell is lazy. What does this mean?\n Haskell is statically typed. This could be unpacked, too.\n What does typed mean? The word static in English can me \u0026ldquo;not changing\u0026rdquo;. How would you apply that meaning in this context?  When did work on Haskell begin?\n  "
 },
 {
-	"uri": "http://wy-cs.info/resources/ics-wescheme-note/",
+	"uri": "https://wy-cs.site/resources/ics-wescheme-note/",
 	"title": "WeScheme",
 	"tags": [],
 	"description": "Notes on how WeScheme is different from DrRacket.",
 	"content": " Special notes for WeScheme users You can use WeScheme if you cannot install DrRacket. For example, if you have a Chromebook for your home computer.\nThere are a few differences:\n Omit the (require picturing-programs) line.\n (Chapter 3) Instead of copy and pasting in a picture, you need to copy the link for the image and use bitmap/url like this:\n(bitmap/url \u0026#34;https://www.what-dog.net/Images/faces2/main004.jpg\u0026#34;) (Chapter 6) Inside big-bang you need to use the phrase to-draw instead of on-draw that we use in DrRacket. (define (draw-handler model) (overlay model (empty-scene 300 200))) (define (tick-handler model) (scale 1.01 model)) (big-bang (circle 10 \u0026#34;solid\u0026#34; \u0026#34;green\u0026#34;) (on-tick tick-handler) (to-draw draw-handler))\n  "
 },
 {
-	"uri": "http://wy-cs.info/_header/",
+	"uri": "https://wy-cs.site/_header/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "http://wy-cs.info/tags/ap-cs/",
+	"uri": "https://wy-cs.site/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/ap-cs/",
+	"uri": "https://wy-cs.site/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/calendar/",
+	"uri": "https://wy-cs.site/tags/calendar/",
 	"title": "Calendar",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/",
+	"uri": "https://wy-cs.site/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/daily-notes/",
+	"uri": "https://wy-cs.site/tags/daily-notes/",
 	"title": "Daily Notes",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/design-process/",
+	"uri": "https://wy-cs.site/tags/design-process/",
 	"title": "Design Process",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/git/",
+	"uri": "https://wy-cs.site/tags/git/",
 	"title": "Git",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/haskell/",
+	"uri": "https://wy-cs.site/tags/haskell/",
 	"title": "Haskell",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/homework/",
+	"uri": "https://wy-cs.site/tags/homework/",
 	"title": "Homework",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/hw/",
+	"uri": "https://wy-cs.site/tags/hw/",
 	"title": "Hw",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/categories/intermediate-cs/",
+	"uri": "https://wy-cs.site/categories/intermediate-cs/",
 	"title": "Intermediate Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/opener/",
+	"uri": "https://wy-cs.site/tags/opener/",
 	"title": "Opener",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/project/",
+	"uri": "https://wy-cs.site/tags/project/",
 	"title": "Project",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/quiz/",
+	"uri": "https://wy-cs.site/tags/quiz/",
 	"title": "Quiz",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/reading-guide/",
+	"uri": "https://wy-cs.site/tags/reading-guide/",
 	"title": "Reading Guide",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/solutions/",
+	"uri": "https://wy-cs.site/tags/solutions/",
 	"title": "Solutions",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://wy-cs.info/tags/",
+	"uri": "https://wy-cs.site/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

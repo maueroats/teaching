@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Design Process on WY Computer Science</title>
-    <link>http://wy-cs.info/tags/design-process/</link>
+    <link>https://wy-cs.site/tags/design-process/</link>
     <description>Recent content in Design Process on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Oct 2017 20:49:55 -0500</lastBuildDate>
     
-	<atom:link href="http://wy-cs.info/tags/design-process/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wy-cs.site/tags/design-process/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Design Process</title>
-      <link>http://wy-cs.info/intermediate-cs/design-process/</link>
+      <link>https://wy-cs.site/intermediate-cs/design-process/</link>
       <pubDate>Tue, 10 Oct 2017 20:49:55 -0500</pubDate>
       
-      <guid>http://wy-cs.info/intermediate-cs/design-process/</guid>
+      <guid>https://wy-cs.site/intermediate-cs/design-process/</guid>
       <description> Function The function design process that we use is:
  Signature Purpose Examples (two) Function - write it.
 4A. Skeleton - not visible when finished. Check-expect - examples provide correct answers.  Animations  See Chapter 6 Animations for the design process as it applies to writing animations (big-bang).

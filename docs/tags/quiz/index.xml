@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quiz on WY Computer Science</title>
-    <link>http://wy-cs.info/tags/quiz/</link>
+    <link>https://wy-cs.site/tags/quiz/</link>
     <description>Recent content in Quiz on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Sep 2017 08:08:42 -0500</lastBuildDate>
     
-	<atom:link href="http://wy-cs.info/tags/quiz/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wy-cs.site/tags/quiz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chapter 4 Quiz</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch04/ch04-quiz/</link>
+      <link>https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz/</link>
       <pubDate>Tue, 26 Sep 2017 08:08:42 -0500</pubDate>
       
-      <guid>http://wy-cs.info/ap-cs/haskell/ch04/ch04-quiz/</guid>
+      <guid>https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz/</guid>
       <description>All functions should include appropriate type signatures.
  Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input.  Mountain Questions The questions below all refer to a &amp;ldquo;mountain range&amp;rdquo;, which is a list of integers specifying the height in feet above sea level.</description>
     </item>
     
     <item>
       <title>Chapter 3 Quiz</title>
-      <link>http://wy-cs.info/ap-cs/haskell/ch03/ch03-quiz/</link>
+      <link>https://wy-cs.site/ap-cs/haskell/ch03/ch03-quiz/</link>
       <pubDate>Tue, 19 Sep 2017 08:59:37 -0500</pubDate>
       
-      <guid>http://wy-cs.info/ap-cs/haskell/ch03/ch03-quiz/</guid>
+      <guid>https://wy-cs.site/ap-cs/haskell/ch03/ch03-quiz/</guid>
       <description>Write a good (technically correct) type signature for
  f(x) = x*(x+1) g(xs) = [ x/7 | x &amp;lt;- xs ] h(x) = &amp;quot;You told me &amp;quot;++(show x) k(x,y) = y*x - 5  Write a function to extract an integer from one string and output a list containing the second string repeated that many times.
 prob2 &amp;#34;5&amp;#34; &amp;#34;dog&amp;#34; == [&amp;#34;dog&amp;#34;,&amp;#34;dog&amp;#34;,&amp;#34;dog&amp;#34;,&amp;#34;dog&amp;#34;,&amp;#34;dog&amp;#34;] Given two strings containing floating point numbers, return the sum of those numbers.</description>
