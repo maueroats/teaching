@@ -1,7 +1,7 @@
 ---
 title: "Part I: Ch 1-19"
 date: 2018-03-07T14:32:07-06:00
-weight: 10
+weight: 30
 draft: false
 #type: slide
 #theme: white
