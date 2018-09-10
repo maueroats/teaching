@@ -1,0 +1,17 @@
+<!-- lazy, inlined use-mathjax shortcode instead of making a partial -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']]
+<!--
+  TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"]}
+-->}});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Definitions for writing ML -->
+$\DeclareMathOperator{\Var}{Var}$
+$\DeclareMathOperator{\Cov}{Cov}$

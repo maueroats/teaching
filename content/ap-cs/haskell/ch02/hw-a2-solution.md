@@ -1,6 +1,7 @@
 ---
 title: "Haskell HW 2 Solutions"
 date: 2017-09-14T10:18:00-05:00
+draft: true
 weight: 21
 tags: 
   - homework
@@ -54,5 +55,5 @@ targetPractice' :: Pt -> [Pt] -> Pt -> Pt
 targetPractice' pt [] closestSoFar = closestSoFar
 targetPractice' pt (x:xs) closestSoFar = targetPractice' pt xs newClosest 
     where newClosest = if (dist x pt) < (dist closestSoFar pt) 
-	                    then x else closestSoFar
+                        then x else closestSoFar
 ```

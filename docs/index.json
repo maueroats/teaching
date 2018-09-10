@@ -4,7 +4,7 @@
 	"title": "Connect Four Timeline",
 	"tags": [],
 	"description": "",
-	"content": "   Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Share difficulties and troubleshoot.   7 Thurs, Oct 11 (early release) Plan, write, and test: is_won.   8 Fri, Oct 12 Write tests demonstrating code works.   - Mon, Oct 16 Last day to turn in project.    I expect this project to take 4-6 hours to complete over the course of a week. If you spend less than 3 hours on the project you should read the advanced notes about the minimax algorithm and (partially?) implement it.\nExpected times and other notes:\n draw_board: 1.0 hour, including class time is_legal_move: 0.5 hour is_won: 1.5-2 hours, including 0.5-1.0 hours planning time Expect to use several helper functions. See spoilers if needed. make_move: 1.0 hour, including class time. See spoilers if needed.  "
+	"content": "Not updated for 2018.\n   Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and test: is_legal_move.   5 Tues, Oct 10 Plan make_move in class. Write and test at home.   6 (15 min class) Share difficulties and troubleshoot.   7 Thurs, Oct 11 (early release) Plan, write, and test: is_won.   8 Fri, Oct 12 Write tests demonstrating code works.   - Mon, Oct 16 Last day to turn in project.    I expect this project to take 4-6 hours to complete over the course of a week. If you spend less than 3 hours on the project you should read the advanced notes about the minimax algorithm and (partially?) implement it.\nExpected times and other notes:\n draw_board: 1.0 hour, including class time is_legal_move: 0.5 hour is_won: 1.5-2 hours, including 0.5-1.0 hours planning time Expect to use several helper functions. See spoilers if needed. make_move: 1.0 hour, including class time. See spoilers if needed.  "
 },
 {
 	"uri": "https://wy-cs.site/intermediate-cs/part-i/ch03art/period-1/",
@@ -32,14 +32,14 @@
 	"title": "3. Types and Typeclasses",
 	"tags": ["haskell"],
 	"description": "Typeclasses abstract characteristics of types like String or Int.",
-	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set   Chapter 3 Quiz  "
+	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
 	"title": "4. Syntax in Functions",
 	"tags": ["haskell"],
 	"description": "",
-	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Problem Set Exercises to improve your Haskell programming.\n  Chapter 4 Summary patterns, guards, where, let, case\n  Chapter 4 Quiz All functions should include appropriate type signatures. Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input. Mountain Questions The questions below all refer to a \u0026ldquo;mountain range\u0026rdquo;, which is a list of integers specifying the height in feet above sea level.\n  Chapter 4 Discussion Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n "
+	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Problem Set Exercises to improve your Haskell programming.\n  Chapter 4 Summary patterns, guards, where, let, case\n  Chapter 4 Discussion Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n "
 },
 {
 	"uri": "https://wy-cs.site/ftc/registration/",
@@ -231,13 +231,6 @@
 	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nEventually you will want to understand why we learn Racket instead of a more popular language like Python.\nRecent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Strings for Experts modified Sun 11-19  Pro Features modified Sun 11-19  All Content  Part I: Ch 1-19   1. Introduction   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
-	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/hw-a2-solution/",
-	"title": "Haskell HW 2 Solutions",
-	"tags": ["homework", "solutions", "haskell", "ap-cs"],
-	"description": "",
-	"content": "breakItUp plan:\n replicate input list (length - 3) times zip with count helper function knows count and list, drop \u0026amp; take  breaklicator xs = replicate (length xs - 3) xs numberIt ys = zip ys [0..] breakItUp\u0026#39; :: ([a],Int) -\u0026gt; [a] breakItUp\u0026#39; (xs,y) = take 4 $ drop y xs breakItUp_v2 :: [a] -\u0026gt; [[a]] breakItUp_v2 xs = [ breakItUp\u0026#39; w | w \u0026lt;- numberIt $ breaklicator xs ] Fancy solution for breakItUp, shows power of Haskell pattern matching (Chapter 4):\nbreakItUp :: [a] -\u0026gt; [[a]] breakItUp [a,b,c,d] = [[a,b,c,d]] breakItUp (x:xs) = (x:take 3 xs) : breakItUp xs targetPractice plan:\n distance formula helper function that remembers the closest point so far recursively go through list of all points  -- you should just write (Int,Int) everywhere I write Pt type Pt = (Int,Int) dist :: Pt -\u0026gt; Pt -\u0026gt; Int dist (x0,y0) (x1,y1) = (x1-x0)^2 + (y1-y0)^2 targetPractice :: Pt -\u0026gt; [Pt] -\u0026gt; Pt targetPractice pt ptList = targetPractice\u0026#39; pt ptList (head ptList) targetPractice\u0026#39; :: Pt -\u0026gt; [Pt] -\u0026gt; Pt -\u0026gt; Pt targetPractice\u0026#39; pt [] closestSoFar = closestSoFar targetPractice\u0026#39; pt (x:xs) closestSoFar = targetPractice\u0026#39; pt xs newClosest where newClosest = if (dist x pt) \u0026lt; (dist closestSoFar pt) then x else closestSoFar"
-},
-{
 	"uri": "https://wy-cs.site/resources/generic-cs-syllabus/",
 	"title": "Syllabus: All Courses",
 	"tags": [],
@@ -291,7 +284,7 @@
 	"title": "Machine Learning",
 	"tags": [],
 	"description": "",
-	"content": "  ML Resources Resources for machine learning that we refer to in the class.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits together.\n  ML Daily Lecture notes will be posted here. 2018.09.05   "
+	"content": "  ML Resources Resources for machine learning that we refer to in the class.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits together.\n  ML Daily Lecture notes and supplemental material.\n  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-summary/",
@@ -385,6 +378,20 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
 },
 {
+	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-07/",
+	"title": "2018.09.07",
+	"tags": [],
+	"description": "",
+	"content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   $\\DeclareMathOperator{\\Var}{Var}$ $\\DeclareMathOperator{\\Cov}{Cov}$  Probability of two variables given in a table.\n Conditional probability: $P(Y=y | X=x)$ means the probability that you get $y$ given that you know you got $x$.\n$$ P(Y=y | X=x) := \\frac{P(Y=y \\text{ and } X=x)}{P(X=x)}. $$\nUsually used like this:\n$$ P(Y=y \\text{ and } X=x) = P(X=x) \\cdot P(Y=y | X=x) .$$\n Example when $E[X\\cdot Y] \\not= E[X]\\cdot E[Y]$.\n Independence. The events $X$ and $Y$ are independent if knowing $X$ gives you no information about $Y$. That is, $$P(Y=y | X=x) = P(Y=y) .$$\n If $X$ and $Y$ are independent, then $E[X \\cdot Y] = E[X] \\cdot E[Y]$. Know the critical step where independence is used. The rest of the argument is not as important.\n Example when $\\Cov(X,Y)$ is not zero using numbers in a table.\n  "
+},
+{
+	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-09/",
+	"title": "2018.09.09",
+	"tags": [],
+	"description": "",
+	"content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   Enhanced probability.\n (Definition of $Y|X$.) The random variable $Y|X$ (read: $Y$ given $X$) is a function of $x$ and $y$. Given an $x$, the value is $y$ with probability $P(Y=y | X=x)$.\n $E[Y|X]$, sometimes written $E_y[Y|X]$ is a function of x, giving expected value of y when you know $X=x$. That is, $$E_y[Y|X] = \\sum_y P(Y=y | X=x)\\cdot y .$$\n Law of Total Expectation. Using the definitions, try to prove that $$ E[Y] = E_x [ E_y [ Y|X] ]. $$ The left hand side could be written $E_y$ as well, if that is not confusing. Some books write this without any subscripts, which I find hard to read.\n  "
+},
+{
 	"uri": "https://wy-cs.site/resources/why-racket/",
 	"title": "Why Racket?",
 	"tags": [],
@@ -409,8 +416,8 @@
 	"uri": "https://wy-cs.site/machine-learning/daily/",
 	"title": "ML Daily",
 	"tags": [],
-	"description": "",
-	"content": "Lecture notes will be posted here.\n 2018.09.05   "
+	"description": "Lecture notes and supplemental material.",
+	"content": "Lecture notes will be posted here.\n 2018.09.05   2018.09.07   2018.09.09   "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/news/",
@@ -511,13 +518,6 @@
 	"content": " Take in a list of numbers and output a list containing all of the numbers greater than 8.\n Take in a list of numbers and output a list containing all of the numbers between 10 and 20 (inclusive).\n Take in a list of numbers. Multiply all of the numbers in a list by 10 to make the output list.\n Take in a list of lists. Arrange the list of lists according to how many elements each list has, so longer sublists go first and shorter sublists go later.\n  "
 },
 {
-	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz/",
-	"title": "Chapter 4 Quiz",
-	"tags": ["haskell", "quiz"],
-	"description": "",
-	"content": " All functions should include appropriate type signatures.\n Define a function f that takes one number as input. If the number is 1 or 100, the answer is 99. If the number is 1000 or 10000, the answer is 6. In any other case, the answer is five times the input.  Mountain Questions The questions below all refer to a \u0026ldquo;mountain range\u0026rdquo;, which is a list of integers specifying the height in feet above sea level.\n Base camp is half of the height of the highest mountain. New mountains start/end when altitude goes above/below base camp. The mountain range data is guaranteed to begin and end with a number below the height of base camp.  Example:\nmountains = [0, 50, 100, 99, 98, 50, 75, 60, 20, 10, 15, 10, 90, -5] highestPeak mountains == 100 baseCamp mountains == 50 countPeaks mountains == 3 tallestWidth mountains == 4 In the example above, the three mountains are:\n [50,100,99,98,50] with width = 4 [50,75,60,20] with width = 3 [10,90,-5] with width = 2   Find the height of the highest mountain..\n Write a function to find the height of base camp.\n Write a function to count the number of peaks.\n Write a function to estimate the width of the tallest mountain.\n  "
-},
-{
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch05/ch05-reading-guide/",
 	"title": "Chapter 5 Reading Guide",
 	"tags": ["reading-guide"],
@@ -537,13 +537,6 @@
 	"tags": [],
 	"description": "Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.",
 	"content": " Chapter 4 Discussion Absence Interpretation    Periods Absent Probability of all day absence     a \u0026gt;= 6 1.0   a \u0026gt;= 3 0.5   a \u0026lt; 3 0.0    Speaker    Input Pattern output     1 \u0026ldquo;welcome\u0026rdquo;   2 \u0026ldquo;students\u0026rdquo;   3 \u0026ldquo;students welcome welcome students\u0026ldquo;   4 \u0026ldquo;students welcome welcome students students students students welcome welcome students\u0026ldquo;   n (previous output) (output before that) (output before that) (previous output)    Trimult Given a list of numbers, produce a list of all products of three terms in a row.\n trimult [10,20,50] = [10000] trimult [1,2,3,4,5,6] = [6,24,60,120]  Second and third    Input Output     [1,5,10] \u0026ldquo;The second and third items of [1,5,10] add to be 15\u0026rdquo;   [3,40,60,99] \u0026ldquo;The second and third items of [3,40,60,99] add to be 100\u0026rdquo;    Try two different ways!\nEighty-first Find the eighty-first item in a list.\n   Input Output     [0,2..200] 162   [110,120..] 920    "
-},
-{
-	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-quiz/",
-	"title": "Chapter 3 Quiz",
-	"tags": ["haskell", "quiz"],
-	"description": "",
-	"content": " Write a good (technically correct) type signature for\n f(x) = x*(x+1) g(xs) = [ x/7 | x \u0026lt;- xs ] h(x) = \u0026quot;You told me \u0026quot;++(show x) k(x,y) = y*x - 5  Write a function to extract an integer from one string and output a list containing the second string repeated that many times.\nprob2 \u0026#34;5\u0026#34; \u0026#34;dog\u0026#34; == [\u0026#34;dog\u0026#34;,\u0026#34;dog\u0026#34;,\u0026#34;dog\u0026#34;,\u0026#34;dog\u0026#34;,\u0026#34;dog\u0026#34;] Given two strings containing floating point numbers, return the sum of those numbers.\nprob3 \u0026#34;3.14\u0026#34; \u0026#34;2.81\u0026#34; == 5.95 The root mean square of a list of numbers is the square root of the average of the squares of the numbers. Write a function to find the RMS of a list of floating point numbers.\n-- results are approximate prob4 [1, 10, 100] == 58.0259 prob4 [3.14, 2.81] == 2.979 The mode of a list of integers is the number that appears the most often. Write a function to find the mode of a list of integers.\nprob5 [1,1,1,2,2,2,2,2,3,3] == 2 prob5 [1,1,1,2,2,2] == 1 -- any one of the modes is ok  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-18/",
@@ -630,14 +623,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "https://wy-cs.site/categories/ap-cs/",
+	"uri": "https://wy-cs.site/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://wy-cs.site/tags/ap-cs/",
+	"uri": "https://wy-cs.site/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
@@ -721,22 +714,8 @@
 	"content": ""
 },
 {
-	"uri": "https://wy-cs.site/tags/quiz/",
-	"title": "Quiz",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://wy-cs.site/tags/reading-guide/",
 	"title": "Reading Guide",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://wy-cs.site/tags/solutions/",
-	"title": "Solutions",
 	"tags": [],
 	"description": "",
 	"content": ""

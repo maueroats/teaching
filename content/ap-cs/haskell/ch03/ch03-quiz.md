@@ -4,7 +4,7 @@ date: 2017-09-19T08:59:37-05:00
 tags: 
  - haskell
  - quiz
-draft: false
+draft: true
 ---
 
 1. Write a good (technically correct) type signature for

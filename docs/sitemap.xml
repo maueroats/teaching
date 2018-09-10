@@ -168,11 +168,6 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/ap-cs/haskell/ch02/hw-a2-solution/</loc>
-    <lastmod>2017-09-14T10:18:00-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/resources/generic-cs-syllabus/</loc>
     <lastmod>2017-09-09T15:50:00-05:00</lastmod>
   </url>
@@ -278,6 +273,16 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/machine-learning/daily/2018-09-07/</loc>
+    <lastmod>2018-09-09T18:06:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/machine-learning/daily/2018-09-09/</loc>
+    <lastmod>2018-09-09T16:51:30-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/resources/why-racket/</loc>
     <lastmod>2018-09-05T20:12:44-05:00</lastmod>
   </url>
@@ -368,11 +373,6 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz/</loc>
-    <lastmod>2017-09-26T08:08:42-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch05/ch05-reading-guide/</loc>
     <lastmod>2017-09-24T13:52:19-05:00</lastmod>
   </url>
@@ -385,11 +385,6 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion/</loc>
     <lastmod>2017-09-20T09:59:51-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/ap-cs/haskell/ch03/ch03-quiz/</loc>
-    <lastmod>2017-09-19T08:59:37-05:00</lastmod>
   </url>
   
   <url>
@@ -452,14 +447,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -530,20 +525,8 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/quiz/</loc>
-    <lastmod>2017-09-26T08:08:42-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/tags/reading-guide/</loc>
     <lastmod>2017-09-17T20:47:05-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/solutions/</loc>
-    <lastmod>2017-09-14T10:18:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   

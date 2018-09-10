@@ -5,6 +5,8 @@ weight: 1
 draft: false
 ---
 
+**Not updated for 2018.**
+
 | Day | Date(s) | Project Assignment  |
 |:---:|---------|---------------------|
 | 1   | Fri, Oct 6| Project assigned. Write `draw_board`. |
