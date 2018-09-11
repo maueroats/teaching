@@ -108,6 +108,21 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/machine-learning/daily/2018-09-05/</loc>
+    <lastmod>2018-09-05T12:41:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/machine-learning/daily/2018-09-07/</loc>
+    <lastmod>2018-09-09T18:06:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/machine-learning/daily/2018-09-09/</loc>
+    <lastmod>2018-09-09T16:51:30-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/haskell-calendar/</loc>
     <lastmod>2018-09-05T11:19:45-05:00</lastmod>
   </url>
@@ -165,6 +180,11 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/</loc>
     <lastmod>2017-09-09T19:49:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/machine-learning/daily/2018-09-11/</loc>
+    <lastmod>2018-09-11T11:36:38-05:00</lastmod>
   </url>
   
   <url>
@@ -293,23 +313,8 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/machine-learning/daily/2018-09-07/</loc>
-    <lastmod>2018-09-09T18:06:46-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/machine-learning/daily/2018-09-09/</loc>
-    <lastmod>2018-09-09T16:51:30-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/resources/why-racket/</loc>
     <lastmod>2018-09-05T20:12:44-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/machine-learning/daily/2018-09-05/</loc>
-    <lastmod>2018-09-05T12:41:41-05:00</lastmod>
   </url>
   
   <url>

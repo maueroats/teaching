@@ -147,6 +147,27 @@
 	"content": " You will need the the text Learn You a Haskell For Great Good.\n AP Computer Science studies:\n Haskell - an introduction to pure functional programming  All Topics  Haskell You will need the the text Learn You a Haskell For Great Good. Use repl.it for programming. Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs. Chapters 1. Intro A high-level overview of the Haskell language and why its features are good. 2. Starting Out Learn how to make lists and tuples.\n  Haskell Calendar Daily calendar for Haskell unit.   Git Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit ourselves to a small portion of what it can do. You will use it for several purposes: Turning in your work Backing up your work Transferring work to and from home via the internet instead of using a flash drive Collaborating with a group Incomplete It is impossible to write down everything you need to know about git.\n  News    Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
+	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
+	"title": "2018.09.05",
+	"tags": [],
+	"description": "",
+	"content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   $\\DeclareMathOperator{\\Var}{Var}$\n Given the probability table below for the random variable W.\n Find the expected value of W. Find the variance of W.       Prob W     1\u0026frasl;3 6   1\u0026frasl;2 12   1\u0026frasl;6 24     Prove that the variance is not linear by adding to your example above. That is, $\\Var(3 W) \\not= 3 \\Var(W)$.\n Guess a formula for $\\Var (m W)$.\n  "
+},
+{
+	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-07/",
+	"title": "2018.09.07",
+	"tags": [],
+	"description": "",
+	"content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   $\\DeclareMathOperator{\\Var}{Var}$ $\\DeclareMathOperator{\\Cov}{Cov}$  Probability of two variables given in a table.\n Conditional probability: $P(Y=y | X=x)$ means the probability that you get $y$ given that you know you got $x$.\n$$ P(Y=y | X=x) := \\frac{P(Y=y \\text{ and } X=x)}{P(X=x)}. $$\nUsually used like this:\n$$ P(Y=y \\text{ and } X=x) = P(X=x) \\cdot P(Y=y | X=x) .$$\n Example when $E[X\\cdot Y] \\not= E[X]\\cdot E[Y]$.\n Independence. The events $X$ and $Y$ are independent if knowing $X$ gives you no information about $Y$. That is, $$P(Y=y | X=x) = P(Y=y) .$$\n If $X$ and $Y$ are independent, then $E[X \\cdot Y] = E[X] \\cdot E[Y]$. Know the critical step where independence is used. The rest of the argument is not as important.\n Example when $\\Cov(X,Y)$ is not zero using numbers in a table.\n  "
+},
+{
+	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-09/",
+	"title": "2018.09.09",
+	"tags": [],
+	"description": "",
+	"content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   Enhanced probability.\n (Definition of $Y|X$.) The random variable $Y|X$ (read: $Y$ given $X$) is a function of $x$ and $y$. Given an $x$, the value is $y$ with probability $P(Y=y | X=x)$.\n $E[Y|X]$, sometimes written $E_y[Y|X]$ is a function of x, giving expected value of y when you know $X=x$. That is, $$E_y[Y|X] = \\sum_y P(Y=y | X=x)\\cdot y .$$\n Law of Total Expectation. Using the definitions, try to prove that $$ E[Y] = E_x [ E_y [ Y|X] ]. $$ The left hand side could be written $E_y$ as well, if that is not confusing. Some books write this without any subscripts, which I find hard to read.\n  "
+},
+{
 	"uri": "https://wy-cs.site/ap-cs/haskell-calendar/",
 	"title": "Haskell Calendar",
 	"tags": ["haskell", "calendar"],
@@ -229,6 +250,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nEventually you will want to understand why we learn Racket instead of a more popular language like Python.\nRecent Changes   Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  All Content  1. Introduction   Part I: Ch 1-19   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+},
+{
+	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-11/",
+	"title": "2018.09.11",
+	"tags": [],
+	"description": "",
+	"content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   $\\DeclareMathOperator{\\Var}{Var}$ $\\DeclareMathOperator{\\Cov}{Cov}$  Suppose $X, Y$ and $\\epsilon$ are random variables.\n $X$ is chosen uniformly at random from the integers ${1,2,\\ldots,10}$ $Y = X + \\epsilon$. $X$ and $\\epsilon$ are independent. The standard deviation of $Y$ is 4.  Find the standard deviation of $\\epsilon$.\n Using the table below, find a bunch of stats (below).\n   x y=4 y=8     x=2 0.1 0.2   x=6 0.1 0.3   x=10 0.2 0.1     $P(X=6 | Y=8)$ $P(X=10)$ $P(Y=8)$ $E[X]$, $E[Y]$ $\\Var(X)$ $\\Cov(X,Y)$  If $X \\ge 0$, is it true that $E[X^2] = E[X]^2$? Prove or give a counterexample.\n Suppose that there are $n$ random variables, $X_i$, all with mean $\\mu$ and variance $\\sigma^2$. Also \\Cov(X_i, Xj) = 0.3$ ssd $\\sigma^2$ when $i\\non= j$. Find the variance of $Y = \\frac{1}{n} \\Sigma{i=1}^{n} X_i$.\n  "
 },
 {
 	"uri": "https://wy-cs.site/resources/generic-cs-syllabus/",
@@ -406,32 +434,11 @@
 	"content": " Base images   Make these     "
 },
 {
-	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-07/",
-	"title": "2018.09.07",
-	"tags": [],
-	"description": "",
-	"content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   $\\DeclareMathOperator{\\Var}{Var}$ $\\DeclareMathOperator{\\Cov}{Cov}$  Probability of two variables given in a table.\n Conditional probability: $P(Y=y | X=x)$ means the probability that you get $y$ given that you know you got $x$.\n$$ P(Y=y | X=x) := \\frac{P(Y=y \\text{ and } X=x)}{P(X=x)}. $$\nUsually used like this:\n$$ P(Y=y \\text{ and } X=x) = P(X=x) \\cdot P(Y=y | X=x) .$$\n Example when $E[X\\cdot Y] \\not= E[X]\\cdot E[Y]$.\n Independence. The events $X$ and $Y$ are independent if knowing $X$ gives you no information about $Y$. That is, $$P(Y=y | X=x) = P(Y=y) .$$\n If $X$ and $Y$ are independent, then $E[X \\cdot Y] = E[X] \\cdot E[Y]$. Know the critical step where independence is used. The rest of the argument is not as important.\n Example when $\\Cov(X,Y)$ is not zero using numbers in a table.\n  "
-},
-{
-	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-09/",
-	"title": "2018.09.09",
-	"tags": [],
-	"description": "",
-	"content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   Enhanced probability.\n (Definition of $Y|X$.) The random variable $Y|X$ (read: $Y$ given $X$) is a function of $x$ and $y$. Given an $x$, the value is $y$ with probability $P(Y=y | X=x)$.\n $E[Y|X]$, sometimes written $E_y[Y|X]$ is a function of x, giving expected value of y when you know $X=x$. That is, $$E_y[Y|X] = \\sum_y P(Y=y | X=x)\\cdot y .$$\n Law of Total Expectation. Using the definitions, try to prove that $$ E[Y] = E_x [ E_y [ Y|X] ]. $$ The left hand side could be written $E_y$ as well, if that is not confusing. Some books write this without any subscripts, which I find hard to read.\n  "
-},
-{
 	"uri": "https://wy-cs.site/resources/why-racket/",
 	"title": "Why Racket?",
 	"tags": [],
 	"description": "",
 	"content": " Many people we encounter tell us they wish they knew how to code and then ask which programming language they should learn. Given the press that some programming languages get, this question is not surprising. But it is also wholly inappropriate. Learning to program in a currently fashionable programming language often sets up students for eventual failure. Fashion in this world is extremely short lived. A typical “quick programming in X” book or course fails to teach principles that transfer to the next fashion language. Worse, the language itself often distracts from the acquisition of transferable skills, at the level of both expressing solutions and dealing with programming mistakes.\n\u0026ndash; Felleison et al, How to Design Programs, Second Edition.\n To understand why Racket is a good language to learn, one need read no further than Section 0.1 of Stephen Bloch\u0026rsquo;s Picturing Programs. Please read it now if you have not.\nTo summarize, here are major arguments for choosing Racket over a more \u0026ldquo;popular\u0026rdquo; programming language:\n Racket\u0026rsquo;s uniform syntax (everything is in parentheses, no order of operations, means that everything you do learn is a real intellectual concept.\n Racket works without any incantations that cannot be understood by a beginner. Example: Java\u0026rsquo;s public static void main (String[] args) incantation.\n Racket\u0026rsquo;s language levels protects you from advanced features that could be misunderstood at the start, but lets you continue to program in the same familiar language with more advanced features when you are ready.\n Any language you choose will be obsolete by the time you enter the workforce in 4-8 years, so effort spent learning language-specific syntax is not productive. Instead, you need to learn how to learn a new language. Most programmers find themselves working in a variety of languages depending on the requirements of their current task.\n Paul Graham\u0026rsquo;s article Beating the Averages explains how they used Lisp to make a very successful business (it was worth almost $50 million when it was purchased by Yahoo!). Lisp is a language very similar to Racket.\n Racket includes a way to build web applications as well as a graphical user interface builder that works on any kind of computer.\n Nobody should pass judgement on Racket until they understand the macro system that it has! Consider that a challenge if you are an advanced student.\n  "
-},
-{
-	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
-	"title": "2018.09.05",
-	"tags": [],
-	"description": "",
-	"content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   $\\DeclareMathOperator{\\Var}{Var}$\n Given the probability table below for the random variable W.\n Find the expected value of W. Find the variance of W.       Prob W     1\u0026frasl;3 6   1\u0026frasl;2 12   1\u0026frasl;6 24     Prove that the variance is not linear by adding to your example above. That is, $\\Var(3 W) \\not= 3 \\Var(W)$.\n Guess a formula for $\\Var (m W)$.\n  "
 },
 {
 	"uri": "https://wy-cs.site/machine-learning/outline/",
@@ -445,7 +452,7 @@
 	"title": "ML Daily",
 	"tags": [],
 	"description": "Lecture notes and supplemental material.",
-	"content": "Lecture notes will be posted here.\n 2018.09.05   2018.09.07   2018.09.09   "
+	"content": "Lecture notes will be posted here.\n 2018.09.05   2018.09.07   2018.09.09   2018.09.11   "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/news/",
