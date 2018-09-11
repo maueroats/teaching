@@ -130,7 +130,7 @@
 	"title": "1. Introduction",
 	"tags": [],
 	"description": "",
-	"content": "Learn the essentials of image manipulation: rotating, flipping, and combining images.  Chapter 01 Review  "
+	"content": "Learn the essentials of image manipulation: rotating, flipping, and combining images.  HW 01 B   HW 01 C   Ch01.QuizA  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/ch02-reading-guide/",
@@ -159,6 +159,13 @@
 	"tags": ["haskell", "ap-cs"],
 	"description": "Project Euler problems.",
 	"content": "Class work for 2.1\u0026ndash;2.3  Sum Square Difference The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385 The square of the sum of the first ten natural numbers is,\n(1 + 2 + ... + 10)^2 = 55^2 = 3025 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.\nFind the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n  \n Multiples of 3 and 5 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.\n Smallest Multiple 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n "
+},
+{
+	"uri": "https://wy-cs.site/intermediate-cs/ch01/ch01b-review/",
+	"title": "HW 01 B",
+	"tags": [],
+	"description": "",
+	"content": "Two images of designs to practice making in Racket.\n\nOpener Practice You may omit the border lines.\n"
 },
 {
 	"uri": "https://wy-cs.site/intermediate-cs/contracts/contract-structs/",
@@ -221,7 +228,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nEventually you will want to understand why we learn Racket instead of a more popular language like Python.\nRecent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Pro Features modified Sun 11-19  Strings for Experts modified Sun 11-19  All Content  1. Introduction   Part I: Ch 1-19   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nEventually you will want to understand why we learn Racket instead of a more popular language like Python.\nRecent Changes   Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  All Content  1. Introduction   Part I: Ch 1-19   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "https://wy-cs.site/resources/generic-cs-syllabus/",
@@ -229,6 +236,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not see here, check the following sources:\n Class web site resources section Email me and ask: amauer-oats@cps.edu  Course-specific information  AP Computer Science Intermediate Computer Science  Contact information I read email regularly. Email amauer-oats@cps.edu. I am willing to call or text with you. Make sure your student put your phone number on the parent page of the student information form \u0026hellip; or email me.\nPhilosophy I aim to create an equitable challenge for everyone in my class. I want to provide everyone in the class meaningful work experiences at a manageable but challenging intellectual level. I may give the same credit for different actual assignments to accomplish this goal.\nThe student side of this equitable challenge is that I expect everyone to work on computer science 100% of the time in class. This applies even if someone is finished with the current assignment or has been absent for a week. I have a shelf full of books available for advanced or catch-up work.\nI expect everyone to take my suggestions for improving their work seriously. Computer science is an art as well as a science. Polish good habits, eradicate bad ones. Please admit if you cling to unproductive habits and work honestly to change them.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly)   40 Tests and Quizzes (individual)   20 Projects   20 Participation    Some grade should be updated every week. Every grade category except final exam should be updated every three weeks. Edline will have all raw score information. Only scaled (\u0026ldquo;curved\u0026rdquo;) scores will be posted on the CPS Gradebook.\nWe use the standard Whitney Young grading scale (90+ A, 80+ B, 70+ C, 60+ D, below 60 F).\nClass participation will be four points per day. You must be present and engaged in the class activities for the entire class to earn all of the points.\nGrading and attendance You must be present in order to learn from the class.\n   Absences Consequence     5 Call and email parent.   10 One letter grade (-10 point) deduction to final grade.   15 Additional -5 point deduction to final percentage.   20 Additional -5 point deduction to final percentage.   25 Failure in class    Three tardies more than 5 min late count as one absence.\nAny absence with a note from a medical doctor does not count toward the total absences. (Please make sure I see a copy of the note!) All other absences count. Please discuss necessary accomodations for IEP/504 in the first two weeks of class if I am not aware of them.\nDifferentiation All assigned work is expected to be completed.\nThere is no extra credit without regular credit. The way to improve a grade is through consistent effort, seeking help when needed, and allocating enough effective work time outside of class. Please track your work in your interactive notebook so we can discuss how to make your time more effective.\nAdvanced students may be allowed to replace standard work with projects, but all exceptions will be accompanied by a written contract detailing what other work will be completed to replace the main line coursework. In at most two weeks, the project is due and will receive a grade. Students are still responsible for standard material.\nEssentials of involvement As much as we can, we let students manage their own learning. Occasionally parents should be involved more at home. Sometimes adults need to talk directly. Please contact me directly if you see (or are being told) that grades are not up to date or your student is exempt from the work for any reason and does not have written documentation.\nDaily Materials  Notebook: A thin spiral or composition notebook dedicated to computer science is required for planning, reflection, and documenting progress.\n USB Flash Drive: A small USB drive to store files. (Any size is fine. Code is small.)\n  IEP and 504 plans will be followed Any student with a 504 or IEP will receive all accomodations listed. Please make sure the teacher has received a copy of the plan at the start of the year (especially if your schedule has changed, sometimes the paperwork follows too slowly).\nState standards Computer Science Teachers Association standards applicable in this class:\n 4.2.1 Computational Thinking (CT) 4.2.2 Collaboration (CL) 4.2.3 Computing Practice and Programming (CPP) See individual unit plans for more details.  "
+},
+{
+	"uri": "https://wy-cs.site/intermediate-cs/ch01/ch01c/",
+	"title": "HW 01 C",
+	"tags": [],
+	"description": "",
+	"content": "Opener: Write the result of the third \u0026ldquo;step\u0026rdquo;, as seen in the Stepper.\n(+ (+ 1 5) (* 8 (+ 2 3)) (* 7 2)) Class/homework:\nMake the two images below. For the third question, use the Stepper and find which steps (what numbers) give negative results.\n(Big image)\n"
 },
 {
 	"uri": "https://wy-cs.site/intermediate-cs/part-i/",
@@ -376,6 +390,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
+},
+{
+	"uri": "https://wy-cs.site/intermediate-cs/ch01/ch01quiza/",
+	"title": "Ch01.QuizA",
+	"tags": [],
+	"description": "",
+	"content": " Base images   Make these     "
 },
 {
 	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-07/",
@@ -567,13 +588,6 @@
 	"content": " Memorize how to write a basic main method:  main = do putStrLn \u0026#34;Loaded\u0026#34;  Use \u0026ldquo;\u0026ndash;\u0026rdquo; (two dashes) to comment to the end of the line. This is equivalent to Racket \u0026ldquo;;\u0026rdquo; (semicolon).\n Function name rules:\n Must begin with lowercase letter. Hyphens (-) are not allowed in names. Underscore (_) may be used instead.\n Traditionally camelCase is used for functions. (First letter lowercase, then uppercase each new word.)\n  We will learn about the $ sign soon, but it is a substitute for putting parentheses from somewhere to the end of the line. That means\nputStrLn ( show ( grapher f 0 10 ) ) could be written as\nputStrLn $ show $ grapher f 0 10  "
 },
 {
-	"uri": "https://wy-cs.site/intermediate-cs/ch01/ch01-review/",
-	"title": "Chapter 01 Review",
-	"tags": [],
-	"description": "",
-	"content": "Two images of designs to practice making in Racket.\n\nYou may omit the border lines.\n"
-},
-{
 	"uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-11/",
 	"title": "2017-09-11",
 	"tags": ["haskell", "daily-notes"],
@@ -599,7 +613,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Intermediate Computer Science Recent Changes   Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  Build Image modified Wed 12-06  Pro Features modified Sun 11-19  Strings for Experts modified Sun 11-19  "
+	"content": " AP Computer Science Recent Changes   Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Connect Four Rubric modified Fri 10-13  Connect Four UI modified Thu 10-12  Intermediate Computer Science Recent Changes   Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",

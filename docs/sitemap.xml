@@ -118,6 +118,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch01/ch01b-review/</loc>
+    <lastmod>2018-09-06T14:13:38-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/contracts/contract-structs/</loc>
     <lastmod>2018-02-21T10:07:36-06:00</lastmod>
   </url>
@@ -165,6 +170,11 @@
   <url>
     <loc>https://wy-cs.site/resources/generic-cs-syllabus/</loc>
     <lastmod>2017-09-09T15:50:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch01/ch01c/</loc>
+    <lastmod>2018-09-10T15:28:23-05:00</lastmod>
   </url>
   
   <url>
@@ -270,6 +280,11 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/pro/</loc>
     <lastmod>2017-11-19T15:30:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch01/ch01quiza/</loc>
+    <lastmod>2018-09-11T07:58:13-05:00</lastmod>
   </url>
   
   <url>
@@ -405,11 +420,6 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/haskell/daily/2017-09-12/</loc>
     <lastmod>2017-09-12T14:38:08-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/intermediate-cs/ch01/ch01-review/</loc>
-    <lastmod>2017-09-11T14:13:38-05:00</lastmod>
   </url>
   
   <url>
