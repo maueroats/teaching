@@ -31,7 +31,7 @@ Goals:
    `upper`.
 6. The type signature for the function `sqList`. 
 6. Use your function to get the first 17 perfect squares between 1500
-   and 2500.
+   and 4500.
 6. Write a new function sq25 that will return the first 25 perfect
    squares between `lower` and `upper`. (If there are not 25, the
    function will return however many there are.)
