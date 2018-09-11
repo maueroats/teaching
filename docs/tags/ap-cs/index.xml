@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Haskell CW 2</title>
+      <title>Haskell CW II.2</title>
       <link>https://wy-cs.site/ap-cs/haskell/ch02/cw-a2/</link>
       <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
       
@@ -39,7 +39,7 @@ The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
       <pubDate>Tue, 12 Sep 2017 15:57:47 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch02/hw-a2/</guid>
-      <description>&lt;p&gt;Graph a function, is a pointon a line, get the numbers more than 100, break up a list,
+      <description>&lt;p&gt;Graph a function, is a point on a line, get the numbers more than 100, break up a list,
 find the nearest point.
 &lt;/p&gt;</description>
     </item>

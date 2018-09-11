@@ -23,3 +23,7 @@ We also learn the basic list manipulation commands.
 * [Reading guide](ch02-reading-guide)
 * Problem Set [hw:a2](hw-a2) for chapter 2. (Also [PDF](hw-a2.pdf).)
 
+## Sub-pages 
+
+{{% children %}}
+

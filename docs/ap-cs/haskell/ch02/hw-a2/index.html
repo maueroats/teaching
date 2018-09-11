@@ -110,7 +110,7 @@
       <li data-nav-id="/ap-cs/haskell/ch02/cw-a2/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/ch02/cw-a2/">
-            Haskell CW 2
+            Haskell CW II.2
           </a>
         </div>
     </li>
@@ -118,6 +118,13 @@
         <div>
           <a href="/ap-cs/haskell/ch02/hw-a2/">
             Haskell HW 2
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch02/cw-3/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch02/cw-3/">
+            Haskell CW II.3
           </a>
         </div>
     </li>
@@ -811,23 +818,35 @@
     
     
     
-    <p>Graph a function, is a pointon a line, get the numbers more than 100, break up a list,
+    <p>Graph a function, is a point on a line, get the numbers more than 100, break up a list,
 find the nearest point.
 </p>
 
+<div class="notices info" ><p>If you get stuck, please work on <a href="/ap-cs/haskell/ch02/cw-3/">the exercises in classwork 3</a>.</p>
+</div>
+
+
 <h2 id="homework">Homework</h2>
 
-<ol>
-<li><p>Write the &ldquo;grapher&rdquo; function whose inputs are (i) a function f that takes in a number and puts out a number, (ii) a lower bound, and (iii) an upper bound.  The grapher function should return a list of coordinates <code>(x,y)</code> where <code>y=f(x)</code> and <code>x</code> goes from the lower bound to the upper bound increasing by 1 each time.</p></li>
+<p>All of the points you should work with have <code>Int</code> coordinates. So far
+you only know <code>Int</code>, <code>String</code>, and lists of each of those.</p>
 
+<ol>
 <li><p>Write a function <code>onLine</code> that takes in a slope <code>m</code>, a y-intercept <code>b</code>, and a point <code>(x0,y0)</code> and gives back True if the point is on the line <code>y=m*x+b</code> and false otherwise.</p></li>
 
 <li><p>Write a function <code>moreThan100</code> that takes in a list of numbers and puts out a list of numbers. The output is the same as the input with all of the numbers less than or equal to 100 removed.</p></li>
 
-<li><p><em>Break It Up</em>. Given a list of numbers, create a list containing every sequence of four numbers in a row. Example:</p>
+<li><p>Write the &ldquo;grapher&rdquo; function whose inputs are (i) a function f that takes in a number and puts out a number, (ii) a lower bound, and (iii) an upper bound.  The grapher function should return a list of coordinates <code>(x,y)</code> where <code>y=f(x)</code> and <code>x</code> goes from the lower bound to the upper bound increasing by 1 each time.</p></li>
+
+<li><p><em>Target Practice 1</em>. Given a point <code>(x0,y0)</code> and a list of ordered
+pairs, return the square of the smallest distance from <code>(x0,y0)</code> to
+a point on the list. (Working with the squared distance means you
+can keep using <code>Int</code> for the type of your result.)</p></li>
+
+<li><p><em>Break It Up</em>. (<em>Challenge</em>) Given a list of numbers, create a list containing every sequence of four numbers in a row. Example:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">breakItUp [5,10,20,3,8,9] = [ [5,10,20,3], [10,20,3,8], [20,3,8,9] ]</pre></div></li>
 
-<li><p><em>Target Practice</em>. (<em>Challenge</em>) Given a point <code>(x0,y0)</code> and a list of ordered pairs, return the point in the list that is closest to the given point. (Hint: skip the square root when you compare distances, it will save you some Haskell difficulties.)</p></li>
+<li><p><em>Target Practice 2</em>. (<em>Challenge</em>) Given a point <code>(x0,y0)</code> and a list of ordered pairs, return the point in the list that is closest to the given point.</p></li>
 </ol>
 
 <h2 id="omit">OMIT</h2>
@@ -847,8 +866,8 @@ find the nearest point.
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/ch02/cw-a2/" title="Haskell CW 2"> <i class="fa fa-chevron-left"></i><label>Haskell CW 2</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/ch03/" title="3. Types and Typeclasses" style="margin-right: 0px;"><label>3. Types and Typeclasses</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/haskell/ch02/cw-a2/" title="Haskell CW II.2"> <i class="fa fa-chevron-left"></i><label>Haskell CW II.2</label></a>
+    <a class="nav nav-next" href="/ap-cs/haskell/ch02/cw-3/" title="Haskell CW II.3" style="margin-right: 0px;"><label>Haskell CW II.3</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

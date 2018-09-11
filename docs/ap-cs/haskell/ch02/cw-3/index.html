@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Chapter 6 Reading Guide :: WY Computer Science</title>
+<title>Haskell CW II.3 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/ch06/ch06-reading-guide/">
+  <body data-url="/ap-cs/haskell/ch02/cw-3/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -93,10 +93,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch02/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/haskell/ch02/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch02/">2. Starting Out</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch02/">2. Starting Out</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/ch02/ch02-reading-guide/" class="dd-item">
@@ -120,7 +121,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/haskell/ch02/cw-3/" class="dd-item">
+      <li data-nav-id="/ap-cs/haskell/ch02/cw-3/" class="dd-item active">
         <div>
           <a href="/ap-cs/haskell/ch02/cw-3/">
             Haskell CW II.3
@@ -202,14 +203,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch06/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/ch06/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch06/">6. Higher Order Functions</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch06/">6. Higher Order Functions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/haskell/ch06/ch06-reading-guide/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/ch06/ch06-reading-guide/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/ch06/ch06-reading-guide/">
             Chapter 6 Reading Guide
@@ -763,7 +763,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch06/'>6. Higher Order Functions</a> > Chapter 6 Reading Guide
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch02/'>2. Starting Out</a> > Haskell CW II.3
 
  
 
@@ -780,7 +780,20 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#micro-projects">Micro-projects</a></li>
+<li><a href="#basic-functions">Basic functions</a></li>
+<li><a href="#medium-functions">Medium functions</a></li>
+<li><a href="#step-up">Step up</a></li>
+<li><a href="#obscure">Obscure</a></li>
+<li><a href="#notes">Notes</a></li>
+<li><a href="#practice-quiz">Practice quiz</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -788,17 +801,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="https://wy-cs.sitetags/haskell">haskell</a>
-    
-      <a class="label label-default" href="https://wy-cs.sitetags/reading-guide">reading-guide</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>Chapter 6 Reading Guide</h1>
+    <h1>Haskell CW II.3</h1>
   
 
 
@@ -806,16 +811,103 @@
     
     
     
-    <ol>
-<li><p>Take in a list of numbers and output a list containing all of the numbers greater than 8.</p></li>
+    
 
-<li><p>Take in a list of numbers and output a list containing all of the numbers between 10 and 20 (inclusive).</p></li>
+<p>This page is full of tiny pieces to help you get better at programming Haskell.</p>
 
-<li><p>Take in a list of numbers. Multiply all of the numbers in a list by 10 to make the output list.</p></li>
+<p>Goals:</p>
 
-<li><p>Take in a list of lists. Arrange the list of lists according to how
-many elements each list has, so longer sublists go first and shorter sublists
-go later.</p></li>
+<ul>
+<li>Range notation <code>[a,b..c]</code> to make lists of integers.</li>
+<li>Apply a function to everything in a list by using the &ldquo;list
+comprehension&rdquo;.</li>
+<li>Filter out some elements from an existing list using a list
+comprehension.</li>
+</ul>
+
+<h2 id="micro-projects">Micro-projects</h2>
+
+<ol>
+<li>A list of the first 1000 integers.</li>
+<li>A list of the first 1000 perfect cubes.</li>
+<li>Find the sum of the first 100 perfect squares.</li>
+<li>The type signature for the integer sum above.</li>
+<li>A list of all of the perfect squares between 90 and 1919.</li>
+<li>The type signature for a list of integers.</li>
+<li>The <em>product</em> of the numbers in the list of perfect squares above.</li>
+<li>A function <code>sqList</code> to give all of the perfect squares between <code>lower</code> and
+<code>upper</code>.</li>
+<li>The type signature for the function <code>sqList</code>.</li>
+<li>Use your function to get the first 17 perfect squares between 1500
+and 2500.</li>
+<li>Write a new function sq25 that will return the first 25 perfect
+squares between <code>lower</code> and <code>upper</code>. (If there are not 25, the
+function will return however many there are.)</li>
+<li>A list with every fourth lowercase letter, starting at &lsquo;a&rsquo; then
+&rsquo;d&rsquo;.</li>
+<li>A string with the last half of the alphabet (beginning with &lsquo;n&rsquo;).</li>
+<li>Write a function that takes in a list and produces a list of
+ordered pairs  <code>(item, more)</code>, giving the item and how many more
+items after it are in the list.</li>
+</ol>
+
+<h2 id="basic-functions">Basic functions</h2>
+
+<ol>
+<li>The remainder when 921013 is divided by 31.</li>
+<li>The whole number of times that 23148 is divisible by 17.</li>
+<li>Find five to the twelfth power.</li>
+<li>Find seven to the 707 power.</li>
+</ol>
+
+<h2 id="medium-functions">Medium functions</h2>
+
+<p>Write the signature for each.</p>
+
+<ol>
+<li>Write a function <code>mySmall</code> that takes in four integer inputs and returns the
+smallest.</li>
+<li>Create a function <code>myStarts</code> that takes in two lists and returns a tuple with
+the first element from each list.</li>
+
+<li><p>Write <code>myMix</code> that takes in two lists and gives a tuple with the
+first element from the first list and the last element from the
+second list.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"> <span style="color:#75af00">myMix</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">20</span><span style="color:#111">,</span><span style="color:#ae81ff">30</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">30</span><span style="color:#111">)</span></code></pre></div></li>
+
+<li><p>Create <code>dublr</code> that takes in one list and returns a new list
+consisting of the same information forward then backward.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"> <span style="color:#75af00">dublr</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span></code></pre></div></li>
+</ol>
+
+<h2 id="step-up">Step up</h2>
+
+<ol>
+<li><p>Write a function <code>sqLast25 lower upper</code> that will return the last 25 perfect
+squares between lower and upper (inclusive).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"> <span style="color:#75af00">sqLast25</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#00a8c8">Int</span><span style="color:#111">]</span></code></pre></div></li>
+</ol>
+
+<h2 id="obscure">Obscure</h2>
+
+<ol>
+<li>What is the successor of the character &lsquo;Z&rsquo;?</li>
+<li>How about the predecessor of the character &lsquo;A&rsquo;?</li>
+</ol>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+<li>There is a small <a href="http://hackage.haskell.org/package/base-4.11.1.0/docs/Prelude.html#v:quot">difference between <code>div</code> and
+<code>quot</code></a>
+although both are the same for positive numbers.
+<br /></li>
+</ul>
+
+<h2 id="practice-quiz">Practice quiz</h2>
+
+<ol>
+<li>Make the a list with the</li>
 </ol>
 
 
@@ -828,8 +920,8 @@ go later.</p></li>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/ch06/" title="6. Higher Order Functions"> <i class="fa fa-chevron-left"></i><label>6. Higher Order Functions</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/usaco/" title="USACO Practice" style="margin-right: 0px;"><label>USACO Practice</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/haskell/ch02/hw-a2/" title="Haskell HW 2"> <i class="fa fa-chevron-left"></i><label>Haskell HW 2</label></a>
+    <a class="nav nav-next" href="/ap-cs/haskell/ch03/" title="3. Types and Typeclasses" style="margin-right: 0px;"><label>3. Types and Typeclasses</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

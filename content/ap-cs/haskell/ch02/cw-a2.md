@@ -1,5 +1,5 @@
 ---
-title: "Haskell CW 2"
+title: "Haskell CW II.2"
 date: 2017-09-09T15:57:47-05:00
 weight: 15
 tags: 

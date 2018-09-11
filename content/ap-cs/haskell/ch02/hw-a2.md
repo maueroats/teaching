@@ -9,23 +9,36 @@ tags:
   - ap-cs
 ---
 
-Graph a function, is a pointon a line, get the numbers more than 100, break up a list, 
+Graph a function, is a point on a line, get the numbers more than 100, break up a list, 
 find the nearest point.
 <!--more-->
 
+{{% notice info %}}
+If you get stuck, please work on [the exercises in classwork 3]({{%
+relref "cw-3.md" %}}).
+{{% /notice %}}
+
 ## Homework
 
-1. Write the "grapher" function whose inputs are (i) a function f that takes in a number and puts out a number, (ii) a lower bound, and (iii) an upper bound.  The grapher function should return a list of coordinates `(x,y)` where `y=f(x)` and `x` goes from the lower bound to the upper bound increasing by 1 each time.
+All of the points you should work with have `Int` coordinates. So far
+you only know `Int`, `String`, and lists of each of those.
 
 5. Write a function `onLine` that takes in a slope `m`, a y-intercept `b`, and a point `(x0,y0)` and gives back True if the point is on the line `y=m*x+b` and false otherwise.
 
 6. Write a function `moreThan100` that takes in a list of numbers and puts out a list of numbers. The output is the same as the input with all of the numbers less than or equal to 100 removed.
 
-7. _Break It Up_. Given a list of numbers, create a list containing every sequence of four numbers in a row. Example: 
+1. Write the "grapher" function whose inputs are (i) a function f that takes in a number and puts out a number, (ii) a lower bound, and (iii) an upper bound.  The grapher function should return a list of coordinates `(x,y)` where `y=f(x)` and `x` goes from the lower bound to the upper bound increasing by 1 each time.
+
+8. _Target Practice 1_. Given a point `(x0,y0)` and a list of ordered
+   pairs, return the square of the smallest distance from `(x0,y0)` to
+   a point on the list. (Working with the squared distance means you
+   can keep using `Int` for the type of your result.)
+
+7. _Break It Up_. (*Challenge*) Given a list of numbers, create a list containing every sequence of four numbers in a row. Example: 
 
         breakItUp [5,10,20,3,8,9] = [ [5,10,20,3], [10,20,3,8], [20,3,8,9] ]
 
-8. _Target Practice_. (*Challenge*) Given a point `(x0,y0)` and a list of ordered pairs, return the point in the list that is closest to the given point. (Hint: skip the square root when you compare distances, it will save you some Haskell difficulties.)
+8. _Target Practice 2_. (*Challenge*) Given a point `(x0,y0)` and a list of ordered pairs, return the point in the list that is closest to the given point.
 
 ## OMIT
 
