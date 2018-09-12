@@ -36,7 +36,7 @@ Goals:
    squares between `lower` and `upper`. (If there are not 25, the
    function will return however many there are.)
 7. A list with every fourth lowercase letter, starting at 'a' then
-   'd'.
+   'd'. (Hint: letters work the same as numbers.)
 8. A string with the last half of the alphabet (beginning with 'n').
 9. Write a function that takes in a list and produces a list of
    ordered pairs  `(item, more)`, giving the item and how many more
