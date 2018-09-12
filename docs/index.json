@@ -25,7 +25,7 @@
 	"title": "2. Starting Out",
 	"tags": ["haskell"],
 	"description": "",
-	"content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | n\u0026lt;-[1..100], even n] Create a tuple: (5,12) Key to remember: head, tail, init, last, :, ++ Other list functions: maximum, minimum, sum, product, reverse  Resources  Reading guide Problem Set hw:a2 for chapter 2. (Also PDF.)  Sub-pages  Ch02 Reading Guide   Haskell CW II.2   Haskell HW 2   Haskell CW II.3  "
+	"content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | n\u0026lt;-[1..100], even n] Create a tuple: (5,12) Key to remember: head, tail, init, last, :, ++ Other list functions: maximum, minimum, sum, product, reverse  Resources  Reading guide Problem Set hw:a2 for chapter 2. (Also PDF.)  Sub-pages  Ch02 Reading Guide   Haskell CW II.2   Haskell HW 2   2018.09.12 Opener   Haskell CW II.3  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/",
@@ -420,6 +420,13 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
 },
 {
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/2018-09-12-opener/",
+	"title": "2018.09.12 Opener",
+	"tags": [],
+	"description": "",
+	"content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   On the line $y = 3x-5$, find at least 20 ordered pairs $(x,y)$ with $0\\le x \\le 5$.\n"
+},
+{
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/cw-3/",
 	"title": "Haskell CW II.3",
 	"tags": [],
@@ -627,7 +634,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " AP Computer Science Recent Changes   Haskell CW II.3 modified Tue 09-11  Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Connect Four Rubric modified Fri 10-13  Intermediate Computer Science Recent Changes   Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  "
+	"content": " AP Computer Science Recent Changes   2018.09.12 Opener modified Wed 09-12  Haskell CW II.3 modified Tue 09-11  Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Intermediate Computer Science Recent Changes   Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",

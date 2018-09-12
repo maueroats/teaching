@@ -85,7 +85,7 @@ Write the signature for each.
 ## Obscure
 
 1. What is the successor of the character 'Z'?
-2. How about the predecessor of the character 'A'?
+2. How about the [predecessor](http://hackage.haskell.org/package/base-4.11.1.0/docs/Prelude.html#v:pred) of the character 'A'?
 
 ## Notes
 

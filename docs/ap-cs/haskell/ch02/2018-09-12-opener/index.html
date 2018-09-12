@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>2017-09-18 :: WY Computer Science</title>
+<title>2018.09.12 Opener :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/daily/2017-09-18/">
+  <body data-url="/ap-cs/haskell/ch02/2018-09-12-opener/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -93,10 +93,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch02/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/haskell/ch02/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch02/">2. Starting Out</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch02/">2. Starting Out</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/ch02/ch02-reading-guide/" class="dd-item">
@@ -120,7 +121,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/haskell/ch02/2018-09-12-opener/" class="dd-item">
+      <li data-nav-id="/ap-cs/haskell/ch02/2018-09-12-opener/" class="dd-item active">
         <div>
           <a href="/ap-cs/haskell/ch02/2018-09-12-opener/">
             2018.09.12 Opener
@@ -239,11 +240,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/daily/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/daily/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/daily/">Haskell Daily Notes</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/daily/">Haskell Daily Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/daily/2017-10-04/" class="dd-item">
@@ -260,7 +260,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/daily/2017-09-18/">
             2017-09-18
@@ -777,7 +777,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/daily/'>Haskell Daily Notes</a> > 2017-09-18
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch02/'>2. Starting Out</a> > 2018.09.12 Opener
 
  
 
@@ -802,15 +802,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="https://wy-cs.sitetags/haskell">haskell</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>2017-09-18</h1>
+    <h1>2018.09.12 Opener</h1>
   
 
 
@@ -818,23 +812,19 @@
     
     
     
-    <p>We discussed problem 7 from the homework. You should finish it based on the discussion.</p>
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']]
+}});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
-<p>Mentioned from Chapter 5: <code>type</code> to make short ways to say types. Examples:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">    <span style="color:#00a8c8">type</span> <span style="color:#00a8c8">Pt</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#00a8c8">Int</span><span style="color:#111">,</span><span style="color:#00a8c8">Int</span><span style="color:#111">)</span>
-    <span style="color:#00a8c8">type</span> <span style="color:#00a8c8">Ship</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#00a8c8">Pt</span><span style="color:#111">]</span>
-    <span style="color:#00a8c8">type</span> <span style="color:#00a8c8">Shots</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#00a8c8">Pt</span><span style="color:#111">]</span></code></pre></div>
-<p>We wrote the function <code>is_sunk</code> for battleship.</p>
 
-<p>Functions we discussed:</p>
-
-<ul>
-<li>[<code>&amp;&amp;</code>]: Join two Boolean values with logical and.</li>
-<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:and"><code>and</code></a>: Join a list of Boolean values with logical and.</li>
-<li><a href="http://hackage.haskell.org/package/base-4.10.0.0/docs/Prelude.html#v:any"><code>all</code></a>: Apply a tester function and then join all of the values together with &ldquo;and&rdquo;.</li>
-</ul>
-
-<p>All of these functions have counterparts for logical or; they are: <code>||</code>, <code>or</code>, <code>any</code>.</p>
+<p>On the line $y = 3x-5$, find at least 20 ordered pairs $(x,y)$ with
+$0\le x \le 5$.</p>
 
 
     
@@ -846,8 +836,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/daily/2017-10-03/" title="2017-10-03"> <i class="fa fa-chevron-left"></i><label>2017-10-03</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/daily/2017-09-13/" title="2017-09-14 Indentation" style="margin-right: 0px;"><label>2017-09-14 Indentation</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/haskell/ch02/hw-a2/" title="Haskell HW 2"> <i class="fa fa-chevron-left"></i><label>Haskell HW 2</label></a>
+    <a class="nav nav-next" href="/ap-cs/haskell/ch02/cw-3/" title="Haskell CW II.3" style="margin-right: 0px;"><label>Haskell CW II.3</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
