@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Art Project :: WY Computer Science</title>
+<title>Color Commands :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/part-i/ch03/ch03-art-project/">
+  <body data-url="/intermediate-cs/ch03/color/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -426,43 +426,42 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/ch03/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a>
+      <a href="/intermediate-cs/ch03/">3. More Interesting Pictures</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/part-i/ch03/" class="dd-item parent haschildren
-        ">
-      <div>
-      <a href="/intermediate-cs/part-i/ch03/">3. More Interesting Pictures</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/intermediate-cs/part-i/ch03/color/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch03/color/" class="dd-item active">
         <div>
-          <a href="/intermediate-cs/part-i/ch03/color/">
+          <a href="/intermediate-cs/ch03/color/">
             Color Commands
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/part-i/ch03/ch03-art-project/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch03/ch03-art-project/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/part-i/ch03/ch03-art-project/">
+          <a href="/intermediate-cs/ch03/ch03-art-project/">
             Art Project
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/part-i/ch03/puzzle-opener/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch03/puzzle-opener/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/part-i/ch03/puzzle-opener/">
+          <a href="/intermediate-cs/ch03/puzzle-opener/">
             Puzzle Opener
           </a>
         </div>
     </li>
         </ul>
     </li>
+    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
     <li data-nav-id="/intermediate-cs/part-i/ch03art/" class="dd-item haschildren
         ">
       <div>
@@ -774,12 +773,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/part-i/'>Part I: Ch 1-19</a> > <a href='/intermediate-cs/part-i/ch03/'>3. More Interesting Pictures</a> > Art Project
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch03/'>3. More Interesting Pictures</a> > Color Commands
 
  
 
@@ -794,16 +788,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#steps">Steps</a></li>
-<li><a href="#choice-1-drracket-s-take-on-moma">Choice 1: DrRacket&rsquo;s take on MoMA</a></li>
-<li><a href="#choice-2-picture-puzzles">Choice #2: Picture Puzzles</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -811,15 +796,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="https://wy-cs.sitetags/project">project</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>Art Project</h1>
+    <h1>Color Commands</h1>
   
 
 
@@ -827,75 +806,28 @@
     
     
     
-    
-
-<p><strong>Deadline</strong>: Finish before Tuesday, September 26 (chapter 3 test
-day). Turn in Wednesday, September 27.</p>
-
-<p><strong>Produce</strong>: One complex piece of art per person in the group. (Two simpler pieces.)
-(Groups of at most two.)</p>
-
-<p><strong>Goal</strong>: Art projects should demonstrate a range of functions from the
-chapter, try to use 3-4 from each category in your whole project.</p>
-
-<ul>
-<li><p>Methods of placement: beside, above, overlay, place-image, as well as
-the &ldquo;<code>/align</code>&rdquo; variations. (Use the variations!)</p></li>
-
-<li><p>Changing pictures: crop, scale, rotate.</p></li>
-
-<li><p>Shapes: triangles (many!), lots more listed at the end of Chapter 3 (PDF
-pages 60&ndash;61).</p></li>
-
-<li><p>Colors: <code>color-database</code>, <code>make-color</code> from the internet, <code>colorize</code>
-or <code>name-&gt;color</code>.</p></li>
+    <ul>
+<li><code>name-&gt;color</code> changes a string name to a color, like this:
+<code>
+&gt; (name-&gt;color &quot;lavender&quot;) 
+(make-color 230 230 250)
+</code></li>
 </ul>
 
-<p><strong>Remember</strong>: This is a short project. <em>I expect you will spend no more than
-two hours on it</em>, including time working in class Friday and Monday.</p>
-
-<p>It is OK to simplify and focus on using the goal functions (see
-above).</p>
-
-<h2 id="steps">Steps</h2>
-
-<ol>
-<li>Find one inspiration piece of art.</li>
-<li>Have idea approved before the first class ends.</li>
-<li>Complete by working in class Friday and Monday, and possibly some
-time at home over the weekend.</li>
-</ol>
-
-<h2 id="choice-1-drracket-s-take-on-moma">Choice 1: DrRacket&rsquo;s take on MoMA</h2>
-
-<p>Choose a piece of art for inspiration.</p>
-
+<p>If you give it a color already, the computer complains:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    &gt; (name-&gt;color (make-color 230 230 250))
+    name-&gt;color: Expected a string or symbol, but received (make-color 230 230 250 255) </pre></div>
 <ul>
-<li>School appropriate.</li>
-<li>No duplicates with anyone you know in any class.</li>
-<li>MoMA archive:
-
-<ul>
-<li><a href="https://archive.org/details/metropolitanmuseumofart-gallery?subject=Metropolitan&amp;sort=&amp;&amp;and[]=subject%3A%22Japan%22&amp;and[]=textile">Textiles from Japan</a> - which could have <a href="https://archive.org/details/mma_textile_68020">floral
-patterns</a> or <a href="https://archive.org/details/mma_textile_68078">numbers from the cataloging process</a></li>
-<li><a href="https://archive.org/details/metropolitanmuseumofart-gallery?subject=Metropolitan&amp;sort=&amp;&amp;and[]=subject%3A&quot;Islamic&quot;">Islamic art</a> &mdash; <a href="https://archive.org/details/mma_panel_445109">like this</a></li>
-</ul></li>
+<li><code>colorize</code> changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than <code>name-&gt;color</code>.
+<code>
+&gt; (colorize &quot;lavender&quot;) 
+(make-color 230 230 250)
+</code></li>
 </ul>
 
-<h2 id="choice-2-picture-puzzles">Choice #2: Picture Puzzles</h2>
-
-<p>Goal: create two pictures that are challenging or interesting to
-recreate once they are finished. If you can get someone to say, &ldquo;How
-did you do that?&ldquo;, your puzzle is a success.</p>
-
-<p>Possible sources:</p>
-
-<ul>
-<li><a href="https://duckduckgo.com/?q=geometry+puzzles&amp;t=h_&amp;iax=1&amp;ia=images">Geometry puzzles</a></li>
-<li><a href="https://duckduckgo.com/?q=triangle+puzzles&amp;t=h_&amp;iar=images&amp;iax=1&amp;ia=images">Triangle puzzles</a></li>
-<li><a href="https://duckduckgo.com/?q=mondrian+art&amp;t=h_&amp;iar=images&amp;iax=1&amp;ia=images">Mondrian</a></li>
-</ul>
-
+<p>If you give it a color already, the computer complains:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    &gt; (colorize (make-color 230 230 250))
+    (make-color 230 230 250))</pre></div>
 
     
     
@@ -906,8 +838,8 @@ did you do that?&ldquo;, your puzzle is a success.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/part-i/ch03/color/" title="Color Commands"> <i class="fa fa-chevron-left"></i><label>Color Commands</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/part-i/ch03/puzzle-opener/" title="Puzzle Opener" style="margin-right: 0px;"><label>Puzzle Opener</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch03/" title="3. More Interesting Pictures"> <i class="fa fa-chevron-left"></i><label>3. More Interesting Pictures</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch03/ch03-art-project/" title="Art Project" style="margin-right: 0px;"><label>Art Project</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

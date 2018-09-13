@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/part-i/ch03/color/</loc>
+    <loc>https://wy-cs.site/intermediate-cs/ch03/color/</loc>
     <lastmod>2017-09-21T13:31:31-05:00</lastmod>
   </url>
   
@@ -158,7 +158,7 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/part-i/ch03/ch03-art-project/</loc>
+    <loc>https://wy-cs.site/intermediate-cs/ch03/ch03-art-project/</loc>
     <lastmod>2017-09-21T21:38:19-05:00</lastmod>
   </url>
   
@@ -198,22 +198,17 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/part-i/</loc>
-    <lastmod>2018-03-07T14:32:07-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/intermediate-cs/pro/match/</loc>
     <lastmod>2018-02-21T15:01:29-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/part-i/ch03/puzzle-opener/</loc>
+    <loc>https://wy-cs.site/intermediate-cs/ch03/puzzle-opener/</loc>
     <lastmod>2017-09-22T09:55:25-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/part-i/ch03/</loc>
+    <loc>https://wy-cs.site/intermediate-cs/ch03/</loc>
     <lastmod>2017-09-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -225,6 +220,11 @@
   <url>
     <loc>https://wy-cs.site/resources/apcs-syllabus--2017-2018/</loc>
     <lastmod>2017-09-09T15:49:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/part-i/</loc>
+    <lastmod>2018-03-07T14:32:07-06:00</lastmod>
   </url>
   
   <url>
@@ -472,14 +472,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

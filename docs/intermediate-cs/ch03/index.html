@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Color Commands :: WY Computer Science</title>
+<title>3. More Interesting Pictures :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/part-i/ch03/color/">
+  <body data-url="/intermediate-cs/ch03/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -426,43 +426,42 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/ch03/" class="dd-item parent active haschildren
         ">
       <div>
-      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a>
+      <a href="/intermediate-cs/ch03/">3. More Interesting Pictures</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/part-i/ch03/" class="dd-item parent haschildren
-        ">
-      <div>
-      <a href="/intermediate-cs/part-i/ch03/">3. More Interesting Pictures</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/intermediate-cs/part-i/ch03/color/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch03/color/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/part-i/ch03/color/">
+          <a href="/intermediate-cs/ch03/color/">
             Color Commands
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/part-i/ch03/ch03-art-project/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch03/ch03-art-project/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/part-i/ch03/ch03-art-project/">
+          <a href="/intermediate-cs/ch03/ch03-art-project/">
             Art Project
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/part-i/ch03/puzzle-opener/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch03/puzzle-opener/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/part-i/ch03/puzzle-opener/">
+          <a href="/intermediate-cs/ch03/puzzle-opener/">
             Puzzle Opener
           </a>
         </div>
     </li>
         </ul>
     </li>
+    <li data-nav-id="/intermediate-cs/part-i/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/part-i/">Part I: Ch 1-19</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
     <li data-nav-id="/intermediate-cs/part-i/ch03art/" class="dd-item haschildren
         ">
       <div>
@@ -771,17 +770,7 @@
 
 
 
-
-
-
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/part-i/'>Part I: Ch 1-19</a> > <a href='/intermediate-cs/part-i/ch03/'>3. More Interesting Pictures</a> > Color Commands
-
- 
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > 3. More Interesting Pictures
 
  
 
@@ -794,7 +783,15 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#pictures-and-color">Pictures and Color</a></li>
+<li><a href="#homework">Homework</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -802,9 +799,15 @@
   </div>
 
 
+  <div id="tags">
+    
+      <a class="label label-default" href="https://wy-cs.sitetags/homework">homework</a>
+    
+  </div>
+
 <div id="body-inner">
   
-    <h1>Color Commands</h1>
+    <h1>3. More Interesting Pictures</h1>
   
 
 
@@ -812,28 +815,29 @@
     
     
     
-    <ul>
-<li><code>name-&gt;color</code> changes a string name to a color, like this:
-<code>
-&gt; (name-&gt;color &quot;lavender&quot;) 
-(make-color 230 230 250)
-</code></li>
-</ul>
 
-<p>If you give it a color already, the computer complains:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    &gt; (name-&gt;color (make-color 230 230 250))
-    name-&gt;color: Expected a string or symbol, but received (make-color 230 230 250 255) </pre></div>
+
+
+<h2 id="pictures-and-color">Pictures and Color</h2>
+
 <ul>
-<li><code>colorize</code> changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than <code>name-&gt;color</code>.
-<code>
-&gt; (colorize &quot;lavender&quot;) 
-(make-color 230 230 250)
-</code></li>
+<li>Quick guide to <a href="https://docs.racket-lang.org/picturing-programs/index.html?q=picturing-programs#%28part._.Variables%29">image variables in Picturing Programs</a>.</li>
+
+<li><p><a href="http://picturingprograms.com/pictures/">All of the images from the book online</a>.</p></li>
+
+<li><p>Commands to <a href="/intermediate-cs/ch03/color/">change words to colors</a>.</p></li>
 </ul>
 
-<p>If you give it a color already, the computer complains:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    &gt; (colorize (make-color 230 230 250))
-    (make-color 230 230 250))</pre></div>
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li><a href="https://docs.google.com/document/d/1LpEhhP8PbjzrJ3VJJsX2lpgzBqu64YBELHLWuZx69qs/edit?usp=sharing">3.a</a>, done in two days: pages 1-2 and pages 3-4.</li>
+<li><a href="https://docs.google.com/document/d/1NBaniy4YxL_wXuM194b_bXYaXvKUZYUK5nfpzjx_aEc/edit?usp=sharing">3.b</a>: problems 1-8. (Come in ready to discuss 8 if you cannot do it.)</li>
+</ul>
+
+<p>See <a href="https://docs.google.com/spreadsheets/d/1p1JGIOWxwFkcFBZ01UxC-lOIkXn0ORUHfIt3aQVNTEU/edit?usp=sharing">assignment sheet</a> for more information.</p>
+
+
 
     
     
@@ -844,8 +848,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/part-i/ch03/" title="3. More Interesting Pictures"> <i class="fa fa-chevron-left"></i><label>3. More Interesting Pictures</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/part-i/ch03/ch03-art-project/" title="Art Project" style="margin-right: 0px;"><label>Art Project</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch01/ch01quiza/" title="Ch01.QuizA"> <i class="fa fa-chevron-left"></i><label>Ch01.QuizA</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch03/color/" title="Color Commands" style="margin-right: 0px;"><label>Color Commands</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
