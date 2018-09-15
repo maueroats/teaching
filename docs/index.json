@@ -326,7 +326,7 @@
 	"title": "Machine Learning",
 	"tags": [],
 	"description": "",
-	"content": "  ML Resources Resources for machine learning that we refer to in the class.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits together.\n  ML Daily Lecture notes and supplemental material.\n  ML Recent Changes   2018.09.11 modified Tue 09-11  2018.09.09 modified Sun 09-09  2018.09.07 modified Sat 09-08  2018.09.05 modified Wed 09-05  Course Outline modified Tue 09-04  ML Resources modified Tue 09-04  ML Daily modified Tue 09-04  Machine Learning modified Tue 09-04  "
+	"content": "  ML Resources Resources for machine learning that we refer to in the class.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits together.\n  ML Daily Lecture notes and supplemental material.\n  ML Recent Changes   2018.09.14 Jupyter Notebook Setup modified Fri 09-14  2018.09.11 modified Tue 09-11  2018.09.09 modified Sun 09-09  2018.09.07 modified Sat 09-08  2018.09.05 modified Wed 09-05  Course Outline modified Tue 09-04  ML Resources modified Tue 09-04  ML Daily modified Tue 09-04  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-summary/",
@@ -420,6 +420,13 @@
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
 },
 {
+	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-14/",
+	"title": "2018.09.14 Jupyter Notebook Setup",
+	"tags": [],
+	"description": "",
+	"content": " Choose a platform  Google Collaboratory: Similar to a full-featured Jupyter notebook. Microsoft Azure Notebooks: Full-featured Jupyter notebook. Jupyter Notebook on your own computer. Run jupyter notebook to start.  Update software if needed  Collaboratory: ! pip install seaborn==0.9.0 Azure: ! conda update seaborn -y  Use \u0026gt; /dev/null to make output not visible after it works.\nGetting started "
+},
+{
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/2018-09-12-opener/",
 	"title": "2018.09.12 Opener",
 	"tags": [],
@@ -459,7 +466,7 @@
 	"title": "ML Daily",
 	"tags": [],
 	"description": "Lecture notes and supplemental material.",
-	"content": "Lecture notes will be posted here.\n 2018.09.05   2018.09.07   2018.09.09   2018.09.11   "
+	"content": "Lecture notes will be posted here.\n 2018.09.05   2018.09.07   2018.09.09   2018.09.11   2018.09.14 Jupyter Notebook Setup   "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/news/",
@@ -634,7 +641,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   2018.09.12 Opener modified Wed 09-12  Haskell CW II.3 modified Tue 09-11  Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Intermediate Computer Science Recent Changes   Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  "
+	"content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   2018.09.12 Opener modified Wed 09-12  Haskell CW II.3 modified Tue 09-11  Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Git-ting Started modified Wed 10-25  Intermediate Computer Science Recent Changes   Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",

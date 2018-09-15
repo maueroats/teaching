@@ -3,6 +3,10 @@ title: "Mauer-Oats Classes"
 date: 2017-09-09T17:00:30-05:00
 ---
 
+{{% notice note %}}
+`wy-cs.site`
+{{% /notice %}}
+
 Classes on-line:
 
 * [Intermediate CS](intermediate-cs/)
