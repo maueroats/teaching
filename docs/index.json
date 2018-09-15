@@ -424,7 +424,7 @@
 	"title": "2018.09.14 Jupyter Notebook Setup",
 	"tags": [],
 	"description": "",
-	"content": " Choose a platform  Google Collaboratory: Similar to a full-featured Jupyter notebook. Microsoft Azure Notebooks: Full-featured Jupyter notebook. Jupyter Notebook on your own computer. Run jupyter notebook to start.  Update software if needed  Collaboratory: ! pip install seaborn==0.9.0 Azure: ! conda update seaborn -y  Use \u0026gt; /dev/null to make output not visible after it works.\nGetting started "
+	"content": " Choose a platform  Google Collaboratory: Similar to a full-featured Jupyter notebook. Microsoft Azure Notebooks: Full-featured Jupyter notebook. Jupyter Notebook on your own computer. Run jupyter notebook to start.  Update software if needed  Collaboratory: ! pip install seaborn==0.9.0 Azure: ! conda update seaborn -y  Use \u0026gt; /dev/null to make output not visible after it works.\n"
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch02/2018-09-12-opener/",
@@ -665,14 +665,14 @@
 	"content": "WY Computer Science\n"
 },
 {
-	"uri": "https://wy-cs.site/tags/ap-cs/",
+	"uri": "https://wy-cs.site/categories/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://wy-cs.site/categories/ap-cs/",
+	"uri": "https://wy-cs.site/tags/ap-cs/",
 	"title": "Ap Cs",
 	"tags": [],
 	"description": "",
