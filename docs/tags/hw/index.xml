@@ -6,7 +6,7 @@
     <description>Recent content in Hw on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Sep 2017 15:57:47 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 12 Sep 2018 15:57:47 -0500</lastBuildDate>
     
 	<atom:link href="https://wy-cs.site/tags/hw/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Haskell HW 2</title>
       <link>https://wy-cs.site/ap-cs/haskell/ch02/hw-a2/</link>
-      <pubDate>Tue, 12 Sep 2017 15:57:47 -0500</pubDate>
+      <pubDate>Wed, 12 Sep 2018 15:57:47 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch02/hw-a2/</guid>
       <description>&lt;p&gt;Graph a function, is a point on a line, get the numbers more than 100, break up a list,

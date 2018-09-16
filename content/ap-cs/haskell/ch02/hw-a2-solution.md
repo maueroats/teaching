@@ -1,6 +1,6 @@
 ---
 title: "Haskell HW 2 Solutions"
-date: 2017-09-14T10:18:00-05:00
+date: 2018-09-14T10:18:00-05:00
 draft: true
 weight: 21
 tags: 

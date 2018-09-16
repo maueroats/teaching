@@ -1,6 +1,6 @@
 ---
 title: "Haskell HW 2"
-date: 2017-09-12T15:57:47-05:00
+date: 2018-09-12T15:57:47-05:00
 weight: 20
 tags: 
   - homework
@@ -12,11 +12,6 @@ tags:
 Graph a function, is a point on a line, get the numbers more than 100, break up a list, 
 find the nearest point.
 <!--more-->
-
-{{% notice info %}}
-If you get stuck, please work on [the exercises in classwork 3]({{%
-relref "cw-3.md" %}}).
-{{% /notice %}}
 
 ## Homework
 
@@ -33,12 +28,16 @@ you only know `Int`, `String`, and lists of each of those.
    pairs, return the square of the smallest distance from `(x0,y0)` to
    a point on the list. (Working with the squared distance means you
    can keep using `Int` for the type of your result.)
+   
+   Example: `targetPractice1 (0,1) [(10,20),(3,5),(7,-1)] == 25`
 
 7. _Break It Up_. (*Challenge*) Given a list of numbers, create a list containing every sequence of four numbers in a row. Example: 
 
         breakItUp [5,10,20,3,8,9] = [ [5,10,20,3], [10,20,3,8], [20,3,8,9] ]
 
 8. _Target Practice 2_. (*Challenge*) Given a point `(x0,y0)` and a list of ordered pairs, return the point in the list that is closest to the given point.
+
+       Example: `targetPractice2 (0,1) [(10,20),(3,5),(7,-1)] == (3,5)`
 
 ## OMIT
 
