@@ -9,9 +9,11 @@ description: "Labs and homework for ISL translated to Python."
 resources:
   - src: ipynb/lab-02-03.ipynb
     title: "Lab 2.3"
+  - src: ISL2Lab.html
+    title: "ISL Lab 2"
 ---
 
-* [Lab 2.3]({{% relref "ISL_Lab_2.3_Intro_to_SciPy" %}}): Learning to
+* [Lab 2.3]({{% relref "ISL2Lab.html" %}}): Learning to
   use `scipy` arrays and basic random variables.
 
 {{% alert theme="info" %}}
