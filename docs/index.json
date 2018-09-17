@@ -84,6 +84,13 @@
 	"content": " You will need the the text Learn You a Haskell For Great Good.\n Use repl.it for programming.\n Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.\nChapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples. We also learn the basic list manipulation commands.   3. Types and Typeclasses Typeclasses abstract characteristics of types like String or Int.\n  4. Syntax in Functions Patterns, guards, where, let, and case.   5. Recursion \n  6. Higher Order Functions This is a fun chapter to read, but as a class we are done after Chapter 5 (for now). Chapter 6 Reading Guide   USACO Practice Challenging problems for people who want to stretch their understanding.\n  Haskell Daily Notes Notes for each day.\n  Connect Four Connect Four project description, including function signatures.\n  Typeclass Notes Typeclasses you may encounter in everyday programming.\n  Repl.it A summary of any special problems that have arisen with repl.it.   Source Code Files (ghci) Writing a file is different from typing in an interpreter like repl.it or ghci.   "
 },
 {
+	"uri": "https://wy-cs.site/machine-learning/daily/",
+	"title": "ML Daily",
+	"tags": [],
+	"description": "Lecture notes and supplemental material.",
+	"content": "Lecture notes will be posted here.\n 2018.09.05   2018.09.07   2018.09.09   2018.09.11   2018.09.14 Jupyter Notebook Setup   "
+},
+{
 	"uri": "https://wy-cs.site/intermediate-cs/contracts/contract-intro/",
 	"title": "Contract Intro",
 	"tags": [],
@@ -326,7 +333,7 @@
 	"title": "Machine Learning",
 	"tags": [],
 	"description": "",
-	"content": "  ML Resources Resources for machine learning that we refer to in the class.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits together.\n  ML Daily Lecture notes and supplemental material.\n  ML Recent Changes   2018.09.14 Jupyter Notebook Setup modified Fri 09-14  2018.09.11 modified Tue 09-11  2018.09.09 modified Sun 09-09  2018.09.07 modified Sat 09-08  2018.09.05 modified Wed 09-05  Course Outline modified Tue 09-04  ML Resources modified Tue 09-04  ML Daily modified Tue 09-04  "
+	"content": "  ML Daily Lecture notes and supplemental material.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits together.\n  ISL Resources Labs and homework for ISL translated to Python.\n  ML Resources Resources for machine learning that we refer to in the class.\n  ML Recent Changes   ISL Resources modified Sun 09-16  2018.09.14 Jupyter Notebook Setup modified Fri 09-14  2018.09.11 modified Tue 09-11  2018.09.09 modified Sun 09-09  2018.09.07 modified Sat 09-08  2018.09.05 modified Wed 09-05  Course Outline modified Tue 09-04  ML Resources modified Tue 09-04  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-summary/",
@@ -371,7 +378,21 @@
 	"content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info  Intermediate Computer Science  Syllabus extra info WeScheme - when you cannot install software   Everything  Syllabus: All Courses   Syllabus: AP CS   Syllabus: Intermediate   Grade Weights   Academic Integrity   Why Racket?   CS Events   WeScheme   "
 },
 {
-	"uri": "https://wy-cs.site/machine-learning/resources/",
+	"uri": "https://wy-cs.site/machine-learning/outline/",
+	"title": "Course Outline",
+	"tags": [],
+	"description": "A broad outline of what we plan to cover, so you can see how it all fits together.",
+	"content": " Note: MathJax formulas used on this page. Ugly if you block Javascript from Cloudflare.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   There are a lot of pieces of knowledge that we need to fit together.\nLast updated: 2018-09-14\nStatistics  Expected value (mean), variance, covariance. Algebraic properties. Standard deviation. Random variables. Distributions (probability density function). Standard normal distribution (\u0026ldquo;Gaussian\u0026rdquo;) with $\\mu = 0$ and $\\sigma = 1$. Scaling to get mean = 0, variance = 1. Area under normal distribution. Computations.  Linear algebra  Shapes. Transpose. Inverse. Determinant? Matrix-vector product. Dot product. Projection onto a vector. Solving linear systems. Derivative of matrix function like (X.w)^2 ?  Regression  Not sure. Do it and see that the method works.  "
+},
+{
+	"uri": "https://wy-cs.site/machine-learning/isl-resources/",
+	"title": "ISL Resources",
+	"tags": [],
+	"description": "Labs and homework for ISL translated to Python.",
+	"content": " Lab 2.3: Learning to use scipy arrays and basic random variables.    Downloadable Jupyter Notebooks   lab-02-03.ipynb  (1162 kB)     Datasets   Auto.data  (20 kB)   Boston.data  (36 kB)   College.csv  (73 kB)   hitters.tsv  (27 kB)    "
+},
+{
+	"uri": "https://wy-cs.site/machine-learning/ml-resources/",
 	"title": "ML Resources",
 	"tags": [],
 	"description": "Resources for machine learning that we refer to in the class.",
@@ -453,20 +474,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Many people we encounter tell us they wish they knew how to code and then ask which programming language they should learn. Given the press that some programming languages get, this question is not surprising. But it is also wholly inappropriate. Learning to program in a currently fashionable programming language often sets up students for eventual failure. Fashion in this world is extremely short lived. A typical “quick programming in X” book or course fails to teach principles that transfer to the next fashion language. Worse, the language itself often distracts from the acquisition of transferable skills, at the level of both expressing solutions and dealing with programming mistakes.\n\u0026ndash; Felleison et al, How to Design Programs, Second Edition.\n To understand why Racket is a good language to learn, one need read no further than Section 0.1 of Stephen Bloch\u0026rsquo;s Picturing Programs. Please read it now if you have not.\nTo summarize, here are major arguments for choosing Racket over a more \u0026ldquo;popular\u0026rdquo; programming language:\n Racket\u0026rsquo;s uniform syntax (everything is in parentheses, no order of operations, means that everything you do learn is a real intellectual concept.\n Racket works without any incantations that cannot be understood by a beginner. Example: Java\u0026rsquo;s public static void main (String[] args) incantation.\n Racket\u0026rsquo;s language levels protects you from advanced features that could be misunderstood at the start, but lets you continue to program in the same familiar language with more advanced features when you are ready.\n Any language you choose will be obsolete by the time you enter the workforce in 4-8 years, so effort spent learning language-specific syntax is not productive. Instead, you need to learn how to learn a new language. Most programmers find themselves working in a variety of languages depending on the requirements of their current task.\n Paul Graham\u0026rsquo;s article Beating the Averages explains how they used Lisp to make a very successful business (it was worth almost $50 million when it was purchased by Yahoo!). Lisp is a language very similar to Racket.\n Racket includes a way to build web applications as well as a graphical user interface builder that works on any kind of computer.\n Nobody should pass judgement on Racket until they understand the macro system that it has! Consider that a challenge if you are an advanced student.\n  "
-},
-{
-	"uri": "https://wy-cs.site/machine-learning/outline/",
-	"title": "Course Outline",
-	"tags": [],
-	"description": "A broad outline of what we plan to cover, so you can see how it all fits together.",
-	"content": " Note: MathJax formulas used on this page. Ugly if you block Javascript from Cloudflare.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   There are a lot of pieces of knowledge that we need to fit together.\nStatistics  Expected value (mean), variance, covariance. Algebraic properties. Standard deviation. Random variables. Distributions (probability density function). Standard normal distribution (\u0026ldquo;Gaussian\u0026rdquo;) with $\\mu = 0$ and $\\sigma = 1$. Scaling to get mean = 0, variance = 1. Area under normal distribution. Computations.  Linear algebra  Shapes. Transpose. Inverse. Determinant? Matrix-vector product. Dot product. Projection onto a vector. Solving linear systems. Derivative of matrix function like (X.w)^2 ?  Regression  Not sure. Do it and see that the method works.  "
-},
-{
-	"uri": "https://wy-cs.site/machine-learning/daily/",
-	"title": "ML Daily",
-	"tags": [],
-	"description": "Lecture notes and supplemental material.",
-	"content": "Lecture notes will be posted here.\n 2018.09.05   2018.09.07   2018.09.09   2018.09.11   2018.09.14 Jupyter Notebook Setup   "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/news/",

@@ -1,7 +1,7 @@
 ---
 title: "ML Resources"
 date: 2018-09-04T11:54:57-05:00
-weight: 90
+weight: 95
 draft: false
 #type: slide
 #theme: white

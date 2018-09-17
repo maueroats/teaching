@@ -63,6 +63,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/machine-learning/daily/</loc>
+    <lastmod>2018-09-04T11:54:44-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/contracts/contract-intro/</loc>
     <lastmod>2018-02-21T09:43:52-06:00</lastmod>
   </url>
@@ -268,7 +273,17 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/machine-learning/resources/</loc>
+    <loc>https://wy-cs.site/machine-learning/outline/</loc>
+    <lastmod>2018-09-04T19:44:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/machine-learning/isl-resources/</loc>
+    <lastmod>2018-09-16T15:29:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/machine-learning/ml-resources/</loc>
     <lastmod>2018-09-04T11:54:57-05:00</lastmod>
   </url>
   
@@ -325,16 +340,6 @@
   <url>
     <loc>https://wy-cs.site/resources/why-racket/</loc>
     <lastmod>2018-09-05T20:12:44-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/machine-learning/outline/</loc>
-    <lastmod>2018-09-04T19:44:58-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/machine-learning/daily/</loc>
-    <lastmod>2018-09-04T11:54:44-05:00</lastmod>
   </url>
   
   <url>

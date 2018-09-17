@@ -1,7 +1,7 @@
 ---
 title: "Course Outline"
 date: 2018-09-04T19:44:58-05:00
-#weight: 
+weight: 90
 draft: false
 #type: slide
 #theme: white
@@ -14,6 +14,8 @@ from Cloudflare.
 {{% use-mathjax %}}
 
 There are a lot of pieces of knowledge that we need to fit together.
+
+Last updated: 2018-09-14
 
 ## Statistics
 
