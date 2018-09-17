@@ -18,4 +18,3 @@ resources:
 {{% attachments title="Downloadable Jupyter Notebooks" pattern=".*\.ipynb" /%}}
 {{% attachments title="Datasets" pattern=".*\.(csv|data|tsv)" /%}}
 {{% /alert %}}
-
