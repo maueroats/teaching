@@ -6,15 +6,11 @@ draft: false
 #type: slide
 #theme: white
 description: "Labs and homework for ISL translated to Python."
-resources:
-  - src: ipynb/lab-02-03.ipynb
-    title: "Lab 2.3"
-  - src: ISL2Lab.html
-    title: "ISL Lab 2"
 ---
 
-* [Lab 2.3]({{% relref "ISL2Lab.html" %}}): Learning to
-  use `scipy` arrays and basic random variables.
+* [Lab 2.3]({{% relref "ISL2LabQuestions.html" %}}): Learning to
+  use `scipy` arrays and basic random variables. [Solutions]({{% relref
+  "ISL2LabSolutions.html" %}}) should not be needed - typing helps you remember.
 
 {{% alert theme="info" %}}
 {{% attachments title="Downloadable Jupyter Notebooks" pattern=".*\.ipynb" /%}}
