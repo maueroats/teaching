@@ -32,7 +32,7 @@
 	"title": "3. Types and Typeclasses",
 	"tags": ["haskell"],
 	"description": "Typeclasses abstract characteristics of types like String or Int.",
-	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set  "
+	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set   Chapter 3 Walkthrough  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
@@ -334,6 +334,13 @@
 	"tags": [],
 	"description": "Student art-inspired programming projects.",
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
+},
+{
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-walkthrough/",
+	"title": "Chapter 3 Walkthrough",
+	"tags": [],
+	"description": "",
+	"content": " Cubes  List: all perfect cubes divisible by 16 and less than N. Write signature.  cubes 100 == [64] cubes 600 == [64, 512] Partial Average  Average first N items of a list. Write signature.  partAvg 3 [10,15,50,10000] == 25 Say GPA  Make a string \u0026ldquo;My GPA is 3.10\u0026rdquo;. Number is parameter. Write signature.  sayGPA 3.10 == \u0026#34;My GPA is 3.10\u0026#34; Count Up I  Given start and end numbers, print a string. Usage: countUp 3 7 Result: \u0026ldquo;I can count from 3 to 7: [3, 4, 5, 6, 7]\u0026rdquo;  countUp 3 7 == \u0026#34;I can count from 3 to 7: [3, 4, 5, 6, 7]\u0026#34; Count Up II  Given strings containing start and end numbers, as if typed. Same as Count Up I.  countUpII \u0026#34;3\u0026#34; \u0026#34;7\u0026#34; == \u0026#34;I can count from 3 to 7: [3, 4, 5, 6, 7]\u0026#34; Need read? Use type signatures and helper functions.\nSample Standard Deviation Input a list of n numbers.\n Find the average (\u0026ldquo;xbar\u0026rdquo;) Find the sum of (x-xbar)^2 for each x in the list. Divide by $n-1$ Take the square root.  "
 },
 {
 	"uri": "https://wy-cs.site/machine-learning/",
