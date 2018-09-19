@@ -403,7 +403,7 @@
 	"title": "ISL Resources",
 	"tags": [],
 	"description": "Labs and homework for ISL translated to Python.",
-	"content": " Lab 2.3: Learning to use scipy arrays and basic random variables. Solutions should not be needed - typing helps you remember.  Links for Lab 2.3a  HTML Lab 2.3 (recommended) Jupyter version of Lab 02.03 raw notebook Data used in Chapter 2:  Auto.data Boston.data College.csv Winner    Directly Downloadable Content These links do not go to GitHub display pages, they go straight to the raw source code. They are also automatically generated so they will always be up to date.\n  Downloadable Jupyter Notebooks   lab-02-03.ipynb (14 kB)     Datasets   Auto.data (20 kB)   Boston.data (36 kB)   College.csv (73 kB)   hitters.tsv (27 kB)    "
+	"content": " Lab 2.3: Learning to use scipy arrays and basic random variables. Solutions should not be needed - typing helps you remember.  Links for Lab 2.3a  HTML Lab 2.3 (recommended) Jupyter version of Lab 02.03 raw notebook Data used in Chapter 2:  Auto.data Boston.data College.csv  Winner    Directly Downloadable Content These links do not go to GitHub display pages, they go straight to the raw source code. They are also automatically generated so they will always be up to date.\n  Downloadable Jupyter Notebooks   lab-02-03.ipynb (14 kB)     Datasets   Auto.data (20 kB)   Boston.data (36 kB)   College.csv (73 kB)   hitters.tsv (27 kB)    "
 },
 {
 	"uri": "https://wy-cs.site/machine-learning/ml-resources/",
