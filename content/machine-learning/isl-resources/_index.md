@@ -21,7 +21,6 @@ description: "Labs and homework for ISL translated to Python."
     * [Auto.data](https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/Auto.data)
     * [Boston.data](https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/Boston.data)
 	* [College.csv](https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/College.csv)
-    * {{< github-mo file="Winner.html" name="Winner" >}}
 {{% /alert %}}
 
 {{% alert theme="info" %}}
