@@ -22,3 +22,7 @@ draft: false
 
 See [assignment sheet](https://docs.google.com/spreadsheets/d/1p1JGIOWxwFkcFBZ01UxC-lOIkXn0ORUHfIt3aQVNTEU/edit?usp=sharing) for more information.
 
+## All
+
+{{% children %}}
+

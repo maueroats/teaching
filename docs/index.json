@@ -256,7 +256,7 @@
 	"title": "Intermediate CS",
 	"tags": [],
 	"description": "",
-	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nEventually you will want to understand why we learn Racket instead of a more popular language like Python.\nRecent Changes   Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  All Content  1. Introduction   3. More Interesting Pictures   Part I: Ch 1-19   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
+	"content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.\nEventually you will want to understand why we learn Racket instead of a more popular language like Python.\nRecent Changes   Ch03 Signatures modified Wed 09-19  Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  All Content  1. Introduction   3. More Interesting Pictures   Part I: Ch 1-19   Contracts   Calendar   Pro Features   Online Help   Design Process   Resources The course syllabus, grading weights, and other basic information can be found in the resources section of the site.\n"
 },
 {
 	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-11/",
@@ -298,7 +298,7 @@
 	"title": "3. More Interesting Pictures",
 	"tags": ["homework"],
 	"description": "",
-	"content": " Pictures and Color  Quick guide to image variables in Picturing Programs. All of the images from the book online.\n Commands to change words to colors.\n  Homework  3.a, done in two days: pages 1-2 and pages 3-4. 3.b: problems 1-8. (Come in ready to discuss 8 if you cannot do it.)  See assignment sheet for more information.\n"
+	"content": " Pictures and Color  Quick guide to image variables in Picturing Programs. All of the images from the book online.\n Commands to change words to colors.\n  Homework  3.a, done in two days: pages 1-2 and pages 3-4. 3.b: problems 1-8. (Come in ready to discuss 8 if you cannot do it.)  See assignment sheet for more information.\nAll  Color Commands   Art Project   Puzzle Opener   Ch03 Signatures   "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-hw1/",
@@ -453,6 +453,13 @@
 	"tags": [],
 	"description": "Brief descriptions of advanced topics that have come up in various individual projects.",
 	"content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula.\n  Build Image Build-image to create images from a formula for the pixel color.\n  Match Pattern matching lets you take apart structures into their component variables in a simple way. You can use (require racket/match) to activate pattern matching. Matching The match function is like cond except it checks to see if a value matches a certain \u0026ldquo;literal\u0026rdquo; pattern or question. It can create variables to use immediately instead of requiring a helper function. Problem Write a function that takes in a number or a posn and returns the distance to the correct origin (either 0 or (0,0)) depending on which type it gets.\n  "
+},
+{
+	"uri": "https://wy-cs.site/intermediate-cs/ch03/ch03-signatures/",
+	"title": "Ch03 Signatures",
+	"tags": [],
+	"description": "",
+	"content": " Practice writing signatures. Write examples as you go. We did these one at a time.  Write signatures for:\n overlay/align text ellipse Write a possible signature for mystery:\n   Write a signature for magic described below.\n(magic (circle 40 \u0026#34;solid\u0026#34; \u0026#34;blue\u0026#34;) 100) Produces two semi-transparent blue circles of radius 40:   Aside: if they were solid blue, they would look like this:    Write a signature for overtext.\n(overtext \u0026#34;Banned\u0026#34; (scale 5 pic:stick-figure))    Write a signature for dimsum, which returns the sum of the length and width of each of its dimensions.\n(dimsum (rectangle 400 100 \u0026#34;solid\u0026#34; \u0026#34;blue\u0026#34;) (cirlce 45 \u0026#34;outline\u0026#34; \u0026#34;green\u0026#34;)) ==\u0026gt; 680  "
 },
 {
 	"uri": "https://wy-cs.site/machine-learning/daily/2018-09-14/",
@@ -662,7 +669,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Haskell HW 2 modified Wed 09-12  2018.09.12 Opener modified Wed 09-12  Haskell CW II.3 modified Tue 09-11  Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Intermediate Computer Science Recent Changes   Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  Contracts modified Wed 02-21  "
+	"content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Haskell HW 2 modified Wed 09-12  2018.09.12 Opener modified Wed 09-12  Haskell CW II.3 modified Tue 09-11  Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Intermediate Computer Science Recent Changes   Ch03 Signatures modified Wed 09-19  Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Part I: Ch 1-19 modified Wed 03-07  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
