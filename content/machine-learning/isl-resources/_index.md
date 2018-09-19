@@ -12,7 +12,29 @@ description: "Labs and homework for ISL translated to Python."
   use `scipy` arrays and basic random variables. [Solutions]({{% relref
   "ISL2LabSolutions.html" %}}) should not be needed - typing helps you remember.
 
-{{% alert theme="info" %}}
-{{% attachments title="Downloadable Jupyter Notebooks" pattern=".*\.ipynb" /%}}
-{{% attachments title="Datasets" pattern=".*\.(csv|data|tsv)" /%}}
+{{% alert theme="warning" %}}
+## Links for Lab 2.3a
+
+* HTML [Lab 2.3]({{% relref "ISL2LabQuestions.html" %}}) (recommended)
+* Jupyter version of [Lab 02.03 raw notebook](https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/lab-02-03.ipynb)
+* Data used in Chapter 2: 
+    * [Auto.data](https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/Auto.data)
+    * [Boston.data](https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/Boston.data)
+	* [College.csv](https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/College.csv)
+    * {{< github-mo file="Winner.html" name="Winner" >}}
 {{% /alert %}}
+
+{{% alert theme="info" %}}
+## Directly Downloadable Content
+These links do not go to GitHub display pages, they go straight to the
+raw source code. They are also automatically generated so they will
+always be up to date.
+
+
+{{% attachments-github title="Downloadable Jupyter Notebooks" pattern=".*\.ipynb" /%}}
+
+
+{{% attachments-github title="Datasets" pattern=".*\.(csv|data|tsv)" /%}}
+{{% /alert %}}
+
+

@@ -837,6 +837,7 @@
 <ul>
 <li><a href="#weekly-reading">Weekly Reading</a></li>
 <li><a href="#weekly-homework-due-next-monday">Weekly Homework (due next Monday)</a></li>
+<li><a href="#chapter-2-study-guide">Chapter 2 Study Guide</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -858,6 +859,22 @@
     
     
     
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']]
+}});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+$\DeclareMathOperator{\Var}{Var}$
+$\DeclareMathOperator{\Cov}{Cov}$
+
 
 <ul>
 <li>Download ISL book.</li>
@@ -884,7 +901,8 @@ flexibility and interpretability?</li>
 <li>Regression vs Classification.</li>
 </ul></li>
 
-<li><p>2.2.1: Assessing Model Accuracy (important)</p></li>
+<li><p>2.2.1: Assessing Model Accuracy (important): Mean Squared Error (MSE). Graphs showing
+<em>train</em> vs <em>test</em> MSE.</p></li>
 
 <li><p>2.2.2: Bias-Variance Tradeoff</p></li>
 
@@ -896,9 +914,32 @@ decision boundary(?)</p></li>
 
 <ul>
 <li>Work through <a href="/machine-learning/isl-resources/">Lab 2.3</a></li>
-<li>Chapter 2 Problems 1-10. (Do number 7 immediately after finishing
+<li>Write your own &ldquo;study guide&rdquo; for Lab 2.3 as discussed in class and below.</li>
+<li>Chapter 2 Problems 1-10. (Do number 8 immediately after finishing
 Lab 2.3.)</li>
 </ul>
+
+<h2 id="chapter-2-study-guide">Chapter 2 Study Guide</h2>
+
+<p>Write a study guide, probably with a partner.
+The study guide should show how to make variations on the ideas from
+section 2.3 of the book, so you become comfortable with it.</p>
+
+<p>Examples:</p>
+
+<ol>
+<li>Start with a square matrix full of random numbers 10-100. (2.3.1)
+Choose them uniformly (all equally likely).</li>
+<li>Find the vector created by adding the first column and the second
+row. (2.3.3)</li>
+<li>Write a function that returns the value in the square one row and
+two columns before the last (lower right) element in the array. (2.3.3)</li>
+<li>Make a mesh grid of all possible pairs of <code>x = [1,5,10]</code> and
+<code>y=[2,20,40]</code>. (2.3.2)</li>
+<li>Amusement: Look up a <a href="https://www.physicsforums.com/threads/cool-3-d-functions-for-graphing.140087/">cool function for 3D
+graphing</a>. One
+to try is $$f(x,y) = \frac{-1}{x^2+y^2}$$</li>
+</ol>
 
 
     
