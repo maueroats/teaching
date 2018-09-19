@@ -72,12 +72,10 @@ Use type signatures and helper functions.
 
 # Sample Standard Deviation
 
-Input a list of n numbers.
+Input a list of numbers, say there are n of them.
 
-1. Find the average ("xbar")
+1. Find the average (called "xbar").
 2. Find the sum of (x-xbar)^2 for each x in the list.
-3. Divide by $n-1$
+3. Divide by n-1.
 4. Take the square root.
-
----
 

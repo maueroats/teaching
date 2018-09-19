@@ -11,7 +11,8 @@ description: Questions to help you understand Chapter 4.
 
 ## Sections 4.1--4.3
 
-1. A pattern starts out with "dog","cat", "cat dog", "cat dog cat", "cat dog cat cat dog", and so on - each new string is created by appending the previous two with a space in between them. Write a function that takes in the number of the word in the sequence and returns the word, starting with 1 is "dog".
+1. A pattern starts out with "dog","cat", "cat dog", "cat dog cat",
+   "cat dog cat cat dog", "cat dog cat cat dog cat dog cat" and so on - each new string is created by appending the previous two with a space in between them. Write a function that takes in the number of the word in the sequence and returns the word, starting with 1 is "dog".
 
 2. Write the function `scalar_mult :: (Num a) => a -> (a,a) -> (a,a)` that multiplies each number in a coordinate pair by the same number, so `scalar_mult 5 (1,3) == (5,15)`.
 
