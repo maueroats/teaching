@@ -76,6 +76,11 @@ Download the texts you use to your computer and flash drive!
       cousin [SciPy](https://docs.scipy.org/doc/scipy/reference/):
       numerical mathematics of all kinds.
 
+* Tutorials
+
+    * [Pandas Cookbook](https://nbviewer.jupyter.org/github/jvns/pandas-cookbook/blob/v0.2/cookbook/A%20quick%20tour%20of%20IPython%20Notebook.ipynb): Excellent tutorial by [Julia Evans](https://jvns.ca/), mad hacker, blogger, author.
+    * [Data analysis with Python and Pandas](https://pythonprogramming.net/data-analysis-python-pandas-tutorial-introduction/): decent.
+
 * [Kaggle](https://www.kaggle.com/) 
 
     Use Kaggle to test the ideas that you have learned in a realistic

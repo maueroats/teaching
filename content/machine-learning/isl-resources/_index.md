@@ -1,6 +1,6 @@
 ---
 title: "ISL Resources"
-date: 2018-09-16T15:29:00-05:00
+date: 2018-09-19T19:31:39-05:00
 weight: 91
 draft: false
 #type: slide
@@ -36,4 +36,6 @@ always be up to date.
 {{% attachments-github title="Datasets" pattern=".*\.(csv|data|tsv)" /%}}
 {{% /alert %}}
 
+### Changelog
+2018-09-19 Directly downloadable links fixed.
 
