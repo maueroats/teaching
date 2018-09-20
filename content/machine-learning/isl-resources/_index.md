@@ -1,6 +1,6 @@
 ---
 title: "ISL Resources"
-date: 2018-09-19T19:31:39-05:00
+date: 2018-09-19T20:09:00-05:00
 weight: 91
 draft: false
 #type: slide
