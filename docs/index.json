@@ -305,7 +305,7 @@
 	"title": "3. More Interesting Pictures",
 	"tags": ["homework"],
 	"description": "",
-	"content": " Pictures and Color  Quick guide to image variables in Picturing Programs. All of the images from the book online.\n Commands to change words to colors.\n  Homework  3.a, done in two days: pages 1-2 and pages 3-4. 3.b: problems 1-8. (Come in ready to discuss 8 if you cannot do it.)  See assignment sheet for more information.\nAll  Color Commands   Ch03 Signatures   Art Project   Puzzle Opener   Ch03 Test   "
+	"content": " Pictures and Color  Quick guide to image variables in Picturing Programs. All of the images from the book online.\n Commands to change words to colors.\n  Homework  3.a, done in two days: pages 1-2 and pages 3-4. 3.b: problems 1-8. (Come in ready to discuss 8 if you cannot do it.)  See assignment sheet for more information.\nAll  Color Commands   Ch03 Signatures   Art Project   Puzzle Opener   "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-hw1/",
@@ -362,13 +362,6 @@
 	"tags": [],
 	"description": "",
 	"content": " This document details the information specific to Intermediate Computer Science. See the all course syllabus information as well.\nMaterials  Notebook - a lightweight paper notebook dedicated to computer science. USB Drive of any size. Picturing Programs book electronic version - downloaded onto flash drive. DrRacket programming environment - installed at home. WeScheme - Online only replacement for DrRacket. Use if you cannot install software. You have to read special instructions to make it work.  "
-},
-{
-	"uri": "https://wy-cs.site/intermediate-cs/ch03/ch03-test/",
-	"title": "Ch03 Test",
-	"tags": [],
-	"description": "",
-	"content": " tinyurl.com 2018b-wy-cs-ch3t Enter everything lowercase.\ntinyurl.com/2018b-wy-cs-ch3t.\n"
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch06/",
