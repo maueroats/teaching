@@ -40,8 +40,6 @@ type it gets.
         [number?     (abs w)]))
 
 
-Notice how 
-
 ## Ignoring parts of a model
 
 You can use the underscore `_` to match places that you want to
