@@ -11,7 +11,7 @@ pygmentsCodefencesGuessSyntax = true
 [params]
 themeStyle = "original"
 github_base = "https://raw.githubusercontent.com/maueroats/teaching"
-github_glue = "/tree/master/docs"
+github_glue = "/master/docs"
 
 [outputs]
 # removed RSS from both of the following
