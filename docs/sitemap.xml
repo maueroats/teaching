@@ -293,6 +293,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/machine-learning/daily/2018-09-14/</loc>
+    <lastmod>2018-09-14T12:40:03-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/machine-learning/outline/</loc>
     <lastmod>2018-09-04T19:44:58-05:00</lastmod>
   </url>
@@ -335,11 +340,6 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/pro/</loc>
     <lastmod>2017-11-19T15:30:06-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/machine-learning/daily/2018-09-14/</loc>
-    <lastmod>2018-09-14T12:40:03-05:00</lastmod>
   </url>
   
   <url>
@@ -514,14 +514,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
