@@ -63,6 +63,7 @@ computer (that is, no use of Haskell on the computer).
    word appear in odd index positions (remember indexing starts at
    zero).
 
+    * 6o. `odO theWord`: Return all of the odd vowels in the word.
     * 6a. `odA theWord`: Determine if a single word is an odd vowel word.
     * 6b. `odB theList`: Return a list of all of the odd vowel words in theList.
 
