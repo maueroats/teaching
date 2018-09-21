@@ -5,7 +5,7 @@ weight: 50
 draft: false
 #type: slide
 #theme: white
-description: "DRAFT of test on LYaH Chapter 3."
+description: "Test on LYaH Chapter 3."
 ---
 
 Unless you are completely confident of your signature-writing skills,
@@ -66,3 +66,7 @@ computer (that is, no use of Haskell on the computer).
     * 6a. `odA theWord`: Determine if a single word is an odd vowel word.
     * 6b. `odB theList`: Return a list of all of the odd vowel words in theList.
 
+    ```haskell
+    odA "pizzza" == True
+    odA "cucumber == False
+    ```
