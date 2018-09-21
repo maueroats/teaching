@@ -2,7 +2,7 @@
 title: "Chapter 3 Haskell Test"
 date: 2018-09-21T07:28:38-05:00
 weight: 50
-draft: false
+draft: true
 #type: slide
 #theme: white
 description: "Test on LYaH Chapter 3."
@@ -68,6 +68,9 @@ computer (that is, no use of Haskell on the computer).
     * 6b. `odB theList`: Return a list of all of the odd vowel words in theList.
 
     ```haskell
+    odA "x" == True
+    odA "a" == False
+    odA "raw fud gg" == True
     odA "pizzza" == True
     odA "cucumber" == False
     ```
