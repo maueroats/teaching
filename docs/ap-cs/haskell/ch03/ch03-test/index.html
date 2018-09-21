@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Connect Four Spoilers :: WY Computer Science</title>
+<title>Chapter 3 Haskell Test :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/connect-four/spoilers/">
+  <body data-url="/ap-cs/haskell/ch03/ch03-test/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="">
@@ -136,10 +136,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch03/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/haskell/ch03/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch03/">3. Types and Typeclasses</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch03/">3. Types and Typeclasses</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/ch03/ch03-reading-guide-haskell/" class="dd-item">
@@ -163,7 +164,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/haskell/ch03/ch03-test/" class="dd-item">
+      <li data-nav-id="/ap-cs/haskell/ch03/ch03-test/" class="dd-item active">
         <div>
           <a href="/ap-cs/haskell/ch03/ch03-test/">
             Chapter 3 Haskell Test
@@ -303,11 +304,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/connect-four/">Connect Four</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/connect-four/">Connect Four</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/connect-four/timeline/" class="dd-item">
@@ -324,7 +324,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/haskell/connect-four/spoilers/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/connect-four/spoilers/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/connect-four/spoilers/">
             Connect Four Spoilers
@@ -826,7 +826,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/connect-four/'>Connect Four</a> > Connect Four Spoilers
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch03/'>3. Types and Typeclasses</a> > Chapter 3 Haskell Test
 
  
 
@@ -847,8 +847,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#changing-entries-in-the-board">Changing entries in the board</a></li>
-<li><a href="#detecting-a-win">Detecting a win</a></li>
+<li><a href="#part-i-no-computer">Part I: No Computer</a></li>
+<li><a href="#part-ii-computer">Part II: Computer</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -861,7 +861,7 @@
 
 <div id="body-inner">
   
-    <h1>Connect Four Spoilers</h1>
+    <h1>Chapter 3 Haskell Test</h1>
   
 
 
@@ -871,53 +871,73 @@
     
     
 
-<p>Two problems with connect four: changing an entry in a matrix ([[Int]]) and
-seeing if there is a win.</p>
+<p>Unless you are completely confident of your signature-writing skills,
+please use &ldquo;concrete&rdquo; type classes like <code>Double</code> or <code>Integer</code> instead
+of class constraints like <code>(Floating a)</code> or <code>(Integral a)</code> everywhere
+you write code that will actually run.</p>
 
-<h2 id="changing-entries-in-the-board">Changing entries in the board</h2>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']]
+}});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
-<p>The biggest problem with the representation of the board as <code>[[Int]]</code>
-is that it is really hard to change the entries. If you use
-[((Int,Int),Player)] then it&rsquo;s lots easier to make moves.</p>
 
-<p>Outline of plan:</p>
+<h2 id="part-i-no-computer">Part I: No Computer</h2>
+
+<p>This is the only part of the test where you should attempt to use
+class constraints (if you know them).
+<!--
+This part should be done with no
+computer (that is, no use of Haskell on the computer).
+--></p>
 
 <ol>
-<li><p>(<code>changeCol: [Int] -&gt; Int -&gt; Int -&gt; [Int]</code>)
-Change value at index <code>col</code> in a single row to
-<code>newVal</code>; every other value in the list just output unchanged.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">changeCol</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">11</span><span style="color:#111">,</span><span style="color:#ae81ff">12</span><span style="color:#111">]</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">99</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">11</span><span style="color:#111">,</span><span style="color:#ae81ff">99</span><span style="color:#111">]</span></code></pre></div>
-<p>We have basically written this function as a Coding Bat problem.</p></li>
+<li><p>The <code>whatSig</code> function takes in an ordered pair, a distance, and
+two strings. If the ordered pair is within the distance of (0,0),
+then the answer is the first string, otherwise the answer is the
+second string. What is an appropriate the <em>signature</em> (only) for
+this function?</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"> <span style="color:#75af00">whatSig</span> <span style="color:#111">(</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">)</span> <span style="color:#ae81ff">10</span> <span style="color:#d88200">&#34;Close&#34;</span> <span style="color:#d88200">&#34;Far&#34;</span> <span style="color:#f92672">==</span> <span style="color:#d88200">&#34;Close&#34;</span></code></pre></div></li>
 
-<li><p>(<code>changeRowCol: [[Int]] -&gt; Int -&gt; Int -&gt; Int -&gt; [[Int]]</code>)
-Run changeCol only on the index <code>row</code> entry, everything else stays the same.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">changeRowCol</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span><span style="color:#ae81ff">8</span><span style="color:#111">]]</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">99</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span><span style="color:#ae81ff">99</span><span style="color:#111">]]</span></code></pre></div></li>
+<li><p>Give an example of an ability that the  <code>Fractional</code> class
+constraint provides that is not available with an <code>Integral</code> class
+constraint.</p></li>
+
+<li><p>Give an example of an ability that the <code>Floating</code> class constraint
+provides that is not available with <code>Fractional</code>.</p></li>
+
+<li><p>(<code>someSqrt</code>) Write a signature and the function.
+The <code>someSqrt</code> function that takes in a list of x values and puts out a
+list of points:</p>
+
+<ul>
+<li>x values less than 10 are ignored (no corresponding point is
+ output)</li>
+<li>otherwise output a point on the graph of $y=\sqrt{x}$</li>
+</ul></li>
 </ol>
 
-<p>There is actually <a href="change-entry.hs">spoiler code</a> and <a href="change-entry-enhanced.hs">fancy spoiler
-code that uses Chapter 6</a>.</p>
-
-<h2 id="detecting-a-win">Detecting a win</h2>
-
-<p>Please email me questions. I know this is tricky. My own breakdown was:</p>
+<h2 id="part-ii-computer">Part II: Computer</h2>
 
 <ol>
-<li><p>Generate a list containing four ordered pairs in a row. Input: (x,y) coordinates of the first entry, and (dx,dy) to be added to (x,y) to get the other three pairs needed.</p></li>
+<li><p>(<code>midAvg</code>) Given a list of <code>Double</code> numbers with 3 or more
+elements, the <code>midAvg</code> function gets rid of the first and the last
+element, then finds the average of the remaining list. Write the
+complete function, including signature.</p></li>
 
-<li><p>Given a board and one list of four ordered pairs, return True if all of the ordered pairs are legal coordinates for that board.</p></li>
+<li><p>oddVowels. A word is an odd vowel word if all of the vowels in the
+word appear in odd index positions (remember indexing starts at
+zero).</p>
 
-<li><p>Given a board, return a list of all possible lists of four ordered
-pairs in straight lines. For example, if the board is just the flat 5x1 board <code>[[0,0,0,0,0]]</code>, then this function should give a list of the two possible 4-in-a-rows: <code>[[(0,0),(1,0),(2,0),(3,0)], [(1,0),(2,0),(3,0),(4,0)]]</code>.</p></li>
-
-<li><p>Given a board and a single ordered pair, get the corresponding value from the board.</p></li>
-
-<li><p>Given a board and four ordered pairs, return True if all of the corrsponding values are the same.</p></li>
-
-<li><p>Do the preceding to a whole list of 4 pairs of coordinates.</p></li>
-
-<li><p>Given a board, return True if it is won.</p></li>
-
-<li><p>There are a few more steps but you are almost there!</p></li>
+<ul>
+<li>6a. <code>odA theWord</code>: Determine if a single word is an odd vowel word.</li>
+<li>6b. <code>odB theList</code>: Return a list of all of the odd vowel words in theList.</li>
+</ul></li>
 </ol>
 
 
@@ -930,8 +950,8 @@ pairs in straight lines. For example, if the board is just the flat 5x1 board <c
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/connect-four/ui/" title="Connect Four UI"> <i class="fa fa-chevron-left"></i><label>Connect Four UI</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/connect-four/testcases/" title="Connect Four Testcases" style="margin-right: 0px;"><label>Connect Four Testcases</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/haskell/ch03/ch03-walkthrough/" title="Chapter 3 Walkthrough"> <i class="fa fa-chevron-left"></i><label>Chapter 3 Walkthrough</label></a>
+    <a class="nav nav-next" href="/ap-cs/haskell/ch04/" title="4. Syntax in Functions" style="margin-right: 0px;"><label>4. Syntax in Functions</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

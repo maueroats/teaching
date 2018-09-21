@@ -2,7 +2,7 @@
 title: "Chapter 3 Haskell Test"
 date: 2018-09-21T07:28:38-05:00
 weight: 50
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "DRAFT of test on LYaH Chapter 3."

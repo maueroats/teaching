@@ -32,7 +32,7 @@
 	"title": "3. Types and Typeclasses",
 	"tags": ["haskell"],
 	"description": "Typeclasses abstract characteristics of types like String or Int.",
-	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set   Chapter 3 Walkthrough  "
+	"content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String is a type which means a list of characters. Show is a typeclass. Every type implementing Show will have a \u0026ldquo;show\u0026rdquo; method that converts it to a string (the method does not need to have the same name as the typeclass).\n Chapter 3 Reading Guide   Chapter 3 Problem Set   Chapter 3 Walkthrough   Chapter 3 Haskell Test  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
@@ -364,6 +364,13 @@
 	"content": " This document details the information specific to Intermediate Computer Science. See the all course syllabus information as well.\nMaterials  Notebook - a lightweight paper notebook dedicated to computer science. USB Drive of any size. Picturing Programs book electronic version - downloaded onto flash drive. DrRacket programming environment - installed at home. WeScheme - Online only replacement for DrRacket. Use if you cannot install software. You have to read special instructions to make it work.  "
 },
 {
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-test/",
+	"title": "Chapter 3 Haskell Test",
+	"tags": [],
+	"description": "DRAFT of test on LYaH Chapter 3.",
+	"content": " Unless you are completely confident of your signature-writing skills, please use \u0026ldquo;concrete\u0026rdquo; type classes like Double or Integer instead of class constraints like (Floating a) or (Integral a) everywhere you write code that will actually run.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\\\[','\\\\]']] }});   Part I: No Computer This is the only part of the test where you should attempt to use class constraints (if you know them).  The whatSig function takes in an ordered pair, a distance, and two strings. If the ordered pair is within the distance of (0,0), then the answer is the first string, otherwise the answer is the second string. What is an appropriate the signature (only) for this function?\nwhatSig (3,4) 10 \u0026#34;Close\u0026#34; \u0026#34;Far\u0026#34; == \u0026#34;Close\u0026#34; Give an example of an ability that the Fractional class constraint provides that is not available with an Integral class constraint.\n Give an example of an ability that the Floating class constraint provides that is not available with Fractional.\n (someSqrt) Write a signature and the function. The someSqrt function that takes in a list of x values and puts out a list of points:\n x values less than 10 are ignored (no corresponding point is output) otherwise output a point on the graph of $y=\\sqrt{x}$   Part II: Computer  (midAvg) Given a list of Double numbers with 3 or more elements, the midAvg function gets rid of the first and the last element, then finds the average of the remaining list. Write the complete function, including signature.\n oddVowels. A word is an odd vowel word if all of the vowels in the word appear in odd index positions (remember indexing starts at zero).\n 6a. odA theWord: Determine if a single word is an odd vowel word. 6b. odB theList: Return a list of all of the odd vowel words in theList.   "
+},
+{
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch06/",
 	"title": "6. Higher Order Functions",
 	"tags": [],
@@ -662,7 +669,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Haskell HW 2 modified Wed 09-12  2018.09.12 Opener modified Wed 09-12  Haskell CW II.3 modified Tue 09-11  Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Connect Four Testcases modified Wed 10-25  Intermediate Computer Science Recent Changes   Art Project modified Thu 09-20  Ch03 Signatures modified Wed 09-19  Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  "
+	"content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Chapter 3 Haskell Test modified Fri 09-21  Haskell HW 2 modified Wed 09-12  2018.09.12 Opener modified Wed 09-12  Haskell CW II.3 modified Tue 09-11  Haskell modified Wed 09-05  Haskell Calendar modified Wed 09-05  Everyday Git modified Sun 02-11  News modified Mon 02-05  Intermediate Computer Science Recent Changes   Art Project modified Thu 09-20  Ch03 Signatures modified Wed 09-19  Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
