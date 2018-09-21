@@ -1,14 +1,13 @@
 ---
 title: "Art Project"
-date: 2017-09-21T21:38:19-05:00
+date: 2018-09-20T22:31:35-05:00
 tags:
  - project
 draft: false
-weight: 20
+weight: 30
 ---
 
-**Deadline**: Finish before Tuesday, September 26 (chapter 3 test
-day). Turn in Wednesday, September 27.
+**Deadline**: Turn in by Wednesday, September 26.
 
 **Produce**: One complex piece of art per person in the group. (Two simpler pieces.) 
 (Groups of at most two.)
@@ -28,7 +27,7 @@ the "`/align`" variations. (Use the variations!)
 or `name->color`.
 
 **Remember**: This is a short project. _I expect you will spend no more than
-two hours on it_, including time working in class Friday and Monday. 
+three hours on it_, including time working in class Monday and Tuesday. 
 
 It is OK to simplify and focus on using the goal functions (see
 above).

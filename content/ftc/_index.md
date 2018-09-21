@@ -10,19 +10,14 @@ This is the web page for the [First Tech Challenge](https://www.firstinspires.or
 
 ## Meet Schedule
 
-* [November 11 at Horizon Science Academy](meet-1), 2245 W Pershing Road, 1-6pm.
-* [December 9 at Back of the Yards](meet-2), 2111 W 47th Street, 7:30am-12:30pm.
-* January 27 at UIC Student Center, 750 S Halstead, 11am-4pm.
-* [February 10 at Amundsen High School](meet-4), 7:30am-6pm.
-* [February 23-24: FTC State finals in Elgin, IL](meet-state), see linked document.
+* November 17, Lindblom Math & Science Academy, 6130 S Wolcott.
+* December 15, Solorio High School, 5400 S St Louis, 11:00am - 4:00pm.
+* January 19, 2019, Whitney Young High School, 11:30am - 5:00pm.
+* February ?, 2019.
 
 ## Game Resources
 
-* [2018 Relic Recovery Resources](https://www.firstinspires.org/resource-library/ftc/game-and-season-info)
-
-    - Rules manual: [part 1](https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/2017-2018/game-manual-part-1.pdf) and [part 2](https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/2017-2018/game-manual-part-2.pdf).
-
-* [2018 Official Q&A](https://ftcforum.usfirst.org/forum?s=2b3d68a255bd1bdd36e0831c9aa9078a). Limited responses to official queries.
+* [2019 Rover Ruckus Resources](https://www.firstinspires.org/resource-library/ftc/game-and-season-info)
 
 ## Read Forums 
     

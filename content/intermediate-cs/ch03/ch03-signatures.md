@@ -1,7 +1,7 @@
 ---
 title: "Ch03 Signatures"
 date: 2018-09-19T15:47:54-05:00
-#weight: 
+weight: 20
 draft: false
 # type: slide
 # theme: white
