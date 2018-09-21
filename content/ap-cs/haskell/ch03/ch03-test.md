@@ -68,5 +68,5 @@ computer (that is, no use of Haskell on the computer).
 
     ```haskell
     odA "pizzza" == True
-    odA "cucumber == False
+    odA "cucumber" == False
     ```
