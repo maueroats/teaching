@@ -10,6 +10,13 @@ Urbana-Champaign](http://www.math.uiuc.edu).
 
 ## Courses
 
+Courses taught in 2018-2019:
+
+* [Machine Learning]({{< relref "machine-learning" >}})
+* [AP Computer Science]({{< relref "ap-cs" >}})
+* [Intermediate Computer Science]({{< relref "intermediate-cs" >}})
+* Exploring Computer Science
+
 Courses taught in 2017-2018:
 
 * [AP Computer Science]({{< relref "ap-cs" >}})
@@ -22,6 +29,13 @@ Courses taught in prior years at Whitney Young:
 * Algebra 2 with Trigonometry
 
 ## Clubs
+
+Clubs sponsored in 2018-2019:
+
+* Robotics club (FTC) - state qualifier 2018.
+* Math team (assistant coach).
+* Coding Club - Competition computer programming.
+* Figure Skating Club.
 
 Clubs sponsored in 2017-2018:
 

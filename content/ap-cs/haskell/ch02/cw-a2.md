@@ -8,6 +8,14 @@ tags:
 description: Project Euler problems.
 ---
 
+{{< use-mathjax >}}
+
+## Warmup
+
+On the line $y = 3x-5$, find at least 20 ordered pairs $(x,y)$ with
+$0\le x \le 5$.
+
+
 ## Class work for 2.1--2.3
 
 1. [Sum Square Difference](https://projecteuler.net/problem=6)

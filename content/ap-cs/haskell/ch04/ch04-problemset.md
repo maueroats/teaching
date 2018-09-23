@@ -5,7 +5,7 @@ tags:
  - haskell
  - homework
 draft: false
-weight: 20
+weight: 40
 description: Exercises to improve your Haskell programming.
 ---
 

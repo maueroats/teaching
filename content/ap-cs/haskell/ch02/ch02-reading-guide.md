@@ -1,5 +1,5 @@
 ---
-title: "Ch02 Reading Guide"
+title: "Chapter 2 Reading Guide"
 date: 2017-09-09T15:57:47-05:00
 weight: 10
 categories: 

@@ -2,7 +2,7 @@
 title: "Chapter 4 Summary"
 date: 2017-09-19T14:06:42-05:00
 draft: false
-weight: 40
+weight: 90
 description: patterns, guards, where, let, case
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Haskell CW II.3"
 date: 2018-09-11T09:15:40-05:00
-#weight: 
+weight: 16
 draft: false
 #type: slide
 #theme: white

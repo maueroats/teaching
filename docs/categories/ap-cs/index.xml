@@ -22,17 +22,6 @@
     </item>
     
     <item>
-      <title>2. Starting Out</title>
-      <link>https://wy-cs.site/ap-cs/haskell/ch02/</link>
-      <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
-      
-      <guid>https://wy-cs.site/ap-cs/haskell/ch02/</guid>
-      <description>&lt;p&gt;Learn how to make lists and tuples.
-We also learn the basic list manipulation commands.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Haskell</title>
       <link>https://wy-cs.site/ap-cs/haskell/</link>
       <pubDate>Wed, 05 Sep 2018 11:26:51 -0500</pubDate>
@@ -45,7 +34,7 @@ Chapters  1. Intro A high-level overview of the Haskell language and why its fea
     </item>
     
     <item>
-      <title>Ch02 Reading Guide</title>
+      <title>Chapter 2 Reading Guide</title>
       <link>https://wy-cs.site/ap-cs/haskell/ch02/ch02-reading-guide/</link>
       <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
       

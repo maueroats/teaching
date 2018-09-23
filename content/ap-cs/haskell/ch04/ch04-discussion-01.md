@@ -1,6 +1,7 @@
 ---
-title: "Chapter 4 Discussion"
+title: "Chapter 4 Discussion I"
 date: 2017-09-20T09:59:51-05:00
+weight: 20
 type: slide
 draft: false
 theme: white
