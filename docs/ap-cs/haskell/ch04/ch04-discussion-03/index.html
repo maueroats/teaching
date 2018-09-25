@@ -902,6 +902,10 @@
 <a href="https://codingbat.com">CodingBat</a>.
 Write function signatures as well as the actual function.</p>
 
+<p>Make sure to write a list of test cases so you have thought through
+what every part of the problem description means before you start
+coding.</p>
+
 <ol>
 <li><p>(<a href="https://codingbat.com/prob/p137188"><code>makeLast</code></a>): Given a list of <code>Int</code>, return a new list twice the
 length of the original. The last element of the result is
@@ -915,9 +919,6 @@ exchanged.</p></li>
 is an &ldquo;unlucky&rdquo; 1. Return true if the given list contains an
 unlucky 1 in the first 2 or last 2 positions in the list.</p></li>
 
-<li><p>(<code>unluckyOne2</code>) Continuing the previous problem, return true if a
-list contains an unlucky 1 in any position.</p></li>
-
 <li><p><code>withoutDoubles:: Int -&gt; Int -&gt; Bool -&gt; Int</code>. The first two inputs
 represent rolls of six-sided dice ([1..6]). Return the sum of the
 inputs. If the boolean is true, if the dice show the same value,
@@ -928,7 +929,18 @@ value was a six.</p></li>
 in the range 13..19 inclusive, are extra lucky. So if either value
 is a teen, just return 19.</p></li>
 
+<li><p>(<code>teaParty</code>) We are having a party with amounts of tea and
+candy. Return the int outcome of the party encoded as 0=bad,
+1=good, or 2=great. A party is good (1) if both tea and candy are
+at least 5. However, if either tea or candy is at least double the
+amount of the other one, the party is great (2). However, in all
+cases, if either tea or candy is less than 5, the party is always
+bad (0).</p></li>
+
 <li><p>(<code>xyBalance</code>) We&rsquo;ll say that a String is xy-balanced if for all the &lsquo;x&rsquo; chars in the string, there exists a &lsquo;y&rsquo; char somewhere later in the string. So &ldquo;xxy&rdquo; is balanced, but &ldquo;xyx&rdquo; is not. One &lsquo;y&rsquo; can balance multiple &lsquo;x&rsquo;s. Return true if the given string is xy-balanced.</p></li>
+
+<li><p>(<code>unluckyOne2</code>) Continuing the <code>unluckyOne</code> problem, return true if a
+list contains an unlucky 1 in any position.</p></li>
 </ol>
 
 
