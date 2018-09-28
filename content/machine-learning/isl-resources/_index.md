@@ -11,6 +11,8 @@ description: "Labs and homework for ISL translated to Python."
 * [Lab 2.3]({{% relref "ISL2LabQuestions.html" %}}): Learning to
   use `scipy` arrays and basic random variables. [Solutions]({{% relref
   "ISL2LabSolutions.html" %}}) should not be needed - typing helps you remember.
+* [Description of Boston
+dataset](http://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html). 
 
 {{% alert theme="warning" %}}
 ## Links for Lab 2.3a

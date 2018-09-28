@@ -39,7 +39,7 @@
 	"title": "4. Syntax in Functions",
 	"tags": ["haskell"],
 	"description": "",
-	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Discussion I Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n  Chapter 4 Discussion II Discussion on first half of the reading guide for Chapter 4.\n  Chapter 4 Discussion III Lots of problems so you can practice writing Haskell.\n  Chapter 4 Problem Set Exercises to improve your Haskell programming.\n  Chapter 4 Quiz A The first quiz on Chapter 4, based on Chapter 4 Discussion III and similar CodingBat problems.\n  Chapter 4 Summary patterns, guards, where, let, case\n  Check Expects in Haskell Simple testing in Haskell. Usable on repl.it.\n "
+	"content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Discussion I Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.\n  Chapter 4 Discussion II Discussion on first half of the reading guide for Chapter 4.\n  Chapter 4 Discussion III Lots of problems so you can practice writing Haskell.\n  Ch04 Discussion 04 A few practice problems from a Thursday review session.\n  Chapter 4 Problem Set Exercises to improve your Haskell programming.\n  Chapter 4 Quiz A The first quiz on Chapter 4, based on Chapter 4 Discussion III and similar CodingBat problems.\n  Chapter 4 Summary patterns, guards, where, let, case\n  Check Expects in Haskell Simple testing in Haskell. Usable on repl.it.\n "
 },
 {
 	"uri": "https://wy-cs.site/ftc/registration/",
@@ -364,6 +364,13 @@
 	"content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
 },
 {
+	"uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-04/",
+	"title": "Ch04 Discussion 04",
+	"tags": [],
+	"description": "A few practice problems from a Thursday review session.",
+	"content": " Target. tgt :: Integer -\u0026gt; [Integer] -\u0026gt; Integer. Given a target number and a list of numbers, find the smallest distance between the target number and any number in the list.\ntgt 5 [3,8,10,4] == 1 tgt 6 [10,4,30,50,9] == 2 Take in an ordered pair (x,y) and a list of floating point xs. Find out if the ordered pair is on the graph of y=x^3 corresponding to one of the xs. Return true if it is, false if not.\n Splash. Inputs: a list of ordered pairs and a point (one ordered pair). Output: All ordered pairs in the list within distance 10 of the point.\n  "
+},
+{
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-walkthrough/",
 	"title": "Chapter 3 Walkthrough",
 	"tags": [],
@@ -466,7 +473,7 @@
 	"title": "ISL Resources",
 	"tags": [],
 	"description": "Labs and homework for ISL translated to Python.",
-	"content": "  Lab 2.3: Learning to use scipy arrays and basic random variables. Solutions should not be needed - typing helps you remember.  Links for Lab 2.3a  HTML Lab 2.3 (recommended) Jupyter version of Lab 02.03 raw notebook Data used in Chapter 2:  Auto.data Boston.data College.csv    Directly Downloadable Content These links do not go to GitHub display pages, they go straight to the raw source code. They are also automatically generated so they will always be up to date.\n  Downloadable Jupyter Notebooks   lab-02-03.ipynb (14 kB)     Datasets   Auto.data (20 kB)   Boston.data (36 kB)   College.csv (73 kB)   hitters.tsv (27 kB)    Changelog 2018-09-19 Directly downloadable links fixed.\n"
+	"content": "  Lab 2.3: Learning to use scipy arrays and basic random variables. Solutions should not be needed - typing helps you remember. Description of Boston dataset.  Links for Lab 2.3a  HTML Lab 2.3 (recommended) Jupyter version of Lab 02.03 raw notebook Data used in Chapter 2:  Auto.data Boston.data College.csv    Directly Downloadable Content These links do not go to GitHub display pages, they go straight to the raw source code. They are also automatically generated so they will always be up to date.\n  Downloadable Jupyter Notebooks   lab-02-03.ipynb (14 kB)     Datasets   Auto.data (20 kB)   Boston.data (36 kB)   College.csv (73 kB)   hitters.tsv (27 kB)    Changelog 2018-09-19 Directly downloadable links fixed.\n"
 },
 {
 	"uri": "https://wy-cs.site/machine-learning/ml-resources/",
@@ -704,7 +711,7 @@
 	"title": "Mauer-Oats Classes",
 	"tags": [],
 	"description": "",
-	"content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Chapter 4 Quiz A modified Thu 09-27  Check Expects in Haskell modified Sun 09-23  Chapter 4 Discussion III modified Sun 09-23  Chapter 2 Summary modified Sat 09-22  Chapter 3 Haskell Test modified Fri 09-21  Haskell HW 2 modified Wed 09-12  Haskell CW II.3 modified Tue 09-11  Haskell modified Wed 09-05  Intermediate Computer Science Recent Changes   Art Project modified Thu 09-20  Ch03 Signatures modified Wed 09-19  Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  "
+	"content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Ch04 Discussion 04 modified Fri 09-28  Chapter 4 Quiz A modified Thu 09-27  Check Expects in Haskell modified Sun 09-23  Chapter 4 Discussion III modified Sun 09-23  Chapter 2 Summary modified Sat 09-22  Chapter 3 Haskell Test modified Fri 09-21  Haskell HW 2 modified Wed 09-12  Haskell CW II.3 modified Tue 09-11  Intermediate Computer Science Recent Changes   Art Project modified Thu 09-20  Ch03 Signatures modified Wed 09-19  Ch01.QuizA modified Tue 09-11  HW 01 C modified Mon 09-10  HW 01 B modified Thu 09-06  Match modified Wed 02-21  Contract for Structs modified Wed 02-21  Contract Intro modified Wed 02-21  "
 },
 {
 	"uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
