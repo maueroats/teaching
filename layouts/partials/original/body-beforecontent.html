@@ -1,5 +1,5 @@
 <!-- 2019-09-21 MO edited to async the javascript per google pagespeed recs 
-     still have problem of CSS loading synchronously -->
+     still have problem of CSS loading synchronously. now removed debug-->
 
 <div id="headermain"></div>
 <nav id="sidebar" class="{{if $.Site.Params.showVisitedLinks }}showVisitedLinks{{end}}">
@@ -17,8 +17,8 @@
 		    <input data-search-input id="search-by" type="text" placeholder="{{T "Search-placeholder"}}">
 		    <span data-search-clear=""><i class="fa fa-close"></i></span>
 		</div>
-		<script async type="text/javascript" src="{{"js/lunr.min.js" | relURL}}"></script>
-		<script async type="text/javascript" src="{{"js/auto-complete.js" | relURL}}"></script>
+		<script type="text/javascript" src="{{"js/lunr.min.js" | relURL}}"></script>
+		<script type="text/javascript" src="{{"js/auto-complete.js" | relURL}}"></script>
 		<script type="text/javascript">
         {{ if .Site.IsMultiLingual }}
             var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
@@ -26,7 +26,7 @@
             var baseurl = "{{.Site.BaseURL}}";
         {{ end }}
 		</script>
-		<script async type="text/javascript" src="{{"js/search.js" | relURL}}"></script>
+		<script type="text/javascript" src="{{"js/search.js" | relURL}}"></script>
     {{- end}}
   </div>
 
