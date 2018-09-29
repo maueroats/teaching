@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>ISL Resources :: WY Computer Science</title>
+<title>ISL Resources: Chapter 2 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -695,10 +695,17 @@
     <li data-nav-id="/machine-learning/isl-resources/" class="dd-item parent active haschildren
         ">
       <div>
-      <a href="/machine-learning/isl-resources/">ISL Resources</a>
+      <a href="/machine-learning/isl-resources/">ISL Resources: Chapter 2</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/machine-learning/isl-resources/boston-starter/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-resources/boston-starter/">
+            
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/machine-learning/isl-resources/isl2labquestions/" class="dd-item">
         <div>
           <a href="/machine-learning/isl-resources/isl2labquestions/">
@@ -870,7 +877,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > ISL Resources
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > ISL Resources: Chapter 2
 
  
 
@@ -887,7 +894,8 @@
 <ul>
 <li>
 <ul>
-<li>
+<li><a href="#getting-the-data">Getting the data</a></li>
+<li><a href="#directly-downloadable-content">Directly Downloadable Content</a>
 <ul>
 <li><a href="#changelog">Changelog</a></li>
 </ul></li>
@@ -903,7 +911,7 @@
 
 <div id="body-inner">
   
-    <h1>ISL Resources</h1>
+    <h1>ISL Resources: Chapter 2</h1>
   
 
 
@@ -914,11 +922,57 @@
 
 
 
+<p>Required work for Chapter 2:</p>
+
 <ul>
-<li><a href="/machine-learning/isl-resources/isl2labquestions/">Lab 2.3</a>: Learning to
-use <code>scipy</code> arrays and basic random variables. <a href="/machine-learning/isl-resources/isl2labsolutions/">Solutions</a> should not be needed - typing helps you remember.</li>
-<li><a href="http://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html">Description of Boston
-dataset</a>.</li>
+<li>Conceptual questions 1,2,3,5,6,7</li>
+<li>Practical exercises: 9, 10.</li>
+<li>Question 10: don&rsquo;t get stuck in part &copy; - all of the other parts
+are more accessible.</li>
+</ul>
+
+<p>Common confusions:</p>
+
+<ul>
+<li>Question 10: <a href="/machine-learning/isl-resources/boston-starter/">how do I get the data?</a></li>
+
+<li><p>Question 10 refers to &ldquo;suburbs&rdquo; of Boston, but it is not clear that
+the data points refer to suburbs. Redefine &ldquo;suburb&rdquo; to be &ldquo;data
+point&rdquo;. Answer questions such as &ldquo;which suburb&rdquo; by &ldquo;row 50 in the
+dataset&rdquo;, or like this:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">boston.iloc[50,:]
+
+crim         0.08873
+zn          21.00000
+indus        5.64000
+chas         0.00000
+[...]</pre></div></li>
+</ul>
+
+<h2 id="getting-the-data">Getting the data</h2>
+
+<p>Most of the data is on the <a href="http://www-bcf.usc.edu/~gareth/ISL/data.html">ISL web
+site</a>. Here are direct
+links:</p>
+
+<ul>
+<li><a href="http://www-bcf.usc.edu/~gareth/ISL/Auto.csv">Auto.csv</a></li>
+<li><a href="http://www-bcf.usc.edu/~gareth/ISL/College.csv">College.csv</a></li>
+<li><a href="/machine-learning/isl-resources/boston-starter/">Boston data starter notebook</a>:
+a simple way to get the Boston data loaded and described.</li>
+</ul>
+
+<p>Example of how to load the data:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">df = pd.read_csv(&#39;http://www-bcf.usc.edu/~gareth/ISL/Auto.csv&#39;, 
+                 na_values = &#39;?&#39;, sep=&#34;,&#34;)</pre></div>
+<p>Common parameters:</p>
+
+<ul>
+<li><code>na_values</code> contains a string used to represent missing
+data. Only needed if data is not in a usual format (sorry, that&rsquo;s
+the Auto dataset).</li>
+<li><code>sep</code> could be <code>&quot;\t&quot;</code> if the columns are separated
+by tabs instead of spaces.</li>
 </ul>
 
 <div class="alert 
@@ -929,128 +983,124 @@ role="alert"><h2 id="links-for-lab-2-3a">Links for Lab 2.3a</h2>
 <ul>
 <li>HTML <a href="/machine-learning/isl-resources/isl2labquestions/">Lab 2.3</a> (recommended)</li>
 <li>Jupyter version of <a href="https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/lab-02-03.ipynb">Lab 02.03 raw notebook</a></li>
-<li>Data used in Chapter 2:
-
-<ul>
-<li><a href="https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/Auto.data">Auto.data</a></li>
-<li><a href="https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/Boston.data">Boston.data</a></li>
-<li><a href="https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/College.csv">College.csv</a></li>
-</ul></li>
+<li><a href="/machine-learning/isl-resources/isl2labsolutions/">Lab 2.3 Solutions</a> should not be needed - typing helps you remember.</li>
 </ul>
 </div>
 
 
-<div class="alert 
-alert-info"
- 
-role="alert"><h2 id="directly-downloadable-content">Directly Downloadable Content</h2>
+<h2 id="directly-downloadable-content">Directly Downloadable Content</h2>
 
 <p>These links do not go to GitHub display pages, they go straight to the
 raw source code. They are also automatically generated so they will
 always be up to date.</p>
 
 <section class="attachments">
-    <label>
-        <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-        Downloadable Jupyter Notebooks
-    </label>
-    
-        
-    
-    
-        
-        
-            
-        
-    
-        
-        
-            
-        
-    
-        
-        
-            
-        
-    
-        
-        
-            
-        
-    
-        
-        
-            
-                <li>
+	<label>
+		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+		Downloadable Jupyter Notebooks
+	</label>
+	
+		
+	
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
 <a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/lab-02-03.ipynb">lab-02-03.ipynb</a>
-                    (14 kB)
-                </li>
-            
-        
-    
+					(14 kB)
+				</li>
+			
+		
+	
 </section>
 
+
+
+
 <section class="attachments">
-    <label>
-        <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-        Datasets
-    </label>
-    
-        
-    
-    
-        
-        
-            
-                <li>
+	<label>
+		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+		Datasets
+	</label>
+	
+		
+	
+	
+		
+		
+			
+				<li>
 <a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/Auto.data">Auto.data</a>
-                    (20 kB)
-                </li>
-            
-        
-    
-        
-        
-            
-                <li>
+					(20 kB)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
 <a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/Boston.data">Boston.data</a>
-                    (36 kB)
-                </li>
-            
-        
-    
-        
-        
-            
-                <li>
+					(36 kB)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
 <a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/College.csv">College.csv</a>
-                    (73 kB)
-                </li>
-            
-        
-    
-        
-        
-            
-                <li>
+					(73 kB)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
 <a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/hitters.tsv">hitters.tsv</a>
-                    (27 kB)
-                </li>
-            
-        
-    
-        
-        
-            
-        
-    
+					(27 kB)
+				</li>
+			
+		
+	
+		
+		
+			
+		
+	
 </section>
-</div>
+
+
 
 
 <h3 id="changelog">Changelog</h3>
 
-<p>2018-09-19 Directly downloadable links fixed.</p>
+<p>2018-09-19 Directly downloadable links fixed.
+2018-09-29 Cleanup with a focus on getting loaded and running.</p>
 
 
 
@@ -1064,7 +1114,7 @@ always be up to date.</p>
 
 <div id="navigation">
 <a class="nav nav-prev" href="/machine-learning/outline/" title="Course Outline"> <i class="fa fa-chevron-left"></i><label>Course Outline</label></a>
-    <a class="nav nav-next" href="/machine-learning/isl-resources/isl2labquestions/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/machine-learning/isl-resources/boston-starter/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
