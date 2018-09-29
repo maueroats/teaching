@@ -12,7 +12,7 @@ Required work for Chapter 2:
 
 * Conceptual questions 1,2,3,5,6,7
 * Practical exercises: 9, 10.
-* Question 10: don't get stuck in part (c) - all of the other parts
+* Question 10: don't get stuck in part c - all of the other parts
   are more accessible.
 
 Common confusions:
