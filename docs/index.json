@@ -1,747 +1,869 @@
-// 2018-09-29: removed content from the stuff to be searched because the
-// resulting 100k file was too slow to load. could also use "| truncate 100"
 [
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/timeline/",
-        "title": "Connect Four Timeline",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/timeline/",
+    "title": "Connect Four Timeline",
+    "tags": [],
+    "description": "",
+    "content": "Not updated for 2018.\n   Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-1/",
-        "title": "Art Period 1",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-1/",
+    "title": "Art Period 1",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch01/",
-        "title": "1. Intro",
-        "tags": ["haskell"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch01/",
+    "title": "1. Intro",
+    "tags": ["haskell"],
+    "description": "",
+    "content": "A high-level overview of the Haskell language and why its features are good. You should read it carefully and note what items you are unfamiliar with. …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch02/",
-        "title": "2. Starting Out",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch02/",
+    "title": "2. Starting Out",
+    "tags": [],
+    "description": "",
+    "content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch03/",
-        "title": "3. Types and Typeclasses",
-        "tags": ["haskell"],
-        "description": "Typeclasses abstract characteristics of types like String or Int."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch03/",
+    "title": "3. Types and Typeclasses",
+    "tags": ["haskell"],
+    "description": "Typeclasses abstract characteristics of types like String or Int.",
+    "content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
-        "title": "4. Syntax in Functions",
-        "tags": ["haskell"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
+    "title": "4. Syntax in Functions",
+    "tags": ["haskell"],
+    "description": "",
+    "content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Discussion I …"
 },
 {
-        "uri": "https://wy-cs.site/ftc/registration/",
-        "title": "Registration",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ftc/registration/",
+    "title": "Registration",
+    "tags": [],
+    "description": "",
+    "content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/ui/",
-        "title": "Connect Four UI",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/ui/",
+    "title": "Connect Four UI",
+    "tags": [],
+    "description": "",
+    "content": " The user interface code for Connect Four is a little clunky. (Repl.it shared code.) You may use the linked code. You do not have to learn this part …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-5/",
-        "title": "Art Period 5",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-5/",
+    "title": "Art Period 5",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch05/",
-        "title": "5. Recursion",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch05/",
+    "title": "5. Recursion",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-7/",
-        "title": "Art Period 7",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-7/",
+    "title": "Art Period 7",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/",
-        "title": "Haskell",
-        "tags": ["haskell"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/",
+    "title": "Haskell",
+    "tags": ["haskell"],
+    "description": "",
+    "content": " You will need the the text Learn You a Haskell For Great Good.\n Use repl.it for programming.\n Haskell is a pure, lazy, statically typed language. In …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/daily/",
-        "title": "ML Daily",
-        "tags": [],
-        "description": "Lecture notes and supplemental material."
+    "uri": "https://wy-cs.site/machine-learning/daily/",
+    "title": "ML Daily",
+    "tags": [],
+    "description": "Lecture notes and supplemental material.",
+    "content": "Lecture notes will be posted here.\n    2018.09.05   2018.09.07   2018.09.09   2018.09.11   2018.09.17-21 ISL Chapter 2 Plan   2018.09.21 Ch2 Ex8 …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/contracts/contract-intro/",
-        "title": "Contract Intro",
-        "tags": [],
-        "description": "An introduction to using contracts."
+    "uri": "https://wy-cs.site/intermediate-cs/contracts/contract-intro/",
+    "title": "Contract Intro",
+    "tags": [],
+    "description": "An introduction to using contracts.",
+    "content": " Contracts are the signatures of functions that we have been using. The vocabulary word changes to make it sound more legal. Contracts are actually …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/pro/pro-string/",
-        "title": "Strings for Experts",
-        "tags": [],
-        "description": "Strings: randomizing and creating by formula."
+    "uri": "https://wy-cs.site/intermediate-cs/pro/pro-string/",
+    "title": "Strings for Experts",
+    "tags": [],
+    "description": "Strings: randomizing and creating by formula.",
+    "content": " This page contains information about advanced topics that I have been asked.\nRandomizing Letters of a String The implode and explode functions change …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/git/getting-started/",
-        "title": "Git-ting Started",
-        "tags": ["git"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/git/getting-started/",
+    "title": "Git-ting Started",
+    "tags": ["git"],
+    "description": "",
+    "content": " Downloads for Home  Git package for all operating systems. Tortoise Git for Windows only.  Tutorials  A command line intro to git in 15 minutes.\n Git …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/spoilers/",
-        "title": "Connect Four Spoilers",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/spoilers/",
+    "title": "Connect Four Spoilers",
+    "tags": [],
+    "description": "",
+    "content": " Two problems with connect four: changing an entry in a matrix ([[Int]]) and seeing if there is a win.\nChanging entries in the board The biggest …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch03/color/",
-        "title": "Color Commands",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch03/color/",
+    "title": "Color Commands",
+    "tags": [],
+    "description": "",
+    "content": " name-\u0026amp;gt;color changes a string name to a color, like this:  \u0026amp;gt; (name-\u0026amp;gt;color \u0026amp;quot;lavender\u0026amp;quot;) (make-color 230 230 250)   If you give it a …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-reading-guide/",
-        "title": "Chapter 4 Reading Guide",
-        "tags": ["haskell", "reading-guide"],
-        "description": "Questions to help you understand Chapter 4."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-reading-guide/",
+    "title": "Chapter 4 Reading Guide",
+    "tags": ["haskell", "reading-guide"],
+    "description": "Questions to help you understand Chapter 4.",
+    "content": " Sections 4.1\u0026amp;ndash;4.3  A pattern starts out with \u0026amp;ldquo;dog\u0026amp;rdquo;,\u0026amp;ldquo;cat\u0026amp;rdquo;, \u0026amp;ldquo;cat dog\u0026amp;rdquo;, \u0026amp;ldquo;cat dog cat\u0026amp;rdquo;, \u0026amp;ldquo;cat …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch01/",
-        "title": "1. Introduction",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch01/",
+    "title": "1. Introduction",
+    "tags": [],
+    "description": "",
+    "content": "Learn the essentials of image manipulation: rotating, flipping, and combining images.  HW 01 B   HW 01 C   Ch01.QuizA  "
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch02/ch02-reading-guide/",
-        "title": "Chapter 2 Reading Guide",
-        "tags": ["haskell", "reading-guide"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch02/ch02-reading-guide/",
+    "title": "Chapter 2 Reading Guide",
+    "tags": ["haskell", "reading-guide"],
+    "description": "",
+    "content": " Haskell Starting Out Questions A. Sections 2.1\u0026amp;ndash;2.3  There is an annoyance with negative numbers that is mentioned.\n What is the correct way to …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/",
-        "title": "AP CS",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/",
+    "title": "AP CS",
+    "tags": [],
+    "description": "",
+    "content": " You will need the the text Learn You a Haskell For Great Good.\n AP Computer Science studies:\n Haskell - an introduction to pure functional …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
-        "title": "2018.09.05",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
+    "title": "2018.09.05",
+    "tags": [],
+    "description": "",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/daily/2018-09-07/",
-        "title": "2018.09.07",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-09-07/",
+    "title": "2018.09.07",
+    "tags": [],
+    "description": "",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/daily/2018-09-09/",
-        "title": "2018.09.09",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-09-09/",
+    "title": "2018.09.09",
+    "tags": [],
+    "description": "",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});   Enhanced probability. …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell-calendar/",
-        "title": "Haskell Calendar",
-        "tags": ["haskell", "calendar"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell-calendar/",
+    "title": "Haskell Calendar",
+    "tags": ["haskell", "calendar"],
+    "description": "",
+    "content": "Daily calendar for Haskell unit.\n "
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch02/cw-a2/",
-        "title": "Haskell CW II.2",
-        "tags": ["haskell", "ap-cs"],
-        "description": "Project Euler problems."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch02/cw-a2/",
+    "title": "Haskell CW II.2",
+    "tags": ["haskell", "ap-cs"],
+    "description": "Project Euler problems.",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});   Warmup On the line $y = …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch02/cw-3/",
-        "title": "Haskell CW II.3",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch02/cw-3/",
+    "title": "Haskell CW II.3",
+    "tags": [],
+    "description": "",
+    "content": " This page is full of tiny pieces to help you get better at programming Haskell.\nGoals:\n Range notation [a,b..c] to make lists of integers. Apply a …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch03/ch03-signatures/",
-        "title": "Ch03 Signatures",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch03/ch03-signatures/",
+    "title": "Ch03 Signatures",
+    "tags": [],
+    "description": "",
+    "content": " Practice writing signatures. Write examples as you go. We did these one at a time.  Write signatures for:\n overlay/align text ellipse Write a …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch02/hw-a2/",
-        "title": "Haskell HW 2",
-        "tags": ["homework", "hw", "haskell", "ap-cs"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch02/hw-a2/",
+    "title": "Haskell HW 2",
+    "tags": ["homework", "hw", "haskell", "ap-cs"],
+    "description": "",
+    "content": "Graph a function, is a point on a line, get the numbers more than 100, break up a list, find the nearest point. Homework All of the points you should …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch01/ch01b-review/",
-        "title": "HW 01 B",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch01/ch01b-review/",
+    "title": "HW 01 B",
+    "tags": [],
+    "description": "",
+    "content": "Two images of designs to practice making in Racket.\n\nOpener Practice You may omit the border lines.\n"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/contracts/contract-structs/",
-        "title": "Contract for Structs",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/contracts/contract-structs/",
+    "title": "Contract for Structs",
+    "tags": [],
+    "description": "",
+    "content": "When you are working with a structure, the best way to make sure it does not get \u0026amp;ldquo;broken\u0026amp;rdquo; is to write a function to check that each part …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/git/everyday/",
-        "title": "Everyday Git",
-        "tags": ["git"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/git/everyday/",
+    "title": "Everyday Git",
+    "tags": ["git"],
+    "description": "",
+    "content": " Everyday Commands All of these need to be run in the karel-* directory:\n ./save-it ./update: git pull from the upstream repository. git pull  Merge …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/pro/build-image/",
-        "title": "Build Image",
-        "tags": [],
-        "description": "Build-image to create images from a formula for the pixel color."
+    "uri": "https://wy-cs.site/intermediate-cs/pro/build-image/",
+    "title": "Build Image",
+    "tags": [],
+    "description": "Build-image to create images from a formula for the pixel color.",
+    "content": " You should learn how to use build-image to make the pictures in Chapter 15.\nAdvanced: build-image The build-image uses a function that specifies the …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/git/",
-        "title": "Git",
-        "tags": ["git"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/git/",
+    "title": "Git",
+    "tags": ["git"],
+    "description": "",
+    "content": " Git is a system for keeping track of all of the versions of things you write, both old and new. The whole system is quite complex, so we will limit …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-01/",
-        "title": "Chapter 4 Discussion I",
-        "tags": [],
-        "description": "Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-01/",
+    "title": "Chapter 4 Discussion I",
+    "tags": [],
+    "description": "Slideshow of Discussion problems for Chapter 4. Similar but not identical to reading guide questions.",
+    "content": " Chapter 4 Discussion Absence Interpretation    Periods Absent Probability of all day absence     a \u0026amp;gt;= 6 1.0   a \u0026amp;gt;= 3 0.5   a \u0026amp;lt; 3 0.0 …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-reading-guide-haskell/",
-        "title": "Chapter 3 Reading Guide",
-        "tags": ["haskell", "reading-guide"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-reading-guide-haskell/",
+    "title": "Chapter 3 Reading Guide",
+    "tags": ["haskell", "reading-guide"],
+    "description": "",
+    "content": "We learn about types and typeclasses. You should use valid Haskell types in all of your answers. Unless needed, I stick with Int for the type for …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/",
-        "title": "Intermediate CS",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/",
+    "title": "Intermediate CS",
+    "tags": [],
+    "description": "",
+    "content": " Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/daily/2018-09-11/",
-        "title": "2018.09.11",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-09-11/",
+    "title": "2018.09.11",
+    "tags": [],
+    "description": "",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
-        "uri": "https://wy-cs.site/resources/generic-cs-syllabus/",
-        "title": "Syllabus: All Courses",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/resources/generic-cs-syllabus/",
+    "title": "Syllabus: All Courses",
+    "tags": [],
+    "description": "",
+    "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-02/",
-        "title": "Chapter 4 Discussion II",
-        "tags": [],
-        "description": "Discussion on first half of the reading guide for Chapter 4."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-02/",
+    "title": "Chapter 4 Discussion II",
+    "tags": [],
+    "description": "Discussion on first half of the reading guide for Chapter 4.",
+    "content": " sub_posn  Two ordered pair inputs. Ordered pair output. Subtract corresponding coordinates.  sub_posn (5,7) (1,2) == (4,5)\nDot Product Multiply the …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch03/ch03-art-project/",
-        "title": "Art Project",
-        "tags": ["project"],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch03/ch03-art-project/",
+    "title": "Art Project",
+    "tags": ["project"],
+    "description": "",
+    "content": " Deadline: Turn in by Wednesday, September 26.\nProduce: One complex piece of art per person in the group. (Two simpler pieces.) (Groups of at most …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch01/ch01c/",
-        "title": "HW 01 C",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch01/ch01c/",
+    "title": "HW 01 C",
+    "tags": [],
+    "description": "",
+    "content": "Opener: Write the result of the third \u0026amp;ldquo;step\u0026amp;rdquo;, as seen in the Stepper.\n(+ (+ 1 5) (* 8 (+ 2 3)) (* 7 2)) Class/homework:\nMake the two …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
-        "title": "Match",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
+    "title": "Match",
+    "tags": [],
+    "description": "",
+    "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch03/puzzle-opener/",
-        "title": "Puzzle Opener",
-        "tags": ["opener"],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch03/puzzle-opener/",
+    "title": "Puzzle Opener",
+    "tags": ["opener"],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch03/",
-        "title": "3. More Interesting Pictures",
-        "tags": ["homework"],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch03/",
+    "title": "3. More Interesting Pictures",
+    "tags": ["homework"],
+    "description": "",
+    "content": " Pictures and Color  Quick guide to image variables in Picturing Programs. All of the images from the book online.\n Commands to change words to …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-hw1/",
-        "title": "Chapter 3 Problem Set",
-        "tags": ["haskell", "homework"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-hw1/",
+    "title": "Chapter 3 Problem Set",
+    "tags": ["haskell", "homework"],
+    "description": "",
+    "content": "The essentials of the Types and Typeclasses chapter are: writing type signatures for functions, reading string inputs with the Read class, and dealing …"
 },
 {
-        "uri": "https://wy-cs.site/resources/apcs-syllabus--2017-2018/",
-        "title": "Syllabus: AP CS",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/resources/apcs-syllabus--2017-2018/",
+    "title": "Syllabus: AP CS",
+    "tags": [],
+    "description": "",
+    "content": " This document gives information specific to the AP Computer Science course. See the all course syllabus information as well.\nAP Review We will do …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/daily/2018-09-17/",
-        "title": "2018.09.17-21 ISL Chapter 2 Plan",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-09-17/",
+    "title": "2018.09.17-21 ISL Chapter 2 Plan",
+    "tags": [],
+    "description": "",
+    "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-03/",
-        "title": "Chapter 4 Discussion III",
-        "tags": [],
-        "description": "Lots of problems so you can practice writing Haskell."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-03/",
+    "title": "Chapter 4 Discussion III",
+    "tags": [],
+    "description": "Lots of problems so you can practice writing Haskell.",
+    "content": "All of these problems are stolen from CodingBat. Write function signatures as well as the actual function.\nMake sure to write a list of test cases so …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/daily/2018-09-21/",
-        "title": "2018.09.21 Ch2 Ex8 Walkthrough",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-09-21/",
+    "title": "2018.09.21 Ch2 Ex8 Walkthrough",
+    "tags": [],
+    "description": "",
+    "content": " Example showing Chapter 2 Exercise 8  "
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch03art/",
-        "title": "3. Art with Racket",
-        "tags": [],
-        "description": "Student art-inspired programming projects."
+    "uri": "https://wy-cs.site/intermediate-cs/ch03art/",
+    "title": "3. Art with Racket",
+    "tags": [],
+    "description": "Student art-inspired programming projects.",
+    "content": "Click on the period number to see larger images. Clicking on the contact sheet will only show a large contact sheet.\n Period 1   Period 5   Period 7  "
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-04/",
-        "title": "Ch04 Discussion 04",
-        "tags": [],
-        "description": "A few practice problems from a Thursday review session."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-04/",
+    "title": "Chapter 4 Discussion IV",
+    "tags": [],
+    "description": "A few practice problems from a Thursday review session.",
+    "content": " Target. tgt :: Integer -\u0026amp;gt; [Integer] -\u0026amp;gt; Integer. Given a target number and a list of numbers, find the smallest distance between the target …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-walkthrough/",
-        "title": "Chapter 3 Walkthrough",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-walkthrough/",
+    "title": "Chapter 3 Walkthrough",
+    "tags": [],
+    "description": "",
+    "content": " Cubes  List: all perfect cubes divisible by 16 and less than N. Write signature.  cubes 100 == [64] cubes 600 == [64, 512] Partial Average  Average …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/",
-        "title": "Machine Learning",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/",
+    "title": "Machine Learning",
+    "tags": [],
+    "description": "",
+    "content": "  ML Daily Lecture notes and supplemental material.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/",
-        "title": "Chapter 4 Problem Set",
-        "tags": ["haskell", "homework"],
-        "description": "Exercises to improve your Haskell programming."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/",
+    "title": "Chapter 4 Problem Set",
+    "tags": ["haskell", "homework"],
+    "description": "Exercises to improve your Haskell programming.",
+    "content": " Key new concepts: patterns, guards, where, let, case.\nPlease write function signatures for every solution.\n Some of these problems are classical …"
 },
 {
-        "uri": "https://wy-cs.site/resources/intermediatecs-syllabus--2017-2018/",
-        "title": "Syllabus: Intermediate",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/resources/intermediatecs-syllabus--2017-2018/",
+    "title": "Syllabus: Intermediate",
+    "tags": [],
+    "description": "",
+    "content": " This document details the information specific to Intermediate Computer Science. See the all course syllabus information as well.\nMaterials  Notebook …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz-a/",
-        "title": "Chapter 4 Quiz A",
-        "tags": [],
-        "description": "The first quiz on Chapter 4, based on Chapter 4 Discussion III and similar CodingBat problems."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz-a/",
+    "title": "Chapter 4 Quiz A",
+    "tags": [],
+    "description": "The first quiz on Chapter 4, based on Chapter 4 Discussion III and similar CodingBat problems.",
+    "content": " You may ask for help with \u0026amp;ldquo;red error messages\u0026amp;rdquo;. No internet sources. No help from other students. No notes.  Write three tests, a …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-test/",
-        "title": "Chapter 3 Haskell Test",
-        "tags": [],
-        "description": "Test on LYaH Chapter 3."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-test/",
+    "title": "Chapter 3 Haskell Test",
+    "tags": [],
+    "description": "Test on LYaH Chapter 3.",
+    "content": " Unless you are completely confident of your signature-writing skills, please use \u0026amp;ldquo;concrete\u0026amp;rdquo; type classes like Double or Integer instead …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch06/",
-        "title": "6. Higher Order Functions",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch06/",
+    "title": "6. Higher Order Functions",
+    "tags": [],
+    "description": "",
+    "content": "This is a fun chapter to read, but as a class we are done after Chapter 5 (for now).\n Chapter 6 Reading Guide   "
 },
 {
-        "uri": "https://wy-cs.site/resources/grading-scale/",
-        "title": "Grade Weights",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/resources/grading-scale/",
+    "title": "Grade Weights",
+    "tags": [],
+    "description": "",
+    "content": " The most common question people have is how grades are computed.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly) …"
 },
 {
-        "uri": "https://wy-cs.site/resources/academic-integrity/",
-        "title": "Academic Integrity",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/resources/academic-integrity/",
+    "title": "Academic Integrity",
+    "tags": [],
+    "description": "",
+    "content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following …"
 },
 {
-        "uri": "https://wy-cs.site/resources/",
-        "title": "Resources",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/resources/",
+    "title": "Resources",
+    "tags": [],
+    "description": "",
+    "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch02/ch02-summary/",
-        "title": "Chapter 2 Summary",
-        "tags": [],
-        "description": "Useful highlights from the chapter."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch02/ch02-summary/",
+    "title": "Chapter 2 Summary",
+    "tags": [],
+    "description": "Useful highlights from the chapter.",
+    "content": "A list of the chapter contents, including past stumbling blocks.\n Create a list: [5..13] or [5,10..100] or [ n^2 | n\u0026amp;lt;-[1..100], even n] Create a …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/daily/2018-09-14/",
-        "title": "Jupyter Notebook Setup",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-09-14/",
+    "title": "Jupyter Notebook Setup",
+    "tags": [],
+    "description": "",
+    "content": " Choose a platform  Google Collaboratory: Similar to a full-featured Jupyter notebook. Microsoft Azure Notebooks: Full-featured Jupyter notebook. …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/outline/",
-        "title": "Course Outline",
-        "tags": [],
-        "description": "A broad outline of what we plan to cover, so you can see how it all fits together."
+    "uri": "https://wy-cs.site/machine-learning/outline/",
+    "title": "Course Outline",
+    "tags": [],
+    "description": "A broad outline of what we plan to cover, so you can see how it all fits together.",
+    "content": " Note: MathJax formulas used on this page. Ugly if you block Javascript from Cloudflare.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-summary/",
-        "title": "Chapter 4 Summary",
-        "tags": [],
-        "description": "patterns, guards, where, let, case"
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-summary/",
+    "title": "Chapter 4 Summary",
+    "tags": [],
+    "description": "patterns, guards, where, let, case",
+    "content": " patterns  f [] = 0 f (x:xs) = x + f xs  guards  numword x | x \u0026amp;lt; 0 = \u0026amp;#34;Negative\u0026amp;#34; | x == 0 = \u0026amp;#34;Zero\u0026amp;#34; | otherwise = \u0026amp;#34;Positive\u0026amp;#34; …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/isl-resources/",
-        "title": "ISL Resources: Chapter 2",
-        "tags": [],
-        "description": "Labs and homework for ISL translated to Python."
+    "uri": "https://wy-cs.site/machine-learning/isl-resources/",
+    "title": "ISL Resources: Chapter 2",
+    "tags": [],
+    "description": "Labs and homework for ISL translated to Python.",
+    "content": " Required work for Chapter 2:\n Conceptual questions 1,2,3,5,6,7 Practical exercises: 9, 10. Question 10: don\u0026amp;rsquo;t get stuck in part c - all of the …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/ml-resources/",
-        "title": "ML Resources",
-        "tags": [],
-        "description": "Resources for machine learning that we refer to in the class."
+    "uri": "https://wy-cs.site/machine-learning/ml-resources/",
+    "title": "ML Resources",
+    "tags": [],
+    "description": "Resources for machine learning that we refer to in the class.",
+    "content": " There is an incredible amount of information online. I will only refer to material that I have personally read or watched. See posts on Hacker News …"
 },
 {
-        "uri": "https://wy-cs.site/ftc/learning/",
-        "title": "Learning Resources",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ftc/learning/",
+    "title": "Learning Resources",
+    "tags": [],
+    "description": "",
+    "content": " Servos and Pivots  "
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/usaco/",
-        "title": "USACO Practice",
-        "tags": [],
-        "description": "Challenging problems for people who want to stretch their understanding."
+    "uri": "https://wy-cs.site/ap-cs/haskell/usaco/",
+    "title": "USACO Practice",
+    "tags": [],
+    "description": "Challenging problems for people who want to stretch their understanding.",
+    "content": "One of the key ideas to keep in mind when learning from USA Computing Olympiad problems is that time matters. A slow algorithm is not good enough; …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/contracts/",
-        "title": "Contracts",
-        "tags": [],
-        "description": "Racket can enforce signatures (contracts). Learn how."
+    "uri": "https://wy-cs.site/intermediate-cs/contracts/",
+    "title": "Contracts",
+    "tags": [],
+    "description": "Racket can enforce signatures (contracts). Learn how.",
+    "content": "We have been writing signatures for functions by using comments.\n; double-it: number -\u0026amp;gt; number This works fine for organizing your thoughts, but it …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/daily/",
-        "title": "Haskell Daily Notes",
-        "tags": ["haskell", "daily-notes"],
-        "description": "Notes for each day."
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/",
+    "title": "Haskell Daily Notes",
+    "tags": ["haskell", "daily-notes"],
+    "description": "Notes for each day.",
+    "content": "  2017-10-04 More CodingBat problems.\n  2017-10-03 CodingBat problems to improve your problem-solving skills.\n  2017-09-18 Battleship and homework …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/calendar/",
-        "title": "Calendar",
-        "tags": [],
-        "description": "The course calendar and assignment sheet links."
+    "uri": "https://wy-cs.site/intermediate-cs/calendar/",
+    "title": "Calendar",
+    "tags": [],
+    "description": "The course calendar and assignment sheet links.",
+    "content": "The assigment sheet goes with the calendar. "
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/pro/",
-        "title": "Pro Features",
-        "tags": [],
-        "description": "Brief descriptions of advanced topics that have come up in various individual projects."
+    "uri": "https://wy-cs.site/intermediate-cs/pro/",
+    "title": "Pro Features",
+    "tags": [],
+    "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
+    "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-check-expect/",
-        "title": "Check Expects in Haskell",
-        "tags": [],
-        "description": "Simple testing in Haskell. Usable on repl.it."
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-check-expect/",
+    "title": "Check Expects in Haskell",
+    "tags": [],
+    "description": "Simple testing in Haskell. Usable on repl.it.",
+    "content": " This page explains how to write check-expect in Haskell in a basic way that can be used on repl.it (or anywhere). This method works for small numbers …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/ch01/ch01quiza/",
-        "title": "Ch01.QuizA",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/ch01/ch01quiza/",
+    "title": "Ch01.QuizA",
+    "tags": [],
+    "description": "",
+    "content": " Base images   Make these     "
 },
 {
-        "uri": "https://wy-cs.site/resources/why-racket/",
-        "title": "Why Racket?",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/resources/why-racket/",
+    "title": "Why Racket?",
+    "tags": [],
+    "description": "",
+    "content": " Many people we encounter tell us they wish they knew how to code and then ask which programming language they should learn. Given the press that some …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/news/",
-        "title": "News",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/news/",
+    "title": "News",
+    "tags": [],
+    "description": "",
+    "content": "  "
 },
 {
-        "uri": "https://wy-cs.site/resources/events/",
-        "title": "CS Events",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/resources/events/",
+    "title": "CS Events",
+    "tags": [],
+    "description": "",
+    "content": " Computing Olympiad\n Dec 15-18: First Contest Jan 19-22: Second Contest Feb 23-26: Third Contest Mar 23-26: US Open May 24-Jun 2: Training Camp Sep …"
 },
 {
-        "uri": "https://wy-cs.site/ecs-teach/scratch/",
-        "title": "Scratch",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ecs-teach/scratch/",
+    "title": "Scratch",
+    "tags": [],
+    "description": "",
+    "content": "Resources (all are Google Drive shared folders):\n Introductory materials Variables Lists  There are quizzes as well; email me for access if you are an …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/e-courses/",
-        "title": "Online Help",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/e-courses/",
+    "title": "Online Help",
+    "tags": [],
+    "description": "",
+    "content": " The best resource I am aware of is Gregor Kiczales\u0026amp;rsquo; course How to Code: Simple Data. The course is available for free through edX.\nKiczales …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/testcases/",
-        "title": "Connect Four Testcases",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/testcases/",
+    "title": "Connect Four Testcases",
+    "tags": [],
+    "description": "",
+    "content": "The testcases zip file contains all of the template files.\nYou can also download them one by one:\n Connect Four TestConnectFour User Interface for …"
 },
 {
-        "uri": "https://wy-cs.site/ftc/",
-        "title": "Robophins 3216",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ftc/",
+    "title": "Robophins 3216",
+    "tags": [],
+    "description": "",
+    "content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nMeet Schedule  November 17, Lindblom Math \u0026amp;amp; Science …"
 },
 {
-        "uri": "https://wy-cs.site/ecs-teach/",
-        "title": "Exploring CS (Teachers)",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ecs-teach/",
+    "title": "Exploring CS (Teachers)",
+    "tags": [],
+    "description": "",
+    "content": " This page is dedicated to teacher links for Exploring Computer Science.\n Scratch Resources are on a separate page.  Web Hosting Platforms  Cloud9 …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/rubric/",
-        "title": "Connect Four Rubric",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/rubric/",
+    "title": "Connect Four Rubric",
+    "tags": [],
+    "description": "",
+    "content": " DRAFT: MAY CHANGE\nThere are four functions that you are expected to design and test:\n draw_board: Create a String representation of the board. …"
 },
 {
-        "uri": "https://wy-cs.site/intermediate-cs/design-process/",
-        "title": "Design Process",
-        "tags": ["design-process"],
-        "description": ""
+    "uri": "https://wy-cs.site/intermediate-cs/design-process/",
+    "title": "Design Process",
+    "tags": ["design-process"],
+    "description": "",
+    "content": " Function The function design process that we use is:\n Signature Purpose Examples (two) Function - write it.\n4A. Skeleton - not visible when finished. …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/",
-        "title": "Connect Four",
-        "tags": ["haskell", "project"],
-        "description": "Connect Four project description, including function signatures."
+    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/",
+    "title": "Connect Four",
+    "tags": ["haskell", "project"],
+    "description": "Connect Four project description, including function signatures.",
+    "content": " Due Monday, October 16. See timeline.\nFamiliarize yourself with the game of Connect Four, possibly playing a few games.\nFunctions to write This is a …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-10-04/",
-        "title": "2017-10-04",
-        "tags": ["haskell"],
-        "description": "More CodingBat problems."
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-10-04/",
+    "title": "2017-10-04",
+    "tags": ["haskell"],
+    "description": "More CodingBat problems.",
+    "content": " Without10 (source). Take a list of numbers and remove all of the tens. The remaining numbers shift toward the start of the list and zeros fill in at …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/usaco/haybales/",
-        "title": "Haybales",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/usaco/haybales/",
+    "title": "Haybales",
+    "tags": [],
+    "description": "",
+    "content": "The haybales problem is from Bronze 1, December 2016. In this directory you can download the starter code. If you are new to Unix, you unpack it with …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-10-03/",
-        "title": "2017-10-03",
-        "tags": ["haskell"],
-        "description": "CodingBat problems to improve your problem-solving skills."
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-10-03/",
+    "title": "2017-10-03",
+    "tags": ["haskell"],
+    "description": "CodingBat problems to improve your problem-solving skills.",
+    "content": " (Previous class leftover.) Write only14 (source) that takes in a list of numbers and gives a boolean result. The result is true if every number in …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch06/ch06-reading-guide/",
-        "title": "Chapter 6 Reading Guide",
-        "tags": ["haskell", "reading-guide"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch06/ch06-reading-guide/",
+    "title": "Chapter 6 Reading Guide",
+    "tags": ["haskell", "reading-guide"],
+    "description": "",
+    "content": " Take in a list of numbers and output a list containing all of the numbers greater than 8.\n Take in a list of numbers and output a list containing all …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch05/ch05-reading-guide/",
-        "title": "Chapter 5 Reading Guide",
-        "tags": ["reading-guide"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch05/ch05-reading-guide/",
+    "title": "Chapter 5 Reading Guide",
+    "tags": ["reading-guide"],
+    "description": "",
+    "content": "The purpose of reading this section is to see how an experienced author writes functions that work on lists. Functions:\n maximum: Two different …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/typeclass-notes/",
-        "title": "Typeclass Notes",
-        "tags": [],
-        "description": "Typeclasses you may encounter in everyday programming."
+    "uri": "https://wy-cs.site/ap-cs/haskell/typeclass-notes/",
+    "title": "Typeclass Notes",
+    "tags": [],
+    "description": "Typeclasses you may encounter in everyday programming.",
+    "content": " Num: Addition, multiplication, a way to convert from an integer. Also absolute value and negation. Real: Part of the real number line. Ordered …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-18/",
-        "title": "2017-09-18",
-        "tags": ["haskell"],
-        "description": "Battleship and homework review."
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-18/",
+    "title": "2017-09-18",
+    "tags": ["haskell"],
+    "description": "Battleship and homework review.",
+    "content": "We discussed problem 7 from the homework. You should finish it based on the discussion.\nMentioned from Chapter 5: type to make short ways to say …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-13/",
-        "title": "2017-09-14 Indentation",
-        "tags": ["haskell"],
-        "description": "Indentation matters. A lot."
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-13/",
+    "title": "2017-09-14 Indentation",
+    "tags": ["haskell"],
+    "description": "Indentation matters. A lot.",
+    "content": " Indentation is significant in Haskell. Haskell uses indentation to group pieces of code together. This is similar to Python, but there are …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/replit/",
-        "title": "Repl.it",
-        "tags": ["haskell"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/replit/",
+    "title": "Repl.it",
+    "tags": ["haskell"],
+    "description": "",
+    "content": "A summary of any special problems that have arisen with repl.it. Repl.it requires a main method The particular interpreter repl.it requires that you …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-12/",
-        "title": "2017-09-12",
-        "tags": ["haskell"],
-        "description": "Technical details that came up while doing Chapter 2 Homework."
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-12/",
+    "title": "2017-09-12",
+    "tags": ["haskell"],
+    "description": "Technical details that came up while doing Chapter 2 Homework.",
+    "content": " Memorize how to write a basic main method:  main = do putStrLn \u0026amp;#34;Loaded\u0026amp;#34;  Use \u0026amp;ldquo;\u0026amp;ndash;\u0026amp;rdquo; (two dashes) to comment to the end of the …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-11/",
-        "title": "2017-09-11",
-        "tags": ["haskell", "daily-notes"],
-        "description": "worked examples - removeVowels and wordLenPairs"
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-11/",
+    "title": "2017-09-11",
+    "tags": ["haskell", "daily-notes"],
+    "description": "worked examples - removeVowels and wordLenPairs",
+    "content": "removeVowels word = [ letter | letter \u0026amp;lt;- word, not (letter elem \u0026amp;ldquo;aeiouAEIOU\u0026amp;rdquo; )]\nwordLenPairs wordlist = [ (word, length word) | word …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ghci-details/",
-        "title": "Source Code Files (ghci)",
-        "tags": ["haskell"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ghci-details/",
+    "title": "Source Code Files (ghci)",
+    "tags": ["haskell"],
+    "description": "",
+    "content": "Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no let statements at the top level and no …"
 },
 {
-        "uri": "https://wy-cs.site/biography/",
-        "title": "Biography",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/biography/",
+    "title": "Biography",
+    "tags": [],
+    "description": "",
+    "content": " Dr. Mauer-Oats has been at Whitney Young for more than five years. He holds a Ph.D. in Mathematics from the University of Illinois at …"
 },
 {
-        "uri": "https://wy-cs.site/",
-        "title": "Mauer-Oats Classes",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/",
+    "title": "Mauer-Oats Classes",
+    "tags": [],
+    "description": "",
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Chapter 4 Discussion IV modified Fri 09-28 …"
 },
 {
-        "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
-        "title": "Ch01 Reading Guide",
-        "tags": ["reading-guide", "haskell"],
-        "description": ""
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
+    "title": "Ch01 Reading Guide",
+    "tags": ["reading-guide", "haskell"],
+    "description": "",
+    "content": " Haskell introduction reading questions  Haskell is supposed to be a purely functional language. Unpack that:\n What does pure mean? What is the …"
 },
 {
-        "uri": "https://wy-cs.site/resources/ics-wescheme-note/",
-        "title": "WeScheme",
-        "tags": [],
-        "description": "Notes on how WeScheme is different from DrRacket."
+    "uri": "https://wy-cs.site/resources/ics-wescheme-note/",
+    "title": "WeScheme",
+    "tags": [],
+    "description": "Notes on how WeScheme is different from DrRacket.",
+    "content": " Special notes for WeScheme users You can use WeScheme if you cannot install DrRacket. For example, if you have a Chromebook for your home computer. …"
 },
 {
-        "uri": "https://wy-cs.site/_header/",
-        "title": "",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/_header/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": "WY Computer Science\n"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/",
-        "title": "",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " 2018-09-21-Ch2-Ex8-Demo  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/isl-resources/boston-starter/",
-        "title": "",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/isl-resources/boston-starter/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " 2018-09-29-Boston-Dataset-Starter-Code  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/isl-resources/isl2labquestions/",
-        "title": "",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/isl-resources/isl2labquestions/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " ISL Lab 2.3 Intro to SciPy  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * …"
 },
 {
-        "uri": "https://wy-cs.site/machine-learning/isl-resources/isl2labsolutions/",
-        "title": "",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/machine-learning/isl-resources/isl2labsolutions/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " ISL Lab 2.3 Intro to SciPy  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * …"
 },
 {
-        "uri": "https://wy-cs.site/tags/ap-cs/",
-        "title": "Ap Cs",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "title": "Ap Cs",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/categories/ap-cs/",
-        "title": "Ap Cs",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "title": "Ap Cs",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/calendar/",
-        "title": "Calendar",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/calendar/",
+    "title": "Calendar",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/categories/",
-        "title": "Categories",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/categories/",
+    "title": "Categories",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/daily-notes/",
-        "title": "Daily Notes",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/daily-notes/",
+    "title": "Daily Notes",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/design-process/",
-        "title": "Design Process",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/design-process/",
+    "title": "Design Process",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/git/",
-        "title": "Git",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/git/",
+    "title": "Git",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/haskell/",
-        "title": "Haskell",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/haskell/",
+    "title": "Haskell",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/homework/",
-        "title": "Homework",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/homework/",
+    "title": "Homework",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/hw/",
-        "title": "Hw",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/hw/",
+    "title": "Hw",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/categories/intermediate-cs/",
-        "title": "Intermediate Cs",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/categories/intermediate-cs/",
+    "title": "Intermediate Cs",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/opener/",
-        "title": "Opener",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/opener/",
+    "title": "Opener",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/project/",
-        "title": "Project",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/project/",
+    "title": "Project",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/reading-guide/",
-        "title": "Reading Guide",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/reading-guide/",
+    "title": "Reading Guide",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
-        "uri": "https://wy-cs.site/tags/",
-        "title": "Tags",
-        "tags": [],
-        "description": ""
+    "uri": "https://wy-cs.site/tags/",
+    "title": "Tags",
+    "tags": [],
+    "description": "",
+    "content": ""
 }]

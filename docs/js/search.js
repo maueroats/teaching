@@ -27,6 +27,9 @@ function initLunr() {
             lunrIndex.field("description", {
                 boost: 5
             });
+            lunrIndex.field("content", {
+                boost: 1
+            });
 
             // Feed lunr with each file and let lunr actually index them
             pagesIndex.forEach(function(page) {
