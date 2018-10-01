@@ -88,7 +88,7 @@
     "title": "ML Daily",
     "tags": [],
     "description": "Lecture notes and supplemental material.",
-    "content": "Lecture notes will be posted here.\n    2018.09.05   2018.09.07   2018.09.09   2018.09.11   2018.09.17-21 ISL Chapter 2 Plan   2018.09.21 Ch2 Ex8 …"
+    "content": "Lecture notes will be posted here.\n       2018.09.05   2018.09.07   2018.09.09   2018.09.11   2018.09.17-21 ISL Chapter 2 Plan   2018.09.21 Ch2 Ex8 …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/contracts/contract-intro/",
@@ -525,6 +525,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-01/",
+    "title": "2018.10.01 Quiz on Chapter 2",
+    "tags": [],
+    "description": "",
+    "content": "See the Alcohol Analysis Quiz.\n"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-check-expect/",
     "title": "Check Expects in Haskell",
     "tags": [],
@@ -740,6 +747,13 @@
     "tags": [],
     "description": "",
     "content": " 2018-09-21-Ch2-Ex8-Demo  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-01/alcohol-analysis-quiz/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " 2018-09-28-Alcohol-Analysis-Quiz  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/isl-resources/boston-starter/",

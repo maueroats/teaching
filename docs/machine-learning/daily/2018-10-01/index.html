@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Match :: WY Computer Science</title>
+<title>2018.10.01 Quiz on Chapter 2 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/pro/match/">
+  <body data-url="/machine-learning/daily/2018-10-01/">
     
       
 
@@ -441,11 +441,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -571,11 +570,10 @@
           </a>
         </div>
     </li>
-    <li data-nav-id="/intermediate-cs/pro/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/pro/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/pro/">Pro Features</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/pro/">Pro Features</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item">
@@ -592,7 +590,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/pro/match/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/pro/match/" class="dd-item">
         <div>
           <a href="/intermediate-cs/pro/match/">
             Match
@@ -617,16 +615,18 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/machine-learning/" class="dd-item haschildren
+    <li data-nav-id="/machine-learning/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/machine-learning/">Machine Learning</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/machine-learning/">Machine Learning</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/machine-learning/daily/" class="dd-item haschildren
+    <li data-nav-id="/machine-learning/daily/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/machine-learning/daily/">ML Daily</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/machine-learning/daily/">ML Daily</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/machine-learning/daily/2018-09-05/" class="dd-item">
@@ -678,7 +678,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/machine-learning/daily/2018-10-01/" class="dd-item">
+      <li data-nav-id="/machine-learning/daily/2018-10-01/" class="dd-item active">
         <div>
           <a href="/machine-learning/daily/2018-10-01/">
             2018.10.01 Quiz on Chapter 2
@@ -894,7 +894,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/pro/'>Pro Features</a> > Match
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > <a href='/machine-learning/daily/'>ML Daily</a> > 2018.10.01 Quiz on Chapter 2
 
  
 
@@ -909,21 +909,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#matching">Matching</a>
-<ul>
-<li><a href="#problem">Problem</a></li>
-<li><a href="#example-solution-cond">Example Solution: Cond</a></li>
-<li><a href="#example-solution-match">Example Solution: Match</a></li>
-</ul></li>
-<li><a href="#ignoring-parts-of-a-model">Ignoring parts of a model</a></li>
-<li><a href="#list-processing-with-matching">List processing with matching</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -933,7 +919,7 @@
 
 <div id="body-inner">
   
-    <h1>Match</h1>
+    <h1>2018.10.01 Quiz on Chapter 2</h1>
   
 
 
@@ -941,57 +927,8 @@
     
     
     
-    
+    <p>See the <a href="/machine-learning/daily/2018-10-01/alcohol-analysis-quiz/">Alcohol Analysis Quiz</a>.</p>
 
-<p>Pattern matching lets you take apart structures into their component
-variables in a simple way.</p>
-
-<p>You can use <code>(require racket/match)</code> to activate <a href="https://docs.racket-lang.org/guide/match.html?q=pattern%20match">pattern matching</a>.</p>
-
-<h2 id="matching">Matching</h2>
-
-<p>The <code>match</code> function is like <code>cond</code> except it checks to see if a value
-matches a certain &ldquo;literal&rdquo; pattern or question. It can create
-variables to use immediately instead of requiring a helper function.</p>
-
-<h3 id="problem">Problem</h3>
-
-<p>Write a function that takes in a number or a posn and returns the
-distance to the correct origin (either 0 or (0,0)) depending on which
-type it gets.</p>
-
-<h3 id="example-solution-cond">Example Solution: Cond</h3>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (cond-to-zero w)
-  (cond [(posn? w)    (sqrt (+ (sqr (posn-x w))
-                               (sqr (posn-y w))))]
-        [(number? w)  (abs w)]))</pre></div>
-<h3 id="example-solution-match">Example Solution: Match</h3>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (match-to-zero w)
-  (match n
-    [(posn x y)  (sqrt (+ (sqr x)
-                          (sqr y)))]
-    [number?     (abs w)]))</pre></div>
-<h2 id="ignoring-parts-of-a-model">Ignoring parts of a model</h2>
-
-<p>You can use the underscore <code>_</code> to match places that you want to
-ignore. This example shows how to pull out two scores from a model and
-use them to find the total number of points in the game.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define-struct game (p1pos p1score p2pos p2score))
-(define (total-score model)
-  (match model
-    [(game _ s1 _ s2)
-     (+ s1 s2)]</pre></div>
-<h2 id="list-processing-with-matching">List processing with matching</h2>
-
-<p>Suppose you want to add all of the numbers in a list. You can use the
-<code>'()</code> pattern to match the empty list. The pattern <code>(list a more ...)</code>
-makes <code>a</code> match the first of the list and <code>more</code> match the rest of the list.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (add-all data)
-    (match data
-      [&#39;()
-       0]
-      [(list a more ...)
-       (+ a (add-add more))]))</pre></div>
 
     
     
@@ -1002,8 +939,8 @@ makes <code>a</code> match the first of the list and <code>more</code> match the
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/pro/build-image/" title="Build Image"> <i class="fa fa-chevron-left"></i><label>Build Image</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/e-courses/" title="Online Help" style="margin-right: 0px;"><label>Online Help</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/machine-learning/daily/2018-09-14/" title="Jupyter Notebook Setup"> <i class="fa fa-chevron-left"></i><label>Jupyter Notebook Setup</label></a>
+    <a class="nav nav-next" href="/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
