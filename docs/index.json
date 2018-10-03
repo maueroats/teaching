@@ -88,7 +88,7 @@
     "title": "ML Daily",
     "tags": [],
     "description": "Lecture notes and supplemental material.",
-    "content": "Lecture notes will be posted here.\n       2018.09.05   2018.09.07   2018.09.09   2018.09.11   2018.09.17-21 ISL Chapter 2 Plan   2018.09.21 Ch2 Ex8 …"
+    "content": "The Jupyter notebook setup instructions should help you get started. Consult them if you have problems with Seaborn or missing packages.\n Lecture …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/contracts/contract-intro/",
@@ -413,6 +413,20 @@
     "content": " Unless you are completely confident of your signature-writing skills, please use \u0026amp;ldquo;concrete\u0026amp;rdquo; type classes like Double or Integer instead …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-01/",
+    "title": "2018.10.01 Quiz on Chapter 2",
+    "tags": [],
+    "description": "",
+    "content": "See the Alcohol Analysis Quiz.\n"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-03/",
+    "title": "2018.10.03 Religion Survey Analysis",
+    "tags": [],
+    "description": "",
+    "content": "Mini-project: Religion Survey Analysis\nMake sure you learn how to avoid writing for loops. Example: sum( df[\u0026#39;christian\u0026#39;] ) counts the number of True …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch06/",
     "title": "6. Higher Order Functions",
     "tags": [],
@@ -525,25 +539,11 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
-    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-03/",
-    "title": "2018.10.03 Religion Survey Analysis",
-    "tags": [],
-    "description": "",
-    "content": "Mini-project: Religion Survey Analysis\nMake sure you learn how to avoid writing for loops. Example: sum( df[\u0026#39;christian\u0026#39;] ) counts the number of True …"
-},
-{
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-03/",
     "title": "2018.10.03 Cow Signal",
     "tags": [],
     "description": "",
     "content": "We worked on the Cow Signal problem.\nTo make your writing simpler, you should use the signature below. The very last step of printing out everything …"
-},
-{
-    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-01/",
-    "title": "2018.10.01 Quiz on Chapter 2",
-    "tags": [],
-    "description": "",
-    "content": "See the Alcohol Analysis Quiz.\n"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-check-expect/",
