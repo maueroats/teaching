@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Chapter 5 Reading Guide :: WY Computer Science</title>
+<title>2018.10.03 Cow Signal :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/ch05/ch05-reading-guide/">
+  <body data-url="/ap-cs/haskell/daily/2018-10-03/">
     
       
 
@@ -245,14 +245,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch05/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/ch05/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch05/">5. Recursion</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch05/">5. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/haskell/ch05/ch05-reading-guide/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/ch05/ch05-reading-guide/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/ch05/ch05-reading-guide/">
             Chapter 5 Reading Guide
@@ -291,13 +290,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/daily/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/haskell/daily/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/daily/">Haskell Daily Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/daily/">Haskell Daily Notes</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/haskell/daily/2018-10-03/" class="dd-item">
+      <li data-nav-id="/ap-cs/haskell/daily/2018-10-03/" class="dd-item active">
         <div>
           <a href="/ap-cs/haskell/daily/2018-10-03/">
             2018.10.03 Cow Signal
@@ -905,7 +905,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch05/'>5. Recursion</a> > Chapter 5 Reading Guide
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/daily/'>Haskell Daily Notes</a> > 2018.10.03 Cow Signal
 
  
 
@@ -930,15 +930,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="https://wy-cs.sitetags/reading-guide">reading-guide</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>Chapter 5 Reading Guide</h1>
+    <h1>2018.10.03 Cow Signal</h1>
   
 
 
@@ -946,53 +940,19 @@
     
     
     
-    <p>The purpose of reading this section is to see how an experienced
-author writes functions that work on lists.
-</p>
+    <p>We worked on the <a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=665">Cow
+Signal</a>
+problem.</p>
 
-<p>Functions:</p>
+<p>To make your writing simpler, you should use the signature below. The
+very last step of printing out everything on its own line is not an
+important part of the problem.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">cowSignal</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#00a8c8">String</span><span style="color:#111">]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#00a8c8">String</span><span style="color:#111">]</span></code></pre></div>
+<p>Printing on multiple lines: use <code>\n</code> like this:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">x</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;This</span><span style="color:#8045ff">\n</span><span style="color:#d88200">string</span><span style="color:#8045ff">\n</span><span style="color:#d88200">prints</span><span style="color:#8045ff">\n</span><span style="color:#d88200">on</span><span style="color:#8045ff">\n</span><span style="color:#d88200">many</span><span style="color:#8045ff">\n</span><span style="color:#d88200">lines&#34;</span>
+<span style="color:#75af00">main</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">do</span> <span style="color:#75af00">putStrLn</span> <span style="color:#75af00">x</span></code></pre></div>
+<p><a href="https://repl.it/@maueroats/FreeViolentLanserver">Solution discussed period 2.</a></p>
 
-<ul>
-<li><code>maximum</code>: Two different versions.</li>
-<li><code>replicate</code></li>
-<li><code>take</code></li>
-<li><code>reverse</code></li>
-<li><code>repeat</code></li>
-<li><code>zip</code></li>
-<li><code>elem</code></li>
-<li><code>quicksort</code>: This one takes some thinking to understand.</li>
-</ul>
-
-<p>After you have read the chapter, write answers to these questions:</p>
-
-<ol>
-<li><p>What is the main idea behind the <code>quicksort</code> function?</p></li>
-
-<li><p>Write the <code>insertBefore</code> function that places an element before the current item with the given index in a list. Use as few built-in functions as you can. This is a thinking exercise not a practical exercise &ndash; figure out how to do it without <code>take</code>, <code>drop</code> or <code>splitAt</code>.
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">    <span style="color:#75af00">insertBefore</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#75af00">a</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#75af00">a</span><span style="color:#111">]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#75af00">a</span><span style="color:#111">]</span>
-    <span style="color:#75af00">insertBefore</span> <span style="color:#75af00">n</span> <span style="color:#75af00">item</span> <span style="color:#75af00">xs</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span>
-    <span style="color:#75715e">-- Examples:</span>
-    <span style="color:#75af00">insertBefore</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">3</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span>
-    <span style="color:#75af00">insertBefore</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">6</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span>
-    <span style="color:#75af00">insertBefore</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">9</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span><span style="color:#ae81ff">9</span><span style="color:#111">]</span></code></pre></div></p></li>
-
-<li><p>The <code>allPermutations</code> function takes in a list and returns a list
-of lists. The output contains every permutation of the input list
-exactly once. (Treat all of the input list elements as
-distinguishable; see last test case.) The permutations do not have
-to appear in the order given below.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">allPermutations</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]]</span>
-<span style="color:#75af00">allPermutations</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">],[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]]</span>
-<span style="color:#75af00">allPermutations</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]]</span> <span style="color:#75715e">-- do not try to see the items are the same</span></code></pre></div></li>
-
-<li><p>Write the <code>combinations</code> function that takes in a number k and a list, and returns a list of lists. The output contains every distinct k item subset of the list (keep the items in the order they appear in the original list).</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">combinations</span> <span style="color:#ae81ff">2</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">]]</span>
-<span style="color:#75af00">combinations</span> <span style="color:#ae81ff">3</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">5</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],</span>
-                          <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">],[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">]]</span></code></pre></div></li>
-
-<li><p>Write the <code>grouper</code> function that takes in a list and produces a list of lists. Each sublist should have all of the elements in order.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">grouper</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">],[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">],[</span><span style="color:#ae81ff">2</span><span style="color:#111">]]</span></code></pre></div></li>
-</ol>
 
     
     
@@ -1003,8 +963,8 @@ to appear in the order given below.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/ch05/" title="5. Recursion"> <i class="fa fa-chevron-left"></i><label>5. Recursion</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/ch06/" title="6. Higher Order Functions" style="margin-right: 0px;"><label>6. Higher Order Functions</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/haskell/daily/" title="Haskell Daily Notes"> <i class="fa fa-chevron-left"></i><label>Haskell Daily Notes</label></a>
+    <a class="nav nav-next" href="/ap-cs/haskell/daily/2017-10-04/" title="2017-10-04" style="margin-right: 0px;"><label>2017-10-04</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

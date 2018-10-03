@@ -508,7 +508,7 @@
     "title": "Haskell Daily Notes",
     "tags": ["haskell", "daily-notes"],
     "description": "Notes for each day.",
-    "content": "  2017-10-04 More CodingBat problems.\n  2017-10-03 CodingBat problems to improve your problem-solving skills.\n  2017-09-18 Battleship and homework …"
+    "content": "  2018.10.03 Cow Signal We worked on the Cow Signal problem. To make your writing simpler, you should use the signature below. The very last step of …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/calendar/",
@@ -523,6 +523,13 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-03/",
+    "title": "2018.10.03 Cow Signal",
+    "tags": [],
+    "description": "",
+    "content": "We worked on the Cow Signal problem.\nTo make your writing simpler, you should use the signature below. The very last step of printing out everything …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-10-01/",
@@ -718,7 +725,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Chapter 4 Discussion IV modified Fri 09-28 …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   2018.10.03 Cow Signal modified Wed 10-03 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
