@@ -525,6 +525,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-03/",
+    "title": "2018.10.03 Religion Survey Analysis",
+    "tags": [],
+    "description": "",
+    "content": "Mini-project: Religion Survey Analysis\nMake sure you learn how to avoid writing for loops. Example: sum( df[\u0026#39;christian\u0026#39;] ) counts the number of True …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-03/",
     "title": "2018.10.03 Cow Signal",
     "tags": [],
