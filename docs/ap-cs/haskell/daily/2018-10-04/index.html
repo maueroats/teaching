@@ -938,7 +938,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#additional-exercise">Additional Exercise</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -956,7 +963,9 @@
     
     
     
-    <p><a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=663">Square
+    
+
+<p><a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=663">Square
 Pasture</a>. There
 are two rectangular pastures, each given by the coordinates of their
 upper left and lower right points. The two pastures do not
@@ -964,6 +973,13 @@ overlap. Find the minimum area required for a single square pasture to
 enclose the two rectangle pastures.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">sqPasture</span> <span style="color:#f92672">::</span> <span style="color:#111">((</span><span style="color:#00a8c8">Int</span><span style="color:#111">,</span><span style="color:#00a8c8">Int</span><span style="color:#111">),(</span><span style="color:#00a8c8">Int</span><span style="color:#111">,</span><span style="color:#00a8c8">Int</span><span style="color:#111">))</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">((</span><span style="color:#00a8c8">Int</span><span style="color:#111">,</span><span style="color:#00a8c8">Int</span><span style="color:#111">),(</span><span style="color:#00a8c8">Int</span><span style="color:#111">,</span><span style="color:#00a8c8">Int</span><span style="color:#111">))</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Int</span>
 <span style="color:#75af00">sqPasture</span> <span style="color:#111">((</span><span style="color:#75af00">x1</span><span style="color:#111">,</span><span style="color:#75af00">y1</span><span style="color:#111">),(</span><span style="color:#75af00">x2</span><span style="color:#111">,</span><span style="color:#75af00">y2</span><span style="color:#111">))</span> <span style="color:#111">((</span><span style="color:#75af00">x3</span><span style="color:#111">,</span><span style="color:#75af00">y3</span><span style="color:#111">),(</span><span style="color:#75af00">x4</span><span style="color:#111">,</span><span style="color:#75af00">y4</span><span style="color:#111">))</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div>
+<h2 id="additional-exercise">Additional Exercise</h2>
+
+<p><a href="https://codingbat.com/prob/p159979">List run of 3</a>. Given a list of
+<code>Int</code>, return true if the array contains either three even or three
+odd values all next to each other. Lists of length less than 3 are
+definitely false because they don&rsquo;t even have three values.</p>
+
 
     
     
