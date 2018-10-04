@@ -522,7 +522,7 @@
     "title": "Haskell Daily Notes",
     "tags": ["haskell", "daily-notes"],
     "description": "Notes for each day.",
-    "content": "  2018.10.03 Cow Signal We worked on the Cow Signal problem. To make your writing simpler, you should use the signature below. The very last step of …"
+    "content": "  2018.10.04 Square Pasture USACO Bronze December 2016, Question 1.\n  2018.10.03 Cow Signal USACO Bronze December 2016, Question 2.\n  2017-10-04 More …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/calendar/",
@@ -539,11 +539,18 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-04/",
+    "title": "2018.10.04 Square Pasture",
+    "tags": [],
+    "description": "USACO Bronze December 2016, Question 1.",
+    "content": "Square Pasture. There are two rectangular pastures, each given by the coordinates of their upper left and lower right points. The two pastures do not …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-03/",
     "title": "2018.10.03 Cow Signal",
     "tags": [],
-    "description": "",
-    "content": " We worked on the Cow Signal problem.\nTo make your writing simpler, you should use the signature below. The very last step of printing out everything …"
+    "description": "USACO Bronze December 2016, Question 2.",
+    "content": "We worked on the Cow Signal problem.\nTo make your writing simpler, you should use the signature below. The very last step of printing out everything …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-check-expect/",
@@ -732,7 +739,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   2018.10.03 Cow Signal modified Wed 10-03 …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   2018.10.04 Square Pasture modified Thu …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
