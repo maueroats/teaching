@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Categories :: WY Computer Science</title>
+<title>Chapter 4 Quiz B :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -24,13 +24,10 @@
   }
 </style>
 
-<link href="https://wy-cs.site/categories/index.xml" rel="alternate" type="application/rss+xml" title="WY Computer Science" />
-<link href="https://wy-cs.site/categories/index.xml" rel="feed" type="application/rss+xml" title="WY Computer Science" />
-
 
     
   </head>
-  <body data-url="/categories/">
+  <body data-url="/ap-cs/haskell/ch04/ch04-quiz-b/">
     
       
 
@@ -69,16 +66,18 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
@@ -175,10 +174,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch04/">4. Syntax in Functions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch04/">4. Syntax in Functions</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/haskell/ch04/ch04-reading-guide/" class="dd-item">
@@ -230,7 +230,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/haskell/ch04/ch04-quiz-b/" class="dd-item">
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-quiz-b/" class="dd-item active">
         <div>
           <a href="/ap-cs/haskell/ch04/ch04-quiz-b/">
             Chapter 4 Quiz B
@@ -879,7 +879,27 @@
         <span class="links">
         
 
- Categories
+
+
+
+
+
+
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch04/'>4. Syntax in Functions</a> > Chapter 4 Quiz B
+
+ 
+
+ 
+
+ 
+
+ 
 
    
         </span>
@@ -888,7 +908,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#alternative">Alternative</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -898,7 +925,7 @@
 
 <div id="body-inner">
   
-    <h1>Categories</h1>
+    <h1>Chapter 4 Quiz B</h1>
   
 
 
@@ -906,64 +933,45 @@
     
     
     
+    
 
+<p>You may look up Haskell commands online.
+No notes allowed.
+No help from anyone except the teacher.
+Paper-only solutions are OK.</p>
 
+<ol>
+<li><p><code>zeroFront :: [Int] -&gt; [Int]</code>. Return the same list you get, except
+rearranged so that all of the zeros are in the front. Example:
+[1,0,0,1] becomes [0,0,1,1].</p></li>
 
-<div class="extra-pagination inner">
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
+<li><p><code>has77:: [Int] -&gt; Bool</code>. Given a list of Int, give True if the array
+contains two 7&rsquo;s next to each other, or there are two 7&rsquo;s separated
+by one element, such as with <code>[7, 1, 7]</code>.</p></li>
 
-</div>
+<li><p>(<strong>Signatures and tests required</strong>.) <code>tripleUp:: [Int] -&gt; Bool</code>. True if there are three increasing
+adjacent numbers. Examples of true: <code>[1,2,6,7,8,10]</code>,
+<code>[11,12,13,20]</code>, and <code>[3,6,99,100,101]</code>. The three increasing
+numbers must be adjacent integers on the number line.</p></li>
+</ol>
 
+<h2 id="alternative">Alternative</h2>
 
-   <article class="post categories">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/categories/ap-cs/">Ap Cs</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/categories/ap-cs/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+<p>Instead of the three questions above, you may do the <a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=687">Don&rsquo;t be
+last</a>
+problem. You will need to read the problem description.</p>
 
-        
-        
+<p>The input for <code>dontBeLast</code> is an integer (the number of cows),
+followed by a  list of pairs: name of cow, amount of milk produced in
+a single milking session.</p>
 
-    </footer>
-</article>
+<p>The output is the name of the cow with the second-least milk produced,
+total over all sessions. If more than one cow fit this description,
+output &ldquo;Tie&rdquo;.</p>
 
-   <article class="post categories">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/categories/intermediate-cs/">Intermediate Cs</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/categories/intermediate-cs/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-        
-
-    </footer>
-</article>
-
-
-<div style="margin-bottom:2rem"></div>
-
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
-
-
+<p>Here is a signature to get you started:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">dontBeLast</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[(</span><span style="color:#00a8c8">String</span><span style="color:#111">,</span><span style="color:#00a8c8">Int</span><span style="color:#111">)]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">String</span>
+<span style="color:#75af00">dontBeLast</span> <span style="color:#75af00">nCows</span> <span style="color:#75af00">cowMilkList</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;Tie&#34;</span></code></pre></div>
 
     
     
@@ -974,7 +982,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-next" href="/ap-cs/" title="AP CS" style="margin-right: 0px;"><label>AP CS</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/haskell/ch04/ch04-quiz-a/" title="Chapter 4 Quiz A"> <i class="fa fa-chevron-left"></i><label>Chapter 4 Quiz A</label></a>
+    <a class="nav nav-next" href="/ap-cs/haskell/ch04/ch04-summary/" title="Chapter 4 Summary" style="margin-right: 0px;"><label>Chapter 4 Summary</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

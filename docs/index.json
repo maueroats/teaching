@@ -406,6 +406,13 @@
     "content": " You may ask for help with \u0026amp;ldquo;red error messages\u0026amp;rdquo;. No internet sources. No help from other students. No notes.  Write three tests, a …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz-b/",
+    "title": "Chapter 4 Quiz B",
+    "tags": [],
+    "description": "Another quiz on Haskell and problem-solving.",
+    "content": " You may look up Haskell commands online. No notes allowed. No help from anyone except the teacher. Paper-only solutions are OK.\n zeroFront :: [Int] …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch03/ch03-test/",
     "title": "Chapter 3 Haskell Test",
     "tags": [],
@@ -711,7 +718,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Chapter 4 Discussion IV modified Fri 09-28 …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Chapter 4 Quiz B modified Thu 10-04 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
