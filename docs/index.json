@@ -88,7 +88,7 @@
     "title": "ML Daily",
     "tags": [],
     "description": "Lecture notes and supplemental material.",
-    "content": "Lecture notes will be posted here.\n    2018.09.05   2018.09.07   2018.09.09   2018.09.11   2018.09.17-21 ISL Chapter 2 Plan   2018.09.21 Ch2 Ex8 …"
+    "content": "The Jupyter notebook setup instructions should help you get started. Consult them if you have problems with Seaborn or missing packages.\n Lecture …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/contracts/contract-intro/",
@@ -420,6 +420,20 @@
     "content": " Unless you are completely confident of your signature-writing skills, please use \u0026amp;ldquo;concrete\u0026amp;rdquo; type classes like Double or Integer instead …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-01/",
+    "title": "2018.10.01 Quiz on Chapter 2",
+    "tags": [],
+    "description": "",
+    "content": "See the Alcohol Analysis Quiz.\n"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-03/",
+    "title": "2018.10.03 Religion Survey Analysis",
+    "tags": [],
+    "description": "",
+    "content": "Mini-project: Religion Survey Analysis\nMake sure you learn how to avoid writing for loops. Example: sum( df[\u0026#39;christian\u0026#39;] ) counts the number of True …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch06/",
     "title": "6. Higher Order Functions",
     "tags": [],
@@ -515,7 +529,7 @@
     "title": "Haskell Daily Notes",
     "tags": ["haskell", "daily-notes"],
     "description": "Notes for each day.",
-    "content": "  2017-10-04 More CodingBat problems.\n  2017-10-03 CodingBat problems to improve your problem-solving skills.\n  2017-09-18 Battleship and homework …"
+    "content": "  2018.10.04 Square Pasture USACO Bronze December 2016, Question 1.\n  2018.10.03 Cow Signal USACO Bronze December 2016, Question 2.\n  2017-10-04 More …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/calendar/",
@@ -530,6 +544,20 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-04/",
+    "title": "2018.10.04 Square Pasture",
+    "tags": [],
+    "description": "USACO Bronze December 2016, Question 1.",
+    "content": " Square Pasture. There are two rectangular pastures, each given by the coordinates of their upper left and lower right points. The two pastures do not …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-03/",
+    "title": "2018.10.03 Cow Signal",
+    "tags": [],
+    "description": "USACO Bronze December 2016, Question 2.",
+    "content": "We worked on the Cow Signal problem.\nTo make your writing simpler, you should use the signature below. The very last step of printing out everything …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-check-expect/",
@@ -747,6 +775,13 @@
     "tags": [],
     "description": "",
     "content": " 2018-09-21-Ch2-Ex8-Demo  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-01/alcohol-analysis-quiz/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " 2018-09-28-Alcohol-Analysis-Quiz  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/isl-resources/boston-starter/",
