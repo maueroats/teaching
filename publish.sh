@@ -7,6 +7,8 @@ echo "should delete data?"
 echo "yes..."
 rm -rf docs
 hugo
+echo "Monitor size of index.json"
+ls -l docs/index.json
 git add -A
 git commit -a -m "wy-cs site update $(date +'%Y-%m-%d %H:%M')"
 git push -u origin master

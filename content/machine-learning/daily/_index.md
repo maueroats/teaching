@@ -7,6 +7,13 @@ draft: false
 #theme: white
 description: "Lecture notes and supplemental material."
 ---
+
+{{% notice note %}}
+The [Jupyter notebook setup instructions]({{% relref "2018-09-14" %}})
+should help you get started. Consult them if you have problems with
+Seaborn or missing packages.
+{{% /notice %}}
+
 Lecture notes will be posted here.
 
 {{% children sort="Name" %}}
