@@ -1,11 +1,11 @@
 ---
-title: "ISL Resources: Chapter 2"
+title: "ISL Chapter 2"
 date: 2018-09-29T09:08:21-05:00
 weight: 91
 draft: false
 #type: slide
 #theme: white
-description: "Labs and homework for ISL translated to Python."
+description: "Basic working with data frames. Selection and counting without loops. Graphs, especially scatterplot and bar graph."
 ---
 
 Required work for Chapter 2:
@@ -63,7 +63,6 @@ by tabs instead of spaces.
 ## Links for Lab 2.3a
 
 * HTML [Lab 2.3]({{% relref "ISL2LabQuestions.html" %}}) (recommended)
-* Jupyter version of [Lab 02.03 raw notebook](https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/lab-02-03.ipynb)
 * [Lab 2.3 Solutions]({{% relref
   "ISL2LabSolutions.html" %}}) should not be needed - typing helps you remember.
 {{% /alert %}}

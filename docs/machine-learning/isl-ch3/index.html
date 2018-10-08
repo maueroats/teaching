@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>ISL Resources: Chapter 2 :: WY Computer Science</title>
+<title>ISL Chapter 3: Linear Regression :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/machine-learning/isl-resources/">
+  <body data-url="/machine-learning/isl-ch3/">
     
       
 
@@ -736,30 +736,66 @@
       <a href="/machine-learning/outline/">Course Outline</a>
       </div>
     </li>
-    <li data-nav-id="/machine-learning/isl-resources/" class="dd-item parent active haschildren
+    <li data-nav-id="/machine-learning/isl-ch2/" class="dd-item haschildren
         ">
       <div>
-      <a href="/machine-learning/isl-resources/">ISL Resources: Chapter 2</a>
+      <a href="/machine-learning/isl-ch2/">ISL Chapter 2</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/machine-learning/isl-ch2/boston-starter/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch2/boston-starter/">
+            
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch2/isl2labquestions/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch2/isl2labquestions/">
+            
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch2/isl2labsolutions/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch2/isl2labsolutions/">
+            
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/machine-learning/isl-ch3/" class="dd-item parent active haschildren
+        ">
+      <div>
+      <a href="/machine-learning/isl-ch3/">ISL Chapter 3: Linear Regression</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/machine-learning/isl-resources/boston-starter/" class="dd-item">
+      <li data-nav-id="/machine-learning/isl-ch3/chapter3-section1/" class="dd-item">
         <div>
-          <a href="/machine-learning/isl-resources/boston-starter/">
+          <a href="/machine-learning/isl-ch3/chapter3-section1/">
             
           </a>
         </div>
     </li>
-      <li data-nav-id="/machine-learning/isl-resources/isl2labquestions/" class="dd-item">
+      <li data-nav-id="/machine-learning/isl-ch3/chapter3-section2-multipleregression/" class="dd-item">
         <div>
-          <a href="/machine-learning/isl-resources/isl2labquestions/">
+          <a href="/machine-learning/isl-ch3/chapter3-section2-multipleregression/">
             
           </a>
         </div>
     </li>
-      <li data-nav-id="/machine-learning/isl-resources/isl2labsolutions/" class="dd-item">
+      <li data-nav-id="/machine-learning/isl-ch3/chapter3-section6-linear-regression-lab/" class="dd-item">
         <div>
-          <a href="/machine-learning/isl-resources/isl2labsolutions/">
+          <a href="/machine-learning/isl-ch3/chapter3-section6-linear-regression-lab/">
+            
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch3/using-plot_lm_summary/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch3/using-plot_lm_summary/">
             
           </a>
         </div>
@@ -816,10 +852,10 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/resources/why-racket/" class="dd-item">
+      <li data-nav-id="/resources/letters-of-recommendation/" class="dd-item">
         <div>
-          <a href="/resources/why-racket/">
-            Why Racket?
+          <a href="/resources/letters-of-recommendation/">
+            Letters of Recommendation
           </a>
         </div>
     </li>
@@ -828,6 +864,13 @@
       <div>
       <a href="/resources/events/">CS Events</a>
       </div>
+    </li>
+      <li data-nav-id="/resources/why-racket/" class="dd-item">
+        <div>
+          <a href="/resources/why-racket/">
+            Why Racket?
+          </a>
+        </div>
     </li>
       <li data-nav-id="/resources/ics-wescheme-note/" class="dd-item">
         <div>
@@ -921,7 +964,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > ISL Resources: Chapter 2
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > ISL Chapter 3: Linear Regression
 
  
 
@@ -938,11 +981,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#getting-the-data">Getting the data</a></li>
-<li><a href="#directly-downloadable-content">Directly Downloadable Content</a>
-<ul>
-<li><a href="#changelog">Changelog</a></li>
-</ul></li>
+<li><a href="#graphical-summary-of-linear-model">Graphical Summary of Linear Model</a></li>
+<li><a href="#downloadable-content">Downloadable Content</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -955,7 +995,7 @@
 
 <div id="body-inner">
   
-    <h1>ISL Resources: Chapter 2</h1>
+    <h1>ISL Chapter 3: Linear Regression</h1>
   
 
 
@@ -966,126 +1006,30 @@
 
 
 
-<p>Required work for Chapter 2:</p>
-
 <ul>
-<li>Conceptual questions 1,2,3,5,6,7</li>
-<li>Practical exercises: 9, 10.</li>
-<li>Question 10: don&rsquo;t get stuck in part c - all of the other parts
-are more accessible.</li>
+<li><a href="/machine-learning/isl-ch3/chapter3-section1/">Chapter 3 Section 1</a></li>
+<li><a href="/machine-learning/isl-ch3/chapter3-section2-multipleregression/">Chapter 3 Section 2</a></li>
+<li><a href="/machine-learning/isl-ch3/chapter3-section6-linear-regression-lab/">Chapter 3 Section 6</a></li>
 </ul>
 
-<p>Common confusions:</p>
+<h2 id="graphical-summary-of-linear-model">Graphical Summary of Linear Model</h2>
 
-<ul>
-<li>Question 10: <a href="/machine-learning/isl-resources/boston-starter/">how do I get the data?</a></li>
+<p>Download the <code>linearmodelplot.py</code> file from the attachments at the
+bottom of the page.</p>
 
-<li><p>Question 10 refers to &ldquo;suburbs&rdquo; of Boston, but it is not clear that
-the data points refer to suburbs. Redefine &ldquo;suburb&rdquo; to be &ldquo;data
-point&rdquo;. Answer questions such as &ldquo;which suburb&rdquo; by &ldquo;row 50 in the
-dataset&rdquo;, or like this:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">boston.iloc[50,:]
-
-crim         0.08873
-zn          21.00000
-indus        5.64000
-chas         0.00000
-[...]</pre></div></li>
-</ul>
-
-<h2 id="getting-the-data">Getting the data</h2>
-
-<p>Most of the data is on the <a href="http://www-bcf.usc.edu/~gareth/ISL/data.html">ISL web
-site</a>. Here are direct
-links:</p>
-
-<ul>
-<li><a href="http://www-bcf.usc.edu/~gareth/ISL/Auto.csv">Auto.csv</a></li>
-<li><a href="http://www-bcf.usc.edu/~gareth/ISL/College.csv">College.csv</a></li>
-<li><a href="/machine-learning/isl-resources/boston-starter/">Boston data starter notebook</a>:
-a simple way to get the Boston data loaded and described.</li>
-</ul>
-
-<p>Example of how to load the data:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">df = pd.read_csv(&#39;http://www-bcf.usc.edu/~gareth/ISL/Auto.csv&#39;, 
-                 na_values = &#39;?&#39;, sep=&#34;,&#34;)</pre></div>
-<p>Common parameters:</p>
-
-<ul>
-<li><code>na_values</code> contains a string used to represent missing
-data. Only needed if data is not in a usual format (sorry, that&rsquo;s
-the Auto dataset).</li>
-<li><code>sep</code> could be <code>&quot;\t&quot;</code> if the columns are separated
-by tabs instead of spaces.</li>
-</ul>
-
-<div class="alert 
-alert-warning"
- 
-role="alert"><h2 id="links-for-lab-2-3a">Links for Lab 2.3a</h2>
-
-<ul>
-<li>HTML <a href="/machine-learning/isl-resources/isl2labquestions/">Lab 2.3</a> (recommended)</li>
-<li>Jupyter version of <a href="https://github.com/maueroats/teaching/blob/master/docs/machine-learning/isl-resources/_index.files/lab-02-03.ipynb">Lab 02.03 raw notebook</a></li>
-<li><a href="/machine-learning/isl-resources/isl2labsolutions/">Lab 2.3 Solutions</a> should not be needed - typing helps you remember.</li>
-</ul>
-</div>
-
-
-<h2 id="directly-downloadable-content">Directly Downloadable Content</h2>
-
-<p>These links do not go to GitHub display pages, they go straight to the
-raw source code. They are also automatically generated so they will
-always be up to date.</p>
+<p>Make sure you have the standard includes for Chapter 3. A quick
+starter code is below. See the <a href="/machine-learning/isl-ch3/using-plot_lm_summary/">full sample making a summary plot for
+a linear model</a> for a working notebook.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> <span style="color:#111">linearmodelplot</span> <span style="color:#f92672">import</span> <span style="color:#111">plot_lm_summary</span>
+<span style="color:#f92672">...</span>
+<span style="color:#111">fitted_lm</span> <span style="color:#f92672">=</span> <span style="color:#111">sm</span><span style="color:#f92672">.</span><span style="color:#111">ols</span><span style="color:#111">(</span><span style="color:#f92672">...</span><span style="color:#111">)</span><span style="color:#f92672">.</span><span style="color:#111">fit</span><span style="color:#111">()</span>
+<span style="color:#111">plot_lm_summary</span><span style="color:#111">(</span><span style="color:#111">fitted_lm</span><span style="color:#111">);</span></code></pre></div>
+<h2 id="downloadable-content">Downloadable Content</h2>
 
 <section class="attachments">
 	<label>
 		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-		Downloadable Jupyter Notebooks
-	</label>
-	
-		
-	
-	
-		
-		
-			
-		
-	
-		
-		
-			
-		
-	
-		
-		
-			
-		
-	
-		
-		
-			
-		
-	
-		
-		
-			
-				<li>
-<a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/lab-02-03.ipynb">lab-02-03.ipynb</a>
-					(14 kB)
-				</li>
-			
-		
-	
-</section>
-
-
-
-
-<section class="attachments">
-	<label>
-		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-		Datasets
+		Python Code
 	</label>
 	
 		
@@ -1095,44 +1039,11 @@ always be up to date.</p>
 		
 			
 				<li>
-<a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/Auto.data">Auto.data</a>
-					(20 kB)
+					<a href="https://wy-cs.site/machine-learning/isl-ch3/_index.files/linearmodelplot.py" >
+						linearmodelplot.py
+					</a>
+					(3 kB)
 				</li>
-			
-		
-	
-		
-		
-			
-				<li>
-<a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/Boston.data">Boston.data</a>
-					(36 kB)
-				</li>
-			
-		
-	
-		
-		
-			
-				<li>
-<a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/College.csv">College.csv</a>
-					(73 kB)
-				</li>
-			
-		
-	
-		
-		
-			
-				<li>
-<a href="https://raw.githubusercontent.com/maueroats/teaching/master/docs/machine-learning/isl-resources/_index.files/hitters.tsv">hitters.tsv</a>
-					(27 kB)
-				</li>
-			
-		
-	
-		
-		
 			
 		
 	
@@ -1140,11 +1051,6 @@ always be up to date.</p>
 
 
 
-
-<h3 id="changelog">Changelog</h3>
-
-<p>2018-09-19 Directly downloadable links fixed.
-2018-09-29 Cleanup with a focus on getting loaded and running.</p>
 
 
 
@@ -1157,8 +1063,8 @@ always be up to date.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/machine-learning/outline/" title="Course Outline"> <i class="fa fa-chevron-left"></i><label>Course Outline</label></a>
-    <a class="nav nav-next" href="/machine-learning/isl-resources/boston-starter/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/machine-learning/isl-ch2/isl2labsolutions/" title=""> <i class="fa fa-chevron-left"></i><label></label></a>
+    <a class="nav nav-next" href="/machine-learning/isl-ch3/chapter3-section1/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

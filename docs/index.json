@@ -490,11 +490,18 @@
     "content": " patterns  f [] = 0 f (x:xs) = x + f xs  guards  numword x | x \u0026amp;lt; 0 = \u0026amp;#34;Negative\u0026amp;#34; | x == 0 = \u0026amp;#34;Zero\u0026amp;#34; | otherwise = \u0026amp;#34;Positive\u0026amp;#34; …"
 },
 {
-    "uri": "https://wy-cs.site/machine-learning/isl-resources/",
-    "title": "ISL Resources: Chapter 2",
+    "uri": "https://wy-cs.site/machine-learning/isl-ch2/",
+    "title": "ISL Chapter 2",
     "tags": [],
-    "description": "Labs and homework for ISL translated to Python.",
+    "description": "Basic working with data frames. Selection and counting without loops. Graphs, especially scatterplot and bar graph.",
     "content": " Required work for Chapter 2:\n Conceptual questions 1,2,3,5,6,7 Practical exercises: 9, 10. Question 10: don\u0026amp;rsquo;t get stuck in part c - all of the …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/",
+    "title": "ISL Chapter 3: Linear Regression",
+    "tags": [],
+    "description": "Graphs of results. Quality of fit (statistical tests). When do you have enough variables included?",
+    "content": "  Chapter 3 Section 1 Chapter 3 Section 2 Chapter 3 Section 6  Graphical Summary of Linear Model Download the linearmodelplot.py file from the …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/ml-resources/",
@@ -502,6 +509,13 @@
     "tags": [],
     "description": "Resources for machine learning that we refer to in the class.",
     "content": " There is an incredible amount of information online. I will only refer to material that I have personally read or watched. See posts on Hacker News …"
+},
+{
+    "uri": "https://wy-cs.site/resources/letters-of-recommendation/",
+    "title": "Letters of Recommendation",
+    "tags": [],
+    "description": "Steps to getting your letter written.",
+    "content": " The most important contribution I can make to your application is concrete evidence of some of the claims you make about yourself. I can also address …"
 },
 {
     "uri": "https://wy-cs.site/ftc/learning/",
@@ -546,6 +560,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/resources/events/",
+    "title": "CS Events",
+    "tags": [],
+    "description": "",
+    "content": " Computing Olympiad\n Capture the Flag\n  "
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-04/",
     "title": "2018.10.04 Square Pasture",
     "tags": [],
@@ -586,13 +607,6 @@
     "tags": [],
     "description": "",
     "content": "  "
-},
-{
-    "uri": "https://wy-cs.site/resources/events/",
-    "title": "CS Events",
-    "tags": [],
-    "description": "",
-    "content": " Computing Olympiad\n Dec 15-18: First Contest Jan 19-22: Second Contest Feb 23-26: Third Contest Mar 23-26: US Open May 24-Jun 2: Training Camp Sep …"
 },
 {
     "uri": "https://wy-cs.site/ecs-teach/scratch/",
@@ -784,25 +798,53 @@
     "content": " 2018-09-28-Alcohol-Analysis-Quiz  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. …"
 },
 {
-    "uri": "https://wy-cs.site/machine-learning/isl-resources/boston-starter/",
+    "uri": "https://wy-cs.site/machine-learning/isl-ch2/boston-starter/",
     "title": "",
     "tags": [],
     "description": "",
     "content": " 2018-09-29-Boston-Dataset-Starter-Code  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 …"
 },
 {
-    "uri": "https://wy-cs.site/machine-learning/isl-resources/isl2labquestions/",
+    "uri": "https://wy-cs.site/machine-learning/isl-ch2/isl2labquestions/",
     "title": "",
     "tags": [],
     "description": "",
     "content": " ISL Lab 2.3 Intro to SciPy  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * …"
 },
 {
-    "uri": "https://wy-cs.site/machine-learning/isl-resources/isl2labsolutions/",
+    "uri": "https://wy-cs.site/machine-learning/isl-ch2/isl2labsolutions/",
     "title": "",
     "tags": [],
     "description": "",
     "content": " ISL Lab 2.3 Intro to SciPy  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/chapter3-section1/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " Chapter3-Section1  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/chapter3-section2-multipleregression/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " Chapter3-Section2-MultipleRegression  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/chapter3-section6-linear-regression-lab/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " Chapter3-Section6-Linear-Regression-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/using-plot_lm_summary/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " Using plot_lm_summary  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
     "uri": "https://wy-cs.site/tags/ap-cs/",
