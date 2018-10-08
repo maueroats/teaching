@@ -22,12 +22,10 @@ a linear model]({{% relref "Using plot_lm_summary" %}}) for a working notebook.
 
 ```python
 from linearmodelplot import plot_lm_summary
-...
 fitted_lm = sm.ols(...).fit()
 plot_lm_summary(fitted_lm);
 ```
 
-## Downloadable Content
+## Downloadable Content (from Github)
 
-{{% attachments title="Python Code" pattern=".*\.py" /%}}
-
+{{% attachments-github title="Python Code" pattern=".*\.py" /%}}
