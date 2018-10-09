@@ -7,6 +7,13 @@
     "content": "   Day Date(s) Project Assignment     1 Oct 9 Project assigned. Write draw_board.   2-3 Oct 11 Plan, write, and test: is_legal_move.   5 Oct 12 Plan …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/animation/",
+    "title": "Intro to Animations",
+    "tags": [],
+    "description": "The basics of big-bang: on-tick, on-draw.",
+    "content": " Intro to Animation Opener Write two functions:\n rotator: image -\u0026amp;gt; image that turns the image 10 degrees.\n middle-placer: image -\u0026amp;gt; image that …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-1/",
     "title": "Art Period 1",
     "tags": [],
@@ -21,6 +28,13 @@
     "content": "A high-level overview of the Haskell language and why its features are good. You should read it carefully and note what items you are unfamiliar with. …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/animation2/",
+    "title": "Animations Outline",
+    "tags": ["design-process"],
+    "description": "Step by step, how to make a basic animation.",
+    "content": " All Steps  Model Draw handler Tick handler Key handler? Mouse handler?  1. Decide model  What will the computer remember in order to draw a scene? …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch02/",
     "title": "2. Starting Out",
     "tags": [],
@@ -28,11 +42,25 @@
     "content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/examples/",
+    "title": "Animation Examples",
+    "tags": [],
+    "description": "",
+    "content": " Here is a complete example (raw Racket code available) that shows how to:\n move an image down every tick draw three copies of the image in a row make …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch03/",
     "title": "3. Types and Typeclasses",
     "tags": ["haskell"],
     "description": "Typeclasses abstract characteristics of types like String or Int.",
     "content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/portfolio/",
+    "title": "Animation Portfolio",
+    "tags": [],
+    "description": "",
+    "content": " Purple square that moves up when you hit any key.\n Throwing star that spins (and maybe moves across the screen) as time passes.\n Sunset with a …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
@@ -47,6 +75,13 @@
     "tags": [],
     "description": "",
     "content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/project/",
+    "title": "Animation Project",
+    "tags": [],
+    "description": "",
+    "content": " Deadline: Finish before Monday, October 23. Turn in Tuesday, October 24.\nProduce: One sequence of big-bang animations per group. (Groups of at most …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/ui/",
@@ -434,6 +469,13 @@
     "content": "Mini-project: Religion Survey Analysis\nMake sure you learn how to avoid writing for loops. Example: sum( df[\u0026#39;christian\u0026#39;] ) counts the number of True …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/",
+    "title": "6. Animations I",
+    "tags": [],
+    "description": "Big-bang for animations. Essential information and walkthroughs.",
+    "content": " Essentials These essentials are on page 100 (PDF page 111) or page 138 (PDF page 149). There is a detailed checklist on page 105 (PDF page 116). Use …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch06/",
     "title": "6. Higher Order Functions",
     "tags": [],
@@ -665,11 +707,39 @@
     "content": " DRAFT: MAY CHANGE\nThere are four functions that you are expected to design and test:\n draw_board: Create a String representation of the board. …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/2017-10-12/",
+    "title": "2017-10-12",
+    "tags": [],
+    "description": "",
+    "content": " Make an animation of a dog that:\n gets bigger every time you hit a key (every key).\n gets smaller when you move the mouse.\n  Memorize Memorize the …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/design-process/",
     "title": "Design Process",
     "tags": ["design-process"],
     "description": "",
     "content": " Function The function design process that we use is:\n Signature Purpose Examples (two) Function - write it.\n4A. Skeleton - not visible when finished. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/2017-10-10/",
+    "title": "2017-10-10",
+    "tags": [],
+    "description": "",
+    "content": " Flying purple rectangle  Make a small rectangle centered in the middle of the bottom of a big white rectangular canvas. As time goes on the rectangle …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/",
+    "title": "Daily Animations",
+    "tags": [],
+    "description": "",
+    "content": ""
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/animation-practice/",
+    "title": "Animation Practice",
+    "tags": [],
+    "description": "Practice writing big-bang code and identifying common errors.",
+    "content": "Progress bar 1 Make a solid purple bar that starts in the middle of the left side of the screen and grows to the right at a constant rate.  Model …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-10-04/",

@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/animation/</loc>
+    <lastmod>2017-10-04T13:03:36-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch03art/period-1/</loc>
     <lastmod>2017-09-27T20:14:20-05:00</lastmod>
   </url>
@@ -18,13 +23,28 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/animation2/</loc>
+    <lastmod>2017-10-05T20:55:16-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch02/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/examples/</loc>
+    <lastmod>2017-10-15T14:15:53-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch03/</loc>
     <lastmod>2017-09-12T13:18:35-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/portfolio/</loc>
+    <lastmod>2017-10-13T08:24:58-05:00</lastmod>
   </url>
   
   <url>
@@ -35,6 +55,11 @@
   <url>
     <loc>https://wy-cs.site/ftc/registration/</loc>
     <lastmod>2017-10-23T14:04:56-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/project/</loc>
+    <lastmod>2017-10-20T14:46:03-05:00</lastmod>
   </url>
   
   <url>
@@ -313,6 +338,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/</loc>
+    <lastmod>2017-10-04T13:03:22-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch06/</loc>
     <lastmod>2017-10-03T20:50:00-05:00</lastmod>
   </url>
@@ -478,8 +508,28 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/daily/2017-10-12/</loc>
+    <lastmod>2017-10-12T12:05:16-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/design-process/</loc>
     <lastmod>2017-10-10T20:49:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/daily/2017-10-10/</loc>
+    <lastmod>2017-10-10T13:13:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/daily/</loc>
+    <lastmod>2017-10-10T13:13:01-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/daily/animation-practice/</loc>
+    <lastmod>2017-10-05T21:58:10-05:00</lastmod>
   </url>
   
   <url>
@@ -634,7 +684,7 @@
   
   <url>
     <loc>https://wy-cs.site/tags/design-process/</loc>
-    <lastmod>2017-10-10T20:49:55-05:00</lastmod>
+    <lastmod>2017-10-05T20:55:16-05:00</lastmod>
     <priority>0</priority>
   </url>
   
