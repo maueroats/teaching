@@ -1,6 +1,6 @@
 ---
 title: "Connect Four"
-date: 2017-10-06T09:53:05-05:00
+date: 2018-10-09T09:37:17-05:00
 tags: 
  - haskell
  - project
@@ -8,7 +8,7 @@ draft: false
 description: "Connect Four project description, including function signatures."
 ---
 
-**Due Monday, October 16**. See [timeline]({{% relref "timeline.md" %}}).
+**Due Monday, October 15**. See [timeline]({{% relref "timeline.md" %}}).
 
 Familiarize yourself with the game of 
 [Connect Four][2], possibly [playing a few games][1]. 

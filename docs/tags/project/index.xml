@@ -27,10 +27,10 @@ Goal: Art projects should demonstrate a range of functions from the chapter, try
     <item>
       <title>Connect Four</title>
       <link>https://wy-cs.site/ap-cs/haskell/connect-four/</link>
-      <pubDate>Fri, 06 Oct 2017 09:53:05 -0500</pubDate>
+      <pubDate>Tue, 09 Oct 2018 09:37:17 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/connect-four/</guid>
-      <description>Due Monday, October 16. See timeline.
+      <description>Due Monday, October 15. See timeline.
 Familiarize yourself with the game of Connect Four, possibly playing a few games.
 Functions to write This is a minimum set of functions to write:
  draw_board :: Board -&amp;gt; String

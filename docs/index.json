@@ -4,7 +4,7 @@
     "title": "Connect Four Timeline",
     "tags": [],
     "description": "",
-    "content": "Not updated for 2018.\n   Day Date(s) Project Assignment     1 Fri, Oct 6 Project assigned. Write draw_board.   2-4 Sat-Mon, Oct 7-9 Plan, write, and …"
+    "content": "   Day Date(s) Project Assignment     1 Oct 9 Project assigned. Write draw_board.   2-3 Oct 11 Plan, write, and test: is_legal_move.   5 Oct 12 Plan …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-1/",
@@ -448,6 +448,13 @@
     "content": " The most common question people have is how grades are computed.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly) …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-09/",
+    "title": "2018.10.09 Project",
+    "tags": [],
+    "description": "The end-of-Haskell project.",
+    "content": " You have a week to complete this project. You will need to find time to work on it outside of class.\nDue: Monday, October 15, 2018\nOption 1 …"
+},
+{
     "uri": "https://wy-cs.site/resources/academic-integrity/",
     "title": "Academic Integrity",
     "tags": [],
@@ -543,7 +550,7 @@
     "title": "Haskell Daily Notes",
     "tags": ["haskell", "daily-notes"],
     "description": "Notes for each day.",
-    "content": "  2018.10.04 Square Pasture USACO Bronze December 2016, Question 1.\n  2018.10.03 Cow Signal USACO Bronze December 2016, Question 2.\n  2017-10-04 More …"
+    "content": "  2018.10.09 Project The end-of-Haskell project.\n  2018.10.04 Square Pasture USACO Bronze December 2016, Question 1.\n  2018.10.03 Cow Signal USACO …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/calendar/",
@@ -558,6 +565,13 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/",
+    "title": "Connect Four",
+    "tags": ["haskell", "project"],
+    "description": "Connect Four project description, including function signatures.",
+    "content": " Due Monday, October 15. See timeline.\nFamiliarize yourself with the game of Connect Four, possibly playing a few games.\nFunctions to write This is a …"
 },
 {
     "uri": "https://wy-cs.site/resources/events/",
@@ -658,13 +672,6 @@
     "content": " Function The function design process that we use is:\n Signature Purpose Examples (two) Function - write it.\n4A. Skeleton - not visible when finished. …"
 },
 {
-    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/",
-    "title": "Connect Four",
-    "tags": ["haskell", "project"],
-    "description": "Connect Four project description, including function signatures.",
-    "content": " Due Monday, October 16. See timeline.\nFamiliarize yourself with the game of Connect Four, possibly playing a few games.\nFunctions to write This is a …"
-},
-{
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-10-04/",
     "title": "2017-10-04",
     "tags": ["haskell"],
@@ -760,7 +767,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Chapter 4 Quiz B modified Thu 10-04 …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   2018.10.09 Project modified Tue 10-09 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",

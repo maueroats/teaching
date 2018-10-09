@@ -5,17 +5,13 @@ weight: 1
 draft: false
 ---
 
-**Not updated for 2018.**
-
 | Day | Date(s) | Project Assignment  |
 |:---:|---------|---------------------|
-| 1   | Fri, Oct 6| Project assigned. Write `draw_board`. |
-| 2-4 | Sat-Mon, Oct 7-9 | Plan, write, and test: `is_legal_move`. |
-| 5   | Tues, Oct 10  | Plan `make_move` in class. Write and test at home. |
-| 6   | (15 min class)| Share difficulties and troubleshoot. |
-| 7   | Thurs, Oct 11 (early release)| Plan, write, and test: `is_won`. |
-| 8   | Fri, Oct 12   | Write tests demonstrating code works. |
-| -   | Mon, Oct 16   | Last day to turn in project. |
+| 1   | Oct 9   | Project assigned. Write `draw_board`. |
+| 2-3 | Oct 11  | Plan, write, and test: `is_legal_move`. |
+| 5   | Oct 12  | Plan `is_won` in class. Write and test at home. |
+| 6   | Oct 15  | Project due. |
+| -   | Oct 19   | Last day to turn in project. |
 
 I expect this project to take 4-6 hours to complete over the course of
 a week. If you spend less than 3 hours on the project you should read
