@@ -12,6 +12,13 @@ description: "Graphs of results. Quality of fit (statistical tests). When do you
 * [Chapter 3 Section 2]({{% relref "Chapter3-Section2-MultipleRegression" %}})
 * [Chapter 3 Section 6]({{% relref "Chapter3-Section6-Linear-Regression-Lab" %}})
 
+## Homework
+
+* [Chapter 3 Section 1 Worksheet
+  A](https://colab.research.google.com/drive/11SjQKhsL9oX3bM5pHvGAl2yHhQN4M9-v).
+  Assigned: Wednesday, October 10. Due:
+  Monday, October 15.
+
 ## Graphical Summary of Linear Model
 Download the `linearmodelplot.py` file from the attachments at the
 bottom of the page.
