@@ -27,6 +27,9 @@ Make sure you have the standard includes for Chapter 3. A quick
 starter code is below. See the [full sample making a summary plot for
 a linear model]({{% relref "Using plot_lm_summary" %}}) for a working notebook.
 
+How to [upload python files to
+Collaboratory](https://stackoverflow.com/questions/48905127/importing-py-files-in-google-colab).
+
 ```python
 from linearmodelplot import plot_lm_summary
 fitted_lm = sm.ols(...).fit()
