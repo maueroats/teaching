@@ -16,8 +16,10 @@ description: "Graphs of results. Quality of fit (statistical tests). When do you
 
 * [Chapter 3 Section 1 Worksheet
   A](https://colab.research.google.com/drive/11SjQKhsL9oX3bM5pHvGAl2yHhQN4M9-v).
-  Assigned: Wednesday, October 10. Due:
-  Monday, October 15.
+  (October 10-11, 2018) Solutions to A discussed in class. Remainder became worksheet BC.
+* [Chapter 3 Section 1 Worksheet
+  BC](https://colab.research.google.com/drive/1sByruzoLR3D14if-x3YppUbsJsgVroYU). Assigned:
+  Friday, October 12. Due: Monday, October 15.
 
 ## Graphical Summary of Linear Model
 Download the `linearmodelplot.py` file from the attachments at the

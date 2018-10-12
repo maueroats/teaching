@@ -550,7 +550,7 @@
     "title": "ISL Chapter 3: Linear Regression",
     "tags": [],
     "description": "Graphs of results. Quality of fit (statistical tests). When do you have enough variables included?",
-    "content": "  Chapter 3 Section 1 Chapter 3 Section 2 Chapter 3 Section 6  Homework  Chapter 3 Section 1 Worksheet A. Assigned: Wednesday, October 10. Due: …"
+    "content": "  Chapter 3 Section 1 Chapter 3 Section 2 Chapter 3 Section 6  Homework  Chapter 3 Section 1 Worksheet A. (October 10-11, 2018) Solutions to A …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/ml-resources/",
@@ -903,6 +903,13 @@
     "content": " 3.1-Worksheet-A-Published  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/chapter3-section1-worksheet-bc-published/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " 3.1-Worksheet-BC-Published  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/isl-ch3/chapter3-section1/",
     "title": "",
     "tags": [],
@@ -931,14 +938,14 @@
     "content": " Using plot_lm_summary  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
