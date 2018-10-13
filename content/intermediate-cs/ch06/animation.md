@@ -1,6 +1,6 @@
 ---
 title: "Intro to Animations"
-date: 2017-10-04T13:03:36-05:00
+date: 2018-10-12T21:34:49-05:00
 draft: false
 type: slide
 theme: white

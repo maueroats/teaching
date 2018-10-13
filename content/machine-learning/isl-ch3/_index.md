@@ -22,6 +22,22 @@ description: "Graphs of results. Quality of fit (statistical tests). When do you
   BC](https://colab.research.google.com/drive/1sByruzoLR3D14if-x3YppUbsJsgVroYU). Assigned:
   Friday, October 12. Due: Monday, October 15.
 
+## Notes of Interest
+
+I was just curious about the logistic distribution, so I dug up a few
+points of interest. These are not critical. Especially do not confuse
+this with other uses of logistic that come up later in the course.
+
+1. From Wikipedia, the [logistic distribution is used to calculate
+   chess ratings](https://en.wikipedia.org/wiki/Sech-square_distribution#Chess_ratings):
+
+     > Τhe United States Chess Federation and FIDE have switched its formula for calculating chess ratings from the normal distribution to the logistic distribution; see the article on Elo rating system (itself based on the normal distribution). 
+
+2. The logistic distribution is easier to work with than the normal
+   distribution. There is a formula for its cumulative density
+   function that does not require approximation on a computer.
+
+
 ## Graphical Summary of Linear Model
 Download the `linearmodelplot.py` file from the attachments at the
 bottom of the page.

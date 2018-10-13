@@ -1,17 +1,17 @@
 [
 {
-    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/timeline/",
-    "title": "Connect Four Timeline",
-    "tags": [],
-    "description": "",
-    "content": "   Day Date(s) Project Assignment     1 Oct 9 Project assigned. Write draw_board.   2-3 Oct 11 Plan, write, and test: is_legal_move.   5 Oct 12 Plan …"
-},
-{
     "uri": "https://wy-cs.site/intermediate-cs/ch06/animation/",
     "title": "Intro to Animations",
     "tags": [],
     "description": "The basics of big-bang: on-tick, on-draw.",
     "content": " Intro to Animation Opener Write two functions:\n rotator: image -\u0026amp;gt; image that turns the image 10 degrees.\n middle-placer: image -\u0026amp;gt; image that …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/timeline/",
+    "title": "Connect Four Timeline",
+    "tags": [],
+    "description": "",
+    "content": "   Day Date(s) Project Assignment     1 Oct 9 Project assigned. Write draw_board.   2-3 Oct 11 Plan, write, and test: is_legal_move.   5 Oct 12 Plan …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-1/",
@@ -60,7 +60,7 @@
     "title": "Animation Portfolio",
     "tags": [],
     "description": "",
-    "content": " Purple square that moves up when you hit any key.\n Throwing star that spins (and maybe moves across the screen) as time passes.\n Sunset with a …"
+    "content": " Purple square that moves up when you hit any key. Throwing star that spins (and maybe moves across the screen) as time passes. Sunset with a horizon. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
@@ -315,6 +315,13 @@
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/pro/struct/",
+    "title": "Structures",
+    "tags": [],
+    "description": "Remember more than one thing at a time.",
+    "content": " This is Chapter 20 in the text. Since this is the pro section, I include details you would not usually see.\n Using #lang racket allows some advanced …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-02/",
     "title": "Chapter 4 Discussion II",
     "tags": [],
@@ -334,13 +341,6 @@
     "tags": [],
     "description": "",
     "content": "Opener: Write the result of the third \u0026amp;ldquo;step\u0026amp;rdquo;, as seen in the Stepper.\n(+ (+ 1 5) (* 8 (+ 2 3)) (* 7 2)) Class/homework:\nMake the two …"
-},
-{
-    "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
-    "title": "Match",
-    "tags": [],
-    "description": "",
-    "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch03/puzzle-opener/",
@@ -418,6 +418,13 @@
     "tags": [],
     "description": "",
     "content": "  ML Daily Lecture notes and supplemental material.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
+    "title": "Match",
+    "tags": [],
+    "description": "Take structures apart without repeatedly doing (color-red c), etc.",
+    "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/",
@@ -607,6 +614,20 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/2018-10-12/",
+    "title": "2018.10.12",
+    "tags": [],
+    "description": "",
+    "content": " Make an animation with two stick figures moving at the same time: 1. One starts at the top left corner of the frame and moves right. 2. The other …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/2018-10-11/",
+    "title": "2018.10.11",
+    "tags": [],
+    "description": "",
+    "content": " Make an animation with a shape that turns 15 degrees and grows by 20% every second. (Possibly adjust to 5 degrees and 2% every 0.3 sec once it works …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/",

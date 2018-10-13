@@ -1,10 +1,11 @@
 ---
 title: "Match"
 date: 2018-02-21T15:01:29-06:00
-weight: 30
+weight: 40
 draft: false
 #type: slide
 #theme: white
+description: "Take structures apart without repeatedly doing (color-red c), etc."
 ---
 
 Pattern matching lets you take apart structures into their component
