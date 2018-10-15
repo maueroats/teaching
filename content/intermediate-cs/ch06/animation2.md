@@ -7,7 +7,7 @@ theme: white
 tags:
  - design-process
 description: "Step by step, how to make a basic animation."
-weight: 2
+weight: 20
 ---
 
 # All Steps

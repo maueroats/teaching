@@ -2,7 +2,7 @@
 title: "Animation Portfolio"
 date: 2017-10-13T08:24:58-05:00
 draft: false
-weight: 4
+weight: 40
 ---
 
 1. Purple square that moves up when you hit any key.

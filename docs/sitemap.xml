@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/ch06/animation/</loc>
-    <lastmod>2018-10-12T21:34:49-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/connect-four/timeline/</loc>
     <lastmod>2017-10-07T08:59:38-05:00</lastmod>
   </url>
@@ -23,28 +18,13 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/ch06/animation2/</loc>
-    <lastmod>2018-10-12T21:35:05-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch02/</loc>
     <lastmod>2017-09-09T15:57:47-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/ch06/examples/</loc>
-    <lastmod>2017-10-15T14:15:53-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch03/</loc>
     <lastmod>2017-09-12T13:18:35-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/intermediate-cs/ch06/portfolio/</loc>
-    <lastmod>2017-10-13T08:24:58-05:00</lastmod>
   </url>
   
   <url>
@@ -55,11 +35,6 @@
   <url>
     <loc>https://wy-cs.site/ftc/registration/</loc>
     <lastmod>2017-10-23T14:04:56-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/intermediate-cs/ch06/project/</loc>
-    <lastmod>2017-10-20T14:46:03-05:00</lastmod>
   </url>
   
   <url>
@@ -80,6 +55,11 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/ch03art/period-7/</loc>
     <lastmod>2017-09-27T20:14:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/animation/</loc>
+    <lastmod>2018-10-12T21:34:49-05:00</lastmod>
   </url>
   
   <url>
@@ -168,6 +148,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/animation2/</loc>
+    <lastmod>2018-10-12T21:35:05-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch03/ch03-signatures/</loc>
     <lastmod>2018-09-19T15:47:54-05:00</lastmod>
   </url>
@@ -223,6 +208,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/animation3/</loc>
+    <lastmod>2018-10-14T22:03:31-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/resources/generic-cs-syllabus/</loc>
     <lastmod>2017-09-09T15:50:00-05:00</lastmod>
   </url>
@@ -245,6 +235,11 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/ch01/ch01c/</loc>
     <lastmod>2018-09-10T15:28:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/examples/</loc>
+    <lastmod>2017-10-15T14:15:53-05:00</lastmod>
   </url>
   
   <url>
@@ -308,6 +303,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/portfolio/</loc>
+    <lastmod>2017-10-13T08:24:58-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/</loc>
     <lastmod>2017-09-20T20:32:15-05:00</lastmod>
   </url>
@@ -330,6 +330,11 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch03/ch03-test/</loc>
     <lastmod>2018-09-21T07:28:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch06/project/</loc>
+    <lastmod>2017-10-20T14:46:03-05:00</lastmod>
   </url>
   
   <url>
@@ -680,14 +685,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
