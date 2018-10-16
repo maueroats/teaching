@@ -20,7 +20,7 @@ description: "Graphs of results. Quality of fit (statistical tests). When do you
   "Chapter3-Section1-Worksheet-A-Solutions.html" %}}) discussed in class. Remainder became worksheet BC.
 * [Chapter 3 Section 1 Worksheet
   BC](https://colab.research.google.com/drive/1sByruzoLR3D14if-x3YppUbsJsgVroYU). Assigned:
-  Friday, October 12. Due: Monday, October 15.
+  Friday, October 12. Due: Monday, October 15. [Lecture]({{% relref "Chapter3-Section1-Worksheet-C-Demo.html" %}})
 
 * [Chapter 3 Section 1 Worksheet
   D](https://colab.research.google.com/drive/1un0iS9v6hjc_WrzpVqj1BWSouG-fnHw2). Assigned:
@@ -42,7 +42,6 @@ this with other uses of logistic that come up later in the course.
    distribution. There is a formula for its cumulative density
    function that does not require approximation on a computer.
 
->>>>>>> 5636c722c2f04bc1e38dce72f9a1a739a26eb71f
 
 ## Graphical Summary of Linear Model
 Download the `linearmodelplot.py` file from the attachments at the
