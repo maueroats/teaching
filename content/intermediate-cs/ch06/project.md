@@ -2,7 +2,7 @@
 title: "Animation Project"
 date: 2017-10-20T14:46:03-05:00
 draft: false
-weight: 5
+weight: 50
 #type: slide
 #theme: white
 ---

@@ -7,13 +7,6 @@
     "content": "   Day Date(s) Project Assignment     1 Oct 9 Project assigned. Write draw_board.   2-3 Oct 11 Plan, write, and test: is_legal_move.   5 Oct 12 Plan …"
 },
 {
-    "uri": "https://wy-cs.site/intermediate-cs/ch06/animation/",
-    "title": "Intro to Animations",
-    "tags": [],
-    "description": "The basics of big-bang: on-tick, on-draw.",
-    "content": " Intro to Animation Opener Write two functions:\n rotator: image -\u0026amp;gt; image that turns the image 10 degrees.\n middle-placer: image -\u0026amp;gt; image that …"
-},
-{
     "uri": "https://wy-cs.site/intermediate-cs/ch03art/period-1/",
     "title": "Art Period 1",
     "tags": [],
@@ -28,13 +21,6 @@
     "content": "A high-level overview of the Haskell language and why its features are good. You should read it carefully and note what items you are unfamiliar with. …"
 },
 {
-    "uri": "https://wy-cs.site/intermediate-cs/ch06/animation2/",
-    "title": "Animations Outline",
-    "tags": ["design-process"],
-    "description": "Step by step, how to make a basic animation.",
-    "content": " All Steps  Model Draw handler Tick handler Key handler? Mouse handler?  1. Decide model  What will the computer remember in order to draw a scene? …"
-},
-{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch02/",
     "title": "2. Starting Out",
     "tags": [],
@@ -42,25 +28,11 @@
     "content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | …"
 },
 {
-    "uri": "https://wy-cs.site/intermediate-cs/ch06/examples/",
-    "title": "Animation Examples",
-    "tags": [],
-    "description": "",
-    "content": " Here is a complete example (raw Racket code available) that shows how to:\n move an image down every tick draw three copies of the image in a row make …"
-},
-{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch03/",
     "title": "3. Types and Typeclasses",
     "tags": ["haskell"],
     "description": "Typeclasses abstract characteristics of types like String or Int.",
     "content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String …"
-},
-{
-    "uri": "https://wy-cs.site/intermediate-cs/ch06/portfolio/",
-    "title": "Animation Portfolio",
-    "tags": [],
-    "description": "",
-    "content": " Purple square that moves up when you hit any key.\n Throwing star that spins (and maybe moves across the screen) as time passes.\n Sunset with a …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
@@ -75,13 +47,6 @@
     "tags": [],
     "description": "",
     "content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - …"
-},
-{
-    "uri": "https://wy-cs.site/intermediate-cs/ch06/project/",
-    "title": "Animation Project",
-    "tags": [],
-    "description": "",
-    "content": " Deadline: Finish before Monday, October 23. Turn in Tuesday, October 24.\nProduce: One sequence of big-bang animations per group. (Groups of at most …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/ui/",
@@ -110,6 +75,13 @@
     "tags": [],
     "description": "",
     "content": ""
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/animation/",
+    "title": "Intro to Animations",
+    "tags": [],
+    "description": "The basics of big-bang: on-tick, on-draw.",
+    "content": " Intro to Animation Opener Write two functions:\n rotator: image -\u0026amp;gt; image that turns the image 10 degrees.\n middle-placer: image -\u0026amp;gt; image that …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/",
@@ -231,6 +203,13 @@
     "content": " This page is full of tiny pieces to help you get better at programming Haskell.\nGoals:\n Range notation [a,b..c] to make lists of integers. Apply a …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/animation2/",
+    "title": "Animations Outline",
+    "tags": ["design-process"],
+    "description": "Step by step, how to make a basic animation.",
+    "content": " All Steps  Model Draw handler Tick handler Key handler? Mouse handler?  1. Decide model  What will the computer remember in order to draw a scene? …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch03/ch03-signatures/",
     "title": "Ch03 Signatures",
     "tags": [],
@@ -308,11 +287,25 @@
     "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/animation3/",
+    "title": "Animations Key, Mouse",
+    "tags": [],
+    "description": "Learning mouse and key handler.",
+    "content": " Grow with Key Stretch 10% larger when a key is hit.\n Write function Signature?  Just wider not taller?\nMouse Date Show picture of calendar at mouse …"
+},
+{
     "uri": "https://wy-cs.site/resources/generic-cs-syllabus/",
     "title": "Syllabus: All Courses",
     "tags": [],
     "description": "",
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/pro/struct/",
+    "title": "Structures",
+    "tags": [],
+    "description": "Remember more than one thing at a time.",
+    "content": " This is Chapter 20 in the text. Since this is the pro section, I include details you would not usually see.\n Using #lang racket allows some advanced …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-02/",
@@ -336,11 +329,11 @@
     "content": "Opener: Write the result of the third \u0026amp;ldquo;step\u0026amp;rdquo;, as seen in the Stepper.\n(+ (+ 1 5) (* 8 (+ 2 3)) (* 7 2)) Class/homework:\nMake the two …"
 },
 {
-    "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
-    "title": "Match",
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/examples/",
+    "title": "Animation Examples",
     "tags": [],
     "description": "",
-    "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
+    "content": " Here is a complete example (raw Racket code available) that shows how to:\n move an image down every tick draw three copies of the image in a row make …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch03/puzzle-opener/",
@@ -420,6 +413,20 @@
     "content": "  ML Daily Lecture notes and supplemental material.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
+    "title": "Match",
+    "tags": [],
+    "description": "Take structures apart without repeatedly doing (color-red c), etc.",
+    "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/portfolio/",
+    "title": "Animation Portfolio",
+    "tags": [],
+    "description": "",
+    "content": " Purple square that moves up when you hit any key. Throwing star that spins (and maybe moves across the screen) as time passes. Sunset with a horizon. …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/",
     "title": "Chapter 4 Problem Set",
     "tags": ["haskell", "homework"],
@@ -453,6 +460,13 @@
     "tags": [],
     "description": "Test on LYaH Chapter 3.",
     "content": " Unless you are completely confident of your signature-writing skills, please use \u0026amp;ldquo;concrete\u0026amp;rdquo; type classes like Double or Integer instead …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/project/",
+    "title": "Animation Project",
+    "tags": [],
+    "description": "",
+    "content": " Deadline: Finish before Monday, October 23. Turn in Tuesday, October 24.\nProduce: One sequence of big-bang animations per group. (Groups of at most …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-10-01/",
@@ -607,6 +621,20 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/2018-10-12/",
+    "title": "2018.10.12",
+    "tags": [],
+    "description": "",
+    "content": " Make an animation with two stick figures moving at the same time: 1. One starts at the top left corner of the frame and moves right. 2. The other …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/2018-10-11/",
+    "title": "2018.10.11",
+    "tags": [],
+    "description": "",
+    "content": " Make an animation with a shape that turns 15 degrees and grows by 20% every second. (Possibly adjust to 5 degrees and 2% every 0.3 sec once it works …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/",
@@ -945,14 +973,14 @@
     "content": " Using plot_lm_summary  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",

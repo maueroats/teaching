@@ -1,13 +1,13 @@
 ---
 title: "Animations Outline"
-date: 2017-10-05T20:55:16-05:00
+date: 2018-10-12T21:35:05-05:00
 draft: false
 type: slide
 theme: white
 tags:
  - design-process
 description: "Step by step, how to make a basic animation."
-weight: 2
+weight: 20
 ---
 
 # All Steps

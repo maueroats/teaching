@@ -2,7 +2,7 @@
 title: "Animation Examples"
 date: 2017-10-15T14:15:53-05:00
 draft: false
-weight: 3
+weight: 30
 ---
 
 Here is a complete example ([raw Racket code available](full-animation-example.rkt)) that 
