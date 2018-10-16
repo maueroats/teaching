@@ -623,6 +623,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/reading-q-312/",
+    "title": "Reading Questions 3.1.2",
+    "tags": [],
+    "description": "",
+    "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/2018-10-12/",
     "title": "2018.10.12",
     "tags": [],

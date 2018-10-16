@@ -20,7 +20,10 @@ description: "Graphs of results. Quality of fit (statistical tests). When do you
   "Chapter3-Section1-Worksheet-A-Solutions.html" %}}) discussed in class. Remainder became worksheet BC.
 * [Chapter 3 Section 1 Worksheet
   BC](https://colab.research.google.com/drive/1sByruzoLR3D14if-x3YppUbsJsgVroYU). Assigned:
-  Friday, October 12. Due: Monday, October 15. [Lecture]({{% relref "Chapter3-Section1-Worksheet-C-Demo.html" %}})
+  Friday, October 12. Due: Monday, October 15. [Lecture]({{% relref "Chapter3-Section1-Worksheet-C-Demo.html" %}}).
+
+* [Reading Questions for 3.1.2]({{% relref "reading-q-312" %}}). Due:
+  Oct 17.
 
 * [Chapter 3 Section 1 Worksheet
   D](https://colab.research.google.com/drive/1un0iS9v6hjc_WrzpVqj1BWSouG-fnHw2). Assigned:
