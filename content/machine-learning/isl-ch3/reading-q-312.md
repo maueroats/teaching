@@ -5,6 +5,7 @@ date: 2018-10-16T12:27:45-05:00
 draft: false
 #type: slide
 #theme: white
+description: "Questions to help you understand 3.1.2 before we discuss it in class."
 ---
 {{% use-ml %}}
 

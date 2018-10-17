@@ -420,7 +420,7 @@
     "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
 },
 {
-    "uri": "https://wy-cs.site/intermediate-cs/ch06/portfolio/",
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/portfolio-1/",
     "title": "Animation Portfolio I",
     "tags": [],
     "description": "",
@@ -606,7 +606,7 @@
     "title": "Haskell Daily Notes",
     "tags": ["haskell", "daily-notes"],
     "description": "Notes for each day.",
-    "content": "  2018.10.09 Project The end-of-Haskell project.\n  2018.10.04 Square Pasture USACO Bronze December 2016, Question 1.\n  2018.10.03 Cow Signal USACO …"
+    "content": "  2018.10.09 Project The end-of-Haskell project.\n  2018-10-16 notAlone. notAlone :: [Int] -\u0026amp;gt; Int -\u0026amp;gt; [Int] notAlone nums x = undefined Team Tic …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/calendar/",
@@ -623,10 +623,24 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-16/",
+    "title": "2018-10-16",
+    "tags": [],
+    "description": "",
+    "content": " notAlone.\nnotAlone :: [Int] -\u0026amp;gt; Int -\u0026amp;gt; [Int] notAlone nums x = undefined Team Tic Tac Toe\n Write teamWins to determine if a given team wins a …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch06/portfolio-2/",
+    "title": "Animation Portfolio II",
+    "tags": [],
+    "description": "",
+    "content": " An arrow flies across the screen and stops with the head of the arrow buried in the target (but the fletching still visible).\n (Fan.) A fan with …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/isl-ch3/reading-q-312/",
     "title": "Reading Questions 3.1.2",
     "tags": [],
-    "description": "",
+    "description": "Questions to help you understand 3.1.2 before we discuss it in class.",
     "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
@@ -872,7 +886,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   2018.10.09 Project modified Tue 10-09 …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   2018-10-16 modified Wed 10-17  2018.10.09 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
