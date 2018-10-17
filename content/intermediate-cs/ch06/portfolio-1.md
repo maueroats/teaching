@@ -1,6 +1,6 @@
 ---
 title: "Animation Portfolio I"
-date: 2017-10-13T08:24:58-05:00
+date: 2018-10-17T08:54:12-05:00
 draft: false
 weight: 40
 ---

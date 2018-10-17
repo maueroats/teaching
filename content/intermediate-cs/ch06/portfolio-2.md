@@ -1,7 +1,7 @@
 ---
 title: "Animation Portfolio II"
-date: 2018-10-17T08:08:35-05:00
-#weight: 
+date: 2018-10-17T08:54:17-05:00
+weight: 41
 draft: false
 #type: slide
 #theme: white

@@ -620,17 +620,17 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch06/project/" class="dd-item">
-        <div>
-          <a href="/intermediate-cs/ch06/project/">
-            Animation Project
-          </a>
-        </div>
-    </li>
       <li data-nav-id="/intermediate-cs/ch06/portfolio-2/" class="dd-item">
         <div>
           <a href="/intermediate-cs/ch06/portfolio-2/">
             Animation Portfolio II
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/project/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/project/">
+            Animation Project
           </a>
         </div>
     </li>
@@ -1192,8 +1192,25 @@ from a board.</p>
 
 <li><p>Combine the previous functions to solve the problem.</p></li>
 </ul></li>
-</ol>
 
+<li><p>(Bonus.) <a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=833">Family
+Tree</a>. I use
+<code>momList</code> to be the list of pairs of strings (mother, child).</p>
+
+<ul>
+<li><p><code>findParent momList cow</code> produces &ldquo;&rdquo; or the name of the parent of
+the given cow.</p></li>
+
+<li><p><code>parentList momList cow</code> produces a list containing the mother,
+grandmother, etc. of the given cow. The result could be empty if
+the cow has no known mother.</p></li>
+
+<li><p><code>isRelated momList cow1 cow2</code> gives True if the cows are
+related at all.</p></li>
+</ul></li>
+</ol>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">   <span style="color:#75af00">isRelated</span> <span style="color:#f92672">::</span>  <span style="color:#111">[(</span><span style="color:#00a8c8">String</span><span style="color:#111">,</span><span style="color:#00a8c8">String</span><span style="color:#111">)]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Bool</span>
+   <span style="color:#75af00">isRelated</span> <span style="color:#75af00">familyTree</span> <span style="color:#75af00">cow1</span> <span style="color:#75af00">cow2</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div>
 
     
     
