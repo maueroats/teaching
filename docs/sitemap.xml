@@ -58,6 +58,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/ap-cs/jm/ch01/</loc>
+    <lastmod>2018-10-18T17:50:24-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch06/animation/</loc>
     <lastmod>2018-10-12T21:34:49-05:00</lastmod>
   </url>
@@ -308,6 +313,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/ap-cs/jm/</loc>
+    <lastmod>2017-11-28T22:11:18-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/</loc>
     <lastmod>2017-09-20T20:32:15-05:00</lastmod>
   </url>
@@ -450,6 +460,11 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/pro/</loc>
     <lastmod>2017-11-19T15:30:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/machine-learning/isl-ch3/reading-q-313/</loc>
+    <lastmod>2018-10-17T14:03:13-05:00</lastmod>
   </url>
   
   <url>
@@ -708,14 +723,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

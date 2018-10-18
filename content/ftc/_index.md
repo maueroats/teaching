@@ -8,12 +8,18 @@ draft: false
 
 This is the web page for the [First Tech Challenge](https://www.firstinspires.org/robotics/ftc) team 3216, Robophins from [Whitney Young](http://wyoung.org/).
 
+## Club Meetings
+
+Monday and Wednesday, 3:20-4:50pm. Room 109.
+
+
 ## Meet Schedule
 
 * November 17, Lindblom Math & Science Academy, 6130 S Wolcott.
 * December 15, Solorio High School, 5400 S St Louis, 11:00am - 4:00pm.
 * January 19, 2019, Whitney Young High School, 11:30am - 5:00pm.
-* February ?, 2019.
+* February 22-23, 2019. Elgin Community College. 6:30pm Friday -
+  6:30pm Saturday.
 
 ## Game Resources
 

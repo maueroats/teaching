@@ -77,6 +77,13 @@
     "content": ""
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch01/",
+    "title": "1. CS Basics",
+    "tags": [],
+    "description": "",
+    "content": "Read: Chapter 1, all contained in the Chapter 1 online component.\nExercises source: page 27- in a second PDF. Slightly sketchy\u0026amp;hellip; contains the …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch06/animation/",
     "title": "Intro to Animations",
     "tags": [],
@@ -427,6 +434,13 @@
     "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/",
+    "title": "Java Methods",
+    "tags": [],
+    "description": "",
+    "content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/",
     "title": "Chapter 4 Problem Set",
     "tags": ["haskell", "homework"],
@@ -630,6 +644,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/reading-q-313/",
+    "title": "Reading Questions 3.1.3",
+    "tags": [],
+    "description": "",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-16/",
     "title": "2018-10-16",
     "tags": [],
@@ -739,7 +760,7 @@
     "title": "Robophins 3216",
     "tags": [],
     "description": "",
-    "content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nMeet Schedule  November 17, Lindblom Math \u0026amp;amp; Science …"
+    "content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nClub Meetings Monday and Wednesday, 3:20-4:50pm. Room 109. …"
 },
 {
     "uri": "https://wy-cs.site/ecs-teach/",
@@ -886,7 +907,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   2018-10-16 modified Wed 10-17  2018.10.09 …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   1. CS Basics modified Thu 10-18 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1008,14 +1029,14 @@
     "content": " Using plot_lm_summary  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
