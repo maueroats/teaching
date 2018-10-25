@@ -11,6 +11,7 @@ description: "Graphs of results. Quality of fit (statistical tests). When do you
 * [Chapter 3 Section 1]({{% relref "Chapter3-Section1" %}})
 * [Chapter 3 Section 2]({{% relref "Chapter3-Section2-MultipleRegression" %}})
 * [Chapter 3 Section 6]({{% relref "Chapter3-Section6-Linear-Regression-Lab" %}})
+* [Quick reference guide](https://docs.google.com/document/d/1DRYchpgSI7cod5OwLvvQO0G15x1rXD19TeL5kPE3C4c/edit?usp=sharing)
 
 ## Homework
 
@@ -29,7 +30,10 @@ description: "Graphs of results. Quality of fit (statistical tests). When do you
   D](https://colab.research.google.com/drive/1un0iS9v6hjc_WrzpVqj1BWSouG-fnHw2). Assigned:
   October 16. Due: October 17.
 
-* [Chapter 3 Exercise 8 Demo](https://colab.research.google.com/drive/1kup4F6XKYZ4Sqcxuj8ClE1K14sCCDT1o).
+* [Chapter 3 Exercise 8
+  Demo](https://colab.research.google.com/drive/1kup4F6XKYZ4Sqcxuj8ClE1K14sCCDT1o).
+  
+  
 
 ## Notes of Interest
 
