@@ -64,6 +64,14 @@ fitted_lm = sm.ols(...).fit()
 plot_lm_summary(fitted_lm);
 ```
 
+{{% notice tip %}}
+Download the `linearmodelplot.py` and then use the 
+[starter notebook including file-uploading
+code](https://colab.research.google.com/drive/1LhNP4uEkqAlzYByjGh3FPYt7iP-pnyOo)
+to get going more easily.
+{{% /notice %}}
+
+
 ## Downloadable Content (from Github)
 
 {{% attachments-github title="Python Code" pattern=".*\.py" /%}}
