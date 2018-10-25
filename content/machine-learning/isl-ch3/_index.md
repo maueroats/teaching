@@ -32,7 +32,8 @@ description: "Graphs of results. Quality of fit (statistical tests). When do you
 
 * [Chapter 3 Exercise 8
   Demo](https://colab.research.google.com/drive/1kup4F6XKYZ4Sqcxuj8ClE1K14sCCDT1o).
-  
+
+* [Chapter 3 Exercise 10 starter code](https://colab.research.google.com/drive/12aepeI41Gmv52-Oni6Kr_o79MQBRFgwk)
   
 
 ## Notes of Interest
