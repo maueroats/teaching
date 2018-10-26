@@ -77,6 +77,13 @@
     "content": ""
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/ch3-work/",
+    "title": "Chapter 3 Work",
+    "tags": [],
+    "description": "Homework and demonstrations for Chapter 3.",
+    "content": " Homework  Chapter 3 Section 1 Worksheet A. (October 10-11, 2018) Solutions to A discussed in class. Remainder became worksheet BC. Chapter 3 Section …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch01/",
     "title": "1. CS Basics",
     "tags": [],
@@ -308,6 +315,13 @@
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/r-lm-plot/",
+    "title": "Linear Model Summary Plot",
+    "tags": [],
+    "description": "Summary plot of a linear regression, exactly like R provides.",
+    "content": " Graphical Summary of Linear Model Download the linearmodelplot.py file from the attachments at the bottom of the page. Make sure you save the file as …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/pro/struct/",
     "title": "Structures",
     "tags": [],
@@ -404,6 +418,13 @@
     "tags": [],
     "description": "A few practice problems from a Thursday review session.",
     "content": " Target. tgt :: Integer -\u0026amp;gt; [Integer] -\u0026amp;gt; Integer. Given a target number and a list of numbers, find the smallest distance between the target …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/statsmodels/",
+    "title": "Statsmodels",
+    "tags": [],
+    "description": "Functions you can use in your StatsModels formulas.",
+    "content": "The formulas are written in patsy. When writing your formulas, use NumPy functions whenever you can.\n np.log np.sqrt np.power(x,2) for the square of …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch06/portfolio-1/",
@@ -546,6 +567,13 @@
     "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/logistic/",
+    "title": "Logistic Distribution",
+    "tags": [],
+    "description": "Notes of interest on the logistic distribution.",
+    "content": "I was just curious about the logistic distribution, so I dug up a few points of interest. These are not critical. Especially do not confuse this with …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch02/ch02-summary/",
     "title": "Chapter 2 Summary",
     "tags": [],
@@ -585,7 +613,7 @@
     "title": "ISL Chapter 3: Linear Regression",
     "tags": [],
     "description": "Graphs of results. Quality of fit (statistical tests). When do you have enough variables included?",
-    "content": "  Chapter 3 Section 1 Chapter 3 Section 2 Chapter 3 Section 6 Quick reference guide  Homework  Chapter 3 Section 1 Worksheet A. (October 10-11, 2018) …"
+    "content": " Demonstrations, walkthroughs, and section-by-section valuable information.\n Chapter 3 Section 1 Chapter 3 Section 2 Chapter 3 Section 6 Quick …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/ml-resources/",
@@ -616,6 +644,20 @@
     "content": "One of the key ideas to keep in mind when learning from USA Computing Olympiad problems is that time matters. A slow algorithm is not good enough; …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/reading-q-312/",
+    "title": "Reading 3.1.2 Q",
+    "tags": [],
+    "description": "Questions to help you understand 3.1.2 before we discuss it in class.",
+    "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/reading-q-313/",
+    "title": "Reading 3.1.3 Q",
+    "tags": [],
+    "description": "Reading questions for 3.1.3.",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/contracts/",
     "title": "Contracts",
     "tags": [],
@@ -644,11 +686,11 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
-    "uri": "https://wy-cs.site/machine-learning/isl-ch3/reading-q-313/",
-    "title": "Reading Questions 3.1.3",
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/chapter3-exercise-hints/",
+    "title": "Chapter 3 Exercise Hints",
     "tags": [],
-    "description": "",
-    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
+    "description": "Python commands useful in each exercise.",
+    "content": " 8. Auto, simple regression 8.a. smf.ols is how to do a regression\n8.a.i relationship means the coefficient\n8.a.iv this would be get_prediction and …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-16/",
@@ -656,13 +698,6 @@
     "tags": [],
     "description": "",
     "content": " notAlone.\nnotAlone :: [Int] -\u0026amp;gt; Int -\u0026amp;gt; [Int] notAlone nums x = undefined Team Tic Tac Toe\n Write teamWins to determine if a given team wins a …"
-},
-{
-    "uri": "https://wy-cs.site/machine-learning/isl-ch3/reading-q-312/",
-    "title": "Reading Questions 3.1.2",
-    "tags": [],
-    "description": "Questions to help you understand 3.1.2 before we discuss it in class.",
-    "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch06/daily/2018-10-12/",
@@ -1036,14 +1071,14 @@
     "content": " Using plot_lm_summary  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",

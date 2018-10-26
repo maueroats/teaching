@@ -1,13 +1,1179 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>WY Computer Science</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.48" />
+
+<title> :: WY Computer Science</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+
+
+    
+  </head>
+  <body data-url="/machine-learning/isl-ch3/chapter3-section6-linear-regression-lab/">
+    
+      
+
+<div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <p>WY Computer Science</p>
+
+  
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/wy-cs.site";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/ch01/">1. Intro</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/haskell/ch01/ch01-reading-guide/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch01/ch01-reading-guide/">
+            Ch01 Reading Guide
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/haskell/ch02/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/ch02/">2. Starting Out</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/haskell/ch02/ch02-reading-guide/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch02/ch02-reading-guide/">
+            Chapter 2 Reading Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch02/cw-a2/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch02/cw-a2/">
+            Haskell CW II.2
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch02/cw-3/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch02/cw-3/">
+            Haskell CW II.3
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch02/hw-a2/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch02/hw-a2/">
+            Haskell HW 2
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch02/ch02-summary/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch02/ch02-summary/">
+            Chapter 2 Summary
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/haskell/ch03/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/ch03/">3. Types and Typeclasses</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/haskell/ch03/ch03-reading-guide-haskell/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch03/ch03-reading-guide-haskell/">
+            Chapter 3 Reading Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch03/ch03-hw1/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch03/ch03-hw1/">
+            Chapter 3 Problem Set
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch03/ch03-walkthrough/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch03/ch03-walkthrough/">
+            Chapter 3 Walkthrough
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch03/ch03-test/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch03/ch03-test/">
+            Chapter 3 Haskell Test
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/haskell/ch04/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/ch04/">4. Syntax in Functions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-reading-guide/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-reading-guide/">
+            Chapter 4 Reading Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-discussion-01/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-discussion-01/">
+            Chapter 4 Discussion I
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-discussion-02/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-discussion-02/">
+            Chapter 4 Discussion II
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-discussion-03/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-discussion-03/">
+            Chapter 4 Discussion III
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-discussion-04/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-discussion-04/">
+            Chapter 4 Discussion IV
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-problemset/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-problemset/">
+            Chapter 4 Problem Set
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-quiz-a/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-quiz-a/">
+            Chapter 4 Quiz A
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-quiz-b/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-quiz-b/">
+            Chapter 4 Quiz B
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-summary/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-summary/">
+            Chapter 4 Summary
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ch04/ch04-check-expect/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch04/ch04-check-expect/">
+            Check Expects in Haskell
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/haskell/ch05/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/ch05/">5. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/haskell/ch05/ch05-reading-guide/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch05/ch05-reading-guide/">
+            Chapter 5 Reading Guide
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/haskell/ch06/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/ch06/">6. Higher Order Functions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/haskell/ch06/ch06-reading-guide/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ch06/ch06-reading-guide/">
+            Chapter 6 Reading Guide
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/haskell/usaco/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/usaco/">USACO Practice</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/haskell/usaco/haybales/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/usaco/haybales/">
+            Haybales
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/haskell/daily/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/daily/">Haskell Daily Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/haskell/daily/2018-10-09/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2018-10-09/">
+            2018.10.09 Project
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2018-10-16/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2018-10-16/">
+            2018-10-16
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2018-10-04/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2018-10-04/">
+            2018.10.04 Square Pasture
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2018-10-03/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2018-10-03/">
+            2018.10.03 Cow Signal
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-10-04/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-10-04/">
+            2017-10-04
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-10-03/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-10-03/">
+            2017-10-03
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-09-18/">
+            2017-09-18
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-09-13/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-09-13/">
+            2017-09-14 Indentation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-09-12/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-09-12/">
+            2017-09-12
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-09-11/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-09-11/">
+            2017-09-11
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/haskell/connect-four/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/haskell/connect-four/">Connect Four</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/haskell/connect-four/timeline/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/connect-four/timeline/">
+            Connect Four Timeline
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/connect-four/ui/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/connect-four/ui/">
+            Connect Four UI
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/connect-four/spoilers/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/connect-four/spoilers/">
+            Connect Four Spoilers
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/connect-four/testcases/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/connect-four/testcases/">
+            Connect Four Testcases
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/connect-four/rubric/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/connect-four/rubric/">
+            Connect Four Rubric
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/typeclass-notes/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/typeclass-notes/">
+            Typeclass Notes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/replit/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/replit/">
+            Repl.it
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/ghci-details/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/ghci-details/">
+            Source Code Files (ghci)
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/ap-cs/haskell-calendar/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell-calendar/">
+            Haskell Calendar
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/ap-cs/git/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/git/">Git</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ap-cs/git/getting-started/" class="dd-item">
+        <div>
+          <a href="/ap-cs/git/getting-started/">
+            Git-ting Started
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/git/everyday/" class="dd-item">
+        <div>
+          <a href="/ap-cs/git/everyday/">
+            Everyday Git
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
+        ">
+      <div>
+      <a href="/ap-cs/jm/ch01/">1. CS Basics</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ap-cs/news/" class="dd-item
+        ">
+      <div>
+      <a href="/ap-cs/news/">News</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/ch01/">1. Introduction</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/ch01/ch01b-review/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch01/ch01b-review/">
+            HW 01 B
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch01/ch01c/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch01/ch01c/">
+            HW 01 C
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch01/ch01quiza/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch01/ch01quiza/">
+            Ch01.QuizA
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/intermediate-cs/ch03/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/ch03/">3. More Interesting Pictures</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/ch03/color/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch03/color/">
+            Color Commands
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch03/ch03-signatures/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch03/ch03-signatures/">
+            Ch03 Signatures
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch03/ch03-art-project/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch03/ch03-art-project/">
+            Art Project
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch03/puzzle-opener/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch03/puzzle-opener/">
+            Puzzle Opener
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/intermediate-cs/ch03art/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/ch03art/">3. Art with Racket</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/ch03art/period-1/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch03art/period-1/">
+            Art Period 1
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch03art/period-5/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch03art/period-5/">
+            Art Period 5
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch03art/period-7/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch03art/period-7/">
+            Art Period 7
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/intermediate-cs/ch06/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/ch06/">6. Animations I</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/ch06/animation/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/animation/">
+            Intro to Animations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/animation2/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/animation2/">
+            Animations Outline
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/animation3/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/animation3/">
+            Animations Key, Mouse
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/examples/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/examples/">
+            Animation Examples
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/portfolio-1/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/portfolio-1/">
+            Animation Portfolio I
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/portfolio-2/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/portfolio-2/">
+            Animation Portfolio II
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/project/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/project/">
+            Animation Project
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/intermediate-cs/ch06/daily/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/ch06/daily/">Daily Animations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/ch06/daily/2018-10-12/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/daily/2018-10-12/">
+            2018.10.12
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/daily/2018-10-11/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/daily/2018-10-11/">
+            2018.10.11
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/daily/2017-10-12/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/daily/2017-10-12/">
+            2017-10-12
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/daily/2017-10-10/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/daily/2017-10-10/">
+            2017-10-10
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch06/daily/animation-practice/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch06/daily/animation-practice/">
+            Animation Practice
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/intermediate-cs/contracts/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/contracts/">Contracts</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/contracts/contract-intro/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/contracts/contract-intro/">
+            Contract Intro
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/contracts/contract-structs/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/contracts/contract-structs/">
+            Contract for Structs
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/intermediate-cs/calendar/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/calendar/">
+            Calendar
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/intermediate-cs/pro/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/pro/">Pro Features</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/pro/pro-string/">
+            Strings for Experts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/pro/build-image/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/pro/build-image/">
+            Build Image
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/pro/struct/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/pro/struct/">
+            Structures
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/pro/match/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/pro/match/">
+            Match
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/intermediate-cs/e-courses/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/e-courses/">
+            Online Help
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/design-process/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/design-process/">
+            Design Process
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/machine-learning/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/machine-learning/">Machine Learning</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/machine-learning/daily/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/machine-learning/daily/">ML Daily</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/machine-learning/daily/2018-09-05/" class="dd-item">
+        <div>
+          <a href="/machine-learning/daily/2018-09-05/">
+            2018.09.05
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/daily/2018-09-07/" class="dd-item">
+        <div>
+          <a href="/machine-learning/daily/2018-09-07/">
+            2018.09.07
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/daily/2018-09-09/" class="dd-item">
+        <div>
+          <a href="/machine-learning/daily/2018-09-09/">
+            2018.09.09
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/daily/2018-09-11/" class="dd-item">
+        <div>
+          <a href="/machine-learning/daily/2018-09-11/">
+            2018.09.11
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/daily/2018-09-17/" class="dd-item">
+        <div>
+          <a href="/machine-learning/daily/2018-09-17/">
+            2018.09.17-21 ISL Chapter 2 Plan
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/machine-learning/daily/2018-09-21/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/machine-learning/daily/2018-09-21/">2018.09.21 Ch2 Ex8 Walkthrough</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/" class="dd-item">
+        <div>
+          <a href="/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/">
+            
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/machine-learning/daily/2018-10-01/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/machine-learning/daily/2018-10-01/">2018.10.01 Quiz on Chapter 2</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/machine-learning/daily/2018-10-01/alcohol-analysis-quiz/" class="dd-item">
+        <div>
+          <a href="/machine-learning/daily/2018-10-01/alcohol-analysis-quiz/">
+            
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/machine-learning/daily/2018-10-03/" class="dd-item">
+        <div>
+          <a href="/machine-learning/daily/2018-10-03/">
+            2018.10.03 Religion Survey Analysis
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/daily/2018-09-14/" class="dd-item">
+        <div>
+          <a href="/machine-learning/daily/2018-09-14/">
+            Jupyter Notebook Setup
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/machine-learning/outline/" class="dd-item
+        ">
+      <div>
+      <a href="/machine-learning/outline/">Course Outline</a>
+      </div>
+    </li>
+    <li data-nav-id="/machine-learning/isl-ch2/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/machine-learning/isl-ch2/">ISL Chapter 2</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/machine-learning/isl-ch2/boston-starter/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch2/boston-starter/">
+            
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch2/isl2labquestions/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch2/isl2labquestions/">
+            
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch2/isl2labsolutions/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch2/isl2labsolutions/">
+            
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/machine-learning/isl-ch3/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/machine-learning/isl-ch3/">ISL Chapter 3: Linear Regression</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/machine-learning/isl-ch3/ch3-work/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch3/ch3-work/">
+            Chapter 3 Work
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch3/r-lm-plot/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch3/r-lm-plot/">
+            Linear Model Summary Plot
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch3/statsmodels/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch3/statsmodels/">
+            Statsmodels
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch3/logistic/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch3/logistic/">
+            Logistic Distribution
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch3/reading-q-312/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch3/reading-q-312/">
+            Reading 3.1.2 Q
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch3/reading-q-313/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch3/reading-q-313/">
+            Reading 3.1.3 Q
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch3/chapter3-exercise-hints/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch3/chapter3-exercise-hints/">
+            Chapter 3 Exercise Hints
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/machine-learning/ml-resources/" class="dd-item">
+        <div>
+          <a href="/machine-learning/ml-resources/">
+            ML Resources
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/resources/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/resources/">Resources</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/resources/generic-cs-syllabus/" class="dd-item">
+        <div>
+          <a href="/resources/generic-cs-syllabus/">
+            Syllabus: All Courses
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/resources/apcs-syllabus--2017-2018/" class="dd-item">
+        <div>
+          <a href="/resources/apcs-syllabus--2017-2018/">
+            Syllabus: AP CS
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/resources/intermediatecs-syllabus--2017-2018/" class="dd-item">
+        <div>
+          <a href="/resources/intermediatecs-syllabus--2017-2018/">
+            Syllabus: Intermediate
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/resources/grading-scale/" class="dd-item">
+        <div>
+          <a href="/resources/grading-scale/">
+            Grade Weights
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/resources/academic-integrity/" class="dd-item">
+        <div>
+          <a href="/resources/academic-integrity/">
+            Academic Integrity
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/resources/letters-of-recommendation/" class="dd-item">
+        <div>
+          <a href="/resources/letters-of-recommendation/">
+            Letters of Recommendation
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/resources/events/" class="dd-item
+        ">
+      <div>
+      <a href="/resources/events/">CS Events</a>
+      </div>
+    </li>
+      <li data-nav-id="/resources/why-racket/" class="dd-item">
+        <div>
+          <a href="/resources/why-racket/">
+            Why Racket?
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/resources/ics-wescheme-note/" class="dd-item">
+        <div>
+          <a href="/resources/ics-wescheme-note/">
+            WeScheme
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ftc/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ftc/">Robophins 3216</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ftc/registration/" class="dd-item">
+        <div>
+          <a href="/ftc/registration/">
+            Registration
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ftc/learning/" class="dd-item">
+        <div>
+          <a href="/ftc/learning/">
+            Learning Resources
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ecs-teach/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ecs-teach/">Exploring CS (Teachers)</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ecs-teach/scratch/" class="dd-item">
+        <div>
+          <a href="/ecs-teach/scratch/">
+            Scratch
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>Clubs and Groups</h3><a href="/ftc" target="_blank" rel="noopener">FTC Robotics</a></li>
+                <li class="" role=""><a href="/ecs-teach" target="_blank" rel="noopener">ECS Teachers</a></li>
+                <li class="" role=""><h3>Other</h3><a href="/events" target="_blank" rel="noopener">CS Events</a></li>
+                <li class="" role=""><a href="/intermediate-cs/e-courses" target="_blank" rel="noopener">Racket MOOC <img src='/intermediate-cs/e-courses/edX.png' height='16px'/></a></li>
+                <li class="" role=""><a href="/biography" target="_blank" rel="noopener">Biography</a></li>
+                <li class="" role=""><h3>External</h3><a href="https://apcentral.collegeboard.org/courses/exam-dates-and-fees" target="_blank" rel="noopener"><i class='fa fa-calendar' aria-hidden='true'></i>AP Exam Calendar 2019</a></li>
+                <li class="" role=""><a href="http://wyoung.org" target="_blank" rel="noopener">Whitney Young</a></li>
+        </section>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer">
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > <a href='/machine-learning/isl-ch3/'>ISL Chapter 3: Linear Regression</a> > 
+
+ 
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
+        </div>
+    </div>
+    
+
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1></h1>
+  
+
+
+
+    
+    
+    
+    <!DOCTYPE html>
+<html>
 <head><meta charset="utf-8" />
 <title>Chapter3-Section6-Linear-Regression-Lab</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
-     
- 
- 
+    /*!
+*
+* Twitter Bootstrap
+*
+*/
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -185,7 +1351,7 @@ td,
 th {
   padding: 0;
 }
- 
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
   *:before,
@@ -6730,9 +7896,17 @@ button.close {
     display: none !important;
   }
 }
- 
- 
- 
+/*!
+*
+* Font Awesome
+*
+*/
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
   src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0');
@@ -6748,7 +7922,7 @@ button.close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
- 
+/* makes the font 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
@@ -6890,7 +8064,8 @@ button.close {
 .fa-inverse {
   color: #fff;
 }
- 
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
 .fa-glass:before {
   content: "\f000";
 }
@@ -8398,7 +9573,11 @@ button.close {
 .fa-meanpath:before {
   content: "\f20c";
 }
- 
+/*!
+*
+* IPython base
+*
+*/
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -8415,8 +9594,8 @@ pre {
 label {
   font-weight: normal;
 }
- 
- 
+/* Make the page background atleast 100% the height of the view port */
+/* Make the page itself atleast 70% the height of the view port */
 .border-box-sizing {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8428,11 +9607,24 @@ label {
 .no-padding {
   padding: 0px;
 }
- 
- 
- 
+/* Flexible box model classes */
+/* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
+/* This file is a compatability layer.  It allows the usage of flexible box 
+model layouts accross multiple browsers, including older browsers.  The newest,
+universal implementation of the flexible box model is used when available (see
+`Modern browsers` comments below).  Browsers that are known to implement this 
+new spec completely include:
+
+    Firefox 28.0+
+    Chrome 29.0+
+    Internet Explorer 11+ 
+    Opera 17.0+
+
+Browsers not listed, including Safari, are supported via the styling under the
+`Old browsers` comments below.
+*/
 .hbox {
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-align: stretch;
@@ -8442,21 +9634,21 @@ label {
   display: box;
   box-orient: horizontal;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: row;
   align-items: stretch;
 }
 .hbox > * {
-   
+  /* Old browsers */
   -webkit-box-flex: 0;
   -moz-box-flex: 0;
   box-flex: 0;
-   
+  /* Modern browsers */
   flex: none;
 }
 .vbox {
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-align: stretch;
@@ -8466,79 +9658,79 @@ label {
   display: box;
   box-orient: vertical;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
 .vbox > * {
-   
+  /* Old browsers */
   -webkit-box-flex: 0;
   -moz-box-flex: 0;
   box-flex: 0;
-   
+  /* Modern browsers */
   flex: none;
 }
 .hbox.reverse,
 .vbox.reverse,
 .reverse {
-   
+  /* Old browsers */
   -webkit-box-direction: reverse;
   -moz-box-direction: reverse;
   box-direction: reverse;
-   
+  /* Modern browsers */
   flex-direction: row-reverse;
 }
 .hbox.box-flex0,
 .vbox.box-flex0,
 .box-flex0 {
-   
+  /* Old browsers */
   -webkit-box-flex: 0;
   -moz-box-flex: 0;
   box-flex: 0;
-   
+  /* Modern browsers */
   flex: none;
   width: auto;
 }
 .hbox.box-flex1,
 .vbox.box-flex1,
 .box-flex1 {
-   
+  /* Old browsers */
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
-   
+  /* Modern browsers */
   flex: 1;
 }
 .hbox.box-flex,
 .vbox.box-flex,
 .box-flex {
-   
-   
+  /* Old browsers */
+  /* Old browsers */
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
-   
+  /* Modern browsers */
   flex: 1;
 }
 .hbox.box-flex2,
 .vbox.box-flex2,
 .box-flex2 {
-   
+  /* Old browsers */
   -webkit-box-flex: 2;
   -moz-box-flex: 2;
   box-flex: 2;
-   
+  /* Modern browsers */
   flex: 2;
 }
 .box-group1 {
-   
+  /*  Deprecated */
   -webkit-box-flex-group: 1;
   -moz-box-flex-group: 1;
   box-flex-group: 1;
 }
 .box-group2 {
-   
+  /* Deprecated */
   -webkit-box-flex-group: 2;
   -moz-box-flex-group: 2;
   box-flex-group: 2;
@@ -8546,101 +9738,101 @@ label {
 .hbox.start,
 .vbox.start,
 .start {
-   
+  /* Old browsers */
   -webkit-box-pack: start;
   -moz-box-pack: start;
   box-pack: start;
-   
+  /* Modern browsers */
   justify-content: flex-start;
 }
 .hbox.end,
 .vbox.end,
 .end {
-   
+  /* Old browsers */
   -webkit-box-pack: end;
   -moz-box-pack: end;
   box-pack: end;
-   
+  /* Modern browsers */
   justify-content: flex-end;
 }
 .hbox.center,
 .vbox.center,
 .center {
-   
+  /* Old browsers */
   -webkit-box-pack: center;
   -moz-box-pack: center;
   box-pack: center;
-   
+  /* Modern browsers */
   justify-content: center;
 }
 .hbox.baseline,
 .vbox.baseline,
 .baseline {
-   
+  /* Old browsers */
   -webkit-box-pack: baseline;
   -moz-box-pack: baseline;
   box-pack: baseline;
-   
+  /* Modern browsers */
   justify-content: baseline;
 }
 .hbox.stretch,
 .vbox.stretch,
 .stretch {
-   
+  /* Old browsers */
   -webkit-box-pack: stretch;
   -moz-box-pack: stretch;
   box-pack: stretch;
-   
+  /* Modern browsers */
   justify-content: stretch;
 }
 .hbox.align-start,
 .vbox.align-start,
 .align-start {
-   
+  /* Old browsers */
   -webkit-box-align: start;
   -moz-box-align: start;
   box-align: start;
-   
+  /* Modern browsers */
   align-items: flex-start;
 }
 .hbox.align-end,
 .vbox.align-end,
 .align-end {
-   
+  /* Old browsers */
   -webkit-box-align: end;
   -moz-box-align: end;
   box-align: end;
-   
+  /* Modern browsers */
   align-items: flex-end;
 }
 .hbox.align-center,
 .vbox.align-center,
 .align-center {
-   
+  /* Old browsers */
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;
-   
+  /* Modern browsers */
   align-items: center;
 }
 .hbox.align-baseline,
 .vbox.align-baseline,
 .align-baseline {
-   
+  /* Old browsers */
   -webkit-box-align: baseline;
   -moz-box-align: baseline;
   box-align: baseline;
-   
+  /* Modern browsers */
   align-items: baseline;
 }
 .hbox.align-stretch,
 .vbox.align-stretch,
 .align-stretch {
-   
+  /* Old browsers */
   -webkit-box-align: stretch;
   -moz-box-align: stretch;
   box-align: stretch;
-   
+  /* Modern browsers */
   align-items: stretch;
 }
 div.error {
@@ -8660,10 +9852,15 @@ div.traceback-wrapper {
   max-width: 800px;
   margin: auto;
 }
- 
+/**
+ * Primary styles
+ *
+ * Author: Jupyter Development Team
+ */
 body {
   background-color: #fff;
-   
+  /* This makes sure that the body covers the entire window and needs to
+       be in a different element than the display: box in wrapper below */
   position: absolute;
   left: 0px;
   right: 0px;
@@ -8672,10 +9869,10 @@ body {
   overflow: visible;
 }
 body > #header {
-   
+  /* Initially hidden to prevent FLOUC */
   display: none;
   background-color: #fff;
-   
+  /* Display over codemirror */
   position: relative;
   z-index: 100;
 }
@@ -8744,7 +9941,7 @@ body > #header .header-bar {
     height: auto !important;
   }
 }
- 
+/* Smaller buttons */
 .ui-button .ui-button-text {
   padding: 0.2em 0.8em;
   font-size: 77%;
@@ -8848,7 +10045,7 @@ span#login_widget > .button .badge,
   margin-top: 10px;
 }
 .modal_stretch .modal-dialog {
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-align: stretch;
@@ -8858,7 +10055,7 @@ span#login_widget > .button .badge,
   display: box;
   box-orient: vertical;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -8880,14 +10077,22 @@ span#login_widget > .button .badge,
     margin-right: 12px;
   }
 }
- 
+/*!
+*
+* IPython auth
+*
+*/
 .center-nav {
   display: inline-block;
   margin-bottom: -4px;
 }
- 
- 
- 
+/*!
+*
+* IPython tree view
+*
+*/
+/* We need an invisible input field on top of the sentense*/
+/* "Drag file onto the list ..." */
 .alternate_upload {
   background-color: none;
   display: inline;
@@ -8908,7 +10113,11 @@ span#login_widget > .button .badge,
 .alternate_upload .btn-upload {
   height: 22px;
 }
- 
+/**
+ * Primary styles
+ *
+ * Author: Jupyter Development Team
+ */
 [dir="rtl"] #tabs li {
   float: right;
 }
@@ -9244,7 +10453,11 @@ ul#new-menu {
   display: inline-block;
   padding-top: 4px;
 }
- 
+/*!
+*
+* IPython text editor webapp
+*
+*/
 .selected-keymap i.fa {
   padding: 0px 5px;
 }
@@ -9260,7 +10473,8 @@ ul#new-menu {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .edit_app #menubar .navbar {
-   
+  /* Use a negative 1 bottom margin, so the border overlaps the border of the
+    header */
   margin-bottom: -1px;
 }
 .dirty-indicator {
@@ -9361,12 +10575,16 @@ ul#new-menu {
     box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
   }
 }
- 
- 
+/*!
+*
+* IPython notebook
+*
+*/
+/* CSS font colors for translated ANSI colors. */
 .ansibold {
   font-weight: bold;
 }
- 
+/* use dark versions for foreground, to improve visibility */
 .ansiblack {
   color: black;
 }
@@ -9391,7 +10609,7 @@ ul#new-menu {
 .ansigray {
   color: gray;
 }
- 
+/* and light for background, for the same reason */
 .ansibgblack {
   background-color: black;
 }
@@ -9417,7 +10635,7 @@ ul#new-menu {
   background-color: gray;
 }
 div.cell {
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-align: stretch;
@@ -9427,7 +10645,7 @@ div.cell {
   display: box;
   box-orient: vertical;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -9440,7 +10658,7 @@ div.cell {
   border-color: transparent;
   width: 100%;
   padding: 5px;
-   
+  /* This acts as a spacer between cells, that is outside the border */
   margin: 0px;
   outline: none;
   border-left-width: 1px;
@@ -9489,23 +10707,23 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 .prompt {
-   
+  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
   min-width: 14ex;
-   
+  /* This padding is tuned to match the padding on the CodeMirror editor. */
   padding: 0.4em;
   margin: 0px;
   font-family: monospace;
   text-align: right;
-   
+  /* This has to match that of the the CodeMirror class line-height below */
   line-height: 1.21429em;
-   
+  /* Don't highlight prompt number selection */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-   
+  /* Use default cursor */
   cursor: default;
 }
 @media (max-width: 540px) {
@@ -9515,7 +10733,7 @@ div.cell.selected.jupyter-soft-selected {
 }
 div.inner_cell {
   min-width: 0;
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-align: stretch;
@@ -9525,32 +10743,34 @@ div.inner_cell {
   display: box;
   box-orient: vertical;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: column;
   align-items: stretch;
-   
+  /* Old browsers */
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
-   
+  /* Modern browsers */
   flex: 1;
 }
- 
+/* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
   border: 1px solid #cfcfcf;
   border-radius: 2px;
   background: #f7f7f7;
   line-height: 1.21429em;
 }
- 
+/* This is needed so that empty prompt areas can collapse to zero height when there
+   is no content in the output_subarea and the prompt. The main purpose of this is
+   to make sure that empty JavaScript output_subareas have no height. */
 div.prompt:empty {
   padding-top: 0;
   padding-bottom: 0;
 }
 div.unrecognized_cell {
   padding: 5px 5px 5px 0px;
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-align: stretch;
@@ -9560,7 +10780,7 @@ div.unrecognized_cell {
   display: box;
   box-orient: horizontal;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -9587,17 +10807,17 @@ div.unrecognized_cell .inner_cell a:hover {
   }
 }
 div.code_cell {
-   
+  /* avoid page breaking on code cells when printing */
 }
 @media print {
   div.code_cell {
     page-break-inside: avoid;
   }
 }
- 
+/* any special styling for code cells that are currently running goes here */
 div.input {
   page-break-inside: avoid;
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-align: stretch;
@@ -9607,14 +10827,14 @@ div.input {
   display: box;
   box-orient: horizontal;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: row;
   align-items: stretch;
 }
 @media (max-width: 540px) {
   div.input {
-     
+    /* Old browsers */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-box-align: stretch;
@@ -9624,13 +10844,13 @@ div.input {
     display: box;
     box-orient: vertical;
     box-align: stretch;
-     
+    /* Modern browsers */
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
 }
- 
+/* input_area and input_prompt must match in top border and margin for alignment */
 div.input_prompt {
   color: #303F9F;
   border-top: 1px solid transparent;
@@ -9647,25 +10867,34 @@ div.input_area > div.highlight > pre {
   padding: 0px;
   background-color: transparent;
 }
- 
+/* The following gets added to the <head> if it is detected that the user has a
+ * monospace font with inconsistent normal/bold/italic height.  See
+ * notebookmain.js.  Such fonts will have keywords vertically offset with
+ * respect to the rest of the text.  The user should select a better font.
+ * See: https://github.com/ipython/ipython/issues/1503
+ *
+ * .CodeMirror span {
+ *      vertical-align: bottom;
+ * }
+ */
 .CodeMirror {
   line-height: 1.21429em;
-   
+  /* Changed from 1em to our global default */
   font-size: 14px;
   height: auto;
-   
+  /* Changed to auto to autogrow */
   background: none;
-   
+  /* Changed from white to allow our bg to show through */
 }
 .CodeMirror-scroll {
-   
-   
+  /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
+  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
   overflow-y: hidden;
   overflow-x: auto;
 }
 .CodeMirror-lines {
-   
-   
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* we have set a different line-height and want this to scale with that. */
   padding: 0.4em;
 }
 .CodeMirror-linenumber {
@@ -9676,13 +10905,18 @@ div.input_area > div.highlight > pre {
   border-top-left-radius: 2px;
 }
 .CodeMirror pre {
-   
-   
+  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* .CodeMirror-lines */
   padding: 0;
   border: 0;
   border-radius: 0;
 }
- 
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Adapted from GitHub theme
+
+*/
 .highlight-base {
   color: #000;
 }
@@ -9725,7 +10959,7 @@ div.input_area > div.highlight > pre {
 .highlight-meta {
   color: #AA22FF;
 }
- 
+/* previously not defined, copying from default codemirror */
 .highlight-def {
   color: #00f;
 }
@@ -9753,7 +10987,7 @@ div.input_area > div.highlight > pre {
 .highlight-link {
   color: #00c;
 }
- 
+/* apply the same style to codemirror */
 .cm-s-ipython span.cm-keyword {
   color: #008000;
   font-weight: bold;
@@ -9826,9 +11060,9 @@ div.input_area > div.highlight > pre {
   background-repeat: no-repeat;
 }
 div.output_wrapper {
-   
+  /* this position must be relative to enable descendents to be absolute within it */
   position: relative;
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-align: stretch;
@@ -9838,17 +11072,17 @@ div.output_wrapper {
   display: box;
   box-orient: vertical;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: column;
   align-items: stretch;
   z-index: 1;
 }
- 
+/* class for the output area when it should be height-limited */
 div.output_scroll {
-   
+  /* ideally, this would be max-height, but FF barfs all over that */
   height: 24em;
-   
+  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
   width: 100%;
   overflow: auto;
   border-radius: 2px;
@@ -9856,11 +11090,11 @@ div.output_scroll {
   box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
   display: block;
 }
- 
+/* output div while it is collapsed */
 div.output_collapsed {
   margin: 0px;
   padding: 0px;
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-align: stretch;
@@ -9870,7 +11104,7 @@ div.output_collapsed {
   display: box;
   box-orient: vertical;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -9882,7 +11116,7 @@ div.out_prompt_overlay {
   border-radius: 2px;
 }
 div.out_prompt_overlay:hover {
-   
+  /* use inner shadow to get border that is computed the same on WebKit/FF */
   -webkit-box-shadow: inset 0 0 1px #000;
   box-shadow: inset 0 0 1px #000;
   background: rgba(240, 240, 240, 0.5);
@@ -9890,11 +11124,11 @@ div.out_prompt_overlay:hover {
 div.output_prompt {
   color: #D84315;
 }
- 
+/* This class is the outer container of all output sections. */
 div.output_area {
   padding: 0px;
   page-break-inside: avoid;
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-align: stretch;
@@ -9904,7 +11138,7 @@ div.output_area {
   display: box;
   box-orient: horizontal;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -9929,9 +11163,10 @@ div.output_area img.unconfined,
 div.output_area svg.unconfined {
   max-width: none;
 }
- 
+/* This is needed to protect the pre formating from global settings such
+   as that of bootstrap */
 .output {
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-align: stretch;
@@ -9941,14 +11176,14 @@ div.output_area svg.unconfined {
   display: box;
   box-orient: vertical;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
 @media (max-width: 540px) {
   div.output_area {
-     
+    /* Old browsers */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-box-align: stretch;
@@ -9958,7 +11193,7 @@ div.output_area svg.unconfined {
     display: box;
     box-orient: vertical;
     box-align: stretch;
-     
+    /* Modern browsers */
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -9973,60 +11208,62 @@ div.output_area pre {
   background-color: transparent;
   border-radius: 0;
 }
- 
+/* This class is for the output subarea inside the output_area and after
+   the prompt div. */
 div.output_subarea {
   overflow-x: auto;
   padding: 0.4em;
-   
+  /* Old browsers */
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
-   
+  /* Modern browsers */
   flex: 1;
   max-width: calc(100% - 14ex);
 }
 div.output_scroll div.output_subarea {
   overflow-x: visible;
 }
- 
- 
+/* The rest of the output_* classes are for special styling of the different
+   output types */
+/* all text output has this class: */
 div.output_text {
   text-align: left;
   color: #000;
-   
+  /* This has to match that of the the CodeMirror class line-height below */
   line-height: 1.21429em;
 }
- 
+/* stdout/stderr are 'text' as well as 'stream', but execute_result/error are *not* streams */
 div.output_stderr {
   background: #fdd;
-   
+  /* very light red background for stderr */
 }
 div.output_latex {
   text-align: left;
 }
- 
+/* Empty output_javascript divs should have no height */
 div.output_javascript:empty {
   padding: 0;
 }
 .js-error {
   color: darkred;
 }
- 
+/* raw_input styles */
 div.raw_input_container {
   line-height: 1.21429em;
   padding-top: 5px;
 }
 pre.raw_input_prompt {
-   
+  /* nothing needed here. */
 }
 input.raw_input {
   font-family: monospace;
   font-size: inherit;
   color: inherit;
   width: auto;
-   
+  /* make sure input baseline aligns with prompt */
   vertical-align: baseline;
-   
+  /* padding + margin = 0.5em between prompt and cursor */
   padding: 0em 0.25em;
   margin: 0em 0.25em;
 }
@@ -10051,7 +11288,7 @@ div.output_unrecognized a:hover {
 }
 .rendered_html {
   color: #000;
-   
+  /* any extras will just be numbers: */
 }
 .rendered_html em {
   font-style: italic;
@@ -10231,7 +11468,7 @@ div.output_unrecognized a:hover {
   max-width: none;
 }
 div.text_cell {
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-align: stretch;
@@ -10241,7 +11478,7 @@ div.text_cell {
   display: box;
   box-orient: horizontal;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -10252,7 +11489,7 @@ div.text_cell {
   }
 }
 div.text_cell_render {
-   
+  /*font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
   outline: none;
   resize: none;
   width: inherit;
@@ -10315,7 +11552,11 @@ h6:hover .anchor-link {
   font-size: 100%;
   font-style: italic;
 }
- 
+/*!
+*
+* IPython notebook webapp
+*
+*/
 @media (max-width: 767px) {
   .notebook_app {
     padding-left: 0px;
@@ -10342,7 +11583,7 @@ div#notebook {
   overflow-y: hidden;
   overflow-x: auto;
   width: 100%;
-   
+  /* This spaces the page away from the edge of the notebook area */
   padding-top: 20px;
   margin: 0px;
   outline: none;
@@ -10379,7 +11620,9 @@ pre.dialog {
 p.dialog {
   padding: 0.2em;
 }
- 
+/* Word-wrap output correctly.  This is the CSS3 spelling, though Firefox seems
+   to not honor it correctly.  Webkit browsers (Chrome, rekonq, Safari) do.
+ */
 pre,
 code,
 kbd,
@@ -10415,7 +11658,7 @@ kbd {
   padding-top: 1px;
   padding-bottom: 1px;
 }
- 
+/* CSS for the cell toolbar */
 .celltoolbar {
   border: thin solid #CFCFCF;
   border-bottom: none;
@@ -10424,7 +11667,7 @@ kbd {
   width: 100%;
   height: 29px;
   padding-right: 4px;
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-align: stretch;
@@ -10434,15 +11677,15 @@ kbd {
   display: box;
   box-orient: horizontal;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: row;
   align-items: stretch;
-   
+  /* Old browsers */
   -webkit-box-pack: end;
   -moz-box-pack: end;
   box-pack: end;
-   
+  /* Modern browsers */
   justify-content: flex-end;
   display: -webkit-flex;
 }
@@ -10455,7 +11698,9 @@ kbd {
   display: none;
   vertical-align: bottom;
 }
- 
+/* ctb_show is added to the ctb_hideshow div to show the cell toolbar.
+   Cell toolbars are only shown when the ctb_global_show class is also set.
+*/
 .ctb_global_show .ctb_show.ctb_hideshow {
   display: block;
 }
@@ -11111,9 +12356,9 @@ div#pager {
   padding-top: 8px;
   -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
-   
+  /* Display over codemirror */
   z-index: 100;
-   
+  /* Hack which prevents jquery ui resizable from changing top. */
   top: auto !important;
 }
 div#pager pre {
@@ -11146,7 +12391,8 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-   
+  /* This injects handle bars (a short, wide = symbol) for 
+        the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
   content: '';
@@ -11159,7 +12405,7 @@ div#pager .ui-resizable-handle::after {
   border-top: 1px solid #cfcfcf;
 }
 .quickhelp {
-   
+  /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-align: stretch;
@@ -11169,7 +12415,7 @@ div#pager .ui-resizable-handle::after {
   display: box;
   box-orient: horizontal;
   box-align: stretch;
-   
+  /* Modern browsers */
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -11183,11 +12429,11 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_descr {
   display: inline-block;
-   
+  /* Old browsers */
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
-   
+  /* Modern browsers */
   flex: 1;
 }
 span.save_widget {
@@ -11282,9 +12528,20 @@ li.pulse.open > a.dropdown-toggle {
   background-color: #F37626;
   color: white;
 }
- 
- 
- 
+/**
+ * Primary styles
+ *
+ * Author: Jupyter Development Team
+ */
+/** WARNING IF YOU ARE EDITTING THIS FILE, if this is a .css file, It has a lot
+ * of chance of beeing generated from the ../less/[samename].less file, you can
+ * try to get back the less file by reverting somme commit in history
+ **/
+/*
+ * We'll try to get something pretty, so we
+ * have some strange css to have the scroll bar on
+ * the left with fix button on the top right of the tooltip
+ */
 @-moz-keyframes fadeOut {
   from {
     opacity: 1;
@@ -11317,7 +12574,7 @@ li.pulse.open > a.dropdown-toggle {
     opacity: 1;
   }
 }
- 
+/*properties of tooltip after "expand"*/
 .bigtooltip {
   overflow: auto;
   height: 200px;
@@ -11328,7 +12585,7 @@ li.pulse.open > a.dropdown-toggle {
   transition-property: height;
   transition-duration: 500ms;
 }
- 
+/*properties of tooltip before "expand"*/
 .smalltooltip {
   -webkit-transition-property: height;
   -webkit-transition-duration: 500ms;
@@ -11347,12 +12604,12 @@ li.pulse.open > a.dropdown-toggle {
   right: 0px;
 }
 .tooltiptext {
-   
+  /*avoid the button to overlap on some docstring*/
   padding-right: 30px;
 }
 .ipython_tooltip {
   max-width: 700px;
-   
+  /*fade-in animation when inserted*/
   -webkit-animation: fadeOut 400ms;
   -moz-animation: fadeOut 400ms;
   animation: fadeOut 400ms;
@@ -11418,8 +12675,8 @@ ul.typeahead-list {
   overflow: auto;
 }
 ul.typeahead-list > li > a {
-   
-   
+  /** Firefox bug **/
+  /* see https://github.com/jupyter/notebook/issues/559 */
   white-space: normal;
 }
 .cmd-palette .modal-body {
@@ -11503,82 +12760,82 @@ ul.typeahead-list > li > a {
 .terminal-app #terminado-container {
   margin-top: 20px;
 }
- 
+/*# sourceMappingURL=style.min.css.map */
     </style>
 <style type="text/css">
     .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
-.highlight .c { color: #408080; font-style: italic }  
-.highlight .err { border: 1px solid #FF0000 }  
-.highlight .k { color: #008000; font-weight: bold }  
-.highlight .o { color: #666666 }  
-.highlight .ch { color: #408080; font-style: italic }  
-.highlight .cm { color: #408080; font-style: italic }  
-.highlight .cp { color: #BC7A00 }  
-.highlight .cpf { color: #408080; font-style: italic }  
-.highlight .c1 { color: #408080; font-style: italic }  
-.highlight .cs { color: #408080; font-style: italic }  
-.highlight .gd { color: #A00000 }  
-.highlight .ge { font-style: italic }  
-.highlight .gr { color: #FF0000 }  
-.highlight .gh { color: #000080; font-weight: bold }  
-.highlight .gi { color: #00A000 }  
-.highlight .go { color: #888888 }  
-.highlight .gp { color: #000080; font-weight: bold }  
-.highlight .gs { font-weight: bold }  
-.highlight .gu { color: #800080; font-weight: bold }  
-.highlight .gt { color: #0044DD }  
-.highlight .kc { color: #008000; font-weight: bold }  
-.highlight .kd { color: #008000; font-weight: bold }  
-.highlight .kn { color: #008000; font-weight: bold }  
-.highlight .kp { color: #008000 }  
-.highlight .kr { color: #008000; font-weight: bold }  
-.highlight .kt { color: #B00040 }  
-.highlight .m { color: #666666 }  
-.highlight .s { color: #BA2121 }  
-.highlight .na { color: #7D9029 }  
-.highlight .nb { color: #008000 }  
-.highlight .nc { color: #0000FF; font-weight: bold }  
-.highlight .no { color: #880000 }  
-.highlight .nd { color: #AA22FF }  
-.highlight .ni { color: #999999; font-weight: bold }  
-.highlight .ne { color: #D2413A; font-weight: bold }  
-.highlight .nf { color: #0000FF }  
-.highlight .nl { color: #A0A000 }  
-.highlight .nn { color: #0000FF; font-weight: bold }  
-.highlight .nt { color: #008000; font-weight: bold }  
-.highlight .nv { color: #19177C }  
-.highlight .ow { color: #AA22FF; font-weight: bold }  
-.highlight .w { color: #bbbbbb }  
-.highlight .mb { color: #666666 }  
-.highlight .mf { color: #666666 }  
-.highlight .mh { color: #666666 }  
-.highlight .mi { color: #666666 }  
-.highlight .mo { color: #666666 }  
-.highlight .sa { color: #BA2121 }  
-.highlight .sb { color: #BA2121 }  
-.highlight .sc { color: #BA2121 }  
-.highlight .dl { color: #BA2121 }  
-.highlight .sd { color: #BA2121; font-style: italic }  
-.highlight .s2 { color: #BA2121 }  
-.highlight .se { color: #BB6622; font-weight: bold }  
-.highlight .sh { color: #BA2121 }  
-.highlight .si { color: #BB6688; font-weight: bold }  
-.highlight .sx { color: #008000 }  
-.highlight .sr { color: #BB6688 }  
-.highlight .s1 { color: #BA2121 }  
-.highlight .ss { color: #19177C }  
-.highlight .bp { color: #008000 }  
-.highlight .fm { color: #0000FF }  
-.highlight .vc { color: #19177C }  
-.highlight .vg { color: #19177C }  
-.highlight .vi { color: #19177C }  
-.highlight .vm { color: #19177C }  
-.highlight .il { color: #666666 }  
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
     
- 
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
 .ansi-black-intense-fg { color: #282C36; }
@@ -11618,7 +12875,7 @@ ul.typeahead-list > li > a {
 
 
 <style type="text/css">
- 
+/* Overrides of notebook CSS for static HTML export */
 body {
   overflow: visible;
   padding: 8px;
@@ -11643,13 +12900,13 @@ div#notebook {
 }
 </style>
 
-
+<!-- Custom stylesheet, it must be in the same directory as the html file -->
 <link rel="stylesheet" href="custom.css">
 
-
-
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
-    
+    <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
@@ -11667,7 +12924,7 @@ div#notebook {
         }
     });
     </script>
-    </head>
+    <!-- End of mathjax configuration --></head>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -14715,4 +15972,41 @@ dtype: float64</pre>
  
 
 
+</html>
+
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+<a class="nav nav-prev" href="/machine-learning/isl-ch2/isl2labsolutions/" title=""> <i class="fa fa-chevron-left"></i><label></label></a>
+    <a class="nav nav-next" href="/machine-learning/isl-ch3/ch3-work/" title="Chapter 3 Work" style="margin-right: 0px;"><label>Chapter 3 Work</label><i class="fa fa-chevron-right"></i></a></div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+
+<script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
+
+
+
+    
+
+    
+    
+
+    
+  </body>
 </html>

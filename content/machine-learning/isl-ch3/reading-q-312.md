@@ -1,7 +1,7 @@
 ---
-title: "Reading Questions 3.1.2"
+title: "Reading 3.1.2 Q"
 date: 2018-10-16T12:27:45-05:00
-#weight: 
+weight: 120
 draft: false
 #type: slide
 #theme: white
