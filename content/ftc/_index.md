@@ -15,7 +15,7 @@ Monday and Wednesday, 3:20-4:50pm. Room 109.
 
 ## Meet Schedule
 
-* November 17, Lindblom Math & Science Academy, 6130 S Wolcott.
+* November 17, Lindblom Math & Science Academy, 6130 S Wolcott, 10:00am - 3:00pm.
 * December 15, Solorio High School, 5400 S St Louis, 11:00am - 4:00pm.
 * January 19, 2019, Whitney Young High School, 11:30am - 5:00pm.
 * February 22-23, 2019. Elgin Community College. 6:30pm Friday -
