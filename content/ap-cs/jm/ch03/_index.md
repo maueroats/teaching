@@ -13,8 +13,18 @@ description: "An introduction to object oriented programming, getting started wi
 * Get the AP CS GridWorld. The easiest download is the [Gridworld for BlueJ](https://www.bluej.org/help/ap.html). There are some configurations you can change, see that page for details.
 
 {{% notice note %}}
-You must find the Preferences -> Libraries area and add the `gridworld.jar` file to the list of libraries or nothing will work! Preferences on Mac OS are `Command-,` in the BlueJ menu, while on Windows they are under the Tools menu.
+You must find the Preferences -> Libraries area and add the
+`gridworld.jar` file to the list of libraries or nothing will work!
+The gridworld file is just inside the GridWorld folder.
+
+Preferences on Mac OS are `Command-,` in the BlueJ menu, while on
+Windows they are under the Tools menu. 
 {{% /notice %}}
+
+## Read the documentation
+
+The README in your GitHub repository should have information on how to
+get set up and started.
 
 ## Homework
 
