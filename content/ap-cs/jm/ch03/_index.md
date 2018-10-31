@@ -23,5 +23,6 @@ You must find the Preferences -> Libraries area and add the `gridworld.jar` file
 
 ## Easy Downloads
 
-{{% attachments-github title="Downloads" pattern="\.zip$" %}}
+<-- {{% attachments-github title="Downloads" pattern="\.zip$" %}} -->
+
 
