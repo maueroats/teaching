@@ -21,8 +21,5 @@ You must find the Preferences -> Libraries area and add the `gridworld.jar` file
 1. (Wed class) Part 1: Observe and Interact with Gridworld (all numbered questions)
 2. (Wed-Thurs) Part 2: Bug Variations
 
-## Easy Downloads
-
-{{% attachments-github title="Downloads" pattern="\.zip$" %}} 
 
 
