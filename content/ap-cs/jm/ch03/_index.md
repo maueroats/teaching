@@ -1,5 +1,5 @@
 ---
-title: "Ch03. Intro to OOP"
+title: "3. Intro to OOP"
 date: 2018-10-30T22:11:40-05:00
 weight: 30
 draft: false
