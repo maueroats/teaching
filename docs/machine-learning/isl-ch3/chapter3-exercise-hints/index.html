@@ -1217,8 +1217,14 @@ page</a> for more information.</li>
 
 <h2 id="11-t-statistic">11. t-statistic</h2>
 
-<p>In order to set a random seed, you use
-<a href="https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do#21494630">numpy.random.seed(N)</a>.</p>
+<p>Opening paragraph:</p>
+
+<ul>
+<li>In order to set a random seed, you use
+<a href="https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do#21494630"><code>numpy.random.seed(N)</code></a>.</li>
+<li>The normal distribution is <code>scipy.stats.random.norm()</code>.</li>
+<li>Sampling 50 values from any distribution is <code>whatever.rvs(size=50)</code></li>
+</ul>
 
 <p>11a. To perform a regression without an intercept, use the formula the
 text suggests: &ldquo;y ~ x + 0&rdquo;. You can get $t$-values and $p$-values from
