@@ -1,6 +1,6 @@
 ---
 title: "Chapter 3 Exercise Hints"
-date: 2018-10-25T14:06:38-05:00
+date: 2018-11-05T11:57:16-06:00
 #weight: 
 draft: false
 #type: slide
@@ -54,3 +54,20 @@ text suggests: "y ~ x + 0". You can get $t$-values and $p$-values from
 the instance variables `tvalues` and `pvalues` if you want to see them
 individually.
 
+## 13. Simulated data
+
+See number 11 for the functions needed.
+
+* 13d. Skip the legend if it does not appear automatically.
+
+## 14. Collinearity with simulated data
+
+See question 11 for a primer on simulated data.
+
+14g. To add the bad data based on the original dataframe `df`:
+
+    badData = pd.DataFrame({'x1': 0.1, 'x2': 0.8, 'y': 6}, index=[len(df)])
+    df2 = df.append(badData)
+
+This question needs to be unpacked. Use the `plot_lm_summary` function
+that was provided in class to analyze leverage.

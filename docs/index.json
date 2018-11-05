@@ -693,18 +693,18 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
-    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-30/",
-    "title": "2018.10.30 Actuarial Contest",
-    "tags": [],
-    "description": "Modeling the Future content, lots of statistics.",
-    "content": "The Modeling the Future Challenge contest is a math modeling contest sponsored by The Actuarial Foundation. You could use linear regression or more …"
-},
-{
     "uri": "https://wy-cs.site/machine-learning/isl-ch3/chapter3-exercise-hints/",
     "title": "Chapter 3 Exercise Hints",
     "tags": [],
     "description": "Python commands useful in each exercise.",
     "content": " 8. Auto, simple regression 8.a. smf.ols is how to do a regression\n8.a.i relationship means the coefficient\n8.a.iv this would be get_prediction and …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/daily/2018-10-30/",
+    "title": "2018.10.30 Actuarial Contest",
+    "tags": [],
+    "description": "Modeling the Future content, lots of statistics.",
+    "content": "The Modeling the Future Challenge contest is a math modeling contest sponsored by The Actuarial Foundation. You could use linear regression or more …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-16/",
