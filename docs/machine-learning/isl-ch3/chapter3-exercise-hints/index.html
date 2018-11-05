@@ -1238,6 +1238,7 @@ individually.</p>
 <p>See number 11 for the functions needed.</p>
 
 <ul>
+<li>13a. See Exercise 11 for how to sample from the normal distribution.</li>
 <li>13d. Skip the legend if it does not appear automatically.</li>
 </ul>
 
@@ -1246,7 +1247,8 @@ individually.</p>
 <p>See question 11 for a primer on simulated data.</p>
 
 <p>14g. To add the bad data based on the original dataframe <code>df</code>:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">badData = pd.DataFrame({&#39;x1&#39;: 0.1, &#39;x2&#39;: 0.8, &#39;y&#39;: 6}, index=[len(df)])
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">badData = pd.DataFrame({&#39;x1&#39;: 0.1, &#39;x2&#39;: 0.8, &#39;y&#39;: 6}, 
+                       index=[len(df)])
 df2 = df.append(badData)</pre></div>
 <p>This question needs to be unpacked. Use the <code>plot_lm_summary</code> function
 that was provided in class to analyze leverage.</p>

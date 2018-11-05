@@ -58,6 +58,7 @@ individually.
 
 See number 11 for the functions needed.
 
+* 13a. See Exercise 11 for how to sample from the normal distribution.
 * 13d. Skip the legend if it does not appear automatically.
 
 ## 14. Collinearity with simulated data
@@ -66,7 +67,8 @@ See question 11 for a primer on simulated data.
 
 14g. To add the bad data based on the original dataframe `df`:
 
-    badData = pd.DataFrame({'x1': 0.1, 'x2': 0.8, 'y': 6}, index=[len(df)])
+    badData = pd.DataFrame({'x1': 0.1, 'x2': 0.8, 'y': 6}, 
+                           index=[len(df)])
     df2 = df.append(badData)
 
 This question needs to be unpacked. Use the `plot_lm_summary` function
