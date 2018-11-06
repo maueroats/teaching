@@ -1240,7 +1240,14 @@ individually.</p>
 
 <ul>
 <li>13a. See Exercise 11 for how to sample from the normal distribution.</li>
-<li>13d. Skip the legend if it does not appear automatically.</li>
+
+<li><p>13f. The population regression line could be drawn by creating a
+data frame with only two points in it (both lying on the desired
+line).  Use <code>sns.lineplot</code> in the same cell as the scatterplot to draw
+the line.
+Skip the legend if it does not appear automatically. Example</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> trueLine = pd.DataFrame({&#39;x&#39;: np.array([-3,   3]), 
+                          &#39;y&#39;: np.array([-10, 10])})</pre></div></li>
 </ul>
 
 <h2 id="14-collinearity-with-simulated-data">14. Collinearity with simulated data</h2>
