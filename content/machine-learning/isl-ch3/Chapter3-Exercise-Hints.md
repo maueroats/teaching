@@ -46,8 +46,9 @@ Opening paragraph:
 
 * In order to set a random seed, you use
 [`numpy.random.seed(N)`](https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do#21494630).
-* The normal distribution is `scipy.stats.random.norm()`.
+* The normal distribution is `scipy.stats.norm()`.
 * Sampling 50 values from any distribution is `whatever.rvs(size=50)`
+* Standard deviation is set by the `scale=` parameter to the normal distribution.
 
 11a. To perform a regression without an intercept, use the formula the
 text suggests: "y ~ x + 0". You can get $t$-values and $p$-values from
