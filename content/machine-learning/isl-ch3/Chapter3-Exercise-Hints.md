@@ -64,12 +64,10 @@ See number 11 for the functions needed.
 data frame with only two points in it (both lying on the desired
 line).  Use `sns.lineplot` in the same cell as the scatterplot to draw
 the line.
-Skip the legend if it does not appear automatically. Example
+Skip the legend if it does not appear automatically. Example code
 
-     ```
-     trueLine = pd.DataFrame({'x': np.array([-3,   3]), 
-                              'y': np.array([-10, 10])})
-     ```
+        trueLine = pd.DataFrame({'x': np.array([-3,   3]), 
+                                 'y': np.array([-10, 10])})
 
 ## 14. Collinearity with simulated data
 
