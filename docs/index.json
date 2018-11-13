@@ -224,6 +224,13 @@
     "content": " This page is full of tiny pieces to help you get better at programming Haskell.\nGoals:\n Range notation [a,b..c] to make lists of integers. Apply a …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch03/class-basic-2/",
+    "title": "3. Writing Basic Classes 2",
+    "tags": [],
+    "description": "HobbleBug and friends, a good first or second day for writing classes.",
+    "content": " HobbleBug  Move, wait, move, wait, repeats  WheezerBug  First 3 ticks: move forward Next 2 ticks: waits Repeats  LongWheezeBug  Constructor specifies …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch06/animation2/",
     "title": "Animations Outline",
     "tags": ["design-process"],
@@ -586,13 +593,6 @@
     "tags": [],
     "description": "Review of map-image, build-image, randomness.",
     "content": " (rq1) Write a function that takes in one input n and gives random numbers between 100 and 1000. The first possible random number is 100, and after …"
-},
-{
-    "uri": "https://wy-cs.site/intermediate-cs/ch08/",
-    "title": "8. Number Models",
-    "tags": [],
-    "description": "Animations that remember a number instead of an image.",
-    "content": "  "
 },
 {
     "uri": "https://wy-cs.site/resources/",
@@ -1006,6 +1006,13 @@
     "tags": [],
     "description": "",
     "content": "WY Computer Science\n"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " g\u0026amp;mdash; title: \u0026amp;ldquo;8. Number Models\u0026amp;rdquo; date: 2018-11-05T07:44:46-06:00 weight: 80 draft: false #type: slide #theme: white\ndescription: …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/",

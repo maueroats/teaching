@@ -31,5 +31,8 @@ get set up and started.
 1. (Wed class) Part 1: Observe and Interact with Gridworld (all numbered questions)
 2. (Wed-Thurs) Part 2: Bug Variations
 
+## All Files
+
+{{% children description="true" %}}
 
 
