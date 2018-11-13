@@ -574,11 +574,25 @@
     "content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/",
+    "title": "_Index",
+    "tags": [],
+    "description": "",
+    "content": "  7. Review 1 Review of map-image, build-image, randomness.\n  "
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/review-1/",
+    "title": "7. Review 1",
+    "tags": [],
+    "description": "Review of map-image, build-image, randomness.",
+    "content": " (rq1) Write a function that takes in one input n and gives random numbers between 100 and 1000. The first possible random number is 100, and after …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch08/",
     "title": "8. Number Models",
     "tags": [],
     "description": "Animations that remember a number instead of an image.",
-    "content": "TODO\n"
+    "content": "  "
 },
 {
     "uri": "https://wy-cs.site/resources/",
