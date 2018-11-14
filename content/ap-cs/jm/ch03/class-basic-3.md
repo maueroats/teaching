@@ -14,9 +14,9 @@ description: "The last sequence of practice classes."
    
          Flower c = new CreepingCharlie();
          
-2. `NStep`: When told to `go()` it actually begins a sequence of N
-   moves (one every time it acts). Set N in
-   the constructor.
+2. `NStep`: Telling the bug `go()` activates it. After it is
+   activated, it moves N times (one every time it acts) and then stops. 
+   Set N in the constructor.
    
         Bug s = new NStep(3);
         s = new Location(1,5);
