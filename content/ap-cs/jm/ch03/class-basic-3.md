@@ -8,9 +8,14 @@ draft: false
 description: "The last sequence of practice classes."
 ---
 
-1. `NStep`: When told to `move()` it actually begins a sequence of N
+1. `CreepingCharlie`: A subclass of flower that has the normal
+   behavior of a flower, except every third time it is asked to
+   `act()`, it moves once.
+   
+         Flower c = new CreepingCharlie();
+         
+2. `NStep`: When told to `move()` it actually begins a sequence of N
    moves (one every time it acts). Set N in
    the constructor.
    
         Bug s = new NStep(3);
-
