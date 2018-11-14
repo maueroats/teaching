@@ -1,0 +1,16 @@
+---
+title: "3. Writing Basic Classes 3"
+date: 2018-11-14T08:46:30-06:00
+weight: 30
+draft: false
+#type: slide
+#theme: white
+description: "The last sequence of practice classes."
+---
+
+1. `NStep`: When told to `move()` it actually begins a sequence of N
+   moves (one every time it acts). Set N in
+   the constructor.
+   
+        Bug s = new NStep(3);
+

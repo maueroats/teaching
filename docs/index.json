@@ -336,6 +336,13 @@
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch03/class-basic-3/",
+    "title": "3. Writing Basic Classes 3",
+    "tags": [],
+    "description": "The last sequence of practice classes.",
+    "content": " NStep: When told to move() it actually begins a sequence of N moves (one every time it acts). Set N in the constructor.\nBug s = new NStep(3);  "
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch03/",
     "title": "3. Intro to OOP",
     "tags": [],
@@ -589,10 +596,10 @@
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch07/",
-    "title": "_Index",
+    "title": "7. Numbers",
     "tags": [],
-    "description": "",
-    "content": "  7. Review 1 Review of map-image, build-image, randomness.\n  "
+    "description": "Numerical functions, including gradients.",
+    "content": "Important ideas:\n Inexact numbers and check-within build3-image or build-image map3-image or map-image (random 5) gives 0, 1, 2, 3, or 4. How to make …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch07/review-1/",
@@ -991,7 +998,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   3. Intro to OOP modified Tue 10-30  1. CS …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   3. Writing Basic Classes 3 modified Wed …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
