@@ -14,8 +14,11 @@ description: "The last sequence of practice classes."
    
          Flower c = new CreepingCharlie();
          
-2. `NStep`: When told to `move()` it actually begins a sequence of N
+2. `NStep`: When told to `step()` it actually begins a sequence of N
    moves (one every time it acts). Set N in
    the constructor.
    
         Bug s = new NStep(3);
+        s = new Location(1,5);
+        world.add(where, s); 
+        s.step(); // then moves 3 times forward
