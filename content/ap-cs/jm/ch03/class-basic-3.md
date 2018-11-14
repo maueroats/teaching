@@ -14,7 +14,7 @@ description: "The last sequence of practice classes."
    
          Flower c = new CreepingCharlie();
          
-2. `NStep`: When told to `step()` it actually begins a sequence of N
+2. `NStep`: When told to `go()` it actually begins a sequence of N
    moves (one every time it acts). Set N in
    the constructor.
    
