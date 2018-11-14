@@ -10,7 +10,7 @@ description: "The last sequence of practice classes."
 
 1. `CreepingCharlie`: A subclass of flower that has the normal
    behavior of a flower, except every third time it is asked to
-   `act()`, it moves once.
+   `act()`, it changes its direction by 45 degrees.
    
          Flower c = new CreepingCharlie();
          
