@@ -84,6 +84,13 @@
     "content": " Homework  Chapter 3 Section 1 Worksheet A. (October 10-11, 2018) Solutions to A discussed in class. Remainder became worksheet BC. Chapter 3 Section …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/models-1/",
+    "title": "8. Number Models 1",
+    "tags": [],
+    "description": "",
+    "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});    A circle increases its …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch03/class-basic-1/",
     "title": "3. Writing Basic Classes 1",
     "tags": [],
