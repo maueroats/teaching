@@ -340,7 +340,7 @@
     "title": "3. Writing Basic Classes 3",
     "tags": [],
     "description": "The last sequence of practice classes.",
-    "content": " CreepingCharlie: A subclass of flower that has the normal behavior of a flower, except every third time it is asked to act(), it changes its …"
+    "content": "You can look up the methods available in the GridWorld classes. There is a directory of all methods. The most useful ones are Actor, Bug, and Flower. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch03/",

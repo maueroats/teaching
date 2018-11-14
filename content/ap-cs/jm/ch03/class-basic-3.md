@@ -8,9 +8,17 @@ draft: false
 description: "The last sequence of practice classes."
 ---
 
+You can look up the methods available in the GridWorld classes. There
+is a 
+[directory of all
+methods](http://horstmann.com/gridworld/javadoc/). The most useful
+ones are Actor, Bug, and Flower.
+
+
 1. `CreepingCharlie`: A subclass of flower that has the normal
    behavior of a flower, except every third time it is asked to
-   `act()`, it changes its direction by 45 degrees.
+   `act()`, it changes its direction by 45 degrees. (See documentation
+   for Actor.)
    
          Flower c = new CreepingCharlie();
          
