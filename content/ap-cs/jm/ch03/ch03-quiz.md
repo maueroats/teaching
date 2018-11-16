@@ -23,6 +23,8 @@ begins at a given initial x-coordinate on the number line.
 * The `report()` method returns the current location.  
 * The `hut()` method updates the location by adding 1/n on move number n.
 
+[Starter code from GitHub](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/ZenoAdder.java).
+
 ```java
 ZenoAdder a = new ZenoAdder(5.2);
 a.hut();
@@ -38,9 +40,12 @@ a.report();  // 6.7 + 1/3 + 1/4 = 7.28333...
 The `System.out.println(value);` method will let you print your
 location in a visible way.
 
+[ZenoAdderRunner](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/ZenoAdderRunner.java)
+on GitHub.
+
 ## DashBug
 
-The DashBug is in GridWorld.
+The DashBug is in GridWorld. ([Starter code](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/DashBug.java).)
 
 1. The `DashBug` walks `steps` times with the ordinary Bug `act()` method,
 and then walks for two steps using the `move()` method. The cycle is
@@ -63,3 +68,6 @@ world.add(new Location(10,4), d);
 [...]
 ```
 
+
+[DashBugRunner](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/DashBugRunner.java)
+on GitHub.
