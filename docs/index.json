@@ -623,6 +623,13 @@
     "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/ch07-quiz/",
+    "title": "7. Numbers Quiz",
+    "tags": [],
+    "description": "",
+    "content": " Make a function that picks a color that has a random amount of red, either 50, 150, 250, and a random amount of green, either 100 or\n Use it to make …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/isl-ch3/logistic/",
     "title": "Logistic Distribution",
     "tags": [],
