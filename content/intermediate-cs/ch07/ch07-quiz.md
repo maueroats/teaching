@@ -8,8 +8,8 @@ draft: false
 ---
 
 1. Make a function that picks a color that has a random amount of red,
-   either 50, 150, 250, and a random amount of green, either 100 or
-   200. Use it to make six 50x50 squares next to each other.
+   either 50, 150, 250, and a random amount of green, either 100 or 200. 
+   Use it to make six 50x50 squares next to each other.
 
 2. Check if a random integer between 0 and 60 (inclusive) has a square root
 between 3.5 and 7.5. Use `check-within`. You can comment out your test

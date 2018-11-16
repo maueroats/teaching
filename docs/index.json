@@ -627,7 +627,7 @@
     "title": "7. Numbers Quiz",
     "tags": [],
     "description": "",
-    "content": " Make a function that picks a color that has a random amount of red, either 50, 150, 250, and a random amount of green, either 100 or\n Use it to make …"
+    "content": " Make a function that picks a color that has a random amount of red, either 50, 150, 250, and a random amount of green, either 100 or 200. Use it to …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/isl-ch3/logistic/",
@@ -1155,14 +1155,14 @@
     "content": " Using plot_lm_summary  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
