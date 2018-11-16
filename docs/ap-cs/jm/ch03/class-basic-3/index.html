@@ -1262,15 +1262,30 @@ behavior of a flower, except every third time it is asked to
 for Actor.)</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> Flower c = new CreepingCharlie();</pre></div></li>
 
-<li><p><code>NStep</code>: Add a method named <code>go()</code> to your <code>NStep</code> bug.
-Telling the bug <code>go()</code> activates it. After it is
-activated, it moves N times (one every time it acts) and then stops.
-Set N in the constructor.</p>
+<li><p><code>PayMeBug</code>: Write a class called <code>PayMeBug</code> that is a kind of <code>Bug</code>. Its
+constructor should take in a number of steps (N) the bug will go when paid.
+Write a method named <code>pay()</code> to your <code>PayMeBug</code>.
+After it is paid, the next N times its act method is called (maybe by
+hitting the &ldquo;Step&rdquo; button), it moves forward like an ordinary
+bug. Then it stops and waits to be paid again.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Bug s = new NStep(3);
-s = new Location(1,5);
+Location where = new Location(1,5);
 world.add(where, s); 
-s.step(); // then moves 3 times forward</pre></div></li>
+s.pay(); // now moves</pre></div></li>
+
+<li><p><code>IRBug</code>. Write a class <code>IRBug</code> for &ldquo;isosceles right triangle
+bug&rdquo;. The constructor should take in the number of steps on one leg
+of the triangle. When the bug&rsquo;s <code>act()</code> method is called, it uses
+the Bug&rsquo;s <code>move()</code> method to move along each side and uses the
+appropriate number of <code>turn()</code> calls to turn at each corner. It can
+repeat the triangle forever.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Bug t = new IRBug(4);
+Location where = new Location(2,7)
+world.add(where, t);
+[...]</pre></div></li>
 </ol>
+
+<p>It is fine if the <code>IRBug</code> crushes flowers and rocks instead of turning.</p>
 
 
     

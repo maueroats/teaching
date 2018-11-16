@@ -22,12 +22,28 @@ ones are Actor, Bug, and Flower.
    
          Flower c = new CreepingCharlie();
          
-2. `NStep`: Add a method named `go()` to your `NStep` bug.
-   Telling the bug `go()` activates it. After it is
-   activated, it moves N times (one every time it acts) and then stops. 
-   Set N in the constructor.
-   
+2. `PayMeBug`: Write a class called `PayMeBug` that is a kind of `Bug`. Its
+constructor should take in a number of steps (N) the bug will go when paid.
+Write a method named `pay()` to your `PayMeBug`.
+After it is paid, the next N times its act method is called (maybe by
+hitting the "Step" button), it moves forward like an ordinary
+bug. Then it stops and waits to be paid again.
+
         Bug s = new NStep(3);
-        s = new Location(1,5);
+        Location where = new Location(1,5);
         world.add(where, s); 
-        s.step(); // then moves 3 times forward
+        s.pay(); // now moves
+
+3. `IRBug`. Write a class `IRBug` for "isosceles right triangle
+   bug". The constructor should take in the number of steps on one leg
+   of the triangle. When the bug's `act()` method is called, it uses
+   the Bug's `move()` method to move along each side and uses the
+   appropriate number of `turn()` calls to turn at each corner. It can
+   repeat the triangle forever.
+
+        Bug t = new IRBug(4);
+        Location where = new Location(2,7)
+        world.add(where, t);
+        [...]
+        
+   It is fine if the `IRBug` crushes flowers and rocks instead of turning.

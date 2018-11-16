@@ -43,6 +43,9 @@ location in a visible way.
 [ZenoAdderRunner](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/ZenoAdderRunner.java)
 on GitHub.
 
+_Note_: clever name, but it's wrong because this class walks off to
+infinity if you let it keep going long enough. 
+
 ## DashBug
 
 The DashBug is in GridWorld. ([Starter code](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/DashBug.java).)
@@ -63,11 +66,29 @@ int steps = 4;
 int cycle = 3;
 Bug c = new DashBug(steps, cycle);
 Bug d = new DashBug();
-world.add(new Location(10,3), c);
-world.add(new Location(10,4), d);
+world.add(new Location(8,3), c);
+world.add(new Location(8,4), d);
 [...]
 ```
 
 
 [DashBugRunner](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/DashBugRunner.java)
 on GitHub.
+
+Corrections:
+
+* `DashBug` must have all actions driven by the `act()` method.
+* The bug `c = new DashBug(3,2)` above should behave like this:
+
+     - `c.act()`: Bug act method.
+     - `c.act()`: Bug act method.
+     - `c.act()`: Bug act method.
+     - `c.act()`: just `move()`
+     - `c.act()`: just `move()`
+     - `c.act()`: Bug act method.
+     - `c.act()`: Bug act method.
+     - `c.act()`: Bug act method.
+     - `c.act()`: just `move()`
+     - `c.act()`: just `move()`
+     - `c.act()`: no response
+     

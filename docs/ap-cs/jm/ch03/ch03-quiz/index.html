@@ -1292,6 +1292,9 @@ location in a visible way.</p>
 <p><a href="https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/ZenoAdderRunner.java">ZenoAdderRunner</a>
 on GitHub.</p>
 
+<p><em>Note</em>: clever name, but it&rsquo;s wrong because this class walks off to
+infinity if you let it keep going long enough.</p>
+
 <h2 id="dashbug">DashBug</h2>
 
 <p>The DashBug is in GridWorld. (<a href="https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/DashBug.java">Starter code</a>.)</p>
@@ -1312,11 +1315,34 @@ should repeat 3 steps in two cycles.</p></li>
 <span style="color:#00a8c8">int</span> <span style="color:#111">cycle</span> <span style="color:#f92672">=</span> <span style="color:#111">3</span><span style="color:#f92672">;</span>
 <span style="color:#111">Bug</span> <span style="color:#111">c</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">DashBug</span><span style="color:#f92672">(</span><span style="color:#111">steps</span><span style="color:#f92672">,</span> <span style="color:#111">cycle</span><span style="color:#f92672">);</span>
 <span style="color:#111">Bug</span> <span style="color:#111">d</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">DashBug</span><span style="color:#f92672">();</span>
-<span style="color:#111">world</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#00a8c8">new</span> <span style="color:#111">Location</span><span style="color:#f92672">(</span><span style="color:#111">10</span><span style="color:#f92672">,</span><span style="color:#111">3</span><span style="color:#f92672">),</span> <span style="color:#111">c</span><span style="color:#f92672">);</span>
-<span style="color:#111">world</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#00a8c8">new</span> <span style="color:#111">Location</span><span style="color:#f92672">(</span><span style="color:#111">10</span><span style="color:#f92672">,</span><span style="color:#111">4</span><span style="color:#f92672">),</span> <span style="color:#111">d</span><span style="color:#f92672">);</span>
+<span style="color:#111">world</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#00a8c8">new</span> <span style="color:#111">Location</span><span style="color:#f92672">(</span><span style="color:#111">8</span><span style="color:#f92672">,</span><span style="color:#111">3</span><span style="color:#f92672">),</span> <span style="color:#111">c</span><span style="color:#f92672">);</span>
+<span style="color:#111">world</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#00a8c8">new</span> <span style="color:#111">Location</span><span style="color:#f92672">(</span><span style="color:#111">8</span><span style="color:#f92672">,</span><span style="color:#111">4</span><span style="color:#f92672">),</span> <span style="color:#111">d</span><span style="color:#f92672">);</span>
 <span style="color:#f92672">[...]</span></code></pre></div>
 <p><a href="https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/DashBugRunner.java">DashBugRunner</a>
 on GitHub.</p>
+
+<p>Corrections:</p>
+
+<ul>
+<li><code>DashBug</code> must have all actions driven by the <code>act()</code> method.</li>
+
+<li><p>The bug <code>c = new DashBug(3,2)</code> above should behave like this:</p>
+
+<ul>
+<li><code>c.act()</code>: Bug act method.</li>
+<li><code>c.act()</code>: Bug act method.</li>
+<li><code>c.act()</code>: Bug act method.</li>
+<li><code>c.act()</code>: just <code>move()</code></li>
+<li><code>c.act()</code>: just <code>move()</code></li>
+<li><code>c.act()</code>: Bug act method.</li>
+<li><code>c.act()</code>: Bug act method.</li>
+<li><code>c.act()</code>: Bug act method.</li>
+<li><code>c.act()</code>: just <code>move()</code></li>
+<li><code>c.act()</code>: just <code>move()</code></li>
+<li><code>c.act()</code>: no response
+<br /></li>
+</ul></li>
+</ul>
 
 
     
