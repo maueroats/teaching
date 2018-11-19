@@ -455,6 +455,13 @@
     "content": " Target. tgt :: Integer -\u0026amp;gt; [Integer] -\u0026amp;gt; Integer. Given a target number and a list of numbers, find the smallest distance between the target …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch4/",
+    "title": "4. Classification",
+    "tags": [],
+    "description": "",
+    "content": " Chapter 4 Lab.\nAll Contents  "
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch03/ch03-quiz/",
     "title": "3. Classes Quiz",
     "tags": [],
@@ -487,7 +494,7 @@
     "title": "Machine Learning",
     "tags": [],
     "description": "",
-    "content": "  ML Daily Lecture notes and supplemental material.\n  Course Outline A broad outline of what we plan to cover, so you can see how it all fits …"
+    "content": " Do now: Modeling for the Future.\nTopics  ML Daily Lecture notes and supplemental material.\n  4. Classification  Chapter 4 Lab. All Contents   Course …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
@@ -1153,6 +1160,13 @@
     "tags": [],
     "description": "",
     "content": " Using plot_lm_summary  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch4/chapter4-section6-lab/",
+    "title": "",
+    "tags": [],
+    "description": "",
+    "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
     "uri": "https://wy-cs.site/tags/ap-cs/",
