@@ -5,6 +5,7 @@ weight: 90
 draft: false
 #type: slide
 #theme: white
+description: "A reasonable quiz, maybe one half question too long. Extra credit for all homework being turned in."
 ---
 
 1. Make a function that picks a color that has a random amount of red,
@@ -22,14 +23,14 @@ when you know it works.
 Write a function that takes in an image and removes some green from
 it according to the directions below:
 
-	* The center of the color change is (100,120).
+    * The center of the color change is (100,120).
     * Green within 10 pixels of (100,120) should be untouched. 
-	* As you
-	get further away, the green should fade to black, so at (365,120)
-	there is 0 green left. 
-	* There should be some small amount of green left
-	until you get all of the way to (365,120), although you will probably
-	not be able to see it.
+    * As you
+    get further away, the green should fade to black, so at (365,120)
+    there is 0 green left. 
+    * There should be some small amount of green left
+    until you get all of the way to (365,120), although you will probably
+    not be able to see it.
 
 Make sure to include check-expects that demonstrate that green is
 untouched in the center area and gone on the edge.

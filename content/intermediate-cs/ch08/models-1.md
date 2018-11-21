@@ -5,6 +5,7 @@ weight: 10
 draft: false
 #type: slide
 #theme: white
+description: "Number models, beginning to middle difficulty."
 ---
 
 {{< use-mathjax >}}

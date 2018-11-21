@@ -42,6 +42,13 @@
     "content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Discussion I …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/ch7-summary/",
+    "title": "7. Summary",
+    "tags": [],
+    "description": "Everything you should know from Chapter 7.",
+    "content": " The chapter is about doing math with numbers.\nEssential summary  Basic arithmetic\n(+ 5 3) (/ 13 7) ; thirteen divided by seven (* 11 2) (- 9 1) ; …"
+},
+{
     "uri": "https://wy-cs.site/ftc/registration/",
     "title": "Registration",
     "tags": [],
@@ -87,7 +94,7 @@
     "uri": "https://wy-cs.site/intermediate-cs/ch08/models-1/",
     "title": "8. Number Models 1",
     "tags": [],
-    "description": "",
+    "description": "Number models, beginning to middle difficulty.",
     "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});    A circle increases its …"
 },
 {
@@ -140,11 +147,25 @@
     "content": " This page contains information about advanced topics that I have been asked.\nRandomizing Letters of a String The implode and explode functions change …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-1/",
+    "title": "Number Models 1",
+    "tags": [],
+    "description": "Three animations to practice identifying number models.",
+    "content": " Identify the model A white rectangle background that slowly fades to blue.\nIdentify the model A shape of your choice moves across the screen, …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/git/getting-started/",
     "title": "Git-ting Started",
     "tags": ["git"],
     "description": "",
     "content": " Downloads for Home  Git package for all operating systems. Tortoise Git for Windows only.  Tutorials  A command line intro to git in 15 minutes.\n Git …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/exercises-1/",
+    "title": "Exercises 1",
+    "tags": [],
+    "description": "Exercises.",
+    "content": "Practice the design process making each of these functions:\n Write a function that takes in the radius of a circle and outputs the circumference. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/spoilers/",
@@ -203,11 +224,25 @@
     "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/exercises-2/",
+    "title": "Exercises 2",
+    "tags": [],
+    "description": "Exercises working with number functions.",
+    "content": "Exercises:\n hypotenuse: Given the lengths of two legs of a right triangle, return the length of the third side.\n slope: Given the x and y coordinates …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-09/",
     "title": "2018.09.09",
     "tags": [],
     "description": "",
     "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});   Enhanced probability. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/exercises-3/",
+    "title": "Exercises 3",
+    "tags": [],
+    "description": "More exercises writing functions.",
+    "content": " Write a function at-most-250 that takes in a number and puts out the same number, or 250 if the number is larger than 250.\n Write a function small-0 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell-calendar/",
@@ -229,6 +264,13 @@
     "tags": [],
     "description": "",
     "content": " This page is full of tiny pieces to help you get better at programming Haskell.\nGoals:\n Range notation [a,b..c] to make lists of integers. Apply a …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/exercises-4/",
+    "title": "More Exercises 4",
+    "tags": [],
+    "description": "Planning and testing, not writing functions.",
+    "content": " Planning and Testing Write every part of the design process except the function. Do write tests!\n count-factors: take a number N and find out how …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch03/class-basic-2/",
@@ -285,6 +327,13 @@
     "tags": [],
     "description": "Build-image to create images from a formula for the pixel color.",
     "content": " You should learn how to use build-image to make the pictures in Chapter 15.\nAdvanced: build-image The build-image uses a function that specifies the …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-2/",
+    "title": "Number Models 2",
+    "tags": [],
+    "description": "Progress bar, dot that follows a line.",
+    "content": "Please read Sections 8.1-8.4 in the book!\n  Make a progress bar that shrinks in half every time a key is hit.        Make a dot that moves along a …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/git/",
@@ -383,6 +432,13 @@
     "tags": [],
     "description": "",
     "content": "Opener: Write the result of the third \u0026amp;ldquo;step\u0026amp;rdquo;, as seen in the Stepper.\n(+ (+ 1 5) (* 8 (+ 2 3)) (* 7 2)) Class/homework:\nMake the two …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-3/",
+    "title": "Number Models 3",
+    "tags": [],
+    "description": "Remainder to repeat. Random dots.",
+    "content": " Remainder warmups Opener Divide 324 by 7. What is the quotient? The remainder?\nFollow-up When you change 324 to other numbers, what possible …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch06/examples/",
@@ -511,6 +567,13 @@
     "content": " We use Java Methods, Second Edition by Litvin and Litvin. While a PDF of the whole book is not available, the author has made available many …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-4/",
+    "title": "Number Models 4",
+    "tags": [],
+    "description": "",
+    "content": " How to show a number in an image:\n (number-\u0026amp;gt;string 50) makes \u0026amp;ldquo;50\u0026amp;rdquo; (text \u0026amp;hellip;) wrapped around that makes an image  Example: (text …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/",
     "title": "Chapter 4 Problem Set",
     "tags": ["haskell", "homework"],
@@ -551,6 +614,13 @@
     "tags": [],
     "description": "Test on LYaH Chapter 3.",
     "content": " Unless you are completely confident of your signature-writing skills, please use \u0026amp;ldquo;concrete\u0026amp;rdquo; type classes like Double or Integer instead …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-review/",
+    "title": "Number Model Review",
+    "tags": [],
+    "description": "A summary of the key points of Chapters 7-8. Preparation for a test.",
+    "content": " Things to know:\n Animation following the graph of an equation:\n Computer coordinates People coordinates  Repetition using remainder.\n Max/min to keep …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch06/project/",
@@ -623,6 +693,13 @@
     "content": " (rq1) Write a function that takes in one input n and gives random numbers between 100 and 1000. The first possible random number is 100, and after …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/",
+    "title": "8. Number Models",
+    "tags": [],
+    "description": "Animations that remember a number instead of an image.",
+    "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   8. Test Corrections   Number …"
+},
+{
     "uri": "https://wy-cs.site/resources/",
     "title": "Resources",
     "tags": [],
@@ -633,7 +710,7 @@
     "uri": "https://wy-cs.site/intermediate-cs/ch07/ch07-quiz/",
     "title": "7. Numbers Quiz",
     "tags": [],
-    "description": "",
+    "description": "A reasonable quiz, maybe one half question too long. Extra credit for all homework being turned in.",
     "content": " Make a function that picks a color that has a random amount of red, either 50, 150, 250, and a random amount of green, either 100 or 200. Use it to …"
 },
 {
@@ -861,6 +938,20 @@
     "content": "Resources (all are Google Drive shared folders):\n Introductory materials Variables Lists  There are quizzes as well; email me for access if you are an …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/test-corrections/",
+    "title": "8. Test Corrections",
+    "tags": [],
+    "description": "",
+    "content": "Chapter 8 Test\nDo corrections for +8 or more points of credit.\nCorrections mean complete, correct following of the design process for each function. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-review-more/",
+    "title": "Number Review More",
+    "tags": [],
+    "description": "",
+    "content": "More review problems:\n Make an ellipse on a background.\n The ratio of the width to the height of the ellipse is 3 to 4. The x-coordinate of the mouse …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/e-courses/",
     "title": "Online Help",
     "tags": [],
@@ -887,6 +978,20 @@
     "tags": [],
     "description": "",
     "content": " This page is dedicated to teacher links for Exploring Computer Science.\n Scratch Resources are on a separate page.  Web Hosting Platforms  Cloud9 …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/maxmin/",
+    "title": "Max and min slides",
+    "tags": [],
+    "description": "Slideshow of exercises to learn max, min, abs, and random.",
+    "content": " Maximum, Minimum, Random Make a Table Max = greatest. Min = least. Abs = absolute value.\n   x (min x 10) (max x 10) (abs x)     -15      -5 …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch07/random/",
+    "title": "Randomness",
+    "tags": [],
+    "description": "Making random numbers.  Testing functions that use random numbers.",
+    "content": "  Random numbers: (random 3) gives a random number 0, 1, or 2. Notice that there are three possible answers, but they start counting at 0. Run the …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/rubric/",
@@ -1048,13 +1153,6 @@
     "tags": [],
     "description": "",
     "content": "WY Computer Science\n"
-},
-{
-    "uri": "https://wy-cs.site/intermediate-cs/ch08/",
-    "title": "",
-    "tags": [],
-    "description": "",
-    "content": " g\u0026amp;mdash; title: \u0026amp;ldquo;8. Number Models\u0026amp;rdquo; date: 2018-11-05T07:44:46-06:00 weight: 80 draft: false #type: slide #theme: white\ndescription: …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/",
