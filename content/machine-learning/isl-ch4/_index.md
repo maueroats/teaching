@@ -5,11 +5,11 @@ weight: 40
 draft: false
 #type: slide
 #theme: white
-description: ""
+description: "Classification means deciding one of a discrete set of choices."
 ---
 
 [Chapter 4
-Lab](https://colab.research.google.com/drive/1M1fukzCHH5AkiKg6UFudn82ad_MAFQeD).
+Lab in Colaboratory](https://colab.research.google.com/drive/1M1fukzCHH5AkiKg6UFudn82ad_MAFQeD).
 
 ## All Contents
 

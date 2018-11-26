@@ -44,8 +44,4 @@ What does this tick-hander do? Write checks for the results when num=0, num=1, a
 
 1b. Hit a key to make the shape go to a random one of those three locations.
 
-## Homework
-
-Add one colored circle at a random location on the screen every half second.
-
 

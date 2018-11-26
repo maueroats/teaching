@@ -514,8 +514,8 @@
     "uri": "https://wy-cs.site/machine-learning/isl-ch4/",
     "title": "4. Classification",
     "tags": [],
-    "description": "",
-    "content": " Chapter 4 Lab.\nAll Contents  "
+    "description": "Classification means deciding one of a discrete set of choices.",
+    "content": " Chapter 4 Lab in Colaboratory.\nAll Contents  4. Classification Lab   "
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch03/ch03-quiz/",
@@ -550,7 +550,7 @@
     "title": "Machine Learning",
     "tags": [],
     "description": "",
-    "content": " Do now: Modeling for the Future.\nTopics  ML Daily Lecture notes and supplemental material.\n  4. Classification  Chapter 4 Lab. All Contents   Course …"
+    "content": " Do now: Modeling for the Future.\nTopics  ML Daily Lecture notes and supplemental material.\n  4. Classification Classification means deciding one of a …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
@@ -1261,9 +1261,9 @@
 },
 {
     "uri": "https://wy-cs.site/machine-learning/isl-ch4/chapter4-section6-lab/",
-    "title": "",
+    "title": "4. Classification Lab",
     "tags": [],
-    "description": "",
+    "description": "Running different classifiers (Logistic, LDA, QDA).",
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
