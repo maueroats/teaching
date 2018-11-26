@@ -1,6 +1,6 @@
 ---
 title: "Number Models 3"
-date: 2017-10-30T09:59:11-05:00
+date: 2018-11-26T08:27:25-06:00
 draft: false
 weight: 30
 #type: slide
