@@ -42,21 +42,22 @@ Sample code:
 (Advanced: yellow to magenta.)
 
 2. Make a point that follows the graph of the equation y=((x-50)/10)^2
-    - Use "people coordinates".
+    - Use "people coordinates". Each quadrant should be 75x100.
     - Move from x=-75 to x=75 in people coordinates.
     - Repeats the path from over and over.
-    - Hit a key make the point go to x=0 (and start moving).
+    - Hit a key make the point go to x=0 people coordinates (and start moving).
     - Move the mouse to make the point move. (The point should seem to move faster when you move the mouse.)
 
-3. (Some people didn't like this one... feel free to skip.) 
-Make a line that you can move up and down with the mouse. 
-    - Straight line through x=0, y=70
-    - Passes through the point where the mouse is sitting.
-
-4. Make a rectangle that is three times as wide as it is tall.
+3. Make a rectangle that is three times as wide as it is tall.
     - Height is determined by y-coordinate of the mouse.
     - Height decreases 5 units every time you hit a key.
     - Height cannot go below 20 units using key.
     - Height cannot go above 150 units using mouse.
     - You choose the color.
      (Advanced: color of grey depends on y-coordinate.)
+
+4. (Maybe omit.) (... feel free to skip.) 
+    Make a line that you can move up and down with the mouse. 
+    - Straight line through x=0, y=70
+    - Passes through the point where the mouse is sitting.
+
