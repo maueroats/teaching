@@ -644,6 +644,13 @@
     "content": "Mini-project: Religion Survey Analysis\nMake sure you learn how to avoid writing for loops. Example: sum( df[\u0026#39;christian\u0026#39;] ) counts the number of True …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-review-2/",
+    "title": "Number Model Review II",
+    "tags": [],
+    "description": "Review with focus on graphing functions.",
+    "content": "Definitions: people coordinates are coordinates where (0,0) refers to the origin where the axes cross and positive y numbers are above the x-axis. …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch06/",
     "title": "6. Animations I",
     "tags": [],
@@ -697,7 +704,7 @@
     "title": "8. Number Models",
     "tags": [],
     "description": "Animations that remember a number instead of an image.",
-    "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   8. Test Corrections   Number …"
+    "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   Number Model Review II   8. Test …"
 },
 {
     "uri": "https://wy-cs.site/resources/",
