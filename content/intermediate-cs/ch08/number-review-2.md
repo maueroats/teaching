@@ -24,7 +24,7 @@ from y=-200 to y=600.
 
      4. Make a model t goes from 0 to 314 repeatedly. Animation:
 
-     	    x-people = 250*cos(t / 100)
-	    y-people = 150*sin(t / 100)
+            x-people = 250*cos(t / 100)
+            y-people = 150*sin(t / 100)
 
 
