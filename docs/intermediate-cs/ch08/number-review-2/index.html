@@ -1345,7 +1345,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#information-flow">Information Flow</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1363,30 +1370,49 @@
     
     
     
-    <p>Definitions: people coordinates are coordinates where (0,0) refers to
+    
+
+<p>Definitions: people coordinates are coordinates where (0,0) refers to
 the origin where the axes cross and positive y numbers are above the
 x-axis. Computer coordinates have (0,0) in the upper left corner and
 positive y means &ldquo;down&rdquo;.</p>
 
 <ol>
 <li><p>You are making a viewing window that ranges from x=-300 to x=500 and
-from y=-200 to y=600.</p>
+from y=-200 to y=600.</p></li>
 
-<ol>
 <li><p>Write three check-expects for the function <code>x-people</code>, which takes in a computer x-coordinate and produces a &ldquo;people&rdquo; x-coordinate.</p></li>
 
 <li><p>Write three check-expects for the function <code>y-computer</code>, which takes in a people y-coordinate and produces a &ldquo;computer&rdquo; y-coordinate.</p></li>
 
 <li><p>Write the functions <code>x-people</code> and <code>y-computer</code>. Make sure
-they pass your tests</p></li>
+they pass your tests.</p></li>
 
-<li><p>Write <code>x-computer</code> and <code>y-people</code> just in case you need them&hellip;</p></li>
+<li><p>Write <code>x-computer</code> and <code>y-people</code> just in case you need them&hellip; be
+sure to test.</p></li>
 
-<li><p>Make a model t goes from 0 to 314 repeatedly. Animation:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">x-people = 250*cos(t / 100)
-y-people = 150*sin(t / 100)</pre></div></li>
-</ol></li>
+<li><p>Make a model t goes from 0 to 628 repeatedly. You will need to
+write a draw handler and a tick handler. The equations below give
+the x and y people coordinates to use to place the model.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    x-people-func = (* 250 (cos (/ t 100)))
+    y-people-func = (* 150 (sin (/ t 100)))</pre></div></li>
 </ol>
+
+<h2 id="information-flow">Information Flow</h2>
+
+<p>This program works a little differently from the previous one. Keep in
+mind what information you have in your model and what you need in
+order to plot the result.</p>
+
+<link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<div class="mermaid" align="center" >
+graph TD;
+   A[model=t] --> x-people
+   A --> y-people
+   x-people --> x-computer
+   y-people --> y-computer
+</div>
 
 
     
