@@ -18,9 +18,12 @@ from y=-200 to y=600.
 
      1. Write three check-expects for the function `x-people`, which takes in a computer x-coordinate and produces a "people" x-coordinate.
 
-     2. Write three check-expects for the function `y-computer`, which takes in a computer y-coordinate and produces a "computer" y-coordinate.
+     2. Write three check-expects for the function `y-computer`, which takes in a people y-coordinate and produces a "computer" y-coordinate.
 
-     3. Write the functions `x-people` and `y-computer`. Make sure they pass your tests.
+     3. Write the functions `x-people` and `y-computer`. Make sure
+     they pass your tests
+     
+     4. Write `x-computer` and `y-people` just in case you need them...
 
      4. Make a model t goes from 0 to 314 repeatedly. Animation:
 
