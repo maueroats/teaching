@@ -8,9 +8,9 @@ draft: false
 description: "Review with focus on graphing functions."
 ---
 
-Definitions: people coordinates are coordinates where (0,0) refers to
+Definitions: _people coordinates_ are coordinates where (0,0) refers to
 the origin where the axes cross and positive y numbers are above the
-x-axis. Computer coordinates have (0,0) in the upper left corner and
+x-axis. _Computer coordinates_ have (0,0) in the upper left corner and
 positive y means "down".
 
 1. You are making a viewing window that ranges from x=-300 to x=500 and
@@ -23,8 +23,9 @@ from y=-200 to y=600.
 3. Write the functions `x-people` and `y-computer`. Make sure
 they pass your tests.
 
-4. Write `x-computer` and `y-people` just in case you need them... be
-   sure to test.
+4. Write the functions `x-computer` and `y-people` that are the
+   inverse of `x-people` and `y-computer`, just in case you need
+   them... be sure to test.
 
 5. Make a model t goes from 0 to 628 repeatedly. You will need to
    write a draw handler and a tick handler. The equations below give

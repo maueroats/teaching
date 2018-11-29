@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.48" />
+<meta name="generator" content="Hugo 0.49" />
 
 <title>Number Model Review :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
@@ -1350,6 +1350,7 @@
 <li>
 <ul>
 <li><a href="#review-problems">Review Problems</a></li>
+<li><a href="#information-flow-for-question-2">Information Flow for Question 2</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1449,6 +1450,17 @@ Make a line that you can move up and down with the mouse.</p>
 <li>Passes through the point where the mouse is sitting.</li>
 </ul></li>
 </ol>
+
+<h2 id="information-flow-for-question-2">Information Flow for Question 2</h2>
+
+<link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<div class="mermaid" align="center" >
+graph LR;
+   A[x-computer] --> B[x-people]
+   B --> |func| C[y-people]
+   C --> D[x-computer]
+</div>
 
 
     

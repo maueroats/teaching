@@ -61,3 +61,12 @@ Sample code:
     - Straight line through x=0, y=70
     - Passes through the point where the mouse is sitting.
 
+
+## Information Flow for Question 2
+
+{{< mermaid >}}
+graph LR;
+   A[x-computer] --> B[x-people]
+   B --> |func| C[y-people]
+   C --> D[x-computer]
+{{< /mermaid >}}
