@@ -693,6 +693,13 @@
     "content": "Important ideas:\n Inexact numbers and check-within build3-image or build-image map3-image or map-image (random 5) gives 0, 1, 2, 3, or 4. How to make …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-project/",
+    "title": "8. Number Project",
+    "tags": [],
+    "description": "Create an artistic zoomed-in graph for your review project.",
+    "content": "Requirements:\n Four quadrants. Axes do not meet in the center. People coordinates are not in 1 to 1 ratio with computer coordinates.  "
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch07/review-1/",
     "title": "7. Review 1",
     "tags": [],
@@ -704,7 +711,7 @@
     "title": "8. Number Models",
     "tags": [],
     "description": "Animations that remember a number instead of an image.",
-    "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   Number Model Review II   8. Test …"
+    "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   Number Model Review II   8. …"
 },
 {
     "uri": "https://wy-cs.site/resources/",
@@ -712,6 +719,13 @@
     "tags": [],
     "description": "",
     "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-finale/",
+    "title": "8. Number Finale",
+    "tags": [],
+    "description": "This is the last graphing practice. It should be easier now that you have done all of the other ones. Do it before the project for &#39;scaffolding&#39;.",
+    "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});   We are going to make this …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch07/ch07-quiz/",
