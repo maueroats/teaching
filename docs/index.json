@@ -522,7 +522,7 @@
     "title": "3. Classes Quiz",
     "tags": [],
     "description": "Quiz on basic class definition, GridWorld construction.",
-    "content": " You may not use any notes or old classes to help you. You should start with the BlueJ projects in the ap-cs Github repository, whichyou can get by …"
+    "content": " You may not use any notes or old classes to help you. Please write your answers on paper. These questions are not intended to be programmed on a …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/isl-ch3/statsmodels/",
@@ -686,6 +686,13 @@
     "content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-graph-zoom/",
+    "title": "Number Graph Zoom",
+    "tags": [],
+    "description": "Small scale people coordinates on the x-axis with a big window.",
+    "content": " A good graph of (sin x) would have x-people from -5 to 5 and y-people from -1 to 1. That is only a 10x2 window, too small to really see anything.\nWe …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch07/",
     "title": "7. Numbers",
     "tags": [],
@@ -711,7 +718,7 @@
     "title": "8. Number Models",
     "tags": [],
     "description": "Animations that remember a number instead of an image.",
-    "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   Number Model Review II   8. …"
+    "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   Number Model Review II   Number …"
 },
 {
     "uri": "https://wy-cs.site/resources/",
@@ -1288,14 +1295,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
