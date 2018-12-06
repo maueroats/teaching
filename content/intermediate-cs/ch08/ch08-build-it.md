@@ -20,13 +20,18 @@ The people coordinates are given by:
 
 ## Yellow Box
 
-Make a 400x50 graph of the y-coordinate on the vertical axis. On the
-horizontal axis is t. Make the background yellow and put a single
-horizontal axis along the middle.
+Make a 400x50 yellow rectangle for the background.
+Place a single horizontal gray line in the middle (for the axis).
+
+The horizontal axis of the graph will be "t". On the vertical axis,
+graph the `y-red` function with a red dot.
 
 * Computer coordinates are $0 \le x \le 400$ and $0 \le y \le 50$.
 * People coordinates are horizontally $0\le t \le 6\pi$ and vertically
   $-200 \le
   y \le 200$.
    
-On the same graph, draw the x-coordinate vertically.
+After have the first part working, on the same image, graph the
+`x-blue` function vertically with a blue dot. (So really the `x-blue` will
+be a vertical amount.)
+
