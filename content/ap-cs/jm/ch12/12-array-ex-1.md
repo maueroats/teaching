@@ -33,8 +33,4 @@ description: "Learning to use arrays, basic finger exercises."
 
 * Fill it with integers, counting up from 21.
 
-        fill_b(6) == {21,22,23,24,25,26}
-        
-        
----
-
+        fill_b(3) == {21,22,23,24,25,26}
