@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Statsmodels :: WY Computer Science</title>
+<title>8. Build It Test :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/machine-learning/isl-ch3/statsmodels/">
+  <body data-url="/intermediate-cs/ch08/ch08-build-it/">
     
       
 
@@ -548,10 +548,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -819,10 +820,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch08/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch08/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch08/">8. Number Models</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch08/">8. Number Models</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch08/models-1/" class="dd-item">
@@ -895,7 +897,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch08/ch08-build-it/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch08/ch08-build-it/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch08/ch08-build-it/">
             8. Build It Test
@@ -999,11 +1001,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/machine-learning/" class="dd-item parent haschildren
+    <li data-nav-id="/machine-learning/" class="dd-item haschildren
         ">
       <div>
-      <a href="/machine-learning/">Machine Learning</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/machine-learning/">Machine Learning</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/machine-learning/daily/" class="dd-item haschildren
@@ -1157,11 +1158,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/machine-learning/isl-ch3/" class="dd-item parent haschildren
+    <li data-nav-id="/machine-learning/isl-ch3/" class="dd-item haschildren
         ">
       <div>
-      <a href="/machine-learning/isl-ch3/">ISL Chapter 3: Linear Regression</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/machine-learning/isl-ch3/">ISL Chapter 3: Linear Regression</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/machine-learning/isl-ch3/ch3-work/" class="dd-item">
@@ -1178,7 +1178,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/machine-learning/isl-ch3/statsmodels/" class="dd-item active">
+      <li data-nav-id="/machine-learning/isl-ch3/statsmodels/" class="dd-item">
         <div>
           <a href="/machine-learning/isl-ch3/statsmodels/">
             Statsmodels
@@ -1380,7 +1380,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > <a href='/machine-learning/isl-ch3/'>ISL Chapter 3: Linear Regression</a> > Statsmodels
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch08/'>8. Number Models</a> > 8. Build It Test
 
  
 
@@ -1395,7 +1395,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#yellow-box">Yellow Box</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1405,7 +1412,7 @@
 
 <div id="body-inner">
   
-    <h1>Statsmodels</h1>
+    <h1>8. Build It Test</h1>
   
 
 
@@ -1413,17 +1420,41 @@
     
     
     
-    <p>The formulas are written in
-<a href="https://patsy.readthedocs.io/en/latest/formulas.html">patsy</a>. When
-writing your formulas, use NumPy functions whenever you can.</p>
+    
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']]
+  }});
+</script>
+
+<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+
+<p>The model is a time we will call $t$. The time will be between $0$ and $6\pi$.</p>
+
+<p>The people coordinates are given by:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">  (x t) = 200 * (cos t)
+  (y t) = 150 * (sin t)</pre></div>
+<h2 id="yellow-box">Yellow Box</h2>
+
+<p>Make a 400x50 graph of the y-coordinate on the vertical axis. On the
+horizontal axis is t. Make the background yellow and put a single
+horizontal axis along the middle.</p>
 
 <ul>
-<li><code>np.log</code></li>
-<li><code>np.sqrt</code></li>
-<li><code>np.power(x,2)</code> for the square of x. Using <code>x*x</code> does <strong>not</strong> work!</li>
-<li><code>a:b</code> means only the cross effect <code>a</code> multiplied by <code>b</code>.</li>
-<li><code>stuff * other</code> means <code>stuff + other + stuff:other</code>.</li>
+<li>Computer coordinates are $0 \le x \le 400$ and $0 \le y \le 50$.</li>
+<li>People coordinates are horizontally $0\le t \le 6\pi$ and vertically
+$-200 \le
+y \le 200$.
+<br /></li>
 </ul>
+
+<p>On the same graph, draw the x-coordinate vertically.</p>
 
 
     
@@ -1435,8 +1466,8 @@ writing your formulas, use NumPy functions whenever you can.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/machine-learning/isl-ch3/r-lm-plot/" title="Linear Model Summary Plot"> <i class="fa fa-chevron-left"></i><label>Linear Model Summary Plot</label></a>
-    <a class="nav nav-next" href="/machine-learning/isl-ch3/logistic/" title="Logistic Distribution" style="margin-right: 0px;"><label>Logistic Distribution</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch08/number-finale/" title="8. Number Finale"> <i class="fa fa-chevron-left"></i><label>8. Number Finale</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch08/test-corrections/" title="8. Test Corrections" style="margin-right: 0px;"><label>8. Test Corrections</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
