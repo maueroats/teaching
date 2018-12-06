@@ -536,7 +536,7 @@
     "title": "3. Classes Quiz",
     "tags": [],
     "description": "Quiz on basic class definition, GridWorld construction.",
-    "content": " You may not use any notes or old classes to help you. You should start with the BlueJ projects in the ap-cs Github repository, whichyou can get by …"
+    "content": " You may not use any notes or old classes to help you. Please write your answers on paper. These questions are not intended to be programmed on a …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/isl-ch3/statsmodels/",
@@ -700,11 +700,25 @@
     "content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-graph-zoom/",
+    "title": "Number Graph Zoom",
+    "tags": [],
+    "description": "Small scale people coordinates on the x-axis with a big window.",
+    "content": " A good graph of (sin x) would have x-people from -5 to 5 and y-people from -1 to 1. That is only a 10x2 window, too small to really see anything.\nWe …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch07/",
     "title": "7. Numbers",
     "tags": [],
     "description": "Numerical functions, including gradients.",
     "content": "Important ideas:\n Inexact numbers and check-within build3-image or build-image map3-image or map-image (random 5) gives 0, 1, 2, 3, or 4. How to make …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-project/",
+    "title": "8. Number Project",
+    "tags": [],
+    "description": "Create an artistic zoomed-in graph for your review project.",
+    "content": "Requirements:\n Four quadrants. Axes do not meet in the center. People coordinates are not in 1 to 1 ratio with computer coordinates.  "
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch07/review-1/",
@@ -718,7 +732,7 @@
     "title": "8. Number Models",
     "tags": [],
     "description": "Animations that remember a number instead of an image.",
-    "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   Number Model Review II   8. Test …"
+    "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   Number Model Review II   Number …"
 },
 {
     "uri": "https://wy-cs.site/resources/",
@@ -726,6 +740,13 @@
     "tags": [],
     "description": "",
     "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-finale/",
+    "title": "8. Number Finale",
+    "tags": [],
+    "description": "This is the last graphing practice. It should be easier now that you have done all of the other ones. Do it before the project for &#39;scaffolding&#39;.",
+    "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});   We are going to make this …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch07/ch07-quiz/",

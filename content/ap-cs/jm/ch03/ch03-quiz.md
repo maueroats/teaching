@@ -8,25 +8,22 @@ draft: false
 description: "Quiz on basic class definition, GridWorld construction."
 ---
 
-You may not use any notes or old classes to help you. You should start
-with the BlueJ projects in the [`ap-cs` Github
-repository](https://github.com/2018-2019-WY-AP-CS/ap-cs), whichyou can
-get by copy and pasting the code or running `./one-time` and then `git
-pull upstream master`.
+You may not use any notes or old classes to help you. 
+Please write your answers on paper. These questions are not intended 
+to be programmed on a computer.
 
-##  ZenoAdder
 
-The `ZenoAdder` is not in GridWorld, it is just a class. Make it 
-normally, but do not try to put it in the grid. A `ZenoAdder`
+##  HarmonicAdder
+
+The `HarmonicAdder` is not in GridWorld, it is just a class. Make it 
+normally, but do not try to put it in the grid. A `HarmonicAdder`
 begins at a given initial x-coordinate on the number line. 
 
 * The `report()` method returns the current location.  
 * The `hut()` method updates the location by adding 1/n on move number n.
 
-[Starter code from GitHub](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/ZenoAdder.java).
-
 ```java
-ZenoAdder a = new ZenoAdder(5.2);
+HarmonicAdder a = new HarmonicAdder(5.2);
 a.hut();
 a.report();  // 5.2 + 1/1 = 6.2
 a.hut();
@@ -39,12 +36,6 @@ a.report();  // 6.7 + 1/3 + 1/4 = 7.28333...
 
 The `System.out.println(value);` method will let you print your
 location in a visible way.
-
-[ZenoAdderRunner](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/ZenoAdderRunner.java)
-on GitHub.
-
-_Note_: clever name, but it's wrong because this class walks off to
-infinity if you let it keep going long enough. 
 
 ## DashBug
 
@@ -75,7 +66,7 @@ world.add(new Location(8,4), d);
 [DashBugRunner](https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/DashBugRunner.java)
 on GitHub.
 
-Corrections:
+Details:
 
 * `DashBug` must have all actions driven by the `act()` method.
 * The bug `c = new DashBug(3,2)` above should behave like this:

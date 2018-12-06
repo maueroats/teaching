@@ -877,6 +877,27 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/ch08/number-graph-zoom/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch08/number-graph-zoom/">
+            Number Graph Zoom
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch08/number-project/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch08/number-project/">
+            8. Number Project
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch08/number-finale/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch08/number-finale/">
+            8. Number Finale
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/intermediate-cs/ch08/test-corrections/" class="dd-item">
         <div>
           <a href="/intermediate-cs/ch08/test-corrections/">
@@ -1377,7 +1398,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#zenoadder">ZenoAdder</a></li>
+<li><a href="#harmonicadder">HarmonicAdder</a></li>
 <li><a href="#dashbug">DashBug</a></li>
 </ul></li>
 </ul>
@@ -1401,25 +1422,21 @@
     
     
 
-<p>You may not use any notes or old classes to help you. You should start
-with the BlueJ projects in the <a href="https://github.com/2018-2019-WY-AP-CS/ap-cs"><code>ap-cs</code> Github
-repository</a>, whichyou can
-get by copy and pasting the code or running <code>./one-time</code> and then <code>git
-pull upstream master</code>.</p>
+<p>You may not use any notes or old classes to help you.
+Please write your answers on paper. These questions are not intended
+to be programmed on a computer.</p>
 
-<h2 id="zenoadder">ZenoAdder</h2>
+<h2 id="harmonicadder">HarmonicAdder</h2>
 
-<p>The <code>ZenoAdder</code> is not in GridWorld, it is just a class. Make it
-normally, but do not try to put it in the grid. A <code>ZenoAdder</code>
+<p>The <code>HarmonicAdder</code> is not in GridWorld, it is just a class. Make it
+normally, but do not try to put it in the grid. A <code>HarmonicAdder</code>
 begins at a given initial x-coordinate on the number line.</p>
 
 <ul>
 <li>The <code>report()</code> method returns the current location.<br /></li>
 <li>The <code>hut()</code> method updates the location by adding 1/n on move number n.</li>
 </ul>
-
-<p><a href="https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/ZenoAdder.java">Starter code from GitHub</a>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#111">ZenoAdder</span> <span style="color:#111">a</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ZenoAdder</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">.</span><span style="color:#75af00">2</span><span style="color:#f92672">);</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#111">HarmonicAdder</span> <span style="color:#111">a</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HarmonicAdder</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">.</span><span style="color:#75af00">2</span><span style="color:#f92672">);</span>
 <span style="color:#111">a</span><span style="color:#f92672">.</span><span style="color:#75af00">hut</span><span style="color:#f92672">();</span>
 <span style="color:#111">a</span><span style="color:#f92672">.</span><span style="color:#75af00">report</span><span style="color:#f92672">();</span>  <span style="color:#75715e">// 5.2 + 1/1 = 6.2
 </span><span style="color:#75715e"></span><span style="color:#111">a</span><span style="color:#f92672">.</span><span style="color:#75af00">hut</span><span style="color:#f92672">();</span>
@@ -1430,12 +1447,6 @@ begins at a given initial x-coordinate on the number line.</p>
 </span><span style="color:#75715e"></span><span style="color:#f92672">//</span> </code></pre></div>
 <p>The <code>System.out.println(value);</code> method will let you print your
 location in a visible way.</p>
-
-<p><a href="https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/ZenoAdderRunner.java">ZenoAdderRunner</a>
-on GitHub.</p>
-
-<p><em>Note</em>: clever name, but it&rsquo;s wrong because this class walks off to
-infinity if you let it keep going long enough.</p>
 
 <h2 id="dashbug">DashBug</h2>
 
@@ -1463,7 +1474,7 @@ should repeat 3 steps in two cycles.</p></li>
 <p><a href="https://raw.githubusercontent.com/2018-2019-WY-AP-CS/ap-cs/master/GridWorld/projects/ch03-quiz/ch03ClassesQuiz/DashBugRunner.java">DashBugRunner</a>
 on GitHub.</p>
 
-<p>Corrections:</p>
+<p>Details:</p>
 
 <ul>
 <li><code>DashBug</code> must have all actions driven by the <code>act()</code> method.</li>
