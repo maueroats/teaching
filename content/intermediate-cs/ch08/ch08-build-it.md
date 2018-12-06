@@ -14,8 +14,8 @@ The model is a time we will call $t$. The time will be between $0$ and $6\pi$.
 
 The people coordinates are given by:
 
-      (x t) = 200 * (cos t)
-      (y t) = 150 * (sin t)
+      (define (x-blue t) (* 200 (cos t))
+      (define (y-red  t) (* 150 (sin t))
 
 
 ## Yellow Box
