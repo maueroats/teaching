@@ -35,3 +35,15 @@ After have the first part working, on the same image, graph the
 `x-blue` function vertically with a blue dot. (So really the `x-blue` will
 be a vertical amount.)
 
+## Side Bars
+
+The right side bar is a 50x400 white rectangle.  The red dot moves
+with x-coordinate 25 and y-coordinate given by `y-red`, using the same model `t` as the rest of the animation.
+
+The bottom side bar is a 400x50 white rectangle. The blue dot moves with x-coordinate `x-red` and y-coordinate 25.
+
+## Center Box
+
+The center box is a 400x400 outlined rectangle. The purple dot moves
+with x-coordinate from `x-blue` and y-coordinate from `y-red`.
+
