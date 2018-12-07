@@ -1,6 +1,6 @@
 ---
 title: "12. Array Basic Facts"
-date: 2018-12-06T11:08:50-06:00
+date: 2018-12-07T09:11:27-06:00
 weight: 10
 draft: false
 #type: slide
@@ -38,6 +38,19 @@ The fundamentals:
     data[0] = 10;
     data[1] = 50;
     ```
+    
+* Printing out an array.
+
+    + At start of program: `import java.util.*;`
+    + When you want to print an array, use `Arrays.toString`:
+    
+        ```java
+        int[] e = {1,2,3};
+        String ee = Arrays.toString(e);
+        System.out.println(ee);
+        ```
+
+
 * Miscellaneous
     + Arrays are handled like Java Objects in memory. The name of the array is a reference to a block of memory where the array data is stored.
     + You cannot use the `{10,30,90}` form of the initializer anywhere except the declaration of the object.
