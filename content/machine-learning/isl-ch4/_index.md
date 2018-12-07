@@ -11,6 +11,10 @@ description: "Classification means deciding one of a discrete set of choices."
 [Chapter 4
 Lab in Colaboratory](https://colab.research.google.com/drive/1M1fukzCHH5AkiKg6UFudn82ad_MAFQeD).
 
+## Homework
+
+* [Logistic Regression Problem Set 1](https://colab.research.google.com/drive/1i9XhvuyvLAFshJk0cQkR3jbRjpXpDPsF)
+
 ## All Contents
 
 {{% children %}}

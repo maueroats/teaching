@@ -41,7 +41,12 @@ The fundamentals:
     
 * Printing out an array.
 
-    + At start of program: `import java.util.*;`
+    + At start of program: 
+
+        ```java
+        import java.util.*;
+        ```
+
     + When you want to print an array, use `Arrays.toString`:
     
         ```java
