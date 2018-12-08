@@ -47,3 +47,7 @@ The bottom side bar is a 400x50 white rectangle. The blue dot moves with x-coord
 The center box is a 400x400 outlined rectangle. The purple dot moves
 with x-coordinate from `x-blue` and y-coordinate from `y-red`.
 
+## Demo
+
+{{% figure src="ch08-complex.gif" %}}
+
