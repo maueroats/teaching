@@ -1,0 +1,81 @@
+	<head><meta charset="utf-8"></head>
+
+	<link rel="stylesheet" href="/revealjs/css/reveal.css">
+	<link rel="stylesheet" href="/revealjs/css/theme/white.css" id="theme">
+	<link rel="stylesheet" href="/revealjs/lib/css/zenburn.css">
+
+	<div class="reveal">
+	<div class="slides">
+	<section data-markdown
+	         data-separator="^---"
+		 data-separator-vertical="^___"
+		 data-separator-notes="^Note:">
+	# countFill
+
+* input: `int[] nums`
+* input: `int s`
+
+Fill the given array with ints counting down from `s`.
+
+```java
+int []a = new int[6];
+countFill(a, 80); // {80,79,78,77,76,75}
+System.out.println(Arrays.toString(a)); 
+```
+
+---
+
+# noSevens
+
+`int noSevens(int[] nums)`
+
+* Count how many sevens are in the array.
+* Set all of them to zero.
+* Return the number of sevens you find.
+
+```
+int[] ns = { 10,7,20,7,30,7,7,40};
+int a = noSevens(ns);
+String ans = Arrays.toString(a);
+System.out.println(a)
+System.out.println(ans)
+```
+
+---
+
+# countBetween23
+
+`int countBetween23 (int[] nums)`
+
+* Count how many numbers between a 2 and 3.
+* Only one 2, one three.
+* 2 appears before 3
+
+```
+int [] ns = {1,2,5,6,7,13,3,8}
+System.out.println(countBetween(ns)); // 4
+```
+
+	</section>
+	</div>
+	</div>
+	<script src="/revealjs/lib/js/head.min.js"></script>
+	<script src="/revealjs/js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+		      	embedded : true,
+
+		        
+		        
+		        
+		        dependencies: [
+		          { src: '\/revealjs\/lib\/js\/classList.js"', condition: function() { return !document.body.classList; } },
+		          { src: '\/revealjs\/plugin\/markdown\/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		          { src: '\/revealjs\/plugin\/markdown\/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		          { src: '\/revealjs\/plugin\/highlight\/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		          { src: '\/revealjs\/plugin\/zoom-js\/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+		          { src: '\/revealjs\/plugin\/notes\/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+		          { src: '\/revealjs\/plugin\/math\/math.js', async: true}
+		        ]
+		      });
+	</script>

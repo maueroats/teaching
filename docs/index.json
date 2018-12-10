@@ -399,6 +399,13 @@
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-2/",
+    "title": "12. Array Exercises 2",
+    "tags": [],
+    "description": "More exercises to teach you arrays and loops.",
+    "content": " countFill  input: int[] nums input: int s  Fill the given array with ints counting down from s.\nint []a = new int[6]; countFill(a, 80); // …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-3/",
     "title": "Number Models 3",
     "tags": [],
@@ -844,7 +851,7 @@
     "title": "12. Arrays",
     "tags": [],
     "description": "One and two dimensional arrays.",
-    "content": "  12. Array Basic Facts The basics of one dimensional arrays.\n  12. Array Exercises 1 Learning to use arrays, basic finger exercises.\n  "
+    "content": "  12. Array Basic Facts The basics of one dimensional arrays.\n  12. Array Exercises 1 Learning to use arrays, basic finger exercises.\n  12. Array …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/isl-ch3/reading-q-313/",
