@@ -68,5 +68,5 @@ Sample code:
 graph LR;
    A[x-computer] --> B[x-people]
    B --> |func| C[y-people]
-   C --> D[x-computer]
+   C --> D[y-computer]
 {{< /mermaid >}}

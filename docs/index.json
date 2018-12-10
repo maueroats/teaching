@@ -53,7 +53,7 @@
     "title": "Registration",
     "tags": [],
     "description": "",
-    "content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216.\n Online registration guide - …"
+    "content": "You must be officially registered to attend any official FIRST Event. We are First Tech Challenge (FTC) team number 3216 (\u0026amp;ldquo;old\u0026amp;rdquo;) or 15659 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/connect-four/ui/",
@@ -889,7 +889,7 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
-    "uri": "https://wy-cs.site/intermediate-cs/ch08/ch08-build-it/",
+    "uri": "https://wy-cs.site/intermediate-cs/ch08/number-test/",
     "title": "8. Build It Test",
     "tags": [],
     "description": "An animation to test your skills.",
@@ -1030,10 +1030,10 @@
 },
 {
     "uri": "https://wy-cs.site/ftc/",
-    "title": "Robophins 3216",
+    "title": "Robophins FTC",
     "tags": [],
     "description": "",
-    "content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\nClub Meetings Monday and Wednesday, 3:20-4:50pm. Room 109. …"
+    "content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\n[NEW 12-2018] All registration info: National permission …"
 },
 {
     "uri": "https://wy-cs.site/ecs-teach/",
@@ -1330,14 +1330,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
