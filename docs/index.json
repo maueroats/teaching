@@ -91,6 +91,13 @@
     "content": " Homework  Chapter 3 Section 1 Worksheet A. (October 10-11, 2018) Solutions to A discussed in class. Remainder became worksheet BC. Chapter 3 Section …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-slides/",
+    "title": "15. Slides",
+    "tags": [],
+    "description": "Day 1 Exercises",
+    "content": " Hurts? hurts?: boolean(hit) boolean(hard) -\u0026amp;gt; boolean\nIt only hurts if you get hit and the hit was hard.\nCare care: boolean(injured) number(blood) …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-intro-1/",
     "title": "12. Array Basic Facts",
     "tags": [],
@@ -861,6 +868,20 @@
     "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch13/",
+    "title": "13. Booleans",
+    "tags": [],
+    "description": "True or false values. Comparison functions.",
+    "content": " The quick reference guide is on page 208 of the PDF.\nSummary  Functions end in ? if (and only if) they return a boolean value for their answer. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/",
+    "title": "15. Conditionals",
+    "tags": [],
+    "description": "Making choices in Racket using &#39;cond&#39;.",
+    "content": " See slides for introductory material.\nExercise Notes / Advice  15.3.4: The first input is the candidate for whom you are counting votes. (For example …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/contracts/",
     "title": "Contracts",
     "tags": [],
@@ -994,11 +1015,25 @@
     "content": "  "
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-practice-quiz/",
+    "title": "15. Practice Quiz",
+    "tags": [],
+    "description": "Practice quiz, adapted from a previous year.",
+    "content": " Review Concepts  Design process (as always!). Signature, purpose, examples, function, check-expect. Especially plan to use the design process when …"
+},
+{
     "uri": "https://wy-cs.site/ecs-teach/scratch/",
     "title": "Scratch",
     "tags": [],
     "description": "",
     "content": "Resources (all are Google Drive shared folders):\n Introductory materials Variables Lists  There are quizzes as well; email me for access if you are an …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch13/ch13-exa/",
+    "title": "Ch13 Exercises",
+    "tags": [],
+    "description": "",
+    "content": "  Exercises: 13.3.{3-5}, 13.4.1 Exercises: 13.4.2, 13.5.1 Exercises: 13.7.{2-7} Exercises: 13.7.{8-13}  Review Exercises that must be reviewed for …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch08/test-corrections/",
