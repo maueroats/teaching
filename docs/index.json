@@ -287,6 +287,13 @@
     "content": " Planning and Testing Write every part of the design process except the function. Do write tests!\n count-factors: take a number N and find out how …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch13/ch13-exb/",
+    "title": "13. More Exercises",
+    "tags": [],
+    "description": "",
+    "content": " lots-younger?: number(age1) number(age2) -\u0026amp;gt; boolean. True if the first person is lots younger than the second (15 years or more).\n kinda-close? …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-1/",
     "title": "12. Array Exercises 1",
     "tags": [],
@@ -539,11 +546,18 @@
     "content": " Target. tgt :: Integer -\u0026amp;gt; [Integer] -\u0026amp;gt; Integer. Given a target number and a list of numbers, find the smallest distance between the target …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch4/notes/",
+    "title": "4. Notes",
+    "tags": [],
+    "description": "Takeaways from Chapter 4.",
+    "content": " Vocabulary and abbreviations  LDA = Linear Discriminant Analysis (same covariance for each class) QDA = Quadratic Discriminant Analysis (different …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/isl-ch4/",
     "title": "4. Classification",
     "tags": [],
     "description": "Classification means deciding one of a discrete set of choices.",
-    "content": " Chapter 4 Lab in Colaboratory.\nHomework  Logistic Regression Problem Set 1  All Contents  4. Classification Lab   "
+    "content": " Chapter 4 Section 6 Lab in Colaboratory.\nHomework  Logistic Regression Problem Set 1  All Contents  4. Notes   4. Classification Lab   "
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch03/ch03-quiz/",

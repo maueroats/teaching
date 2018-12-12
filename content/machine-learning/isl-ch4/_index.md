@@ -8,7 +8,7 @@ draft: false
 description: "Classification means deciding one of a discrete set of choices."
 ---
 
-[Chapter 4
+[Chapter 4 Section 6
 Lab in Colaboratory](https://colab.research.google.com/drive/1M1fukzCHH5AkiKg6UFudn82ad_MAFQeD).
 
 ## Homework
