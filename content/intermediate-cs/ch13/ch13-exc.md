@@ -22,7 +22,7 @@ draft: false
    win. 
    
 5. Write `not-blue-triangle?: image -> boolean` that is true only if
-   the image is not a blue triangle (of any size).
+   the image is not a blue equilateral triangle (of any size).
    
 6. Stripes. Create a pattern of red, green, and blue diagonal stripes,
    each 50 pixels wide.
