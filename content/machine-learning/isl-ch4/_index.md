@@ -1,11 +1,11 @@
 ---
-title: "4. Classification"
+title: "ISL Chapter 4: Classification"
 date: 2018-11-19T11:45:00-06:00
 weight: 40
 draft: false
 #type: slide
 #theme: white
-description: "Classification means deciding one of a discrete set of choices."
+description: "Deciding from a discrete set of responses."
 ---
 
 [Chapter 4 Section 6

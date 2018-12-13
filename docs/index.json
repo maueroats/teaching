@@ -315,6 +315,13 @@
     "content": " All Steps  Model Draw handler Tick handler Key handler? Mouse handler?  1. Decide model  What will the computer remember in order to draw a scene? …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch2/",
+    "title": "ISL Chapter 2",
+    "tags": [],
+    "description": "Basic working with data frames. Selection and counting without loops. Graphs, especially scatterplot and bar graph.",
+    "content": " Required work for Chapter 2:\n Conceptual questions 1,2,3,5,6,7 Practical exercises: 9, 10. Question 10: don\u0026amp;rsquo;t get stuck in part c - all of the …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch03/ch03-signatures/",
     "title": "Ch03 Signatures",
     "tags": [],
@@ -455,6 +462,13 @@
     "content": " This is Chapter 20 in the text. Since this is the pro section, I include details you would not usually see.\n Using #lang racket allows some advanced …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch3/",
+    "title": "ISL Chapter 3: Linear Regression",
+    "tags": [],
+    "description": "Graphs of results. Quality of fit (statistical tests). When do you have enough variables included?",
+    "content": " Demonstrations, walkthroughs, and section-by-section valuable information.\n Chapter 3 Section 1 Chapter 3 Section 2 Chapter 3 Section 6 Chapter 3 …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-02/",
     "title": "Chapter 4 Discussion II",
     "tags": [],
@@ -554,10 +568,10 @@
 },
 {
     "uri": "https://wy-cs.site/machine-learning/isl-ch4/",
-    "title": "4. Classification",
+    "title": "ISL Chapter 4: Classification",
     "tags": [],
-    "description": "Classification means deciding one of a discrete set of choices.",
-    "content": " Chapter 4 Section 6 Lab in Colaboratory.\nHomework  Logistic Regression Problem Set 1  All Contents  4. Notes   4. Classification Lab   "
+    "description": "Deciding from a discrete set of responses.",
+    "content": " Chapter 4 Section 6 Lab in Colaboratory.\nHomework  Logistic Regression Problem Set 1  All Contents  4. Notes   4. Logistic Regression   4. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch03/ch03-quiz/",
@@ -592,7 +606,7 @@
     "title": "Machine Learning",
     "tags": [],
     "description": "",
-    "content": " Do now: Modeling for the Future.\nTopics  ML Daily Lecture notes and supplemental material.\n  4. Classification Classification means deciding one of a …"
+    "content": " Topics  ML Daily Lecture notes and supplemental material.\n  ISL Chapter 2 Basic working with data frames. Selection and counting without loops. …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
@@ -635,6 +649,13 @@
     "tags": [],
     "description": "",
     "content": " An arrow flies across the screen and stops with the head of the arrow buried in the target (but the fletching still visible).\n (Fan.) A fan with …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch4/logistic-regression/",
+    "title": "4. Logistic Regression",
+    "tags": [],
+    "description": "The details of Logistic Regression in StatsModels.",
+    "content": "All of this information is taken from Section 4.6.2 Logistic Regression in the Chapter 4 Lab walkthrough. You should consult that for details.\nFor …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz-a/",
@@ -817,20 +838,6 @@
     "tags": [],
     "description": "patterns, guards, where, let, case",
     "content": " patterns  f [] = 0 f (x:xs) = x + f xs  guards  numword x | x \u0026amp;lt; 0 = \u0026amp;#34;Negative\u0026amp;#34; | x == 0 = \u0026amp;#34;Zero\u0026amp;#34; | otherwise = \u0026amp;#34;Positive\u0026amp;#34; …"
-},
-{
-    "uri": "https://wy-cs.site/machine-learning/isl-ch2/",
-    "title": "ISL Chapter 2",
-    "tags": [],
-    "description": "Basic working with data frames. Selection and counting without loops. Graphs, especially scatterplot and bar graph.",
-    "content": " Required work for Chapter 2:\n Conceptual questions 1,2,3,5,6,7 Practical exercises: 9, 10. Question 10: don\u0026amp;rsquo;t get stuck in part c - all of the …"
-},
-{
-    "uri": "https://wy-cs.site/machine-learning/isl-ch3/",
-    "title": "ISL Chapter 3: Linear Regression",
-    "tags": [],
-    "description": "Graphs of results. Quality of fit (statistical tests). When do you have enough variables included?",
-    "content": " Demonstrations, walkthroughs, and section-by-section valuable information.\n Chapter 3 Section 1 Chapter 3 Section 2 Chapter 3 Section 6 Chapter 3 …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/ml-resources/",

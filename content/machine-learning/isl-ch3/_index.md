@@ -1,7 +1,7 @@
 ---
 title: "ISL Chapter 3: Linear Regression"
 date: 2018-10-08T15:10:33-05:00
-weight: 92
+weight: 30
 draft: false
 #type: slide
 #theme: white

@@ -228,6 +228,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/machine-learning/isl-ch2/</loc>
+    <lastmod>2018-09-29T09:08:21-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch03/ch03-signatures/</loc>
     <lastmod>2018-09-19T15:47:54-05:00</lastmod>
   </url>
@@ -325,6 +330,11 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/pro/struct/</loc>
     <lastmod>2018-10-12T21:21:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/machine-learning/isl-ch3/</loc>
+    <lastmod>2018-10-08T15:10:33-05:00</lastmod>
   </url>
   
   <url>
@@ -458,6 +468,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/machine-learning/isl-ch4/logistic-regression/</loc>
+    <lastmod>2018-12-12T21:04:59-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz-a/</loc>
     <lastmod>2018-09-27T22:50:46-05:00</lastmod>
   </url>
@@ -585,16 +600,6 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch04/ch04-summary/</loc>
     <lastmod>2017-09-19T14:06:42-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/machine-learning/isl-ch2/</loc>
-    <lastmod>2018-09-29T09:08:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/machine-learning/isl-ch3/</loc>
-    <lastmod>2018-10-08T15:10:33-05:00</lastmod>
   </url>
   
   <url>

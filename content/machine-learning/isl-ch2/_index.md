@@ -1,7 +1,7 @@
 ---
 title: "ISL Chapter 2"
 date: 2018-09-29T09:08:21-05:00
-weight: 91
+weight: 20
 draft: false
 #type: slide
 #theme: white

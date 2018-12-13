@@ -1104,10 +1104,24 @@
       <a href="/machine-learning/daily/2018-09-21/">2018.09.21 Ch2 Ex8 Walkthrough</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch03art/period-1/" class="dd-item">
         <div>
-          <a href="/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/">
-            
+          <a href="/intermediate-cs/ch03art/period-1/">
+            Art Period 1
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch03art/period-5/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch03art/period-5/">
+            Art Period 5
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/ch03art/period-7/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch03art/period-7/">
+            Art Period 7
           </a>
         </div>
     </li>
@@ -1157,35 +1171,6 @@
         </div>
     </li>
         </ul>
-    </li>
-    <li data-nav-id="/machine-learning/isl-ch4/" class="dd-item parent haschildren
-        ">
-      <div>
-      <a href="/machine-learning/isl-ch4/">4. Classification</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/machine-learning/isl-ch4/notes/" class="dd-item active">
-        <div>
-          <a href="/machine-learning/isl-ch4/notes/">
-            4. Notes
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/machine-learning/isl-ch4/chapter4-section6-lab/" class="dd-item">
-        <div>
-          <a href="/machine-learning/isl-ch4/chapter4-section6-lab/">
-            4. Classification Lab
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/machine-learning/outline/" class="dd-item
-        ">
-      <div>
-      <a href="/machine-learning/outline/">Course Outline</a>
-      </div>
     </li>
     <li data-nav-id="/machine-learning/isl-ch2/" class="dd-item haschildren
         ">
@@ -1272,6 +1257,42 @@
         </div>
     </li>
         </ul>
+    </li>
+    <li data-nav-id="/machine-learning/isl-ch4/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/machine-learning/isl-ch4/">ISL Chapter 4: Classification</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/machine-learning/isl-ch4/notes/" class="dd-item active">
+        <div>
+          <a href="/machine-learning/isl-ch4/notes/">
+            4. Notes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch4/logistic-regression/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch4/logistic-regression/">
+            4. Logistic Regression
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/machine-learning/isl-ch4/chapter4-section6-lab/" class="dd-item">
+        <div>
+          <a href="/machine-learning/isl-ch4/chapter4-section6-lab/">
+            4. Classification Lab
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/machine-learning/outline/" class="dd-item
+        ">
+      <div>
+      <a href="/machine-learning/outline/">Course Outline</a>
+      </div>
     </li>
       <li data-nav-id="/machine-learning/ml-resources/" class="dd-item">
         <div>
@@ -1438,7 +1459,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > <a href='/machine-learning/isl-ch4/'>4. Classification</a> > 4. Notes
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > <a href='/machine-learning/isl-ch4/'>ISL Chapter 4: Classification</a> > 4. Notes
 
  
 
@@ -1459,6 +1480,7 @@
 <ul>
 <li><a href="#vocabulary-and-abbreviations">Vocabulary and abbreviations</a></li>
 <li><a href="#lda-vs-qda">LDA vs QDA</a></li>
+<li><a href="#scikit-learn-vs-statsmodels">SciKit-Learn vs StatsModels</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1508,6 +1530,34 @@ quadratic.
 <br /></li>
 </ul>
 
+<h2 id="scikit-learn-vs-statsmodels">SciKit-Learn vs StatsModels</h2>
+
+<p>Some estimators like logistic regression are available in both
+StatsModels and scikit-learn.</p>
+
+<p>Scikit-learn offers a uniform interface.</p>
+
+<p>StatsModels offers statistical analysis of the results, including a
+convenient summary method. (Although the name of the summary method
+may change names for different modeling methods&hellip;)</p>
+
+<p>Scikit-learn does not offer statistical analysis tools like p-values
+for coefficients, and even getting the coefficients themselves is
+not &ldquo;official&rdquo; from the API.</p>
+
+<p>Estimators like KNN, LDA, and QDA are only available from
+scikit-learn.</p>
+
+<div class="notices tip" ><p>Use StatsModels when you want access to statistical information about
+the underlying model, like p-values for coefficients.</p>
+
+<p>Use scikit-learn
+for the benefit of a consistent interface across different models, or
+do not care about low-level details from the model - for
+example when bootstrapping or doing cross validation.</p>
+</div>
+
+
 
     
     
@@ -1518,8 +1568,8 @@ quadratic.
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/machine-learning/isl-ch4/" title="4. Classification"> <i class="fa fa-chevron-left"></i><label>4. Classification</label></a>
-    <a class="nav nav-next" href="/machine-learning/isl-ch4/chapter4-section6-lab/" title="4. Classification Lab" style="margin-right: 0px;"><label>4. Classification Lab</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/machine-learning/isl-ch4/" title="ISL Chapter 4: Classification"> <i class="fa fa-chevron-left"></i><label>ISL Chapter 4: Classification</label></a>
+    <a class="nav nav-next" href="/machine-learning/isl-ch4/logistic-regression/" title="4. Logistic Regression" style="margin-right: 0px;"><label>4. Logistic Regression</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

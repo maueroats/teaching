@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Registration :: WY Computer Science</title>
+<title>4. Logistic Regression :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/ftc/registration/">
+  <body data-url="/machine-learning/isl-ch4/logistic-regression/">
     
       
 
@@ -1050,10 +1050,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/machine-learning/" class="dd-item haschildren
+    <li data-nav-id="/machine-learning/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/machine-learning/">Machine Learning</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/machine-learning/">Machine Learning</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/machine-learning/daily/" class="dd-item haschildren
@@ -1243,10 +1244,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/machine-learning/isl-ch4/" class="dd-item haschildren
+    <li data-nav-id="/machine-learning/isl-ch4/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/machine-learning/isl-ch4/">ISL Chapter 4: Classification</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/machine-learning/isl-ch4/">ISL Chapter 4: Classification</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/machine-learning/isl-ch4/notes/" class="dd-item">
@@ -1256,7 +1258,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/machine-learning/isl-ch4/logistic-regression/" class="dd-item">
+      <li data-nav-id="/machine-learning/isl-ch4/logistic-regression/" class="dd-item active">
         <div>
           <a href="/machine-learning/isl-ch4/logistic-regression/">
             4. Logistic Regression
@@ -1357,14 +1359,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ftc/" class="dd-item parent haschildren
+    <li data-nav-id="/ftc/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ftc/">Robophins FTC</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ftc/">Robophins FTC</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ftc/registration/" class="dd-item active">
+      <li data-nav-id="/ftc/registration/" class="dd-item">
         <div>
           <a href="/ftc/registration/">
             Registration
@@ -1441,7 +1442,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ftc/'>Robophins FTC</a> > Registration
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/machine-learning/'>Machine Learning</a> > <a href='/machine-learning/isl-ch4/'>ISL Chapter 4: Classification</a> > 4. Logistic Regression
+
+ 
 
  
 
@@ -1464,7 +1470,7 @@
 
 <div id="body-inner">
   
-    <h1>Registration</h1>
+    <h1>4. Logistic Regression</h1>
   
 
 
@@ -1472,15 +1478,36 @@
     
     
     
-    <p>You must be officially registered to attend any official FIRST
-Event. We are First Tech Challenge (FTC) team number 3216 (&ldquo;old&rdquo;) or
-15659 (&ldquo;new&rdquo;). <strong>There are two permission slips to return.</strong></p>
+    <p>All of this information is taken from Section 4.6.2 Logistic
+Regression in the <a href="https://colab.research.google.com/drive/1M1fukzCHH5AkiKg6UFudn82ad_MAFQeD">Chapter 4 Lab
+walkthrough</a>. You
+should consult that for details.</p>
+
+<div class="notices warning" ><p>For StatsModels, the output variable must be a number. Change strings like &ldquo;Larger&rdquo; and
+&ldquo;Smaller&rdquo; to the numbers 0 and 1.</p>
+</div>
+
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">import statsmodels.api as sm
+result = sm.Logit.from_formula(&#34;output=p1+p2&#34;,
+           data=DataFrame).fit()</pre></div>
+<p>The resulting <code>result</code> variable is of type
+<a href="http://www.statsmodels.org/dev/generated/statsmodels.discrete.discrete_model.LogitResults.html">LogitResults</a>,
+so check the documentation for all available information. Some
+important fields of <code>LogitResults</code>:</p>
 
 <ul>
-<li><a href="https://www.firstinspires.org/sites/default/files/uploads/resource_library/youth-registration-guide-v3.pdf">Online registration guide</a> - This is a walkthrough of the registration process. Follow it!</li>
-<li><a href="https://www.firstinspires.org/resource-library/youth-team-member-consent-and-release-form">Online registration instructions</a>. Pretty dense reading.</li>
-<li><a href="https://www.firstinspires.org/sites/default/files/uploads/resource_library/first-youth-team-member-paperwork-2016-2017.pdf">Printable form</a>. If all else fails, print this form and turn it in.</li>
-<li>Second permission slip needed (beginning 2018-2019): <a href="http://registration.firstillinoisrobotics.org/Consent.aspx?ConsentID=0&amp;TeamID=0">Illinois FTC Consent</a>)</li>
+<li><code>summary()</code></li>
+<li><code>params</code>: Coefficients.</li>
+<li><code>pvalues</code></li>
+</ul>
+
+<p>Less important, still common to use:</p>
+
+<ul>
+<li><code>tvalues()</code></li>
+<li><code>fittedvalues</code></li>
+<li><code>bse</code>: Coefficient standard errors.</li>
+<li><code>aic</code>: A measure of model fit.</li>
 </ul>
 
 
@@ -1493,8 +1520,8 @@ Event. We are First Tech Challenge (FTC) team number 3216 (&ldquo;old&rdquo;) or
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ftc/" title="Robophins FTC"> <i class="fa fa-chevron-left"></i><label>Robophins FTC</label></a>
-    <a class="nav nav-next" href="/ftc/learning/" title="Learning Resources" style="margin-right: 0px;"><label>Learning Resources</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/machine-learning/isl-ch4/notes/" title="4. Notes"> <i class="fa fa-chevron-left"></i><label>4. Notes</label></a>
+    <a class="nav nav-next" href="/machine-learning/isl-ch4/chapter4-section6-lab/" title="4. Classification Lab" style="margin-right: 0px;"><label>4. Classification Lab</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
