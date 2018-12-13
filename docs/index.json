@@ -288,7 +288,7 @@
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch13/ch13-exb/",
-    "title": "13. More Exercises",
+    "title": "13. Exercises B",
     "tags": [],
     "description": "",
     "content": " lots-younger?: number(age1) number(age2) -\u0026amp;gt; boolean. True if the first person is lots younger than the second (15 years or more).\n kinda-close? …"
@@ -418,6 +418,13 @@
     "tags": [],
     "description": "",
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch13/ch13-exc/",
+    "title": "13. Exercises C",
+    "tags": [],
+    "description": "",
+    "content": " below-10-or-above-50?: number -\u0026amp;gt; boolean. True if the number is either below ten or above fifty.\n Craps is an old dice game. Simplified rules: you …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-2/",
@@ -1386,14 +1393,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",

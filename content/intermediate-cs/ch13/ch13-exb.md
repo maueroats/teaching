@@ -1,5 +1,5 @@
 ---
-title: "13. More Exercises"
+title: "13. Exercises B"
 date: 2018-12-12T14:17:52-06:00
 weight: 20
 draft: false
