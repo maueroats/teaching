@@ -30,6 +30,7 @@ so check the documentation for all available information. Some
 important fields of `LogitResults`: 
 
 * `summary()`
+* `summary2()`: We found this was needed on old installations.
 * `params`: Coefficients.
 * `pvalues`
 
