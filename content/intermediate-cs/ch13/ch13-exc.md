@@ -12,7 +12,7 @@ draft: false
    
 2. [Craps](https://en.wikipedia.org/wiki/Craps#Rules_of_play) is an old dice
    game. Simplified rules: you win if you roll a 7 or an 11. Write
-   `win-craps?`.
+   `win-craps?: number -> boolean`.
    
 3. Write a function `roll-2-dice: number(ignore) -> number` that gives
    the total from rolling two standard six-sided dice.
