@@ -287,6 +287,13 @@
     "content": " Planning and Testing Write every part of the design process except the function. Do write tests!\n count-factors: take a number N and find out how …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-cond-patterns/",
+    "title": "15. Cond Patterns",
+    "tags": [],
+    "description": "Patterns with conditionals and build-image.",
+    "content": "Do all exercises with build-image. Use a width of 600 and a height of 500. The exercises build in complexity - if you can do the earlier ones, go on …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch13/ch13-exb/",
     "title": "13. Exercises B",
     "tags": [],
