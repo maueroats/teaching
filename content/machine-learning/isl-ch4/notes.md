@@ -15,8 +15,12 @@ description: "Takeaways from Chapter 4."
 * KNN = k-Nearest Neighbors
 * [Confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix):
   a table of predicted vs true counts or probabilities
-* Sensitivity: fraction of "true" correctly identified (true positives)
-* Specificity: fraction of "false" correctly identified (true negatives)
+* Sensitivity: fraction of "true" correctly identified (correctly
+  predicted positives / all predicted positives)
+* Recall: sensitivity
+* Specificity: fraction of "false" correctly identified (true
+  negatives / predicted negatives )
+* Precision: correctly predicted positive / all predicted positive.
 * Type I Error: false positive
 * Type II Error: false negative
 * ROC curve: graph of true positive rate vs false positive rate (as
