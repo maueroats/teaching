@@ -623,6 +623,13 @@
     "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-arrays-2d/",
+    "title": "12. Two Dimensional Arrays",
+    "tags": [],
+    "description": "Two dimensional arrays can represent temperatures across the states, locations of buildings, or hospital X-rays.",
+    "content": " Fundamentals int[][] data = new int[30][60]; int rows = data.length; int cols = data[0].length; import java.util.Arrays; int[][] given = …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/",
     "title": "Java Methods",
     "tags": [],
@@ -1041,6 +1048,20 @@
     "tags": [],
     "description": "",
     "content": "  "
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-ex/",
+    "title": "12. Book Exercises",
+    "tags": [],
+    "description": "",
+    "content": " Chapter 12, exercises 23, 24, and 25. Write tests to prove that your work is correct. Those exercises, restated here, are:\nExercise 23: Rotate …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-chomp/",
+    "title": "12. Chomp",
+    "tags": [],
+    "description": "",
+    "content": " Class JavaMethods GitHub -\u0026amp;gt; Chomp project directory -\u0026amp;gt; CharMatrix class. The CharMatrix code can be copy-and-pasted into Repl.it or DrJava. …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch15/15-practice-quiz/",
