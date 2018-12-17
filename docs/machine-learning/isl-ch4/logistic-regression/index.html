@@ -1495,7 +1495,7 @@ should consult that for details.</p>
 </div>
 
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">import statsmodels.api as sm
-result = sm.Logit.from_formula(&#34;output=p1+p2&#34;,
+result = sm.Logit.from_formula(&#34;output~p1+p2&#34;,
            data=DataFrame).fit()</pre></div>
 <p>The resulting <code>result</code> variable is of type
 <a href="http://www.statsmodels.org/dev/generated/statsmodels.discrete.discrete_model.LogitResults.html">LogitResults</a>,

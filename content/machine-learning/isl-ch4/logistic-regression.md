@@ -20,7 +20,7 @@ For StatsModels, the output variable must be a number. Change strings like "Larg
 
 ```
 import statsmodels.api as sm
-result = sm.Logit.from_formula("output=p1+p2",
+result = sm.Logit.from_formula("output~p1+p2",
            data=DataFrame).fit()
 ```
 
