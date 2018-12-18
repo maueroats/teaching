@@ -1,6 +1,6 @@
 ---
 title: "12. Two Dimensional Arrays"
-date: 2018-01-16T10:11:37-06:00
+date: 2018-12-18T11:00:25-06:00
 weight: 40
 draft: false
 #type: slide
@@ -19,6 +19,10 @@ import java.util.Arrays;
 int[][] given = {{1,2},{3,4},{5,6}};
 System.out.println(Arrays.deepToString(given));
 ```
+
+## Introduction
+
+[Array 2D intro and practice slides](https://docs.google.com/presentation/d/1QEp4FGMU1ShqXnAAwZ2gDNfMQqL6rmHUkAVeGWsszeU/edit?usp=sharing).
 
 ## Exercises
 
@@ -65,9 +69,5 @@ of even length and splits it into two rows (in "row major order").
                         {-40,  95, 30}};
         int[] result = colMax(data);
         System.out.println(Arrays.toString(result));
-        // {-50,100,90}
-
-## More Links
-
-* [Array 2D intro and Practice slides](https://docs.google.com/presentation/d/1QEp4FGMU1ShqXnAAwZ2gDNfMQqL6rmHUkAVeGWsszeU/edit?usp=sharing)
+        // {-30,100,90}
 
