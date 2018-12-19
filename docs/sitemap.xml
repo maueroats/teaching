@@ -683,6 +683,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch15/15-challenge/</loc>
+    <lastmod>2018-12-15T16:58:14-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch08/number-test/</loc>
     <lastmod>2018-12-06T14:19:06-06:00</lastmod>
   </url>
@@ -1001,14 +1006,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

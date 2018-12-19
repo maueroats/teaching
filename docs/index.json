@@ -952,6 +952,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-challenge/",
+    "title": "15. Challenge",
+    "tags": [],
+    "description": "A beautiful image made with a conditional in build-image.",
+    "content": "   "
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-test/",
     "title": "8. Build It Test",
     "tags": [],
@@ -1421,14 +1428,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
