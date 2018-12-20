@@ -413,6 +413,13 @@
     "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-challenge/",
+    "title": "15. Another Challenge",
+    "tags": [],
+    "description": "A beautiful image made with a conditional in build-image.",
+    "content": "Make sure you have done the warm-up conditional patterns before this!\n  Pick two centers, say (300,150) and (310, 150). Use a big 500x300 canvas. …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch06/animation3/",
     "title": "Animations Key, Mouse",
     "tags": [],
@@ -728,6 +735,13 @@
     "content": "Mini-project: Religion Survey Analysis\nMake sure you learn how to avoid writing for loops. Example: sum( df[\u0026#39;christian\u0026#39;] ) counts the number of True …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-graphing-review/",
+    "title": "15. Graphing Review",
+    "tags": [],
+    "description": "A review of graphing with people and computer coordinates.",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});   The graph of $f(x)=10 …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-review-2/",
     "title": "Number Model Review II",
     "tags": [],
@@ -761,6 +775,13 @@
     "tags": [],
     "description": "The end-of-Haskell project.",
     "content": " You have a week to complete this project. You will need to find time to work on it outside of class.\nDue: Monday, October 15, 2018\nOption 1 …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-heatmap/",
+    "title": "15. Heatmap",
+    "tags": [],
+    "description": "Using cond to create a multi-segment heat map. Applying it to the graphing review.",
+    "content": " The figure below is 100 pixels wide and 300 pixels tall. Each 100 pixel color segment is a color gradient.\n     y-coord color color value     0 blue …"
 },
 {
     "uri": "https://wy-cs.site/resources/academic-integrity/",
@@ -950,13 +971,6 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
-},
-{
-    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-challenge/",
-    "title": "15. Challenge",
-    "tags": [],
-    "description": "A beautiful image made with a conditional in build-image.",
-    "content": "   "
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-test/",
@@ -1428,14 +1442,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",

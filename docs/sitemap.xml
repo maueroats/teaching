@@ -298,6 +298,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch15/15-challenge/</loc>
+    <lastmod>2018-12-15T16:58:14-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch06/animation3/</loc>
     <lastmod>2018-10-14T22:03:31-05:00</lastmod>
   </url>
@@ -523,6 +528,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch15/15-graphing-review/</loc>
+    <lastmod>2018-12-19T20:32:27-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch08/number-review-2/</loc>
     <lastmod>2018-11-28T07:25:03-06:00</lastmod>
   </url>
@@ -545,6 +555,11 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/haskell/daily/2018-10-09/</loc>
     <lastmod>2018-10-09T09:38:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/ch15/15-heatmap/</loc>
+    <lastmod>2018-12-19T20:54:29-06:00</lastmod>
   </url>
   
   <url>
@@ -680,11 +695,6 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/pro/</loc>
     <lastmod>2017-11-19T15:30:06-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/intermediate-cs/ch15/15-challenge/</loc>
-    <lastmod>2018-12-15T16:58:14-06:00</lastmod>
   </url>
   
   <url>
@@ -1006,14 +1016,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
