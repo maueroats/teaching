@@ -46,7 +46,7 @@ $$ f(x,y) = 325 \left( \sin(x) + \cos(x\cdot y /10) \right) $$
 In Racket you would type the function:
 
     (define (f x y)
-      (* 300 
+      (* 350 
          (+ (sin x)
             (cos (* x y 1/10)))))
 
