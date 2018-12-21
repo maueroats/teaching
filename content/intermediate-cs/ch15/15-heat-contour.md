@@ -10,11 +10,6 @@ description: "Color pixels based on values of a function. Put contour lines ever
 
 {{% use-mathjax %}}
 
-A contour line shows where the elevation does not change.
-
-{{% figure src="contour-lines.gif" %}}
-
-
 We are going to make a beautiful icy winter picture using that idea.
 
 {{% figure src="astral.png" %}}
@@ -46,7 +41,7 @@ input to your heatmap either x or y.
 
 The picture above is made using this function:
 
-$$ f(x,y) = 300 \left( \sin(x) + \cos(x\cdot y /10) \right) $$
+$$ f(x,y) = 325 \left( \sin(x) + \cos(x\cdot y /10) \right) $$
 
 In Racket you would type the function:
 
@@ -84,3 +79,14 @@ different values. I made mine in three pieces:
 | 750   | red 250, blue 250 |
 
    
+## Contour lines
+
+The picture at the top has little white areas every 75 units --- check
+to see if the value is close to a multiple of 75 and if so, make the
+color white. These lines are called contour lines.
+
+In a map, a contour line shows where the elevation is the same. In
+math plots showing those type of lines are called contour plots.
+
+{{% figure src="contour-lines.gif" %}}
+
