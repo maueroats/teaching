@@ -19,6 +19,28 @@ We are going to make a beautiful icy winter picture using that idea.
 
 {{% figure src="astral.png" %}}
 
+## Outline
+
+We use a function of x and y to create a number. Use the number in a
+heatmap function to produce a color. Build-image to make a picture
+from this process.
+
+{{< mermaid >}}
+graph LR;
+  A[x-computer] --> B[x-people]
+  C[y-computer] --> D[y-people]
+  B --> E[function]
+  D --> E
+  E --> F[number]
+  F --> |heatmap| G[color]
+{{< /mermaid >}}
+
+When we draw, we will have conversion functions so we can draw in computer
+coordinates and do math in people coordinates.
+
+Some people found it confusing to
+take in a single number to the heatmap function... just don't call the
+input to your heatmap either x or y.
 
 ## Decide the function
 
