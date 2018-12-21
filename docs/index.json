@@ -791,6 +791,13 @@
     "content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-heat-contour/",
+    "title": "15. Heatmap with Contours",
+    "tags": [],
+    "description": "Color pixels based on values of a function. Put contour lines every 50 values.",
+    "content": "A contour line shows where the elevation does not change.\n  "
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-graph-zoom/",
     "title": "Number Graph Zoom",
     "tags": [],
@@ -1442,14 +1449,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
