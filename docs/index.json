@@ -795,7 +795,7 @@
     "title": "15. Heatmap with Contours",
     "tags": [],
     "description": "Color pixels based on values of a function. Put contour lines every 50 values.",
-    "content": "A contour line shows where the elevation does not change.\n  "
+    "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});   A contour line shows where …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-graph-zoom/",
@@ -978,6 +978,13 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch15/15-cond-art/",
+    "title": "15 Cond Art",
+    "tags": [],
+    "description": "",
+    "content": ""
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-test/",
@@ -1449,14 +1456,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",

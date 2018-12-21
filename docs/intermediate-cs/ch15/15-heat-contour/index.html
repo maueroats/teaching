@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.49" />
+<meta name="generator" content="Hugo 0.48" />
 
 <title>15. Heatmap with Contours :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
@@ -1025,6 +1025,13 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/ch15/15-cond-art/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch15/15-cond-art/">
+            15 Cond Art
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/intermediate-cs/ch15/15-practice-quiz/" class="dd-item">
         <div>
           <a href="/intermediate-cs/ch15/15-practice-quiz/">
@@ -1523,7 +1530,16 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#decide-the-function">Decide the function</a></li>
+<li><a href="#computer-coordinates-and-people-coordinates">Computer coordinates and people coordinates</a></li>
+<li><a href="#colorize-the-results">Colorize the results</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1541,7 +1557,22 @@
     
     
     
-    <p>A contour line shows where the elevation does not change.</p>
+    
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']]
+  }});
+</script>
+
+<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+
+<p>A contour line shows where the elevation does not change.</p>
 
 
 <figure>
@@ -1551,6 +1582,88 @@
     
 </figure>
 
+
+<p>We are going to make a beautiful icy winter picture using that idea.</p>
+
+
+<figure>
+    
+        <img src="astral.png" />
+    
+    
+</figure>
+
+
+<h2 id="decide-the-function">Decide the function</h2>
+
+<p>The picture above is made using this function:</p>
+
+<p>$$ f(x,y) = 300 \left( \sin(x) + \cos(x\cdot y /10) \right) $$</p>
+
+<p>In Racket you would type the function:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (f x y)
+  (* 300 
+     (+ (sin x)
+        (cos (* x y 1/10)))))</pre></div>
+<h2 id="computer-coordinates-and-people-coordinates">Computer coordinates and people coordinates</h2>
+
+<p>The picture above is a 600x600 computer coordinate window, with people
+coordinates $-22.5 \le x \le 22.5$ and $-15 \le y \le 15$.</p>
+
+<p>Create functions to change x and y computer coordinates to people
+coordinates. Follow the process of making a number line, writing
+check-expects, and then using a solver to get the equations.</p>
+
+<p><strong>Note</strong>: For this project you will only need to change computer to
+people coordinates.</p>
+
+<h2 id="colorize-the-results">Colorize the results</h2>
+
+<p>The function $f(x,y)$ above gives numbers from -600 to 600.</p>
+
+<p>Use the ideas from the heatmap to use different colors for
+different values. I made mine in three pieces:</p>
+
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>color</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>blue 175</td>
+</tr>
+
+<tr>
+<td>250</td>
+<td>blue 250</td>
+</tr>
+
+<tr>
+<td>251</td>
+<td>green 1, blue 250</td>
+</tr>
+
+<tr>
+<td>500</td>
+<td>green 250, blue 250</td>
+</tr>
+
+<tr>
+<td>501</td>
+<td>red 1, blue 250</td>
+</tr>
+
+<tr>
+<td>750</td>
+<td>red 250, blue 250</td>
+</tr>
+</tbody>
+</table>
 
 
     
@@ -1563,7 +1676,7 @@
 
 <div id="navigation">
 <a class="nav nav-prev" href="/intermediate-cs/ch15/15-heatmap/" title="15. Heatmap"> <i class="fa fa-chevron-left"></i><label>15. Heatmap</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch15/15-practice-quiz/" title="15. Practice Quiz" style="margin-right: 0px;"><label>15. Practice Quiz</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/intermediate-cs/ch15/15-cond-art/" title="15 Cond Art" style="margin-right: 0px;"><label>15 Cond Art</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
