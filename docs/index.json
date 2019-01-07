@@ -693,6 +693,13 @@
     "content": " You may ask for help with \u0026amp;ldquo;red error messages\u0026amp;rdquo;. No internet sources. No help from other students. No notes.  Write three tests, a …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-3/",
+    "title": "12. Arrays Exercises 3",
+    "tags": [],
+    "description": "Exercises to bring back to your mind basic facts about arrays.",
+    "content": " Compactor Given an array of integers nums, return an array containing only the indices k for which nums[k] is one.\nExample: compactor({1,0,1,1}) …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-quiz-b/",
     "title": "Chapter 4 Quiz B",
     "tags": [],
@@ -1313,7 +1320,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Two Dimensional Arrays modified Tue …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Arrays Exercises 3 modified Mon 01-07 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
