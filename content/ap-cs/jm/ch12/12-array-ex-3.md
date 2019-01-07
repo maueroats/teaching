@@ -50,3 +50,10 @@ Use the tools you have to write a program to find the prime
 factorization of a number. It is OK to limit your program to working
 with numbers with less than 20 factors.
 
+Signature: `public static int[] pf (int n)`.
+
+Examples:
+
+* `pf(8) => {2,2,2}`
+* `pf(18) => {2,3,3}`
+
