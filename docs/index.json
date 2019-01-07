@@ -154,6 +154,13 @@
     "content": " Contracts are the signatures of functions that we have been using. The vocabulary word changes to make it sound more legal. Contracts are actually …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/posn-util/",
+    "title": "20. Posn Util",
+    "tags": [],
+    "description": "Utility functions for posns. Accessing functions defined in other files.",
+    "content": " The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.)\nYou may …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/pro/pro-string/",
     "title": "Strings for Experts",
     "tags": [],
@@ -511,6 +518,13 @@
     "content": "Opener: Write the result of the third \u0026amp;ldquo;step\u0026amp;rdquo;, as seen in the Stepper.\n(+ (+ 1 5) (* 8 (+ 2 3)) (* 7 2)) Class/homework:\nMake the two …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle/",
+    "title": "20. Click Circle",
+    "tags": [],
+    "description": "A circle moves around the screen randomly. You win if you can click on it.",
+    "content": " Exercises 20.6.3 and 20.6.4.\n A circle moves to a random position on the screen every so often. (20.6.3)\n Clicking on the circle displays a win …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch06/examples/",
     "title": "Animation Examples",
     "tags": [],
@@ -565,6 +579,13 @@
     "tags": [],
     "description": "",
     "content": " Example showing Chapter 2 Exercise 8  "
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle-questions/",
+    "title": "20. Click Circle Questions",
+    "tags": [],
+    "description": "Brief explanation of how to stop animations and show a win screen.",
+    "content": " Main questions about the click circle project (20.6.4):\nStopping an animation    Stop condition How?     user action return (stop-with model) from a …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch03art/",
@@ -644,6 +665,13 @@
     "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/tightrope/",
+    "title": "20. Tightrope",
+    "tags": [],
+    "description": "A square changes color as you balance between two circles.",
+    "content": " There are two unmoving blue circles on the screen.\n You can move a square with the mouse.\n Square color is:\n Green if the distance from the square to …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/",
     "title": "Java Methods",
     "tags": [],
@@ -714,6 +742,13 @@
     "content": " Unless you are completely confident of your signature-writing skills, please use \u0026amp;ldquo;concrete\u0026amp;rdquo; type classes like Double or Integer instead …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/map-image/",
+    "title": "20. Map Image",
+    "tags": [],
+    "description": "Changing the colors in a picture, pixel by pixel.",
+    "content": " The map-image command runs a function on every pixel of an image. See the map-image documentation for the official info.\nExercises for map-image …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-review/",
     "title": "Number Model Review",
     "tags": [],
@@ -754,6 +789,13 @@
     "tags": [],
     "description": "Review with focus on graphing functions.",
     "content": " Definitions: people coordinates are coordinates where (0,0) refers to the origin where the axes cross and positive y numbers are above the x-axis. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/color-enhancing/",
+    "title": "20. Color Enhancing",
+    "tags": [],
+    "description": "One exercise working with color.",
+    "content": "Write a function that takes a color and does the following:\n cut the amount of red in half leave green the same double the amount of blue  Start using …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch06/",
@@ -817,6 +859,13 @@
     "tags": [],
     "description": "Numerical functions, including gradients.",
     "content": "Important ideas:\n Inexact numbers and check-within build3-image or build-image map3-image or map-image (random 5) gives 0, 1, 2, 3, or 4. How to make …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/ch20-review/",
+    "title": "20. Review",
+    "tags": [],
+    "description": "Review questions on posn and color.",
+    "content": "Write checks and follow the design process as you write these functions.\n Move to parabola. Input any point, output a point on the graph of y=x^2. …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-project/",
@@ -957,6 +1006,13 @@
     "tags": [],
     "description": "Making choices in Racket using &#39;cond&#39;.",
     "content": " See slides for introductory material.\nExercise Notes / Advice  15.3.4: The first input is the candidate for whom you are counting votes. (For example …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/",
+    "title": "20. Using Structures",
+    "tags": [],
+    "description": "Remembering or returning more than one thing. For example, coordinates.",
+    "content": "  20. Posn Util Utility functions for posns. Accessing functions defined in other files.\n  20. Click Circle A circle moves around the screen randomly. …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/contracts/",
