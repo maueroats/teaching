@@ -777,6 +777,13 @@
     "content": "Mini-project: Religion Survey Analysis\nMake sure you learn how to avoid writing for loops. Example: sum( df[\u0026#39;christian\u0026#39;] ) counts the number of True …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-4/",
+    "title": "12. Arrays Exercises 4",
+    "tags": [],
+    "description": "1D arrays",
+    "content": " lockers public static int[] lockers(int n)\nFlip means change 0 to 1 and 1 to 0.\n Start with an integer array of n lockers, all closed (0). In step 1, …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch15/15-graphing-review/",
     "title": "15. Graphing Review",
     "tags": [],
@@ -1376,7 +1383,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Arrays Exercises 3 modified Mon 01-07 …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Arrays Exercises 4 modified Tue 01-08 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",

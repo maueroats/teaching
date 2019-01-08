@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.48" />
 
-<title>Ch13 Exercises :: WY Computer Science</title>
+<title>12. Arrays Exercises 4 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch13/ch13-exa/">
+  <body data-url="/ap-cs/jm/ch12/12-array-ex-4/">
     
       
 
@@ -66,10 +66,11 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -468,10 +469,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -516,10 +518,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/ch12/">12. Arrays</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/ch12/">12. Arrays</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/jm/ch12/12-array-intro-1/" class="dd-item">
@@ -557,7 +560,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/ch12/12-array-ex-4/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch12/12-array-ex-4/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/ch12/12-array-ex-4/">
             12. Arrays Exercises 4
@@ -590,11 +593,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -961,11 +963,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch13/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/ch13/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch13/">13. Booleans</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch13/">13. Booleans</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch13/ch13-exb/" class="dd-item">
@@ -982,7 +983,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch13/ch13-exa/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch13/ch13-exa/" class="dd-item">
         <div>
           <a href="/intermediate-cs/ch13/ch13-exa/">
             Ch13 Exercises
@@ -1579,7 +1580,12 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch13/'>13. Booleans</a> > Ch13 Exercises
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch12/'>12. Arrays</a> > 12. Arrays Exercises 4
+
+ 
 
  
 
@@ -1598,7 +1604,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#review">Review</a></li>
+<li><a href="#lockers">lockers</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1611,7 +1617,7 @@
 
 <div id="body-inner">
   
-    <h1>Ch13 Exercises</h1>
+    <h1>12. Arrays Exercises 4</h1>
   
 
 
@@ -1621,23 +1627,31 @@
     
     
 
+<h2 id="lockers">lockers</h2>
+
+<p><code>public static int[] lockers(int n)</code></p>
+
+<p>Flip means change 0 to 1 and 1 to 0.</p>
+
 <ul>
-<li>Exercises: 13.3.{3-5}, 13.4.1</li>
-<li>Exercises: 13.4.2, 13.5.1</li>
-<li>Exercises: 13.7.{2-7}</li>
-<li>Exercises: 13.7.{8-13}</li>
+<li>Start with an integer array of n lockers, all closed (0).</li>
+<li>In step 1, flip every locker&rsquo;s state, beginning at locker 1.</li>
+<li>In step 2, flip every second locker&rsquo;s state, beginning at locker 2.</li>
+<li>In step 3, flip every third locker&rsquo;s state, beginning at locker 3.</li>
+<li>Etc.</li>
 </ul>
 
-<h2 id="review">Review</h2>
+<p>Return the resulting integer array.</p>
 
-<p>Exercises that must be reviewed for understanding: 13.7.{7,9,12}.</p>
-
-<p>Notes:</p>
+<p>Examples when n=10:</p>
 
 <ul>
-<li>13.7.7 <code>play-craps</code></li>
-<li>13.7.9 <code>not-single-letter?</code></li>
-<li>13.7.12 <code>is-not-red-square?</code></li>
+<li>Step 1: <code>{0,1,1,1,1,1,1,1,1,1}</code></li>
+<li>Step 2: <code>{0,1,0,1,0,1,0,1,0,1}</code></li>
+<li>Step 3: <code>{0,1,0,0,1,1,1,1,0,0}</code></li>
+<li>Step 4: <code>{0,1,0,0,0,1,1,1,1,0}</code></li>
+<li>[&hellip;]</li>
+<li>Step 9: <code>{0,1,0,0,1,0,0,0,0,1}</code></li>
 </ul>
 
 
@@ -1650,8 +1664,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch13/ch13-exc/" title="13. Exercises C"> <i class="fa fa-chevron-left"></i><label>13. Exercises C</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch15/" title="15. Conditionals" style="margin-right: 0px;"><label>15. Conditionals</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch12/12-array-ex-3/" title="12. Arrays Exercises 3"> <i class="fa fa-chevron-left"></i><label>12. Arrays Exercises 3</label></a>
+    <a class="nav nav-next" href="/ap-cs/jm/ch12/12-ex/" title="12. Book Exercises" style="margin-right: 0px;"><label>12. Book Exercises</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
