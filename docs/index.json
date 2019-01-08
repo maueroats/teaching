@@ -441,6 +441,13 @@
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle/",
+    "title": "20. Click Circle",
+    "tags": [],
+    "description": "A circle moves around the screen randomly. You win if you can click on it.",
+    "content": " Exercises 20.6.3 and 20.6.4.\n A circle moves to a random position on the screen every so often. (20.6.3)\n Clicking on the circle displays a win …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch13/ch13-exc/",
     "title": "13. Exercises C",
     "tags": [],
@@ -518,13 +525,6 @@
     "content": "Opener: Write the result of the third \u0026amp;ldquo;step\u0026amp;rdquo;, as seen in the Stepper.\n(+ (+ 1 5) (* 8 (+ 2 3)) (* 7 2)) Class/homework:\nMake the two …"
 },
 {
-    "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle/",
-    "title": "20. Click Circle",
-    "tags": [],
-    "description": "A circle moves around the screen randomly. You win if you can click on it.",
-    "content": " Exercises 20.6.3 and 20.6.4.\n A circle moves to a random position on the screen every so often. (20.6.3)\n Clicking on the circle displays a win …"
-},
-{
     "uri": "https://wy-cs.site/intermediate-cs/ch06/examples/",
     "title": "Animation Examples",
     "tags": [],
@@ -567,6 +567,13 @@
     "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }}); …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle-questions/",
+    "title": "20. Click Circle Questions",
+    "tags": [],
+    "description": "Brief explanation of how to stop animations and show a win screen.",
+    "content": " Main questions about the click circle project (20.6.4):\nStopping an animation    Stop condition How?     user action return (stop-with model) from a …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-discussion-03/",
     "title": "Chapter 4 Discussion III",
     "tags": [],
@@ -579,13 +586,6 @@
     "tags": [],
     "description": "",
     "content": " Example showing Chapter 2 Exercise 8  "
-},
-{
-    "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle-questions/",
-    "title": "20. Click Circle Questions",
-    "tags": [],
-    "description": "Brief explanation of how to stop animations and show a win screen.",
-    "content": " Main questions about the click circle project (20.6.4):\nStopping an animation    Stop condition How?     user action return (stop-with model) from a …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch03art/",
