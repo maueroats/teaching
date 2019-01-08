@@ -91,6 +91,13 @@
     "content": " Homework  Chapter 3 Section 1 Worksheet A. (October 10-11, 2018) Solutions to A discussed in class. Remainder became worksheet BC. Chapter 3 Section …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/posn-util/",
+    "title": "20. Posn Util",
+    "tags": [],
+    "description": "Utility functions for posns. Accessing functions defined in other files.",
+    "content": " The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.)\nYou may …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch15/15-slides/",
     "title": "15. Slides",
     "tags": [],
@@ -152,13 +159,6 @@
     "tags": [],
     "description": "An introduction to using contracts.",
     "content": " Contracts are the signatures of functions that we have been using. The vocabulary word changes to make it sound more legal. Contracts are actually …"
-},
-{
-    "uri": "https://wy-cs.site/intermediate-cs/ch20/posn-util/",
-    "title": "20. Posn Util",
-    "tags": [],
-    "description": "Utility functions for posns. Accessing functions defined in other files.",
-    "content": " The functions in 20.5 are all useful later. When you do them, you should save them in a file called posn-util.rkt. (Please use that name.)\nYou may …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/pro/pro-string/",

@@ -1,6 +1,6 @@
 ---
 title: "20. Posn Util"
-date: 2017-12-14T08:09:55-06:00
+date: 2019-01-08T08:32:15-06:00
 draft: false
 #type: slide
 #theme: white
