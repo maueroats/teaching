@@ -19,7 +19,7 @@ You may download [my posn utilities file](posn-util.rkt) if you write your funct
 
 The following functions should be in `posn-util.rkt`:
 
-* `posn=?`: Are both positions exactly the same? (Both coordinates match.)
+* `posn=?`: Are both positions exactly the same? (Both corresponding coordinates match.)
 * `add-posns`: Add corresponding coordinates.
 * `sub-posns`: Subtract corresponding coordinates.
 * `scale-posn`: number posn -> posn. Multiply both coordinates by the
