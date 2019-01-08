@@ -1644,10 +1644,11 @@ save them in a file called <code>posn-util.rkt</code>. (Please use that name.)</
 <p>The following functions should be in <code>posn-util.rkt</code>:</p>
 
 <ul>
-<li><code>posn=?</code></li>
-<li><code>add-posns</code></li>
-<li><code>sub-posns</code></li>
-<li><code>scale-posn</code>: number posn -&gt; posn</li>
+<li><code>posn=?</code>: Are both x and y coordinates the same?</li>
+<li><code>add-posns</code>: Add corresponding coordinates.</li>
+<li><code>sub-posns</code>: Subtract corresponding coordinates.</li>
+<li><code>scale-posn</code>: number posn -&gt; posn. Multiply both coordinates by the
+same number.</li>
 <li><code>distance</code>: posn posn -&gt; number</li>
 
 <li><p><code>place-image/posn</code>: image posn image(background) -&gt; image. Purpose:

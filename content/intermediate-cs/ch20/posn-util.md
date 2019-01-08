@@ -19,10 +19,11 @@ You may download [my posn utilities file](posn-util.rkt) if you write your funct
 
 The following functions should be in `posn-util.rkt`:
 
-* `posn=?`
-* `add-posns`
-* `sub-posns`
-* `scale-posn`: number posn -> posn
+* `posn=?`: Are both x and y coordinates the same?
+* `add-posns`: Add corresponding coordinates.
+* `sub-posns`: Subtract corresponding coordinates.
+* `scale-posn`: number posn -> posn. Multiply both coordinates by the
+  same number.
 * `distance`: posn posn -> number
 * `place-image/posn`: image posn image(background) -> image. Purpose:
     Place one image at a given set of coordinates on a given background.
