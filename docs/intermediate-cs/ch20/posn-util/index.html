@@ -1644,18 +1644,23 @@ save them in a file called <code>posn-util.rkt</code>. (Please use that name.)</
 <p>The following functions should be in <code>posn-util.rkt</code>:</p>
 
 <ul>
-<li><code>posn=?</code>: Are both positions exactly the same? (Both corresponding coordinates match.)</li>
-<li><code>add-posns</code>: Add corresponding coordinates.</li>
-<li><code>sub-posns</code>: Subtract corresponding coordinates.</li>
+<li><code>posn=?</code>: posn posn -&gt; boolean. Are both positions exactly the same? (Both corresponding coordinates match.)</li>
+<li><code>add-posns</code>: posn posn -&gt; posn. Add corresponding coordinates.</li>
+<li><code>sub-posns</code>: posn posn -&gt; posn. Subtract corresponding
+coordinates. First minus second.</li>
 <li><code>scale-posn</code>: number posn -&gt; posn. Multiply both coordinates by the
 same number.</li>
-<li><code>distance</code>: posn posn -&gt; number</li>
-
-<li><p><code>place-image/posn</code>: image posn image(background) -&gt; image. Purpose:
-Place one image at a given set of coordinates on a given background.</p></li>
-
-<li><p>Anything else you want to have available for re-use.</p></li>
+<li><code>distance</code>: posn posn -&gt; number. The distance in the plane between
+the points specified by the two posns.</li>
+<li><code>place-image/posn</code>: image posn image(background) -&gt; image. Purpose:
+Place one image at a given set of coordinates on a given background.</li>
+<li>Anything else you want to have available for re-use. (Maybe from
+physics or trig&hellip;)</li>
 </ul>
+
+<p>You should write tests for yourself. You are going to use these
+functions for a month, so you do not want any mistakes. If you really
+need them, you can see <a href="posn-tests.rkt">some tests I wrote</a>.</p>
 
 <h2 id="require-and-provide">Require and provide</h2>
 
