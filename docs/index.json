@@ -18,28 +18,28 @@
     "title": "1. Intro",
     "tags": ["haskell"],
     "description": "",
-    "content": "A high-level overview of the Haskell language and why its features are good. You should read it carefully and note what items you are unfamiliar with. …"
+    "content": "A high-level overview of the Haskell language and why its features are good.\nYou should read it carefully and note what items you are unfamiliar with. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch02/",
     "title": "2. Starting Out",
     "tags": [],
     "description": "",
-    "content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.  Create a list: [5..13] or [5,10..100] or [ n^2 | …"
+    "content": "Learn how to make lists and tuples. We also learn the basic list manipulation commands.\n Create a list: [5..13] or [5,10..100] or [ n^2 | …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch03/",
     "title": "3. Types and Typeclasses",
     "tags": ["haskell"],
     "description": "Typeclasses abstract characteristics of types like String or Int.",
-    "content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have. For example, String …"
+    "content": "Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have.\nFor example, String …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/",
     "title": "4. Syntax in Functions",
     "tags": ["haskell"],
     "description": "",
-    "content": "Patterns, guards, where, let, and case. Sections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Discussion I …"
+    "content": "Patterns, guards, where, let, and case.\nSections  Chapter 4 Reading Guide Questions to help you understand Chapter 4.\n  Chapter 4 Discussion I …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch07/ch7-summary/",
@@ -214,7 +214,7 @@
     "title": "1. Introduction",
     "tags": [],
     "description": "",
-    "content": "Learn the essentials of image manipulation: rotating, flipping, and combining images.  HW 01 B   HW 01 C   Ch01.QuizA  "
+    "content": "Learn the essentials of image manipulation: rotating, flipping, and combining images.\n HW 01 B   HW 01 C   Ch01.QuizA  "
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch02/ch02-reading-guide/",
@@ -347,14 +347,14 @@
     "title": "Haskell HW 2",
     "tags": ["homework", "hw", "haskell", "ap-cs"],
     "description": "",
-    "content": "Graph a function, is a point on a line, get the numbers more than 100, break up a list, find the nearest point. Homework All of the points you should …"
+    "content": "Graph a function, is a point on a line, get the numbers more than 100, break up a list, find the nearest point.\nHomework All of the points you should …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch01/ch01b-review/",
     "title": "HW 01 B",
     "tags": [],
     "description": "",
-    "content": "Two images of designs to practice making in Racket.\n\nOpener Practice You may omit the border lines.\n"
+    "content": "Two images of designs to practice making in Racket.\nOpener Practice You may omit the border lines.\n"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/contracts/contract-structs/",
@@ -403,7 +403,7 @@
     "title": "Chapter 3 Reading Guide",
     "tags": ["haskell", "reading-guide"],
     "description": "",
-    "content": "We learn about types and typeclasses. You should use valid Haskell types in all of your answers. Unless needed, I stick with Int for the type for …"
+    "content": "We learn about types and typeclasses.\nYou should use valid Haskell types in all of your answers. Unless needed, I stick with Int for the type for …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/",
@@ -553,7 +553,7 @@
     "content": "The essentials of the Types and Typeclasses chapter are: writing type signatures for functions, reading string inputs with the Read class, and dealing …"
 },
 {
-    "uri": "https://wy-cs.site/resources/apcs-syllabus--2017-2018/",
+    "uri": "https://wy-cs.site/resources/apcs-syllabus-2017-2018/",
     "title": "Syllabus: AP CS",
     "tags": [],
     "description": "",
@@ -693,7 +693,7 @@
     "content": " Key new concepts: patterns, guards, where, let, case.\nPlease write function signatures for every solution.\n Some of these problems are classical …"
 },
 {
-    "uri": "https://wy-cs.site/resources/intermediatecs-syllabus--2017-2018/",
+    "uri": "https://wy-cs.site/resources/intermediatecs-syllabus-2017-2018/",
     "title": "Syllabus: Intermediate",
     "tags": [],
     "description": "",
@@ -1040,7 +1040,7 @@
     "title": "Calendar",
     "tags": [],
     "description": "The course calendar and assignment sheet links.",
-    "content": "The assigment sheet goes with the calendar. "
+    "content": "The assigment sheet goes with the calendar.\n"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/pro/",
@@ -1292,7 +1292,7 @@
     "title": "Animation Practice",
     "tags": [],
     "description": "Practice writing big-bang code and identifying common errors.",
-    "content": "Progress bar 1 Make a solid purple bar that starts in the middle of the left side of the screen and grows to the right at a constant rate.  Model …"
+    "content": "Progress bar 1 Make a solid purple bar that starts in the middle of the left side of the screen and grows to the right at a constant rate.\n Model …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-10-04/",
@@ -1327,7 +1327,7 @@
     "title": "Chapter 5 Reading Guide",
     "tags": ["reading-guide"],
     "description": "",
-    "content": "The purpose of reading this section is to see how an experienced author writes functions that work on lists. Functions:\n maximum: Two different …"
+    "content": "The purpose of reading this section is to see how an experienced author writes functions that work on lists.\nFunctions:\n maximum: Two different …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/typeclass-notes/",
@@ -1355,7 +1355,7 @@
     "title": "Repl.it",
     "tags": ["haskell"],
     "description": "",
-    "content": "A summary of any special problems that have arisen with repl.it. Repl.it requires a main method The particular interpreter repl.it requires that you …"
+    "content": "A summary of any special problems that have arisen with repl.it.\nRepl.it requires a main method The particular interpreter repl.it requires that you …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2017-09-12/",
@@ -1376,7 +1376,7 @@
     "title": "Source Code Files (ghci)",
     "tags": ["haskell"],
     "description": "",
-    "content": "Writing a file is different from typing in an interpreter like repl.it or ghci. The differences include no let statements at the top level and no …"
+    "content": "Writing a file is different from typing in an interpreter like repl.it or ghci.\nThe differences include no let statements at the top level and no …"
 },
 {
     "uri": "https://wy-cs.site/biography/",

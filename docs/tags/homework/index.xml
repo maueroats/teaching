@@ -18,8 +18,7 @@
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch02/hw-a2/</guid>
       <description>&lt;p&gt;Graph a function, is a point on a line, get the numbers more than 100, break up a list,
-find the nearest point.
-&lt;/p&gt;</description>
+find the nearest point.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,8 +41,7 @@ All  Color Commands   Ch03 Signatures   Art Project   Puzzle Opener   </descript
       <guid>https://wy-cs.site/ap-cs/haskell/ch03/ch03-hw1/</guid>
       <description>&lt;p&gt;The essentials of the Types and Typeclasses chapter are: writing type
 signatures for functions, reading string inputs with the &lt;code&gt;Read&lt;/code&gt; class,
-and dealing with Integral to Fractional conversions when they are needed.
-&lt;/p&gt;</description>
+and dealing with Integral to Fractional conversions when they are needed.&lt;/p&gt;</description>
     </item>
     
     <item>

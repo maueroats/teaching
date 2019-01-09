@@ -17,8 +17,7 @@
       <pubDate>Sat, 09 Sep 2017 15:34:07 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch01/</guid>
-      <description>&lt;p&gt;A high-level overview of the Haskell language and why its features are good.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;A high-level overview of the Haskell language and why its features are good.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,8 +26,7 @@
       <pubDate>Tue, 12 Sep 2017 13:18:35 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch03/</guid>
-      <description>&lt;p&gt;Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Types categorize the kinds of data that appear in a program. Typeclasses provide general abilities that different types can have.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,8 +35,7 @@
       <pubDate>Mon, 18 Sep 2017 13:22:05 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch04/</guid>
-      <description>&lt;p&gt;Patterns, guards, where, let, and case.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Patterns, guards, where, let, and case.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,7 +47,8 @@
       <description>You will need the the text Learn You a Haskell For Great Good.
  Use repl.it for programming.
  Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.
-Chapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples.</description>
+Chapters  1. Intro A high-level overview of the Haskell language and why its features are good.
+  2. Starting Out Learn how to make lists and tuples.</description>
     </item>
     
     <item>
@@ -118,9 +116,7 @@ The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
 &lt;p&gt;Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.&lt;/p&gt;
 
 &lt;p&gt;Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ol&gt;</description>
     </item>
     
     <item>
@@ -130,8 +126,7 @@ The sum of the squares of the first ten natural numbers is,&lt;/p&gt;
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch02/hw-a2/</guid>
       <description>&lt;p&gt;Graph a function, is a point on a line, get the numbers more than 100, break up a list,
-find the nearest point.
-&lt;/p&gt;</description>
+find the nearest point.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -140,8 +135,7 @@ find the nearest point.
       <pubDate>Wed, 13 Sep 2017 13:18:35 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch03/ch03-reading-guide-haskell/</guid>
-      <description>&lt;p&gt;We learn about types and typeclasses.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;We learn about types and typeclasses.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -17,8 +17,7 @@
       <pubDate>Sat, 09 Sep 2017 15:34:07 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch01/</guid>
-      <description>&lt;p&gt;A high-level overview of the Haskell language and why its features are good.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;A high-level overview of the Haskell language and why its features are good.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,7 +29,8 @@
       <description>You will need the the text Learn You a Haskell For Great Good.
  Use repl.it for programming.
  Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.
-Chapters  1. Intro A high-level overview of the Haskell language and why its features are good.   2. Starting Out Learn how to make lists and tuples.</description>
+Chapters  1. Intro A high-level overview of the Haskell language and why its features are good.
+  2. Starting Out Learn how to make lists and tuples.</description>
     </item>
     
     <item>
@@ -50,8 +50,7 @@ Chapters  1. Intro A high-level overview of the Haskell language and why its fea
       <pubDate>Mon, 11 Sep 2017 10:12:55 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/ghci-details/</guid>
-      <description>&lt;p&gt;Writing a file is different from typing in an interpreter like repl.it or ghci.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Writing a file is different from typing in an interpreter like repl.it or ghci.&lt;/p&gt;</description>
     </item>
     
     <item>
