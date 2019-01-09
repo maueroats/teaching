@@ -45,7 +45,7 @@ The `provide` command makes functions available for other files to use.
 One way to use it is to list all of the functions you want to allow
 other files to use:
 ```racket
-(provide add-posn sub-posn scale-posn distance)
+(provide add-posns sub-posns scale-posn distance)
 ```
 Sometimes you just want to make every function in the file available. 
 There is a shortcut to do that:

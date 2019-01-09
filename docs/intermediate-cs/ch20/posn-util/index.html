@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-08T21:42:19 CST">
+<meta name="revised" content="2019-01-09T08:50:55 CST">
 <title>20. Posn Util :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1671,7 +1671,7 @@ need them, you can see <a href="posn-tests.rkt">some tests I wrote</a>.</p>
 <p>The <code>provide</code> command makes functions available for other files to use.
 One way to use it is to list all of the functions you want to allow
 other files to use:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">provide</span> <span style="color:#111">add-posn</span> <span style="color:#111">sub-posn</span> <span style="color:#111">scale-posn</span> <span style="color:#111">distance</span><span style="color:#111">)</span></code></pre></div>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">provide</span> <span style="color:#111">add-posns</span> <span style="color:#111">sub-posns</span> <span style="color:#111">scale-posn</span> <span style="color:#111">distance</span><span style="color:#111">)</span></code></pre></div>
 <p>Sometimes you just want to make every function in the file available.
 There is a shortcut to do that:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">provide</span> <span style="color:#111">(</span><span style="color:#00a8c8">all-defined-out</span><span style="color:#111">))</span></code></pre></div>

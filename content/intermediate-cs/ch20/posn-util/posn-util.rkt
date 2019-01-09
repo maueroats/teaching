@@ -34,3 +34,8 @@
                (posn-x p)
                (posn-y p)
                bg))
+
+(define (add-posns p1 p2)
+  (add-posn p1 p2))
+(define (sub-posns p1 p2)
+  (sub-posn p1 p2))

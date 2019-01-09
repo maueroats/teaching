@@ -1050,6 +1050,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-ex/",
+    "title": "12. Book Exercises",
+    "tags": [],
+    "description": "",
+    "content": " Chapter 12, exercises 23, 24, and 25. Write tests to prove that your work is correct. Those exercises, restated here, are:\nExercise 23: Rotate …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/daily/2019-01-08/",
     "title": "2019.01.08 Adblock Radio",
     "tags": [],
@@ -1160,13 +1167,6 @@
     "tags": [],
     "description": "",
     "content": "  "
-},
-{
-    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-ex/",
-    "title": "12. Book Exercises",
-    "tags": [],
-    "description": "",
-    "content": " Chapter 12, exercises 23, 24, and 25. Write tests to prove that your work is correct. Those exercises, restated here, are:\nExercise 23: Rotate …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-chomp/",
@@ -1390,7 +1390,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Arrays Exercises 4 modified Tue 01-08 …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Book Exercises modified Wed 01-09  12. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
