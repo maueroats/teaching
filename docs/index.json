@@ -91,6 +91,13 @@
     "content": " Homework  Chapter 3 Section 1 Worksheet A. (October 10-11, 2018) Solutions to A discussed in class. Remainder became worksheet BC. Chapter 3 Section …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch5/resampling/",
+    "title": "5. Resampling",
+    "tags": [],
+    "description": "",
+    "content": " The Colaboratory link is: resampling lab.\n Notes Many people are still using for loops and appending to create the data from their 1000 runs of a …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch20/posn-util/",
     "title": "20. Posn Util",
     "tags": [],
@@ -602,6 +609,13 @@
     "content": " Target. tgt :: Integer -\u0026amp;gt; [Integer] -\u0026amp;gt; Integer. Given a target number and a list of numbers, find the smallest distance between the target …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/click-mega/",
+    "title": "20. Click Mega",
+    "tags": [],
+    "description": "",
+    "content": "Challenge\nKeep track of a score of how many circles have been clicked since the last time you missed a circle.\nThis will require a posn inside another …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-arrays-2d/",
     "title": "12. Two Dimensional Arrays",
     "tags": [],
@@ -719,6 +733,13 @@
     "tags": [],
     "description": "The first quiz on Chapter 4, based on Chapter 4 Discussion III and similar CodingBat problems.",
     "content": " You may ask for help with \u0026amp;ldquo;red error messages\u0026amp;rdquo;. No internet sources. No help from other students. No notes.  Write three tests, a …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch5/",
+    "title": "ISL Chapter 5. Resampling",
+    "tags": [],
+    "description": "Cross-validation and resampling.",
+    "content": " Cross-validation: what does it help you do? Resampling: gets you confidence estimates for your results.   5. Resampling   "
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-3/",
