@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-10T08:52:10 CST">
-<title>Typeclass Notes :: WY Computer Science</title>
+<meta name="revised" content="2019-01-10T08:52:09 CST">
+<title>20. Silly Square :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/typeclass-notes/">
+  <body data-url="/intermediate-cs/ch20/square-a/">
     
       
 
@@ -66,18 +66,16 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
@@ -418,7 +416,7 @@
     </li>
         </ul>
     </li>
-      <li data-nav-id="/ap-cs/haskell/typeclass-notes/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/typeclass-notes/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/typeclass-notes/">
             Typeclass Notes
@@ -592,10 +590,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -1048,10 +1047,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch20/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch20/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch20/">20. Using Structures</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch20/">20. Using Structures</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch20/posn-util/" class="dd-item">
@@ -1082,7 +1082,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch20/square-a/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch20/square-a/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch20/square-a/">
             20. Silly Square
@@ -1615,7 +1615,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > Typeclass Notes
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch20/'>20. Using Structures</a> > 20. Silly Square
 
  
 
@@ -1640,7 +1640,7 @@
 
 <div id="body-inner">
   
-    <h1>Typeclass Notes</h1>
+    <h1>20. Silly Square</h1>
   
 
 
@@ -1649,14 +1649,17 @@
     
     
     <ul>
-<li>Num: Addition, multiplication, a way to convert from an integer. Also absolute value and negation.</li>
-<li>Real: Part of the real number line. Ordered numbers. <code>toRational</code>. Does not imply decimals!</li>
-<li>Enum: Next and previous (<code>succ</code>-essor and <code>pred</code>-ecessor).</li>
-<li>Integral: Integer division.</li>
-<li>Fractional: &ldquo;Decimal&rdquo; division.</li>
-<li>Floating: transcendental functions (exponentials, trig, pi, e).</li>
-<li>RealFrac: truncate and round.</li>
-<li>RealFloat: efficient floating point.</li>
+<li>A little square randomly drifts around the screen.</li>
+<li>You win if you hit the &ldquo;w&rdquo; key.</li>
+<li>Hitting the &ldquo;r&rdquo; key moves the square back to its starting position.</li>
+<li>When you win, some win screen appears and the animation stops.</li>
+</ul>
+
+<p>Items to practice:</p>
+
+<ul>
+<li><code>stop-when</code> clause in big bang</li>
+<li>win screen draw-handler</li>
 </ul>
 
 
@@ -1669,8 +1672,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/connect-four/rubric/" title="Connect Four Rubric"> <i class="fa fa-chevron-left"></i><label>Connect Four Rubric</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/replit/" title="Repl.it" style="margin-right: 0px;"><label>Repl.it</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch20/click-mega/" title="20. Click Mega"> <i class="fa fa-chevron-left"></i><label>20. Click Mega</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch20/tightrope/" title="20. Tightrope" style="margin-right: 0px;"><label>20. Tightrope</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
