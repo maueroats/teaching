@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-10T14:24:55 CST">
-<title>Repl.it :: WY Computer Science</title>
+<meta name="revised" content="2019-01-10T14:24:54 CST">
+<title>Advanced: Aimbooster :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/replit/">
+  <body data-url="/intermediate-cs/ch20/aimbooster/">
     
       
 
@@ -66,18 +66,16 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
@@ -425,7 +423,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/haskell/replit/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/replit/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/replit/">
             Repl.it
@@ -599,10 +597,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
@@ -1055,10 +1054,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/ch20/" class="dd-item haschildren
+    <li data-nav-id="/intermediate-cs/ch20/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch20/">20. Using Structures</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch20/">20. Using Structures</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch20/posn-util/" class="dd-item">
@@ -1124,7 +1124,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch20/aimbooster/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch20/aimbooster/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/ch20/aimbooster/">
             Advanced: Aimbooster
@@ -1629,7 +1629,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > Repl.it
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch20/'>20. Using Structures</a> > Advanced: Aimbooster
 
  
 
@@ -1644,14 +1644,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#repl-it-requires-a-main-method">Repl.it requires a main method</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -1659,15 +1652,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="https://wy-cs.sitetags/haskell">haskell</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>Repl.it</h1>
+    <h1>Advanced: Aimbooster</h1>
   
 
 
@@ -1675,13 +1662,19 @@
     
     
     
-    <p>A summary of any special problems that have arisen with <code>repl.it</code>.</p>
+    <p>In this animation you copy <a href="https://aimbooster.com">AimBooster.com</a>,
+but simplified so you can make it with what you know from Chapter 20.</p>
 
-<h2 id="repl-it-requires-a-main-method">Repl.it requires a main method</h2>
+<ul>
+<li>A single circle is at a random place.</li>
+<li>Radius increases.</li>
+<li>Clicking on the circle gives you points inversely proportional to
+the radius (maybe 100/radius).</li>
+<li>When the circle is hit, it disappears and another starts growing.</li>
+<li>When the circle reaches a certain radius it disappears.</li>
+<li>After missing three circles, the game is over.</li>
+</ul>
 
-<p>The particular interpreter repl.it requires that you have a main method.
-Write a simple one and then type your tests in the interactions pane.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">main = do putStrLn &#34;Loaded&#34;</pre></div>
 
     
     
@@ -1692,8 +1685,8 @@ Write a simple one and then type your tests in the interactions pane.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/typeclass-notes/" title="Typeclass Notes"> <i class="fa fa-chevron-left"></i><label>Typeclass Notes</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/ghci-details/" title="Source Code Files (ghci)" style="margin-right: 0px;"><label>Source Code Files (ghci)</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch20/ch20-review/" title="20. Review"> <i class="fa fa-chevron-left"></i><label>20. Review</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/contracts/" title="Contracts" style="margin-right: 0px;"><label>Contracts</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
