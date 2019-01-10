@@ -35,4 +35,4 @@ The filled in result of `snakeSpeedrun(6,5)` would be:
      000010
      
 You write the function:
-`public static int[] snakeSpeedrun(int width, int height)`
+`public static int[][] snakeSpeedrun(int width, int height)`
