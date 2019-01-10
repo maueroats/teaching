@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-10T10:56:40 CST">
-<title>404 Page not found :: WY Computer Science</title>
+<meta name="revised" content="2019-01-10T10:56:39 CST">
+<title>12. Array Speedrun :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="">
+  <body data-url="/ap-cs/jm/ch12/12-array-ex-5-speedrun/">
     
       
 
@@ -66,10 +66,11 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -468,10 +469,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -516,10 +518,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/ch12/">12. Arrays</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/ch12/">12. Arrays</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/jm/ch12/12-array-intro-1/" class="dd-item">
@@ -564,7 +567,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/ch12/12-array-ex-5-speedrun/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch12/12-array-ex-5-speedrun/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/ch12/12-array-ex-5-speedrun/">
             12. Array Speedrun
@@ -1611,7 +1614,27 @@
         <span class="links">
         
 
- 404 Page not found
+
+
+
+
+
+
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch12/'>12. Arrays</a> > 12. Array Speedrun
+
+ 
+
+ 
+
+ 
+
+ 
 
    
         </span>
@@ -1630,20 +1653,38 @@
 
 <div id="body-inner">
   
-    <h1>404 Page not found</h1>
+    <h1>12. Array Speedrun</h1>
   
 
 
 
     
     
-	<h1>Error</h1>
-	<p>
-	</p>
-	<p>Woops. Looks like this page doesn&#39;t exist.</p>
-	<p></p>
-	<p><a href="https://wy-cs.site">Go to homepage</a></p>
-	<p><img src="/images/gopher-404.jpg" style="width:50%"></img></p>    
+    
+    <p>Make create a two dimensional array of a given width and height filled
+in a snake pattern with 0 and 1 as described below.</p>
+
+<p>The snake pattern starts with a 1, then has longer and longer
+sequences of zeros separated by ones: 0 zeros, one, 1 zero, one, 2
+zeroes, one, 3 zeroes, one, etc.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">11010010001000010000010000001</pre></div>
+<p>The array is filled in by rows, first going to the right, then going
+to the left, in the pattern shown by these &ldquo;ascii arrows&rdquo;:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">--1--&gt;&gt;
+&lt;&lt;--2--
+--3--&gt;&gt;
+&lt;&lt;--4--
+--5--&gt;&gt;</pre></div>
+<p>The filled in result of <code>snakeSpeedrun(6,5)</code> would be:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> 110100
+ 010001
+ 000100
+ 001000
+ 000010</pre></div>
+<p>You write the function:
+<code>public static int[] snakeSpeedrun(int width, int height)</code></p>
+
+
     
     
           <footer class=" footline" >
@@ -1653,7 +1694,8 @@
 </div>
 
 <div id="navigation">
-</div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch12/12-array-ex-4/" title="12. Arrays Exercises 4"> <i class="fa fa-chevron-left"></i><label>12. Arrays Exercises 4</label></a>
+    <a class="nav nav-next" href="/ap-cs/jm/ch12/12-ex/" title="12. Book Exercises" style="margin-right: 0px;"><label>12. Book Exercises</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
@@ -1678,5 +1720,3 @@
     
   </body>
 </html>
-
-

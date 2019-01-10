@@ -17,3 +17,9 @@ Items to practice:
 
 * `stop-when` clause in big bang
 * win screen draw-handler
+
+Extras:
+
+* You lose if you hit the "q" key.
+* Also win if you click on the square.
+

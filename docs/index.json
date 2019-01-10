@@ -812,6 +812,13 @@
     "content": " lockers public static int[] lockers(int n)\nFlip means change 0 to 1 and 1 to 0.\n Start with an integer array of n lockers, all closed (0). In step 1, …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-5-speedrun/",
+    "title": "12. Array Speedrun",
+    "tags": [],
+    "description": "",
+    "content": "Make create a two dimensional array of a given width and height filled in a snake pattern with 0 and 1 as described below.\nThe snake pattern starts …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch15/15-graphing-review/",
     "title": "15. Graphing Review",
     "tags": [],
@@ -1418,7 +1425,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Book Exercises modified Wed 01-09  12. …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Array Speedrun modified Thu 01-10  12. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -1554,14 +1561,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
