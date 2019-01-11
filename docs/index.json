@@ -1092,6 +1092,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch20/trollquiz/",
+    "title": "Troll Quiz",
+    "tags": [],
+    "description": "",
+    "content": " You control a star, move four directions with the arrow keys. The goal is a stop sign in a random non-moving location. Game stops when your star …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch20/aimbooster/",
     "title": "Advanced: Aimbooster",
     "tags": [],

@@ -34,6 +34,11 @@ Normal stats method:
 
         p = scipy.stats.norm().sf(z) * 2
 
+One way to generate a 95% confidence interval about a mean of `xmean`
+with a standard deviation of `xstdev`: 
+
+        scipy.stats.norm().interval(0.95, loc=xmean, scale=xstdev)
+
 ## Exercise 5
 
 Common problems:
