@@ -1,10 +1,11 @@
 ---
-title: "Troll Quiz"
+title: "Troll Quiz Practice"
 date: 2019-01-11T14:28:43-06:00
 #weight: 
 draft: false
 #type: slide
 #theme: white
+description: "A simple example of something you should be able to do."
 ---
 
 * You control a star, move four directions with the arrow keys.

@@ -1093,9 +1093,9 @@
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch20/trollquiz/",
-    "title": "Troll Quiz",
+    "title": "Troll Quiz Practice",
     "tags": [],
-    "description": "",
+    "description": "A simple example of something you should be able to do.",
     "content": " You control a star, move four directions with the arrow keys. The goal is a stop sign in a random non-moving location. Game stops when your star …"
 },
 {
