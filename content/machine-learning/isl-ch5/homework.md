@@ -41,6 +41,9 @@ Common problems:
 * StatsModels requires numerical result for predicting with a
   logistic regression.
 
+* The LogitResult from your StatsModels logistic regression has a
+  predict method which takes in data frame containing the test data.
+  
 * It is OK to choose your validation set by randomly selecting each row with
   a 50% probability.
 
