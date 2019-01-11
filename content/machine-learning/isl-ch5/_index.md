@@ -8,8 +8,9 @@ draft: false
 description: "Cross-validation and resampling."
 ---
 
-* Cross-validation: what does it help you do?
-* Resampling: gets you confidence estimates for your results.
+* Cross-validation: is a model good? Used to decide how big of a model to use (degree of
+  polynomial, etc.)
+* Resampling: get confidence estimates for your results.
 
 {{% children %}}
 

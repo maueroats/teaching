@@ -301,6 +301,13 @@
     "content": " Planning and Testing Write every part of the design process except the function. Do write tests!\n count-factors: take a number N and find out how …"
 },
 {
+    "uri": "https://wy-cs.site/machine-learning/isl-ch5/homework/",
+    "title": "5. Homework",
+    "tags": [],
+    "description": "Book homework problems.",
+    "content": " Chapter 5 homework problems, beginning on page 197 in the book (PDF page 210).\n 2019-01-10: Exercise 5 2019-01-11: Exercise 6  Note: When you compute …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch15/15-cond-patterns/",
     "title": "15. Cond Patterns",
     "tags": [],
@@ -746,7 +753,7 @@
     "title": "ISL Chapter 5. Resampling",
     "tags": [],
     "description": "Cross-validation and resampling.",
-    "content": " Cross-validation: what does it help you do? Resampling: gets you confidence estimates for your results.   5. Resampling   "
+    "content": " Cross-validation: is a model good? Used to decide how big of a model to use (degree of polynomial, etc.) Resampling: get confidence estimates for …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-3/",
