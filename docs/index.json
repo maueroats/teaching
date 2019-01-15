@@ -94,7 +94,7 @@
     "uri": "https://wy-cs.site/machine-learning/isl-ch5/resampling/",
     "title": "5. Resampling",
     "tags": [],
-    "description": "",
+    "description": "The first lab on resampling.",
     "content": " The Colaboratory link is: resampling lab.\n Notes Many people are still using for loops and appending to create the data from their 1000 runs of a …"
 },
 {
@@ -1090,6 +1090,13 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch5/notes/",
+    "title": "5. Notes",
+    "tags": [],
+    "description": "Information about resampling and common problems.",
+    "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});   There are a number of common …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-quiz-2d-a/",

@@ -5,6 +5,7 @@ weight: 10
 draft: false
 #type: slide
 #theme: white
+description: "The first lab on resampling."
 ---
 
 {{% notice note %}}
