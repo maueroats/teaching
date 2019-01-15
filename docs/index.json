@@ -1092,6 +1092,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-quiz-2d-a/",
+    "title": "12. Quiz A on 2D",
+    "tags": [],
+    "description": "",
+    "content": "An isthmus location contains a non-zero number with the same number to the left and right, and has zeros above and below.\nIn the example below, the …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch20/trollquiz/",
     "title": "Troll Quiz Practice",
     "tags": [],
@@ -1446,7 +1453,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Array Speedrun modified Thu 01-10  12. …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Quiz A on 2D modified Tue 01-15  12. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
