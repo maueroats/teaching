@@ -1092,6 +1092,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-quiz-1d-m/",
+    "title": "12. Quiz M",
+    "tags": [],
+    "description": "",
+    "content": "(back13) Take each multiple of 13 that appears in the array and change all of the numbers before it to be that multiple of 13, until you come to …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/isl-ch5/notes/",
     "title": "5. Notes",
     "tags": [],
@@ -1460,7 +1467,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Quiz A on 2D modified Tue 01-15  12. …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Quiz M modified Tue 01-15  12. Quiz A …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",

@@ -17,5 +17,7 @@ In the example below, the middle 5 is an isthmus location.
       0
       
 Given 2d array of ints, count the number of isthmus locations that
-contain odd numbers
+contain odd numbers.
+
+[Test code](Isthmus.java)
 

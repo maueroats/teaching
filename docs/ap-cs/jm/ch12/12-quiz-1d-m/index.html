@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2019-01-15T22:00:14 CST">
-<title>Ch01 Reading Guide :: WY Computer Science</title>
+<title>12. Quiz M :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/haskell/ch01/ch01-reading-guide/">
+  <body data-url="/ap-cs/jm/ch12/12-quiz-1d-m/">
     
       
 
@@ -73,21 +73,19 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/">Haskell</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/">Haskell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/haskell/ch01/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/haskell/ch01/">1. Intro</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/haskell/ch01/">1. Intro</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/haskell/ch01/ch01-reading-guide/" class="dd-item active">
+      <li data-nav-id="/ap-cs/haskell/ch01/ch01-reading-guide/" class="dd-item">
         <div>
           <a href="/ap-cs/haskell/ch01/ch01-reading-guide/">
             Ch01 Reading Guide
@@ -471,10 +469,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -519,10 +518,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/ch12/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/ch12/">12. Arrays</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/ch12/">12. Arrays</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/jm/ch12/12-array-intro-1/" class="dd-item">
@@ -574,7 +574,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/ch12/12-quiz-1d-m/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch12/12-quiz-1d-m/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/ch12/12-quiz-1d-m/">
             12. Quiz M
@@ -1668,7 +1668,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/haskell/'>Haskell</a> > <a href='/ap-cs/haskell/ch01/'>1. Intro</a> > Ch01 Reading Guide
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch12/'>12. Arrays</a> > 12. Quiz M
 
  
 
@@ -1685,11 +1685,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#haskell-introduction-reading-questions">Haskell introduction reading questions</a></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -1697,17 +1693,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="https://wy-cs.sitetags/reading-guide">reading-guide</a>
-    
-      <a class="label label-default" href="https://wy-cs.sitetags/haskell">haskell</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>Ch01 Reading Guide</h1>
+    <h1>12. Quiz M</h1>
   
 
 
@@ -1715,28 +1703,16 @@
     
     
     
-    
+    <p>(<code>back13</code>) Take each multiple of 13 that appears in the array and change all of
+the numbers before it to be that multiple of 13, until you come to
+another multiple of 13.</p>
 
-<h1 id="haskell-introduction-reading-questions">Haskell introduction reading questions</h1>
-
-<ol>
-<li><p>Haskell is supposed to be a <em>purely functional language</em>. Unpack that:</p>
-
-<ol>
-<li>What does <em>pure</em> mean?</li>
-<li>What is the difference between <em>functional</em> and <em>imperative</em>? (The book is not so clear on this point. What do you think it says, in your own words?)</li>
-</ol></li>
-
-<li><p>Haskell is <em>lazy</em>. What does this mean?</p></li>
-
-<li><p>Haskell is <em>statically typed</em>. This could be unpacked, too.</p>
+<p>Examples:</p>
 
 <ol>
-<li>What does <em>typed</em> mean?</li>
-<li>The word <em>static</em> in English can me &ldquo;not changing&rdquo;. How would you apply that meaning in this context?</li>
-</ol></li>
-
-<li><p>When did work on Haskell begin?</p></li>
+<li><code>back13([11,12,13,14])</code> =&gt; <code>[13,13,13,14]</code></li>
+<li><code>back13([40,39,50,52,60])</code> =&gt; <code>[39,39,52,52,60]</code></li>
+<li><code>back13([21,23,25,26,90,65,17])</code> =&gt; <code>[26,26,26,26,65,65,17]</code></li>
 </ol>
 
 
@@ -1749,8 +1725,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/haskell/ch01/" title="1. Intro"> <i class="fa fa-chevron-left"></i><label>1. Intro</label></a>
-    <a class="nav nav-next" href="/ap-cs/haskell/ch02/" title="2. Starting Out" style="margin-right: 0px;"><label>2. Starting Out</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch12/12-array-ex-5-speedrun/" title="12. Array Speedrun"> <i class="fa fa-chevron-left"></i><label>12. Array Speedrun</label></a>
+    <a class="nav nav-next" href="/ap-cs/jm/ch12/12-quiz-2d-a/" title="12. Quiz A on 2D" style="margin-right: 0px;"><label>12. Quiz A on 2D</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
