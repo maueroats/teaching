@@ -1092,6 +1092,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-arraylist/",
+    "title": "12. ArrayList",
+    "tags": [],
+    "description": "",
+    "content": "Array List exercises.\n"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-quiz-1d-m/",
     "title": "12. Quiz M",
     "tags": [],
@@ -1467,7 +1474,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Quiz M modified Tue 01-15  12. Quiz A …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. ArrayList modified Wed 01-16  12. Quiz …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
