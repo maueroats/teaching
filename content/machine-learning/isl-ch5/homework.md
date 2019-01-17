@@ -64,13 +64,27 @@ Source for the data:
 
 ## Exercise 6
 
-The data is the same.
+The data is the same. You should read the [high-level view]({{% relref
+"./notes.md" %}}) in the Notes for this chapter so that you know how the
+bootstrap works.
 
 * The book talks about `glm` but this means use the StatsModels Logit
   regression and `summary2` from the LogitResults. 
   
+* You are supposed to estimate the standard errors of the logistic
+  regression coefficients with the bootstrap. That means your `boot1`
+  function needs to compute the coefficients of a random sample and
+  return them. The coefficients are the `params` field.
+  
 * You have to write your own bootstrap code to repeat the random
-  sampling N times (N=100 seems good).
+  sampling N times (N=100 seems good). Store the data in a list and
+  then make it into a data frame
 
-* 6(d): Use a statistical test in your discussion. 
+* 6(d): Use a statistical test in your discussion. Specifically:
+  find the likelihood that given the mean and standard deviation you
+  estimate from the bootstrap, that the coefficients from the initial
+  logistic regression come from the same distribution. Use the
+  technique and code from the  "Significance Testing" section above.
+  
+  
 

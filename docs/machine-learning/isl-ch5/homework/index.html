@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-16T20:26:24 CST">
+<meta name="revised" content="2019-01-17T17:26:29 CST">
 <title>5. Homework :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1806,16 +1806,27 @@ a 50% probability.</p></li>
 df = df_raw.drop(columns=[&#39;Unnamed: 0&#39;])</pre></div>
 <h2 id="exercise-6">Exercise 6</h2>
 
-<p>The data is the same.</p>
+<p>The data is the same. You should read the <a href="/machine-learning/isl-ch5/notes/">high-level view</a> in the Notes for this chapter so that you know how the
+bootstrap works.</p>
 
 <ul>
 <li><p>The book talks about <code>glm</code> but this means use the StatsModels Logit
 regression and <code>summary2</code> from the LogitResults.</p></li>
 
-<li><p>You have to write your own bootstrap code to repeat the random
-sampling N times (N=100 seems good).</p></li>
+<li><p>You are supposed to estimate the standard errors of the logistic
+regression coefficients with the bootstrap. That means your <code>boot1</code>
+function needs to compute the coefficients of a random sample and
+return them. The coefficients are the <code>params</code> field.</p></li>
 
-<li><p>6(d): Use a statistical test in your discussion.</p></li>
+<li><p>You have to write your own bootstrap code to repeat the random
+sampling N times (N=100 seems good). Store the data in a list and
+then make it into a data frame</p></li>
+
+<li><p>6(d): Use a statistical test in your discussion. Specifically:
+find the likelihood that given the mean and standard deviation you
+estimate from the bootstrap, that the coefficients from the initial
+logistic regression come from the same distribution. Use the
+technique and code from the  &ldquo;Significance Testing&rdquo; section above.</p></li>
 </ul>
 
 
