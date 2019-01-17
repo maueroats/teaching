@@ -168,6 +168,13 @@
     "content": " Contracts are the signatures of functions that we have been using. The vocabulary word changes to make it sound more legal. Contracts are actually …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch21/pv-tick-handler/math-soln-1/",
+    "title": "Math Soln 1",
+    "tags": [],
+    "description": "",
+    "content": "(define (h x) (- (sqr (+ (* 3 x) 1)) 9))"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/pro/pro-string/",
     "title": "Strings for Experts",
     "tags": [],
@@ -383,6 +390,13 @@
     "tags": ["git"],
     "description": "",
     "content": " Everyday Commands All of these need to be run in the karel-* directory:\n ./save-it ./update: git pull from the upstream repository. git pull  Merge …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch21/pv-tick-handler/math-soln-2/",
+    "title": "Math Soln 2",
+    "tags": [],
+    "description": "",
+    "content": "(define (h x) (g (f x)))"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/pro/build-image/",
@@ -693,6 +707,13 @@
     "content": " Pattern matching lets you take apart structures into their component variables in a simple way.\nYou can use (require racket/match) to activate …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch21/pv-intro/",
+    "title": "21. PV Intro",
+    "tags": [],
+    "description": "Slides with introduction to position-velocity struct exercises.",
+    "content": " Pick a model  A ball moves around the screen. It keeps going in the direction it starts. What could the model be?  Define the model Keep the names …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch20/tightrope/",
     "title": "20. Tightrope",
     "tags": [],
@@ -838,6 +859,13 @@
     "tags": [],
     "description": "Review with focus on graphing functions.",
     "content": " Definitions: people coordinates are coordinates where (0,0) refers to the origin where the axes cross and positive y numbers are above the x-axis. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch21/pv-tick-handler/",
+    "title": "21. Two Actions, One Tick",
+    "tags": [],
+    "description": "Combining actions into one big tick handler.",
+    "content": " We will start by a using an analogy to talk about doing multiple actions in one tick handler.\nMath Analogy Suppose you have two functions, f and g. …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch20/color-enhancing/",
@@ -1022,6 +1050,20 @@
     "content": "One of the key ideas to keep in mind when learning from USA Computing Olympiad problems is that time matters. A slow algorithm is not good enough; …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch21/moving-ball/",
+    "title": "Moving Ball",
+    "tags": [],
+    "description": "Drive a ball around the screen with a constant velocity.",
+    "content": " We practice the basics of structures by creating an animation where you can direct a ball to move around the screen.\n Use WASD keys to control the …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch21/speed-typer/",
+    "title": "Speed Typer",
+    "tags": [],
+    "description": "Type the word on the screen as fast as you can.",
+    "content": " You are going to create a typing game - type a given word as fast as you can.\n  We will keep track of the word, the letters typed so far, and the …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/isl-ch3/reading-q-312/",
     "title": "Reading 3.1.2 Q",
     "tags": [],
@@ -1062,6 +1104,13 @@
     "tags": [],
     "description": "Remembering or returning more than one thing. For example, coordinates.",
     "content": "  20. Posn Util Utility functions for posns. Accessing functions defined in other files.\n  20. Click Circle A circle moves around the screen randomly. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch21/",
+    "title": "21. Structures",
+    "tags": [],
+    "description": "More than one piece of information in one variable, generalizing posn and color.",
+    "content": " Chapter 21 Reading Guide.  All worksheets: make sure to test your code in DrRacket.\n  21. PV Intro Slides with introduction to position-velocity …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/contracts/",
@@ -1610,14 +1659,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
