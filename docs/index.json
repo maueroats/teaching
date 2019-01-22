@@ -1141,6 +1141,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-quiz-1d-n/",
+    "title": "12. Quiz N",
+    "tags": [],
+    "description": "",
+    "content": "(similarEnds) An array has similar N-ends if the front and back N numbers are either in the same order or reversed order.\nReturn the largest N value …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-arraylist/",
     "title": "12. ArrayList",
     "tags": [],
@@ -1523,7 +1530,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. ArrayList modified Wed 01-16  12. Quiz …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Quiz N modified Tue 01-22  12. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
