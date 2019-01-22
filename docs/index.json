@@ -1145,7 +1145,14 @@
     "title": "12. Quiz N",
     "tags": [],
     "description": "",
-    "content": "(similarEnds) An array has similar N-ends if the front and back N numbers are either in the same order or reversed order.\nReturn the largest N value …"
+    "content": "(similarEnds) An array has similar N-ends if the front and back N numbers are either in the reversed order.\nReturn the largest N value for which an …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch21/agar-io/",
+    "title": "Agar.io",
+    "tags": [],
+    "description": "One player, one food Agar.io clone.",
+    "content": "I hope you know the game Agar.io. A circle moves around the screen toward the mouse. There is a \u0026amp;ldquo;food\u0026amp;rdquo;. When the circle touches (eats) the …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-arraylist/",

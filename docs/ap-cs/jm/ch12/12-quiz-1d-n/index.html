@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-22T09:10:10 CST">
+<meta name="revised" content="2019-01-22T16:59:45 CST">
 <title>12. Quiz N :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -302,10 +302,73 @@
       <a href="/ap-cs/haskell/daily/">Haskell Daily Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/machine-learning/daily/2018-10-01/alcohol-analysis-quiz/" class="dd-item">
+      <li data-nav-id="/ap-cs/haskell/daily/2018-10-09/" class="dd-item">
         <div>
-          <a href="/machine-learning/daily/2018-10-01/alcohol-analysis-quiz/">
-            
+          <a href="/ap-cs/haskell/daily/2018-10-09/">
+            2018.10.09 Project
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2018-10-16/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2018-10-16/">
+            2018-10-16
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2018-10-04/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2018-10-04/">
+            2018.10.04 Square Pasture
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2018-10-03/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2018-10-03/">
+            2018.10.03 Cow Signal
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-10-04/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-10-04/">
+            2017-10-04
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-10-03/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-10-03/">
+            2017-10-03
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-09-18/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-09-18/">
+            2017-09-18
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-09-13/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-09-13/">
+            2017-09-14 Indentation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-09-12/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-09-12/">
+            2017-09-12
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/haskell/daily/2017-09-11/" class="dd-item">
+        <div>
+          <a href="/ap-cs/haskell/daily/2017-09-11/">
+            2017-09-11
           </a>
         </div>
     </li>
@@ -1140,6 +1203,13 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/ch21/agar-io/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch21/agar-io/">
+            Agar.io
+          </a>
+        </div>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/intermediate-cs/contracts/" class="dd-item haschildren
@@ -1692,7 +1762,7 @@
     
     <p>(<code>similarEnds</code>)
 An array has similar N-ends if the front and back N numbers are either
-in the same order or reversed order.</p>
+in the reversed order.</p>
 
 <p>Return the largest N value for which an array has the same N-ends.</p>
 
@@ -1704,8 +1774,10 @@ in the same order or reversed order.</p>
 <p>Examples:</p>
 
 <ol>
-<li><code>similarEnds([20,30,40,50,50,40,30,20])</code> =&gt; 4.</li>
-<li><code>similarEnds([10,20,30,20,10])</code> =&gt; <code>3</code>.</li>
+<li><code>similarEnds([20,30,40])</code> =&gt; -1.</li>
+<li><code>similarEnds([20,30,4,5,30,20])</code> =&gt; 2.</li>
+<li><code>similarEnds([20,30,40,50,50,40,30,20])</code> =&gt; 8. The repeating segments overlap.</li>
+<li><code>similarEnds([10,20,30,20,10])</code> =&gt; <code>5</code>.</li>
 </ol>
 
 
