@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-23T14:30:49 CST">
+<meta name="revised" content="2019-01-23T17:38:23 CST">
 <title>I.8 Semester I Review 8 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1849,12 +1849,16 @@ to &ldquo;LimeGreen&rdquo; at the bottom. Include at least three check-expects.<
 image and changes every pixel&rsquo;s color to the closest &ldquo;purple&rdquo;
 color.</p>
 
-<p>Say purple is red and blue, so the nearest purple color uses as
-   much red and blue as are available, and cuts off whichever color is
-   more than that.</p>
+<p>Say purple is red and blue, so the nearest purple color
+   corresponds to whichever component has more.</p>
 
-<p>Example: the nearest purple color to (220,50,80) is (80,50,80).</p></li>
+<p>Example: the nearest purple color to (220,50,80) is
+   (220,50,220), and the nearest purple color to (30,40,50) is
+   (50,40,50).</p></li>
 </ol>
+
+<p>Bonus: Animate a purple-izing circle of radius 20 that follows the
+mouse around an image.</p>
 
 
     

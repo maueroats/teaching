@@ -1,6 +1,6 @@
 ---
 title: "I.7 Semester I Review 7"
-date: 2018-01-29T10:22:16-06:00
+date: 2019-01-23T17:34:54-06:00
 weight: 70
 draft: false
 #type: slide
@@ -8,7 +8,7 @@ draft: false
 description: "Additional review exercises."
 ---
 
-This page contains optional additional review exercises.
+This page contains additional review exercises.
 
 ## Basic Spanish
 

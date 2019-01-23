@@ -14,9 +14,14 @@ draft: false
    image and changes every pixel's color to the closest "purple"
    color. 
    
-       Say purple is red and blue, so the nearest purple color uses as
-       much red and blue as are available, and cuts off whichever color is
-       more than that.
+       Say purple is red and blue, so the nearest purple color
+       corresponds to whichever component has more.
 
-       Example: the nearest purple color to (220,50,80) is (80,50,80).
+       Example: the nearest purple color to (220,50,80) is
+       (220,50,220), and the nearest purple color to (30,40,50) is
+       (50,40,50).
+
+Bonus: Animate a purple-izing circle of radius 20 that follows the
+mouse around an image.
+
 
