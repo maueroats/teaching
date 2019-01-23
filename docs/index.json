@@ -175,6 +175,13 @@
     "content": "(define (h x) (- (sqr (+ (* 3 x) 1)) 9))"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-1/",
+    "title": "I.1 Semester I Review 1",
+    "tags": [],
+    "description": "Random shape. Drift to a new position. Reduce the amount of green.",
+    "content": " Random shape. Write a function that returns a square, circle, or triangle. All should be equally likely.\nrandom-shape: ignore -\u0026amp;gt; image Drift. A …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/pro/pro-string/",
     "title": "Strings for Experts",
     "tags": [],
@@ -399,6 +406,13 @@
     "content": "(define (h x) (g (f x)))"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-2/",
+    "title": "I.2 Semester I Review 2",
+    "tags": [],
+    "description": "Random dots located on a circle, purify color, Benz symbol.",
+    "content": "  Random dots on a circle. Create an animation of a dot moving to one of six random locations on a circle. Ideally the locations will be equally …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/pro/build-image/",
     "title": "Build Image",
     "tags": [],
@@ -551,6 +565,13 @@
     "tags": [],
     "description": "",
     "content": "Opener: Write the result of the third \u0026amp;ldquo;step\u0026amp;rdquo;, as seen in the Stepper.\n(+ (+ 1 5) (* 8 (+ 2 3)) (* 7 2)) Class/homework:\nMake the two …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-3/",
+    "title": "I.3 Semester I Review 3",
+    "tags": [],
+    "description": "Practice: red-blue, spam-circle, rectangle limitations. Review reading.",
+    "content": " At home you may want to do some review reading and practice. You should be able to do review questions 1 and 2 in one day, and question 3 in a second …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch06/examples/",
@@ -714,6 +735,13 @@
     "content": " Pick a model  A ball moves around the screen. It keeps going in the direction it starts. What could the model be?  Define the model Keep the names …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-4/",
+    "title": "I.4 Semester I Review 4",
+    "tags": [],
+    "description": "Analysis of functions - signatures and check-expects. Structure practice.",
+    "content": "Remember to practice writing check-expects for your functions, so you have a way to make progress.\n Analyze the program segment below.\n(define initial …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch20/tightrope/",
     "title": "20. Tightrope",
     "tags": [],
@@ -798,6 +826,13 @@
     "content": " Unless you are completely confident of your signature-writing skills, please use \u0026amp;ldquo;concrete\u0026amp;rdquo; type classes like Double or Integer instead …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-5/",
+    "title": "I.5 Semester I Review 5",
+    "tags": [],
+    "description": "The drifter animation that takes little or big steps while moving.",
+    "content": " Drifter Drifter. A circle moves around inside a rectangle. There are two different modes of motion: small steps (activated by \u0026amp;ldquo;s\u0026amp;rdquo;) and …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch20/map-image/",
     "title": "20. Map Image",
     "tags": [],
@@ -866,6 +901,13 @@
     "tags": [],
     "description": "Combining actions into one big tick handler.",
     "content": " We will start by a using an analogy to talk about doing multiple actions in one tick handler.\nMath Analogy Suppose you have two functions, f and g. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-6/",
+    "title": "I.6 Semester I Review 6",
+    "tags": [],
+    "description": "Random numbers. Gas gauge. Graphing in people coordinates.",
+    "content": " What does it do? Write check-expects.\n The double-circle-img function (abbeviate dci):\n(define (double-circle-image img) (image-width (beside (circle …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch20/color-enhancing/",
@@ -938,11 +980,25 @@
     "content": "Important ideas:\n Inexact numbers and check-within build3-image or build-image map3-image or map-image (random 5) gives 0, 1, 2, 3, or 4. How to make …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-7/",
+    "title": "I.7 Semester I Review 7",
+    "tags": [],
+    "description": "Additional review exercises.",
+    "content": " This page contains optional additional review exercises.\nBasic Spanish We will write a function to conjugate regular verbs \u0026amp;ldquo;-ar\u0026amp;rdquo; and …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch20/ch20-review/",
     "title": "20. Review",
     "tags": [],
     "description": "Review questions on posn and color.",
     "content": "Write checks and follow the design process as you write these functions.\n Move to parabola. Input any point, output a point on the graph of y=x^2. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-8/",
+    "title": "I.8 Semester I Review 8",
+    "tags": [],
+    "description": "",
+    "content": " Make a 300x700 gradient that goes from \u0026amp;ldquo;MediumVioletRed\u0026amp;rdquo; at the top to \u0026amp;ldquo;LimeGreen\u0026amp;rdquo; at the bottom. Include at least three …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-project/",
@@ -1111,6 +1167,13 @@
     "tags": [],
     "description": "More than one piece of information in one variable, generalizing posn and color.",
     "content": " Chapter 21 Reading Guide.  All worksheets: make sure to test your code in DrRacket.\n  21. PV Intro Slides with introduction to position-velocity …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/",
+    "title": "Sem.I Review",
+    "tags": [],
+    "description": "",
+    "content": "  I.1 Semester I Review 1 Random shape. Drift to a new position. Reduce the amount of green.\n  I.2 Semester I Review 2 Random dots located on a …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/contracts/",
@@ -1335,6 +1398,13 @@
     "tags": [],
     "description": "",
     "content": " Class JavaMethods GitHub -\u0026amp;gt; Chomp project directory -\u0026amp;gt; CharMatrix class. The CharMatrix code can be copy-and-pasted into Repl.it or DrJava. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-topics-1/",
+    "title": "Semester Review Topics List",
+    "tags": [],
+    "description": "Major topics missed on Chapter 20 test: randomness, consistent signatures for big-bang, good testing.",
+    "content": " We have learned about randomness, writing consistent signatures for big-bang, writing high quality tests, and how to limit numerical values.\nRecent …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch15/15-practice-quiz/",
