@@ -1141,6 +1141,20 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/news/ap-date-2019/",
+    "title": "AP CS A Exam Date 2019",
+    "tags": [],
+    "description": "",
+    "content": "The AP Computer Science A exam is the afternoon of Friday May 17.\nPeriods 2 and 6 are AP Computer Science A.\nCheck the 2019 AP Exam Schedule for the …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch12/string-dolphin/",
+    "title": "String Dolphin",
+    "tags": [],
+    "description": "",
+    "content": "Count how many times \u0026amp;ldquo;dolphin\u0026amp;rdquo; appears in a string. Except don\u0026amp;rsquo;t count the word \u0026amp;ldquo;dolphin\u0026amp;rdquo; if it comes immediately after …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-quiz-1d-n/",
     "title": "12. Quiz N",
     "tags": [],
@@ -1313,7 +1327,7 @@
     "title": "News",
     "tags": [],
     "description": "",
-    "content": "  "
+    "content": "  AP CS A Exam Date 2019   "
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-chomp/",
@@ -1537,7 +1551,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   12. Quiz N modified Tue 01-22  12. …"
+    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   AP CS A Exam Date 2019 modified Wed 01-23 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
