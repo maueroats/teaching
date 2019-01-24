@@ -24,8 +24,8 @@ consider the present and past tense (preterit) of the verbs.
 | -ar    |   tu    | false |  -as             | andas     |
 | -ar    |   tu    | true  |  -aste           | andaste   |
 | -er    |   yo    | false |  -o              | corro     |
-| -er    |   yo    | true  |  -é              | corré      |
-| -er    |   tu    | false |  -as             | corres     |
+| -er    |   yo    | true  |  -í              | corrí      |
+| -er    |   tu    | false |  -es             | corres     |
 | -er    |   tu    | true  |  -iste           | corriste   |
 
 Example: 
@@ -44,7 +44,7 @@ Note: ignore accents.
 | -ar    |   yo    |   -o             | ando      |
 | -ar    |   tu    |  -as             | andas     |
 | -er    |   yo    |   -o             | corro     |
-| -er    |   tu    |  -as             | corres     |
+| -er    |   tu    |  -es             | corres    |
 
 
 ## Placed objects
