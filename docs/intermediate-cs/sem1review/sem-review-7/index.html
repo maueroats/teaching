@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-25T14:45:20 CST">
+<meta name="revised" content="2019-01-25T16:36:44 CST">
 <title>I.7 Semester I Review 7 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1953,9 +1953,13 @@ consider the present and past tense (preterit) of the verbs.</p>
 </tbody>
 </table>
 
+<p>Signature:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">conjugar: string(verb-infinitive) 
+          string(person) 
+          boolean(past-tense?) 
+          -&gt; string</pre></div>
 <p>Example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define past-tense? true)
-(check-expect (conjugar &#34;correr&#34; &#34;tu&#34; past-tense?) 
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (conjugar &#34;correr&#34; &#34;tu&#34; true) 
               &#34;corriste&#34;)</pre></div>
 <p>Note: ignore accents.</p>
 

@@ -28,10 +28,18 @@ consider the present and past tense (preterit) of the verbs.
 | -er    |   tu    | false |  -es             | corres     |
 | -er    |   tu    | true  |  -iste           | corriste   |
 
+
+Signature:
+
+    conjugar: string(verb-infinitive) 
+              string(person) 
+              boolean(past-tense?) 
+              -> string
+
+
 Example: 
 ```
-(define past-tense? true)
-(check-expect (conjugar "correr" "tu" past-tense?) 
+(check-expect (conjugar "correr" "tu" true) 
               "corriste")
 ```
 
