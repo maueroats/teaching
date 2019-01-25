@@ -31,7 +31,7 @@ consider the present and past tense (preterit) of the verbs.
 Example: 
 ```
 (define past-tense? true)
-(check-expect (conjugate "correr" "tu" past-tense?) 
+(check-expect (conjugar "correr" "tu" past-tense?) 
               "corriste")
 ```
 
