@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-25T16:36:44 CST">
+<meta name="revised" content="2019-01-25T22:36:28 CST">
 <title>Classes Review :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1838,7 +1838,15 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#gnome">Gnome</a></li>
+<li><a href="#shootingstar">ShootingStar</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1856,10 +1864,81 @@
     
     
     
-    <ol>
-<li><code>Gnome</code></li>
+    
+
+<h2 id="gnome">Gnome</h2>
+
+<p>A Gnome has a double precision height in meters and an integer weight
+in kilograms. When you make a new Gnome, if you do not specify the
+weight it is assumed to be 10kg.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    Gnome a = new Gnome(0.37, 4); // 0.37m, 4kg
+    Gnome b = new Gnome(0.61); // 0.61m, 10kg</pre></div>
+<p>The Gnome class should have the following methods:</p>
+
+<ol>
+<li><code>public void grow()</code>: Increase the height by 0.1m.</li>
+<li><code>public void eat()</code>: A Gnome gains 1kg every 3 times it eats.</li>
+<li><code>public String see()</code>: Returns a string showing height and
+  weight: &ldquo;ht: 0.37m, wt: 4kg&rdquo; for the Gnome <code>a</code> above.</li>
 </ol>
 
+<ul>
+<li>Write the complete <code>Gnome</code> class.</li>
+<li>Demonstrate its use by making a 12kg, 80cm tall gnome, having it
+grow and then eat 5 times. Print out what you <code>see()</code>: it should be
+0.9m and 13kg.
+<br /></li>
+</ul>
+
+<h2 id="shootingstar">ShootingStar</h2>
+
+<p>[This class had problems, was unclear and the details of tick() are not
+important now.]</p>
+
+<p>The universe schedules shooting stars to appear at a certain time. A
+shooting star has an <code>appearTime</code> (double) and a <code>brightness</code> (int),
+both of which are set in the constructor.</p>
+
+<p>The current time in &ldquo;ticks&rdquo; when a shooting star is constructed is
+always 0. A shooting star will keep track of time on its own (when
+<code>tick()</code> is called, time passes).</p>
+
+<p>The constructor you must support is:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> // a star that appears at time 3.7 with brightness 8
+ ShootingStar c = new ShootingStar(3.7, 8); </pre></div>
+<p>The methods you need are:</p>
+
+<ol>
+<li><code>public void tick()</code>: Called by the universe to increase the
+current time by one. Do not call this in your code.</li>
+<li><code>public void explode()</code>: Makes brightness = 1000 for the next 6
+ticks, then brightness becomes 0.</li>
+<li><code>public int getBrightness()</code>: Return the brightness for the current
+time (as the shooting star knows). The reported brightness is zero
+before the star appears.</li>
+</ol>
+
+<p>How should it work?</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> ShootingStar c = new ShootingStar(3.7, 8);
+ for(int t=0; t&lt;12; t++) {
+     System.out.println(t+&#34; shows &#34;+c.getBrightness());
+     c.tick();
+     if (t==4) c.explode();
+ }</pre></div>
+<p>Code above gives the output:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> 0 shows 0
+ 1 shows 0
+ 2 shows 0
+ 3 shows 0
+ 4 shows 8
+ 5 shows 1000
+ 6 shows 1000
+ 7 shows 1000
+ 8 shows 1000
+ 9 shows 1000
+10 shows 1000
+11 shows 0
+12 shows 0</pre></div>
 
     
     
