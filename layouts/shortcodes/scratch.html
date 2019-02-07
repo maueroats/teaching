@@ -1,0 +1,13 @@
+<!-- This should really be included in the page template, not the -->
+<!-- shortcode -->
+<script src="/js/scratchblocks-v3.3-min.js"></script>
+<script>
+window.onload = function () {
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
+}
+</script>
+<pre class="scratch">
+{{ .Inner }}
+</pre>
