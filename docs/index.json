@@ -249,7 +249,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " You will need the the text Learn You a Haskell For Great Good.\n AP Computer Science studies:\n Haskell - an introduction to pure functional …"
+    "content": " Recent   Classes Review modified Fri 01-25  I. Semester Review modified Fri 01-25  AP CS A Exam Date 2019 modified Wed 01-23  String Dolphin modified …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -481,6 +481,13 @@
     "tags": [],
     "description": "",
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/",
+    "title": "Exploring CS",
+    "tags": [],
+    "description": "",
+    "content": "(Coming soon\u0026amp;hellip;)\n ECS Recent Changes   Exploring CS modified Thu 02-07  "
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle/",
@@ -1022,11 +1029,11 @@
     "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   Number Model Review II   Number …"
 },
 {
-    "uri": "https://wy-cs.site/resources/",
-    "title": "Resources",
+    "uri": "https://wy-cs.site/ftc/",
+    "title": "Robophins FTC",
     "tags": [],
     "description": "",
-    "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
+    "content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\n[NEW 12-2018] All registration info: National permission …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-finale/",
@@ -1071,6 +1078,13 @@
     "content": " Note: MathJax formulas used on this page. Ugly if you block Javascript from Cloudflare.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], …"
 },
 {
+    "uri": "https://wy-cs.site/ecs-teach/",
+    "title": "Exploring CS (Teachers)",
+    "tags": [],
+    "description": "",
+    "content": " This page is dedicated to teacher links for Exploring Computer Science.\n Scratch Resources are on a separate page.  Web Hosting Platforms  Cloud9 …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/ch04/ch04-summary/",
     "title": "Chapter 4 Summary",
     "tags": [],
@@ -1104,6 +1118,13 @@
     "tags": [],
     "description": "Challenging problems for people who want to stretch their understanding.",
     "content": "One of the key ideas to keep in mind when learning from USA Computing Olympiad problems is that time matters. A slow algorithm is not good enough; …"
+},
+{
+    "uri": "https://wy-cs.site/resources/",
+    "title": "Resources",
+    "tags": [],
+    "description": "",
+    "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch21/moving-ball/",
@@ -1470,20 +1491,6 @@
     "content": "The testcases zip file contains all of the template files.\nYou can also download them one by one:\n Connect Four TestConnectFour User Interface for …"
 },
 {
-    "uri": "https://wy-cs.site/ftc/",
-    "title": "Robophins FTC",
-    "tags": [],
-    "description": "",
-    "content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\n[NEW 12-2018] All registration info: National permission …"
-},
-{
-    "uri": "https://wy-cs.site/ecs-teach/",
-    "title": "Exploring CS (Teachers)",
-    "tags": [],
-    "description": "",
-    "content": " This page is dedicated to teacher links for Exploring Computer Science.\n Scratch Resources are on a separate page.  Web Hosting Platforms  Cloud9 …"
-},
-{
     "uri": "https://wy-cs.site/intermediate-cs/ch07/maxmin/",
     "title": "Max and min slides",
     "tags": [],
@@ -1635,7 +1642,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " wy-cs.site\n Classes on-line:\n Intermediate CS AP CS Machine Learning  AP Computer Science Recent Changes   Classes Review modified Fri 01-25  I. …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS: In development. Machine Learning  AP Computer Science Recent Changes   Classes Review modified Fri 01-25 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",

@@ -3,14 +3,11 @@ title: "Mauer-Oats Classes"
 date: 2017-09-09T17:00:30-05:00
 ---
 
-{{% notice note %}}
-`wy-cs.site`
-{{% /notice %}}
+## Classes
 
-Classes on-line:
-
-* [Intermediate CS](intermediate-cs/)
 * [AP CS](ap-cs/)
+* [Intermediate CS](intermediate-cs/)
+* [Exploring CS](ecs/): In development. 
 * [Machine Learning](machine-learning/)
 
 ## AP Computer Science Recent Changes

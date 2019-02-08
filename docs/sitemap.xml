@@ -348,6 +348,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/ecs/</loc>
+    <lastmod>2019-02-07T20:59:50-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch20/click-circle/</loc>
     <lastmod>2019-01-08T08:34:06-06:00</lastmod>
   </url>
@@ -733,8 +738,8 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/resources/</loc>
-    <lastmod>2017-09-09T15:49:20-05:00</lastmod>
+    <loc>https://wy-cs.site/ftc/</loc>
+    <lastmod>2017-10-21T18:23:07-05:00</lastmod>
   </url>
   
   <url>
@@ -768,6 +773,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/ecs-teach/</loc>
+    <lastmod>2017-10-21T17:53:33-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch04/ch04-summary/</loc>
     <lastmod>2017-09-19T14:06:42-05:00</lastmod>
   </url>
@@ -790,6 +800,11 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/haskell/usaco/</loc>
     <lastmod>2017-10-03T20:40:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/resources/</loc>
+    <lastmod>2017-09-09T15:49:20-05:00</lastmod>
   </url>
   
   <url>
@@ -1050,16 +1065,6 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/haskell/connect-four/testcases/</loc>
     <lastmod>2017-10-25T22:16:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/ftc/</loc>
-    <lastmod>2017-10-21T18:23:07-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/ecs-teach/</loc>
-    <lastmod>2017-10-21T17:53:33-05:00</lastmod>
   </url>
   
   <url>

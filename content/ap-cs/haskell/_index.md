@@ -7,7 +7,7 @@ categories:
 weight: 10
 ---
 
-{{% notice note %}}
+{{% notice alert %}}
 You will need the the text [Learn You a Haskell For Great
 Good](http://learnyouahaskell.com/).
 {{% /notice %}}

@@ -2,6 +2,8 @@
 title: "Robophins FTC"
 date: 2017-10-21T18:23:07-05:00
 draft: false
+weight: 80
+hidden: true
 #type: slide
 #theme: white
 ---
