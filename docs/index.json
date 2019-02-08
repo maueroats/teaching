@@ -725,7 +725,7 @@
     "title": "Machine Learning",
     "tags": [],
     "description": "",
-    "content": " Topics  ML Daily Lecture notes and supplemental material.\n  ISL Chapter 2 Basic working with data frames. Selection and counting without loops. …"
+    "content": " Resources R datasets.\nTopics  ML Daily Lecture notes and supplemental material.\n  ISL Chapter 2 Basic working with data frames. Selection and …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
@@ -880,6 +880,13 @@
     "tags": [],
     "description": "1D arrays",
     "content": " lockers public static int[] lockers(int n)\nFlip means change 0 to 1 and 1 to 0.\n Start with an integer array of n lockers, all closed (0). In step 1, …"
+},
+{
+    "uri": "https://wy-cs.site/machine-learning/isl-ch6/",
+    "title": "ISL Chapter 6: Model Selection",
+    "tags": [],
+    "description": "Selecting the best model. Avoiding overfitting.",
+    "content": "Hitters dataset.\n"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-5-speedrun/",
@@ -1778,14 +1785,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",

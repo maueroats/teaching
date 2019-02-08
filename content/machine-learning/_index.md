@@ -7,6 +7,10 @@ draft: false
 #theme: white
 ---
 
+## Resources
+
+[R datasets](https://vincentarelbundock.github.io/Rdatasets/datasets.html).
+
 ## Topics
 
 {{% children description="true" %}}
