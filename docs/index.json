@@ -494,7 +494,7 @@
     "title": "Exploring CS",
     "tags": [],
     "description": "",
-    "content": "(Coming soon\u0026amp;hellip;)\n Variables Intro Exercises to introduce variables.\n  Quiz 1 \n  ECS Recent Changes   Variables Intro modified Sun 02-10 …"
+    "content": "(Coming soon\u0026amp;hellip;)\n Variables Intro Exercises to introduce variables.\n  Scratch Quiz 1 \n  ECS Recent Changes   Variables Intro modified Sun 02-10 …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle/",
@@ -1148,6 +1148,13 @@
     "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
 },
 {
+    "uri": "https://wy-cs.site/ecs/scratch/quiz-1/",
+    "title": "Scratch Quiz 1",
+    "tags": [],
+    "description": "",
+    "content": ""
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch21/moving-ball/",
     "title": "Moving Ball",
     "tags": [],
@@ -1244,13 +1251,6 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
-},
-{
-    "uri": "https://wy-cs.site/ecs/scratch/quiz-1/",
-    "title": "Quiz 1",
-    "tags": [],
-    "description": "",
-    "content": ""
 },
 {
     "uri": "https://wy-cs.site/ap-cs/sem1/classes-review/",
