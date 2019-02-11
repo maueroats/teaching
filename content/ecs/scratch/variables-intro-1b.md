@@ -1,5 +1,5 @@
 ---
-title: "Variables Intro"
+title: "Variables Intro 1 Solution"
 date: 2019-02-10T20:40:55-06:00
 weight: 31
 draft: false
@@ -13,16 +13,16 @@ description: "Exercises to introduce variables."
    sprite. Assume we have already made a "clicks" variable. 
 
     {{% scratch %}}
-	When this sprite clicked
-	change [clicks v] by (1)
-	{{% /scratch %}}
+    When this sprite clicked
+    change [clicks v] by (1)
+    {{% /scratch %}}
 
 2. Reset the count of clicks to zero when you hit "r".
 
     {{% scratch %}}
-	when [r v] key pressed
-	set [clicks v] to (0)
-	{{% /scratch %}}
+    when [r v] key pressed
+    set [clicks v] to (0)
+    {{% /scratch %}}
 
 3. There is a "Mario" sprite and a "Coin" sprite. 
 
@@ -30,13 +30,13 @@ description: "Exercises to introduce variables."
    * When Mario touches a coin, it reappears in a random location.
    * Assume you have already made a "coins" variable.
 
-	{{% scratch %}}
-	when green flag clicked
-	forever
-	if < touching [Mario v] > then
-	  change [coins v] by (1) 
-	  go to [random position v]
-	{{% /scratch %}}
+    {{% scratch %}}
+    when green flag clicked
+    forever
+    if < touching [Mario v] > then
+      change [coins v] by (1) 
+      go to [random position v]
+    {{% /scratch %}}
 
 4. Phil eats hamburgers. After he eats 5 burgers, he pixelates to
    "125". When he eats 10 hamburgers, he "wins". Have just one burger
@@ -45,22 +45,22 @@ description: "Exercises to introduce variables."
     * Phil:
 
     {{% scratch %}}
-	when green flag clicked
-	forever
-	if < (burgers) = (5) > then
-	  set [pixelate v] effect to (125)
-	  end
-	if < (burgers) = (10) > then
-	  broadcast [game over v]
-	  end
-	{{% /scratch %}}
+    when green flag clicked
+    forever
+    if < (burgers) = (5) > then
+      set [pixelate v] effect to (125)
+      end
+    if < (burgers) = (10) > then
+      broadcast [game over v]
+      end
+    {{% /scratch %}}
 
-	* Burger:
+    * Burger:
 
-	{{% scratch %}}
-	when green flag clicked
-	forever
-	if < touching [Phil v] > then
-	  change [burgers v] by (1) 
-	  go to [random position v]
-	{{% /scratch %}}
+    {{% scratch %}}
+    when green flag clicked
+    forever
+    if < touching [Phil v] > then
+      change [burgers v] by (1) 
+      go to [random position v]
+    {{% /scratch %}}

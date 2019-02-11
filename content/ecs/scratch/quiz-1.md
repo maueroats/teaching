@@ -6,3 +6,19 @@ draft: false
 #type: slide
 #theme: white
 ---
+
+1. When you click on Sammie, she says, "Hi Jane". After that, Jane
+   says "Hi Sammie". Finally Sammie changes to her "Blue" costume.
+   
+2. When Ryder touches the wallet, it disappears. (No need to write
+   motion.)
+   
+3. Holding the "g" key makes a sprite move smoothly in the 45 degree
+   direction. 
+   
+4. Hitting the "a" key causes the sprite to face left and move 5
+   steps. Holding the "a" key results in a choppy motion.
+   
+5. Say "Boo" six times with a one second pause (where no speech shows)
+   in between each one.
+

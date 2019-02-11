@@ -484,7 +484,7 @@
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-1a/",
-    "title": "Variables Intro",
+    "title": "Variables Intro 1",
     "tags": [],
     "description": "Exercises to introduce variables.",
     "content": " Count (and show) how many times you click on the button sprite. Assume we have already made a \u0026amp;ldquo;clicks\u0026amp;rdquo; variable.\n Reset the count of …"
@@ -494,7 +494,7 @@
     "title": "Exploring CS",
     "tags": [],
     "description": "",
-    "content": "(Coming soon\u0026amp;hellip;)\n Variables Intro Exercises to introduce variables.\n  Scratch Quiz 1 \n  ECS Recent Changes   Variables Intro modified Sun 02-10 …"
+    "content": "(Coming soon\u0026amp;hellip;)\n Variables Intro 1 Exercises to introduce variables.\n  Variables Intro 2 Review and using two variables at once. Half day. …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle/",
@@ -631,7 +631,7 @@
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-1b/",
-    "title": "Variables Intro",
+    "title": "Variables Intro 1 Solution",
     "tags": [],
     "description": "Exercises to introduce variables.",
     "content": " Count (and show) how many times you click on the button sprite. Assume we have already made a \u0026amp;ldquo;clicks\u0026amp;rdquo; variable.\n  window.onload = …"
@@ -698,6 +698,20 @@
     "tags": [],
     "description": "A simply silly &#39;game&#39; to practice win conditions.",
     "content": " A little square randomly drifts around the screen. You win if you hit the \u0026amp;ldquo;w\u0026amp;rdquo; key. Hitting the \u0026amp;ldquo;r\u0026amp;rdquo; key moves the square back …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/scratch/variables-intro-2a/",
+    "title": "Variables Intro 2",
+    "tags": [],
+    "description": "Review and using two variables at once. Half day.",
+    "content": " Arf the Dog gets five points when he eats a cupcake and two points for eating a hotdog. When food is eaten it disappears. Reset the points when you …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/scratch/variables-intro-2b/",
+    "title": "Variables Intro 2 Solution",
+    "tags": [],
+    "description": "Review and using two variables at once. Half day.",
+    "content": " Arf the Dog gets five points when he eats a cupcake and two points for eating a hotdog. When food is eaten it disappears. Reset the points when you …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-arrays-2d/",
@@ -1257,7 +1271,7 @@
     "title": "Scratch Quiz 1",
     "tags": [],
     "description": "",
-    "content": ""
+    "content": " When you click on Sammie, she says, \u0026amp;ldquo;Hi Jane\u0026amp;rdquo;. After that, Jane says \u0026amp;ldquo;Hi Sammie\u0026amp;rdquo;. Finally Sammie changes to her …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch21/moving-ball/",
