@@ -15,3 +15,7 @@ Scratch asks you to program in a block-oriented language.
 move (5) steps
 {{% /scratch %}}
 
+## All Contents
+
+{{% children %}}
+

@@ -57,6 +57,7 @@ jQuery(document).ready(function () {
         }
     });
 
+/*
     // Add link button for every
     var text, clip = new Clipboard('.anchor');
     $("h1~h2,h1~h3,h1~h4,h1~h5,h1~h6").append(function (index, html) {
@@ -76,7 +77,7 @@ jQuery(document).ready(function () {
         e.clearSelection();
         $(e.trigger).attr('aria-label', 'Link copied to clipboard!').addClass('tooltipped tooltipped-s');
     });
-
+*/
 });
 
 
