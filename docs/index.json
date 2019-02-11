@@ -574,6 +574,13 @@
     "content": "Opener: Write the result of the third \u0026amp;ldquo;step\u0026amp;rdquo;, as seen in the Stepper.\n(+ (+ 1 5) (* 8 (+ 2 3)) (* 7 2)) Class/homework:\nMake the two …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/30-fibonacci/",
+    "title": "22a. Fibonacci",
+    "tags": [],
+    "description": "Introduction to recursion using Fibonacci numbers.",
+    "content": " Fibonacci 1,1,2,3,5,8,\u0026amp;hellip;\n What are next three? How to number them?  Fibonacci |n|0|1|2|3|4|5|6| |-|-|-|-|-|-|-|-| |fib(n)|1|1|2|3|5|8|13|\nf(8) …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-3/",
     "title": "I.3 Semester I Review 3",
     "tags": [],
@@ -642,6 +649,13 @@
     "tags": [],
     "description": "",
     "content": " Example showing Chapter 2 Exercise 8  "
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/35-num-digits/",
+    "title": "22a. Digits",
+    "tags": [],
+    "description": "Counting the digits in a number.",
+    "content": " number of digits num-digits: whole-number -\u0026amp;gt; number\nReturns how many digits in the number.\nnumber of digits  Use conditional. Base: answer of 1 …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch03art/",
@@ -726,6 +740,13 @@
     "tags": [],
     "description": "",
     "content": " Resources R datasets.\nTopics  ML Daily Lecture notes and supplemental material.\n  ISL Chapter 2 Basic working with data frames. Selection and …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/40-sum-digits/",
+    "title": "22a. Sum Digits",
+    "tags": [],
+    "description": "Sum the digits in a number.",
+    "content": "sum-digits: whole-number -\u0026amp;gt; number\nFind the sum of the digits in a number.\n   n (sum-digits n) simplified     5 5 5   53 5 + 3 8   921 9 + 2 + 1 12 …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/pro/match/",
@@ -833,6 +854,13 @@
     "content": " Unless you are completely confident of your signature-writing skills, please use \u0026amp;ldquo;concrete\u0026amp;rdquo; type classes like Double or Integer instead …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/50-fibsum/",
+    "title": "22a. Fibsum",
+    "tags": [],
+    "description": "Sum of Fibonacci numbers.",
+    "content": " fibsum (fibsum n): Sum of Fibonacci numbers 0 through n.\n   n (fibsum n) simplified     0 1 1   1 1+1 2   2 1+1+2 4   3 1+1+2+3 7   4 1+1+2+3+5 12 …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-5/",
     "title": "I.5 Semester I Review 5",
     "tags": [],
@@ -908,6 +936,13 @@
     "tags": [],
     "description": "Review with focus on graphing functions.",
     "content": " Definitions: people coordinates are coordinates where (0,0) refers to the origin where the axes cross and positive y numbers are above the x-axis. …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/60-more-rec/",
+    "title": "22a. More Recursion",
+    "tags": [],
+    "description": "Many more recursion practice problems.",
+    "content": " sum-cubes: number(n) -\u0026amp;gt; number. Finds the sum of the first n perfect cubes.\n vblock: number(n) image(img) -\u0026amp;gt; image. Makes a vertical stack of n …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch21/pv-tick-handler/",
@@ -1001,6 +1036,13 @@
     "content": "Important ideas:\n Inexact numbers and check-within build3-image or build-image map3-image or map-image (random 5) gives 0, 1, 2, 3, or 4. How to make …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/70-rec-helpers/",
+    "title": "22a. Recursive Helpers",
+    "tags": [],
+    "description": "Exercises involving recursive functions with helper functions.",
+    "content": " Image Theory  big-bullseye: number(n) -\u0026amp;gt; image. Draw n concentric circles, alternating color beginning with black on the inside. Begin with a …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch20/ch20-review/",
     "title": "20. Review",
     "tags": [],
@@ -1036,11 +1078,25 @@
     "content": "  8. Number Models 1   Number Models 1   Number Models 2   Number Models 3   Number Models 4   Number Model Review   Number Model Review II   Number …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/80-rec-practice-q/",
+    "title": "22a. Recursion Quiz Practice",
+    "tags": [],
+    "description": "Quiz practice: hawaiian-earring, double-ss, math-mess.",
+    "content": "Use define/contract for each function.\n hawaiian-earring: number(stage) number(radius) -\u0026amp;gt; image. Create stage circles with each successive circle …"
+},
+{
     "uri": "https://wy-cs.site/ftc/",
     "title": "Robophins FTC",
     "tags": [],
     "description": "",
     "content": " This is the web page for the First Tech Challenge team 3216, Robophins from Whitney Young.\n[NEW 12-2018] All registration info: National permission …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/81-rec-quiz/",
+    "title": "22a. Recursion Quiz",
+    "tags": [],
+    "description": "First quiz on recursion: reciprocal-squares, blank-vowels, hollow-diagonal.",
+    "content": " You may use the Picturing Programs textbook and the blog to look up functions th at you do not know. Do not consult any other programs written by you …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-finale/",
@@ -1085,6 +1141,13 @@
     "content": " Note: MathJax formulas used on this page. Ugly if you block Javascript from Cloudflare.\nMathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/90-helpers/",
+    "title": "22a. Helpers",
+    "tags": [],
+    "description": "Real introduction to helper functions in recursion.",
+    "content": " Warmup Write a function count-div: number(k) number(n) -\u0026amp;gt; number that gives 1 if k divides n and 0 otherwise.\nOpener count-divisors: …"
+},
+{
     "uri": "https://wy-cs.site/ecs-teach/",
     "title": "Exploring CS (Teachers)",
     "tags": [],
@@ -1099,11 +1162,53 @@
     "content": " patterns  f [] = 0 f (x:xs) = x + f xs  guards  numword x | x \u0026amp;lt; 0 = \u0026amp;#34;Negative\u0026amp;#34; | x == 0 = \u0026amp;#34;Zero\u0026amp;#34; | otherwise = \u0026amp;#34;Positive\u0026amp;#34; …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/91-count-divisors/",
+    "title": "22a. Helpers: Count Divisors",
+    "tags": [],
+    "description": "A complete lecture on count-divisors.",
+    "content": " Warmup Write a function count-div: number(k) number(n) -\u0026amp;gt; number that gives 1 if k divides n and 0 otherwise.\nWarmup Solution (define (count-div k …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/92-helpers-2/",
+    "title": "22a. Recursion Practice 3",
+    "tags": [],
+    "description": "Even more recursion practice.",
+    "content": " Do at least the first three. Please make sure to write at least three tests for each function.\n is-in-word?: string(letter) string(word) -\u0026amp;gt; …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/93-self-quiz/",
+    "title": "22a. Recursion Self Quiz",
+    "tags": [],
+    "description": "A brief quiz to make sure you understand recursion.",
+    "content": "draw-cats: string -\u0026amp;gt; image\nDraw one cat for every time the word \u0026amp;ldquo;cat\u0026amp;rdquo; appears in the string.\n  (draw-cats \u0026amp;#34;nyan cat\u0026amp;#34;) …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/94-rec-practice-4/",
+    "title": "22a. Recursion Practice 4",
+    "tags": [],
+    "description": "Change penguin to penguins and mouse to mice in zoo-1, sum5, double-middle.",
+    "content": " Classwork (20 min) and discussion (25 min).\n zoo-1: string -\u0026amp;gt; string. Change every occurrence of \u0026amp;ldquo;penguin\u0026amp;rdquo; to \u0026amp;ldquo;penguins\u0026amp;rdquo; …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/ml-resources/",
     "title": "ML Resources",
     "tags": [],
     "description": "Resources for machine learning that we refer to in the class.",
     "content": " There is an incredible amount of information online. I will only refer to material that I have personally read or watched. See posts on Hacker News …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/95-rec-quiz-2/",
+    "title": "22a. Recursion Quiz 2",
+    "tags": [],
+    "description": "Ice cream quiz.",
+    "content": " An ice cream cone can have strawberry, vanilla, or chocolate ice cream scoops. The number of scoops is unlimited, specified by the string of flavors …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/99-hangman/",
+    "title": "22a. Hangman Project",
+    "tags": [],
+    "description": "Make the classic game of hangman.",
+    "content": " The game of hangman a classic guess-the-word game. You can try hangman online, but do not play too long - just learn the rules.\nCheck in  2018-03-15: …"
 },
 {
     "uri": "https://wy-cs.site/resources/letters-of-recommendation/",
@@ -1211,11 +1316,53 @@
     "content": "We have been writing signatures for functions by using comments.\n; double-it: number -\u0026amp;gt; number This works fine for organizing your thoughts, but it …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/",
+    "title": "22a. Recursion",
+    "tags": [],
+    "description": "Recursion lets you solve a problem by solving simpler problems.",
+    "content": "  22a. Fibonacci Introduction to recursion using Fibonacci numbers.\n  22a. Digits Counting the digits in a number.\n  22a. Sum Digits Sum the digits in …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/",
     "title": "Haskell Daily Notes",
     "tags": ["haskell", "daily-notes"],
     "description": "Notes for each day.",
     "content": "  2018.10.09 Project The end-of-Haskell project.\n  2018-10-16 notAlone. notAlone :: [Int] -\u0026amp;gt; Int -\u0026amp;gt; [Int] notAlone nums x = undefined Team Tic …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/",
+    "title": "22a. Hangman Outline",
+    "tags": [],
+    "description": "Outline of everything to do for hangman project.",
+    "content": "Use define/contract for all of your functions. Write two check expects for every non-trivial function.\n Three illustrations of \u0026amp;ldquo;action\u0026amp;rdquo; …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/99-hangman/99b-hangman-images/",
+    "title": "22a. Hangman Images",
+    "tags": [],
+    "description": "How to load a sequence of images into DrRacket.",
+    "content": " Goal for the day: produce a sequence of images to use for \u0026amp;ldquo;hangman\u0026amp;rdquo; and load it into Racket.\nImage sequence Draw a sequence of images …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/",
+    "title": "22a. Hangman Key Handler",
+    "tags": [],
+    "description": "Every keypress is a guess - adjust the model accordingly.",
+    "content": "The key handler needs to change the model depending on what key was typed.\n Create an example model for some state in the game. You could use one of …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/",
+    "title": "22a. Hangman DH Warmup",
+    "tags": [],
+    "description": "",
+    "content": " The key step is to draw the word with underscores for the letters missed.\nThis page will not include any specific advice on how to draw the word with …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/",
+    "title": "22a. Hangman Draw Handler",
+    "tags": [],
+    "description": "",
+    "content": " Draw the whole scene by using helper functions to draw the different parts. At first you can just put all of the images above each other; later you …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/calendar/",
@@ -1785,14 +1932,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
