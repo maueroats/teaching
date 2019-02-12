@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-12T17:30:18 CST">
-<title>I. Semester Review :: WY Computer Science</title>
+<meta name="revised" content="2019-02-12T17:30:17 CST">
+<title>Variables Intro 3 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/sem1/">
+  <body data-url="/ecs/scratch/variables-intro-3a/">
     
       
 
@@ -66,11 +66,10 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -625,11 +624,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/sem1/" class="dd-item parent active haschildren
+    <li data-nav-id="/ap-cs/sem1/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/sem1/">I. Semester Review</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/sem1/">I. Semester Review</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/sem1/classes-review/" class="dd-item">
@@ -1497,6 +1495,34 @@
       <a href="/intermediate-cs/pro/">Pro Features</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/intermediate-cs/pro/pro-string/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/pro/pro-string/">
+            Strings for Experts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/pro/build-image/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/pro/build-image/">
+            Build Image
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/pro/struct/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/pro/struct/">
+            Structures
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/pro/match/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/pro/match/">
+            Match
+          </a>
+        </div>
+    </li>
         </ul>
     </li>
       <li data-nav-id="/intermediate-cs/e-courses/" class="dd-item">
@@ -1515,10 +1541,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ecs/" class="dd-item haschildren
+    <li data-nav-id="/ecs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ecs/">Exploring CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ecs/">Exploring CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ecs/scratch/variables-intro-1a/" class="dd-item">
@@ -1535,7 +1562,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ecs/scratch/variables-intro-3a/" class="dd-item">
+      <li data-nav-id="/ecs/scratch/variables-intro-3a/" class="dd-item active">
         <div>
           <a href="/ecs/scratch/variables-intro-3a/">
             Variables Intro 3
@@ -1946,7 +1973,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > I. Semester Review
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ecs/'>Exploring CS</a> > Variables Intro 3
 
  
 
@@ -1959,7 +1986,15 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#molly-the-dog">Molly the Dog</a></li>
+<li><a href="#homer-and-the-donut">Homer and the Donut</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -1969,7 +2004,7 @@
 
 <div id="body-inner">
   
-    <h1>I. Semester Review</h1>
+    <h1>Variables Intro 3</h1>
   
 
 
@@ -1977,24 +2012,51 @@
     
     
     
+    
 
+<h2 id="molly-the-dog">Molly the Dog</h2>
 
+<p>Molly the Dog likes to play with her chew toy. Molly is vicious before
+she plays with her chew toy, happy while she plays with it, and
+relaxed after playing with it.</p>
 
-<ul class="children children-li">
+<p>Make a variable <code>got toy</code> that is:</p>
 
-<span><li>
-		<a href="/ap-cs/sem1/classes-review/" >Classes Review</a></li>
-<p>Gnome A Gnome has a double precision height in meters and an integer weight in kilograms. When you make a new Gnome, if you do not specify the weight it is assumed to be 10kg.
-Gnome a = new Gnome(0.37, 4); // 0.37m, 4kg Gnome b = new Gnome(0.61); // 0.61m, 10kg The Gnome class should have the following methods:
- public void grow(): Increase the height by 0.1m. public void eat(): A Gnome gains 1kg every 3 times it eats.</p>
-</span>
+<ul>
+<li>0 before Molly touches the toy</li>
+<li>1 when Molly is touching the toy</li>
+<li>2 after Molly is done playing with the toy</li>
 </ul>
 
+<h2 id="homer-and-the-donut">Homer and the Donut</h2>
 
+<p>Design this project on paper, then program it on the computer:</p>
 
+<ul>
+<li>The donut starts out in a bag.</li>
+<li>Homer wants a donut, but he can&rsquo;t see the donut when it is in the bag.</li>
+<li>When the donut is in the bag, Homer won&rsquo;t eat it (because he doesn&rsquo;t
+know it&rsquo;s there), even if he touches it.</li>
+<li>Click on the bag to take the donut out of the bag. (Now Homer will
+eat it.)</li>
+<li>Motion using keys or
 
+<script src="/js/scratchblocks-v3.3-min.js"></script>
+<script>
+window.onload = function () {
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
+}
+</script>
+<pre class="scratch">
+go to [mouse pointer v]
+</pre>
+.</li>
+</ul>
 
-
+<p>Advanced: If Homer has not touched the donut 10 seconds after it is
+unwrapped, he glides to touch the donut.</p>
 
 
     
@@ -2006,8 +2068,8 @@ Gnome a = new Gnome(0.37, 4); // 0.37m, 4kg Gnome b = new Gnome(0.61); // 0.61m,
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/jm/ch12/12-chomp/" title="12. Chomp"> <i class="fa fa-chevron-left"></i><label>12. Chomp</label></a>
-    <a class="nav nav-next" href="/ap-cs/sem1/classes-review/" title="Classes Review" style="margin-right: 0px;"><label>Classes Review</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ecs/scratch/variables-intro-2a/" title="Variables Intro 2"> <i class="fa fa-chevron-left"></i><label>Variables Intro 2</label></a>
+    <a class="nav nav-next" href="/ecs/scratch/quiz-1/" title="Scratch Quiz 1" style="margin-right: 0px;"><label>Scratch Quiz 1</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
