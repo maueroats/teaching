@@ -5,6 +5,7 @@ weight: 50
 draft: false
 #type: slide
 #theme: white
+description: "Molly and the chew toy. Homer and the donut."
 ---
 
 ## Molly the Dog
