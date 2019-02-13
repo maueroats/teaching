@@ -249,7 +249,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " Recent   Classes Review modified Fri 01-25  I. Semester Review modified Fri 01-25  AP CS A Exam Date 2019 modified Wed 01-23  String Dolphin modified …"
+    "content": " Recent   Interfaces modified Wed 02-13  Abstract Classes modified Wed 02-13  11. Classes modified Wed 02-13  Classes Review modified Fri 01-25  I. …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -938,6 +938,13 @@
     "content": "Mini-project: Religion Survey Analysis\nMake sure you learn how to avoid writing for loops. Example: sum( df[\u0026#39;christian\u0026#39;] ) counts the number of True …"
 },
 {
+    "uri": "https://wy-cs.site/ecs/scratch/variables-intro-4a/",
+    "title": "Variables Intro 4",
+    "tags": [],
+    "description": "Samantha eats a hot pepper and a cookie, and drinks glass of milk.",
+    "content": " Samantha could eat a hot pepper, drink a glass of milk, or get a cookie (all by touching them).\n When Samantha eats a cookie and then drinks a glass …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-4/",
     "title": "12. Arrays Exercises 4",
     "tags": [],
@@ -1274,6 +1281,13 @@
     "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/",
+    "title": "11. Classes",
+    "tags": [],
+    "description": "Interfaces and abstract classes.",
+    "content": "  Interfaces Concrete examples of interfaces.\n  Abstract Classes When are abstract classes useful? A discussion of a few examples.\n  Additional …"
+},
+{
     "uri": "https://wy-cs.site/ecs/scratch/quiz-1/",
     "title": "Scratch Quiz 1",
     "tags": [],
@@ -1419,6 +1433,20 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/interfaces/",
+    "title": "Interfaces",
+    "tags": [],
+    "description": "Concrete examples of interfaces.",
+    "content": " Example: mouse handler A good example of an interface is the MouseListener. This interface contains a function to be called when a mouse clicks on …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/abstract-classes/",
+    "title": "Abstract Classes",
+    "tags": [],
+    "description": "When are abstract classes useful? A discussion of a few examples.",
+    "content": "  AbstractCollection JComponent graphical user interface component  Example: Abstract Collections AbstractCollection is one of the Java utility …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/sem1/classes-review/",
@@ -1838,7 +1866,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " Classes  AP CS Intermediate CS Exploring CS: In development. Machine Learning  AP Computer Science Recent Changes   Classes Review modified Fri 01-25 …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS: In development. Machine Learning  AP Computer Science Recent Changes   Interfaces modified Wed 02-13 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
