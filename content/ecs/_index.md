@@ -7,8 +7,6 @@ draft: false
 #theme: white
 ---
 
-(Coming soon...)
-
 {{% children description = "true" %}}
 
 ## ECS Recent Changes
