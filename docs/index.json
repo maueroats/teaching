@@ -952,6 +952,13 @@
     "content": " lockers public static int[] lockers(int n)\nFlip means change 0 to 1 and 1 to 0.\n Start with an integer array of n lockers, all closed (0). In step 1, …"
 },
 {
+    "uri": "https://wy-cs.site/ecs/scratch/variables-intro-5a/",
+    "title": "Variables Intro 5",
+    "tags": [],
+    "description": "Baseball that catches you if you cheat.",
+    "content": " In the game of baseball, the batter hits the ball and then tries to touch all four bases, in order, before being tagged out. We will not do anything …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/isl-ch6/",
     "title": "ISL Chapter 6: Model Selection",
     "tags": [],
@@ -1995,14 +2002,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
