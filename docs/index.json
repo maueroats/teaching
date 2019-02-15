@@ -952,13 +952,6 @@
     "content": " lockers public static int[] lockers(int n)\nFlip means change 0 to 1 and 1 to 0.\n Start with an integer array of n lockers, all closed (0). In step 1, …"
 },
 {
-    "uri": "https://wy-cs.site/ecs/scratch/variables-intro-5a/",
-    "title": "Variables Intro 5",
-    "tags": [],
-    "description": "Baseball that catches you if you cheat.",
-    "content": " In the game of baseball, the batter hits the ball and then tries to touch all four bases, in order, before being tagged out. We will not do anything …"
-},
-{
     "uri": "https://wy-cs.site/machine-learning/isl-ch6/",
     "title": "ISL Chapter 6: Model Selection",
     "tags": [],
@@ -1043,6 +1036,13 @@
     "content": " You have a week to complete this project. You will need to find time to work on it outside of class.\nDue: Monday, October 15, 2018\nOption 1 …"
 },
 {
+    "uri": "https://wy-cs.site/ecs/scratch/variables-6a-treasure/",
+    "title": "Treasure Hunt",
+    "tags": [],
+    "description": "A treasure hunt with a door you cannot pass and loot to win.",
+    "content": "  Get a key (disappears when you have it). Door opens when touched after have the key. Win when you get the money. Cannot walk through door or walls. …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch15/15-heatmap/",
     "title": "15. Heatmap",
     "tags": [],
@@ -1055,6 +1055,13 @@
     "tags": [],
     "description": "",
     "content": "Being honest and honorable regarding one’s academic integrity is essential in all of your classes.\nStudents are expected to adhere to the following …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/scratch/variables-7a-baseball/",
+    "title": "Running Bases",
+    "tags": [],
+    "description": "Baseball that catches you if you cheat.",
+    "content": " In the game of baseball, the batter hits the ball and then tries to touch all four bases, in order, before being tagged out. We will not do anything …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-7/",
@@ -1300,6 +1307,13 @@
     "tags": [],
     "description": "Drive a ball around the screen with a constant velocity.",
     "content": " We practice the basics of structures by creating an animation where you can direct a ball to move around the screen.\n Use WASD keys to control the …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/scratch/corrections-quiz-1/",
+    "title": "Quiz 1 Corrections",
+    "tags": [],
+    "description": "Get half credit back by doing corrections.",
+    "content": " Get half of the points you lost back by doing corrections. No limit, you can get more points even if you have an A already.\nGeneral Instructions …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch21/speed-typer/",

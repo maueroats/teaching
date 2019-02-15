@@ -13,8 +13,9 @@ draft: true
 2. When Ryder touches the wallet, it disappears. (No need to write
    motion.)
    
-3. Holding the "g" key makes a sprite move smoothly in the 45 degree
-   direction. 
+3. When you holding the "g" key down, the sprite moves smoothly in the
+   45 degree direction. When you are not holding the "g" key, the
+   sprite is not moving.
    
 4. Hitting the "a" key causes the sprite to face left and move 5
    steps. Holding the "a" key results in a choppy motion.

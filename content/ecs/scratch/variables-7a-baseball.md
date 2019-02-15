@@ -1,7 +1,7 @@
 ---
-title: "Variables Intro 5"
+title: "Running Bases"
 date: 2019-02-14T10:30:07-06:00
-weight: 60
+weight: 70
 draft: false
 #type: slide
 #theme: white
