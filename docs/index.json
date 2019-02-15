@@ -249,7 +249,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " Recent   Interfaces modified Wed 02-13  Abstract Classes modified Wed 02-13  11. Classes modified Wed 02-13  Classes Review modified Fri 01-25  I. …"
+    "content": " Recent   Inheritance modified Fri 02-15  Interfaces modified Wed 02-13  Abstract Classes modified Wed 02-13  11. Classes modified Wed 02-13  Classes …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -1029,6 +1029,13 @@
     "content": " The most common question people have is how grades are computed.\nGrading weights and scale    Percent Category     20 Final Exam/Project (Quarterly) …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/61-harmonic/",
+    "title": "22a. Harmonic",
+    "tags": [],
+    "description": "Short review questions.",
+    "content": " The harmonic-add function takes in a start and an end number, and finds the sum 1/start + 1/(start+1) + ... + 1/end.\n(check-expect (harmonic-add 1 2) …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/haskell/daily/2018-10-09/",
     "title": "2018.10.09 Project",
     "tags": [],
@@ -1299,7 +1306,7 @@
     "title": "11. Classes",
     "tags": [],
     "description": "Interfaces and abstract classes.",
-    "content": "  Interfaces Concrete examples of interfaces.\n  Abstract Classes When are abstract classes useful? A discussion of a few examples.\n  Additional …"
+    "content": "  Inheritance Java inheritance - practice understanding.\n  Interfaces Concrete examples of interfaces.\n  Abstract Classes When are abstract classes …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch21/moving-ball/",
@@ -1447,6 +1454,13 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/inheritance/",
+    "title": "Inheritance",
+    "tags": [],
+    "description": "Java inheritance - practice understanding.",
+    "content": " Relatively simple Create the following classes.\n Animal is an abstract class\n Animal(String kind) constructor to create an animal of a certain kind. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/interfaces/",
@@ -1880,7 +1894,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " Classes  AP CS Intermediate CS Exploring CS: In development. Machine Learning  AP Computer Science Recent Changes   Interfaces modified Wed 02-13 …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS: In development. Machine Learning  AP Computer Science Recent Changes   Inheritance modified Fri 02-15 …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
