@@ -21,16 +21,17 @@ many integers 1,2,...,n divide the number `n`.
 
 [Count-divisors solution](count-divisors).
 
-## String Practice
-
-`group-3`: string(word) -> string. Insert spaces after every three letters of `word`. Example: `(group-3 "pancake") => "pan cak e"`.
-
-
 ## Number Theory
 
 
 4. `smallest-factor`: positive-integer(n) -> positive-integer. Find the smallest divisor of `n` that is greater than 1.
 
-3. `is-prime?`: positive-integer(n) -> boolean. Determine whether or not `n` is prime. Note: this can do less checking than the previous function.
+3. `is-prime?`: positive-integer(n) -> boolean. True if `n` is prime,
+   false otherwise.
 
 5. `smallest-prime-factor`: positive-integer(n) -> positive-integer. Find the smallest prime factor of `n`.
+
+## String Practice
+
+`group-3`: string(word) -> string. Insert spaces after every three letters of `word`. Example: `(group-3 "pancake") => "pan cak e"`.
+

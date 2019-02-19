@@ -858,7 +858,7 @@
     "title": "News",
     "tags": [],
     "description": "News about programs and competitions.",
-    "content": "  Collins Engineers \u0026amp;ldquo;Top 500 Design Firm\u0026amp;rdquo;. Eligible: CPS current juniors and seniors. Deadline: March 15. Paid internship. Details in job …"
+    "content": "  Google CSSI Google\u0026amp;rsquo;s Computer Science Summer Institute. Eligibility: current high school senior. Deadline: March 18.\n  UIC Women in …"
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-3a/",
@@ -1470,6 +1470,20 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/news/2019-02-19-gcssi/",
+    "title": "Google CSSI",
+    "tags": [],
+    "description": "",
+    "content": "Google\u0026amp;rsquo;s Computer Science Summer Institute. Eligibility: current high school senior. Deadline: March 18.\nCSSI is not your average summer camp. …"
+},
+{
+    "uri": "https://wy-cs.site/news/2019-02-19-wiesp/",
+    "title": "UIC Women in Engineering",
+    "tags": [],
+    "description": "",
+    "content": "Women in Engineering Summer Program (WIESP 2019)\nDates: June 24, 2019 - July 19, 2019\nDays and Time: Monday through Friday, 10am-3pm\nLocation: UIC …"
+},
+{
     "uri": "https://wy-cs.site/news/2019-02-19-collins-engineers/",
     "title": "Collins Engineers",
     "tags": [],
@@ -2072,14 +2086,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",

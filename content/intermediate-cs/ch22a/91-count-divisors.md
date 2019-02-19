@@ -53,6 +53,9 @@ It really looks like we need to keep track of two things:
 * what number we are counting the divisors for (always the same, let's call it `end`)
 * the number that we are test dividing (changes, let's call it `start`)
 
+Purpose: find how many divisors of `end` there are between `start` and
+`end` including both start and end.
+
 Skeleton:
 
     (define (count-divisors-help start end)
