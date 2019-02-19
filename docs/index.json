@@ -854,6 +854,13 @@
     "content": " You may ask for help with \u0026amp;ldquo;red error messages\u0026amp;rdquo;. No internet sources. No help from other students. No notes.  Write three tests, a …"
 },
 {
+    "uri": "https://wy-cs.site/news/",
+    "title": "News",
+    "tags": [],
+    "description": "News about programs and competitions.",
+    "content": "  Girls Who Code Summer Immersion Program for girls currently in 10th and 11th grade. Program length: 7 weeks. Application deadline: March 15. Flyer. …"
+},
+{
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-3a/",
     "title": "Variables Intro 3",
     "tags": [],
@@ -1111,6 +1118,13 @@
     "tags": [],
     "description": "Review questions on posn and color.",
     "content": "Write checks and follow the design process as you write these functions.\n Move to parabola. Input any point, output a point on the graph of y=x^2. …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/scratch/variables-8a-drown/",
+    "title": "Air and Water",
+    "tags": [],
+    "description": "",
+    "content": "There is water and air. If the main character is completely under water for 10 seconds, they drown. When the character touches air, they can breathe, …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/sem1review/sem-review-8/",
@@ -1454,6 +1468,20 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/news/2019-02-19-gwc/",
+    "title": "Girls Who Code",
+    "tags": [],
+    "description": "",
+    "content": "Summer Immersion Program for girls currently in 10th and 11th grade. Program length: 7 weeks. Application deadline: March 15. Flyer. Application. …"
+},
+{
+    "uri": "https://wy-cs.site/news/2019-02-19-depaul/",
+    "title": "DePaul Summer School",
+    "tags": [],
+    "description": "",
+    "content": " DePaul College Connect: July 8 - August 9. Times 9am-noon. Location: Lincoln Park. Free. Application deadline: rolling, March 31.  "
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/inheritance/",
