@@ -7,7 +7,7 @@ date: 2017-09-09T17:00:30-05:00
 
 * [AP CS](ap-cs/)
 * [Intermediate CS](intermediate-cs/)
-* [Exploring CS](ecs/): In development. 
+* [Exploring CS](ecs/)
 * [Machine Learning](machine-learning/)
 
 ## AP Computer Science Recent Changes
