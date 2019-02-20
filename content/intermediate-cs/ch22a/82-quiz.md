@@ -5,20 +5,22 @@ weight: 82
 draft: true
 #type: slide
 #theme: white
+description: "A quiz on recursive functions."
 ---
 
 {{% use-mathjax %}}
 
 1. (`altsum`) One way to see if a number is divisible by 11 is to find
    the alternating sum (+ then -) of the digits of the number,
-   beginning at the ones digit, and see if that number is divisible by
-   11. The alternating sum of the digits if 1495 is 5-9+4-1 = -1, so 1495
-   is not divisible by 11. Design and test the function `altsum: number(n) -> number`.
+   beginning at the ones digit, and see if that number is divisible
+   by 11. The alternating sum of the digits if 1495 is 5-9+4-1 = -1, so 1495
+   is not divisible by 11. Design and test the function 
+   `altsum: number(n) -> number`.
 
-	```racket
-	(check-expect (altsum 95) (+ 5 -9))
-	(check-expect (altsum 1495) (+ 5 -9 4 -1))
-	```
+    ```racket
+    (check-expect (altsum 95) (+ 5 -9))
+    (check-expect (altsum 1495) (+ 5 -9 4 -1))
+    ```
         
 2. (`sum-octa`) The n-th octagonal number is the number of dots that it
     takes to draw all of the edges of a regular octagon with n dots
@@ -38,12 +40,12 @@ draft: true
     | 2 |    8    |
     | 3 |   21    |
     | 4 |   40    |
-	| 5 |   65    |
-	
+    | 5 |   65    |
+    
     {{% figure
-	src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Centered_octagonal_number.svg/1200px-Centered_octagonal_number.svg.png"
-	height="300" 
-	title="Blue octagonal numbers, plus extra octagons" %}}
-	
-	
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Centered_octagonal_number.svg/1200px-Centered_octagonal_number.svg.png"
+    height="300" 
+    title="Blue octagonal numbers, plus extra octagons" %}}
+    
+    
 

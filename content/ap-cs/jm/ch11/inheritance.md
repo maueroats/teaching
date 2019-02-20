@@ -16,7 +16,7 @@ Create the following classes.
      * `Animal(String kind)` constructor to create an animal of a
        certain kind. 
      * `public String noise()`: an abstract method
-     * `public void speak()`: print out "a [kind] says [noise()]".
+     * `public void speak()`: print out "a [kind] says [noise()]."
      
 * `Cat` is a subclass of `Animal`. It makes the "miaou" noise.
 * `Dog` is a subclass of `Animal`. It makes the "ruff" noise. Dogs can
