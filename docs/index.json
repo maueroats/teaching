@@ -1176,6 +1176,13 @@
     "content": " You may use the Picturing Programs textbook and the blog to look up functions th at you do not know. Do not consult any other programs written by you …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/82-quiz/",
+    "title": "22a. Quiz I 2019",
+    "tags": [],
+    "description": "A quiz on recursive functions.",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});    (altsum) One way to see if a …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-finale/",
     "title": "8. Number Finale",
     "tags": [],
