@@ -1,7 +1,7 @@
 ---
 title: "Abstract Classes"
 date: 2019-02-13T09:20:55-06:00
-#weight: 
+weight: 100
 draft: false
 #type: slide
 #theme: white

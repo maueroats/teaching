@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-20T16:08:06 CST">
-<title>Inheritance :: WY Computer Science</title>
+<meta name="revised" content="2019-02-20T23:52:05 CST">
+<title>11. Candy :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/jm/ch11/inheritance/">
+  <body data-url="/ap-cs/jm/ch11/candy/">
     
       
 
@@ -525,17 +525,31 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/jm/ch11/inheritance/" class="dd-item active">
+      <li data-nav-id="/ap-cs/jm/ch11/animal/" class="dd-item">
         <div>
-          <a href="/ap-cs/jm/ch11/inheritance/">
-            Inheritance
+          <a href="/ap-cs/jm/ch11/animal/">
+            11. Animal
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/ch11/interfaces/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch11/candy/" class="dd-item active">
         <div>
-          <a href="/ap-cs/jm/ch11/interfaces/">
-            Interfaces
+          <a href="/ap-cs/jm/ch11/candy/">
+            11. Candy
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch11/inheritance-1/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch11/inheritance-1/">
+            11. Inheritance 1
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch11/inheritance-2/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch11/inheritance-2/">
+            11. Inheritance 2
           </a>
         </div>
     </li>
@@ -543,6 +557,13 @@
         <div>
           <a href="/ap-cs/jm/ch11/abstract-classes/">
             Abstract Classes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch11/interfaces/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch11/interfaces/">
+            Interfaces
           </a>
         </div>
     </li>
@@ -2095,7 +2116,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch11/'>11. Classes</a> > Inheritance
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch11/'>11. Classes</a> > 11. Candy
 
  
 
@@ -2112,15 +2133,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#relatively-simple">Relatively simple</a></li>
-<li><a href="#complexified">Complexified</a></li>
-</ul></li>
-</ul>
-</nav>
+    
         </div>
     </div>
     
@@ -2130,7 +2143,7 @@
 
 <div id="body-inner">
   
-    <h1>Inheritance</h1>
+    <h1>11. Candy</h1>
   
 
 
@@ -2138,52 +2151,20 @@
     
     
     
-    
+    <p>The <code>Food</code> interface has methods <code>String getName()</code> and <code>String
+getTaste()</code>.</p>
 
-<h2 id="relatively-simple">Relatively simple</h2>
+<p>The <code>Candy</code> class implements the <code>Food</code> interface. When printed out,
+it shows the name of the candy and the flavor (as seen below).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Candy c = new Candy(&#34;Red hots&#34;, &#34;cinnamon&#34;);
+Candy d = new Candy(&#34;Little Mints&#34;, &#34;peppermint&#34;);
+Candy e = new ComboCandy(&#34;swirl&#34;, c, d);
 
-<p>Create the following classes.</p>
-
-<ul>
-<li><p><code>Animal</code> is an abstract class</p>
-
-<ul>
-<li><code>Animal(String kind)</code> constructor to create an animal of a
-certain kind.</li>
-<li><code>public String noise()</code>: an abstract method</li>
-<li><code>public void speak()</code>: print out &ldquo;a [kind] says [noise()].&rdquo;
-<br /></li>
-</ul></li>
-
-<li><p><code>Cat</code> is a subclass of <code>Animal</code>. It makes the &ldquo;miaou&rdquo; noise.</p></li>
-
-<li><p><code>Dog</code> is a subclass of <code>Animal</code>. It makes the &ldquo;ruff&rdquo; noise. Dogs can
-also do <code>public void trick()</code>, which prints out &ldquo;shake&rdquo;.</p></li>
-
-<li><p><code>Borzoi</code> is a subclass of <code>Dog</code>. The Borzoi does not bark, the only
-noise it makes is a &ldquo;whine&rdquo;.</p></li>
-
-<li><p><code>Boxer</code> is a subclass of <code>Dog</code>. The Boxer knows the &ldquo;tug of war&rdquo; trick.</p></li>
-</ul>
-
-<p>Discuss how they can and cannot be used in a Java program. See
-the <a href="animals.java">testAnimals</a> function (also as <a href="animals.txt">plain text</a>).</p>
-
-<h2 id="complexified">Complexified</h2>
-
-<p>This example is more abstract but reviews the same ideas.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">A</span> <span style="color:#f92672">{</span>
-        <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">p</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span> <span style="color:#111">print</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;hi&#34;</span><span style="color:#f92672">);</span> <span style="color:#111">q</span><span style="color:#f92672">();</span> <span style="color:#f92672">}</span>
-        <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">q</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span> <span style="color:#111">print</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sally&#34;</span><span style="color:#f92672">);</span> <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">B</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">A</span> <span style="color:#f92672">{</span>
-        <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">p</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span> <span style="color:#00a8c8">super</span><span style="color:#f92672">.</span><span style="color:#75af00">p</span><span style="color:#f92672">();</span> <span style="color:#111">print</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;bye&#34;</span><span style="color:#f92672">);</span> <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">C</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">A</span> <span style="color:#f92672">{</span>
-        <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">q</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span> <span style="color:#111">print</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Ava&#34;</span><span style="color:#f92672">);</span> <span style="color:#f92672">}</span>
-        <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">r</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span> <span style="color:#111">print</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;$1000&#34;</span><span style="color:#f92672">);</span> <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span></code></pre></div>
-<p><a href="ABC.java">Questions about the code</a> or as <a href="ABC.txt">text</a>.</p>
+System.out.println(c); // &#34;Red hots: cinnamon&#34;
+System.out.println(d); // &#34;Little Mints: peppermint&#34;
+System.out.println(e); // &#34;Combo: swirl of cinnamon and peppermint&#34;</pre></div>
+<p>Notice that the combo candy always prints out as &ldquo;Combo&rdquo; before the
+flavor.</p>
 
 
     
@@ -2195,8 +2176,8 @@ the <a href="animals.java">testAnimals</a> function (also as <a href="animals.tx
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/jm/ch11/" title="11. Classes"> <i class="fa fa-chevron-left"></i><label>11. Classes</label></a>
-    <a class="nav nav-next" href="/ap-cs/jm/ch11/interfaces/" title="Interfaces" style="margin-right: 0px;"><label>Interfaces</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch11/animal/" title="11. Animal"> <i class="fa fa-chevron-left"></i><label>11. Animal</label></a>
+    <a class="nav nav-next" href="/ap-cs/jm/ch11/inheritance-1/" title="11. Inheritance 1" style="margin-right: 0px;"><label>11. Inheritance 1</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

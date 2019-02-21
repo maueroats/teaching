@@ -1,7 +1,7 @@
 ---
 title: "Interfaces"
 date: 2019-02-13T10:30:31-06:00
-#weight: 
+weight: 110
 draft: false
 #type: slide
 #theme: white

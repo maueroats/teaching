@@ -1,11 +1,11 @@
 ---
-title: "Inheritance"
+title: "11. Inheritance 1"
 date: 2019-02-15T13:30:44-06:00
-#weight: 
+weight: 40
 draft: false
 #type: slide
 #theme: white
-description: "Java inheritance - practice understanding."
+description: "Animal. Dog. Cat. Borzoi. Boxer. Abstract example: A, B, C."
 ---
 
 ## Relatively simple

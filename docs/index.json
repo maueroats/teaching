@@ -249,7 +249,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " Recent   Inheritance modified Fri 02-15  Interfaces modified Wed 02-13  Abstract Classes modified Wed 02-13  11. Classes modified Wed 02-13  Classes …"
+    "content": " Recent   11. Inheritance 2 modified Wed 02-20  11. Animal modified Wed 02-20  11. Candy modified Wed 02-20  11. Inheritance 1 modified Fri 02-15 …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -313,6 +313,13 @@
     "tags": [],
     "description": "Planning and testing, not writing functions.",
     "content": " Planning and Testing Write every part of the design process except the function. Do write tests!\n count-factors: take a number N and find out how …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/animal/",
+    "title": "11. Animal",
+    "tags": [],
+    "description": "Animal and CarnivoreAnimal.",
+    "content": "The Animal is an abstract class with the following methods:\n int beEaten(): returns the number of calories provided void gainCalories (int amount): …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/isl-ch5/homework/",
@@ -481,6 +488,13 @@
     "tags": [],
     "description": "",
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/candy/",
+    "title": "11. Candy",
+    "tags": [],
+    "description": "Food interface, Candy class, ComboCandy subclass.",
+    "content": "The Food interface has methods String getName() and String getTaste().\nThe Candy class implements the Food interface. When printed out, it shows the …"
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-1a/",
@@ -700,6 +714,13 @@
     "content": " A little square randomly drifts around the screen. You win if you hit the \u0026amp;ldquo;w\u0026amp;rdquo; key. Hitting the \u0026amp;ldquo;r\u0026amp;rdquo; key moves the square back …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/inheritance-1/",
+    "title": "11. Inheritance 1",
+    "tags": [],
+    "description": "Animal. Dog. Cat. Borzoi. Boxer. Abstract example: A, B, C.",
+    "content": " Relatively simple Create the following classes.\n Animal is an abstract class\n Animal(String kind) constructor to create an animal of a certain kind. …"
+},
+{
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-2a/",
     "title": "Variables Intro 2",
     "tags": [],
@@ -852,6 +873,13 @@
     "tags": [],
     "description": "The first quiz on Chapter 4, based on Chapter 4 Discussion III and similar CodingBat problems.",
     "content": " You may ask for help with \u0026amp;ldquo;red error messages\u0026amp;rdquo;. No internet sources. No help from other students. No notes.  Write three tests, a …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/inheritance-2/",
+    "title": "11. Inheritance 2",
+    "tags": [],
+    "description": "Noisy, Colorable, Cat, RandomCat. Practice with classes, abstract classes, and interfaces.",
+    "content": " Noisy It takes 0.2 seconds per letter for an animal to make a noise, so \u0026amp;ldquo;meow\u0026amp;rdquo; takes 0.8 seconds and \u0026amp;ldquo;meeeou\u0026amp;rdquo; is 1.2 seconds. …"
 },
 {
     "uri": "https://wy-cs.site/news/",
@@ -1288,6 +1316,13 @@
     "content": " The game of hangman a classic guess-the-word game. You can try hangman online, but do not play too long - just learn the rules.\nCheck in  2018-03-15: …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/abstract-classes/",
+    "title": "Abstract Classes",
+    "tags": [],
+    "description": "When are abstract classes useful? A discussion of a few examples.",
+    "content": "  AbstractCollection JComponent graphical user interface component  Example: Abstract Collections AbstractCollection is one of the Java utility …"
+},
+{
     "uri": "https://wy-cs.site/resources/letters-of-recommendation/",
     "title": "Letters of Recommendation",
     "tags": [],
@@ -1316,11 +1351,18 @@
     "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/interfaces/",
+    "title": "Interfaces",
+    "tags": [],
+    "description": "Concrete examples of interfaces.",
+    "content": " Example: mouse handler A good example of an interface is the MouseListener. This interface contains a function to be called when a mouse clicks on …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/",
     "title": "11. Classes",
     "tags": [],
     "description": "Interfaces and abstract classes.",
-    "content": "  Inheritance Java inheritance - practice understanding.\n  Interfaces Concrete examples of interfaces.\n  Abstract Classes When are abstract classes …"
+    "content": "  11. Animal Animal and CarnivoreAnimal.\n  11. Candy Food interface, Candy class, ComboCandy subclass.\n  11. Inheritance 1 Animal. Dog. Cat. Borzoi. …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch21/moving-ball/",
@@ -1510,27 +1552,6 @@
     "tags": [],
     "description": "",
     "content": " DePaul College Connect: July 8 - August 9. Times 9am-noon. Location: Lincoln Park. Free. Application deadline: rolling, March 31.  "
-},
-{
-    "uri": "https://wy-cs.site/ap-cs/jm/ch11/inheritance/",
-    "title": "Inheritance",
-    "tags": [],
-    "description": "Java inheritance - practice understanding.",
-    "content": " Relatively simple Create the following classes.\n Animal is an abstract class\n Animal(String kind) constructor to create an animal of a certain kind. …"
-},
-{
-    "uri": "https://wy-cs.site/ap-cs/jm/ch11/interfaces/",
-    "title": "Interfaces",
-    "tags": [],
-    "description": "Concrete examples of interfaces.",
-    "content": " Example: mouse handler A good example of an interface is the MouseListener. This interface contains a function to be called when a mouse clicks on …"
-},
-{
-    "uri": "https://wy-cs.site/ap-cs/jm/ch11/abstract-classes/",
-    "title": "Abstract Classes",
-    "tags": [],
-    "description": "When are abstract classes useful? A discussion of a few examples.",
-    "content": "  AbstractCollection JComponent graphical user interface component  Example: Abstract Collections AbstractCollection is one of the Java utility …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/sem1/classes-review/",
@@ -1950,7 +1971,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   Inheritance modified Fri 02-15  Interfaces …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11. Inheritance 2 modified Wed 02-20  11. Animal …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -2086,14 +2107,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
