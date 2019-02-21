@@ -249,7 +249,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " Recent   Inheritance modified Fri 02-15  Interfaces modified Wed 02-13  Abstract Classes modified Wed 02-13  11. Classes modified Wed 02-13  Classes …"
+    "content": " Recent   11. Treasure Hunt modified Thu 02-21  11. Instanceof modified Thu 02-21  Inheritance modified Fri 02-15  Interfaces modified Wed 02-13 …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -1320,7 +1320,7 @@
     "title": "11. Classes",
     "tags": [],
     "description": "Interfaces and abstract classes.",
-    "content": "  Inheritance Java inheritance - practice understanding.\n  Interfaces Concrete examples of interfaces.\n  Abstract Classes When are abstract classes …"
+    "content": "  11. Treasure Hunt Create an interface Currency that has a double getGoldValue() method that returns the number of grams of gold that equal the worth …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch21/moving-ball/",
@@ -1468,6 +1468,20 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/treasurehunt/",
+    "title": "11. Treasure Hunt",
+    "tags": [],
+    "description": "",
+    "content": "Create an interface Currency that has a double getGoldValue() method that returns the number of grams of gold that equal the worth of the item.\nCreate …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/instanceof/",
+    "title": "11. Instanceof",
+    "tags": [],
+    "description": "",
+    "content": " The instanceof operator tells you if a variable is an \u0026amp;ldquo;instance of\u0026amp;rdquo; (made from a subclass of) a given class. Example: if (x instanceof …"
 },
 {
     "uri": "https://wy-cs.site/news/2019-02-19-gcssi/",
@@ -1950,7 +1964,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   Inheritance modified Fri 02-15  Interfaces …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11. Treasure Hunt modified Thu 02-21  11. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
