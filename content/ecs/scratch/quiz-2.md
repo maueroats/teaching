@@ -23,8 +23,8 @@ description: "First quiz on variables, after day 8."
      2b. Write code for Anne that prevents her from going up the ladder
      (past the cover) without a key.
 
-      {{% figure src="roof-ladder-1.jpg" height="300" %}}
-      {{% figure src="roof-ladder-2.jpg" height="300" %}}
+     {{% figure src="roof-ladder-1.jpg" width="100" %}}
+     {{% figure src="roof-ladder-2.jpg" width="100" %}}
 
       {{% scratch %}} 
       when [up v] key pressed
