@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-21T11:34:50 CST">
+<meta name="revised" content="2019-02-21T14:20:27 CST">
 <title>11. Treasure Hunt :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2152,8 +2152,9 @@ of the item.</p>
 <code>BankNote</code> should be created in denominations of 1, 2, 5, 10, 20, 50,
 or 100, although you need not enforce this. A <code>BankNote</code> represents a
 single bill, so you might have lots of them. Add a <code>toString</code> method
-so a <code>new BankNote(100)</code> prints out as &ldquo;$100&rdquo;.</p>
-
+(see example code below).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> BankNote b = new BankNote(100);
+ System.out.println(b); // prints &#34;$100&#34;</pre></div>
 <p>In your Main class, make a function <code>public static double loot
 (ArrayList&lt;Object&gt; pile)</code>. This function should find out how much gold
 each Currency item in the pile is worth. To make the function more
@@ -2162,7 +2163,7 @@ the pile, so your function has to dig through a pile of cats looking
 for the currency and then find out how much gold the currency it finds
 is worth.</p>
 
-<p>Testing: create an arraylist of 11 objects. Build it up one by
+<p>Testing in Main: create an arraylist of 11 objects. Build it up one by
 one. Add a <code>RandomCat</code> with probability 40% and a <code>BankNote</code>
 otherwise. Give the bank note a random value: 100 (20% of the time), 50 (65% of
 the time), and 20 the rest of the time.</p>
