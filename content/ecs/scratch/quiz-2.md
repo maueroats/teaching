@@ -22,9 +22,12 @@ description: "First quiz on variables, after day 8."
    
      2b. Write code for Anne that prevents her from going up the ladder
      (past the cover) without a key.
-   
+
+      {{% figure src="roof-ladder-1.jpg" height="300" %}}
+      {{% figure src="roof-ladder-2.jpg" height="300" %}}
+
       {{% scratch %}} 
-      when key [up v] is pressed
+      when [up v] key pressed
       {{% /scratch %}}
 
 3. Dizzy Dan spins smoothly, 5 degrees "each time". Holding down the
@@ -40,6 +43,8 @@ description: "First quiz on variables, after day 8."
    * Click the Answer sprite to uncover the answers. 
    * Until the answers are uncovered, you can't tell how you did on a test.
    * Touch the Answer sprite when you have gotten the test. 
-   * Answer sprite says "good job".
+   * Answer sprite says "good job" if you have gotten the test,
+     uncovered the answers, and touched the Answer sprite.
    
    
+
