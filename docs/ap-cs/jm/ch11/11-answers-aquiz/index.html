@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-22T12:53:44 CST">
+<meta name="revised" content="2019-02-22T13:24:53 CST">
 <title>11. AQuiz IAnswers :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2233,7 +2233,7 @@ interface. Its constructor is:</p>
 <h2 id="abstract-class-aquiz">Abstract class: AQuiz</h2>
 
 <ul>
-<li>Constructor takes in a key of correct Answers.</li>
+<li>Constructor takes in an <code>IAnswers</code> key of correct answers.</li>
 <li>method <code>int score(IAnswers student)</code> gives the score for the
 remembered student answer sheet.</li>
 <li>abstract method <code>int scoreOne(int correct, int given)</code> returns the
@@ -2243,6 +2243,7 @@ score for a single answer.</li>
 <h2 id="class-mcquiz">Class: MCQuiz</h2>
 
 <ul>
+<li>Subclass of AQuiz</li>
 <li>Constructor takes in a <code>IAnswers</code> key of correct answers.</li>
 <li>Scoring in the <code>scoreOne</code> method is 4 points for a correct answer
 and -1 point for a wrong answer.</li>
@@ -2251,9 +2252,9 @@ and -1 point for a wrong answer.</li>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    int[] ans = {2,2,1,3,4};
     int[] student = {2,2,4,3,4};
-    MCAnswers a = new MCAnswers(ans);
-    MCAnswers s = new MCAnswers(student);       
-    MCQuiz b = new MCQuiz(a);
+    IAnswers a = new MCAnswers(ans);
+    IAnswers s = new MCAnswers(student);       
+    AQuiz b = new MCQuiz(a);
     int result = b.score(s);
     System.out.println(result); // prints 15 = +4 +4 -1 +4 +4</pre></div>
 

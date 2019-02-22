@@ -24,7 +24,7 @@ interface. Its constructor is:
     
 ## Abstract class: AQuiz
 
-* Constructor takes in a key of correct Answers.
+* Constructor takes in an `IAnswers` key of correct answers.
 * method `int score(IAnswers student)` gives the score for the
   remembered student answer sheet. 
 * abstract method `int scoreOne(int correct, int given)` returns the
@@ -32,6 +32,7 @@ interface. Its constructor is:
 
 ## Class: MCQuiz
 
+* Subclass of AQuiz
 * Constructor takes in a `IAnswers` key of correct answers.
 * Scoring in the `scoreOne` method is 4 points for a correct answer
   and -1 point for a wrong answer. 
@@ -40,9 +41,9 @@ interface. Its constructor is:
 
         int[] ans = {2,2,1,3,4};
         int[] student = {2,2,4,3,4};
-        MCAnswers a = new MCAnswers(ans);
-        MCAnswers s = new MCAnswers(student);       
-        MCQuiz b = new MCQuiz(a);
+        IAnswers a = new MCAnswers(ans);
+        IAnswers s = new MCAnswers(student);       
+        AQuiz b = new MCQuiz(a);
         int result = b.score(s);
         System.out.println(result); // prints 15 = +4 +4 -1 +4 +4
 
