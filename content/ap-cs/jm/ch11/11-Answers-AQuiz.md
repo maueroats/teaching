@@ -32,8 +32,7 @@ interface. Its constructor is:
 
 ## Class: MCQuiz
 
-* Constructor takes in a `IAnswers` key of correct answers and a
-  student responses   `IAnswers`  object. 
+* Constructor takes in a `IAnswers` key of correct answers.
 * Scoring in the `scoreOne` method is 4 points for a correct answer
   and -1 point for a wrong answer. 
 
