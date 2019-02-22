@@ -886,7 +886,7 @@
     "title": "News",
     "tags": [],
     "description": "News about programs and competitions.",
-    "content": "  Google CSSI Google\u0026amp;rsquo;s Computer Science Summer Institute. Eligibility: current high school senior. Deadline: March 18.\n  UIC Women in …"
+    "content": "  Google Code Jam A \u0026amp;ldquo;distributed\u0026amp;rdquo; competition - do at home if you want.\n Register: March 5 - April 7. Qualification round: April 5 - April …"
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-3a/",
@@ -1524,6 +1524,13 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/news/2019-02-27-codejam/",
+    "title": "Google Code Jam",
+    "tags": [],
+    "description": "",
+    "content": "A \u0026amp;ldquo;distributed\u0026amp;rdquo; competition - do at home if you want.\n Register: March 5 - April 7. Qualification round: April 5 - April 7. You could …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/treasurehunt/",

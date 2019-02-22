@@ -8,10 +8,15 @@ draft: true
 description: "First quiz on variables, after day 8."
 ---
 
+In every question, let the person control what happens by interacting
+with the sprite (keys or mouse). If you are not asked to write motion commands, you
+can assume the sprites already have that part written.
+
 1. You have a variable called "counter" that shows on the screen. At
    the start (when the green flag is clicked), set that variable to
    zero. Count up by one every second until it gets to 20, then leave
-   it alone.
+   it alone. Hit "s" to subtract 5 from the counter. (It should start
+   going up again after that.)
    
 2. Anne the Actor needs to climb a ladder up to the catwalk in the
    theater. There is a cover locking the ladder, so she needs a key.
@@ -20,8 +25,10 @@ description: "First quiz on variables, after day 8."
      different values. Example: "flying" is the variable. A value of
      "50" means flying slow and "300" means flying fast.
    
-     2b. Write code for Anne that prevents her from going up the ladder
-     (past the cover) without a key.
+     2b. Write code for Anne that lets her climb the ladder if she has
+     the key, and also prevents her from going up the ladder
+     (past the cover) without a key. Begin with the "when up key
+     pressed" block.
 
      {{% figure src="roof-ladder-1.jpg" width="100" %}}
      {{% figure src="roof-ladder-2.jpg" width="100" %}}
