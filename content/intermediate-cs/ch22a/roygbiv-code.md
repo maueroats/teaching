@@ -10,6 +10,8 @@ draft: false
 We are going to write an encoding function that makes an image like a
 bar code, but using colored rectangles insteada of bars.
 
+<!--more-->
+
 {{% figure src="school-phone.png" title="Encoded phone number" %}}
 
 Each digit will map to a 30x70 rectangle. The colors of the digits 0

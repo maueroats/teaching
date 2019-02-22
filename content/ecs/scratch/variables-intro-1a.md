@@ -1,5 +1,5 @@
 ---
-title: "Variables Intro 1"
+title: "Intro: coins, burgers"
 date: 2019-02-10T20:40:55-06:00
 weight: 30
 draft: false

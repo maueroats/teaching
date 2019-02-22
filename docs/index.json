@@ -249,7 +249,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " Recent   11. Treasure Hunt modified Thu 02-21  11. Instanceof modified Thu 02-21  11. Inheritance 2 modified Wed 02-20  11. Animal modified Wed 02-20 …"
+    "content": " Recent   11. AQuiz IAnswers modified Fri 02-22  11. Treasure Hunt modified Thu 02-21  11. Instanceof modified Thu 02-21  11. Inheritance 2 modified …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -498,7 +498,7 @@
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-1a/",
-    "title": "Variables Intro 1",
+    "title": "Intro: coins, burgers",
     "tags": [],
     "description": "Exercises to introduce variables.",
     "content": " Count (and show) how many times you click on the button sprite. Assume we have already made a \u0026amp;ldquo;clicks\u0026amp;rdquo; variable.\n Reset the count of …"
@@ -508,7 +508,7 @@
     "title": "Exploring CS",
     "tags": [],
     "description": "",
-    "content": "  Variables Intro 1 Exercises to introduce variables.\n  Variables Intro 2 Review and using two variables at once. Half day.\n  Variables Intro 3 Molly …"
+    "content": "  Intro: coins, burgers Exercises to introduce variables.\n  Intro: count to goal Review and using two variables at once. Half day.\n  Homer and Donut …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch20/click-circle/",
@@ -722,7 +722,7 @@
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-2a/",
-    "title": "Variables Intro 2",
+    "title": "Intro: count to goal",
     "tags": [],
     "description": "Review and using two variables at once. Half day.",
     "content": " Arf the Dog gets five points when he eats a cupcake and two points for eating a hotdog. When food is eaten it disappears. Reset the points when you …"
@@ -890,7 +890,7 @@
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-3a/",
-    "title": "Variables Intro 3",
+    "title": "Homer and Donut",
     "tags": [],
     "description": "Molly and the chew toy. Homer and the donut.",
     "content": " Molly the Dog Molly the Dog likes to play with her chew toy. Molly is vicious before she plays with her chew toy, happy while she plays with it, and …"
@@ -974,7 +974,7 @@
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-intro-4a/",
-    "title": "Variables Intro 4",
+    "title": "Hot Pepper and Cookie",
     "tags": [],
     "description": "Samantha eats a hot pepper and a cookie, and drinks glass of milk.",
     "content": " Samantha could eat a hot pepper, drink a glass of milk, or get a cookie (all by touching them).\n When Samantha eats a cookie and then drinks a glass …"
@@ -1215,7 +1215,21 @@
     "title": "Roygbiv Code",
     "tags": [],
     "description": "",
-    "content": " We are going to write an encoding function that makes an image like a bar code, but using colored rectangles insteada of bars.\n  Encoded phone number …"
+    "content": "We are going to write an encoding function that makes an image like a bar code, but using colored rectangles insteada of bars.\n  Encoded phone number …"
+},
+{
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/84-strings/",
+    "title": "22a. Strings",
+    "tags": [],
+    "description": "A presentation with exercises involving recursion on strings.",
+    "content": " Objective I can write a recursive function that works on a string.\nLetterSwap (swap \u0026amp;quot;wallaby\u0026amp;quot; \u0026amp;quot;a\u0026amp;quot; \u0026amp;quot;x\u0026amp;quot;) =\u0026amp;gt; …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/scratch/variables-9a-dubtv/",
+    "title": "DubTV",
+    "tags": [],
+    "description": "",
+    "content": " You are in charge of making a show for DubTV.\nSprites: main character, other character, camera, computer.\nAdditional information: there is a …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-finale/",
@@ -1524,6 +1538,13 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/11-answers-aquiz/",
+    "title": "11. AQuiz IAnswers",
+    "tags": [],
+    "description": "A quiz asking you to write an interface, an abstract class, and more.",
+    "content": " Interface: IAnswers The IAnswers interface has the methods:\nint numAnswers(); int getAnswer(int k); Class: MCAnswers The multiple choice answers …"
 },
 {
     "uri": "https://wy-cs.site/news/2019-02-27-codejam/",
@@ -2006,7 +2027,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11. Treasure Hunt modified Thu 02-21  11. …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11. AQuiz IAnswers modified Fri 02-22  11. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",

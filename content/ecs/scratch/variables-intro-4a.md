@@ -1,5 +1,5 @@
 ---
-title: "Variables Intro 4"
+title: "Hot Pepper and Cookie"
 date: 2019-02-13T11:32:11-06:00
 weight: 55
 draft: false

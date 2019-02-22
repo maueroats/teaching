@@ -1,5 +1,5 @@
 ---
-title: "Variables Intro 2"
+title: "Intro: count to goal"
 date: 2019-02-11T11:00:35-06:00
 weight: 40
 draft: false
