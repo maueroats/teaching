@@ -31,6 +31,6 @@ Write a function to create a color-based bar code.
 
 ## Intermediate
 
-Got the encoder working? Write a decoder that takes is in an image and
+Got the encoder working? Write a decoder that takes in an image and
 produces an integer.
 
