@@ -1,8 +1,8 @@
 ---
-title: "22a. Quiz I 2019"
+title: "22a. Recursion Practice I 2019"
 date: 2019-02-19T21:14:22-06:00
 weight: 82
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "A quiz on recursive functions."

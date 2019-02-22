@@ -1204,6 +1204,13 @@
     "content": " You may use the Picturing Programs textbook and the blog to look up functions th at you do not know. Do not consult any other programs written by you …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/roygbiv-code/",
+    "title": "Roygbiv Code",
+    "tags": [],
+    "description": "",
+    "content": " We are going to write an encoding function that makes an image like a bar code, but using colored rectangles insteada of bars.\n  Encoded phone number …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch08/number-finale/",
     "title": "8. Number Finale",
     "tags": [],
