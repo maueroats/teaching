@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-21T17:30:04 CST">
+<meta name="revised" content="2019-02-21T18:08:20 CST">
 <title>11. Classes :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -525,10 +525,38 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/jm/ch11/inheritance/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch11/animal/" class="dd-item">
         <div>
-          <a href="/ap-cs/jm/ch11/inheritance/">
-            Inheritance
+          <a href="/ap-cs/jm/ch11/animal/">
+            11. Animal
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch11/candy/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch11/candy/">
+            11. Candy
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch11/inheritance-1/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch11/inheritance-1/">
+            11. Inheritance 1
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch11/inheritance-2/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch11/inheritance-2/">
+            11. Inheritance 2
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch11/abstract-classes/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch11/abstract-classes/">
+            Abstract Classes
           </a>
         </div>
     </li>
@@ -539,10 +567,17 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/ch11/abstract-classes/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch11/treasurehunt/" class="dd-item">
         <div>
-          <a href="/ap-cs/jm/ch11/abstract-classes/">
-            Abstract Classes
+          <a href="/ap-cs/jm/ch11/treasurehunt/">
+            11. Treasure Hunt
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ap-cs/jm/ch11/instanceof/" class="dd-item">
+        <div>
+          <a href="/ap-cs/jm/ch11/instanceof/">
+            11. Instanceof
           </a>
         </div>
     </li>
@@ -1434,6 +1469,13 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/ch22a/82-quiz/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22a/82-quiz/">
+            22a. Recursion Practice I 2019
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/intermediate-cs/ch22a/roygbiv-code/" class="dd-item">
         <div>
           <a href="/intermediate-cs/ch22a/roygbiv-code/">
@@ -2138,8 +2180,28 @@
 <ul class="children children-li">
 
 <span><li>
-		<a href="/ap-cs/jm/ch11/inheritance/" >Inheritance</a></li>
-<p>Java inheritance - practice understanding.</p>
+		<a href="/ap-cs/jm/ch11/animal/" >11. Animal</a></li>
+<p>Animal and CarnivoreAnimal.</p>
+</span>
+
+<span><li>
+		<a href="/ap-cs/jm/ch11/candy/" >11. Candy</a></li>
+<p>Food interface, Candy class, ComboCandy subclass.</p>
+</span>
+
+<span><li>
+		<a href="/ap-cs/jm/ch11/inheritance-1/" >11. Inheritance 1</a></li>
+<p>Animal. Dog. Cat. Borzoi. Boxer. Abstract example: A, B, C.</p>
+</span>
+
+<span><li>
+		<a href="/ap-cs/jm/ch11/inheritance-2/" >11. Inheritance 2</a></li>
+<p>Noisy, Colorable, Cat, RandomCat. Practice with classes, abstract classes, and interfaces.</p>
+</span>
+
+<span><li>
+		<a href="/ap-cs/jm/ch11/abstract-classes/" >Abstract Classes</a></li>
+<p>When are abstract classes useful? A discussion of a few examples.</p>
 </span>
 
 <span><li>
@@ -2148,8 +2210,16 @@
 </span>
 
 <span><li>
-		<a href="/ap-cs/jm/ch11/abstract-classes/" >Abstract Classes</a></li>
-<p>When are abstract classes useful? A discussion of a few examples.</p>
+		<a href="/ap-cs/jm/ch11/treasurehunt/" >11. Treasure Hunt</a></li>
+<p>Create an interface Currency that has a double getGoldValue() method that returns the number of grams of gold that equal the worth of the item.
+Create a BankNote class that implements the Currency interface. A BankNote should be created in denominations of 1, 2, 5, 10, 20, 50, or 100, although you need not enforce this. A BankNote represents a single bill, so you might have lots of them. Add a toString method (see example code below).</p>
+</span>
+
+<span><li>
+		<a href="/ap-cs/jm/ch11/instanceof/" >11. Instanceof</a></li>
+<p>The instanceof operator tells you if a variable is an &ldquo;instance of&rdquo; (made from a subclass of) a given class. Example: if (x instanceof Cat) { ... }.
+Casting looks like this: (Cat) x. Casting can fail (with a &ldquo;runtime exception&rdquo;) if x is not really a Cat. This can happen inside functions that do not know where their inputs are coming from.
+Frequently you check to see if something is the right class before using a cast to &ldquo;convert it&rdquo; to that class.</p>
 </span>
 </ul>
 
@@ -2176,7 +2246,7 @@ interfaces</a>.</li>
 
 <div id="navigation">
 <a class="nav nav-prev" href="/ap-cs/jm/ch03/ch03-quiz/" title="3. Classes Quiz"> <i class="fa fa-chevron-left"></i><label>3. Classes Quiz</label></a>
-    <a class="nav nav-next" href="/ap-cs/jm/ch11/inheritance/" title="Inheritance" style="margin-right: 0px;"><label>Inheritance</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/ap-cs/jm/ch11/animal/" title="11. Animal" style="margin-right: 0px;"><label>11. Animal</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

@@ -249,7 +249,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " Recent   11. Inheritance 2 modified Wed 02-20  11. Animal modified Wed 02-20  11. Candy modified Wed 02-20  11. Inheritance 1 modified Fri 02-15 …"
+    "content": " Recent   11. Treasure Hunt modified Thu 02-21  11. Instanceof modified Thu 02-21  11. Inheritance 2 modified Wed 02-20  11. Animal modified Wed 02-20 …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -1204,6 +1204,13 @@
     "content": " You may use the Picturing Programs textbook and the blog to look up functions th at you do not know. Do not consult any other programs written by you …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/82-quiz/",
+    "title": "22a. Recursion Practice I 2019",
+    "tags": [],
+    "description": "A quiz on recursive functions.",
+    "content": "MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});    (altsum) One way to see if a …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch22a/roygbiv-code/",
     "title": "Roygbiv Code",
     "tags": [],
@@ -1517,6 +1524,20 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/treasurehunt/",
+    "title": "11. Treasure Hunt",
+    "tags": [],
+    "description": "",
+    "content": "Create an interface Currency that has a double getGoldValue() method that returns the number of grams of gold that equal the worth of the item.\nCreate …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/instanceof/",
+    "title": "11. Instanceof",
+    "tags": [],
+    "description": "",
+    "content": " The instanceof operator tells you if a variable is an \u0026amp;ldquo;instance of\u0026amp;rdquo; (made from a subclass of) a given class. Example: if (x instanceof …"
 },
 {
     "uri": "https://wy-cs.site/news/2019-02-19-gcssi/",
@@ -1978,7 +1999,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11. Inheritance 2 modified Wed 02-20  11. Animal …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11. Treasure Hunt modified Thu 02-21  11. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
