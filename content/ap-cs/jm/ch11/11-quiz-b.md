@@ -64,3 +64,10 @@ public class TestClothes {
     }
 }
 ```
+
+## Pedantic
+
+An object that implements the `Clothes` interface has an integer value
+for its fashion level and its warmth rating. The methods in the
+`Clothes` interface are accessor methods that return those values.
+
