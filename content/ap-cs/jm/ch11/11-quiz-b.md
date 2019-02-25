@@ -12,7 +12,8 @@ draft: false
 * `HeadCovering` is a class that implements the `Clothes` interface. Its constructor
   sets fashion and warmth.
 
-* `WoolClothes` takes in a `Clothes` object in its constructor. It adds 5 to
+* `WoolClothes` is a class that implements the `Clothes` interface. It
+  takes in a `Clothes` object in its constructor. It adds 5 to 
   the warmth provided by the Clothes because they are made of wool.
 
 * `Person` is an abstract class with a `String name` field and a
