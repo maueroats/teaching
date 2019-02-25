@@ -1540,6 +1540,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ecs/scratch/variables-a-pancake/",
+    "title": "Blueberry Pancakes",
+    "tags": [],
+    "description": "Make plain pancakes or blueberry pancakes. Track how many you eat.",
+    "content": " There is a container of pancake batter, a bowl of blueberries, and a stove.\n Touching batter or blueberries picks them up. Touching the stove tries …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/11-quiz-b/",
     "title": "11. Quiz B",
     "tags": [],
@@ -2170,14 +2177,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
