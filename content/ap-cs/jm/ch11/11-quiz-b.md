@@ -13,7 +13,7 @@ draft: false
   sets fashion and warmth.
 
 * `WoolClothes` takes in a `Clothes` object in its constructor. It adds 5 to
-  the warmth provided by the Clothes when they are made of wool.
+  the warmth provided by the Clothes because they are made of wool.
 
 * `Person` is an abstract class with a `String name` field and a
   `String getName()` function, as well as abstract methods `int
@@ -52,6 +52,8 @@ public class TestClothes {
         assert("Sanjana".equals(p2.getName()));
         assert(20+25+95 == p2.getWarmth());
         assert(40 == p2.getFashion());
+        // if you make it this far code is right
+        System.out.println("Fashion check: OK");
     }
 }
 ```
