@@ -31,10 +31,12 @@ draft: false
 
 ## Example
 
-```java
+Use the [repl.it testing code starter](ReplItTest.java) to get the
+test going on Repl.it.
 
+```java
 public class TestClothes {
-    public static void main(String[] args) {
+    public void testclothes() {
         Clothes hat = new HeadCovering(20, 105);
         Clothes underArmor = new WoolClothes (hat);
         Clothes denim = new HeadCovering(95,40);// just messing around
@@ -54,6 +56,10 @@ public class TestClothes {
         assert(40 == p2.getFashion());
         // if you make it this far code is right
         System.out.println("Fashion check: OK");
+    }
+    // call it from your main
+    public static void main(String[] args) {
+        (new TestClothes()).testclothes();
     }
 }
 ```

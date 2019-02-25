@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-25T09:33:18 CST">
+<meta name="revised" content="2019-02-25T09:39:42 CST">
 <title>11. Quiz B :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2250,8 +2250,11 @@ fashion of 50, always.</p></li>
 </ul>
 
 <h2 id="example">Example</h2>
+
+<p>Use the <a href="ReplItTest.java">repl.it testing code starter</a> to get the
+test going on Repl.it.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">TestClothes</span> <span style="color:#f92672">{</span>
-    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span><span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">testclothes</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
         <span style="color:#111">Clothes</span> <span style="color:#111">hat</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HeadCovering</span><span style="color:#f92672">(</span><span style="color:#111">20</span><span style="color:#f92672">,</span> <span style="color:#111">105</span><span style="color:#f92672">);</span>
         <span style="color:#111">Clothes</span> <span style="color:#111">underArmor</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">WoolClothes</span> <span style="color:#f92672">(</span><span style="color:#111">hat</span><span style="color:#f92672">);</span>
         <span style="color:#111">Clothes</span> <span style="color:#111">denim</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HeadCovering</span><span style="color:#f92672">(</span><span style="color:#111">95</span><span style="color:#f92672">,</span><span style="color:#111">40</span><span style="color:#f92672">);</span><span style="color:#75715e">// just messing around
@@ -2271,6 +2274,10 @@ fashion of 50, always.</p></li>
         <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#111">40</span> <span style="color:#f92672">==</span> <span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getFashion</span><span style="color:#f92672">());</span>
         <span style="color:#75715e">// if you make it this far code is right
 </span><span style="color:#75715e"></span>        <span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">out</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Fashion check: OK&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#75715e">// call it from your main
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span><span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#f92672">(</span><span style="color:#00a8c8">new</span> <span style="color:#111">TestClothes</span><span style="color:#f92672">()).</span><span style="color:#75af00">testclothes</span><span style="color:#f92672">();</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 
