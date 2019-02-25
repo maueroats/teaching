@@ -9,7 +9,7 @@ draft: false
 
 * `Clothes` interface has `int fashion()` and `int warmth()`.
 
-* `HeadCovering` implements the `Clothes` interface. Its constructor
+* `HeadCovering` is a class that implements the `Clothes` interface. Its constructor
   sets fashion and warmth.
 
 * `WoolClothes` takes in a `Clothes` object in its constructor. It adds 5 to
