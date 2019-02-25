@@ -249,7 +249,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " Recent   11 Quiz B modified Mon 02-25  11. AQuiz IAnswers modified Fri 02-22  11. Treasure Hunt modified Thu 02-21  11. Instanceof modified Thu 02-21 …"
+    "content": " Recent   11. Quiz B modified Mon 02-25  11. AQuiz IAnswers modified Fri 02-22  11. Treasure Hunt modified Thu 02-21  11. Instanceof modified Thu …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -1541,10 +1541,10 @@
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/11-quiz-b/",
-    "title": "11 Quiz B",
+    "title": "11. Quiz B",
     "tags": [],
     "description": "",
-    "content": " Clothes interface has int fashion() and int warmth().\n HeadCovering implements the Clothes interface. Its constructor sets fashion and warmth. …"
+    "content": "  Clothes interface has int fashion() and int warmth().\n HeadCovering implements the Clothes interface. Its constructor sets fashion and warmth. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/11-answers-aquiz/",
@@ -2034,7 +2034,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11 Quiz B modified Mon 02-25  11. AQuiz IAnswers …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11. Quiz B modified Mon 02-25  11. AQuiz IAnswers …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",

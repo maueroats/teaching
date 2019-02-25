@@ -1,5 +1,5 @@
 ---
-title: "11 Quiz B"
+title: "11. Quiz B"
 date: 2019-02-25T08:50:40-06:00
 #weight: 
 draft: false
@@ -12,7 +12,7 @@ draft: false
 * `HeadCovering` implements the `Clothes` interface. Its constructor
   sets fashion and warmth.
 
-* `WoolClothes` takes in a `Clothes` class in its constructor. It adds 5 to
+* `WoolClothes` takes in a `Clothes` object in its constructor. It adds 5 to
   the warmth provided by the Clothes when they are made of wool.
 
 * `Person` is an abstract class with a `String name` field and a
@@ -29,3 +29,29 @@ draft: false
       * Their warmth is the sum of the warmth of their clothes. 
       * Their fashion is the *minimum* of the fashion of their clothes. 
 
+## Example
+
+```java
+
+public class TestClothes {
+    public static void main(String[] args) {
+        Clothes hat = new HeadCovering(20, 105);
+        Clothes underArmor = new WoolClothes (hat);
+        Clothes denim = new HeadCovering(95,40);// just messing around
+        ArrayList<Clothes> w = new ArrayList<>();
+        w.add(hat);
+        w.add(underArmor);
+        w.add(denim);
+
+        Person p1 = new PlainPerson("Jane");
+        assert(50 == p1.getFashion());
+        assert(90 == p1.getWarmth());
+        assert("Jane".equals(p1.getName()));
+
+        Person p2 = new BigFashionPerson("Sanjana", w);
+        assert("Sanjana".equals(p2.getName()));
+        assert(20+25+95 == p2.getWarmth());
+        assert(40 == p2.getFashion());
+    }
+}
+```

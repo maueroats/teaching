@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-25T08:56:28 CST">
-<title>11 Quiz B :: WY Computer Science</title>
+<meta name="revised" content="2019-02-25T09:19:36 CST">
+<title>11. Quiz B :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -570,7 +570,7 @@
       <li data-nav-id="/ap-cs/jm/ch11/11-quiz-b/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/ch11/11-quiz-b/">
-            11 Quiz B
+            11. Quiz B
           </a>
         </div>
     </li>
@@ -2179,7 +2179,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch11/'>11. Classes</a> > 11 Quiz B
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch11/'>11. Classes</a> > 11. Quiz B
 
  
 
@@ -2196,7 +2196,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#example">Example</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2206,7 +2213,7 @@
 
 <div id="body-inner">
   
-    <h1>11 Quiz B</h1>
+    <h1>11. Quiz B</h1>
   
 
 
@@ -2214,13 +2221,15 @@
     
     
     
-    <ul>
+    
+
+<ul>
 <li><p><code>Clothes</code> interface has <code>int fashion()</code> and <code>int warmth()</code>.</p></li>
 
 <li><p><code>HeadCovering</code> implements the <code>Clothes</code> interface. Its constructor
 sets fashion and warmth.</p></li>
 
-<li><p><code>WoolClothes</code> takes in a <code>Clothes</code> class in its constructor. It adds 5 to
+<li><p><code>WoolClothes</code> takes in a <code>Clothes</code> object in its constructor. It adds 5 to
 the warmth provided by the Clothes when they are made of wool.</p></li>
 
 <li><p><code>Person</code> is an abstract class with a <code>String name</code> field and a
@@ -2240,6 +2249,28 @@ fashion of 50, always.</p></li>
 </ul></li>
 </ul>
 
+<h2 id="example">Example</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">TestClothes</span> <span style="color:#f92672">{</span>
+    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span><span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#111">Clothes</span> <span style="color:#111">hat</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HeadCovering</span><span style="color:#f92672">(</span><span style="color:#111">20</span><span style="color:#f92672">,</span> <span style="color:#111">105</span><span style="color:#f92672">);</span>
+        <span style="color:#111">Clothes</span> <span style="color:#111">underArmor</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">WoolClothes</span> <span style="color:#f92672">(</span><span style="color:#111">hat</span><span style="color:#f92672">);</span>
+        <span style="color:#111">Clothes</span> <span style="color:#111">denim</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HeadCovering</span><span style="color:#f92672">(</span><span style="color:#111">95</span><span style="color:#f92672">,</span><span style="color:#111">40</span><span style="color:#f92672">);</span><span style="color:#75715e">// just messing around
+</span><span style="color:#75715e"></span>        <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;</span><span style="color:#111">Clothes</span><span style="color:#f92672">&gt;</span> <span style="color:#111">w</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span>
+        <span style="color:#111">w</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">hat</span><span style="color:#f92672">);</span>
+        <span style="color:#111">w</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">underArmor</span><span style="color:#f92672">);</span>
+        <span style="color:#111">w</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">denim</span><span style="color:#f92672">);</span>
+
+        <span style="color:#111">Person</span> <span style="color:#111">p1</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">PlainPerson</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Jane&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#111">50</span> <span style="color:#f92672">==</span> <span style="color:#111">p1</span><span style="color:#f92672">.</span><span style="color:#75af00">getFashion</span><span style="color:#f92672">());</span>
+        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#111">90</span> <span style="color:#f92672">==</span> <span style="color:#111">p1</span><span style="color:#f92672">.</span><span style="color:#75af00">getWarmth</span><span style="color:#f92672">());</span>
+        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Jane&#34;</span><span style="color:#f92672">.</span><span style="color:#75af00">equals</span><span style="color:#f92672">(</span><span style="color:#111">p1</span><span style="color:#f92672">.</span><span style="color:#75af00">getName</span><span style="color:#f92672">()));</span>
+
+        <span style="color:#111">Person</span> <span style="color:#111">p2</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">BigFashionPerson</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sanjana&#34;</span><span style="color:#f92672">,</span> <span style="color:#111">w</span><span style="color:#f92672">);</span>
+        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sanjana&#34;</span><span style="color:#f92672">.</span><span style="color:#75af00">equals</span><span style="color:#f92672">(</span><span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getName</span><span style="color:#f92672">()));</span>
+        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#111">20</span><span style="color:#f92672">+</span><span style="color:#111">25</span><span style="color:#f92672">+</span><span style="color:#111">95</span> <span style="color:#f92672">==</span> <span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getWarmth</span><span style="color:#f92672">());</span>
+        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#111">40</span> <span style="color:#f92672">==</span> <span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getFashion</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
 
     
     
