@@ -249,7 +249,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " Recent   11. AQuiz IAnswers modified Fri 02-22  11. Treasure Hunt modified Thu 02-21  11. Instanceof modified Thu 02-21  11. Inheritance 2 modified …"
+    "content": " Recent   11 Quiz B modified Mon 02-25  11. AQuiz IAnswers modified Fri 02-22  11. Treasure Hunt modified Thu 02-21  11. Instanceof modified Thu 02-21 …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -1540,6 +1540,13 @@
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch11/11-quiz-b/",
+    "title": "11 Quiz B",
+    "tags": [],
+    "description": "",
+    "content": " Clothes interface has int fashion() and int warmth().\n HeadCovering implements the Clothes interface. Its constructor sets fashion and warmth. …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/11-answers-aquiz/",
     "title": "11. AQuiz IAnswers",
     "tags": [],
@@ -2027,7 +2034,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11. AQuiz IAnswers modified Fri 02-22  11. …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11 Quiz B modified Mon 02-25  11. AQuiz IAnswers …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -2163,14 +2170,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",

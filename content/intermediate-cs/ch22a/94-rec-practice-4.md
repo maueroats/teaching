@@ -27,7 +27,8 @@ with 1.
 
         (check-expect (sum5 3) (+ (* 1 1 1 1 1) (* 2 2 2 2 2) (* 3 3 3 3 3)))
         
-3. `double-middle`: string -> string. Double every letter between j and q (inclusive).
+3. `double-middle`: string -> string. Double every letter between j
+   and q in the alphabet (inclusive).
 
         (check-expect (double-middle "jog snake") "jjoog snnakke")
         

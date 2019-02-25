@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-25T08:56:25 CST">
-<title>1. Introduction :: WY Computer Science</title>
+<meta name="revised" content="2019-02-25T08:56:28 CST">
+<title>11 Quiz B :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch01/">
+  <body data-url="/ap-cs/jm/ch11/11-quiz-b/">
     
       
 
@@ -66,10 +66,11 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -468,10 +469,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/">Java Methods</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/">Java Methods</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/jm/ch01/" class="dd-item
@@ -516,10 +518,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/ap-cs/jm/ch11/" class="dd-item haschildren
+    <li data-nav-id="/ap-cs/jm/ch11/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/ap-cs/jm/ch11/">11. Classes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/ap-cs/jm/ch11/">11. Classes</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/jm/ch11/animal/" class="dd-item">
@@ -564,7 +567,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/jm/ch11/11-quiz-b/" class="dd-item">
+      <li data-nav-id="/ap-cs/jm/ch11/11-quiz-b/" class="dd-item active">
         <div>
           <a href="/ap-cs/jm/ch11/11-quiz-b/">
             11 Quiz B
@@ -734,18 +737,16 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/intermediate-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/">Intermediate CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/">Intermediate CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/intermediate-cs/ch01/" class="dd-item parent active haschildren
+    <li data-nav-id="/intermediate-cs/ch01/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch01/">1. Introduction</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch01/">1. Introduction</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/intermediate-cs/ch01/ch01b-review/" class="dd-item">
@@ -2172,7 +2173,17 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > 1. Introduction
+
+
+
+
+
+
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/jm/'>Java Methods</a> > <a href='/ap-cs/jm/ch11/'>11. Classes</a> > 11 Quiz B
+
+ 
+
+ 
 
  
 
@@ -2195,7 +2206,7 @@
 
 <div id="body-inner">
   
-    <h1>1. Introduction</h1>
+    <h1>11 Quiz B</h1>
   
 
 
@@ -2203,26 +2214,30 @@
     
     
     
+    <ul>
+<li><p><code>Clothes</code> interface has <code>int fashion()</code> and <code>int warmth()</code>.</p></li>
 
-<p>Learn the essentials of image manipulation: rotating, flipping, and combining images.</p>
+<li><p><code>HeadCovering</code> implements the <code>Clothes</code> interface. Its constructor
+sets fashion and warmth.</p></li>
 
-<!--This should be first in the list!! Need to solve that problem.-->
+<li><p><code>WoolClothes</code> takes in a <code>Clothes</code> class in its constructor. It adds 5 to
+the warmth provided by the Clothes when they are made of wool.</p></li>
 
+<li><p><code>Person</code> is an abstract class with a <code>String name</code> field and a
+<code>String getName()</code> function, as well as abstract methods <code>int
+getWarmth()</code> and <code>int getFashion()</code>. Constructor sets the name.</p></li>
 
+<li><p><code>PlainPerson</code> is a subclass of <code>Person</code> with a warmth of 90 and a
+fashion of 50, always.</p></li>
 
-<ul class="children children-li">
+<li><p><code>BigFashionPerson</code> is a subclass of <code>Person</code> that has an
+<code>ArrayList&lt;Clothes&gt;</code>.</p>
 
-<span><li>
-		<a href="/intermediate-cs/ch01/ch01b-review/" >HW 01 B</a></li>
-</span>
-
-<span><li>
-		<a href="/intermediate-cs/ch01/ch01c/" >HW 01 C</a></li>
-</span>
-
-<span><li>
-		<a href="/intermediate-cs/ch01/ch01quiza/" >Ch01.QuizA</a></li>
-</span>
+<ul>
+<li>Constructor takes in a name and an arraylist of clothes.</li>
+<li>Their warmth is the sum of the warmth of their clothes.</li>
+<li>Their fashion is the <em>minimum</em> of the fashion of their clothes.</li>
+</ul></li>
 </ul>
 
 
@@ -2235,8 +2250,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/" title="Intermediate CS"> <i class="fa fa-chevron-left"></i><label>Intermediate CS</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch01/ch01b-review/" title="HW 01 B" style="margin-right: 0px;"><label>HW 01 B</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/ap-cs/jm/ch11/interfaces/" title="Interfaces"> <i class="fa fa-chevron-left"></i><label>Interfaces</label></a>
+    <a class="nav nav-next" href="/ap-cs/jm/ch11/11-answers-aquiz/" title="11. AQuiz IAnswers" style="margin-right: 0px;"><label>11. AQuiz IAnswers</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
