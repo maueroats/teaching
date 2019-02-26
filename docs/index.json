@@ -91,6 +91,13 @@
     "content": " Homework  Chapter 3 Section 1 Worksheet A. (October 10-11, 2018) Solutions to A discussed in class. Remainder became worksheet BC. Chapter 3 Section …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch14/comparable-intro/",
+    "title": "14. Comparable Intro",
+    "tags": [],
+    "description": "",
+    "content": "A class implements the Comparable interface when there is a way to decide whether one object of the class is greater than another. The compareTo …"
+},
+{
     "uri": "https://wy-cs.site/machine-learning/isl-ch5/resampling/",
     "title": "5. Resampling",
     "tags": [],
@@ -249,7 +256,7 @@
     "title": "AP CS",
     "tags": [],
     "description": "",
-    "content": " Recent   11. Quiz B modified Mon 02-25  11. AQuiz IAnswers modified Fri 02-22  11. Treasure Hunt modified Thu 02-21  11. Instanceof modified Thu …"
+    "content": " Recent   14 .Comparable Bug modified Tue 02-26  14. Comparable Clock modified Tue 02-26  14. Comparable Intro modified Tue 02-26  14. Sorting …"
 },
 {
     "uri": "https://wy-cs.site/machine-learning/daily/2018-09-05/",
@@ -313,6 +320,13 @@
     "tags": [],
     "description": "Planning and testing, not writing functions.",
     "content": " Planning and Testing Write every part of the design process except the function. Do write tests!\n count-factors: take a number N and find out how …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch14/comparable-clock/",
+    "title": "14. Comparable Clock",
+    "tags": [],
+    "description": "Example implementing Comparable for a clock class with hours and minutes.",
+    "content": " A Clock class has hours and minutes, two times are compared by first comparing the hours. If the hours are the same, then compare the minutes. Write …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/animal/",
@@ -488,6 +502,13 @@
     "tags": [],
     "description": "",
     "content": " Computer Science Syllabus Overview The most important information (contact information, grading scale) comes first. Anything you need that you do not …"
+},
+{
+    "uri": "https://wy-cs.site/ap-cs/jm/ch14/comparable-bug/",
+    "title": "14 .Comparable Bug",
+    "tags": [],
+    "description": "",
+    "content": "A Bug can go one of four directions: \u0026amp;ldquo;North\u0026amp;rdquo;, \u0026amp;ldquo;South\u0026amp;rdquo;, \u0026amp;ldquo;East\u0026amp;rdquo;, and \u0026amp;ldquo;West\u0026amp;rdquo;. A bug also has a speed, …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/candy/",
@@ -1442,6 +1463,13 @@
     "content": " The quick reference guide is on page 208 of the PDF.\nSummary  Functions end in ? if (and only if) they return a boolean value for their answer. …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch14/",
+    "title": "14. Sorting",
+    "tags": [],
+    "description": "",
+    "content": ""
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch15/",
     "title": "15. Conditionals",
     "tags": [],
@@ -2041,7 +2069,7 @@
     "title": "Mauer-Oats Classes",
     "tags": [],
     "description": "",
-    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   11. Quiz B modified Mon 02-25  11. AQuiz IAnswers …"
+    "content": " Classes  AP CS Intermediate CS Exploring CS Machine Learning  AP Computer Science Recent Changes   14 .Comparable Bug modified Tue 02-26  14. …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/haskell/ch01/ch01-reading-guide/",
@@ -2177,14 +2205,14 @@
     "content": " Chapter4-Section6-Lab  /*! * * Twitter Bootstrap * */ /*! * Bootstrap v3.3.7 (http://getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed …"
 },
 {
-    "uri": "https://wy-cs.site/categories/ap-cs/",
+    "uri": "https://wy-cs.site/tags/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
     "content": ""
 },
 {
-    "uri": "https://wy-cs.site/tags/ap-cs/",
+    "uri": "https://wy-cs.site/categories/ap-cs/",
     "title": "Ap Cs",
     "tags": [],
     "description": "",
