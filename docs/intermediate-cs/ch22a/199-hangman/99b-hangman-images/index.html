@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-26T11:25:24 CST">
-<title>22a. Hangman Key Handler :: WY Computer Science</title>
+<meta name="revised" content="2019-02-26T17:25:39 CST">
+<title>22a. Hangman Images :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/">
+  <body data-url="/intermediate-cs/ch22a/199-hangman/99b-hangman-images/">
     
       
 
@@ -1574,44 +1574,51 @@
           </a>
         </div>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/99-hangman/" class="dd-item parent haschildren
+      <li data-nav-id="/intermediate-cs/ch22a/96-rec-practice-5/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22a/96-rec-practice-5/">
+            22a. Recursion Practice 5
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/intermediate-cs/ch22a/199-hangman/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/99-hangman/">22a. Hangman Project</a>
+      <a href="/intermediate-cs/ch22a/199-hangman/">22a. Hangman Project</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99a-hangman-outline/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99a-hangman-outline/">
             22a. Hangman Outline
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99b-hangman-images/" class="dd-item active">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99b-hangman-images/">
             22a. Hangman Images
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99c-hangman-keyhandler/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99c-hangman-keyhandler/">
             22a. Hangman Key Handler
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99d-hangman-drawhandler/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99d-hangman-drawhandler/">
             22a. Hangman DH Warmup
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99e-hangman-drawhandler-2/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99e-hangman-drawhandler-2/">
             22a. Hangman Draw Handler
           </a>
         </div>
@@ -2215,7 +2222,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > <a href='/intermediate-cs/ch22a/99-hangman/'>22a. Hangman Project</a> > 22a. Hangman Key Handler
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > <a href='/intermediate-cs/ch22a/199-hangman/'>22a. Hangman Project</a> > 22a. Hangman Images
 
  
 
@@ -2232,7 +2239,16 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#image-sequence">Image sequence</a></li>
+<li><a href="#make-a-racket-function">Make a Racket function</a></li>
+<li><a href="#why">Why?</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2242,7 +2258,7 @@
 
 <div id="body-inner">
   
-    <h1>22a. Hangman Key Handler</h1>
+    <h1>22a. Hangman Images</h1>
   
 
 
@@ -2250,25 +2266,47 @@
     
     
     
-    <p>The key handler needs to change the model depending on what key was
-typed.</p>
+    
+
+<p>Goal for the day: produce a sequence of images to use for &ldquo;hangman&rdquo; and load it into Racket.</p>
+
+<h2 id="image-sequence">Image sequence</h2>
+
+<p>Draw a sequence of images <code>hang-0.png</code>, <code>hang-1.png</code>, etc., with the appropriate number of parts of the person filled in. Use &ldquo;File -&gt; Export as&hellip;&rdquo; to save each file with a different name.</p>
+
+<p>Tools:</p>
+
+<ul>
+<li>Microsoft Paint on Windows</li>
+<li><a href="https://paintbrush.sourceforge.io/">Paintbrush</a> (<a href="https://sourceforge.net/projects/paintbrush/files/latest/download?source=files">download</a>) on Macintosh. You will need to hold down Control when you click on the application to allow it to open for the first time.</li>
+<li><a href="https://www.gimp.org/">Gimp</a> on Linux.</li>
+</ul>
+
+<h2 id="make-a-racket-function">Make a Racket function</h2>
 
 <ol>
-<li><p>Create an example model for some state in the game. You could use
-one of your examples from the initial planning.</p></li>
-
-<li><p>Write a check-expect that demonstrates what should happen when the
-person hits a key which is in the word.</p></li>
-
-<li><p>Write a check-expect that demonstrates what should happen when the
-person hits a key which is not in the word.</p></li>
-
-<li><p><strong>Seriously!!</strong> Write check-expects. See <a href="hangman-key-testing.rkt">my example checks for the key handler</a>.</p></li>
-
-<li><p>Recommendation: Write the helper function <code>(string-contains-letter? str letter)</code> that determines if a letter is in the word.</p></li>
-
-<li><p>Write the key handler. Remember to use <code>define/contract</code>.</p></li>
+<li>Load images into Racket.</li>
+<li>Write a function that takes in the number of mistakes and returns the correct image of the gallows.</li>
 </ol>
+
+<p>The best way to load an image from a file is to use <code>bitmap/file</code>.</p>
+
+<p>Examples:</p>
+
+<ul>
+<li><code>(bitmap/file &quot;hang-0.png&quot;)</code></li>
+<li><code>(bitmap/file &quot;pics/hang-1.png&quot;)</code></li>
+</ul>
+
+<div class="notices note" ><p>For the simplest loading, save the Racket file in the same folder as your images. &ldquo;Untitled&rdquo; programs will not find your images - save!</p>
+</div>
+
+
+<h2 id="why">Why?</h2>
+
+<p>The only cases of file corruption I have seen involve large images
+being pasted into DrRacket files. Keeping the images in separate files
+prevents that problem.</p>
 
 
     
@@ -2280,8 +2318,8 @@ person hits a key which is not in the word.</p></li>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/" title="22a. Hangman Images"> <i class="fa fa-chevron-left"></i><label>22a. Hangman Images</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/" title="22a. Hangman DH Warmup" style="margin-right: 0px;"><label>22a. Hangman DH Warmup</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/199-hangman/99a-hangman-outline/" title="22a. Hangman Outline"> <i class="fa fa-chevron-left"></i><label>22a. Hangman Outline</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22a/199-hangman/99c-hangman-keyhandler/" title="22a. Hangman Key Handler" style="margin-right: 0px;"><label>22a. Hangman Key Handler</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

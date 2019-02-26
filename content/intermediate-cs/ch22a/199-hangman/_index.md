@@ -1,7 +1,7 @@
 ---
 title: "22a. Hangman Project"
 date: 2018-03-13T14:34:10-05:00
-weight: 99
+weight: 199
 draft: false
 #type: slide
 #theme: white
@@ -14,10 +14,10 @@ online](http://www.playhangman.com), but do not play too long - just learn the r
 
 ## Check in
 
-* 2018-03-15: Illustrations and model.
-* 2018-03-16: Key handler and logic helper function: `(string-contains-letter? str letter)`.
-* 2018-03-17 (Monday): Draw handler and `define/contract`.
-* 2018-03-18 (Tuesday): Completed project.
+* Illustrations and model.
+* Key handler and logic helper function: `(string-contains-letter? str letter)`.
+* Draw handler and `define/contract` (if discussed in class).
+* Completed project.
 
 ## Steps
 

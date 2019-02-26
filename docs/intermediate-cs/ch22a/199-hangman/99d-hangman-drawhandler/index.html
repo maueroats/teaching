@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-26T11:25:24 CST">
-<title>22a. Hangman Draw Handler :: WY Computer Science</title>
+<meta name="revised" content="2019-02-26T17:25:39 CST">
+<title>22a. Hangman DH Warmup :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/">
+  <body data-url="/intermediate-cs/ch22a/199-hangman/99d-hangman-drawhandler/">
     
       
 
@@ -1574,44 +1574,51 @@
           </a>
         </div>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/99-hangman/" class="dd-item parent haschildren
+      <li data-nav-id="/intermediate-cs/ch22a/96-rec-practice-5/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/ch22a/96-rec-practice-5/">
+            22a. Recursion Practice 5
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/intermediate-cs/ch22a/199-hangman/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/99-hangman/">22a. Hangman Project</a>
+      <a href="/intermediate-cs/ch22a/199-hangman/">22a. Hangman Project</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99a-hangman-outline/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99a-hangman-outline/">
             22a. Hangman Outline
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99b-hangman-images/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99b-hangman-images/">
             22a. Hangman Images
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99c-hangman-keyhandler/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99c-hangman-keyhandler/">
             22a. Hangman Key Handler
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99d-hangman-drawhandler/" class="dd-item active">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99d-hangman-drawhandler/">
             22a. Hangman DH Warmup
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99e-hangman-drawhandler-2/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99e-hangman-drawhandler-2/">
             22a. Hangman Draw Handler
           </a>
         </div>
@@ -2215,7 +2222,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > <a href='/intermediate-cs/ch22a/99-hangman/'>22a. Hangman Project</a> > 22a. Hangman Draw Handler
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > <a href='/intermediate-cs/ch22a/199-hangman/'>22a. Hangman Project</a> > 22a. Hangman DH Warmup
 
  
 
@@ -2236,7 +2243,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#advice">Advice</a></li>
+<li><a href="#underscore-warmup-i-omit">Underscore Warmup I: omit</a></li>
+<li><a href="#underscore-warmup-ii-wipeout">Underscore Warmup II: wipeout</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2249,7 +2257,7 @@
 
 <div id="body-inner">
   
-    <h1>22a. Hangman Draw Handler</h1>
+    <h1>22a. Hangman DH Warmup</h1>
   
 
 
@@ -2259,37 +2267,39 @@
     
     
 
-<p>Draw the whole scene by using helper functions to draw the different
-parts. At first you can just put all of the images <code>above</code> each other;
-later you can change the placement so it looks the way you prefer.</p>
+<p>The key step is to draw the word with underscores for the letters missed.</p>
+
+<p>This page will not include any specific advice on how to draw the word
+with underscores for the letters that are not guessed. The <code>wipeout</code>
+function below should provide you will all of the skills you need to
+do it, though.</p>
+
+<h2 id="underscore-warmup-i-omit">Underscore Warmup I: omit</h2>
+
+<p>The <code>omit</code> function takes in a word and a letter and returns the same word with every occurence of the letter omitted (left out).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">omit: string(word) string(letter) -&gt; string
+(check-expect (omit &#34;word&#34; &#34;w&#34;) &#34;ord&#34;)
+(check-expect (omit &#34;hangman&#34; &#34;a&#34;) &#34;hngmn&#34;)
+(check-expect (omit &#34;nothing&#34; &#34;z&#34;) &#34;nothing&#34;)</pre></div>
+<p>Follow the design process to write the <code>omit</code> function.</p>
 
 <ol>
-<li>Draw the gallows based on how many wrong answers.</li>
-<li>Draw the mistaken letters.</li>
-<li>Draw the word with underscores for letters that are not guessed.</li>
+<li>Simple examples that build up to a three letter word, showing how a letter can be omitted zero, one, or two times.</li>
+<li>Write the function: handle the empty word</li>
+<li>Write the function: handle one letter word</li>
+<li>Write the function: handler longer words</li>
 </ol>
 
-<p>The key step is to draw the word with underscores for the letters missed.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">underscorizer: string(word) string(letters-guessed) -&gt; string
-(check-expect (underscorizer &#34;wow&#34; &#34;w&#34;) &#34;w_w&#34;)
-(check-expect (underscorizer &#34;wow&#34; &#34;ow&#34;) &#34;wow&#34;)</pre></div>
-<p>Of course you can take in the correct guesses instead of all guesses,
-or you can take in anything else from your model that makes sense.</p>
+<p>Run your checks after each step to make sure you stay on track.</p>
 
-<h2 id="advice">Advice</h2>
+<h2 id="underscore-warmup-ii-wipeout">Underscore Warmup II: wipeout</h2>
 
-<p>Decide on an approach:</p>
-
-<ul>
-<li>Examine word letter by letter?</li>
-<li>Examine letters guessed letter by letter?</li>
-</ul>
-
-<p>Write tests that build up to your solution in the way we have
-discussed and demonstrated in class.</p>
-
-<p>Many approaches work. If you have no preference, I recommend the first
-approach.</p>
+<p>The <code>wipeout</code> function takes in a word and a string of letters to
+remove. Every occurence of the letters should be removed from the word.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">wipeout: string(word) string(letters) -&gt; string
+(check-expect (wipeout &#34;Williams&#34; &#34;li&#34;) &#34;Wams&#34;)
+(check-expect (wipeout &#34;penguin&#34; &#34;dinosaur&#34;) &#34;peg&#34;)</pre></div>
+<p>Follow the design process and use the <code>omit</code> helper function!</p>
 
 
     
@@ -2301,8 +2311,8 @@ approach.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/" title="22a. Hangman DH Warmup"> <i class="fa fa-chevron-left"></i><label>22a. Hangman DH Warmup</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><label>Calendar</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/199-hangman/99c-hangman-keyhandler/" title="22a. Hangman Key Handler"> <i class="fa fa-chevron-left"></i><label>22a. Hangman Key Handler</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22a/199-hangman/99e-hangman-drawhandler-2/" title="22a. Hangman Draw Handler" style="margin-right: 0px;"><label>22a. Hangman Draw Handler</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

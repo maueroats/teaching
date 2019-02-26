@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-26T11:25:24 CST">
-<title>22a. Hangman Outline :: WY Computer Science</title>
+<meta name="revised" content="2019-02-26T17:25:38 CST">
+<title>22a. Recursion Practice 5 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/">
+  <body data-url="/intermediate-cs/ch22a/96-rec-practice-5/">
     
       
 
@@ -1574,44 +1574,50 @@
           </a>
         </div>
     </li>
-    <li data-nav-id="/intermediate-cs/ch22a/99-hangman/" class="dd-item parent haschildren
+      <li data-nav-id="/intermediate-cs/ch22a/96-rec-practice-5/" class="dd-item active">
+        <div>
+          <a href="/intermediate-cs/ch22a/96-rec-practice-5/">
+            22a. Recursion Practice 5
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/intermediate-cs/ch22a/199-hangman/" class="dd-item haschildren
         ">
       <div>
-      <a href="/intermediate-cs/ch22a/99-hangman/">22a. Hangman Project</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/intermediate-cs/ch22a/199-hangman/">22a. Hangman Project</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/" class="dd-item active">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99a-hangman-outline/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99a-hangman-outline/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99a-hangman-outline/">
             22a. Hangman Outline
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99b-hangman-images/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99b-hangman-images/">
             22a. Hangman Images
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99c-hangman-keyhandler/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99c-hangman-keyhandler/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99c-hangman-keyhandler/">
             22a. Hangman Key Handler
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99d-hangman-drawhandler/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99d-hangman-drawhandler/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99d-hangman-drawhandler/">
             22a. Hangman DH Warmup
           </a>
         </div>
     </li>
-      <li data-nav-id="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/" class="dd-item">
+      <li data-nav-id="/intermediate-cs/ch22a/199-hangman/99e-hangman-drawhandler-2/" class="dd-item">
         <div>
-          <a href="/intermediate-cs/ch22a/99-hangman/99e-hangman-drawhandler-2/">
+          <a href="/intermediate-cs/ch22a/199-hangman/99e-hangman-drawhandler-2/">
             22a. Hangman Draw Handler
           </a>
         </div>
@@ -2212,12 +2218,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > <a href='/intermediate-cs/ch22a/99-hangman/'>22a. Hangman Project</a> > 22a. Hangman Outline
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch22a/'>22a. Recursion</a> > 22a. Recursion Practice 5
 
  
 
@@ -2242,7 +2243,7 @@
 
 <div id="body-inner">
   
-    <h1>22a. Hangman Outline</h1>
+    <h1>22a. Recursion Practice 5</h1>
   
 
 
@@ -2250,33 +2251,36 @@
     
     
     
-    <p>Use <code>define/contract</code> for all of your functions. Write two check
-expects for every non-trivial function.</p>
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']]
+  }});
+</script>
+
+<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
 
 <ol>
-<li>Three illustrations of &ldquo;action&rdquo; that should occur in the game. Explain what they are.</li>
-<li>Model</li>
-<li>Top-down design.</li>
-<li>Image sequence and loading images into Racket.</li>
+<li><p>(<code>count-w</code>) Find how many &ldquo;w&rdquo; letters there are in a word.</p></li>
 
-<li><p>Key-handler</p>
+<li><p>(<code>p7</code>) Find the smallest power of 7 that is at least a given
+number (so give $k$ so that $7^k \ge num$).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (p7 1) 0)
+(check-expect (p7 7) 1)
+(check-expect (p7 8) 2)
+(check-expect (p7 49) 2)
+(check-expect (p7 50) 3)</pre></div></li>
 
-<ul>
-<li>Purpose</li>
-<li>Examples: at least two (which become tests)</li>
-<li>Write function.</li>
-</ul></li>
-
-<li><p>Draw-handler</p>
-
-<ul>
-<li>Purpose</li>
-<li>Illustrations on paper (two) - easier than making computer examples.</li>
-<li>Examples: at least two (which will become tests)</li>
-<li>Write function.</li>
-</ul></li>
-
-<li><p>Final screens: win and lose.</p></li>
+<li><p>(<code>eyeball</code>) Find how many pairs of consecutive zeros there are in a
+number. <code>eyeball: number -&gt; number</code>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (eyeball 1007008) 2)
+(check-expect (eyeball 30008) 3)
+(check-expect (eyeball 0) 0)
+(check-expect (eyeball 00) 0)</pre></div></li>
 </ol>
 
 
@@ -2289,8 +2293,8 @@ expects for every non-trivial function.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/ch22a/99-hangman/" title="22a. Hangman Project"> <i class="fa fa-chevron-left"></i><label>22a. Hangman Project</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch22a/99-hangman/99b-hangman-images/" title="22a. Hangman Images" style="margin-right: 0px;"><label>22a. Hangman Images</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/ch22a/95-rec-quiz-2/" title="22a. Recursion Quiz 2"> <i class="fa fa-chevron-left"></i><label>22a. Recursion Quiz 2</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/ch22a/199-hangman/" title="22a. Hangman Project" style="margin-right: 0px;"><label>22a. Hangman Project</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
