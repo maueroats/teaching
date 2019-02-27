@@ -175,6 +175,13 @@
     "content": " Contracts are the signatures of functions that we have been using. The vocabulary word changes to make it sound more legal. Contracts are actually …"
 },
 {
+    "uri": "https://wy-cs.site/ap-cs/jm/ch14/comparable-ex/",
+    "title": "14. Comparable Exercises",
+    "tags": [],
+    "description": "Exercises from 2018.",
+    "content": " Comparable means that two items in a class can be compared (less than, equal to, greater than). It is similar to the Ord typeclass in Haskell. …"
+},
+{
     "uri": "https://wy-cs.site/intermediate-cs/ch21/pv-tick-handler/math-soln-1/",
     "title": "Math Soln 1",
     "tags": [],
@@ -1573,6 +1580,13 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/scratch/variables-b-burning/",
+    "title": "Paper Burning",
+    "tags": [],
+    "description": "",
+    "content": "Sprites: main character, stove, water, paper.\n Touch stove while burning\n main character changes to burning costume fire variable set to 1   Touch …"
 },
 {
     "uri": "https://wy-cs.site/ecs/scratch/variables-a-pancake/",

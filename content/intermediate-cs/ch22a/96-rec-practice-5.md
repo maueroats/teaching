@@ -25,7 +25,7 @@ description: "count-w, powers of 7, double zero"
    number. `eyeball: number -> number`. 
    
         (check-expect (eyeball 1007008) 2)
-        (check-expect (eyeball 30008) 3)
+        (check-expect (eyeball 300008) 3)
         (check-expect (eyeball 0) 0)
         (check-expect (eyeball 00) 0)
 
