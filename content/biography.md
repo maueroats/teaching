@@ -4,7 +4,7 @@ date: 2017-09-10T16:59:58-05:00
 draft: false
 ---
 
-Dr. Mauer-Oats has been at Whitney Young for more than five years. He
+Dr. Mauer-Oats has been at Whitney Young for more than six years. He
 holds a Ph.D. in Mathematics from the [University of Illinois at
 Urbana-Champaign](http://www.math.uiuc.edu). 
 
@@ -15,7 +15,7 @@ Courses taught in 2018-2019:
 * [Machine Learning]({{< relref "machine-learning" >}})
 * [AP Computer Science]({{< relref "ap-cs" >}})
 * [Intermediate Computer Science]({{< relref "intermediate-cs" >}})
-* Exploring Computer Science
+* [Exploring Computer Science]({{< relref "ecs" >}})
 
 Courses taught in 2017-2018:
 
