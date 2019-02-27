@@ -34,3 +34,28 @@ description: "count-w, powers of 7, double zero"
     Explanations: the number 00 is really just 0, so there is only one
     zero. The number 30008 has two pairs of consecutive zeros: 3 **00**
     08 and 30 **00** 8.
+
+## More Practice
+
+4. (`no-z`) Remove all z's from a string. `no-z: string -> string`
+
+        (check-expect (no-z "whazzlez") "wale")
+
+5. (`cq`) Count how many times a given letter appears in a word.
+   `cq: string(letter) string(word) -> number`
+   One special case: when asked to count the number of "q" in a word,
+   only count "q" letters immediately followed by "u".
+   
+        (check-expect (cq "k" "kraken") 2)
+        (check-expect (cq "q" "queue q que") 2)
+
+6. (`pink`) Change every appearance of "pink" in the string to "blue".
+   Signature: `pink: string -> string`. 
+   
+        (check-expect (pink "pink pink") "blue blue")
+
+    Advanced: leave the first appearance alone.
+        
+        (check-expect (pink-advanced "pink pink pink") "pink blue blue")
+
+
