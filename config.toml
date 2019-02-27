@@ -9,6 +9,7 @@ pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 
 [params]
+disableSearch = "true"
 themeStyle = "original"
 github_base = "https://raw.githubusercontent.com/maueroats/teaching"
 github_glue = "/master/docs"
