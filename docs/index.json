@@ -1467,7 +1467,7 @@
     "title": "14. Sorting",
     "tags": [],
     "description": "",
-    "content": ""
+    "content": "  14. Comparable Intro A class implements the Comparable interface when there is a way to decide whether one object of the class is greater than …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch15/",
