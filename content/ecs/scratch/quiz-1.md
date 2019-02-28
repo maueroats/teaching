@@ -1,7 +1,7 @@
 ---
 title: "Quiz 1"
 date: 2019-02-10T20:40:12-06:00
-weight: 110
+weight: 210
 draft: true
 #type: slide
 #theme: white

@@ -1,7 +1,7 @@
 ---
 title: "Blueberry Pancakes"
 date: 2019-02-25T13:47:41-06:00
-#weight: 
+weight: 100
 draft: false
 #type: slide
 #theme: white

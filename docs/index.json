@@ -1372,6 +1372,20 @@
     "content": " MathJax.Hub.Config({ tex2jax: { inlineMath: [[\u0026#39;$\u0026#39;,\u0026#39;$\u0026#39;], [\u0026#39;\\\\(\u0026#39;,\u0026#39;\\\\)\u0026#39;]], displayMath: [[\u0026#39;$$\u0026#39;,\u0026#39;$$\u0026#39;], [\u0026#39;\\\\[\u0026#39;,\u0026#39;\\\\]\u0026#39;]] }});    (count-w) Find how many …"
 },
 {
+    "uri": "https://wy-cs.site/intermediate-cs/ch22a/97-rec-practice-6/",
+    "title": "22a. Recursion Practice 6",
+    "tags": [],
+    "description": "",
+    "content": " r-ss r-ss: string(word) -\u0026amp;gt; boolean.\nTrue if the word contains either \u0026amp;ldquo;r\u0026amp;rdquo; or \u0026amp;ldquo;ss\u0026amp;rdquo;.\n(check-expect (r-ss \u0026amp;#34;car\u0026amp;#34;) true) …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/scratch/variables-a-pancake/",
+    "title": "Blueberry Pancakes",
+    "tags": [],
+    "description": "Make plain pancakes or blueberry pancakes. Track how many you eat.",
+    "content": " There is a container of pancake batter, a bowl of blueberries, and a stove.\n Touching batter or blueberries picks them up. Touching the stove tries …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/abstract-classes/",
     "title": "Abstract Classes",
     "tags": [],
@@ -1407,6 +1421,13 @@
     "content": " These resources may be useful throughout the year.\n Syllabus for all classes  Course-specific information  AP Computer Science  Syllabus extra info …"
 },
 {
+    "uri": "https://wy-cs.site/ecs/scratch/variables-b-burning/",
+    "title": "Paper Burning",
+    "tags": [],
+    "description": "",
+    "content": "Sprites: main character, stove, water, paper.\n Touch stove while burning\n main character changes to burning costume fire variable set to 1   Touch …"
+},
+{
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/interfaces/",
     "title": "Interfaces",
     "tags": [],
@@ -1428,11 +1449,11 @@
     "content": " We practice the basics of structures by creating an animation where you can direct a ball to move around the screen.\n Use WASD keys to control the …"
 },
 {
-    "uri": "https://wy-cs.site/ecs/scratch/corrections-quiz-1/",
-    "title": "Quiz 1 Corrections",
+    "uri": "https://wy-cs.site/ecs/scratch/adventure-game/",
+    "title": "Adventure Game",
     "tags": [],
-    "description": "Get half credit back by doing corrections.",
-    "content": " Get half of the points you lost back by doing corrections. No limit, you can get more points even if you have an A already.\nGeneral Instructions …"
+    "description": "",
+    "content": "Characters: dragon, treasure, sword, armor, door, key.\n The dragon has an 8\u0026amp;frasl;10 chance of being awake. Dragon breathes fire on you when you get …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/ch21/speed-typer/",
@@ -1503,6 +1524,13 @@
     "tags": [],
     "description": "More than one piece of information in one variable, generalizing posn and color.",
     "content": " Chapter 21 Reading Guide.  All worksheets: make sure to test your code in DrRacket.\n  21. PV Intro Slides with introduction to position-velocity …"
+},
+{
+    "uri": "https://wy-cs.site/ecs/scratch/corrections-quiz-1/",
+    "title": "Quiz 1 Corrections",
+    "tags": [],
+    "description": "Get half credit back by doing corrections.",
+    "content": " Get half of the points you lost back by doing corrections. No limit, you can get more points even if you have an A already.\nGeneral Instructions …"
 },
 {
     "uri": "https://wy-cs.site/intermediate-cs/sem1review/",
@@ -1580,20 +1608,6 @@
     "tags": [],
     "description": "Brief descriptions of advanced topics that have come up in various individual projects.",
     "content": "This page contains information about advanced topics that I have been asked.\n Strings for Experts Strings: randomizing and creating by formula. …"
-},
-{
-    "uri": "https://wy-cs.site/ecs/scratch/variables-b-burning/",
-    "title": "Paper Burning",
-    "tags": [],
-    "description": "",
-    "content": "Sprites: main character, stove, water, paper.\n Touch stove while burning\n main character changes to burning costume fire variable set to 1   Touch …"
-},
-{
-    "uri": "https://wy-cs.site/ecs/scratch/variables-a-pancake/",
-    "title": "Blueberry Pancakes",
-    "tags": [],
-    "description": "Make plain pancakes or blueberry pancakes. Track how many you eat.",
-    "content": " There is a container of pancake batter, a bowl of blueberries, and a stove.\n Touching batter or blueberries picks them up. Touching the stove tries …"
 },
 {
     "uri": "https://wy-cs.site/ap-cs/jm/ch11/11-quiz-b/",

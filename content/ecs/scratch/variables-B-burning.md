@@ -1,7 +1,7 @@
 ---
 title: "Paper Burning"
 date: 2019-02-27T10:36:46-06:00
-#weight: 
+weight: 110
 draft: false
 #type: slide
 #theme: white

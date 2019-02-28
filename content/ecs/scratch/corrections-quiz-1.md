@@ -1,7 +1,7 @@
 ---
 title: "Quiz 1 Corrections"
 date: 2019-02-15T10:58:52-06:00
-weight: 111
+weight: 211
 draft: false
 #type: slide
 #theme: white
