@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-02-27T20:53:14 CST">
+<meta name="revised" content="2019-02-27T22:45:10 CST">
 <title>11. Quiz B :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2272,7 +2272,7 @@
 <li><p><code>Clothes</code> interface has <code>int fashion()</code> and <code>int warmth()</code>.</p></li>
 
 <li><p><code>HeadCovering</code> is a class that implements the <code>Clothes</code> interface. Its constructor
-sets fashion and warmth.</p></li>
+sets fashion and warmth, in that order.</p></li>
 
 <li><p><code>WoolClothes</code> is a class that implements the <code>Clothes</code> interface. It
 takes in a <code>Clothes</code> object in its constructor. It adds 5 to
@@ -2297,35 +2297,31 @@ fashion of 50, always.</p></li>
 
 <h2 id="example">Example</h2>
 
-<p>Use the <a href="ReplItTest.java">repl.it testing code starter</a> to get the
-test going on Repl.it.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">TestClothes</span> <span style="color:#f92672">{</span>
-    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">testclothes</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<ul>
+<li>Full <a href="TestClothes.java">TestClothes</a> code.</li>
+<li>Add the <a href="ReplItTest.java">repl.it testing code starter</a> to get the
+test going on Repl.it.</li>
+</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// copy and paste? define public static void aassert(bool b)...true=ok, false=fail
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span><span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
         <span style="color:#111">Clothes</span> <span style="color:#111">hat</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HeadCovering</span><span style="color:#f92672">(</span><span style="color:#111">20</span><span style="color:#f92672">,</span> <span style="color:#111">105</span><span style="color:#f92672">);</span>
         <span style="color:#111">Clothes</span> <span style="color:#111">underArmor</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">WoolClothes</span> <span style="color:#f92672">(</span><span style="color:#111">hat</span><span style="color:#f92672">);</span>
-        <span style="color:#111">Clothes</span> <span style="color:#111">denim</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HeadCovering</span><span style="color:#f92672">(</span><span style="color:#111">95</span><span style="color:#f92672">,</span><span style="color:#111">40</span><span style="color:#f92672">);</span><span style="color:#75715e">// just messing around
-</span><span style="color:#75715e"></span>        <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;</span><span style="color:#111">Clothes</span><span style="color:#f92672">&gt;</span> <span style="color:#111">w</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span>
+        <span style="color:#111">Clothes</span> <span style="color:#111">denim</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HeadCovering</span><span style="color:#f92672">(</span><span style="color:#111">95</span><span style="color:#f92672">,</span><span style="color:#111">40</span><span style="color:#f92672">);</span>
+        <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;</span><span style="color:#111">Clothes</span><span style="color:#f92672">&gt;</span> <span style="color:#111">w</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span>
         <span style="color:#111">w</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">hat</span><span style="color:#f92672">);</span>
         <span style="color:#111">w</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">underArmor</span><span style="color:#f92672">);</span>
         <span style="color:#111">w</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">denim</span><span style="color:#f92672">);</span>
 
         <span style="color:#111">Person</span> <span style="color:#111">p1</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">PlainPerson</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Jane&#34;</span><span style="color:#f92672">);</span>
-        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#111">50</span> <span style="color:#f92672">==</span> <span style="color:#111">p1</span><span style="color:#f92672">.</span><span style="color:#75af00">getFashion</span><span style="color:#f92672">());</span>
-        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#111">90</span> <span style="color:#f92672">==</span> <span style="color:#111">p1</span><span style="color:#f92672">.</span><span style="color:#75af00">getWarmth</span><span style="color:#f92672">());</span>
-        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Jane&#34;</span><span style="color:#f92672">.</span><span style="color:#75af00">equals</span><span style="color:#f92672">(</span><span style="color:#111">p1</span><span style="color:#f92672">.</span><span style="color:#75af00">getName</span><span style="color:#f92672">()));</span>
+        <span style="color:#111">aassert</span><span style="color:#f92672">(</span><span style="color:#111">50</span> <span style="color:#f92672">==</span> <span style="color:#111">p1</span><span style="color:#f92672">.</span><span style="color:#75af00">getFashion</span><span style="color:#f92672">());</span>
+        <span style="color:#111">aassert</span><span style="color:#f92672">(</span><span style="color:#111">90</span> <span style="color:#f92672">==</span> <span style="color:#111">p1</span><span style="color:#f92672">.</span><span style="color:#75af00">getWarmth</span><span style="color:#f92672">());</span>
+        <span style="color:#111">aassert</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Jane&#34;</span><span style="color:#f92672">.</span><span style="color:#75af00">equals</span><span style="color:#f92672">(</span><span style="color:#111">p1</span><span style="color:#f92672">.</span><span style="color:#75af00">getName</span><span style="color:#f92672">()));</span>
 
         <span style="color:#111">Person</span> <span style="color:#111">p2</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">BigFashionPerson</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sanjana&#34;</span><span style="color:#f92672">,</span> <span style="color:#111">w</span><span style="color:#f92672">);</span>
-        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sanjana&#34;</span><span style="color:#f92672">.</span><span style="color:#75af00">equals</span><span style="color:#f92672">(</span><span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getName</span><span style="color:#f92672">()));</span>
-        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#111">20</span><span style="color:#f92672">+</span><span style="color:#111">25</span><span style="color:#f92672">+</span><span style="color:#111">95</span> <span style="color:#f92672">==</span> <span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getWarmth</span><span style="color:#f92672">());</span>
-        <span style="color:#00a8c8">assert</span><span style="color:#f92672">(</span><span style="color:#111">40</span> <span style="color:#f92672">==</span> <span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getFashion</span><span style="color:#f92672">());</span>
-        <span style="color:#75715e">// if you make it this far code is right
-</span><span style="color:#75715e"></span>        <span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">out</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Fashion check: OK&#34;</span><span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-    <span style="color:#75715e">// call it from your main
-</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span><span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#f92672">(</span><span style="color:#00a8c8">new</span> <span style="color:#111">TestClothes</span><span style="color:#f92672">()).</span><span style="color:#75af00">testclothes</span><span style="color:#f92672">();</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
+        <span style="color:#111">aassert</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;Sanjana&#34;</span><span style="color:#f92672">.</span><span style="color:#75af00">equals</span><span style="color:#f92672">(</span><span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getName</span><span style="color:#f92672">()));</span>
+        <span style="color:#111">aassert</span><span style="color:#f92672">(</span><span style="color:#111">20</span><span style="color:#f92672">+</span><span style="color:#111">25</span><span style="color:#f92672">+</span><span style="color:#111">95</span> <span style="color:#f92672">==</span> <span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getWarmth</span><span style="color:#f92672">());</span>
+        <span style="color:#111">aassert</span><span style="color:#f92672">(</span><span style="color:#111">40</span> <span style="color:#f92672">==</span> <span style="color:#111">p2</span><span style="color:#f92672">.</span><span style="color:#75af00">getFashion</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span></code></pre></div>
 <h2 id="pedantic">Pedantic</h2>
 
 <p>An object that implements the <code>Clothes</code> interface has an integer value

@@ -1,16 +1,5 @@
-
+import java.util.*;
 public class TestClothes {
-
-    // on repl.it the assert() method does nothing
-    public static void aassert(bool b)
-    {
-	if (b) {
-	    System.out.println("OK");
-	} else {
-	    System.out.println("BAD");
-	}
-    }
-
     public static void main(String[] args) {
         Clothes hat = new HeadCovering(20, 105);
         Clothes underArmor = new WoolClothes (hat);
@@ -29,5 +18,14 @@ public class TestClothes {
         aassert("Sanjana".equals(p2.getName()));
         aassert(20+25+95 == p2.getWarmth());
         aassert(40 == p2.getFashion());
+    }
+    // on repl.it the assert() method does nothing
+    public static void aassert(bool b)
+    {
+	if (b) {
+	    System.out.println("OK");
+	} else {
+	    System.out.println("BAD");
+	}
     }
 }

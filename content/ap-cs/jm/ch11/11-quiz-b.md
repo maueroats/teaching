@@ -10,7 +10,7 @@ draft: false
 * `Clothes` interface has `int fashion()` and `int warmth()`.
 
 * `HeadCovering` is a class that implements the `Clothes` interface. Its constructor
-  sets fashion and warmth.
+  sets fashion and warmth, in that order.
 
 * `WoolClothes` is a class that implements the `Clothes` interface. It
   takes in a `Clothes` object in its constructor. It adds 5 to 
@@ -32,37 +32,31 @@ draft: false
 
 ## Example
 
-Use the [repl.it testing code starter](ReplItTest.java) to get the
+* Full [TestClothes](TestClothes.java) code.
+* Add the [repl.it testing code starter](ReplItTest.java) to get the
 test going on Repl.it.
 
 ```java
-public class TestClothes {
-    public void testclothes() {
+    // copy and paste? define public static void aassert(bool b)...true=ok, false=fail
+    public static void main(String[] args) {
         Clothes hat = new HeadCovering(20, 105);
         Clothes underArmor = new WoolClothes (hat);
-        Clothes denim = new HeadCovering(95,40);// just messing around
+        Clothes denim = new HeadCovering(95,40);
         ArrayList<Clothes> w = new ArrayList<>();
         w.add(hat);
         w.add(underArmor);
         w.add(denim);
 
         Person p1 = new PlainPerson("Jane");
-        assert(50 == p1.getFashion());
-        assert(90 == p1.getWarmth());
-        assert("Jane".equals(p1.getName()));
+        aassert(50 == p1.getFashion());
+        aassert(90 == p1.getWarmth());
+        aassert("Jane".equals(p1.getName()));
 
         Person p2 = new BigFashionPerson("Sanjana", w);
-        assert("Sanjana".equals(p2.getName()));
-        assert(20+25+95 == p2.getWarmth());
-        assert(40 == p2.getFashion());
-        // if you make it this far code is right
-        System.out.println("Fashion check: OK");
+        aassert("Sanjana".equals(p2.getName()));
+        aassert(20+25+95 == p2.getWarmth());
+        aassert(40 == p2.getFashion());
     }
-    // call it from your main
-    public static void main(String[] args) {
-        (new TestClothes()).testclothes();
-    }
-}
 ```
 
 ## Pedantic
