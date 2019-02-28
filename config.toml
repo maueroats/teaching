@@ -16,7 +16,8 @@ github_glue = "/master/docs"
 
 [outputs]
 # removed RSS from both of the following
-home = [ "HTML", "JSON"]
+# no JSON for home means no search functionality
+home = [ "HTML" ] 
 section = [ "HTML" ]
 
 [[menu.shortcuts]]
