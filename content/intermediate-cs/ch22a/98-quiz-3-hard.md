@@ -1,5 +1,5 @@
 ---
-title: "Hard Quiz"
+title: "Quiz 3 (Hard)"
 date: 2019-03-01T14:27:16-06:00
 weight: 98
 draft: false

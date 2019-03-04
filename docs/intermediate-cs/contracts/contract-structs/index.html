@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-04T08:26:52 CST">
+<meta name="revised" content="2019-03-04T14:33:35 CST">
 <title>Contract for Structs :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1592,7 +1592,7 @@
       <li data-nav-id="/intermediate-cs/ch22a/98-quiz-3-hard/" class="dd-item">
         <div>
           <a href="/intermediate-cs/ch22a/98-quiz-3-hard/">
-            Hard Quiz
+            Quiz 3 (Hard)
           </a>
         </div>
     </li>
@@ -2365,7 +2365,9 @@ part of the struct has the correct type.</p>
 
 <p>Here is an example of a game struct that has fields for: player-1
 posn, player-2 posn, player 1 score, and player 2 score. We write a
-function to use in our handlers that</p>
+function to use in our handlers that makes sure the fields that are
+supposed to be positions are posns and the fields that are supposed to
+be scores are numbers.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define-struct game (p1pos p2pos p1score p2score))
 
 (define (good-game? g)
@@ -2375,7 +2377,6 @@ function to use in our handlers that</p>
        (number? (game-p1score g))
        (number? (game-p2score g))))</pre></div>
 <p>When the model is a <code>game</code>, how would you write the contract for the mouse-handler?</p>
-
 
     
     
