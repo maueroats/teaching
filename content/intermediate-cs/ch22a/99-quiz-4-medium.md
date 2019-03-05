@@ -2,9 +2,10 @@
 title: "Quiz 4 (Medium)"
 date: 2019-03-04T07:34:29-06:00
 weight: 99
-draft: true
+draft: false
 #type: slide
 #theme: white
+description: "ssm, pairorder"
 ---
 
 1. `ssm: number(start) number(end) -> number`. Find the sum of all of
@@ -23,10 +24,15 @@ draft: true
 
 2. The `pairorder: string -> string` function takes a string and puts
    each adjacent pair of letters in alphabetical order, beginning at
-   the left.
+   the left and working to the right _one_ letter at a time. This
+   means that a "z" could potentially move several times in one call
+   to `pairorder`: "zba" when processing the first pair would produce
+   "bza" then when processing the second pair would produce "baz".
    
+        (check-expect (pairorder "zba" "zab")
         (check-expect (pairorder "ba") "ab")
         (check-expect (pairorder "cba") "bac")
+        (check-expect (pairorder "complex") "cmolepx")
 
         
    
