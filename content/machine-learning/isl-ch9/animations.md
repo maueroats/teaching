@@ -5,6 +5,7 @@ weight: 20
 draft: false
 #type: slide
 #theme: white
+description: "Some details about the Matplotlib animation code."
 ---
 
 Matplotlib animations using the Seaborn library to draw. 
@@ -22,12 +23,12 @@ which puts the pictures below the code cells that produce them.
 Put the following code in your initialization at the start of the
 notebook.
 
-	import matplotlib.pyplot as plt
-	import matplotlib.animation as animation
-	from matplotlib import rc
-	rc('animation', html='html5')
-	%matplotlib notebook
-	
+    import matplotlib.pyplot as plt
+    import matplotlib.animation as animation
+    from matplotlib import rc
+    rc('animation', html='html5')
+    %matplotlib notebook
+    
 
 ## Basic plots
 
@@ -36,10 +37,10 @@ and axis object using the `subplots()` command. If you want more than
 one set of axes in your figure, this is the place to do that (look it
 up). 
 
-	fig, ax = plt.subplots()
-	ax.set_xlim(-10,10)
-	ax.set_ylim(-10,10)
-	
+    fig, ax = plt.subplots()
+    ax.set_xlim(-10,10)
+    ax.set_ylim(-10,10)
+    
 ## Draw handler 
 
 The draw handler should take in a model and some other information,
@@ -49,9 +50,9 @@ is a list (well, really a tuple).
 
 Here is an example function that draws more and more blue dots on the screen.
 
-	def one_frame(n,xs,ys,ax):
-		ax = sns.scatterplot(xs[:n], ys[:n],color='blue',ax=ax)
-		return (ax,)
+    def one_frame(n,xs,ys,ax):
+        ax = sns.scatterplot(xs[:n], ys[:n],color='blue',ax=ax)
+        return (ax,)
 
 ## Animations
 

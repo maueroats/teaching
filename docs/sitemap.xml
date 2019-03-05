@@ -1647,10 +1647,6 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/machine-learning/isl-ch9/2019-03-05-matplotlib-example-ii/</loc>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/machine-learning/isl-ch4/chapter4-section6-lab/</loc>
   </url>
   
@@ -1718,6 +1714,10 @@
     <loc>https://wy-cs.site/categories/intermediate-cs/</loc>
     <lastmod>2017-09-10T01:23:58-05:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/machine-learning/isl-ch9/2019-03-05-matplotlib-example-ii/</loc>
   </url>
   
   <url>
