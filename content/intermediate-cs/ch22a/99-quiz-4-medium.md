@@ -14,7 +14,7 @@ description: "ssm, pairorder"
    squares like 49
    
         (check-within (ssm 21 27) 
-                      (+ (sqrt 21) (sqrt 23) (sqrt 25) (sqrt 27))
+                      (+ (sqrt 21) (sqrt 23) (sqrt 27))
                       0.01)
                       
         (check-within (ssm 7 12)
