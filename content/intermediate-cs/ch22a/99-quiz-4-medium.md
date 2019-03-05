@@ -14,7 +14,7 @@ description: "ssm, pairorder"
    squares like 49
    
         (check-within (ssm 21 27) 
-                      (+ (sqrt 21) (sqrt 23) (sqrt 27))
+                      (+ (sqrt 21) (sqrt 23) (sqrt 27)) ; skip 25
                       0.01)
                       
         (check-within (ssm 7 12)
@@ -29,7 +29,7 @@ description: "ssm, pairorder"
    to `pairorder`: "zba" when processing the first pair would produce
    "bza" then when processing the second pair would produce "baz".
    
-        (check-expect (pairorder "zba" "zab")
+        (check-expect (pairorder "zba" "baz")
         (check-expect (pairorder "ba") "ab")
         (check-expect (pairorder "cba") "bac")
         (check-expect (pairorder "complex") "cmolepx")

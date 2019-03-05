@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-05T08:05:36 CST">
+<meta name="revised" content="2019-03-05T08:20:02 CST">
 <title>Quiz 4 (Medium) :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2372,7 +2372,7 @@ the square roots of odd numbers between <code>start</code> and <code>end</code>
 (inclusive). Except skip taking the square roots of any perfect
 squares like 49</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-within (ssm 21 27) 
-              (+ (sqrt 21) (sqrt 23) (sqrt 27))
+              (+ (sqrt 21) (sqrt 23) (sqrt 27)) ; skip 25
               0.01)
 
 (check-within (ssm 7 12)
@@ -2385,7 +2385,7 @@ the left and working to the right <em>one</em> letter at a time. This
 means that a &ldquo;z&rdquo; could potentially move several times in one call
 to <code>pairorder</code>: &ldquo;zba&rdquo; when processing the first pair would produce
 &ldquo;bza&rdquo; then when processing the second pair would produce &ldquo;baz&rdquo;.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (pairorder &#34;zba&#34; &#34;zab&#34;)
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (pairorder &#34;zba&#34; &#34;baz&#34;)
 (check-expect (pairorder &#34;ba&#34;) &#34;ab&#34;)
 (check-expect (pairorder &#34;cba&#34;) &#34;bac&#34;)
 (check-expect (pairorder &#34;complex&#34;) &#34;cmolepx&#34;)</pre></div></li>
