@@ -2,7 +2,7 @@
 title: "Quiz 4 (Medium)"
 date: 2019-03-04T07:34:29-06:00
 weight: 99
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "ssm, pairorder"
