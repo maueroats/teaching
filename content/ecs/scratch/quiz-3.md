@@ -8,7 +8,7 @@ draft: true
 description: "Quiz focusing on variables."
 ---
 
-## baseball
+## Baseball
 
    In baseball, the pitcher throws a ball, the batter tries to hit it,
    and the catcher gets the ball if the batter misses.
@@ -29,7 +29,8 @@ description: "Quiz focusing on variables."
 In the questions below, you will write code for the Ball sprite. In
 each question, change the status of the baseball if appropriate.
 
-1. The ball gets hit by the bat. Change
+1. The ball gets hit by the bat. Glide to the "Outfield" sprite and
+   change a variable to represent what is happening.
 
 2. Hit "p" for the ball to move as if pitched. It should show and move
    to x:100 y:200. When the pitcher does not have the ball, the ball
@@ -38,7 +39,14 @@ each question, change the status of the baseball if appropriate.
 3. When a hit ball touches the pitcher, it disappears and one strike
  is recorded. Update variables as appropriate.
 
-## Stair steppping
+## Stair stepping
+
+1. Going up stairs is slow, choppy motion. Move up 5 steps each time
+   the "up" key is hit. The stairs on the screen appear to be at 15
+   degrees. 
+   
+2. Moving left is a smooth, quick motion. Move left 5 steps for
+   exactly the time during which the "left" key is depressed.
 
 ## Pencil Making
 
