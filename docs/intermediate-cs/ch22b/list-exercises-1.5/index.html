@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-05T22:59:43 CST">
+<meta name="revised" content="2019-03-06T08:36:24 CST">
 <title>22b. List Exercises 1.5 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2375,9 +2375,10 @@
     
     <ol>
 <li><p><code>more-rand: number(x) list of numbers(nums) -&gt; list of numbers</code>
-Give a new list with x and an additional random number from 1 to 10
-put on the front of the more-rand list.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-random (more-rand 5 (list 1 2 3)) (list 5 (random 10) 1 2 3))</pre></div></li>
+Give a new list with x and an additional random number from 0
+through 9 put on the front of the more-rand list.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-random (more-rand 5 (list 1 2 3)) 
+              (list 5 (random 10) 1 2 3))</pre></div></li>
 
 <li><p><code>maybe-no-5: list of numbers -&gt; list of numbers</code>. If the first
 number in the list is a 5, skip it, otherwise return the whole
@@ -2385,10 +2386,10 @@ list.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (maybe-no-5 (list 1 5 51)) (list 1 5 51))
 (check-expect (maybe-no-5 (list 5 9 14 23)) (list 9 14 23))</pre></div></li>
 
-<li><p><code>pemo: list of numbers -&gt; number</code>. Find the sum (*p*lus) all of the
-*e*ven numbers in the list and subtract (*m*inus) all of the *o*dd
+<li><p><code>pemo: list of numbers -&gt; number</code>. Find the sum (plus) all of the
+even numbers in the list and subtract (minus) all of the odd
 numbers in the list.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (pemo 10 30 5 20 10 11) 54)</pre></div></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (pemo (list 10 30 5 20 10 11)) 54)</pre></div></li>
 
 <li><p><code>cram-small: list of strings(words) -&gt; string</code>. Take all of the
 words that are less than 5 letters long and combine them all into
