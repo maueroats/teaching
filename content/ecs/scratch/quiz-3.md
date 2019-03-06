@@ -1,3 +1,4 @@
+
 ---
 title: "Quiz 3"
 date: 2019-03-01T11:23:29-06:00
@@ -62,7 +63,8 @@ Sprites: main character, rock, tree, pencil.
   same time that the main character is touching the rock.
 
 * Pencil: hitting "p" uses up 1 wood and 1 graphite, and creates 1
-  pencil. The pencil disappears after 0.3 seconds but you remember how
+  pencil. You need wood and graphite to make a pencil. 
+  The pencil disappears after 0.3 seconds but you remember how
   many pencils were made.
 
 * Motion: no need to write code for motion.
