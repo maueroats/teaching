@@ -11,16 +11,16 @@
 		 data-separator-vertical="^___"
 		 data-separator-notes="^Note:">
 	
-# `r-ss`
+# `r-ss?`
 
-   `r-ss: string(word) -&gt; boolean`. 
+   `r-ss?: string(word) -&gt; boolean`. 
 
    True if the word contains either &#34;r&#34; or &#34;ss&#34;.
 
-        (check-expect (r-ss &#34;car&#34;) true)
-        (check-expect (r-ss &#34;ssnake&#34;) true)
-        (check-expect (r-ss &#34;wrassle&#34;) true)
-        (check-expect (r-ss &#34;confabulous&#34;) false)
+        (check-expect (r-ss? &#34;car&#34;) true)
+        (check-expect (r-ss? &#34;ssnake&#34;) true)
+        (check-expect (r-ss? &#34;wrassle&#34;) true)
+        (check-expect (r-ss? &#34;confabulous&#34;) false)
    
 ---
 # `no-7`

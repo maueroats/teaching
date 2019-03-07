@@ -5,18 +5,19 @@ weight: 97
 draft: false
 type: slide
 theme: white
+description: "r-ss - does a word have r or ss?, no-7, abfx - all but first x becomes a y."
 ---
 
-# `r-ss`
+# `r-ss?`
 
-   `r-ss: string(word) -> boolean`. 
+   `r-ss?: string(word) -> boolean`. 
 
    True if the word contains either "r" or "ss".
 
-        (check-expect (r-ss "car") true)
-        (check-expect (r-ss "ssnake") true)
-        (check-expect (r-ss "wrassle") true)
-        (check-expect (r-ss "confabulous") false)
+        (check-expect (r-ss? "car") true)
+        (check-expect (r-ss? "ssnake") true)
+        (check-expect (r-ss? "wrassle") true)
+        (check-expect (r-ss? "confabulous") false)
    
 ---
 # `no-7`

@@ -27,3 +27,8 @@ Characters: dragon, treasure, sword, armor, door, key.
   
     * Key to unlock door.
     * Win when you escape with the treasure
+
+## Lite Version
+
+Only do dragon, armor, key, and door.
+
