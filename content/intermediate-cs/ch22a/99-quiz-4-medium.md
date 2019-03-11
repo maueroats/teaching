@@ -21,6 +21,8 @@ description: "ssm, pairorder"
                       (+ (sqrt 7) (sqrt 11)) ; skip 9 - perfect square
                         0.01)
 
+		(check-within (ssm 101 1001) 10008.2 0.1)
+
 
 2. The `pairorder: string -> string` function takes a string and puts
    each adjacent pair of letters in alphabetical order, beginning at
@@ -29,7 +31,7 @@ description: "ssm, pairorder"
    to `pairorder`: "zba" when processing the first pair would produce
    "bza" then when processing the second pair would produce "baz".
    
-        (check-expect (pairorder "zba" "baz")
+        (check-expect (pairorder "zba") "baz")
         (check-expect (pairorder "ba") "ab")
         (check-expect (pairorder "cba") "bac")
         (check-expect (pairorder "complex") "cmolepx")
