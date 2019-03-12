@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-12T17:09:05 CDT">
+<meta name="revised" content="2019-03-12T17:10:20 CDT">
 <title>Dataframe Rows :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2406,7 +2406,7 @@
 led me to a post <a href="https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe?gi=6aa22445ae23">comparing the speeds of different ways of accessing
 a dataframe by rows</a>.</p>
 
-<p>If you are using <code>df.iloc[rownum]</code>, your code is slow. The fast way to
+<p>If you are using <code>df.loc[rownum]</code>, your code is slow. The fast way to
 get rows is to zip the columns together and get the info from that
 list/array. It&rsquo;s not just a little fast, it&rsquo;s like 100x faster.</p>
 

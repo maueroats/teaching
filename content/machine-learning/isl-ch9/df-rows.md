@@ -12,7 +12,7 @@ My perceptron was very slow until I read a [Stack Overflow comment](https://stac
 led me to a post [comparing the speeds of different ways of accessing
 a dataframe by rows](https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe?gi=6aa22445ae23).
 
-If you are using `df.iloc[rownum]`, your code is slow. The fast way to
+If you are using `df.loc[rownum]`, your code is slow. The fast way to
 get rows is to zip the columns together and get the info from that
 list/array. It's not just a little fast, it's like 100x faster.
 
