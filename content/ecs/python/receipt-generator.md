@@ -1,7 +1,7 @@
 ---
 title: "Receipt Generator"
 date: 2019-03-13T11:43:42-05:00
-#weight: 
+weight: 20
 draft: false
 #type: slide
 #theme: white

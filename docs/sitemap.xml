@@ -73,6 +73,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/ecs/python/review-01-05/</loc>
+    <lastmod>2019-03-11T14:06:10-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/machine-learning/isl-ch9/categorical/</loc>
     <lastmod>2019-03-02T20:34:20-06:00</lastmod>
   </url>
@@ -253,6 +258,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/ecs/python/receipt-generator/</loc>
+    <lastmod>2019-03-13T11:43:42-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ecs/python/</loc>
     <lastmod>2019-03-11T14:05:56-05:00</lastmod>
   </url>
@@ -400,6 +410,11 @@
   <url>
     <loc>https://wy-cs.site/resources/generic-cs-syllabus/</loc>
     <lastmod>2017-09-09T15:50:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/ecs/python/mad-libs/</loc>
+    <lastmod>2019-03-14T11:05:32-05:00</lastmod>
   </url>
   
   <url>
@@ -1243,18 +1258,8 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/ecs/python/receipt-generator/</loc>
-    <lastmod>2019-03-13T11:43:42-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/machine-learning/isl-ch9/df-rows/</loc>
     <lastmod>2019-03-12T16:57:42-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/ecs/python/review-01-05/</loc>
-    <lastmod>2019-03-11T14:06:10-05:00</lastmod>
   </url>
   
   <url>
@@ -1696,14 +1701,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   

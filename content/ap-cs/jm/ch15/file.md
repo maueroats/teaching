@@ -16,6 +16,6 @@ description: "The File class represents a file or folder (directory)."
 ## Exercises Day 1
 
 * Day 1: `public static void listAll(String location)`: print out
-  files in a given folder/directory.
+  files in a given folder/directory. Example: `listAll("stuff/aaron");`.
   
   
