@@ -15,9 +15,14 @@ make one today.
 
 
 Minimum requirements:
+
 * Four sentences.
 * Eight substitutions.
-* Two different instances of doing math to insert in your story.
+* Two different instances of doing math to insert in your story. (
+
+The math should be addition, subtraction, multiplication, or
+division. Python should be doing the math; do not just ask the person
+to do it. 
 
 Example:
 
