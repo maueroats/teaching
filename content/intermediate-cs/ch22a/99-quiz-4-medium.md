@@ -2,7 +2,7 @@
 title: "Quiz 4 (Medium)"
 date: 2019-03-04T07:34:29-06:00
 weight: 99
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "ssm, pairorder"
@@ -21,7 +21,7 @@ description: "ssm, pairorder"
                       (+ (sqrt 7) (sqrt 11)) ; skip 9 - perfect square
                         0.01)
 
-		(check-within (ssm 101 1001) 10008.2 0.1)
+        (check-within (ssm 101 1001) 10008.2 0.1)
 
 
 2. The `pairorder: string -> string` function takes a string and puts
