@@ -30,7 +30,7 @@ Trace the following program to figure out what it does.
 Trace the following program to figure out what it does.
 
     (define (prog2 s)
-      (cond [(<= (string-length s) 2) ""]
+      (cond [(< (string-length s) 2) ""]
             [(string=? "a" (substring s 0 1))
              (prog2 (substring s 1))]
             [(string<=? "b" (substring s 2))
