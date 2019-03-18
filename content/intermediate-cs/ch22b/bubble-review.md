@@ -58,5 +58,5 @@ differ by less than 20.
         
 2. In your bubble wrap game, the model is a list of bubbles. Rewrite
    the mouse-handler so that when you click on a poison bubble, one
-   additional bubble appears on the scren.
+   additional bubble appears on the screen.
    

@@ -68,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/ap-cs/solving/number-triangle/</loc>
+    <lastmod>2019-03-18T15:32:57-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/jm/ch15/file/</loc>
     <lastmod>2019-03-14T09:18:19-05:00</lastmod>
   </url>
@@ -590,6 +595,11 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/ch20/square-a/</loc>
     <lastmod>2019-01-10T08:29:42-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/ecs/python/turtle-1/</loc>
+    <lastmod>2019-03-18T11:52:27-05:00</lastmod>
   </url>
   
   <url>
@@ -1263,6 +1273,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/ap-cs/solving/</loc>
+    <lastmod>2019-03-18T15:32:25-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/news/2019-03-17-sail-uiuc/</loc>
     <lastmod>2019-03-16T22:04:50-05:00</lastmod>
   </url>
@@ -1716,14 +1731,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
