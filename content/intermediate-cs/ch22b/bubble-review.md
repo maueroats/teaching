@@ -42,6 +42,7 @@ Trace the following program to figure out what it does.
 1. `(prog2 "a")`
 2. `(prog2 "ca")`
 3. `(prog2 "abcd")`
+4. `(prog2 "abbbcd")`
 4. `(prog2 "abcdef")`
 
 ## Writing 1
