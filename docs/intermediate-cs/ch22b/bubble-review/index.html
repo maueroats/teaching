@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-17T22:23:16 CDT">
+<meta name="revised" content="2019-03-18T08:12:10 CDT">
 <title>Bubble Review :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2491,7 +2491,7 @@
 
 <p>Trace the following program to figure out what it does.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (prog2 s)
-  (cond [(&lt; (string-length s) 5) &#34;&#34;]
+  (cond [(&lt;= (string-length s) 2) &#34;&#34;]
         [(string=? &#34;a&#34; (substring s 0 1))
          (prog2 (substring s 1))]
         [(string&lt;=? &#34;b&#34; (substring s 2))

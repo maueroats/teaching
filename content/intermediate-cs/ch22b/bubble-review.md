@@ -14,11 +14,11 @@ There will be some program tracing and some problem solving.
 
 Trace the following program to figure out what it does.
 
-	(define (prog1 n)
-	  (cond [(< n 5) 10]
-			[(= 1 (remainder n 2)) (+ 1 (prog1 (- n 1)))]
-			[(not (= 1 (remainder n 2))) (+ 3 (prog1 (- n 2)))]
-			[else (+ 5 (prog1 (- n 3)))]))
+    (define (prog1 n)
+      (cond [(< n 5) 10]
+            [(= 1 (remainder n 2)) (+ 1 (prog1 (- n 1)))]
+            [(not (= 1 (remainder n 2))) (+ 3 (prog1 (- n 2)))]
+            [else (+ 5 (prog1 (- n 3)))]))
 
 1. `(prog1 2)`
 2. `(prog1 5)`
@@ -29,15 +29,15 @@ Trace the following program to figure out what it does.
 
 Trace the following program to figure out what it does.
 
-	(define (prog2 s)
-	  (cond [(< (string-length s) 5) ""]
-			[(string=? "a" (substring s 0 1))
-			 (prog2 (substring s 1))]
-			[(string<=? "b" (substring s 2))
-			 (string-append "x" (prog2 (substring s 1)))]
-			[else
-			 (string-append "y" (prog2 (substring s 2)))]))
-			 
+    (define (prog2 s)
+      (cond [(<= (string-length s) 2) ""]
+            [(string=? "a" (substring s 0 1))
+             (prog2 (substring s 1))]
+            [(string<=? "b" (substring s 2))
+             (string-append "x" (prog2 (substring s 1)))]
+            [else
+             (string-append "y" (prog2 (substring s 2)))]))
+             
 
 1. `(prog2 "a")`
 2. `(prog2 "ca")`
@@ -53,9 +53,9 @@ differ by less than 20.
 1. Write a program to identify a poison bubble. Use the struct given 
    for the type of a bubble.
 
-		(define-struct b (center radius color))
-		
-		
+        (define-struct b (center radius color))
+        
+        
 2. In your bubble wrap game, the model is a list of bubbles. Rewrite
    the mouse-handler so that when you click on a poison bubble, one
    additional bubble appears on the scren.
