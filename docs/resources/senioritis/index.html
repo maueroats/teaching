@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-18T15:44:46 CDT">
-<title>Everyday Git :: WY Computer Science</title>
+<meta name="revised" content="2019-03-18T15:44:49 CDT">
+<title>Senioritis :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     
   </head>
-  <body data-url="/ap-cs/git/everyday/">
+  <body data-url="/resources/senioritis/">
     
       
 
@@ -53,11 +53,10 @@
             <li data-nav-id="/" class="dd-item">
             <a href="/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/ap-cs/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/">AP CS</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/">AP CS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/ap-cs/haskell/" class="dd-item haschildren
@@ -434,11 +433,10 @@
           </a>
         </div>
     </li>
-    <li data-nav-id="/ap-cs/git/" class="dd-item parent haschildren
+    <li data-nav-id="/ap-cs/git/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ap-cs/git/">Git</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ap-cs/git/">Git</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/ap-cs/git/getting-started/" class="dd-item">
@@ -448,7 +446,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ap-cs/git/everyday/" class="dd-item active">
+      <li data-nav-id="/ap-cs/git/everyday/" class="dd-item">
         <div>
           <a href="/ap-cs/git/everyday/">
             Everyday Git
@@ -2329,10 +2327,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/resources/" class="dd-item haschildren
+    <li data-nav-id="/resources/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/resources/">Resources</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/resources/">Resources</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/resources/generic-cs-syllabus/" class="dd-item">
@@ -2377,7 +2376,7 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/resources/senioritis/" class="dd-item">
+      <li data-nav-id="/resources/senioritis/" class="dd-item active">
         <div>
           <a href="/resources/senioritis/">
             Senioritis
@@ -2452,12 +2451,7 @@
 
 
 
-
-
-
- <a href='/'>Mauer-Oats Classes</a> > <a href='/ap-cs/'>AP CS</a> > <a href='/ap-cs/git/'>Git</a> > Everyday Git
-
- 
+ <a href='/'>Mauer-Oats Classes</a> > <a href='/resources/'>Resources</a> > Senioritis
 
  
 
@@ -2474,12 +2468,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#everyday-commands">Everyday Commands</a></li>
-<li><a href="#merge-conflicts">Merge Conflicts</a>
-<ul>
-<li><a href="#simple-merging">Simple Merging</a></li>
-<li><a href="#advanced-merging">Advanced Merging</a></li>
-</ul></li>
+<li><a href="#a-virtuous-cycle">A virtuous cycle</a></li>
+<li><a href="#computer-science-is-art">Computer Science is Art</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2490,15 +2480,9 @@
   </div>
 
 
-  <div id="tags">
-    
-      <a class="label label-default" href="https://wy-cs.sitetags/git">git</a>
-    
-  </div>
-
 <div id="body-inner">
   
-    <h1>Everyday Git</h1>
+    <h1>Senioritis</h1>
   
 
 
@@ -2508,49 +2492,52 @@
     
     
 
-<h2 id="everyday-commands">Everyday Commands</h2>
+<p>Senior-itis is an affliction in which seniors no longer feel any
+motivation to do work in school. They don&rsquo;t care about what they are
+learning, they feel it is pointless, they disengage.</p>
 
-<p>All of these need to be run in the karel-* directory:</p>
+<p>At the root, senioritis is a symptom; years of external motivation are
+the cause. External motivation is a form of motivation that comes from
+outside - grades, candy, money. Opposite of external motivation is
+<em>internal</em> motivation - doing something for the joy of
+learning, to live a morally upright life, or because you value the
+experiences you will have in the doing.</p>
 
-<ul>
-<li><code>./save-it</code></li>
-<li><code>./update</code>: git pull from the upstream repository.</li>
-<li><code>git pull</code></li>
-</ul>
+<h2 id="a-virtuous-cycle">A virtuous cycle</h2>
 
-<h2 id="merge-conflicts">Merge Conflicts</h2>
+<p>Students and teachers (ideally) live in a kind symbiotic
+relationships. Students trying harder makes teachers want to teach
+more. The better a class goes, the more time is spent on preparing for
+it - by students and teachers alike. Seniors who give up on learning
+break this virtuous cycle, leading to sophomores not trying to
+understand what is going on in a class - giving up years before they
+are really done with school. Quitting that early means they will be
+unprepared for any future classes, since they don&rsquo;t really have half
+of the work from their sophomore year.</p>
 
-<p>Sometimes you will modify a file at home without having saved (pushed)
-your changes at school. This causes a dreaded &ldquo;merge conflict&rdquo; when
-you update.</p>
+<h2 id="computer-science-is-art">Computer Science is Art</h2>
 
-<h3 id="simple-merging">Simple Merging</h3>
+<p>(Possibly unrelated to the above.)</p>
 
-<p>If you are lucky, you are at school and you know that you
-just want to use the code from home (the &ldquo;incoming code&rdquo; from the pull).
-In that case, you should do:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git checkout --theirs karelBasic.drjava</pre></div>
-<p>Of course, replace <code>karelBasic.drjava</code> with the names of the files with
-the merge conflicts.
-The converse, keeping the &ldquo;local&rdquo; changes, not the incoming ones, is the <code>--ours</code> flag.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git checkout --ours ImportantFile.java</pre></div>
-<h3 id="advanced-merging">Advanced Merging</h3>
+<p>After gaining a small amount of technical skill, sometimes people are
+tempted to quit improving. When Picasa was a teenager (14 years old),
+he could already
+<a href="https://www.nga.gov/features/slideshows/picasso-the-early-years.html#slide_2">draw very
+well</a>. Imagine
+if he had quit, satisfied that his work was better than other kids his
+age.</p>
 
-<p>When the problem is more difficult, edit the file with NotePad++ and you should see
-the &ldquo;ours&rdquo; and &ldquo;theirs&rdquo; sections marked off by a bunch of <code>&lt;</code> <code>=</code> and <code>&gt;</code> signs. Pick
-the code you want to keep and delete the rest.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">@@ -2,7 +2,11 @@ import java.io.*;
+<p>Computer science is an art as much as technical skill. You should
+strive to write short, elegant code. Code full of ugly hacks, &ldquo;just
+get it done&rdquo; work cannot be used to build something complex. The
+burden of all of the code, the inappropriate levels of generality
+all mixed together, makes it harder and harder to think about the goal
+you intend to reach.</p>
 
- public class Merging {
-     public Merging () {
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-         System.out.println(&#34;Merging object was not constructed fast enough to avoid conflict!!&#34;);
-=======
-        System.out.println(&#34;Merging object is being constructed!!&#34;);
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 36215863faef38cac7822b290a893ce1e150420c
-     }
- }</pre></div>
-<p>After deleting the markers and duplicated code, add and commit.</p>
+<p>In practice computer programming requires a high level
+of abstraction and organizational skills. Work to develop
+them. Designing and writing a (kind of simple) game is a good test of
+your skills. Try it!</p>
 
 
     
@@ -2562,8 +2549,8 @@ the code you want to keep and delete the rest.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/ap-cs/git/getting-started/" title="Git-ting Started"> <i class="fa fa-chevron-left"></i><label>Git-ting Started</label></a>
-    <a class="nav nav-next" href="/ap-cs/jm/" title="Java Methods" style="margin-right: 0px;"><label>Java Methods</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/resources/letters-of-recommendation/" title="Letters of Recommendation"> <i class="fa fa-chevron-left"></i><label>Letters of Recommendation</label></a>
+    <a class="nav nav-next" href="/resources/events/" title="CS Events" style="margin-right: 0px;"><label>CS Events</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

@@ -2,7 +2,7 @@
 title: "Senioritis"
 date: 2019-03-09T15:06:06-06:00
 #weight: 
-draft: true
+draft: false
 #type: slide
 #theme: white
 description: "My own thoughts on senioritis."
