@@ -36,7 +36,8 @@ description: "The the maximum possible sum of a path in a number triangle, from 
 
 ## References
 
-* Project Euler [Problem 18](https://projecteuler.net/problem=18)
+* Project Euler [Problem 18](https://projecteuler.net/problem=18) and
+  [Problem 67](https://projecteuler.net/problem=67).
 * [PrintWriter](https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html)
 * [Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
 * [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)
