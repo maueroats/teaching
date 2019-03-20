@@ -30,7 +30,7 @@ description: "The the maximum possible sum of a path in a number triangle, from 
             1 3  4  50
         10000 5  6  7  8
         
-    One possible path is 1, 20, 3, 4, 5, 7, for a total of 40. Another
+    One possible path is 1, 20, 2, 4, 7, for a total of 34. Another
     possible path is 1,1,1,1,10000 for a total of 10004. 
 
 
