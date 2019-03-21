@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-21T00:36:32 CDT">
+<meta name="revised" content="2019-03-21T16:47:55 CDT">
 <title>Turtle 2 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1820,50 +1820,12 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/ecs/python/" class="dd-item parent haschildren
+    <li data-nav-id="/ecs/scratch/" class="dd-item haschildren
         ">
       <div>
-      <a href="/ecs/python/">Python</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/ecs/scratch/">Scratch</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ecs/python/review-01-05/" class="dd-item">
-        <div>
-          <a href="/ecs/python/review-01-05/">
-            Review 01-05
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/ecs/python/receipt-generator/" class="dd-item">
-        <div>
-          <a href="/ecs/python/receipt-generator/">
-            Receipt Generator
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/ecs/python/mad-libs/" class="dd-item">
-        <div>
-          <a href="/ecs/python/mad-libs/">
-            Mad Libs
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/ecs/python/turtle-1/" class="dd-item">
-        <div>
-          <a href="/ecs/python/turtle-1/">
-            Turtle 1
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/ecs/python/turtle-2/" class="dd-item active">
-        <div>
-          <a href="/ecs/python/turtle-2/">
-            Turtle 2
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
       <li data-nav-id="/ecs/scratch/variables-intro-1a/" class="dd-item">
         <div>
           <a href="/ecs/scratch/variables-intro-1a/">
@@ -1954,6 +1916,52 @@
             Flying
           </a>
         </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ecs/python/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/ecs/python/">Python</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ecs/python/review-01-05/" class="dd-item">
+        <div>
+          <a href="/ecs/python/review-01-05/">
+            Review 01-05
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ecs/python/receipt-generator/" class="dd-item">
+        <div>
+          <a href="/ecs/python/receipt-generator/">
+            Receipt Generator
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ecs/python/mad-libs/" class="dd-item">
+        <div>
+          <a href="/ecs/python/mad-libs/">
+            Mad Libs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ecs/python/turtle-1/" class="dd-item">
+        <div>
+          <a href="/ecs/python/turtle-1/">
+            Turtle 1
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ecs/python/turtle-2/" class="dd-item active">
+        <div>
+          <a href="/ecs/python/turtle-2/">
+            Turtle 2
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -2477,7 +2485,15 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#tips">Tips</a></li>
+<li><a href="#assignments">Assignments</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2495,11 +2511,26 @@
     
     
     
-    <p>In class we discussed how to make the blue square and the triangle
+    
+
+<p>In class we discussed how to make the blue square and the triangle
 above it. We decided to make the sides of the blue square 50 each, and
 we discussed the side lengths and angles for every side.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">import math
 oneside = 50 * math.sqrt(2) </pre></div>
+<h2 id="tips">Tips</h2>
+
+<ul>
+<li>Know the dimensions and angles for each shape before you start.</li>
+<li>Figure out the moves you want to do step by step.</li>
+<li>Write the commands for each side before going to the next.</li>
+<li>One turtle per shape/color.</li>
+<li>Walking to the correct starting place can be easier than using
+<code>goto</code>.</li>
+</ul>
+
+<h2 id="assignments">Assignments</h2>
+
 <ul>
 <li>Use several turtles to make the square tangram design below.</li>
 </ul>
@@ -2529,7 +2560,7 @@ oneside = 50 * math.sqrt(2) </pre></div>
 
 <div id="navigation">
 <a class="nav nav-prev" href="/ecs/python/turtle-1/" title="Turtle 1"> <i class="fa fa-chevron-left"></i><label>Turtle 1</label></a>
-    <a class="nav nav-next" href="/ecs/scratch/variables-intro-1a/" title="Intro: coins, burgers" style="margin-right: 0px;"><label>Intro: coins, burgers</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/machine-learning/" title="Machine Learning" style="margin-right: 0px;"><label>Machine Learning</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

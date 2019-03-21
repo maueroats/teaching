@@ -1,8 +1,8 @@
 ---
 title: "Scratch"
 date: 2019-02-07T20:59:57-06:00
-#weight: 
-draft: true
+weight: 10
+draft: false
 #type: slide
 #theme: white
 ---
