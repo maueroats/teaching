@@ -5,6 +5,7 @@ weight: 20
 draft: false
 #type: slide
 #theme: white
+description: "Python is a text-based language. We learn format, variables, loops, and more."
 ---
 
 {{% children description = "true" %}}
