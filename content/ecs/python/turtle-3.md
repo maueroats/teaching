@@ -22,3 +22,9 @@ description: "Short review of turtle actions."
         If I have 3 tomato plants and clone them all, then I have 6, costing $17.70 total.
 
     Of course make it so that you can type different numbers and nouns.
+
+{{% notice note %}}
+You should have the measurements of the tangram
+pieces in your notes. Use [my
+diagram](tangram-sizes.pdf) if you need it. 
+{{% /notice %}}
