@@ -1,11 +1,11 @@
 ---
-title: "22b. List Exercises 4 Quiz"
+title: "22b. List Exercises 4"
 date: 2018-04-09T08:00:55-05:00
 weight: 60
 draft: false
 #type: slide
 #theme: white
-description: "Quiz on lists."
+description: "Practice quiz on lists."
 ---
 
 1. `count-down-odd`: number(start) number(end) -> list of numbers. Generate a list of all of the odd numbers from `end` down to `start` (inclusive).
