@@ -5,7 +5,7 @@ weight: 10
 draft: false
 #type: slide
 #theme: white
-description: "A walkthrough of "
+description: "A walkthrough of the functions needed to make a Snake game."
 ---
 
 ## Draw-handler
