@@ -21,15 +21,15 @@ list in phase two, so I decided not to do that.
 The class looks like this:
 
     public class PrimeNumbers {
-	  public boolean isPrime(int n);
-	  public int get(int index); // prime#0 is 2
+      public boolean isPrime(int n);
+      public int get(int index); // prime#0 is 2
     }
 
 Usage:
 
     PrimeNumbers pnums = new PrimeNumbers();
-	System.out.println(pnums.isPrime(17));
-	System.out.println(pnums.isPrime(21));
+    System.out.println(pnums.isPrime(17));
+    System.out.println(pnums.isPrime(21));
 
 ## Phase One: Basic Interface
 
@@ -37,7 +37,7 @@ Usage:
    and make a `get` method that just returns a value from that array.
 
         private static int[] primes = {2,3,5,7,11,13,17,19,23,27};
-		
+        
 2. Review the discussion from in class and write an efficient
    `isPrime` method that checks only prime numbers up to the square
    root of the number being tested.
@@ -66,6 +66,10 @@ automatically find new primes as needed.
   automatically if asked for a prime number index greater than or
   equal to the size of the list.
 
+## Phase Three: Useful
+
+Write `ArrayList<Integer> primeFactors (long n)` to produce a list of
+all of the prime factors (repeated as needed, so {2,2,2} for 8).
   
 ## Phase 3: Use It
 
