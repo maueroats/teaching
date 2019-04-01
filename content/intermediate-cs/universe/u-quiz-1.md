@@ -2,7 +2,7 @@
 title: "Universe Quiz 1"
 date: 2018-05-07T10:38:08-05:00
 weight: 50
-draft: false
+draft: true
 #type: slide
 #theme: white
 description: "Quiz on week one of the Universe teachpack."
