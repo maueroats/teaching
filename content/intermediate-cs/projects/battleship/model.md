@@ -1,6 +1,6 @@
 ---
 title: "Battleship Model"
-date: 2018-04-10T21:45:21-05:00
+date: 2019-04-08T08:17:17-05:00
 weight: 10
 draft: false
 #type: slide
