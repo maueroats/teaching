@@ -8,6 +8,9 @@ draft: false
 description: "Giving types to variables and functions."
 ---
 
+A quick introduction to types, including how to specify types of
+variables and functions.
+
 ## Types of Everything
 
 * Basic types: `String`, `Number`, `Boolean`, `Image`.
