@@ -28,7 +28,7 @@
       <guid>https://wy-cs.site/intermediate-cs/</guid>
       <description>Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.
 Eventually you will want to understand why we learn Racket instead of a more popular language like Python.
-Recent Changes   Battleship Model modified Mon 04-08  Battleship modified Mon 04-08  Money on the Table modified Mon 04-01  24.</description>
+Recent Changes   Typed Intro modified Mon 05-06  Typed Racket modified Mon 05-06  Battleship Model modified Mon 04-08  Battleship modified Mon 04-08  Money on the Table modified Mon 04-01  24.</description>
     </item>
     
     <item>

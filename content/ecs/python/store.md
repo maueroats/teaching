@@ -21,6 +21,6 @@ description: "A store where you can buy items and get charged for them."
         want = input("What do you want to buy?")
         if want == "avocado":
             money -= price
-             avocado += 1
+            avocado += 1
         elif ...:
 
