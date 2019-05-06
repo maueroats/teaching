@@ -293,6 +293,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/typed/typed-variables/</loc>
+    <lastmod>2019-05-06T14:22:07-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/intermediate-cs/universe/money/</loc>
     <lastmod>2019-04-01T16:20:23-05:00</lastmod>
   </url>
@@ -470,6 +475,16 @@
   <url>
     <loc>https://wy-cs.site/resources/generic-cs-syllabus/</loc>
     <lastmod>2017-09-09T15:50:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/typed/typed-structures/</loc>
+    <lastmod>2019-05-06T14:21:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/ecs/arduino/</loc>
+    <lastmod>2019-05-06T11:52:28-05:00</lastmod>
   </url>
   
   <url>
@@ -1318,11 +1333,6 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/typed/</loc>
-    <lastmod>2019-05-06T07:20:05-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch20/</loc>
     <lastmod>2017-12-13T09:43:23-06:00</lastmod>
   </url>
@@ -1373,6 +1383,11 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/intermediate-cs/typed/</loc>
+    <lastmod>2019-05-06T07:20:05-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/daily/</loc>
     <lastmod>2017-09-11T10:03:46-05:00</lastmod>
   </url>
@@ -1410,6 +1425,11 @@
   <url>
     <loc>https://wy-cs.site/intermediate-cs/pro/</loc>
     <lastmod>2017-11-19T15:30:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/ecs/arduino/arduino-intro/</loc>
+    <lastmod>2019-05-06T11:52:37-05:00</lastmod>
   </url>
   
   <url>
@@ -1876,14 +1896,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

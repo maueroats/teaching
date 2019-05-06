@@ -1,7 +1,7 @@
 ---
 title: "Typed Racket"
 date: 2019-05-06T07:20:05-05:00
-weight: 200
+weight: 400
 draft: false
 #type: slide
 #theme: white

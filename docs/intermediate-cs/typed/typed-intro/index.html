@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-06T08:03:23 CDT">
+<meta name="revised" content="2019-05-06T14:29:33 CDT">
 <title>Typed Intro :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -243,13 +243,6 @@
       <a href="/ap-cs/haskell/ch05/">5. Recursion</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/ap-cs/haskell/ch05/ch05-reading-guide/" class="dd-item">
-        <div>
-          <a href="/ap-cs/haskell/ch05/ch05-reading-guide/">
-            Chapter 5 Reading Guide
-          </a>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/ap-cs/haskell/ch06/" class="dd-item haschildren
@@ -1287,22 +1280,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/intermediate-cs/typed/" class="dd-item parent haschildren
-        ">
-      <div>
-      <a href="/intermediate-cs/typed/">Typed Racket</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/intermediate-cs/typed/typed-intro/" class="dd-item active">
-        <div>
-          <a href="/intermediate-cs/typed/typed-intro/">
-            Typed Intro
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
     <li data-nav-id="/intermediate-cs/ch20/" class="dd-item haschildren
         ">
       <div>
@@ -1915,6 +1892,36 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/intermediate-cs/typed/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/intermediate-cs/typed/">Typed Racket</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/intermediate-cs/typed/typed-intro/" class="dd-item active">
+        <div>
+          <a href="/intermediate-cs/typed/typed-intro/">
+            Typed Intro
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/typed/typed-variables/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/typed-variables/">
+            Typed Variables and Functions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/typed/typed-structures/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/typed-structures/">
+            Typed Structures
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
       <li data-nav-id="/intermediate-cs/calendar/" class="dd-item">
         <div>
           <a href="/intermediate-cs/calendar/">
@@ -2145,6 +2152,21 @@
         <div>
           <a href="/ecs/python/adventure-1/">
             Adventure 1
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/ecs/arduino/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/ecs/arduino/">_Index</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/ecs/arduino/arduino-intro/" class="dd-item">
+        <div>
+          <a href="/ecs/arduino/arduino-intro/">
+            Arduino Intro
           </a>
         </div>
     </li>
@@ -2677,7 +2699,6 @@
 <li>
 <ul>
 <li><a href="#initial-setup">Initial Setup</a></li>
-<li><a href="#defining-new-structures">Defining new structures</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2700,6 +2721,8 @@
     
     
 
+<p>In order</p>
+
 <h2 id="initial-setup">Initial Setup</h2>
 
 <ol>
@@ -2714,26 +2737,11 @@
 (require typed/2htdp/image)
 (require typed/2htdp/universe)
 (require typed/test-engine/racket-tests)</pre></div></li>
+
+<li><p>End of the file - you need to run the check-expects manually.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(test)</pre></div></li>
 </ol>
 
-<h2 id="defining-new-structures">Defining new structures</h2>
-
-<p>A new structure need type information just like a function. There are
-also some incantations you will want to use</p>
-
-<ul>
-<li><code>#:transparent</code> - Always include this.</li>
-<li><code>#:type-name</code> - Usually include, should be name of struct with a
-capital letter at the start.</li>
-<li><code>#:constructor-name</code> - Usually want <code>make-STRUCT-NAME</code>.</li>
-</ul>
-
-<p>Example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define ship ([ name : String ]
-              [ pos : (Listof Posn) ])
-              #:transparent
-              #:type-name Ship
-              #:constructor-name make-ship)</pre></div>
 
     
     
@@ -2745,7 +2753,7 @@ capital letter at the start.</li>
 
 <div id="navigation">
 <a class="nav nav-prev" href="/intermediate-cs/typed/" title="Typed Racket"> <i class="fa fa-chevron-left"></i><label>Typed Racket</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/ch20/" title="20. Using Structures" style="margin-right: 0px;"><label>20. Using Structures</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/intermediate-cs/typed/typed-variables/" title="Typed Variables and Functions" style="margin-right: 0px;"><label>Typed Variables and Functions</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
