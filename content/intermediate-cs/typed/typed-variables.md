@@ -19,15 +19,16 @@ variables and functions.
 
 ## Specifying Types for Variables
 
-There are two ways to specify a type: with brackets inline or with the
+There are two ways to specify a type: with inline or with the
 colon (`:`) on a separate line.
 
-1. `[name : Type]` notation in place of the plain `name` 
+1. `name : Type` notation in place of the plain `name` 
 
-        (define [WIDTH : Integer] 400)
+        (define WIDTH : Integer 400)
 
     Be careful to put spaces on either side
-    of the colon.
+    of the colon. This method becomes `[name : Type]` when used in
+    arguments to a function (see below).
 
 2. `(: name Type)` on a separate line before `name`
 
@@ -37,16 +38,18 @@ colon (`:`) on a separate line.
 
 ## Specifying Types for Functions
 
-You can use either of the methods above to write the type of a
-function as well. You should include the output type, just like a
-signature.
+You can use the `[name : Type]` or `(: name Type)` method to write the
+type of a function as well. You should include the output type, just
+like a signature.
 
-1. A function that takes in a number and puts out a number plus 5:
+1. `[name : Type]` method: A function that takes in a number and puts
+   out a number plus 5: 
 
         (define (f [x : Number]) : Number
           (+ x 5))
     
-2. A function that takes in a string and puts out double its length:
+2. `(: name Type)` method: A function that takes in a string and puts
+   out double its length: 
 
         (: g (-> String Number))
         (define (g str)

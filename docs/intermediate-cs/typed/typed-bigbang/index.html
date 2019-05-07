@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-07T07:16:22 CDT">
+<meta name="revised" content="2019-05-07T07:44:16 CDT">
 <title>Typed Big Bang :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1927,10 +1927,24 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/typed/typed-ex1/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/typed-ex1/">
+            Typed Exercises 1
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/intermediate-cs/typed/typed-bigbang/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/typed/typed-bigbang/">
             Typed Big Bang
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/typed/typed-ex2/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/typed-ex2/">
+            Typed Excercises 2
           </a>
         </div>
     </li>
@@ -2744,7 +2758,7 @@
 <li>The type of the model must be given in the big-bang.</li>
 
 <li><p>The clause for the draw function is <code>to-draw</code> not <code>on-draw</code>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (draw-number n) (text (number-&gt;string n) 48 &#34;black&#34;))
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (draw-circle n) (circle n &#34;solid&#34; &#34;blue&#34;))
 (big-bang 5 : Number
   (on-tick add1 0.2)
   (on-draw draw-number 300 200))</pre></div></li>
@@ -2769,8 +2783,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/typed/typed-structures/" title="Typed Structures"> <i class="fa fa-chevron-left"></i><label>Typed Structures</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><label>Calendar</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/typed/typed-ex1/" title="Typed Exercises 1"> <i class="fa fa-chevron-left"></i><label>Typed Exercises 1</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/typed/typed-ex2/" title="Typed Excercises 2" style="margin-right: 0px;"><label>Typed Excercises 2</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

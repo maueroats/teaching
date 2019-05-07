@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-07T07:16:19 CDT">
+<meta name="revised" content="2019-05-07T07:44:13 CDT">
 <title>Typed Variables and Functions :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1927,10 +1927,24 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/typed/typed-ex1/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/typed-ex1/">
+            Typed Exercises 1
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/intermediate-cs/typed/typed-bigbang/" class="dd-item">
         <div>
           <a href="/intermediate-cs/typed/typed-bigbang/">
             Typed Big Bang
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/typed/typed-ex2/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/typed-ex2/">
+            Typed Excercises 2
           </a>
         </div>
     </li>
@@ -2750,14 +2764,15 @@ variables and functions.</p>
 
 <h2 id="specifying-types-for-variables">Specifying Types for Variables</h2>
 
-<p>There are two ways to specify a type: with brackets inline or with the
+<p>There are two ways to specify a type: with inline or with the
 colon (<code>:</code>) on a separate line.</p>
 
 <ol>
-<li><p><code>[name : Type]</code> notation in place of the plain <code>name</code></p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define [WIDTH : Integer] 400)</pre></div>
+<li><p><code>name : Type</code> notation in place of the plain <code>name</code></p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define WIDTH : Integer 400)</pre></div>
 <p>Be careful to put spaces on either side
-of the colon.</p></li>
+of the colon. This method becomes <code>[name : Type]</code> when used in
+arguments to a function (see below).</p></li>
 
 <li><p><code>(: name Type)</code> on a separate line before <code>name</code></p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(: HEIGHT Integer)
@@ -2766,16 +2781,18 @@ of the colon.</p></li>
 
 <h2 id="specifying-types-for-functions">Specifying Types for Functions</h2>
 
-<p>You can use either of the methods above to write the type of a
-function as well. You should include the output type, just like a
-signature.</p>
+<p>You can use the <code>[name : Type]</code> or <code>(: name Type)</code> method to write the
+type of a function as well. You should include the output type, just
+like a signature.</p>
 
 <ol>
-<li><p>A function that takes in a number and puts out a number plus 5:</p>
+<li><p><code>[name : Type]</code> method: A function that takes in a number and puts
+out a number plus 5:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (f [x : Number]) : Number
   (+ x 5))</pre></div></li>
 
-<li><p>A function that takes in a string and puts out double its length:</p>
+<li><p><code>(: name Type)</code> method: A function that takes in a string and puts
+out double its length:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(: g (-&gt; String Number))
 (define (g str)
   (* 2 (string-length str)))</pre></div></li>
