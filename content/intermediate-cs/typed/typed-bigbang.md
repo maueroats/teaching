@@ -15,6 +15,7 @@ Reminder: you need the `2htdp-typed` package installed.
 * The type of the model must be given in the big-bang. 
 * The clause for the draw function is `to-draw` not `on-draw`.
 
+        (: draw-circle (-> Real Image))
         (define (draw-circle n) (circle n "solid" "blue"))
         (big-bang 5 : Number
           (on-tick add1 0.2)

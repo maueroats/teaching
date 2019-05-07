@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-07T13:36:47 CDT">
+<meta name="revised" content="2019-05-07T16:52:27 CDT">
 <title>Typed Exercises 2 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2201,7 +2201,7 @@
       <li data-nav-id="/ecs/arduino/arduino-worksheet-1/" class="dd-item">
         <div>
           <a href="/ecs/arduino/arduino-worksheet-1/">
-            Arduino Worksheet
+            Arduino Worksheet 1
           </a>
         </div>
     </li>
@@ -2729,7 +2729,14 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#facts-about-numbers">Facts about Numbers</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -2747,7 +2754,9 @@
     
     
     
-    <ol>
+    
+
+<ol>
 <li><p><code>ezn</code>: Create a list of <code>n</code> numbers, counting from n down to 0.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (ezn 5) (list 5 4 3 2 1 0))
 (check-expect (ezn 7) (list 7 6 5 4 3 2 1 0))</pre></div></li>
@@ -2770,6 +2779,15 @@ is an overlay of images as n goes from <code>start</code> to <code>end</code> in
 by 10 each time. The image is a circle of radius n when n is even
 and a square of side length 2*n when n is odd.</p></li>
 </ol>
+
+<h2 id="facts-about-numbers">Facts about Numbers</h2>
+
+<p>The number system Typed Racket uses is complicated, and Racket knows a
+lot about types. For example, there is a type for
+<code>Nonnegative-Integer</code>, and when you take the square root you get a
+<code>Nonnegative-Real</code>. The type <code>Number</code> actually means complex number
+(like <code>5+12i</code> from math class), so lots of the time you really want to
+use <code>Real</code>.</p>
 
 
     

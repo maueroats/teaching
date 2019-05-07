@@ -31,3 +31,13 @@ description: "Additional practice writing typed functions, includes lists and re
    is an overlay of images as n goes from `start` to `end` increasing
    by 10 each time. The image is a circle of radius n when n is even
    and a square of side length 2*n when n is odd.
+
+
+## Facts about Numbers
+
+The number system Typed Racket uses is complicated, and Racket knows a
+lot about types. For example, there is a type for
+`Nonnegative-Integer`, and when you take the square root you get a
+`Nonnegative-Real`. The type `Number` actually means complex number
+(like `5+12i` from math class), so lots of the time you really want to
+use `Real`.

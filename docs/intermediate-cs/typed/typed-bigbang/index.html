@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-07T13:36:46 CDT">
+<meta name="revised" content="2019-05-07T16:52:26 CDT">
 <title>Typed Big Bang :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2201,7 +2201,7 @@
       <li data-nav-id="/ecs/arduino/arduino-worksheet-1/" class="dd-item">
         <div>
           <a href="/ecs/arduino/arduino-worksheet-1/">
-            Arduino Worksheet
+            Arduino Worksheet 1
           </a>
         </div>
     </li>
@@ -2765,7 +2765,8 @@
 <li>The type of the model must be given in the big-bang.</li>
 
 <li><p>The clause for the draw function is <code>to-draw</code> not <code>on-draw</code>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (draw-circle n) (circle n &#34;solid&#34; &#34;blue&#34;))
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(: draw-circle (-&gt; Real Image))
+(define (draw-circle n) (circle n &#34;solid&#34; &#34;blue&#34;))
 (big-bang 5 : Number
   (on-tick add1 0.2)
   (on-draw draw-number 300 200))</pre></div></li>
