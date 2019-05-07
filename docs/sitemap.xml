@@ -683,11 +683,6 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/typed/typed-ex1/</loc>
-    <lastmod>2019-05-07T07:24:27-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/intermediate-cs/typed/typed-bigbang/</loc>
     <lastmod>2019-05-06T17:27:31-05:00</lastmod>
   </url>
@@ -823,8 +818,8 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/intermediate-cs/typed/typed-ex2/</loc>
-    <lastmod>2019-05-07T07:41:36-05:00</lastmod>
+    <loc>https://wy-cs.site/intermediate-cs/typed/typed-ex1/</loc>
+    <lastmod>2019-05-07T07:24:27-05:00</lastmod>
   </url>
   
   <url>
@@ -925,6 +920,11 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/jm/ch12/12-array-ex-4/</loc>
     <lastmod>2019-01-08T09:13:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/intermediate-cs/typed/typed-ex2/</loc>
+    <lastmod>2019-05-07T07:41:36-05:00</lastmod>
   </url>
   
   <url>
@@ -1911,14 +1911,14 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   

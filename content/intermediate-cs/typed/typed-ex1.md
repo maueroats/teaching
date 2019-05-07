@@ -1,7 +1,7 @@
 ---
 title: "Typed Exercises 1"
 date: 2019-05-07T07:24:27-05:00
-weight: 40
+weight: 50
 draft: false
 #type: slide
 #theme: white
