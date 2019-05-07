@@ -20,7 +20,8 @@ description: "Additional practice writing typed functions, includes lists and re
         (check-expect (rpt "cat" 2) (list "cat" "cat"))
         
 3. `perfect-squares`: Given a list of integers, return a list of all
-   of the perfect squares contained in that list.
+   of the perfect squares contained in that list. If you work with
+   real numbers, you probably want `Nonnegative-Real` numbers.
    
 4. `grow-sq`: Given a start and end integer, make a list of images,
    all squares beginning at side length start, and ending at side
