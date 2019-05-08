@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-08T09:19:25 CDT">
+<meta name="revised" content="2019-05-08T09:20:42 CDT">
 <title>Typed Intro :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -22,6 +22,7 @@
     display:none !important;
   }
 </style>
+<meta name="description" content="All of the basics you need to start using Typed Racket.">
 
 
     
@@ -2756,7 +2757,24 @@
     
     
 
-<p>In order</p>
+<p>Many of the most common languages in use today require you to specify
+the types on inputs and outputs of a function. That is to say, they
+every function requires a signature.</p>
+
+<p>There are two main benefits to this kind of typing:</p>
+
+<ol>
+<li><p><strong>Speed</strong>. The code runs faster when the computer has no doubt that
+a certain variable always contains a certain kind of value, like a
+posn.</p></li>
+
+<li><p><strong>Reliability</strong>. The computer can check before starting the program
+that there is never a time when the <code>posn-x</code> function is called on
+a <code>color</code>. In regular Racket, this kind of mistake causes the
+program to halt with an error <em>when the mistake runs</em>. In Typed
+Racket, the mistake is detected before the program starts running -
+there is no suspense and no uncertainty.</p></li>
+</ol>
 
 <h2 id="initial-setup">Initial Setup</h2>
 
