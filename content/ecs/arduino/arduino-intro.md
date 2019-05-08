@@ -30,6 +30,8 @@ you should install the "MS Windows portable (64 bits)" version.
 
 ## Day 1
 
+* Identify parts: resistor, LED, Arduino board, breadboard, USB cable,
+  jumper cable. See SIK book if you need pictures.
 * [How to use a
   breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard).
 * [Install
