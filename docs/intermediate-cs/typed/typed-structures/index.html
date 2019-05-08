@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-07T16:52:26 CDT">
+<meta name="revised" content="2019-05-08T09:19:27 CDT">
 <title>Typed Structures :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2734,6 +2734,8 @@
 <li>
 <ul>
 <li><a href="#defining-new-structures">Defining new structures</a></li>
+<li><a href="#copying-structures">Copying Structures</a></li>
+<li><a href="#colors">Colors</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2765,15 +2767,31 @@ also some incantations you will want to use.</p>
 <li><code>#:transparent</code> - Always include this.</li>
 <li><code>#:type-name</code> - Usually include, should be name of struct with a
 capital letter at the start.</li>
-<li><code>#:constructor-name</code> - Usually want <code>make-STRUCT-NAME</code>.</li>
 </ul>
 
 <p>Example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define ship ([ name : String ]
-              [ pos : (Listof Posn) ])
-              #:transparent
-              #:type-name Ship
-              #:constructor-name make-ship)</pre></div>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define-struct ship ([ name : String ]
+                     [ pos : (Listof Posn) ])
+                    #:transparent
+                    #:type-name Ship)</pre></div>
+<h2 id="copying-structures">Copying Structures</h2>
+
+<p>Racket has a method called
+<a href="https://docs.racket-lang.org/reference/struct-copy.html?q=struct-copy#%28form._%28%28lib._racket%2Fprivate%2Fbase..rkt%29._struct-copy%29%29">struct-copy</a>
+for copying a structure and changing some of the entries.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> (struct-copy STRUCT-NAME VARIABLE [field NEW-VALUE])</pre></div>
+<p>Example:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define a-ship1 (make-ship &#34;Dingy&#34; (list (make-posn 5 2))))
+(define a-ship2 (struct-copy ship a-ship1 [name &#34;Sailboat&#34;]))</pre></div>
+<h2 id="colors">Colors</h2>
+
+<p>It can be tricky to write the limit function that restricts a number
+to the range 0 to 255 for use in a color.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (limit [n : Integer])
+  : Byte
+  (min 255 (max 0 n)))</pre></div>
+<p>If you need to handle real number inputs, add in <code>(round (inexact-&gt;exact n))</code>.</p>
+
 
     
     
