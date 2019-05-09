@@ -61,3 +61,6 @@ to the range 0 to 255 for use in a color.
 
 If you need to handle real number inputs, add in `(round (inexact->exact n))`.
 
+Trivia: the order of the inputs matters, check the type signature of
+`max`.
+
