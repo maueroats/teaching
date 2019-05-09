@@ -5,7 +5,7 @@ weight: 30
 draft: false
 #type: slide
 #theme: white
-description: "Using define-struct in Typed Racket. Additional info on struct-copy and limit for use with make-color."
+description: "Using define-struct in Typed Racket. Additional info on posn-util, struct-copy, and limit for use with make-color."
 ---
 
 {{% alert success %}}

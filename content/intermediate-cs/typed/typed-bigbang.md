@@ -22,7 +22,7 @@ Reminder: you need the `2htdp-typed` package installed.
 
         (big-bang 5 : Number
           (on-tick add1 0.2)
-          (on-draw draw-number 300 200))
+          (to-draw draw-number 300 200))
 
 
 ## Limitations
