@@ -14,9 +14,12 @@ description: "Exercises to practice using structures in Typed Racket."
 2. Write a draw handler that draws a rectangle with the player's name
    inside of it (you pick a size) and then potentially rotates it 90
    degrees if `horizontal?` is false.
+
+3. Write a key handler that flips the image from horizontal to
+   vertical when you hit space.
    
-   
-3. Write a key handler that adds the key hit to the end of the name.
+3. Add to your key handler so any other (length 1) key that is hit is
+   added to the end of the existing name. Advanced: make backspace work.
 
 4. Write a mouse handler that changes the location of the image when
    you click.
