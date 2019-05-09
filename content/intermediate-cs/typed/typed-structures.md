@@ -28,6 +28,15 @@ Example:
                         #:transparent
                         #:type-name Ship)
 
+## Functions using structures
+
+A function `bn` that takes in a ship and produces an image of a box around
+the name would be written like this:
+
+    (define (bn [s : Ship]) : Image
+      (frame (text (ship-name s) 24 "black")))
+
+
 ## Copying Structures
 
 Racket has a method called

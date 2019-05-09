@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T14:47:17 CDT">
+<meta name="revised" content="2019-05-09T15:02:23 CDT">
 <title>Typed Structures :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2749,6 +2749,7 @@
 <li>
 <ul>
 <li><a href="#defining-new-structures">Defining new structures</a></li>
+<li><a href="#functions-using-structures">Functions using structures</a></li>
 <li><a href="#copying-structures">Copying Structures</a></li>
 <li><a href="#colors">Colors</a></li>
 </ul></li>
@@ -2817,6 +2818,12 @@ capital letter at the start.</li>
                      [ pos : (Listof Posn) ])
                     #:transparent
                     #:type-name Ship)</pre></div>
+<h2 id="functions-using-structures">Functions using structures</h2>
+
+<p>A function <code>bn</code> that takes in a ship and produces an image of a box around
+the name would be written like this:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(define (bn [s : Ship]) : Image
+  (frame (text (ship-name s) 24 &#34;black&#34;)))</pre></div>
 <h2 id="copying-structures">Copying Structures</h2>
 
 <p>Racket has a method called
