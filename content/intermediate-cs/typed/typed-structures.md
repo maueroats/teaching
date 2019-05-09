@@ -8,6 +8,10 @@ draft: false
 description: "Using define-struct in Typed Racket. Additional info on struct-copy and limit for use with make-color."
 ---
 
+{{% alert success %}}
+{{% attachments title="Racket Code" pattern=".*\.rkt$" /%}}
+{{% /alert %}}
+
 ## Defining new structures
 
 A new structure need type information just like a function. There are

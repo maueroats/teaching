@@ -14,9 +14,12 @@ Reminder: you need the `2htdp-typed` package installed.
 
 * The type of the model must be given in the big-bang. 
 * The clause for the draw function is `to-draw` not `on-draw`.
+* The last argument to a mouse handler is a `Mouse-Event` but the last
+  argument to the key handler is just a `String`.
 
         (: draw-circle (-> Real Image))
         (define (draw-circle n) (circle n "solid" "blue"))
+
         (big-bang 5 : Number
           (on-tick add1 0.2)
           (on-draw draw-number 300 200))

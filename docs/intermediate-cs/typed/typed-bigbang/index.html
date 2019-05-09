@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T08:05:24 CDT">
+<meta name="revised" content="2019-05-09T08:44:35 CDT">
 <title>Typed Big Bang :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2778,10 +2778,13 @@
 
 <ul>
 <li>The type of the model must be given in the big-bang.</li>
+<li>The clause for the draw function is <code>to-draw</code> not <code>on-draw</code>.</li>
 
-<li><p>The clause for the draw function is <code>to-draw</code> not <code>on-draw</code>.</p>
+<li><p>The last argument to a mouse handler is a <code>Mouse-Event</code> but the last
+argument to the key handler is just a <code>String</code>.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(: draw-circle (-&gt; Real Image))
 (define (draw-circle n) (circle n &#34;solid&#34; &#34;blue&#34;))
+
 (big-bang 5 : Number
   (on-tick add1 0.2)
   (on-draw draw-number 300 200))</pre></div></li>
