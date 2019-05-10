@@ -6,40 +6,13 @@
     <description>Recent content in Tags on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Sep 2017 15:57:47 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 12 Oct 2018 21:35:05 -0500</lastBuildDate>
     
 	<atom:link href="https://wy-cs.site/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ap Cs</title>
-      <link>https://wy-cs.site/tags/ap-cs/</link>
-      <pubDate>Sat, 09 Sep 2017 15:57:47 -0500</pubDate>
-      
-      <guid>https://wy-cs.site/tags/ap-cs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Calendar</title>
-      <link>https://wy-cs.site/tags/calendar/</link>
-      <pubDate>Wed, 05 Sep 2018 11:19:45 -0500</pubDate>
-      
-      <guid>https://wy-cs.site/tags/calendar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Daily Notes</title>
-      <link>https://wy-cs.site/tags/daily-notes/</link>
-      <pubDate>Mon, 11 Sep 2017 10:03:46 -0500</pubDate>
-      
-      <guid>https://wy-cs.site/tags/daily-notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Design Process</title>
+      <title>design-process</title>
       <link>https://wy-cs.site/tags/design-process/</link>
       <pubDate>Fri, 12 Oct 2018 21:35:05 -0500</pubDate>
       
@@ -48,25 +21,34 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://wy-cs.site/tags/git/</link>
-      <pubDate>Wed, 25 Oct 2017 19:55:58 -0500</pubDate>
-      
-      <guid>https://wy-cs.site/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Haskell</title>
+      <title>haskell</title>
       <link>https://wy-cs.site/tags/haskell/</link>
-      <pubDate>Sat, 09 Sep 2017 15:34:07 -0500</pubDate>
+      <pubDate>Tue, 09 Oct 2018 09:37:17 -0500</pubDate>
       
       <guid>https://wy-cs.site/tags/haskell/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Homework</title>
+      <title>project</title>
+      <link>https://wy-cs.site/tags/project/</link>
+      <pubDate>Tue, 09 Oct 2018 09:37:17 -0500</pubDate>
+      
+      <guid>https://wy-cs.site/tags/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ap-cs</title>
+      <link>https://wy-cs.site/tags/ap-cs/</link>
+      <pubDate>Wed, 12 Sep 2018 15:57:47 -0500</pubDate>
+      
+      <guid>https://wy-cs.site/tags/ap-cs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>homework</title>
       <link>https://wy-cs.site/tags/homework/</link>
       <pubDate>Wed, 12 Sep 2018 15:57:47 -0500</pubDate>
       
@@ -75,7 +57,7 @@
     </item>
     
     <item>
-      <title>Hw</title>
+      <title>hw</title>
       <link>https://wy-cs.site/tags/hw/</link>
       <pubDate>Wed, 12 Sep 2018 15:57:47 -0500</pubDate>
       
@@ -84,20 +66,38 @@
     </item>
     
     <item>
-      <title>Opener</title>
-      <link>https://wy-cs.site/tags/opener/</link>
-      <pubDate>Fri, 22 Sep 2017 09:55:25 -0500</pubDate>
+      <title>calendar</title>
+      <link>https://wy-cs.site/tags/calendar/</link>
+      <pubDate>Wed, 05 Sep 2018 11:19:45 -0500</pubDate>
       
-      <guid>https://wy-cs.site/tags/opener/</guid>
+      <guid>https://wy-cs.site/tags/calendar/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Project</title>
-      <link>https://wy-cs.site/tags/project/</link>
-      <pubDate>Thu, 20 Sep 2018 22:31:35 -0500</pubDate>
+      <title>git</title>
+      <link>https://wy-cs.site/tags/git/</link>
+      <pubDate>Sun, 11 Feb 2018 07:33:00 -0600</pubDate>
       
-      <guid>https://wy-cs.site/tags/project/</guid>
+      <guid>https://wy-cs.site/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reading-guide</title>
+      <link>https://wy-cs.site/tags/reading-guide/</link>
+      <pubDate>Mon, 02 Oct 2017 09:19:07 -0500</pubDate>
+      
+      <guid>https://wy-cs.site/tags/reading-guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opener</title>
+      <link>https://wy-cs.site/tags/opener/</link>
+      <pubDate>Fri, 22 Sep 2017 09:55:25 -0500</pubDate>
+      
+      <guid>https://wy-cs.site/tags/opener/</guid>
       <description></description>
     </item>
     

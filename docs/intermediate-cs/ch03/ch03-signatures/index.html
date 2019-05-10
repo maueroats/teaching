@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T16:24:44 CDT">
+<meta name="revised" content="2019-05-09T23:24:46 CDT">
 <title>Ch03 Signatures :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2729,7 +2729,7 @@
 
 
 
- <a href='/'>Mauer-Oats Classes</a> > <a href='/intermediate-cs/'>Intermediate CS</a> > <a href='/intermediate-cs/ch03/'>3. More Interesting Pictures</a> > Ch03 Signatures
+ <a href='https://wy-cs.site/'>Mauer-Oats Classes</a> > <a href='https://wy-cs.site/intermediate-cs/'>Intermediate CS</a> > <a href='https://wy-cs.site/intermediate-cs/ch03/'>3. More Interesting Pictures</a> > Ch03 Signatures
 
  
 
@@ -2777,31 +2777,32 @@
 
 <li><p>Write a possible signature for <code>mystery</code>:</p>
 
-<figure>
-    <img src="mystery-inputs.png"/> 
-</figure>
-</li>
+<p><figure>
+<img src="mystery-inputs.png"/>
+</figure></p></li>
 
 <li><p>Write a signature for <code>magic</code> described below.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">magic</span> <span style="color:#111">(</span><span style="color:#111">circle</span> <span style="color:#ae81ff">40</span> <span style="color:#d88200">&#34;solid&#34;</span> <span style="color:#d88200">&#34;blue&#34;</span><span style="color:#111">)</span> 
        <span style="color:#ae81ff">100</span><span style="color:#111">)</span></code></pre></div>
 <p>Produces two semi-transparent blue circles of radius 40:
  <figure>
-    <img src="semi-transparent-circles.png"/> 
-</figure>
+<img src="semi-transparent-circles.png"/>
+</figure></p>
 
- Aside: if they were solid blue, they would look like this:
+<p>Aside: if they were solid blue, they would look like this:
  <figure>
-    <img src="solid-circles.png"/> 
-</figure>
-</p></li>
+<img src="solid-circles.png"/>
+</figure></p>
 
-<li><p>Write a signature for <code>overtext</code>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">overtext</span> <span style="color:#d88200">&#34;Banned&#34;</span> <span style="color:#111">(</span><span style="color:#111">scale</span> <span style="color:#ae81ff">5</span> <span style="color:#111">pic:stick-figure</span><span style="color:#111">))</span></code></pre></div>
+<ol>
+<li>Write a signature for <code>overtext</code>.
+<code>racket
+(overtext &quot;Banned&quot; (scale 5 pic:stick-figure))
+</code>
 <figure>
-    <img src="banned-result.png"/> 
-</figure>
-</li>
+<img src="banned-result.png"/>
+</figure></li>
+</ol></li>
 
 <li><p>Write a signature for <code>dimsum</code>, which returns the sum of the length
 and width of each of its dimensions.</p>
