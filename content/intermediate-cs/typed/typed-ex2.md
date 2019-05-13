@@ -35,9 +35,19 @@ description: "Additional practice writing typed functions, includes lists and re
 
 ## Facts about Numbers
 
-The number system Typed Racket uses is complicated, and Racket knows a
-lot about types. For example, there is a type for
-`Nonnegative-Integer`, and when you take the square root you get a
-`Nonnegative-Real`. The type `Number` actually means complex number
+There are many number types, including:
+
+* `Number`
+* `Real`
+* `Integer`
+* `Nonnegative-Real`
+* `Nonnegative-Integer`
+* `Positive-Integer`
+
+Pick the most appropriate one. For example, if you are taking the
+square root of a number, `Nonnegative-Real` might be a good choice. If
+that number is also an integer, then use `Nonnegative-Integer`.
+
+The type `Number` actually means complex number
 (like `5+12i` from math class), so lots of the time you really want to
 use `Real`.

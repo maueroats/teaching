@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T23:25:17 CDT">
+<meta name="revised" content="2019-05-13T16:54:37 CDT">
 <title>4. Logistic Regression :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2767,10 +2767,10 @@ Regression in the <a href="https://colab.research.google.com/drive/1M1fukzCHH5Ak
 walkthrough</a>. You
 should consult that for details.</p>
 
-<div class="notices warning" >
-For StatsModels, the output variable must be a number. Change strings like "Larger" and
-"Smaller" to the numbers 0 and 1.
+<div class="notices warning" ><p>For StatsModels, the output variable must be a number. Change strings like &ldquo;Larger&rdquo; and
+&ldquo;Smaller&rdquo; to the numbers 0 and 1.</p>
 </div>
+
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">import statsmodels.api as sm
 result = sm.Logit.from_formula(&#34;output~p1+p2&#34;,
            data=DataFrame).fit()</pre></div>

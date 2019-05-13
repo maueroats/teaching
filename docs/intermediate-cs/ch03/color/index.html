@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T23:25:15 CDT">
+<meta name="revised" content="2019-05-13T16:54:35 CDT">
 <title>Color Commands :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2763,18 +2763,22 @@
     
     
     <ul>
-<li><p><code>name-&gt;color</code> changes a string name to a color, like this:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&gt; (name-&gt;color &#34;lavender&#34;) 
-(make-color 230 230 250)</pre></div></li>
+<li><code>name-&gt;color</code> changes a string name to a color, like this:
+<code>
+&gt; (name-&gt;color &quot;lavender&quot;) 
+(make-color 230 230 250)
+</code></li>
 </ul>
 
 <p>If you give it a color already, the computer complains:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    &gt; (name-&gt;color (make-color 230 230 250))
     name-&gt;color: Expected a string or symbol, but received (make-color 230 230 250 255) </pre></div>
 <ul>
-<li><p><code>colorize</code> changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than <code>name-&gt;color</code>.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&gt; (colorize &#34;lavender&#34;) 
-(make-color 230 230 250)</pre></div></li>
+<li><code>colorize</code> changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than <code>name-&gt;color</code>.
+<code>
+&gt; (colorize &quot;lavender&quot;) 
+(make-color 230 230 250)
+</code></li>
 </ul>
 
 <p>If you give it a color already, the computer complains:</p>

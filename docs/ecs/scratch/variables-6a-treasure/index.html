@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T23:25:17 CDT">
+<meta name="revised" content="2019-05-13T16:54:38 CDT">
 <title>Treasure Hunt :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2783,6 +2783,7 @@
     <img src="treasure-hunt.png"/> 
 </figure>
 
+
 <h2 id="common-misunderstandings">Common Misunderstandings</h2>
 
 <p>These statements are the way the game <em>should</em> work.</p>
@@ -2802,16 +2803,16 @@ walk over and touch the door to open it.</p></li>
 can actually move in one direction even while you are touching the
 wall. Example:</p>
 
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
-
+<pre class="scratch">
 <p>when [d v] key pressed
   forever
     if &lt; touching color (black) &gt; then
@@ -2822,7 +2823,8 @@ window.onload = function () {
       move (5) steps
     end</p>
 
-<p></pre></p>
+</pre>
+
 
 
     

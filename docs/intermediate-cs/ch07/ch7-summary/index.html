@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T23:25:15 CDT">
+<meta name="revised" content="2019-05-13T16:54:34 CDT">
 <title>7. Summary :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2784,15 +2784,12 @@
 <span style="color:#111">(</span><span style="color:#111">-</span> <span style="color:#ae81ff">9</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span> <span style="color:#75715e">; nine minus one</span>
 <span style="color:#111">(</span><span style="color:#111">-</span> <span style="color:#ae81ff">8</span><span style="color:#111">)</span>
 <span style="color:#111">(</span><span style="color:#111">quotient</span> <span style="color:#ae81ff">21912</span> <span style="color:#ae81ff">7</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">remainder</span> <span style="color:#ae81ff">21912</span> <span style="color:#ae81ff">7</span><span style="color:#111">)</span></code></pre></div>
-<ul>
-<li>Exponents, square root, squaring:
-<code>racket
-(expt 1.01 95) ; 1.01 to the 95 power is about 2.57
-(sqrt 9) ; square root of 9 is three
-(sqr 1241) ; when you square 1241 you get 1540081
-</code></li>
-</ul></li>
+<span style="color:#111">(</span><span style="color:#111">remainder</span> <span style="color:#ae81ff">21912</span> <span style="color:#ae81ff">7</span><span style="color:#111">)</span></code></pre></div></li>
+
+<li><p>Exponents, square root, squaring:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">expt</span> <span style="color:#ae81ff">1.01</span> <span style="color:#ae81ff">95</span><span style="color:#111">)</span> <span style="color:#75715e">; 1.01 to the 95 power is about 2.57</span>
+<span style="color:#111">(</span><span style="color:#111">sqrt</span> <span style="color:#ae81ff">9</span><span style="color:#111">)</span> <span style="color:#75715e">; square root of 9 is three</span>
+<span style="color:#111">(</span><span style="color:#111">sqr</span> <span style="color:#ae81ff">1241</span><span style="color:#111">)</span> <span style="color:#75715e">; when you square 1241 you get 1540081</span></code></pre></div></li>
 
 <li><p>Inexact answers, checking with tolerance</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">&gt;</span> <span style="color:#111">(</span><span style="color:#111">sqrt</span> <span style="color:#ae81ff">5</span><span style="color:#111">)</span> <span style="color:#75715e">; about 2.236</span>
@@ -2803,15 +2800,12 @@ You should never use check-expect with inexact numbers, because the inexact resu
 
 <li><p>Special numbers: both pi is built in. Your tests should still pass if you use either the buit in value of <code>pi</code> or <code>3.1415</code>.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">&gt;</span> <span style="color:#111">pi</span>
-<span style="color:#ae81ff">#i3.141592653589793</span></code></pre></div>
-<ul>
-<li>Maximum, minimum, absolute value
-<code>racket
-(max 0 -4) ; ==&gt; 0
-(min 255 300) ; ==&gt; 255
-(abs -10) ; ==&gt; 10
-</code></li>
-</ul></li>
+<span style="color:#ae81ff">#i3.141592653589793</span></code></pre></div></li>
+
+<li><p>Maximum, minimum, absolute value</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">max</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-4</span><span style="color:#111">)</span> <span style="color:#75715e">; ==&gt; 0</span>
+<span style="color:#111">(</span><span style="color:#111">min</span> <span style="color:#ae81ff">255</span> <span style="color:#ae81ff">300</span><span style="color:#111">)</span> <span style="color:#75715e">; ==&gt; 255</span>
+<span style="color:#111">(</span><span style="color:#111">abs</span> <span style="color:#ae81ff">-10</span><span style="color:#111">)</span> <span style="color:#75715e">; ==&gt; 10</span></code></pre></div></li>
 
 <li><p>Getting rid of fractions. The best generic method to use is <code>real-&gt;int</code>. Otherwise there are specific functions that will round traditionally, round up (ceiling), and round down (floor).</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">real-&gt;int</span> <span style="color:#ae81ff">0.5</span><span style="color:#111">)</span>
@@ -2819,7 +2813,9 @@ You should never use check-expect with inexact numbers, because the inexact resu
 <span style="color:#111">(</span><span style="color:#111">real-&gt;int</span> <span style="color:#ae81ff">2.5</span><span style="color:#111">)</span>
 <span style="color:#111">(</span><span style="color:#111">ceiling</span> <span style="color:#ae81ff">1.2</span><span style="color:#111">)</span>
 <span style="color:#111">(</span><span style="color:#111">floor</span> <span style="color:#ae81ff">1.7</span><span style="color:#111">)</span>
-<span style="color:#111">(</span><span style="color:#111">round</span> <span style="color:#ae81ff">1.6</span><span style="color:#111">)</span></code></pre></div>
+<span style="color:#111">(</span><span style="color:#111">round</span> <span style="color:#ae81ff">1.6</span><span style="color:#111">)</span></code></pre></div></li>
+</ul>
+
 <h2 id="more-important-ideas">More Important Ideas</h2>
 
 <ul>
@@ -2828,7 +2824,6 @@ You should never use check-expect with inexact numbers, because the inexact resu
 <li><code>map3-image</code> or <code>map-image</code></li>
 <li><code>(random 5)</code> gives 0, 1, 2, 3, or 4.</li>
 <li>How to make a gradient, changing color smoothly from pink to light blue.</li>
-</ul></li>
 </ul>
 
 

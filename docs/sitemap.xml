@@ -1648,32 +1648,8 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/</loc>
-    <lastmod>2018-10-12T21:35:05-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/design-process/</loc>
-    <lastmod>2018-10-12T21:35:05-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/connect-four/</loc>
     <lastmod>2018-10-09T09:37:17-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/haskell/</loc>
-    <lastmod>2018-10-09T09:37:17-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/project/</loc>
-    <lastmod>2018-10-09T09:37:17-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1697,24 +1673,6 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/ap-cs/</loc>
-    <lastmod>2018-09-12T15:57:47-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/homework/</loc>
-    <lastmod>2018-09-12T15:57:47-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/hw/</loc>
-    <lastmod>2018-09-12T15:57:47-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/intermediate-cs/ch01/ch01quiza/</loc>
     <lastmod>2018-09-11T07:58:13-05:00</lastmod>
   </url>
@@ -1722,30 +1680,6 @@
   <url>
     <loc>https://wy-cs.site/resources/why-racket/</loc>
     <lastmod>2018-09-05T20:12:44-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/categories/</loc>
-    <lastmod>2018-09-05T11:26:51-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/categories/ap-cs/</loc>
-    <lastmod>2018-09-05T11:26:51-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/calendar/</loc>
-    <lastmod>2018-09-05T11:19:45-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/git/</loc>
-    <lastmod>2018-02-11T07:33:00-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1864,12 +1798,6 @@
   </url>
   
   <url>
-    <loc>https://wy-cs.site/tags/reading-guide/</loc>
-    <lastmod>2017-10-02T09:19:07-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wy-cs.site/ap-cs/haskell/ch05/ch05-reading-guide/</loc>
     <lastmod>2017-09-24T13:52:19-05:00</lastmod>
   </url>
@@ -1877,18 +1805,6 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/haskell/typeclass-notes/</loc>
     <lastmod>2017-09-24T13:16:03-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/opener/</loc>
-    <lastmod>2017-09-22T09:55:25-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/categories/intermediate-cs/</loc>
-    <lastmod>2017-09-18T22:38:42-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1914,12 +1830,6 @@
   <url>
     <loc>https://wy-cs.site/ap-cs/haskell/daily/2017-09-11/</loc>
     <lastmod>2017-09-11T10:47:02-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wy-cs.site/tags/daily-notes/</loc>
-    <lastmod>2017-09-11T10:47:02-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1949,32 +1859,26 @@
   
   <url>
     <loc>https://wy-cs.site/_header/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wy-cs.site/machine-learning/daily/2018-09-21/2018-09-21-ch2-ex8-demo/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wy-cs.site/machine-learning/daily/2018-10-01/alcohol-analysis-quiz/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wy-cs.site/machine-learning/isl-ch2/boston-starter/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wy-cs.site/machine-learning/isl-ch2/isl2labquestions/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wy-cs.site/machine-learning/isl-ch2/isl2labsolutions/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2022,7 +1926,97 @@
   </url>
   
   <url>
+    <loc>https://wy-cs.site/tags/ap-cs/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/categories/ap-cs/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/calendar/</loc>
+    <lastmod>2018-09-05T11:19:45-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/categories/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/daily-notes/</loc>
+    <lastmod>2017-09-11T10:03:46-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/design-process/</loc>
+    <lastmod>2018-10-12T21:35:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/git/</loc>
+    <lastmod>2017-10-25T19:55:58-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/haskell/</loc>
+    <lastmod>2017-09-09T15:34:07-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/homework/</loc>
+    <lastmod>2018-09-12T15:57:47-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/hw/</loc>
+    <lastmod>2018-09-12T15:57:47-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/categories/intermediate-cs/</loc>
+    <lastmod>2017-09-10T01:23:58-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://wy-cs.site/machine-learning/isl-ch9/2019-03-05-matplotlib-example-ii/</loc>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/opener/</loc>
+    <lastmod>2017-09-22T09:55:25-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/project/</loc>
+    <lastmod>2018-09-20T22:31:35-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/reading-guide/</loc>
+    <lastmod>2017-09-17T20:47:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wy-cs.site/tags/</loc>
+    <lastmod>2017-09-09T15:57:47-05:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T23:25:17 CDT">
+<meta name="revised" content="2019-05-13T16:54:38 CDT">
 <title>Typed Exercises 2 :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2797,10 +2797,22 @@ and a square of side length 2*n when n is odd.</p></li>
 
 <h2 id="facts-about-numbers">Facts about Numbers</h2>
 
-<p>The number system Typed Racket uses is complicated, and Racket knows a
-lot about types. For example, there is a type for
-<code>Nonnegative-Integer</code>, and when you take the square root you get a
-<code>Nonnegative-Real</code>. The type <code>Number</code> actually means complex number
+<p>There are many number types, including:</p>
+
+<ul>
+<li><code>Number</code></li>
+<li><code>Real</code></li>
+<li><code>Integer</code></li>
+<li><code>Nonnegative-Real</code></li>
+<li><code>Nonnegative-Integer</code></li>
+<li><code>Positive-Integer</code></li>
+</ul>
+
+<p>Pick the most appropriate one. For example, if you are taking the
+square root of a number, <code>Nonnegative-Real</code> might be a good choice. If
+that number is also an integer, then use <code>Nonnegative-Integer</code>.</p>
+
+<p>The type <code>Number</code> actually means complex number
 (like <code>5+12i</code> from math class), so lots of the time you really want to
 use <code>Real</code>.</p>
 

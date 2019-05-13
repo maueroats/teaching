@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T23:25:16 CDT">
+<meta name="revised" content="2019-05-13T16:54:37 CDT">
 <title>Variables Intro 1 Solution :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2763,93 +2763,85 @@
     
     
     <ol>
-<li>Count (and show) how many times you click on the button
-sprite. Assume we have already made a &ldquo;clicks&rdquo; variable.
+<li><p>Count (and show) how many times you click on the button
+sprite. Assume we have already made a &ldquo;clicks&rdquo; variable.</p>
 
-<br /></li>
-</ol>
 
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
+<pre class="scratch">
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">When this sprite clicked
 change [clicks v] by (1)</pre></div>
-<p></pre></p>
+</pre>
+</li>
 
-<ol>
-<li>Reset the count of clicks to zero when you hit &ldquo;r&rdquo;.
+<li><p>Reset the count of clicks to zero when you hit &ldquo;r&rdquo;.</p>
 
-<br /></li>
-</ol>
 
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
+<pre class="scratch">
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">when [r v] key pressed
 set [clicks v] to (0)</pre></div>
-<p></pre></p>
+</pre>
+</li>
 
-<ol>
 <li><p>There is a &ldquo;Mario&rdquo; sprite and a &ldquo;Coin&rdquo; sprite.</p>
 
 <ul>
 <li>Show on the screen how many coins Mario has touched.</li>
 <li>When Mario touches a coin, it reappears in a random location.</li>
-<li>Assume you have already made a &ldquo;coins&rdquo; variable.
+<li>Assume you have already made a &ldquo;coins&rdquo; variable.</li>
+</ul>
 
-<br /></li>
-</ul></li>
-</ol>
 
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
+<pre class="scratch">
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">when green flag clicked
 forever
 if &lt; touching [Mario v] &gt; then
   change [coins v] by (1) 
   go to [random position v]</pre></div>
-<p></pre></p>
+</pre>
+</li>
 
-<ol>
 <li><p>Phil eats hamburgers. After he eats 5 burgers, he pixelates to
 &ldquo;125&rdquo;. When he eats 10 hamburgers, he &ldquo;wins&rdquo;. Have just one burger
 that reappears in a random position on the screen when Phil touches it.</p>
 
 <ul>
-<li>Phil:
+<li>Phil:</li>
+</ul>
 
-<br /></li>
-</ul></li>
-</ol>
 
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
+<pre class="scratch">
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">when green flag clicked
 forever
 if &lt; (burgers) = (5) &gt; then
@@ -2858,23 +2850,31 @@ if &lt; (burgers) = (5) &gt; then
 if &lt; (burgers) = (10) &gt; then
   broadcast [game over v]
   end</pre></div>
-<p></pre></p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">* Burger:</pre></div>
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+</pre>
+
+
+<ul>
+<li>Burger:</li>
+</ul>
+
+
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
+<pre class="scratch">
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">when green flag clicked
 forever
 if &lt; touching [Phil v] &gt; then
   change [burgers v] by (1) 
   go to [random position v]</pre></div>
-<p></pre></p>
+</pre>
+</li>
+</ol>
 
 
     

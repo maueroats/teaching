@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-09T23:25:17 CDT">
+<meta name="revised" content="2019-05-13T16:54:37 CDT">
 <title>Variables Intro 2 Solution :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2767,31 +2767,34 @@
 eating a hotdog. When food is eaten it disappears. Reset the points
 when you click the green flag.</p>
 
-<p>Arf the Dog:</p></li>
-</ol>
+<p>Arf the Dog:</p>
 
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
+<pre class="scratch">
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">when green flag clicked
 set [points v] to (0)</pre></div>
-<p></pre></p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Cupcake:</pre></div>
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+</pre>
+
+
+<p>Cupcake:
+
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
+<pre class="scratch">
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">when green flag clicked
 forever
   if &lt; touching [Arf the Dog v] &gt; then
@@ -2799,9 +2802,11 @@ forever
     hide
     end
   end</pre></div>
-<p></pre></p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">The hotdog is almost identical to the cupcake.</pre></div>
-<ol>
+</pre>
+</p>
+
+<p>The hotdog is almost identical to the cupcake.</p></li>
+
 <li><p>There are two variables. One is a &ldquo;goal&rdquo; number. The other is the
 &ldquo;current&rdquo; number.</p>
 
@@ -2811,21 +2816,19 @@ keys (up, down).</li>
 <li>When the current number matches the goal number,
 the backdrop changes to &ldquo;You Win&rdquo;.</li>
 <li>Set the goal number to be a random number 1 to 10 when green flag
-is clicked.
+is clicked.</li>
+</ul>
 
-<br /></li>
-</ul></li>
-</ol>
 
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
+<pre class="scratch">
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> when green flag clicked
  set [goal v] to (pick random (1) to (10))
 
@@ -2840,7 +2843,9 @@ window.onload = function () {
    if &lt; (goal) = (current) &gt; then
      switch backdrop to [YouWin v]
    end</pre></div>
-<p></pre></p>
+</pre>
+</li>
+</ol>
 
 <!-- Teacher notes: 
 
