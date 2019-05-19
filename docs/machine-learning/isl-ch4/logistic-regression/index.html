@@ -2789,10 +2789,10 @@ Regression in the <a href="https://colab.research.google.com/drive/1M1fukzCHH5Ak
 walkthrough</a>. You
 should consult that for details.</p>
 
-<div class="notices warning" ><p>For StatsModels, the output variable must be a number. Change strings like &ldquo;Larger&rdquo; and
-&ldquo;Smaller&rdquo; to the numbers 0 and 1.</p>
+<div class="notices warning" >
+For StatsModels, the output variable must be a number. Change strings like "Larger" and
+"Smaller" to the numbers 0 and 1.
 </div>
-
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">import statsmodels.api as sm
 result = sm.Logit.from_formula(&#34;output~p1+p2&#34;,
            data=DataFrame).fit()</pre></div>

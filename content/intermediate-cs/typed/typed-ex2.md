@@ -24,13 +24,13 @@ description: "Additional practice writing typed functions, includes lists and re
    real numbers, you probably want `Nonnegative-Real` numbers.
    
 4. `grow-sq`: Given a start and end integer, make a list of images,
-   all squares beginning at side length start, and ending at side
+   all outline squares beginning at side length start, and ending at side
    length <= end.
    
 5. `sqc`: Given two integers `start` and `end`, draw one image which
    is an overlay of images as n goes from `start` to `end` increasing
-   by 10 each time. The image is a circle of radius n when n is even
-   and a square of side length 2*n when n is odd.
+   by 11 each time. The image is an outline circle of radius `10*n` when n is even
+   and an outline square of side length `2*n` when n is odd. 
 
 
 ## Facts about Numbers
