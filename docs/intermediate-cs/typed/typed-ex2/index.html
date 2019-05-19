@@ -2771,6 +2771,7 @@
 <li>
 <ul>
 <li><a href="#facts-about-numbers">Facts about Numbers</a></li>
+<li><a href="#trouble-spots">Trouble spots</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2799,9 +2800,10 @@
 (check-expect (ezn 7) (list 7 6 5 4 3 2 1 0))</pre></div></li>
 
 <li><p><code>rpt</code>: Given a word and a number, make a list containing that word
-the given number of times.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (rpt &#34;word&#34; 4) (list &#34;word&#34; &#34;word&#34; &#34;word&#34; &#34;word&#34;))
-(check-expect (rpt &#34;cat&#34; 2) (list &#34;cat&#34; &#34;cat&#34;))</pre></div></li>
+the given number of times, except chop off one more letter at the start
+of the word each time you repeat it.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">(check-expect (rpt &#34;word&#34; 4) (list &#34;word&#34; &#34;ord&#34; &#34;rd&#34; &#34;d&#34;))
+(check-expect (rpt &#34;cat&#34; 2) (list &#34;cat&#34; &#34;at&#34;))</pre></div></li>
 
 <li><p><code>perfect-squares</code>: Given a list of integers, return a list of all
 of the perfect squares contained in that list. If you work with
@@ -2809,12 +2811,24 @@ real numbers, you probably want <code>Nonnegative-Real</code> numbers.</p></li>
 
 <li><p><code>grow-sq</code>: Given a start and end integer, make a list of images,
 all outline squares beginning at side length start, and ending at side
-length &lt;= end.</p></li>
+length &lt;= end.</p>
+
+<p><figure>
+<img src="grow-sq.png"/> <figcaption>
+        <h4>(grow-sq 10 17)</h4>
+    </figcaption>
+</figure></p></li>
 
 <li><p><code>sqc</code>: Given two integers <code>start</code> and <code>end</code>, draw one image which
 is an overlay of images as n goes from <code>start</code> to <code>end</code> increasing
-by 11 each time. The image is an outline circle of radius <code>10*n</code> when n is even
-and an outline square of side length <code>2*n</code> when n is odd.</p></li>
+by 1 each time. The image is an outline circle of radius <code>10*n</code> when n is even
+and an outline square of side length <code>20*n</code> when n is odd.</p>
+
+<p><figure>
+<img src="sqc.png"/> <figcaption>
+        <h4>(sqc 5 11)</h4>
+    </figcaption>
+</figure></p></li>
 </ol>
 
 <h2 id="facts-about-numbers">Facts about Numbers</h2>
@@ -2837,6 +2851,18 @@ that number is also an integer, then use <code>Nonnegative-Integer</code>.</p>
 <p>The type <code>Number</code> actually means complex number
 (like <code>5+12i</code> from math class), so lots of the time you really want to
 use <code>Real</code>.</p>
+
+<h2 id="trouble-spots">Trouble spots</h2>
+
+<p>When you subtract one from a positive integer, Racket no longer knows
+it is positive (could have turned into zero). However, adding one to a
+positive integer gives you something that is definitely positive. That
+means when you are working with positive numbers and you have a choice
+between counting up or counting down, count up.</p>
+
+<p>Pro tip: if you have an <code>Integer</code> and the error message tells you that
+a <code>Positive-Real</code> is needed, you should change your type to
+<code>Positive-Integer</code>.</p>
 
 
     
