@@ -1970,6 +1970,13 @@
       <a href="/intermediate-cs/typed/checkers/">Checkers</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/intermediate-cs/typed/checkers/model/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/checkers/model/">
+            Checkers Model
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/intermediate-cs/typed/checkers/outline/" class="dd-item">
         <div>
           <a href="/intermediate-cs/typed/checkers/outline/">
@@ -2808,39 +2815,30 @@
     <ol>
 <li><p><a href="https://codingbat.com/prob/p169506">notAlone</a>.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"> <span style="color:#75af00">notAlone</span> <span style="color:#f92672">::</span> <span style="color:#111">[</span><span style="color:#00a8c8">Int</span><span style="color:#111">]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#00a8c8">Int</span><span style="color:#111">]</span>
- <span style="color:#75af00">notAlone</span> <span style="color:#75af00">nums</span> <span style="color:#75af00">x</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div>
-<ol>
+ <span style="color:#75af00">notAlone</span> <span style="color:#75af00">nums</span> <span style="color:#75af00">x</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div></li>
+
 <li><p><a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=831">Team Tic Tac Toe</a></p>
 
 <ul>
-<li>Write teamWins to determine if a given team wins a given three
-in a row.
-<br /></li>
-</ul>
+<li><p>Write teamWins to determine if a given team wins a given three
+in a row.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"> <span style="color:#75af00">teamWins</span> <span style="color:#f92672">::</span> <span style="color:#00a8c8">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#00a8c8">Char</span><span style="color:#111">]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Bool</span>
- <span style="color:#75af00">teamWins</span> <span style="color:#75af00">row</span> <span style="color:#75af00">team</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div>
-<ul>
-<li>Write allThrees, which gets all of the three in a row segments
-from a board.
-<br /></li>
-</ul>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">  <span style="color:#75af00">allThrees</span> <span style="color:#f92672">::</span> <span style="color:#111">[</span><span style="color:#00a8c8">String</span><span style="color:#111">]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#00a8c8">String</span><span style="color:#111">]</span>
-  <span style="color:#75af00">allThrees</span> <span style="color:#75af00">board</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div>
-<ul>
-<li>Write allTeams, which produces a list of all possible teams.
-<br /></li>
-</ul>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">   <span style="color:#75af00">allTeams</span> <span style="color:#f92672">::</span> <span style="color:#111">[</span><span style="color:#00a8c8">String</span><span style="color:#111">]</span></code></pre></div>
-<ul>
-<li>Combine the previous functions to solve the problem.</li>
-</ul>
+ <span style="color:#75af00">teamWins</span> <span style="color:#75af00">row</span> <span style="color:#75af00">team</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div></li>
 
-<ol>
-<li>(Bonus.) <a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=833">Family
+<li><p>Write allThrees, which gets all of the three in a row segments
+from a board.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">  <span style="color:#75af00">allThrees</span> <span style="color:#f92672">::</span> <span style="color:#111">[</span><span style="color:#00a8c8">String</span><span style="color:#111">]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">[</span><span style="color:#00a8c8">String</span><span style="color:#111">]</span>
+  <span style="color:#75af00">allThrees</span> <span style="color:#75af00">board</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div></li>
+
+<li><p>Write allTeams, which produces a list of all possible teams.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">   <span style="color:#75af00">allTeams</span> <span style="color:#f92672">::</span> <span style="color:#111">[</span><span style="color:#00a8c8">String</span><span style="color:#111">]</span></code></pre></div></li>
+
+<li><p>Combine the previous functions to solve the problem.</p></li>
+</ul></li>
+
+<li><p>(Bonus.) <a href="http://usaco.org/index.php?page=viewproblem2&amp;cpid=833">Family
 Tree</a>. I use
-<code>momList</code> to be the list of pairs of strings (mother, child).
-<br /></li>
-</ol>
+<code>momList</code> to be the list of pairs of strings (mother, child).</p>
 
 <ul>
 <li><p><code>findParent momList cow</code> produces []  or a list containing the
@@ -2852,12 +2850,10 @@ the cow has no known mother.</p></li>
 
 <li><p><code>isRelated momList cow1 cow2</code> gives True if the cows are
 related at all.</p></li>
-</ul>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">isRelated</span> <span style="color:#f92672">::</span>  <span style="color:#111">[(</span><span style="color:#00a8c8">String</span><span style="color:#111">,</span><span style="color:#00a8c8">String</span><span style="color:#111">)]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Bool</span>
-<span style="color:#75af00">isRelated</span> <span style="color:#75af00">familyTree</span> <span style="color:#75af00">cow1</span> <span style="color:#75af00">cow2</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div></li>
-</ol></li>
+</ul></li>
 </ol>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">   <span style="color:#75af00">isRelated</span> <span style="color:#f92672">::</span>  <span style="color:#111">[(</span><span style="color:#00a8c8">String</span><span style="color:#111">,</span><span style="color:#00a8c8">String</span><span style="color:#111">)]</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#00a8c8">Bool</span>
+   <span style="color:#75af00">isRelated</span> <span style="color:#75af00">familyTree</span> <span style="color:#75af00">cow1</span> <span style="color:#75af00">cow2</span> <span style="color:#f92672">=</span> <span style="color:#75af00">undefined</span></code></pre></div>
 
     
     

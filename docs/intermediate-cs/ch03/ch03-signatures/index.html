@@ -1969,6 +1969,13 @@
       <a href="/intermediate-cs/typed/checkers/">Checkers</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/intermediate-cs/typed/checkers/model/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/checkers/model/">
+            Checkers Model
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/intermediate-cs/typed/checkers/outline/" class="dd-item">
         <div>
           <a href="/intermediate-cs/typed/checkers/outline/">
@@ -2814,32 +2821,31 @@
 
 <li><p>Write a possible signature for <code>mystery</code>:</p>
 
-<p><figure>
-<img src="mystery-inputs.png"/>
-</figure></p></li>
+<figure>
+    <img src="mystery-inputs.png"/> 
+</figure>
+</li>
 
 <li><p>Write a signature for <code>magic</code> described below.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">magic</span> <span style="color:#111">(</span><span style="color:#111">circle</span> <span style="color:#ae81ff">40</span> <span style="color:#d88200">&#34;solid&#34;</span> <span style="color:#d88200">&#34;blue&#34;</span><span style="color:#111">)</span> 
        <span style="color:#ae81ff">100</span><span style="color:#111">)</span></code></pre></div>
 <p>Produces two semi-transparent blue circles of radius 40:
  <figure>
-<img src="semi-transparent-circles.png"/>
-</figure></p>
+    <img src="semi-transparent-circles.png"/> 
+</figure>
 
-<p>Aside: if they were solid blue, they would look like this:
+ Aside: if they were solid blue, they would look like this:
  <figure>
-<img src="solid-circles.png"/>
-</figure></p>
+    <img src="solid-circles.png"/> 
+</figure>
+</p></li>
 
-<ol>
-<li>Write a signature for <code>overtext</code>.
-<code>racket
-(overtext &quot;Banned&quot; (scale 5 pic:stick-figure))
-</code>
+<li><p>Write a signature for <code>overtext</code>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">overtext</span> <span style="color:#d88200">&#34;Banned&#34;</span> <span style="color:#111">(</span><span style="color:#111">scale</span> <span style="color:#ae81ff">5</span> <span style="color:#111">pic:stick-figure</span><span style="color:#111">))</span></code></pre></div>
 <figure>
-<img src="banned-result.png"/>
-</figure></li>
-</ol></li>
+    <img src="banned-result.png"/> 
+</figure>
+</li>
 
 <li><p>Write a signature for <code>dimsum</code>, which returns the sum of the length
 and width of each of its dimensions.</p>

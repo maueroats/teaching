@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>intermediate-cs on WY Computer Science</title>
+    <title>Intermediate Cs on WY Computer Science</title>
     <link>https://wy-cs.site/categories/intermediate-cs/</link>
-    <description>Recent content in intermediate-cs on WY Computer Science</description>
+    <description>Recent content in Intermediate Cs on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Sep 2017 22:38:42 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 10 Sep 2017 01:23:58 -0500</lastBuildDate>
     
 	<atom:link href="https://wy-cs.site/categories/intermediate-cs/index.xml" rel="self" type="application/rss+xml" />
     
@@ -28,7 +28,7 @@
       <guid>https://wy-cs.site/intermediate-cs/</guid>
       <description>Intermediate Computer Science uses the DrRacket environment and the Picturing Programs textbook. Use WeScheme if you cannot install programs, but read the notes on WeScheme because it is different in some ways.
 Eventually you will want to understand why we learn Racket instead of a more popular language like Python.
-Recent Changes   Checkers Outline modified Mon 05-20  Checkers modified Mon 05-20  Bumper Cars modified Thu 05-16  Typed Exercises 3 modified Thu 05-09  Typed Exercises 2 modified Tue 05-07  Typed Exercises 1 modified Tue 05-07  Typed Big Bang modified Mon 05-06  Typed Variables and Functions modified Mon 05-06  All Content  1.</description>
+Recent Changes   Checkers Model modified Mon 05-20  Checkers Outline modified Mon 05-20  Checkers modified Mon 05-20  Bumper Cars modified Thu 05-16  Typed Exercises 3 modified Thu 05-09  Typed Exercises 2 modified Tue 05-07  Typed Exercises 1 modified Tue 05-07  Typed Big Bang modified Mon 05-06  All Content  1.</description>
     </item>
     
     <item>
