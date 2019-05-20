@@ -1963,6 +1963,13 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/typed/bumper-two-player/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/bumper-two-player/">
+            Bumper Two Player
+          </a>
+        </div>
+    </li>
     <li data-nav-id="/intermediate-cs/typed/checkers/" class="dd-item parent haschildren
         ">
       <div>
@@ -1970,17 +1977,17 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/typed/checkers/model/" class="dd-item">
-        <div>
-          <a href="/intermediate-cs/typed/checkers/model/">
-            Checkers Model
-          </a>
-        </div>
-    </li>
       <li data-nav-id="/intermediate-cs/typed/checkers/outline/" class="dd-item active">
         <div>
           <a href="/intermediate-cs/typed/checkers/outline/">
             Checkers Outline
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/typed/checkers/model/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/checkers/model/">
+            Checkers Model
           </a>
         </div>
     </li>
@@ -2815,26 +2822,32 @@
     <p>The game development process has several steps:</p>
 
 <ol>
-<li><p>Examples: write down several examples showing different situations
+<li><p><a href="/intermediate-cs/typed/checkers/model/">Examples</a>: write down several examples
+showing different situations
 that will occur in the game. Make sure you consider all of the
-possiblities. In checkers, this should include winning and you
-should consider whether you are going to allow double jumps and
-forced jumps. (Both of those can be added in later. I consider them
-&ldquo;advanced&rdquo; topics.)</p></li>
+possiblities.</p></li>
 
-<li><p>Model: decide on the model you will use for the game.</p></li>
+<li><p><a href="/intermediate-cs/typed/checkers/model/#model-structure">Model</a>: decide on the model you will use for the game.</p></li>
 
-<li><p>Draw handler.</p></li>
+<li><p>Draw handler. Show whose move it is as well as drawing the board.</p></li>
 
-<li><p>Support functions:</p>
+<li><p>Support functions: we will practice function design (including
+writing check-expects) to make functions we will need.</p>
 
 <ul>
 <li><code>is-occupied?: (Listof Piece) Posn -&gt; Boolean</code></li>
 <li><code>is-my-piece?: Integer Piece -&gt; Boolean</code></li>
 <li><code>legal-move?: Game Posn -&gt; Boolean</code></li>
 <li><code>take-piece: (Listof Piece) Posn -&gt; (Listof Piece)</code>
-<br />
 <br /></li>
+</ul></li>
+
+<li><p>Mouse handler. The logic of interacting with the pieces can be a
+little complex if you want all of the details.</p>
+
+<ul>
+<li><code>click-&gt;board-coord: Posn -&gt; Posn</code>: Convert from screen
+coordinates to the board coordinates.</li>
 </ul></li>
 </ol>
 
@@ -2848,8 +2861,8 @@ forced jumps. (Both of those can be added in later. I consider them
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/typed/checkers/model/" title="Checkers Model"> <i class="fa fa-chevron-left"></i><label>Checkers Model</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><label>Calendar</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/typed/checkers/" title="Checkers"> <i class="fa fa-chevron-left"></i><label>Checkers</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/typed/checkers/model/" title="Checkers Model" style="margin-right: 0px;"><label>Checkers Model</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

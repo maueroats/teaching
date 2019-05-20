@@ -1,7 +1,7 @@
 ---
 title: "Checkers Outline"
 date: 2019-05-20T07:21:56-05:00
-weight: 20
+weight: 10
 draft: false
 #type: slide
 #theme: white
@@ -10,24 +10,27 @@ description: "An outline of all of the functions you could use to make checkers.
 
 The game development process has several steps:
 
-1. Examples: write down several examples showing different situations
+1. [Examples]({{% relref "./model" %}}): write down several examples
+   showing different situations 
    that will occur in the game. Make sure you consider all of the
-   possiblities. In checkers, this should include winning and you
-   should consider whether you are going to allow double jumps and
-   forced jumps. (Both of those can be added in later. I consider them
-   "advanced" topics.)
+   possiblities. 
    
-2. Model: decide on the model you will use for the game.
+2. [Model]({{% relref "./model#model-structure" %}}): decide on the model you will use for the game.
 
-3. Draw handler.
+3. Draw handler. Show whose move it is as well as drawing the board.
 
-4. Support functions:
+4. Support functions: we will practice function design (including
+   writing check-expects) to make functions we will need.
 
     * `is-occupied?: (Listof Piece) Posn -> Boolean`
     * `is-my-piece?: Integer Piece -> Boolean`
     * `legal-move?: Game Posn -> Boolean`
     * `take-piece: (Listof Piece) Posn -> (Listof Piece)`
     
-    
+5. Mouse handler. The logic of interacting with the pieces can be a
+   little complex if you want all of the details.
+
+    * `click->board-coord: Posn -> Posn`: Convert from screen
+      coordinates to the board coordinates.
 
 

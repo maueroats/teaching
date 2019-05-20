@@ -1963,6 +1963,13 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/intermediate-cs/typed/bumper-two-player/" class="dd-item">
+        <div>
+          <a href="/intermediate-cs/typed/bumper-two-player/">
+            Bumper Two Player
+          </a>
+        </div>
+    </li>
     <li data-nav-id="/intermediate-cs/typed/checkers/" class="dd-item parent haschildren
         ">
       <div>
@@ -1970,17 +1977,17 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/intermediate-cs/typed/checkers/model/" class="dd-item active">
-        <div>
-          <a href="/intermediate-cs/typed/checkers/model/">
-            Checkers Model
-          </a>
-        </div>
-    </li>
       <li data-nav-id="/intermediate-cs/typed/checkers/outline/" class="dd-item">
         <div>
           <a href="/intermediate-cs/typed/checkers/outline/">
             Checkers Outline
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/intermediate-cs/typed/checkers/model/" class="dd-item active">
+        <div>
+          <a href="/intermediate-cs/typed/checkers/model/">
+            Checkers Model
           </a>
         </div>
     </li>
@@ -2798,9 +2805,10 @@
 <ul>
 <li>
 <ul>
+<li><a href="#examples">Examples</a></li>
 <li><a href="#board-coordinates">Board Coordinates</a></li>
 <li><a href="#piece-structure">Piece Structure</a></li>
-<li><a href="#model">Model</a></li>
+<li><a href="#model-structure">Model Structure</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2821,10 +2829,19 @@
     
     
     
-    
-
-<p>This is the written record of an analysis. You should practice doing
+    <p>This is the written record of an analysis. You should practice doing
 your own analysis of a game, not just copying this one.</p>
+
+<h2 id="examples">Examples</h2>
+
+<p>Begin with pictures of all of the situations that can come up in the
+game.</p>
+
+<p>Advanced: enthusiastic software designers may want to read about
+how <a href="https://www.alexandercowan.com/best-agile-user-story/">user stories</a>
+used in actual software development.</p>
+
+<!-- page 2 of file:: gm convert FILE.pdf[1]  -crop 510x770+20+20 -->
 
 <figure>
     <img src="checkers-planning-1.png"/> 
@@ -2838,7 +2855,7 @@ your own analysis of a game, not just copying this one.</p>
 
 <h2 id="board-coordinates">Board Coordinates</h2>
 
-<p>We considered human-friendly coordinates, like (1,3) as well as
+<p>We considered human-friendly coordinates, like (1,4) as well as
 computer-friendly coordinates like (75, 225). Using computer
 coordinates would make it easier to write the draw-handler, but
 writing checks would be easier with human coordinates. We chose human
@@ -2852,7 +2869,7 @@ coordinates because checks are important to write.</p>
 <li><code>king?</code>: Boolean</li>
 </ul>
 
-<h2 id="model">Model</h2>
+<h2 id="model-structure">Model Structure</h2>
 
 <p>We discussed this much of the model:</p>
 
@@ -2864,7 +2881,6 @@ coordinates because checks are important to write.</p>
 <p>We still need to discuss the mechanics of moving pieces during a
 player&rsquo;s turn, so there will be a little more to put in the model.</p>
 
-
     
     
           <footer class=" footline" >
@@ -2874,8 +2890,8 @@ player&rsquo;s turn, so there will be a little more to put in the model.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/intermediate-cs/typed/checkers/" title="Checkers"> <i class="fa fa-chevron-left"></i><label>Checkers</label></a>
-    <a class="nav nav-next" href="/intermediate-cs/typed/checkers/outline/" title="Checkers Outline" style="margin-right: 0px;"><label>Checkers Outline</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/intermediate-cs/typed/checkers/outline/" title="Checkers Outline"> <i class="fa fa-chevron-left"></i><label>Checkers Outline</label></a>
+    <a class="nav nav-next" href="/intermediate-cs/calendar/" title="Calendar" style="margin-right: 0px;"><label>Calendar</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
