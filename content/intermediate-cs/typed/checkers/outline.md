@@ -24,8 +24,8 @@ The game development process has several steps:
 
     * `is-occupied?: (Listof Piece) Posn -> Boolean`
     * `is-my-piece?: Integer Piece -> Boolean`
-    * `legal-move?: Game Posn -> Boolean`
     * `take-piece: (Listof Piece) Posn -> (Listof Piece)`
+    * `legal-move?: Game Posn -> Boolean`
     
 5. Mouse handler. The logic of interacting with the pieces can be a
    little complex if you want all of the details.
