@@ -2256,6 +2256,13 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/ecs/arduino/simulator/" class="dd-item">
+        <div>
+          <a href="/ecs/arduino/simulator/">
+            Simulator
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/ecs/arduino/all-commands/" class="dd-item">
         <div>
           <a href="/ecs/arduino/all-commands/">
@@ -2841,6 +2848,7 @@
     <img src="treasure-hunt.png"/> 
 </figure>
 
+
 <h2 id="common-misunderstandings">Common Misunderstandings</h2>
 
 <p>These statements are the way the game <em>should</em> work.</p>
@@ -2860,16 +2868,16 @@ walk over and touch the door to open it.</p></li>
 can actually move in one direction even while you are touching the
 wall. Example:</p>
 
-<p><script src="/js/scratchblocks-v3.3-min.js"></script>
+
+<script src="/js/scratchblocks-v3.3-min.js"></script>
 <script>
 window.onload = function () {
-  console.log(&lsquo;MO: Loading scratchblocks&rsquo;);
-  scratchblocks.renderMatching(&lsquo;pre.scratch&rsquo;);
-  scratchblocks.renderMatching(&lsquo;scratch.inline&rsquo;, {inline: true});
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
 }
 </script>
-<pre class="scratch"></p>
-
+<pre class="scratch">
 <p>when [d v] key pressed
   forever
     if &lt; touching color (black) &gt; then
@@ -2880,7 +2888,8 @@ window.onload = function () {
       move (5) steps
     end</p>
 
-<p></pre></p>
+</pre>
+
 
 
     

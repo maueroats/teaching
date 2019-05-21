@@ -2257,6 +2257,13 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/ecs/arduino/simulator/" class="dd-item">
+        <div>
+          <a href="/ecs/arduino/simulator/">
+            Simulator
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/ecs/arduino/all-commands/" class="dd-item">
         <div>
           <a href="/ecs/arduino/all-commands/">
@@ -2831,22 +2838,22 @@
 <ul>
 <li><p>Create (make space for) an array:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">[</span><span style="color:#111">50</span><span style="color:#f92672">];</span>
-<span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">names</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> <span style="color:#d88200">&#34;Justyn&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Connor&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Leo&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Ellie&#34;</span> <span style="color:#f92672">};</span></code></pre></div>
-<ul>
-<li>Arrays in Java do not grow or shrink. There is no <code>+=</code> for arrays.</li>
-<li>The length of the <code>data</code> array is <code>data.length</code>.</li>
-<li>Arrays without <code>new</code> have no space created for them.</li>
-</ul>
+<span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">names</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> <span style="color:#d88200">&#34;Justyn&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Connor&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Leo&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Ellie&#34;</span> <span style="color:#f92672">};</span></code></pre></div></li>
+
+<li><p>Arrays in Java do not grow or shrink. There is no <code>+=</code> for arrays.</p></li>
+
+<li><p>The length of the <code>data</code> array is <code>data.length</code>.</p></li>
+
+<li><p>Arrays without <code>new</code> have no space created for them.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">nums</span><span style="color:#f92672">;</span>
 <span style="color:#00a8c8">int</span> <span style="color:#111">len</span> <span style="color:#f92672">=</span> <span style="color:#111">nums</span><span style="color:#f92672">.</span><span style="color:#75af00">length</span><span style="color:#f92672">;</span> <span style="color:#75715e">// error, array is not made at all!!
 </span><span style="color:#75715e"></span><span style="color:#111">nums</span><span style="color:#f92672">[</span><span style="color:#111">0</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#111">1</span><span style="color:#f92672">;</span> <span style="color:#f92672">//</span> <span style="color:#111">error</span><span style="color:#f92672">,</span> <span style="color:#111">certainly</span> <span style="color:#111">no</span> <span style="color:#111">item</span> <span style="color:#111">0</span></code></pre></div></li>
 
 <li><p>Getting values from an array:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span> <span style="color:#111">first</span> <span style="color:#f92672">=</span> <span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">0</span><span style="color:#f92672">];</span>
-<span style="color:#00a8c8">int</span> <span style="color:#111">last</span> <span style="color:#f92672">=</span> <span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">length</span> <span style="color:#f92672">-</span> <span style="color:#111">1</span><span style="color:#f92672">];</span></code></pre></div>
-<ul>
-<li>Setting values in an array:</li>
-</ul>
+<span style="color:#00a8c8">int</span> <span style="color:#111">last</span> <span style="color:#f92672">=</span> <span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">data</span><span style="color:#f92672">.</span><span style="color:#75af00">length</span> <span style="color:#f92672">-</span> <span style="color:#111">1</span><span style="color:#f92672">];</span></code></pre></div></li>
+
+<li><p>Setting values in an array:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">0</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#111">10</span><span style="color:#f92672">;</span>
 <span style="color:#111">data</span><span style="color:#f92672">[</span><span style="color:#111">1</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#111">50</span><span style="color:#f92672">;</span></code></pre></div></li>
 
@@ -2854,11 +2861,9 @@
 
 <ul>
 <li><p>At start of program:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> <span style="color:#111">java.util.*</span><span style="color:#f92672">;</span></code></pre></div>
-<ul>
-<li>When you want to print an array, use <code>Arrays.toString</code>:
-<br /></li>
-</ul>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> <span style="color:#111">java.util.*</span><span style="color:#f92672">;</span></code></pre></div></li>
+
+<li><p>When you want to print an array, use <code>Arrays.toString</code>:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">e</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#111">1</span><span style="color:#f92672">,</span><span style="color:#111">2</span><span style="color:#f92672">,</span><span style="color:#111">3</span><span style="color:#f92672">};</span>
 <span style="color:#111">String</span> <span style="color:#111">ee</span> <span style="color:#f92672">=</span> <span style="color:#111">Arrays</span><span style="color:#f92672">.</span><span style="color:#75af00">toString</span><span style="color:#f92672">(</span><span style="color:#111">e</span><span style="color:#f92672">);</span>
 <span style="color:#111">System</span><span style="color:#f92672">.</span><span style="color:#75af00">out</span><span style="color:#f92672">.</span><span style="color:#75af00">println</span><span style="color:#f92672">(</span><span style="color:#111">ee</span><span style="color:#f92672">);</span></code></pre></div></li>
@@ -2872,10 +2877,9 @@
 <li><p>You cannot use the <code>{10,30,90}</code> form of the initializer anywhere except the declaration of the object.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">nums</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#111">10</span><span style="color:#f92672">,</span><span style="color:#111">30</span><span style="color:#f92672">,</span><span style="color:#111">90</span><span style="color:#f92672">};</span> <span style="color:#75715e">// OK
 </span><span style="color:#75715e"></span><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">bad</span><span style="color:#f92672">;</span>
-<span style="color:#111">bad</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#111">10</span><span style="color:#f92672">,</span><span style="color:#111">30</span><span style="color:#f92672">,</span><span style="color:#111">90</span><span style="color:#f92672">};</span> <span style="color:#f92672">//</span> <span style="color:#111">ERROR</span></code></pre></div>
-<ul>
-<li>In that case, you need to make a new (unnamed) array before you assign it:</li>
-</ul>
+<span style="color:#111">bad</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#111">10</span><span style="color:#f92672">,</span><span style="color:#111">30</span><span style="color:#f92672">,</span><span style="color:#111">90</span><span style="color:#f92672">};</span> <span style="color:#f92672">//</span> <span style="color:#111">ERROR</span></code></pre></div></li>
+
+<li><p>In that case, you need to make a new (unnamed) array before you assign it:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">int</span><span style="color:#f92672">[]</span> <span style="color:#111">decent</span><span style="color:#f92672">;</span>
 <span style="color:#111">decent</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">[]{</span><span style="color:#111">10</span><span style="color:#f92672">,</span><span style="color:#111">30</span><span style="color:#f92672">,</span><span style="color:#111">90</span><span style="color:#f92672">};</span></code></pre></div></li>
 </ul></li>

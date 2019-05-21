@@ -14,7 +14,7 @@ Connect the two outside pins to power (5V, +) and ground (GND, -). It
 does not matter which. The middle pin connects to one of the "analong
 inputs" A0 through A5. Memorize this setup.
 
-{{% figure src="potentiometer-only_bb.png" %}}
+{{% figure src="potentiometer-only_bb.png" width="400" %}}
 
 
 ## Basic coding

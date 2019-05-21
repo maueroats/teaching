@@ -2254,6 +2254,13 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/ecs/arduino/simulator/" class="dd-item">
+        <div>
+          <a href="/ecs/arduino/simulator/">
+            Simulator
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/ecs/arduino/all-commands/" class="dd-item">
         <div>
           <a href="/ecs/arduino/all-commands/">
@@ -2832,9 +2839,9 @@
 
 <li><p>(<strong>Chapter 3</strong>)
 Instead of copy and pasting in a picture, you need to copy the link for the image and use <code>bitmap/url</code> like this:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">bitmap/url</span> <span style="color:#d88200">&#34;https://www.what-dog.net/Images/faces2/main004.jpg&#34;</span><span style="color:#111">)</span></code></pre></div>
-<ul>
-<li>(<strong>Chapter 6</strong>) Inside <code>big-bang</code> you need to use the phrase <code>to-draw</code> instead of <code>on-draw</code> that we use in DrRacket.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#111">bitmap/url</span> <span style="color:#d88200">&#34;https://www.what-dog.net/Images/faces2/main004.jpg&#34;</span><span style="color:#111">)</span></code></pre></div></li>
+
+<li><p>(<strong>Chapter 6</strong>) Inside <code>big-bang</code> you need to use the phrase <code>to-draw</code> instead of <code>on-draw</code> that we use in DrRacket.
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket"><span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">draw-handler</span> <span style="color:#111">model</span><span style="color:#111">)</span> 
     <span style="color:#111">(</span><span style="color:#111">overlay</span> <span style="color:#111">model</span> <span style="color:#111">(</span><span style="color:#111">empty-scene</span> <span style="color:#ae81ff">300</span> <span style="color:#ae81ff">200</span><span style="color:#111">)))</span>
 <span style="color:#111">(</span><span style="color:#00a8c8">define</span> <span style="color:#111">(</span><span style="color:#111">tick-handler</span> <span style="color:#111">model</span><span style="color:#111">)</span> 
@@ -2842,8 +2849,7 @@ Instead of copy and pasting in a picture, you need to copy the link for the imag
 
 <span style="color:#111">(</span><span style="color:#111">big-bang</span> <span style="color:#111">(</span><span style="color:#111">circle</span> <span style="color:#ae81ff">10</span> <span style="color:#d88200">&#34;solid&#34;</span> <span style="color:#d88200">&#34;green&#34;</span><span style="color:#111">)</span>
           <span style="color:#111">(</span><span style="color:#111">on-tick</span> <span style="color:#111">tick-handler</span><span style="color:#111">)</span>
-<span style="display:block;width:100%;background-color:#e1e1e1">          <span style="color:#111">(</span><span style="color:#111">to-draw</span> <span style="color:#111">draw-handler</span><span style="color:#111">))</span></span></code></pre></div></li>
-</ul></li>
+<span style="display:block;width:100%;background-color:#e1e1e1">          <span style="color:#111">(</span><span style="color:#111">to-draw</span> <span style="color:#111">draw-handler</span><span style="color:#111">))</span></span></code></pre></div></p></li>
 </ul>
 
 
