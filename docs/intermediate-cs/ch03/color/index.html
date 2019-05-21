@@ -2249,10 +2249,17 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ecs/arduino/lesson-notes/" class="dd-item">
+      <li data-nav-id="/ecs/arduino/potentiometer/" class="dd-item">
         <div>
-          <a href="/ecs/arduino/lesson-notes/">
-            Lesson Notes
+          <a href="/ecs/arduino/potentiometer/">
+            Potentiometer
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ecs/arduino/all-commands/" class="dd-item">
+        <div>
+          <a href="/ecs/arduino/all-commands/">
+            All Commands
           </a>
         </div>
     </li>
@@ -2814,22 +2821,18 @@
     
     
     <ul>
-<li><code>name-&gt;color</code> changes a string name to a color, like this:
-<code>
-&gt; (name-&gt;color &quot;lavender&quot;) 
-(make-color 230 230 250)
-</code></li>
+<li><p><code>name-&gt;color</code> changes a string name to a color, like this:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&gt; (name-&gt;color &#34;lavender&#34;) 
+(make-color 230 230 250)</pre></div></li>
 </ul>
 
 <p>If you give it a color already, the computer complains:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    &gt; (name-&gt;color (make-color 230 230 250))
     name-&gt;color: Expected a string or symbol, but received (make-color 230 230 250 255) </pre></div>
 <ul>
-<li><code>colorize</code> changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than <code>name-&gt;color</code>.
-<code>
-&gt; (colorize &quot;lavender&quot;) 
-(make-color 230 230 250)
-</code></li>
+<li><p><code>colorize</code> changes a name to a color, but does not complain if it gets something that is already a color. That makes it better than <code>name-&gt;color</code>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&gt; (colorize &#34;lavender&#34;) 
+(make-color 230 230 250)</pre></div></li>
 </ul>
 
 <p>If you give it a color already, the computer complains:</p>

@@ -2,7 +2,7 @@
 title: "Lesson Notes"
 date: 2019-05-08T14:40:47-05:00
 weight: 900
-draft: false
+draft: true
 #type: slide
 #theme: white
 description: "Notes for the teacher about each lesson."

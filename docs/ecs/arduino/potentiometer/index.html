@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Lesson Notes :: WY Computer Science</title>
+<title>Potentiometer :: WY Computer Science</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -21,13 +21,13 @@
     display:none !important;
   }
 </style>
-<meta name="description" content="Notes for the teacher about each lesson.">
+<meta name="description" content="Turn a dial or pinch a rectangle to send a value to the computer.">
 
 
 
     
   </head>
-  <body data-url="/ecs/arduino/lesson-notes/">
+  <body data-url="/ecs/arduino/potentiometer/">
     
       
 
@@ -2249,10 +2249,17 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/ecs/arduino/lesson-notes/" class="dd-item active">
+      <li data-nav-id="/ecs/arduino/potentiometer/" class="dd-item active">
         <div>
-          <a href="/ecs/arduino/lesson-notes/">
-            Lesson Notes
+          <a href="/ecs/arduino/potentiometer/">
+            Potentiometer
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ecs/arduino/all-commands/" class="dd-item">
+        <div>
+          <a href="/ecs/arduino/all-commands/">
+            All Commands
           </a>
         </div>
     </li>
@@ -2780,7 +2787,7 @@
 
 
 
- <a href='https://wy-cs.site/'>Mauer-Oats Classes</a> > <a href='https://wy-cs.site/ecs/'>Exploring CS</a> > <a href='https://wy-cs.site/ecs/arduino/'>Arduino</a> > Lesson Notes
+ <a href='https://wy-cs.site/'>Mauer-Oats Classes</a> > <a href='https://wy-cs.site/ecs/'>Exploring CS</a> > <a href='https://wy-cs.site/ecs/arduino/'>Arduino</a> > Potentiometer
 
  
 
@@ -2799,10 +2806,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#lesson-1-introduction-to-parts">Lesson 1: Introduction to parts</a></li>
-<li><a href="#lesson-2-electricity">Lesson 2: Electricity</a></li>
-<li><a href="#lesson-3-making-a-circuit">Lesson 3: Making a circuit</a></li>
-<li><a href="#thoughts">Thoughts</a></li>
+<li><a href="#basic-circuit-layout">Basic circuit layout</a></li>
+<li><a href="#basic-coding">Basic coding</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2815,7 +2820,7 @@
 
 <div id="body-inner">
   
-    <h1>Lesson Notes</h1>
+    <h1>Potentiometer</h1>
   
 
 
@@ -2825,32 +2830,46 @@
     
     
 
-<h2 id="lesson-1-introduction-to-parts">Lesson 1: Introduction to parts</h2>
+<h2 id="basic-circuit-layout">Basic circuit layout</h2>
 
-<ul>
-<li>What is an Arduino?</li>
-<li>What can I do with an Arduino that I can&rsquo;t do with an ordinary
-(desktop|laptop) computer?</li>
-<li>Show the parts in the kits, say what they do.</li>
-<li>Demonstrate &ldquo;cutaway&rdquo; breadboard.</li>
-<li>Worksheet on the parts? It would be good to have.</li>
-</ul>
+<p>Connect the two outside pins to power (5V, +) and ground (GND, -). It
+does not matter which. The middle pin connects to one of the &ldquo;analong
+inputs&rdquo; A0 through A5. Memorize this setup.</p>
 
-<h2 id="lesson-2-electricity">Lesson 2: Electricity</h2>
+<figure>
+    <img src="potentiometer-only_bb.png"/> 
+</figure>
 
-<h2 id="lesson-3-making-a-circuit">Lesson 3: Making a circuit</h2>
+<h2 id="basic-coding">Basic coding</h2>
 
-<p>Goal of lesson:</p>
+<p>The
+<scratch class="inline">analog reading () :: #468cfc reporter</scratch>
+block gets a number from 0 to 1023 for your program, based on the
+voltage of the input you select.</p>
 
-<ul>
-<li>I can correctly connect an LED and make it light up.</li>
-<li>I know how electricity flows through the components.</li>
-</ul>
+<p>I will use <scratch class="inline">the value :: variables reporter</scratch> for the variable that holds the reading from
+the potentiometer. You should name the variable whatever makes sense
+for you. Sometimes &ldquo;brightness&rdquo; is a good name.</p>
 
-<h2 id="thoughts">Thoughts</h2>
 
-<p>Would it be useful to have a multimeter so students can see how their
-circuits are connected?</p>
+<script src="/js/scratchblocks-v3.3-min.js"></script>
+<script>
+window.onload = function () {
+  console.log('MO: Loading scratchblocks');
+  scratchblocks.renderMatching('pre.scratch');
+  scratchblocks.renderMatching('scratch.inline', {inline: true});
+}
+</script>
+<pre class="scratch">
+
+when green flag clicked
+forever
+  set [the value v] to (analog reading (2) :: #468cfc) 
+  say (the value) for (0.5) seconds
+  set pin (9 v) to value (the value) :: #468cfc
+
+</pre>
+
 
 
     
@@ -2863,7 +2882,7 @@ circuits are connected?</p>
 
 <div id="navigation">
 <a class="nav nav-prev" href="/ecs/arduino/arduino-worksheet-1/" title="Arduino Worksheet 1"> <i class="fa fa-chevron-left"></i><label>Arduino Worksheet 1</label></a>
-    <a class="nav nav-next" href="/machine-learning/" title="Machine Learning" style="margin-right: 0px;"><label>Machine Learning</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/ecs/arduino/all-commands/" title="All Commands" style="margin-right: 0px;"><label>All Commands</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
