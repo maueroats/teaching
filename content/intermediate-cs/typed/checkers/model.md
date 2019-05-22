@@ -35,6 +35,9 @@ coordinates would make it easier to write the draw-handler, but
 writing checks would be easier with human coordinates. We chose human
 coordinates because checks are important to write.
 
+In this writeup, our board coordinates go from 0 through 7 in each
+direction. 
+
 ## Piece Structure
 
 * `p`: Posn

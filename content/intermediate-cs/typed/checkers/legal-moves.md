@@ -41,29 +41,31 @@ at least _two checks_.
 
 ### on-board
 
-On board just makes sure the position is on the board...
+On board just makes sure the position is on the board... My board
+squares are numbered 0 through 7.
 
 ```racket
 (check-expect (on-board? (make-posn -10 5) false)
 (check-expect (on-board? (make-posn 2 7) true)
+(check-expect (on-board? (make-posn 3 8) false)
 ```
 
 ### direction-ok
 
 We need to write check-expects for direction. First, we need to decide
 which direction each player will move. I decided that player 1 will
-move down the board (increasing y) and player 0 will move up
+move down the board (increasing y) and player 2 will move up
 (decreasing y).
 
 The possibilities are:
 
 1. king can move either direction
-2. player 0 can only move "up" the board
-3. player 1 can only move "down" the board
+2. player 1 can only move "down" the board
+2. player 2 can only move "up" the board
 
 ```racket
 (check-expect (direction-ok? (make-piece (make-posn 1 3) 1 false)
-                             (make-posn 1 4))
+                             (make-posn 1 2))
               false)
 (check-expect (direction-ok? (make-piece (make-posn 1 3) 1 false)
                              (make-posn 2 4))
@@ -71,11 +73,14 @@ The possibilities are:
 (check-expect (direction-ok? (make-piece (make-posn 1 3) 2 false)
                              (make-posn 2 4))
               false)
+(check-expect (direction-ok? (make-piece (make-posn 1 3) 2 false)
+                             (make-posn 0 2))
+              true)
 (check-expect (direction-ok? (make-piece (make-posn 1 3) 2 true)
                              (make-posn 2 4))
               true)
 (check-expect (direction-ok? (make-piece (make-posn 1 3) 1 true)
-                             (make-posn 2 4))
+                             (make-posn 0 4))
               true)
 ```
 
