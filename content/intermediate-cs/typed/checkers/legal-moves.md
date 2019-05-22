@@ -117,5 +117,16 @@ jump.
 (check-expect (distance-nonjump-ok? (make-posn (1 3) (make-posn 2 3)) false)
 ```
 
+### distance-jump-ok
 
+The `distance-jump-ok?` function returns true when the two positions
+differ by enough that there is exactly one diagonal square between
+them.
+
+You should write your own checks for this function.
+
+### is-legal-jump
+
+The `is-legal-jump?` determines if the square that is being jumped
+over is occupied by the correct kind of piece.
 
