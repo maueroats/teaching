@@ -2860,11 +2860,11 @@ function: determine if a move is legal!</p>
 writing check-expects) to make functions we will need.</p>
 
 <ul>
+<li><code>player-&gt;dir: Player -&gt; Integer</code>: Represent going up the board
+(decreasing y) by -1, down the board (increasing y) by 1.</li>
 <li><code>is-occupied?: (Listof Piece) Posn -&gt; Boolean</code></li>
 <li><code>is-my-piece?: Integer Piece -&gt; Boolean</code></li>
-<li><code>take-piece: (Listof Piece) Posn -&gt; (Listof Piece)</code>
-
-<br /></li>
+<li><code>take-piece: (Listof Piece) Posn -&gt; (Listof Piece)</code></li>
 </ul></li>
 
 <li><p>Mouse handler. The logic of interacting with the pieces can be a
@@ -2878,7 +2878,8 @@ coordinates to the board coordinates.</li>
 <li><p>Problem-solving tips.</p>
 
 <ul>
-<li><code>inexact-&gt;exact</code> to convert 2.0 to the integer 2</li>
+<li><code>floor</code> after dividing to get rid of the remainder.</li>
+<li><code>inexact-&gt;exact</code> to convert 2.0 to the integer 2.</li>
 </ul></li>
 </ol>
 

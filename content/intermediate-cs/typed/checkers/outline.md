@@ -24,15 +24,16 @@ The game development process has several steps:
 
         legal-move?: Game Posn -> Boolean
 
-4. Support functions: we will practice function design (including
+5. Support functions: we will practice function design (including
    writing check-expects) to make functions we will need.
 
+    * `player->dir: Player -> Integer`: Represent going up the board
+      (decreasing y) by -1, down the board (increasing y) by 1.
     * `is-occupied?: (Listof Piece) Posn -> Boolean`
     * `is-my-piece?: Integer Piece -> Boolean`
     * `take-piece: (Listof Piece) Posn -> (Listof Piece)`
 
-    
-5. Mouse handler. The logic of interacting with the pieces can be a
+6. Mouse handler. The logic of interacting with the pieces can be a
    little complex if you want all of the details.
 
     * `click->board-coord: Posn -> Posn`: Convert from screen
@@ -41,5 +42,6 @@ The game development process has several steps:
 
 7. Problem-solving tips.
 
-    * `inexact->exact` to convert 2.0 to the integer 2
+    * `floor` after dividing to get rid of the remainder.
+    * `inexact->exact` to convert 2.0 to the integer 2.
 
