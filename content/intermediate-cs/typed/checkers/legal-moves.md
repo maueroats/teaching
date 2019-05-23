@@ -45,9 +45,9 @@ On board just makes sure the position is on the board... My board
 squares are numbered 0 through 7.
 
 ```racket
-(check-expect (on-board? (make-posn -10 5) false)
-(check-expect (on-board? (make-posn 2 7) true)
-(check-expect (on-board? (make-posn 3 8) false)
+(check-expect (on-board? (make-posn -10 5)) false)
+(check-expect (on-board? (make-posn 2 7)) true)
+(check-expect (on-board? (make-posn 3 8)) false)
 ```
 
 ### direction-ok
@@ -109,23 +109,23 @@ if the distance between them is allowed given that the move is not a
 jump.
 
 ```racket
-(check-expect (distance-nonjump-ok? (make-posn (1 3) 
-                                    (make-posn 2 4)))
+(check-expect (distance-nonjump-ok? (make-posn 1 3) 
+                                    (make-posn 2 4))
                true)
-(check-expect (distance-nonjump-ok? (make-posn (1 3) 
-                                    (make-posn 0 4))) 
+(check-expect (distance-nonjump-ok? (make-posn 1 3) 
+                                    (make-posn 0 4)) 
                true)
-(check-expect (distance-nonjump-ok? (make-posn (1 3) 
-                                    (make-posn 2 2)))
+(check-expect (distance-nonjump-ok? (make-posn 1 3) 
+                                    (make-posn 2 2))
                true)
-(check-expect (distance-nonjump-ok? (make-posn (1 3) 
-                                    (make-posn 0 2)))
+(check-expect (distance-nonjump-ok? (make-posn 1 3) 
+                                    (make-posn 0 2))
                true)
-(check-expect (distance-nonjump-ok? (make-posn (1 3)
-                                    (make-posn 1 4)))
+(check-expect (distance-nonjump-ok? (make-posn 1 3)
+                                    (make-posn 1 4))
                false)
-(check-expect (distance-nonjump-ok? (make-posn (1 3) 
-                                    (make-posn 2 3)))
+(check-expect (distance-nonjump-ok? (make-posn 1 3) 
+                                    (make-posn 2 3))
                false)
 ```
 

@@ -2852,14 +2852,18 @@ possiblities.</p></li>
 
 <li><p>Draw handler. Show whose move it is as well as drawing the board.</p></li>
 
+<li><p><a href="/intermediate-cs/typed/checkers/legal-moves/">Legal moves</a>. A very important
+function: determine if a move is legal!</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">legal-move?: Game Posn -&gt; Boolean</pre></div></li>
+
 <li><p>Support functions: we will practice function design (including
 writing check-expects) to make functions we will need.</p>
 
 <ul>
 <li><code>is-occupied?: (Listof Piece) Posn -&gt; Boolean</code></li>
 <li><code>is-my-piece?: Integer Piece -&gt; Boolean</code></li>
-<li><code>take-piece: (Listof Piece) Posn -&gt; (Listof Piece)</code></li>
-<li><code>legal-move?: Game Posn -&gt; Boolean</code>
+<li><code>take-piece: (Listof Piece) Posn -&gt; (Listof Piece)</code>
+
 <br /></li>
 </ul></li>
 
@@ -2869,6 +2873,12 @@ little complex if you want all of the details.</p>
 <ul>
 <li><code>click-&gt;board-coord: Posn -&gt; Posn</code>: Convert from screen
 coordinates to the board coordinates.</li>
+</ul></li>
+
+<li><p>Problem-solving tips.</p>
+
+<ul>
+<li><code>inexact-&gt;exact</code> to convert 2.0 to the integer 2</li>
 </ul></li>
 </ol>
 
