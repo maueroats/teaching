@@ -109,12 +109,24 @@ if the distance between them is allowed given that the move is not a
 jump.
 
 ```racket
-(check-expect (distance-nonjump-ok? (make-posn (1 3) (make-posn 2 4)) true)
-(check-expect (distance-nonjump-ok? (make-posn (1 3) (make-posn 0 4)) true)
-(check-expect (distance-nonjump-ok? (make-posn (1 3) (make-posn 2 2)) true)
-(check-expect (distance-nonjump-ok? (make-posn (1 3) (make-posn 0 2)) true)
-(check-expect (distance-nonjump-ok? (make-posn (1 3) (make-posn 1 4)) false)
-(check-expect (distance-nonjump-ok? (make-posn (1 3) (make-posn 2 3)) false)
+(check-expect (distance-nonjump-ok? (make-posn (1 3) 
+                                    (make-posn 2 4)))
+               true)
+(check-expect (distance-nonjump-ok? (make-posn (1 3) 
+                                    (make-posn 0 4))) 
+               true)
+(check-expect (distance-nonjump-ok? (make-posn (1 3) 
+                                    (make-posn 2 2)))
+               true)
+(check-expect (distance-nonjump-ok? (make-posn (1 3) 
+                                    (make-posn 0 2)))
+               true)
+(check-expect (distance-nonjump-ok? (make-posn (1 3)
+                                    (make-posn 1 4)))
+               false)
+(check-expect (distance-nonjump-ok? (make-posn (1 3) 
+                                    (make-posn 2 3)))
+               false)
 ```
 
 ### distance-jump-ok
