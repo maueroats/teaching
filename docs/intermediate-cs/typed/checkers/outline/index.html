@@ -2860,10 +2860,8 @@ function: determine if a move is legal!</p>
 writing check-expects) to make functions we will need.</p>
 
 <ul>
-<li><code>player-&gt;dir: Player -&gt; Integer</code>: Represent going up the board
-(decreasing y) by -1, down the board (increasing y) by 1.</li>
+<li><code>get-piece: (Listof Posn) Posn -&gt; Piece</code>: See notes for legal moves.</li>
 <li><code>is-occupied?: (Listof Piece) Posn -&gt; Boolean</code></li>
-<li><code>is-my-piece?: Integer Piece -&gt; Boolean</code></li>
 <li><code>take-piece: (Listof Piece) Posn -&gt; (Listof Piece)</code></li>
 </ul></li>
 

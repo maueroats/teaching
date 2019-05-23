@@ -2833,7 +2833,7 @@
 <li><a href="#space-empty">space-empty</a></li>
 <li><a href="#distance-nonjump-ok">distance-nonjump-ok</a></li>
 <li><a href="#distance-jump-ok">distance-jump-ok</a></li>
-<li><a href="#is-legal-jump">is-legal-jump</a></li>
+<li><a href="#is-legal-to-jump">is-legal-to-jump</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -2876,10 +2876,14 @@ empty?</li>
 not a jump, is it ok?</li>
 <li><code>distance-jump-ok?: Posn Posn -&gt; Boolean</code>: Assuming the move is a
 jump, is the distance intended going to be ok?</li>
-<li><code>is-legal-jump?: (Listof Piece) Posn Posn -&gt; Boolean</code>: Knowing where
-the pieces are on the board, is the attempted jump legal? For
-example, jumping an opponent is ok, but jumping your own piece or an
-empty square is forbidden.</li>
+<li><code>get-piece: (Listof Piece) Posn -&gt; Piece</code>: Get the piece at the
+given position. Define a fake NO-PIECE to be a piece at (-1000,1000)
+to represent not finding a piece there.</li>
+<li><code>is-legal-to-jump?: (Listof Piece) Player Posn Posn -&gt; Boolean</code>:
+Knowing where the pieces are on the board and who is attempting the
+move, is the attempted jump legal? For example, jumping an opponent
+is ok, but jumping your own piece or an empty square is
+forbidden. Plan to figure out some helper functions for this on your own!</li>
 </ul>
 
 <h2 id="examples">Examples</h2>
@@ -2972,9 +2976,9 @@ them.</p>
 
 <p>You should write your own checks for this function.</p>
 
-<h3 id="is-legal-jump">is-legal-jump</h3>
+<h3 id="is-legal-to-jump">is-legal-to-jump</h3>
 
-<p>The <code>is-legal-jump?</code> determines if the square that is being jumped
+<p>The <code>is-legal-to-jump?</code> determines if the square that is being jumped
 over is occupied by the correct kind of piece.</p>
 
 

@@ -28,10 +28,14 @@ functions.
   not a jump, is it ok?
 * `distance-jump-ok?: Posn Posn -> Boolean`: Assuming the move is a
   jump, is the distance intended going to be ok?
-* `is-legal-jump?: (Listof Piece) Posn Posn -> Boolean`: Knowing where
-  the pieces are on the board, is the attempted jump legal? For
-  example, jumping an opponent is ok, but jumping your own piece or an
-  empty square is forbidden.
+* `get-piece: (Listof Piece) Posn -> Piece`: Get the piece at the
+  given position. Define a fake NO-PIECE to be a piece at (-1000,1000)
+  to represent not finding a piece there. 
+* `is-legal-to-jump?: (Listof Piece) Player Posn Posn -> Boolean`:
+  Knowing where the pieces are on the board and who is attempting the
+  move, is the attempted jump legal? For example, jumping an opponent
+  is ok, but jumping your own piece or an empty square is
+  forbidden. Plan to figure out some helper functions for this on your own!
 
 ## Examples
 
@@ -137,8 +141,8 @@ them.
 
 You should write your own checks for this function.
 
-### is-legal-jump
+### is-legal-to-jump
 
-The `is-legal-jump?` determines if the square that is being jumped
+The `is-legal-to-jump?` determines if the square that is being jumped
 over is occupied by the correct kind of piece.
 

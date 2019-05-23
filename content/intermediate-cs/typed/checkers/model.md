@@ -46,11 +46,20 @@ direction.
 
 ## Model Structure
 
-We discussed this much of the model:
+The model keeps track of whose turn it is, where the pieces are, and
+which piece (if any) is currently selected and ready to move.
 
 * `turn`: Player (Integer)
 * `ps`: (Listof Piece)
+* `selected`: Piece
 
-We still need to discuss the mechanics of moving pieces during a
-player's turn, so there will be a little more to put in the model.
+When there is no piece selected, we will put a special piece in the
+selected location that could not arise in the game: say a king for
+player 3 located at (-1000,1000). 
+
+The fancier way of representing the selected piece is to use the type
+[(Option
+Piece)](https://docs.racket-lang.org/ts-reference/type-ref.html?q=Option#%28form._%28%28lib._typed-racket%2Fbase-env%2Fbase-types..rkt%29._.Option%29%29),
+but that doesn't simplify the rest of the work.
+
 
