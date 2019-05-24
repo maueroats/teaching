@@ -31,7 +31,7 @@ know it's there), even if he touches it.
 * Click on the bag to take the donut out of the bag. (Now Homer will
   eat it.)
 * Motion using keys or 
-{{% scratch %}} go to [mouse pointer v] {{% /scratch %}}.
+{{< scratch >}} go to [mouse pointer v] {{< /scratch >}}.
 
 
 

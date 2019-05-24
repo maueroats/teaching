@@ -2851,8 +2851,10 @@ window.onload = function () {
 }
 </script>
 <pre class="scratch">
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">when green flag clicked
-set [points v] to (0)</pre></div>
+
+    when green flag clicked
+    set [points v] to (0)
+    
 </pre>
 
 
@@ -2867,13 +2869,15 @@ window.onload = function () {
 }
 </script>
 <pre class="scratch">
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">when green flag clicked
-forever
-  if &lt; touching [Arf the Dog v] &gt; then
-    change [points v] by (5)
-    hide
-    end
-  end</pre></div>
+
+    when green flag clicked
+    forever
+      if < touching [Arf the Dog v] > then
+        change [points v] by (5)
+        hide
+        end
+      end
+    
 </pre>
 </p>
 
@@ -2901,20 +2905,22 @@ window.onload = function () {
 }
 </script>
 <pre class="scratch">
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> when green flag clicked
- set [goal v] to (pick random (1) to (10))
 
- when [up v] key pressed
- change [current v] by (1)
+     when green flag clicked
+     set [goal v] to (pick random (1) to (10))
 
- when [down v] key pressed
- change [current v] by (-1)
+     when [up v] key pressed
+     change [current v] by (1)
 
- when green flag clicked
- forever
-   if &lt; (goal) = (current) &gt; then
-     switch backdrop to [YouWin v]
-   end</pre></div>
+     when [down v] key pressed
+     change [current v] by (-1)
+
+     when green flag clicked
+     forever
+       if < (goal) = (current) > then
+         switch backdrop to [YouWin v]
+       end
+     
 </pre>
 </li>
 </ol>

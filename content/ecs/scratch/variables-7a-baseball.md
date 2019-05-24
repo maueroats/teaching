@@ -38,8 +38,8 @@ There was an "if-then" block with different choices:
 ## Details
 
 One way to lose is have a stage backdrop that says "Cheater".
-{{% scratch %}}
+{{< scratch >}}
 when I receive [Cheater v]
   switch backdrop to [Cheater v]
   stop [all scripts v]
-{{% /scratch %}}
+{{< /scratch >}}

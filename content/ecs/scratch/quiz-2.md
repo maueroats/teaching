@@ -30,12 +30,12 @@ can assume the sprites already have that part written.
      (past the cover) without a key. Begin with the "when up key
      pressed" block.
 
-     {{% figure src="roof-ladder-1.jpg" width="100" %}}
-     {{% figure src="roof-ladder-2.jpg" width="100" %}}
+     {{< figure src="roof-ladder-1.jpg" width="100" >}}
+     {{< figure src="roof-ladder-2.jpg" width="100" >}}
 
-      {{% scratch %}} 
+      {{< scratch >}} 
       when [up v] key pressed
-      {{% /scratch %}}
+      {{< /scratch >}}
 
 3. Dizzy Dan spins smoothly, 5 degrees "each time". Holding down the
    "s" key makes him spin. He starts instantly when you hit "s". When

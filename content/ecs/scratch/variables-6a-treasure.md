@@ -13,7 +13,7 @@ description: "A treasure hunt with a door you cannot pass and loot to win."
 * Win when you get the money.
 * Cannot walk through door or walls.
 
-{{% figure src="treasure-hunt.png" %}}
+{{< figure src="treasure-hunt.png" >}}
 
 ## Common Misunderstandings
 
@@ -32,7 +32,7 @@ If your sprite gets stuck trying once it hits a wall, make it so you
 can actually move in one direction even while you are touching the
 wall. Example:
 
-{{% scratch %}}
+{{< scratch >}}
 when [d v] key pressed
   forever 
     if < touching color (black) > then
@@ -42,4 +42,4 @@ when [d v] key pressed
       point in direction (90)
       move (5) steps
     end
-{{% /scratch %}}
+{{< /scratch >}}

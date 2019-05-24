@@ -15,13 +15,13 @@ description: "Review and using two variables at once. Half day."
 
     Arf the Dog:
 
-    {{% scratch %}}
+    {{< scratch >}}
     when green flag clicked
     set [points v] to (0)
-    {{% /scratch %}}
+    {{< /scratch >}}
 
     Cupcake:
-    {{% scratch %}}
+    {{< scratch >}}
     when green flag clicked
     forever
       if < touching [Arf the Dog v] > then
@@ -29,7 +29,7 @@ description: "Review and using two variables at once. Half day."
         hide
         end
       end
-    {{% /scratch %}}
+    {{< /scratch >}}
 
     The hotdog is almost identical to the cupcake.
 
@@ -45,7 +45,7 @@ description: "Review and using two variables at once. Half day."
    * Set the goal number to be a random number 1 to 10 when green flag
      is clicked.
 
-     {{% scratch %}}
+     {{< scratch >}}
      when green flag clicked
      set [goal v] to (pick random (1) to (10))
 
@@ -60,7 +60,7 @@ description: "Review and using two variables at once. Half day."
        if < (goal) = (current) > then
          switch backdrop to [YouWin v]
        end
-     {{% /scratch %}}
+     {{< /scratch >}}
 
 
    

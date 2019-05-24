@@ -11,9 +11,9 @@ Scratch asks you to program in a block-oriented language.
 
 <!--more-->
 
-{{% scratch %}}
+{{< scratch >}}
 move (5) steps
-{{% /scratch %}}
+{{< /scratch >}}
 
 ## All Contents
 

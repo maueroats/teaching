@@ -2836,10 +2836,13 @@
     
     <ol>
 <li><p><strong>Random shape</strong>. Write a function that returns a square, circle, or triangle. All should be equally likely.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">random-shape: ignore -&gt; image</code></pre></div></li>
-
-<li><p><strong>Drift</strong>. A smiley face starts at some position on the screen. It randomly drifts 5 pixels in some direction (up, down, left, or right) every 0.2 seconds. Write the function that gives its new position.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">drift-to-new: posn(old) -&gt; posn(new)</code></pre></div></li>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">random-shape: ignore -&gt; image</code></pre></div>
+<ol>
+<li><strong>Drift</strong>. A smiley face starts at some position on the screen. It randomly drifts 5 pixels in some direction (up, down, left, or right) every 0.2 seconds. Write the function that gives its new position.
+<code>text
+drift-to-new: posn(old) -&gt; posn(new)
+</code></li>
+</ol></li>
 
 <li><p><strong>Reduce green</strong>. Write a function <code>less-green</code> that reduces the amount of green in a color by 25%.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">less-green: color -&gt; color</code></pre></div></li>

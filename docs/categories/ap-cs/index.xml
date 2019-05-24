@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ap Cs on WY Computer Science</title>
+    <title>ap-cs on WY Computer Science</title>
     <link>https://wy-cs.site/categories/ap-cs/</link>
-    <description>Recent content in Ap Cs on WY Computer Science</description>
+    <description>Recent content in ap-cs on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Sep 2017 15:34:07 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 05 Sep 2018 11:26:51 -0500</lastBuildDate>
     
 	<atom:link href="https://wy-cs.site/categories/ap-cs/index.xml" rel="self" type="application/rss+xml" />
     
@@ -26,9 +26,7 @@
       <pubDate>Wed, 05 Sep 2018 11:26:51 -0500</pubDate>
       
       <guid>https://wy-cs.site/ap-cs/haskell/</guid>
-      <description>You will need the the text Learn You a Haskell For Great Good.
- Use repl.it for programming.
- Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.
+      <description>You will need the the text [Learn You a Haskell For Great Good](http://learnyouahaskell.com/).  Use [repl.it](https://repl.it/languages/haskell) for programming.  Haskell is a pure, lazy, statically typed language. In the first chapter you will learn what those terms mean. Later you will learn how to write programs.
 Chapters  1. Intro A high-level overview of the Haskell language and why its features are good.
   2. Starting Out Learn how to make lists and tuples.</description>
     </item>

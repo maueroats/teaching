@@ -2845,22 +2845,21 @@
 
 <li><p><strong>Chase</strong>. Each world has one image that it controls with the mouse. Hitting a key makes the mouse inactive for about one second. (Use a tick handler to reactivate.) I used a colored bar to indicate whether the window is active or not.</p>
 
-<p><figure>
-    <img src="chase-drawn-frozen.png"/> 
+<figure>
+<img src="chase-drawn-frozen.png"/> 
 </figure>
 
 <figure>
-    <img src="chase-drawn-running.png"/> 
-</figure>
-</p></li>
+<img src="chase-drawn-running.png"/> 
+</figure></li>
 </ol>
 
 <div class="alert 
-	alert-warning"
+    alert-warning"
  
-role="alert"><p>You cannot send a <code>posn</code> as a message for technical reasons. Reasonable replacements: <a href="/intermediate-cs/universe/u-resources/">enhanced posn-util</a>, <code>(define-struct msg (x y))</code> or use <code>(list x y)</code> for the message.</p>
+role="alert">
+You cannot send a `posn` as a message for technical reasons. Reasonable replacements: [enhanced posn-util](/intermediate-cs/universe/u-resources/), `(define-struct msg (x y))` or use `(list x y)` for the message.
 </div>
-
 
 
     
