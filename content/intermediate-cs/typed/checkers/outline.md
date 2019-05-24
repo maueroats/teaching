@@ -40,6 +40,10 @@ The game development process has several steps:
 
 7. Problem-solving tips.
 
-    * `floor` after dividing to get rid of the remainder.
-    * `inexact->exact` to convert 2.0 to the integer 2.
+    * `exact-floor` takes in a `Real` number x and puts out the greatest `Integer`
+      less than or equal to x. Plain `floor` does the same thing, but
+      puts out a `Real`.
 
+<!--
+    * `inexact->exact` to convert 2.0 to the integer 2.
+-->

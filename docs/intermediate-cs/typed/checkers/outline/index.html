@@ -2876,10 +2876,15 @@ coordinates to the board coordinates.</li>
 <li><p>Problem-solving tips.</p>
 
 <ul>
-<li><code>floor</code> after dividing to get rid of the remainder.</li>
-<li><code>inexact-&gt;exact</code> to convert 2.0 to the integer 2.</li>
+<li><code>exact-floor</code> takes in a <code>Real</code> number x and puts out the greatest <code>Integer</code>
+less than or equal to x. Plain <code>floor</code> does the same thing, but
+puts out a <code>Real</code>.</li>
 </ul></li>
 </ol>
+
+<!--
+    * `inexact->exact` to convert 2.0 to the integer 2.
+-->
 
 
     
