@@ -1,5 +1,5 @@
 ---
-title: "Legal Moves"
+title: "Checkers Legal Moves"
 date: 2019-05-22T09:14:58-05:00
 weight: 30
 draft: false

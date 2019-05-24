@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>homework on WY Computer Science</title>
+    <title>Homework on WY Computer Science</title>
     <link>https://wy-cs.site/tags/homework/</link>
-    <description>Recent content in homework on WY Computer Science</description>
+    <description>Recent content in Homework on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Sep 2018 15:57:47 -0500</lastBuildDate>
@@ -51,7 +51,8 @@ and dealing with Integral to Fractional conversions when they are needed.&lt;/p&
       
       <guid>https://wy-cs.site/ap-cs/haskell/ch04/ch04-problemset/</guid>
       <description>Key new concepts: patterns, guards, where, let, case.
-Please write function signatures for every solution.  Some of these problems are classical exercises with solutions online. Please do not search for them or read them before turning in your work. (See Academic Integrity.)
+Please write function signatures for every solution.
+ Some of these problems are classical exercises with solutions online. Please do not search for them or read them before turning in your work. (See Academic Integrity.)
 Exercises  First Third. Return the sum of the first and third elements in the list. Example: firstThird [10,30,50,90] == 60.
  Take a list of items that can be compared for equality (Eq a) and reduce repeats to a single element.</description>
     </item>

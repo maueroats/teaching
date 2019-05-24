@@ -1994,7 +1994,7 @@
       <li data-nav-id="/intermediate-cs/typed/checkers/legal-moves/" class="dd-item">
         <div>
           <a href="/intermediate-cs/typed/checkers/legal-moves/">
-            Legal Moves
+            Checkers Legal Moves
           </a>
         </div>
     </li>
@@ -2866,16 +2866,11 @@ is that it is really hard to change the entries. If you use
 Change value at index <code>col</code> in a single row to
 <code>newVal</code>; every other value in the list just output unchanged.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">changeCol</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">11</span><span style="color:#111">,</span><span style="color:#ae81ff">12</span><span style="color:#111">]</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">99</span> <span style="color:#f92672">==</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">11</span><span style="color:#111">,</span><span style="color:#ae81ff">99</span><span style="color:#111">]</span></code></pre></div>
-<p>We have basically written this function as a Coding Bat problem.</p>
+<p>We have basically written this function as a Coding Bat problem.</p></li>
 
-<ol>
-<li>(<code>changeRowCol: [[Int]] -&gt; Int -&gt; Int -&gt; Int -&gt; [[Int]]</code>)
-Run changeCol only on the index <code>row</code> entry, everything else stays the same.
-<code>haskell
-changeRowCol [[1,2,3,4],[5,6,7,8]] 1 3 99 == [[1,2,3,4],[5,6,7,99]]
-</code>
-<br /></li>
-</ol></li>
+<li><p>(<code>changeRowCol: [[Int]] -&gt; Int -&gt; Int -&gt; Int -&gt; [[Int]]</code>)
+Run changeCol only on the index <code>row</code> entry, everything else stays the same.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75af00">changeRowCol</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span><span style="color:#ae81ff">8</span><span style="color:#111">]]</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">99</span> <span style="color:#f92672">==</span> <span style="color:#111">[[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">],[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span><span style="color:#ae81ff">99</span><span style="color:#111">]]</span></code></pre></div></li>
 </ol>
 
 <p>There is actually <a href="change-entry.hs">spoiler code</a> and <a href="change-entry-enhanced.hs">fancy spoiler

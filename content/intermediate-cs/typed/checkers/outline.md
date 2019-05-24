@@ -27,7 +27,7 @@ The game development process has several steps:
 5. Support functions: we will practice function design (including
    writing check-expects) to make functions we will need.
 
-    * `get-piece: (Listof Posn) Posn -> Piece`: See notes for legal moves.
+    * `get-piece: (Listof Piece) Posn -> Piece`: See notes for legal moves.
     * `is-occupied?: (Listof Piece) Posn -> Boolean`
     * `take-piece: (Listof Piece) Posn -> (Listof Piece)`
 
