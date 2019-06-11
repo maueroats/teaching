@@ -2263,6 +2263,20 @@
           </a>
         </div>
     </li>
+      <li data-nav-id="/ecs/arduino/flex-sensor/" class="dd-item">
+        <div>
+          <a href="/ecs/arduino/flex-sensor/">
+            Flex Sensor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/ecs/arduino/button/" class="dd-item">
+        <div>
+          <a href="/ecs/arduino/button/">
+            Button
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/ecs/arduino/simulator/" class="dd-item">
         <div>
           <a href="/ecs/arduino/simulator/">
@@ -2881,7 +2895,7 @@ when green flag clicked
 forever
   set [the value v] to (analog reading (2) :: #468cfc) 
   say (the value) for (0.5) seconds
-  set pin (9 v) to value (the value) :: #468cfc
+  set pin (9 v) to value ((the value) / (4)) :: #468cfc
 
 </pre>
 
@@ -2897,7 +2911,7 @@ forever
 
 <div id="navigation">
 <a class="nav nav-prev" href="/ecs/arduino/arduino-worksheet-1/" title="Arduino Worksheet 1"> <i class="fa fa-chevron-left"></i><label>Arduino Worksheet 1</label></a>
-    <a class="nav nav-next" href="/ecs/arduino/simulator/" title="Simulator" style="margin-right: 0px;"><label>Simulator</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/ecs/arduino/flex-sensor/" title="Flex Sensor" style="margin-right: 0px;"><label>Flex Sensor</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

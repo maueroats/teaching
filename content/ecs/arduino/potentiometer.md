@@ -33,6 +33,6 @@ when green flag clicked
 forever
   set [the value v] to (analog reading (2) :: #468cfc) 
   say (the value) for (0.5) seconds
-  set pin (9 v) to value (the value) :: #468cfc
+  set pin (9 v) to value ((the value) / (4)) :: #468cfc
 {{< /scratch >}}
 

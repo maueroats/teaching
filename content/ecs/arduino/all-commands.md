@@ -20,7 +20,7 @@ or
   wraps around to zero every multiple of 256.
 
 
-## Snap4Arduino Blocks-
+## Snap4Arduino Blocks
 
 {{< scratch >}}
 set digital pin ( v) to <> :: #468cfc
