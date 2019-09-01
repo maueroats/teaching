@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project on WY Computer Science</title>
-    <link>https://wy-cs.site/tags/project/</link>
+    <link>https://maueroats.github.io/teaching--2018-2019/tags/project/</link>
     <description>Recent content in Project on WY Computer Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Sep 2018 22:31:35 -0500</lastBuildDate>
     
-	<atom:link href="https://wy-cs.site/tags/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://maueroats.github.io/teaching--2018-2019/tags/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Art Project</title>
-      <link>https://wy-cs.site/intermediate-cs/ch03/ch03-art-project/</link>
+      <link>https://maueroats.github.io/teaching--2018-2019/intermediate-cs/ch03/ch03-art-project/</link>
       <pubDate>Thu, 20 Sep 2018 22:31:35 -0500</pubDate>
       
-      <guid>https://wy-cs.site/intermediate-cs/ch03/ch03-art-project/</guid>
+      <guid>https://maueroats.github.io/teaching--2018-2019/intermediate-cs/ch03/ch03-art-project/</guid>
       <description>Deadline: Turn in by Wednesday, September 26.
 Produce: One complex piece of art per person in the group. (Two simpler pieces.) (Groups of at most two.)
 Goal: Art projects should demonstrate a range of functions from the chapter, try to use 3-4 from each category in your whole project.
@@ -26,10 +26,10 @@ Goal: Art projects should demonstrate a range of functions from the chapter, try
     
     <item>
       <title>Connect Four</title>
-      <link>https://wy-cs.site/ap-cs/haskell/connect-four/</link>
+      <link>https://maueroats.github.io/teaching--2018-2019/ap-cs/haskell/connect-four/</link>
       <pubDate>Tue, 09 Oct 2018 09:37:17 -0500</pubDate>
       
-      <guid>https://wy-cs.site/ap-cs/haskell/connect-four/</guid>
+      <guid>https://maueroats.github.io/teaching--2018-2019/ap-cs/haskell/connect-four/</guid>
       <description>Due Monday, October 15. See timeline.
 Familiarize yourself with the game of Connect Four, possibly playing a few games.
 Functions to write This is a minimum set of functions to write:
